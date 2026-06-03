@@ -90,8 +90,10 @@ const rawText = fs.readFileSync(transcriptPath, 'utf8');
 
 function stripMarkdown(s) {
   return s
+    .replace(/<!--[\s\S]*?-->/g, ' ')         // HTML comments (metadata, not for narration)
     .replace(/```[\s\S]*?```/g, ' ')          // fenced code blocks
-    .replace(/`([^`]+)`/g, '$1')              // inline code
+    .replace(/^\s*\|.*\|\s*$/gm, '')          // markdown table rows (unlistenable)
+    .replace(/`([^`]+)`/g, '$1')              // inline code (keep content)
     .replace(/^\s{0,3}#{1,6}\s+/gm, '')       // heading markers
     .replace(/^\s{0,3}>\s?/gm, '')            // blockquote markers
     .replace(/^\s*[-*+]\s+/gm, '')            // bullet markers
@@ -101,6 +103,10 @@ function stripMarkdown(s) {
     .replace(/(\*\*|__)(.*?)\1/g, '$2')       // bold
     .replace(/(\*|_)(.*?)\1/g, '$2')          // italic
     .replace(/^\s*([-*_]\s*){3,}$/gm, '')     // horizontal rules
+    .replace(/→/g, ' to ')               // → reads as "to"
+    .replace(/≤/g, ' at most ')          // ≤
+    .replace(/≥/g, ' at least ')         // ≥
+    .replace(/[ \t]{2,}/g, ' ')               // collapse runs of spaces
     .replace(/\n{3,}/g, '\n\n')               // collapse blank runs
     .trim();
 }
@@ -108,6 +114,13 @@ function stripMarkdown(s) {
 const text = RAW ? rawText.trim() : stripMarkdown(rawText);
 const charCount = text.length;
 const wordCount = text.split(/\s+/).filter(Boolean).length;
+
+// --preview: print the exact narration text and exit. No API call, no spend.
+if (opt.preview) {
+  const n = opt.preview === true ? text.length : parseInt(opt.preview, 10) || text.length;
+  process.stdout.write(text.slice(0, n) + (n < text.length ? `\n\n…[${text.length - n} more chars]` : '') + '\n');
+  process.exit(0);
+}
 
 // ---- estimate ----
 const creditsPerChar = /flash|turbo/i.test(MODEL) ? 0.5 : 1.0;
