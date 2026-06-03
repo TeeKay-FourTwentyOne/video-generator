@@ -23,8 +23,10 @@ const day = (d) => d.toISOString().slice(0, 10);
 const from = args.from || day(new Date(Date.now() - 30 * 864e5));
 const to = args.to || day(new Date());
 
-// Plan allowances (credits/month) for a rough marginal-cost share. Flat subscription — not pay-per-use.
-const PLAN = { starter: [5, 30000], creator: [22, 100000], pro: [99, 500000], scale: [330, 2000000] };
+// Monthly subscription price ($/month) per tier, for a rough marginal-cost share.
+// The quota denominator is read LIVE from the subscription (character_limit), not hardcoded,
+// because account limits can differ from the published tier default (e.g. add-ons, promos).
+const PRICE = { starter: 5, creator: 22, pro: 99, scale: 330 };
 
 (async () => {
   const s = Date.parse(from + 'T00:00:00Z');
@@ -42,8 +44,9 @@ const PLAN = { starter: [5, 30000], creator: [22, 100000], pro: [99, 500000], sc
 
   const sub = await (await fetch('https://api.elevenlabs.io/v1/user/subscription', { headers })).json();
   const total = days.reduce((a, d) => a + d.chars, 0);
-  const plan = PLAN[sub.tier];
-  const marginal = plan ? (total / plan[1]) * plan[0] : null;
+  const price = PRICE[sub.tier];
+  const quota = sub.character_limit || null; // live monthly quota for this account
+  const marginal = price != null && quota ? (total / quota) * price : null;
 
   if (args.json) {
     console.log(JSON.stringify({ from, to, tier: sub.tier, days: days.filter((d) => d.chars > 0), total_chars: total, est_marginal_usd: marginal }, null, 2));
