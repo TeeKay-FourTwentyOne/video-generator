@@ -155,16 +155,25 @@ def main():
         ]
         subprocess.run(reassemble_cmd, capture_output=True)
 
-        # Step 4: Add audio from original
-        print("Adding audio...")
-        subprocess.run([
-            "ffmpeg", "-y",
-            "-i", str(temp_video),
-            "-i", str(input_path),
-            "-map", "0:v", "-map", "1:a",
-            "-c:v", "copy", "-c:a", "aac",
-            str(output_path)
-        ], capture_output=True)
+        # Step 4: Add audio from original (tolerate audio-less input)
+        has_audio = subprocess.run([
+            "ffprobe", "-v", "error", "-select_streams", "a",
+            "-show_entries", "stream=codec_type", "-of", "csv=p=0", str(input_path)
+        ], capture_output=True, text=True).stdout.strip() != ""
+        if has_audio:
+            print("Adding audio...")
+            subprocess.run([
+                "ffmpeg", "-y",
+                "-i", str(temp_video),
+                "-i", str(input_path),
+                "-map", "0:v", "-map", "1:a",
+                "-c:v", "copy", "-c:a", "aac",
+                str(output_path)
+            ], capture_output=True)
+        if not output_path.exists():
+            # silent input, or mux failed: keep the upscaled video regardless
+            import shutil as _shutil
+            _shutil.copy(str(temp_video), str(output_path))
 
     size_mb = output_path.stat().st_size / 1024 / 1024
     print(f"\nDone! {output_path} ({size_mb:.1f} MB)")
