@@ -72,8 +72,8 @@ Times accept SS, MM:SS, or HH:MM:SS (decimals allowed).
 Options:
   -f, --flicker-frames N   Frames shown from one source before switching to the
                            other. Smaller = faster strobe. (default: 2)
-  -F, --flash MODE         Insert a flash frame at every switch boundary.
-                           MODE = black | white. (default: none)
+  -F, --flash MODE         Insert a flash frame at every switch boundary, during
+                           the overlap only. MODE = black | white. (default: none)
   -a, --audio MODE         Audio for the output:
                              main  audio of the longer clip (default)
                              a     always video A's audio
@@ -126,6 +126,10 @@ cmd_flicker() {
   fgt "$dur_a" 0 || die "video A segment length must be > 0 (got $dur_a s)"
   fgt "$dur_b" 0 || die "video B segment length must be > 0 (got $dur_b s)"
 
+  # The clips alternate only while both exist: the overlap = the shorter length.
+  local overlap
+  overlap=$(awk -v a="$dur_a" -v b="$dur_b" 'BEGIN{printf "%.6f", (a<b)?a:b}')
+
   # The background of the overlay must be the LONGER segment so it survives the
   # tail (eof_action=pass keeps the background once the shorter one ends).
   # A is always input 0, B is always input 1.
@@ -161,8 +165,10 @@ cmd_flicker() {
       black) lut="lutyuv=y=16:u=128:v=128";;
       white) lut="lutyuv=y=235:u=128:v=128";;
     esac
-    # One flash frame at the start of every switch block.
-    parts+=("[vmix]${lut}:enable='eq(mod(n,${F}),0)'[vflash]")
+    # One flash frame at the start of every switch block, but ONLY during the
+    # overlap (t < overlap). Once the shorter clip ends there is nothing to
+    # switch between, so the flashing stops and the longer clip plays clean.
+    parts+=("[vmix]${lut}:enable='eq(mod(n,${F}),0)*lt(t,${overlap})'[vflash]")
     vlabel="vflash"
   fi
 
