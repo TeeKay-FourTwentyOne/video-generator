@@ -125,19 +125,21 @@ function mimeTypeFor(p) {
   return 'image/png';
 }
 
-function buildRequest(promptText, refPaths, aspect, temperature) {
+function buildRequest(promptText, refPaths, aspect, temperature, size) {
   const parts = [];
   for (const rp of refPaths) {
     const data = fs.readFileSync(rp).toString('base64');
     parts.push({ inlineData: { mimeType: mimeTypeFor(rp), data } });
   }
   parts.push({ text: promptText });
+  const imageConfig = { aspectRatio: aspect };
+  if (size) imageConfig.imageSize = size; // '1K' | '2K' | '4K' (Pro only)
   return {
     contents: [{ role: 'user', parts }],
     generationConfig: {
       responseModalities: ['IMAGE', 'TEXT'],
       temperature,
-      imageConfig: { aspectRatio: aspect },
+      imageConfig,
     },
   };
 }
@@ -200,9 +202,10 @@ async function main() {
     `[nano-banana] model=${model} aspect=${aspect} refs=${refs.length} → ${output}\n`
   );
 
+  const size = flags.size; // optional: 1K | 2K | 4K (Pro only)
   const { accessToken, projectId } = await getAccessToken(saPath);
   const url = buildUrl(projectId, model);
-  const body = buildRequest(prompt, refs, aspect, temperature);
+  const body = buildRequest(prompt, refs, aspect, temperature, size);
 
   const res = await fetch(url, {
     method: 'POST',
