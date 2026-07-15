@@ -24,6 +24,7 @@ cd mcp/video-generator && npm install && npm run build
 | Multi-character dialogue | `.claude/rules/dialogue-system.md` |
 | Clip editing & variations | `.claude/rules/editing-system.md` |
 | Agent reference & QA | `.claude/rules/agents.md` |
+| Per-generation clip QA gate | `.claude/rules/clip-acceptance-gate.md` |
 | Advanced hybrid techniques | `TECHNIQUES.md` |
 | **Skills** (auto-triggered) | `.claude/skills/` |
 
