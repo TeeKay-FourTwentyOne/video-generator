@@ -103,7 +103,7 @@ async function getAccessToken(serviceAccountPath) {
 // -------- model selection & URL --------
 
 const MODELS = {
-  pro: 'gemini-3-pro-image-preview', // global endpoint, 4K, reasoning
+  pro: 'gemini-3-pro-image', // global endpoint, 4K, reasoning (GA name; was -preview until ~2026-07)
   flash: 'gemini-2.5-flash-image', // regional, fast, 1024px
 };
 
