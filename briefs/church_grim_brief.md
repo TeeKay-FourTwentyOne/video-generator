@@ -86,4 +86,7 @@ Final: `data/workspace/church-grim/final/church_grim_v1.mp4` — 720×1280, 85.9
 4. S10 breath-puff at ~6s — judged a feature (warm breath = she's really there); confirm at speed.
 5. 4K upscale + loudness re-master on approval.
 
+### v2 — silent-film intertitles (user-directed, 2026-07-21)
+`final/church_grim_v2.mp4` — 720×1280, 99.92s, -15.9 LUFS. VO replaced by 5 nano-generated Rackham intertitle cards (indigo aged card, thorned yew/ivy border, ivory hand-lettering; text trimmed 66→54 words) + matching end title card; cards carry film grain + geq flicker (cards only). Her spoken line kept native — silence breaks once, at the climax. All cards letter-checked (one reroll: nano lettered the prompt word "EXACTLY:" onto card 3). Dialogue + timeline verified. v1 preserved alongside.
+
 **Published:** (pending)
