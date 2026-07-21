@@ -89,4 +89,7 @@ Final: `data/workspace/church-grim/final/church_grim_v1.mp4` — 720×1280, 85.9
 ### v2 — silent-film intertitles (user-directed, 2026-07-21)
 `final/church_grim_v2.mp4` — 720×1280, 99.92s, -15.9 LUFS. VO replaced by 5 nano-generated Rackham intertitle cards (indigo aged card, thorned yew/ivy border, ivory hand-lettering; text trimmed 66→54 words) + matching end title card; cards carry film grain + geq flicker (cards only). Her spoken line kept native — silence breaks once, at the climax. All cards letter-checked (one reroll: nano lettered the prompt word "EXACTLY:" onto card 3). Dialogue + timeline verified. v1 preserved alongside.
 
+### v3 — final refinements (user notes, 2026-07-21)
+`final/church_grim_v3.mp4` — 98.71s, -15.9 LUFS. (a) S1 trimmed to [0,5.4]: cut before the mourner's backward descent, ends on his held look. (b) S3 regenerated per note: dog erupts (rears, snaps, three ringing barks — native audio), the crooked figure whirls in a tatter-storm and is driven down the steps into the mist; first-frame-only submit (anchor-pair-unreachable lesson); clone-check caught a REAL second cloaked figure at t=6.35 in the mist tail (conf 0.95) — trimmed at 6.2. v3 assembled by measured-durations generator.
+
 **Published:** (pending)
