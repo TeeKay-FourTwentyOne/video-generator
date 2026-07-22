@@ -92,4 +92,7 @@ Final: `data/workspace/church-grim/final/church_grim_v1.mp4` — 720×1280, 85.9
 ### v3 — final refinements (user notes, 2026-07-21)
 `final/church_grim_v3.mp4` — 98.71s, -15.9 LUFS. (a) S1 trimmed to [0,5.4]: cut before the mourner's backward descent, ends on his held look. (b) S3 regenerated per note: dog erupts (rears, snaps, three ringing barks — native audio), the crooked figure whirls in a tatter-storm and is driven down the steps into the mist; first-frame-only submit (anchor-pair-unreachable lesson); clone-check caught a REAL second cloaked figure at t=6.35 in the mist tail (conf 0.95) — trimmed at 6.2. v3 assembled by measured-durations generator.
 
+### v4 — PICTURE LOCK + 4K (user frame trims, 2026-07-21)
+User cuts off v3 debug: S1→4.55s, S1b→4.08s, S2→2.94s, S3→2.22s (bark-lunge-CUT); S10 approach shot removed (S9 dusk → S10b night kneel ellipsis). 80.96s, -15.8 LUFS. **4K MASTER: `final/church_grim_v4_4k.mp4`** — 2160×3840, 80.93s, 230MB, realesr-animevideov3 3×. (Upscale task was killed mid-run; salvaged all 1943 AI frames from the orphaned tempdir, re-encoded + remuxed — no re-compute.) Total spend ≈ $25 of $50.
+
 **Published:** (pending)
