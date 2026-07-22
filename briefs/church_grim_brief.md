@@ -95,4 +95,4 @@ Final: `data/workspace/church-grim/final/church_grim_v1.mp4` — 720×1280, 85.9
 ### v4 — PICTURE LOCK + 4K (user frame trims, 2026-07-21)
 User cuts off v3 debug: S1→4.55s, S1b→4.08s, S2→2.94s, S3→2.22s (bark-lunge-CUT); S10 approach shot removed (S9 dusk → S10b night kneel ellipsis). 80.96s, -15.8 LUFS. **4K MASTER: `final/church_grim_v4_4k.mp4`** — 2160×3840, 80.93s, 230MB, realesr-animevideov3 3×. (Upscale task was killed mid-run; salvaged all 1943 AI frames from the orphaned tempdir, re-encoded + remuxed — no re-compute.) Total spend ≈ $25 of $50.
 
-**Published:** (pending)
+**Published:** https://youtube.com/shorts/rhsUdHSvHgE (2026-07-21)
