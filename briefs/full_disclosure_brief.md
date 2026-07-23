@@ -130,3 +130,5 @@ intact. Awaiting final sign-off for upscale.
 
 **4K master (2026-07-22):** approved after v1.1 review; native-4K card renders
 + ESRGAN 2× footage; 65.750s; silence gate verified on final. Ready for upload.
+
+**Published:** https://youtube.com/shorts/IoZBCrzoAAI (shipped 2026-07-22)
