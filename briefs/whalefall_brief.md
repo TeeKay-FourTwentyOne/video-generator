@@ -69,7 +69,7 @@ Act II set pieces = nano black-on-white plates, same-composition chain (mound �
 1080p master + 720p share link (signed URL) + debug-timestamp copy · decisions-queue notes · cost ledger · this brief updated with actuals.
 
 **Workspace:** `data/workspace/whalefall/`
-**Published:** (pending)
+**Published:** https://youtube.com/shorts/01bdjF_Opv8 (2026-07-22)
 
 ## Build log — v1 (overnight 2026-07-21 → 22)
 
