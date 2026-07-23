@@ -68,6 +68,14 @@ ElevenLabs subscription credits (~a few hundred); $0 Veo; QA vision $0 (no Veo f
 >
 > #audioillusion #speechtosong #perception
 
+## Review round 1 → v2 (2026-07-23)
+
+**v1 verdict (user, on phone):** well-made, concept liked, illusion didn't land — "sing-songy before the repetition… never really became more singing like." Diagnosis: v1 casting **maximized** notehood (held notes, slow speed, theatrical pause) = pre-spent the transformation; no distance left to travel.
+
+**Audition rounds:** (1) A–D reel, natural-speed plain reads — user: C (Sarah natural) and D closest, still no flip. (2) Strict transformability scoring (levelness / glide / grid-fit per Tierney, Falk & Rathcke): ALL EL takes glide 12–44 st/s vs <8 needed — EL prosody is continuous micro-glide; measurement says the medium fights this mechanism. (3) VTE pivot reel built (E "unchanged" ×33, F "again" ×52, Warren protocol) as a fallback mechanism. (4) **User ran the canonical-control test** (Deutsch's official demo) and judged **C closest to the real thing → v2 built on C at their direction.** Lesson recorded: the strict metric ranked C low; the instrument outranks the proxy.
+
+**v2:** `final/broken_record_v2.mp4` — take `br_sarah_s1_t1` (pure default synthesis, not even a speed param), segment 1.041s, cycle 1.333s, **14 reps**, gap 0.30s (the reel feel), 51.25s total, −17.2 LUFS. Note levels for this take: 52.6 / 56.0 / 57.8 st (aside wording now derived from measured count). All 18 gates pass. VTE reel parked as pocket pivot if v2 still doesn't land.
+
 ## Risks & mitigations
 
 - **TTS prosody too dynamic to flip** → generate multiple takes/voices, score f0 plateaus, pick best; worst case the loop reads hypnotic-rhythmic rather than overtly melodic — piece still lands via replay contrast. Levers if review says weak: more reps, different span, different voice.
