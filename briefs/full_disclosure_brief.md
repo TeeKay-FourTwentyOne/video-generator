@@ -121,3 +121,9 @@ review (not upscaled). Full decision queue and gate results in
 Wikipedia says Linotype paid royalties until Miedinger's death) and was replaced
 with the documented derivation sting: "Modeled on Akzidenz-Grotesk, designer
 unknown." Score is ElevenLabs, not Suno, per standing project rule.
+
+**v1.1 (2026-07-22):** Stephen's four review tweaks applied — fade-extend open
+(credit line 1s, continuation fades in same frame, period dissolves), ovl03/
+ovl07/ovl10 moved to top third, card 4 "uses Helvetica". New runtime 65.750s;
+audio retimed rigidly, all beat alignments and the true-silence gate verified
+intact. Awaiting final sign-off for upscale.
