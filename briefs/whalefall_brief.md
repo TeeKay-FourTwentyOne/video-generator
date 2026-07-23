@@ -99,3 +99,6 @@ P2b "isolate the ribs" nano call re-interpreted instead (smaller skeleton, repos
 - `final/whalefall_v1.mp4` — 1080×1920 master (NO 4K until review, per standard; final 4K = native re-render at WF_SCALE=2)
 - `final/whalefall_v1_debug.mp4` — burned timestamps
 - 720p share copy + 7-day signed URL (morning review)
+
+### Wrap (2026-07-22)
+User approved v1 same morning. Native 4K re-render (`WF_SCALE=2`, ~40 min): **`final/whalefall_v1_4k.mp4`** — 2160×3840 · 24fps · 95.5s · full-range tags (pc / iec61966-2-1 / bt709) · ~1.36 GB, faststart. Verified frame-identical to the reviewed 1080p at spot timestamps. Intermediate renders (1080p master/silent/debug/720p, 4K silent, scratch segments) deleted; Veo source clips, mattes, refs, and renderer retained. Workspace archived to `data/workspace-archive/whalefall/`. Upload pending.
