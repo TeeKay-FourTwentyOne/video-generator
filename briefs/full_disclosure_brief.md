@@ -127,3 +127,6 @@ unknown." Score is ElevenLabs, not Suno, per standing project rule.
 ovl07/ovl10 moved to top third, card 4 "uses Helvetica". New runtime 65.750s;
 audio retimed rigidly, all beat alignments and the true-silence gate verified
 intact. Awaiting final sign-off for upscale.
+
+**4K master (2026-07-22):** approved after v1.1 review; native-4K card renders
++ ESRGAN 2× footage; 65.750s; silence gate verified on final. Ready for upload.
