@@ -81,6 +81,7 @@ ElevenLabs subscription credits (~a few hundred); $0 Veo; QA vision $0 (no Veo f
 - **User note on v2:** the two sentences run together → **v2.1** inserts 0.30s of true silence at the boundary zero-crossing (perceived ~0.45s with natural decay), identically in intro and replay, so replay==intro stays bit-exact and the loop is untouched. Verified: one 0.301s quiet run in the intro play; all 18 gates pass; 51.85s.
 - **Honesty bookkeeping:** inserting a pause is an arrangement edit, so the claim card dropped "one take. no edits." → now two bulletproof lines ("a synthetic voice will speak. / nothing about the recording will change."). One-take provenance stays in the description/credits.
 - **Native 4K:** full pipeline parameterized `BR_SCALE=2` → 2160×3840 re-render (contract layout, render geometry/type, QA dims all scale; single-frame check verified before the long encode). No ESRGAN, per house recipe for programmatic pieces.
+- **4K master BUILT + verified (2026-07-23):** `final/broken_record_v2_1_4k.mp4` — 2160×3840@60, 51.85s, 35MB, all 18 gates pass at scale (incl. rep identity + color tags). Uploaded to `gs://vg-veo-0137184346/broken-record/`. Ready to ship on user's word; description draft above.
 - Build gotcha for the shelf: `set -e` + `$([ cond ] && echo suffix)` in an assignment kills the script silently when the condition is false — Ep.2's build.sh carries the same landmine. Use an `if`.
 
 ## Risks & mitigations
