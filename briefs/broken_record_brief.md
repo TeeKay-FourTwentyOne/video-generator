@@ -1,5 +1,7 @@
 # BROKEN RECORD — brief (overnight v1, 2026-07-22)
 
+**Published:** https://youtube.com/shorts/mfzTxbwbuRY (shipped 2026-07-24, v2.1 native 4K, 51.85s, ~$0)
+
 **Mandate:** overnight autonomous build; "another visual / audio illusion effects video"; 9:16; 30–70s; series-or-standalone = my call. Goal set: complete v1 tonight. **No 4K until user review** (house standard).
 
 ## Decision: standalone, not FALSE COLOR Ep.3
