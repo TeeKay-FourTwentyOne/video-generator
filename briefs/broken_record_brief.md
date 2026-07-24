@@ -76,6 +76,13 @@ ElevenLabs subscription credits (~a few hundred); $0 Veo; QA vision $0 (no Veo f
 
 **v2:** `final/broken_record_v2.mp4` — take `br_sarah_s1_t1` (pure default synthesis, not even a speed param), segment 1.041s, cycle 1.333s, **14 reps**, gap 0.30s (the reel feel), 51.25s total, −17.2 LUFS. Note levels for this take: 52.6 / 56.0 / 57.8 st (aside wording now derived from measured count). All 18 gates pass. VTE reel parked as pocket pivot if v2 still doesn't land.
 
+## v2.1 + 4K (2026-07-23)
+
+- **User note on v2:** the two sentences run together → **v2.1** inserts 0.30s of true silence at the boundary zero-crossing (perceived ~0.45s with natural decay), identically in intro and replay, so replay==intro stays bit-exact and the loop is untouched. Verified: one 0.301s quiet run in the intro play; all 18 gates pass; 51.85s.
+- **Honesty bookkeeping:** inserting a pause is an arrangement edit, so the claim card dropped "one take. no edits." → now two bulletproof lines ("a synthetic voice will speak. / nothing about the recording will change."). One-take provenance stays in the description/credits.
+- **Native 4K:** full pipeline parameterized `BR_SCALE=2` → 2160×3840 re-render (contract layout, render geometry/type, QA dims all scale; single-frame check verified before the long encode). No ESRGAN, per house recipe for programmatic pieces.
+- Build gotcha for the shelf: `set -e` + `$([ cond ] && echo suffix)` in an assignment kills the script silently when the condition is false — Ep.2's build.sh carries the same landmine. Use an `if`.
+
 ## Risks & mitigations
 
 - **TTS prosody too dynamic to flip** → generate multiple takes/voices, score f0 plateaus, pick best; worst case the loop reads hypnotic-rhythmic rather than overtly melodic — piece still lands via replay contrast. Levers if review says weak: more reps, different span, different voice.
