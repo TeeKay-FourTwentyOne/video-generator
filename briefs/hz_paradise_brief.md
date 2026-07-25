@@ -1,11 +1,35 @@
 # HELLZAPOPPIN' LIVE! at The Paradise Theater
-## Production brief — built overnight 2026-07-23/24 · v1 awaiting review
+## Production brief — v1 overnight 2026-07-23/24 · **v2 rebuilt 2026-07-24 from user review notes**
 
 **Series:** Hellzapoppin' — first episode fully helmed by Claude (creative implementation end-to-end).
 **Source spine:** `~/Downloads/the-gods-spine-v1.md` (concept developed jointly in UI chat).
-**Format:** 9:16, 1080x1920 native, 24fps, **77.9s** (cap was 90). No upscale (per standing rule).
-**Master:** `data/workspace/hz-paradise/final/hz_paradise_v1b.mp4`
+**Format:** 9:16, 1080x1920 native, 24fps, **71.0s** (v1 was 77.9; cap 90). No upscale (per standing rule).
+**Master:** `data/workspace/hz-paradise/final/hz_paradise_v2b.mp4` (v1 master retained alongside)
 **Published:** *(pending review)*
+
+### v2 in one paragraph
+All six review notes addressed: the banner now fills the frame and burns away like flash paper (real Veo);
+the gods cutaways are real film with the heckler visibly enthroned in the seat the spotlight later finds;
+a new seize-in-the-stands beat makes the stagehand grab legible; the hat-conjure is cut and the wind-up
+reshot bareheaded (hat stays fallen on the boards); the hook now visibly RIPS him off his feet on film —
+caught at the very top of the inhale, not one syllable out (Veo's added vocal muted, cut rides to the peak);
+and the post-close is rebuilt around the user's palm reference — ringed trunk, terracotta pot, and a vintage
+microphone the palm pointedly does not need. New darker dialogue; curtain recast DEEP (Deep Ray) with one
+deliberate slip back into v1's Monty on "You always know." Palm closeup is a programmatic still-push after
+Veo twice inserted a human hand tending the fronds (stills-for-stillness doctrine).
+
+### v2 numbers
+| Item | Value |
+|---|---|
+| Veo | 12 submissions, 64 Veo-s (incl. 1 palm reroll — the only reroll) → **$6.40** |
+| Nano Banana Pro | 16 generations (full-bleed banner, gods series, anchors, palm/mic plate) → ~$2.40 |
+| QA (anchor-drift 3, clip-qa 10, clone-check 5, ledgered) | → **$2.82** |
+| ElevenLabs | 9 TTS takes (new dialogue + deep-curtain casting), 3 SFX — subscription credits |
+| **v2 cash** | **≈ $11.62** · **cumulative ≈ $24.07 of $100** |
+
+### v2 dialogue (post-close)
+CURTAIN *(deep — Deep Ray)*: "They fed the hook again tonight." · PALM: "I know." ·
+CURTAIN *(the slip — v1's Monty)*: "You always know." · PALM: "The pot gets heavier." · *snap.*
 
 ---
 
