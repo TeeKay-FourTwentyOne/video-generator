@@ -123,3 +123,14 @@ HELLZAPOPPIN' LIVE! at The Paradise Theater — where the seats talk back.
 Creative direction: Stephen (a][ productions) · Implementation: Claude Code ·
 Video: Google Veo · Frames: Nano Banana Pro · Voices & music: ElevenLabs · Assembly: ffmpeg
 #vaudeville #aifilm #comedy #shorts
+
+### v3 (2026-07-25, review round 2)
+Heckler VO removed — his native on-film voice carries all three heckles ("Stop!" / "Absolute rubbish!" /
+a rerolled native "No."), stings die on the native onsets (third dies at the cut so the quiet "No." lands
+in silence). Charge rerolled (boots on treads, manager's face holds — he now audibly yells "Get up there!
+Move! Move! Move!"). Stage heckler rematched to the gods face: s4b/s5b/s6 reshot as a pixel chain (s5b's
+first frame = s4b's last; s6's anchor = s5b's peak + pole, anchor-drift PASS — no background pop at the
+hook). Wind-up is breath-only slapstick inflation, verified fully silent; the hook takes him eyes-front at
+maximum load. Yank runs live to 1.6s then freeze-holds (gate caught the hat ghost-gliding in the tail).
+**73.3s master:** `final/hz_paradise_v3b.mp4` · v3 spend ≈ **$4.80** (30 Veo-s, 2 nano, ~$1.50 QA) ·
+**cumulative ≈ $29 of $100.**
