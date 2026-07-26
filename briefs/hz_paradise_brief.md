@@ -134,3 +134,15 @@ hook). Wind-up is breath-only slapstick inflation, verified fully silent; the ho
 maximum load. Yank runs live to 1.6s then freeze-holds (gate caught the hat ghost-gliding in the tail).
 **73.3s master:** `final/hz_paradise_v3b.mp4` · v3 spend ≈ **$4.80** (30 Veo-s, 2 nano, ~$1.50 QA) ·
 **cumulative ≈ $29 of $100.**
+
+### v4 (2026-07-25, review round 3)
+Stage sequence rebuilt from scratch as one pixel chain: stagehands HURL him in from the right wing
+(full sprawl → dignity restored to the millimeter), the beloved body-swell survives in a looming
+low-angle medium (Veo's push-in during the toss kept as intentional — the house closing in), and the
+hook finally does its whole job on film: enters, visibly GRABS his swollen middle, fells him, and DRAGS
+him off with his legs kicking — real empty settle after, no freeze needed, no trapdoor needed. Crowd
+clip moved from 36s to the singer→magician gap; flash SFX synced to ignition; ending variation is the
+GOTHIC curtain (open-mouthed mask; v2's soft take one swap away) and the palm's closeup is finally real
+Veo (attempt 3, no hand) — its one frond dip lands on "I know."
+**74.6s master:** `final/hz_paradise_v4b.mp4` · v4 spend ≈ **$5.55** (34 Veo-s, 2 nano, ~$1.85 QA) ·
+**cumulative ≈ $34.60 of $100.**
