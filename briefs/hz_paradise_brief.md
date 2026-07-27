@@ -146,3 +146,14 @@ GOTHIC curtain (open-mouthed mask; v2's soft take one swap away) and the palm's 
 Veo (attempt 3, no hand) — its one frond dip lands on "I know."
 **74.6s master:** `final/hz_paradise_v4b.mp4` · v4 spend ≈ **$5.55** (34 Veo-s, 2 nano, ~$1.85 QA) ·
 **cumulative ≈ $34.60 of $100.**
+
+### v5 (2026-07-25/26, review round 4)
+The hook is retired; the TRAPDOOR takes him — teeter, plummet-blur, the open hatch breathing dust,
+and the door drifting shut flush in the boards: the stage swallowed him and closed its mouth. Stage
+chain rebuilt with the gods face identity-locked (face-ref'd anchor, frame-qa'd pre-spend, identity
+prose verbatim in every prompt — the man on stage IS the man in the seats at last). The crowd cutaway
+is now a 36-frame palindrome loop (1.5s, silent, per user spec) — Veo's cheesy cheer never appears.
+Swell holds max inflation to the cut; push-in scripted rather than accidental. Mix rebalanced
+(drop + burn stacks were hot) → -17.0 LUFS / -1.0 dBTP.
+**76.3s master:** `final/hz_paradise_v5b.mp4` · v5 spend ≈ **$3.60** (22 Veo-s, 2 nano, ~$1.10 QA) ·
+**cumulative ≈ $38.20 of $100.**
