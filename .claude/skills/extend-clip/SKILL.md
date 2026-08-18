@@ -33,11 +33,12 @@ itself a skip. Never use `splice.cjs --align` / `--trim-a` (structural no-op
    exists.)
 2. **Budget preflight — before EVERY submission, through any entry point:**
    ```bash
-   python3 tools/veo-budget.py preflight --model fast --seconds 4 \
+   python3 tools/veo-budget.py preflight --model quality --seconds 4 \
      --resolution 720p --audio no --note "B continuation of <shot>"
    ```
    Abort on non-zero. Then submit with every parameter EXPLICIT (model
-   `veo-3.1-fast-prod` or `veo-3.1-prod` — never bare `veo-3.1-fast`;
+   `veo-3.1-prod` at **720p** — fast measured as non-binding (status block
+   below), and 1080p demotes anchors on both models; never bare `veo-3.1-fast`;
    durationSeconds in {4,6,8}; generateAudio; resolution) — a bare call
    defaults to quality/8s and bills $1.60–$3.20. First-frame-only
    conditioning; lastFrame-only is invalid and still bills.
@@ -48,12 +49,16 @@ itself a skip. Never use `splice.cjs --align` / `--trim-a` (structural no-op
    moment (same instant, not the next); keeping A's anchor frame duplicates a
    beat. Verified argmin: RATIO 1.64/0.94/1.59 at A-end 189/190/191 on a
    frame-191 anchor.
-5. **Expect the restart stall and trim it.** Veo opens continuations from
-   near-rest: ~0.25 of A's tail velocity, ramping back over ~12 frames — a
-   ~0.4s visible hitch that no boundary-pair metric sees. In the calibrated
-   high-motion case the fix is a B head-trim: both-channels pass window at
-   B-start 5–9, sweet spot 6 (~0.25s). The stall makes the trim
-   photometrically cheap — B barely moves while stalled.
+5. **Expect the restart stall and trim it — but check WHICH stall.** Two
+   measured kinematic failure shapes (seam-findings §7):
+   - **restart-ramp**: B opens ~0.3× of A's tail velocity and ramps back
+     over ~12 frames. Head-trim works: calibrated pass window at B-start
+     5–9, sweet spot 6 (~0.25s). The stall makes the trim photometrically
+     cheap — B barely moves while stalled.
+   - **slow-run**: B runs FLAT at ~0.45× with no ramp (cycle-2 720p fast
+     arm). A flat head series has nothing to trim into — head-trim is
+     structurally useless; reroll or fall back. Look at the B-head delta
+     series before sweeping.
 6. **Gate the join — both channels, never blended:**
    ```bash
    python3 tools/seam-check.py --pair A.mp4:190 B.mp4:6
@@ -70,16 +75,25 @@ itself a skip. Never use `splice.cjs --align` / `--trim-a` (structural no-op
 
 - **Calibrated on**: the hz-paradise pixel chain (repo's shipped footage).
   The anchor−1 rule and the stall are measured facts there.
-- **PENDING cycle 2 (~$0.72 A/B)**: does a supplied anchor PNG actually bind
-  B[0] on `veo-3.1-fast-prod` at 720p/1080p? Branches specified in
-  seam-findings §7. Until it lands, treat pixel-chaining as unproven on
-  fresh generations.
-- **Working hypothesis, not yet doctrine**: if prompt language cannot carry
-  velocity and head-trimming cannot recover it in low-motion regimes
-  (swell→trapdoor failed at every cut: best RATIO 2.94, VR 0.25), the honest
-  rule becomes "**joins are invisible only at motion nulls**" — plan cut
-  points at natural pauses, or spend the join on a deliberate reframe cut.
-  Do not re-litigate with new spend once the evidence is in.
+- **MEASURED cycle 2 (2026-08-17, $1.04 ledgered): `veo-3.1-fast-prod` does
+  NOT pixel-bind a first-frame anchor at 720p OR 1080p.** Identity/wardrobe/
+  set bind; geometry restages non-rigidly (25.5 / 18.5 dB vs the
+  conditioning PNG; no head-trim pass window on either arm; no global
+  translation or uniform scale recovers it). Motion-only "continue at the
+  same speed" prose did not carry velocity (VR 0.45 / 0.33). **Do not
+  attempt pixel-chained continuations on the fast model.** Evidence:
+  seam-findings §7; paid artifacts in `tests/fixtures/extend-clip/`.
+- **PENDING cycle 3 ($0.80, the last binding question)**: does `veo-3.1-prod`
+  QUALITY at **720p** bind (church-grim 2026-07-20 observed near
+  pixel-exact, never instrumented)? Until it lands, treat pixel-chaining as
+  unavailable, full stop.
+- **Working hypothesis, not yet doctrine**: if quality-720p also fails to
+  bind — or binds but velocity cannot be carried or trimmed (slow-run
+  shape) — the honest rule becomes "**joins are invisible only at motion
+  nulls**" — plan cut points at natural pauses, or spend the join on a
+  deliberate reframe cut (low-motion regime already failed every cut:
+  swell→trapdoor best RATIO 2.94, VR 0.25). Do not re-litigate with new
+  spend once cycle 3 is in.
 
 ## Money
 
