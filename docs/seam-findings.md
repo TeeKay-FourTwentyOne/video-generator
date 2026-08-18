@@ -205,15 +205,60 @@ hard cut 25.78/FAIL, 12px translation 2.92/FAIL.
   append-before-submit). Reconcile at project end via `tools/gcp/bq.cjs`
   (~5h lag — it cannot guard live; a prior self-estimate undercounted 2x).
 
-## 7. Open (cycle 2, the only paid question): does the anchor bind?
+## 7. ANSWERED (cycle 2, 2026-08-17): the anchor does NOT bind on fast
 
-Everything above was measured on a chain generated through the repo's normal
-pipeline. Unknown: how tightly `veo-3.1-fast-prod` reproduces a supplied
-first-frame anchor (720p vs 1080p), which decides whether the anchor−1 rule
-and the head-trim rule survive on fresh generations. The A/B is specified in
-the tracker's nextPush (~$0.72 total, two 4s silent fast arms). Branches:
-≥40 dB PSNR vs the conditioning PNG → drop-one-frame is mandatory, proceed to
-velocity-prompt experiments; 25–40 dB → head-trim sweep decides; <25 dB on
-both arms → anchors don't bind, pixel-chain premise is dead, pivot to
-documented fallbacks (deliberate reframe cut, setpts slow-extension,
-self-xfade loop units) and stop spending.
+Two 4s silent first-frame-only continuations of `s4bv5_toss.mp4`'s true last
+frame (frame 191 via `tools/last-frame.sh`, RAW mp4), `veo-3.1-fast-prod`,
+9:16, same motion-only prompt, measured with
+`data/workspace/seamless-joins/scratch/measure.py` (frame-0 PSNR/MAE + a
+B-start 0–12 `seam-check --pair` sweep against A:190):
+
+| arm | seed | B[0] vs anchor | seam RATIO @k0 | VR @k0 | sweep pass window |
+|---|---|---|---|---|---|
+| 720p | 2481 | **25.5 dB / MAE 7.30** | 2.775 | 0.445 | **NONE** (ratio rises 2.8→5.6 with trim) |
+| 1080p | 1137 | **18.5 dB / MAE 16.32** | 2.201 | 0.328 | **NONE** (ratio 1.8–3.2 everywhere) |
+
+What actually happens: the anchor binds IDENTITY, WARDROBE and SET —
+appearance the prompt never mentioned is reproduced exactly — but not
+GEOMETRY. Both arms restage the composition (subject larger, head near frame
+top, coat drape and cloth texture re-drawn). The restage is **non-rigid**: no
+global translation within ±12 px and no uniform scale in 0.84–1.16×
+reduces the mismatch (mean signed diff 0.39 — not a grade shift), so no
+aligner could rescue it, retroactively confirming §6's `--align` verdict.
+This replicates church-grim's 1080p anchor-demotion on the QUALITY model
+(2026-07-20) and extends it: on FAST it happens at 720p too.
+
+Two distinct kinematic failures, only one of which head-trim can fix:
+
+- **restart-ramp** (1080p arm; also the shipped chain in §2): opens ~0.3× and
+  ramps back over ~12 frames. Trimming into the ramp works when the clip
+  eventually reaches A's velocity.
+- **slow-run** (720p arm, NEW): B runs FLAT at ~0.45× of A's tail velocity
+  (head deltas ~1.4 vs A's ~3.2, no ramp in 13 frames). A flat series has
+  nothing to trim into — head-trim is structurally useless here. Words in the
+  prompt ("continues at the same speed from the very first frame") did not
+  carry velocity.
+
+RAI note: the first 720p attempt (seed 1137, the seed that PASSED at 1080p)
+was output-filtered — `raiMediaFilteredCount 1`, support code 29310472. The
+output filter is stochastic per-sample; budget for retries. Vertex's message
+says blocked videos are not charged; the $0.32 stays on the ledger until the
+BQ reconcile proves it either way.
+
+**Verdict: pixel-chaining on `veo-3.1-fast-prod` is dead at both
+resolutions.** Every artifact is preserved in `tests/fixtures/extend-clip/`
+(paid, non-regenerable; offline repro commands in its manifest.json).
+
+## 8. Open (cycle 3, one paid question, $0.80): does QUALITY bind at 720p?
+
+The one remaining live hypothesis, from church-grim (2026-07-20, observed
+near pixel-exact but never instrumented): `veo-3.1-prod` at **720p** binds
+first-frame anchors tightly, and 1080p is where demotion begins. One 4s
+silent 720p quality arm ($0.80), same anchor, same prompt, same
+measure.py, decides it. If it binds (≥ ~35 dB): extend-clip becomes
+"quality-720p only", and the same clip's VR answers whether quality also
+fixes the velocity handoff (if VR still fails, the head-trim sweep on a
+BOUND B is exactly the calibrated §3 machinery). If it does not bind:
+the pixel-chain premise is dead on every current door, and extend-clip's
+"joins are invisible only at motion nulls" constraint graduates from
+working hypothesis to doctrine — stop spending.
