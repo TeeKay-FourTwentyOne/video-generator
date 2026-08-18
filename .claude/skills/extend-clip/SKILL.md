@@ -1,6 +1,6 @@
 ---
 name: extend-clip
-description: Extend a shot across a Veo generation boundary — make clip B continue clip A with no visible cut, jump, or skip. Use when a single action must run longer than one generation allows. MEASURED DOCTRINE (2026-08-17): pixel-chaining does NOT work on any current door — first-frame anchors restage geometry on fast AND quality, so joins are invisible only at motion nulls; plan the boundary, don't chase the bind. The join point is known A PRIORI by construction (B is anchored on A's last frame), so do NOT use the splice skill here — splice searches for an UNKNOWN join point and prefers low-motion plateaus, which is exactly backwards for continuations (a low-motion B opening is the defect, not the join point). Gates every join with tools/seam-check.py: two channels, photometric and kinematic, never blended.
+description: Extend a shot across a Veo generation boundary — make clip B continue clip A with no visible cut, jump, or skip. Use when a single action must run longer than one generation allows. MEASURED DOCTRINE (revised 2026-08-18 after human review): a first-frame anchor does NOT pixel-bind — B[0] restages geometry on fast and quality alike — but the resulting join is USABLE ANYWAY. Two chained joins were watched and judged clearly acceptable ("tiny things, largely dismissible"), so pixel-chaining is a working technique, not a dead one. Chain the shot, land every boundary in BUSY MOTION (a one-frame restage reads as motion; on a held beat it reads as a cut), end A at anchor−1, join with the concat filter, and gate with tools/seam-check.py — two channels, photometric and kinematic, never blended.
 allowed-tools: Read, Bash
 ---
 
@@ -10,25 +10,42 @@ Continue shot A with a fresh generation B so the pair reads as one shot.
 Everything here is calibrated in `docs/seam-findings.md` (2026-08-17); the
 budget rules are hard project constraints.
 
-## DOCTRINE (measured, closed — do not re-litigate with spend)
+## DOCTRINE (revised 2026-08-18 — the 08-17 version was wrong)
 
-**Joins are invisible only at motion nulls.** A first-frame anchor does not
-pixel-bind B[0] on any current model/resolution (evidence below), so a
-continuation across a generation boundary always carries a geometric
-restage pop, and mid-motion it also carries a velocity mismatch. Plan the
-extension instead:
+**Chaining works. Land every boundary in busy motion.**
 
-1. **Write the boundary into the action**: end A at a natural pause — a
-   settle, a held look, a completed gesture — and open B from that same
-   still beat. Low motion hides the restage worst-case least badly, but
-   even the best low-motion cut measured on shipped footage failed the gate
-   (swell→trapdoor RATIO 2.94, VR 0.25) — so verify, never assume.
-2. **Or spend the join on a deliberate reframe cut**: a cut that reads as
-   editorial intent (new angle, new framing) is invisible BECAUSE it is
-   visible — continuity of action, not of pixels, carries it. This is the
-   reliable path for mid-motion extensions.
-3. Either way, **gate the result with seam-check** (below). Exit 3 = the
-   join ships as a visible skip; re-plan the boundary, don't reroll B.
+The 2026-08-17 doctrine said "joins are invisible only at motion nulls" and
+declared the technique dead. That conclusion came from metrics alone; no one
+had watched a join. When the owner finally did, he judged both clearly
+acceptable — "much better than what we've had in videos up to this point,"
+with only "tiny things, largely dismissible." **The measurements were right
+and the conclusion drawn from them was wrong**, in three specific ways:
+
+- The gate tested FRAME-EXACTNESS (band 0.60–1.50 = statistically
+  indistinguishable from the clip's own motion). That is far stricter than
+  visibility. The approved joins scored 2.02 and 2.84.
+- The old fail line sat BELOW a single dropped frame (1.84), and a dropped
+  frame at 24fps is itself usually invisible.
+- Anchor binding was scored against ~40 dB, a codec-fidelity standard.
+  "Does Veo reproduce the frame?" (no) is not "does the join look bad?"
+
+So the restage is real — B[0] is a loose regeneration of the anchor, not a
+copy — but it lasts ONE FRAME PAIR, 42ms, and the eye does not resolve it
+unless the surroundings are quiet. Hence the rule, which inverts the old one:
+
+1. **End every A segment MID-MOTION.** Busy motion is where the restage
+   hides; a held beat is where it reads as a cut. This is the opposite of
+   splice doctrine and the single most important instruction here.
+2. **End A at anchor−1** — B[0] regenerates A's final moment, so keeping
+   both duplicates a frame.
+3. **Prefer the quality tier for continuous motion** (it carries velocity
+   across the boundary); if using fast, trim B's head to where its motion
+   energy reaches A's tail (~6 frames, free).
+4. **Gate with seam-check in its default perceptual mode.** MARGINAL is a
+   shipping verdict, not a defect. FAIL means re-plan the boundary.
+
+Still true from the old doctrine: a deliberate reframe cut remains the
+reliable fallback when a boundary genuinely cannot land in motion.
 
 ## Why this is not splice
 
@@ -96,7 +113,7 @@ itself a skip. Never use `splice.cjs --align` / `--trim-a` (structural no-op
    demuxer `-c copy`, which corrupts the container (r_frame_rate 120/1) when
    audio is present.
 
-## Status / supported constraints (project CLOSED 2026-08-17)
+## Status / supported constraints (REOPENED 2026-08-18 — technique in use)
 
 - **Calibrated on**: the hz-paradise pixel chain (repo's shipped footage).
   The anchor−1 rule and the restart stall are measured facts there.
@@ -112,11 +129,25 @@ itself a skip. Never use `splice.cjs --align` / `--trim-a` (structural no-op
   NEW: quality does NOT restart from rest — VR 0.64, flat head series, the
   kinematic channel passes at every trim. The two models fail on OPPOSITE
   channels, which is why the gate is two-channel and never blended.
-- **DOCTRINE (graduated from hypothesis, cycle 3): joins are invisible only
-  at motion nulls.** Pixel-chaining is unavailable on every current door.
-  Evidence: seam-findings §7–§8; paid artifacts in
-  `tests/fixtures/extend-clip/` (non-regenerable — do not delete). Do not
-  re-litigate with new spend.
+- **HUMAN REVIEW 2026-08-18 — the finding that reopened this.** The two
+  chained joins above were rendered and watched for the first time. Verdict:
+  "close enough to be much better than what we've had in videos up to this
+  point… tiny things but largely dismissible." Both were statistical
+  outliers against their own footage (RATIO 2.02 vs material p99 1.354;
+  2.84 vs 1.699) and were dismissed anyway. **Human tolerance is wider than
+  statistical indistinguishability** — a single-frame spike at 24fps is not
+  resolved by the eye until it is large. The bind never happened; the
+  technique works regardless.
+- **Gate recalibrated the same day.** `seam-check.py` gained two modes:
+  `perceptual` (default; upper bound = max(3.0 provisional perceptual
+  ceiling, the material's own p99), kinematic failure downgraded to a
+  warning since head-trimming repairs it) and `strict` (the old fixed
+  0.60–1.50 band, still used by `tests/fixtures/seam/` and correct for
+  verifying a pure edit). The 3.0 ceiling rests on TWO human labels — treat
+  it as provisional and record every new verdict in seam-check.py's header
+  so the number keeps its provenance.
+- Evidence: seam-findings §7–§8; paid artifacts in
+  `tests/fixtures/extend-clip/` (non-regenerable — do not delete).
 
 ## Money
 
