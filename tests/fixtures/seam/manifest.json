@@ -1,0 +1,52 @@
+{
+  "description": "Five seam defect fixtures regenerated offline from s5bv5_swell.mp4 (+ s6v5_trapdoor.mp4 for the hard cut). Zero API calls. Validates tools/seam-check.py: exit codes and RATIO bands. Bands, not exact decimals, because libx264 output can drift across ffmpeg versions; measured values from 2026-08-17 (ffmpeg on darwin) recorded for reference.",
+  "source_clips": {
+    "primary": "data/workspace/hz-paradise/clips/s5bv5_swell.mp4",
+    "hardcut_b": "data/workspace/hz-paradise/clips/s6v5_trapdoor.mp4",
+    "archive_fallback_prefix": "data/workspace-archive/hz-paradise/clips/"
+  },
+  "seam_frame": 96,
+  "cases": [
+    {
+      "name": "clean",
+      "what": "frame-exact split at 96 + concat-filter rejoin — the editing stack must be neutral",
+      "frames": 192,
+      "expect_exit": 0,
+      "ratio_min": 0.95,
+      "ratio_max": 1.30,
+      "measured_2026_08_17": { "ratio": 1.120, "velocity_ratio": 1.242, "seam_delta": 6.978 }
+    },
+    {
+      "name": "dup",
+      "what": "injected duplicate frame at the seam (B re-opens on A's final frame) — the defect a one-sided PSNR gate REWARDS",
+      "frames": 193,
+      "expect_exit": 3,
+      "ratio_max": 0.10,
+      "measured_2026_08_17": { "ratio": 0.052, "velocity_ratio": 1.242, "seam_delta": 0.340 }
+    },
+    {
+      "name": "drop",
+      "what": "injected dropped frame at the seam (double motion step)",
+      "frames": 191,
+      "expect_exit": 3,
+      "ratio_min": 1.7,
+      "measured_2026_08_17": { "ratio": 1.842, "velocity_ratio": 1.210, "seam_delta": 11.390 }
+    },
+    {
+      "name": "hardcut",
+      "what": "unrelated-clip hard cut (swell first half -> trapdoor first half)",
+      "frames": 192,
+      "expect_exit": 3,
+      "ratio_min": 20,
+      "measured_2026_08_17": { "ratio": 25.781, "velocity_ratio": 0.093, "seam_delta": 27.675 }
+    },
+    {
+      "name": "shift12",
+      "what": "synthetic pure 12px horizontal translation at the seam (geometric jump; 12px at 1080w = 3px at the 270px proxy)",
+      "frames": 192,
+      "expect_exit": 3,
+      "ratio_min": 2.0,
+      "measured_2026_08_17": { "ratio": 2.919, "velocity_ratio": 1.224, "seam_delta": 18.188 }
+    }
+  ]
+}
