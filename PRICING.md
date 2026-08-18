@@ -4,16 +4,29 @@ Last updated: 2026-03-01
 
 ## Veo Video Generation (Vertex AI)
 
-| Model ID | $/sec | 4s clip | 6s clip | 8s clip | Audio | Resolution | Notes |
-|----------|-------|---------|---------|---------|-------|------------|-------|
-| `veo-3.1-generate-preview` | $0.40 | $1.60 | $2.40 | $3.20 | Native | 720p/1080p/4K | Best quality, current default |
-| `veo-3.1-fast-generate-preview` | $0.15 | $0.60 | $0.90 | $1.20 | Native | 720p/1080p/4K | **Draft model** — 62% cheaper |
-| `veo-3.1-fast-generate-preview` (no audio) | $0.10 | $0.40 | $0.60 | $0.80 | No | 720p/1080p/4K | Cheapest option |
-| `veo-2.0-generate-001` | $0.50 | $2.00 | $3.00 | $4.00 | No | Up to 1080p | Legacy, no audio |
+Rates verified against the GCP billing export 2026-08-17 (the previous
+cheap-tier numbers in this file were wrong on every row). $/REQUESTED second:
 
-Stable model IDs (use `-001` suffix for production, `-preview` for latest):
-- `veo-3.1-generate-001` / `veo-3.1-generate-preview`
-- `veo-3.1-fast-generate-001` / `veo-3.1-fast-generate-preview`
+| Tier | Resolution | Audio | $/sec | 4s | 6s | 8s |
+|------|-----------|-------|-------|-----|-----|-----|
+| fast (`veo-3.1-fast-prod`) | 720p | no | $0.08 | $0.32 | $0.48 | $0.64 |
+| fast | 1080p | no | $0.10 | $0.40 | $0.60 | $0.80 |
+| fast | 720p | yes | $0.10 | $0.40 | $0.60 | $0.80 |
+| fast | 1080p | yes | $0.12 | $0.48 | $0.72 | $0.96 |
+| quality (`veo-3.1-prod`) | any | no | $0.20 | $0.80 | $1.20 | $1.60 |
+| quality | any | yes | $0.40 | $1.60 | $2.40 | $3.20 |
+
+Billing rules (all verified against the export):
+- **Every submission bills** — RAI-filtered and hung operations included.
+- **Duration snaps by a floor rule and bills the snapped value** (a 7s request
+  bills 8s). Only request durations in {4, 6, 8}.
+- Model aliases: use `veo-3.1-fast-prod` / `veo-3.1-prod`. The bare alias
+  `veo-3.1-fast` maps to a dead preview model (veo.ts:17); bare names 404.
+- Both MCP entry points (`submit_veo_generation`, `create_job`) default to the
+  QUALITY model at 8s with audio/resolution unsent — a bare call bills
+  $1.60–$3.20. Pass `model`, `durationSeconds`, `generateAudio`, `resolution`
+  explicitly on every call, and run `python3 tools/veo-budget.py preflight`
+  first on budget-capped projects.
 
 ## Imagen Image Generation (Vertex AI)
 
@@ -37,8 +50,8 @@ Used for: character lock reference images, first/last frame generation, environm
 ### Per-Shot Cost
 
 ```
-draft_cost = num_drafts × duration × $0.15    (Veo 3.1 Fast)
-final_cost = 1 × duration × $0.40             (Veo 3.1)
+draft_cost = num_drafts × duration × $0.08-0.12  (Veo 3.1 Fast; see tier table)
+final_cost = 1 × duration × $0.40                (Veo 3.1 quality + audio)
 frame_cost = num_reference_images × $0.04      (Imagen, if needed)
 shot_total = draft_cost + final_cost + frame_cost
 ```
@@ -68,9 +81,9 @@ total         = video_cost + audio_cost + image_cost
 
 ### How It Works
 
-1. **Draft pass**: Generate with `veo-3.1-fast` ($0.15/sec) to preview compositions
+1. **Draft pass**: Generate with `veo-3.1-fast-prod` ($0.08–0.12/sec by res/audio) to preview compositions
 2. **Review**: Pick drafts that work (composition, movement, framing)
-3. **Final pass**: Re-generate with `veo-3.1` ($0.40/sec) using same seed OR extracted frames
+3. **Final pass**: Re-generate with `veo-3.1-prod` ($0.40/sec with audio) using same seed OR extracted frames
 
 ### Seed Replay (Preferred)
 
