@@ -33,11 +33,31 @@ Near-static branch: when the pooled neighbour median falls below
 (dividing by noise), so the gate fails on ABSOLUTE seam delta instead
 (--static-abs-fail, default 2.0) and reports which branch fired.
 
+TWO MODES (2026-08-18). The original fixed band 0.60-1.50 answers "is this
+join FRAME-EXACT?" — the right question for verifying an edit did not corrupt
+anything. It is the WRONG question for a generative join, and the difference
+is not academic: measured on real footage, 10.8% of ordinary uncut frame pairs
+in s5bv5_swell.mp4 score above 1.50, and 3% score above 1.965 — the score of a
+Veo continuation a human reviewer judged clearly acceptable. A fixed band is
+content-blind; busy footage naturally exceeds it.
+
+  --mode perceptual (DEFAULT)  Upper photometric bound is derived from the
+      material itself: the 99th percentile of the ordinary in-clip RATIO
+      distribution, floored at the strict 1.50 so it can only ever widen.
+      A seam is FAIL only when it exceeds what the clip's own motion already
+      does. Lower bound stays 0.60 — a freeze is wrong at any content level.
+      A kinematic-only failure downgrades to MARGINAL rather than FAIL,
+      because the stall has a known free repair (trim B's head to where its
+      motion energy reaches A's tail).
+  --mode strict                Exactly the pre-2026-08-18 behaviour, fixed
+      band both channels. Use for regression fixtures and for verifying that
+      a pure edit (cut/rejoin/re-encode) introduced nothing.
+
 Usage:
   seam-check.py --at N file.mp4              # seam between frames N-1 and N
   seam-check.py --pair A.mp4:AI B.mp4:BI     # join A's frame AI -> B's frame BI
-Options: --width 270  --json
-Exit: 0 pass, 2 usage/decode error, 3 gate fail.
+Options: --mode perceptual|strict  --width 270  --json  --profile-percentile 99
+Exit: 0 pass or marginal, 2 usage/decode error, 3 gate fail.
 
 Windows: --at decodes frames N-12..N+12 of one file. --pair decodes A's
 frames AI-11..AI (12 frames, 11 deltas) and B's frames BI..BI+12 (13 frames,
@@ -53,6 +73,21 @@ import numpy as np
 
 RATIO_BAND = (0.6, 1.5)
 VR_BAND = (0.5, 2.0)
+
+# Provisional perceptual ceiling. NOT derived from theory — anchored to the
+# only human verdicts this project has, both recorded 2026-08-18 on joins the
+# owner watched and judged clearly acceptable ("tiny things, largely
+# dismissible"):
+#     join-quality  RATIO 2.020  (material's own p99: 1.354)
+#     join-fast     RATIO 2.838  (material's own p99: 1.699)
+# Both were statistical OUTLIERS against their own footage and were still
+# dismissed, which is the whole finding: at 24fps a single-frame delta spike
+# is not resolved by the eye until it is large. Human tolerance is wider than
+# statistical indistinguishability, so a content-adaptive percentile alone
+# does not close the gap — this constant does the rest of the work.
+# TWO LABELS IS NOT A CALIBRATION. Widen or narrow as more joins are judged,
+# and record each verdict here so the number keeps its provenance.
+PERCEPTUAL_UPPER = 3.0
 
 
 def die(msg, code=2):
@@ -114,6 +149,33 @@ def parse_pair_arg(s):
     return path, int(idx)
 
 
+def profile_ratios(path, width, exclude=None):
+    """Ordinary in-clip RATIOs for every interior frame pair of ONE clip.
+
+    Scores each adjacent pair exactly the way the gate scores a seam — its
+    delta over the median of its own +/-12 neighbours — so the resulting
+    distribution is directly comparable to a seam RATIO. This is what makes
+    the threshold content-aware: a shot whose own motion routinely spikes to
+    2.0 cannot have a 1.9 seam that anyone can see.
+
+    exclude: (lo, hi) frame range to skip, so a seam never pollutes the
+    baseline it is about to be judged against.
+    """
+    frames = decode_frames(path, 0, 10 ** 6, width)
+    if len(frames) < 27:
+        return []
+    d = adjacent_deltas(frames)
+    out = []
+    for i in range(12, len(d) - 12):
+        if exclude and exclude[0] <= i <= exclude[1]:
+            continue
+        win = d[i - 12:i] + d[i + 1:i + 13]
+        med = float(np.median(win))
+        if med > 0:
+            out.append(d[i] / med)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -128,6 +190,13 @@ def main():
                     help="pooled median below this = near-static branch (default 0.5)")
     ap.add_argument("--static-abs-fail", type=float, default=2.0,
                     help="near-static branch: fail if seam delta exceeds this (default 2.0)")
+    ap.add_argument("--mode", choices=("perceptual", "strict"), default="perceptual",
+                    help="perceptual (default): upper photometric bound adapts to the "
+                         "material's own motion. strict: fixed 0.60-1.50 band, "
+                         "pre-2026-08-18 behaviour — use for fixtures and pure edits")
+    ap.add_argument("--profile-percentile", type=float, default=99.0,
+                    help="perceptual mode: percentile of the clip's own RATIO "
+                         "distribution used as the upper bound (default 99)")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args()
 
@@ -142,11 +211,17 @@ def main():
         a_frames = frames[:n_a]
         b_frames = frames[n_a:]
         label = f"--at {n} {args.video}"
+        # One file holds both sides, so the seam sits inside its own profile —
+        # exclude a window around it or it inflates the bound that judges it.
+        profile_sources = [(args.video, (n - 13, n + 12))]
     elif args.pair:
         (pa, ai), (pb, bi) = (parse_pair_arg(s) for s in args.pair)
         a_frames = decode_frames(pa, ai - 11, ai, args.width)
         b_frames = decode_frames(pb, bi, bi + 12, args.width)
         label = f"--pair {pa}:{ai} {pb}:{bi}"
+        # Separate files: no seam exists inside either, so profile both whole
+        # and pool — the join has to live among the motion of both sides.
+        profile_sources = [(pa, None), (pb, None)]
     else:
         die("need --at N file.mp4 or --pair A.mp4:AI B.mp4:BI")
 
@@ -198,37 +273,93 @@ def main():
         branch = "relative"
         ratio = seam / med
         vr = base_b / max(base_a, 1e-6)
-        photo_fail = not (RATIO_BAND[0] <= ratio <= RATIO_BAND[1])
-        kin_fail = not (VR_BAND[0] <= vr <= VR_BAND[1])
+
+        upper = RATIO_BAND[1]
+        profile_n, profile_p99 = 0, None
+        if args.mode == "perceptual":
+            pool_r = []
+            for path, excl in profile_sources:
+                pool_r.extend(profile_ratios(path, args.width, excl))
+            profile_n = len(pool_r)
+            if profile_n >= 40:
+                profile_p99 = float(np.percentile(pool_r, args.profile_percentile))
+            # Two independent reasons a seam can be invisible, so take whichever
+            # is more permissive: (1) the eye does not resolve a single-frame
+            # spike below PERCEPTUAL_UPPER, and (2) busy footage whose own motion
+            # exceeds that constant hides even more. Floored at the strict bound
+            # so material can only ever EARN tolerance, never lose it.
+            upper = max(RATIO_BAND[1], PERCEPTUAL_UPPER, profile_p99 or 0.0)
+
+        photo_fail = not (RATIO_BAND[0] <= ratio <= upper)
+        kin_out = not (VR_BAND[0] <= vr <= VR_BAND[1])
+        # A stall is real but repairable by trimming B's head, so in perceptual
+        # mode it is a warning, not a gate failure. Photometric is the gate.
+        kin_fail = kin_out if args.mode == "strict" else False
+        marginal = (args.mode == "perceptual"
+                    and not photo_fail
+                    and (kin_out or ratio > RATIO_BAND[1]))
         fail = photo_fail or kin_fail
         result.update({
-            "branch": branch,
+            "branch": branch, "mode": args.mode,
             "ratio": round(ratio, 3), "velocity_ratio": round(vr, 3),
-            "ratio_band": RATIO_BAND, "vr_band": VR_BAND,
-            "photometric_fail": photo_fail, "kinematic_fail": kin_fail, "fail": fail,
+            "ratio_band": [RATIO_BAND[0], round(upper, 3)], "vr_band": VR_BAND,
+            "strict_ratio_band": RATIO_BAND,
+            "profile_pairs": profile_n,
+            "profile_p99": round(profile_p99, 3) if profile_p99 is not None else None,
+            "kinematic_out_of_band": kin_out,
+            "photometric_fail": photo_fail, "kinematic_fail": kin_fail,
+            "marginal": marginal, "fail": fail,
         })
         if not args.json:
-            print(f"seam-check {label}  (proxy {args.width}px gray, A+B combined baseline)")
+            print(f"seam-check {label}  (proxy {args.width}px gray, A+B combined baseline, "
+                  f"mode={args.mode})")
+            if args.mode == "perceptual":
+                src = ("this material's own motion" if profile_p99 and profile_p99 > PERCEPTUAL_UPPER
+                       else "the provisional perceptual ceiling")
+                prof = (f"{profile_p99:.3f} at p{args.profile_percentile:g} over {profile_n} "
+                        f"ordinary uncut pairs" if profile_p99 is not None
+                        else f"unprofiled ({profile_n} pairs)")
+                print(f"UPPER BOUND {upper:.2f} from {src}  "
+                      f"[perceptual ceiling {PERCEPTUAL_UPPER:.2f}, material p99 {prof}, "
+                      f"frame-exact {RATIO_BAND[1]:.2f}]")
             print(f"CHANNEL A (photometric): seam_delta {seam:.3f}  "
                   f"neighbour_median {med:.3f}  RATIO {ratio:.3f}  "
-                  f"[band {RATIO_BAND[0]:.2f}-{RATIO_BAND[1]:.2f}]  "
+                  f"[band {RATIO_BAND[0]:.2f}-{upper:.2f}]  "
                   f"{'FAIL' if photo_fail else 'PASS'}")
             print(f"CHANNEL B (kinematic):   base_a {base_a:.3f}  base_b {base_b:.3f}  "
                   f"VELOCITY_RATIO {vr:.3f}  "
                   f"[band {VR_BAND[0]:.2f}-{VR_BAND[1]:.2f}]  "
-                  f"{'FAIL' if kin_fail else 'PASS'}")
+                  f"{'FAIL' if kin_fail else ('WARN' if kin_out else 'PASS')}")
             print(f"  B head deltas: {' '.join(f'{d:.2f}' for d in head_series)}")
+            if kin_out and args.mode == "perceptual":
+                print("  → stall detected: trim B's head to where its motion energy "
+                      "reaches A's tail (free repair, see extend-clip skill)")
 
     verdict_bits = []
     if result["photometric_fail"]:
         verdict_bits.append("photometric")
     if result["kinematic_fail"]:
         verdict_bits.append("kinematic")
+    if fail:
+        verdict = "FAIL (" + "+".join(verdict_bits) + ")"
+    elif result.get("marginal"):
+        p99 = result.get("profile_p99")
+        r = result.get("ratio")
+        if p99 is not None and r is not None and r <= p99:
+            why = "inside this material's own natural motion"
+        else:
+            why = ("below the perceptual ceiling — a single-frame spike this size "
+                   "is not resolved at 24fps")
+        if result.get("kinematic_out_of_band"):
+            why = "stall in B's opening; photometrically " + why
+        verdict = f"MARGINAL (measurable, not expected to read: {why})"
+    else:
+        verdict = "PASS"
+    result["verdict"] = verdict.split(" (")[0]
     if args.json:
         print(json.dumps(result, indent=2))
     else:
-        print(f"VERDICT: {'FAIL (' + '+'.join(verdict_bits) + ')' if fail else 'PASS'}"
-              f"  [branch: {branch}]")
+        print(f"VERDICT: {verdict}  [branch: {branch}]")
     sys.exit(3 if fail else 0)
 
 

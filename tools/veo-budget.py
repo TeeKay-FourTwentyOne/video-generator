@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
-"""veo-budget.py — pre-flight HARD STOP for all Veo generation spend on the
-seamless-joins project. Modelled on the MAX_COST gate in tools/study-audio.cjs.
+"""veo-budget.py — pre-flight HARD STOP for all Veo generation spend.
+Modelled on the MAX_COST gate in tools/study-audio.cjs.
 
-CAP: $10.00 USD for the ENTIRE LIFE of the project (Stephen's stated
-restriction — not per cycle, not re-interpretable). Anthropic-billed QA calls
-(clip-qa/frame-qa) are a SEPARATE ledger and do not count here.
+ONE POT PER AUTHORIZATION, selected with --project (default seamless-joins):
+    seamless-joins  $10.00  data/veo-budget.tsv
+        The research project. Lifetime cap, Stephen 2026-08-16 — not per
+        cycle, not re-interpretable.
+    personal-best   $25.00  data/veo-budget-personal-best.tsv
+        The film. "30-60s, 9:16, $25 max budget", Stephen 2026-08-18.
+Caps are NOT fungible. An exhausted pot is never topped up from another one;
+a new pot needs a new PROJECTS entry and the sentence that authorized it.
+Anthropic-billed QA calls (clip-qa/frame-qa) are a SEPARATE ledger entirely
+and do not count against any of these.
 
-Ledger: data/veo-budget.tsv, appended BEFORE any submission so a crash
+Ledger: appended BEFORE any submission so a crash
 over-reports rather than under-reports. Every submission counts — Veo bills
 RAI-filtered and hung operations too, at the SNAPPED duration (a 7s request
 bills as 8s), so only durations {4,6,8} are accepted.
@@ -41,11 +48,23 @@ import datetime
 import os
 import sys
 
-CAP_USD = 10.00
 VALID_SECONDS = (4, 6, 8)
-LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                      "..", "data", "veo-budget.tsv")
 HEADER = "date\tmodel\tseconds\tresolution\taudio\tusd\tnote\n"
+
+_DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+
+# One pot per authorization. Caps are NOT fungible: each is a separate thing
+# Stephen said yes to, so an exhausted pot is never topped up from another and
+# a new pot needs a new line here plus the sentence that authorized it.
+PROJECTS = {
+    # The research project. Hard lifetime cap, Stephen 2026-08-16.
+    "seamless-joins": (10.00, os.path.join(_DATA, "veo-budget.tsv")),
+    # The film. "30-60s, 9:16, $25 max budget" — Stephen 2026-08-18.
+    "personal-best": (25.00, os.path.join(_DATA, "veo-budget-personal-best.tsv")),
+}
+DEFAULT_PROJECT = "seamless-joins"
+
+CAP_USD, LEDGER = PROJECTS[DEFAULT_PROJECT]
 
 RATES = {  # (model, resolution, audio) -> $/requested-second
     ("fast", "720p", False): 0.08,
@@ -131,23 +150,39 @@ def cmd_log(args):
     return 0
 
 
+def select_project(name):
+    """Point the module-level CAP_USD/LEDGER at one authorization's pot."""
+    global CAP_USD, LEDGER
+    if name not in PROJECTS:
+        die(f"unknown project {name!r}; known: {', '.join(sorted(PROJECTS))}")
+    CAP_USD, LEDGER = PROJECTS[name]
+
+
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("status")
-    pf = sub.add_parser("preflight")
+
+    def add_project_flag(p):
+        p.add_argument("--project", default=DEFAULT_PROJECT, choices=sorted(PROJECTS),
+                       help=f"which authorization's pot to charge (default {DEFAULT_PROJECT}). "
+                            f"Pots are separate and never fungible.")
+        return p
+
+    add_project_flag(sub.add_parser("status"))
+    pf = add_project_flag(sub.add_parser("preflight"))
     pf.add_argument("--model", choices=["fast", "quality"], required=True)
     pf.add_argument("--seconds", type=int, required=True)
     pf.add_argument("--resolution", choices=["720p", "1080p"], required=True)
     pf.add_argument("--audio", choices=["yes", "no"], required=True)
     pf.add_argument("--note", required=True,
                     help="what this generation buys (goes in the ledger)")
-    lg = sub.add_parser("log")
+    lg = add_project_flag(sub.add_parser("log"))
     lg.add_argument("--usd", type=float, required=True,
                     help="adjustment in USD (may be negative for BQ reconcile)")
     lg.add_argument("--note", required=True)
     args = ap.parse_args()
+    select_project(args.project)
     if args.cmd == "status":
         sys.exit(cmd_status())
     if args.cmd == "preflight":

@@ -68,7 +68,11 @@ for case in manifest["cases"]:
          "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0", clip],
         capture_output=True, text=True).stdout.strip())
     p = subprocess.run(
-        ["python3", f"{repo}/tools/seam-check.py", "--at",
+        # --mode strict: these fixtures assert DEFECT DETECTION (is the edit
+        # frame-exact?), not perceptual acceptability. The adaptive default
+        # would correctly pass a dropped frame in busy footage — right for
+        # judging a generative join, wrong for this suite.
+        ["python3", f"{repo}/tools/seam-check.py", "--mode", "strict", "--at",
          str(manifest["seam_frame"]), clip, "--json"],
         capture_output=True, text=True)
     r = json.loads(p.stdout)
