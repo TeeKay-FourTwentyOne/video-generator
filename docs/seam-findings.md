@@ -249,16 +249,57 @@ BQ reconcile proves it either way.
 resolutions.** Every artifact is preserved in `tests/fixtures/extend-clip/`
 (paid, non-regenerable; offline repro commands in its manifest.json).
 
-## 8. Open (cycle 3, one paid question, $0.80): does QUALITY bind at 720p?
+## 8. ANSWERED (cycle 3, 2026-08-17, $0.80 + $0.80 RAI retry): QUALITY does NOT bind at 720p either
 
-The one remaining live hypothesis, from church-grim (2026-07-20, observed
-near pixel-exact but never instrumented): `veo-3.1-prod` at **720p** binds
-first-frame anchors tightly, and 1080p is where demotion begins. One 4s
-silent 720p quality arm ($0.80), same anchor, same prompt, same
-measure.py, decides it. If it binds (≥ ~35 dB): extend-clip becomes
-"quality-720p only", and the same clip's VR answers whether quality also
-fixes the velocity handoff (if VR still fails, the head-trim sweep on a
-BOUND B is exactly the calibrated §3 machinery). If it does not bind:
-the pixel-chain premise is dead on every current door, and extend-clip's
-"joins are invisible only at motion nulls" constraint graduates from
-working hypothesis to doctrine — stop spending.
+The last live hypothesis — from church-grim (2026-07-20, observed near
+pixel-exact but never instrumented): `veo-3.1-prod` at **720p** binds
+first-frame anchors tightly. One 4s silent 720p quality arm, same anchor
+(`anchor_720.png` = frame 191 of `s4bv5_toss.mp4`), same motion-only
+prompt, seed 2481 (seed 1137 was output-RAI-filtered — see below):
+
+```bash
+python3 tools/veo-budget.py preflight --model quality --seconds 4 --resolution 720p --audio no --note 'cycle3 quality-720p bind'
+# MCP submit_veo_generation: model veo-3.1-prod, durationSeconds 4, generateAudio false,
+#   aspectRatio 9:16, resolution 720p, firstFramePath anchor_720.png, seed 2481
+# op 789d5093-7c65-41f1-802b-d6783a6114bd -> clips/b_q720.mp4 (96 frames, 24/1)
+python3 tests/fixtures/extend-clip/measure.py data/workspace/seamless-joins/clips/b_q720.mp4 \
+  data/workspace/seamless-joins/frames/anchor_720.png \
+  data/workspace/hz-paradise/clips/s4bv5_toss.mp4 190 \
+  data/workspace/seamless-joins/scratch/measure_q720.json
+```
+
+**B[0] vs the conditioning PNG: RGB PSNR 25.56 dB, gray MAE 7.27** — against
+fast-720p's 25.52 dB / 7.30. Statistically the SAME restage magnitude; the
+bind threshold was ≥ ~35 dB. The restage is again non-rigid: no global
+translation within ±16 px and no uniform scale 0.85–1.15× reduces the MAE at
+all (best transform = identity, 7.254). Church-grim's near-pixel-exact
+memory does not reproduce under instrumentation.
+
+The genuinely NEW fact: **quality does not restart from rest.** B's head
+delta series is FLAT at ~2.05 from frame 0 (0.64× of A's 3.22 tail) — no
+stall, no ramp. The kinematic channel PASSES at every B-start 0–12
+(VR 0.63–0.76, all inside [0.5, 2.0]). But the photometric RATIO fails at
+every trim and rises monotonically (1.97 → 5.72 by B-start 12): the
+restaged geometry means B diverges from A as it plays, so no trim exists.
+
+**The two models fail on OPPOSITE channels** — fast fails velocity (and
+geometry), quality carries velocity but restages geometry. This is the
+strongest possible vindication of the two-channel never-blend gate design:
+a kinematic-only gate would ship the quality join; a one-sided photometric
+gate rewards fast's frozen restarts.
+
+RAI note: seed 1137 at 720p has now been output-filtered (code 29310472) on
+BOTH models, while the identical prompt+seed passed at 1080p and seed 2481
+at 720p passed on both models. The output filter is (seed, resolution)-
+correlated, not per-sample random — burn a different seed, not a rephrase,
+on a 720p filter trip. Blocked arms stay on the ledger ($0.32 fast +
+$0.80 quality) until BQ reconcile; attempted 2026-08-17 ~19:45 PDT but the
+export was fresh only to ~13:24 PDT — all of cycle 2-3's submissions
+(19:34+ PDT) post-date it, so the reconcile is deferred, not skipped.
+
+**VERDICT — pixel-chaining is dead on every current door** (fast-720p,
+fast-1080p, quality-720p; 1080p demotes anchors on both models). The
+extend-clip constraint "**joins are invisible only at motion nulls**"
+graduates from working hypothesis to DOCTRINE, and generation spend on this
+question STOPS at $2.64 ledgered ($1.52 if both blocked arms reconcile as
+unbilled). All paid artifacts + offline repro: `tests/fixtures/extend-clip/`.
