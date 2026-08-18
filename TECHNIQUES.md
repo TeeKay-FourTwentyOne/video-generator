@@ -514,9 +514,12 @@ curl -X POST "http://localhost:3000/api/veo/generate" \
 #### Step 5: Create Double-Edge Reference for Clip N+1
 
 ```bash
-# Extract last frame from previous clip
-ffmpeg -sseof -0.1 -i data/video/tunnel_clip1.mp4 \
-  -frames:v 1 -update 1 -y generated-images/clip1_lastframe.png
+# Extract last frame from previous clip — use tools/last-frame.sh, or:
+ffmpeg -y -v error -sseof -0.5 -i data/video/tunnel_clip1.mp4 \
+  -update 1 generated-images/clip1_lastframe.png
+# NO -frames:v 1 here: it overrides -update 1 and emits the FIRST frame of
+# the sseof window (an earlier frame, off by up to ~12). Verified by md5 vs
+# select=eq(n,N-1) on 2026-08-17: -update-only matches, -frames:v 1 does not.
 
 # Edge detect the last frame
 ffmpeg -y -i generated-images/clip1_lastframe.png \
