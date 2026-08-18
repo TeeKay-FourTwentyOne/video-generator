@@ -1,0 +1,151 @@
+{
+  "b_clip": "data/workspace/seamless-joins/clips/b_1080.mp4",
+  "conditioning_png": "data/workspace/seamless-joins/frames/anchor_1080.png",
+  "a_clip": "data/workspace/hz-paradise/clips/s4bv5_toss.mp4",
+  "a_end_index": 190,
+  "b_specs": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "24/1",
+    "nb_frames": 96
+  },
+  "frame0_vs_anchor": {
+    "gray_mae": 16.316,
+    "gray_psnr_db": 18.36,
+    "rgb_psnr_db": 18.54,
+    "noise_floor_note": "codec round-trip floor ~0.05 gray MAE"
+  },
+  "b_head_deltas_at_k0": [
+    2.05,
+    0.79,
+    0.87,
+    1.07,
+    1.01,
+    0.93,
+    1.07,
+    1.56,
+    1.58,
+    1.63,
+    1.83,
+    2.3
+  ],
+  "head_trim_sweep": [
+    {
+      "b_start": 0,
+      "ratio": 2.201,
+      "velocity_ratio": 0.328,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": true
+    },
+    {
+      "b_start": 1,
+      "ratio": 1.807,
+      "velocity_ratio": 0.328,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": true
+    },
+    {
+      "b_start": 2,
+      "ratio": 1.854,
+      "velocity_ratio": 0.48,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": true
+    },
+    {
+      "b_start": 3,
+      "ratio": 1.901,
+      "velocity_ratio": 0.485,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": true
+    },
+    {
+      "b_start": 4,
+      "ratio": 1.976,
+      "velocity_ratio": 0.5,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 5,
+      "ratio": 2.084,
+      "velocity_ratio": 0.561,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 6,
+      "ratio": 2.172,
+      "velocity_ratio": 0.706,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 7,
+      "ratio": 2.259,
+      "velocity_ratio": 0.929,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 8,
+      "ratio": 2.458,
+      "velocity_ratio": 1.163,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 9,
+      "ratio": 2.68,
+      "velocity_ratio": 1.381,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 10,
+      "ratio": 2.898,
+      "velocity_ratio": 1.689,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 11,
+      "ratio": 2.98,
+      "velocity_ratio": 1.846,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": false
+    },
+    {
+      "b_start": 12,
+      "ratio": 3.208,
+      "velocity_ratio": 2.145,
+      "branch": "relative",
+      "fail": true,
+      "photometric_fail": true,
+      "kinematic_fail": true
+    }
+  ]
+}

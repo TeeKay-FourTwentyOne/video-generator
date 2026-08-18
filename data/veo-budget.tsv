@@ -1,3 +1,6 @@
 date	model	seconds	resolution	audio	usd	note
 2026-08-17 17:38:54	quality	8	1080p	yes	3.20	SELFTEST — will be reversed
 2026-08-17 17:38:54	adjust	0	-	-	-3.20	SELFTEST reversal
+2026-08-17 19:34:24	fast	4	720p	no	0.32	cycle2 anchor-bind A/B arm1 720p first-frame-only continuation
+2026-08-17 19:34:35	fast	4	1080p	no	0.40	cycle2 anchor-bind A/B arm2 1080p first-frame-only continuation
+2026-08-17 19:36:23	fast	4	720p	no	0.32	cycle2 arm1 RETRY seed 2481 — first attempt output-RAI-filtered (code 29310472), same prompt passed at 1080p
