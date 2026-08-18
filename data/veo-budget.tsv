@@ -4,3 +4,5 @@ date	model	seconds	resolution	audio	usd	note
 2026-08-17 19:34:24	fast	4	720p	no	0.32	cycle2 anchor-bind A/B arm1 720p first-frame-only continuation
 2026-08-17 19:34:35	fast	4	1080p	no	0.40	cycle2 anchor-bind A/B arm2 1080p first-frame-only continuation
 2026-08-17 19:36:23	fast	4	720p	no	0.32	cycle2 arm1 RETRY seed 2481 — first attempt output-RAI-filtered (code 29310472), same prompt passed at 1080p
+2026-08-17 19:43:57	quality	4	720p	no	0.80	cycle3 quality-720p bind
+2026-08-17 19:45:09	quality	4	720p	no	0.80	cycle3 quality-720p bind RETRY seed 2481 — seed 1137 output-RAI-filtered code 29310472
