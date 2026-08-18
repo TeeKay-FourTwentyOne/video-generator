@@ -1,0 +1,35 @@
+{
+  "description": "Cycle-2 anchor-binding A/B (2026-08-17): the one owned A->B chained pair. Answers: does a supplied first-frame anchor bind B[0] on veo-3.1-fast-prod? NO at either resolution — identity/wardrobe/set bind, GEOMETRY does not (non-rigid restage: no global translation within ±12px or uniform scale 0.84-1.16x reduces the mismatch). These mp4s are PAID, NON-REGENERABLE artifacts — do not delete; everything else in the repo's fixture set is rebuildable, this is not.",
+  "generation": {
+    "model": "veo-3.1-fast-prod (veo-3.1-fast-generate-001)",
+    "prompt": "Continue the shot from this exact moment with no pause and no reset: he keeps breathing slowly, shoulders rising and falling, the long coat swaying almost imperceptibly as it settles around him; his stare stays locked into the lens, jaw set; the camera keeps its slow, steady drift. Motion continues at the same speed from the very first frame — no freeze, no restart, no new entrance.",
+    "prompt_note": "MOTION ONLY by design — the anchor carries all appearance; the open question was whether words carry velocity. Answer on fast: no (VR 0.45 / 0.33).",
+    "conditioning": "first-frame only (instance.image), durationSeconds 4, generateAudio false, aspectRatio 9:16",
+    "arms": [
+      { "clip": "b_720.mp4", "resolution": "720p", "seed": 2481, "op": "operations/98886468-5335-4b30-9162-eed8ebf8c81b", "usd": 0.32,
+        "note": "RETRY — first 720p attempt (seed 1137, op ac03c45e) was output-RAI-filtered, support code 29310472, count=1; identical prompt+seed passed at 1080p, so the output filter is stochastic per-sample. Vertex says blocked videos are not charged; $0.32 stays on the ledger until BQ reconcile." },
+      { "clip": "b_1080.mp4", "resolution": "1080p", "seed": 1137, "op": "operations/d59ce9ad-69b7-40a9-89ed-b1130a6404ed", "usd": 0.40 }
+    ],
+    "anchor_source": "tools/last-frame.sh data/workspace/hz-paradise/clips/s4bv5_toss.mp4 anchor_1080.png (RAW mp4, frame 191 of 192); anchor_720.png = scale=720:1280 of that"
+  },
+  "a_tail": {
+    "file": "a_tail.mp4",
+    "what": "frames 144-191 of s4bv5_toss.mp4, re-encoded libx264 CRF 18 so the fixture runs offline forever",
+    "index_map": "full-clip frame N == a_tail frame N-144; the anchor-1 cut point A:190 == a_tail:46",
+    "reencode_drift": "verdicts identical to the full clip; ratios shift by <0.07 (720 arm 2.844 vs canonical 2.775)"
+  },
+  "verdicts": {
+    "b_720": { "frame0_vs_anchor_rgb_psnr_db": 25.52, "gray_mae": 7.30, "seam_ratio_at_k0": 2.775, "velocity_ratio_at_k0": 0.445,
+      "head_trim_sweep": "NO pass window at any B-start 0-12; ratio RISES with trim (2.8 -> 5.6) because B drifts further from A as it plays",
+      "kinematic_profile": "SLOW-RUN, not restart-stall: B-head deltas flat ~1.4 (~0.45x of A's 3.2 tail) with NO ramp in 13 frames — head-trim can never recover a flat series" },
+    "b_1080": { "frame0_vs_anchor_rgb_psnr_db": 18.54, "gray_mae": 16.32, "seam_ratio_at_k0": 2.201, "velocity_ratio_at_k0": 0.328,
+      "head_trim_sweep": "NO pass window; ratio 1.8-3.2 at every trim (the restage's scale pop rides every frame pairing)",
+      "kinematic_profile": "restart-ramp variant: 2.05 -> 0.79 -> ramp to 2.3 by frame 12, never reaching A's 3.2" },
+    "conclusion": "Pixel-chaining on veo-3.1-fast-prod is DEAD at both resolutions. Remaining live hypothesis (church-grim, 2026-07-20, observed not instrumented): veo-3.1-prod QUALITY at 720p binds near pixel-exact. That is cycle 3's single paid question ($0.80)."
+  },
+  "reproduce": [
+    "python3 tools/seam-check.py --pair tests/fixtures/extend-clip/a_tail.mp4:46 tests/fixtures/extend-clip/b_720.mp4:0   # exit 3, ratio 2.844, VR 0.450",
+    "python3 tools/seam-check.py --pair tests/fixtures/extend-clip/a_tail.mp4:46 tests/fixtures/extend-clip/b_1080.mp4:0  # exit 3, ratio 2.231, VR 0.332",
+    "full sweeps + PSNR: python3 tests/fixtures/extend-clip/measure.py <B.mp4> <anchor.png> <A.mp4> 190 out.json (run from repo root; canonical outputs measure_720.json / measure_1080.json kept here)"
+  ]
+}
