@@ -98,6 +98,18 @@ node tools/splice.cjs render A.mp4 B.mp4 out.mp4 --cut-a=7.95 --scale-b=1.05 --d
 | 25 – 35 | crossfade | 0.15s (motion) / 0.25s (static) |
 | < 25 | crossfade (flagged) | 0.40s — consider regenerating |
 
+**Caveat (2026-08-17):** absolute PSNR is the wrong gate for generated
+continuations. PSNR ≥ 35 is unreachable on real Veo footage in motion, and a
+one-sided threshold REWARDS a frozen duplicate frame — which is itself a skip.
+For A→B continuation joins (join point known by construction), gate with
+`tools/seam-check.py` instead: a two-sided photometric RATIO plus a kinematic
+VELOCITY_RATIO that catches Veo restarting from rest, which no boundary-pair
+metric (PSNR, this skill's score, anchor-drift) can see. See the extend-clip
+skill and docs/seam-findings.md. Also: do NOT use `--align` / `--trim-a` —
+splice_align.py's warp() clamps the crop origin so translation is a structural
+no-op at scale 1.0, and detect_core stores the REQUESTED offset rather than a
+tested one, which render then bakes in.
+
 ## Reviewing results
 
 After rendering, inspect the splice:

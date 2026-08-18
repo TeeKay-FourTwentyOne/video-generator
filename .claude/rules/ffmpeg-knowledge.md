@@ -43,10 +43,28 @@ Normalize all clips to same specs before concat:
 - Same resolution, frame rate, pixel format (`-pix_fmt yuv420p`)
 - Same audio codec, sample rate, channels (`-c:a aac -ar 48000 -ac 2`)
 
-Then use concat demuxer:
+**Prefer the concat FILTER, not the demuxer.** Measured 2026-08-17: concat
+demuxer + `-c copy` on two clips WITH AUDIO leaves every frame intact but
+corrupts the video container metadata — `r_frame_rate` becomes 120/1 and
+`avg_frame_rate` goes fractional (786432/65573) on 24/1 inputs. Video-only
+inputs (`-an`) escape it, but production clips always carry audio. Downstream
+tools that trust `r_frame_rate` (frame-indexed trims, fps math, players) then
+misbehave. The safe join:
+
+```bash
+ffmpeg -y -i a.mp4 -i b.mp4 -filter_complex \
+  "[0:v]setpts=PTS-STARTPTS,fps=24,settb=AVTB,setsar=1[v0];\
+   [1:v]setpts=PTS-STARTPTS,fps=24,settb=AVTB,setsar=1[v1];\
+   [v0][v1]concat=n=2:v=1:a=0[v]" \
+  -map "[v]" -c:v libx264 -preset fast -crf 18 output.mp4
+```
+
+(Handle audio as a separate concat leg or re-mux; `tools/splice.cjs --mode=hard`
+also produces a clean 24/1 container.) The demuxer form is acceptable only for
+video-only streams where a later re-encode will normalize the container:
 ```bash
 printf "file 'a.mp4'\nfile 'b.mp4'\n" > list.txt
-ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4
+ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4   # -an inputs only
 ```
 
 ## Frame Extension Techniques
