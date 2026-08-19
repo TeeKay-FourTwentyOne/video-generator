@@ -1,6 +1,12 @@
 # PERSONAL BEST — production brief
 
-**Status:** ready to shoot. Nothing generated yet.
+**Status:** v1 BUILT 2026-08-19, fully autonomous session — 51.75s silent picture cut awaiting
+Stephen's review (720p signed URL in session log). All 6 joins gated: J1–J4 MARGINAL, J5–J6
+PASS. Spend $24.80/$25.00 pre-logged (≈$23.20 expected after BQ reconcile of one RAI-filtered
+attempt). Build log, boundary-verdict table, and the full decision queue:
+`data/workspace/personal-best/build-plan.md`. Notable deviations queued for review: bench lost
+off-screen at J3; seg5 ships take 1 (kneel at payoff, 3-fail rule); seg6 direction inversion
+re-read as laps; seg7 ending is Veo's override (wall touch → climbs out → swims into the town).
 **Authorized:** Stephen, 2026-08-18 — "30-60s, 9:16, $25 max budget… try for something
 funnier rather than somber. And something that looks like a single take to really test
 the joins."
