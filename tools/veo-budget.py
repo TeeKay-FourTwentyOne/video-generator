@@ -6,8 +6,11 @@ ONE POT PER AUTHORIZATION, selected with --project (default seamless-joins):
     seamless-joins  $10.00  data/veo-budget.tsv
         The research project. Lifetime cap, Stephen 2026-08-16 — not per
         cycle, not re-interpretable.
-    personal-best   $25.00  data/veo-budget-personal-best.tsv
+    personal-best   $50.00  data/veo-budget-personal-best.tsv
         The film. "30-60s, 9:16, $25 max budget", Stephen 2026-08-18.
+        RAISED to $50.00, Stephen 2026-08-19 (review round, seg5+seg6
+        body-consistency regen): "Push the cap to $50. Don't need to use
+        it all but there's room if you need it."
 Caps are NOT fungible. An exhausted pot is never topped up from another one;
 a new pot needs a new PROJECTS entry and the sentence that authorized it.
 Anthropic-billed QA calls (clip-qa/frame-qa) are a SEPARATE ledger entirely
@@ -60,7 +63,7 @@ PROJECTS = {
     # The research project. Hard lifetime cap, Stephen 2026-08-16.
     "seamless-joins": (10.00, os.path.join(_DATA, "veo-budget.tsv")),
     # The film. "30-60s, 9:16, $25 max budget" — Stephen 2026-08-18.
-    "personal-best": (25.00, os.path.join(_DATA, "veo-budget-personal-best.tsv")),
+    "personal-best": (50.00, os.path.join(_DATA, "veo-budget-personal-best.tsv")),
 }
 DEFAULT_PROJECT = "seamless-joins"
 
