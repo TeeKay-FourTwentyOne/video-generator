@@ -87,6 +87,27 @@ VR_BAND = (0.5, 2.0)
 # does not close the gap — this constant does the rest of the work.
 # TWO LABELS IS NOT A CALIBRATION. Widen or narrow as more joins are judged,
 # and record each verdict here so the number keeps its provenance.
+#
+# PERSONAL BEST chain labels (2026-08-19, owner, six chained quality-1080p
+# joins watched at 720p; scale CLEAN < DISMISSIBLE < VISIBLE < BROKEN):
+#     J1  RATIO 1.035  VR 2.153  close-up stroke, quiet A-tail -> hot open
+#         VISIBLE   "a pause where the movement stops then continues"
+#     J2  RATIO 1.521  VR 0.515  subject large, rigid wall edge in frame
+#         DISMISSIBLE/VISIBLE edge   "another pause, shorter than J1"
+#     J3  RATIO 1.097  VR 3.563  pre-reveal content change — read as a HARD
+#         CUT (register change + B-side restage hang; fixed by recutting onto
+#         the segment's own internal cut; excluded as a gate datum)
+#     J4  RATIO 1.595  VR 0.725  flood curtain
+#         DISMISSIBLE   "edit almost perfect; hand briefly stops"
+#     J5  RATIO 1.130  VR 1.072  whitewater churn        CLEAN  "beautiful"
+#     J6  RATIO 1.446  VR 0.587  subject small/distant   CLEAN  "beautiful"
+# CALIBRATION FINDING: at photometric RATIO 1.0-1.6 the eye never saw the
+# photometric seam — every felt defect tracked the KINEMATIC channel as a
+# perceived PAUSE, in BOTH directions of VR, scaled by subject prominence
+# (VR 0.52 on a large subject read on-the-edge; VR 0.59 on a small distant
+# subject read clean). Working felt-clean kinematic band for a PROMINENT
+# subject: VR ~[0.7, 1.4]. The perceptual-mode downgrade of kinematic-only
+# failures to MARGINAL is optimistic for close-ups — revisit as labels grow.
 PERCEPTUAL_UPPER = 3.0
 
 
