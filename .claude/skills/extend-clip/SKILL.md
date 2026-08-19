@@ -36,6 +36,11 @@ unless the surroundings are quiet. Hence the rule, which inverts the old one:
 1. **End every A segment MID-MOTION.** Busy motion is where the restage
    hides; a held beat is where it reads as a cut. This is the opposite of
    splice doctrine and the single most important instruction here.
+   REFINED 2026-08-19: the busyness must hold through A's FINAL half-second
+   and MATCH B's opening tempo — a decaying tail into a hot open reads as a
+   visible stall even at photometric RATIO 1.035 (PERSONAL BEST J1, owner:
+   "movement stops then continues"). Felt-clean kinematic band on a
+   prominent subject: VR ~[0.7, 1.4]; distance/smallness widens tolerance.
 2. **End A at anchor−1** — B[0] regenerates A's final moment, so keeping
    both duplicates a frame.
 3. **Prefer the quality tier for continuous motion** (it carries velocity
@@ -146,6 +151,21 @@ itself a skip. Never use `splice.cjs --align` / `--trim-a` (structural no-op
   verifying a pure edit). The 3.0 ceiling rests on TWO human labels — treat
   it as provisional and record every new verdict in seam-check.py's header
   so the number keeps its provenance.
+- **PERSONAL BEST 2026-08-19 — six chained joins, all owner-labeled** (deepest
+  chain to date; no photometric restage accumulation; labels in
+  seam-check.py's header). New measured lessons:
+  (a) at RATIO ≤1.6 humans never saw the photometric seam — every felt defect
+  was a KINEMATIC tempo mismatch perceived as a pause, both VR directions,
+  scaled by subject prominence;
+  (b) PARTIAL OCCLUSION (subject underwater / behind spray) invites re-guess
+  drift across boundaries — hidden body parts return different (size drift,
+  and a turn rendered as the head/body axis simply REVERSING). Plan
+  boundaries where the subject is fully visible; occlusion hides seams but
+  breeds drift;
+  (c) Veo sometimes authors an INTERNAL scene cut inside a segment —
+  frame-step B's head to find one; it is a free, clean recut point (the
+  PERSONAL BEST reveal cut landed on one, replacing a seam that read as a
+  double transition).
 - Evidence: seam-findings §7–§8; paid artifacts in
   `tests/fixtures/extend-clip/` (non-regenerable — do not delete).
 
