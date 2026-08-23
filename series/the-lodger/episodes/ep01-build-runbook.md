@@ -1,4 +1,13 @@
-# EP 1 BUILD RUNBOOK — "The Stranger at Dusk"
+# EP 1 BUILD RUNBOOK
+> **v2 RESTRUCTURE BUILT 2026-08-22** — 60.75s at `final/ep01_v2_review.mp4`; queue at
+> `flag-queue-v2.md`. Notes for next time: (1) `gate-runner` now **merges** verdicts at save time
+> instead of rewriting the manifest wholesale — it previously clobbered concurrent edits when run
+> in the background, silently reverting trim windows; (2) it also has a `--shot ID` flag for
+> gating one clip; (3) `gen-runner` supports a **per-shot** `resolution` key; (4) `audio-anchor`
+> ducks under *all* non-italic captions now, not only `D*`-sourced ones; (5) nano 429s on
+> back-to-back calls — space them.
+
+# (v1 runbook below) — "The Stranger at Dusk"
 ### Prep completed 2026-08-20. Production session RUN 2026-08-20 (autonomous): **draft v1 built — 63.5s** (`data/workspace/lodger-ep01/final/ep01_review.mp4` + debug + 720p signed URL). Voice cast: sarah (delegated GATE 0; reversible). S6+S8 rerolled on spec failures (composed anchors), S12 protected retake used (output-RAI → transaction recast, dialogue verbatim). Decisions + evidence: `data/workspace/lodger-ep01/flag-queue.md`. **Next: GATE 2 — Stephen watches.** Sound draft is IN the cut (stems re-run cheaply after picture notes).
 
 Everything creative and structural is locked and QA'd. The build is: pick a voice, generate

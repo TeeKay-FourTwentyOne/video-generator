@@ -1,5 +1,18 @@
 # THE LODGER — Episode 1: "The Stranger at Dusk"
-### Shooting script v2.1 (RESTRUCTURE) — 2026-08-22 — status: **APPROVED BY STEPHEN — READY FOR BUILD.** Structure + all §8 creative decisions resolved 2026-08-22 (B1 keep, V3 keep, no end VO; arc ripple deferred — see §7). Production session: follow the runbook in §9. Boarder faces still need Stephen's glance-approval at build (step 1 STOP).
+### Shooting script v2.1 (RESTRUCTURE) — status: **v2 BUILT 2026-08-22 — AWAITING STEPHEN'S WATCH (GATE 2).**
+Draft at `data/workspace/lodger-ep01/final/ep01_v2_review.mp4` — **60.75s**, 1080×1920, −14.5 LUFS,
+captions + title + end card + full mix. Decisions queued: `data/workspace/lodger-ep01/flag-queue-v2.md`.
+v2 increment **$8.66** (Veo $4.68 / 6 gens, nano 13, QA $2.03) vs the $8–9 estimate; ep cumulative ≈$28.96.
+
+**Built as written, with these build-time calls:** boarder faces glance-approved before any Veo
+spend (step-1 STOP cleared); the **common room is the parlor widened**, not a new set, so father's
+empty armchair sits in the same room as the laughing table and S6/S7/S9 share one geography;
+**S13 used the budgeted contingency gen** (both reuse candidates failed inspection — see
+flag queue §3), which also retires v1's puff-sleeve and hurricane-lantern flags; S2 and S4 are
+trimmed shorter than planned to dodge a frame-exit and a true background break. **1080p probe:
+works** — S2 returned true 1080×1920; `gen-runner` now takes a per-shot `resolution` override.
+Two decisions need Stephen: Veo wrote *legible dialogue* where the script wanted walla (kept
+uncaptioned as background), and S5's scripted hand-pat did not land.
 
 **Why v2:** Stephen's GATE 2 notes on draft v1 (built 2026-08-20, 63.5s, in
 `data/workspace/lodger-ep01/final/`): too much tell, too little show. Directives:

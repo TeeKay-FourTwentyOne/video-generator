@@ -83,8 +83,9 @@ def mcp_args(shot, cfg, ws):
         "aspectRatio": veo.get("aspect", "9:16"),
         "generateAudio": veo.get("generate_audio", True),
     }
-    if veo.get("resolution"):
-        args["resolution"] = veo["resolution"]
+    resolution = shot.get("resolution") or veo.get("resolution")
+    if resolution:
+        args["resolution"] = resolution
     anchors = shot.get("anchors") or {}
     for key, mcp_key in (("first", "firstFramePath"), ("last", "lastFramePath")):
         if anchors.get(key):
