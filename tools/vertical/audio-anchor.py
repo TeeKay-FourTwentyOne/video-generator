@@ -126,7 +126,8 @@ def speech_spans(manifest, pad=0.15):
         d = vo.get("duration") or (0.8 + 0.055 * len(vo["text"]))
         spans.append((vo["t"] - pad, vo["t"] + d + pad))
     for cap in manifest.get("captions", []):
-        if str(cap.get("source", "")).startswith("D"):
+        # non-italic captions are on-camera dialogue (italic = VO, already covered above)
+        if not cap.get("italic"):
             spans.append((cap["t_in"] - pad, cap["t_out"] + pad))
     spans.sort()
     merged = []

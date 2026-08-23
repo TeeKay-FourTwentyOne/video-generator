@@ -97,11 +97,30 @@ def gate_shot(s, ws, args, report):
     # 5. dialogue
     if s.get("dialogue"):
         v["dialogue_check"] = "pending-mcp"
-        report.append(f"- dialogue: transcribe via MCP against: \"{s['dialogue']['text']}\"")
+        dlg = s["dialogue"]
+        dtext = dlg["text"] if isinstance(dlg, dict) else dlg
+        report.append(f"- dialogue: transcribe via MCP against: \"{dtext}\"")
 
     flagged = v["clip_qa"]["exit"] == 3 or v.get("clone_check", {}).get("exit") == 3
     s["status"] = "flagged" if flagged else "gated-pass"
     report.append(f"- **status: {s['status']}**")
+
+
+def save_merged(path, gated):
+    """Re-read the manifest at save time and merge back only what this tool owns
+    (per-shot verdicts/status). Guards the lost-update race when gate-runner runs
+    in the background while the manifest is being edited elsewhere."""
+    with open(path) as f:
+        fresh = json.load(f)
+    by_id = {s["id"]: s for s in fresh["shots"]}
+    for sid, (verdicts, status) in gated.items():
+        if sid in by_id:
+            by_id[sid].setdefault("verdicts", {}).update(verdicts)
+            by_id[sid]["status"] = status
+    tmp = path + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(fresh, f, indent=2)
+    os.replace(tmp, path)
 
 
 def main():
@@ -127,9 +146,8 @@ def main():
         print(f"gating {s['id']} ...")
         gate_shot(s, ws, args, report)
 
-    with open(args.manifest + ".tmp", "w") as f:
-        json.dump(manifest, f, indent=2)
-    os.replace(args.manifest + ".tmp", args.manifest)
+    save_merged(args.manifest,
+                {s["id"]: (s.get("verdicts", {}), s["status"]) for s in todo})
     rp = os.path.join(ws, "gate-report.md")
     with open(rp, "w") as f:
         f.write("\n".join(report) + "\n")
