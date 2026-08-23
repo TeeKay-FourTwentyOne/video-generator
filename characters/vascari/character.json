@@ -1,0 +1,53 @@
+{
+  "id": "vascari",
+  "name": "Vascari (freight-crate style: \"Lord V\u2014\")",
+  "created": "2026-08-22",
+  "origin": "Outlaw Vampire Sommeliers \u2014 From Outer Space! (camp short); The Lodger Arc 1 (romantic interlude, same world)",
+  "series": [
+    "the-lodger",
+    "vampire-sommeliers"
+  ],
+  "status": "locked",
+  "veo_lock": "A pale man who appears in his late twenties, ink-black hair worn slightly too long, pale grey eyes, sharp high cheekbones and fox-like features, a listening-animal stillness. Charcoal wool frock coat of an old-fashioned cut, black waistcoat, high white collar, dark cravat, black leather gloves on both hands. Immaculate, unhurried, courteous.",
+  "voice_descriptor_veo": "a young man's low, unhurried voice with a soft North Carolina drawl, courteous in an old-fashioned way",
+  "image_canon": {
+    "face": "series/the-lodger/canon/char_vascari_face.png",
+    "front": "series/the-lodger/canon/char_vascari_front.png",
+    "full": "series/the-lodger/canon/char_vascari_full.png"
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "sDEuoCGIPass1GN7PF1I",
+    "status": "approved-locked (Stephen, 2026-08-22)",
+    "provenance": "3 harvest rounds 2026-08-22. R1 ('faintly accented' descriptor) drifted European aristocrat - A/B rejected+deleted. R2 (soft NC drawl steer) -> C, beaten by pure-S8 clone S ('S is better'), deleted. R3 (hard steer: 'warm NC drawl, soft country vowels, gentle Southern cadence' + southern-idiom lines w/ contractions) -> tightest cluster (X mutual 0.81-0.86; X1 0.783/X4 0.763/X6 0.736 vs S8), all word-perfect -> S2. Live A/B: S vs S2. See voice/provenance.md.",
+    "recommended_model": "eleven_multilingual_v2",
+    "samples_dir": "characters/vascari/voice/samples",
+    "history": [
+      {
+        "voice_id": "isxGTIm1uVv3XsRtfKZv",
+        "name": "A narrow",
+        "date": "2026-08-22",
+        "note": "S8+V1 (round-1 harvest). Rejected: European-aristocrat drift. Deleted."
+      },
+      {
+        "voice_id": "TTXSb9lX7C9vVLDc7pSn",
+        "name": "B wide",
+        "date": "2026-08-22",
+        "note": "S8+V1/V2/V3/V5 (round-1). Rejected: same drift, further diluted. Deleted."
+      },
+      {
+        "voice_id": "h7bodkuTlJNvppahDqA2",
+        "name": "C southern (round 2)",
+        "date": "2026-08-22",
+        "note": "S8+W1/W5/W6. Stephen picked S over it ('S is better... lean into the southern a touch harder'). Deleted."
+      },
+      {
+        "voice_id": "GaYp1F2yp0nf3JlN7dRw",
+        "name": "S pure (S8-only seed)",
+        "date": "2026-08-22",
+        "note": "Beat round-2 C but Stephen wanted more southern lean; lost the final A/B to S2. Deleted (recreatable from samples/01_s8_good_evening.wav)."
+      }
+    ]
+  },
+  "notes": "Always gloved in company until Lodger Ep 7. Never in sunlight; silent when he moves (no footstep foley ever). Pays in old gold. In the wider myth he is a sommelier and is eventually killed by Deputy Holloway \u2014 never winked at on screen in Arc 1."
+}

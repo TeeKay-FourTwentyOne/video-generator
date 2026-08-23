@@ -1,0 +1,38 @@
+{
+  "id": "cora-albright",
+  "name": "Cora May Albright",
+  "created": "2026-08-22",
+  "origin": "The Lodger, Ep 1 (series/the-lodger/)",
+  "series": ["the-lodger"],
+  "status": "locked",
+  "veo_lock": "A young woman of twenty-three, light auburn hair pinned back with soft loose strands escaping at the temples, hazel eyes, fine delicate features, smooth clear skin, a quiet loveliness — wariness in her eyes, never in her skin. Faded cotton print house dress with a small floral pattern, elbow-length sleeves, a lightly worn canvas apron, worn low-heeled shoes.",
+  "voice_descriptor_veo": "a soft North Carolina accent, quiet and unhurried, guarded warmth",
+  "image_canon": {
+    "face": "series/the-lodger/canon/char_cora_face.png",
+    "front": "series/the-lodger/canon/char_cora_front.png",
+    "full": "series/the-lodger/canon/char_cora_full.png"
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "voice_id": "qgVHCjozdBwKCEAWjZCa",
+    "status": "approved-locked (Stephen, 2026-08-22)",
+    "provenance": "IVC v2 (2026-08-22): 5 samples, ~27s voiced — Ep1 S9 native read + 4 harvest takes (H1/H4/H5/H6 of 6 generated; same anchor/lock/descriptor as S9, quiet-room staging), all EL-Voice-Isolator cleaned, speaker-verified vs S9 by resemblyzer embedding (chosen takes 0.79-0.86 to S9, 0.83-0.88 mutual). See voice/provenance.md.",
+    "recommended_model": "eleven_multilingual_v2",
+    "samples_dir": "characters/cora-albright/voice/samples",
+    "history": [
+      {
+        "voice_id": "3BzNSK5G0D5BPbRDtoDZ",
+        "name": "Cora Albright (Lodger native)",
+        "date": "2026-08-22",
+        "note": "v1: 4s single-sample seed (S9 only). Superseded by v2 and deleted from EL 2026-08-22 (recreatable from voice/samples/01_s9_three_dollars.wav if ever needed)."
+      },
+      {
+        "voice_id": "EXAVITQu4vr4xnSDxMaL",
+        "name": "sarah (EL library)",
+        "date": "2026-08-20",
+        "note": "Original delegated VO cast for lodger-ep01 draft v1. Rejected by Stephen 2026-08-22."
+      }
+    ]
+  },
+  "notes": "Voice cloned FROM Veo's own native read (Stephen approved the direction 2026-08-22) — the EL clone serves VO/narration and dub-rescue; on-camera dialogue stays Veo native with the descriptor. Narrator register: retrospective, confiding ('Cora, years on')."
+}
