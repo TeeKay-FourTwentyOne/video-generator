@@ -170,8 +170,8 @@ candidate B, house = summer regen of A2; locks in `canon/locks.md`.)*
 
 | Ep | Title | Script | Status |
 |---|---|---|---|
-| 1 | The Stranger at Dusk | `episodes/ep01-the-stranger-at-dusk.md` | **DRAFT v1 BUILT 2026-08-20** — 63.5s full cut (picture+captions+mix), autonomous session: 14 gens ($12.74 attempt-counted, ep total ≈$20), 2 spec-failure rerolls (S6 door/S8 threshold) + S12 protected retake (output-RAI recast), all dialogue word-perfect; **GATE 2: Stephen's watch** — signed URL + `data/workspace/lodger-ep01/flag-queue.md` |
-| 2 | House Rules | — | beats only |
+| 1 | The Stranger at Dusk | `episodes/ep01-the-stranger-at-dusk.md` | **RESTRUCTURE APPROVED — script v2.1 READY FOR BUILD (2026-08-22).** Lively common-room + boarders intro, extended books beat, episode ends on D1 "I'm told you let rooms." 5 new gens + 7 reused v1 clips (≈$8.60 incremental); creative decisions resolved (B1 keep / V3 keep / no end VO); boarder faces = build-day glance-approval gate; beat-sheet ripple DEFERRED until Stephen sees the cut (script §7 — do not touch arc-1-beats.md). v1 (63.5s) in `data/workspace/lodger-ep01/final/`; v1.4 script in git history. |
+| 2 | House Rules | — | beats only — **inherits v1 S9–S13 (terms/boots/gold/condition, gated + word-perfect) pending Ep 1 v2 approval** |
 | 3 | Daylight | — | beats only |
 | 4 | The Untouched Tray | — | beats only |
 | 5 | The Ledger | — | beats only |
