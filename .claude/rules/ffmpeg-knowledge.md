@@ -148,3 +148,16 @@ enable='between(t,3.5,6.0)'
 enable='gte(t,0)*lt(t,3.5)'
 enable='gte(t,3.5)*lt(t,6.0)'
 ```
+
+## alimiter Auto-Makeup Gotcha (measured 2026-08-27)
+
+`alimiter` defaults to `level=true`, which **normalizes output back up to 0dBFS** — a
+`limit=0.79` ceiling silently becomes a full-scale signal. Always pass `level=false`
+when using it as a ceiling. For true-peak (inter-sample) control, oversample around it:
+
+```bash
+volume=6dB,aresample=192000,alimiter=limit=0.83:attack=2:release=120:level=false,aresample=48000
+```
+
+Measured on the AUGUST master: without `level=false`, TP came back at 0.0dBTP despite
+limit=0.79; with it, -1.6dBTP as expected.
