@@ -64,6 +64,15 @@ PROJECTS = {
     "seamless-joins": (10.00, os.path.join(_DATA, "veo-budget.tsv")),
     # The film. "30-60s, 9:16, $25 max budget" — Stephen 2026-08-18.
     "personal-best": (50.00, os.path.join(_DATA, "veo-budget-personal-best.tsv")),
+    # AUGUST, monthly etymology series. "about 70s max ... the full budget
+    # including any necessary re-shoots is $50" — Stephen 2026-08-27.
+    # Pot covers Veo only; NBP/EL/QA tracked separately, all-in target <=$50.
+    "august": (42.00, os.path.join(_DATA, "veo-budget-august.tsv")),
+    # SEPTEMBER, monthly series ("THE COPY"). No explicit dollar quote yet:
+    # "Roll with THE COPY... complete a complete first draft" — Stephen 2026-09-01.
+    # PROVISIONAL conservative pot under the series' ~$50/month all-in norm;
+    # flagged for ratification in the v1 flag queue. Veo only; NBP/EL/QA separate.
+    "september": (30.00, os.path.join(_DATA, "veo-budget-september.tsv")),
 }
 DEFAULT_PROJECT = "seamless-joins"
 
