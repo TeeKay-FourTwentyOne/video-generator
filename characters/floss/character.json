@@ -1,0 +1,28 @@
+{
+  "id": "floss",
+  "name": "Floss",
+  "created": "2026-09-11",
+  "origin": "FLOSS (data/workspace/floss/) \u2014 from Stephen's cotton-candy photos, 2026-07-08 ballgame concourse",
+  "series": [],
+  "status": "in-use (FLOSS v4, awaiting ship)",
+  "veo_lock": "A real pale pink cotton candy on a thin clear plastic stick: a dense, smooth, rounded loaf-shaped tuft of spun sugar with a softly flattened top and slightly lumpy sides, and a single horizontal crease across its upper third that opens and closes like the mouth of a hand puppet, with a deeper pink interior. It has no eyes and no other facial features of any kind; the crease is the only feature.",
+  "voice_descriptor_veo": "a dry, unimpressed, slightly nasal deadpan, like a bored concession-stand kid",
+  "image_canon": {
+    "sprite_green": "characters/floss/canon/floss_sprite_green.png",
+    "in_ring_anchor": "characters/floss/canon/floss_in_ring_anchor.png",
+    "real_photos": [
+      "characters/floss/canon/real_IMG_9855.jpg",
+      "characters/floss/canon/real_IMG_9871.jpg",
+      "characters/floss/canon/real_IMG_9872.jpg"
+    ]
+  },
+  "voice": {
+    "provider": "veo-native",
+    "voice_id": null,
+    "status": "native takes harvested 2026-09-11; EL clone pending Stephen's go",
+    "samples_dir": "characters/floss/voice/samples",
+    "recommended_model": "eleven_multilingual_v2",
+    "history": []
+  },
+  "notes": "Eyeless by decision (Stephen 2026-09-11: 'No eyes, absolutely... keep him recognizably a blob of cotton candy with a mouth shape'). Mouth motion is generated, never drawn. Lives in the lower-left corner on a stick held up from below the frame; pops in/out per line like a hand puppet. Insert technique: memory reference_plate_anchored_puppet_insert."
+}

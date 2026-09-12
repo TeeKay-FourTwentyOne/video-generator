@@ -41,3 +41,4 @@ characters/<character-id>/
 |---|---|---|---|
 | `cora-albright` | Cora May Albright | The Lodger (2026-08) | EL clone of her Veo-native voice |
 | `vascari` | Vascari | Outlaw Vampire Sommeliers / The Lodger | Veo native on-camera + EL clone of his native voice (locked) |
+| `floss` | Floss | FLOSS (2026-09) | Veo native (descriptor); EL clone pending |

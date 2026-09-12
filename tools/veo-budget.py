@@ -73,6 +73,11 @@ PROJECTS = {
     # PROVISIONAL conservative pot under the series' ~$50/month all-in norm;
     # flagged for ratification in the v1 flag queue. Veo only; NBP/EL/QA separate.
     "september": (30.00, os.path.join(_DATA, "veo-budget-september.tsv")),
+    # FLOSS (working title): balloon-animal clown + cotton-candy heckler short.
+    # "$25 cap like last time" proposed in scoping 2026-09-11; Stephen answered
+    # with the three build decisions and no objection. PROVISIONAL — ratify at
+    # review. Veo only; NBP/EL/QA tracked separately.
+    "floss": (25.00, os.path.join(_DATA, "veo-budget-floss.tsv")),
 }
 DEFAULT_PROJECT = "seamless-joins"
 

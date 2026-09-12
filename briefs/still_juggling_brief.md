@@ -27,8 +27,8 @@ s1 stage 6 s · s2 stage+puppet 6 s → rerolled s2b 4 s (jaw flapping) · s3 la
 ## Sound
 Veo native ambience per clip, level-matched to −23 LUFS; heckler = ElevenLabs Charlie (Australian) at −16.5 LUFS; calliope = ElevenLabs music (19 s, detected 120.2 BPM), aligned so a beat lands on the puppet pop and the stinger on the end hold, sidechain-ducked under lines; master −17.3 LUFS, −1.2 dBTP. audiowmark payload `STILLJUGGLING-26`, decode conf 1.33.
 
-## Cost (≈ $9 of $25)
-Veo 34 s ≈ $3.40 (+30% headroom ≈ $4.40) · nano 7 calls ≈ $1.05 · QA vision ≈ $2.50 · ElevenLabs TTS/music ≈ $0.50.
+## Cost (≈ $17.50 of $25 — corrected 2026-09-11)
+Veo 34 s = **$13.60** per the BigQuery billing export (Quality + audio bills $0.40/s; the $3.40 first written here used the Veo Fast rate by mistake) · nano 7 calls $0.95 (BQ) · QA vision ≈ $2.50 · ElevenLabs TTS/music ≈ $0.50.
 
 ## Lessons
 - Keyed-sprite composite anchors are the way to make a subject pixel-identical across environments; nano can't hold a pose across re-staged backgrounds.
