@@ -1,8 +1,8 @@
 # FLOSS — brief
 
 **Format:** 9:16 social short, 28.67 s, 4K (2160×3840) upscaled from 720p. Built 2026-09-11, 10:00–18:00 with review rounds.
-**Working title:** FLOSS (Stephen's pick pending). **Workspace:** `data/workspace/floss/` · **Master:** `final/floss_v4_wm_720.mp4` → `final/floss_v4_4k.mp4`
-**Published:** _(pending)_ · 4K delivered 2026-09-11 18:06 via share.cjs (7-day links, gs://vg-veo-0137184346/floss/) · 4K verified 2160×3840 / 688 f / 28.67 s (2x Real-ESRGAN → Lanczos; the tool's default 4x was resampled to 3x) · audiowmark decode after upscale conf 1.35
+**Title:** FLOSS. **Workspace:** `data/workspace-archive/floss/` · **Master:** `final/floss_v4_wm_720.mp4` → `final/floss_v4_4k.mp4`
+**Published:** https://youtube.com/shorts/Ego0tAYQaRY (2026-09-11; description used substantially as drafted, trimmed by Stephen) · 4K delivered 2026-09-11 18:06 via share.cjs (7-day links, gs://vg-veo-0137184346/floss/) · 4K verified 2160×3840 / 688 f / 28.67 s (2x Real-ESRGAN → Lanczos; the tool's default 4x was resampled to 3x) · audiowmark decode after upscale conf 1.35
 
 ## Concept
 A woman Auguste clown twists one green modelling balloon into an animal, three times, from the identical starting frame in a real one-ring tent. Veo cannot conserve a balloon: one becomes three to five, and she presents a two-headed giraffe, a wishbone and a paperclip with total delight. Floss — the cotton candy Stephen photographed at a ballgame on 2026-07-08 because its crease looked like a mouth — heckles from the lower-left corner on his stick, eyeless, deadpan. The stinger is the real photo brought to life: "Anyway. I'm on a stick."
