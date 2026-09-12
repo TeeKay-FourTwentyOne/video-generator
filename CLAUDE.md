@@ -49,3 +49,10 @@ The MCP server is located at `mcp/video-generator/` and provides tools for:
 - Clip editing (trim, speed variations)
 - Assembly with tension-aware transitions
 - Project validation
+
+## Publication descriptions
+
+End every video description / credit block with this repository URL as its final line (Stephen's instruction, 2026-09-12):
+https://github.com/TeeKay-FourTwentyOne/video-generator
+
+Record published video URLs in the corresponding brief when supplied, so finished work can be revisited as model capabilities progress. Credit the models and tools actually used, respecting any project-specific credit exclusions.
