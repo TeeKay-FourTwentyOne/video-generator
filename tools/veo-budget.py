@@ -78,6 +78,11 @@ PROJECTS = {
     # with the three build decisions and no objection. PROVISIONAL — ratify at
     # review. Veo only; NBP/EL/QA tracked separately.
     "floss": (25.00, os.path.join(_DATA, "veo-budget-floss.tsv")),
+    # SPIDER ARREST: man arrested in an alley, offers wrists, cuffed, then
+    # unfolds extra spider-style legs and scurries off tittering. "30s max.
+    # 9:16, social... Budget $30." — Stephen 2026-09-12. Veo pot $25 of the
+    # $30 all-in; nano/QA ~$5 tracked separately.
+    "spider-arrest": (25.00, os.path.join(_DATA, "veo-budget-spider-arrest.tsv")),
 }
 DEFAULT_PROJECT = "seamless-joins"
 
