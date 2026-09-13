@@ -6,7 +6,15 @@
   "scripts": {
     "build": "cd mcp/video-generator && npm run build",
     "start": "cd mcp/video-generator && npm run dev",
-    "mcp": "cd mcp/video-generator && node dist/server.js"
+    "mcp": "cd mcp/video-generator && node dist/server.js",
+    "scene:studio": "node tools/scene-lab/server.mjs",
+    "scene:capture": "node tools/scene-lab/capture.mjs",
+    "scene:test": "node --test tools/scene-lab/*.test.mjs",
+    "privacy:install": "node tools/privacy-check.mjs --install-hooks",
+    "privacy:worktree": "node tools/privacy-check.mjs --worktree",
+    "privacy:check": "node tools/privacy-check.mjs --staged",
+    "privacy:outgoing": "node tools/privacy-check.mjs --outgoing",
+    "privacy:test": "node --test tools/privacy-check.test.mjs"
   },
   "keywords": ["mcp", "video", "ai", "veo", "claude"],
   "license": "MIT"

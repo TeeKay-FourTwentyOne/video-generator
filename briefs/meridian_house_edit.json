@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "title": "Meridian House - reviewed source identities and trim-only control",
+  "scope": "This six-shot production only. Relative paths resolve against the retained local Veo run. No media or provider records included.",
+  "fps": 24,
+  "clips": [
+    {"shot":1,"take":1,"file":"clips/shot-1.mp4","startFrame":0,"endFrameExclusive":88,"sha256":"5575a578852925829fe19f366cd81ce45a8b1db60c9f2d78f8907e3e7075cba2"},
+    {"shot":2,"take":1,"file":"clips/shot-2.mp4","startFrame":0,"endFrameExclusive":88,"sha256":"c9655fc5ce1b0ac8e76df0137cf99e4a0fbdd4128287cba2829e14c5534d5b58"},
+    {"shot":3,"take":1,"file":"clips/shot-3.mp4","startFrame":0,"endFrameExclusive":88,"sha256":"66dea30f81d84db9327377cbc33205ea622d1a9f65080b94a2b5be076e6f24ea"},
+    {"shot":4,"take":1,"file":"clips/shot-4.mp4","startFrame":0,"endFrameExclusive":88,"sha256":"096a6db8b85894d878ddc96bf5956e4161307dd957c31894dfd66aad3e700913"},
+    {"shot":5,"take":1,"file":"clips/shot-5.mp4","startFrame":0,"endFrameExclusive":88,"sha256":"9c80751ce60f0507787f13af97862b142b2f1ccbb22e1b9d336d33b106a2cc2d"},
+    {"shot":6,"take":1,"file":"clips/shot-6.mp4","startFrame":0,"endFrameExclusive":89,"sha256":"d3d59ef828b890616eac1119dbe453055c610d72c91e057e7ebc050175b4402a"}
+  ],
+  "finish": {
+    "sourceAnchorFrame":88,
+    "outputFramesPerShot":96,
+    "rampFraction":0.15,
+    "speedRamps":[{"start":0.35,"end":0.30},{"start":1.80,"end":0.50},{"start":1.80,"end":0.18},{"start":0.18,"end":1.00},{"start":0.60,"end":1.00},{"start":0.60,"end":0.35}],
+    "method":"Monotonic per-shot retiming with within-shot FFmpeg interpolation; never interpolate across cuts",
+    "implementation":"tools/scene-lab/tour-retime.mjs",
+    "frames":576,
+    "seconds":24
+  },
+  "upscale": {"scale":2,"cliModel":1,"model":"realesr-animevideov3-x2","wrapperModel":0,"wrapperVersion":"2.0.0","tile":256,"crf":16,"audio":"copy"}
+}

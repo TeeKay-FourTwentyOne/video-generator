@@ -4,13 +4,18 @@ Modelled on the MAX_COST gate in tools/study-audio.cjs.
 
 ONE POT PER AUTHORIZATION, selected with --project (default seamless-joins):
     seamless-joins  $10.00  data/veo-budget.tsv
-        The research project. Lifetime cap, Stephen 2026-08-16 — not per
+        The research project. Lifetime cap, user authorization 2026-08-16 — not per
         cycle, not re-interpretable.
     personal-best   $50.00  data/veo-budget-personal-best.tsv
-        The film. "30-60s, 9:16, $25 max budget", Stephen 2026-08-18.
-        RAISED to $50.00, Stephen 2026-08-19 (review round, seg5+seg6
+        The film. "30-60s, 9:16, $25 max budget", user authorization 2026-08-18.
+        RAISED to $50.00, user authorization 2026-08-19 (review round, seg5+seg6
         body-consistency regen): "Push the cap to $50. Don't need to use
         it all but there's room if you need it."
+    meridian-house  $49.00  data/veo-budget-meridian-house.tsv
+        All-in mansion experiment. User cap is strictly below $50 INCLUDING
+        prior artistic-rotation-v3 images (user authorization 2026-09-12). Prior-image
+        and infrastructure reserves are included in this ledger; they are
+        allocations, not claims of actual billing.
 Caps are NOT fungible. An exhausted pot is never topped up from another one;
 a new pot needs a new PROJECTS entry and the sentence that authorized it.
 Anthropic-billed QA calls (clip-qa/frame-qa) are a SEPARATE ledger entirely
@@ -57,30 +62,36 @@ HEADER = "date\tmodel\tseconds\tresolution\taudio\tusd\tnote\n"
 _DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 
 # One pot per authorization. Caps are NOT fungible: each is a separate thing
-# Stephen said yes to, so an exhausted pot is never topped up from another and
+# the user approved, so an exhausted pot is never topped up from another and
 # a new pot needs a new line here plus the sentence that authorized it.
 PROJECTS = {
-    # The research project. Hard lifetime cap, Stephen 2026-08-16.
+    # MERIDIAN HOUSE: "Keeping costs below $50 total, including the amount
+    # you spent on the image generations for the artistic rotation v3,
+    # let's start the tour." — user authorization 2026-09-12.
+    # ALL-IN pot: pre-log prior-image and infrastructure reserves here too.
+    # $49 operational ceiling keeps $1 strictly below the user's $50 limit.
+    "meridian-house": (49.00, os.path.join(_DATA, "veo-budget-meridian-house.tsv")),
+    # The research project. Hard lifetime cap, user authorization 2026-08-16.
     "seamless-joins": (10.00, os.path.join(_DATA, "veo-budget.tsv")),
-    # The film. "30-60s, 9:16, $25 max budget" — Stephen 2026-08-18.
+    # The film. "30-60s, 9:16, $25 max budget" — user authorization 2026-08-18.
     "personal-best": (50.00, os.path.join(_DATA, "veo-budget-personal-best.tsv")),
     # AUGUST, monthly etymology series. "about 70s max ... the full budget
-    # including any necessary re-shoots is $50" — Stephen 2026-08-27.
+    # including any necessary re-shoots is $50" — user authorization 2026-08-27.
     # Pot covers Veo only; NBP/EL/QA tracked separately, all-in target <=$50.
     "august": (42.00, os.path.join(_DATA, "veo-budget-august.tsv")),
     # SEPTEMBER, monthly series ("THE COPY"). No explicit dollar quote yet:
-    # "Roll with THE COPY... complete a complete first draft" — Stephen 2026-09-01.
+    # "Roll with THE COPY... complete a complete first draft" — user authorization 2026-09-01.
     # PROVISIONAL conservative pot under the series' ~$50/month all-in norm;
     # flagged for ratification in the v1 flag queue. Veo only; NBP/EL/QA separate.
     "september": (30.00, os.path.join(_DATA, "veo-budget-september.tsv")),
     # FLOSS (working title): balloon-animal clown + cotton-candy heckler short.
-    # "$25 cap like last time" proposed in scoping 2026-09-11; Stephen answered
+    # "$25 cap like last time" proposed in scoping 2026-09-11; the user answered
     # with the three build decisions and no objection. PROVISIONAL — ratify at
     # review. Veo only; NBP/EL/QA tracked separately.
     "floss": (25.00, os.path.join(_DATA, "veo-budget-floss.tsv")),
     # SPIDER ARREST: man arrested in an alley, offers wrists, cuffed, then
     # unfolds extra spider-style legs and scurries off tittering. "30s max.
-    # 9:16, social... Budget $30." — Stephen 2026-09-12. Veo pot $25 of the
+    # 9:16, social... Budget $30." — user authorization 2026-09-12. Veo pot $25 of the
     # $30 all-in; nano/QA ~$5 tracked separately.
     "spider-arrest": (25.00, os.path.join(_DATA, "veo-budget-spider-arrest.tsv")),
 }
@@ -136,7 +147,9 @@ def append(model, seconds, resolution, audio, usd, note):
 
 def cmd_status():
     spent, n = read_spent()
-    print(f"Veo generation spend: ${spent:.2f} of ${CAP_USD:.2f} cap "
+    label = ("All-in allocation (includes reserves)" if LEDGER == PROJECTS["meridian-house"][1]
+             else "Veo generation spend")
+    print(f"{label}: ${spent:.2f} of ${CAP_USD:.2f} cap "
           f"({n} ledger entries)  —  ${CAP_USD - spent:.2f} remaining")
     print(f"ledger: {os.path.normpath(LEDGER)}")
     return 0

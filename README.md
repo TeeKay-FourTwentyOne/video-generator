@@ -4,6 +4,24 @@ AI video production workflow centered on Claude Code skills plus a small collect
 
 ## Pipeline
 
+For experiments with a persistent 3D set, see [Scene Lab](tools/scene-lab/README.md).
+`npm run scene:studio` serves a local mansion preview with repeatable camera paths,
+calibrated image projection, and 9:16 / 16:9 timelapse exports. It requires no new
+npm dependencies and makes no image or video generation calls.
+Scene Lab also includes a budgeted Veo tour workflow and a local-only finishing
+pass that finds the actual bookend frames before trimming and retiming the joins.
+The completed [Meridian House brief](briefs/meridian_house_brief.md) records the
+approved edit, 4K upscale, costs, limitations and reusable source recipe.
+
+## Source privacy
+
+PII/secrets review is mandatory before every commit and push. Enable the local
+hooks with `npm run privacy:install`; run `privacy:worktree`, `privacy:check` and
+`privacy:outgoing` alongside manual review. See [the checklist](docs/source-privacy.md).
+Generated media, credentials and machine-specific runtime records stay out of Git.
+
+## Shot workflow
+
 A typical shot:
 
 1. **Plate + character lock** — generate a canonical set plate and character reference with `nano-banana`.
