@@ -13,6 +13,11 @@ preparing any commit or push. These rules apply to all agents in this repository
   operation records, local logs and machine-specific manifests under ignored paths.
 - A PII/secrets check is mandatory before every commit and push, including
   documentation, tests, commit messages, and author/committer metadata.
+- All commits and pushes in this repository use TK-421 (GitHub login
+  `TeeKay-FourTwentyOne`). Set both author and committer to the public no-reply
+  identity in `.githooks/identity.json`; verify SSH authenticates as that account.
+  Do not infer identity from the active `gh` account or change global Git settings.
+  Follow the repository-local setup in `docs/source-privacy.md`.
 - Enable the repository hooks with `npm run privacy:install`. Do not replace
   existing custom hooks without review. Never bypass a failing privacy check.
 - Review candidate content manually; run `npm run privacy:worktree`, stage exact

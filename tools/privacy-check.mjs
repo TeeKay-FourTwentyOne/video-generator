@@ -59,9 +59,27 @@ const paths = bytes => bytes.toString().split('\0').filter(Boolean);
 
 export function audit({cwd = process.cwd(), mode = '--staged', base, input = '', remote = 'origin'}) {
   const root = git(['rev-parse','--show-toplevel'], cwd).toString().trim();
+  const policyPath = join(root,'.githooks','identity.json');
+  let expectedIdentity;
+  if (existsSync(policyPath)) {
+    try {
+      expectedIdentity = JSON.parse(readFileSync(policyPath,'utf8'));
+      if (!expectedIdentity || typeof expectedIdentity.name !== 'string'
+          || !expectedIdentity.name.trim() || /[\r\n<>]/.test(expectedIdentity.name)
+          || typeof expectedIdentity.email !== 'string' || !publicEmail(expectedIdentity.email)
+          || /[\s<>]/.test(expectedIdentity.email)) throw new Error();
+    } catch { throw new Error('Invalid repository Git identity policy; details withheld.'); }
+  }
   const findings = [], seen = new Set();
   let fileCount = 0, commitCount = 0;
   const add = (scope, path, rows) => findings.push(...rows.map(row => ({scope, path, ...row})));
+  function identity(scope, role, name, email) {
+    const path = `[${role} metadata]`;
+    if (!publicEmail(email || '')) add(scope,path,[{rule:'non-noreply-commit-email',line:1}]);
+    if (expectedIdentity && (name !== expectedIdentity.name
+        || email?.toLowerCase() !== expectedIdentity.email.toLowerCase()))
+      add(scope,path,[{rule:'unexpected-git-identity',line:1}]);
+  }
   function file(ref, path, scope) {
     const object = git(['rev-parse', `${ref}:${path}`], root).toString().trim();
     const key = `${object}:${path}`;
@@ -75,19 +93,18 @@ export function audit({cwd = process.cwd(), mode = '--staged', base, input = '',
     for (const id of new Set(ids)) {
       commitCount++;
       for (const path of paths(git(['diff-tree','--root','-m','--no-commit-id','--name-only','-r','-z','--diff-filter=ACMRT',id], root))) file(id, path, id.slice(0,12));
-      const [author, committer] = lines(git(['show','-s','--format=%ae%n%ce',id], root));
-      for (const [role, email] of [['author',author],['committer',committer]]) {
-        if (!publicEmail(email)) add(id.slice(0,12), `[${role} metadata]`, [{rule:'non-noreply-commit-email',line:1}]);
-      }
+      const [authorName, authorEmail, committerName, committerEmail] =
+        git(['show','-s','--format=%an%x00%ae%x00%cn%x00%ce',id],root).toString().trimEnd().split('\0');
+      identity(id.slice(0,12),'author',authorName,authorEmail);
+      identity(id.slice(0,12),'committer',committerName,committerEmail);
       add(id.slice(0,12), '[commit message]', scanText(git(['show','-s','--format=%B',id], root).toString()));
     }
   }
   if (mode === '--staged') {
     for (const path of paths(git(['diff','--cached','--name-only','--diff-filter=ACMRT','-z'], root))) file('',path,'index');
     for (const role of ['AUTHOR','COMMITTER']) {
-      const identity = git(['var',`GIT_${role}_IDENT`],root).toString();
-      const email = identity.match(/<([^<>]+)>/)?.[1];
-      if (!publicEmail(email || '')) add('index',`[${role.toLowerCase()} metadata]`,[{rule:'non-noreply-commit-email',line:1}]);
+      const ident = git(['var',`GIT_${role}_IDENT`],root).toString().match(/^(.*) <([^<>]+)>/);
+      identity('index',role.toLowerCase(),ident?.[1],ident?.[2]);
     }
   } else if (mode === '--worktree') {
     const files = new Set([...paths(git(['diff','HEAD','--name-only','--diff-filter=ACMRT','-z'],root)), ...paths(git(['ls-files','--others','--exclude-standard','-z'],root))]);

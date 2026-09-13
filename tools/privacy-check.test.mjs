@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync, writeFileSync, rmSync} from 'node:fs';
+import {mkdtempSync, mkdirSync, writeFileSync, copyFileSync, chmodSync, rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join, resolve} from 'node:path';
 import {execFileSync, spawnSync} from 'node:child_process';
@@ -76,6 +76,77 @@ test('detects personal commit email before committing', t => {
   const {cwd,git} = repository(t);
   git('config','user.email',privateEmail());
   assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='non-noreply-commit-email'));
+});
+
+function identityPolicy(cwd) {
+  mkdirSync(join(cwd,'.githooks'),{recursive:true});
+  writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify({name:'review-bot',email:publicIdentity}));
+}
+
+test('repository identity policy rejects another public account and wrong display name', t => {
+  const {cwd,git} = repository(t);
+  identityPolicy(cwd);
+  assert.deepEqual(audit({cwd,mode:'--staged'}).findings,[]);
+  git('config','user.email',['67890+other-bot','users.noreply.github.com'].join('@'));
+  let result = audit({cwd,mode:'--staged'});
+  assert.equal(result.findings.filter(f=>f.rule==='unexpected-git-identity').length,2);
+  assert.ok(!result.findings.some(f=>f.rule==='non-noreply-commit-email'));
+  git('config','user.email',publicIdentity);
+  git('config','user.name','other-bot');
+  result = audit({cwd,mode:'--staged'});
+  assert.equal(result.findings.filter(f=>f.rule==='unexpected-git-identity').length,2);
+});
+
+test('repository identity policy checks actual outgoing authors and committers', t => {
+  const {cwd,git,base} = repository(t);
+  identityPolicy(cwd);
+  const otherEmail = ['67890+other-bot','users.noreply.github.com'].join('@');
+  git('commit','--allow-empty','-qm','different author','--author',`other-bot <${otherEmail}>`);
+  git('config','user.email',otherEmail);
+  git('commit','--allow-empty','-qm','different committer','--author',`review-bot <${publicIdentity}>`);
+  git('config','user.email',publicIdentity);
+  const head=git('rev-parse','HEAD');
+  for (const mode of ['--outgoing','--pre-push']) {
+    const result=audit({cwd,mode,base,input:`refs/heads/main ${head} refs/heads/main ${base}\n`});
+    assert.equal(result.commitCount,2);
+    const findings=result.findings.filter(f=>f.rule==='unexpected-git-identity');
+    assert.deepEqual(findings.map(f=>f.path).sort(),['[author metadata]','[committer metadata]']);
+    assert.ok(!JSON.stringify(result).includes(otherEmail));
+  }
+});
+
+test('malformed repository identity policy fails closed without exposing its content', t => {
+  const {cwd} = repository(t);
+  identityPolicy(cwd);
+  for (const content of ['not JSON',JSON.stringify({name:'review-bot',email:privateEmail()}), 'null']) {
+    writeFileSync(join(cwd,'.githooks','identity.json'),content);
+    assert.throws(()=>audit({cwd,mode:'--staged'}),error=>{
+      assert.match(error.message,/Invalid repository Git identity policy/);
+      assert.ok(!error.message.includes(privateEmail()));
+      return true;
+    });
+  }
+});
+
+test('installed pre-commit hook rejects a retained wrong author and permits its correction', t => {
+  const {cwd,git} = repository(t);
+  const otherEmail = ['67890+other-bot','users.noreply.github.com'].join('@');
+  git('commit','--allow-empty','-qm','author fixture','--author',`other-bot <${otherEmail}>`);
+  const before=git('rev-parse','HEAD');
+  identityPolicy(cwd);
+  mkdirSync(join(cwd,'tools'));
+  copyFileSync(resolve('tools/privacy-check.mjs'),join(cwd,'tools','privacy-check.mjs'));
+  copyFileSync(resolve('.githooks/pre-commit'),join(cwd,'.githooks','pre-commit'));
+  chmodSync(join(cwd,'.githooks','pre-commit'),0o755);
+  git('config','core.hooksPath','.githooks');
+  const attempt=spawnSync('git',['commit','--amend','--no-edit','--allow-empty'],{cwd,encoding:'utf8'});
+  assert.notEqual(attempt.status,0);
+  assert.match(attempt.stderr,/unexpected-git-identity/);
+  assert.ok(!attempt.stderr.includes(otherEmail));
+  assert.equal(git('rev-parse','HEAD'),before);
+  git('commit','--amend','--no-edit','--allow-empty','--author',`review-bot <${publicIdentity}>`);
+  assert.equal(git('show','-s','--format=%an <%ae>%n%cn <%ce>','HEAD'),
+    `review-bot <${publicIdentity}>\nreview-bot <${publicIdentity}>`);
 });
 
 test('outgoing scan catches sensitive content in an earlier, later-cleaned commit', t => {
