@@ -21,6 +21,14 @@ npm-debug.log*
 # Python
 __pycache__/
 *.pyc
+.venv*/
+venv/
+
+# Local secrets and credential material
+.env
+.env.*
+*.pem
+*.key
 
 # Claude Code local settings
 .claude/settings.local.json

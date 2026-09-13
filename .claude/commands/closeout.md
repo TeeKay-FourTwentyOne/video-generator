@@ -1,57 +1,40 @@
 # Session Closeout
 
-Perform the following closeout sequence:
+Follow `AGENTS.md` and `docs/source-privacy.md`. PII/secrets review is mandatory
+for every commit and push, including briefs, plans and Git metadata.
 
-1. **Document current state**: Update CLAUDE.md or a session log with:
-   - What was accomplished this session
-   - Where we stopped / what's in progress
-   - Any known issues or next steps
+1. **Document the work** in a project brief or source-level session note: outcome,
+   remaining limits, relevant tests, reproducible relative paths and next steps.
+   Keep generated media and detailed runtime/provider records in ignored storage.
 
-2. **Scan for sensitive/unrelated content**:
-   Before staging anything, scan all files about to be committed:
+2. **Review scope and privacy before staging.** Separate unrelated changes. Inspect
+   candidate code and prose for personal names, emails, phones, addresses, home
+   directories, private project details, account/resource identifiers and secrets.
+   Do not print sensitive values in findings. Inspect the proposed commit message
+   and approved public GitHub/no-reply identity as well.
 
-   a. **Check for secrets** - Search staged files and plan files for:
-      - API keys, tokens (patterns like `sk-`, `sk_`, `api_key`, `apikey`, `token`)
-      - Passwords, secrets, credentials
-      - Service account JSON files
-      - `.env` file contents
+3. **Do not copy raw plans automatically.** If a local project plan contains useful
+   source documentation, create a sanitized summary, then scan it. Never import
+   global plans, private communications, credentials or unrelated project notes.
 
-   b. **Check for unrelated project content** - Look for files that don't belong:
-      - References to other project names (e.g., "privatecanvas", unrelated codebases)
-      - Content obviously unrelated to video-generator (physics, unrelated business docs)
-      - Personal notes, journals, or private communications
+4. **Enable and run the local guard:** `npm run privacy:install`, then
+   `npm run privacy:worktree`. Existing custom hooks must be integrated safely,
+   never overwritten. Fix or exclude findings; pause for explicit approval if
+   sensitive content is genuinely necessary. Never bypass a failed check.
 
-   c. **If anything suspicious is found**:
-      - List each finding with file path and concern
-      - Use AskUserQuestion to confirm: "These files contain potentially sensitive or unrelated content. Should I: (1) Exclude them from commit, (2) Include anyway, (3) Let me review each individually"
-      - Do NOT proceed with commit until user confirms
+5. **Stage explicit paths**, review `git diff --cached`, run
+   `npm run privacy:check`, and run relevant tests/build. The tracked pre-commit
+   and commit-msg hooks provide additional automatic checks.
 
-3. **Stage and commit working changes**:
-   - Review any uncommitted changes
-   - Create a descriptive commit for the current work state
-   - If work is incomplete, prefix commit with "WIP:"
+6. **Commit only authorized work** with a descriptive, privacy-reviewed message.
+   An explicit user request to commit and push is sufficient authorization for
+   the clean, in-scope changes; it does not authorize unrelated files or uploads.
 
-4. **Copy plan files**:
-   - Copy any .md files from ./.claude/plans/ (local project plans) that were modified today to ./docs/claude-plans/ (create directory if needed)
-   - **Important**: Only use the local ./.claude/plans/ directory. Do NOT read from ~/.claude/plans/ (global plans may contain content from other projects)
-   - Rename them with descriptive names based on their content (e.g., "2025-01-05-auth-refactor-plan.md")
-   - **Re-scan copied plan files** for sensitive content before staging (plan files often contain implementation details that may reference secrets or wrong projects)
+7. **Review everything going out:** fetch the intended remote, inspect divergence,
+   list all outgoing commits and new files, and run `npm run privacy:outgoing`.
+   The pre-push hook inspects all new outgoing snapshots and commit metadata,
+   not just the final diff. No force-push or history rewrite without authorization.
 
-5. **Commit plan files**:
-   - Stage the copied plan files
-   - Commit with message "docs: add Claude Code session plans from [date]"
-
-6. **Pre-push review**:
-   - Show a summary of all commits about to be pushed (`git log origin/main..HEAD --oneline`)
-   - List any new files being introduced
-   - If any files were flagged during the sensitive content scan but included anyway, remind the user here
-   - Use AskUserQuestion: "Ready to push these commits to origin? (Yes / No, let me review first)"
-
-7. **Push to origin**:
-   - Only after user confirms, push current branch to origin
-
-8. **Summary**: Provide a brief summary of what was committed and pushed.
-
-9. **Confirm clean state**:
-   - Run `git status` to verify working tree is clean
-   - If anything remains unstaged, flag it for the human to review before ending session
+8. **Push the authorized branch**, verify the remote ref, and confirm working-tree
+   state. Summarize the commit, tests, privacy scope and any intentionally local
+   or unrelated changes. A clean source commit does not back up generated media.
