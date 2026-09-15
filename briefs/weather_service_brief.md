@@ -1,7 +1,7 @@
 # WEATHER SERVICE
 
 **Built:** 2026-09-12. **Format:** 9:16, 22.5 s, 24 fps; 1080p original, local 2160 × 3840 upscale.
-**Published YouTube:** https://youtube.com/shorts/37Wj_UIFG3U (2026-09-12; URL supplied by Stephen). Description used as drafted apart from a few credit revisions; exact published credit wording has not been captured here.
+**Published YouTube:** https://youtube.com/shorts/37Wj_UIFG3U (2026-09-12; supplied publication URL). Description used as drafted apart from a few credit revisions; exact published credit wording has not been captured here.
 **Published Instagram:** pending URL.
 **Workspace:** `data/workspace/weather-service/`
 **Final:** `final/weather-service-4k.mp4`
@@ -14,11 +14,11 @@ Design, direction, generation prompts, editing, typography and synthesized score
 
 ## User review
 
-Stephen found it fun, liked the visual design, and had no major editing complaints. The miniature scale did not necessarily read clearly. Requested the 4K upscale after approving the piece.
+The visual design and edit were approved. The miniature scale did not always read clearly. The approved cut proceeded to 4K finishing.
 
 ## Publication instructions
 
-For this piece, do not include credits to Stephen, a][ productions, or other human/production-company credits. For this and future videos, the repository URL must be the final line of every description / credit block. Save finished publication URLs above when provided; do not invent them.
+Public credits cover the production systems and tools used. The repository URL is the final line of each publication description.
 
 ## Recommended YouTube / Instagram description
 

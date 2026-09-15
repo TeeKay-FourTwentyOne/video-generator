@@ -89,6 +89,11 @@ encoded payloads, model outputs and embedded image metadata still need manual
 judgment. Variable names such as `apiKey` are not themselves credentials. Real
 findings are never printed verbatim. No broad content or path allowlist is used.
 
+Public instructions should describe privacy categories, without naming the
+people or private entities to omit. Keep project-specific exclusion lists and
+identifying review notes in ignored local storage. An instruction to withhold
+information must not itself publish that information.
+
 The scan is scoped to candidate/index files and new outgoing commit snapshots.
 It does not certify old public history as clean. If a previously published secret
 is found, report it and arrange rotation and history remediation separately; do
