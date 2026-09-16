@@ -1,5 +1,34 @@
 # Scary Woods archive finishing
 
+## Episode 02
+
+The released Episode 02 archive is at
+`data/workspace-archive/scary-woods-episode-02/`. Its
+[brief](../../briefs/forest_spirit_episode_02_brief.md) records the published
+video and the 35-second cut.
+
+```sh
+python3 tools/forest-spirit/finish.py data/workspace-archive/scary-woods-episode-02
+python3 tools/forest-spirit/finish.py data/workspace-archive/scary-woods-episode-02 \
+  --mode rebuild-1080 --output data/exports/scary-woods-ep02-rebuilt-1080.mp4
+python3 tools/forest-spirit/finish.py data/workspace-archive/scary-woods-episode-02 \
+  --mode upscale-4k --output data/exports/scary-woods-ep02-rebuilt-4k.mp4
+```
+
+The archive recipe selects Lanczos 2× scaling through FFmpeg. This preserves
+the ship footage's photographic textures and requires no inference model.
+The approved 1080p input supplies the unchanged AAC audio and ship-only
+subtitle track. The editable route combines caption-free picture with the
+six saved caption panels, copying the same audio and subtitle streams.
+
+Original ship clips, generated images, selected voice clips, final PCM mix,
+editable stems, caption artwork, historical recipes and the spoon handoff
+are retained locally. Ship dialogue and location sound share one native
+audio stem. Music and framing effects share another; framing voices are
+separate. The exact final mix is retained as the audio reference.
+
+## Episode 01
+
 The compact Episode 01 archive lives locally at
 `data/workspace-archive/forest-spirit/`. Generated assets and runtime records are
 excluded from source control. The public [episode brief](../../briefs/forest_spirit_episode_01_brief.md)

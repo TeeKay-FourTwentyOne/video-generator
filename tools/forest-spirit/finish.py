@@ -49,6 +49,19 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     approved = inside(root, recipe['approved1080'])
     if args.mode == 'upscale-4k':
+        method = recipe.get('upscaleMethod', 'realesrgan')
+        if method == 'lanczos':
+            subprocess.run([
+                'ffmpeg', '-hide_banner', '-nostdin', '-n', '-i', str(approved),
+                '-map', '0:v:0', '-map', '0:a?', '-map', '0:s?', '-map_metadata', '0',
+                '-vf', 'scale=iw*2:ih*2:flags=lanczos,setsar=1',
+                '-c:v', 'libx264', '-crf', '16', '-preset', 'slow', '-pix_fmt', 'yuv420p',
+                '-fps_mode', 'passthrough', '-c:a', 'copy', '-c:s', 'copy',
+                '-movflags', '+faststart', str(output),
+            ], check=True)
+            return
+        if method != 'realesrgan':
+            parser.error('Unsupported archive upscale method')
         package = importlib.util.find_spec('realesrgan_ncnn_py')
         if package is None:
             parser.error('Use the local upscale Python environment; see the archive README')
@@ -73,9 +86,9 @@ def main():
         previous = label
     filters.append(f'[{previous}]format=yuv420p[video]')
     command += ['-filter_complex_threads', '1', '-filter_complex', ';'.join(filters),
-                '-map', '[video]', '-map', '1:a:0', '-frames:v', str(recipe['frames']),
+                '-map', '[video]', '-map', '1:a:0', '-map', '1:s?', '-frames:v', str(recipe['frames']),
                 '-t', str(recipe['durationSeconds']), '-r', '24', '-c:v', 'libx264',
-                '-preset', 'medium', '-crf', '17', '-threads', '4', '-c:a', 'copy',
+                '-preset', 'medium', '-crf', '17', '-threads', '4', '-c:a', 'copy', '-c:s', 'copy',
                 '-map_metadata', '-1', '-movflags', '+faststart', str(output)]
     subprocess.run(command, check=True)
 
