@@ -1,5 +1,19 @@
 # Core Workflow
 
+## Directorial planning
+
+Before generating shots, decide what each shot should make the viewer notice
+and feel. Choose framing, lens, camera movement, subject motion, lighting,
+duration and sound to serve that beat.
+
+Plan coverage that varies distance and emphasis: establish the space, move in
+for meaningful action, and use close-ups, inserts or reaction shots when they
+make an emotion or detail legible. A face, eye, breath or small gesture can carry
+a beat that a wide composition cannot. Give important motions a clear setup,
+readable action and a moment to register. Let shot scale, rhythm and sound evolve
+with the mood, and reserve generation time for those expressive shots when
+setting the budget.
+
 ## MCP Tools
 
 The video pipeline uses MCP (Model Context Protocol) tools. All tools are available via the `video-generator` MCP server.
