@@ -65,6 +65,10 @@ _DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 # the user approved, so an exhausted pot is never topped up from another and
 # a new pot needs a new line here plus the sentence that authorized it.
 PROJECTS = {
+    # SCARY WOODS EPISODE 2: "45 dollar budget for the story within a story
+    # portion." User authorization 2026-09-15. All-in allocation: reserve
+    # non-Veo costs in this same pot before video submissions.
+    "scary-woods-ep02": (45.00, os.path.join(_DATA, "veo-budget-scary-woods-ep02.tsv")),
     # MERIDIAN HOUSE: "Keeping costs below $50 total, including the amount
     # you spent on the image generations for the artistic rotation v3,
     # let's start the tour." — user authorization 2026-09-12.
@@ -130,7 +134,7 @@ def read_spent():
                 n += 1
             except (IndexError, ValueError):
                 die(f"malformed ledger line: {line!r} — fix {LEDGER} by hand")
-    return total, n
+    return round(total, 2), n
 
 
 def append(model, seconds, resolution, audio, usd, note):
@@ -147,7 +151,8 @@ def append(model, seconds, resolution, audio, usd, note):
 
 def cmd_status():
     spent, n = read_spent()
-    label = ("All-in allocation (includes reserves)" if LEDGER == PROJECTS["meridian-house"][1]
+    label = ("All-in allocation (includes reserves)" if LEDGER in {
+                 PROJECTS["meridian-house"][1], PROJECTS["scary-woods-ep02"][1]}
              else "Veo generation spend")
     print(f"{label}: ${spent:.2f} of ${CAP_USD:.2f} cap "
           f"({n} ledger entries)  —  ${CAP_USD - spent:.2f} remaining")
@@ -163,7 +168,10 @@ def cmd_preflight(args):
     rate = RATES[(args.model, args.resolution, audio)]
     cost = rate * args.seconds
     spent, _ = read_spent()
-    if spent + cost > CAP_USD:
+    # Ledger values are stored in cents. Compare in cents as well so binary
+    # float accumulation cannot reject a request that exactly fills the cap.
+    total_cents = round(spent * 100) + round(cost * 100)
+    if total_cents > round(CAP_USD * 100):
         print(f"HARD STOP: ${spent:.2f} spent + ${cost:.2f} intended = "
               f"${spent + cost:.2f} > ${CAP_USD:.2f} cap. NOT logged. "
               f"DO NOT SUBMIT.", file=sys.stderr)
