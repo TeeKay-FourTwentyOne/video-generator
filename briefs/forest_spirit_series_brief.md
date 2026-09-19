@@ -1,6 +1,8 @@
 # Scary Woods — series brief
 
-Episode 01 is published: https://youtube.com/shorts/dsMDFQvEOew
+- Episode 01: https://youtube.com/shorts/dsMDFQvEOew
+- Episode 02: https://youtube.com/shorts/lykR2ZS4Hws
+- Episode 03 draft, publication pending: https://youtube.com/shorts/Wf-bg15itZg
 
 Scary Woods follows three mismatched travelers through a miniature forest with
 more personality than reliable signposts. Dry exchanges, physical reactions and
@@ -19,7 +21,8 @@ warmly eerie discoveries carry the comedy. The established format is vertical
 
 The blue crystal ball and the cabin interior establish the pilot's transition
 into storytelling. Episode 01 ends inside the ball with Spirit saying,
-“There was once a ship...” Episode 02's plot and shot guide remain to be discussed.
+“There was once a ship...” Episode 02 follows the ship story into a spoon;
+Episode 03 returns from a royal story and sends Paper toward a watermill.
 
 ## Production conventions
 
@@ -34,8 +37,10 @@ into storytelling. Episode 01 ends inside the ball with Spirit saying,
 - Always include material-styled captions with the character labels Wood, Clay,
   Paper and Spirit. Placement normally favors the upper third, with adjustments
   to protect faces and story objects. See the [subtitle guide](forest_spirit_subtitle_style_v1.md).
-- Finish picture and audio at 1080 × 1920 and 24 fps, then use the standard local
-  2× Real-ESRGAN process for the vertical 2160 × 3840 master.
+- Finish review drafts at 1080 × 1920 and 24 fps, with a smaller phone review copy.
+  Do not create 4K upscales until the final draft has been reviewed together with
+  the user and is ready to be published. Upscaling is a separate final finishing
+  step using the episode's approved method.
 
 ## Published pilot and reusable archive
 
@@ -53,3 +58,12 @@ The archive's `README.md`, `project.json` and `notes/next-episode.md` are the ac
 handoff. Historical notes record earlier decisions and may reference removed
 intermediates. Use [the finishing entry point](../tools/forest-spirit/README.md)
 to verify retained files or rebuild the final presentation.
+
+## Episode 03 release
+
+The [Episode 03 brief](forest_spirit_episode_03_brief.md) records the approved
+53.75-second 4K master and the user-supplied YouTube draft URL. Its
+[description](forest_spirit_episode_03_description.md) follows the series format.
+The archive is `data/workspace-archive/scary-woods-episode-03/`; the final 4K
+master is its only full edit. Original generated source clips and non-video
+production assets are retained. Earlier edits and previews are removed.
