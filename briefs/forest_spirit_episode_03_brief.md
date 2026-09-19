@@ -2,15 +2,14 @@
 
 ## Current release: release-v1 (approved edit-v8)
 
-**YouTube draft URL:** https://youtube.com/shorts/Wf-bg15itZg
+**Published YouTube Short:** https://youtube.com/shorts/Wf-bg15itZg
 
-The URL was supplied by the user for the YouTube draft on 2026-09-18. Publication
-is pending; this record does not claim the video is live. The
-[publication description](forest_spirit_episode_03_description.md) follows the
+The URL was supplied by the user on 2026-09-18; publication was confirmed by the
+user on 2026-09-19. The [publication description](forest_spirit_episode_03_description.md) follows the
 earlier Scary Woods descriptions.
 
-Status: **completed 4K release master**, archived. All five initial September 18
-revisions, the doorway revision, and the walk/flight tightening are implemented.
+Status: **published**, with the final 4K release master archived. All five initial
+September 18 revisions, the doorway revision, and the walk/flight tightening are implemented.
 The episode runs **53.75 seconds**, 1,290 frames, 24 fps,
 vertical 9:16.
 
@@ -87,7 +86,7 @@ appended. Earlier content is unchanged.
   previews and video intermediates were removed during the requested archive.
   Original generated King and flight clips remain as source assets, alongside
   non-video artwork, audio, captions and production records.
-- The user is handling the YouTube draft and publication.
+- Publication at the supplied URL is confirmed by the user.
 
 ## Archive
 
