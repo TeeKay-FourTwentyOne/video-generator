@@ -2,7 +2,7 @@
 
 - Episode 01: https://youtube.com/shorts/dsMDFQvEOew
 - Episode 02: https://youtube.com/shorts/lykR2ZS4Hws
-- Episode 03 draft, publication pending: https://youtube.com/shorts/Wf-bg15itZg
+- Episode 03, published: https://youtube.com/shorts/Wf-bg15itZg
 
 Scary Woods follows three mismatched travelers through a miniature forest with
 more personality than reliable signposts. Dry exchanges, physical reactions and
@@ -62,7 +62,7 @@ to verify retained files or rebuild the final presentation.
 ## Episode 03 release
 
 The [Episode 03 brief](forest_spirit_episode_03_brief.md) records the approved
-53.75-second 4K master and the user-supplied YouTube draft URL. Its
+53.75-second 4K master and the user-confirmed published YouTube URL. Its
 [description](forest_spirit_episode_03_description.md) follows the series format.
 The archive is `data/workspace-archive/scary-woods-episode-03/`; the final 4K
 master is its only full edit. Original generated source clips and non-video
