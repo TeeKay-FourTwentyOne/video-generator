@@ -1,5 +1,18 @@
 # Scary Woods archive finishing
 
+## Episode 03
+
+The Episode 03 archive is at `data/workspace-archive/scary-woods-episode-03/`.
+Its [brief](../../briefs/forest_spirit_episode_03_brief.md) records the final
+53.75-second 4K master and supplied YouTube draft URL, with publication pending.
+
+The user's archive selection retains only the final 4K full edit, plus original
+generated source clips and non-video assets and records. Older edits, review
+exports and video intermediates have been removed. The archive has its own
+retained-file manifest and verification script under `notes/`. Historical
+recipes reference removed intermediates; the Episode 01/02 rebuild commands
+below do not apply to this archive. Its exact 4K master is authoritative.
+
 ## Episode 02
 
 The released Episode 02 archive is at
