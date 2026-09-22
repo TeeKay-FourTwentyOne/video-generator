@@ -65,6 +65,14 @@ _DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 # the user approved, so an exhausted pot is never topped up from another and
 # a new pot needs a new line here plus the sentence that authorized it.
 PROJECTS = {
+    # SCARY WOODS EPISODE 4: standing minimum episode budget of $30,
+    # authorized 2026-09-21. Use $30 as this revision's conservative ceiling;
+    # reserve non-Veo costs in this same pot before submissions.
+    "scary-woods-ep04": (30.00, os.path.join(_DATA, "veo-budget-scary-woods-ep04.tsv")),
+    # SCARY WOODS EPISODE 3: "Your total budget for this video will be $30."
+    # User authorization 2026-09-16. Reserve all non-Veo costs in this pot.
+    # Raised 2026-09-18: "Yes, raise the ceiling to $50 total and proceed."
+    "scary-woods-ep03": (50.00, os.path.join(_DATA, "veo-budget-scary-woods-ep03.tsv")),
     # SCARY WOODS EPISODE 2: "45 dollar budget for the story within a story
     # portion." User authorization 2026-09-15. All-in allocation: reserve
     # non-Veo costs in this same pot before video submissions.
@@ -152,7 +160,8 @@ def append(model, seconds, resolution, audio, usd, note):
 def cmd_status():
     spent, n = read_spent()
     label = ("All-in allocation (includes reserves)" if LEDGER in {
-                 PROJECTS["meridian-house"][1], PROJECTS["scary-woods-ep02"][1]}
+                 PROJECTS["meridian-house"][1], PROJECTS["scary-woods-ep02"][1],
+                 PROJECTS["scary-woods-ep03"][1], PROJECTS["scary-woods-ep04"][1]}
              else "Veo generation spend")
     print(f"{label}: ${spent:.2f} of ${CAP_USD:.2f} cap "
           f"({n} ledger entries)  —  ${CAP_USD - spent:.2f} remaining")

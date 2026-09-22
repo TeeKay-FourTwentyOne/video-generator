@@ -1,5 +1,31 @@
 # Scary Woods archive finishing
 
+## Episode 04
+
+The published Episode 04 archive is at
+`data/workspace-archive/scary-woods-episode-04/`. Its
+[brief](../../briefs/forest_spirit_episode_04_brief.md) records the 57.333-second
+approved edit-v3, 4K master and confirmed publication URL.
+
+```sh
+python3 tools/forest-spirit/finish.py data/workspace-archive/scary-woods-episode-04
+python3 tools/forest-spirit/finish.py data/workspace-archive/scary-woods-episode-04 \
+  --mode rebuild-1080 --output data/exports/scary-woods-ep04-rebuilt-1080.mp4
+python3 tools/forest-spirit/finish.py data/workspace-archive/scary-woods-episode-04 \
+  --mode upscale-4k --output data/exports/scary-woods-ep04-rebuilt-4k.mp4
+```
+
+The exact approved 1080p input supplies unchanged AAC audio for both routes.
+The editable route overlays all 18 retained caption panels on the clean picture;
+it preserves timing but is not promised byte-identical to the approved edit.
+The 4K route uses Lanczos 2× without interpolation or audio re-encoding.
+Original forest source clips, editable audio, images, production history and
+QA remain local. Superseded review videos and redundant intermediate videos
+are removed only after integrity and rebuild verification. Historical full
+composition recipes also depend on Episode 01 and 03 assets; the archive records
+those dependencies separately. Use the finishing tool, not historical scripts,
+for safe rebuilds outside the immutable archive.
+
 ## Episode 03
 
 The Episode 03 archive is at `data/workspace-archive/scary-woods-episode-03/`.

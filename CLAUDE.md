@@ -53,6 +53,9 @@ The MCP server is located at `mcp/video-generator/` and provides tools for:
 
 ## Publication descriptions
 
+Include `#gpt6` or `#gpt6astra` in future video descriptions (user instruction,
+2026-09-21). Keep the existing project-specific credit and hashtag conventions.
+
 End every video description / credit block with this repository URL as its final line (user instruction, 2026-09-12):
 https://github.com/TeeKay-FourTwentyOne/video-generator
 

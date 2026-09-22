@@ -3,6 +3,7 @@
 - Episode 01: https://youtube.com/shorts/dsMDFQvEOew
 - Episode 02: https://youtube.com/shorts/lykR2ZS4Hws
 - Episode 03, published: https://youtube.com/shorts/Wf-bg15itZg
+- Episode 04, published: https://youtube.com/shorts/SgeFPoHYyZw
 
 Scary Woods follows three mismatched travelers through a miniature forest with
 more personality than reliable signposts. Dry exchanges, physical reactions and
@@ -23,9 +24,19 @@ The blue crystal ball and the cabin interior establish the pilot's transition
 into storytelling. Episode 01 ends inside the ball with Spirit saying,
 “There was once a ship...” Episode 02 follows the ship story into a spoon;
 Episode 03 returns from a royal story and sends Paper toward a watermill.
+Episode 04 finds Paper helping tiny mill workers while Wood and Clay remain
+several hours behind on the forest trail.
 
 ## Production conventions
 
+- Future descriptions include `#gpt6` or `#gpt6astra`, alongside the established
+  series hashtags. Use a short comic hook, synopsis, actual production credits
+  and hashtags; the repository URL remains the final line.
+- Standing episode budget: at least $30 is authorized per Scary Woods episode
+  (user direction, 2026-09-21). Treat $30 as the initial working ceiling, not a
+  spending target; discuss any larger ceiling before exceeding it.
+- End on a deliberately centered story object or detail suitable for a hard
+  push-in or iris close, carrying forward the established episode endings.
 - Preserve the contrasting wood, clay, paper and felt construction styles.
 - Use the built-in OpenAI image-generation tool for new imagery and keep a local
   generation-call ledger. Its exact image-model identity is not exposed.
@@ -67,3 +78,14 @@ The [Episode 03 brief](forest_spirit_episode_03_brief.md) records the approved
 The archive is `data/workspace-archive/scary-woods-episode-03/`; the final 4K
 master is its only full edit. Original generated source clips and non-video
 production assets are retained. Earlier edits and previews are removed.
+
+## Episode 04 release
+
+The [Episode 04 brief](forest_spirit_episode_04_brief.md) records the approved
+57.333-second 4K master and user-confirmed published YouTube URL. Its
+[description](forest_spirit_episode_04_description.md) includes the new hashtag
+convention. The archive is `data/workspace-archive/scary-woods-episode-04/`.
+The final 4K master, approved 1080p input, clean picture, original source clips,
+audio stems, captions, recipes and QA are retained. Use the finishing tool to
+verify or rebuild outside the preserved archive; historical paths are not an
+invitation to rerun paid production scripts.
