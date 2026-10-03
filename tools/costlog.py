@@ -9,6 +9,8 @@ import os
 
 # USD per million tokens: (input, output, cache_write_5m, cache_read)
 _PRICING = {
+    # Exact model before family fallbacks; official rates verified 2026-10-03.
+    "claude-sonnet-5-5": (2.0, 10.0, 2.50, 0.20),
     "opus": (15.0, 75.0, 18.75, 1.50),
     "sonnet": (3.0, 15.0, 3.75, 0.30),
     "haiku": (1.0, 5.0, 1.25, 0.10),

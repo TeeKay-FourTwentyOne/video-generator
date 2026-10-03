@@ -1,119 +1,65 @@
 # Video Generator
 
-AI video production workflow centered on Claude Code skills plus a small collection of ffmpeg / Python tools. Day-to-day work is driving Veo 3.1 (animation), Gemini 3 Pro Image / "Nano Banana" (still frames), and ElevenLabs (voice + SFX) through an MCP server, with the skills below handling the editing, QA, and assembly steps around them.
+An agent-operated film workshop: plan a scene, generate only the motion it needs,
+edit locally, and deliver an inspectable native-resolution film. Codex and Claude
+Code share the same production contract and tools.
 
-## Pipeline
+The October 2026 baseline is **Borrowed Light**, a portrait mechanical fable made
+while reviewing the repository. See its [brief](briefs/borrowed_light_brief.md),
+[review findings](docs/repository-review-2026-10.md), and
+[provider research](docs/video-model-options-2026-10.md).
 
-For experiments with a persistent 3D set, see [Scene Lab](tools/scene-lab/README.md).
-`npm run scene:studio` serves a local mansion preview with repeatable camera paths,
-calibrated image projection, and 9:16 / 16:9 timelapse exports. It requires no new
-npm dependencies and makes no image or video generation calls.
-Scene Lab also includes a budgeted Veo tour workflow and a local-only finishing
-pass that finds the actual bookend frames before trimming and retiming the joins.
-The completed [Meridian House brief](briefs/meridian_house_brief.md) records the
-approved edit, 4K upscale, costs, limitations and reusable source recipe.
+## Start here
 
-## Source privacy
+Use existing dependencies (Node 22+, FFmpeg/ffprobe). These commands do not install
+libraries or call generation providers:
 
-PII/secrets review is mandatory before every commit and push. Enable the local
-hooks with `npm run privacy:install`; run `privacy:worktree`, `privacy:check` and
-`privacy:outgoing` alongside manual review. See [the checklist](docs/source-privacy.md).
-Generated media, credentials and machine-specific runtime records stay out of Git.
-
-## Shot workflow
-
-A typical shot:
-
-1. **Plate + character lock** — generate a canonical set plate and character reference with `nano-banana`.
-2. **Book-end frames** — for each clip, generate a first-frame and last-frame via `nano-banana`, run `frame-qa` to catch prop-state / pose issues before spending Veo credits.
-3. **Veo generation** — submit the clip via the `book-end` skill (or iterate cheaply on Fast via `veo-draft`).
-4. **QA** — `clip-qa` scans the result with Claude vision for glitches that ffmpeg metrics miss (materializing props, ghost limbs, flicker).
-5. **Normalize / splice / overlay** — `normalize-clip` strips embedded letterbox, `splice` finds imperceptible joins between back-to-back generations, `text-reveal` and `caption-box` add overlays.
-6. **Upscale** — `upscale` runs Real-ESRGAN to 4K for final exports.
-
-## Skills
-
-Claude Code skills live in `.claude/skills/`. Each has a `SKILL.md` spec; Claude invokes them automatically when relevant.
-
-### Generation
-| Skill | Purpose |
-|-------|---------|
-| `nano-banana` | Generate images via Gemini 3 Pro Image with reference anchoring. Primary tool for plates, character refs, and book-end frames. |
-| `book-end` | Generate a Veo clip as an animation between two nano-banana poster frames. Default for any shot where continuity drift would be visible. |
-| `veo-draft` | Cost-aware draft-then-quality workflow: iterate prompts on Fast, commit the approved shot to Quality. |
-| `frame-edit` | Frame-surgery workflow for continuity gags (vanishing props, object swaps) — extract, edit, then continue from the edited frame. |
-
-### QA
-| Skill | Purpose |
-|-------|---------|
-| `clip-qa` | Post-Veo visual-anomaly scan using Claude vision (materializing props, ghost limbs, flicker). |
-| `analyze-clip` | Ffmpeg + Whisper based analysis (black frames, freeze frames, dialogue/audio timing). |
-
-Book-end also runs `tools/frame-qa.py` on each frame pair before Veo submission to catch prop-position deltas, endpoint clustering, and distinctness issues.
-
-### Editing & assembly
-| Skill | Purpose |
-|-------|---------|
-| `normalize-clip` | Detect and strip embedded letterbox/pillarbox bars so mixed-source clips splice cleanly. |
-| `splice` | Find and execute imperceptible cuts between two clips, with optional geometric alignment. |
-| `edit-clip` | Trim / speed variations on a clip (tracked in `data/edits/`). |
-| `text-reveal` | Animated ASS subtitle overlays (vertical wipe reveal). |
-| `caption-box` | Social-media caption overlays (white box, black text, hard pop-in/out). |
-| `upscale` | Real-ESRGAN video upscale to 4K on Apple Silicon. |
-
-### Workflow
-| Skill | Purpose |
-|-------|---------|
-| `produce-video` | End-to-end production driver, concept → final. |
-| `archive-workspace` | Move a finished project from `data/workspace/<slug>/` into `data/workspace-archive/<slug>/`. |
-
-## Tools
-
-Standalone scripts under `tools/` that the skills wrap:
-
-| Tool | Notes |
-|------|-------|
-| `tools/nano-banana.cjs` | Gemini 3 Pro Image CLI with reference image support. |
-| `tools/frame-qa.py` | Book-end frame pair validator. |
-| `tools/clip-qa.py` | Claude-vision visual anomaly scanner. |
-| `tools/normalize-clip.cjs` | Letterbox detection + removal. |
-| `tools/splice.cjs` + `tools/splice_align.py` | Seamless-join finder with geometric alignment. |
-| `tools/text-reveal.cjs` | ASS-based top-down text reveal. |
-| `tools/caption-box.cjs` | ffmpeg `drawtext` caption renderer. |
-| `tools/upscale.py` | Real-ESRGAN 4K upscaler. |
-| `tools/gcp/` | GCS and log helpers for the Veo pipeline. |
-
-## Workspace convention
-
-Each project gets its own folder under `data/workspace/<slug>/` with:
-
-```
-refs/     # plates, character locks, reference imagery
-frames/   # book-end poster frames (firstFramePath / lastFramePath)
-clips/    # Veo outputs and intermediate edits
-final/    # assembled / captioned / upscaled deliverables
-scratch/  # throwaway experiments
+```sh
+npm run build
+npm test
+npm run film -- doctor
+npm run film -- help
 ```
 
-Archiving preserves that structure under `data/workspace-archive/<slug>/`. Briefs for in-flight and historical projects live under `briefs/`.
+For an authorized film, follow [the production workflow](docs/production.md).
+It provides one all-in budget, stable shot/request IDs, bounded provider calls,
+recoverable polling, source hashes, reviewed frame ranges, versioned edits and a
+local review player. `npm run film -- plan WORKSPACE` is a dry run. Only explicit
+submission/image commands buy new media.
 
-## MCP server
+MCP now defaults to ten focused tools. Existing specialist callers can set
+`VIDEO_MCP_PROFILE=legacy` in their server environment and reconnect. The CLI
+works directly for Codex, Claude Code and other agents with local file access.
 
-All generation and analysis primitives are exposed as MCP tools. The server lives in `mcp/video-generator/` and is wired up via `.mcp.json`. See `CLAUDE.md` and the rules files under `.claude/rules/` for the full tool inventory.
+## Where things live
 
-```bash
-cd mcp/video-generator && npm install && npm run build
-```
+| Path | Purpose |
+| --- | --- |
+| `AGENTS.md`, `CLAUDE.md` | Short shared operating rules and Claude import |
+| `.agents/skills/produce-video/` | Canonical production skill; Claude links to it |
+| `tools/production/` | Agent CLI, local editing, review and offline tests |
+| `mcp/video-generator/src/production/` | Budget and qualified provider specifications |
+| `mcp/video-generator/src/clients/` | Existing Google, Anthropic and ElevenLabs clients |
+| `mcp/video-generator/src/tools/` | MCP tools, including wrappers around the same CLI |
+| `docs/craft/` | On-demand continuity, dialogue, FFmpeg, editing and QA guidance |
+| `tools/scene-lab/` | Persistent local 3D scenes and camera experiments |
+| `tools/` | Specialized local/QA helpers and preserved production recipes |
+| `briefs/`, `characters/`, `series/` | Sanitized intent, character canon and series craft |
+| `data/workspace/<slug>/` | Ignored film assets, budget, operation records, edits and QA |
+| `data/workspace-archive/<slug>/` | Preserved older productions |
 
-## Setup
+[Architecture and compatibility](docs/architecture.md) distinguishes the maintained
+path from historical bulk executors, SDK agents and experiments. Existing media
+and prior production directories are not moved by the new tools.
 
-- Node 18+, Python 3.10+, ffmpeg on `PATH`
-- For upscale: `pip install realesrgan-ncnn-py`
-- Credentials (loaded from `data/config.json`, which is gitignored):
-  - Anthropic API key
-  - ElevenLabs API key
-  - GCP service account JSON with Vertex AI access (for Veo + Nano Banana)
+[Pricing](PRICING.md) records the qualified Google rates and accounting limits.
+Other providers are research options, not enabled integrations. Source publication
+is a separate checkpoint with [mandatory privacy checks](docs/source-privacy.md).
 
-## License
+## Tests
 
-MIT
+`npm test` covers paid-request refusal/recovery and local production contracts.
+`npm run test:local` also runs the existing scene-lab and privacy suites. Tests do
+not submit provider jobs. Full creative review still requires inspecting the film.
+
+MIT license.

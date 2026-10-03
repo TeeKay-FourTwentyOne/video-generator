@@ -33,7 +33,7 @@ Flags
   --ref=PATH[:LABEL]   Reference image. Repeat for multiple. Label optional (default: ref1, ref2, ...).
   --preserve=TEXT      What must remain consistent between the frame and the refs.
   --change=TEXT        What is supposed to be different in the frame vs refs.
-  --model=opus|sonnet|haiku  Claude model shortcut (default: opus — most reliable for visual checks).
+  --model=opus|sonnet|haiku  Claude model shortcut (default: sonnet; full model ID override available).
   --model-id=NAME      Full Claude model ID (overrides --model).
   --json               Emit JSON only; suppress human summary.
   --config=PATH        data/config.json override (for claudeKey).
@@ -66,7 +66,7 @@ except ImportError:
 
 MODEL_SHORTCUTS = {
     "opus": "claude-opus-4-7",
-    "sonnet": "claude-sonnet-4-6",
+    "sonnet": "claude-sonnet-5-5",
     "haiku": "claude-haiku-4-5-20251001",
 }
 
@@ -304,7 +304,7 @@ def main():
                    help="What must be consistent between the frame and the refs (wardrobe, environment, prop positions, lighting, etc).")
     p.add_argument("--change", required=True,
                    help="What is supposed to be different in the frame vs refs (the intended change).")
-    p.add_argument("--model", default="opus", choices=list(MODEL_SHORTCUTS.keys()))
+    p.add_argument("--model", default="sonnet", choices=list(MODEL_SHORTCUTS.keys()))
     p.add_argument("--model-id", default=None, help="Override with a full Claude model ID.")
     p.add_argument("--json", action="store_true")
     p.add_argument("--config", default="data/config.json")

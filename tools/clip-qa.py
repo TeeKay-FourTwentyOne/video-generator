@@ -15,7 +15,7 @@ Usage
 
 Flags
   --frames=N           Number of frames to extract (default: dur/0.3, 8–24).
-  --model=opus|sonnet  Shortcut for Claude model (default: opus).
+  --model=opus|sonnet  Shortcut for Claude model (default: sonnet).
   --model-id=NAME      Full Claude model ID (overrides --model).
   --save-strip=PATH    Save the frame composite (default: adjacent to video as <name>.qa-strip.png).
   --no-save-strip      Don't save the composite at all.
@@ -54,7 +54,7 @@ except ImportError:
 # Claude model shortcuts — update as newer versions ship.
 MODEL_SHORTCUTS = {
     "opus": "claude-opus-4-5-20251101",
-    "sonnet": "claude-sonnet-4-5-20250929",
+    "sonnet": "claude-sonnet-5-5",
     "haiku": "claude-haiku-4-5-20251001",
 }
 
@@ -294,7 +294,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("video")
     p.add_argument("--frames", type=int, default=None)
-    p.add_argument("--model", default="opus", choices=list(MODEL_SHORTCUTS.keys()))
+    p.add_argument("--model", default="sonnet", choices=list(MODEL_SHORTCUTS.keys()))
     p.add_argument("--model-id", default=None, help="Override with a full Claude model ID.")
     p.add_argument("--save-strip", default=None)
     p.add_argument("--no-save-strip", action="store_true")

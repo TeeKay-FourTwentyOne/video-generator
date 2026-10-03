@@ -1,0 +1,163 @@
+# FFmpeg Knowledge
+
+## Stream Copy vs Re-encode for Trimming
+
+**Problem:** `-c copy` (stream copy) cannot cut at arbitrary timestamps. It snaps to the nearest keyframe, often producing segments 50-100% longer than requested.
+
+```bash
+# Fast but imprecise (keyframe-aligned)
+ffmpeg -y -ss 1.5 -i input.mp4 -t 2.0 -c copy output.mp4
+# Requested 2.0s, may get 3.0-4.0s depending on keyframe placement
+
+# Slower but frame-accurate
+ffmpeg -y -ss 1.5 -i input.mp4 -t 2.0 -c:v libx264 -preset fast -crf 23 -c:a aac output.mp4
+# Gets exactly 2.0s
+```
+
+**When to use each:**
+- `precise: false` (stream copy) — Quick previews, rough cuts, when exact timing doesn't matter
+- `precise: true` (re-encode) — Dialogue editing, tight cuts, when timestamps must be exact
+
+## Timestamp Reset Flags
+
+When using stream copy, add these flags to prevent container metadata corruption:
+```bash
+-avoid_negative_ts make_zero -reset_timestamps 1
+```
+
+Without these, concatenated clips may have incorrect frame rates or audio sync issues.
+
+## Title Cards with Silent Audio
+
+FFmpeg requires matching audio tracks for concatenation. For silent title cards:
+```bash
+ffmpeg -f lavfi -i "color=c=black:s=720x1280:r=24:d=2" \
+  -f lavfi -i "anullsrc=r=48000:cl=stereo" \
+  -vf "drawtext=text='Title':fontcolor=white:fontsize=48:x=(w-tw)/2:y=(h-th)/2" \
+  -c:v libx264 -c:a aac -t 2 -pix_fmt yuv420p -shortest title.mp4
+```
+
+## Concatenation
+
+Normalize all clips to same specs before concat:
+- Same resolution, frame rate, pixel format (`-pix_fmt yuv420p`)
+- Same audio codec, sample rate, channels (`-c:a aac -ar 48000 -ac 2`)
+
+**Prefer the concat FILTER, not the demuxer.** Measured 2026-08-17: concat
+demuxer + `-c copy` on two clips WITH AUDIO leaves every frame intact but
+corrupts the video container metadata — `r_frame_rate` becomes 120/1 and
+`avg_frame_rate` goes fractional (786432/65573) on 24/1 inputs. Video-only
+inputs (`-an`) escape it, but production clips always carry audio. Downstream
+tools that trust `r_frame_rate` (frame-indexed trims, fps math, players) then
+misbehave. The safe join:
+
+```bash
+ffmpeg -y -i a.mp4 -i b.mp4 -filter_complex \
+  "[0:v]setpts=PTS-STARTPTS,fps=24,settb=AVTB,setsar=1[v0];\
+   [1:v]setpts=PTS-STARTPTS,fps=24,settb=AVTB,setsar=1[v1];\
+   [v0][v1]concat=n=2:v=1:a=0[v]" \
+  -map "[v]" -c:v libx264 -preset fast -crf 18 output.mp4
+```
+
+(Handle audio as a separate concat leg or re-mux; `tools/splice.cjs --mode=hard`
+also produces a clean 24/1 container.) The demuxer form is acceptable only for
+video-only streams where a later re-encode will normalize the container:
+```bash
+printf "file 'a.mp4'\nfile 'b.mp4'\n" > list.txt
+ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4   # -an inputs only
+```
+
+## Frame Extension Techniques
+
+**Problem:** Need to hold the last frame of a clip for additional time.
+
+**Approaches (in order of reliability):**
+
+1. **Adjust clip timing** (most reliable)
+   - Don't extend - just start the next clip earlier
+   - Avoids filter complexity entirely
+
+2. **tpad filter** (works but order-sensitive)
+   ```bash
+   # CORRECT: trim → tpad → setpts (single setpts at end)
+   [0:v]trim=start=6.5:end=8.0,tpad=stop_duration=0.5:stop_mode=clone,setpts=PTS-STARTPTS+1.5/TB[out];
+
+   # WRONG: double setpts breaks tpad
+   [0:v]trim=...,setpts=PTS-STARTPTS,tpad=...,setpts=PTS-STARTPTS+X/TB[out];
+   ```
+
+3. **eof_action=repeat on overlay** (unreliable in chains)
+   - May not work correctly with multiple chained overlays
+   - Last resort, prefer tpad or timing adjustment
+
+## Overlay eof_action Options
+
+| Option | Behavior | Use Case |
+|--------|----------|----------|
+| `pass` | Pass through background when overlay ends | Default, most predictable |
+| `repeat` | Repeat last overlay frame | Frame hold (but unreliable in chains) |
+| `endall` | End output when shortest input ends | Trim to shortest |
+
+**Recommendation:** Always use `eof_action=pass` and ensure overlay clip has sufficient duration.
+
+## Filter Chain Ordering
+
+**General rule:** `trim` → processing filters → `setpts` (positioning)
+
+```bash
+# Input processing order:
+trim=start=X:end=Y           # 1. Cut segment from source
+,tpad=stop_duration=0.5      # 2. Extend if needed
+,setpts=PTS-STARTPTS+OFFSET/TB  # 3. Position in timeline (ONCE, at end)
+```
+
+**Why single setpts matters:** Multiple setpts calls can corrupt timestamps, especially after filters that add frames (tpad, loop).
+
+## Debugging Overlay Chains
+
+When overlays produce unexpected results:
+
+1. **Test each overlay independently** - Comment out all but one
+2. **Check clip durations** - Use `ffprobe -show_entries format=duration`
+3. **Verify timing math** - Ensure overlay enable windows match clip placements
+4. **Watch for gaps** - If clip ends before overlay window, you'll see black/background
+
+## Animated Text Effects — Use ASS, Not drawbox
+
+**Problem:** `drawbox` evaluates x/y/w/h expressions **once at init**, not per-frame. Time-varying drawbox masks don't work.
+
+**Solution:** Use ASS subtitles with `\clip` + `\t` for animated text masking. See `tools/text-reveal.cjs` and TECHNIQUES.md "Text Reveal" section.
+
+```bash
+# Overlay ASS on video
+ffmpeg -y -i input.mp4 -vf "ass=overlay.ass" -c:v libx264 -crf 18 output.mp4
+```
+
+**Note:** `drawtext` expressions (x, y, alpha, enable) DO evaluate per-frame. But drawtext can't do partial vertical reveals — use ASS `\clip` for that.
+
+## Text Label Overlap
+
+**Problem:** Adjacent labels appear simultaneously at boundaries.
+
+```bash
+# WRONG: both true at t=3.5
+enable='between(t,0,3.5)'
+enable='between(t,3.5,6.0)'
+
+# CORRECT: exclusive end bounds
+enable='gte(t,0)*lt(t,3.5)'
+enable='gte(t,3.5)*lt(t,6.0)'
+```
+
+## alimiter Auto-Makeup Gotcha (measured 2026-08-27)
+
+`alimiter` defaults to `level=true`, which **normalizes output back up to 0dBFS** — a
+`limit=0.79` ceiling silently becomes a full-scale signal. Always pass `level=false`
+when using it as a ceiling. For true-peak (inter-sample) control, oversample around it:
+
+```bash
+volume=6dB,aresample=192000,alimiter=limit=0.83:attack=2:release=120:level=false,aresample=48000
+```
+
+Measured on the AUGUST master: without `level=false`, TP came back at 0.0dBTP despite
+limit=0.79; with it, -1.6dBTP as expected.

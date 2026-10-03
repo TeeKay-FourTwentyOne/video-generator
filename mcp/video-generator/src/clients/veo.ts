@@ -1,5 +1,9 @@
 import fs from "fs";
 import path from "path";
+import { createHash } from "node:crypto";
+import { readLedger, reserveSpend, updateSpend } from "../production/ledger.js";
+import { qualifyVeo, type VeoModelAlias } from "../production/veo-spec.js";
+export { VEO_MODELS, type VeoModelAlias } from "../production/veo-spec.js";
 import { getGoogleAccessToken, buildVertexUrl } from "./google-auth.js";
 import {
   uploadFileToGcs,
@@ -11,18 +15,10 @@ import { loadConfig } from "../utils/config.js";
 
 const VEO_MODEL_DEFAULT = "veo-3.1-generate-001";
 
-export const VEO_MODELS = {
-  "veo-3.1": "veo-3.1-generate-preview",
-  "veo-3.1-prod": "veo-3.1-generate-001",
-  "veo-3.1-fast": "veo-3.1-fast-generate-preview",
-  "veo-3.1-fast-prod": "veo-3.1-fast-generate-001",
-  "veo-2.0": "veo-2.0-generate-001",
-} as const;
-
-export type VeoModelAlias = keyof typeof VEO_MODELS;
-
 export interface VeoSubmitOptions {
   prompt: string;
+  budgetFile?: string;
+  requestId?: string;
   aspectRatio?: string;
   durationSeconds?: number;
   firstFramePath?: string;
@@ -54,15 +50,6 @@ export interface VeoDownloadResult {
   filename: string;
   path: string;
   duration: number | null;
-}
-
-/**
- * Snap duration to Veo-supported values (4, 6, or 8 seconds)
- */
-function snapDuration(seconds: number): number {
-  if (seconds <= 5) return 4;
-  if (seconds <= 7) return 6;
-  return 8;
 }
 
 /**
@@ -100,93 +87,103 @@ async function buildImageField(
 export async function submitVeoGeneration(
   options: VeoSubmitOptions
 ): Promise<VeoSubmitResult> {
-  const { accessToken, projectId } = await getGoogleAccessToken();
-  const bucket = loadConfig().veoGcsBucket;
-
-  const {
-    prompt,
-    aspectRatio = "9:16",
-    durationSeconds = 8,
-    firstFramePath,
-    lastFramePath,
-    model,
-    seed,
-    generateAudio,
-    resolution,
-  } = options;
-
-  const validDuration = snapDuration(durationSeconds);
-  const modelId = model ? VEO_MODELS[model] : VEO_MODEL_DEFAULT;
-
-  // Generate a random seed if none provided, so we can replay later
-  const effectiveSeed = seed ?? Math.floor(Math.random() * 4294967295);
-
-  // Build instance with optional reference frames
-  const instance: Record<string, unknown> = { prompt };
-
-  if (firstFramePath) {
-    instance.image = await buildImageField(
-      firstFramePath,
-      bucket,
-      "veo-inputs/image"
-    );
+  const spec = qualifyVeo(options);
+  const { prompt, firstFramePath, lastFramePath } = options;
+  const { modelId, durationSeconds: validDuration, aspectRatio, generateAudio, resolution } = spec;
+  if (!options.budgetFile || !options.requestId)
+    throw new Error("Veo requires budgetFile and a stable requestId. Use the production CLI to initialize an authorized all-in budget.");
+  const budgetFile = resolvePath(options.budgetFile);
+  const requestId = options.requestId;
+  const anchorHash = (p: string | undefined) => p ? createHash("sha256").update(fs.readFileSync(resolvePath(p))).digest("hex") : null;
+  const fingerprint = createHash("sha256").update(JSON.stringify({ ...spec, prompt,
+    first: anchorHash(firstFramePath), last: anchorHash(lastFramePath), seed: options.seed ?? null })).digest("hex");
+  const existing = readLedger(budgetFile).entries.find(e => e.id === requestId);
+  if (existing) {
+    if (existing.fingerprint !== fingerprint) throw new Error("Request ID reused with changed content; preserve the original and use a new attempt ID");
+    if (existing.operationName) return { operationName: existing.operationName, model: existing.model!, seed: existing.seed };
+    throw new Error("Request already reserved without a known operation; reconcile it before any new paid attempt");
   }
+  // Deterministic seed selection makes crash recovery inspectable; provider output is not guaranteed deterministic.
+  const effectiveSeed = options.seed ?? parseInt(createHash("sha256").update(requestId).digest("hex").slice(0, 8), 16);
+  // Reserve before auth, uploads or POST. Failure never releases money automatically.
+  reserveSpend(budgetFile, { id: requestId, category: "veo", fingerprint, usd: spec.estimatedUsd, note: "Veo generation attempt" });
+  try {
+    const { accessToken, projectId } = await getGoogleAccessToken();
+    const bucket = loadConfig().veoGcsBucket;
+    // Build instance with optional reference frames
+    const instance: Record<string, unknown> = { prompt };
 
-  if (lastFramePath) {
-    instance.lastFrame = await buildImageField(
-      lastFramePath,
-      bucket,
-      "veo-inputs/last-frame"
-    );
+    if (firstFramePath) {
+      instance.image = await buildImageField(
+        firstFramePath,
+        bucket,
+        "veo-inputs/image"
+      );
+    }
+
+    if (lastFramePath) {
+      instance.lastFrame = await buildImageField(
+        lastFramePath,
+        bucket,
+        "veo-inputs/last-frame"
+      );
+    }
+
+    const parameters: Record<string, unknown> = {
+      aspectRatio,
+      durationSeconds: validDuration,
+      seed: effectiveSeed,
+      sampleCount: 1,
+    };
+
+    // generateAudio is supported on Veo 3+ models
+    if (generateAudio !== undefined) {
+      parameters.generateAudio = generateAudio;
+    }
+
+    // Only the qualified GA resolutions reach this point.
+    if (resolution) {
+      parameters.resolution = resolution;
+    }
+
+    // storageUri tells Veo to write the output MP4 to GCS and return a URI,
+    // instead of returning a multi-MB base64-encoded video inline.
+    if (bucket) {
+      const stamp = Date.now().toString(36);
+      const rand = Math.random().toString(36).slice(2, 8);
+      parameters.storageUri = `gs://${bucket}/veo-outputs/${stamp}-${rand}/`;
+    }
+
+    const requestBody = {
+      instances: [instance],
+      parameters,
+    };
+
+    const url = buildVertexUrl(projectId, modelId, "predictLongRunning");
+
+    const response = await fetch(url, {
+      method: "POST",
+      signal: AbortSignal.timeout(120_000),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${accessToken}`,
+      },
+      body: JSON.stringify(requestBody),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Veo submission failed: ${response.status} ${errorText}`);
+    }
+
+    const data = (await response.json()) as { name: string };
+    if (!data.name) throw new Error("Veo response omitted operation name; submission outcome is uncertain");
+    updateSpend(budgetFile, requestId, { status: "submitted", operationName: data.name, model: modelId, seed: effectiveSeed });
+    return { operationName: data.name, model: modelId, seed: effectiveSeed };
+  } catch (error) {
+    updateSpend(budgetFile, requestId, { status: "uncertain", evidence: "Submission did not complete locally; reservation retained. Inspect private provider logs before another attempt." });
+    throw error;
   }
-
-  const parameters: Record<string, unknown> = {
-    aspectRatio,
-    durationSeconds: validDuration,
-    seed: effectiveSeed,
-  };
-
-  // generateAudio is supported on Veo 3+ models
-  if (generateAudio !== undefined) {
-    parameters.generateAudio = generateAudio;
-  }
-
-  // Resolution: 720p, 1080p, 4k (4k only on 3.1 preview models)
-  if (resolution) {
-    parameters.resolution = resolution;
-  }
-
-  // storageUri tells Veo to write the output MP4 to GCS and return a URI,
-  // instead of returning a multi-MB base64-encoded video inline.
-  if (bucket) {
-    const stamp = Date.now().toString(36);
-    const rand = Math.random().toString(36).slice(2, 8);
-    parameters.storageUri = `gs://${bucket}/veo-outputs/${stamp}-${rand}/`;
-  }
-
-  const requestBody = {
-    instances: [instance],
-    parameters,
-  };
-
-  const url = buildVertexUrl(projectId, modelId, "predictLongRunning");
-
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${accessToken}`,
-    },
-    body: JSON.stringify(requestBody),
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Veo submission failed: ${response.status} ${errorText}`);
-  }
-
-  const data = (await response.json()) as { name: string };
-  return { operationName: data.name, model: modelId, seed: effectiveSeed };
 }
 
 /**
@@ -208,6 +205,7 @@ export async function pollVeoOperation(
 
   const response = await fetch(url, {
     method: "POST",
+    signal: AbortSignal.timeout(120_000),
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${accessToken}`,
@@ -220,29 +218,21 @@ export async function pollVeoOperation(
     throw new Error(`Veo poll failed: ${response.status} ${errorText}`);
   }
 
-  const data = (await response.json()) as {
-    done?: boolean;
-    response?: { videos?: Array<{ bytesBase64Encoded?: string; uri?: string; gcsUri?: string }> };
-    error?: { message?: string };
-  };
+  return interpretVeoOperation(await response.json(), operationName);
+}
 
-  if (data.error) {
-    return {
-      done: true,
-      operationName,
-      error: data.error.message || "Unknown error",
-    };
-  }
-
-  if (data.done && data.response?.videos?.[0]) {
-    return {
-      done: true,
-      operationName,
-      video: data.response.videos[0],
-    };
-  }
-
-  return { done: false, operationName };
+/** Pure operation decoder, tested without credentials. A terminal empty response is never pending. */
+export function interpretVeoOperation(raw: unknown, operationName: string): VeoPollResult {
+  const data = raw as { done?: boolean; error?: { message?: string }; response?: {
+    videos?: VeoPollResult["video"][]; raiMediaFilteredCount?: number; raiMediaFilteredReasons?: string[];
+  } };
+  if (!data || typeof data !== "object") throw new Error("Malformed Veo operation response");
+  if (data.error) return { done: true, operationName, error: data.error.message || "Veo operation failed" };
+  if (!data.done) return { done: false, operationName };
+  const video = data.response?.videos?.[0];
+  if (video && (video.bytesBase64Encoded || video.gcsUri || video.uri)) return { done: true, operationName, video };
+  return { done: true, operationName, error: data.response?.raiMediaFilteredCount
+    ? "Veo completed with filtered output; no automatic retry" : "Veo completed without usable video" };
 }
 
 /**
@@ -294,13 +284,18 @@ async function downloadFromGcs(
   gcsUri: string,
   accessToken: string
 ): Promise<Buffer> {
-  // Convert gs://your-bucket/path to https://storage.googleapis.com/bucket/path
+  // Convert the provider's GCS object URI to its authenticated HTTPS endpoint.
   const httpsUrl = gcsUri.replace(
     /^gs:\/\/([^/]+)\/(.+)$/,
     "https://storage.googleapis.com/$1/$2"
   );
 
+  const parsed = new URL(httpsUrl);
+  if (parsed.protocol !== "https:" || parsed.hostname !== "storage.googleapis.com" || parsed.username || parsed.password)
+    throw new Error("Refusing to send Google credentials to a non-GCS download URL");
   const response = await fetch(httpsUrl, {
+    redirect: "error",
+    signal: AbortSignal.timeout(120_000),
     headers: { Authorization: `Bearer ${accessToken}` },
   });
 
@@ -316,13 +311,13 @@ async function downloadFromGcs(
  * Get video duration using ffprobe
  */
 async function getVideoDuration(filepath: string): Promise<number | null> {
-  const { exec } = await import("child_process");
+  const { execFile } = await import("child_process");
   const { promisify } = await import("util");
-  const execAsync = promisify(exec);
+  const execAsync = promisify(execFile);
 
   try {
     const { stdout } = await execAsync(
-      `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${filepath}"`
+      "ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", filepath]
     );
     return parseFloat(stdout.trim());
   } catch {

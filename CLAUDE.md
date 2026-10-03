@@ -1,71 +1,17 @@
-# CLAUDE.md
+# Video production with Claude Code
 
-## Overview
+@AGENTS.md
 
-AI video production system: concept → structured shots → video generation → assembly. Uses Claude (Opus 4), Veo 3.1, ElevenLabs TTS, Gemini.
+Use the shared `produce-video` skill for making or revising films. It is available
+at `.claude/skills/produce-video/SKILL.md` and `.agents/skills/produce-video/SKILL.md`.
+`docs/production.md` describes the maintained CLI/MCP workflow; load detailed craft
+notes only when the shot or edit needs them.
 
-All functionality is exposed via MCP (Model Context Protocol) tools. The `video-generator` MCP server provides ~45 tools covering the complete pipeline.
+Build the existing MCP service with `npm run build`. `.mcp.json` configures the
+local servers for Claude Code. Do not install packages as a routine startup step.
+The CLI works without an MCP connection and has the same production behavior.
 
-```bash
-# Build the MCP server
-cd mcp/video-generator && npm install && npm run build
-
-# The server is configured in .mcp.json and runs automatically
-```
-
-## Documentation
-
-| Topic | File |
-|-------|------|
-| MCP tools & workflow | `.claude/rules/core-workflow.md` |
-| Narrative model (energy/tension/mood) | `.claude/rules/narrative-model.md` |
-| Veo techniques & limitations | `.claude/rules/veo-techniques.md` |
-| FFmpeg encoding knowledge | `.claude/rules/ffmpeg-knowledge.md` |
-| Multi-character dialogue | `.claude/rules/dialogue-system.md` |
-| Clip editing & variations | `.claude/rules/editing-system.md` |
-| Agent reference & QA | `.claude/rules/agents.md` |
-| Per-generation clip QA gate | `.claude/rules/clip-acceptance-gate.md` |
-| Mandatory source PII/secrets review | `docs/source-privacy.md` and `AGENTS.md` |
-| Advanced hybrid techniques | `TECHNIQUES.md` |
-| **Skills** (auto-triggered) | `.claude/skills/` |
-
-## File Locations
-
-- Videos: `data/video/`
-- Audio: `data/audio/`
-- Images: `generated-images/`
-- Exports: `data/exports/`
-- Edits: `data/edits/`
-- Projects: `data/projects/`
-- Config: `data/config.json`
-
-## MCP Server
-
-The MCP server is located at `mcp/video-generator/` and provides tools for:
-- Project generation and execution
-- Video generation via Veo 3.1
-- Image generation via Imagen 3.0
-- Audio (TTS, music) via ElevenLabs
-- Video analysis (transcription, scene detection, quality checks)
-- Clip editing (trim, speed variations)
-- Assembly with tension-aware transitions
-- Project validation
-
-## Publication descriptions
-
-Include `#gpt6` or `#gpt6astra` in future video descriptions (user instruction,
-2026-09-21). Keep the existing project-specific credit and hashtag conventions.
-
-End every video description / credit block with this repository URL as its final line (user instruction, 2026-09-12):
-https://github.com/TeeKay-FourTwentyOne/video-generator
-
-Record published video URLs in the corresponding brief when supplied, so finished work can be revisited as model capabilities progress. Credit the models and tools actually used, respecting any project-specific credit exclusions.
-
-## Mandatory commit and push privacy gate
-
-Follow `docs/source-privacy.md` for every commit and push. Enable the tracked
-hooks with `npm run privacy:install`; manually review PII/private context and run
-`privacy:worktree`, `privacy:check` on the staged snapshot, and `privacy:outgoing`
-before pushing. Include documentation, copied plans, commit messages and Git
-identity in the review. Keep generated media, credentials, home paths, runtime
-manifests and provider resource identifiers out of source. Never bypass a finding.
+For publication descriptions, retain the project's credit conventions and include
+`#gpt6` or `#gpt6astra` when appropriate to the models used. Every description or
+credit block ends with the repository URL specified in `AGENTS.md`. Record a
+published URL only when supplied or verified.

@@ -277,9 +277,11 @@ export const generationTools = {
     description:
       "Submit a video generation request directly to Veo. Returns operation name for polling.",
     inputSchema: {
+      budgetFile: z.string().describe("Path to an initialized all-in production budget JSON"),
+      requestId: z.string().describe("Stable attempt ID; repeating it recovers rather than resubmits"),
       prompt: z.string().describe("Video generation prompt"),
       aspectRatio: z
-        .enum(["16:9", "9:16", "1:1"])
+        .enum(["16:9", "9:16"])
         .optional()
         .default("9:16")
         .describe("Video aspect ratio"),
@@ -287,7 +289,7 @@ export const generationTools = {
         .number()
         .optional()
         .default(8)
-        .describe("Duration (snaps to 4, 6, or 8)"),
+        .describe("Duration must be exactly 4, 6 or 8 seconds"),
       firstFramePath: z
         .string()
         .optional()
@@ -299,21 +301,23 @@ export const generationTools = {
       model: z
         .enum(["veo-3.1", "veo-3.1-prod", "veo-3.1-fast", "veo-3.1-fast-prod", "veo-2.0"])
         .optional()
-        .describe("Model to use. veo-3.1-fast is 62% cheaper, good for drafts"),
+        .describe("Qualified GA model; quote cost for the chosen audio and resolution"),
       seed: z
         .number()
         .optional()
-        .describe("Seed for deterministic generation (0-4294967295). Auto-generated if not provided."),
+        .describe("Seed (uint32) for provenance; identical output is not guaranteed."),
       generateAudio: z
         .boolean()
         .optional()
         .describe("Enable/disable native audio generation (Veo 3+ only)"),
       resolution: z
-        .enum(["720p", "1080p", "4k"])
+        .enum(["720p", "1080p"])
         .optional()
         .describe("Output resolution"),
     },
     handler: async (args: {
+      budgetFile: string;
+      requestId: string;
       prompt: string;
       aspectRatio?: "16:9" | "9:16" | "1:1";
       durationSeconds?: number;
@@ -326,6 +330,8 @@ export const generationTools = {
     }) => {
       try {
         const result = await submitVeoGeneration({
+          budgetFile: args.budgetFile,
+          requestId: args.requestId,
           prompt: args.prompt,
           aspectRatio: args.aspectRatio,
           durationSeconds: args.durationSeconds,

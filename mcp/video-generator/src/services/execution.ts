@@ -118,7 +118,7 @@ async function extractLastFrame(videoPath: string): Promise<string> {
 /**
  * Execute a project - generate Veo prompts and submit jobs for all shots
  */
-export async function executeProject(options: {
+async function legacyExecuteProject(options: {
   project: Project;
   style?: string;
   aspectRatio?: string;
@@ -304,4 +304,9 @@ export async function executeProject(options: {
     project_id: project.project_id,
     shots: results,
   };
+}
+
+/** The unbudgeted legacy bulk executor is retained for reference only. */
+export async function executeProject(_options: Parameters<typeof legacyExecuteProject>[0]): Promise<ExecutionResult> {
+  throw new Error("Legacy execute_project is disabled for paid work. Use tools/production/film.mjs plan/submit with explicit per-shot requests and an all-in budget.");
 }

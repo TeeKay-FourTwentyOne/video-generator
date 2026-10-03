@@ -32,7 +32,7 @@ Flags
   --max-frames=N       Cap on dense frames sent to vision per clip (default: 48; chunked into grids of 15).
   --context=TEXT       Intent context (e.g. the generation prompt). Reduces false positives.
   --context-file=PATH  Read intent context from a file.
-  --model=opus|sonnet|haiku   Claude model shortcut (default: opus).
+  --model=opus|sonnet|haiku   Claude model shortcut (default: sonnet).
   --model-id=NAME      Full Claude model ID (overrides --model).
   --save-strip=PATH    Save the dense composite(s); default adjacent as <name>.clone-strip[-N].png.
   --no-save-strip      Don't save composites.
@@ -68,7 +68,7 @@ except ImportError:
 
 MODEL_SHORTCUTS = {
     "opus": "claude-opus-4-5-20251101",
-    "sonnet": "claude-sonnet-4-5-20250929",
+    "sonnet": "claude-sonnet-5-5",
     "haiku": "claude-haiku-4-5-20251001",
 }
 
@@ -363,7 +363,7 @@ def main():
     p.add_argument("--max-frames", type=int, default=48)
     p.add_argument("--context", default=None)
     p.add_argument("--context-file", default=None)
-    p.add_argument("--model", default="opus", choices=list(MODEL_SHORTCUTS.keys()))
+    p.add_argument("--model", default="sonnet", choices=list(MODEL_SHORTCUTS.keys()))
     p.add_argument("--model-id", default=None)
     p.add_argument("--save-strip", default=None)
     p.add_argument("--no-save-strip", action="store_true")

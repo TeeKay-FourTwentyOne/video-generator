@@ -91,6 +91,17 @@ export interface ClaudeResponse {
   usage: { input_tokens: number; output_tokens: number };
 }
 
+/** Current text default is configurable; never pin new work to retired Opus 4. */
+export function claudeRequestBody(options: {
+  model: string; maxTokens: number; system: string; messages: ClaudeMultimodalMessage[]; temperature?: number;
+}): Record<string, unknown> {
+  const body: Record<string, unknown> = { model: options.model, max_tokens: options.maxTokens,
+    system: options.system, messages: options.messages };
+  // Sonnet 5.5 rejects non-default sampling parameters. Use its native adaptive behavior.
+  if (options.temperature !== undefined && options.model !== "claude-sonnet-5-5") body.temperature = options.temperature;
+  return body;
+}
+
 /**
  * Call Claude API with system prompt and messages
  */
@@ -111,25 +122,20 @@ export async function callClaude(options: {
   const {
     system,
     messages,
-    model = "claude-opus-4-20250514",
+    model = process.env.VIDEO_CLAUDE_MODEL || (config.claudeModel as string) || "claude-sonnet-5-5",
     maxTokens = 2048,
     temperature = 0.7,
   } = options;
 
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
+    signal: AbortSignal.timeout(180_000),
     headers: {
       "Content-Type": "application/json",
       "x-api-key": apiKey as string,
       "anthropic-version": "2023-06-01",
     },
-    body: JSON.stringify({
-      model,
-      max_tokens: maxTokens,
-      temperature,
-      system,
-      messages,
-    }),
+    body: JSON.stringify(claudeRequestBody({ model, maxTokens, temperature, system, messages })),
   });
 
   if (!response.ok) {
@@ -210,7 +216,7 @@ export async function callClaudeVision(options: {
   const {
     system,
     messages,
-    model = "claude-opus-4-5-20251101",
+    model = process.env.VIDEO_CLAUDE_MODEL || (config.claudeModel as string) || "claude-sonnet-5-5",
     maxTokens = 4096,
     temperature = 0.5,
     rateLimitConfig = {},
@@ -224,18 +230,13 @@ export async function callClaudeVision(options: {
   const makeRequest = async () => {
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
+      signal: AbortSignal.timeout(180_000),
       headers: {
         "Content-Type": "application/json",
         "x-api-key": apiKey as string,
         "anthropic-version": "2023-06-01",
       },
-      body: JSON.stringify({
-        model,
-        max_tokens: maxTokens,
-        temperature,
-        system,
-        messages,
-      }),
+      body: JSON.stringify(claudeRequestBody({ model, maxTokens, temperature, system, messages })),
     });
 
     if (!response.ok) {
@@ -255,10 +256,8 @@ export async function callClaudeVision(options: {
 }
 
 /**
- * Analyze an image using Claude Vision (Opus 4.5)
- *
- * Uses Claude for accurate image analysis without hallucinating precision.
- * Preferred over Gemini for tasks requiring precise counting or detail verification.
+ * Analyze an image using the configured Claude vision model.
+ * Model observations are review evidence, not proof of visual correctness.
  */
 export async function analyzeImageWithClaude(options: {
   imagePath: string;

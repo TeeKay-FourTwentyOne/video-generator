@@ -1,7 +1,29 @@
 # Repository working rules
 
-Read `CLAUDE.md` for the production workflow and `docs/source-privacy.md` before
-preparing any commit or push. These rules apply to all agents in this repository.
+These rules apply to all agents in this repository. For film production, use
+`docs/production.md` and the shared `produce-video` skill. For code changes, read
+only the relevant module and tests; detailed craft references are in `docs/craft/`.
+Read `docs/source-privacy.md` before preparing any commit or push.
+
+## Working surface
+
+- Build: `npm run build`. Offline production regressions: `npm test`.
+  Broader local suite: `npm run test:local`. Tests use disposable local fixtures;
+  they do not require generation credits or new packages.
+- Production CLI: `npm run film -- help`. MCP `production_*` tools use that same
+  implementation. Inspect `docs/architecture.md` for maintained and legacy paths.
+- Start new media in a versioned `data/workspace/<slug>/`. Keep plans, budget,
+  provider records, sources, edits and QA together. Preserve existing media and
+  unrelated working-tree changes.
+- Paid work requires the user's active provider/scope/budget authorization.
+  Reserve all costs in one project ledger before submitting. A timeout is not a
+  reason to generate again: recover the existing operation first.
+- Prefer local work for exact timing, sound mixing, typography and compositing.
+  Model choice serves the shot; do not impose a paid draft pass or a global style.
+- Deliver native review artifacts and distinguish technical checks from artistic
+  approval and real-time listening. Do not infer permission to upscale or publish.
+- For long work, retain the current plan, decisions, request IDs and verification
+  evidence under the ignored workspace so another agent can resume accurately.
 
 ## Source publication is a separate checkpoint
 

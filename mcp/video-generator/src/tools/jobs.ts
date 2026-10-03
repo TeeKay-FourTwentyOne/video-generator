@@ -1,6 +1,7 @@
 import { z } from "zod";
 import {
   createVeoJob,
+  resumeVeoJob,
   getJob,
   listJobs as listJobsService,
   type Job,
@@ -11,15 +12,27 @@ import {
  */
 
 export const jobsTools = {
+  resume_job: {
+    name: "resume_job",
+    title: "Resume Existing Operation",
+    description: "Resume polling an existing Veo job after a restart or timeout. Never submits a new generation.",
+    inputSchema: { jobId: z.string() },
+    handler: async (args: { jobId: string }) => {
+      const job = await resumeVeoJob(args.jobId);
+      return { content: [{ type: "text" as const, text: JSON.stringify(job) }] };
+    },
+  },
   create_job: {
     name: "create_job",
     title: "Create Job",
     description:
       "Create a new Veo video generation job. Returns immediately with job ID. Poll with get_job to check status.",
     inputSchema: {
+      budgetFile: z.string().describe("Path to an initialized all-in production budget JSON"),
+      requestId: z.string().describe("Stable attempt ID; repeating it recovers rather than resubmits"),
       prompt: z.string().describe("Video generation prompt for Veo"),
       aspectRatio: z
-        .enum(["16:9", "9:16", "1:1"])
+        .enum(["16:9", "9:16"])
         .optional()
         .default("9:16")
         .describe("Video aspect ratio"),
@@ -27,7 +40,7 @@ export const jobsTools = {
         .number()
         .optional()
         .default(8)
-        .describe("Target duration (will snap to 4, 6, or 8 seconds)"),
+        .describe("Duration must be exactly 4, 6 or 8 seconds"),
       firstFramePath: z
         .string()
         .optional()
@@ -39,21 +52,23 @@ export const jobsTools = {
       model: z
         .enum(["veo-3.1", "veo-3.1-prod", "veo-3.1-fast", "veo-3.1-fast-prod", "veo-2.0"])
         .optional()
-        .describe("Model to use. veo-3.1-fast is 62% cheaper ($0.15/sec vs $0.40/sec), good for drafts"),
+        .describe("Qualified GA model; use the production quote for audio/resolution-specific rates"),
       seed: z
         .number()
         .optional()
-        .describe("Seed for deterministic generation (0-4294967295). Auto-generated if not provided. Replay a seed to reproduce results."),
+        .describe("Seed (uint32) for provenance; identical output is not guaranteed."),
       generateAudio: z
         .boolean()
         .optional()
         .describe("Enable/disable native audio generation (Veo 3+ only). Disabling saves cost on drafts."),
       resolution: z
-        .enum(["720p", "1080p", "4k"])
+        .enum(["720p", "1080p"])
         .optional()
-        .describe("Output resolution. 720p is fastest/cheapest for drafts, 4k only on 3.1 preview models."),
+        .describe("Qualified output resolution: 720p or 1080p."),
     },
     handler: async (args: {
+      budgetFile: string;
+      requestId: string;
       prompt: string;
       aspectRatio?: "16:9" | "9:16" | "1:1";
       durationSeconds?: number;
@@ -66,6 +81,8 @@ export const jobsTools = {
     }) => {
       try {
         const job = await createVeoJob({
+          budgetFile: args.budgetFile,
+          requestId: args.requestId,
           prompt: args.prompt,
           aspectRatio: args.aspectRatio,
           durationSeconds: args.durationSeconds,

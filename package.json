@@ -14,8 +14,17 @@
     "privacy:worktree": "node tools/privacy-check.mjs --worktree",
     "privacy:check": "node tools/privacy-check.mjs --staged",
     "privacy:outgoing": "node tools/privacy-check.mjs --outgoing",
-    "privacy:test": "node --test tools/privacy-check.test.mjs"
+    "privacy:test": "node --test tools/privacy-check.test.mjs",
+    "film": "node tools/production/film.mjs",
+    "test": "npm run build && node --test tools/production/*.test.mjs",
+    "test:local": "npm test && npm run scene:test && npm run privacy:test"
   },
-  "keywords": ["mcp", "video", "ai", "veo", "claude"],
+  "keywords": [
+    "mcp",
+    "video",
+    "ai",
+    "veo",
+    "claude"
+  ],
   "license": "MIT"
 }

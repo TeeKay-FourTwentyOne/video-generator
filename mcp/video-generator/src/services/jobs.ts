@@ -1,4 +1,6 @@
 import fs from "fs";
+import { atomicJson } from "../production/ledger.js";
+import { qualifyVeo } from "../production/veo-spec.js";
 import { JOBS_PATH } from "../utils/paths.js";
 import {
   submitVeoGeneration,
@@ -13,6 +15,8 @@ export interface Job {
   type: "veo-generate" | "imagen-generate";
   status: "pending" | "processing" | "complete" | "error";
   input: {
+    budgetFile?: string;
+    requestId?: string;
     prompt: string;
     aspectRatio?: string;
     durationSeconds?: number;
@@ -48,7 +52,7 @@ export function loadJobs(): Job[] {
       return JSON.parse(data);
     }
   } catch (error) {
-    console.error("Error loading jobs:", error);
+    throw new Error("Cannot read job store; refusing to overwrite corrupt state");
   }
   return [];
 }
@@ -57,7 +61,7 @@ export function loadJobs(): Job[] {
  * Save jobs to jobs.json
  */
 export function saveJobs(jobs: Job[]): void {
-  fs.writeFileSync(JOBS_PATH, JSON.stringify(jobs, null, 2));
+  atomicJson(JOBS_PATH, jobs);
 }
 
 /**
@@ -99,12 +103,24 @@ function generateJobId(): string {
  * Starts processing asynchronously and returns immediately
  */
 export async function createVeoJob(input: VeoSubmitOptions): Promise<Job> {
+  qualifyVeo(input);
+  if (!input.budgetFile || !input.requestId) throw new Error("budgetFile and requestId are required before creating a paid job");
+  const prior = loadJobs().find(j => j.input.budgetFile === input.budgetFile && j.input.requestId === input.requestId);
+  if (prior) {
+    if (JSON.stringify(prior.input) !== JSON.stringify({ prompt: input.prompt, budgetFile: input.budgetFile, requestId: input.requestId,
+      aspectRatio: input.aspectRatio, durationSeconds: input.durationSeconds, firstFramePath: input.firstFramePath,
+      lastFramePath: input.lastFramePath, model: input.model, seed: input.seed, generateAudio: input.generateAudio, resolution: input.resolution }))
+      throw new Error("Existing request ID has different job input");
+    return prior;
+  }
   const job: Job = {
     id: generateJobId(),
     type: "veo-generate",
     status: "pending",
     input: {
       prompt: input.prompt,
+      budgetFile: input.budgetFile,
+      requestId: input.requestId,
       aspectRatio: input.aspectRatio,
       durationSeconds: input.durationSeconds,
       firstFramePath: input.firstFramePath,
@@ -169,7 +185,8 @@ async function processVeoJob(jobId: string, input: VeoSubmitOptions): Promise<vo
  * Poll a Veo operation until complete
  */
 async function pollVeoJob(jobId: string, operationName: string, modelId?: string): Promise<void> {
-  while (true) {
+  const deadline = Date.now() + 20 * 60 * 1000;
+  while (Date.now() < deadline) {
     const result = await pollVeoOperation(operationName, modelId);
 
     if (result.error) {
@@ -211,6 +228,18 @@ async function pollVeoJob(jobId: string, operationName: string, modelId?: string
     // Not done yet - wait and poll again
     await new Promise((resolve) => setTimeout(resolve, POLL_INTERVAL));
   }
+  throw new Error("Polling timed out; operation retained. Resume polling, never resubmit.");
+}
+
+export async function resumeVeoJob(jobId: string): Promise<Job> {
+  const job = getJob(jobId);
+  if (!job?.result?.operationName) throw new Error("No existing operation to resume");
+  if (job.status === "complete") return job;
+  updateJob(jobId, { status: "processing", error: undefined });
+  pollVeoJob(jobId, job.result.operationName, job.result.model).catch(error => {
+    updateJob(jobId, { status: "error", error: error.message });
+  });
+  return getJob(jobId)!;
 }
 
 /**
