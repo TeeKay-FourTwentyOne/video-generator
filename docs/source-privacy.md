@@ -29,6 +29,14 @@ Environment overrides and an amend's retained author can differ from `user.*`;
 review the actual commit metadata, not just configuration.
 No-reply addresses are public identifiers, not a claim of anonymous authorship.
 
+Agent attribution is welcome and should not be hidden: the policy's
+`attributionTrailers` list names the vendor addresses that may appear on a
+`Co-Authored-By: Name <address>` line of a commit message (currently the Anthropic
+and OpenAI attribution addresses used by Claude Code and Codex). The allowance is
+limited to well-formed trailer lines in commit messages; the same address in file
+contents or body text is still a finding, and an address that is not listed, or is
+a personal mailbox, is rejected. Author and committer remain TK-421.
+
 Push authentication is separate from commit attribution. Use the SSH remote for
 `TeeKay-FourTwentyOne/video-generator` on GitHub and pin this checkout's
 `core.sshCommand` to the existing TK-421 key with `IdentitiesOnly=yes` and
@@ -80,8 +88,9 @@ only the repository-relative path, line, rule and redaction marker. It checks:
 - Private/runtime file paths, opaque binary/media files and files over 2 MiB that
   require deliberate review rather than being silently skipped.
 - Outgoing author/committer identities against `.githooks/identity.json`, public
-  no-reply emails, and commit messages, as well as file contents. The guard remains
-  reusable in repositories without this optional account policy.
+  no-reply emails, and commit messages, as well as file contents. Listed agent
+  attribution addresses pass only on `Co-Authored-By` trailer lines. The guard
+  remains reusable in repositories without this optional account policy.
 
 This is a conservative pattern guard, **not exhaustive PII detection**. Names,
 unusual phone/address formats, private business context, custom secret formats,

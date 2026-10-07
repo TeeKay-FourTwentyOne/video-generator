@@ -4,7 +4,7 @@ import {mkdtempSync, mkdirSync, writeFileSync, copyFileSync, chmodSync, rmSync} 
 import {tmpdir} from 'node:os';
 import {join, resolve} from 'node:path';
 import {execFileSync, spawnSync} from 'node:child_process';
-import {audit, scanFile, scanText} from './privacy-check.mjs';
+import {audit, scanFile, scanText, loadPolicy} from './privacy-check.mjs';
 
 const privateEmail = () => ['private-person','mailbox.io'].join('@');
 const token = () => 'sk-' + 'Q'.repeat(40);
@@ -198,4 +198,53 @@ test('hook installer refuses to replace existing custom hooks', t => {
   const result=spawnSync(process.execPath,[script,'--install-hooks'],{cwd,encoding:'utf8'});
   assert.equal(result.status,1);
   assert.equal(git('config','core.hooksPath'),'existing-hooks');
+});
+
+const agentEmail = () => ['noreply','anthropic.com'].join('@');
+const trailer = email => `Co-Authored-By: Claude Fable 5.1 <${email}>`;
+
+test('agent attribution trailers are allowed only when listed, only on trailer lines', () => {
+  assert.ok(has(trailer(agentEmail()),'personal-email'), 'flagged without a policy');
+  const opts = {allowedTrailerEmails:[agentEmail()]};
+  assert.deepEqual(scanText(`Title\n\nBody.\n\n${trailer(agentEmail())}\n`, opts), []);
+  assert.deepEqual(scanText(`co-authored-by: Codex <${agentEmail()}>`, opts), []);
+  assert.ok(scanText(`Contact ${agentEmail()} for details`, opts).some(f=>f.rule==='personal-email'), 'same address outside a trailer');
+  assert.ok(scanText(trailer(privateEmail()), opts).some(f=>f.rule==='personal-email'), 'unlisted address on a trailer');
+  assert.ok(scanText(`Co-Authored-By: ${'x'.repeat(100)} <${agentEmail()}>`, opts).some(f=>f.rule==='personal-email'), 'malformed trailer');
+  assert.ok(scanFile('notes.md', Buffer.from(trailer(agentEmail()))).some(f=>f.rule==='personal-email'), 'file contents never get the allowance');
+});
+
+test('identity policy validates attribution trailer addresses and applies them to outgoing messages', t => {
+  const {cwd,git,base} = repository(t);
+  mkdirSync(join(cwd,'.githooks'),{recursive:true});
+  const policy = {name:'review-bot',email:publicIdentity,attributionTrailers:[agentEmail()]};
+  writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify(policy));
+  assert.deepEqual(loadPolicy(cwd).attributionTrailers,[agentEmail()]);
+  git('add','.githooks/identity.json');
+  assert.deepEqual(audit({cwd,mode:'--staged'}).findings,[],'the policy file may contain its own listed addresses');
+  assert.deepEqual(audit({cwd,mode:'--worktree'}).findings,[]);
+  writeFileSync(join(cwd,'notes.txt'),JSON.stringify(policy));
+  assert.ok(audit({cwd,mode:'--worktree'}).findings.some(f=>f.path==='notes.txt'&&f.rule==='personal-email'),'other files do not');
+  rmSync(join(cwd,'notes.txt'));
+  git('commit','-qm','policy');
+  git('commit','--allow-empty','-qm',`with trailer\n\n${trailer(agentEmail())}`);
+  git('commit','--allow-empty','-qm',`private trailer\n\n${trailer(privateEmail())}`);
+  const result = audit({cwd,mode:'--outgoing',base});
+  assert.equal(result.commitCount,3, 'policy commit plus two trailer commits');
+  assert.equal(result.findings.filter(f=>f.rule==='personal-email').length,1);
+  assert.ok(!JSON.stringify(result).includes(privateEmail()));
+  for (const bad of [[publicIdentity],['not-an-address'],['name@example.com'],'noreply@vendor.invalid']) {
+    writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify({...policy,attributionTrailers:bad}));
+    assert.throws(()=>loadPolicy(cwd),/Invalid repository Git identity policy/);
+  }
+});
+
+test('commit-msg hook mode accepts a listed trailer and rejects an unlisted one', t => {
+  const {cwd} = repository(t);
+  mkdirSync(join(cwd,'.githooks'),{recursive:true});
+  writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify({name:'review-bot',email:publicIdentity,attributionTrailers:[agentEmail()]}));
+  const script = resolve('tools/privacy-check.mjs');
+  const run = text => { writeFileSync(join(cwd,'MSG'),text); return spawnSync(process.execPath,[script,'--commit-message',join(cwd,'MSG')],{cwd,encoding:'utf8'}); };
+  assert.equal(run(`Subject\n\n${trailer(agentEmail())}\n`).status,0);
+  assert.equal(run(`Subject\n\n${trailer(privateEmail())}\n`).status,1);
 });

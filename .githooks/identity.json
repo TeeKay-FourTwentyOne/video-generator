@@ -1,4 +1,8 @@
 {
   "name": "TK-421",
-  "email": "237485569+TeeKay-FourTwentyOne@users.noreply.github.com"
+  "email": "237485569+TeeKay-FourTwentyOne@users.noreply.github.com",
+  "attributionTrailers": [
+    "noreply@anthropic.com",
+    "codex@openai.com"
+  ]
 }

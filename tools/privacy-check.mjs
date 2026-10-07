@@ -11,15 +11,28 @@ const publicEmail = email => /@(?:users\.)?noreply\.github\.com$/i.test(email);
 const exampleEmail = email => /@(?:[\w-]+\.)*(?:example\.(?:com|org|net)|invalid|test)$/i.test(email);
 const placeholder = value => /^(?:<.*>|\$\{.*\}|YOUR[_-].*|REDACTED|EXAMPLE[_-].*|CHANGEME)$/i.test(value);
 
-export function scanText(text) {
+// Agent attribution addresses (vendor no-reply mailboxes) are accepted only on a
+// well-formed `Co-Authored-By: Name <email>` line of a commit message, and only when
+// the repository identity policy lists them. File contents never get this allowance,
+// except the policy file itself, which may contain exactly the addresses it lists.
+const trailerLine = (text, index, email) => {
+  const start = text.lastIndexOf('\n', index - 1) + 1, end = text.indexOf('\n', index);
+  const line = text.slice(start, end === -1 ? text.length : end);
+  return new RegExp(`^\\s*co-authored-by:\\s*[^<>\\r\\n]{1,80}<${email.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}>\\s*$`, 'i').test(line);
+};
+
+export function scanText(text, {allowedTrailerEmails = [], allowedEmails = []} = {}) {
   const findings = [];
+  const allowed = allowedTrailerEmails.map(e => e.toLowerCase());
+  const anywhere = allowedEmails.map(e => e.toLowerCase());
   function check(rule, expression, accept = () => false) {
     for (const match of text.matchAll(expression)) {
-      if (!accept(match[1] || match[0])) findings.push({rule, line: text.slice(0, match.index).split('\n').length});
+      if (!accept(match[1] || match[0], match.index)) findings.push({rule, line: text.slice(0, match.index).split('\n').length});
     }
   }
   check('personal-email', /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/gi,
-    email => publicEmail(email) || exampleEmail(email));
+    (email, index) => publicEmail(email) || exampleEmail(email) || anywhere.includes(email.toLowerCase())
+      || (allowed.includes(email.toLowerCase()) && trailerLine(text, index, email)));
   check('personal-home-path', /(?:\/(?:Users|home)\/|[A-Z]:[\\/]+Users[\\/]+)([^\\/\s"'`<>]+)/gi,
     name => /^(?:user|username|runner|node|app|example|\$USER|%USERNAME%)$/i.test(name));
   check('private-key', /-----BEGIN (?:RSA |EC |DSA |OPENSSH |ENCRYPTED )?PRIVATE KEY-----/g);
@@ -39,7 +52,7 @@ export function scanText(text) {
   return findings;
 }
 
-export function scanFile(path, bytes) {
+export function scanFile(path, bytes, options = {}) {
   const findings = [];
   if (/(?:^|\/)(?:data|generated-images|node_modules|__pycache__|\.venv[^/]*|venv|\.ssh|\.aws|\.gcloud)(?:\/|$)/i.test(path)
       || /(?:^|\/)(?:\.env(?:\..*)?|id_(?:rsa|ed25519)|.*(?:credentials|service-account).*\.json|config\.json|.*\.log|jobs\.json|data\.zip)$/i.test(path)
@@ -47,7 +60,7 @@ export function scanFile(path, bytes) {
   if (bytes.length > LIMIT) return [...findings, {rule:'oversized-file-requires-review', line:1}];
   if (bytes.includes(0) || /\.(?:mp4|mov|mkv|webm|wav|mp3|aac|png|jpe?g|webp|gif|zip|pth|bin)$/i.test(path))
     return [...findings, {rule:'binary-or-generated-asset-requires-review', line:1}];
-  return [...findings, ...scanText(bytes.toString('utf8'))];
+  return [...findings, ...scanText(bytes.toString('utf8'), options)];
 }
 
 function git(args, cwd) {
@@ -57,19 +70,30 @@ function git(args, cwd) {
 const lines = bytes => bytes.toString().trim().split('\n').filter(Boolean);
 const paths = bytes => bytes.toString().split('\0').filter(Boolean);
 
+/** Repository identity policy: required author/committer identity plus optional agent
+ * attribution addresses allowed on Co-Authored-By trailers. Malformed policies fail closed. */
+export function loadPolicy(root) {
+  const policyPath = join(root,'.githooks','identity.json');
+  if (!existsSync(policyPath)) return undefined;
+  try {
+    const policy = JSON.parse(readFileSync(policyPath,'utf8'));
+    if (!policy || typeof policy.name !== 'string'
+        || !policy.name.trim() || /[\r\n<>]/.test(policy.name)
+        || typeof policy.email !== 'string' || !publicEmail(policy.email)
+        || /[\s<>]/.test(policy.email)) throw new Error();
+    const trailers = policy.attributionTrailers ?? [];
+    if (!Array.isArray(trailers) || trailers.some(e => typeof e !== 'string' || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(e)
+        || publicEmail(e) || exampleEmail(e))) throw new Error();
+    return {...policy, attributionTrailers: trailers};
+  } catch { throw new Error('Invalid repository Git identity policy; details withheld.'); }
+}
+
 export function audit({cwd = process.cwd(), mode = '--staged', base, input = '', remote = 'origin'}) {
   const root = git(['rev-parse','--show-toplevel'], cwd).toString().trim();
-  const policyPath = join(root,'.githooks','identity.json');
-  let expectedIdentity;
-  if (existsSync(policyPath)) {
-    try {
-      expectedIdentity = JSON.parse(readFileSync(policyPath,'utf8'));
-      if (!expectedIdentity || typeof expectedIdentity.name !== 'string'
-          || !expectedIdentity.name.trim() || /[\r\n<>]/.test(expectedIdentity.name)
-          || typeof expectedIdentity.email !== 'string' || !publicEmail(expectedIdentity.email)
-          || /[\s<>]/.test(expectedIdentity.email)) throw new Error();
-    } catch { throw new Error('Invalid repository Git identity policy; details withheld.'); }
-  }
+  const expectedIdentity = loadPolicy(root);
+  const messageOptions = {allowedTrailerEmails: expectedIdentity?.attributionTrailers ?? []};
+  // Only the policy file may contain the listed attribution addresses as plain text.
+  const fileOptions = path => path === '.githooks/identity.json' ? {allowedEmails: messageOptions.allowedTrailerEmails} : {};
   const findings = [], seen = new Set();
   let fileCount = 0, commitCount = 0;
   const add = (scope, path, rows) => findings.push(...rows.map(row => ({scope, path, ...row})));
@@ -87,7 +111,7 @@ export function audit({cwd = process.cwd(), mode = '--staged', base, input = '',
     seen.add(key); fileCount++;
     const size = Number(git(['cat-file','-s',object], root));
     const bytes = size > LIMIT ? Buffer.alloc(LIMIT + 1) : git(['cat-file','blob',object], root);
-    add(scope, path, scanFile(path, bytes));
+    add(scope, path, scanFile(path, bytes, fileOptions(path)));
   }
   function commits(ids) {
     for (const id of new Set(ids)) {
@@ -97,7 +121,7 @@ export function audit({cwd = process.cwd(), mode = '--staged', base, input = '',
         git(['show','-s','--format=%an%x00%ae%x00%cn%x00%ce',id],root).toString().trimEnd().split('\0');
       identity(id.slice(0,12),'author',authorName,authorEmail);
       identity(id.slice(0,12),'committer',committerName,committerEmail);
-      add(id.slice(0,12), '[commit message]', scanText(git(['show','-s','--format=%B',id], root).toString()));
+      add(id.slice(0,12), '[commit message]', scanText(git(['show','-s','--format=%B',id], root).toString(), messageOptions));
     }
   }
   if (mode === '--staged') {
@@ -108,7 +132,7 @@ export function audit({cwd = process.cwd(), mode = '--staged', base, input = '',
     }
   } else if (mode === '--worktree') {
     const files = new Set([...paths(git(['diff','HEAD','--name-only','--diff-filter=ACMRT','-z'],root)), ...paths(git(['ls-files','--others','--exclude-standard','-z'],root))]);
-    for (const path of files) { fileCount++; add('worktree',path,scanFile(path,readFileSync(join(root,path)))); }
+    for (const path of files) { fileCount++; add('worktree',path,scanFile(path,readFileSync(join(root,path)),fileOptions(path))); }
   } else if (mode === '--outgoing') {
     const resolvedBase = git(['rev-parse','--verify',base || '@{upstream}'],root).toString().trim();
     commits(lines(git(['rev-list',`${resolvedBase}..HEAD`],root)));
@@ -145,8 +169,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
     const mode = process.argv[2] || '--staged';
     if (mode === '--install-hooks') installHooks();
     else {
+      const messageOptions = () => ({allowedTrailerEmails: loadPolicy(git(['rev-parse','--show-toplevel'],process.cwd()).toString().trim())?.attributionTrailers ?? []});
       const report = mode === '--commit-message'
-        ? {fileCount:1,commitCount:0,findings:scanText(readFileSync(process.argv[3],'utf8')).map(row=>({scope:'message',path:'[commit message]',...row}))}
+        ? {fileCount:1,commitCount:0,findings:scanText(readFileSync(process.argv[3],'utf8'), messageOptions()).map(row=>({scope:'message',path:'[commit message]',...row}))}
         : audit({mode,base:process.argv[3],remote:process.argv[3],input:mode === '--pre-push' ? readFileSync(0,'utf8') : ''});
       for (const f of report.findings) console.error(`${f.scope} ${f.path}:${f.line}: ${f.rule} [value redacted]`);
       console.log(`Privacy check: ${report.fileCount} file snapshots, ${report.commitCount} outgoing commits, ${report.findings.length} findings.`);

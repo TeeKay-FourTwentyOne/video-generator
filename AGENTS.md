@@ -38,6 +38,8 @@ Read `docs/source-privacy.md` before preparing any commit or push.
 - All commits and pushes in this repository use TK-421 (GitHub login
   `TeeKay-FourTwentyOne`). Set both author and committer to the public no-reply
   identity in `.githooks/identity.json`; verify SSH authenticates as that account.
+  Add your agent's `Co-Authored-By` trailer so attribution is not hidden; the
+  addresses allowed on trailers are listed in that same policy file.
   Do not infer identity from the active `gh` account or change global Git settings.
   Follow the repository-local setup in `docs/source-privacy.md`.
 - Enable the repository hooks with `npm run privacy:install`. Do not replace
