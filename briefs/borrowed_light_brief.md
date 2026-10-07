@@ -11,6 +11,7 @@ published from this brief, one per agent:
 
 **YouTube Short — original Codex/Astra version:** https://youtube.com/shorts/w9qSEj9i69w
 **YouTube Short — Claude (Fable 5.1) version:** https://youtube.com/shorts/mbAgckAWQB4
+**YouTube — side-by-side comparison cut (16:9, both drafts):** https://youtu.be/xfJiFl-FBjM
 
 Both links were supplied by the user; public availability was not independently
 verified by either agent.
@@ -137,11 +138,13 @@ both drafts side by side (Astra left, Claude right) with an intro, three cards t
 shots, a numbers table and credits: workspace `data/workspace/borrowed-light-compare/`
 (`cards.json` holds all on-screen copy and timings; `recipes/build.py` and `recipes/mix.sh`
 are mirrored in `tools/production/recipes/borrowed-light-compare-*`). Delivery
-`final/v2/borrowed-light-compare_4k.mp4` (128.5 s) with a 1080p copy beside it; v2 adds two 36 s
-freeze interludes in which both panels hold on the same frame while the spine quotes the brief,
-Astra's prompt and Claude's prompt verbatim for the machine (film 4.5 s) and for the light
-climbing the tree (film 20.5 s). v1 (56.5 s, no interludes) is kept. Sound alternates: Astra's
+`final/v3/borrowed-light-compare_4k.mp4` (56.5 s) with a 1080p copy beside it. The spine carries a
+short note per shot and, beneath it, the brief's wording, Astra's prompt and Claude's prompt verbatim
+for the machine (while shots 1-3 play) and for the light climbing the tree (from the seated lamp to
+the end). v1 (notes only) and v2 (36 s freeze interludes instead) are kept. Sound alternates: Astra's
 score to the transfer near-silence, Claude's from there to the end, Astra's second half under
 the outro cards; -16.2 LUFS integrated. Facts on the cards come from each workspace's QA
 decisions, ledgers, prompts and this brief. Astra may append review notes as a further card.
-Not published.
+
+**Published:** https://youtu.be/xfJiFl-FBjM (2026-10-06, link supplied by the user; v3 with the
+Shorts links on the credits card; public availability not independently verified).

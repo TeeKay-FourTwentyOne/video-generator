@@ -1,0 +1,661 @@
+{
+ "layout": {
+  "canvas": [
+   3840,
+   2160
+  ],
+  "fps": 24,
+  "duration": 56.5,
+  "film_start": 8.0,
+  "panel": {
+   "w": 1126,
+   "h": 2000,
+   "y": 48,
+   "left_x": 48,
+   "right_x": 2666
+  }
+ },
+ "elements": [
+  {
+   "id": "intro",
+   "type": "block",
+   "start": 0.0,
+   "end": 8.0,
+   "fade_in": 0.8,
+   "fade_out": 0.5,
+   "x": 620,
+   "width": 2600,
+   "y": 1040,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "serif",
+     "size": 150,
+     "color": "amber",
+     "track": 14,
+     "leading": 170,
+     "gap": 10,
+     "text": "BORROWED LIGHT"
+    },
+    {
+     "font": "serif-italic",
+     "size": 66,
+     "color": "ink",
+     "leading": 90,
+     "gap": 56,
+     "text": "One brief, two first drafts"
+    },
+    {
+     "font": "serif",
+     "size": 50,
+     "color": "ink",
+     "leading": 70,
+     "gap": 56,
+     "text": "Astra (GPT-6 Astra, in Codex) and Claude (Fable 5.1, in Claude Code) each made this film on 3 October 2026 from the same written brief, the same $20 budget and the same tools, without seeing the other's work."
+    },
+    {
+     "font": "sans-medium",
+     "size": 36,
+     "color": "grey",
+     "track": 5,
+     "leading": 50,
+     "text": "LEFT · ASTRA        RIGHT · CLAUDE"
+    }
+   ]
+  },
+  {
+   "id": "labelL",
+   "type": "block",
+   "start": 8.0,
+   "end": 41.2,
+   "fade_in": 0.6,
+   "fade_out": 0.5,
+   "x": 48,
+   "width": 1126,
+   "y": 2100,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "sans-medium",
+     "size": 36,
+     "color": "ink",
+     "track": 5,
+     "leading": 44,
+     "text": "ASTRA · GPT-6 ASTRA · CODEX"
+    }
+   ]
+  },
+  {
+   "id": "labelR",
+   "type": "block",
+   "start": 8.0,
+   "end": 41.2,
+   "fade_in": 0.6,
+   "fade_out": 0.5,
+   "x": 2666,
+   "width": 1126,
+   "y": 2100,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "sans-medium",
+     "size": 36,
+     "color": "ink",
+     "track": 5,
+     "leading": 44,
+     "text": "CLAUDE · FABLE 5.1 · CLAUDE CODE"
+    }
+   ]
+  },
+  {
+   "id": "N1",
+   "type": "block",
+   "start": 8.0,
+   "end": 11.3333,
+   "fade_in": 0.6,
+   "fade_out": 0.4,
+   "x": 1222,
+   "width": 1396,
+   "y": 130,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "SHOT 1 · ARRIVAL"
+    },
+    {
+     "font": "serif",
+     "size": 46,
+     "color": "ink",
+     "leading": 62,
+     "text": "Same brief, different scale: Astra starts beside the tree; Claude enters at the far door, a lamp the size of a coin."
+    }
+   ]
+  },
+  {
+   "id": "N2",
+   "type": "block",
+   "start": 11.3333,
+   "end": 17.8333,
+   "fade_in": 0.4,
+   "fade_out": 0.4,
+   "x": 1222,
+   "width": 1396,
+   "y": 130,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "SHOT 2 · THE SOCKET"
+    },
+    {
+     "font": "serif",
+     "size": 46,
+     "color": "ink",
+     "leading": 62,
+     "text": "Astra set it on the planter's face; Claude set it among the roots. Both drafts anchor every shot on a single first frame and let Veo invent the motion."
+    }
+   ]
+  },
+  {
+   "id": "N3",
+   "type": "block",
+   "start": 17.8333,
+   "end": 25.3333,
+   "fade_in": 0.4,
+   "fade_out": 0.4,
+   "x": 1222,
+   "width": 1396,
+   "y": 130,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "SHOTS 3–4 · THE GIFT"
+    },
+    {
+     "font": "serif",
+     "size": 46,
+     "color": "ink",
+     "leading": 62,
+     "text": "Neither draft shows the lamp leaving the chest: Astra's extraction snapped mid-pull, and Claude's first grip take was refused by Veo's filter until the head was cropped out. Both land the removal on the cut, where both scores go near-silent; the sound hands from Astra's to Claude's inside that silence."
+    }
+   ]
+  },
+  {
+   "id": "N4",
+   "type": "block",
+   "start": 25.3333,
+   "end": 29.9167,
+   "fade_in": 0.4,
+   "fade_out": 0.4,
+   "x": 1222,
+   "width": 1396,
+   "y": 130,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "SHOT 5 · THE CLIMB"
+    },
+    {
+     "font": "serif",
+     "size": 46,
+     "color": "ink",
+     "leading": 62,
+     "text": "Astra asked for glass leaves to unfurl; Claude asked for glow along the branches, and Veo escalated it into a lightning burst, so the shot is cut as the crown flares."
+    }
+   ]
+  },
+  {
+   "id": "N5",
+   "type": "block",
+   "start": 29.9167,
+   "end": 40.9167,
+   "fade_in": 0.4,
+   "fade_out": 0.5,
+   "x": 1222,
+   "width": 1396,
+   "y": 130,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "SHOT 6 · RETURN WIDE"
+    },
+    {
+     "font": "serif",
+     "size": 46,
+     "color": "ink",
+     "leading": 62,
+     "text": "The machine stays dark in both. In Claude's take Veo re-lit the empty chest socket; a tracked, feathered paste repaired it frame by frame, and the head stretches as it tilts up. Astra lays the title over the last seconds; Claude cuts to a black card. Both scores are original local synthesis: 'What remains' (Astra), 'By Given Light' (Claude)."
+    }
+   ]
+  },
+  {
+   "id": "Q1",
+   "type": "block",
+   "start": 8.0,
+   "end": 19.8333,
+   "fade_in": 0.5,
+   "fade_out": 0.4,
+   "x": 1222,
+   "width": 1396,
+   "y": 540,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "THE MACHINE, AS WRITTEN"
+    },
+    {
+     "font": "sans-demi",
+     "size": 28,
+     "color": "amber",
+     "track": 4,
+     "leading": 38,
+     "gap": 8,
+     "text": "THE BRIEF"
+    },
+    {
+     "font": "serif",
+     "size": 38,
+     "color": "ink",
+     "leading": 51,
+     "gap": 28,
+     "text": "One machine only: squat rectangular petrol-blue body, two short brass arms ending in two-prong grippers, two narrow caterpillar tracks, small cream ceramic head with one black horizontal viewing slit. One round amber lamp in its chest. A diagonal pale scratch crosses its left body panel. No face, mouth or clothing."
+    },
+    {
+     "font": "sans-demi",
+     "size": 28,
+     "color": "amber",
+     "track": 4,
+     "leading": 38,
+     "gap": 8,
+     "text": "ASTRA'S PROMPT · SHOT 2 IMAGE ANCHOR, CHARACTER BLOCK"
+    },
+    {
+     "font": "serif",
+     "size": 38,
+     "color": "ink",
+     "leading": 51,
+     "gap": 28,
+     "text": "Exactly ONE small maintenance machine: squat rectangular chipped petrol-blue enamel body, two short articulated brass arms each ending in one simple two-prong gripper, two narrow caterpillar tracks, small cream ceramic rounded rectangular head with one black horizontal viewing slit. No eyes or mouth. One circular amber lamp capsule in a brass socket in the center of its chest. A pale diagonal scratch on the left front body panel. No clothing. Its head is small relative to the body."
+    },
+    {
+     "font": "sans-demi",
+     "size": 28,
+     "color": "amber",
+     "track": 4,
+     "leading": 38,
+     "gap": 8,
+     "text": "CLAUDE'S PROMPT · MACHINE REFERENCE IMAGE, EXCERPT"
+    },
+    {
+     "font": "serif",
+     "size": 38,
+     "color": "ink",
+     "leading": 51,
+     "gap": 28,
+     "text": "The machine: a squat rectangular body in weathered petrol-blue enamel, chipped at the edges to show dark metal beneath; two short brass arms at its sides, each ending in a two-prong gripper, held low; two narrow caterpillar tracks underneath, dark rubber on small brass wheels; a small cream ceramic head, slightly domed, with a single black horizontal viewing slit and no other features; one round amber lamp set in the center of its chest, a brass bezel ring around warm amber glass, glowing softly and lighting the floor in front of it; one diagonal pale scratch across the body panel on the machine's left side (the viewer's right). No face, no mouth, no eyes, no clothing, no antenna, no other lamps or lights anywhere on the machine."
+    }
+   ]
+  },
+  {
+   "id": "Q2",
+   "type": "block",
+   "start": 19.8333,
+   "end": 40.9167,
+   "fade_in": 0.5,
+   "fade_out": 0.4,
+   "x": 1222,
+   "width": 1396,
+   "y": 540,
+   "anchor": "top",
+   "align": "left",
+   "parts": [
+    {
+     "font": "sans-demi",
+     "size": 36,
+     "color": "amber",
+     "track": 6,
+     "leading": 48,
+     "gap": 22,
+     "text": "THE LIGHT, AS WRITTEN"
+    },
+    {
+     "font": "sans-demi",
+     "size": 28,
+     "color": "amber",
+     "track": 4,
+     "leading": 38,
+     "gap": 8,
+     "text": "THE BRIEF"
+    },
+    {
+     "font": "serif",
+     "size": 38,
+     "color": "ink",
+     "leading": 51,
+     "gap": 28,
+     "text": "Light climbs the branches and spreads through the tower. … S05, 8 seconds: Rising close-to-wide: warm light travels through bare branches. … After the transfer, the chest socket stays dark and empty. No duplicate lamps, machines or grippers. The tree's light is motivated from its base upward."
+    },
+    {
+     "font": "sans-demi",
+     "size": 28,
+     "color": "amber",
+     "track": 4,
+     "leading": 38,
+     "gap": 8,
+     "text": "ASTRA'S PROMPT · SHOT 5 VIDEO, EXCERPT"
+    },
+    {
+     "font": "serif",
+     "size": 38,
+     "color": "ink",
+     "leading": 51,
+     "gap": 28,
+     "text": "The robot stays motionless with both hands empty and lowered. Its chest remains dark and empty. The single amber bulb remains installed on the planter front. Starting at the roots, very fine warm golden veins slowly travel UP the existing black tree trunk into the existing branches. Along those very same branches, small translucent amber leaves gently unfurl one by one from bottom to top, turning the bare tree into a delicate luminous living sculpture. No new trunk or branch rearrangement, no white flash, no neon laser beams. Practical warm glowing glass-like leaves, an intimate handmade fairytale."
+    },
+    {
+     "font": "sans-demi",
+     "size": 28,
+     "color": "amber",
+     "track": 4,
+     "leading": 38,
+     "gap": 8,
+     "text": "CLAUDE'S PROMPT · SHOT 5 VIDEO, EXCERPT"
+    },
+    {
+     "font": "serif",
+     "size": 38,
+     "color": "ink",
+     "leading": 51,
+     "gap": 28,
+     "text": "The camera rises slowly and smoothly up the trunk of the dry dead tree, tilting upward as it climbs, while warm amber light travels up the trunk and spreads into the bare twisting branches: each branch lights from within like a filament, the glow reaching the twig tips one after another, until the whole crown glows warm amber and the light warms the oxidized iron ribs and smoked glass panes high overhead. Fine dust drifts in the light. One smooth continuous camera rise, no cuts, no new objects, nothing else moves."
+    }
+   ]
+  },
+  {
+   "id": "sA",
+   "type": "block",
+   "start": 8.0,
+   "end": 21.7,
+   "fade_in": 0.4,
+   "fade_out": 0.4,
+   "x": 1174,
+   "width": 1492,
+   "y": 1930,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "sans-medium",
+     "size": 32,
+     "color": "grey",
+     "track": 4,
+     "leading": 40,
+     "text": "SOUND · ASTRA, 'WHAT REMAINS'"
+    }
+   ]
+  },
+  {
+   "id": "sB",
+   "type": "block",
+   "start": 21.7,
+   "end": 40.9167,
+   "fade_in": 0.4,
+   "fade_out": 0.4,
+   "x": 1174,
+   "width": 1492,
+   "y": 1930,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "sans-medium",
+     "size": 32,
+     "color": "grey",
+     "track": 4,
+     "leading": 40,
+     "text": "SOUND · CLAUDE, 'BY GIVEN LIGHT'"
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "type": "table",
+   "start": 41.5,
+   "end": 49.5,
+   "fade_in": 0.5,
+   "fade_out": 0.4,
+   "y": 1010,
+   "leading": 84,
+   "title": "BY THE NUMBERS",
+   "cols": [
+    {
+     "x": 640,
+     "width": 1160,
+     "align": "left"
+    },
+    {
+     "x": 1860,
+     "width": 640,
+     "align": "left"
+    },
+    {
+     "x": 2560,
+     "width": 760,
+     "align": "left"
+    }
+   ],
+   "header": [
+    "",
+    "ASTRA",
+    "CLAUDE"
+   ],
+   "rows": [
+    [
+     "Veo takes bought",
+     "6 × 8 s",
+     "5 × 8 s, 2 × 4 s (one refused)"
+    ],
+    [
+     "Generated seconds kept",
+     "32.5 of 48",
+     "29.9 of 44"
+    ],
+    [
+     "Anchors",
+     "first frame only",
+     "first frame only"
+    ],
+    [
+     "Shot 4 anchor",
+     "crop of shot 5's first frame",
+     "a new image"
+    ],
+    [
+     "Images bought",
+     "7",
+     "11"
+    ],
+    [
+     "Vision QA calls",
+     "16",
+     "15"
+    ],
+    [
+     "Estimated spend",
+     "$11.20 of $20",
+     "$11.79 of $20"
+    ],
+    [
+     "First image to export",
+     "42 min",
+     "40 min"
+    ],
+    [
+     "Local repairs",
+     "fades, title",
+     "chest socket, fades, title"
+    ],
+    [
+     "Score",
+     "What remains",
+     "By Given Light"
+    ]
+   ],
+   "foot": "Spend is each draft's usage-based list-price estimate, not an invoice. Build time runs from the first paid image to the review export."
+  },
+  {
+   "id": "credits",
+   "type": "block",
+   "start": 49.5,
+   "end": 56.5,
+   "fade_in": 0.5,
+   "fade_out": 0.7,
+   "x": 520,
+   "width": 2800,
+   "y": 1040,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "serif",
+     "size": 110,
+     "color": "amber",
+     "track": 12,
+     "leading": 130,
+     "gap": 44,
+     "text": "BORROWED LIGHT"
+    },
+    {
+     "font": "serif",
+     "size": 48,
+     "color": "ink",
+     "leading": 66,
+     "gap": 30,
+     "text": "Astra draft: GPT-6 Astra in Codex.   Claude draft: Claude Fable 5.1 in Claude Code."
+    },
+    {
+     "font": "serif",
+     "size": 44,
+     "color": "ink",
+     "leading": 62,
+     "gap": 12,
+     "text": "Picture: Google Veo 3.1, silent Quality takes from Gemini image anchors."
+    },
+    {
+     "font": "serif",
+     "size": 44,
+     "color": "ink",
+     "leading": 62,
+     "gap": 30,
+     "text": "Vision QA: Claude Sonnet 5.5. Finishing: FFmpeg, Real-ESRGAN 2×, local Python."
+    },
+    {
+     "font": "serif",
+     "size": 44,
+     "color": "ink",
+     "leading": 62,
+     "gap": 30,
+     "text": "Scores: 'What remains' by Astra and 'By Given Light' by Claude, original local synthesis with no samples and no generated audio."
+    },
+    {
+     "font": "serif",
+     "size": 44,
+     "color": "grey",
+     "leading": 62,
+     "gap": 44,
+     "text": "Comparison cut and notes: Claude Fable 5.1, 3 October 2026."
+    },
+    {
+     "font": "sans-medium",
+     "size": 40,
+     "color": "ink",
+     "leading": 56,
+     "gap": 6,
+     "text": "Astra's draft: https://youtube.com/shorts/w9qSEj9i69w"
+    },
+    {
+     "font": "sans-medium",
+     "size": 40,
+     "color": "ink",
+     "leading": 56,
+     "gap": 44,
+     "text": "Claude's draft: https://youtube.com/shorts/mbAgckAWQB4"
+    },
+    {
+     "font": "sans-medium",
+     "size": 40,
+     "color": "amber",
+     "leading": 56,
+     "text": "https://github.com/TeeKay-FourTwentyOne/video-generator"
+    }
+   ]
+  },
+  {
+   "id": "sC",
+   "type": "block",
+   "start": 41.5,
+   "end": 53.5,
+   "fade_in": 0.6,
+   "fade_out": 0.6,
+   "x": 620,
+   "width": 2600,
+   "y": 2040,
+   "anchor": "center",
+   "align": "center",
+   "parts": [
+    {
+     "font": "sans-medium",
+     "size": 32,
+     "color": "grey",
+     "track": 4,
+     "leading": 40,
+     "text": "SOUND · ASTRA, 'WHAT REMAINS', SECOND HALF"
+    }
+   ]
+  }
+ ]
+}
