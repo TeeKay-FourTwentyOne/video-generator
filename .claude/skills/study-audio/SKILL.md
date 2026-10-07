@@ -71,7 +71,7 @@ Default model is `eleven_turbo_v2_5` = **0.5 credits/char** (~$0.033/min, ~$2/hr
 - **Voice:** Bella (`hpp4J3VqNfWAUOO0d1Us`) — the voice from the AI-explainer series. Override only if the user asks.
 - **Staging is a copy, not a move.** The original transcript is left in place; pass `--move` to delete it. (Surface this if the user explicitly said "move".)
 - **Markdown is stripped by default** so headings/bullets/links aren't read literally. Use `--raw` to keep it.
-- **Bucket path:** `gs://your-bucket/study/<slug>/<slug>.mp3`. The signed URL expires after 7 days; re-mint anytime with `tools/gcp/share.cjs` (the file persists in the bucket).
+- **Bucket path:** `gs://<infra bucket>/study/<slug>/<slug>.mp3` (the bucket configured in `tools/gcp/share.cjs`). The signed URL expires after 7 days; re-mint anytime with `tools/gcp/share.cjs` (the file persists in the bucket).
 - **Verify spend afterward** (optional): `node tools/elevenlabs-usage.cjs` shows credits consumed this cycle.
 
 ## Notes

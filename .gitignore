@@ -30,9 +30,11 @@ venv/
 *.pem
 *.key
 
-# Claude Code local settings
+# Claude Code local settings and session artifacts
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
+.claude/plans/
+CLAUDE.local.md
 
 # Generated content
 generated-images/

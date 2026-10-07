@@ -1,7 +1,7 @@
 #!/bin/bash
 # Composite full-hour zones + mux full audio bed -> final hour.
 set -e
-cd .
+cd "$(dirname "$0")/../../../.."  # repository root
 S=data/workspace/the-other-window/scratch
 F=data/workspace/the-other-window/final
 
