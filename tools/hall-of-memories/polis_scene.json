@@ -1,0 +1,39 @@
+{
+  "title": "The tellers",
+  "version": "polis-draft-v1",
+  "status": "complete scene draft for review; dialogue, casting and polis design provisional",
+  "scope": "Start on the storyteller after the factory cut. End with the older resident's first reply. No Hall visit or explanation of extinction.",
+  "format": {"width": 1920, "height": 1080, "fps": 24, "pose_fps": 8, "sample_rate": 48000},
+  "direction": "A chalk-stone conversation court in an unreal violet-grey polis. Rounded dark graphite puppets, orange-yellow emissive eyes, no mouths. Three different temperaments expressed through held poses, gaze and hands. Comedy gives way to an earnest question.",
+  "cast": {
+    "story": {"role": "confident storyteller", "voice": "Samantha", "rate": 171, "pitch": 1.08, "pan": -0.3},
+    "challenge": {"role": "literal-minded challenger", "voice": "Karen", "rate": 178, "pitch": 1.045, "pan": 0.3},
+    "quiet": {"role": "quieter child", "voice": "Tessa", "rate": 151, "pitch": 1.055, "pan": 0.05},
+    "elder": {"role": "older resident", "voice": "Daniel", "rate": 140, "pitch": 0.98, "pan": 0.4}
+  },
+  "dialogue": [
+    {"id":"P01","speaker":"story","text":"Will you let me finish?","gap_after":0.30,"gesture":"match","shot":"story"},
+    {"id":"P02","speaker":"challenge","text":"You did finish. There was nobody left.","gap_after":0.35,"gesture":"count","shot":"reveal"},
+    {"id":"P03","speaker":"story","text":"That's how it ends.","gap_after":0.30,"gesture":"explain","shot":"story"},
+    {"id":"P04","speaker":"challenge","text":"Except for the timer.","gap_after":0.40,"gesture":"point","shot":"challenge"},
+    {"id":"P05","speaker":"quiet","text":"Maybe the timer told the story.","gap_after":0.45,"gesture":"suggest","shot":"quiet"},
+    {"id":"P06","speaker":"story","text":"Timers don't tell stories.","gap_after":0.20,"gesture":"dismiss","shot":"story"},
+    {"id":"P07","speaker":"challenge","text":"Yours had eyes.","gap_after":1.60,"gesture":"eyes","shot":"challenge"},
+    {"id":"P08","speaker":"story","text":"Fine. You tell it.","gap_after":0.80,"gesture":"offer","shot":"two"},
+    {"id":"P09","speaker":"challenge","text":"I don't know what happened.","gap_after":0.45,"gesture":"shrug","shot":"two"},
+    {"id":"P10","speaker":"story","text":"Then mine might be right.","gap_after":1.45,"gesture":"claim","shot":"story"},
+    {"id":"P11","speaker":"quiet","text":"Was there really a last one?","gap_after":0.80,"gesture":"question","shot":"quiet"},
+    {"id":"P12","speaker":"challenge","text":"There must have been.","gap_after":0.65,"gesture":"small_nod","shot":"challenge"},
+    {"id":"P13","speaker":"quiet","text":"Just one person. With nobody to talk to?","gap_after":3.0,"gesture":"alone","shot":"quiet"},
+    {"id":"P14","speaker":"quiet","text":"Where is everybody?","gap_after":2.0,"gesture":"look_out","shot":"empty"},
+    {"id":"P15","speaker":"elder","text":"I used to ask that, too.","gap_after":2.0,"gesture":"welcome","shot":"elder"}
+  ],
+  "continuity": [
+    "Opening carries the raised asymmetric hand gesture from the planned factory cut; factory endpoint is not final, so this is a proposed match target.",
+    "All four avatars belong to the approved rounded dark-grey/yellow-orange-eye visual family. Child proportions and elder presentation are new draft choices.",
+    "Neither a biological past for this elder nor a mechanism of software childhood is established.",
+    "The exact repeated question is Where is everybody?",
+    "No explanatory subtitles or character-name captions burned into the picture; optional review captions are separate.",
+    "Camera coverage is chosen for this polis conversation. The earlier frontal-only guidance governed factory robots."
+  ]
+}

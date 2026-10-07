@@ -1,0 +1,49 @@
+{
+  "title": "The Exchange — aftermath to emerald",
+  "run": "data/workspace/hall-of-memories/exchange-dark-video-v1",
+  "project": "hall-exchange",
+  "model": "veo-3.1-prod",
+  "resolution": "1080p",
+  "aspectRatio": "16:9",
+  "generateAudio": true,
+  "budgetUSD": 30,
+  "automaticRetries": false,
+  "common": "Photoreal natural human motion, raw unpolished film texture. Exact people and materials in supplied first frame. Landscape 16:9 with no bars, titles, subtitles or written words. One continuous shot unless specified; no dissolves, no new objects. Everyone is an adult. AUDIO is essential: generate synchronized environmental sounds and human voices as described. Any dialogue must be an invented language: natural rhythm and emotion, wholly unintelligible syllables, no English or recognizable modern language. Never narrate the scene. Keep bodily anatomy and identities stable.",
+  "shots": [
+    {
+      "id": "N01", "seconds": 6, "expected": 5,
+      "purpose": "Daylight skirmish aftermath, then jewel triumph",
+      "prompt": "One six-second continuous DAYLIGHT mountain shot. Exactly five upright adult survivors: the one dark-haired leader foreground and four distinct companions behind, in irregular spacing. Exactly three clothed adult casualties remain beside the rocky path, two motionless and one weakly breathing against rock. No gore, new injuries, active combat or attacks. FIRST 0–4 seconds: leader and companions walk only two slow weary steps; camera drifts back slightly with them. Somber faces, no early cheering. Leader carries the ONE broad six-sided green stone in the SAME hand visible in anchor; never switches hands or duplicates it. LAST 4–6 seconds: companions move closer to flank him and stop; leader raises that stone overhead in a single simple arm motion, grim face, a sudden rough cheer from two companions. Camera tilts just enough to keep his raised hand in frame. No running, jumping or organized formation. Keep adult casualties still except slight breathing of seated survivor. Audio first wind over scree, crunching irregular footsteps, leather and wool, one faint distant groan. As hand rises, two short ragged celebratory cries and one breathy laugh; no music, no English. Gem remains same size, six-sided green with pale diagonal line, no glow. Do not duplicate any survivor during the closing movement."
+    },
+    {
+      "id": "N02", "seconds": 4, "expected": 3,
+      "purpose": "Rough shelter exterior with audible feast",
+      "prompt": "Night exterior, preserve slightly canted low camera. The single torch flickers in wind, a little smoke escapes crude doorway, three distinct dark adult silhouettes inside shift casually but never enter the foreground. Camera stays outside and makes a tiny handheld settling movement. Keep shelter crude and surrounding night black, no new buildings, no blue ambient lighting. Audio: loud muffled celebration already ongoing INSIDE before the shot begins: unintelligible male voices, scattered laughter, irregular hand-drum pulse, a crude breathy wooden pipe playing two wavering notes, wooden cups knocked together, fire; light outside wind. Sound feels physically behind the doorway, no soundtrack score."
+    },
+    {
+      "id": "N03", "seconds": 4, "expected": 3,
+      "purpose": "Canted revelry and short crowd surge",
+      "prompt": "Very close fragmented revelry. Three distinct adult men as anchored: cropped mouth at far LEFT, a separate shouting man behind center, one dark shoulder blocking RIGHT. They shout rough unintelligible short celebratory syllables, laugh, breathe and jostle a little. Single foreground fist lifts once but hits nobody. Camera rolls into a noticeable 12-degree DUTCH ANGLE during the first second and holds it; keep foreground mouth readable, no wide reveal. Brief shoulder occlusion; no cloned faces or limbs. This is rowdy post-fight celebration; angry-looking excitement remains ambiguous. Audio: loud short invented-language cries from two different men, a bark of laughter, palms slapping cloth, wooden cup clack offscreen, rough drum and distant reed/wooden pipe. No English words, subtitles or music score. Torch-only light, background black."
+    },
+    {
+      "id": "N04", "seconds": 4, "expected": 1,
+      "purpose": "Demanding leader close-up with two utterances",
+      "prompt": "Exactly one sharp foreground dark-haired leader facing screen RIGHT at offscreen older father. Blurred back of another man's head remains foreground-right, not a clone. Leader barks TWO short invented-language phrases with a clear pause between: sounds approximately 'Khra vek! ... Toh rakh!' Natural forceful speech, wholly unintelligible, no English. During first phrase, his free hand rises briefly to tap his OWN chest at bottom of frame. During second phrase, same hand points low toward screen right beyond father, indicating the adult daughter outside frame, then drops. Single compact deliberate gesture, fingers remain natural, no reaching across faces. He is insistently demanding a reward, eyes fierce, jaw tight, no smile. Slight handheld tension, torch catches one cheek, deep black surroundings. Audio includes his rough voice close and dry, breath, sleeve rustle, muffled feast drum and distant laughter behind him. No jewel enters this shot."
+    },
+    {
+      "id": "N05", "seconds": 4, "expected": 1,
+      "purpose": "Father refuses twice, opposing eyeline",
+      "prompt": "Exactly one sharp foreground older grey-haired father looking screen LEFT at the leader offscreen. His already-raised palm remains between them. He gives TWO brief, clipped unintelligible refusals separated by a pause, approximately 'Eh nak! ... Nak!' No English words. First utterance: one short head shake. Second utterance: push the SAME open refusing palm five centimeters outward and stop, tense eye never leaves leader. Keep one hand with five fingers, no flickering extra arm; do not grasp anyone. Furious and worried rather than regal. Fixed close framing, small human body movement, torch only, no new objects or jewel. Audio: gravelly older voice, one breath through teeth, cloth movement, ongoing offscreen feast drum, wood cup knocks, overlapping distant unintelligible celebrants."
+    },
+    {
+      "id": "N06", "seconds": 4, "expected": 1,
+      "purpose": "Daughter notices jewel during argument",
+      "prompt": "The exact one male palm in foreground holds ONE broad green six-sided jewel with pale diagonal inclusion, being presented onward toward the older father OFFSCREEN RIGHT. The woman behind is an adjacent observer, not the direct recipient. Keep palm steady, only slight movement toward screen right, no hand-to-hand transfer. The clearly adult woman's eyes shift DOWN to the stone and stay there; her brow relaxes slightly in absorbed curiosity while mouth stays unsmiling. She begins to lift her own fingertip into the lower right edge toward the stone, but stops before contact. No nod, no agreeing gesture, no romance. Keep exact stone shape and pale line, no glow, no extra hands, nobody touches her. The father's older gravelly voice murmurs one brief unintelligible objection OFFSCREEN, then becomes quiet. Her small audible intake of breath, torch crackle, offscreen cups, rough distant drum and celebrants remain. Camera almost still, no cut."
+    },
+    {
+      "id": "N07", "seconds": 4, "expected": 1,
+      "purpose": "Private alcove: stroke jewel, smile at it, murmured words",
+      "prompt": "One adult woman alone, fully clothed, seated against furs in a small sleeping alcove, exact face and jewel as anchor. Frame never goes below chest. The green six-sided jewel hangs on its same simple fiber cord and rests in her hands. She looks directly INTO the jewel throughout, slowly strokes its edge ONCE with her right fingertip, then gives the STONE a small private smile. She softly murmurs a short unintelligible invented phrase to it, approximately 'Esh a nai', natural close breathy voice, no recognizable English. A slow gentle camera push/zoom moves closer to her face by about ten percent while keeping her hands and jewel lower in frame. No additional people enter. Keep hand anatomy, jewel shape and pale diagonal line stable, no glow. In first half, distant party is audible through curtain: rough hand drum, wavering wooden pipe, muffled unintelligible men laughing. Those OUTSIDE sounds gradually recede across shot while her quiet voice, breathing, fingertip on stone and cloth remain close. No sexual activity or bodily motion beyond the named face and hand gestures. No musical score. End on her smile aimed down at the jewel."
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "title": "Carnival Dream \u2014 Borrowed Light",
+  "fps": 24,
+  "pose_fps": 8,
+  "duration": 170.15582766439908,
+  "width": 1920,
+  "height": 1080,
+  "frames": 4084,
+  "audio": "assets/song.mp3",
+  "shots": [
+    {
+      "id": "BL01",
+      "start": 0,
+      "end": 4.75,
+      "start_frame": 0,
+      "end_frame": 114,
+      "kind": "lantern_macro",
+      "intent": "A dormant lantern; a suggestion of the machine"
+    },
+    {
+      "id": "BL02",
+      "start": 4.75,
+      "end": 9.54,
+      "start_frame": 114,
+      "end_frame": 229,
+      "kind": "intro_wide",
+      "intent": "A pale paper performer waits in a dark theatre"
+    },
+    {
+      "id": "BL03",
+      "start": 9.54,
+      "end": 15.68,
+      "start_frame": 229,
+      "end_frame": 376,
+      "kind": "light_close",
+      "intent": "Colored light crosses her dress"
+    },
+    {
+      "id": "BL04",
+      "start": 15.68,
+      "end": 21.18,
+      "start_frame": 376,
+      "end_frame": 508,
+      "kind": "shadow_arrives",
+      "intent": "A figure appears inside the light"
+    },
+    {
+      "id": "BL05",
+      "start": 21.18,
+      "end": 26.58,
+      "start_frame": 508,
+      "end_frame": 638,
+      "kind": "reach",
+      "intent": "She reaches; the shadow answers"
+    },
+    {
+      "id": "BL06",
+      "start": 26.58,
+      "end": 32.12,
+      "start_frame": 638,
+      "end_frame": 771,
+      "kind": "feet",
+      "intent": "Careful steps into the moving light"
+    },
+    {
+      "id": "BL07",
+      "start": 32.12,
+      "end": 37.78,
+      "start_frame": 771,
+      "end_frame": 907,
+      "kind": "face",
+      "intent": "A look of recognition and hesitation"
+    },
+    {
+      "id": "BL08",
+      "start": 37.78,
+      "end": 42.34,
+      "start_frame": 907,
+      "end_frame": 1016,
+      "kind": "recede",
+      "intent": "The shadow slips beyond her hand"
+    },
+    {
+      "id": "BL09",
+      "start": 42.34,
+      "end": 46.36,
+      "start_frame": 1016,
+      "end_frame": 1113,
+      "kind": "bloom",
+      "intent": "The paper carnival opens around their dance"
+    },
+    {
+      "id": "BL10",
+      "start": 46.36,
+      "end": 50.36,
+      "start_frame": 1113,
+      "end_frame": 1209,
+      "kind": "near_touch",
+      "intent": "A moment of almost physical contact"
+    },
+    {
+      "id": "BL11",
+      "start": 50.36,
+      "end": 53.88,
+      "start_frame": 1209,
+      "end_frame": 1293,
+      "kind": "ferris_assemble",
+      "intent": "Monochrome Ferris wheel assembles"
+    },
+    {
+      "id": "BL12",
+      "start": 53.88,
+      "end": 56.62,
+      "start_frame": 1293,
+      "end_frame": 1359,
+      "kind": "color_leaves",
+      "intent": "The light takes its colors away"
+    },
+    {
+      "id": "BL13",
+      "start": 56.62,
+      "end": 59.4,
+      "start_frame": 1359,
+      "end_frame": 1426,
+      "kind": "carousel_assemble",
+      "intent": "Monochrome carousel assembles"
+    },
+    {
+      "id": "BL14",
+      "start": 59.4,
+      "end": 62.32,
+      "start_frame": 1426,
+      "end_frame": 1496,
+      "kind": "pass",
+      "intent": "She follows the passing shadow"
+    },
+    {
+      "id": "BL15",
+      "start": 62.32,
+      "end": 64.8,
+      "start_frame": 1496,
+      "end_frame": 1555,
+      "kind": "swings_assemble",
+      "intent": "Monochrome swing ride assembles"
+    },
+    {
+      "id": "BL16",
+      "start": 64.8,
+      "end": 70.18,
+      "start_frame": 1555,
+      "end_frame": 1684,
+      "kind": "walk",
+      "intent": "The stage repeats as she follows"
+    },
+    {
+      "id": "BL17",
+      "start": 70.18,
+      "end": 76.08,
+      "start_frame": 1684,
+      "end_frame": 1826,
+      "kind": "empty_light",
+      "intent": "A pause inside an empty pool of light"
+    },
+    {
+      "id": "BL18",
+      "start": 76.08,
+      "end": 81.18,
+      "start_frame": 1826,
+      "end_frame": 1948,
+      "kind": "pluck_star",
+      "intent": "She takes a painted star from the sky"
+    },
+    {
+      "id": "BL19",
+      "start": 81.18,
+      "end": 86.66,
+      "start_frame": 1948,
+      "end_frame": 2080,
+      "kind": "carry_star",
+      "intent": "She carries its borrowed light"
+    },
+    {
+      "id": "BL20",
+      "start": 86.66,
+      "end": 92.44,
+      "start_frame": 2080,
+      "end_frame": 2219,
+      "kind": "stars",
+      "intent": "Stars gather around her and the shadow"
+    },
+    {
+      "id": "BL21",
+      "start": 92.44,
+      "end": 95.68,
+      "start_frame": 2219,
+      "end_frame": 2296,
+      "kind": "spin",
+      "intent": "They orbit, briefly aligned"
+    },
+    {
+      "id": "BL22",
+      "start": 95.68,
+      "end": 96.48,
+      "start_frame": 2296,
+      "end_frame": 2316,
+      "kind": "ferris_broken",
+      "intent": "The missing gondola"
+    },
+    {
+      "id": "BL23",
+      "start": 96.48,
+      "end": 97.28,
+      "start_frame": 2316,
+      "end_frame": 2335,
+      "kind": "carousel_broken",
+      "intent": "The empty mounting pole"
+    },
+    {
+      "id": "BL24",
+      "start": 97.28,
+      "end": 98.08,
+      "start_frame": 2335,
+      "end_frame": 2354,
+      "kind": "swings_broken",
+      "intent": "A seat hangs from one broken suspension"
+    },
+    {
+      "id": "BL25",
+      "start": 98.08,
+      "end": 103.06,
+      "start_frame": 2354,
+      "end_frame": 2473,
+      "kind": "dance_return",
+      "intent": "The first dance returns with visible effort"
+    },
+    {
+      "id": "BL26",
+      "start": 103.06,
+      "end": 108.42,
+      "start_frame": 2473,
+      "end_frame": 2602,
+      "kind": "effort",
+      "intent": "She tries to hold the light around them"
+    },
+    {
+      "id": "BL27",
+      "start": 108.42,
+      "end": 114.04,
+      "start_frame": 2602,
+      "end_frame": 2737,
+      "kind": "lose_stars",
+      "intent": "The stars lose their color"
+    },
+    {
+      "id": "BL28",
+      "start": 114.04,
+      "end": 119.26,
+      "start_frame": 2737,
+      "end_frame": 2862,
+      "kind": "separation",
+      "intent": "The shadow passes out of reach"
+    },
+    {
+      "id": "BL29",
+      "start": 119.26,
+      "end": 124.64,
+      "start_frame": 2862,
+      "end_frame": 2991,
+      "kind": "curtain",
+      "intent": "She notices the gap behind the scenery"
+    },
+    {
+      "id": "BL30",
+      "start": 124.64,
+      "end": 130.1,
+      "start_frame": 2991,
+      "end_frame": 3122,
+      "kind": "backstage",
+      "intent": "The lantern casting their world"
+    },
+    {
+      "id": "BL31",
+      "start": 130.1,
+      "end": 135.56,
+      "start_frame": 3122,
+      "end_frame": 3253,
+      "kind": "mechanism",
+      "intent": "Paper figures and gels travel around its lamp"
+    },
+    {
+      "id": "BL32",
+      "start": 135.56,
+      "end": 140.64,
+      "start_frame": 3253,
+      "end_frame": 3375,
+      "kind": "wind",
+      "intent": "Her hand turns the little mechanism"
+    },
+    {
+      "id": "BL33",
+      "start": 140.64,
+      "end": 145.68,
+      "start_frame": 3375,
+      "end_frame": 3496,
+      "kind": "choice",
+      "intent": "She watches the familiar beam return"
+    },
+    {
+      "id": "BL34",
+      "start": 145.68,
+      "end": 149.74,
+      "start_frame": 3496,
+      "end_frame": 3594,
+      "kind": "ferris_dismantle",
+      "intent": "The wheel returns to loose pieces"
+    },
+    {
+      "id": "BL35",
+      "start": 149.74,
+      "end": 153.74,
+      "start_frame": 3594,
+      "end_frame": 3690,
+      "kind": "return_light",
+      "intent": "She deliberately enters the light again"
+    },
+    {
+      "id": "BL36",
+      "start": 153.74,
+      "end": 157.68,
+      "start_frame": 3690,
+      "end_frame": 3784,
+      "kind": "carousel_dismantle",
+      "intent": "The carousel is packed back into fragments"
+    },
+    {
+      "id": "BL37",
+      "start": 157.68,
+      "end": 160.46,
+      "start_frame": 3784,
+      "end_frame": 3851,
+      "kind": "swings_dismantle",
+      "intent": "The swing ride unfolds and comes apart"
+    },
+    {
+      "id": "BL38",
+      "start": 160.46,
+      "end": 162.8,
+      "start_frame": 3851,
+      "end_frame": 3907,
+      "kind": "alone",
+      "intent": "One figure on the bare stage"
+    },
+    {
+      "id": "BL39",
+      "start": 162.8,
+      "end": 165.64,
+      "start_frame": 3907,
+      "end_frame": 3975,
+      "kind": "final_step",
+      "intent": "She makes the last step toward the beam"
+    },
+    {
+      "id": "BL40",
+      "start": 165.64,
+      "end": 168.3,
+      "start_frame": 3975,
+      "end_frame": 4039,
+      "kind": "final_reach",
+      "intent": "The shadow meets her gesture"
+    },
+    {
+      "id": "BL41",
+      "start": 168.3,
+      "end": 170.15582766439908,
+      "start_frame": 4039,
+      "end_frame": 4084,
+      "kind": "end",
+      "intent": "Hold through the decay; an unresolved return"
+    }
+  ]
+}

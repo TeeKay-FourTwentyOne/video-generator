@@ -1,0 +1,32 @@
+{
+  "title": "The Earth goes on",
+  "duration": 121,
+  "source_pose_rate": 8,
+  "output_rate": 24,
+  "width": 1920,
+  "height": 1080,
+  "context_offset": 185,
+  "shots": [
+    {"id":"D01","start":0,"end":9,"name":"A place inside the rock","intent":"Continue the exact jewel hold, then make a deliberate change of scale."},
+    {"id":"D02","start":9,"end":17,"name":"The land folds","intent":"The painted strata carry the tiny housing while the land deforms."},
+    {"id":"D03","start":17,"end":26,"name":"Ice crosses the land","intent":"A glacier advances through a recognizable valley."},
+    {"id":"D04","start":26,"end":38,"name":"Below the surface","intent":"Camera descends from painted terrain into fired and mineral matter."},
+    {"id":"D05","start":38,"end":50,"name":"Time without landmarks","intent":"Hold in the warm, abstract deep interior; elapsed time is unspecified."},
+    {"id":"D06","start":50,"end":62,"name":"A later Earth","intent":"Rise into a later frozen surface, after an unmeasured interval."},
+    {"id":"D07","start":62,"end":74,"name":"The green returns","intent":"Ice recedes, then vegetation occupies the valley."},
+    {"id":"A00","start":74,"end":80,"name":"An uninhabited clearing","intent":"Ordinary time resumes in a living forest, without visible animals."},
+    {"id":"A01","start":80,"end":90,"name":"Arrival","intent":"An exploratory craft settles into the clearing."},
+    {"id":"A02","start":90,"end":102,"name":"Looking","intent":"Two visitors emerge and inspect the apparently empty surroundings."},
+    {"id":"A03","start":102,"end":111,"name":"The question","intent":"An alien question repeats the child's words in an exact English subtitle."},
+    {"id":"A04","start":111,"end":121,"name":"Departure","intent":"The visitors return to their craft and leave without discovering the polis."}
+  ],
+  "subtitle": {"start":104,"end":108.5,"text":"Where is everybody?"},
+  "constraints": [
+    "B is the primary geological material; C with A supplies the deep interior.",
+    "No dates or literal external-to-polis clock ratio.",
+    "The jewel remains buried; camera travel does not carry it into the core.",
+    "Only the two visitors are visible animal-like figures in the forest.",
+    "Human recurrence, jewel retrieval, feast and ending are outside this segment.",
+    "The film's final quarter-second silence does not belong at this boundary."
+  ]
+}

@@ -1,8 +1,11 @@
 # Meridian House: The Living Library — production brief
 
-Date: 2026-09-12. Status: **finished 4K deliverable; user approved the 1080p edit
-and requested the 4K export.** Publication URL: not yet supplied. Nothing was
-published by the production agent.
+Date: 2026-09-12. Status: **published on YouTube (user-confirmed); 4K deliverable
+complete.** The user approved the 1080p edit and requested the 4K export.
+
+Publication URL: [Watch the completed video on YouTube](https://youtu.be/7UmA2bnQZFw).
+Recorded on 2026-09-13 from the link supplied by the user, who published the video.
+Nothing was published by the production agent.
 
 ## Concept and constraints
 

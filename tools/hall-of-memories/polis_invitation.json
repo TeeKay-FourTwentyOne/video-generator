@@ -1,0 +1,35 @@
+{
+  "title": "With one person",
+  "version": "polis-invitation-v1",
+  "status": "first continuation draft; the earlier polis scene is an accepted revision baseline",
+  "scope": "Continue after the elder's first reply. Invite the children to the Hall, cross the polis and stop at the threshold before a human record is played.",
+  "format": {"width": 1920, "height": 1080, "fps": 24, "pose_fps": 8, "sample_rate": 48000},
+  "cast": {
+    "story": {"role": "confident storyteller", "voice": "Samantha", "rate": 171, "pitch": 1.08, "pan": -0.3},
+    "challenge": {"role": "literal-minded challenger", "voice": "Karen", "rate": 178, "pitch": 1.045, "pan": 0.3},
+    "quiet": {"role": "quieter child", "voice": "Tessa", "rate": 151, "pitch": 1.055, "pan": 0.05},
+    "elder": {"role": "older resident", "voice": "Daniel", "rate": 140, "pitch": 0.98, "pan": 0.4}
+  },
+  "dialogue": [
+    {"id":"I01","speaker":"quiet","text":"Did you find out?","gap_after":0.65,"gesture":"question","shot":"quiet"},
+    {"id":"I02","speaker":"elder","text":"No one knows when the last human died.","gap_after":0.85,"gesture":"welcome","shot":"elder"},
+    {"id":"I03","speaker":"story","text":"Then you don't know either.","gap_after":0.6,"gesture":"offer","shot":"story"},
+    {"id":"I04","speaker":"elder","text":"Not that.","gap_after":0.85,"gesture":"welcome","shot":"elder"},
+    {"id":"I05","speaker":"challenge","text":"What do you know?","gap_after":0.7,"gesture":"question","shot":"challenge"},
+    {"id":"I06","speaker":"elder","text":"They left us more than stories.","gap_after":0.95,"gesture":"explain","shot":"group"},
+    {"id":"I07","speaker":"quiet","text":"Can we see?","gap_after":0.6,"gesture":"suggest","shot":"quiet"},
+    {"id":"I08","speaker":"elder","text":"Come with me.","gap_after":13.5,"gesture":"offer","shot":"invite"},
+    {"id":"I09","speaker":"quiet","text":"The Hall of Memories.","gap_after":0.85,"gesture":"look_out","shot":"hall"},
+    {"id":"I10","speaker":"story","text":"Whose memories?","gap_after":0.6,"gesture":"question","shot":"arrival_children"},
+    {"id":"I11","speaker":"elder","text":"Billions of people. Each with a whole life.","gap_after":1.5,"gesture":"welcome","shot":"arrival_elder"},
+    {"id":"I12","speaker":"quiet","text":"Where do we start?","gap_after":0.85,"gesture":"question","shot":"threshold_children"},
+    {"id":"I13","speaker":"elder","text":"With one person.","gap_after":4.5,"gesture":"welcome","shot":"threshold"}
+  ],
+  "continuity": [
+    "Retain the locally modeled polis baseline, temporary voices and eight held poses per second; these remain candidates for coordinated later revision.",
+    "The elder admits uncertainty about the last human. No extinction mechanism or personal biological past is established.",
+    "The Hall architecture is a new draft choice. It is part of the simulated polis, not an underground physical building.",
+    "No human record is played, no human voice or scream is heard and no consciousness of archive records is implied.",
+    "The stopping point is the invitation fulfilled: four figures at an open threshold, ready to begin with one person."
+  ]
+}

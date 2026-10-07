@@ -1,0 +1,43 @@
+{
+  "version": "auditions-v2",
+  "status": "rough blocking for review; no design or runtime approval implied",
+  "format": {"width": 1920, "height": 1080, "fps": 24, "pose_hz": 6, "camera_hz": 12, "sample_rate": 48000},
+  "direction": "Paper theatre: oxide factory, chalk polis, malachite housing, ochre exterior. Fixed texture; deliberate held poses; mouthless avatars.",
+  "assets": {
+    "HALL-01": "Five vertical stone ribs, a narrow central opening, low three-step forecourt",
+    "GEM-01": "Uneven six-sided emerald prism with a pale diagonal inclusion; provisional cord around narrow waist",
+    "CHILD-01": "Chalk-grey, yellow eyes, broad head, mouthless; storytelling with both hands",
+    "WORKER-01": "Slumped, oxide apron, large hands; gesture geometry shared with CHILD-01",
+    "DAUGHTER-01": "Clearly adult, clothed in ochre wrap; initial withdrawal precedes fascination"
+  },
+  "board": [
+    {"id":"B01","seconds":20,"scene":"routine","title":"An ordinary workday","note":"Lever. Clipboard. Clock. Let the routine become believable before the first voice."},
+    {"id":"B02","seconds":44,"scene":"rewrite","title":"A story breaks its own rules","note":"One objection, one rewrite. Duplicate worker, vanishing door, timer, yellow eyes."},
+    {"id":"B03","seconds":30,"scene":"circle","title":"The tellers","note":"Matched hands reveal the child. Where is everybody? The elder leads them onward."},
+    {"id":"B04","seconds":35,"scene":"record","title":"One person first","note":"Proposed ordinary life: a shared table, then an empty chair. One scream; leave it alone briefly."},
+    {"id":"B05","seconds":25,"scene":"hall","title":"One becomes billions","note":"Voices gather. Withdraw from the Hall; its world resolves into an emerald facet."},
+    {"id":"B06","seconds":22,"scene":"strata","title":"The housing in the Earth","note":"The simulation has no tunnel to the rock. Folded strata carry the jewel through deep time."},
+    {"id":"B07","seconds":18,"scene":"jungle","title":"A living, empty surface","note":"Ice retreats; plants return. No large animals visible during the coming visit."},
+    {"id":"B08","seconds":24,"scene":"aliens","title":"The same question","note":"Visitors pause. Fictional language, one English subtitle: Where is everybody? They leave."},
+    {"id":"B09","seconds":24,"scene":"return","title":"Life returns across vast time","note":"After the ship leaves: successive animal eras, then humans. Mechanism and dates remain unstated."},
+    {"id":"B10","seconds":10,"scene":"hand","title":"Something survives","note":"Erosion exposes the same emerald. A rough human hand retrieves it."},
+    {"id":"B11","seconds":32,"scene":"feast","title":"The exchange","note":"Demand, resistance, withdrawal. Only then the jewel captures the adult daughter's attention."},
+    {"id":"B12","seconds":30,"scene":"witnesses","title":"The witnesses","note":"Clothed daughter and necklace; unmoving crowd. Party, infant, remembered screams, silence."}
+  ],
+  "dialogue": [
+    {"id":"D01","speaker":"storyteller","text":"They kept one human to finish the work.","gap_after":0.45},
+    {"id":"D02","speaker":"challenger","text":"Why didn't they do it themselves?","gap_after":0.4},
+    {"id":"D03","speaker":"storyteller","text":"Robots weren't allowed to kill people.","gap_after":0.8,"event":"safety"},
+    {"id":"D04","speaker":"challenger","text":"But they made him do it.","gap_after":0.3},
+    {"id":"D05","speaker":"storyteller","text":"That was allowed.","gap_after":1.1},
+    {"id":"D06","speaker":"challenger","text":"Who killed the last human?","gap_after":0.4},
+    {"id":"D07","speaker":"storyteller","text":"The next shift.","gap_after":1.1,"event":"duplicate"},
+    {"id":"D08","speaker":"challenger","text":"You said there was only one.","gap_after":1.3,"event":"door_vanish"},
+    {"id":"D09","speaker":"storyteller","text":"Fine. There was a timer.","gap_after":0.8,"event":"timer"},
+    {"id":"D10","speaker":"challenger","text":"Then why did they need the man?","gap_after":1.0},
+    {"id":"D11","speaker":"storyteller","text":"The timer wasn't allowed to kill people either.","gap_after":0.5},
+    {"id":"D12","speaker":"challenger","text":"It's a timer.","gap_after":0.55},
+    {"id":"D13","speaker":"storyteller","text":"It was different then.","gap_after":3.2,"event":"eyes"},
+    {"id":"D14","speaker":"storyteller","text":"Will you let me finish?","gap_after":2.2,"event":"circle_cut"}
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "title": "One whole life",
+  "version": "polis-hall-v1",
+  "status": "first Hall draft for native review",
+  "scope": "Hall demonstration through first jewel reveal; stop before deep time",
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "pose_fps": 8,
+    "sample_rate": 48000
+  },
+  "cast": {
+    "story": {
+      "role": "confident storyteller",
+      "voice": "Samantha",
+      "rate": 171,
+      "pitch": 1.08,
+      "pan": -0.3
+    },
+    "challenge": {
+      "role": "literal-minded challenger",
+      "voice": "Karen",
+      "rate": 178,
+      "pitch": 1.045,
+      "pan": 0.3
+    },
+    "quiet": {
+      "role": "quieter child",
+      "voice": "Tessa",
+      "rate": 151,
+      "pitch": 1.055,
+      "pan": 0.05
+    },
+    "elder": {
+      "role": "older resident",
+      "voice": "Daniel",
+      "rate": 140,
+      "pitch": 0.98,
+      "pan": 0.4
+    },
+    "mara": {
+      "role": "Mara, fictional record",
+      "voice": "Moira",
+      "rate": 143,
+      "pitch": 1.0,
+      "pan": -0.1
+    },
+    "father": {
+      "role": "her father, fictional record",
+      "voice": "Alex",
+      "rate": 143,
+      "pitch": 0.96,
+      "pan": 0.2
+    }
+  },
+  "continuity": [
+    "The two preceding scenes are preserved at their exact timings.",
+    "Mara is fictional and is not identified with the elder.",
+    "Recorded fragments and the derived whole-life voice are distinct.",
+    "No extinction mechanism, record consciousness or external observation mechanism is established.",
+    "GEM-01 is an uneven six-sided emerald prism with one pale diagonal inclusion; its final design remains provisional."
+  ],
+  "blocks": [
+    {
+      "id": "H01",
+      "shot": "enter",
+      "duration": 6.5
+    },
+    {
+      "id": "H02",
+      "shot": "select",
+      "speaker": "elder",
+      "text": "Her name was Mara.",
+      "before": 0.4,
+      "after": 2.0,
+      "gesture": "offer"
+    },
+    {
+      "id": "H03",
+      "shot": "warm",
+      "speaker": "mara",
+      "text": "Dad. I said half a spoon.",
+      "before": 1.25,
+      "after": 0.5
+    },
+    {
+      "id": "H04",
+      "shot": "warm",
+      "speaker": "father",
+      "text": "That is half a spoon.",
+      "before": 0.1,
+      "after": 2.4
+    },
+    {
+      "id": "H05",
+      "shot": "letter",
+      "speaker": "mara",
+      "text": "You let them read it? That was just for you.",
+      "before": 1.2,
+      "after": 2.7
+    },
+    {
+      "id": "H06",
+      "shot": "bedside",
+      "speaker": "mara",
+      "text": "I brought your cup, Dad.",
+      "before": 1.5,
+      "after": 3.2
+    },
+    {
+      "id": "H07",
+      "shot": "empty",
+      "speaker": "mara",
+      "text": "Just one cup. I keep forgetting.",
+      "before": 1.5,
+      "after": 3.8
+    },
+    {
+      "id": "H08",
+      "shot": "quiet",
+      "speaker": "quiet",
+      "text": "Is that everything?",
+      "before": 0.7,
+      "after": 0.6,
+      "gesture": "question"
+    },
+    {
+      "id": "H09",
+      "shot": "elder",
+      "speaker": "elder",
+      "text": "Only moments. Listen to what the Hall makes of the whole life.",
+      "before": 0.15,
+      "after": 2.0,
+      "gesture": "welcome"
+    },
+    {
+      "id": "H10",
+      "shot": "first_voice",
+      "duration": 7.5
+    },
+    {
+      "id": "H11",
+      "shot": "quiet",
+      "speaker": "quiet",
+      "text": "One person?",
+      "before": 0.2,
+      "after": 0.9,
+      "gesture": "alone"
+    },
+    {
+      "id": "H12",
+      "shot": "elder",
+      "speaker": "elder",
+      "text": "One person.",
+      "before": 0.15,
+      "after": 2.2,
+      "gesture": "welcome"
+    },
+    {
+      "id": "H13",
+      "shot": "many",
+      "duration": 17.0
+    },
+    {
+      "id": "H14",
+      "shot": "withdraw",
+      "duration": 7.0
+    },
+    {
+      "id": "H15",
+      "shot": "facet",
+      "duration": 4.5
+    },
+    {
+      "id": "H16",
+      "shot": "jewel",
+      "duration": 9.0
+    }
+  ]
+}

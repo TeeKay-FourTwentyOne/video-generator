@@ -1,0 +1,4 @@
+# Local media and extraction records.
+*.png
+*.jpg
+sources.json

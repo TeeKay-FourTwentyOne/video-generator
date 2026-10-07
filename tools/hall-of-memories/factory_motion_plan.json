@@ -1,0 +1,17 @@
+{
+  "name": "Factory work-routine motion study",
+  "status": "audition, not an approved final edit",
+  "output": {"width": 1664, "height": 936, "fps": 24, "pose_fps": 8, "sample_rate": 48000},
+  "source_crop": {"x": 4, "y": 2, "width": 1664, "height": 936},
+  "opening": [
+    {"id": "F-WORK-01", "start": 0, "duration": 5, "kind": "wide", "purpose": "Establish an ordinary, tiring workplace; no robots or narration."},
+    {"id": "F-WORK-02", "start": 5, "duration": 5, "kind": "lever", "purpose": "One small lever stroke, industrial response, then reset."},
+    {"id": "F-WORK-03", "start": 10, "duration": 4, "kind": "clock", "purpose": "Time passes slowly; four deliberate clock ticks."},
+    {"id": "F-WORK-04", "start": 14, "duration": 4, "kind": "wide", "purpose": "Return to the same task; the work continues."}
+  ],
+  "lever": {"pivot": [756, 591], "angle_degrees": 11, "pull": [1.25, 2.0], "hold_until": 3.25, "return_until": 3.75},
+  "clock": {"pivot": [829, 433], "second_hand_length": 278, "start_second": 43},
+  "robot": {"duration": 6, "head_split_y": 648, "head_pivot": [829, 644], "angle_degrees": -2.5, "tilt": [2.0, 2.625], "hold_until": 4.0, "return_until": 4.625, "placement": "separate later-coverage study; excluded from opening"},
+  "final_edit_direction": "No robots at the chapter beginning; sparse appearances until the last two thirds, ramping toward the end. Exact reveal time remains open.",
+  "limits": ["The worker wide is a held photograph, not a completed body performance.", "The lever insert uses one rigid photographic hand/forearm/lever layer; it does not test elbow articulation.", "The robot tests a small planar head tilt, not a three-dimensional turn.", "Machinery and clock sound are original local synthesis pending listening review."]
+}
