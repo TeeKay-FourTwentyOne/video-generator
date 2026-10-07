@@ -9,6 +9,7 @@ const LIMIT = 2 * 1024 * 1024;
 const ZERO = /^0+$/;
 const publicEmail = email => /@(?:users\.)?noreply\.github\.com$/i.test(email);
 const exampleEmail = email => /@(?:[\w-]+\.)*(?:example\.(?:com|org|net)|invalid|test)$/i.test(email);
+const wellFormedEmail = email => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email);
 const placeholder = value => /^(?:<.*>|\$\{.*\}|YOUR[_-].*|REDACTED|EXAMPLE[_-].*|CHANGEME)$/i.test(value);
 
 // Agent attribution addresses (vendor no-reply mailboxes) are accepted only on a
@@ -70,8 +71,10 @@ function git(args, cwd) {
 const lines = bytes => bytes.toString().trim().split('\n').filter(Boolean);
 const paths = bytes => bytes.toString().split('\0').filter(Boolean);
 
-/** Repository identity policy: required author/committer identity plus optional agent
- * attribution addresses allowed on Co-Authored-By trailers. Malformed policies fail closed. */
+/** Repository identity policy: required author/committer identity (the account's public
+ * mailbox, GitHub no-reply or not), optional agent attribution addresses allowed on
+ * Co-Authored-By trailers, and optional published contact addresses the repository
+ * deliberately exposes (a product contact link). Malformed policies fail closed. */
 export function loadPolicy(root) {
   const policyPath = join(root,'.githooks','identity.json');
   if (!existsSync(policyPath)) return undefined;
@@ -79,29 +82,53 @@ export function loadPolicy(root) {
     const policy = JSON.parse(readFileSync(policyPath,'utf8'));
     if (!policy || typeof policy.name !== 'string'
         || !policy.name.trim() || /[\r\n<>]/.test(policy.name)
-        || typeof policy.email !== 'string' || !publicEmail(policy.email)
-        || /[\s<>]/.test(policy.email)) throw new Error();
+        || typeof policy.email !== 'string' || !wellFormedEmail(policy.email)
+        || exampleEmail(policy.email)) throw new Error();
     const trailers = policy.attributionTrailers ?? [];
-    if (!Array.isArray(trailers) || trailers.some(e => typeof e !== 'string' || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(e)
+    if (!Array.isArray(trailers) || trailers.some(e => typeof e !== 'string' || !wellFormedEmail(e)
         || publicEmail(e) || exampleEmail(e))) throw new Error();
-    return {...policy, attributionTrailers: trailers};
+    const contacts = policy.publishedContacts ?? [];
+    if (!Array.isArray(contacts) || contacts.some(e => typeof e !== 'string' || !wellFormedEmail(e)
+        || e.toLowerCase() === policy.email.toLowerCase() || trailers.includes(e))) throw new Error();
+    return {...policy, attributionTrailers: trailers, publishedContacts: contacts};
   } catch { throw new Error('Invalid repository Git identity policy; details withheld.'); }
 }
+
+/** Reviewed assets: exact blob ids a human has inspected (content and embedded metadata) and
+ * approved for publication, mapped to a short note. Only the binary and oversized review
+ * prompts are released, and only for that exact content; new or changed media is flagged again. */
+export function loadReviewedAssets(root) {
+  const listPath = join(root,'.githooks','reviewed-assets.json');
+  if (!existsSync(listPath)) return {};
+  try {
+    const reviewed = JSON.parse(readFileSync(listPath,'utf8'));
+    if (!reviewed || typeof reviewed !== 'object' || Array.isArray(reviewed)
+        || Object.entries(reviewed).some(([id, note]) => !/^[a-f0-9]{40,64}$/.test(id) || typeof note !== 'string')) throw new Error();
+    return reviewed;
+  } catch { throw new Error('Invalid reviewed-assets list; details withheld.'); }
+}
+const REVIEW_PROMPTS = new Set(['binary-or-generated-asset-requires-review','oversized-file-requires-review']);
 
 export function audit({cwd = process.cwd(), mode = '--staged', base, input = '', remote = 'origin'}) {
   const root = git(['rev-parse','--show-toplevel'], cwd).toString().trim();
   const expectedIdentity = loadPolicy(root);
+  const reviewed = loadReviewedAssets(root);
   const messageOptions = {allowedTrailerEmails: expectedIdentity?.attributionTrailers ?? []};
-  // Only the policy file may contain the listed attribution addresses as plain text.
-  const fileOptions = path => path === '.githooks/identity.json' ? {allowedEmails: messageOptions.allowedTrailerEmails} : {};
+  // Published contact addresses may appear anywhere; the policy file alone may also contain
+  // the identity mailbox and the listed attribution addresses as plain text.
+  const published = expectedIdentity?.publishedContacts ?? [];
+  const fileOptions = path => path === '.githooks/identity.json'
+    ? {allowedEmails: [...published, ...messageOptions.allowedTrailerEmails, ...(expectedIdentity ? [expectedIdentity.email] : [])]}
+    : {allowedEmails: published};
   const findings = [], seen = new Set();
   let fileCount = 0, commitCount = 0;
   const add = (scope, path, rows) => findings.push(...rows.map(row => ({scope, path, ...row})));
   function identity(scope, role, name, email) {
     const path = `[${role} metadata]`;
-    if (!publicEmail(email || '')) add(scope,path,[{rule:'non-noreply-commit-email',line:1}]);
-    if (expectedIdentity && (name !== expectedIdentity.name
-        || email?.toLowerCase() !== expectedIdentity.email.toLowerCase()))
+    if (!expectedIdentity) {
+      // Without a policy, only public GitHub no-reply addresses are accepted.
+      if (!publicEmail(email || '')) add(scope,path,[{rule:'non-noreply-commit-email',line:1}]);
+    } else if (name !== expectedIdentity.name || email?.toLowerCase() !== expectedIdentity.email.toLowerCase())
       add(scope,path,[{rule:'unexpected-git-identity',line:1}]);
   }
   function file(ref, path, scope) {
@@ -111,7 +138,8 @@ export function audit({cwd = process.cwd(), mode = '--staged', base, input = '',
     seen.add(key); fileCount++;
     const size = Number(git(['cat-file','-s',object], root));
     const bytes = size > LIMIT ? Buffer.alloc(LIMIT + 1) : git(['cat-file','blob',object], root);
-    add(scope, path, scanFile(path, bytes, fileOptions(path)));
+    const rows = scanFile(path, bytes, fileOptions(path));
+    add(scope, path, Object.hasOwn(reviewed, object) ? rows.filter(row => !REVIEW_PROMPTS.has(row.rule)) : rows);
   }
   function commits(ids) {
     for (const id of new Set(ids)) {

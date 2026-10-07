@@ -11,7 +11,7 @@ for every commit and push, including briefs, plans and Git metadata.
    candidate code and prose for personal names, emails, phones, addresses, home
    directories, private project details, account/resource identifiers and secrets.
    Do not print sensitive values in findings. Inspect the proposed commit message
-   and approved public GitHub/no-reply identity as well.
+   and the approved public Git identity as well.
 
 3. **Do not copy raw plans automatically.** If a local project plan contains useful
    source documentation, create a sanitized summary, then scan it. Never import

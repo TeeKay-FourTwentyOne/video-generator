@@ -12,6 +12,8 @@ Read `docs/source-privacy.md` before preparing any commit or push.
   they do not require generation credits or new packages.
 - Production CLI: `npm run film -- help`. MCP `production_*` tools use that same
   implementation. Inspect `docs/architecture.md` for maintained and legacy paths.
+- Lessons about model behavior, anchors, QA and sound: `docs/craft/field-notes/`
+  (dated, attributed; append yours). Per-agent harness notes: `docs/harness/`.
 - Start new media in a versioned `data/workspace/<slug>/`. Keep plans, budget,
   provider records, sources, edits and QA together. Preserve existing media and
   unrelated working-tree changes.
@@ -36,8 +38,8 @@ Read `docs/source-privacy.md` before preparing any commit or push.
 - A PII/secrets check is mandatory before every commit and push, including
   documentation, tests, commit messages, and author/committer metadata.
 - All commits and pushes in this repository use TK-421 (GitHub login
-  `TeeKay-FourTwentyOne`). Set both author and committer to the public no-reply
-  identity in `.githooks/identity.json`; verify SSH authenticates as that account.
+  `TeeKay-FourTwentyOne`). Set both author and committer to the identity recorded
+  in `.githooks/identity.json`; verify SSH authenticates as that account.
   Add your agent's `Co-Authored-By` trailer so attribution is not hidden; the
   addresses allowed on trailers are listed in that same policy file.
   Do not infer identity from the active `gh` account or change global Git settings.
@@ -49,7 +51,7 @@ Read `docs/source-privacy.md` before preparing any commit or push.
   `npm run privacy:outgoing` and review the outgoing commit/file list before push.
 - Redact or omit personal names/contact details, home paths, account/resource IDs,
   unrelated private project information and credentials. Use portable relative
-  paths, environment variables, and an approved public GitHub/no-reply identity.
+  paths, environment variables, and the approved public Git identity.
 - Report findings by relative file, line and category; never echo secret or PII
   values. If sensitive content is genuinely required, pause for explicit approval
   and design a narrowly scoped exception. Do not silently include or bypass it.

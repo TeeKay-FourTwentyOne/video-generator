@@ -14,20 +14,21 @@ This enables the tracked `.githooks/` using repository-local `core.hooksPath`.
 The installer refuses to replace existing custom hooks. New clones must run it;
 Git does not activate hooks merely because they are tracked. Node 22+ is required.
 Global Git settings are not modified. This repository uses **TK-421**, whose
-GitHub login is **TeeKay-FourTwentyOne**, for both commits and pushes. Configure
-the repository-local author and committer identity:
+GitHub login is **TeeKay-FourTwentyOne**, for both commits and pushes. The
+account's mailbox is recorded in the tracked `.githooks/identity.json` policy;
+configure the repository-local author and committer identity from that file:
 
 ```sh
-git config --local user.name TK-421
-git config --local user.email 237485569+TeeKay-FourTwentyOne@users.noreply.github.com
+git config --local user.name "$(node -p 'require("./.githooks/identity.json").name')"
+git config --local user.email "$(node -p 'require("./.githooks/identity.json").email')"
 git config --local user.useConfigOnly true
 ```
 
-The tracked `.githooks/identity.json` policy makes the privacy guard reject a
-different author or committer name/email, even another public no-reply identity.
-Environment overrides and an amend's retained author can differ from `user.*`;
-review the actual commit metadata, not just configuration.
-No-reply addresses are public identifiers, not a claim of anonymous authorship.
+The policy makes the privacy guard reject any other author or committer
+name/email, including GitHub no-reply addresses. Environment overrides and an
+amend's retained author can differ from `user.*`; review the actual commit
+metadata, not just configuration. The policy mailbox is a published identifier
+for the account, not a claim of anonymous authorship.
 
 Agent attribution is welcome and should not be hidden: the policy's
 `attributionTrailers` list names the vendor addresses that may appear on a
@@ -36,6 +37,16 @@ and OpenAI attribution addresses used by Claude Code and Codex). The allowance i
 limited to well-formed trailer lines in commit messages; the same address in file
 contents or body text is still a finding, and an address that is not listed, or is
 a personal mailbox, is rejected. Author and committer remain TK-421.
+
+The policy's `publishedContacts` list names addresses the repository deliberately
+publishes, such as a product contact link; they pass the personal-email rule
+anywhere. Any other address remains a finding.
+
+`.githooks/reviewed-assets.json` maps exact blob ids to a short note for media
+and oversized files a human has already inspected, including embedded metadata.
+The guard releases only the two review prompts, and only for that exact content:
+new or changed media is flagged again. Look at the asset yourself before adding
+its id (`git ls-files -s <path>` prints it).
 
 Push authentication is separate from commit attribution. Use the SSH remote for
 `TeeKay-FourTwentyOne/video-generator` on GitHub and pin this checkout's
@@ -81,16 +92,19 @@ careful integration, not replacement.
 `tools/privacy-check.mjs` has no external dependencies or network calls. It reports
 only the repository-relative path, line, rule and redaction marker. It checks:
 
-- Personal emails (except reserved examples and public GitHub no-reply identities),
+- Personal emails (except reserved examples, public GitHub no-reply identities and
+  listed published contacts),
   personal home directories, common phone/SSN/address formats and private IPs.
 - Provider-token patterns, private keys, JWTs, literal credential assignments,
   credential-bearing URLs, service-account payloads and concrete cloud buckets.
 - Private/runtime file paths, opaque binary/media files and files over 2 MiB that
-  require deliberate review rather than being silently skipped.
-- Outgoing author/committer identities against `.githooks/identity.json`, public
-  no-reply emails, and commit messages, as well as file contents. Listed agent
-  attribution addresses pass only on `Co-Authored-By` trailer lines. The guard
-  remains reusable in repositories without this optional account policy.
+  require deliberate review rather than being silently skipped. Blob ids listed in
+  `.githooks/reviewed-assets.json` do not prompt again.
+- Outgoing author/committer identities against `.githooks/identity.json` (without
+  a policy, only public no-reply addresses pass), commit messages, and file
+  contents. Listed agent attribution addresses pass only on `Co-Authored-By`
+  trailer lines. The guard remains reusable in repositories without this
+  optional account policy.
 
 This is a conservative pattern guard, **not exhaustive PII detection**. Names,
 unusual phone/address formats, private business context, custom secret formats,

@@ -118,7 +118,7 @@ test('repository identity policy checks actual outgoing authors and committers',
 test('malformed repository identity policy fails closed without exposing its content', t => {
   const {cwd} = repository(t);
   identityPolicy(cwd);
-  for (const content of ['not JSON',JSON.stringify({name:'review-bot',email:privateEmail()}), 'null']) {
+  for (const content of ['not JSON',JSON.stringify({name:'review-bot <x>',email:privateEmail()}), JSON.stringify({name:'review-bot',email:'not an address'}), 'null']) {
     writeFileSync(join(cwd,'.githooks','identity.json'),content);
     assert.throws(()=>audit({cwd,mode:'--staged'}),error=>{
       assert.match(error.message,/Invalid repository Git identity policy/);
@@ -247,4 +247,50 @@ test('commit-msg hook mode accepts a listed trailer and rejects an unlisted one'
   const run = text => { writeFileSync(join(cwd,'MSG'),text); return spawnSync(process.execPath,[script,'--commit-message',join(cwd,'MSG')],{cwd,encoding:'utf8'}); };
   assert.equal(run(`Subject\n\n${trailer(agentEmail())}\n`).status,0);
   assert.equal(run(`Subject\n\n${trailer(privateEmail())}\n`).status,1);
+});
+
+test('repository identity policy may name a mailbox other than a GitHub no-reply address', t => {
+  const {cwd,git,base} = repository(t);
+  identityPolicy(cwd);
+  writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify({name:'review-bot',email:privateEmail()}));
+  git('config','user.email',privateEmail());
+  git('add','.githooks/identity.json');
+  assert.deepEqual(audit({cwd,mode:'--staged'}).findings,[], 'the policy file may contain its own mailbox');
+  git('commit','-qm','policy');
+  git('commit','--allow-empty','-qm','other author','--author',`review-bot <${publicIdentity}>`);
+  const result = audit({cwd,mode:'--outgoing',base});
+  assert.equal(result.findings.filter(f=>f.rule==='unexpected-git-identity').length,1);
+  assert.ok(!result.findings.some(f=>f.rule==='non-noreply-commit-email'));
+  assert.ok(!JSON.stringify(result).includes(privateEmail()));
+  writeFileSync(join(cwd,'notes.txt'),`contact ${privateEmail()}\n`); git('add','notes.txt');
+  assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='personal-email'), 'the mailbox is still a finding elsewhere');
+});
+
+test('published contact addresses pass the personal-email rule only when listed', t => {
+  const {cwd,git} = repository(t);
+  identityPolicy(cwd);
+  const contact = ['sales','product-site.example-shop.com'].join('@');
+  writeFileSync(join(cwd,'site.html'),`<a href="mailto:${contact}">contact</a>\n`); git('add','site.html');
+  assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='personal-email'));
+  writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify({name:'review-bot',email:publicIdentity,publishedContacts:[contact]}));
+  git('add','.githooks/identity.json');
+  assert.deepEqual(audit({cwd,mode:'--staged'}).findings,[]);
+  writeFileSync(join(cwd,'site.html'),`<a href="mailto:${privateEmail()}">contact</a>\n`); git('add','site.html');
+  assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='personal-email'));
+  writeFileSync(join(cwd,'.githooks','identity.json'),JSON.stringify({name:'review-bot',email:publicIdentity,publishedContacts:[publicIdentity]}));
+  assert.throws(()=>audit({cwd,mode:'--staged'}),/Invalid repository Git identity policy/);
+});
+
+test('reviewed asset ids release only the review prompts, only for that exact content', t => {
+  const {cwd,git} = repository(t);
+  identityPolicy(cwd);
+  writeFileSync(join(cwd,'still.png'),Buffer.from([137,80,78,71,0,1,2,3])); git('add','still.png');
+  const id = git('rev-parse',':still.png');
+  assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='binary-or-generated-asset-requires-review'));
+  writeFileSync(join(cwd,'.githooks','reviewed-assets.json'),JSON.stringify({[id]:'still.png: synthetic test image'}));
+  assert.deepEqual(audit({cwd,mode:'--staged'}).findings,[]);
+  writeFileSync(join(cwd,'still.png'),Buffer.from([137,80,78,71,0,9,9,9])); git('add','still.png');
+  assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='binary-or-generated-asset-requires-review'), 'changed content prompts again');
+  writeFileSync(join(cwd,'.githooks','reviewed-assets.json'),JSON.stringify({'not-an-id':'x'}));
+  assert.throws(()=>audit({cwd,mode:'--staged'}),/Invalid reviewed-assets list/);
 });
