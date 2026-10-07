@@ -309,16 +309,14 @@ def call_claude(strip_path, api_key, model, step, expected, context, retries=3):
 
 
 def extract_json(text: str) -> dict:
-    t = text.strip()
-    if t.startswith("```"):
-        t = t.split("```", 2)[1]
-        if t.startswith("json"):
-            t = t[4:]
-        t = t.strip().rstrip("`").strip()
-    s, e = t.find("{"), t.rfind("}")
-    if s < 0 or e < 0:
-        raise SystemExit(f"No JSON in response:\n{text[:800]}")
-    return json.loads(t[s:e + 1])
+    """Shared lenient parser (tools/qa_json.py): strict first, then conservative repair."""
+    import os, sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from qa_json import lenient_loads
+    try:
+        return lenient_loads(text)
+    except ValueError as e:
+        raise SystemExit(str(e))
 
 
 SEV = {"low": 1, "medium": 2, "high": 3}
@@ -369,7 +367,7 @@ def main():
     p.add_argument("--no-save-strip", action="store_true")
     p.add_argument("--json", action="store_true")
     p.add_argument("--fail-on", default=None, choices=["high", "medium", "any"])
-    p.add_argument("--config", default="data/config.json")
+    p.add_argument("--config", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "config.json"))
     p.add_argument("--retries", type=int, default=3)
     args = p.parse_args()
 

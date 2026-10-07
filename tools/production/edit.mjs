@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { command, probe, hashFile, readJson, localPath, loadPlan } from './film.mjs';
+import { PROJECT_ROOT } from '../../mcp/video-generator/dist/utils/paths.js';
 import { atomicJson, readLedger, budgetSummary } from '../../mcp/video-generator/dist/production/ledger.js';
 
 const validVersion = version => {
@@ -17,6 +18,9 @@ export function validateEdit(root, edit, plan) {
     if (hashFile(source) !== segment.sha256) throw new Error(`Source hash changed: ${segment.shotId}`);
     if (!Number.isInteger(segment.inFrame) || segment.inFrame < 0 || !Number.isInteger(segment.frames) || segment.frames < 1)
       throw new Error('Trims require nonnegative integer inFrame and positive frames');
+    const fadeIn = segment.fadeInFrames ?? 0, fadeOut = segment.fadeOutFrames ?? 0;
+    if (![fadeIn, fadeOut].every(n => Number.isInteger(n) && n >= 0) || fadeIn + fadeOut >= segment.frames)
+      throw new Error('Fades are nonnegative integer frame counts that fit inside the segment');
     const decision = readJson(localPath(root, segment.decisionFile));
     if (!['keep', 'edit-around'].includes(decision.decision) || !decision.notes?.trim() || decision.sha256 !== segment.sha256
         || !Number.isInteger(decision.startFrame) || !Number.isInteger(decision.endFrameExclusive)
@@ -53,6 +57,10 @@ export function assemble(root, version) {
     const output = path.join(folder, filename);
     const filters = [`trim=start_frame=${segment.inFrame}:end_frame=${segment.inFrame + segment.frames}`,
       'setpts=PTS-STARTPTS', `scale=${plan.width}:${plan.height}:flags=lanczos`, 'setsar=1'];
+    // Optional black fades are frame-addressed on the trimmed segment; they never change its length.
+    // FFmpeg ramps from the frame after `s`, so the first N frames rise from black and the last N frames end on black.
+    if (segment.fadeInFrames) filters.push(`fade=t=in:s=0:n=${segment.fadeInFrames}`);
+    if (segment.fadeOutFrames) filters.push(`fade=t=out:s=${segment.frames - segment.fadeOutFrames - 1}:n=${segment.fadeOutFrames}`);
     command('ffmpeg', ['-v', 'error', '-n', '-i', localPath(root, segment.source), '-an', '-vf', filters.join(','),
       '-frames:v', String(segment.frames), '-r', String(plan.fps), '-c:v', 'libx264', '-preset', 'medium', '-crf', '18',
       '-pix_fmt', 'yuv420p', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', output]);
@@ -81,7 +89,8 @@ export function assemble(root, version) {
   return { output: report.output, sha256: report.sha256, ...expected, checks: report.checks };
 }
 const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-export function review(root, version) {
+/** `--overlay` also burns a frame/timecode copy (`film_debug.mp4`) with the existing local overlay tool. */
+export function review(root, version, options = {}) {
   validVersion(version);
   const folder = localPath(root, `final/${version}`);
   const report = readJson(path.join(folder, 'delivery.json'));
@@ -100,8 +109,15 @@ export function review(root, version) {
     return `<button data-time="${at}"><img src="${image}" alt="${escape(s.shotId)}"><strong>${escape(s.shotId)} · ${at.toFixed(2)}s</strong><span>${escape(plan.shots.find(x => x.id === s.shotId).beat)}</span><small>${escape(decision.notes)}</small></button>`;
   });
   const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(plan.title)} — review ${escape(version)}</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#101d22;color:#ece6d6;font:16px/1.55 system-ui}main{max-width:1200px;margin:0 auto;padding:30px}header{border-bottom:1px solid #405054;margin-bottom:24px}h1{font:44px Georgia;margin:0}p{color:#bac7c9}section{display:grid;grid-template-columns:minmax(280px,440px) 1fr;gap:28px}video{width:100%;max-height:82vh;background:#000;border:1px solid #405054}aside{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-content:start}button{text-align:left;padding:0;background:#1b2b31;color:inherit;border:1px solid #405054;border-radius:5px;overflow:hidden;cursor:pointer}button img{width:100%;display:block}strong,span,small{display:block;margin:8px}small{font-size:11px;color:#afbec0}a{color:#e8c184}footer{margin-top:24px;font-size:13px;color:#afbec0}@media(max-width:760px){section{display:block}aside{margin-top:20px}main{padding:16px}h1{font-size:32px}}</style>
-<main><header><h1>${escape(plan.title)}</h1><p>${report.expected.seconds}s · ${plan.width} × ${plan.height} · ${plan.fps} fps · Native review ${escape(version)}</p></header><section><div><video id="film" controls playsinline preload="metadata" src="${escape(path.basename(movie))}"></video><p><a href="${escape(path.basename(movie))}">Open film</a> · <a href="delivery.json">Delivery evidence</a></p></div><aside>${cards.join('')}</aside></section><footer>Committed budget including reserves: $${report.budget.committedUsd.toFixed(2)} / $${report.budget.limitUsd.toFixed(2)}. Technical checks passed; artistic approval and real-time listening remain separate. All images and motion are fictional generated material.</footer></main><script>document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{const v=document.getElementById('film');v.currentTime=Number(b.dataset.time);v.pause()}));</script></html>`;
+<style>*{box-sizing:border-box}body{margin:0;background:#101d22;color:#ece6d6;font:16px/1.55 system-ui}main{max-width:1200px;margin:0 auto;padding:30px}header{border-bottom:1px solid #405054;margin-bottom:24px}h1{font:44px Georgia;margin:0}p{color:#bac7c9}#tc{font:14px ui-monospace,monospace;color:#e8c184;margin:8px 0 0}section{display:grid;grid-template-columns:minmax(280px,440px) 1fr;gap:28px}video{width:100%;max-height:82vh;background:#000;border:1px solid #405054}aside{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-content:start}button{text-align:left;padding:0;background:#1b2b31;color:inherit;border:1px solid #405054;border-radius:5px;overflow:hidden;cursor:pointer}button img{width:100%;display:block}strong,span,small{display:block;margin:8px}small{font-size:11px;color:#afbec0}a{color:#e8c184}footer{margin-top:24px;font-size:13px;color:#afbec0}@media(max-width:760px){section{display:block}aside{margin-top:20px}main{padding:16px}h1{font-size:32px}}</style>
+<main><header><h1>${escape(plan.title)}</h1><p>${report.expected.seconds.toFixed(2)}s · ${plan.width} × ${plan.height} · ${plan.fps} fps · Native review ${escape(version)}</p></header><section><div><video id="film" controls playsinline preload="metadata" src="${escape(path.basename(movie))}"></video><p id="tc">0.000 s · frame 0</p><p><a href="${escape(path.basename(movie))}">Open film</a> · <a href="delivery.json">Delivery evidence</a></p></div><aside>${cards.join('')}</aside></section><footer>Committed budget including reserves: $${report.budget.committedUsd.toFixed(2)} / $${report.budget.limitUsd.toFixed(2)}. Technical checks passed; artistic approval and real-time listening remain separate. All images and motion are fictional generated material.</footer></main><script>const fps=${plan.fps};const v=document.getElementById('film');const tc=document.getElementById('tc');const show=()=>{tc.textContent=v.currentTime.toFixed(3)+' s · frame '+Math.round(v.currentTime*fps)};v.addEventListener('timeupdate',show);v.addEventListener('seeked',show);document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{v.currentTime=Number(b.dataset.time);v.pause();show()}));</script></html>`;
   fs.writeFileSync(htmlPath, html, { flag: 'wx' });
-  return { review: path.relative(root, htmlPath), shots: cards.length };
+  const result = { review: path.relative(root, htmlPath), shots: cards.length };
+  if (options.overlay) {
+    const debug = path.join(folder, 'film_debug.mp4');
+    if (fs.existsSync(debug)) throw new Error('Overlay copy exists; use a new edit version');
+    command('python3', [path.join(PROJECT_ROOT, 'tools/add-timestamp.py'), movie, debug, '--frame']);
+    result.overlay = path.relative(root, debug);
+  }
+  return result;
 }

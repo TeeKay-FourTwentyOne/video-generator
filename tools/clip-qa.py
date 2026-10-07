@@ -259,19 +259,14 @@ def call_claude(strip_path: str, api_key: str, model: str, interval: float,
 
 
 def extract_json(text: str) -> dict:
-    t = text.strip()
-    if t.startswith("```"):
-        t = t.split("```", 2)[1]
-        if t.startswith("json"):
-            t = t[4:]
-        t = t.strip()
-        if t.endswith("```"):
-            t = t[:-3].strip()
-    start = t.find("{")
-    end = t.rfind("}")
-    if start < 0 or end < 0:
-        raise SystemExit(f"Could not locate JSON in Claude response:\n{text[:1000]}")
-    return json.loads(t[start : end + 1])
+    """Shared lenient parser (tools/qa_json.py): strict first, then conservative repair."""
+    import os, sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from qa_json import lenient_loads
+    try:
+        return lenient_loads(text)
+    except ValueError as e:
+        raise SystemExit(str(e))
 
 
 # ---------- exit-code logic ----------
@@ -299,7 +294,7 @@ def main():
     p.add_argument("--save-strip", default=None)
     p.add_argument("--no-save-strip", action="store_true")
     p.add_argument("--json", action="store_true")
-    p.add_argument("--config", default="data/config.json")
+    p.add_argument("--config", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "config.json"))
     p.add_argument("--context", default=None,
                    help="Intent context (often the generation prompt). Helps distinguish deliberate state changes from glitches.")
     p.add_argument("--context-file", default=None,

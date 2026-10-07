@@ -17,12 +17,15 @@ tool sends a frame PAIR to Claude vision, asks which supposedly-static objects
 differ between them and which differences are MOTIVATED by a visible mover
 (e.g. a gripper carrying an object), and predicts the resulting artifact.
 
-Two modes:
+Three modes:
   --mode within-clip   (default)  A = first anchor, B = last anchor of ONE clip.
                                    Flags objects Veo will SLIDE/MORPH/MATERIALIZE.
   --mode across-cut                A = last frame of shot N, B = first frame of
                                    shot N+1 (a hard cut). Flags objects that will
                                    POP / JUMP at the cut.
+  --mode return-shot               Revisit a set after intervening action. Requires
+                                   --elapsed-action; checks persistent continuity,
+                                   not an instantaneous pose match.
 
 Usage
   python3 tools/anchor-drift.py <frameA> <frameB> [--mode within-clip|across-cut] \\
@@ -41,7 +44,8 @@ Examples
     --motivated="the machine gripper arm" --fail-on=medium
 
 Flags
-  --mode=within-clip|across-cut   Which artifact class to predict (default within-clip).
+  --mode=within-clip|across-cut|return-shot   Comparison context (default within-clip).
+  --elapsed-action=TEXT   Explicit intervening action (required for return-shot).
   --static=TEXT       What must NOT change between the two frames (inert objects, placed props).
   --motivated=TEXT    What IS allowed to move and its mover (changes here are OK, not flagged).
   --labelA=TEXT       Override Image-1 label (default depends on mode).
@@ -263,19 +267,69 @@ def call_claude(frame_a, frame_b, prompt, api_key, model, retries=3) -> str:
 
 
 def extract_json(text: str) -> dict:
-    t = text.strip()
-    if t.startswith("```"):
-        t = t.split("```", 2)[1]
-        if t.startswith("json"):
-            t = t[4:]
-        t = t.strip().rstrip("`").strip()
-    s, e = t.find("{"), t.rfind("}")
-    if s < 0 or e < 0:
-        raise SystemExit(f"Could not locate JSON in Claude response:\n{text[:800]}")
-    return json.loads(t[s:e + 1])
+    """Shared lenient parser (tools/qa_json.py): strict first, then conservative repair."""
+    import os, sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from qa_json import lenient_loads
+    try:
+        return lenient_loads(text)
+    except ValueError as e:
+        raise SystemExit(str(e))
 
 
 SEVERITY_ORDER = {"low": 1, "medium": 2, "high": 3}
+
+
+RETURN_PROMPT_TEMPLATE = """You are checking continuity when a film RETURNS to a location.
+These images are NOT adjacent frames, NOT book-end anchors for interpolation, and
+NOT the endpoints of an instantaneous cut. Other shots and elapsed action intervene.
+IMAGE 1: {label_a}
+IMAGE 2: {label_b}
+
+PERSISTENT ELEMENTS TO COMPARE (design, identity, count and set positions):
+{static}
+
+EXPLICIT INTERVENING ACTION:
+{elapsed_action}
+
+ADDITIONAL MOTIVATED CHANGES:
+{motivated}
+
+Judge whether the return shot preserves the specified set, character identity,
+wardrobe and remaining props. Changed gaze, pose, hands or payload state are OK
+ONLY when supported by the stated intervening action or motivated changes. The
+mover need not appear moving in either still: the action can occur between shots.
+Do not require a pose match or predict an interpolation morph between these images.
+Do not invent elapsed actions to excuse unexplained additions, losses or redesigns.
+Distinguish objects outside the framing or occluded from objects demonstrably absent.
+Report uncertainty in notes instead of inventing an unseen count.
+
+Return ONLY JSON using this schema:
+{{"verdict":"pass|flag", "summary":"brief finding", "counts":{{"image1":0,"image2":0}},
+"violations":[{{"subject":"element", "change":"appeared|disappeared|moved|resized|reoriented|count_changed",
+"from":"earlier state", "to":"return state", "motivated_by":null,
+"predicted_artifact":"continuity break", "severity":"low|medium|high", "fix":"concrete treatment"}}],
+"ok_changes":["explicitly motivated changes"]}}
+Set verdict to flag if any violation has severity medium or high, otherwise pass.
+Count only the specified static class; explain ambiguous or uncountable items in summary.
+"""
+
+
+def build_prompt(mode, static, motivated, elapsed_action="", label_a=None, label_b=None):
+    if mode == "return-shot":
+        if not elapsed_action.strip():
+            raise ValueError("return-shot requires --elapsed-action describing what occurred between shots")
+        return RETURN_PROMPT_TEMPLATE.format(static=static.strip(), motivated=motivated.strip(),
+            elapsed_action=elapsed_action.strip(), label_a=label_a or "EARLIER shot",
+            label_b=label_b or "RETURN to the location")
+    if mode not in MODE_INTRO:
+        raise ValueError("Unknown anchor comparison mode")
+    if elapsed_action.strip():
+        raise ValueError("--elapsed-action requires --mode=return-shot; adjacent comparisons have no elapsed-action allowance")
+    return PROMPT_TEMPLATE.format(mode_intro=MODE_INTRO[mode],
+        label_a=label_a or DEFAULT_LABELS[mode][0], label_b=label_b or DEFAULT_LABELS[mode][1],
+        static=static.strip(), motivated=motivated.strip(),
+        payload_rule=PAYLOAD_RULE[mode], artifacts=MODE_ARTIFACTS[mode])
 
 
 def meets_fail_threshold(violations, level: str) -> bool:
@@ -290,7 +344,8 @@ def main():
     p = argparse.ArgumentParser(add_help=True)
     p.add_argument("frame_a")
     p.add_argument("frame_b")
-    p.add_argument("--mode", choices=["within-clip", "across-cut"], default="within-clip")
+    p.add_argument("--mode", choices=["within-clip", "across-cut", "return-shot"], default="within-clip")
+    p.add_argument("--elapsed-action", default="")
     p.add_argument("--static", default="all inert objects, placed props, and background figures (their count and positions)")
     p.add_argument("--motivated", default="(none specified — flag any unexplained object motion or appearance)")
     p.add_argument("--labelA")
@@ -298,17 +353,15 @@ def main():
     p.add_argument("--model", choices=list(MODELS), default="opus")
     p.add_argument("--model-id")
     p.add_argument("--json", action="store_true")
-    p.add_argument("--config", default="data/config.json")
+    p.add_argument("--config", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "config.json"))
     p.add_argument("--fail-on", default="medium")
     p.add_argument("--retries", type=int, default=3)
     a = p.parse_args()
 
-    label_a = a.labelA or DEFAULT_LABELS[a.mode][0]
-    label_b = a.labelB or DEFAULT_LABELS[a.mode][1]
-    prompt = PROMPT_TEMPLATE.format(
-        mode_intro=MODE_INTRO[a.mode], label_a=label_a, label_b=label_b,
-        static=a.static.strip(), motivated=a.motivated.strip(),
-        payload_rule=PAYLOAD_RULE[a.mode], artifacts=MODE_ARTIFACTS[a.mode])
+    try:
+        prompt = build_prompt(a.mode, a.static, a.motivated, a.elapsed_action, a.labelA, a.labelB)
+    except ValueError as error:
+        p.error(str(error))
 
     model = a.model_id or MODELS[a.model]
     api_key = load_api_key(a.config)

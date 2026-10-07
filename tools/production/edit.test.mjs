@@ -59,3 +59,27 @@ test('real local edit enforces reviewed ranges, preserves sources and refuses ov
     assert.throws(() => validateEdit(root, edit, plan), /hash changed/);
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
+test('segment fades are frame-addressed, length-preserving and validated', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'film-fade-'));
+  try {
+    for (const folder of ['clips', 'qa', 'edit', 'final']) fs.mkdirSync(path.join(root, folder));
+    const write = (p, obj) => fs.writeFileSync(path.join(root, p), JSON.stringify(obj));
+    createLedger(path.join(root, 'budget.json'), 1, 'Offline synthetic fixture');
+    const source = path.join(root, 'clips', 'bright.mp4');
+    command('ffmpeg', ['-v', 'error', '-n', '-f', 'lavfi', '-i', 'color=c=white:size=90x160:rate=24:duration=1', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', source]);
+    const sha256 = hashFile(source);
+    const plan = { schemaVersion: 1, title: 'Fade fixture', width: 90, height: 160, fps: 24, shots: [{ id: 'S01', beat: 'White card with fades', frames: 12 }] };
+    write('film.json', plan);
+    write('qa/S01.json', { sha256, decision: 'keep', startFrame: 0, endFrameExclusive: 24, notes: 'Synthetic white card' });
+    const segment = { shotId: 'S01', source: 'clips/bright.mp4', sha256, inFrame: 0, frames: 12, decisionFile: 'qa/S01.json', fadeInFrames: 4, fadeOutFrames: 4 };
+    write('edit/v1.json', { schemaVersion: 1, segments: [segment] });
+    assert.throws(() => validateEdit(root, { schemaVersion: 1, segments: [{ ...segment, fadeInFrames: 9 }] }, plan), /fit inside/);
+    assert.throws(() => validateEdit(root, { schemaVersion: 1, segments: [{ ...segment, fadeOutFrames: -1 }] }, plan), /fit inside/);
+    assert.equal(assemble(root, 'v1').frames, 12);
+    const raw = path.join(root, 'frames.gray');
+    command('ffmpeg', ['-v', 'error', '-n', '-i', path.join(root, 'final/v1/film.mp4'), '-f', 'rawvideo', '-pix_fmt', 'gray', raw]);
+    const frames = fs.readFileSync(raw), size = 90 * 160;
+    const mean = i => frames.subarray(i * size, (i + 1) * size).reduce((a, b) => a + b, 0) / size;
+    assert.ok(mean(0) < 24, 'first frame fades from black'); assert.ok(mean(6) > 200, 'middle frame is untouched'); assert.ok(mean(11) < 40, 'last frame fades to black');
+  } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});

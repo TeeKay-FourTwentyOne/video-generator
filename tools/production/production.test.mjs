@@ -10,6 +10,8 @@ import { createLedger, reserveSpend, readLedger, budgetSummary, reconcileSpend, 
 import { claudeRequestBody } from '../../mcp/video-generator/dist/clients/claude.js';
 import { qualifyVeo } from '../../mcp/video-generator/dist/production/veo-spec.js';
 import { interpretVeoOperation, submitVeoGeneration } from '../../mcp/video-generator/dist/clients/veo.js';
+import { imageUsageCost } from './image-rates.mjs';
+import { pollOptions } from './film.mjs';
 
 function fixture(t) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'film-budget-'));
@@ -98,4 +100,28 @@ test('current Claude request omits unsupported sampling and keeps vision content
   const body = claudeRequestBody({ model: 'claude-sonnet-5-5', maxTokens: 2000, system: 'Review', messages, temperature: .2 });
   assert.ok(!Object.hasOwn(body, 'temperature')); assert.deepEqual(body.messages, messages);
   assert.equal(claudeRequestBody({ model: 'legacy-model', maxTokens: 100, system: 'Review', messages, temperature: .2 }).temperature, .2);
+});
+test('image usage reconciles to a dated list-price estimate and refuses records without counts', () => {
+  const usage = { promptTokenCount: 257, candidatesTokenCount: 1120, thoughtsTokenCount: 418,
+    candidatesTokensDetails: [{ modality: 'IMAGE', tokenCount: 1120 }] };
+  const cost = imageUsageCost({ usage });
+  assert.equal(cost.usd, .13993); assert.equal(cost.imageOutputTokens, 1120); assert.equal(cost.textOutputTokens, 418);
+  assert.ok(cost.evidence.includes('2026-10-03'));
+  assert.throws(() => imageUsageCost({ usage: null }), /billing evidence/);
+  assert.throws(() => imageUsageCost({ usage: { promptTokenCount: 1 } }), /billing evidence/);
+});
+test('poll wait options are bounded and never imply a submission', () => {
+  assert.deepEqual(pollOptions([]), { waitSeconds: 0, intervalSeconds: 20 });
+  assert.deepEqual(pollOptions(['--wait']), { waitSeconds: 1200, intervalSeconds: 20 });
+  assert.deepEqual(pollOptions(['--wait=90', '--interval=2']), { waitSeconds: 90, intervalSeconds: 5 });
+  assert.throws(() => pollOptions(['--submit']), /Unknown poll option/);
+  assert.throws(() => pollOptions(['--interval']), /needs seconds/);
+});
+test('image options accept several spaced requests, an opt-in reconcile flag, and refuse unknown flags', async () => {
+  const { imageOptions } = await import('./film.mjs');
+  assert.deepEqual(imageOptions(['a.json']), { files: ['a.json'], reconcile: false, spacingSeconds: 10 });
+  assert.deepEqual(imageOptions(['a.json', '--reconcile', 'b.json', '--spacing=0']), { files: ['a.json', 'b.json'], reconcile: true, spacingSeconds: 0 });
+  assert.throws(() => imageOptions(['--reconcile']), /at least one/);
+  assert.throws(() => imageOptions(['a.json', '--retry']), /Unknown image option/);
+  assert.throws(() => imageOptions(['a.json', '--spacing=fast']), /Unknown image option/);
 });

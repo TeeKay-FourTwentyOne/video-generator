@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { getGoogleAccessToken, buildVertexUrl } from '../../mcp/video-generator/dist/clients/google-auth.js';
-import { reserveSpend, updateSpend, atomicJson } from '../../mcp/video-generator/dist/production/ledger.js';
+import { reserveSpend, updateSpend, reconcileSpend, atomicJson } from '../../mcp/video-generator/dist/production/ledger.js';
 import { localPath, hashFile } from './film.mjs';
 
 export async function generateAnchor(root, request) {
@@ -35,6 +35,13 @@ export async function generateAnchor(root, request) {
     const response = await fetch(buildVertexUrl(projectId, model, 'generateContent', 'global'), {
       method: 'POST', headers: { Authorization: `Bearer ${accessToken}`, 'Content-Type': 'application/json' },
       body: JSON.stringify(body), signal: AbortSignal.timeout(240000) });
+    if (response.status === 429) {
+      // Rate limited: the provider rejected the request before any generation, so the reservation is
+      // reconciled to zero on that evidence. There is still no automatic retry; re-request under a new ID.
+      updateSpend(budget, request.id, { status: 'failed', evidence: 'HTTP 429 rate limit; request rejected before generation' });
+      reconcileSpend(budget, request.id, 0, 'HTTP 429 rate limit response: request rejected before generation, no usage record');
+      throw Object.assign(new Error('Google image request was rate limited (HTTP 429); wait about ten seconds and re-request under a new ID'), { rateLimited: true });
+    }
     if (!response.ok) throw new Error(`Google image request failed with HTTP ${response.status}`);
     const data = await response.json();
     const image = data.candidates?.[0]?.content?.parts?.find(p => p.inlineData?.mimeType?.startsWith('image/'));
@@ -45,7 +52,8 @@ export async function generateAnchor(root, request) {
     updateSpend(budget, request.id, { status: 'complete', model, evidence: `SHA256 ${hashFile(output)}; usage record saved` });
     return { output: request.output, sha256: hashFile(output), model, usage: data.usageMetadata ?? null };
   } catch (error) {
-    updateSpend(budget, request.id, { status: 'uncertain', evidence: 'Image request did not complete locally; retained full reserve, no automatic retry' });
+    if (!error.rateLimited)
+      updateSpend(budget, request.id, { status: 'uncertain', evidence: 'Image request did not complete locally; retained full reserve, no automatic retry' });
     throw error;
   }
 }

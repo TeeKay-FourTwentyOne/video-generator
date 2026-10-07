@@ -8,7 +8,7 @@ import importlib.util, tempfile, os, types, contextlib, io
 spec=importlib.util.spec_from_file_location('budget','tools/veo-budget.py')
 b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
 b.select_project('meridian-house')
-assert b.CAP_USD == 49
+assert b.CAP_USD == 78.4
 with tempfile.TemporaryDirectory(prefix='meridian-budget-test-') as d:
     b.LEDGER=os.path.join(d,'ledger.tsv')
     b.append('adjust',0,'-','-',10,'RESERVE legacy-image')
@@ -25,7 +25,7 @@ with tempfile.TemporaryDirectory(prefix='meridian-budget-test-') as d:
     except SystemExit as e: assert e.code==2
     assert b.read_spent()==before
     a.seconds=4
-    b.append('adjust',0,'-','-',35.4,'test fill to 48')
+    b.append('adjust',0,'-','-',b.CAP_USD-1-b.read_spent()[0],'test fill to one dollar below cap')
     before=b.read_spent()
     try:
         with contextlib.redirect_stderr(io.StringIO()): b.cmd_preflight(a)

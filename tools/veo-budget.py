@@ -11,11 +11,12 @@ ONE POT PER AUTHORIZATION, selected with --project (default seamless-joins):
         RAISED to $50.00, user authorization 2026-08-19 (review round, seg5+seg6
         body-consistency regen): "Push the cap to $50. Don't need to use
         it all but there's room if you need it."
-    meridian-house  $49.00  data/veo-budget-meridian-house.tsv
+    meridian-house  $78.40  data/veo-budget-meridian-house.tsv
         All-in mansion experiment. User cap is strictly below $50 INCLUDING
         prior artistic-rotation-v3 images (user authorization 2026-09-12). Prior-image
         and infrastructure reserves are included in this ledger; they are
-        allocations, not claims of actual billing.
+        allocations, not claims of actual billing. Additional $30 authorized
+        2026-09-13 for the documentary walkthrough, above $48.40 retained.
 Caps are NOT fungible. An exhausted pot is never topped up from another one;
 a new pot needs a new PROJECTS entry and the sentence that authorized it.
 Anthropic-billed QA calls (clip-qa/frame-qa) are a SEPARATE ledger entirely
@@ -65,6 +66,9 @@ _DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 # the user approved, so an exhausted pot is never topped up from another and
 # a new pot needs a new line here plus the sentence that authorized it.
 PROJECTS = {
+    # Hall Exchange: "This segment has a budget of $30." 2026-09-28.
+    # Reserve image, QA and infrastructure allocations in this same pot.
+    "hall-exchange": (30.00, os.path.join(_DATA, "veo-budget-hall-exchange.tsv")),
     # SCARY WOODS EPISODE 4: standing minimum episode budget of $30,
     # authorized 2026-09-21. Use $30 as this revision's conservative ceiling;
     # reserve non-Veo costs in this same pot before submissions.
@@ -81,8 +85,10 @@ PROJECTS = {
     # you spent on the image generations for the artistic rotation v3,
     # let's start the tour." — user authorization 2026-09-12.
     # ALL-IN pot: pre-log prior-image and infrastructure reserves here too.
-    # $49 operational ceiling keeps $1 strictly below the user's $50 limit.
-    "meridian-house": (49.00, os.path.join(_DATA, "veo-budget-meridian-house.tsv")),
+    # Original operational ceiling: $49. On 2026-09-13 the user authorized:
+    # "You are approved to spend up to 30 additional dollars on this implementation."
+    # Documentary walkthrough: retain $48.40 allocated; add at most $30.
+    "meridian-house": (78.40, os.path.join(_DATA, "veo-budget-meridian-house.tsv")),
     # The research project. Hard lifetime cap, user authorization 2026-08-16.
     "seamless-joins": (10.00, os.path.join(_DATA, "veo-budget.tsv")),
     # The film. "30-60s, 9:16, $25 max budget" — user authorization 2026-08-18.

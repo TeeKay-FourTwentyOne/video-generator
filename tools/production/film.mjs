@@ -71,15 +71,42 @@ export function shotRequest(root, id) {
   return { shot, request };
 }
 function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+/** `--wait` alone waits up to 20 minutes; `--wait=N` bounds it; `--interval=N` sets the cadence (default 20 s, minimum 5). */
+export function pollOptions(flags) {
+  let waitSeconds = 0, intervalSeconds = 20;
+  for (const f of flags) {
+    const m = /^--(wait|interval)(?:=(\d+))?$/.exec(f);
+    if (!m) throw new Error(`Unknown poll option: ${f}`);
+    if (m[1] === 'wait') waitSeconds = m[2] === undefined ? 1200 : Number(m[2]);
+    else { if (m[2] === undefined) throw new Error('--interval needs seconds'); intervalSeconds = Math.max(5, Number(m[2])); }
+  }
+  return { waitSeconds, intervalSeconds };
+}
 
+/** `image` takes one or more request files; `--reconcile` reduces each reservation to its saved-usage estimate
+ *  right after the image is saved; `--spacing=N` seconds between requests (default 10, minimum 0). */
+export function imageOptions(args) {
+  let reconcile = false, spacingSeconds = 10;
+  const files = [];
+  for (const a of args) {
+    if (a === '--reconcile') reconcile = true;
+    else if (/^--spacing=\d+$/.test(a)) spacingSeconds = Number(a.slice(10));
+    else if (a.startsWith('--')) throw new Error(`Unknown image option: ${a}`);
+    else files.push(a);
+  }
+  if (!files.length) throw new Error('Specify at least one image request file');
+  return { files, reconcile, spacingSeconds };
+}
 export async function main(argv) {
   const [verb, location, ...args] = argv;
   if (!verb || verb === 'help') return { commands: [
     'doctor', 'init WORKSPACE LIMIT_USD AUTHORIZATION', 'status WORKSPACE', 'plan WORKSPACE',
-    'submit WORKSPACE SHOT_ID', 'poll WORKSPACE SHOT_ID',
+    'submit WORKSPACE SHOT_ID', 'poll WORKSPACE SHOT_ID [--wait[=SECONDS]] [--interval=SECONDS]',
     'reserve WORKSPACE ID USD CATEGORY PURPOSE', 'reconcile WORKSPACE ID USD EVIDENCE',
-    'image WORKSPACE REQUEST_JSON', 'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION'
-  ], note: 'Only submit/image perform generation. Poll retrieves an existing operation; it never submits.' };
+    'image WORKSPACE REQUEST_JSON [MORE_JSON...] [--reconcile] [--spacing=SECONDS]', 'reconcile-image WORKSPACE IMAGE_ID',
+    'join-anchor WORKSPACE SOURCE FRAME OUTPUT.png',
+    'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION [--overlay]'
+  ], note: 'Only submit/image perform generation. Poll retrieves an existing operation; it never submits. Several image requests run in order, spaced apart; --reconcile (or reconcile-image) reduces an image reservation to its saved-usage list-price estimate.' };
   if (verb === 'doctor') {
     const config = readJson(path.join(PROJECT_ROOT, 'data/config.json'));
     return { node: process.version, ffmpeg: command('ffmpeg', ['-version']).split('\n')[0],
@@ -121,8 +148,15 @@ export async function main(argv) {
       if (hashFile(localPath(root, asset.path)) !== asset.sha256) throw new Error('Downloaded source changed');
       return { shot: args[0], status: 'complete', path: asset.path, sha256: asset.sha256 };
     }
-    const result = await pollVeoOperation(entry.operationName, entry.model);
-    if (!result.done) return { shot: args[0], status: 'processing' };
+    // --wait keeps polling the SAME operation at a bounded cadence; it never submits.
+    const { waitSeconds, intervalSeconds } = pollOptions(args.slice(1));
+    const started = Date.now();
+    let result = await pollVeoOperation(entry.operationName, entry.model);
+    while (!result.done && waitSeconds > 0 && (Date.now() - started) / 1000 < waitSeconds) {
+      await new Promise(r => setTimeout(r, intervalSeconds * 1000));
+      result = await pollVeoOperation(entry.operationName, entry.model);
+    }
+    if (!result.done) return { shot: args[0], status: 'processing', waitedSeconds: Math.round((Date.now() - started) / 1000) };
     if (result.error) {
       updateSpend(budget, entry.id, { status: 'failed', evidence: result.error });
       throw new Error(result.error);
@@ -138,11 +172,42 @@ export async function main(argv) {
   }
   if (verb === 'image') {
     const { generateAnchor } = await import('./google-image.mjs');
-    return generateAnchor(root, readJson(localPath(root, args[0])));
+    const { imageUsageCost } = await import('./image-rates.mjs');
+    const { files, reconcile, spacingSeconds } = imageOptions(args);
+    const results = [];
+    for (const [i, file] of files.entries()) {
+      // The endpoint answers HTTP 429 to rapid batches; space sequential requests, never retry one.
+      if (i) await new Promise(r => setTimeout(r, spacingSeconds * 1000));
+      const request = readJson(localPath(root, file));
+      let result;
+      try { result = await generateAnchor(root, request); }
+      catch (e) { throw new Error(`${e.message}${results.length ? ` (completed before the failure: ${results.map(r => r.output).join(', ')})` : ''}`); }
+      if (reconcile) {
+        // Same evidence as reconcile-image: the usage record this request just saved.
+        const cost = imageUsageCost(readJson(localPath(root, `operations/${request.id}.usage.json`)));
+        result.reconciled = { usd: cost.usd, evidence: cost.evidence, entry: reconcileSpend(budget, request.id, cost.usd, cost.evidence) };
+      }
+      results.push(result);
+    }
+    return files.length === 1 ? results[0] : results;
+  }
+  if (verb === 'reconcile-image') {
+    // Evidence-based only: the saved usage record written by the image route is the input; no network.
+    const { imageUsageCost } = await import('./image-rates.mjs');
+    const cost = imageUsageCost(readJson(localPath(root, `operations/${args[0]}.usage.json`)));
+    return { ...cost, entry: reconcileSpend(budget, args[0], cost.usd, cost.evidence) };
+  }
+  if (verb === 'join-anchor') {
+    if (args.length !== 3) throw new Error('join-anchor needs SOURCE FRAME OUTPUT.png');
+    const { joinAnchor } = await import('./join-anchor.mjs');
+    return joinAnchor(root, args[0], Number(args[1]), args[2]);
   }
   if (verb === 'assemble' || verb === 'review') {
     const { assemble, review } = await import('./edit.mjs');
-    return verb === 'assemble' ? assemble(root, args[0]) : review(root, args[0]);
+    if (verb === 'assemble') return assemble(root, args[0]);
+    const flags = args.slice(1);
+    for (const f of flags) if (f !== '--overlay') throw new Error(`Unknown review option: ${f}`);
+    return review(root, args[0], { overlay: flags.includes('--overlay') });
   }
   throw new Error(`Unknown command: ${verb}`);
 }
