@@ -20,7 +20,8 @@ providers. Initialize one all-in budget per authorization. Include images, QA,
 audio and storage in that pot. Never reinterpret leftover money from another film
 as permission. An existing authorization is not a reason to ask again.
 
-Inspect anchors before generating. Submit one planned attempt per shot, preserve
+Check `docs/craft/field-notes/` for known behavior of the models you are about to
+pay for. Inspect anchors before generating. Submit one planned attempt per shot, preserve
 the request ID, and poll the existing operation. An uncertain submission retains
 its reservation; recover from its record before considering another attempt.
 Choose retakes deliberately based on reviewed defects and remaining budget.

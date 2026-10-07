@@ -22,7 +22,8 @@ npm run film -- init data/workspace/my-film-v1 20 "User-approved total allocatio
 npm run film -- plan data/workspace/my-film-v1
 ```
 
-Write `film.json` in that workspace. Paths inside the plan are workspace-relative;
+Skim `docs/craft/field-notes/` for known provider behavior before writing anchors
+and prompts. Write `film.json` in that workspace. Paths inside the plan are workspace-relative;
 provider operation records and media stay ignored. The minimal shape is:
 
 ```json
@@ -59,7 +60,7 @@ file in the same way. The plan command is a dry run and does not reserve money.
 ```sh
 npm run film -- reserve data/workspace/my-film-v1 qa-budget 2 qa "Bounded QA allowance"
 npm run film -- submit data/workspace/my-film-v1 S01
-npm run film -- poll data/workspace/my-film-v1 S01
+npm run film -- poll data/workspace/my-film-v1 S01 --wait   # keeps polling the same operation, never submits
 npm run film -- status data/workspace/my-film-v1
 ```
 
@@ -82,10 +83,18 @@ and exact 4/6/8-second durations. Old bare aliases resolve to GA. Unsupported
 variants fail locally; changing capabilities needs current official documentation
 and an explicit qualification test, not just a new model string.
 
-`image WORKSPACE request.json` exercises the existing Google image provider with
-up to three references, bounded output tokens, and a conservative $0.80 reservation.
-The JSON has `id`, `aspectRatio`, `output`, `promptFile`, and `refs` (relative paths).
-It saves usage metadata and never retries or replaces an image automatically.
+`image WORKSPACE request.json [more.json ...] [--reconcile] [--spacing=N]` exercises
+the existing Google image provider with up to three references, bounded output
+tokens, and a conservative $0.80 reservation per request. The JSON has `id`,
+`aspectRatio`, `output`, `promptFile`, and `refs` (relative paths). It saves usage
+metadata and never retries or replaces an image automatically. Several request
+files run in order, spaced ten seconds apart by default, because the endpoint
+answers HTTP 429 to rapid batches; the batch stops at the first failure and names
+what completed. `--reconcile` reduces each reservation to the list-price estimate
+from the usage record it just saved (`tools/production/image-rates.mjs`, rates
+dated in the file); `reconcile-image WORKSPACE IMAGE_ID` does the same later for one
+request. A rejected request with no usage record is reconciled by hand with the
+response as evidence.
 
 Reserve allowances **before** invoking legacy paid QA/audio/image helpers. Those
 scripts do not yet enforce this ledger themselves. Reconcile only from saved
@@ -102,9 +111,32 @@ paid prompt generation; migrate its shot descriptions into an explicit film plan
 
 ## Review and edit
 
+For a generated continuation, extract the chosen moving frame by decoded index:
+
+```sh
+npm run film -- join-anchor data/workspace/my-film-v1 clips/S04-v1.mp4 156 refs/S05.png
+```
+
+This local command writes the PNG and a hash-bound `.png.json` provenance record.
+The preceding edit ends at frame 155 (`endFrameExclusive: 156`); the continuation
+normally starts at frame zero. It refuses overwrites and out-of-range frames.
+Review the actual generated boundary with `tools/seam-check.py`; an exact anchor
+does not guarantee either visual or motion continuity.
+
+When revisiting a location after intervening action, use anchor-drift's
+`--mode=return-shot --elapsed-action="Describe what happened between these shots"`.
+This checks persistent identity, wardrobe and set details without demanding the
+same pose. The elapsed action must be explicit; unexplained changes still count
+as violations. Keep `across-cut` for adjacent frames and `within-clip` for anchors
+that the generator must interpolate. Neither adjacent mode accepts that allowance.
+
 Review source clips with intent context (including what must remain absent).
 Use the [clip acceptance guide](craft/clip-acceptance-gate.md), inspect flagged
-frames yourself, and preserve decisions under `qa/`. A decision has:
+frames yourself, and preserve decisions under `qa/`. Run the Python QA scripts
+from the repository root (their default config path is relative); they log token
+usage to `data/cost-ledger.jsonl`, which is the evidence for reconciling a QA
+allowance. Their model replies are parsed leniently (`tools/qa_json.py`) so a
+stray quote in a note no longer discards a paid call. A decision has:
 
 ```json
 {
@@ -132,25 +164,42 @@ Write `edit/v1.json` with the final frame ranges:
 
 ```sh
 npm run film -- assemble data/workspace/my-film-v1 v1
-npm run film -- review data/workspace/my-film-v1 v1
+npm run film -- review data/workspace/my-film-v1 v1 --overlay
 ```
 
 Assembly checks input hashes and accepted frame ranges, refuses an existing
 version, preserves source media, encodes local segments, and verifies full decode,
 dimensions and actual decoded frame count. `final/v1/film.mp4`, `delivery.json`,
-and `review.html` form a native review package. Failed/incomplete versions remain
+and `review.html` form a native review package; `--overlay` adds `film_debug.mp4`,
+a frame and timecode burn for review notes in source time. Failed/incomplete versions remain
 inspectable; choose a new version after fixing the cause. The review page can be
-opened locally or served from the workspace on loopback.
+opened locally or served on loopback with byte-range support for native seeking:
 
-The present editor supports hard cuts and a single prepared soundtrack. Make
-composites, typography, crossfades or elaborate sound mixes as explicit local
-source assets first, using existing craft tools. Keep their recipes alongside the
+```sh
+node tools/production/review-server.mjs data/workspace/my-film-v1/final/v1
+```
+
+The server prints its loopback URL and serves only the review package's known
+filenames. Stop it with Ctrl+C. A generic server without HTTP byte ranges may play
+the opening but leave shot buttons and the scrubber unable to seek.
+
+The present editor supports hard cuts, optional per-segment black fades
+(`fadeInFrames` / `fadeOutFrames`, frame counts inside the segment, length
+preserving) and a single prepared soundtrack. Make composites, typography,
+crossfades or elaborate sound mixes as explicit local source assets first, using
+existing craft tools. Keep their recipes alongside the
 production. This keeps the core edit contract small and makes each transform
 reviewable. Final audio needs loudness/peak checks and listening; the CLI does not
 claim artistic approval or automatically upscale/publish.
 
-`tools/production/score.mjs CUES_JSON NEW_WAV` renders deterministic local pad,
-bell, air, tick and servo cues. `recipes/borrowed-light-score.mjs` is the original
+`tools/production/mix.mjs WORKSPACE MIX_JSON NEW_WAV [--report=JSON]` prepares the
+single soundtrack from frame-addressed tracks: native Veo audio trimmed to the same
+frames as the picture segments and placed at their edit frames, local score and
+foley files, per-track gain, fades and high/low-pass, summed without normalization,
+then a static gain to a target integrated loudness and a true-peak limiter. The
+report records EBU R128 measurements before and after mastering; listening stays a
+separate human step. `tools/production/score.mjs CUES_JSON NEW_WAV` renders
+deterministic local pad, bell, air, tick and servo cues. `recipes/borrowed-light-score.mjs` is the original
 film score; `recipes/borrowed-light-finish.py` makes the optional local title and
 fades with existing Pillow/FFmpeg. Both preserve earlier versions. The finishing
 recipe accepts an existing font and never downloads one.

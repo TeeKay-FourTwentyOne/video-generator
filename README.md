@@ -42,6 +42,8 @@ works directly for Codex, Claude Code and other agents with local file access.
 | `mcp/video-generator/src/clients/` | Existing Google, Anthropic and ElevenLabs clients |
 | `mcp/video-generator/src/tools/` | MCP tools, including wrappers around the same CLI |
 | `docs/craft/` | On-demand continuity, dialogue, FFmpeg, editing and QA guidance |
+| `docs/craft/field-notes/` | Dated, attributed production lessons; any agent appends |
+| `docs/harness/` | Per-agent harness notes (Claude Code, Codex) |
 | `tools/scene-lab/` | Persistent local 3D scenes and camera experiments |
 | `tools/` | Specialized local/QA helpers and preserved production recipes |
 | `briefs/`, `characters/`, `series/` | Sanitized intent, character canon and series craft |

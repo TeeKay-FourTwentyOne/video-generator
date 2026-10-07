@@ -7,6 +7,9 @@ at `.claude/skills/produce-video/SKILL.md` and `.agents/skills/produce-video/SKI
 `docs/production.md` describes the maintained CLI/MCP workflow; load detailed craft
 notes only when the shot or edit needs them.
 
+Claude Code specifics (zsh Bash tool, background jobs, timeouts, memory, MCP
+profile) are in `docs/harness/claude-code.md`.
+
 Build the existing MCP service with `npm run build`. `.mcp.json` configures the
 local servers for Claude Code. Do not install packages as a routine startup step.
 The CLI works without an MCP connection and has the same production behavior.
