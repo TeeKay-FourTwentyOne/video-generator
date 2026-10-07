@@ -1,5 +1,6 @@
 """Regression tests for exact-size video upscaling and unchanged audio."""
 import importlib.util
+import os
 import subprocess
 import sys
 import tempfile
@@ -72,15 +73,26 @@ class UpscaleTests(unittest.TestCase):
             for model_id in [0, 1]:
                 out = Path(folder) / f"output-{model_id}.mp4"
                 argv = ["upscale.py", str(src), str(out), "--scale", "2", "--model", str(model_id)]
-                with patch.dict(sys.modules, {"realesrgan_ncnn_py": types.SimpleNamespace(Realesrgan=FakeModel)}), patch.object(sys, "argv", argv):
+                with patch.dict(sys.modules, {"realesrgan_ncnn_py": types.SimpleNamespace(Realesrgan=FakeModel)}), \
+                        patch.object(sys, "argv", argv), patch.dict(os.environ, {"VIDEO_ALLOW_X4PLUS": "1"}):
                     upscale.main()
                 info = upscale.probe(out)
                 video = info["streams"][0]
                 self.assertEqual((video["width"], video["height"], video["nb_frames"]), (64, 32, "6"))
                 self.assertEqual(audio_hash(src), audio_hash(out))
                 self.assertEqual(src.read_bytes(), original)
-                with patch.object(sys, "argv", argv), self.assertRaises(SystemExit):
+                with patch.object(sys, "argv", argv), patch.dict(os.environ, {"VIDEO_ALLOW_X4PLUS": "1"}), self.assertRaises(SystemExit):
                     upscale.main()
+
+    def test_x4plus_is_refused_on_macos_without_override(self):
+        if sys.platform != "darwin":
+            self.skipTest("macOS-only guard")
+        # Any existing input reaches the model guard before ffprobe runs; the output must not exist.
+        argv = ["upscale.py", str(Path(__file__)), str(Path(tempfile.gettempdir()) / "upscale-guard-never-written.mp4"), "--scale", "2", "--model", "0"]
+        env = {k: v for k, v in os.environ.items() if k != "VIDEO_ALLOW_X4PLUS"}
+        with patch.object(sys, "argv", argv), patch.dict(os.environ, env, clear=True), self.assertRaises(SystemExit) as ctx:
+            upscale.main()
+        self.assertEqual(ctx.exception.code, 2)
 
 
 if __name__ == "__main__":

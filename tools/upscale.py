@@ -10,21 +10,33 @@ Usage:
   python3 tools/upscale.py data/workspace/video.mp4 custom_output.mp4   # explicit output name
 
 Models:
-  0 = realesrgan-x4plus (general, default) — best for live action, photography
-  1 = realesr-animevideov3-x2 — optimized for animation/anime
+  1 = realesr-animevideov3-x2 (default) — small, native 2x, about 1-2 s per 1080p
+      frame on an M3 Pro. Until 2026-09-12 the CLI passed model 0 straight to the
+      ncnn wrapper, where ID 0 is this model, so every 2026 4K master labelled
+      "x4plus 2x" (August, September, Can-Can) was produced by this model.
+  0 = realesrgan-x4plus — the true general model. It only renders 4x natively and
+      is resized to the requested scale, which costs about 30x the time of model 1
+      (roughly 30-50 s per 1080p frame; a 33 s film takes about six hours).
+      Disabled on macOS by the director's decision (2026-10-03): this MacBook must
+      not spend that time. VIDEO_ALLOW_X4PLUS=1 overrides only on another machine.
 
 Scale logic:
-  General model produces 4x; animation model produces 2x. Lanczos resizes
-  to the exact requested dimensions when the native model scale differs.
-  The target is a factor of the input, not a fixed resolution. For UHD 4K,
+  The requested --scale is a factor of the input, not a fixed resolution; Lanczos
+  resizes to the exact target when the native model scale differs. For UHD 4K,
   use --scale 2 from 1080p or --scale 3 from 720p.
   From 720p (9:16): 2x=1440x2560, 3x=2160x3840, 4x=2880x5120
   From 720p (16:9): 2x=2560x1440, 3x=3840x2160, 4x=5120x2880
+
+Disk: every source and upscaled frame is written as PNG to the temp volume
+(about 20 GB for a 35 s 1080p vertical). The tool measures the first frame and
+refuses when free space is short; upscale per assembled segment and concatenate.
 """
+import os
 import sys
 import time
 import argparse
 import json
+import shutil
 import subprocess
 import tempfile
 from fractions import Fraction
@@ -82,8 +94,9 @@ def main():
     parser.add_argument("output", nargs="?", help="Output video path (default: input_Nx.mp4)")
     parser.add_argument("--scale", type=int, default=4, choices=[2, 3, 4],
                         help="Final scale factor (default: 4)")
-    parser.add_argument("--model", type=int, default=0, choices=[0, 1],
-                        help="Model: 0=realesrgan-x4plus (general), 1=realesr-animevideov3 (anime)")
+    parser.add_argument("--model", type=int, default=1, choices=[0, 1],
+                        help="Model: 1=realesr-animevideov3-x2 (default, fast, native 2x; the 2026 master path), "
+                             "0=realesrgan-x4plus (true 4x, about 30x slower)")
     parser.add_argument("--crf", type=int, default=18, choices=range(0, 52), metavar="0..51")
     parser.add_argument("--tile", type=int, default=0, help="ncnn tile size; 0=auto or at least 32")
     args = parser.parse_args()
@@ -103,6 +116,11 @@ def main():
         parser.error("Refusing to overwrite an existing file; choose a new output path")
     if args.tile != 0 and args.tile < 32:
         parser.error("--tile must be 0 or at least 32")
+    if args.model == 0 and sys.platform == "darwin" and os.environ.get("VIDEO_ALLOW_X4PLUS") != "1":
+        parser.error("Model 0 (realesrgan-x4plus) renders 4x before resizing and takes about 30x longer than the "
+                     "default (roughly six hours for a 33 s 1080p film on this MacBook). It is disabled on macOS by "
+                     "the director's decision of 2026-10-03; use the default model 1. VIDEO_ALLOW_X4PLUS=1 overrides "
+                     "only on a machine where that cost has been accepted.")
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Get source info
@@ -161,10 +179,24 @@ def main():
                 result = result.resize((target_w, target_h), Image.Resampling.LANCZOS)
             result.save(out_path, compress_level=3)
             elapsed = time.time() - start
-            fps = (i + 1) / elapsed if elapsed > 0 else 0
-            eta = (total - i - 1) / fps if fps > 0 else 0
+            per_frame = elapsed / (i + 1)
+            eta = (total - i - 1) * per_frame
+            if i == 0:
+                print(f"  first frame {per_frame:.1f} s; estimated total {total * per_frame / 60:.1f} min", flush=True)
+            if i + 1 == min(12, total):
+                # Measured footprint after a dozen frames (frame 0 is often a fade from black):
+                # exact source total plus the mean upscaled size so far, extrapolated. Refuse early
+                # rather than fail silently on a full disk.
+                src_total = sum(f.stat().st_size for f in frames)
+                up_mean = sum(f.stat().st_size for f in frames_up.glob("frame_*.png")) / (i + 1)
+                need = src_total + up_mean * total
+                free = shutil.disk_usage(tmpdir).free
+                print(f"  temp frames need about {need / 2**30:.1f} GB, {free / 2**30:.1f} GB free", flush=True)
+                if need * 1.2 > free:
+                    raise RuntimeError("Not enough free space for the temp frames; upscale per assembled segment "
+                                       "and concatenate, or free disk first")
             if i == 0 or (i + 1) % 12 == 0 or i + 1 == total:
-                print(f"  [{i+1}/{total}] {fps:.1f} fps, ETA: {eta/60:.1f} min", flush=True)
+                print(f"  [{i+1}/{total}] {per_frame:.2f} s/frame, ETA: {eta/60:.1f} min", flush=True)
 
         print(f"\nUpscale complete in {(time.time()-start)/60:.1f} minutes")
 

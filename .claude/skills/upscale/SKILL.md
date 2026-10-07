@@ -30,10 +30,10 @@ python3 tools/upscale.py data/workspace/my_video.mp4 --model 1
 
 ## Models
 
-| Model | Flag | Best For |
-|-------|------|----------|
-| realesrgan-x4plus | `--model 0` (default) | Live action, photography, general |
-| realesr-animevideov3 | `--model 1` | Animation, anime, cartoon |
+| Model | Flag | Notes |
+|-------|------|-------|
+| realesr-animevideov3-x2 | `--model 1` (default) | Native 2x, about 1-2 s per 1080p frame. This is the model behind every 2026 4K master (August, September, Can-Can, Church Grim): until 2026-09-12 the CLI's "model 0" was passed straight to the ncnn wrapper, where ID 0 is this model |
+| realesrgan-x4plus | `--model 0` | The true general model. Renders 4x natively, then resizes; about 30x slower (30-50 s per 1080p frame, roughly six hours for a 33 s film). **Disabled on this MacBook by the director (2026-10-03); the tool refuses it on macOS.** Only a machine where that cost is accepted may set `VIDEO_ALLOW_X4PLUS=1` |
 
 ## How It Works
 
@@ -45,9 +45,11 @@ python3 tools/upscale.py data/workspace/my_video.mp4 --model 1
 
 ## Performance
 
-- ~2.4 fps on M3 Pro (720p source, model 0)
-- A 45-second 720p video takes ~7 minutes to upscale to 4K
-- Uses temp directory for frames (auto-cleaned)
+- Default model: about 1.6 s per 1080p frame on an M3 Pro on battery (faster on mains); a 33 s 1080p vertical takes about 25 minutes including encodes
+- x4plus: about 30-50 s per 1080p frame; measure before committing
+- Temp PNG frames need about 20 GB for a 35 s 1080p vertical; the tool measures the first frame and refuses when the disk is short. Upscale per assembled segment and concatenate when space is tight
+- The ncnn library prints a percentage per frame tile; progress is the `[i/N] s/frame, ETA` lines
+- Check `pmset -g batt`: on battery the GPU is throttled and a long run can outlive the charge
 
 ## Prerequisites
 
