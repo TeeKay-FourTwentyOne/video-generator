@@ -22,10 +22,18 @@ const day = (d) => d.toISOString().slice(0, 10);
 const from = args.from || day(new Date(Date.now() - 14 * 864e5));
 const to = args.to || day(new Date());
 
+// The billing export table is local configuration: data/config.json billingExportTable
+// (project.dataset.table) or VG_BILLING_EXPORT_TABLE.
+function readConfig() {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'config.json'), 'utf8')); } catch { return {}; }
+}
+const BILLING_TABLE = process.env.VG_BILLING_EXPORT_TABLE || readConfig().billingExportTable;
+
 // ---- GCP via BigQuery billing export ----
 function gcpByDay() {
+  if (!BILLING_TABLE) return { map: {}, ok: false, err: 'billingExportTable not configured' };
   const sql = `SELECT DATE(usage_start_time) AS day, ROUND(SUM(cost),2) AS usd
-    FROM \`your-gcp-project.billing_export.gcp_billing_export_v1_XXXXXX_XXXXXX_XXXXXX\`
+    FROM \`${BILLING_TABLE}\`
     WHERE service.description='Vertex AI' AND DATE(usage_start_time) BETWEEN '${from}' AND '${to}'
     GROUP BY day ORDER BY day`;
   try {

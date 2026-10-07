@@ -61,7 +61,7 @@ in a prompt (literal-deity RAI risk); the balcony is "the highest balcony" throu
 | **Cash total** | **≈ $12.45** of $100 budget |
 
 ## Review links (7-day)
-- 720p review copy and debug-overlay copy uploaded to `gs://your-bucket/hz-paradise/`
+- 720p review copy and debug-overlay copy uploaded to `gs://<infra bucket>/hz-paradise/`
   (signed URLs in session notes; regenerate anytime with `tools/gcp/share.cjs`).
 
 ## Casting

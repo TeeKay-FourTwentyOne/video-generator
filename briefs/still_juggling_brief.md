@@ -1,7 +1,7 @@
 # STILL JUGGLING — brief
 
 **Format:** 9:16 social short, 17.2 s, 4K (2160×3840) upscaled from 720p. Built 2026-09-10, 20:10–21:20, speed run.
-**Published:** https://youtube.com/shorts/xXGxzT1SSt8 (2026-09-10, description used virtually unchanged) · 4K delivered 2026-09-10 21:19 via share.cjs (7-day links, gs://your-bucket/still-juggling/) · 4K verified 2160×3840 / 412 f / 17.17 s; audiowmark decode after upscale conf 1.20
+**Published:** https://youtube.com/shorts/xXGxzT1SSt8 (2026-09-10, description used virtually unchanged) · 4K delivered 2026-09-10 21:19 via share.cjs (7-day links, gs://<infra bucket>/still-juggling/) · 4K verified 2160×3840 / 412 f / 17.17 s; audiowmark decode after upscale conf 1.20
 **Workspace:** `data/workspace-archive/still-juggling/` · **Master:** `final/still_juggling_v12_wm_720.mp4` → `final/still_juggling_v12_4k.mp4`
 
 ## Concept

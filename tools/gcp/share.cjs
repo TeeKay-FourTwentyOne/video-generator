@@ -6,7 +6,16 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { getAccessToken, DEFAULT_KEY_PATH } = require('./auth.cjs');
 
-const BUCKET = 'your-bucket';
+// The infra bucket is local configuration: data/config.json veoGcsBucket or VG_GCS_BUCKET.
+const BUCKET = process.env.VG_GCS_BUCKET || readBucket();
+function readBucket() {
+  try { return JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'config.json'), 'utf8')).veoGcsBucket; }
+  catch { return undefined; }
+}
+if (!BUCKET) {
+  console.error('No bucket configured: set veoGcsBucket in data/config.json or VG_GCS_BUCKET');
+  process.exit(1);
+}
 
 const [, , localPath, objectName, contentType = 'application/octet-stream', expiresDays = '7'] = process.argv;
 if (!localPath || !objectName) {
