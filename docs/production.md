@@ -23,7 +23,8 @@ npm run film -- plan data/workspace/my-film-v1
 ```
 
 Skim `docs/craft/field-notes/` for known provider behavior before writing anchors
-and prompts. Write `film.json` in that workspace. Paths inside the plan are workspace-relative;
+and prompts. Then plan with conviction: the brief is a vision to push, and the
+ledger is what makes pushing it affordable (see the creative stance in `AGENTS.md`). Write `film.json` in that workspace. Paths inside the plan are workspace-relative;
 provider operation records and media stay ignored. The minimal shape is:
 
 ```json

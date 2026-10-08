@@ -10,6 +10,12 @@ The same implementation is exposed by `npm run film -- ...` and MCP
 `production_*` tools. Work from the repository root. No harness-specific agent
 or provider SDK is required.
 
+This is an artistic project. Treat the brief as a vision to push, not a
+specification to satisfy: make the craft choices with a point of view, let the
+material that comes back change the plan where it is better than the plan, and
+bring ideas the brief did not ask for, marked as yours. The ledger, the gates and
+the check-ins exist so that boldness is affordable, not to replace it.
+
 Make the film's intent and continuity concrete before buying motion: stable shot
 IDs, what changes in each shot, what must stay fixed, and the sound that makes the
 change legible. Choose shot scale, duration and local/generated technique for the

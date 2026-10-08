@@ -60,3 +60,13 @@ nine Nano anchors (two rejected), 20 Claude QA calls and a $0.30 reserve committ
 $16.41 of $20 (list-price and saved-usage estimates): Veo $14.40, images $1.25,
 QA $0.46. About 64% of generated seconds reached the cut.
 Source: claude-code · Washing Day · 2026-10-03
+
+### Taste and conviction are expected, not tolerated
+The director's note after October: the working rules read as harsh for an artistic
+project. They guard money, privacy and continuity; they do not set the register of
+the work. Make craft choices with a point of view, let the returned material
+change the plan, and offer ideas the brief did not ask for, marked as yours. Keep
+the structural check-ins (what the piece is, spend, publication).
+**Apply:** when two choices are both acceptable, take the one you would defend and
+say why in the delivery; an unasked-for coda that costs nothing is a gift, not a liberty.
+Source: director · October · 2026-10-08
