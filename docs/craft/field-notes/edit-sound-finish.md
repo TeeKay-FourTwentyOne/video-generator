@@ -138,3 +138,22 @@ Source: claude-code · 2026-05
 preserves the structure but drops intermediate edits, keeping the shipped version
 and its 720p master.
 Source: claude-code · 2026-06 to 2026-09
+
+### The editor wants every segment's shot id in the plan; mix tracks with fades want explicit lengths
+`assemble` refused "Edit references an unknown shot" for graded copies of a take and for a take split into three
+segments; adding local shot entries (no request) with those ids fixed it. `mix.mjs` refuses a `fadeOutFrames`
+without `frames`; probe each file's duration and clip the track length to the picture.
+Source: claude-code · October · 2026-10-08
+
+### Set track gains from measurement, cap premaster peaks
+Seventeen ElevenLabs effects spanned −60 to −16 LUFS. Per-track gains set from measured integrated loudness
+(sustained sources) or sample peak (one-shots), with a −12 dBFS premaster peak cap and the beds lightly compressed,
+gave a master that needed +10 dB static gain to −21 LUFS with a true peak under −1.5 dBTP and sections within 6 LU.
+Source: claude-code · October · 2026-10-08
+
+### A synthesised air bed can be inaudible rumble that still eats the ending
+A one-pole 23 Hz noise "air" measured −39 LUFS but sat at −21.7 dBFS RMS below 150 Hz in the film's closing black,
+flattening the fade to black; K-weighting hides sub-bass. Band-limiting the air to 150 Hz–3 kHz (two one-pole stages
+each way, slow ±1.5 dB breathing) made the ending step down with the picture (−24 → −28 → −29 dBFS) at the same LUFS.
+**Apply:** measure beds by band (high-pass 150 Hz) as well as LUFS; keep sustained synthetic beds out of the sub-bass.
+Source: claude-code · October · 2026-10-08

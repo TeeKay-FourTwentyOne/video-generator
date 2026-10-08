@@ -65,3 +65,10 @@ pipe) over the first clip shows where motion is still busy; the continuation anc
 chosen from the table passed seam-check at the first try.
 Source: claude-code · Washing Day · 2026-10-03
 
+### A figure materialising in a busy wide got past clip-qa
+In a high wide with eight small figures, a person formed out of a wheelbarrow at the left about 1.3 s into the take;
+clip-qa returned use_as_is with no anomalies and the director caught it on the review copy. Small figures far from
+the subject action are below the sampled frames' resolution for the general scan.
+**Apply:** on crowd wides, cut a dense strip of the edges at full resolution before accepting, or expect the
+director's watch to be the gate for background figures.
+Source: claude-code · October · 2026-10-08

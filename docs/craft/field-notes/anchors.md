@@ -109,3 +109,19 @@ on her line instead of the three asked for) and the later anchors followed the p
 line's contents in every prompt.
 Source: claude-code · Washing Day · 2026-10-03
 
+### References over 8 MiB are refused; batches want a pause between them
+The bounded image route refuses a reference file larger than 8 MiB (a 2K PNG plate can be 8.5 MiB); a JPEG copy at
+quality 95 (about 2.5 MiB) is accepted and held the plate's content. A batch launched the moment a previous batch
+finished got HTTP 429 on its first request (no charge); twelve seconds between batches avoided it.
+**Apply:** keep a `<id>-ref.jpg` beside any plate over 8 MiB and point later requests at it; sleep 12 s between batches.
+Source: claude-code · October · 2026-10-07
+
+### Chained edits remove well and add by restaging
+"Use the reference as the exact base; change only this: the fifth bag is gone" returned the same frame with clean
+tabletop where the bag was (pixel-identical elsewhere, drift PASS). "Change only this: a fifth bag lies at the end"
+restaged the whole row (finds re-drawn, bags moved). A "camera lies on the floor looking up" prompt put a literal
+DSLR on the floor. Dusk wides came back as overcast daylight twice; a programmatic grade applied to both frames of
+the pair passed drift and read as dusk.
+**Apply:** generate the fuller state first and chain the removal to get the first frame; crop or compose around
+literalisms; grade for the hour locally when the generator ignores it.
+Source: claude-code · October · 2026-10-07

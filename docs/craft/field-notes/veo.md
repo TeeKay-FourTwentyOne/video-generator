@@ -207,3 +207,18 @@ A no-character stillness beat (landscape, explainer insert) is Nano stills plus
 local motion at zero Veo cost; a narrative beat needs Veo for every shot, because
 stills with motion read as a slideshow there.
 Source: claude-code · 2026-06 to 2026-08
+
+### Veo letters a scale bar even when told not to, and fuses the arrow into it
+Four straight-down find takes with "a scale bar with plain alternating black and white segments and no numbers,
+then a small plastic north arrow": one bar carried "P 8", one bar and arrow were a single striped pointer, one
+placed no arrow, one was clean. A book-ended look-down take briefly doubled the bar while the hand placed it.
+Three deterministic letter-removal rules on the moving bar failed (a shadowed white box defeated the white test;
+the relaxed rule bleached stripes); the photograph frame was fixed with two hand-placed boxes in seconds.
+**Apply:** plan the photograph as the frame that carries the bar, and cut the live reveal before the bar if it is
+lettered; a one-frame box fill beats a per-frame patch.
+Source: claude-code · October · 2026-10-08
+
+### A transport error on poll is not a failed take
+Two of seventeen polls ended with `fetch failed` after the operation had completed; re-polling the same operation
+downloaded the take. Nothing was resubmitted.
+Source: claude-code · October · 2026-10-08
