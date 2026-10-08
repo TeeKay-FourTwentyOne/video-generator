@@ -6,11 +6,11 @@
 
 **Current delivery:** v3, with ElevenLabs narration
 
-**Status:** Native v3 delivered; YouTube link recorded.
+**Status:** Native v3 archived; YouTube link recorded.
 
 **YouTube:** https://youtu.be/nnR-HPxd6WI
 
-**Workspace:** `data/workspace/one-unit-apart-v1/`
+**Local archive:** `data/workspace-archive/one-unit-apart-v1/`
 
 YouTube URL supplied by the user on October 7, 2026. Public availability has
 not been independently verified.
@@ -88,7 +88,7 @@ speed. The provider reported **535 included subscription credits**; no
 additional cash charge was expected within the checked quota. Detailed usage
 records and the project ledger remain in the ignored workspace.
 
-Paths below are relative to `data/workspace/one-unit-apart-v1/`:
+Paths below are relative to `data/workspace-archive/one-unit-apart-v1/`:
 
 - Film: `final/v3/film.mp4`
 - Review page: `final/v3/review.html`
@@ -106,6 +106,21 @@ Technical checks do not constitute a full human listening review. No upscale
 was performed. The YouTube link above was supplied by the user.
 
 The prepared YouTube copy is in [one_unit_apart_description.md](one_unit_apart_description.md).
+
+## Archive
+
+Archived on October 7, 2026. The complete workspace was moved intact, preserving
+all 241 original files (215,211,357 bytes), including every film version, original
+audio, source material, edit recipes, provider records and QA evidence. File
+sizes, SHA-256 hashes and inodes were checked across the move. No intermediates
+were removed.
+
+The archive adds an integrity manifest, an offline verification script, a
+publication record and copies of the brief and description. To verify it:
+
+```sh
+python3 data/workspace-archive/one-unit-apart-v1/notes/verify-archive.py
+```
 
 ## Credits
 
