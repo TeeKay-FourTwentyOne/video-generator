@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectId": "ai-explains-steganography",
+  "title": "AI Explains Steganography",
+  "kind": "film",
+  "seriesId": "ai-explains-ai",
+  "status": "delivered",
+  "statusNote": "Production lessons document the completed explainer and payload checks; no publication URL is retained.",
+  "briefPath": "briefs/ai-explains-steganography/brief.md",
+  "decisionsPath": "briefs/ai-explains-steganography/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/ai_explains_steganography_brief.md",
+      "target": "briefs/ai-explains-steganography/brief.md"
+    },
+    {
+      "path": "briefs/ai_explains_steganography_lessons.md",
+      "target": "briefs/ai-explains-steganography/decisions.md"
+    }
+  ]
+}

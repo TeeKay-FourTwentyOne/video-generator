@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "dignity-of-work",
+  "title": "THE DIGNITY OF WORK",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The shooting script does not establish completion or publication.",
+  "briefPath": "briefs/dignity-of-work/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/dignity_of_work_brief.md",
+      "target": "briefs/dignity-of-work/brief.md"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "projectId": "steamboat-wilhelm-iii",
+  "title": "Steamboat Wilhelm III",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "The retained lessons identify the shipped third film; a separate original shooting brief is not available.",
+  "briefPath": "briefs/steamboat-wilhelm-iii/brief.md",
+  "decisionsPath": "briefs/steamboat-wilhelm-iii/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/watch?v=kAsnmkXTOTU",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-05-28",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "relatedProjectIds": [
+    "steamboat-wilhelm"
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/steamboat_wilhelm_lessons.md",
+      "target": "briefs/steamboat-wilhelm-iii/decisions.md"
+    }
+  ]
+}

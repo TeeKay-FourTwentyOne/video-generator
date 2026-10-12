@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hellzapoppin-barbers-chair",
+  "title": "HELLZAPOPPIN’ LIVE! at The Barber’s Chair",
+  "kind": "film",
+  "seriesId": "hellzapoppin",
+  "status": "unknown",
+  "statusNote": "A production treatment is retained; completion is not established.",
+  "briefPath": "briefs/hellzapoppin-barbers-chair/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/hellzapoppin-2-the-barbers-chair.md",
+      "target": "briefs/hellzapoppin-barbers-chair/brief.md"
+    }
+  ]
+}

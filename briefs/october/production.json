@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "projectId": "october",
+  "title": "OCTOBER",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "published",
+  "briefPath": "briefs/october/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/RS4rwMg_xlk",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-10-08",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/october_spine_v1.md",
+      "target": "briefs/october/brief.md"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "reassurance-box",
+  "title": "The Reassurance Box",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The retained production brief does not establish a completed edit.",
+  "briefPath": "briefs/reassurance-box/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/reassurance-box.md",
+      "target": "briefs/reassurance-box/brief.md"
+    }
+  ]
+}

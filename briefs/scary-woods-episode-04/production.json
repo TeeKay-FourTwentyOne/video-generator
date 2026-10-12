@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "projectId": "scary-woods-episode-04",
+  "title": "Scary Woods — Episode 04: Small Steps",
+  "kind": "episode",
+  "seriesId": "scary-woods",
+  "seriesPath": "briefs/forest_spirit_series_brief.md",
+  "status": "published",
+  "briefPath": "briefs/scary-woods-episode-04/brief.md",
+  "descriptionPath": "briefs/scary-woods-episode-04/description.md",
+  "descriptionSha256": "a9eaa55258dcf467d37e90a75573371a83fbb28f6312553fb8e66a27b2ce8195",
+  "decisionsPath": "briefs/scary-woods-episode-04/decisions.md",
+  "workspace": {
+    "path": "data/workspace-archive/scary-woods-episode-04",
+    "state": "archived"
+  },
+  "artifacts": [
+    {
+      "role": "finishing-master",
+      "version": "release-4k",
+      "path": "final/scary-woods-episode-04-4k.mp4",
+      "sha256": "b79a5240b5bab788a47ccf2648c334bd59918a5449edac1c8a46fc2775bba6d8",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1376,
+      "durationSeconds": 57.333333333333336,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Built-in image generation; model not exposed"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "eleven_v3"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "qa",
+        "provider": "ElevenLabs",
+        "model": "scribe_v2"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1 Quality"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/SgeFPoHYyZw",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "release-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "release-4k",
+      "artifactSha256": "b79a5240b5bab788a47ccf2648c334bd59918a5449edac1c8a46fc2775bba6d8",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-21",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/forest_spirit_episode_04_brief.md",
+      "target": "briefs/scary-woods-episode-04/brief.md"
+    },
+    {
+      "path": "briefs/forest_spirit_episode_04_description.md",
+      "target": "briefs/scary-woods-episode-04/description.md"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "projectId": "meridian-house",
+  "title": "Meridian House: The Living Library",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/meridian-house/brief.md",
+  "descriptionPath": "briefs/meridian-house/description.md",
+  "descriptionSha256": "4caed71328a3a5c10f8d095b102e5c1c14b594f5207560780cfd7181d824558f",
+  "supportingDocuments": [
+    {
+      "label": "Reviewed edit recipe",
+      "path": "briefs/meridian-house/edit.json"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace/meridian-house",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "local-v2",
+      "path": "veo-tour-v1/edit/local-v2/final/meridian-house-tour-v2.mp4",
+      "sha256": "bd325ccef807f0b50a6d1d4fae1d9e6d6e2f6f63df6cdc781ef213384734e356",
+      "width": 1920,
+      "height": 1080,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 576,
+      "durationSeconds": 24,
+      "publishedMaster": false
+    },
+    {
+      "role": "finishing-master",
+      "version": "local-v2-4k",
+      "path": "veo-tour-v1/edit/local-v2/upscale-4k/meridian-house-tour-v2-4k.mp4",
+      "sha256": "7633acfe8cff9c2a6886136af0c67f96661edcd92e946ef21d83328a2f0d1504",
+      "width": 3840,
+      "height": 2160,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 576,
+      "durationSeconds": 24,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Scene, cameras, editing tools and original music",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtu.be/7UmA2bnQZFw",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "local-v2-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "local-v2-4k",
+      "artifactSha256": "7633acfe8cff9c2a6886136af0c67f96661edcd92e946ef21d83328a2f0d1504",
+      "recordedDate": "2026-10-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "relatedProjectIds": [
+    "meridian-house-documentary",
+    "meridian-house-documentary-tour",
+    "meridian-house-photoreal"
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/meridian_house_brief.md",
+      "target": "briefs/meridian-house/brief.md"
+    }
+  ]
+}

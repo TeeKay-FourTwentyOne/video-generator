@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectId": "church-grim",
+  "title": "THE CHURCH GRIM",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/church-grim/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/rhsUdHSvHgE",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-07-21",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/church_grim_brief.md",
+      "target": "briefs/church-grim/brief.md"
+    }
+  ]
+}

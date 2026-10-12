@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "projectId": "weather-service",
+  "title": "WEATHER SERVICE",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/weather-service/brief.md",
+  "descriptionPath": "briefs/weather-service/description.md",
+  "descriptionSha256": "8ddea511dfe68401e62653db1d1b397ffdc4d9fa2788fe390598d72ebe393074",
+  "workspace": {
+    "path": "data/workspace/weather-service",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "finishing-master",
+      "version": "finish-4k",
+      "path": "final/weather-service-4k.mp4",
+      "sha256": "22cba504456cbf1d4c6d19013e6849aec11e00d53002446d7c610714997ad22c",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 540,
+      "durationSeconds": 22.5,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "Claude Opus 4.5"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local synthesis"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, editing and original synthesized score",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/37Wj_UIFG3U",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "finish-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "finish-4k",
+      "artifactSha256": "22cba504456cbf1d4c6d19013e6849aec11e00d53002446d7c610714997ad22c",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/weather_service_brief.md",
+      "target": "briefs/weather-service/brief.md"
+    }
+  ]
+}

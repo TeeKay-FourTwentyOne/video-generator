@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "cherries-thawing",
+  "title": "Cherries Thawing",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The brief says publication is pending and describes a production plan; a delivered edit is not established.",
+  "briefPath": "briefs/cherries-thawing/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/cherries_thawing_brief.md",
+      "target": "briefs/cherries-thawing/brief.md"
+    }
+  ]
+}

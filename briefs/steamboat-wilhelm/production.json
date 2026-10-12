@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "projectId": "steamboat-wilhelm",
+  "title": "STEAMBOAT WILHELM",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "This v2 shooting script is retained separately from the shipped Steamboat Wilhelm III production lessons.",
+  "briefPath": "briefs/steamboat-wilhelm/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "relatedProjectIds": [
+    "steamboat-wilhelm-iii"
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/steamboat_wilhelm_brief.md",
+      "target": "briefs/steamboat-wilhelm/brief.md"
+    }
+  ]
+}

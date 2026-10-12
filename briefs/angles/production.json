@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "projectId": "angles",
+  "title": "ANGLES",
+  "kind": "study",
+  "status": "review",
+  "statusNote": "The brief records a 30-second native acceleration study for review; no publication is recorded.",
+  "briefPath": "briefs/angles/brief.md",
+  "workspace": {
+    "path": "data/workspace/angles/acceleration-v1",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "acceleration-v1",
+      "path": "edit/angles-acceleration-30s.mp4",
+      "sha256": "4e5fd6ec284b1bc8ae53ecee71749eedebf6cbfe106671716824279bf260b92b",
+      "width": 1920,
+      "height": 1080,
+      "fps": {
+        "numerator": 60,
+        "denominator": 1
+      },
+      "frames": 1800,
+      "durationSeconds": 30,
+      "publishedMaster": false
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/angles_brief.md",
+      "target": "briefs/angles/brief.md"
+    }
+  ]
+}

@@ -78,6 +78,72 @@ test('unfinished, multiple-version and processing records never infer publicatio
   assert.equal((await validateRecord(repo, r)).status, 'planned');
 });
 
+test('historical publication can retain a URL without inventing a local master or approval', async t => {
+  const { repo, r } = await fixture(t);
+  r.artifacts = []; delete r.workspace;
+  r.status = 'published';
+  r.statusNote = 'Publication is documented; the local release master is not identified.';
+  r.publication = { platform: 'YouTube', url: 'https://youtu.be/example', evidence: 'user-confirmed', recordedDate: '2026-10-12' };
+  r.reviewEvents = [{ type: 'publication', recordedDate: '2026-10-12', outcome: 'user-confirmed', evidence: 'The retained brief records the supplied publication URL.' }];
+  await exportRecord(repo, r);
+  await buildViews(repo);
+  assert.match(await fs.readFile(path.join(repo, 'briefs/example/README.md'), 'utf8'), /not linked to a specific local master/);
+  const result = await loadRecords(repo);
+  assert.deepEqual(result[0].artifacts, []);
+  assert.equal(result[0].reviewEvents.some(e => e.type === 'artistic-approval'), false);
+  const missingEvent = structuredClone(r); missingEvent.reviewEvents = [];
+  await assert.rejects(validateRecord(repo, missingEvent), /dated event/);
+  const missingMaster = structuredClone(r); missingMaster.publication.artifactVersion = 'absent';
+  await assert.rejects(validateRecord(repo, missingMaster), /publication artifact/);
+  const inventedCheck = structuredClone(r); inventedCheck.reviewEvents.push({ type: 'technical-check', recordedDate: '2026-10-12', outcome: 'passed', evidence: 'No artifact.' });
+  await assert.rejects(validateRecord(repo, inventedCheck), /requires an artifact/);
+  r.status = 'delivered'; r.publication.evidence = 'supplied-processing'; r.reviewEvents[0].outcome = 'supplied-processing';
+  await validateRecord(repo, r);
+  r.status = 'published';
+  await assert.rejects(validateRecord(repo, r), /processing/);
+});
+
+test('supporting documents remain validated, discoverable and compatible with old links', async t => {
+  const { repo, r, write } = await fixture(t);
+  await write('briefs/example/act-1.md', '# Act 1\n\n[Intent](brief.md).\n');
+  await write('briefs/example/edit.json', json({ fps: 24 }));
+  await write('briefs/act-1-old.md', '[Moved](example/act-1.md).\n');
+  r.supportingDocuments = [{ label: 'Act 1', path: 'briefs/example/act-1.md' }, { label: 'Edit recipe', path: 'briefs/example/edit.json' }];
+  r.legacyPaths.push({ path: 'briefs/act-1-old.md', target: 'briefs/example/act-1.md' });
+  await exportRecord(repo, r);
+  await buildViews(repo);
+  assert.match(await fs.readFile(path.join(repo, 'briefs/example/README.md'), 'utf8'), /\[Act 1\]\(act-1.md\)/);
+  const duplicate = structuredClone(r); duplicate.supportingDocuments.push(duplicate.supportingDocuments[0]);
+  await assert.rejects(validateRecord(repo, duplicate), /unique project/);
+  const outside = structuredClone(r); outside.supportingDocuments[0].path = 'docs/act.md';
+  await assert.rejects(validateRecord(repo, outside), /unique project/);
+  await write('briefs/example/act-1.md', '[Missing](missing.md)');
+  await assert.rejects(validateRecord(repo, r), /broken link/);
+  await write('briefs/example/act-1.md', '# Act 1\n');
+  await write('briefs/example/edit.json', '{invalid');
+  await assert.rejects(validateRecord(repo, r), SyntaxError);
+  await write('briefs/example/edit.json', json({ budget: '$' + '20' }));
+  await assert.rejects(validateRecord(repo, r), /financial/);
+  await write('briefs/example/edit.json', json({ fps: 24 }));
+  await fs.rename(path.join(repo, 'briefs/example/act-1.md'), path.join(repo, 'actual.md'));
+  await fs.symlink(path.join(repo, 'actual.md'), path.join(repo, 'briefs/example/act-1.md'));
+  await assert.rejects(validateRecord(repo, r), /Unsafe link/);
+});
+
+test('a legacy archive locator does not claim an integrity check or permit description writes', async t => {
+  const { repo, r, write } = await fixture(t);
+  r.workspace = { path: 'data/workspace-archive/example-v1', state: 'archived' };
+  await validateRecord(repo, r);
+  const verified = structuredClone(r); verified.workspace.state = 'archived-verified';
+  await assert.rejects(validateRecord(repo, verified), /verification record/);
+  const incorrect = structuredClone(r); incorrect.workspace.path = 'data/workspace/example-v1';
+  await assert.rejects(validateRecord(repo, incorrect), /locator disagree/);
+  await write(`${r.workspace.path}/final/v1/description.txt`, 'Old wording');
+  await write(`${r.workspace.path}/final/v1/delivery.json`, json({ description: {} }));
+  await assert.rejects(syncDescription(repo, r), /archives stay sealed/);
+  assert.equal(await fs.readFile(path.join(repo, r.workspace.path, 'final/v1/description.txt'), 'utf8'), 'Old wording');
+});
+
 test('export fails closed on nested runtime fields, financial data, unsafe paths and inconsistent timing', async t => {
   const { repo, r } = await fixture(t);
   for (const edit of [v => { v.operation = { token: 'private-value' }; }, v => { v.artifacts[0].taskId = 'private-value'; },
@@ -238,8 +304,11 @@ test('migrated public records validate in a source-only copy with no ignored dat
   const source = fileURLToPath(new URL('../../briefs/', import.meta.url));
   await fs.rm(path.join(repo, 'briefs'), { recursive: true });
   await fs.cp(source, path.join(repo, 'briefs'), { recursive: true });
-  // Pilot briefs link existing public documentation; copy source docs, not media.
+  // Project briefs link public tools and documentation; copy source, not media.
   await fs.cp(fileURLToPath(new URL('../../docs/', import.meta.url)), path.join(repo, 'docs'), { recursive: true });
+  for (const directory of ['tools', 'scripts']) {
+    await fs.cp(fileURLToPath(new URL(`../../${directory}/`, import.meta.url)), path.join(repo, directory), { recursive: true });
+  }
   const records = await loadRecords(repo);
   assert.equal(records.find(r => r.projectId === 'verify').status, 'published');
   assert.equal(records.find(r => r.projectId === 'scary-woods-episode-05').status, 'review');

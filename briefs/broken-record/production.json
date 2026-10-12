@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "projectId": "broken-record",
+  "title": "BROKEN RECORD",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/broken-record/brief.md",
+  "descriptionPath": "briefs/broken-record/description.md",
+  "descriptionSha256": "7b520990438990e958b849aab994406e67ffd221213df9cd5abf960035392a38",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/mfzTxbwbuRY",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-07-24",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/broken_record_brief.md",
+      "target": "briefs/broken-record/brief.md"
+    }
+  ]
+}

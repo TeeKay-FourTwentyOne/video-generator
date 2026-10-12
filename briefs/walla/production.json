@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "projectId": "walla",
+  "title": "Walla",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/walla/brief.md",
+  "descriptionPath": "briefs/walla/description.md",
+  "descriptionSha256": "a786b0a5423ee6991ae68ee231432b658016dec194756e53bff2c59d13599230",
+  "workspace": {
+    "path": "data/workspace/walla-v1",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "finishing-master",
+      "version": "v4-4k",
+      "path": "final/v4/film_4k.mp4",
+      "sha256": "0f3006689781209956c1c0d5662f3f5a50a9169203635112ed658dba38583ac9",
+      "width": 3840,
+      "height": 2160,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 749,
+      "durationSeconds": 31.208333333333332,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Gemini 3 Pro Image"
+      },
+      {
+        "purpose": "qa",
+        "provider": "OpenAI",
+        "model": "Whisper"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "Claude Sonnet 5.5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, editing, subtitles and sound",
+        "model": "Claude Fable 5.1",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtu.be/lcT11ZH_awM",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "v4-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "0f3006689781209956c1c0d5662f3f5a50a9169203635112ed658dba38583ac9",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-10-08",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/walla_brief.md",
+      "target": "briefs/walla/brief.md"
+    },
+    {
+      "path": "briefs/walla_description.md",
+      "target": "briefs/walla/description.md"
+    }
+  ]
+}

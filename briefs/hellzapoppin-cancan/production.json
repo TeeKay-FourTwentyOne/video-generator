@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hellzapoppin-cancan",
+  "title": "HELLZAPOPPIN’ — The Pepper’s Ghost (Can-Can)",
+  "kind": "film",
+  "seriesId": "hellzapoppin",
+  "status": "published",
+  "briefPath": "briefs/hellzapoppin-cancan/brief.md",
+  "decisionsPath": "briefs/hellzapoppin-cancan/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/nzvwrnlvmNs",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/hellzapoppin_cancan_brief.md",
+      "target": "briefs/hellzapoppin-cancan/brief.md"
+    },
+    {
+      "path": "briefs/hellzapoppin_cancan_lessons.md",
+      "target": "briefs/hellzapoppin-cancan/decisions.md"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "projectId": "spider-arrest",
+  "title": "SPIDER ARREST",
+  "kind": "film",
+  "status": "review",
+  "statusNote": "The first draft and a decision queue await the director’s review.",
+  "briefPath": "briefs/spider-arrest/brief.md",
+  "descriptionPath": "briefs/spider-arrest/description.md",
+  "descriptionSha256": "445723e6d408c807b17c5f7ed608631c122450be5c2a11451602ebde0a259eb9",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Nano Banana Pro"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/spider_arrest_brief.md",
+      "target": "briefs/spider-arrest/brief.md"
+    }
+  ]
+}

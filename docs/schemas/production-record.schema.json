@@ -12,17 +12,24 @@
     "seriesId": { "$ref": "#/$defs/id" },
     "seriesPath": { "$ref": "#/$defs/path" },
     "status": { "enum": ["planned", "producing", "review", "delivered", "published", "unknown"] },
+    "statusNote": { "$ref": "#/$defs/text" },
     "briefPath": { "$ref": "#/$defs/path" },
     "descriptionPath": { "$ref": "#/$defs/path" },
     "descriptionSha256": { "$ref": "#/$defs/hash" },
     "decisionsPath": { "$ref": "#/$defs/path" },
     "handoffPath": { "$ref": "#/$defs/path" },
+    "supportingDocuments": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false, "required": ["label", "path"],
+        "properties": { "label": { "$ref": "#/$defs/text" }, "path": { "$ref": "#/$defs/path" } }
+      }
+    },
     "workspace": {
       "type": "object", "additionalProperties": false,
       "required": ["path", "state"],
       "properties": {
         "path": { "$ref": "#/$defs/path" },
-        "state": { "enum": ["active", "archive-planned", "archived-verified"] }
+        "state": { "enum": ["active", "archive-planned", "archived", "archived-verified"] }
       }
     },
     "artifacts": { "type": "array", "items": { "$ref": "#/$defs/artifact" } },
@@ -53,7 +60,7 @@
     },
     "publication": {
       "type": "object", "additionalProperties": false,
-      "required": ["platform", "url", "evidence", "recordedDate", "artifactVersion"],
+      "required": ["platform", "url", "evidence", "recordedDate"],
       "properties": {
         "platform": { "$ref": "#/$defs/text" },
         "url": { "type": "string", "format": "public-url", "maxLength": 2048 },
@@ -67,7 +74,7 @@
     "reviewEvents": {
       "type": "array", "items": {
         "type": "object", "additionalProperties": false,
-        "required": ["type", "artifactVersion", "artifactSha256", "recordedDate", "evidence", "outcome"],
+        "required": ["type", "recordedDate", "evidence", "outcome"],
         "properties": {
           "type": { "enum": ["technical-check", "visual-review", "audio-listening", "artistic-approval", "finishing-authorization", "publication"] },
           "artifactVersion": { "$ref": "#/$defs/id" },

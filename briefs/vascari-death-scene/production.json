@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "vascari-death-scene",
+  "title": "Outlaw Vampire Sommeliers — Vascari’s Death Scene",
+  "kind": "study",
+  "status": "unknown",
+  "statusNote": "The retained edit guide does not establish a finished film.",
+  "briefPath": "briefs/vascari-death-scene/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/vascari_death_scene_edit_guide.md",
+      "target": "briefs/vascari-death-scene/brief.md"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hall-of-mirrors",
+  "title": "HALL OF MIRRORS",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "Later production lessons record two completed versions, superseding the brief’s earlier banked-concept status; no publication URL is retained.",
+  "briefPath": "briefs/hall-of-mirrors/brief.md",
+  "decisionsPath": "briefs/hall-of-mirrors/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/hall_of_mirrors_brief.md",
+      "target": "briefs/hall-of-mirrors/brief.md"
+    },
+    {
+      "path": "briefs/hall_of_mirrors_lessons.md",
+      "target": "briefs/hall-of-mirrors/decisions.md"
+    }
+  ]
+}

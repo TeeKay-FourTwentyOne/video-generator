@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hellzapoppin-loading-dock",
+  "title": "HELLZAPOPPIN’ LIVE! at The Loading Dock",
+  "kind": "film",
+  "seriesId": "hellzapoppin",
+  "status": "unknown",
+  "statusNote": "A production draft is retained; completion is not established.",
+  "briefPath": "briefs/hellzapoppin-loading-dock/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/hellzapoppin-4-the-loading-dock.md",
+      "target": "briefs/hellzapoppin-loading-dock/brief.md"
+    }
+  ]
+}

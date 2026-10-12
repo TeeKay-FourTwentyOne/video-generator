@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "projectId": "janus-russian-ark",
+  "title": "JANUS / RUSSIAN ARK",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/janus-russian-ark/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/WnsDRmuLKXw",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "relatedProjectIds": [
+    "russian-ark-ending"
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/janus-russian-ark.md",
+      "target": "briefs/janus-russian-ark/brief.md"
+    }
+  ]
+}

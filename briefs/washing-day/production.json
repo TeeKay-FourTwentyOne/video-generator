@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "projectId": "washing-day",
+  "title": "Washing Day",
+  "kind": "film",
+  "status": "review",
+  "statusNote": "The brief records completed independent native review builds; it does not record final artistic approval or publication.",
+  "briefPath": "briefs/washing-day/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Independent Claude build",
+        "model": "Claude Fable 5.1",
+        "harness": "Claude Code"
+      },
+      {
+        "role": "Independent Codex build",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/washing_day_brief.md",
+      "target": "briefs/washing-day/brief.md"
+    }
+  ]
+}

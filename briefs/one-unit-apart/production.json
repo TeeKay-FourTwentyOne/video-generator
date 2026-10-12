@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "projectId": "one-unit-apart",
+  "title": "ONE UNIT APART",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "The user supplied a YouTube link for the archived native v3; public availability was not independently checked.",
+  "briefPath": "briefs/one-unit-apart/brief.md",
+  "descriptionPath": "briefs/one-unit-apart/description.md",
+  "descriptionSha256": "ebe2594f8f328bbfadeccadd48fe0015e0628ae0c835ac2ff517e0b35627ae8c",
+  "workspace": {
+    "path": "data/workspace-archive/one-unit-apart-v1",
+    "state": "archived"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "2bc29a44c6c56942e7e4f4ba666aced212c341c70d473376556b0d02a95d04bb",
+      "width": 1920,
+      "height": 1080,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 1680,
+      "durationSeconds": 56,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "Eleven Multilingual v2"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local synthesis"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, script, mathematical animation, editing and original score",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtu.be/nnR-HPxd6WI",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "v3"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "v3",
+      "artifactSha256": "2bc29a44c6c56942e7e4f4ba666aced212c341c70d473376556b0d02a95d04bb",
+      "recordedDate": "2026-10-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/one_unit_apart_brief.md",
+      "target": "briefs/one-unit-apart/brief.md"
+    },
+    {
+      "path": "briefs/one_unit_apart_description.md",
+      "target": "briefs/one-unit-apart/description.md"
+    }
+  ]
+}

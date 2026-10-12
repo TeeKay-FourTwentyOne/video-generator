@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectId": "whalefall",
+  "title": "WHALEFALL",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/whalefall/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/01bdjF_Opv8",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-07-22",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/whalefall_brief.md",
+      "target": "briefs/whalefall/brief.md"
+    }
+  ]
+}

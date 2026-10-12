@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "projectId": "april",
+  "title": "APRIL",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "unknown",
+  "statusNote": "The retained monthly-series treatment does not establish a delivered edit.",
+  "briefPath": "briefs/april/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/april-brief.md",
+      "target": "briefs/april/brief.md"
+    }
+  ]
+}

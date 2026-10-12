@@ -14,7 +14,7 @@ test('matched-anchor edit excludes the duplicate anchor and counts cuts exactly'
 });
 
 test('published Meridian recipe preserves reviewed ranges and retime settings',()=>{
-  const plan=JSON.parse(readFileSync(new URL('../../briefs/meridian_house_edit.json',import.meta.url),'utf8'));
+  const plan=JSON.parse(readFileSync(new URL('../../briefs/meridian-house/edit.json',import.meta.url),'utf8'));
   assert.equal(validateEdit(plan).frames,529);
   assert.deepEqual(plan.finish.speedRamps,SPEEDS);
   assert.equal(plan.finish.frames,576);

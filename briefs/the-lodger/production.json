@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "the-lodger",
+  "title": "The Lodger",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "Production lessons record the completed film and review revisions; no publication URL is retained.",
+  "briefPath": "briefs/the-lodger/brief.md",
+  "decisionsPath": "briefs/the-lodger/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/the_lodger_brief.md",
+      "target": "briefs/the-lodger/brief.md"
+    },
+    {
+      "path": "briefs/the_lodger_lessons.md",
+      "target": "briefs/the-lodger/decisions.md"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "projectId": "meridian-house-documentary-tour",
+  "title": "Meridian House — Documentary Walkthrough",
+  "kind": "film",
+  "status": "review",
+  "statusNote": "The user selected the 24-second full-turn version for review on 2026-09-14; publication is not recorded.",
+  "briefPath": "briefs/meridian-house-documentary-tour/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "relatedProjectIds": [
+    "meridian-house",
+    "meridian-house-documentary",
+    "meridian-house-photoreal"
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/meridian_house_documentary_tour_brief.md",
+      "target": "briefs/meridian-house-documentary-tour/brief.md"
+    }
+  ]
+}

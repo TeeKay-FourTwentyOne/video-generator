@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "not-stuff-that-abides",
+  "title": "NOT STUFF THAT ABIDES",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The retained document is a production plan; completion is not established.",
+  "briefPath": "briefs/not-stuff-that-abides/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/not-stuff-that-abides.md",
+      "target": "briefs/not-stuff-that-abides/brief.md"
+    }
+  ]
+}

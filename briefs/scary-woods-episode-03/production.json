@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "projectId": "scary-woods-episode-03",
+  "title": "Scary Woods — Episode 03: Higher Up",
+  "kind": "episode",
+  "seriesId": "scary-woods",
+  "seriesPath": "briefs/forest_spirit_series_brief.md",
+  "status": "published",
+  "briefPath": "briefs/scary-woods-episode-03/brief.md",
+  "descriptionPath": "briefs/scary-woods-episode-03/description.md",
+  "descriptionSha256": "b7e933de916fe50a34abc2a3c5a9519fcc5be99bdc764b7160c0222cf294230f",
+  "decisionsPath": "briefs/scary-woods-episode-03/decisions.md",
+  "workspace": {
+    "path": "data/workspace-archive/scary-woods-episode-03",
+    "state": "archived"
+  },
+  "artifacts": [
+    {
+      "role": "finishing-master",
+      "version": "release-4k",
+      "path": "final/scary-woods-episode-03-4k.mp4",
+      "sha256": "f654ef090c876e823532cb5e9224599ef11713e5418db9d7202b1d3dc5db5fb3",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1290,
+      "durationSeconds": 53.75,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Built-in image generation; model not exposed"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "eleven_v3"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "qa",
+        "provider": "ElevenLabs",
+        "model": "scribe_v2"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1 Quality"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/Wf-bg15itZg",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "release-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "release-4k",
+      "artifactSha256": "f654ef090c876e823532cb5e9224599ef11713e5418db9d7202b1d3dc5db5fb3",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-19",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/forest_spirit_episode_03_brief.md",
+      "target": "briefs/scary-woods-episode-03/brief.md"
+    },
+    {
+      "path": "briefs/forest_spirit_episode_03_description.md",
+      "target": "briefs/scary-woods-episode-03/description.md"
+    }
+  ]
+}

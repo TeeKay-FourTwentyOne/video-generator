@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "projectId": "seconds",
+  "title": "SECONDS",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/seconds/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/ilQDgcNSgnE",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/seconds_brief.md",
+      "target": "briefs/seconds/brief.md"
+    }
+  ]
+}

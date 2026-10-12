@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "projectId": "model-weights",
+  "title": "Model Weights",
+  "kind": "film",
+  "seriesId": "ai-explains-ai",
+  "status": "delivered",
+  "statusNote": "Production lessons document a completed explainer; no publication URL is retained.",
+  "briefPath": "briefs/model-weights/brief.md",
+  "decisionsPath": "briefs/model-weights/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Nano Banana Pro"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/model_weights_brief.md",
+      "target": "briefs/model-weights/brief.md"
+    },
+    {
+      "path": "briefs/model_weights_lessons.md",
+      "target": "briefs/model-weights/decisions.md"
+    }
+  ]
+}

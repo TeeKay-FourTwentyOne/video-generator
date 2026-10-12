@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "no-enemy",
+  "title": "No Enemy",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The retained production brief includes a final script, but no delivered edit is established.",
+  "briefPath": "briefs/no-enemy/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/no_enemy_production_brief.md",
+      "target": "briefs/no-enemy/brief.md"
+    }
+  ]
+}

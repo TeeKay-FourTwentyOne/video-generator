@@ -77,12 +77,18 @@ export async function validateRecord(repo, record, { allowStaleDescription = fal
   }
   const documents = ['briefPath', 'descriptionPath', 'decisionsPath', 'handoffPath'].flatMap(k => record[k] ? [record[k]] : []);
   for (const file of documents) requireValue(file.startsWith(prefix) && file.endsWith('.md'), 'Project documents must be local Markdown');
+  for (const document of record.supportingDocuments ?? []) {
+    requireValue(document.path.startsWith(prefix) && /\.(md|json)$/.test(document.path) &&
+      !documents.includes(document.path) && !['README.md', 'production.json'].includes(path.posix.basename(document.path)),
+    'Supporting documents must be unique project Markdown or JSON sources');
+    documents.push(document.path);
+  }
   requireValue(Boolean(record.descriptionPath) === Boolean(record.descriptionSha256), 'Description path and hash are a pair');
   if (record.seriesPath) requireValue(Boolean(record.seriesId) && /^(briefs|series)\/.+\.md$/.test(record.seriesPath), 'Invalid series document');
   if (record.workspace) {
-    const archived = record.workspace.state === 'archived-verified';
+    const archived = ['archived', 'archived-verified'].includes(record.workspace.state);
     requireValue(record.workspace.path.startsWith(archived ? 'data/workspace-archive/' : 'data/workspace/'), 'Workspace state and locator disagree');
-    requireValue(Boolean(record.archive) === archived, 'Archive state requires its verification record');
+    requireValue(Boolean(record.archive) === (record.workspace.state === 'archived-verified'), 'Verified archive state requires its verification record');
   } else requireValue(!record.archive && !record.artifacts.length, 'Artifacts and archive require a workspace');
   if (record.archive) requireValue(record.archive.manifestPath === `${record.workspace.path}/${MANIFEST}`, 'Archive manifest locator disagrees');
   const versions = new Map();
@@ -102,17 +108,21 @@ export async function validateRecord(repo, record, { allowStaleDescription = fal
     requireValue(!artifact.descriptionCopyPath || Boolean(record.descriptionPath), 'Description copy requires a canonical description');
   }
   const selected = record.artifacts.filter(a => a.publishedMaster);
-  requireValue(selected.length === (record.status === 'published' ? 1 : 0), 'Published master selection must agree with status');
+  requireValue(selected.length === (record.status === 'published' && record.publication?.artifactVersion ? 1 : 0),
+    'Published master selection must agree with status and explicit publication artifact');
   if (record.publication) {
     const p = record.publication;
-    requireValue(versions.has(p.artifactVersion), 'Publication must identify a recorded artifact');
+    requireValue(!p.artifactVersion || versions.has(p.artifactVersion), 'Publication must identify a recorded artifact when supplied');
     requireValue(Boolean(p.verifiedDate) === (p.evidence === 'public-page-verified'), 'Independent verification needs its own date and evidence');
     requireValue(p.evidence === 'supplied-processing' ? record.status !== 'published' : record.status === 'published',
       'Publication evidence and status disagree; processing is not publication');
     if (selected.length) requireValue(selected[0].version === p.artifactVersion, 'Publication master version disagrees');
   } else requireValue(record.status !== 'published', 'Published status requires publication evidence');
   for (const event of record.reviewEvents) {
-    requireValue(versions.get(event.artifactVersion)?.sha256 === event.artifactSha256, 'Review event must match an artifact hash and version');
+    const hasArtifact = Boolean(event.artifactVersion) || Boolean(event.artifactSha256);
+    requireValue(event.type === 'publication' || hasArtifact, 'Review event requires an artifact hash and version');
+    if (hasArtifact) requireValue(Boolean(event.artifactVersion) && Boolean(event.artifactSha256) &&
+      versions.get(event.artifactVersion)?.sha256 === event.artifactSha256, 'Review event must match an artifact hash and version');
     requireValue(outcomes[event.type].includes(event.outcome), 'Review event type and outcome disagree');
     if (event.type === 'publication') requireValue(record.publication?.artifactVersion === event.artifactVersion &&
       record.publication?.evidence === event.outcome, 'Publication event lacks matching evidence');
@@ -133,7 +143,8 @@ export async function validateRecord(repo, record, { allowStaleDescription = fal
   for (const file of documents) {
     const bytes = await fs.readFile(await safePath(repo, file));
     checkPublicText(bytes.toString('utf8'), file, repo);
-    await checkLinks(repo, file, bytes.toString('utf8'), { allowMissingViews, projectId: record.projectId });
+    if (file.endsWith('.md')) await checkLinks(repo, file, bytes.toString('utf8'), { allowMissingViews, projectId: record.projectId });
+    else JSON.parse(bytes.toString('utf8'));
     if (file === record.descriptionPath) {
       requireValue(allowStaleDescription || sha256(bytes) === record.descriptionSha256, 'Canonical description hash mismatch; run sync-description');
       requireValue(bytes.toString('utf8').trimEnd().endsWith(`\n${REPOSITORY_URL}`), 'Publication text must end with the repository URL');
@@ -169,13 +180,17 @@ const escape = value => value.replace(/[\\`*_[\]<>|]/g, '\\$&').replace(/[\r\n]/
 const note = '<!-- Generated by npm run records -- build. Edit production.json and canonical documents. -->';
 export function projectSummary(r) {
   const lines = [`# ${escape(r.title)}`, '', note, '', `Status: **${r.status}**.`, ''];
+  if (r.statusNote) lines.push(escape(r.statusNote), '');
   const links = ['[Creative brief](brief.md)', '[Production record](production.json)'];
   for (const [field, label] of [['descriptionPath', 'Publication text'], ['decisionsPath', 'Decisions'], ['handoffPath', 'Handoff'], ['seriesPath', 'Series canon']]) {
     if (r[field]) links.push(`[${label}](${path.posix.relative(`briefs/${r.projectId}`, r[field])})`);
   }
   lines.push(links.join(' · '));
+  if (r.supportingDocuments?.length) lines.push('', ...r.supportingDocuments.map(d =>
+    `- [${escape(d.label)}](${path.posix.relative(`briefs/${r.projectId}`, d.path)})`));
   if (r.publication) lines.push('', `[${escape(r.publication.platform)} publication](${r.publication.url}) — ${r.publication.evidence}; recorded ${r.publication.recordedDate}.`,
     ...(r.publication.platformPublicationDate ? [`Platform publication date: ${r.publication.platformPublicationDate}.`] : ['Platform publication date is not recorded.']));
+  if (r.publication && !r.publication.artifactVersion) lines.push('The publication URL is not linked to a specific local master in this record.');
   if (r.artifacts.length) {
     lines.push('', '| Version | Role | Format | Frames | fps | Duration | Published master |', '| --- | --- | --- | --- | --- | --- | --- |');
     for (const a of r.artifacts) lines.push(`| ${a.version} | ${a.role} | ${a.width} × ${a.height} | ${a.frames} | ${a.fps.numerator}${a.fps.denominator === 1 ? '' : `/${a.fps.denominator}`} | ${Number(a.durationSeconds.toFixed(6))} s | ${a.publishedMaster ? 'Yes' : 'No'} |`);
@@ -186,9 +201,11 @@ export function projectSummary(r) {
 }
 
 export function projectIndex(records) {
+  const series = new Map(records.filter(r => r.seriesPath).map(r => [r.seriesId, r.seriesPath]));
   return ['# Production records', '', note, '',
-    'Current records are listed below. Older flat briefs remain in this directory until their evidence and links have been reviewed for migration. Their absence here does not imply a production status.', '',
+    'Each project has a canonical folder. Older Markdown paths forward to the current documents; shared series canon keeps its existing location. Records include only supported facts, and unknown status does not imply approval or publication.', '',
     'Filter locally with `npm run records -- list --status=review`, `--title=words`, or `--series=series-id`.', '',
+    ...(series.size ? [`Shared canon: ${[...series].sort(([a], [b]) => a.localeCompare(b, 'en')).map(([id, file]) => `[${escape(id)}](${path.posix.relative('briefs', file)})`).join(' · ')}.`, ''] : []),
     '| Project | Status | Series | Documents |', '| --- | --- | --- | --- |',
     ...records.map(r => `| [${escape(r.title)}](${r.projectId}/README.md) | ${r.status} | ${r.seriesId ?? '—'} | [Brief](${r.projectId}/brief.md)${r.descriptionPath ? ` · [Description](${r.projectId}/description.md)` : ''}${r.decisionsPath ? ` · [Decisions](${r.projectId}/decisions.md)` : ''} · [Record](${r.projectId}/production.json) |`), ''].join('\n');
 }

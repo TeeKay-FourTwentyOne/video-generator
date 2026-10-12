@@ -8,7 +8,11 @@ The schema is [production-record.schema.json](schemas/production-record.schema.j
 
 Add `description.md` only when publication wording exists. It is the one editable
 source for exact wording and credits. Add `decisions.md` or `handoff.md` only when
-there is useful content. Series canon and character assets keep their existing
+there is useful content. List additional scripts, research, scene notes and edit
+recipes in `supportingDocuments`, with a label and a repository-relative path to
+a Markdown or JSON source inside the project folder. These documents receive
+the same privacy and link checks and appear in the generated project summary.
+Series canon and character assets keep their existing
 locations; link them with `seriesId` and `seriesPath` rather than copying them.
 
 ## Public facts and private evidence
@@ -18,6 +22,7 @@ artifact roles/versions/hashes, actual provider/model names, role/model/harness
 credits, publication evidence, review events, archive integrity and legacy links.
 Unknown schema fields fail at every nesting level. Missing knowledge stays absent
 or explicitly unknown; do not select a status by guessing from a filename.
+Use `statusNote` for a concise explanation of incomplete or conflicting history.
 
 Prices, budget amounts, spending totals and itemized accounting **never enter
 Git-bound documentation or public records**. Keep those in ignored `data/`, along
@@ -30,8 +35,13 @@ The workspace remains authoritative for edits, usage, source hashes and QA. The
 public record summarizes evidence and is not a writable budget or an approval
 mechanism. A technical pass cannot change status or create listening/approval
 events. `supplied-processing` does not permit `published`; publication requires
-its own matching dated event and an explicitly selected local master. The local
-hash never claims to identify a platform transcode. Recording dates and event or
+its own matching dated event. When a retained release record identifies the local
+master, bind both the publication and event to that artifact's version and hash.
+Older publication evidence may identify only a supplied URL: omit the artifact
+association in both places and leave every `publishedMaster` flag false. The
+generated summary makes the missing association explicit. Do not infer it from
+the latest or largest local file. All other review events require an artifact
+version and hash. The local hash never identifies a platform transcode. Recording dates and event or
 platform publication dates are separate; omit unknown event dates.
 
 Artifact paths are relative to the recorded workspace. Documents and the archive
@@ -40,6 +50,9 @@ is `archive-planned`; change to `archived-verified` only after the existing arch
 helper succeeds. Every video artifact has integer frames, rational fps and a
 duration derived from them, plus a role such as `native-review`, `phone-review`
 or `finishing-master`. `publishedMaster` is explicit, never chosen by recency.
+Use `archived` for a known legacy archive locator without claiming a fresh
+inventory verification. It remains read-only and carries no `archive` verification
+object; `archived-verified` still requires the existing helper's complete evidence.
 
 ## Create, export and check
 
@@ -153,17 +166,31 @@ The helper does not change ledgers, limits, permissions or financial authority.
 
 ## Migration and lifecycle
 
-The pilot migrated VERIFY and Scary Woods Episode 05. Their old Markdown paths
-are forwarding pages, not independently editable copies. Original pre-migration
-documents and the inventory map remain in ignored migration receipts. VERIFY's
-description bytes, publication evidence, selected masters and sealed archive were
-preserved; Episode 05 remains at native review, with no new approval or 4K work.
+The 2026-10-12 migration covers 106 older documents in 70 additional project
+folders, alongside the original VERIFY and Scary Woods Episode 05 pilots. Flat
+Markdown paths are forwarding pages, not independently editable copies. Shared
+Scary Woods canon and subtitle conventions keep their original locations.
+The Meridian House JSON recipe moved to `briefs/meridian-house/edit.json`; its
+documented CLI caller now uses that path.
 
-Continue in small reviewed groups. Unmigrated briefs remain discoverable in the
-flat directory and do not acquire inferred statuses. Before moving a document,
-inspect inbound links and recipe text reads, preserve a local snapshot, and
-update callers or leave explicit restore instructions. Do not change another
-project's active drafts, series canon, media, or sealed archive for this cleanup.
+The complete original documents, initial worktree state, document map, financial
+sections and verification receipts are retained under ignored
+`data/release-receipts/briefs-migration-2026-10-12/`. Existing standalone
+description bytes are preserved. Embedded descriptions were separated from
+their briefs, with personal credits omitted from draft publication text;
+drafts remain identified as drafts, missing credits were not
+invented, and the repository URL terminates each canonical description.
+The two pilot records retain their existing review/publication facts.
+
+Archived scripts that copy or rewrite old brief paths have explicit restore notes
+in their project's `decisions.md`. Human forwarding pages are not text inputs to
+assembly scripts. For historical wording, use the archived document copies or
+the exact pre-migration snapshot; change dependencies only in a restored working
+copy. No media, workspace ledger or sealed archive was changed by this migration.
+
+For future migrations, inspect inbound links and recipe text reads, preserve a
+local snapshot, and update callers or leave explicit restore instructions before
+moving a document. Keep unsupported fields absent and uncertain statuses explicit.
 
 The shared [production workflow](production.md) creates and updates records;
 [post-publication](post-publication.md) synchronizes text before archive sealing,

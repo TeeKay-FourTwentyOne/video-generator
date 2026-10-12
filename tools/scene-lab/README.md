@@ -312,7 +312,7 @@ node tools/scene-lab/seam-search.mjs RUN_DIR NEW_SEARCH_DIR
 node tools/scene-lab/tour-finish.mjs RUN_DIR EDIT_PLAN_JSON NEW_TRIM_DIR
 node tools/scene-lab/tour-retime.mjs RUN_DIR NEW_RETIME_DIR 1080
 # With retained clips and the sanitized source recipe, no runtime plan copy is needed:
-node tools/scene-lab/tour-retime.mjs RUN_DIR NEW_RETIME_DIR 1080 briefs/meridian_house_edit.json
+node tools/scene-lab/tour-retime.mjs RUN_DIR NEW_RETIME_DIR 1080 briefs/meridian-house/edit.json
 node tools/scene-lab/tour-score.mjs RUN_DIR PICTURE_MP4 NEW_FINAL_DIR
 node tools/scene-lab/tour-finish-qa.mjs RUN_DIR
 ```
@@ -359,7 +359,7 @@ data/tools/upscale-venv/bin/python -m unittest discover -s tools -p test_upscale
 `upscale-sample.py` compares candidate models; `upscale-qa.py` checks the exact
 Meridian approved source, timestamps, audio and pixels and emits local reports.
 Those reports contain runtime paths and are not source-publication artifacts.
-The [source recipe](../../briefs/meridian_house_edit.json) preserves sanitized
+The [source recipe](../../briefs/meridian-house/edit.json) preserves sanitized
 source clip hashes, trim ranges and timing settings; exact reproduction still
 requires the retained local footage. A fresh clone can rebuild the 3D set but
 cannot recover generated clips from their hashes. The accepted video has not

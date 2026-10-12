@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "projectId": "da-derga",
+  "title": "Da Derga’s Hostel",
+  "kind": "film",
+  "status": "planned",
+  "statusNote": "Five act scripts are retained as a shooting plan; no completed film is recorded.",
+  "briefPath": "briefs/da-derga/brief.md",
+  "supportingDocuments": [
+    {
+      "label": "Act 1 shooting script",
+      "path": "briefs/da-derga/act-1-script-v1.md"
+    },
+    {
+      "label": "Act 2 shooting script",
+      "path": "briefs/da-derga/act-2-script-v1.md"
+    },
+    {
+      "label": "Act 3 shooting script",
+      "path": "briefs/da-derga/act-3-script-v1.md"
+    },
+    {
+      "label": "Act 4 shooting script",
+      "path": "briefs/da-derga/act-4-script-v1.md"
+    },
+    {
+      "label": "Act 5 shooting script",
+      "path": "briefs/da-derga/act-5-script-v1.md"
+    }
+  ],
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/da-derga-act-1-script-v1.md",
+      "target": "briefs/da-derga/act-1-script-v1.md"
+    },
+    {
+      "path": "briefs/da-derga-act-2-script-v1.md",
+      "target": "briefs/da-derga/act-2-script-v1.md"
+    },
+    {
+      "path": "briefs/da-derga-act-3-script-v1.md",
+      "target": "briefs/da-derga/act-3-script-v1.md"
+    },
+    {
+      "path": "briefs/da-derga-act-4-script-v1.md",
+      "target": "briefs/da-derga/act-4-script-v1.md"
+    },
+    {
+      "path": "briefs/da-derga-act-5-script-v1.md",
+      "target": "briefs/da-derga/act-5-script-v1.md"
+    }
+  ]
+}

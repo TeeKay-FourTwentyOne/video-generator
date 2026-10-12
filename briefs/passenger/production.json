@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "passenger",
+  "title": "PASSENGER",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "Production lessons identify a completed 4K edit and local archive; no publication URL is retained.",
+  "briefPath": "briefs/passenger/brief.md",
+  "decisionsPath": "briefs/passenger/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/passenger_brief.md",
+      "target": "briefs/passenger/brief.md"
+    },
+    {
+      "path": "briefs/passenger_lessons.md",
+      "target": "briefs/passenger/decisions.md"
+    }
+  ]
+}

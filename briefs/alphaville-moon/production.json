@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "alphaville-moon",
+  "title": "ALPHAVILLE × MOON IS A HARSH MISTRESS",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The retained document is a production plan; completion is not established.",
+  "briefPath": "briefs/alphaville-moon/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/alphaville_moon_production.md",
+      "target": "briefs/alphaville-moon/brief.md"
+    }
+  ]
+}

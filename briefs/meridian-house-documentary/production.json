@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "projectId": "meridian-house-documentary",
+  "title": "Meridian House — Documentary Photographic Study",
+  "kind": "study",
+  "status": "delivered",
+  "statusNote": "Eight selected stills and a local comparison gallery are recorded; no video was generated for this pass.",
+  "briefPath": "briefs/meridian-house-documentary/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "relatedProjectIds": [
+    "meridian-house",
+    "meridian-house-documentary-tour",
+    "meridian-house-photoreal"
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/meridian_house_documentary_brief.md",
+      "target": "briefs/meridian-house-documentary/brief.md"
+    }
+  ]
+}

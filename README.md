@@ -33,8 +33,9 @@ After publication, use the shared
 reviewed source commit/push, intact workspace archival and a process improvement.
 The [production index](briefs/README.md) links validated current records. The
 [record workflow](docs/production-records.md) separates creative intent, exact
-publication text and dated production evidence. VERIFY and Scary Woods Episode 05
-are migrated; older briefs retain their existing locations until reviewed.
+publication text and dated production evidence. All project briefs now have
+canonical folders; old Markdown paths forward to them. Shared series canon stays
+in place, and incomplete historical metadata remains explicitly unknown or absent.
 
 MCP now defaults to ten focused tools. Existing specialist callers can set
 `VIDEO_MCP_PROFILE=legacy` in their server environment and reconnect. The CLI

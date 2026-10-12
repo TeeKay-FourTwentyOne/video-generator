@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "projectId": "august",
+  "title": "AUGUST",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "planned",
+  "statusNote": "The spine explicitly records the concept as locked and ready for production; no build is recorded.",
+  "briefPath": "briefs/august/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/august_spine_v1.md",
+      "target": "briefs/august/brief.md"
+    }
+  ]
+}

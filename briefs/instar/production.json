@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "instar",
+  "title": "INSTAR",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "Production lessons identify a completed 4K edit and local archive; no publication URL is retained.",
+  "briefPath": "briefs/instar/brief.md",
+  "decisionsPath": "briefs/instar/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/instar_brief.md",
+      "target": "briefs/instar/brief.md"
+    },
+    {
+      "path": "briefs/instar_lessons.md",
+      "target": "briefs/instar/decisions.md"
+    }
+  ]
+}

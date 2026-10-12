@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "projectId": "may-2026",
+  "title": "May 2026",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "delivered",
+  "statusNote": "Production lessons document the completed monthly-series film; no publication URL is retained.",
+  "briefPath": "briefs/may-2026/brief.md",
+  "decisionsPath": "briefs/may-2026/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/may_2026_brief.md",
+      "target": "briefs/may-2026/brief.md"
+    },
+    {
+      "path": "briefs/may_2026_lessons.md",
+      "target": "briefs/may-2026/decisions.md"
+    }
+  ]
+}

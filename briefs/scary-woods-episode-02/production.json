@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "projectId": "scary-woods-episode-02",
+  "title": "Scary Woods — Episode 02: Shorten Sail",
+  "kind": "episode",
+  "seriesId": "scary-woods",
+  "seriesPath": "briefs/forest_spirit_series_brief.md",
+  "status": "published",
+  "briefPath": "briefs/scary-woods-episode-02/brief.md",
+  "workspace": {
+    "path": "data/workspace-archive/scary-woods-episode-02",
+    "state": "archived"
+  },
+  "artifacts": [
+    {
+      "role": "finishing-master",
+      "version": "release-4k",
+      "path": "final/scary-woods-episode-02-4k.mp4",
+      "sha256": "bb4e1791b7bdb8a6db870b78020cd754c8e5056024b2fdd3286a506c80929fee",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 840,
+      "durationSeconds": 35,
+      "publishedMaster": true
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Built-in image generation; model not exposed"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "eleven_v3"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "qa",
+        "provider": "ElevenLabs",
+        "model": "scribe_v2"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1 Quality"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/lykR2ZS4Hws",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "release-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "release-4k",
+      "artifactSha256": "bb4e1791b7bdb8a6db870b78020cd754c8e5056024b2fdd3286a506c80929fee",
+      "recordedDate": "2026-10-12",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/forest_spirit_episode_02_brief.md",
+      "target": "briefs/scary-woods-episode-02/brief.md"
+    }
+  ]
+}

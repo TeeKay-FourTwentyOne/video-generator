@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "projectId": "after-hours",
+  "title": "AFTER HOURS",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "The production lessons document a completed 53-second 4K edit; no publication URL is retained.",
+  "briefPath": "briefs/after-hours/brief.md",
+  "decisionsPath": "briefs/after-hours/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/after_hours_brief.md",
+      "target": "briefs/after-hours/brief.md"
+    },
+    {
+      "path": "briefs/after_hours_lessons.md",
+      "target": "briefs/after-hours/decisions.md"
+    }
+  ]
+}

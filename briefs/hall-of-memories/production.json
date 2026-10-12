@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hall-of-memories",
+  "title": "Hall of Memories",
+  "kind": "film",
+  "status": "producing",
+  "statusNote": "Scene drafts and auditions exist. The Exchange dark sequence is incomplete; the selected gold-city polis study is a direction to retain, not authorization to regenerate.",
+  "briefPath": "briefs/hall-of-memories/brief.md",
+  "handoffPath": "briefs/hall-of-memories/handoff.md",
+  "supportingDocuments": [
+    {
+      "label": "Audition history",
+      "path": "briefs/hall-of-memories/auditions.md"
+    },
+    {
+      "label": "Exchange audition and earlier direction",
+      "path": "briefs/hall-of-memories/exchange.md"
+    },
+    {
+      "label": "Current Exchange dark-sequence delivery",
+      "path": "briefs/hall-of-memories/exchange-dark-sequence.md"
+    },
+    {
+      "label": "Hall scene",
+      "path": "briefs/hall-of-memories/hall.md"
+    },
+    {
+      "label": "Earlier implementation handoff",
+      "path": "briefs/hall-of-memories/early-handoff.md"
+    },
+    {
+      "label": "Invitation scene",
+      "path": "briefs/hall-of-memories/invitation.md"
+    },
+    {
+      "label": "Jewel-reveal handoff",
+      "path": "briefs/hall-of-memories/jewel-reveal-handoff.md"
+    },
+    {
+      "label": "Polis scene and selected visual direction",
+      "path": "briefs/hall-of-memories/polis-scene.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace/hall-of-memories",
+    "state": "active"
+  },
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/hall_of_memories_brief.md",
+      "target": "briefs/hall-of-memories/brief.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_auditions.md",
+      "target": "briefs/hall-of-memories/auditions.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_exchange.md",
+      "target": "briefs/hall-of-memories/exchange.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_exchange_dark_sequence.md",
+      "target": "briefs/hall-of-memories/exchange-dark-sequence.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_exchange_handoff.md",
+      "target": "briefs/hall-of-memories/handoff.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_hall.md",
+      "target": "briefs/hall-of-memories/hall.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_handoff.md",
+      "target": "briefs/hall-of-memories/early-handoff.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_invitation.md",
+      "target": "briefs/hall-of-memories/invitation.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_next_session.md",
+      "target": "briefs/hall-of-memories/jewel-reveal-handoff.md"
+    },
+    {
+      "path": "briefs/hall_of_memories_polis_scene.md",
+      "target": "briefs/hall-of-memories/polis-scene.md"
+    }
+  ]
+}

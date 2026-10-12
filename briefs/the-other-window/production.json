@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "the-other-window",
+  "title": "THE OTHER WINDOW",
+  "kind": "film",
+  "status": "producing",
+  "statusNote": "A proof slice was built and its direction approved; completion of the planned hour-long film is not established.",
+  "briefPath": "briefs/the-other-window/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/the_other_window_brief.md",
+      "target": "briefs/the-other-window/brief.md"
+    }
+  ]
+}

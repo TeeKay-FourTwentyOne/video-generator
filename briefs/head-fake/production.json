@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "head-fake",
+  "title": "HEAD FAKE",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "Production lessons explicitly say the first rough cut was shelved on 2026-05-31; no ongoing production or release is implied.",
+  "briefPath": "briefs/head-fake/brief.md",
+  "decisionsPath": "briefs/head-fake/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/head_fake_brief.md",
+      "target": "briefs/head-fake/brief.md"
+    },
+    {
+      "path": "briefs/head_fake_lessons.md",
+      "target": "briefs/head-fake/decisions.md"
+    }
+  ]
+}

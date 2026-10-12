@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "goodnight",
+  "title": "GOODNIGHT",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The shooting brief does not establish completion or publication.",
+  "briefPath": "briefs/goodnight/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/goodnight_brief.md",
+      "target": "briefs/goodnight/brief.md"
+    }
+  ]
+}

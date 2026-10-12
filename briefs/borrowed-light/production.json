@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "projectId": "borrowed-light",
+  "title": "Borrowed Light",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "The original Codex/Astra film, the independent Claude film and their comparison cut have supplied publication links in the brief. The record below identifies the original version.",
+  "briefPath": "briefs/borrowed-light/brief.md",
+  "workspace": {
+    "path": "data/workspace-archive/borrowed-light-v1",
+    "state": "archived"
+  },
+  "artifacts": [
+    {
+      "role": "finishing-master",
+      "version": "v2-4k",
+      "path": "final/v2/film_4k.mp4",
+      "sha256": "e9202316f14863e1680b8d71bc5a11978b51f94179067375afac5e1786ac5ea2",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 780,
+      "durationSeconds": 32.5,
+      "publishedMaster": false
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Nano Banana Pro"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Original film direction, editing and local sound",
+        "harness": "Codex"
+      },
+      {
+        "role": "Independent Claude film",
+        "model": "Claude Fable 5.1",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/w9qSEj9i69w",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-10-06",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/borrowed_light_brief.md",
+      "target": "briefs/borrowed-light/brief.md"
+    }
+  ]
+}

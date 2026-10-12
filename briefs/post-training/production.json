@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectId": "post-training",
+  "title": "Post-Training",
+  "kind": "film",
+  "seriesId": "ai-explains-ai",
+  "status": "delivered",
+  "statusNote": "Production lessons identify a completed 2:25 4K explainer; no publication URL is retained.",
+  "briefPath": "briefs/post-training/brief.md",
+  "decisionsPath": "briefs/post-training/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/post_training_brief.md",
+      "target": "briefs/post-training/brief.md"
+    },
+    {
+      "path": "briefs/post_training_lessons.md",
+      "target": "briefs/post-training/decisions.md"
+    }
+  ]
+}

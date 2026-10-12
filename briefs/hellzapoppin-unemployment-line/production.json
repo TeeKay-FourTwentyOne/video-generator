@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hellzapoppin-unemployment-line",
+  "title": "HELLZAPOPPIN’ LIVE! From the Unemployment Line",
+  "kind": "film",
+  "seriesId": "hellzapoppin",
+  "status": "planned",
+  "statusNote": "Planning and sixteen reference images are recorded; the motion build is not scheduled or authorized.",
+  "briefPath": "briefs/hellzapoppin-unemployment-line/brief.md",
+  "descriptionPath": "briefs/hellzapoppin-unemployment-line/description.md",
+  "descriptionSha256": "aa42e403da5361c76dabb681ef44debe55472efa491018c553ecaeb8bf946e88",
+  "workspace": {
+    "path": "data/workspace/hz-unemployment-line",
+    "state": "active"
+  },
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/hellzapoppin_unemployment_line_brief.md",
+      "target": "briefs/hellzapoppin-unemployment-line/brief.md"
+    }
+  ]
+}

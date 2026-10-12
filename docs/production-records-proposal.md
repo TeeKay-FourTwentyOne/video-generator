@@ -3,8 +3,9 @@
 Status: schema, tooling, workflow integration and two pilots implemented
 2026-10-12. See [the working record workflow](production-records.md) and
 [generated project index](../briefs/README.md). VERIFY and Scary Woods Episode 05
-have canonical project folders and legacy forwarding links. Broader migration
-remains deliberately staged; existing media and unrelated work are preserved.
+have canonical project folders and legacy forwarding links. The subsequent
+2026-10-12 pass migrated all older project documents into 70 additional folders;
+shared canon remains in place. Existing media and unrelated work are preserved.
 
 This handoff records the rationale and acceptance criteria. Prices and financial
 figures remain in ignored local accounting, outside the public record contract.
@@ -158,9 +159,11 @@ is part of this proposal.
 | Background work | Each agent uses its actual harness's process handles and timeouts, while saving progress/requests under the project. Do not copy a harness-specific timeout or cwd assumption into shared CLI behavior. |
 | Attribution | The public record distinguishes model, harness and role. Commit trailers come from `.githooks/identity.json`; both author and committer remain TK-421. |
 
-The initial milestone now includes VERIFY and the existing Episode 05 review
-draft. The ignored migration map inventories tracked briefs and pilot references;
-unmigrated records retain their prior locations and uncertain statuses. The
-archived VERIFY recipe's text-file dependency is documented in its restore note.
+The initial milestone included VERIFY and the existing Episode 05 review draft.
+The later full migration retains unknown status where evidence is incomplete,
+and permits a historical publication URL without inventing an artifact hash.
+Supporting scripts and edit recipes are indexed and validated alongside the
+canonical documents. The ignored migration maps and snapshots preserve the old
+paths and original contents. Archived text-file dependencies have restore notes.
 Defer dashboards, databases, bulk archive cleanup and a new production UI until
 the record has been exercised through another new film's complete lifecycle.

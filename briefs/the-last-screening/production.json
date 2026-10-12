@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "projectId": "the-last-screening",
+  "title": "The Last Screening",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "The edit and local 4K delivery are approved, but the supplied URL was still processing; publication remains unconfirmed.",
+  "briefPath": "briefs/the-last-screening/brief.md",
+  "descriptionPath": "briefs/the-last-screening/description.md",
+  "descriptionSha256": "c3500a11d93a1a03e7b5d737a1392f4519e5d59cddf2828a8f5790d45c76177f",
+  "decisionsPath": "briefs/the-last-screening/decisions.md",
+  "workspace": {
+    "path": "data/workspace-archive/the-last-screening",
+    "state": "archived"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "native-1080p",
+      "path": "final/the-last-screening-1080p.mp4",
+      "sha256": "a961c908afb1106236f097b208d61c54c05f559860ff00470d93fabfeadeef8e",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 960,
+      "durationSeconds": 40,
+      "publishedMaster": false
+    },
+    {
+      "role": "finishing-master",
+      "version": "finish-4k",
+      "path": "final/the-last-screening-4k.mp4",
+      "sha256": "01e2e3e4f86d353b054a4a0470eb4dc3ad20045566e3b7d7d4e8ecc437d68d8f",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 960,
+      "durationSeconds": 40,
+      "publishedMaster": false
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      },
+      {
+        "purpose": "images",
+        "provider": "Built-in image generation; model not exposed"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs Music"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Creative direction, editing and production",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/5jyShm3B9iM",
+    "evidence": "supplied-processing",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "finish-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "artifactVersion": "finish-4k",
+      "artifactSha256": "01e2e3e4f86d353b054a4a0470eb4dc3ad20045566e3b7d7d4e8ecc437d68d8f",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-16",
+      "evidence": "The retained brief records a supplied URL while upload was still processing on 2026-09-16. No later publication confirmation is retained.",
+      "outcome": "supplied-processing"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/the_last_screening_brief.md",
+      "target": "briefs/the-last-screening/brief.md"
+    }
+  ]
+}

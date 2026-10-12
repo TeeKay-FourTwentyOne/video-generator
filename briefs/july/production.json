@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "projectId": "july",
+  "title": "JULY — Rose",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "published",
+  "briefPath": "briefs/july/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/w3jl4jwZ_WI",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12"
+  },
+  "reviewEvents": [
+    {
+      "type": "publication",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-07-14",
+      "evidence": "The retained production document records the supplied publication URL. This migration did not verify the public page or platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/july_rose_spine_v1.md",
+      "target": "briefs/july/brief.md"
+    }
+  ]
+}

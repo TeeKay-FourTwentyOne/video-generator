@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "projectId": "hellzapoppin-studio-visit",
+  "title": "HELLZAPOPPIN’ — Studio Visit",
+  "kind": "film",
+  "seriesId": "hellzapoppin",
+  "status": "unknown",
+  "statusNote": "The venue name and several creative decisions remain open in the retained shooting script.",
+  "briefPath": "briefs/hellzapoppin-studio-visit/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/hellzapoppin_studio_visit_brief.md",
+      "target": "briefs/hellzapoppin-studio-visit/brief.md"
+    }
+  ]
+}

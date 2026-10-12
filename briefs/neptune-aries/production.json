@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "projectId": "neptune-aries",
+  "title": "Neptune in Aries",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The v3 production concept and an earlier observatory treatment are preserved; completion is not established.",
+  "briefPath": "briefs/neptune-aries/brief.md",
+  "supportingDocuments": [
+    {
+      "label": "Earlier observatory treatment",
+      "path": "briefs/neptune-aries/observatory-treatment.md"
+    }
+  ],
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/neptune-aries.md",
+      "target": "briefs/neptune-aries/brief.md"
+    },
+    {
+      "path": "briefs/neptune-aries-brief.md",
+      "target": "briefs/neptune-aries/observatory-treatment.md"
+    }
+  ]
+}

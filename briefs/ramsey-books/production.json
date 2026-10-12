@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectId": "ramsey-books",
+  "title": "Book Graphs & Ramsey Numbers",
+  "kind": "film",
+  "seriesId": "ai-teaches-math",
+  "status": "delivered",
+  "statusNote": "Production lessons document the completed mathematical explainer; no publication URL is retained.",
+  "briefPath": "briefs/ramsey-books/brief.md",
+  "decisionsPath": "briefs/ramsey-books/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/ramsey_books_brief.md",
+      "target": "briefs/ramsey-books/brief.md"
+    },
+    {
+      "path": "briefs/ramsey_books_lessons.md",
+      "target": "briefs/ramsey-books/decisions.md"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "projectId": "june",
+  "title": "JUNE — The Contested Month",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "unknown",
+  "statusNote": "The retained production spine does not establish a completed edit.",
+  "briefPath": "briefs/june/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/june_spine_v1.md",
+      "target": "briefs/june/brief.md"
+    }
+  ]
+}

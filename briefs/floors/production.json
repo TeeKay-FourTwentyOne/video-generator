@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "floors",
+  "title": "FLOORS",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "Production lessons identify a completed 4K edit; no publication URL is retained.",
+  "briefPath": "briefs/floors/brief.md",
+  "decisionsPath": "briefs/floors/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/floors_brief.md",
+      "target": "briefs/floors/brief.md"
+    },
+    {
+      "path": "briefs/floors_lessons.md",
+      "target": "briefs/floors/decisions.md"
+    }
+  ]
+}

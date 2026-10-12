@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "projectId": "named-tensors",
+  "title": "Named Tensors",
+  "kind": "film",
+  "seriesId": "ai-explains-ai",
+  "status": "delivered",
+  "statusNote": "Production lessons document a completed explainer; no publication URL is retained.",
+  "briefPath": "briefs/named-tensors/brief.md",
+  "decisionsPath": "briefs/named-tensors/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Nano Banana Pro"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/named_tensors_brief.md",
+      "target": "briefs/named-tensors/brief.md"
+    },
+    {
+      "path": "briefs/named_tensors_lessons.md",
+      "target": "briefs/named-tensors/decisions.md"
+    }
+  ]
+}

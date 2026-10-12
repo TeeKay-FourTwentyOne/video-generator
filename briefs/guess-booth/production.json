@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "guess-booth",
+  "title": "GUESS YOUR _____",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "The production lessons identify a completed 37-second 4K edit; no publication URL is retained.",
+  "briefPath": "briefs/guess-booth/brief.md",
+  "decisionsPath": "briefs/guess-booth/decisions.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/guess_booth_brief.md",
+      "target": "briefs/guess-booth/brief.md"
+    },
+    {
+      "path": "briefs/guess_booth_lessons.md",
+      "target": "briefs/guess-booth/decisions.md"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectId": "charro-context-window",
+  "title": "CHARRO! Context Window Homage",
+  "kind": "film",
+  "status": "unknown",
+  "statusNote": "The retained shooting script does not establish production or publication.",
+  "briefPath": "briefs/charro-context-window/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/charro_context_window_shooting_script.md",
+      "target": "briefs/charro-context-window/brief.md"
+    }
+  ]
+}

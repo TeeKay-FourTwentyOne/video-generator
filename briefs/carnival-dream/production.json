@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "projectId": "carnival-dream",
+  "title": "Carnival Dream — Borrowed Light",
+  "kind": "music-video",
+  "status": "review",
+  "statusNote": "The retained production document records three complete native drafts; no final approval or publication is recorded.",
+  "briefPath": "briefs/carnival-dream/brief.md",
+  "supportingDocuments": [
+    {
+      "label": "Song analysis",
+      "path": "briefs/carnival-dream/analysis.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace/carnival-dream",
+    "state": "active"
+  },
+  "artifacts": [],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      }
+    ],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": [
+    {
+      "path": "briefs/carnival_dream_first_draft.md",
+      "target": "briefs/carnival-dream/brief.md"
+    },
+    {
+      "path": "briefs/carnival_dream_analysis.md",
+      "target": "briefs/carnival-dream/analysis.md"
+    }
+  ]
+}
