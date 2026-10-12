@@ -39,7 +39,7 @@ works directly for Codex, Claude Code and other agents with local file access.
 | `.agents/skills/produce-video/` | Canonical production skill; Claude links to it |
 | `tools/production/` | Agent CLI, local editing, review and offline tests |
 | `mcp/video-generator/src/production/` | Budget and qualified provider specifications |
-| `mcp/video-generator/src/clients/` | Existing Google, Anthropic and ElevenLabs clients |
+| `mcp/video-generator/src/clients/` | Google, MiniMax, Runway, Anthropic and ElevenLabs clients |
 | `mcp/video-generator/src/tools/` | MCP tools, including wrappers around the same CLI |
 | `docs/craft/` | On-demand continuity, dialogue, FFmpeg, editing and QA guidance |
 | `docs/craft/field-notes/` | Dated, attributed production lessons; any agent appends |
@@ -54,8 +54,12 @@ works directly for Codex, Claude Code and other agents with local file access.
 path from historical bulk executors, SDK agents and experiments. Existing media
 and prior production directories are not moved by the new tools.
 
-[Pricing](PRICING.md) records the qualified Google rates and accounting limits.
-Other providers are research options, not enabled integrations. Source publication
+[Pricing](PRICING.md) records Google, MiniMax and Runway rates and accounting limits.
+[MiniMax H3/H3 Max](docs/minimax.md) supports the same plan/submit/poll workflow;
+its API contract is covered by offline tests, with live generation qualification pending.
+[Runway Gen-4.5 / Gen-4 Turbo](docs/runway.md) uses the same ledger and workflow,
+with native silent MP4 output and explicit reported-credit reconciliation.
+Other providers remain research options. Source publication
 is a separate checkpoint with [mandatory privacy checks](docs/source-privacy.md).
 
 ## Tests

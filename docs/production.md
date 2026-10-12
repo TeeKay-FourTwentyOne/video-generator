@@ -84,6 +84,19 @@ and exact 4/6/8-second durations. Old bare aliases resolve to GA. Unsupported
 variants fail locally; changing capabilities needs current official documentation
 and an explicit qualification test, not just a new model string.
 
+MiniMax H3 and H3 Max use the same plan, submit, poll and ledger commands. Set
+`provider: "minimax"` explicitly on each MiniMax request; the default remains Veo.
+`doctor` reports MiniMax credential presence only. See [MiniMax setup and API
+contract](minimax.md) for the request shape, input charges and task recovery.
+The adapter has offline coverage and a successful read-only authentication check;
+real outputs and actual billing still need a separately authorized generation audition.
+
+Runway Gen-4.5 text/image-to-video and Gen-4 Turbo image-to-video also use this
+workflow with `provider: "runway"`. Their native MP4 output is silent. Use
+`runway-account` for a read-only credit check and `reconcile-runway WORKSPACE SHOT_ID`
+to reconcile a matching terminal task's reported credit cost. See
+[Runway setup, supported controls and recovery](runway.md).
+
 `image WORKSPACE request.json [more.json ...] [--reconcile] [--spacing=N]` exercises
 the existing Google image provider with up to three references, bounded output
 tokens, and a conservative $0.80 reservation per request. The JSON has `id`,

@@ -9,6 +9,7 @@ memory, kept in the repository so every agent and every future session sees them
 | File | Covers |
 | --- | --- |
 | `veo.md` | Veo generation: filters and rejections, motion behavior, native audio, cost behavior |
+| `runway.md` | Runway native timing, observed motion, literal detail and cost checks |
 | `anchors.md` | Image references (Nano Banana Pro), plates, book-ends, continuity across framings |
 | `qa.md` | What the frame, clip and clone checks catch and miss; calibration; running them |
 | `edit-sound-finish.md` | Editing conventions, sound and mix targets, upscaling, delivery and publication |

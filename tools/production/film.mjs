@@ -8,6 +8,11 @@ import { spawnSync } from 'node:child_process';
 import { createLedger, readLedger, reserveSpend, reconcileSpend, updateSpend, budgetSummary, atomicJson } from '../../mcp/video-generator/dist/production/ledger.js';
 import { qualifyVeo } from '../../mcp/video-generator/dist/production/veo-spec.js';
 import { submitVeoGeneration, pollVeoOperation, downloadVeoVideo } from '../../mcp/video-generator/dist/clients/veo.js';
+import { miniMaxCredentialsConfigured, prepareMiniMaxRequest, submitMiniMaxGeneration, pollMiniMaxOperation,
+  downloadMiniMaxVideo, listMiniMaxTasks, recoverMiniMaxOperation } from '../../mcp/video-generator/dist/clients/minimax.js';
+import { runwayCredentialsConfigured, prepareRunwayRequest, submitRunwayGeneration, pollRunwayOperation,
+  downloadRunwayVideo, getRunwayAccount, recoverRunwayOperation } from '../../mcp/video-generator/dist/clients/runway.js';
+import { loadConfig } from '../../mcp/video-generator/dist/utils/config.js';
 import { PROJECT_ROOT, VIDEO_DIR } from '../../mcp/video-generator/dist/utils/paths.js';
 
 export const hashFile = p => createHash('sha256').update(fs.readFileSync(p)).digest('hex');
@@ -62,13 +67,29 @@ export function shotRequest(root, id) {
   const shot = plan.shots.find(s => s.id === id);
   if (!shot?.request) throw new Error('Shot has no generation request');
   const request = { ...shot.request, requestId: shot.requestId ?? `${id}-v1`, budgetFile: localPath(root, 'budget.json') };
+  videoProvider(request);
+  if (typeof request.requestId !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$/.test(request.requestId))
+    throw new Error('Shot requires a stable request ID');
   if (request.promptFile) {
     request.prompt = fs.readFileSync(localPath(root, request.promptFile), 'utf8'); delete request.promptFile;
   }
   for (const k of ['firstFramePath', 'lastFramePath']) if (request[k]) request[k] = localPath(root, request[k]);
+  for (const k of ['referenceImagePaths', 'referenceVideoPaths', 'referenceAudioPaths']) {
+    if (request[k] !== undefined) {
+      if (!Array.isArray(request[k])) throw new Error('Reference paths must be arrays');
+      request[k] = request[k].map(p => localPath(root, p));
+    }
+  }
   if (request.aspectRatio !== `${plan.width / gcd(plan.width, plan.height)}:${plan.height / gcd(plan.width, plan.height)}`)
     throw new Error('Shot aspect ratio differs from film');
   return { shot, request };
+}
+export function videoProvider(request) {
+  const provider = request.provider ?? 'veo';
+  if (!['veo', 'minimax', 'runway'].includes(provider)) throw new Error('Unsupported video provider; choose veo, minimax or runway');
+  if (provider === 'veo' && ['referenceImagePaths', 'referenceVideoPaths', 'referenceAudioPaths', 'promptExpansionMode'].some(k => request[k] !== undefined))
+    throw new Error('MiniMax controls require provider: minimax');
+  return provider;
 }
 function gcd(a, b) { return b ? gcd(b, a % b) : a; }
 /** `--wait` alone waits up to 20 minutes; `--wait=N` bounds it; `--interval=N` sets the cadence (default 20 s, minimum 5). */
@@ -101,6 +122,8 @@ export async function main(argv) {
   const [verb, location, ...args] = argv;
   if (!verb || verb === 'help') return { commands: [
     'doctor', 'init WORKSPACE LIMIT_USD AUTHORIZATION', 'status WORKSPACE', 'plan WORKSPACE',
+    'minimax-tasks [PAGE]', 'recover-minimax WORKSPACE SHOT_ID TASK_ID EVIDENCE',
+    'runway-account', 'recover-runway WORKSPACE SHOT_ID TASK_ID EVIDENCE', 'reconcile-runway WORKSPACE SHOT_ID',
     'submit WORKSPACE SHOT_ID', 'poll WORKSPACE SHOT_ID [--wait[=SECONDS]] [--interval=SECONDS]',
     'reserve WORKSPACE ID USD CATEGORY PURPOSE', 'reconcile WORKSPACE ID USD EVIDENCE',
     'image WORKSPACE REQUEST_JSON [MORE_JSON...] [--reconcile] [--spacing=SECONDS]', 'reconcile-image WORKSPACE IMAGE_ID',
@@ -108,11 +131,19 @@ export async function main(argv) {
     'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION [--overlay]'
   ], note: 'Only submit/image perform generation. Poll retrieves an existing operation; it never submits. Several image requests run in order, spaced apart; --reconcile (or reconcile-image) reduces an image reservation to its saved-usage list-price estimate.' };
   if (verb === 'doctor') {
-    const config = readJson(path.join(PROJECT_ROOT, 'data/config.json'));
+    const config = loadConfig();
     return { node: process.version, ffmpeg: command('ffmpeg', ['-version']).split('\n')[0],
       ffprobe: !!command('ffprobe', ['-version']), googleCredentialsConfigured: !!config.veoServiceAccountPath,
+      minimaxCredentialsConfigured: miniMaxCredentialsConfigured(),
+      runwayCredentialsConfigured: runwayCredentialsConfigured(),
       note: 'Read-only local checks; no installation or provider requests performed.' };
   }
+  if (verb === 'minimax-tasks') {
+    const result = await listMiniMaxTasks(location === undefined ? 1 : Number(location));
+    return { ...result, tasks: result.tasks.map(({ video, ...task }) => task),
+      note: 'Read-only provider query covering the last 7 days. Task IDs require manual matching before recovery.' };
+  }
+  if (verb === 'runway-account') return { ...await getRunwayAccount(), note: 'Read-only API balance and model limits; no generation.' };
   const root = workspace(location);
   const budget = localPath(root, 'budget.json');
   if (verb === 'init') {
@@ -126,7 +157,12 @@ export async function main(argv) {
   if (verb === 'plan') {
     const plan = loadPlan(root);
     const shots = plan.shots.map(s => ({ id: s.id, beat: s.beat, frames: s.frames,
-      quote: s.request ? qualifyVeo(shotRequest(root, s.id).request) : null }));
+      quote: s.request ? (() => {
+        const { request } = shotRequest(root, s.id);
+        const provider = videoProvider(request);
+        return provider === 'minimax' ? prepareMiniMaxRequest(request).quote
+          : provider === 'runway' ? prepareRunwayRequest(request).quote : qualifyVeo(request);
+      })() : null }));
     return { title: plan.title, width: plan.width, height: plan.height, fps: plan.fps,
       seconds: plan.shots.reduce((n, s) => n + s.frames, 0) / plan.fps,
       videoQuoteUsd: shots.reduce((n, s) => n + (s.quote?.estimatedUsd ?? 0), 0), shots,
@@ -134,27 +170,71 @@ export async function main(argv) {
   }
   if (verb === 'submit') {
     const { request } = shotRequest(root, args[0]);
-    const result = await submitVeoGeneration(request);
-    atomicJson(localPath(root, `operations/${request.requestId}.json`), result);
+    const provider = videoProvider(request);
+    // Resolve before the client writes its journal; this also rejects symlinked operation directories.
+    const operationFile = localPath(root, `operations/${request.requestId}.json`);
+    const result = provider === 'minimax' ? await submitMiniMaxGeneration(request)
+      : provider === 'runway' ? await submitRunwayGeneration(request) : await submitVeoGeneration(request);
+    if (provider === 'veo') atomicJson(operationFile, result);
     return { shot: args[0], requestId: request.requestId, status: 'submitted', model: result.model };
+  }
+  if (verb === 'recover-minimax') {
+    const { request } = shotRequest(root, args[0]);
+    if (videoProvider(request) !== 'minimax') throw new Error('Recovery command requires a MiniMax shot');
+    localPath(root, `operations/${request.requestId}.json`);
+    const result = await recoverMiniMaxOperation(request, args[1], args.slice(2).join(' '));
+    return { shot: args[0], requestId: request.requestId, status: 'recovered', model: result.model };
+  }
+  if (verb === 'recover-runway') {
+    const { request } = shotRequest(root, args[0]);
+    if (videoProvider(request) !== 'runway') throw new Error('Recovery command requires a Runway shot');
+    localPath(root, `operations/${request.requestId}.json`);
+    const result = await recoverRunwayOperation(request, args[1], args.slice(2).join(' '));
+    return { shot: args[0], requestId: request.requestId, status: 'recovered', model: result.model };
+  }
+  if (verb === 'reconcile-runway') {
+    const { request } = shotRequest(root, args[0]);
+    const entry = readLedger(budget).entries.find(e => e.id === request.requestId);
+    const result = readJson(localPath(root, `operations/${request.requestId}.poll.json`));
+    if (videoProvider(request) !== 'runway' || entry?.category !== 'runway' || !entry.operationName
+      || !result.done || result.operationName !== entry.operationName || !Number.isSafeInteger(result.costCredits) || result.costCredits < 0)
+      throw new Error('Reconciliation requires a matching terminal Runway task with nonnegative reported cost');
+    const usd = result.costCredits / 100;
+    return { shot: args[0], usd, entry: reconcileSpend(budget, request.requestId, usd,
+      `Runway terminal task reports cost.credits=${result.costCredits}; USD 0.01/credit; saved in operations/${request.requestId}.poll.json. Excludes tax.`) };
   }
   if (verb === 'poll') {
     const { request } = shotRequest(root, args[0]);
     const entry = readLedger(budget).entries.find(e => e.id === request.requestId);
     if (!entry?.operationName) throw new Error('No known operation to poll; do not resubmit');
+    const provider = videoProvider(request);
+    if (entry.category !== provider) throw new Error('Planned provider differs from the existing reservation');
+    if (provider === 'runway' && prepareRunwayRequest(request).fingerprint !== entry.fingerprint)
+      throw new Error('Runway request changed after submission; restore its original plan before polling');
     const record = localPath(root, `operations/${request.requestId}.asset.json`);
     if (fs.existsSync(record)) {
       const asset = readJson(record);
       if (hashFile(localPath(root, asset.path)) !== asset.sha256) throw new Error('Downloaded source changed');
+      if (!['complete', 'reconciled'].includes(entry.status))
+        updateSpend(budget, entry.id, { status: 'complete', evidence: `Recovered downloaded SHA256 ${asset.sha256}` });
       return { shot: args[0], status: 'complete', path: asset.path, sha256: asset.sha256 };
     }
     // --wait keeps polling the SAME operation at a bounded cadence; it never submits.
     const { waitSeconds, intervalSeconds } = pollOptions(args.slice(1));
     const started = Date.now();
-    let result = await pollVeoOperation(entry.operationName, entry.model);
+    const poll = async () => {
+      const result = provider === 'minimax' ? await pollMiniMaxOperation(entry.operationName, entry.model)
+        : provider === 'runway' ? await pollRunwayOperation(entry.operationName, entry.model)
+        : await pollVeoOperation(entry.operationName, entry.model);
+      if (provider !== 'veo') atomicJson(localPath(root, `operations/${request.requestId}.poll.json`), result);
+      return result;
+    };
+    let result = await poll();
     while (!result.done && waitSeconds > 0 && (Date.now() - started) / 1000 < waitSeconds) {
-      await new Promise(r => setTimeout(r, intervalSeconds * 1000));
-      result = await pollVeoOperation(entry.operationName, entry.model);
+      await new Promise(r => setTimeout(r, Math.min(Math.max(provider === 'minimax' ? 10 : 5, intervalSeconds) * 1000,
+        Math.max(0, waitSeconds * 1000 - (Date.now() - started)))));
+      if (Date.now() - started >= waitSeconds * 1000) break;
+      result = await poll();
     }
     if (!result.done) return { shot: args[0], status: 'processing', waitedSeconds: Math.round((Date.now() - started) / 1000) };
     if (result.error) {
@@ -163,9 +243,15 @@ export async function main(argv) {
     }
     const output = localPath(root, `clips/${request.requestId}.mp4`);
     if (fs.existsSync(output)) throw new Error('Unrecorded output exists; inspect it before recovery');
-    const video = await downloadVeoVideo(result);
-    fs.copyFileSync(path.join(VIDEO_DIR, video.filename), output, fs.constants.COPYFILE_EXCL);
+    if (provider === 'minimax') await downloadMiniMaxVideo(result, output);
+    else if (provider === 'runway') await downloadRunwayVideo(result, output);
+    else {
+      const video = await downloadVeoVideo(result);
+      fs.copyFileSync(path.join(VIDEO_DIR, video.filename), output, fs.constants.COPYFILE_EXCL);
+    }
     const asset = { path: path.relative(root, output), sha256: hashFile(output), probe: probe(output) };
+    if (provider !== 'veo' && !asset.probe.streams?.some(s => s.codec_type === 'video' && s.width > 0 && s.height > 0))
+      throw new Error('Provider output has no usable video stream; preserved for inspection');
     atomicJson(record, asset);
     updateSpend(budget, entry.id, { status: 'complete', evidence: `Downloaded SHA256 ${asset.sha256}` });
     return { shot: args[0], status: 'complete', path: asset.path, sha256: asset.sha256 };

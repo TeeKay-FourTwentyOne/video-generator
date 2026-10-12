@@ -14,10 +14,10 @@ Codex / Claude Code / another local agent
            | plan / quote / submit / poll
            | edit / delivery / review
            v
-  MCP package production/ledger.ts + production/veo-spec.ts
+  MCP package production/ledger.ts + provider specifications
            |
            v
-  existing clients/veo.ts and Google authentication
+  clients/veo.ts | clients/minimax.ts | clients/runway.ts
 ```
 
 The ledger owns the all-in spend limit and attempt identity. The provider adapter
@@ -35,6 +35,15 @@ records substitutes for the others.
   money, no implicit reset/retry/refund. Ambiguous submissions are retained.
 - `production/veo-spec.ts`: qualified GA capabilities and dated rates. This is the
   common quote used by the client and plan command.
+- `production/minimax-spec.ts` and `minimax-media.ts`: H3/H3 Max validation,
+  local media inspection, source hashes and quotes including input charges.
+- `clients/minimax.ts`: direct V2 submission, task queries, explicit recovery
+  and credential-free CDN downloads. The CLI selects it with `provider: "minimax"`;
+  omitted providers retain the existing Veo route. [Setup and limits](minimax.md).
+- `production/runway-spec.ts` and `clients/runway.ts`: qualified Gen-4.5/Turbo
+  native MP4 requests, local image checks, durable submit/poll/recovery, account
+  balance and downloads. Select `provider: "runway"`; reconcile from saved
+  terminal task credits. [Setup and limits](runway.md).
 - `tools/production/google-image.mjs`: bounded version of the already-used Google
   image route, preserving references, usage and output hash.
 - `tools/production/edit.mjs`: hard-cut, frame-addressed local edits and a prepared

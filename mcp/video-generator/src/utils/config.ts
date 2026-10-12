@@ -6,6 +6,8 @@ export interface Config {
   googleApiKey?: string;
   elevenLabsKey?: string;
   openaiKey?: string;
+  minimaxApiKey?: string;
+  runwayApiKey?: string;
   currentProject?: string;
   defaultVoiceId?: string;
   veoServiceAccountPath?: string;
@@ -22,8 +24,9 @@ export function loadConfig(): Config {
       const data = fs.readFileSync(CONFIG_PATH, "utf-8");
       return JSON.parse(data);
     }
-  } catch (error) {
-    console.error("Error loading config:", error);
+  } catch {
+    // JSON parse errors can contain a snippet of a credential value.
+    console.error("Unable to read local configuration; check data/config.json");
   }
   return {};
 }
@@ -32,7 +35,15 @@ export function loadConfig(): Config {
  * Save configuration to data/config.json
  */
 export function saveConfig(config: Config): void {
-  fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
+  const serialized = JSON.stringify(config, null, 2);
+  const fd = fs.openSync(CONFIG_PATH, "w", 0o600);
+  try {
+    // `mode` affects new files only; tighten existing files before writing secrets.
+    fs.fchmodSync(fd, 0o600);
+    fs.writeFileSync(fd, serialized);
+  } finally {
+    fs.closeSync(fd);
+  }
 }
 
 /**

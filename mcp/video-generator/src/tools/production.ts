@@ -27,7 +27,7 @@ export const productionTools = {
     inputSchema: { workspace }, handler: async (a: { workspace: string }) => invoke(["status", a.workspace]),
   },
   production_plan: {
-    name: "production_plan", description: "Validate the film plan and quote qualified Veo shots. No provider calls or spend.",
+    name: "production_plan", description: "Validate the film plan and quote qualified Veo, MiniMax or Runway shots, including reference charges. No provider calls or spend.",
     inputSchema: { workspace }, handler: async (a: { workspace: string }) => invoke(["plan", a.workspace]),
   },
   production_submit: {

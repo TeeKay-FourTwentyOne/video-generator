@@ -97,6 +97,8 @@ only the repository-relative path, line, rule and redaction marker. It checks:
   personal home directories, common phone/SSN/address formats and private IPs.
 - Provider-token patterns, private keys, JWTs, literal credential assignments,
   credential-bearing URLs, service-account payloads and concrete cloud buckets.
+  Runway and MiniMax key formats and their named configuration fields are covered;
+  regression fixtures construct synthetic values and never contain real keys.
 - Private/runtime file paths, opaque binary/media files and files over 2 MiB that
   require deliberate review rather than being silently skipped. Blob ids listed in
   `.githooks/reviewed-assets.json` do not prompt again.

@@ -46,6 +46,21 @@ test('allows public no-reply identities, reserved examples and portable paths', 
   for (const text of examples) assert.deepEqual(scanText(text),[],text);
 });
 
+test('recognizes Runway and MiniMax credentials without printing them', () => {
+  for (const value of ['key_' + 'a1'.repeat(64), 'sk-api-' + 'Z9_'.repeat(24)]) {
+    const findings = scanText(`Example request\nAuthorization: Bearer ${value}\n`);
+    assert.ok(findings.some(f => f.rule === 'provider-token' && f.line === 2));
+    assert.ok(!JSON.stringify(findings).includes(value));
+  }
+  for (const field of ['runwayApiKey', 'minimaxApiKey', 'RUNWAYML_API_SECRET', 'MINIMAX_API_KEY']) {
+    const value = 'synthetic-provider-credential';
+    assert.ok(has(JSON.stringify({[field]: value}), 'literal-credential'), field);
+    assert.deepEqual(scanText(JSON.stringify({[field]: 'YOUR_API_KEY'})), []);
+    assert.deepEqual(scanText(`const key = process.env.${field};`), []);
+  }
+  assert.deepEqual(scanText('key_identifier key_short_example'), []);
+});
+
 test('fails closed on runtime paths, binary files and oversized blobs', () => {
   for (const path of ['data/config.json','.env','generated-images/a.png','.claude/plans/private.md'])
     assert.ok(scanFile(path,Buffer.from('{}')).some(f => f.rule === 'private-or-runtime-file'));
@@ -189,6 +204,24 @@ test('redacted CLI output does not echo the detected value', t => {
   assert.equal(result.status,1);
   assert.match(result.stderr,/value redacted/);
   assert.ok(!result.stderr.includes(privateEmail()));
+});
+
+test('Runway secrets are blocked in staged and outgoing snapshots with redacted CLI output', t => {
+  const {cwd,git,base} = repository(t);
+  const value = 'key_' + 'b2'.repeat(64);
+  writeFileSync(join(cwd,'source.txt'), `Synthetic credential fixture\n${value}\n`);
+  git('add','source.txt');
+  const cli = spawnSync(process.execPath,[resolve('tools/privacy-check.mjs'),'--staged'],{cwd,encoding:'utf8'});
+  assert.equal(cli.status,1);
+  assert.match(cli.stderr,/source.txt:2: provider-token \[value redacted\]/);
+  assert.ok(!`${cli.stdout}${cli.stderr}`.includes(value));
+  git('commit','-qm','synthetic credential fixture');
+  writeFileSync(join(cwd,'source.txt'),'clean again');
+  git('add','source.txt'); git('commit','-qm','clean fixture');
+  const outgoing = audit({cwd,mode:'--outgoing',base});
+  assert.equal(outgoing.commitCount,2);
+  assert.ok(outgoing.findings.some(f=>f.rule==='provider-token'));
+  assert.ok(!JSON.stringify(outgoing).includes(value));
 });
 
 test('hook installer refuses to replace existing custom hooks', t => {

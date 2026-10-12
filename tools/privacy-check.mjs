@@ -37,9 +37,9 @@ export function scanText(text, {allowedTrailerEmails = [], allowedEmails = []} =
   check('personal-home-path', /(?:\/(?:Users|home)\/|[A-Z]:[\\/]+Users[\\/]+)([^\\/\s"'`<>]+)/gi,
     name => /^(?:user|username|runner|node|app|example|\$USER|%USERNAME%)$/i.test(name));
   check('private-key', /-----BEGIN (?:RSA |EC |DSA |OPENSSH |ENCRYPTED )?PRIVATE KEY-----/g);
-  check('provider-token', /\b(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|AIza[A-Za-z0-9_-]{30,}|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|xox[baprs]-[A-Za-z0-9-]{15,}|(?:AKIA|ASIA)[A-Z0-9]{16})\b/g);
+  check('provider-token', /\b(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|key_[A-Fa-f0-9]{64,}|AIza[A-Za-z0-9_-]{30,}|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|xox[baprs]-[A-Za-z0-9-]{15,}|(?:AKIA|ASIA)[A-Z0-9]{16})\b/g);
   check('jwt-token', /\beyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\b/g);
-  check('literal-credential', /\b(?:api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key|secret[_-]?key|auth[_-]?token)["']?\s*[:=]\s*["']([^\s"']{8,})["']/gi, placeholder);
+  check('literal-credential', /\b(?:(?:minimax|runway)[_-]?api[_-]?key|runwayml[_-]api[_-]secret|api[_-]?key|access[_-]?token|client[_-]?secret|password|private[_-]?key|secret[_-]?key|auth[_-]?token)["']?\s*[:=]\s*["']([^\s"']{8,})["']/gi, placeholder);
   check('credential-in-url', /https?:\/\/[^\s/@:]+:[^\s/@]+@/gi);
   check('service-account', /["']type["']\s*:\s*["']service_account["']/g);
   check('ssn-like', /\b\d{3}-\d{2}-\d{4}\b/g);
