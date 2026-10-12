@@ -26,6 +26,11 @@ providers. Initialize one all-in budget per authorization. Include images, QA,
 audio and storage in that pot. Never reinterpret leftover money from another film
 as permission. An existing authorization is not a reason to ask again.
 
+Use `docs/production-records.md` for `briefs/<project-id>/`: one canonical brief,
+an allowlisted public record and generated current views. Keep prices, budget
+amounts and itemized charges in ignored local accounting. Preserve unknowns;
+delivery checks do not establish listening, artistic approval or publication.
+
 Check `docs/craft/field-notes/` for known behavior of the models you are about to
 pay for. Inspect anchors before generating. Submit one planned attempt per shot, preserve
 the request ID, and poll the existing operation. An uncertain submission retains

@@ -66,6 +66,10 @@ different project; do not switch global accounts or add new credentials silently
    relative artifact paths and public model names. Do not copy whole runtime
    manifests or plans into source: they can contain home paths, account IDs,
    storage locations, provider operation names and private request logs.
+   Prices, budget amounts, spending totals, reservations and itemized accounting
+   belong in ignored `data/`, including when their source is a public rate card.
+   Public production records have no financial fields. Review prose as well as
+   JSON; the production-record validator includes a monetary-text backstop.
 3. Manually inspect proposed files for names, email/phone/address details, customer
    or private project information, identifiable screenshots, personal narrative,
    credentials and non-public URLs. Review Git identity and the commit message.

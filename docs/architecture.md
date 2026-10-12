@@ -26,6 +26,14 @@ owns narrative intent and constraints. The edit owns exact frame ranges and sour
 hashes. The acceptance record owns the decision to use those frames. None of these
 records substitutes for the others.
 
+`tools/production/records.mjs` validates small public summaries against
+`docs/schemas/production-record.schema.json`, then generates current project
+views. It imports no provider clients or compiled MCP modules and works without
+ignored media. Explicit local-evidence checks reuse the intact archive verifier.
+`accounting.mjs` derives itemized private reports from existing ledgers; it neither
+changes spending authority nor publishes financial details. See
+[the record workflow](production-records.md).
+
 ## Maintained production path
 
 - `tools/production/film.mjs`: JSON commands, project-local paths, explicit network

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public production record (financial and runtime data stay local)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "projectId", "title", "kind", "status", "briefPath", "artifacts", "production", "reviewEvents", "legacyPaths"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "projectId": { "$ref": "#/$defs/id" },
+    "title": { "$ref": "#/$defs/text" },
+    "kind": { "enum": ["film", "episode", "study", "music-video"] },
+    "seriesId": { "$ref": "#/$defs/id" },
+    "seriesPath": { "$ref": "#/$defs/path" },
+    "status": { "enum": ["planned", "producing", "review", "delivered", "published", "unknown"] },
+    "briefPath": { "$ref": "#/$defs/path" },
+    "descriptionPath": { "$ref": "#/$defs/path" },
+    "descriptionSha256": { "$ref": "#/$defs/hash" },
+    "decisionsPath": { "$ref": "#/$defs/path" },
+    "handoffPath": { "$ref": "#/$defs/path" },
+    "workspace": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "state"],
+      "properties": {
+        "path": { "$ref": "#/$defs/path" },
+        "state": { "enum": ["active", "archive-planned", "archived-verified"] }
+      }
+    },
+    "artifacts": { "type": "array", "items": { "$ref": "#/$defs/artifact" } },
+    "production": {
+      "type": "object", "additionalProperties": false, "required": ["providers", "credits"],
+      "properties": {
+        "providers": {
+          "type": "array", "items": {
+            "type": "object", "additionalProperties": false, "required": ["purpose", "provider"],
+            "properties": {
+              "purpose": { "enum": ["images", "motion", "speech", "sound", "qa"] },
+              "provider": { "$ref": "#/$defs/text" },
+              "model": { "$ref": "#/$defs/text" }
+            }
+          }
+        },
+        "credits": {
+          "type": "array", "items": {
+            "type": "object", "additionalProperties": false, "required": ["role"],
+            "properties": {
+              "role": { "$ref": "#/$defs/text" },
+              "model": { "$ref": "#/$defs/text" },
+              "harness": { "$ref": "#/$defs/text" }
+            }
+          }
+        }
+      }
+    },
+    "publication": {
+      "type": "object", "additionalProperties": false,
+      "required": ["platform", "url", "evidence", "recordedDate", "artifactVersion"],
+      "properties": {
+        "platform": { "$ref": "#/$defs/text" },
+        "url": { "type": "string", "format": "public-url", "maxLength": 2048 },
+        "evidence": { "enum": ["user-confirmed", "public-page-verified", "supplied-processing"] },
+        "recordedDate": { "$ref": "#/$defs/date" },
+        "verifiedDate": { "$ref": "#/$defs/date" },
+        "platformPublicationDate": { "$ref": "#/$defs/date" },
+        "artifactVersion": { "$ref": "#/$defs/id" }
+      }
+    },
+    "reviewEvents": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["type", "artifactVersion", "artifactSha256", "recordedDate", "evidence", "outcome"],
+        "properties": {
+          "type": { "enum": ["technical-check", "visual-review", "audio-listening", "artistic-approval", "finishing-authorization", "publication"] },
+          "artifactVersion": { "$ref": "#/$defs/id" },
+          "artifactSha256": { "$ref": "#/$defs/hash" },
+          "recordedDate": { "$ref": "#/$defs/date" },
+          "eventDate": { "$ref": "#/$defs/date" },
+          "evidence": { "$ref": "#/$defs/text" },
+          "outcome": { "enum": ["passed", "failed", "inspected", "pending", "not-claimed", "approved", "authorized", "user-confirmed", "public-page-verified", "supplied-processing"] }
+        }
+      }
+    },
+    "archive": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manifestPath", "inventorySha256", "verifiedDate"],
+      "properties": {
+        "manifestPath": { "$ref": "#/$defs/path" },
+        "inventorySha256": { "$ref": "#/$defs/hash" },
+        "verifiedDate": { "$ref": "#/$defs/date" }
+      }
+    },
+    "relatedProjectIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "legacyPaths": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false, "required": ["path", "target"],
+        "properties": { "path": { "$ref": "#/$defs/path" }, "target": { "$ref": "#/$defs/path" } }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 100 },
+    "text": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "date": { "type": "string", "format": "date" },
+    "path": { "type": "string", "format": "portable-path", "maxLength": 500 },
+    "positiveInteger": { "type": "integer", "minimum": 1 },
+    "artifact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["role", "version", "path", "sha256", "width", "height", "fps", "frames", "durationSeconds", "publishedMaster"],
+      "properties": {
+        "role": { "enum": ["native-review", "phone-review", "finishing-master"] },
+        "version": { "$ref": "#/$defs/id" },
+        "path": { "$ref": "#/$defs/path" },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "width": { "$ref": "#/$defs/positiveInteger" },
+        "height": { "$ref": "#/$defs/positiveInteger" },
+        "fps": {
+          "type": "object", "additionalProperties": false, "required": ["numerator", "denominator"],
+          "properties": { "numerator": { "$ref": "#/$defs/positiveInteger" }, "denominator": { "$ref": "#/$defs/positiveInteger" } }
+        },
+        "frames": { "$ref": "#/$defs/positiveInteger" },
+        "durationSeconds": { "type": "number", "exclusiveMinimum": 0 },
+        "publishedMaster": { "type": "boolean" },
+        "descriptionCopyPath": { "$ref": "#/$defs/path" },
+        "deliveryRecordPath": { "$ref": "#/$defs/path" }
+      }
+    }
+  }
+}

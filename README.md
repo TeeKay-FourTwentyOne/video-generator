@@ -31,8 +31,10 @@ After publication, use the shared
 [post-publication skill](.agents/skills/post-publication/SKILL.md) and
 [close-out workflow](docs/post-publication.md). They cover final documentation,
 reviewed source commit/push, intact workspace archival and a process improvement.
-The [production-record organization handoff](docs/production-records-proposal.md)
-describes the proposed next step for `briefs/`; that migration is not yet applied.
+The [production index](briefs/README.md) links validated current records. The
+[record workflow](docs/production-records.md) separates creative intent, exact
+publication text and dated production evidence. VERIFY and Scary Woods Episode 05
+are migrated; older briefs retain their existing locations until reviewed.
 
 MCP now defaults to ten focused tools. Existing specialist callers can set
 `VIDEO_MCP_PROFILE=legacy` in their server environment and reconnect. The CLI
@@ -46,6 +48,8 @@ works directly for Codex, Claude Code and other agents with local file access.
 | `.agents/skills/produce-video/` | Canonical production skill; Claude links to it |
 | `.agents/skills/post-publication/` | Shared release wrap-up; Claude links to it |
 | `tools/production/` | Agent CLI, local editing, review and offline tests |
+| `briefs/<project-id>/` | Canonical brief, public record and generated current summary |
+| `data/accounting/<project-id>/` | Ignored itemized accounting and reconciliation evidence |
 | `mcp/video-generator/src/production/` | Budget and qualified provider specifications |
 | `mcp/video-generator/src/clients/` | Google, MiniMax, Runway, Anthropic and ElevenLabs clients |
 | `mcp/video-generator/src/tools/` | MCP tools, including wrappers around the same CLI |

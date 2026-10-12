@@ -18,7 +18,7 @@ the connection to expose the historical specialist tools. This is an intentional
 compatibility change; film recipes and media remain in place.
 
 ```sh
-npm run film -- init data/workspace/my-film-v1 20 "User-approved total allocation and scope"
+npm run film -- init data/workspace/my-film-v1 "$AUTHORIZED_BUDGET_USD" "User-approved total allocation and scope"
 npm run film -- plan data/workspace/my-film-v1
 ```
 
@@ -56,10 +56,16 @@ provider operation records and media stay ignored. The minimal shape is:
 animation can be another shot without a `request`; the edit references its source
 file in the same way. The plan command is a dry run and does not reserve money.
 
+Create source documentation under `briefs/<stable-project-id>/` following
+[production records](production-records.md). Keep current status in the public
+record and generate its README/index; keep original treatments labelled as
+intent. Prices and monetary figures stay in the ignored workspace and
+`data/accounting/<project-id>/`. Use workspace-relative paths for new recipes.
+
 ## Spend and recovery
 
 ```sh
-npm run film -- reserve data/workspace/my-film-v1 qa-budget 2 qa "Bounded QA allowance"
+npm run film -- reserve data/workspace/my-film-v1 qa-budget "$QA_ALLOWANCE_USD" qa "Bounded QA allowance"
 npm run film -- submit data/workspace/my-film-v1 S01
 npm run film -- poll data/workspace/my-film-v1 S01 --wait   # keeps polling the same operation, never submits
 npm run film -- status data/workspace/my-film-v1
@@ -99,7 +105,7 @@ to reconcile a matching terminal task's reported credit cost. See
 
 `image WORKSPACE request.json [more.json ...] [--reconcile] [--spacing=N]` exercises
 the existing Google image provider with up to three references, bounded output
-tokens, and a conservative $0.80 reservation per request. The JSON has `id`,
+tokens, and the adapter's conservative local reservation per request. The JSON has `id`,
 `aspectRatio`, `output`, `promptFile`, and `refs` (relative paths). It saves usage
 metadata and never retries or replaces an image automatically. Several request
 files run in order, spaced ten seconds apart by default, because the endpoint
@@ -115,7 +121,7 @@ scripts do not yet enforce this ledger themselves. Reconcile only from saved
 usage or billing evidence, and distinguish a token-price estimate from an invoice:
 
 ```sh
-npm run film -- reconcile data/workspace/my-film-v1 qa-budget 0.42 "Saved usage totals and dated provider rates"
+npm run film -- reconcile data/workspace/my-film-v1 qa-budget "$EVIDENCED_SPEND_USD" "Saved usage totals and dated provider rates"
 ```
 
 `tools/veo-budget.py` and its historical pots remain intact for older productions;
@@ -205,6 +211,11 @@ existing craft tools. Keep their recipes alongside the
 production. This keeps the core edit contract small and makes each transform
 reviewable. Final audio needs loudness/peak checks and listening; the CLI does not
 claim artistic approval or automatically upscale/publish.
+
+Record delivered artifact hashes, rational fps and frame-derived durations in
+the public production record. Add dated technical/review events without inferring
+listening or artistic approval. Run `npm run records:check` and, when local media
+is available, `npm run records -- validate PROJECT_ID --local-evidence`.
 
 `tools/production/mix.mjs WORKSPACE MIX_JSON NEW_WAV [--report=JSON]` prepares the
 single soundtrack from frame-addressed tracks: native Veo audio trimmed to the same

@@ -43,6 +43,10 @@ ledger, not a clerk with a camera.
 - Start new media in a versioned `data/workspace/<slug>/`. Keep plans, budget,
   provider records, sources, edits and QA together. Preserve existing media and
   unrelated working-tree changes.
+- Start source documentation in `briefs/<project-id>/`; see
+  `docs/production-records.md` for validated records and generated current views.
+  Prices, budgets, spending amounts and itemized accounting stay in ignored
+  `data/`, never in Git-bound documentation or public production records.
 - Paid work requires the user's active provider/scope/budget authorization.
   Reserve all costs in one project ledger before submitting. A timeout is not a
   reason to generate again: recover the existing operation first.

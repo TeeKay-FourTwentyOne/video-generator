@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "projectId": "scary-woods-episode-05",
+  "title": "Scary Woods — Episode 05: Wrong Turns",
+  "kind": "episode",
+  "seriesId": "scary-woods",
+  "seriesPath": "briefs/forest_spirit_series_brief.md",
+  "status": "review",
+  "briefPath": "briefs/scary-woods-episode-05/brief.md",
+  "handoffPath": "briefs/scary-woods-episode-05/handoff.md",
+  "workspace": {
+    "path": "data/workspace/forest-spirit/episode-05/edit-v1",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "edit-v1-native",
+      "path": "exports/scary-woods-episode-05-1080.mp4",
+      "sha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1344,
+      "durationSeconds": 56,
+      "publishedMaster": false
+    },
+    {
+      "role": "phone-review",
+      "version": "edit-v1-phone",
+      "path": "exports/scary-woods-episode-05-phone.mp4",
+      "sha256": "ee5904f2dd4528418d13c8017a07bef696bdfa517939302701617116e332f5a0",
+      "width": 540,
+      "height": 960,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1344,
+      "durationSeconds": 56,
+      "publishedMaster": false
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Built-in image generation; model not exposed"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Local animation"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "eleven_v3"
+      },
+      {
+        "purpose": "qa",
+        "provider": "ElevenLabs",
+        "model": "scribe_v2"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-opus-4-5-20251101"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Direction, local animation, editing and finishing",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "edit-v1-native",
+      "artifactSha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-22",
+      "evidence": "Existing final validation records full decode, dimensions, frame count, captions and audio checks.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "edit-v1-native",
+      "artifactSha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-22",
+      "evidence": "The brief and saved visual dispositions retain stylized motion for creative review.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "edit-v1-native",
+      "artifactSha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+      "recordedDate": "2026-10-12",
+      "eventDate": "2026-09-22",
+      "evidence": "The saved validation explicitly does not certify direct audio listening.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "edit-v1-native",
+      "artifactSha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+      "recordedDate": "2026-10-12",
+      "evidence": "Native review remains pending; no subsequent approval evidence was supplied.",
+      "outcome": "pending"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "edit-v1-native",
+      "artifactSha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+      "recordedDate": "2026-10-12",
+      "evidence": "The original request deferred 4K until review; this record does not authorize finishing.",
+      "outcome": "pending"
+    }
+  ],
+  "legacyPaths": [
+    {
+      "path": "briefs/forest_spirit_episode_05_brief.md",
+      "target": "briefs/scary-woods-episode-05/brief.md"
+    }
+  ]
+}

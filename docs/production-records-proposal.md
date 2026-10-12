@@ -1,12 +1,13 @@
 # Production records: implementation handoff
 
-Status: proposal, recorded 2026-10-12 after VERIFY. The shared post-publication
-skill, intact archive helper and description-server fix are implemented separately.
-The folder migration and schema below are **not yet implemented**. This document
-is sufficient to start that work in a fresh session; no personal agent memory is
-required. Start by reading `AGENTS.md`, `docs/production.md`,
-`docs/source-privacy.md` and `docs/post-publication.md`, then inspect current Git
-status. Preserve unrelated work and existing media.
+Status: schema, tooling, workflow integration and two pilots implemented
+2026-10-12. See [the working record workflow](production-records.md) and
+[generated project index](../briefs/README.md). VERIFY and Scary Woods Episode 05
+have canonical project folders and legacy forwarding links. Broader migration
+remains deliberately staged; existing media and unrelated work are preserved.
+
+This handoff records the rationale and acceptance criteria. Prices and financial
+figures remain in ignored local accounting, outside the public record contract.
 
 ## Problems worth solving
 
@@ -17,7 +18,7 @@ status. Preserve unrelated work and existing media.
 | User description changes diverged from local delivery copies and recorded hashes | Review pages or future uploads can use stale credits | One canonical publication text, synchronized copies with hashes, preserved earlier snapshots |
 | Cost summaries can mix a completion ledger, earlier auditions and account credit | Apparent budget remaining can be mistaken for authorization or film cost | Project-wide reconciled spend plus explicit unresolved reserves; account balances stay local |
 | Historical assembly recipes embed the active workspace path | Moving files can break rebuilds even when all media survives | Workspace-relative recipes for new work and a dependency/restore note for archives |
-| Old Claude archive instructions pruned native/earlier versions and depended on private memory | A later edit can lose its source or another harness can follow different rules | Shared intact archival with a manifest; cleanup requires separate scope |
+| Inconsistent archive instructions can discard earlier versions | A later edit can lose its source or another harness can follow different rules | Shared intact archival with a manifest; cleanup requires separate scope |
 | Review page linked `description.txt`, but the server did not allow it | Final copy was unavailable through the review link | Exact filename allowlist repair and HTTP regression test, now implemented |
 | QA records contain `artisticApproval: false` from delivery time alongside later publication | Technical evidence and subsequent user actions appear contradictory | Dated events: technical checks, review/approval evidence, finishing authorization and publication |
 
@@ -60,14 +61,14 @@ needed. Suggested fields:
 | `artifacts[]` | Role, version, workspace-relative path, SHA-256, dimensions, rational fps, integer frames, duration derived from frames/fps; explicit published master selection |
 | `production.providers[]` | Public provider/model names actually used; distinguish images, motion and sound |
 | `production.credits[]` | Role, model and harness separately; user-approved display text remains in the description |
-| `cost` | Currency, confirmed project spend, unresolved reserved amount and an as-of recording date; derive from all project ledgers, not account balances |
+| Financial data | Excluded from public JSON and prose; ignored `data/accounting/<project-id>/` retains itemized amounts, evidence and unresolved reservations |
 | `publication` | Platform, supplied URL, evidence kind, recorded date, optional independently verified date and platform publication date only when known |
 | `reviewEvents[]` | Event type, artifact hash/version, date when known, short sanitized evidence and outcome; never infer listening or approval from a decoder pass |
 | `archive` | Manifest relative path, inventory hash and verification recording date; no claim of a remote backup |
 | `relatedProjectIds`, `legacyPaths` | Public relationships and temporary migration aliases |
 
-Do not put raw prompts, provider task IDs, signed media URLs, budgets containing
-authorization conversations, account balances, filesystem probes or operation
+Do not put prices, financial figures, raw prompts, provider task IDs, signed media
+URLs, authorization conversations, account balances, filesystem probes or operation
 logs in this public JSON. Public video IDs inside supplied publication URLs and
 artifact content hashes are intentional public identifiers. Build an explicit
 allowlist exporter; never serialize the workspace object and delete a few known
@@ -82,7 +83,7 @@ maintained in three places. Keep original treatments intact with clear links to
 the current summary. Do not refresh historical claims using a current provider
 rate or reinterpret a past spending allowance.
 
-## Implementation sequence for the next session
+## Implementation sequence and retained migration boundaries
 
 1. **Read-only inventory.** Enumerate tracked `briefs/` files, inbound Markdown
    links, recipe references and series conventions with `rg`. Produce an ignored
@@ -120,7 +121,7 @@ rate or reinterpret a past spending allowance.
    a second archiving route. Source commit/push stays governed by existing
    authorization and privacy checks, not an automatic side effect of export.
 7. **Second pilot and staged migration.** Exercise one active project or episode
-   with native review pending, only when its owner authorizes that work. Confirm
+   with native review pending, only within the owner's authorized scope. Confirm
    it cannot accidentally become published/approved. Migrate remaining projects
    in small reviewed groups; preserve uncertain states as unknown. Record
    unresolved links or dependencies for the next session.
@@ -130,7 +131,7 @@ rate or reinterpret a past spending allowance.
 - On a fresh clone, validate all public records and internal document links
   without credentials, network calls, ignored media or new packages.
 - Offline fixtures cover published and unfinished projects, multiple versions,
-  a supplied-but-processing URL, unresolved reserves, unknown fields and unsafe
+  a supplied-but-processing URL, local unresolved reserves, unknown fields and unsafe
   paths. An injected runtime secret/operation field cannot enter an export.
 - The pilot description matches its pre-migration bytes and hash exactly; credit
   text and final repository URL remain. Repeated export/check has no diff.
@@ -157,6 +158,9 @@ is part of this proposal.
 | Background work | Each agent uses its actual harness's process handles and timeouts, while saving progress/requests under the project. Do not copy a harness-specific timeout or cwd assumption into shared CLI behavior. |
 | Attribution | The public record distinguishes model, harness and role. Commit trailers come from `.githooks/identity.json`; both author and committer remain TK-421. |
 
-The first useful milestone is the VERIFY pilot plus validation and working legacy
-links. Defer dashboards, databases, bulk archive cleanup and a new production UI
-until this small record has survived another real film.
+The initial milestone now includes VERIFY and the existing Episode 05 review
+draft. The ignored migration map inventories tracked briefs and pilot references;
+unmigrated records retain their prior locations and uncertain statuses. The
+archived VERIFY recipe's text-file dependency is documented in its restore note.
+Defer dashboards, databases, bulk archive cleanup and a new production UI until
+the record has been exercised through another new film's complete lifecycle.

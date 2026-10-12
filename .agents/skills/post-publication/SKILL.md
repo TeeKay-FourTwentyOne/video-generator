@@ -30,6 +30,12 @@ records, logs, media and machine-specific paths in ignored storage. Reconcile
 project cost separately from provider account balance. Synchronize current local
 description copies and their hashes before sealing the archive.
 
+Follow `docs/production-records.md`: update the allowlisted public record and
+generate its current summary/index. Keep prices, monetary amounts and detailed
+accounting in ignored `data/`. Use `sync-description` on the active workspace
+before sealing; use check mode afterward. Public status, publication evidence,
+technical checks and artistic approval remain separate facts.
+
 Archive exactly one inactive project with `tools/production/archive.mjs`:
 inspect `plan`, run `apply`, then `verify`. Preserve sources, rejected takes,
 native exports, earlier versions, recipes, ledgers and QA. Stop only that

@@ -27,18 +27,28 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
 
 ## Prepare documentation and the workspace
 
-1. Update the brief's current status, URL/evidence, released version, description
-   link, production cost summary and relative archive locator. Until the move
-   succeeds, label its destination as planned. Do not copy raw runtime JSON into
-   Git; [source privacy](source-privacy.md) describes the publication boundary.
+1. Update the canonical `briefs/<project-id>/production.json` from approved
+   evidence: status, URL, exact released version, description hash and archive
+   state. Generate the current README and index using
+   [production records](production-records.md); retain original intent in the
+   brief. Keep the active locator with `archive-planned` until the move succeeds.
+   Prices and monetary figures stay in ignored local accounting. Do not copy raw
+   runtime JSON into Git; [source privacy](source-privacy.md) defines the boundary.
 2. Preserve old local description/delivery records in a dated release folder,
    then synchronize the current description copies and SHA-256 values. Record
    publication as a later event; do not turn earlier technical checks into
    retrospective artistic approval. Keep version history and media unchanged.
+   `npm run records -- sync-description PROJECT_ID --dry-run` previews exact
+   copy/hash changes; apply without the flag while the workspace is active.
+   The helper preserves prior copies. After sealing, use `--check` only.
 3. Check ledger entries and operation records for unfinished work. Reconcile
    known costs, retaining unresolved reservations. Do not query a provider or
    resubmit a generation merely to archive. If work is still writing, defer that
    workspace move and record what remains. Account credit is not film spend.
+   Keep all contributing ledger paths in ignored
+   `data/accounting/<project-id>/sources.json`, including earlier auditions.
+   `npm run accounting -- data/accounting/PROJECT_ID/sources.json` produces a
+   granular local report without changing the ledgers or making provider calls.
 4. Inventory dependencies before moving: source copies, edit/QA paths, scripts,
    font files, external source references and imports. Note what is self-contained
    and what requires the repository, tools or another local archive. A preserved
@@ -88,7 +98,10 @@ After archival, verify the master hash, full decode and current delivery links
 from the new location. Restart the loopback review server at the archive path if
 continued review is useful; it serves `description.txt` along with the known
 review artifacts. Inspect the generated links, not just the server's exit code.
-Mark the source brief's archive locator verified only after these checks pass.
+Mark the public record's archive locator verified only after these checks pass,
+and regenerate its current views. `npm run records -- validate PROJECT_ID
+--local-evidence` checks declared artifact hashes, dimensions, decoded frame
+counts, description copies and the archive inventory. It records no new approval.
 
 Keep any new Git/privacy logs or release receipts outside the sealed tree, for
 example under ignored `data/release-receipts/<slug>/`. Do not run a QA script that
@@ -125,8 +138,9 @@ Pick an observed friction point: stale descriptions, confusing version status,
 hardcoded recipe roots, unreconciled costs, broken review links or unclear QA
 claims. State the impact and a concrete change. For a larger change, leave a
 handoff with target files, steps, compatibility/privacy boundaries and acceptance
-checks. [Production-record organization](production-records-proposal.md) is the
-current larger handoff. Shared production behavior belongs in shared docs;
+checks. [Production-record organization](production-records-proposal.md) records
+the completed pilot and remaining staged migration. Shared production behavior
+belongs in shared docs;
 harness-specific findings belong in dated `docs/harness/` notes and must identify
 which harness was actually observed.
 

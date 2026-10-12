@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "projectId": "verify",
+  "title": "VERIFY",
+  "kind": "film",
+  "status": "published",
+  "briefPath": "briefs/verify/brief.md",
+  "descriptionPath": "briefs/verify/description.md",
+  "descriptionSha256": "df3d4bd4362bd2ca7be108436ce28afbfbb38f00f59186e75d33f0ca43defd45",
+  "decisionsPath": "briefs/verify/decisions.md",
+  "workspace": {
+    "path": "data/workspace-archive/verify-film-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "10bce72d19dfefecb825f9f7b6d58b78a1fe9319991c81f79dabad2c3ae535bb",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 546,
+      "durationSeconds": 22.75,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v4/description.txt",
+      "deliveryRecordPath": "final/v4/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v4-4k",
+      "path": "final/v4-4k/film.mp4",
+      "sha256": "a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 546,
+      "durationSeconds": 22.75,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v4-4k/description.txt",
+      "deliveryRecordPath": "final/v4-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Runway",
+        "model": "Gen-4.5"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local synthesis"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept and production brief",
+        "model": "Anthropic Fable 5.1"
+      },
+      {
+        "role": "Editing, interface animation, synthesized sound and finishing",
+        "model": "OpenAI GPT-6 Astra",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/lb9vcB07CRg",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-12",
+    "artifactVersion": "v4-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "10bce72d19dfefecb825f9f7b6d58b78a1fe9319991c81f79dabad2c3ae535bb",
+      "recordedDate": "2026-10-12",
+      "evidence": "Saved delivery checks cover decode, dimensions, frames, source hashes and picture timing.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a",
+      "recordedDate": "2026-10-12",
+      "evidence": "Saved finishing checks cover decode, format and native/master audio identity.",
+      "outcome": "passed"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a",
+      "recordedDate": "2026-10-12",
+      "evidence": "Saved delivery evidence records the user request for pacing trims, tile selections and 4K finishing.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a",
+      "recordedDate": "2026-10-12",
+      "evidence": "Computational audio verification is recorded; direct listening is not certified.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a",
+      "recordedDate": "2026-10-12",
+      "evidence": "The delivery-time approval flag remains historical; later publication is a separate event.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a",
+      "recordedDate": "2026-10-12",
+      "evidence": "The user supplied the publication URL. No independent public-page or platform-transcode verification is claimed.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/verify-film-v1/workspace-archive-manifest.json",
+    "inventorySha256": "b87406a3526d35ad0d48492471f10c641dfe367d2d205615b101d3e6c3daddd8",
+    "verifiedDate": "2026-10-12"
+  },
+  "legacyPaths": [
+    {
+      "path": "briefs/verify-spine-v1.md",
+      "target": "briefs/verify/brief.md"
+    },
+    {
+      "path": "briefs/verify_description.md",
+      "target": "briefs/verify/description.md"
+    }
+  ]
+}
