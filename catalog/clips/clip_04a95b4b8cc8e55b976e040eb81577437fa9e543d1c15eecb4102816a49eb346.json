@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_04a95b4b8cc8e55b976e040eb81577437fa9e543d1c15eecb4102816a49eb346",
+  "sha256": "04a95b4b8cc8e55b976e040eb81577437fa9e543d1c15eecb4102816a49eb346",
+  "bytes": 5730435,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V17-v1.mp4",
+    "veo_1791428731091_pnetw4.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Night, close on a folding table under a white canopy at the rim of a large excavation, lit by a battery work light. Along the front of the table a row of finds lies from left to right: a small clear plastic zip bag holding a green-corroded brass cartridge case, a long grey foam tray holding a long corroded iron object, a small clear zip bag holding a dark iron arrowhead, a small clear zip bag holding a green bronze spearhead. A small paper tag lies face down beside each. Along the back of the table lie several long, heavily corroded iron-and-wood objects of different ages, side by side, each with a face-down tag. A blue nitrile-gloved hand enters from the right, sets a fifth clear plastic zip bag, empty and sealed, at the right end of the row, and withdraws out of the frame. Nothing else on the table moves. Camera is fixed, looking down at a slight angle, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ea8373a14c2b3fa8da27d5d96fe44fc12705091c1ebf6e9a719073aba78a03fe",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1519049981,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

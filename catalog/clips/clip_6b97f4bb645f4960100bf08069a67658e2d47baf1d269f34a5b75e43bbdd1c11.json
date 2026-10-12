@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6b97f4bb645f4960100bf08069a67658e2d47baf1d269f34a5b75e43bbdd1c11",
+  "sha256": "6b97f4bb645f4960100bf08069a67658e2d47baf1d269f34a5b75e43bbdd1c11",
+  "bytes": 10013761,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S05-v1.mp4",
+    "veo_1791014264337_4mjxka.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Continue this exact handmade miniature scene with restrained stop-motion motion and cinematic lighting. Maintain the exact robot, one tree, planter, bulb, paint chips and greenhouse geometry in the supplied first frame. 9:16 portrait. One continuous shot, no cuts, no dissolve, no text, no speech. No other characters, no new objects, no duplicate limbs. Robot always has two arms with two-prong grippers and two caterpillar tracks.\nThe robot stays motionless with both hands empty and lowered. Its chest remains dark and empty. The single amber bulb remains installed on the planter front. Starting at the roots, very fine warm golden veins slowly travel UP the existing black tree trunk into the existing branches. Along those very same branches, small translucent amber leaves gently unfurl one by one from bottom to top, turning the bare tree into a delicate luminous living sculpture. No new trunk or branch rearrangement, no white flash, no neon laser beams. Practical warm glowing glass-like leaves, an intimate handmade fairytale. The light progressively illuminates the greenhouse ribs. Camera slowly tilts upward to follow the light, preserving portrait composition. The robot is still in the lower left, lit externally by the gift. End in quiet luminous wonder.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c69e1b387ef10d1ff7126d86e11a40abd0296b5819da4060857706c74bfac1fe",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1029159914,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

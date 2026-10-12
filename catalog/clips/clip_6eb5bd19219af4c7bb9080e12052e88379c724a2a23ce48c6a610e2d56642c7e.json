@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6eb5bd19219af4c7bb9080e12052e88379c724a2a23ce48c6a610e2d56642c7e",
+  "sha256": "6eb5bd19219af4c7bb9080e12052e88379c724a2a23ce48c6a610e2d56642c7e",
+  "bytes": 5413370,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b3_driver.mp4"
+  ],
+  "collections": [
+    "passenger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

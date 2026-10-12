@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_37d00f0ef16746ce0fc18e7254de49afee6d1630fe38278ac1e1a493c63c084b",
+  "sha256": "37d00f0ef16746ce0fc18e7254de49afee6d1630fe38278ac1e1a493c63c084b",
+  "bytes": 21807861,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 28.666667,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 688,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "floss_v4_wm_720.mp4"
+  ],
+  "collections": [
+    "floss"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

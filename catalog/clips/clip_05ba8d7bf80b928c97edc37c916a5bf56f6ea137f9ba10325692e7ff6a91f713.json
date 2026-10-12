@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_05ba8d7bf80b928c97edc37c916a5bf56f6ea137f9ba10325692e7ff6a91f713",
+  "sha256": "05ba8d7bf80b928c97edc37c916a5bf56f6ea137f9ba10325692e7ff6a91f713",
+  "bytes": 4111269,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "02_spin_cycle.edit.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7589c1765d3304f4a655307a328e07de6ef77726bc0aac2806eed17466aac147",
+  "sha256": "7589c1765d3304f4a655307a328e07de6ef77726bc0aac2806eed17466aac147",
+  "bytes": 10986617,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 55.5,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 1332,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "four-studies-reel-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

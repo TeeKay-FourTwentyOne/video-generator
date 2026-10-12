@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_299d16fb5080979e0630097ba988d988e98f428a28a8deedbb245fd0f6525855",
+  "sha256": "299d16fb5080979e0630097ba988d988e98f428a28a8deedbb245fd0f6525855",
+  "bytes": 7756083,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S05-v2.cap.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

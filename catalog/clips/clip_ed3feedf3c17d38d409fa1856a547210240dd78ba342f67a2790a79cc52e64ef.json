@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ed3feedf3c17d38d409fa1856a547210240dd78ba342f67a2790a79cc52e64ef",
+  "sha256": "ed3feedf3c17d38d409fa1856a547210240dd78ba342f67a2790a79cc52e64ef",
+  "bytes": 5389690,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "DCHENS.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

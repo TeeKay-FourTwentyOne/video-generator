@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e9af549d43c0dd2d12afd1e7574907412b55ef0f9f61c17f7796b216f190a782",
+  "sha256": "e9af549d43c0dd2d12afd1e7574907412b55ef0f9f61c17f7796b216f190a782",
+  "bytes": 2310356,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "A-gilt-edges-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c68ba146d15028a9fcdf80f56d7f169d08600b645f1b693ad329ffe88288adad",
+  "sha256": "c68ba146d15028a9fcdf80f56d7f169d08600b645f1b693ad329ffe88288adad",
+  "bytes": 16776952,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_4_branches.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_4_branches"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Bare winter tree branches silhouetted against golden sky with vintage film aesthetic. The stark, graphic composition of dark branches creates moody winter atmosphere.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "against",
+        "angle",
+        "bare",
+        "branches",
+        "crossing",
+        "denser",
+        "diagonally",
+        "different",
+        "film",
+        "frame",
+        "golden",
+        "line",
+        "medium",
+        "melancholic",
+        "now",
+        "pale",
+        "showing",
+        "silhouetted",
+        "sky",
+        "sparse",
+        "speech",
+        "stark",
+        "thicker",
+        "tree",
+        "upper",
+        "vintage",
+        "visible",
+        "winter"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Bare winter tree branches silhouetted against pale golden sky. Vintage film sprocket borders frame the shot. Intricate network of dark twigs creates organic patterns. Sepia-toned with film grain."
+        },
+        {
+          "seconds": 4,
+          "text": "Different angle showing thicker branches crossing the frame diagonally. The stark winter trees create graphic composition against warm sky. Camera appears to pan or tilt slightly."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Branches now more sparse in upper frame, denser tree line visible below. The melancholic winter atmosphere emphasized by bare limbs against fading light."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "bare",
+    "branches",
+    "crossing",
+    "denser",
+    "diagonally",
+    "different",
+    "film",
+    "frame",
+    "golden",
+    "line",
+    "medium",
+    "melancholic",
+    "now",
+    "pale",
+    "showing",
+    "silhouetted",
+    "sky",
+    "sparse",
+    "speech",
+    "stark",
+    "thicker",
+    "tree",
+    "upper",
+    "vintage",
+    "visible",
+    "winter"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

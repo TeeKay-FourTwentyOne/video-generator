@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_784805787136af70e759430c5ee03fdd6a0a8715e1c6f98ceff29d7d0efaf342",
+  "sha256": "784805787136af70e759430c5ee03fdd6a0a8715e1c6f98ceff29d7d0efaf342",
+  "bytes": 2569567,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_4_1766525549911.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_4_1766525549911"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Office plant time-lapse showing wilting progression in modern open-plan office. The plant's decline from healthy to dying visualizes the unbearable length of being on hold.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "backlighting",
+        "beige",
+        "brown",
+        "desk",
+        "drooping",
+        "fallen",
+        "glossy",
+        "golden",
+        "green",
+        "hanging",
+        "healthy",
+        "lapse",
+        "leaves",
+        "limply",
+        "medium",
+        "modern",
+        "now",
+        "office",
+        "open",
+        "plan",
+        "plant",
+        "pot",
+        "potted",
+        "progression",
+        "severely",
+        "showing",
+        "speech",
+        "strong",
+        "thank",
+        "time",
+        "turning",
+        "visibly",
+        "watching",
+        "wilted",
+        "wilting",
+        "yellow",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Healthy potted plant with glossy green leaves in beige pot on office desk. Modern open-plan office visible in background. Black phone partially visible. Bright daylight."
+        },
+        {
+          "seconds": 4,
+          "text": "Plant now visibly wilting, leaves drooping and turning yellow-brown. Golden afternoon light through windows. The decline is underway as the wait continues."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Plant severely wilted with leaves hanging limply, some fallen. Strong golden backlighting creates silhouette effect. The once-healthy plant is dying from neglect during the endless hold."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "backlighting",
+    "beige",
+    "brown",
+    "desk",
+    "drooping",
+    "fallen",
+    "glossy",
+    "golden",
+    "green",
+    "hanging",
+    "healthy",
+    "lapse",
+    "leaves",
+    "limply",
+    "medium",
+    "modern",
+    "now",
+    "office",
+    "open",
+    "plan",
+    "plant",
+    "pot",
+    "potted",
+    "progression",
+    "severely",
+    "showing",
+    "speech",
+    "strong",
+    "thank",
+    "time",
+    "turning",
+    "visibly",
+    "watching",
+    "wilted",
+    "wilting",
+    "yellow",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

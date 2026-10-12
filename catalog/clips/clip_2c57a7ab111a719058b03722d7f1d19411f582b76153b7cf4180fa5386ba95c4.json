@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2c57a7ab111a719058b03722d7f1d19411f582b76153b7cf4180fa5386ba95c4",
+  "sha256": "2c57a7ab111a719058b03722d7f1d19411f582b76153b7cf4180fa5386ba95c4",
+  "bytes": 1274086,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767578305135_aof7od.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767578225875"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767578305135_aof7od"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A worn leather wallet tumbles through the air in extreme slow motion as the camera whips sideways in a dynamic tracking shot, following its arc through space. The frame fills with motion blur and streaking light as time compresses, revealing fragmented glimpses of phantom hands reaching toward the wallet - translucent, ghostlike memories of touch that fade before contact. Golden morning light bathes the wallet initially, catching every crease and worn edge in intimate detail, but gradually shifts to cooler, muted blue-gray shadows as the tracking movement continues. The camera maintains tight focus on the wallet while the background dissolves into impressionistic streaks of desaturated colors - soft browns, faded golds, and melancholic grays. Dust motes drift through shafts of fading light, creating a dreamlike quality. The energetic sideways tracking contrasts poignantly with the slow-motion fall, emphasizing the bittersweet tension between movement and loss. Shot in 9:16 vertical format with shallow depth of field, capturing the intimate details of weathered leather against the blur of passing time, ending as shadows overtake the warm light.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8f48337d5b34ff2c93d14207e730ade9f95b54dfd923f13d6f21fee1fa095edc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A worn leather wallet tumbles through the air in extreme slow motion as the camera whips sideways in a dynamic tracking shot, following its arc through space. The frame fills with motion blur and streaking light as time compresses, revealing fragmented glimpses of phantom hands reaching toward the wallet - translucent, ghostlike memories of touch that fade before contact. Golden morning light bathes the wallet initially, catching every crease and worn edge in intimate detail, but gradually shifts to cooler, muted blue-gray shadows as the tracking movement continues. The camera maintains tight focus on the wallet while the background dissolves into impressionistic streaks of desaturated colors - soft browns, faded golds, and melancholic grays. Dust motes drift through shafts of fading light, creating a dreamlike quality. The energetic sideways tracking contrasts poignantly with the slow-motion fall, emphasizing the bittersweet tension between movement and loss. Shot in 9:16 vertical format with shallow depth of field, capturing the intimate details of weathered leather against the blur of passing time, ending as shadows overtake the warm light.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8f48337d5b34ff2c93d14207e730ade9f95b54dfd923f13d6f21fee1fa095edc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:57:41.963Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This dramatic short clip shows two hands reaching toward a falling or floating leather wallet across three frames, with the lighting transitioning from warm golden tones to cool blue-gray. The wallet moves from tumbling in mid-air to resting flat on a surface, while the hands maintain a reaching gesture throughout. The cinematic lighting and composition suggest themes of desire, loss, or the pursuit of material possessions.",
+      "transcript": "You",
+      "tags": [
+        "against",
+        "background",
+        "blue",
+        "clip",
+        "continue",
+        "cool",
+        "dark",
+        "down",
+        "dramatic",
+        "falling",
+        "fingers",
+        "floating",
+        "frame",
+        "gray",
+        "hands",
+        "leather",
+        "medium",
+        "reach",
+        "reaching",
+        "rectangular",
+        "short",
+        "shows",
+        "silhouetted",
+        "speech",
+        "spread",
+        "top",
+        "toward",
+        "two",
+        "wallet",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two hands with spread fingers reach down from the top of the frame toward a dark leather wallet that appears to be falling or suspended in mid-air. The scene is bathed in warm, golden-amber lighting creating a dramatic atmosphere. The background is blurred with sepia tones, and light rays are visible streaming from behind. The wallet is positioned at an angle, appearing to tumble. The composition creates a sense of urgency or reaching for something valuable."
+        },
+        {
+          "seconds": 2,
+          "text": "Two silhouetted hands continue reaching toward a dark rectangular wallet or leather object that is now more prominently displayed in the center-lower portion of the frame. The wallet appears to be balancing on its corner on a surface. Warm backlighting creates a glowing effect around the edges of the hands and object. A window or light source is visible in the blurred background. The dramatic lighting emphasizes the reaching gesture."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Two hands are silhouetted against a cool blue-gray background, reaching down toward a worn brown leather wallet that now rests flat on a light-colored surface. The lighting has shifted from warm to cool tones, creating a more somber atmosphere. The hands are positioned symmetrically above the wallet with fingers extended. Soft diffused light comes from behind, possibly through a window, creating rim lighting on the hands."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "blue",
+    "clip",
+    "continue",
+    "cool",
+    "dark",
+    "down",
+    "dramatic",
+    "falling",
+    "fingers",
+    "floating",
+    "frame",
+    "gray",
+    "hands",
+    "leather",
+    "medium",
+    "reach",
+    "reaching",
+    "rectangular",
+    "short",
+    "shows",
+    "silhouetted",
+    "speech",
+    "spread",
+    "top",
+    "toward",
+    "two",
+    "wallet",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

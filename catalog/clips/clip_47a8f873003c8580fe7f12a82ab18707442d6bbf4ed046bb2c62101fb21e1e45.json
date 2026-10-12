@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_47a8f873003c8580fe7f12a82ab18707442d6bbf4ed046bb2c62101fb21e1e45",
+  "sha256": "47a8f873003c8580fe7f12a82ab18707442d6bbf4ed046bb2c62101fb21e1e45",
+  "bytes": 3253422,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.583333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 206,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s7_travel.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

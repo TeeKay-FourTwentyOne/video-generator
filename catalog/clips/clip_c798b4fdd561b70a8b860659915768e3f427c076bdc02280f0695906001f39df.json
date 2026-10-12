@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c798b4fdd561b70a8b860659915768e3f427c076bdc02280f0695906001f39df",
+  "sha256": "c798b4fdd561b70a8b860659915768e3f427c076bdc02280f0695906001f39df",
+  "bytes": 3802506,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539218876_glbbs5.mp4"
+  ],
+  "collections": [
+    "a_solitary_astronaut_floats_th_1767539132269"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539218876_glbbs5"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "An astronaut in a sleek spacesuit glides gracefully deeper into an underwater cave, small propulsion jets on their suit releasing delicate streams of silver bubbles that spiral upward through the water. The cave walls pulse with increasing bioluminescent activity - ancient symbols and patterns illuminate in soft teals and aquamarine hues, creating a rhythmic breathing pattern of light that responds to the astronaut's presence. The camera follows behind and slightly above the astronaut with a smooth forward tracking movement, capturing both the figure's elegant motion and the expanding luminous display on the cave walls. Deep blue water fills the frame with ethereal light rays filtering through, while the bioluminescent symbols cast dancing reflections across the astronaut's helmet. The lighting transitions from darker blues at the entrance to brighter teals deeper in the cave, creating a dreamlike, mysterious atmosphere with cinematic depth and rich color saturation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3b08c22181c56a08140d663e741a50028dcce962f1e24864b6a4ab80275a8d46",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "An astronaut in a sleek spacesuit glides gracefully deeper into an underwater cave, small propulsion jets on their suit releasing delicate streams of silver bubbles that spiral upward through the water. The cave walls pulse with increasing bioluminescent activity - ancient symbols and patterns illuminate in soft teals and aquamarine hues, creating a rhythmic breathing pattern of light that responds to the astronaut's presence. The camera follows behind and slightly above the astronaut with a smooth forward tracking movement, capturing both the figure's elegant motion and the expanding luminous display on the cave walls. Deep blue water fills the frame with ethereal light rays filtering through, while the bioluminescent symbols cast dancing reflections across the astronaut's helmet. The lighting transitions from darker blues at the entrance to brighter teals deeper in the cave, creating a dreamlike, mysterious atmosphere with cinematic depth and rich color saturation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3b08c22181c56a08140d663e741a50028dcce962f1e24864b6a4ab80275a8d46",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:06:06.319Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This CGI or digitally rendered clip depicts an astronaut exploring a mysterious underwater cave system with bioluminescent or alien symbols on the walls. The figure floats through the deep blue environment while air bubbles rise toward the surface, with dramatic lighting creating an otherworldly atmosphere. The clip ends with a 'Thank you for watching' message, suggesting this is the conclusion of a longer video or artistic piece.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "angle",
+        "astronaut",
+        "camera",
+        "cave",
+        "cavern",
+        "cgi",
+        "clear",
+        "clip",
+        "closer",
+        "continues",
+        "dark",
+        "depicts",
+        "digitally",
+        "environment",
+        "exploring",
+        "figure",
+        "floating",
+        "floats",
+        "horizontally",
+        "lower",
+        "medium",
+        "mysterious",
+        "now",
+        "positioned",
+        "rendered",
+        "shown",
+        "slightly",
+        "spacesuit",
+        "speech",
+        "thank",
+        "underwater",
+        "view",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An astronaut in a dark spacesuit floats underwater in a mysterious underwater cave environment. The figure is viewed from behind, arms slightly outstretched with air bubbles rising from the suit's shoulders. The scene is bathed in deep blue and cyan tones with dramatic light rays streaming down from above. Glowing cyan alien-like symbols or hieroglyphics are visible on the cave walls to the right. Rocky formations frame the scene on both sides, with a luminous turquoise glow emanating from the sandy floor below."
+        },
+        {
+          "seconds": 2,
+          "text": "The astronaut continues floating through the underwater cavern, now shown from a slightly lower angle. Large columns of air bubbles rise dramatically from the suit toward the surface, creating vertical streams of white against the deep blue water. The figure appears to be ascending or moving forward, with legs trailing behind. The same cyan glowing symbols remain visible on the right cave wall. Light rays penetrate from above, illuminating the turquoise sandy bottom and creating an ethereal atmosphere."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The astronaut is now positioned closer to the camera, floating horizontally with a clear view of the white/silver spacesuit details. Air bubbles disperse more widely above the figure. The helmet reflects light from above, and the suit's black boots are prominently visible. The underwater cave environment remains consistent with rocky walls on both sides, glowing cyan symbols on the right, and the bright turquoise illuminated floor below. The composition emphasizes the figure's isolation in this alien underwater world."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "angle",
+    "astronaut",
+    "camera",
+    "cave",
+    "cavern",
+    "cgi",
+    "clear",
+    "clip",
+    "closer",
+    "continues",
+    "dark",
+    "depicts",
+    "digitally",
+    "environment",
+    "exploring",
+    "figure",
+    "floating",
+    "floats",
+    "horizontally",
+    "lower",
+    "medium",
+    "mysterious",
+    "now",
+    "positioned",
+    "rendered",
+    "shown",
+    "slightly",
+    "spacesuit",
+    "speech",
+    "thank",
+    "underwater",
+    "view",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b698b379b77eeb0613aae4787458aceaa7c569beb9f7a15171abb8af90c60d80",
+  "sha256": "b698b379b77eeb0613aae4787458aceaa7c569beb9f7a15171abb8af90c60d80",
+  "bytes": 2779502,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669669981_n5dbkf.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767669669981_n5dbkf"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Two male friends sit across from each other at a cozy restaurant table - one in his 30s with short dark hair wearing a charcoal sweater, the other in his 20s with tousled brown hair in a navy henley. Medium two-shot frames them both, camera positioned at eye level between them. Warm, golden hour lighting streams through nearby windows, creating soft rim lighting on their profiles. Shallow depth of field keeps the background pleasantly blurred with bokeh from restaurant lights. The men maintain gentle eye contact, their postures relaxed and open, hands resting naturally on the white tablecloth. Small subtle movements - a slight nod, fingers adjusting a water glass, a brief glance down then back up. The intimate framing captures their comfortable connection, the warm amber tones of the lighting emphasizing the emotional warmth between them.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, natural): \"And you still call me out on everything.\"\n- FRIEND_1 (male, 20s, natural): \"I missed this. I missed you.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_22813b5848039a27c1b0542436ca1e9076193b1cdd173678d73717e68ed68199",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Two male friends sit across from each other at a cozy restaurant table - one in his 30s with short dark hair wearing a charcoal sweater, the other in his 20s with tousled brown hair in a navy henley. Medium two-shot frames them both, camera positioned at eye level between them. Warm, golden hour lighting streams through nearby windows, creating soft rim lighting on their profiles. Shallow depth of field keeps the background pleasantly blurred with bokeh from restaurant lights. The men maintain gentle eye contact, their postures relaxed and open, hands resting naturally on the white tablecloth. Small subtle movements - a slight nod, fingers adjusting a water glass, a brief glance down then back up. The intimate framing captures their comfortable connection, the warm amber tones of the lighting emphasizing the emotional warmth between them.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, natural): \"And you still call me out on everything.\"\n- FRIEND_1 (male, 20s, natural): \"I missed this. I missed you.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_22813b5848039a27c1b0542436ca1e9076193b1cdd173678d73717e68ed68199",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:20:03.339Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This intimate coffee shop scene captures a reconnection between two people, showing their progression from shared laughter to meaningful conversation to comfortable, affectionate silence. The warm, golden lighting and shallow depth of field create a romantic, nostalgic atmosphere that complements the emotional dialogue about missing each other. The couple's body language evolves from animated joy to tender, comfortable intimacy throughout the clip.",
+      "transcript": "and you still call me out on everything. I miss this. I missed you.",
+      "tags": [
+        "black",
+        "both",
+        "call",
+        "captures",
+        "coffee",
+        "continues",
+        "conversation",
+        "couple",
+        "cozy",
+        "cup",
+        "drink",
+        "everything",
+        "facing",
+        "her",
+        "his",
+        "interaction",
+        "intimate",
+        "man",
+        "medium",
+        "miss",
+        "missed",
+        "out",
+        "people",
+        "raises",
+        "reconnection",
+        "scene",
+        "setting",
+        "shifted",
+        "shop",
+        "showing",
+        "sit",
+        "smiling",
+        "speaking",
+        "speech",
+        "still",
+        "their",
+        "two",
+        "warm",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man and woman sit facing each other in a warm, cozy coffee shop setting. Both are laughing genuinely with wide smiles, holding steaming coffee cups. The man on the left wears a gray long-sleeve shirt with short brown hair, while the blonde woman on the right wears a brown/olive top. The background shows blurred cafe elements with warm bokeh lights. Steam rises visibly from their cups. The composition is intimate, shot at eye level with shallow depth of field emphasizing the couple."
+        },
+        {
+          "seconds": 4,
+          "text": "The same couple continues their conversation in the coffee shop. The man is speaking while smiling, his mouth open mid-sentence. The woman listens attentively with a soft, content smile, her blonde hair catching warm backlight from the window. Both still hold their steaming coffee cups at table level. The warm amber lighting creates an intimate atmosphere. The blurred background maintains the cozy cafe aesthetic with soft bokeh lights. The framing remains consistent, capturing their engaged interaction."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The interaction has shifted as the woman raises her black coffee cup to drink while smiling and looking down. The man watches her with a warm, affectionate smile, his cup now resting on the table. Her blonde hair falls forward slightly as she tilts her head. The warm golden backlighting creates a romantic glow around her silhouette. Steam is still visible from the cups. The intimate cafe setting continues with soft bokeh in the background, maintaining the warm, nostalgic mood."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "black",
+    "both",
+    "call",
+    "captures",
+    "coffee",
+    "continues",
+    "conversation",
+    "couple",
+    "cozy",
+    "cup",
+    "drink",
+    "everything",
+    "facing",
+    "her",
+    "his",
+    "interaction",
+    "intimate",
+    "man",
+    "medium",
+    "miss",
+    "missed",
+    "out",
+    "people",
+    "raises",
+    "reconnection",
+    "scene",
+    "setting",
+    "shifted",
+    "shop",
+    "showing",
+    "sit",
+    "smiling",
+    "speaking",
+    "speech",
+    "still",
+    "their",
+    "two",
+    "warm",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

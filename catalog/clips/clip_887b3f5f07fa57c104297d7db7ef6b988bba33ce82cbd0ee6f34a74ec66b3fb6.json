@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_887b3f5f07fa57c104297d7db7ef6b988bba33ce82cbd0ee6f34a74ec66b3fb6",
+  "sha256": "887b3f5f07fa57c104297d7db7ef6b988bba33ce82cbd0ee6f34a74ec66b3fb6",
+  "bytes": 17381593,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v2_s2_divergence_raw.mp4"
+  ],
+  "collections": [
+    "hall-of-mirrors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

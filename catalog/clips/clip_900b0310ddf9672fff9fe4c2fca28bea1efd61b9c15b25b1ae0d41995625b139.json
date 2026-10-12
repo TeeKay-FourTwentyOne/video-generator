@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_900b0310ddf9672fff9fe4c2fca28bea1efd61b9c15b25b1ae0d41995625b139",
+  "sha256": "900b0310ddf9672fff9fe4c2fca28bea1efd61b9c15b25b1ae0d41995625b139",
+  "bytes": 12831149,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 22.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 540,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "picture-cut.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

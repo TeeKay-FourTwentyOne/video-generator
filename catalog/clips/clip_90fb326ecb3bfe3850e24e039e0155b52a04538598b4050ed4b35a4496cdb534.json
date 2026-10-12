@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_90fb326ecb3bfe3850e24e039e0155b52a04538598b4050ed4b35a4496cdb534",
+  "sha256": "90fb326ecb3bfe3850e24e039e0155b52a04538598b4050ed4b35a4496cdb534",
+  "bytes": 567777,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 10.708333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 257,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot03.mp4"
+  ],
+  "collections": [
+    "model-weights"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

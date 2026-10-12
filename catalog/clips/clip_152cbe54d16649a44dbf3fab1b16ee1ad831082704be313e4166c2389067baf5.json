@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_152cbe54d16649a44dbf3fab1b16ee1ad831082704be313e4166c2389067baf5",
+  "sha256": "152cbe54d16649a44dbf3fab1b16ee1ad831082704be313e4166c2389067baf5",
+  "bytes": 3627769,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.041667,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 193,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V4-runway-v3.mp4"
+  ],
+  "collections": [
+    "verify"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

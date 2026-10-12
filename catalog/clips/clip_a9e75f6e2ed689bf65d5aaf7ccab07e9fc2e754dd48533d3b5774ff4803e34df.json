@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a9e75f6e2ed689bf65d5aaf7ccab07e9fc2e754dd48533d3b5774ff4803e34df",
+  "sha256": "a9e75f6e2ed689bf65d5aaf7ccab07e9fc2e754dd48533d3b5774ff4803e34df",
+  "bytes": 4577110,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767741914566_gndd9p.mp4"
+  ],
+  "collections": [
+    "sagittarius_why_choose"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767741914566_gndd9p"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, walks barefoot along a dramatic black sand beach at sunset. Medium-wide shot tracking alongside him at walking pace as he moves with relaxed but purposeful strides toward the distant curve of the shoreline. Golden hour sunlight bathes the scene in warm, honeyed tones, creating a luminous rim light around his silhouette. Ocean waves roll onto the dark sand beside him, their spray catching the golden light like scattered diamonds. Steep dark cliffs and distinctive sea stacks rise dramatically from the ocean in the background, silhouetted against the glowing sky. The low-angle sunlight creates long shadows across the wet sand, while gentle lens flares add to the hopeful, uplifting atmosphere. His bare feet leave impressions in the damp sand as he walks, the camera maintaining a steady lateral tracking movement. The warm palette contrasts beautifully with the dark volcanic sand and basalt formations, creating a cinematic epic landscape bathed in the magical light of golden hour.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a30a04b51d00ec8dc6c743a2ee5d83089015d2d9df1b8eca6ae3745bb02694d4",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, walks barefoot along a dramatic black sand beach at sunset. Medium-wide shot tracking alongside him at walking pace as he moves with relaxed but purposeful strides toward the distant curve of the shoreline. Golden hour sunlight bathes the scene in warm, honeyed tones, creating a luminous rim light around his silhouette. Ocean waves roll onto the dark sand beside him, their spray catching the golden light like scattered diamonds. Steep dark cliffs and distinctive sea stacks rise dramatically from the ocean in the background, silhouetted against the glowing sky. The low-angle sunlight creates long shadows across the wet sand, while gentle lens flares add to the hopeful, uplifting atmosphere. His bare feet leave impressions in the damp sand as he walks, the camera maintaining a steady lateral tracking movement. The warm palette contrasts beautifully with the dark volcanic sand and basalt formations, creating a cinematic epic landscape bathed in the magical light of golden hour.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a30a04b51d00ec8dc6c743a2ee5d83089015d2d9df1b8eca6ae3745bb02694d4",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T23:24:21.755Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A cinematic vertical video captures a man walking barefoot along a scenic beach during golden hour sunset. He approaches the camera steadily while dramatic rock formations and sea stacks create a striking backdrop, with warm backlighting creating a silhouette effect throughout the 4-second clip.",
+      "transcript": null,
+      "tags": [
+        "along",
+        "barefoot",
+        "beach",
+        "camera",
+        "captures",
+        "cinematic",
+        "closer",
+        "continues",
+        "figure",
+        "forward",
+        "frame",
+        "golden",
+        "his",
+        "hour",
+        "larger",
+        "man",
+        "medium",
+        "now",
+        "sandy",
+        "scenic",
+        "silent",
+        "slightly",
+        "sunset",
+        "toward",
+        "vertical",
+        "video",
+        "walked",
+        "walking",
+        "walks"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man walks barefoot on a sandy beach toward the camera during golden hour sunset. He wears a dark jacket over a white henley shirt and dark pants. His shoulder-length wavy hair is backlit by the sun. Behind him, dramatic rock formations rise from the ocean, with waves visible along the shoreline. The scene is bathed in warm golden-orange light with lens flare visible. The composition is vertical with the subject centered, creating a cinematic silhouette effect."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man continues walking forward on the beach, now slightly closer to the camera. His silhouetted figure remains centered against the golden sunset backdrop. The rock formations and sea stacks are still visible behind him on the right. Footprints are visible in the wet sand to his left. The warm backlighting creates a rim light effect around his hair and shoulders. A green lens flare artifact appears in the lower left portion of the frame."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man has walked closer to the camera, his figure now larger in the frame. He continues his steady barefoot walk along the beach. Multiple footprints are now clearly visible in the sand to his left, showing his path. The dramatic coastal scenery with cliffs and sea stacks remains in the background. The golden hour lighting persists with strong backlighting creating a silhouette effect. The green lens flare remains visible in the lower left corner."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "along",
+    "barefoot",
+    "beach",
+    "camera",
+    "captures",
+    "cinematic",
+    "closer",
+    "continues",
+    "figure",
+    "forward",
+    "frame",
+    "golden",
+    "his",
+    "hour",
+    "larger",
+    "man",
+    "medium",
+    "now",
+    "sandy",
+    "scenic",
+    "silent",
+    "slightly",
+    "sunset",
+    "toward",
+    "vertical",
+    "video",
+    "walked",
+    "walking",
+    "walks"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

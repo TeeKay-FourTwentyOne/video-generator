@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_419eb5d02cd70f9fa5bd189f43c0f81d19250b36f9f7fdb6c1cb248a47d845d8",
+  "sha256": "419eb5d02cd70f9fa5bd189f43c0f81d19250b36f9f7fdb6c1cb248a47d845d8",
+  "bytes": 2212386,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "curtain.mp4"
+  ],
+  "collections": [
+    "full-disclosure"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

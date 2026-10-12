@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_087d6ec7c2fa19090da4b58422b2aa26486e515f24a8857b7800e1b9ff08eac0",
+  "sha256": "087d6ec7c2fa19090da4b58422b2aa26486e515f24a8857b7800e1b9ff08eac0",
+  "bytes": 3897784,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767749277151_pxbqpr.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767749277151_pxbqpr"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip features two different people in rural, golden-hour settings contemplating direction and choice. A woman stands at a crossroads on a country road, followed by a man in an open field, both bathed in warm sunset lighting. The philosophical narration about being asked 'which way' connects to the imagery of standing at literal and metaphorical crossroads.",
+      "transcript": "They always ask, which way? Like standing here means you have to leave.",
+      "tags": [
+        "aged",
+        "always",
+        "ask",
+        "back",
+        "beard",
+        "bearded",
+        "brown",
+        "clip",
+        "continues",
+        "different",
+        "features",
+        "field",
+        "full",
+        "golden",
+        "gray",
+        "hair",
+        "hour",
+        "leave",
+        "like",
+        "long",
+        "man",
+        "means",
+        "medium",
+        "middle",
+        "people",
+        "pulled",
+        "rural",
+        "setting",
+        "speech",
+        "standing",
+        "stands",
+        "straight",
+        "they",
+        "two",
+        "vertical",
+        "video",
+        "wavy",
+        "way",
+        "which",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged woman with gray hair pulled back stands on a long straight rural road. She wears a brown leather vest over a light blue denim shirt with brown pants and a leather belt. Golden wheat fields stretch on both sides of the narrow paved road that extends to the horizon. The warm golden hour lighting illuminates her face from the side as she gazes contemplatively to her left. The composition places her in the lower center with the road creating strong leading lines behind her."
+        },
+        {
+          "seconds": 4,
+          "text": "A middle-aged man with long, wavy brown hair and a full beard with gray patches stands in an open field during golden hour. He wears an olive green military-style jacket over a beige henley shirt. The warm sunset light creates a golden rim light effect on his hair and illuminates his face. He has a slight smile and looks directly at the camera. The background shows blurred rolling hills and a pale sky with soft clouds. Medium close-up framing from chest up."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The same bearded man with long wavy hair continues standing in the golden field setting. His expression is more neutral now, with a contemplative gaze toward the camera. The olive jacket and beige henley remain visible. The golden hour backlighting creates warm highlights on his curly hair edges. The composition remains a medium close-up with the soft-focus pastoral landscape behind him. Slight color grading gives the image a warm, cinematic quality."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_041",
+      "name": "Mama June",
+      "description": "Older Black woman with grey hair pulled back, denim shirt under brown leather vest, standing on road through golden wheat fields at sunset",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_042",
+      "name": "Sunset Wanderer",
+      "description": "Man with long wavy dark hair and salt-pepper beard, olive green jacket over grey henley, standing in golden fields at sunset, content smile",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "always",
+    "ask",
+    "back",
+    "beard",
+    "bearded",
+    "brown",
+    "clip",
+    "continues",
+    "different",
+    "features",
+    "field",
+    "full",
+    "golden",
+    "gray",
+    "hair",
+    "hour",
+    "leave",
+    "like",
+    "long",
+    "man",
+    "means",
+    "medium",
+    "middle",
+    "people",
+    "pulled",
+    "rural",
+    "setting",
+    "speech",
+    "standing",
+    "stands",
+    "straight",
+    "they",
+    "two",
+    "vertical",
+    "video",
+    "wavy",
+    "way",
+    "which",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

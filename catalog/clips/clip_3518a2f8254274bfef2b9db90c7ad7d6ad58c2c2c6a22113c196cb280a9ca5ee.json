@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3518a2f8254274bfef2b9db90c7ad7d6ad58c2c2c6a22113c196cb280a9ca5ee",
+  "sha256": "3518a2f8254274bfef2b9db90c7ad7d6ad58c2c2c6a22113c196cb280a9ca5ee",
+  "bytes": 1621340,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot5.mp4"
+  ],
+  "collections": [
+    "the-lodger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

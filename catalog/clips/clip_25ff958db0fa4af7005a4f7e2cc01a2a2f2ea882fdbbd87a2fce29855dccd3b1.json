@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_25ff958db0fa4af7005a4f7e2cc01a2a2f2ea882fdbbd87a2fce29855dccd3b1",
+  "sha256": "25ff958db0fa4af7005a4f7e2cc01a2a2f2ea882fdbbd87a2fce29855dccd3b1",
+  "bytes": 4940639,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v2c_newA_raw.mp4"
+  ],
+  "collections": [
+    "hall-of-mirrors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

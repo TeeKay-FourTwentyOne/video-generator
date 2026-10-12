@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8bb0de69894b2a9937748b64aa8659dd90dd4c3b76f313e8d68c6b4057fadf2e",
+  "sha256": "8bb0de69894b2a9937748b64aa8659dd90dd4c3b76f313e8d68c6b4057fadf2e",
+  "bytes": 3879043,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767759524554_nn6bdw.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767759524554_nn6bdw"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip transitions from a studio portrait setting to a romantic rainy European street scene, following a woman in a burgundy dress and tan trench coat. The sequence captures her walking through rain-soaked cobblestone streets at dusk, with the audio featuring 'I love you' declarations matching the romantic, cinematic atmosphere created by warm street lamp lighting and wet reflective surfaces.",
+      "transcript": "I love you. I love you.",
+      "tags": [
+        "against",
+        "beneath",
+        "brown",
+        "camera",
+        "city",
+        "clip",
+        "cobblestone",
+        "dark",
+        "dusk",
+        "european",
+        "evening",
+        "faces",
+        "glowing",
+        "hair",
+        "love",
+        "medium",
+        "now",
+        "outdoor",
+        "portrait",
+        "rainy",
+        "romantic",
+        "scene",
+        "setting",
+        "shown",
+        "speech",
+        "standing",
+        "stands",
+        "street",
+        "studio",
+        "transitioned",
+        "transitions",
+        "video",
+        "wavy",
+        "woman",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with wavy brown hair stands in a studio setting against a dark gray backdrop. She wears a burgundy/maroon knee-length dress with a rounded neckline and a beige/tan trench coat worn open. She has a bright, genuine smile and appears to be walking forward. Her arms are slightly extended, holding the coat open. She wears matching burgundy heels. The lighting is professional studio lighting, creating even illumination. Full-body shot with centered composition."
+        },
+        {
+          "seconds": 2,
+          "text": "The scene has transitioned to an outdoor European city street at dusk or evening. The woman is shown from behind, walking on wet cobblestones in the rain. Her trench coat billows as she moves. A vintage-style street lamp glows warmly above her. White classical buildings with illuminated shop windows line the street. Rain is visibly falling, creating reflections on the wet pavement. The lighting is atmospheric with warm golden tones from the lamp contrasting with blue twilight sky."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman now faces the camera on the same rainy cobblestone street, standing beneath the glowing street lamp. She wears the same tan trench coat over what appears to be a dark burgundy sparkly dress. Her hair is wet and wavy, framing her smiling face. Rain continues falling around her. The wet cobblestones reflect the warm lamplight. European architecture and lit storefronts form the background. The composition is centered, full-body, with romantic evening atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "beneath",
+    "brown",
+    "camera",
+    "city",
+    "clip",
+    "cobblestone",
+    "dark",
+    "dusk",
+    "european",
+    "evening",
+    "faces",
+    "glowing",
+    "hair",
+    "love",
+    "medium",
+    "now",
+    "outdoor",
+    "portrait",
+    "rainy",
+    "romantic",
+    "scene",
+    "setting",
+    "shown",
+    "speech",
+    "standing",
+    "stands",
+    "street",
+    "studio",
+    "transitioned",
+    "transitions",
+    "video",
+    "wavy",
+    "woman",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

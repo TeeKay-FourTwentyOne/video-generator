@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_1dd341692b1dcbe351aa41b0d3be6a992ef6b450d46f9fce12c31337a277968e",
+  "projectId": "lodger-ep01",
+  "editVersion": "episode",
+  "segmentIndex": 0,
+  "shotId": "A11",
+  "status": "planned",
+  "evidence": "saved-episode-timeline",
+  "range": {
+    "unit": "seconds",
+    "start": 2,
+    "length": 3.3,
+    "fps": null
+  },
+  "timelineStartFrame": null,
+  "outputSha256": null,
+  "schemaVersion": 1,
+  "id": "use_b8d7f836393331ec9a395696af50e908ba9a792da485cd86eb6a23ee90f4cb49"
+}

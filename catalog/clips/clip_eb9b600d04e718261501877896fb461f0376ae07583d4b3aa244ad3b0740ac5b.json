@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_eb9b600d04e718261501877896fb461f0376ae07583d4b3aa244ad3b0740ac5b",
+  "sha256": "eb9b600d04e718261501877896fb461f0376ae07583d4b3aa244ad3b0740ac5b",
+  "bytes": 3490470,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767596780137_111y92.mp4"
+  ],
+  "collections": [
+    "two_estranged_siblings_marcus__1767596552762"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767596780137_111y92"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. Handheld camera slowly tracks laterally through a dusty living room filled with pale winter light from unseen windows. The woman kneels in soft focus in the foreground, examining small objects with careful, hesitant movements. Behind her, slightly off-center in the frame, the man sorts through cardboard boxes with mechanical efficiency. As the camera drifts sideways, dust motes float through shafts of cold light, and a growing pile of belongings - books, framed photos, folded linens - accumulates in the middle ground between them. The shadows lengthen unnaturally across worn wooden floorboards, creating stark geometric patterns. The color palette is deliberately desaturated, with sickly yellows and cold grays dominating. The camera movement has a slight unsteady quality, occasionally lingering too long on empty spaces between the figures. Natural sound of rustling papers and creaking floorboards. Documentary-style naturalistic lighting with an unsettling undertone.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_153113663e003aa73555ecb597c2a6851dc30d08adae5dd130204a7cbcd61846",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. Handheld camera slowly tracks laterally through a dusty living room filled with pale winter light from unseen windows. The woman kneels in soft focus in the foreground, examining small objects with careful, hesitant movements. Behind her, slightly off-center in the frame, the man sorts through cardboard boxes with mechanical efficiency. As the camera drifts sideways, dust motes float through shafts of cold light, and a growing pile of belongings - books, framed photos, folded linens - accumulates in the middle ground between them. The shadows lengthen unnaturally across worn wooden floorboards, creating stark geometric patterns. The color palette is deliberately desaturated, with sickly yellows and cold grays dominating. The camera movement has a slight unsteady quality, occasionally lingering too long on empty spaces between the figures. Natural sound of rustling papers and creaking floorboards. Documentary-style naturalistic lighting with an unsettling undertone.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_153113663e003aa73555ecb597c2a6851dc30d08adae5dd130204a7cbcd61846",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T07:04:52.767Z",
+      "parameters": {
+        "durationSeconds": 12,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows two people - a woman with dark hair wearing a red scarf and an older man in a gray sweater - sorting through belongings in a sunlit room filled with boxes, clothes, and personal items. The scene suggests they are packing or going through possessions, with the woman discovering a framed photograph while the man organizes items into boxes. The warm, hazy lighting creates an intimate, nostalgic atmosphere.",
+      "transcript": "うまっ!",
+      "tags": [
+        "bending",
+        "black",
+        "clip",
+        "curly",
+        "dark",
+        "examining",
+        "focus",
+        "frame",
+        "framed",
+        "gray",
+        "hair",
+        "holds",
+        "looks",
+        "man",
+        "medium",
+        "now",
+        "older",
+        "over",
+        "people",
+        "photograph",
+        "placing",
+        "primary",
+        "red",
+        "scarf",
+        "shown",
+        "shows",
+        "side",
+        "speech",
+        "sweater",
+        "top",
+        "two",
+        "wearing",
+        "woman",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with dark curly hair wearing a black top and red scarf looks downward with a contemplative expression. She's positioned in the left foreground. Behind her, an older man with gray hair in a dark sweater bends over cardboard boxes. The room has large windows letting in soft natural light, creating a hazy, dusty atmosphere. Folded clothes and books are piled on a surface between them. The warm, muted color palette suggests an intimate domestic scene."
+        },
+        {
+          "seconds": 4,
+          "text": "The woman, now shown from the side, holds up a framed photograph with a wooden frame, examining it. The man in the gray sweater stands upright in the background, walking toward boxes on the right side. The room is filled with scattered belongings - clothes, books, papers, and cardboard boxes. Two large windows provide bright backlighting. The scene suggests they are sorting through possessions, possibly packing or unpacking."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The older man in the gray sweater is now the primary focus, bending over and placing items into a cardboard box. He holds what appears to be papers or documents. The woman is barely visible at the left edge of frame. Multiple cardboard boxes are scattered around, with folded clothes and a framed picture visible on a surface. Soft, hazy light streams through two windows, creating an atmospheric, nostalgic mood with visible dust particles in the air."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bending",
+    "black",
+    "clip",
+    "curly",
+    "dark",
+    "examining",
+    "focus",
+    "frame",
+    "framed",
+    "gray",
+    "hair",
+    "holds",
+    "looks",
+    "man",
+    "medium",
+    "now",
+    "older",
+    "over",
+    "people",
+    "photograph",
+    "placing",
+    "primary",
+    "red",
+    "scarf",
+    "shown",
+    "shows",
+    "side",
+    "speech",
+    "sweater",
+    "top",
+    "two",
+    "wearing",
+    "woman",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

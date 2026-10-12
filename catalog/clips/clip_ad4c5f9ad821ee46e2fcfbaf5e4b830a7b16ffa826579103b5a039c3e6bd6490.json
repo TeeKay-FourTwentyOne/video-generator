@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ad4c5f9ad821ee46e2fcfbaf5e4b830a7b16ffa826579103b5a039c3e6bd6490",
+  "sha256": "ad4c5f9ad821ee46e2fcfbaf5e4b830a7b16ffa826579103b5a039c3e6bd6490",
+  "bytes": 2068035,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8.041667,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 193,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V5-runway-v1.mp4",
+    "portrait.mp4"
+  ],
+  "collections": [
+    "verify",
+    "verify-runway-v1"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "saved-operation-request",
+      "prompt": "Fixed tripod shot at eye level: head-and-shoulders close-up of one ordinary person in their forties on a city sidewalk on an overcast day. The person is centered, with their full head and shoulders visible, wearing plain everyday clothing. Natural unretouched skin, slightly tired appearance, neutral expression. They look directly into the camera lens for the whole eight-second shot, blink once, breathe gently and shift their weight very slightly. Their lips remain gently together and their mouth stays closed throughout. The street behind is softly out of focus. Flat even daylight, muted colors, low contrast and slightly soft detail, like an ordinary street photograph. The framing and camera remain completely still. One continuous shot. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_11de6eb25b0a13c492e8f22834f820c3791997e8f7996807e9c8ffa38fa628f8",
+      "provider": "runway",
+      "model": "gen4.5",
+      "seed": 421,
+      "createdAt": "2026-10-12T01:41:16.422Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

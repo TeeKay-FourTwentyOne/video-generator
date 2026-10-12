@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a50f17f7b0affbc8df6fdfd223c733a5032ee764825b782212a7ad24b52baf56",
+  "sha256": "a50f17f7b0affbc8df6fdfd223c733a5032ee764825b782212a7ad24b52baf56",
+  "bytes": 2946616,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_4_1766525385719.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_4_1766525385719"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Time-lapse of office plant wilting from healthy to dead while on hold. The peace lily's decline from vibrant green to wilted brown dramatizes the interminable wait, transitioning from day to night.",
+      "transcript": null,
+      "tags": [
+        "appears",
+        "black",
+        "brown",
+        "change",
+        "city",
+        "dead",
+        "desk",
+        "dramatic",
+        "drooping",
+        "golden",
+        "green",
+        "healthy",
+        "hold",
+        "hour",
+        "lapse",
+        "leaves",
+        "less",
+        "lighting",
+        "lily",
+        "medium",
+        "now",
+        "office",
+        "peace",
+        "plant",
+        "pot",
+        "severely",
+        "shifted",
+        "silent",
+        "slightly",
+        "terracotta",
+        "time",
+        "tones",
+        "vibrant",
+        "wilted",
+        "wilting"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Healthy green peace lily plant in terracotta pot on desk, black office phone in foreground. Bright window light behind. The plant is vibrant with upright leaves and white flower."
+        },
+        {
+          "seconds": 4,
+          "text": "The plant appears slightly less vibrant, lighting has shifted to golden hour tones. Some leaves beginning to droop. Phone still present in foreground. Time passage suggested."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Dramatic change - plant now severely wilted with drooping brown leaves. City skyline silhouette visible through window at dusk/night with moon. Time-lapse effect showing extended wait."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "black",
+    "brown",
+    "change",
+    "city",
+    "dead",
+    "desk",
+    "dramatic",
+    "drooping",
+    "golden",
+    "green",
+    "healthy",
+    "hold",
+    "hour",
+    "lapse",
+    "leaves",
+    "less",
+    "lighting",
+    "lily",
+    "medium",
+    "now",
+    "office",
+    "peace",
+    "plant",
+    "pot",
+    "severely",
+    "shifted",
+    "silent",
+    "slightly",
+    "terracotta",
+    "time",
+    "tones",
+    "vibrant",
+    "wilted",
+    "wilting"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

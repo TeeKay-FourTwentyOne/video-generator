@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_105ce2ae5042d7da143caa4adbe23ee050c887768951c97cce21b50659646195",
+  "sha256": "105ce2ae5042d7da143caa4adbe23ee050c887768951c97cce21b50659646195",
+  "bytes": 12340975,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 30,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "angles-rotation-30s.mp4"
+  ],
+  "collections": [
+    "angles"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

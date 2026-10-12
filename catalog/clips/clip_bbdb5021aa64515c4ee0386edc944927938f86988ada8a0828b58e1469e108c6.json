@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bbdb5021aa64515c4ee0386edc944927938f86988ada8a0828b58e1469e108c6",
+  "sha256": "bbdb5021aa64515c4ee0386edc944927938f86988ada8a0828b58e1469e108c6",
+  "bytes": 57015571,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "dining_table.mp4"
+  ],
+  "collections": [
+    "elvis-prophet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

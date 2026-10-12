@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e730a15f130639556e5235e43332acdb3a0fd4388ab6d5ea57a5f55817dea916",
+  "sha256": "e730a15f130639556e5235e43332acdb3a0fd4388ab6d5ea57a5f55817dea916",
+  "bytes": 6451592,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "forgotten_spaces_shot_5_1766620738263.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:forgotten_spaces_shot_5_1766620738263"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Cinematic shot transitioning from a small tree growing through cracked urban pavement to a sweeping city skyline view at golden hour. Themes of nature persisting in urban decay, with dramatic sunset lighting throughout.",
+      "transcript": null,
+      "tags": [
+        "aerial",
+        "against",
+        "angle",
+        "behind",
+        "buildings",
+        "cinematic",
+        "city",
+        "cracked",
+        "golden",
+        "growing",
+        "higher",
+        "including",
+        "low",
+        "medium",
+        "pavement",
+        "perspective",
+        "prominent",
+        "shifted",
+        "shot",
+        "show",
+        "silent",
+        "silhouetted",
+        "skyline",
+        "small",
+        "sunset",
+        "sweeping",
+        "tall",
+        "transitioning",
+        "tree",
+        "urban",
+        "view",
+        "wide"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Low-angle shot of a small tree growing through cracked pavement, silhouetted against a golden sunset. City skyline with a tall tower visible in the background. Long shadows stretch across the broken concrete. Urban nature reclaiming abandoned space."
+        },
+        {
+          "seconds": 4,
+          "text": "The perspective has shifted to show the tree from a higher angle with the city skyline behind it. Golden hour sun backlights the scene creating a warm glow. Pink and orange clouds streak across the sky above the urban landscape."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Wide aerial view of the city skyline at sunset. Tall buildings including a prominent tower are silhouetted against dramatic orange and purple sky. The tree is no longer visible as the camera has pulled back to reveal the full urban panorama."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aerial",
+    "against",
+    "angle",
+    "behind",
+    "buildings",
+    "cinematic",
+    "city",
+    "cracked",
+    "golden",
+    "growing",
+    "higher",
+    "including",
+    "low",
+    "medium",
+    "pavement",
+    "perspective",
+    "prominent",
+    "shifted",
+    "shot",
+    "show",
+    "silent",
+    "silhouetted",
+    "skyline",
+    "small",
+    "sunset",
+    "sweeping",
+    "tall",
+    "transitioning",
+    "tree",
+    "urban",
+    "view",
+    "wide"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c4ad3cb230d71e120b87734f483cb01b72bfd42c7d2a615fc99ff6d47d09bb81",
+  "sha256": "c4ad3cb230d71e120b87734f483cb01b72bfd42c7d2a615fc99ff6d47d09bb81",
+  "bytes": 2284136,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767542994867_yuk44h.mp4"
+  ],
+  "collections": [
+    "the_spill_1767542795801"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767542994867_yuk44h"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young Caucasian woman with wavy shoulder-length dark brown hair and slim build sits in a rustic coffee shop with exposed red brick walls and dark wood floors. Warm directional sunlight streams through large multi-paned windows creating deep shadows. She slowly lifts her gaze across the room where a young white man in his early 20s with short dark brown hair in a side part and slender build is standing. Their eyes lock in a moment of unexpected connection. The camera slowly pushes in with a subtle dolly movement, shifting focus between their faces as the background coffee shop blurs into soft bokeh. Her lips curve into a gentle, knowing smile while his dark eyes brighten with intrigue and recognition. The shallow depth of field isolates their connection as warm golden light bathes their faces. The camera movement is fluid and dreamy, capturing the electric moment of recognition between strangers. Warm indie film aesthetic with soft natural lighting, intimate 9:16 framing that emphasizes the romantic tension of the moment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e73274b92c7b2a6489fcb9ae21b9ccf5d416580010969aafdec9b30371f4b114",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young Caucasian woman with wavy shoulder-length dark brown hair and slim build sits in a rustic coffee shop with exposed red brick walls and dark wood floors. Warm directional sunlight streams through large multi-paned windows creating deep shadows. She slowly lifts her gaze across the room where a young white man in his early 20s with short dark brown hair in a side part and slender build is standing. Their eyes lock in a moment of unexpected connection. The camera slowly pushes in with a subtle dolly movement, shifting focus between their faces as the background coffee shop blurs into soft bokeh. Her lips curve into a gentle, knowing smile while his dark eyes brighten with intrigue and recognition. The shallow depth of field isolates their connection as warm golden light bathes their faces. The camera movement is fluid and dreamy, capturing the electric moment of recognition between strangers. Warm indie film aesthetic with soft natural lighting, intimate 9:16 framing that emphasizes the romantic tension of the moment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e73274b92c7b2a6489fcb9ae21b9ccf5d416580010969aafdec9b30371f4b114",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:09:12.833Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This romantic vertical video captures an intimate moment between a young couple in a warmly lit industrial café setting. The sequence progresses from the woman sitting alone with a contemplative expression, to noticing someone's arrival, culminating in a tender face-to-face moment with a young man. The golden backlighting and brick wall backdrop create a cinematic, romantic atmosphere throughout.",
+      "transcript": null,
+      "tags": [
+        "both",
+        "brown",
+        "caf",
+        "captures",
+        "couple",
+        "facing",
+        "hair",
+        "her",
+        "intimate",
+        "lit",
+        "loft",
+        "looking",
+        "looks",
+        "medium",
+        "moment",
+        "now",
+        "profile",
+        "right",
+        "romantic",
+        "scene",
+        "shown",
+        "shows",
+        "silent",
+        "sits",
+        "slight",
+        "subjects",
+        "upward",
+        "vertical",
+        "video",
+        "view",
+        "warmly",
+        "wavy",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with wavy brown hair sits in a warmly lit café or loft space. She wears a beige cable-knit sweater and has a gentle, contemplative smile while looking downward to her left. The background features exposed red brick walls, a large industrial window letting in golden natural light, and a hanging pendant lamp. The lighting creates a warm, intimate atmosphere with soft shadows. The camera frames her from mid-torso up in a vertical portrait orientation."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now shown in profile view, looking upward to her right with a slight smile. Her wavy brown hair cascades down her back. A silhouette of another person (appears to be male) is partially visible on the right edge of the frame. The same brick wall, pendant lamp, and window remain in the background. The warm golden backlighting creates a romantic, cinematic atmosphere. The composition suggests an intimate conversation beginning."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The scene now shows both subjects facing each other in an intimate moment. The woman looks up smiling at a young man with short dark hair wearing a dark t-shirt. He looks down at her with a gentle expression. They appear close together, suggesting a romantic connection. The warm backlight from the window creates silhouette effects on the man while illuminating the woman's face. The brick wall and pendant lamp remain visible in the atmospheric background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "both",
+    "brown",
+    "caf",
+    "captures",
+    "couple",
+    "facing",
+    "hair",
+    "her",
+    "intimate",
+    "lit",
+    "loft",
+    "looking",
+    "looks",
+    "medium",
+    "moment",
+    "now",
+    "profile",
+    "right",
+    "romantic",
+    "scene",
+    "shown",
+    "shows",
+    "silent",
+    "sits",
+    "slight",
+    "subjects",
+    "upward",
+    "vertical",
+    "video",
+    "view",
+    "warmly",
+    "wavy",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

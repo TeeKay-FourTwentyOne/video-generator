@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e8ef0b94921994e6a5af3ea4f2ff81636a9072d1715e60e364198ffa93a6bdf6",
+  "sha256": "e8ef0b94921994e6a5af3ea4f2ff81636a9072d1715e60e364198ffa93a6bdf6",
+  "bytes": 8545790,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b7_costume.mp4"
+  ],
+  "collections": [
+    "instar"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_547195c469a8d7a9151691103e05fca29d4a0e2a9af46bfd7dff1fca388eed02",
+  "sha256": "547195c469a8d7a9151691103e05fca29d4a0e2a9af46bfd7dff1fca388eed02",
+  "bytes": 618082,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767567790591_qevcy4.mp4"
+  ],
+  "collections": [
+    "january_4th_2026_an_ordinary_s_1767567066360"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767567790591_qevcy4"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Through an open bedroom doorway, a wide shot frames a small figure lying in rumpled white sheets on a bed. Morning light filters through gauze curtains, casting soft geometric patterns of light and shadow across the wooden floor. The camera remains completely still at the threshold, holding an observational perspective as the person stirs slightly beneath the sheets, caught in that delicate moment between sleep and waking. Natural, muted tones dominate the scene - the pale morning light, cream-colored walls, and weathered wood creating a harmonious palette. Film grain dances visibly in the shaft of sunlight streaming through the window, adding organic texture to the image. The balanced composition centers the doorframe, creating natural symmetry, while soft, even lighting bathes the room in a contemplative atmosphere. The person's subtle movement - perhaps a gentle shift of shoulders or the slightest turn of their head - is the only motion in this otherwise perfectly still moment, captured with the quiet intimacy of early morning solitude.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7be0f5be2647cc2fab403a0512558fa706ad0931aca9fe9f00decf58a3a09dbe",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Through an open bedroom doorway, a wide shot frames a small figure lying in rumpled white sheets on a bed. Morning light filters through gauze curtains, casting soft geometric patterns of light and shadow across the wooden floor. The camera remains completely still at the threshold, holding an observational perspective as the person stirs slightly beneath the sheets, caught in that delicate moment between sleep and waking. Natural, muted tones dominate the scene - the pale morning light, cream-colored walls, and weathered wood creating a harmonious palette. Film grain dances visibly in the shaft of sunlight streaming through the window, adding organic texture to the image. The balanced composition centers the doorframe, creating natural symmetry, while soft, even lighting bathes the room in a contemplative atmosphere. The person's subtle movement - perhaps a gentle shift of shoulders or the slightest turn of their head - is the only motion in this otherwise perfectly still moment, captured with the quiet intimacy of early morning solitude.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7be0f5be2647cc2fab403a0512558fa706ad0931aca9fe9f00decf58a3a09dbe",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T23:02:27.785Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A static, contemplative shot looking through an open doorway into a bright bedroom where a person sleeps peacefully under white bedding. The scene remains virtually unchanged throughout the 4-second clip, emphasizing stillness and tranquility with soft natural light streaming through sheer curtains onto rustic wooden floors.",
+      "transcript": ". .",
+      "tags": [
+        "bed",
+        "bedroom",
+        "bright",
+        "composition",
+        "contemplative",
+        "doorway",
+        "figure",
+        "identical",
+        "largely",
+        "lies",
+        "looking",
+        "medium",
+        "motionless",
+        "nearly",
+        "open",
+        "person",
+        "remains",
+        "scene",
+        "shot",
+        "showing",
+        "sleeping",
+        "sleeps",
+        "speech",
+        "static",
+        "sunlit",
+        "unchanged",
+        "view",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "View through an open doorway into a bright bedroom. A person lies sleeping in a bed with white rumpled bedding, only their dark hair visible above the covers. The room features two tall windows with sheer white curtains allowing soft natural daylight to flood in. A pendant light hangs from the ceiling. The floor consists of weathered wooden planks. The doorframe creates a natural frame within the composition, with the left side in shadow. Warm, muted tones dominate."
+        },
+        {
+          "seconds": 2,
+          "text": "Nearly identical composition showing the bedroom through the doorway. The sleeping figure remains motionless under white bedding with only their head visible. Natural light continues streaming through the two windows with white curtains. The rustic wooden plank flooring shows sunlight patterns. The glass pendant lamp hangs centered above. The weathered wooden door frame provides depth, with darker tones in the foreground transitioning to the bright, airy bedroom space."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The scene remains largely unchanged - a static shot through the doorway into the sunlit bedroom. The person continues sleeping peacefully under white sheets and blankets. The bedding appears slightly different in its folds. Two windows with translucent white curtains illuminate the space with soft morning light. The worn wooden floor planks and hanging pendant light complete the serene, minimalist bedroom scene. The composition maintains its voyeuristic quality through the doorframe."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bed",
+    "bedroom",
+    "bright",
+    "composition",
+    "contemplative",
+    "doorway",
+    "figure",
+    "identical",
+    "largely",
+    "lies",
+    "looking",
+    "medium",
+    "motionless",
+    "nearly",
+    "open",
+    "person",
+    "remains",
+    "scene",
+    "shot",
+    "showing",
+    "sleeping",
+    "sleeps",
+    "speech",
+    "static",
+    "sunlit",
+    "unchanged",
+    "view",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8404691404e6894f299d87e51771fb08aa06b01d411e47493dd9a3a797156bfb",
+  "sha256": "8404691404e6894f299d87e51771fb08aa06b01d411e47493dd9a3a797156bfb",
+  "bytes": 2231917,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763614600_40w8n5.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763614600_40w8n5"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short clip presents a vintage-styled, sepia-toned sequence featuring a person in a military uniform, likely from a historical period. The figure transitions from a neutral standing pose with a rifle, to an open-palmed questioning gesture, and finally returns to a relaxed stance. The consistent framing focuses on the torso and uniform details while maintaining a documentary or historical aesthetic throughout.",
+      "transcript": null,
+      "tags": [
+        "arms",
+        "both",
+        "clip",
+        "extended",
+        "featuring",
+        "figure",
+        "hands",
+        "image",
+        "medium",
+        "military",
+        "now",
+        "outward",
+        "palms",
+        "person",
+        "presents",
+        "relaxed",
+        "sepia",
+        "sequence",
+        "short",
+        "showing",
+        "shown",
+        "sides",
+        "silent",
+        "stands",
+        "style",
+        "styled",
+        "their",
+        "toned",
+        "torso",
+        "uniformed",
+        "vintage",
+        "visible",
+        "wearing"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A sepia-toned, vintage-style image showing the torso of a person wearing a military uniform. The uniform features a buttoned jacket with chest pockets, metal buttons, and star insignias on the collar. A dark leather belt with a square buckle cinches the waist, and a diagonal strap crosses the chest. A rifle is visible on the left side. The person's left hand hangs at their side. The composition is tightly framed on the body, cropping out the head and lower legs."
+        },
+        {
+          "seconds": 2,
+          "text": "The same military-uniformed figure is now shown with both arms extended outward, palms facing up in an open, questioning gesture. The sepia-toned aesthetic continues with the vintage military jacket, diagonal chest strap, and leather belt clearly visible. The composition remains focused on the torso area, with hands now prominently displayed at the frame edges. The background appears plain and muted, maintaining the historical documentary feel."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The uniformed figure stands with arms relaxed at their sides, hands visible with palms facing slightly backward. The military jacket with its characteristic pockets, buttons, and diagonal strap remains the focal point. The leather belt and uniform details are clearly visible in this sepia-toned frame. The composition shows more of the uniform's lower portion including the jacket's large hip pockets. The vintage photographic style creates a historical atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "arms",
+    "both",
+    "clip",
+    "extended",
+    "featuring",
+    "figure",
+    "hands",
+    "image",
+    "medium",
+    "military",
+    "now",
+    "outward",
+    "palms",
+    "person",
+    "presents",
+    "relaxed",
+    "sepia",
+    "sequence",
+    "short",
+    "showing",
+    "shown",
+    "sides",
+    "silent",
+    "stands",
+    "style",
+    "styled",
+    "their",
+    "toned",
+    "torso",
+    "uniformed",
+    "vintage",
+    "visible",
+    "wearing"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

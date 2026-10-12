@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d822d9923ae807e8892ae68b52a770a028b5f79d367aa7f45fb21330981bf8d5",
+  "sha256": "d822d9923ae807e8892ae68b52a770a028b5f79d367aa7f45fb21330981bf8d5",
+  "bytes": 4324618,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b6_insect.mp4"
+  ],
+  "collections": [
+    "instar"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

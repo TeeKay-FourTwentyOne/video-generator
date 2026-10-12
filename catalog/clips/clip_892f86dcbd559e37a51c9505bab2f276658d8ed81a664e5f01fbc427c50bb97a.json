@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_892f86dcbd559e37a51c9505bab2f276658d8ed81a664e5f01fbc427c50bb97a",
+  "sha256": "892f86dcbd559e37a51c9505bab2f276658d8ed81a664e5f01fbc427c50bb97a",
+  "bytes": 1740787,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1664,
+    "height": 936,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "02-robot-performance.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b31f24a0f7f14b101cf9c7bd5b3e8ba35acdc87fc01892ddedf9a2ce95eb58d4",
+  "sha256": "b31f24a0f7f14b101cf9c7bd5b3e8ba35acdc87fc01892ddedf9a2ce95eb58d4",
+  "bytes": 2219278,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "gravity_memories_shot_2_1766616384832.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:gravity_memories_shot_2_1766616384832"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A red canvas sneaker floating and slowly rotating against dreamy golden bokeh background. The shoe tumbles weightlessly with laces dangling, backlit dramatically to create a nostalgic, memory-like atmosphere.",
+      "transcript": "🔹️🔹️🔹️🔹️🔹️🔮🔫🔹️🔮🔫🔫🔹️🔹️🔷🔀🔸🔹🔾🔔",
+      "tags": [
+        "against",
+        "bokeh",
+        "canvas",
+        "continues",
+        "converse",
+        "dreamy",
+        "edge",
+        "floating",
+        "golden",
+        "medium",
+        "now",
+        "profile",
+        "red",
+        "rotates",
+        "rotating",
+        "rotation",
+        "rubber",
+        "shoe",
+        "show",
+        "showing",
+        "side",
+        "slow",
+        "slowly",
+        "sneaker",
+        "sole",
+        "speech",
+        "style",
+        "suspended",
+        "toe",
+        "warm",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A red canvas sneaker (Converse-style) suspended against warm golden bokeh background. White laces hang loosely. Dramatic backlighting creates silhouette effect with glowing rim light. The shoe appears to float weightlessly."
+        },
+        {
+          "seconds": 4,
+          "text": "The red sneaker rotates to show its side profile and sole. White rubber edge and stripe visible. Golden bokeh circles fill the background creating magical atmosphere. Strong backlight silhouettes the shoe shape."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The shoe continues its slow rotation, now showing more of the toe and side. Red canvas, white rubber sole, and dangling laces all visible. Dreamy golden light bokeh persists in background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "bokeh",
+    "canvas",
+    "continues",
+    "converse",
+    "dreamy",
+    "edge",
+    "floating",
+    "golden",
+    "medium",
+    "now",
+    "profile",
+    "red",
+    "rotates",
+    "rotating",
+    "rotation",
+    "rubber",
+    "shoe",
+    "show",
+    "showing",
+    "side",
+    "slow",
+    "slowly",
+    "sneaker",
+    "sole",
+    "speech",
+    "style",
+    "suspended",
+    "toe",
+    "warm",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

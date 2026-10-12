@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_af7101055e72b91773587ded8de8f55c48f03641d93201cc2ee46855dab89102",
+  "sha256": "af7101055e72b91773587ded8de8f55c48f03641d93201cc2ee46855dab89102",
+  "bytes": 2635313,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.416667,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 202,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "splice-natural.mp4"
+  ],
+  "collections": [
+    "april"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

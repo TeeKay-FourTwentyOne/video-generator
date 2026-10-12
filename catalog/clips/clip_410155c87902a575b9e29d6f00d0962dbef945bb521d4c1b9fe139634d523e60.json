@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_410155c87902a575b9e29d6f00d0962dbef945bb521d4c1b9fe139634d523e60",
+  "sha256": "410155c87902a575b9e29d6f00d0962dbef945bb521d4c1b9fe139634d523e60",
+  "bytes": 143563640,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 3600.5,
+    "width": 960,
+    "height": 540,
+    "frameRate": "24/1",
+    "frameCount": 86412,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "full_win_future.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

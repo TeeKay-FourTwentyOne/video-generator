@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_33d427363f7b8abcd6009879a30d0d0176ff7b1c01b3521dd059a545f4aaa953",
+  "sha256": "33d427363f7b8abcd6009879a30d0d0176ff7b1c01b3521dd059a545f4aaa953",
+  "bytes": 29408421,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "gate_clip.mp4",
+    "seg1_s101_RAW.mp4"
+  ],
+  "collections": [
+    "lodger-ep01",
+    "personal-best"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

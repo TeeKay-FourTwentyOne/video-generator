@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6c534a93c9371b4d4e515ab2eb2fe22eb9f8a5cdde5de5e438d9a84832e6ad78",
+  "sha256": "6c534a93c9371b4d4e515ab2eb2fe22eb9f8a5cdde5de5e438d9a84832e6ad78",
+  "bytes": 3159451,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_multiple_firing.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_multiple_firing"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Action sequence of the Sagittarius centaur firing at multiple targets in the forest. Showcases the archer's skill as he aims at various wooden targets hanging from trees. Dynamic poses and golden lighting emphasize the sign's athletic nature and ability to pursue multiple goals simultaneously.",
+      "transcript": "Thank you for watching the video.",
+      "tags": [
+        "action",
+        "aim",
+        "aimed",
+        "archer",
+        "archery",
+        "arrow",
+        "body",
+        "bow",
+        "centaur",
+        "continued",
+        "draw",
+        "drawing",
+        "dynamic",
+        "face",
+        "firing",
+        "focus",
+        "forest",
+        "full",
+        "horse",
+        "intense",
+        "maintaining",
+        "medium",
+        "motion",
+        "multiple",
+        "nocked",
+        "raised",
+        "sagittarius",
+        "sequence",
+        "shot",
+        "showcases",
+        "speech",
+        "targets",
+        "thank",
+        "video",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Dynamic shot of the centaur archer in motion, bow raised and drawing arrow. Multiple wooden targets visible hanging from ropes in the forest background. Green vest, cream shirt, chestnut horse body. Golden forest lighting illuminates the action."
+        },
+        {
+          "seconds": 4,
+          "text": "Centaur at full draw, arrow nocked and aimed. Intense focus on the archer's face as he prepares to fire. Targets hang at various distances in the dappled forest. Demonstrates the Sagittarius skill and precision."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Continued archery sequence with the centaur maintaining aim at the multiple targets. Horse body positioned dynamically, suggesting movement between shots. The multi-target setup emphasizes versatility and ambition."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_005",
+      "name": "Archer",
+      "description": "Young man with curly red hair, warm smile, Sagittarius text overlay, cheerful demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "action",
+    "aim",
+    "aimed",
+    "archer",
+    "archery",
+    "arrow",
+    "body",
+    "bow",
+    "centaur",
+    "continued",
+    "draw",
+    "drawing",
+    "dynamic",
+    "face",
+    "firing",
+    "focus",
+    "forest",
+    "full",
+    "horse",
+    "intense",
+    "maintaining",
+    "medium",
+    "motion",
+    "multiple",
+    "nocked",
+    "raised",
+    "sagittarius",
+    "sequence",
+    "shot",
+    "showcases",
+    "speech",
+    "targets",
+    "thank",
+    "video",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

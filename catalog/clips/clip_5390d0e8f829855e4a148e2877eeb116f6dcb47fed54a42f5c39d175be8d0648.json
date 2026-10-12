@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5390d0e8f829855e4a148e2877eeb116f6dcb47fed54a42f5c39d175be8d0648",
+  "sha256": "5390d0e8f829855e4a148e2877eeb116f6dcb47fed54a42f5c39d175be8d0648",
+  "bytes": 21403568,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 17.25,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 414,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "exchange-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

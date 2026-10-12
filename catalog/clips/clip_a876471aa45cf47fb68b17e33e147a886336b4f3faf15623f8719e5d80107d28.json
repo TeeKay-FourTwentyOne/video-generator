@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a876471aa45cf47fb68b17e33e147a886336b4f3faf15623f8719e5d80107d28",
+  "sha256": "a876471aa45cf47fb68b17e33e147a886336b4f3faf15623f8719e5d80107d28",
+  "bytes": 3741148,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767757782004_mayzz9.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767757782004_mayzz9"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 6-second clip follows a young woman in casual attire walking along a suburban sidewalk during golden hour. The camera tracks her movement as she progresses forward, with the framing shifting from a centered full-body shot to a closer, more intimate composition. Chinese text overlay indicates this is promotional content requesting viewer engagement with likes, subscriptions, and shares.",
+      "transcript": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目",
+      "tags": [
+        "along",
+        "attire",
+        "brown",
+        "camera",
+        "captured",
+        "casual",
+        "centered",
+        "clip",
+        "closer",
+        "concrete",
+        "continues",
+        "follows",
+        "forward",
+        "frame",
+        "hair",
+        "her",
+        "left",
+        "length",
+        "medium",
+        "mid",
+        "now",
+        "passes",
+        "second",
+        "she",
+        "shoulder",
+        "sidewalk",
+        "speech",
+        "stands",
+        "stride",
+        "suburban",
+        "toward",
+        "walking",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with shoulder-length brown hair stands centered on a concrete sidewalk in a suburban residential neighborhood. She wears a cream/off-white crewneck sweater, blue jeans, and dark sneakers, with a small beige crossbody bag. The scene is framed with black bars on both sides, creating a vertical composition. Golden hour sunlight illuminates the left side, casting warm tones on nearby brick and stucco walls. Houses, trees, power lines, and a utility pole are visible in the background. She faces the camera directly with a slight smile."
+        },
+        {
+          "seconds": 3,
+          "text": "The same woman is now walking forward on the sidewalk, captured in mid-stride with her left foot forward. Her gaze is directed downward. Her shadow and another elongated shadow are cast dramatically on the cream-colored wall to her left. The wider frame reveals more of the suburban neighborhood - multiple houses with gray and beige siding, parked cars, green lawns, and a clear blue sky. The golden hour lighting creates strong directional shadows and warm highlights on her sweater."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The woman continues walking toward the camera, now closer in frame. She passes by a gray stucco wall with decorative iron fencing on the left side. Her expression appears contemplative as she looks slightly downward. The afternoon sunlight creates patches of light and shadow on the sidewalk and wall. The suburban setting remains visible with houses, parked cars, and well-maintained lawns in the background. A storm drain is visible on the sidewalk to the right. The composition is more intimate with tighter framing."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "along",
+    "attire",
+    "brown",
+    "camera",
+    "captured",
+    "casual",
+    "centered",
+    "clip",
+    "closer",
+    "concrete",
+    "continues",
+    "follows",
+    "forward",
+    "frame",
+    "hair",
+    "her",
+    "left",
+    "length",
+    "medium",
+    "mid",
+    "now",
+    "passes",
+    "second",
+    "she",
+    "shoulder",
+    "sidewalk",
+    "speech",
+    "stands",
+    "stride",
+    "suburban",
+    "toward",
+    "walking",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

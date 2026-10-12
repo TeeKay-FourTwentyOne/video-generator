@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_79f989d725a60f1c7736641dfd853e7ed98c98e0e876a40ab1466e3c73a5e443",
+  "sha256": "79f989d725a60f1c7736641dfd853e7ed98c98e0e876a40ab1466e3c73a5e443",
+  "bytes": 3360628,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "overhead_convergence.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

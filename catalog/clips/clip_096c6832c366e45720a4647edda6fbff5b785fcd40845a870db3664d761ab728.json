@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_096c6832c366e45720a4647edda6fbff5b785fcd40845a870db3664d761ab728",
+  "sha256": "096c6832c366e45720a4647edda6fbff5b785fcd40845a870db3664d761ab728",
+  "bytes": 727197,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1664,
+    "height": 936,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "clock.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

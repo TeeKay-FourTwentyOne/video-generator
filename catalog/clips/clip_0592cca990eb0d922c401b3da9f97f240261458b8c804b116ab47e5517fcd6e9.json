@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0592cca990eb0d922c401b3da9f97f240261458b8c804b116ab47e5517fcd6e9",
+  "sha256": "0592cca990eb0d922c401b3da9f97f240261458b8c804b116ab47e5517fcd6e9",
+  "bytes": 22182932,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tunnel_clip2.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:tunnel_clip2"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip displays an abstract, high-contrast black and white animation featuring organic, crystalline structures that form ring and frame patterns against a pure black background. The imagery suggests either microscopic visualization, liquid dynamics, or digital art with subtle morphing between frames. A single word 'You' is spoken during the 8-second duration.",
+      "transcript": "You",
+      "tags": [
+        "abstract",
+        "against",
+        "animation",
+        "black",
+        "central",
+        "circular",
+        "clip",
+        "complete",
+        "composition",
+        "continues",
+        "contrast",
+        "displays",
+        "featuring",
+        "forming",
+        "frame",
+        "high",
+        "image",
+        "intricate",
+        "looking",
+        "medium",
+        "now",
+        "organic",
+        "oval",
+        "pattern",
+        "prominent",
+        "ring",
+        "showing",
+        "similar",
+        "speech",
+        "structure",
+        "structures",
+        "surrounding",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Abstract black and white image showing intricate, organic-looking structures against a pure black background. A central oval or ring-shaped formation made of delicate, web-like white lines dominates the center. Surrounding this are larger, more chaotic textured masses in the corners and edges, resembling crystalline or biological structures. The high contrast monochromatic palette creates a dramatic, almost x-ray or microscopic aesthetic. The composition is vertically oriented with the ring centered."
+        },
+        {
+          "seconds": 4,
+          "text": "Similar abstract composition but with the organic structures now forming a more complete circular frame around the edges of the image. The central ring formation remains but appears slightly different in texture. The surrounding masses have expanded and connected more fully around the perimeter, creating a tunnel-like or portal effect. The white line-work against black maintains the ethereal, scientific visualization quality. Small scattered fragments appear in the dark central void."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The abstract pattern continues with the central oval ring structure prominent in the frame. The surrounding organic textures in the corners show subtle variations from previous frames, with the masses appearing slightly shifted. Small droplet-like fragments are scattered in the lower right area. The overall composition maintains its dark, mysterious quality with white crystalline or liquid-like structures creating depth against the black void. The vertical framing emphasizes the portal-like central opening."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "animation",
+    "black",
+    "central",
+    "circular",
+    "clip",
+    "complete",
+    "composition",
+    "continues",
+    "contrast",
+    "displays",
+    "featuring",
+    "forming",
+    "frame",
+    "high",
+    "image",
+    "intricate",
+    "looking",
+    "medium",
+    "now",
+    "organic",
+    "oval",
+    "pattern",
+    "prominent",
+    "ring",
+    "showing",
+    "similar",
+    "speech",
+    "structure",
+    "structures",
+    "surrounding",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

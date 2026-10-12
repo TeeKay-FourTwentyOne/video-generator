@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2411d7118fc02cd8462b1cc44eac37c2cb7607c9bacf9f86be1413dfaf2940df",
+  "sha256": "2411d7118fc02cd8462b1cc44eac37c2cb7607c9bacf9f86be1413dfaf2940df",
+  "bytes": 2715548,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "veo_1777264325603_fuhp3h.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "The driver's right hand lifts smoothly from the steering wheel toward the dashboard. The fingers grasp the walnut box and lift the brass-hinged lid open. The lid opens fully. The hand rests on the dashboard beside the open box. The left hand remains on the steering wheel. The black wheeled suitcase on the passenger seat does not move. Static interior shot of the parked sedan. Dark night exterior unchanging through the windshield, single sodium streetlight glow steady. Soft warm dashboard glow on the hands. No camera movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eaa0ff94fd87d58c4613f01af889c5c3761cda9a38ca93a641bc3377b6e260fa",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2385345957,
+      "createdAt": "2026-04-27T04:30:10.305Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

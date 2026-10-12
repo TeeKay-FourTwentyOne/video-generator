@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7ec48da3010e08a36f36a0a9b4a086b741a842cc22b167bb63bed61533988f96",
+  "sha256": "7ec48da3010e08a36f36a0a9b4a086b741a842cc22b167bb63bed61533988f96",
+  "bytes": 41069847,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "phone_table.mp4"
+  ],
+  "collections": [
+    "elvis-prophet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

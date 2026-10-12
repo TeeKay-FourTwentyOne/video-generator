@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c6e9bc2049ad3e5469133f5b9d65294e51ce2b0ddaf3c0fd701aec252b509690",
+  "sha256": "c6e9bc2049ad3e5469133f5b9d65294e51ce2b0ddaf3c0fd701aec252b509690",
+  "bytes": 6725740,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S01-v1.mp4",
+    "veo_1791014258539_7ky628.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Continue this exact handmade miniature scene with restrained stop-motion motion and cinematic lighting. Maintain the exact robot, one tree, planter, bulb, paint chips and greenhouse geometry in the supplied first frame. 9:16 portrait. One continuous shot, no cuts, no dissolve, no text, no speech. No other characters, no new objects, no duplicate limbs. Robot always has two arms with two-prong grippers and two caterpillar tracks.\nLocked low wide composition with an almost imperceptible slow camera push toward the tree. The tiny blue maintenance machine rolls slowly forward from lower left toward the dead tree at center right, covering about one body length, then stops. Its single amber chest bulb sweeps a small pool of light across the dusty damp stone floor. Its head slowly tilts up at the lifeless branches. The tree and empty brass planter socket remain rigid and dark. Sparse dust motes drift. Vast teal glass ribs overhead. Quiet, patient, tactile. Only the robot moves. Give the final still pose two seconds to register.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_74fa56937f114d8e887ee8c7092f7061c46210fca19d3d91d8fd5cc1de2b85ac",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

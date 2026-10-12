@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f9cd5477e7f0c86a497a15e62f2ebbcbdda69c4466fe2c35bb3bf8ae4a5b9b35",
+  "sha256": "f9cd5477e7f0c86a497a15e62f2ebbcbdda69c4466fe2c35bb3bf8ae4a5b9b35",
+  "bytes": 33886767,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "three_televisions.mp4"
+  ],
+  "collections": [
+    "elvis-prophet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

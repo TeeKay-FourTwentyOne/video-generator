@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_37cab45adb348c30bfd46496348ec0e229f282a8c57116fa6235c59efa2b3c2c",
+  "sha256": "37cab45adb348c30bfd46496348ec0e229f282a8c57116fa6235c59efa2b3c2c",
+  "bytes": 44195745,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "spray.mp4",
+    "veo_1789521050491_3qmk22.mp4"
+  ],
+  "collections": [
+    "scary-woods-episode-02"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

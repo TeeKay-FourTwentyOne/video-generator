@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_61e1e2386a7c241b23db17905cdcab377a33bb22eb55d9339733f6e67fb52865",
+  "sha256": "61e1e2386a7c241b23db17905cdcab377a33bb22eb55d9339733f6e67fb52865",
+  "bytes": 178153048,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 52.958333,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 1271,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "after_hours_v2_4k.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

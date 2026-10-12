@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1e15a91db385171b38b792327e54b41bd47811910edf051a37f41495400e7457",
+  "sha256": "1e15a91db385171b38b792327e54b41bd47811910edf051a37f41495400e7457",
+  "bytes": 6142751,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 18,
+    "width": 1664,
+    "height": 936,
+    "frameRate": "24/1",
+    "frameCount": 432,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "01-work-routine.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

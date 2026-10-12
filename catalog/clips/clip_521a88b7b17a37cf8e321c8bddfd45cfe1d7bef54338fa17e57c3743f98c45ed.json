@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_521a88b7b17a37cf8e321c8bddfd45cfe1d7bef54338fa17e57c3743f98c45ed",
+  "sha256": "521a88b7b17a37cf8e321c8bddfd45cfe1d7bef54338fa17e57c3743f98c45ed",
+  "bytes": 2852707,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767759481167_0ytxoj.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767759481167_0ytxoj"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short video clip shows a woman in a burgundy dress and beige trench coat, transitioning from a studio portrait setting to a romantic rainy European street scene at twilight. The Korean speech translates to 'Thank you for watching,' suggesting this is the conclusion of a fashion or lifestyle video. The clip demonstrates a before/after or transformation style edit, moving from plain backdrop to atmospheric location.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "against",
+        "appears",
+        "beige",
+        "brown",
+        "burgundy",
+        "camera",
+        "clip",
+        "closer",
+        "coat",
+        "cobblestone",
+        "continues",
+        "dark",
+        "dress",
+        "dusk",
+        "european",
+        "evening",
+        "hair",
+        "length",
+        "medium",
+        "multi-scene",
+        "now",
+        "rain",
+        "rainy",
+        "short",
+        "shoulder",
+        "shows",
+        "slightly",
+        "speech",
+        "stands",
+        "street",
+        "style",
+        "trench",
+        "video",
+        "walking",
+        "wavy",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.07,
+          "text": "A young woman with shoulder-length wavy brown hair stands against a dark gray studio backdrop. She wears a burgundy/maroon knee-length dress with a rounded neckline and an open beige/tan trench coat. She has a bright, genuine smile and appears to be walking forward. She wears matching burgundy heels. The lighting is professional studio lighting, creating soft shadows. The composition is a full-body portrait shot, centered framing with the subject taking up most of the vertical frame."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman now appears on a European-style cobblestone street at dusk or evening during rain. She stands near a warmly-lit storefront with a dark awning on the left. The wet cobblestones reflect golden light from ornate vintage street lamps lining the pedestrian street. Rain is visible falling. She maintains the same outfit - burgundy dress and beige trench coat - and smiles while appearing to walk. The background shows classical architecture with illuminated shop windows receding into the distance."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues walking on the same rainy European street, now slightly closer to the camera and reaching toward a shop door handle with her right hand. Her expression remains cheerful and smiling. The wet cobblestones show strong golden reflections from the street lamps. The trench coat now appears buttoned. Rain continues falling against the blue twilight sky. The ornate lamp posts and classical building facades create a romantic, cinematic atmosphere. Her body is angled slightly toward the shop entrance."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_044",
+      "name": "Margot",
+      "description": "Woman in burgundy dress with tan overcoat, rainy European cobblestone street, cinematic composition, sophisticated traveler",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "appears",
+    "beige",
+    "brown",
+    "burgundy",
+    "camera",
+    "clip",
+    "closer",
+    "coat",
+    "cobblestone",
+    "continues",
+    "dark",
+    "dress",
+    "dusk",
+    "european",
+    "evening",
+    "hair",
+    "length",
+    "medium",
+    "multi-scene",
+    "now",
+    "rain",
+    "rainy",
+    "short",
+    "shoulder",
+    "shows",
+    "slightly",
+    "speech",
+    "stands",
+    "street",
+    "style",
+    "trench",
+    "video",
+    "walking",
+    "wavy",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

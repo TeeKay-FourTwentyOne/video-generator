@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_477a09f60c75be1af75586fe4d0616194968f73509120cfd057fb96cbb5431b6",
+  "sha256": "477a09f60c75be1af75586fe4d0616194968f73509120cfd057fb96cbb5431b6",
+  "bytes": 811952,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot13.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

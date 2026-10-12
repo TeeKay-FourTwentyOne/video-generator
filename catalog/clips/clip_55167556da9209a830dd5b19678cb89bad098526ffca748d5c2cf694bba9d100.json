@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_55167556da9209a830dd5b19678cb89bad098526ffca748d5c2cf694bba9d100",
+  "sha256": "55167556da9209a830dd5b19678cb89bad098526ffca748d5c2cf694bba9d100",
+  "bytes": 1007083,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "test_gen2_multicolor.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:test_gen2_multicolor"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This stylized video clip shows a surreal digital composition where a person emerges onto a green grass field alongside a glowing blue monolith, set against a black void with a red-tinted landscape image in the background. The scene transitions from a minimal starting point to reveal the full composition with dramatic color contrasts between red, blue, cyan, and green elements.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "clip",
+        "composition",
+        "dark",
+        "digital",
+        "emerges",
+        "evolved",
+        "field",
+        "frame",
+        "grass",
+        "green",
+        "identical",
+        "left",
+        "medium",
+        "middle",
+        "nearly",
+        "onto",
+        "person",
+        "predominantly",
+        "pure",
+        "red",
+        "remains",
+        "scene",
+        "show",
+        "shows",
+        "side",
+        "silent",
+        "standing",
+        "stylized",
+        "surreal",
+        "tinted",
+        "vibrant",
+        "video"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, stylized scene with predominantly black background. On the left side, there's a red-tinted silhouette image showing a figure standing in what appears to be a field with radiating lines extending from a horizon. A small blue rectangular shape appears on the right side near the bottom. A strip of bright green grass runs along the bottom edge of the frame. The composition is stark and minimalist with high contrast between the red imagery, blue element, and black void."
+        },
+        {
+          "seconds": 2,
+          "text": "The scene has evolved to show a person standing on vibrant green grass against a pure black background. The figure is illuminated with cyan/blue lighting on their front, wearing casual clothes including a jacket. Behind them, the same red-tinted landscape image persists. To their right stands a tall, glowing blue rectangular pillar or monolith that casts light onto the grass. The composition creates a surreal, digital art aesthetic with strong color contrasts."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Nearly identical to the middle frame, the person remains standing on the green grass field, lit by cyan light from the front. The tall blue glowing pillar continues to stand to their right, emanating a soft blue glow. The red-tinted background image with radiating lines remains visible behind the figure. The overall scene maintains its surreal, digitally-composed appearance with the stark contrast between the green grass, blue pillar, red imagery, and black void."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "clip",
+    "composition",
+    "dark",
+    "digital",
+    "emerges",
+    "evolved",
+    "field",
+    "frame",
+    "grass",
+    "green",
+    "identical",
+    "left",
+    "medium",
+    "middle",
+    "nearly",
+    "onto",
+    "person",
+    "predominantly",
+    "pure",
+    "red",
+    "remains",
+    "scene",
+    "show",
+    "shows",
+    "side",
+    "silent",
+    "standing",
+    "stylized",
+    "surreal",
+    "tinted",
+    "vibrant",
+    "video"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

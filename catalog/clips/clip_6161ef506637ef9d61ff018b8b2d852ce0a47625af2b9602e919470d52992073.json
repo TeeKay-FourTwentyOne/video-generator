@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6161ef506637ef9d61ff018b8b2d852ce0a47625af2b9602e919470d52992073",
+  "sha256": "6161ef506637ef9d61ff018b8b2d852ce0a47625af2b9602e919470d52992073",
+  "bytes": 8302351,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot3_murmuration_v2_seed2460846312.mp4",
+    "veo_1772421070858_4mdtr4.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "Wide shot of a flock of hundreds of small black birds flying together against a vivid orange sunset sky. The flock changes shape fluidly, stretching and compressing as it moves across the frame. Individual birds are tiny silhouettes. No smoke, no clouds, no fog. Clear sky with sunset gradient from orange to deep blue. The birds move as one living shape. Cinematic nature documentary photography, 9:16 vertical frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7235396cb0416882c402e46f48d200eadc464af19032ffbf32a66817c3ec0e3c",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 2460846312,
+      "createdAt": "2026-03-02T03:09:48.575Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

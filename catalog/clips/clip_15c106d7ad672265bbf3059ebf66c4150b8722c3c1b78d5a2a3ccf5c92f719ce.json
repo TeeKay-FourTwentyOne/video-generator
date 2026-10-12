@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_15c106d7ad672265bbf3059ebf66c4150b8722c3c1b78d5a2a3ccf5c92f719ce",
+  "sha256": "15c106d7ad672265bbf3059ebf66c4150b8722c3c1b78d5a2a3ccf5c92f719ce",
+  "bytes": 8660495,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_crossroads_dialogue.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_crossroads_dialogue"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Philosophical Sagittarius clip featuring an older human character (not the centaur) contemplating life's crossroads. Transitions from studio to dramatic country road scene with golden wheat fields. Features meaningful dialogue: 'They always ask which way? Like standing at a crossroads means you have to leave. Why choose?' Explores themes of freedom and possibility.",
+      "transcript": "They always ask. Which way? Like standing at a crossroads means you have to leave. Why choose?",
+      "tags": [
+        "against",
+        "aged",
+        "always",
+        "ask",
+        "body",
+        "centaur",
+        "centered",
+        "character",
+        "choose",
+        "clip",
+        "contemplating",
+        "continued",
+        "crossroads",
+        "cutting",
+        "dark",
+        "farmland",
+        "featuring",
+        "full",
+        "golden",
+        "gray",
+        "highway",
+        "horizon",
+        "human",
+        "leave",
+        "life",
+        "like",
+        "long",
+        "man",
+        "means",
+        "medium",
+        "middle",
+        "now",
+        "older",
+        "philosophical",
+        "road",
+        "sagittarius",
+        "scene",
+        "shot",
+        "speech",
+        "standing",
+        "straight",
+        "stretching",
+        "studio",
+        "they",
+        "warm",
+        "way",
+        "which",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Full-body shot of a middle-aged man against dark gray studio backdrop. Long wavy gray-brown hair, wearing olive green military-style jacket, beige henley shirt, dark pants, and brown boots. Standing neutrally, facing camera. Studio lighting setup."
+        },
+        {
+          "seconds": 4,
+          "text": "The same man now standing in the middle of a long straight road stretching to the horizon. Golden wheat fields flanking both sides. Dramatic golden hour lighting creates long shadows. The 'crossroads' metaphor visualized - multiple paths, infinite possibility."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Continued road scene with the man centered on the highway cutting through golden farmland. Warm sunset tones bathe the landscape. He stands contemplating the road ahead, embodying the Sagittarius theme of journey and choice."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_006",
+      "name": "Dusty",
+      "description": "Middle-aged man with long wavy brown/grey hair, olive jacket over tan shirt, rugged appearance, standing on road through golden fields",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "aged",
+    "always",
+    "ask",
+    "body",
+    "centaur",
+    "centered",
+    "character",
+    "choose",
+    "clip",
+    "contemplating",
+    "continued",
+    "crossroads",
+    "cutting",
+    "dark",
+    "farmland",
+    "featuring",
+    "full",
+    "golden",
+    "gray",
+    "highway",
+    "horizon",
+    "human",
+    "leave",
+    "life",
+    "like",
+    "long",
+    "man",
+    "means",
+    "medium",
+    "middle",
+    "now",
+    "older",
+    "philosophical",
+    "road",
+    "sagittarius",
+    "scene",
+    "shot",
+    "speech",
+    "standing",
+    "straight",
+    "stretching",
+    "studio",
+    "they",
+    "warm",
+    "way",
+    "which",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

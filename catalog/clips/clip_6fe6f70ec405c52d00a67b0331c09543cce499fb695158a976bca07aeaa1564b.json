@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6fe6f70ec405c52d00a67b0331c09543cce499fb695158a976bca07aeaa1564b",
+  "sha256": "6fe6f70ec405c52d00a67b0331c09543cce499fb695158a976bca07aeaa1564b",
+  "bytes": 2131476,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sprocket_gen2_annotated.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sprocket_gen2_annotated"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This stylized vintage-effect video depicts a World War-era soldier who transitions from walking through a field to contemplatively examining a daisy flower. The sepia-toned footage with film sprocket borders creates a nostalgic, historical documentary aesthetic while conveying an anti-war message through the juxtaposition of military imagery with the delicate flower. Japanese narration thanks viewers for watching until the end.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "appears",
+        "close",
+        "contemplating",
+        "daisy",
+        "depicts",
+        "effect",
+        "era",
+        "examining",
+        "field",
+        "flower",
+        "grassy",
+        "medium",
+        "military",
+        "now",
+        "open",
+        "profile",
+        "shot",
+        "soldier",
+        "speech",
+        "still",
+        "stylized",
+        "uniform",
+        "video",
+        "view",
+        "vintage",
+        "walks",
+        "war",
+        "which",
+        "white",
+        "who",
+        "world"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A soldier in World War-era military uniform walks through an open grassy field. He wears a distinctive rounded steel helmet and carries a rifle across his body. The image has a sepia-toned, vintage film aesthetic with visible film sprocket holes along the edges. The soldier is shown in full body view, walking toward the camera with a slight smile. The background shows trees and an overcast sky. The composition suggests archival or historical documentary footage with deliberate aging effects applied."
+        },
+        {
+          "seconds": 4,
+          "text": "Close-up shot of the same soldier in profile view, now examining a white daisy flower he holds delicately in his hands. His steel helmet and military uniform are clearly visible. He has a gentle, contemplative smile as he looks at the flower. The rifle barrel is visible in the frame. The sepia tone continues with warm amber coloring. Film grain and sprocket holes frame the image, maintaining the vintage aesthetic. The lighting creates soft shadows on his face, emphasizing the tender moment."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Medium close-up of the soldier in profile, still contemplating the daisy flower which appears attached to or near his rifle barrel. His expression is peaceful and reflective. The steel helmet with chin strap is prominent. The sepia-toned vintage film effect continues with visible film borders and sprocket holes. The background shows a blurred landscape with warm golden tones. The composition creates a poignant contrast between the soldier's military equipment and the delicate flower, suggesting themes of peace amid war."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "close",
+    "contemplating",
+    "daisy",
+    "depicts",
+    "effect",
+    "era",
+    "examining",
+    "field",
+    "flower",
+    "grassy",
+    "medium",
+    "military",
+    "now",
+    "open",
+    "profile",
+    "shot",
+    "soldier",
+    "speech",
+    "still",
+    "stylized",
+    "uniform",
+    "video",
+    "view",
+    "vintage",
+    "walks",
+    "war",
+    "which",
+    "white",
+    "who",
+    "world"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

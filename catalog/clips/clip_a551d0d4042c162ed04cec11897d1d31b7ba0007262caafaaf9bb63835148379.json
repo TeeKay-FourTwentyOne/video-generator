@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a551d0d4042c162ed04cec11897d1d31b7ba0007262caafaaf9bb63835148379",
+  "sha256": "a551d0d4042c162ed04cec11897d1d31b7ba0007262caafaaf9bb63835148379",
+  "bytes": 24411751,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 22.041667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 529,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tour-trimmed.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

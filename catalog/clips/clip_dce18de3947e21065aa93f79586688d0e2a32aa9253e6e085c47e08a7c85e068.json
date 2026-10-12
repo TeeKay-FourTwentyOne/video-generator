@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_dce18de3947e21065aa93f79586688d0e2a32aa9253e6e085c47e08a7c85e068",
+  "sha256": "dce18de3947e21065aa93f79586688d0e2a32aa9253e6e085c47e08a7c85e068",
+  "bytes": 2159907,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767567810233_ha64z4.mp4"
+  ],
+  "collections": [
+    "january_4th_2026_an_ordinary_s_1767567066360"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767567810233_ha64z4"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A barefoot person walks slowly down a narrow hallway toward a kitchen, their hand trailing along the textured wall as they move through alternating pools of soft morning sunlight and shadow. Medium shot with slow lateral tracking camera following their unhurried, drowsy shuffle from the side, maintaining intimate distance. Natural morning light streams through unseen windows creating gentle contrast between bright patches and darker corners. The person's fingers catch the rough texture of old paint as they trace along the wall. Shallow depth of field keeps focus on their movement while the hallway softly blurs. Film grain texture adds organic quality to the image. Observational perspective with minimal, smooth camera movement matching their dreamlike pace. Warm skin tones enhanced by golden morning light. The tracking shot moves steadily for 6 seconds, following their contemplative journey toward the kitchen at the end of the hallway.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_20ea9028bab3d07444c76a7fa6688ba29968ef5d2303e1aae96e8a5eb31935aa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A barefoot person walks slowly down a narrow hallway toward a kitchen, their hand trailing along the textured wall as they move through alternating pools of soft morning sunlight and shadow. Medium shot with slow lateral tracking camera following their unhurried, drowsy shuffle from the side, maintaining intimate distance. Natural morning light streams through unseen windows creating gentle contrast between bright patches and darker corners. The person's fingers catch the rough texture of old paint as they trace along the wall. Shallow depth of field keeps focus on their movement while the hallway softly blurs. Film grain texture adds organic quality to the image. Observational perspective with minimal, smooth camera movement matching their dreamlike pace. Warm skin tones enhanced by golden morning light. The tracking shot moves steadily for 6 seconds, following their contemplative journey toward the kitchen at the end of the hallway.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_20ea9028bab3d07444c76a7fa6688ba29968ef5d2303e1aae96e8a5eb31935aa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T23:02:36.772Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This intimate video clip follows a woman in cream linen clothing moving through a sunlit hallway, captured in warm golden tones. The camera gradually reveals more of her figure across the frames, transitioning from focusing on her hand and shadow to showing her contemplative profile. Japanese text at the end thanks viewers for watching, suggesting this is the conclusion of a longer piece.",
+      "transcript": "ご視聴ありがとうございました。",
+      "tags": [
+        "angle",
+        "back",
+        "barefoot",
+        "beige",
+        "clip",
+        "clothing",
+        "cream",
+        "dark",
+        "different",
+        "fitting",
+        "follows",
+        "hair",
+        "intimate",
+        "linen",
+        "loose",
+        "medium",
+        "moving",
+        "now",
+        "person",
+        "profile",
+        "pulled",
+        "shown",
+        "slightly",
+        "speech",
+        "stands",
+        "sunlit",
+        "their",
+        "video",
+        "visible",
+        "wearing",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A person wearing cream/beige loose-fitting linen clothing stands barefoot in a narrow hallway. Only their lower body and extended right hand are visible. Warm golden sunlight streams in from the left, casting a distinct shadow of the hand on the textured wall. The floor appears to be light wood or tile. The composition emphasizes the interplay of light and shadow, with the person's relaxed hand gesture suggesting a contemplative or peaceful moment."
+        },
+        {
+          "seconds": 3,
+          "text": "The same person in cream linen clothing is now shown from a slightly different angle, with their hand touching or nearly touching the textured wall. The warm amber lighting continues to dominate the scene, creating a golden glow throughout the hallway. The camera frames the torso and arm area, cropping out the head and feet. The narrow corridor extends into soft focus in the background, with white doorframes visible."
+        },
+        {
+          "seconds": 5.9,
+          "text": "A woman with dark hair pulled back is now visible in profile, wearing the same cream/beige linen outfit. She stands in the hallway with her hand resting against the wall behind her. The warm golden lighting illuminates her face and clothing from the side. A window is visible in the background showing bright daylight. Her posture appears relaxed and contemplative, with eyes appearing closed or downcast."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "angle",
+    "back",
+    "barefoot",
+    "beige",
+    "clip",
+    "clothing",
+    "cream",
+    "dark",
+    "different",
+    "fitting",
+    "follows",
+    "hair",
+    "intimate",
+    "linen",
+    "loose",
+    "medium",
+    "moving",
+    "now",
+    "person",
+    "profile",
+    "pulled",
+    "shown",
+    "slightly",
+    "speech",
+    "stands",
+    "sunlit",
+    "their",
+    "video",
+    "visible",
+    "wearing",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

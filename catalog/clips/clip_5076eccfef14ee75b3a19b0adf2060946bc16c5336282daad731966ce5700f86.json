@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5076eccfef14ee75b3a19b0adf2060946bc16c5336282daad731966ce5700f86",
+  "sha256": "5076eccfef14ee75b3a19b0adf2060946bc16c5336282daad731966ce5700f86",
+  "bytes": 8122567,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_4_branches_sprocket.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_4_branches_sprocket"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This artistic video clip features bare winter trees filmed with a strong magenta/pink color filter and styled with a vintage film strip border effect. The camera appears to pan or shift perspective across the leafless branches against a vivid pink sky. Japanese speech accompanies the visuals, thanking viewers for watching until the end.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "artistic",
+        "bare",
+        "branches",
+        "clip",
+        "color",
+        "different",
+        "features",
+        "filmed",
+        "filter",
+        "filtered",
+        "final",
+        "frame",
+        "image",
+        "magenta",
+        "medium",
+        "open",
+        "pink",
+        "scene",
+        "showing",
+        "shows",
+        "similar",
+        "sky",
+        "slightly",
+        "speech",
+        "strong",
+        "stylized",
+        "tree",
+        "trees",
+        "upper",
+        "video",
+        "view",
+        "visible",
+        "wider",
+        "winter"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A stylized image with a strong magenta/pink color filter showing bare tree branches silhouetted against a bright pink sky. The image has a film strip border effect with sprocket holes visible at top and bottom edges. Text markings including 'DRISTET' and 'X800' appear on the left border. The composition shows multiple leafless trees with intricate branch patterns creating a stark, artistic contrast against the vibrant pink background. The vertical 9:16 framing emphasizes the upward reach of the branches."
+        },
+        {
+          "seconds": 4,
+          "text": "Similar magenta-filtered scene showing bare tree branches from a slightly different angle or position. The film strip aesthetic continues with visible sprocket holes and border markings. Thick dark branches cross diagonally through the frame, creating bold geometric lines against the bright pink sky. The silhouetted trees appear denser in the lower portion of the frame. The artistic filter maintains the surreal, dreamlike quality with the intense pink/magenta color palette dominating the entire image."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The final frame shows a wider view with more open pink sky visible in the upper portion. Bare tree branches extend from the right side and bottom of the frame, with a single prominent branch reaching across the upper center. The treeline is visible along the bottom third, creating a horizon effect. The magenta filter and film strip border remain consistent. The composition feels more spacious compared to earlier frames, with greater emphasis on the bright pink sky area."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "artistic",
+    "bare",
+    "branches",
+    "clip",
+    "color",
+    "different",
+    "features",
+    "filmed",
+    "filter",
+    "filtered",
+    "final",
+    "frame",
+    "image",
+    "magenta",
+    "medium",
+    "open",
+    "pink",
+    "scene",
+    "showing",
+    "shows",
+    "similar",
+    "sky",
+    "slightly",
+    "speech",
+    "strong",
+    "stylized",
+    "tree",
+    "trees",
+    "upper",
+    "video",
+    "view",
+    "visible",
+    "wider",
+    "winter"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

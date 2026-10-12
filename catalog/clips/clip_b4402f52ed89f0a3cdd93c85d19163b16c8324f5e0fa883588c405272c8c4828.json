@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b4402f52ed89f0a3cdd93c85d19163b16c8324f5e0fa883588c405272c8c4828",
+  "sha256": "b4402f52ed89f0a3cdd93c85d19163b16c8324f5e0fa883588c405272c8c4828",
+  "bytes": 2191279,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "A_mid_20s_202601132321_vfcfk.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

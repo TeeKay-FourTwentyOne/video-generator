@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2c04a0c104322328df13f83b84c9392173db772410e7ef7d4c946d8a91ef7df5",
+  "sha256": "2c04a0c104322328df13f83b84c9392173db772410e7ef7d4c946d8a91ef7df5",
+  "bytes": 4080368,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot08_v1.mp4"
+  ],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

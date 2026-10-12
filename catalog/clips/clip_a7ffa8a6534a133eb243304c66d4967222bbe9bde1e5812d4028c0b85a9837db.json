@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a7ffa8a6534a133eb243304c66d4967222bbe9bde1e5812d4028c0b85a9837db",
+  "sha256": "a7ffa8a6534a133eb243304c66d4967222bbe9bde1e5812d4028c0b85a9837db",
+  "bytes": 4938790,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 1.75,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 42,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "whip_prewhip_tv.mp4"
+  ],
+  "collections": [
+    "archive-civilwarastrology"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

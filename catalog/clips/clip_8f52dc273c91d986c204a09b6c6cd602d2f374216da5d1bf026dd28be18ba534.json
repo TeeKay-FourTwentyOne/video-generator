@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8f52dc273c91d986c204a09b6c6cd602d2f374216da5d1bf026dd28be18ba534",
+  "sha256": "8f52dc273c91d986c204a09b6c6cd602d2f374216da5d1bf026dd28be18ba534",
+  "bytes": 21387101,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "04_screen.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "One continuous 8-second shot. Photoreal underwater cinema, subtle film grain, cobalt blue water, faded oxblood seats, tarnished brass Art Deco details, suspended particles. Match the first frame faithfully. All architecture and seats are rigid and remain in place. Natural smooth motion at 24fps, not stop motion. No people, divers, text, subtitles, logos, cuts, dissolves, floating furniture or cartoon anatomy. Locked centered camera facing the rectangular cinema screen. The projected movie is a sunlit meadow: tall soft grasses and small daisies ripple gently in the wind beneath pale blue sky. This is a FLAT moving film projected on the screen, bounded by its four edges, not a portal. The submerged theater remains stationary, dark blue, with red curtains, coral-encrusted seats and drifting motes. Very subtle warm projected light flickers on the nearest seats. No fish in this close view. Soft muffled projector, underwater ambience, an almost inaudible breeze suggested by the film, no music or speech.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e117e3531b35ae1c4c4407b7e3d4000db9dd60f23758454d74225f85fd6f8c26",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9162603,
+      "createdAt": "2026-09-16T16:39:48.612Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_61d8d54b7bdacb6db224d40c57231b80a10b2ff06040aa96072bf70de522ed6b",
+  "sha256": "61d8d54b7bdacb6db224d40c57231b80a10b2ff06040aa96072bf70de522ed6b",
+  "bytes": 1330746,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767567820611_2dvh37.mp4"
+  ],
+  "collections": [
+    "january_4th_2026_an_ordinary_s_1767567066360"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767567820611_2dvh37"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Extreme close-up on a coffee maker's glowing red power light, the only warm point of color piercing through the pre-dawn kitchen's deep blue shadows. The camera holds perfectly still on this intimate detail, observational and unmoving. Natural darkness envelops the background, with film grain texture visible in the shadows. Wisps of steam begin to curl upward into frame, catching and scattering the red glow in mysterious patterns. The steam creates ethereal, ghostlike movements against the static darkness. Cool blue undertones dominate the kitchen space while the red light provides the sole warm accent. The mechanical gurgling and hissing sounds emerge from the stillness. Everything beyond the coffee maker remains motionless in shadow, creating a contemplative moment of solitude. The compressed time captures the slow ritual of morning awakening. Soft, selective lighting emphasizes only the power light and rising steam, leaving all other details obscured in mysterious darkness. The naturalistic approach maintains the quiet, intimate atmosphere of a kitchen before dawn, with the film grain adding organic texture to the shadows.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1f1e618837941bafe85c59a67aacc0527c78da8c4abff70564556e9bddac8457",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme close-up on a coffee maker's glowing red power light, the only warm point of color piercing through the pre-dawn kitchen's deep blue shadows. The camera holds perfectly still on this intimate detail, observational and unmoving. Natural darkness envelops the background, with film grain texture visible in the shadows. Wisps of steam begin to curl upward into frame, catching and scattering the red glow in mysterious patterns. The steam creates ethereal, ghostlike movements against the static darkness. Cool blue undertones dominate the kitchen space while the red light provides the sole warm accent. The mechanical gurgling and hissing sounds emerge from the stillness. Everything beyond the coffee maker remains motionless in shadow, creating a contemplative moment of solitude. The compressed time captures the slow ritual of morning awakening. Soft, selective lighting emphasizes only the power light and rising steam, leaving all other details obscured in mysterious darkness. The naturalistic approach maintains the quiet, intimate atmosphere of a kitchen before dawn, with the film grain adding organic texture to the shadows.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1f1e618837941bafe85c59a67aacc0527c78da8c4abff70564556e9bddac8457",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T23:02:47.310Z",
+      "parameters": {
+        "durationSeconds": 7,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short video clip showcases a coffee maker or electric kettle in operation, filmed in a dramatic, low-light setting with moody blue ambient lighting. The sequence captures steam building up and then dissipating from the device, with a glowing red power button serving as the visual focal point throughout. The Korean speech at the end translates to 'Thank you for watching!' suggesting this is the conclusion of a product demonstration or review video.",
+      "transcript": "시청해주셔서 감사합니다!",
+      "tags": [
+        "actively",
+        "appearing",
+        "appears",
+        "clip",
+        "close",
+        "coffee",
+        "column",
+        "dark",
+        "device",
+        "dissipated",
+        "electric",
+        "filmed",
+        "kettle",
+        "maker",
+        "medium",
+        "moody",
+        "now",
+        "operation",
+        "partially",
+        "producing",
+        "rises",
+        "rising",
+        "short",
+        "shot",
+        "showcases",
+        "speech",
+        "steam",
+        "swirls",
+        "thinner",
+        "vapor",
+        "vertical",
+        "video",
+        "what"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, moody close-up shot of what appears to be a coffee maker or electric kettle. The device has a black cylindrical body with a metallic silver rim at the top. A glowing red-orange power button icon is prominently displayed in the center of the device, creating a striking contrast against the dark background. The lighting is minimal and dramatic, with subtle blue ambient light reflecting off the metallic edges. The composition is centered on the appliance against a deep navy blue background."
+        },
+        {
+          "seconds": 3,
+          "text": "The same coffee maker or kettle is now actively producing steam or vapor that rises and swirls dramatically through the frame. The white-gray steam creates ethereal, cloud-like formations that partially obscure the device. The red power button remains illuminated, glowing through the steam. The blue-tinted ambient lighting catches the steam particles, creating a mystical atmosphere. A dark mug or cup is partially visible at the bottom of the frame. The composition maintains its moody, cinematic quality."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The steam has partially dissipated, now appearing as a thinner vertical column rising from the device. The red power indicator continues to glow prominently on the black cylindrical body. The steam creates a subtle red reflection or glow effect on the device's surface below the power button. The metallic silver rim remains visible at the top, and the overall dark blue atmospheric lighting persists. A dark cup or container is visible at the bottom edge of the frame."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "actively",
+    "appearing",
+    "appears",
+    "clip",
+    "close",
+    "coffee",
+    "column",
+    "dark",
+    "device",
+    "dissipated",
+    "electric",
+    "filmed",
+    "kettle",
+    "maker",
+    "medium",
+    "moody",
+    "now",
+    "operation",
+    "partially",
+    "producing",
+    "rises",
+    "rising",
+    "short",
+    "shot",
+    "showcases",
+    "speech",
+    "steam",
+    "swirls",
+    "thinner",
+    "vapor",
+    "vertical",
+    "video",
+    "what"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

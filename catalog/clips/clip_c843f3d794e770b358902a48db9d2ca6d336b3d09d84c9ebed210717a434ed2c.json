@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c843f3d794e770b358902a48db9d2ca6d336b3d09d84c9ebed210717a434ed2c",
+  "sha256": "c843f3d794e770b358902a48db9d2ca6d336b3d09d84c9ebed210717a434ed2c",
+  "bytes": 4722464,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 17.25,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 414,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "exchange-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

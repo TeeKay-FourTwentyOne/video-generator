@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5f8ec87ca4d9a65c483c015e9f13c3a8a320b549f25ed41174a6d32af158f079",
+  "sha256": "5f8ec87ca4d9a65c483c015e9f13c3a8a320b549f25ed41174a6d32af158f079",
+  "bytes": 14003977,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b2_cut.mp4"
+  ],
+  "collections": [
+    "instar"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

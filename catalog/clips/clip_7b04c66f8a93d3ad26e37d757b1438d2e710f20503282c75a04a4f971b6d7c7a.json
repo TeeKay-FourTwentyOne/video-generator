@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7b04c66f8a93d3ad26e37d757b1438d2e710f20503282c75a04a4f971b6d7c7a",
+  "sha256": "7b04c66f8a93d3ad26e37d757b1438d2e710f20503282c75a04a4f971b6d7c7a",
+  "bytes": 1037502,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767540156794_63yd53.mp4"
+  ],
+  "collections": [
+    "a_woman_reads_a_book_in_a_cozy_1767540076340"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767540156794_63yd53"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young woman in a cream sweater sits nestled in a plush armchair in a quiet library corner, completely absorbed in reading her book. Soft, warm golden hour sunlight streams through tall windows behind her, casting gentle rays that illuminate dust motes floating in the air and create a dreamy, ethereal atmosphere. The camera holds a steady medium shot, slightly angled from the side to capture both her peaceful expression and the beautiful interplay of light and shadow. The lighting is warm and honey-colored, creating a cozy, intimate mood with rich contrast between the golden highlights on her sweater and the deeper amber tones in the background. The woman remains still and focused, occasionally turning a page, while the golden light subtly shifts and dances around her, emphasizing the serene, contemplative moment in this timeless library setting.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9f8bbf0c8f4e633de44b61b7c215e4696489172ab97d98f51d0d5726df0cd590",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young woman in a cream sweater sits nestled in a plush armchair in a quiet library corner, completely absorbed in reading her book. Soft, warm golden hour sunlight streams through tall windows behind her, casting gentle rays that illuminate dust motes floating in the air and create a dreamy, ethereal atmosphere. The camera holds a steady medium shot, slightly angled from the side to capture both her peaceful expression and the beautiful interplay of light and shadow. The lighting is warm and honey-colored, creating a cozy, intimate mood with rich contrast between the golden highlights on her sweater and the deeper amber tones in the background. The woman remains still and focused, occasionally turning a page, while the golden light subtly shifts and dances around her, emphasizing the serene, contemplative moment in this timeless library setting.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9f8bbf0c8f4e633de44b61b7c215e4696489172ab97d98f51d0d5726df0cd590",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:21:53.442Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short vertical video captures a serene moment of a young woman reading in a cozy library or study setting, bathed in warm golden hour sunlight streaming through a window. The clip maintains a consistent, intimate composition throughout its 4-second duration with minimal movement, ending with a spoken 'Thank you for watching' suggesting this is the conclusion of a longer piece of content.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "book",
+        "brown",
+        "captures",
+        "colored",
+        "continues",
+        "cozy",
+        "cream",
+        "engaged",
+        "hair",
+        "her",
+        "length",
+        "medium",
+        "moment",
+        "now",
+        "open",
+        "position",
+        "profile",
+        "reading",
+        "remains",
+        "seated",
+        "serene",
+        "short",
+        "shoulder",
+        "showing",
+        "shows",
+        "sits",
+        "speech",
+        "still",
+        "thank",
+        "vertical",
+        "video",
+        "view",
+        "visible",
+        "watching",
+        "wearing",
+        "which",
+        "woman",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with shoulder-length brown hair sits in profile view, wearing a cream-colored cable-knit turtleneck sweater. She holds a dark-covered book in her lap, appearing to read. Warm golden sunlight streams through a tall window on the left, creating dramatic backlighting that illuminates her hair and sweater. Behind her, wooden bookshelves filled with colorful books are visible. The composition is intimate and cozy, shot in portrait orientation with rich amber tones throughout."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman continues reading, now with the book more open and visible, showing cream-colored pages with text. Her hands are positioned to turn or hold pages. The warm golden hour lighting remains consistent, casting a soft glow on her face in profile. The cable-knit texture of her sweater is highlighted by the backlighting. The bookshelf background and window placement remain unchanged, maintaining the library or study atmosphere with its warm, nostalgic color palette."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman remains in the same seated position, still engaged with her book which shows open pages. Her posture is relaxed and contemplative. The dramatic golden sunlight continues streaming from the window, creating lens flare effects and highlighting dust particles in the air. The warm amber color grading persists throughout the frame. The composition maintains its intimate, portrait-style framing with the bookshelf visible in the upper right corner, suggesting a peaceful reading moment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "book",
+    "brown",
+    "captures",
+    "colored",
+    "continues",
+    "cozy",
+    "cream",
+    "engaged",
+    "hair",
+    "her",
+    "length",
+    "medium",
+    "moment",
+    "now",
+    "open",
+    "position",
+    "profile",
+    "reading",
+    "remains",
+    "seated",
+    "serene",
+    "short",
+    "shoulder",
+    "showing",
+    "shows",
+    "sits",
+    "speech",
+    "still",
+    "thank",
+    "vertical",
+    "video",
+    "view",
+    "visible",
+    "watching",
+    "wearing",
+    "which",
+    "woman",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

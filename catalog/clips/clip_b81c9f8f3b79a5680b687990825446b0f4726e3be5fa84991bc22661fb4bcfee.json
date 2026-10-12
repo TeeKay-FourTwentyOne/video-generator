@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b81c9f8f3b79a5680b687990825446b0f4726e3be5fa84991bc22661fb4bcfee",
+  "sha256": "b81c9f8f3b79a5680b687990825446b0f4726e3be5fa84991bc22661fb4bcfee",
+  "bytes": 22464338,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "phones.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

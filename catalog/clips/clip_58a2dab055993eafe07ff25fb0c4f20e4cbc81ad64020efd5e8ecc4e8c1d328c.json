@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_58a2dab055993eafe07ff25fb0c4f20e4cbc81ad64020efd5e8ecc4e8c1d328c",
+  "sha256": "58a2dab055993eafe07ff25fb0c4f20e4cbc81ad64020efd5e8ecc4e8c1d328c",
+  "bytes": 4981498,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "VF2_graded_720.mp4"
+  ],
+  "collections": [
+    "august"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

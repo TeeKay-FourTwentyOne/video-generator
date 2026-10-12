@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_da2fb88a4c970bcc31921a870242fad1140a35c94f68f65ba7cc5fbc35fe569b",
+  "sha256": "da2fb88a4c970bcc31921a870242fad1140a35c94f68f65ba7cc5fbc35fe569b",
+  "bytes": 1216008,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "probe_apple.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-4-scene3-bucket-gag"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

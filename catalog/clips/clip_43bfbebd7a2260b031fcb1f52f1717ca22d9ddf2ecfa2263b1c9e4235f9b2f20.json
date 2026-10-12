@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_43bfbebd7a2260b031fcb1f52f1717ca22d9ddf2ecfa2263b1c9e4235f9b2f20",
+  "sha256": "43bfbebd7a2260b031fcb1f52f1717ca22d9ddf2ecfa2263b1c9e4235f9b2f20",
+  "bytes": 17002318,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S11_signoff.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9288420302f5afcf8c8a0e21dd549778c2ccc4a466674c24dfb8da0edc365283",
+  "sha256": "9288420302f5afcf8c8a0e21dd549778c2ccc4a466674c24dfb8da0edc365283",
+  "bytes": 35714922,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 120,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 2880,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "loop-3x.mp4"
+  ],
+  "collections": [
+    "verify"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3b5447d441374286c2f013aa3f2ae88bedccb59a104d71b4162731e4f5c819e5",
+  "sha256": "3b5447d441374286c2f013aa3f2ae88bedccb59a104d71b4162731e4f5c819e5",
+  "bytes": 4248849,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-v2.mp4",
+    "veo_1791058565367_9wu649.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Extreme close-up of a weathered petrol-blue enamel panel on a hand-built cinematic miniature, with one round amber lamp set in a brass bezel at its center, glowing. A small brass two-prong gripper at the right closes gently around the lamp's brass bezel and turns it a slow quarter turn; the amber glow flickers slightly and the brass gleams. The lamp stays seated in the panel for the whole shot. A second brass gripper rests low at the left edge of the frame and does not move. Locked-off macro camera, very shallow focus, perfectly still. Slow, careful movement of the right gripper only; no new objects appear. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_61bd58f09d3465bb740fa871a907555b55dcb6f958c86dd1aa5896ce2086b2fe",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 914109982,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

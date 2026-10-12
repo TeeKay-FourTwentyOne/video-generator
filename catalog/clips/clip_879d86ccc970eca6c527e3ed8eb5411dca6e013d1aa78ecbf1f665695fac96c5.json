@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_879d86ccc970eca6c527e3ed8eb5411dca6e013d1aa78ecbf1f665695fac96c5",
+  "sha256": "879d86ccc970eca6c527e3ed8eb5411dca6e013d1aa78ecbf1f665695fac96c5",
+  "bytes": 6788645,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "abstract_f_yellow.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:abstract_f_yellow"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Abstract golden light visualization showing a tiny spark expanding into a brilliant starburst with radiating beams and scattered golden particles. Creates a magical, cosmic atmosphere with warm amber and gold tones against black.",
+      "transcript": null,
+      "tags": [
+        "abstract",
+        "beams",
+        "black",
+        "brilliant",
+        "burst",
+        "center",
+        "completely",
+        "different",
+        "distribution",
+        "expanding",
+        "explodes",
+        "extending",
+        "glows",
+        "golden",
+        "light",
+        "medium",
+        "otherwise",
+        "outward",
+        "particle",
+        "radiant",
+        "radiating",
+        "showing",
+        "silent",
+        "similar",
+        "slightly",
+        "spark",
+        "star",
+        "starburst",
+        "tiny",
+        "visualization",
+        "yellow"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A tiny golden-yellow star or spark glows in the center of an otherwise completely black frame. The point of light has a subtle cross-shaped flare. Minimal composition with maximum contrast, suggesting the birth of light from darkness."
+        },
+        {
+          "seconds": 4,
+          "text": "Brilliant golden-yellow light explodes from center with radiating beams extending outward. Golden particles scatter across the frame like glitter or stardust. The intense white-gold core gradually transitions to amber at the edges. Cosmic, magical atmosphere."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Similar golden light burst with radiant beams, slightly different particle distribution. The central star remains intensely bright with particles floating in the surrounding space. Warm amber and gold tones dominate against the dark background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "beams",
+    "black",
+    "brilliant",
+    "burst",
+    "center",
+    "completely",
+    "different",
+    "distribution",
+    "expanding",
+    "explodes",
+    "extending",
+    "glows",
+    "golden",
+    "light",
+    "medium",
+    "otherwise",
+    "outward",
+    "particle",
+    "radiant",
+    "radiating",
+    "showing",
+    "silent",
+    "similar",
+    "slightly",
+    "spark",
+    "star",
+    "starburst",
+    "tiny",
+    "visualization",
+    "yellow"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

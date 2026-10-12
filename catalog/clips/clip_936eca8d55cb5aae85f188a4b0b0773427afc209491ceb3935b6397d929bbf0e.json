@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_936eca8d55cb5aae85f188a4b0b0773427afc209491ceb3935b6397d929bbf0e",
+  "sha256": "936eca8d55cb5aae85f188a4b0b0773427afc209491ceb3935b6397d929bbf0e",
+  "bytes": 14197152,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S04-reverse-v1.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

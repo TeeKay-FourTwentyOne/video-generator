@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_eafe18bf09a5737f525d9732701d15053368ae3579069a799ff7b78e5928f144",
+  "sha256": "eafe18bf09a5737f525d9732701d15053368ae3579069a799ff7b78e5928f144",
+  "bytes": 20221375,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 5120,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "ocean_canvas.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_canvas"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Unique ultra-tall vertical canvas (720x5120) depicting a complete ocean depth journey through four distinct zones: sunlit surface, coral reef, kelp forest, and bioluminescent abyss. Each zone is animated with characteristic life and movement, creating a continuous visual narrative of ocean depth exploration.",
+      "transcript": null,
+      "tags": [
+        "720x5120",
+        "animation",
+        "bright",
+        "bubbles",
+        "canvas",
+        "complete",
+        "composition",
+        "depicting",
+        "depth",
+        "distinct",
+        "ecosystems",
+        "extremely",
+        "four",
+        "full",
+        "journey",
+        "medium",
+        "mid",
+        "ocean",
+        "rise",
+        "showing",
+        "silent",
+        "sunlit",
+        "surface",
+        "tall",
+        "ultra",
+        "unique",
+        "vertical",
+        "waters",
+        "zone",
+        "zones"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Extremely tall vertical canvas (720x5120) showing four distinct ocean zones stacked: sunlit surface with light rays at top, vibrant coral reef with fish second, kelp forest third, and dark abyss with bioluminescent jellyfish at bottom. A complete ocean depth journey in one frame."
+        },
+        {
+          "seconds": 4,
+          "text": "Mid-animation of the four-zone ocean composition. Bubbles rise through the sunlit surface zone, colorful fish swim among pink corals in the reef zone, golden kelp sways in the mid-depths, and glowing jellyfish pulse in the dark abyss below."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Full vertical ocean journey showing all four ecosystems: bright surface waters with sun penetration, lush coral reef teeming with life, cathedral-like kelp forest, and mysterious abyss with pink bioluminescent jellyfish. Rich color progression from warm to cool."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "720x5120",
+    "animation",
+    "bright",
+    "bubbles",
+    "canvas",
+    "complete",
+    "composition",
+    "depicting",
+    "depth",
+    "distinct",
+    "ecosystems",
+    "extremely",
+    "four",
+    "full",
+    "journey",
+    "medium",
+    "mid",
+    "ocean",
+    "rise",
+    "showing",
+    "silent",
+    "sunlit",
+    "surface",
+    "tall",
+    "ultra",
+    "unique",
+    "vertical",
+    "waters",
+    "zone",
+    "zones"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

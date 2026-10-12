@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8af7cddad07fbe2e1688ab7f2270af1a4ac42f044c83aa9a1cdff519c908d20b",
+  "sha256": "8af7cddad07fbe2e1688ab7f2270af1a4ac42f044c83aa9a1cdff519c908d20b",
+  "bytes": 30313148,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s5bv5_swell.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f22858ea9b40cfb8b9cba17e79ef0c8c2057da3b155e38c139a9376ea738a34d",
+  "sha256": "f22858ea9b40cfb8b9cba17e79ef0c8c2057da3b155e38c139a9376ea738a34d",
+  "bytes": 11394708,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "8second_shot_use_202601130806_5vu5d.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:8second_shot_use_202601130806_5vu5d"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video depicts an abstract journey through a transforming portal or tunnel environment. Starting from a dark void with a silvery wireframe ring, the scene dramatically shifts to reveal a bioluminescent green cave system with glowing pathways and spiral formations. The clip concludes with a thank you message as the viewer appears to travel deeper into the illuminated green vortex.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "abstract",
+        "black",
+        "cave",
+        "circular",
+        "dark",
+        "depicts",
+        "dramatic",
+        "environment",
+        "evolved",
+        "expansive",
+        "featuring",
+        "frame",
+        "green",
+        "illuminated",
+        "intense",
+        "journey",
+        "like",
+        "lit",
+        "made",
+        "medium",
+        "now",
+        "portal",
+        "predominantly",
+        "ring",
+        "scene",
+        "show",
+        "shows",
+        "speech",
+        "spiral",
+        "starting",
+        "structure",
+        "thank",
+        "transformation",
+        "transforming",
+        "tunnel",
+        "vertical",
+        "video",
+        "view",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, predominantly black frame featuring an abstract circular ring structure made of intricate, silvery-white wireframe or crystalline elements. The ring appears to float in the center of the frame against a pure black background. Around the edges of the frame, there are organic, textured formations in dark gray tones that frame the central void. The composition creates a tunnel-like or portal effect with high contrast between the bright ring elements and the surrounding darkness."
+        },
+        {
+          "seconds": 4,
+          "text": "A dramatic transformation shows a cave-like tunnel environment now illuminated with intense green and yellow-green bioluminescent lighting. The rocky, organic walls have a wet, textured appearance with deep shadows and bright glowing areas. A bright yellow-green light source emanates from within the tunnel, creating an S-curved path of illumination. The walls appear to spiral inward, creating depth and movement toward the light source in the center-left portion of the frame."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The scene has evolved to show a more expansive view of the green-lit environment. A spiral tunnel or vortex is visible in the lower-left portion, with bright yellow-green illumination emanating from its center. The upper right area shows bright, almost overexposed green and yellow patches suggesting an opening or intense light source. The rocky, organic textures continue throughout with varying shades of emerald green, lime, and dark shadows creating a surreal, otherworldly atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "black",
+    "cave",
+    "circular",
+    "dark",
+    "depicts",
+    "dramatic",
+    "environment",
+    "evolved",
+    "expansive",
+    "featuring",
+    "frame",
+    "green",
+    "illuminated",
+    "intense",
+    "journey",
+    "like",
+    "lit",
+    "made",
+    "medium",
+    "now",
+    "portal",
+    "predominantly",
+    "ring",
+    "scene",
+    "show",
+    "shows",
+    "speech",
+    "spiral",
+    "starting",
+    "structure",
+    "thank",
+    "transformation",
+    "transforming",
+    "tunnel",
+    "vertical",
+    "video",
+    "view",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

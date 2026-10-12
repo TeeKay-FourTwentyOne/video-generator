@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a6dabf985dd9a1e6b5a4deef52f993dd087ad6932fa549b43eafb8df22c3271e",
+  "sha256": "a6dabf985dd9a1e6b5a4deef52f993dd087ad6932fa549b43eafb8df22c3271e",
+  "bytes": 1956170,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767756950684_suvpky.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767756950684_suvpky"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip features an intimate close-up portrait of a woman in a suburban setting during golden hour. The camera slowly pushes in on her face as she appears to process something emotionally difficult, her expression shifting from concerned to deeply contemplative. The Japanese text transcription suggests this may be an ending sequence thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "brown",
+        "cinematic",
+        "clip",
+        "close",
+        "composition",
+        "directed",
+        "downward",
+        "extreme",
+        "face",
+        "features",
+        "frame",
+        "framing",
+        "gaze",
+        "golden",
+        "her",
+        "hour",
+        "identical",
+        "intimate",
+        "light",
+        "lighting",
+        "maintains",
+        "medium",
+        "middle",
+        "nearly",
+        "now",
+        "portrait",
+        "setting",
+        "she",
+        "shot",
+        "speech",
+        "suburban",
+        "tighter",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of a woman's face in golden hour lighting. She has light brown/auburn hair pulled back, with loose strands framing her face. Her expression appears concerned or troubled, with furrowed brows and slightly parted lips. She wears dark clothing with what appears to be a collar or scarf. The background shows a blurred suburban neighborhood with houses, trees, and a utility pole. Strong directional sunlight illuminates the left side of her face while the right side falls into shadow."
+        },
+        {
+          "seconds": 3,
+          "text": "Extreme close-up of the same woman, now with her gaze directed downward. The framing is tighter, showing primarily her face from forehead to chin. The golden hour lighting continues to cast warm tones on her skin, with dramatic shadows on the right side of her face. Her expression conveys deep contemplation or sadness. Her green/hazel eye is visible, and her lips are slightly parted. The suburban background remains blurred with houses and trees visible."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Nearly identical extreme close-up composition to the middle frame. The woman maintains her downward gaze with a pensive, melancholic expression. Warm sunset lighting continues to illuminate the left side of her face. Fine details of her skin texture are visible. Her hair remains pulled back with loose strands. The blurred suburban setting persists in the background. The cinematic letterboxing creates a widescreen film aesthetic throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_043",
+      "name": "Worried Wendy",
+      "description": "Woman with dark hair pulled back, dark jacket, concerned/worried expression, suburban street at dusk, anxious demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "brown",
+    "cinematic",
+    "clip",
+    "close",
+    "composition",
+    "directed",
+    "downward",
+    "extreme",
+    "face",
+    "features",
+    "frame",
+    "framing",
+    "gaze",
+    "golden",
+    "her",
+    "hour",
+    "identical",
+    "intimate",
+    "light",
+    "lighting",
+    "maintains",
+    "medium",
+    "middle",
+    "nearly",
+    "now",
+    "portrait",
+    "setting",
+    "she",
+    "shot",
+    "speech",
+    "suburban",
+    "tighter",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

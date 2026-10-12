@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d8b91b3f2f85ad9ee0943a1c117b7091ad034cd122b4fbd8db06f4e479fa480f",
+  "sha256": "d8b91b3f2f85ad9ee0943a1c117b7091ad034cd122b4fbd8db06f4e479fa480f",
+  "bytes": 1080445,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767540756207_s8lvfo.mp4"
+  ],
+  "collections": [
+    "char_consistency_test"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767540756207_s8lvfo"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young white woman in her early 20s with fair skin, slim build, and shoulder-length wavy brown hair stands gracefully at a tall library window. Warm golden hour sunlight streams through the glass, casting soft, honeyed light across her face and creating a gentle glow on her features. She gazes thoughtfully outside with a serene, contemplative expression, her body positioned at a slight three-quarter angle to the camera. The camera holds a medium shot, slowly pushing in with subtle dolly movement to create intimacy. Behind her, tall bookshelves filled with volumes are softly blurred, bathed in the same warm golden light. Dust motes dance gently in the sunbeams. The lighting is cinematic with rich golden tones, soft shadows, and a dreamy quality. Shot in 9:16 vertical aspect ratio with shallow depth of field, creating a peaceful, introspective atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3b33bdf7c05529081c03d1d47753cb80099b63247565951148fe5c0497024ae0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young white woman in her early 20s with fair skin, slim build, and shoulder-length wavy brown hair stands gracefully at a tall library window. Warm golden hour sunlight streams through the glass, casting soft, honeyed light across her face and creating a gentle glow on her features. She gazes thoughtfully outside with a serene, contemplative expression, her body positioned at a slight three-quarter angle to the camera. The camera holds a medium shot, slowly pushing in with subtle dolly movement to create intimacy. Behind her, tall bookshelves filled with volumes are softly blurred, bathed in the same warm golden light. Dust motes dance gently in the sunbeams. The lighting is cinematic with rich golden tones, soft shadows, and a dreamy quality. Shot in 9:16 vertical aspect ratio with shallow depth of field, creating a peaceful, introspective atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3b33bdf7c05529081c03d1d47753cb80099b63247565951148fe5c0497024ae0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:31:54.129Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second vertical video clip captures a contemplative portrait of a young woman in profile, bathed in warm golden-hour backlighting. The scene is essentially static, with minimal movement, focusing on the atmospheric quality of the lighting as it illuminates her auburn hair and creates a serene, cinematic mood in what appears to be a library or study setting.",
+      "transcript": null,
+      "tags": [
+        "auburn",
+        "brown",
+        "captures",
+        "changes",
+        "clip",
+        "contemplative",
+        "facing",
+        "golden",
+        "hair",
+        "her",
+        "hour",
+        "identical",
+        "left",
+        "lighting",
+        "maintains",
+        "medium",
+        "nearly",
+        "portrait",
+        "position",
+        "profile",
+        "reddish",
+        "remains",
+        "second",
+        "shown",
+        "silent",
+        "still",
+        "subtle",
+        "vertical",
+        "video",
+        "view",
+        "wavy",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with wavy auburn/reddish-brown hair is shown in profile view, facing left. She wears a light-colored tank top with thin straps. Warm golden-hour sunlight streams from behind, creating a dramatic backlit effect that illuminates her hair with golden highlights. The background shows blurred bookshelves on the right and a warm-toned wall on the left. The composition is intimate, shot in portrait orientation with shallow depth of field, creating a contemplative, cinematic mood."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains in nearly identical position, still shown in profile facing left. The warm golden backlighting continues to create a glowing rim light effect around her hair and shoulders. Her expression appears serene and thoughtful. The background remains softly blurred with visible bookshelf elements on the right edge. The lighting maintains its warm amber tones throughout the frame, with subtle shadows defining her facial features. Minimal movement is apparent from the previous frame."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman maintains her profile position with very subtle changes. The golden-hour lighting persists, casting warm tones across the entire scene. Her wavy hair catches the backlight beautifully, creating a luminous halo effect. She appears slightly more relaxed, with her posture unchanged. The bookshelf remains visible in the blurred background on the right. The overall composition stays consistent with the intimate, contemplative portrait style, emphasizing the warm, nostalgic atmosphere of the setting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "auburn",
+    "brown",
+    "captures",
+    "changes",
+    "clip",
+    "contemplative",
+    "facing",
+    "golden",
+    "hair",
+    "her",
+    "hour",
+    "identical",
+    "left",
+    "lighting",
+    "maintains",
+    "medium",
+    "nearly",
+    "portrait",
+    "position",
+    "profile",
+    "reddish",
+    "remains",
+    "second",
+    "shown",
+    "silent",
+    "still",
+    "subtle",
+    "vertical",
+    "video",
+    "view",
+    "wavy",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

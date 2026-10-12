@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_14c6beb116052d2837686088956f73dbb447a5a5a62158fecaba89b330f433d9",
+  "sha256": "14c6beb116052d2837686088956f73dbb447a5a5a62158fecaba89b330f433d9",
+  "bytes": 11928463,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s6_office.mp4"
+  ],
+  "collections": [
+    "floors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

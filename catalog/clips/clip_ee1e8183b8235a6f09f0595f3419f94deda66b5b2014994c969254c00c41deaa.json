@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ee1e8183b8235a6f09f0595f3419f94deda66b5b2014994c969254c00c41deaa",
+  "sha256": "ee1e8183b8235a6f09f0595f3419f94deda66b5b2014994c969254c00c41deaa",
+  "bytes": 3640289,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S12_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Slow push-in to a medium close-up. {{VASCARI_LOCK}} He stands in a warm lamplit entry hall, his traveling case set on the floor beside him. A new lodger politely stating the single term of his lodging to the lady of the house, who is off frame, he speaks quietly, with unhurried old-world courtesy, in a low, faintly accented voice: \"One condition. No one enters my room. Not even you.\" A pause. Then, softer, almost kindly: \"Especially you.\" His expression is calm and courteous. Sound: rain muffled outside; a clock ticking somewhere; his low voice.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_84eb831a67df6135840cf0109ed923e89dafb2482714f08e323ab1585ed71376",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

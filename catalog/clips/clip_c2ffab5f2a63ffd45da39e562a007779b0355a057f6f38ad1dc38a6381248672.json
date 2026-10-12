@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c2ffab5f2a63ffd45da39e562a007779b0355a057f6f38ad1dc38a6381248672",
+  "sha256": "c2ffab5f2a63ffd45da39e562a007779b0355a057f6f38ad1dc38a6381248672",
+  "bytes": 20188340,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s4av3_charge.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

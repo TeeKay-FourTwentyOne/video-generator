@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_634861607f8faaef14e54b875ec977aec25671b798279609fd138d8d3584c252",
+  "sha256": "634861607f8faaef14e54b875ec977aec25671b798279609fd138d8d3584c252",
+  "bytes": 17874,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "title_card.mp4",
+    "title_card_1772423754770.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

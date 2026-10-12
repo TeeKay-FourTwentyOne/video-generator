@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0cd99ef7aed928c3ddb3060d10d84a9ca435b0397998a91a97f7e7ff07831cbc",
+  "sha256": "0cd99ef7aed928c3ddb3060d10d84a9ca435b0397998a91a97f7e7ff07831cbc",
+  "bytes": 3359656,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_end.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_end"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Sagittarius video outro/title card featuring close-up portrait of the auburn-haired centaur character with animated golden 'Sagittarius' title text. The warm, inviting expression and golden forest lighting create an appealing end card that encapsulates the sign's optimistic, adventurous spirit.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "auburn",
+        "bright",
+        "card",
+        "character",
+        "clean",
+        "close",
+        "composition",
+        "face",
+        "featuring",
+        "freckled",
+        "golden",
+        "haired",
+        "man",
+        "medium",
+        "outro",
+        "overlay",
+        "portrait",
+        "sagittarius",
+        "smile",
+        "speech",
+        "text",
+        "thank",
+        "title",
+        "video",
+        "warm",
+        "watching",
+        "without",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up portrait of the auburn-haired Sagittarius character with warm smile. 'Sagittarius' text in elegant golden script overlaid at bottom of frame. Soft forest bokeh background with golden light. Title card composition."
+        },
+        {
+          "seconds": 4,
+          "text": "Same portrait composition with the golden 'Sagittarius' title text. The young man's freckled face and genuine smile capture the sign's optimistic nature. Backlit by warm forest light creating a halo effect on his curly hair."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Clean portrait without text overlay - the auburn-haired character with bright smile against forest backdrop. Full warmth and charisma of the Sagittarius persona on display. Suitable for end card or thumbnail."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_005",
+      "name": "Archer",
+      "description": "Young man with curly red hair, warm smile, Sagittarius text overlay, cheerful demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "auburn",
+    "bright",
+    "card",
+    "character",
+    "clean",
+    "close",
+    "composition",
+    "face",
+    "featuring",
+    "freckled",
+    "golden",
+    "haired",
+    "man",
+    "medium",
+    "outro",
+    "overlay",
+    "portrait",
+    "sagittarius",
+    "smile",
+    "speech",
+    "text",
+    "thank",
+    "title",
+    "video",
+    "warm",
+    "watching",
+    "without",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b9775e877ad7cbe0e374aa1757eb26fdbe527b886f1240d2c7271cb513683346",
+  "sha256": "b9775e877ad7cbe0e374aa1757eb26fdbe527b886f1240d2c7271cb513683346",
+  "bytes": 4280929,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 114.333333,
+    "width": 960,
+    "height": 540,
+    "frameRate": "24/1",
+    "frameCount": 2744,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "future3_blkloop.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

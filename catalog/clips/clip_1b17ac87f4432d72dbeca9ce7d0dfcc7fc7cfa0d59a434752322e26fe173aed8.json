@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1b17ac87f4432d72dbeca9ce7d0dfcc7fc7cfa0d59a434752322e26fe173aed8",
+  "sha256": "1b17ac87f4432d72dbeca9ce7d0dfcc7fc7cfa0d59a434752322e26fe173aed8",
+  "bytes": 85419172,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 31.208333,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 749,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "film_4k.esrgan.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

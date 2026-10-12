@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7703888b3e515f992a49ecee92d53db94ac8a99ef349ebf35d38922791fce7d6",
+  "sha256": "7703888b3e515f992a49ecee92d53db94ac8a99ef349ebf35d38922791fce7d6",
+  "bytes": 2316391,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s8_palm_push.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_01e2e3e4f86d353b054a4a0470eb4dc3ad20045566e3b7d7d4e8ecc437d68d8f",
+  "sha256": "01e2e3e4f86d353b054a4a0470eb4dc3ad20045566e3b7d7d4e8ecc437d68d8f",
+  "bytes": 340153292,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 40,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 960,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "the-last-screening-4k.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

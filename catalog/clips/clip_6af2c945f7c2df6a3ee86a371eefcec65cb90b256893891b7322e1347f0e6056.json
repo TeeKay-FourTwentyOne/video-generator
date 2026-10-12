@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6af2c945f7c2df6a3ee86a371eefcec65cb90b256893891b7322e1347f0e6056",
+  "sha256": "6af2c945f7c2df6a3ee86a371eefcec65cb90b256893891b7322e1347f0e6056",
+  "bytes": 2893965,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "N4_RAW.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Medium close shot in warm oil lamp light. {{CORA_LOCK}} She stands at the end of a long supper table tilting a white enamel coffee pot to fill a cup, her eyes down on the pour. Something said off frame catches her; she looks up and breaks into a real, unguarded smile, holds it a moment, then glances back down to finish the pour, still smiling. Behind her, far out of focus in warm lamplight and deep shadow, three seated boarders stay in their seats at the table. Brass chimney oil lamps only. Rain running down dark window glass. Deep brown shadow, dark walnut panelling. Sound: coffee pouring into a cup, warm indistinct talk and a soft laugh behind her, rain.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_04828207dffe55095ceddd5a575f3f42004fbda6316d6b814d69ef85a8749d3d",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

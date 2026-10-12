@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1ba039f030a7629e66b0b5b6629efc54cbc7100207da0e04fb9065ef56a0a853",
+  "sha256": "1ba039f030a7629e66b0b5b6629efc54cbc7100207da0e04fb9065ef56a0a853",
+  "bytes": 1283356,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot_3-19_r1.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

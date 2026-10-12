@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5b93b7c1c347b6f8a8474de786c1d916dd351f8362c04619df7f52772f042dfe",
+  "sha256": "5b93b7c1c347b6f8a8474de786c1d916dd351f8362c04619df7f52772f042dfe",
+  "bytes": 4614559,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot1_gears_FINAL_seed216698030.mp4",
+    "veo_1772419936412_kv6cy0.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme close-up of intricate brass clockwork gears turning slowly. Oil glistens between the teeth as they interlock with mechanical precision. Camera slowly pushes in, the gears gradually filling the entire frame edge to edge. Warm amber light from the side catches the polished brass surfaces. Shallow depth of field, background gears softly out of focus. No human elements visible. Cinematic macro photography, 9:16 vertical frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_24a8e88631492b0b6874eea3b46081894fdd83ebe1633cea10265abae2f69c0a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 216698030,
+      "createdAt": "2026-03-02T02:51:02.109Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

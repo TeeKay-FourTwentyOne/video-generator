@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4f917a3fcdc0080a3b64f8e533dcfabcc6dbc1456caad11b9afba803127e0d01",
+  "sha256": "4f917a3fcdc0080a3b64f8e533dcfabcc6dbc1456caad11b9afba803127e0d01",
+  "bytes": 3947912,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "sweep.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

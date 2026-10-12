@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e2833fea2a3f79723cbc2ba18ec83c0e7b1762de2a7a934fdb9ce1de074f3ea8",
+  "sha256": "e2833fea2a3f79723cbc2ba18ec83c0e7b1762de2a7a934fdb9ce1de074f3ea8",
+  "bytes": 25889884,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "mansion_door_night.mp4"
+  ],
+  "collections": [
+    "elvis-prophet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

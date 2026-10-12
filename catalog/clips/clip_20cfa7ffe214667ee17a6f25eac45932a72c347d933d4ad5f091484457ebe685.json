@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_20cfa7ffe214667ee17a6f25eac45932a72c347d933d4ad5f091484457ebe685",
+  "sha256": "20cfa7ffe214667ee17a6f25eac45932a72c347d933d4ad5f091484457ebe685",
+  "bytes": 5390120,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sow-honey.mp4"
+  ],
+  "collections": [
+    "may-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

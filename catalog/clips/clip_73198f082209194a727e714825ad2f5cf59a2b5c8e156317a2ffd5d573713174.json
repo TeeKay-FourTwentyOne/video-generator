@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_73198f082209194a727e714825ad2f5cf59a2b5c8e156317a2ffd5d573713174",
+  "sha256": "73198f082209194a727e714825ad2f5cf59a2b5c8e156317a2ffd5d573713174",
+  "bytes": 813168,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3.25,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 78,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot17B.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

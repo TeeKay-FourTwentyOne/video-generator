@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1870d9a8516d5b9116bd25c72c6df9cb10ed10bcc49c9a418ba59b0c57a898a6",
+  "sha256": "1870d9a8516d5b9116bd25c72c6df9cb10ed10bcc49c9a418ba59b0c57a898a6",
+  "bytes": 2234388,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669361034_gxy4wy.mp4"
+  ],
+  "collections": [
+    "two_friends_meet_unexpectedly__1767668356193"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767669361034_gxy4wy"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Wide shot through a rain-streaked coffee shop window capturing a woman sitting alone at a corner table in the back corner of the frame. Soft morning light filters through the wet glass, creating a gentle, diffused glow that bathes her figure. She sits perfectly still with her laptop closed on the table, both hands wrapped around a ceramic coffee mug, gazing into the middle distance with a contemplative expression. The camera remains completely static throughout. Faint reflections of passing cars and pedestrians on the busy street overlay the window glass, creating subtle layers between interior and exterior worlds. The coffee shop's warm wood tones - visible in the table, chairs, and wall panels - contrast with the cool, gray morning outside. Gentle steam rises from her coffee mug, catching the filtered light. The composition is balanced and symmetrical, with the woman positioned at the rule of thirds intersection. Natural, muted color palette dominated by browns, creams, and soft grays. Even, soft lighting with no harsh shadows, creating a cocoon of quietude amid urban activity.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b38ef0eba17f556b9053414cd21cd3a052c178ea591bdfc2da9da22e5309c44c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Wide shot through a rain-streaked coffee shop window capturing a woman sitting alone at a corner table in the back corner of the frame. Soft morning light filters through the wet glass, creating a gentle, diffused glow that bathes her figure. She sits perfectly still with her laptop closed on the table, both hands wrapped around a ceramic coffee mug, gazing into the middle distance with a contemplative expression. The camera remains completely static throughout. Faint reflections of passing cars and pedestrians on the busy street overlay the window glass, creating subtle layers between interior and exterior worlds. The coffee shop's warm wood tones - visible in the table, chairs, and wall panels - contrast with the cool, gray morning outside. Gentle steam rises from her coffee mug, catching the filtered light. The composition is balanced and symmetrical, with the woman positioned at the rule of thirds intersection. Natural, muted color palette dominated by browns, creams, and soft grays. Even, soft lighting with no harsh shadows, creating a cocoon of quietude amid urban activity.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b38ef0eba17f556b9053414cd21cd3a052c178ea591bdfc2da9da22e5309c44c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:15:07.805Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A contemplative scene of a woman in a cream sweater sitting alone in a cozy café on a rainy day, viewed through a rain-streaked window. She holds a teal mug while gazing thoughtfully, with a laptop open before her. The Korean speech translates to 'Thank you for watching,' suggesting this is the closing shot of a video.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "alone",
+        "brown",
+        "caf",
+        "closer",
+        "contemplative",
+        "continues",
+        "cozy",
+        "cream",
+        "hair",
+        "her",
+        "holding",
+        "inside",
+        "length",
+        "maintains",
+        "medium",
+        "mug",
+        "near",
+        "now",
+        "position",
+        "rain",
+        "rainy",
+        "scene",
+        "seated",
+        "shoulder",
+        "sits",
+        "sitting",
+        "speech",
+        "sweater",
+        "table",
+        "teal",
+        "viewed",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with shoulder-length brown hair sits inside a café, viewed through a rain-streaked window. She wears a cream-colored cable-knit turtleneck sweater and holds a teal/mint green mug with both hands at chest level. A silver laptop is open on the wooden table in front of her. The café interior shows warm wooden tones and shelving in the background. Rain droplets are visible on the glass, creating a cozy, contemplative atmosphere. The shot is framed at medium distance with soft, natural lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman continues sitting at the café table, now holding the teal mug closer to her face with both hands cupped around it. She gazes thoughtfully to her left, appearing pensive or lost in thought. The rain-covered window remains prominent in the foreground, with water droplets streaming down. The silver laptop remains open on the wooden table. Warm ambient lighting illuminates the café's wooden interior. A white car is partially visible through the wet window outside."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman maintains her seated position, holding the teal mug near her chin level while continuing to gaze leftward through the rainy window. Her expression remains contemplative and serene. The composition shows the rain-streaked glass in the foreground, creating a dreamy, atmospheric effect. The café's warm wooden interior contrasts with the grey, rainy exterior. The silver laptop stays open on the table. Soft, diffused lighting creates a cozy, intimate mood throughout the scene."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_039",
+      "name": "Rainy Day Writer",
+      "description": "Woman with brown hair in cream turtleneck, sitting in cafe with laptop and coffee, viewed through rain-streaked window",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "alone",
+    "brown",
+    "caf",
+    "closer",
+    "contemplative",
+    "continues",
+    "cozy",
+    "cream",
+    "hair",
+    "her",
+    "holding",
+    "inside",
+    "length",
+    "maintains",
+    "medium",
+    "mug",
+    "near",
+    "now",
+    "position",
+    "rain",
+    "rainy",
+    "scene",
+    "seated",
+    "shoulder",
+    "sits",
+    "sitting",
+    "speech",
+    "sweater",
+    "table",
+    "teal",
+    "viewed",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

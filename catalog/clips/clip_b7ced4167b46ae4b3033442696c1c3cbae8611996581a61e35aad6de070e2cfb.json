@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b7ced4167b46ae4b3033442696c1c3cbae8611996581a61e35aad6de070e2cfb",
+  "sha256": "b7ced4167b46ae4b3033442696c1c3cbae8611996581a61e35aad6de070e2cfb",
+  "bytes": 504407,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767513291235_fykb9q.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767513291235_fykb9q"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Extreme close-up macro shot of a perfectly spherical drop of midnight-black ink suspended at the tip of an invisible dropper, hanging motionless against a soft, ethereal white background. The camera holds a static, intimate macro lens position, capturing every detail of the glossy obsidian surface as it reflects subtle ambient light. The drop trembles almost imperceptibly with surface tension, its form wavering between perfect roundness and the gentle pull of gravity. Soft, diffused lighting creates delicate highlights across the liquid's mirror-like surface while casting the faintest shadow beneath. The composition is minimal and meditative, with shallow depth of field isolating the suspended ink drop in crystalline detail. The drop grows incrementally heavier, subtly elongating at its base as gravity's inexorable force begins to overcome surface tension, building anticipation for the inevitable fall. Contemplative pacing with pristine macro photography aesthetics, emphasizing the poetry of a single moment frozen in time.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7a08c899f9642f066ab04d35f2d6dc73a3a00dae4e66f64dd2b89ed735d216d7",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme close-up macro shot of a perfectly spherical drop of midnight-black ink suspended at the tip of an invisible dropper, hanging motionless against a soft, ethereal white background. The camera holds a static, intimate macro lens position, capturing every detail of the glossy obsidian surface as it reflects subtle ambient light. The drop trembles almost imperceptibly with surface tension, its form wavering between perfect roundness and the gentle pull of gravity. Soft, diffused lighting creates delicate highlights across the liquid's mirror-like surface while casting the faintest shadow beneath. The composition is minimal and meditative, with shallow depth of field isolating the suspended ink drop in crystalline detail. The drop grows incrementally heavier, subtly elongating at its base as gravity's inexorable force begins to overcome surface tension, building anticipation for the inevitable fall. Contemplative pacing with pristine macro photography aesthetics, emphasizing the poetry of a single moment frozen in time.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7a08c899f9642f066ab04d35f2d6dc73a3a00dae4e66f64dd2b89ed735d216d7",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T07:54:07.447Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a viscous dark liquid (possibly oil, syrup, or similar substance) slowly dripping and stretching against a clean white background. The sequence shows the progression from a bulbous droplet to an elongated stream, demonstrating the liquid's high viscosity and surface tension properties. The minimalist composition and high-contrast lighting emphasize the fluid dynamics of the dripping motion.",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "against",
+        "captures",
+        "clean",
+        "dark",
+        "droplet",
+        "elongated",
+        "form",
+        "formed",
+        "gray",
+        "hangs",
+        "light",
+        "liquid",
+        "long",
+        "longer",
+        "medium",
+        "now",
+        "oil",
+        "possibly",
+        "showing",
+        "significantly",
+        "similar",
+        "speech",
+        "stream",
+        "stretched",
+        "stretching",
+        "syrup",
+        "thank",
+        "thin",
+        "vertical",
+        "vertically",
+        "video",
+        "viscous",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, viscous liquid droplet hangs from above against a clean white/light gray background. The droplet has a bulbous, rounded shape at the bottom with a narrower neck connecting to the source above. The liquid appears black or very dark brown with subtle light reflections visible on its glossy surface. The composition is minimalist with the droplet positioned in the upper-center portion of the vertical frame. High-key lighting creates strong contrast between the dark liquid and bright background."
+        },
+        {
+          "seconds": 2,
+          "text": "The dark liquid droplet has elongated significantly, now showing a longer, more stretched form. The bulbous portion at the bottom has become more pronounced and rounded, while the connecting strand to the top has thinned. Light reflections are visible along the surface of the viscous liquid, revealing its glossy texture. A subtle reddish-brown tint is visible in the thinner portions where light passes through. The white background remains consistent, maintaining the minimalist aesthetic."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The viscous dark liquid has now formed a long, thin stream stretching vertically down the frame. The upper portion shows an irregular, bulging mass while the lower section tapers into an extremely thin strand that extends toward the bottom of the frame. The liquid shows amber-brown coloration where it thins enough for light to pass through. The stream demonstrates the high viscosity and surface tension of the liquid as it slowly drips downward against the white background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "captures",
+    "clean",
+    "dark",
+    "droplet",
+    "elongated",
+    "form",
+    "formed",
+    "gray",
+    "hangs",
+    "light",
+    "liquid",
+    "long",
+    "longer",
+    "medium",
+    "now",
+    "oil",
+    "possibly",
+    "showing",
+    "significantly",
+    "similar",
+    "speech",
+    "stream",
+    "stretched",
+    "stretching",
+    "syrup",
+    "thank",
+    "thin",
+    "vertical",
+    "vertically",
+    "video",
+    "viscous",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

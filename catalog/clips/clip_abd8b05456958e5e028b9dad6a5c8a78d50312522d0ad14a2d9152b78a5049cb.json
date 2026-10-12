@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_abd8b05456958e5e028b9dad6a5c8a78d50312522d0ad14a2d9152b78a5049cb",
+  "sha256": "abd8b05456958e5e028b9dad6a5c8a78d50312522d0ad14a2d9152b78a5049cb",
+  "bytes": 61958764,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 50.166667,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 1204,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "personal_best_v3_s1_720p.mp4"
+  ],
+  "collections": [
+    "personal-best"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

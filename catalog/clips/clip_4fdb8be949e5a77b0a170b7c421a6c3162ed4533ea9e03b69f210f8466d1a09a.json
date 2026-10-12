@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4fdb8be949e5a77b0a170b7c421a6c3162ed4533ea9e03b69f210f8466d1a09a",
+  "sha256": "4fdb8be949e5a77b0a170b7c421a6c3162ed4533ea9e03b69f210f8466d1a09a",
+  "bytes": 12264,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_title_base.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_title_base"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Static title card displaying 'JANUARY 7TH, 2026' in white text on black background. Simple, clean typography for project date identification.",
+      "transcript": "you",
+      "tags": [
+        "2026",
+        "7th",
+        "black",
+        "card",
+        "centered",
+        "clean",
+        "composition",
+        "displaying",
+        "frame",
+        "identical",
+        "january",
+        "maintaining",
+        "pure",
+        "remains",
+        "short",
+        "simple",
+        "speech",
+        "static",
+        "text",
+        "throughout",
+        "title",
+        "unchanged",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Simple title card: white text 'JANUARY 7TH, 2026' centered on pure black background. Clean sans-serif font. Minimal design for date/title establishment."
+        },
+        {
+          "seconds": 1.5,
+          "text": "Identical static frame - white text on black remains unchanged. The title card holds steady for readability."
+        },
+        {
+          "seconds": 2.9,
+          "text": "Title card unchanged, maintaining clean static composition throughout. Pure black background with centered white date text."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "2026",
+    "7th",
+    "black",
+    "card",
+    "centered",
+    "clean",
+    "composition",
+    "displaying",
+    "frame",
+    "identical",
+    "january",
+    "maintaining",
+    "pure",
+    "remains",
+    "short",
+    "simple",
+    "speech",
+    "static",
+    "text",
+    "throughout",
+    "title",
+    "unchanged",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

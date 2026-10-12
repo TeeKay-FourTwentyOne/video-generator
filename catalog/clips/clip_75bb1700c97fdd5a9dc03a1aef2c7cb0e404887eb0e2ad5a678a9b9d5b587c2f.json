@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_75bb1700c97fdd5a9dc03a1aef2c7cb0e404887eb0e2ad5a678a9b9d5b587c2f",
+  "sha256": "75bb1700c97fdd5a9dc03a1aef2c7cb0e404887eb0e2ad5a678a9b9d5b587c2f",
+  "bytes": 3336119,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Damaged_starship_above_202604252116.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

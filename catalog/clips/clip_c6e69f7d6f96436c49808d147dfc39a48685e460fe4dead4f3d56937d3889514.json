@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c6e69f7d6f96436c49808d147dfc39a48685e460fe4dead4f3d56937d3889514",
+  "sha256": "c6e69f7d6f96436c49808d147dfc39a48685e460fe4dead4f3d56937d3889514",
+  "bytes": 2242095,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_6_window.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_6_window"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Warmly lit window at dusk with vintage film aesthetic. The orange glow against blue twilight creates powerful contrast between cold exterior and welcoming interior warmth.",
+      "transcript": "購読することを忘れないでください。それは私にとって大きな助けです。",
+      "tags": [
+        "aesthetic",
+        "against",
+        "appears",
+        "becomes",
+        "blue",
+        "building",
+        "camera",
+        "closer",
+        "cold",
+        "contrast",
+        "dominates",
+        "dusk",
+        "film",
+        "frame",
+        "glow",
+        "glowing",
+        "hour",
+        "intensely",
+        "interior",
+        "light",
+        "lit",
+        "medium",
+        "now",
+        "orange",
+        "speech",
+        "victorian",
+        "vintage",
+        "warm",
+        "warmly",
+        "window"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Warmly lit window of Victorian building at blue hour dusk. Orange glow from inside contrasts with deep blue twilight sky. Film sprocket borders. The illuminated window suggests home and warmth."
+        },
+        {
+          "seconds": 4,
+          "text": "Camera appears closer to the glowing window. The warm orange interior light becomes more prominent against darkening sky. Architectural details of building visible."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Window now dominates frame, intensely warm orange glow. The contrast between cold blue exterior and warm interior heightened. Curtains or movement possibly visible inside."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aesthetic",
+    "against",
+    "appears",
+    "becomes",
+    "blue",
+    "building",
+    "camera",
+    "closer",
+    "cold",
+    "contrast",
+    "dominates",
+    "dusk",
+    "film",
+    "frame",
+    "glow",
+    "glowing",
+    "hour",
+    "intensely",
+    "interior",
+    "light",
+    "lit",
+    "medium",
+    "now",
+    "orange",
+    "speech",
+    "victorian",
+    "vintage",
+    "warm",
+    "warmly",
+    "window"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

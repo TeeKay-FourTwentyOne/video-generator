@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_13bd757614d807de8b04feaa0c6235efece19032e18c10679c4cd968d3ab54fc",
+  "sha256": "13bd757614d807de8b04feaa0c6235efece19032e18c10679c4cd968d3ab54fc",
+  "bytes": 18950073,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "whalers.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

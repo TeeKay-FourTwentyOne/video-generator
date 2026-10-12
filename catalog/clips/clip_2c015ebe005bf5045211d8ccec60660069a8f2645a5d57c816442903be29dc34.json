@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2c015ebe005bf5045211d8ccec60660069a8f2645a5d57c816442903be29dc34",
+  "sha256": "2c015ebe005bf5045211d8ccec60660069a8f2645a5d57c816442903be29dc34",
+  "bytes": 3598728,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "03_line_dry.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "A handcrafted miniature stop-motion film, vertical 9:16 composition, macro lens, tactile cotton wool and painted wood, subtle stop-motion cadence. A quiet tiny rooftop drying terrace in warm early morning sunshine. A single taut clothesline crosses the upper middle of the frame between two mint-green wooden posts. Exactly ONE freshly washed ivory-white cotton-wool cloud hangs from the line by two tiny wooden clothespins, already attached in the opening frame. The fluffy cloud gently sways in the breeze like clean linen, remaining attached to the two pegs throughout. Below it is a small buttery-yellow enamel laundry basin sitting on terracotta roof tiles. A soft blue painted sky and distant blurred cream rooftops in background. The cloud casts a soft moving shadow on the roof. A final clear water droplet falls from the cloud into the basin, then it is still and dry. Slow subtle camera pullback, calm and luminous, spare composition, handcrafted miniature realism. No other clouds, no people, no hands, no faces, no lettering, no captions, no logos. One continuous shot. Sound: light morning breeze, a distant small bird chirp, one delicate water plink into the basin; no speech, no music. Hold the peaceful final composition.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_09ac791dcde7cc59f633dec1cf0d78d97c6cc1a7bef0a5892c01ee6495281d3c",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9122603,
+      "createdAt": "2026-09-12T18:39:27.235Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

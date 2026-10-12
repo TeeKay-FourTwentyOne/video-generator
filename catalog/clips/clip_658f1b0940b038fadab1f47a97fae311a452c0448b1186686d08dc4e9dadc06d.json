@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_658f1b0940b038fadab1f47a97fae311a452c0448b1186686d08dc4e9dadc06d",
+  "sha256": "658f1b0940b038fadab1f47a97fae311a452c0448b1186686d08dc4e9dadc06d",
+  "bytes": 21177201,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S04-v1.mp4",
+    "veo_1791066797672_7x0s05.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, late morning, looking steeply up a deep narrow courtyard shaft at the hard blue cloudless sky. The freed white sheet, with no clothespin, tumbles upward and twists in the rising wind, climbing through the shaft past the crossing laundry lines toward the open sky, lit brilliantly against the blue. The camera rises slowly and smoothly up the shaft with it, keeping it in frame, the balconies and the lower laundry lines sliding downward past the edges of the frame as the camera climbs. The other sheets stay pinned on their lines and only sway. The sheet never falls back. One continuous smooth upward camera move, no cuts; exactly one sheet in the air; no people move; nothing new appears. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_26ab6bd12524ebf527c012d06f2660579731b27abe314de0808ee5978042ad24",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

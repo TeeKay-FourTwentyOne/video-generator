@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+  "sha256": "1eca82619bd4da1df612cfdba93bd5f14937fa2523d2c6d7cb9595db739f93c7",
+  "bytes": 22677139,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 1344,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scary-woods-episode-05-1080.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

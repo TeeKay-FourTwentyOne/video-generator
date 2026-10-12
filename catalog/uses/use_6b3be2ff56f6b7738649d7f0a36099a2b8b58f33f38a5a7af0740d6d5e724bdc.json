@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_6379965cb8c833e2b1b35a43c4335972398b254db47fa8f783edff67a17ca6c3",
+  "projectId": "october",
+  "editVersion": "edit/v1.pre",
+  "segmentIndex": 15,
+  "shotId": "F04",
+  "status": "planned",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 14,
+    "fps": 24
+  },
+  "timelineStartFrame": 636,
+  "outputSha256": null,
+  "schemaVersion": 1,
+  "id": "use_6b3be2ff56f6b7738649d7f0a36099a2b8b58f33f38a5a7af0740d6d5e724bdc"
+}

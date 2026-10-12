@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_88703e75837a0e3f9e35f8327ca6a7d7a82e132f4c3dffe82a119865d7ea6f5f",
+  "sha256": "88703e75837a0e3f9e35f8327ca6a7d7a82e132f4c3dffe82a119865d7ea6f5f",
+  "bytes": 140491489,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 76.458008,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "43968/1835",
+    "frameCount": 1832,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hz_paradise_v5b.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

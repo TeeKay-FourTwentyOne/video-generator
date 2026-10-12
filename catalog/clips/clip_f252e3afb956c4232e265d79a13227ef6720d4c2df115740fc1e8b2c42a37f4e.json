@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f252e3afb956c4232e265d79a13227ef6720d4c2df115740fc1e8b2c42a37f4e",
+  "sha256": "f252e3afb956c4232e265d79a13227ef6720d4c2df115740fc1e8b2c42a37f4e",
+  "bytes": 1192740,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767542988124_bkd5kc.mp4"
+  ],
+  "collections": [
+    "the_spill_1767542795801"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767542988124_bkd5kc"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young Caucasian woman in her early 20s with wavy, shoulder-length dark brown hair sits alone at a small wooden table in a rustic coffee shop. She has a slim build and her fingers are wrapped around a warm ceramic mug. The interior features exposed red brick walls and dark wood floors. Warm, directional golden afternoon sunlight streams through large multi-paned windows, casting deep shadows and creating an intimate atmosphere. Her brown hair catches the soft light as she slowly lifts her gaze from the mug and looks thoughtfully around the cozy space, her eyes moving gently from left to right. The camera holds a medium shot with shallow depth of field, keeping her in sharp focus while the background softly blurs. The lighting is natural and warm with a golden indie film aesthetic. Wooden counter and intimate seating are visible in the softly lit background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6bc137af52d64c6c752ebf64e49def4d63a78266a37cc358c7bdef7a5500e2f5",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young Caucasian woman in her early 20s with wavy, shoulder-length dark brown hair sits alone at a small wooden table in a rustic coffee shop. She has a slim build and her fingers are wrapped around a warm ceramic mug. The interior features exposed red brick walls and dark wood floors. Warm, directional golden afternoon sunlight streams through large multi-paned windows, casting deep shadows and creating an intimate atmosphere. Her brown hair catches the soft light as she slowly lifts her gaze from the mug and looks thoughtfully around the cozy space, her eyes moving gently from left to right. The camera holds a medium shot with shallow depth of field, keeping her in sharp focus while the background softly blurs. The lighting is natural and warm with a golden indie film aesthetic. Wooden counter and intimate seating are visible in the softly lit background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6bc137af52d64c6c752ebf64e49def4d63a78266a37cc358c7bdef7a5500e2f5",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:09:06.152Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short vertical video captures a young woman in a cream cable-knit sweater having a quiet moment in a warmly-lit industrial café. She transitions from looking down at her coffee cup to gazing thoughtfully out the window, bathed in golden sunlight. The clip conveys a peaceful, contemplative atmosphere with its warm color palette and intimate framing.",
+      "transcript": "you",
+      "tags": [
+        "brown",
+        "cable",
+        "captures",
+        "contemplative",
+        "cozy",
+        "cream",
+        "dark",
+        "gazes",
+        "gazing",
+        "hair",
+        "head",
+        "her",
+        "knit",
+        "lifted",
+        "looking",
+        "maintains",
+        "medium",
+        "now",
+        "pose",
+        "right",
+        "short",
+        "sits",
+        "speech",
+        "still",
+        "sweater",
+        "table",
+        "thoughtfully",
+        "toward",
+        "vertical",
+        "video",
+        "wavy",
+        "window",
+        "woman",
+        "wooden",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with wavy brown hair sits at a dark wooden table in a cozy café setting. She wears a cream-colored cable-knit sweater and holds a white ceramic coffee cup with both hands. Her gaze is directed downward at the cup. Warm golden sunlight streams in from large industrial windows on the right, illuminating her face and sweater. The background features exposed brick walls, wooden shelves, and a pendant lamp. The composition is a medium close-up shot with shallow depth of field."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman has lifted her head and now gazes thoughtfully toward the right, looking out the window. Her expression appears contemplative and serene. She continues holding the white coffee cup on its saucer. The warm, golden-hour lighting creates dramatic shadows on the left side of her face while highlighting her features on the right. The café background remains softly blurred with visible brick walls, shelving, and ambient lighting. The vertical 9:16 framing centers her in the composition."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman maintains her contemplative pose, still gazing toward the window on her right. Her hands remain wrapped around the white coffee mug resting on its saucer. The warm sunlight continues to cast a golden glow across her cream sweater and illuminate the right side of her face. Her wavy brown hair frames her face naturally. The industrial café setting with brick walls and wooden elements remains visible but blurred in the background. The intimate, portrait-style framing emphasizes her peaceful, reflective mood."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "brown",
+    "cable",
+    "captures",
+    "contemplative",
+    "cozy",
+    "cream",
+    "dark",
+    "gazes",
+    "gazing",
+    "hair",
+    "head",
+    "her",
+    "knit",
+    "lifted",
+    "looking",
+    "maintains",
+    "medium",
+    "now",
+    "pose",
+    "right",
+    "short",
+    "sits",
+    "speech",
+    "still",
+    "sweater",
+    "table",
+    "thoughtfully",
+    "toward",
+    "vertical",
+    "video",
+    "wavy",
+    "window",
+    "woman",
+    "wooden",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9ba3bd07e2f0847a2818f4f638bc549d9d2b7fc96d35b1ae9876d5e56a1e51c0",
+  "sha256": "9ba3bd07e2f0847a2818f4f638bc549d9d2b7fc96d35b1ae9876d5e56a1e51c0",
+  "bytes": 7688829,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S06-v1.mp4",
+    "veo_1791015234725_2l27ww.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Continue this exact handmade miniature scene with restrained stop-motion motion and cinematic lighting. Maintain the exact robot, one tree, planter, bulb, paint chips and greenhouse geometry in the supplied first frame. 9:16 portrait. One continuous shot, no cuts, no dissolve, no text, no speech. No other characters, no new objects, no duplicate limbs. Robot always has two arms with two-prong grippers and two caterpillar tracks.\nA very slow camera pullback through the greenhouse, keeping the single luminous amber-leaf tree center-right and the same small blue robot seated or standing still at lower left, looking up. The light comes ONLY from the tree and the bulb installed in the planter. The robot chest is DARK and EMPTY, its hands empty at its sides. Delicate amber leaves sway a tiny amount in a draft, casting warm leaf shadows over the glass ribs and ceramic head. Teal night beyond the glass remains. The robot gently tilts its head up once, then becomes still. No new character enters, no second robot, no new bulb. No restoration of its chest light. This final image holds the contrast between a dark small giver and a warm enormous surrounding world. No text, no fade: leave the last second steady for an editorial title.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c6243eced14a1e75334c9a19b9c35fa7e75bf5f913353438261de41821dbe5e9",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

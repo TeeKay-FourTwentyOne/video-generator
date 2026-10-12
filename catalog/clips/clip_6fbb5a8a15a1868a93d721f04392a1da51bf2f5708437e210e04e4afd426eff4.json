@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6fbb5a8a15a1868a93d721f04392a1da51bf2f5708437e210e04e4afd426eff4",
+  "sha256": "6fbb5a8a15a1868a93d721f04392a1da51bf2f5708437e210e04e4afd426eff4",
+  "bytes": 2331802,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767741933671_yh0cpr.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767741933671_yh0cpr"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots stands at the center of a junction where multiple asphalt roads diverge across rolling hills of golden textured fields. Wide establishing shot from ground level, camera positioned directly in front of him as he faces forward with a calm, knowing expression, his eyes peaceful and content. His posture is relaxed with shoulders dropped, weight evenly distributed, radiating quiet fulfillment. Golden hour sunlight bathes the entire landscape in warm amber tones, creating long shadows across the winding paths that stretch into the distance. The low sun casts a gentle rim light around his silhouette while soft, diffused light illuminates his serene face. Multiple roads curve away through the undulating hills covered in dry golden grasses that sway gently in a light breeze. Green verges line the dark asphalt paths. The sky above shows deep blue transitioning to warm orange near the horizon. Camera remains completely static for the full duration, holding this wide vista that captures both the traveler's centered stillness and the expansive possibilities before him. The warm color palette dominated by golds and ambers creates a sense of peace and completion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9728bd3ead8f4c28c7fcad853270fe945f6df3652a1c875d81a395e85cf7adcb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots stands at the center of a junction where multiple asphalt roads diverge across rolling hills of golden textured fields. Wide establishing shot from ground level, camera positioned directly in front of him as he faces forward with a calm, knowing expression, his eyes peaceful and content. His posture is relaxed with shoulders dropped, weight evenly distributed, radiating quiet fulfillment. Golden hour sunlight bathes the entire landscape in warm amber tones, creating long shadows across the winding paths that stretch into the distance. The low sun casts a gentle rim light around his silhouette while soft, diffused light illuminates his serene face. Multiple roads curve away through the undulating hills covered in dry golden grasses that sway gently in a light breeze. Green verges line the dark asphalt paths. The sky above shows deep blue transitioning to warm orange near the horizon. Camera remains completely static for the full duration, holding this wide vista that captures both the traveler's centered stillness and the expansive possibilities before him. The warm color palette dominated by golds and ambers creates a sense of peace and completion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9728bd3ead8f4c28c7fcad853270fe945f6df3652a1c875d81a395e85cf7adcb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T23:24:50.754Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A stationary shot of a bearded man standing at a fork in the road during golden hour, with two paths diverging behind him through rolling golden hills. The Japanese text overlay thanks viewers for watching, suggesting this is an outro or closing shot. The composition creates a metaphorical scene about life choices, filmed in vertical format with warm, cinematic lighting.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "aged",
+        "appearing",
+        "beard",
+        "bearded",
+        "brown",
+        "center",
+        "continues",
+        "fork",
+        "golden",
+        "gray",
+        "hair",
+        "his",
+        "hour",
+        "junction",
+        "long",
+        "maintaining",
+        "man",
+        "medium",
+        "middle",
+        "position",
+        "relaxed",
+        "remains",
+        "road",
+        "shot",
+        "slightly",
+        "speech",
+        "standing",
+        "stands",
+        "stationary",
+        "two",
+        "warm",
+        "wavy"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with long, wavy brown hair and a gray beard stands centered on a dark asphalt road. He wears a tan/olive utility jacket over a gray henley shirt, olive cargo pants, and tan boots. Behind him, two roads diverge - one curving left, one going straight up a hill. The landscape features golden-brown rolling grassland hills under a clear blue sky. Warm golden hour lighting illuminates the scene from the right side, creating a contemplative atmosphere. Full-body vertical framing."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man remains standing in the center of the road at the fork, maintaining his position. His posture is relaxed with arms at his sides. The diverging roads behind him create a strong visual metaphor - the winding path curves left while the straight path ascends the hill. The golden grass on the rolling hills catches warm sunset light, contrasting with the dark pavement. Clear blue sky fills the upper portion. The composition emphasizes the choice between two paths."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man continues standing at the road junction, appearing slightly more relaxed. The warm golden hour lighting remains consistent, casting soft shadows. His layered outfit of olive jacket, gray shirt, and cargo pants is clearly visible. The iconic forked road stretches behind him through undulating golden grassland hills. The vertical smartphone framing captures his full figure against the expansive landscape. The scene maintains its contemplative, cinematic quality with rich earth tones and blue sky."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_006",
+      "name": "Dusty",
+      "description": "Middle-aged man with long wavy brown/grey hair, olive jacket over tan shirt, rugged appearance, standing on road through golden fields",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "appearing",
+    "beard",
+    "bearded",
+    "brown",
+    "center",
+    "continues",
+    "fork",
+    "golden",
+    "gray",
+    "hair",
+    "his",
+    "hour",
+    "junction",
+    "long",
+    "maintaining",
+    "man",
+    "medium",
+    "middle",
+    "position",
+    "relaxed",
+    "remains",
+    "road",
+    "shot",
+    "slightly",
+    "speech",
+    "standing",
+    "stands",
+    "stationary",
+    "two",
+    "warm",
+    "wavy"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

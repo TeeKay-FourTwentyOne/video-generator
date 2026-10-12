@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a76956935928c3461233b158500c24bfb1a31763e302ba18ac18ae20bcf1bf47",
+  "sha256": "a76956935928c3461233b158500c24bfb1a31763e302ba18ac18ae20bcf1bf47",
+  "bytes": 35882578,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 14.5,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "694/29",
+    "frameCount": 347,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "edit_v4.mp4"
+  ],
+  "collections": [
+    "archive-civilwarastrology"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

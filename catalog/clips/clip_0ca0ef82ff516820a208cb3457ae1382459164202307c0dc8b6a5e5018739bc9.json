@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0ca0ef82ff516820a208cb3457ae1382459164202307c0dc8b6a5e5018739bc9",
+  "sha256": "0ca0ef82ff516820a208cb3457ae1382459164202307c0dc8b6a5e5018739bc9",
+  "bytes": 2399300,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "probe_convergence_fast.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

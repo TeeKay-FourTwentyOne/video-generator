@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9f2fa5a4dec91fd3db802243b2cb87ed2363f058264739850cceb0d61f154fb8",
+  "sha256": "9f2fa5a4dec91fd3db802243b2cb87ed2363f058264739850cceb0d61f154fb8",
+  "bytes": 12033355,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "b4_warehouse.mp4"
+  ],
+  "collections": [
+    "dignity-of-work"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

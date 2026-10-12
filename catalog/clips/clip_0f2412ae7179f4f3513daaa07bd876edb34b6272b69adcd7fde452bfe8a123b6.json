@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0f2412ae7179f4f3513daaa07bd876edb34b6272b69adcd7fde452bfe8a123b6",
+  "sha256": "0f2412ae7179f4f3513daaa07bd876edb34b6272b69adcd7fde452bfe8a123b6",
+  "bytes": 14968860,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S06-v1.mp4",
+    "veo_1791505092431_05yuad.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, night at a bus stop on a city street, 35 mm, locked-off camera that does not move. The silver-haired woman in the mustard-yellow raincoat sits at the left end of the bench drawing in her sketchbook. A man of about fifty in a grey overcoat walks in from the right, sits down at the right end of the bench, and looks ahead at the street. She closes the sketchbook on her lap, then after a moment turns her head toward him and says something short and quiet, her voice low and the words too soft to make out; he turns, looks at her, and smiles a little. Sound: distant traffic, a far siren, wet tyres, and her low quiet voice; no music. Exactly two people. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7a9ab48f55f6c6b201a785660cef861066e4eaa254478029ddd0be77ff5228dd",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

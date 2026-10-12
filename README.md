@@ -37,7 +37,11 @@ publication text and dated production evidence. All project briefs now have
 canonical folders; old Markdown paths forward to them. Shared series canon stays
 in place, and incomplete historical metadata remains explicitly unknown or absent.
 
-MCP now defaults to ten focused tools. Existing specialist callers can set
+The [shared clip library](docs/clip-library.md) catalogs existing footage by content
+hash, with public prompts, descriptions, characters and evidenced edit uses.
+Start with `npm run clips -- search QUERY`; originals stay in ignored `data/clips/`.
+
+MCP now defaults to eleven focused tools. Existing specialist callers can set
 `VIDEO_MCP_PROFILE=legacy` in their server environment and reconnect. The CLI
 works directly for Codex, Claude Code and other agents with local file access.
 
@@ -50,6 +54,8 @@ works directly for Codex, Claude Code and other agents with local file access.
 | `.agents/skills/post-publication/` | Shared release wrap-up; Claude links to it |
 | `tools/production/` | Agent CLI, local editing, review and offline tests |
 | `briefs/<project-id>/` | Canonical brief, public record and generated current summary |
+| `catalog/clips/`, `catalog/uses/` | Public clip metadata and evidenced usage records |
+| `data/clips/` | Ignored shared originals, addressed by SHA-256 clip ID |
 | `data/accounting/<project-id>/` | Ignored itemized accounting and reconciliation evidence |
 | `mcp/video-generator/src/production/` | Budget and qualified provider specifications |
 | `mcp/video-generator/src/clients/` | Google, MiniMax, Runway, Anthropic and ElevenLabs clients |

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_94f6a8f76f80eab305a11edf48ec28d34d4bbd84f623d02c34c5b349e3db81d0",
+  "sha256": "94f6a8f76f80eab305a11edf48ec28d34d4bbd84f623d02c34c5b349e3db81d0",
+  "bytes": 8426399,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S04-v1.mp4",
+    "veo_1791058277203_2iet77.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Extreme low close-up at the base of a dry dead tree, a hand-built cinematic miniature at night. The amber lamp, freshly seated in the small brass socket among the roots, slowly brightens from a dim ember to a warm steady glow. Thin veins of amber light creep outward from the socket into the cracked grey roots and up the base of the trunk, as if sap were lighting from within, the glow spreading gradually over the whole shot. Fine dust drifts in the warming light. Locked-off macro camera, very shallow focus, perfectly still. No hands, grippers, machine parts or new objects enter the frame; the lamp stays in place; nothing else moves. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_99cfb5fb1ce14947792fcd252c9ecf671a318b7b3d80b4dcf7a6e87d92e0fc16",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

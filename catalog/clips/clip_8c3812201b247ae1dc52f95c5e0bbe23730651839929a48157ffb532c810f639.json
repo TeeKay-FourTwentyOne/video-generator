@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8c3812201b247ae1dc52f95c5e0bbe23730651839929a48157ffb532c810f639",
+  "sha256": "8c3812201b247ae1dc52f95c5e0bbe23730651839929a48157ffb532c810f639",
+  "bytes": 646149,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_5_1766526507053.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_5_1766526507053"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Static shot of vintage black rotary telephone on wooden desk with coffee stain. The classic phone design adds nostalgic quality to the hold music theme.",
+      "transcript": "You",
+      "tags": [
+        "black",
+        "classic",
+        "coffee",
+        "dark",
+        "desk",
+        "device",
+        "emphasizes",
+        "era",
+        "evokes",
+        "idle",
+        "light",
+        "medium",
+        "nostalgia",
+        "phone",
+        "position",
+        "remains",
+        "rotary",
+        "shot",
+        "simpler",
+        "sitting",
+        "speech",
+        "stain",
+        "static",
+        "stationary",
+        "surface",
+        "telephone",
+        "unchanged",
+        "vintage",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Classic black rotary telephone on light wooden desk surface. Dark coffee stain ring visible on desk. Vintage aesthetics with the iconic dial phone design."
+        },
+        {
+          "seconds": 2,
+          "text": "Same rotary phone, unchanged position. The static shot emphasizes the phone sitting idle. Light wood grain texture visible."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Rotary phone remains stationary. The vintage device evokes nostalgia for an era of simpler but perhaps equally frustrating hold times."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "black",
+    "classic",
+    "coffee",
+    "dark",
+    "desk",
+    "device",
+    "emphasizes",
+    "era",
+    "evokes",
+    "idle",
+    "light",
+    "medium",
+    "nostalgia",
+    "phone",
+    "position",
+    "remains",
+    "rotary",
+    "shot",
+    "simpler",
+    "sitting",
+    "speech",
+    "stain",
+    "static",
+    "stationary",
+    "surface",
+    "telephone",
+    "unchanged",
+    "vintage",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

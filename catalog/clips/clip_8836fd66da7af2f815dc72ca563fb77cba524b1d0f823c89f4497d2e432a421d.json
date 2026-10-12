@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8836fd66da7af2f815dc72ca563fb77cba524b1d0f823c89f4497d2e432a421d",
+  "sha256": "8836fd66da7af2f815dc72ca563fb77cba524b1d0f823c89f4497d2e432a421d",
+  "bytes": 1816426,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767542065633_i669i2.mp4"
+  ],
+  "collections": [
+    "environment_test_1767541954624"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767542065633_i669i2"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A lone explorer stands motionless in quiet contemplation within a derelict industrial hall, bathed in the soft, rhythmic pulsing glow of mysterious symbols that cast ethereal light across the concrete floors and brick walls. The high gabled ceiling with repeating skylights allows cool, diffuse natural light to filter down, mixing with the warm, pulsing illumination from the symbols to create an enigmatic, almost sacred atmosphere. The steel beams and symmetrical architecture frame the figure as ancient mysteries seem to awaken around them. Handheld camera slowly circles the explorer with subtle, organic movement, capturing the interplay of natural and supernatural light as the pulsing glow intensifies and dims in gentle waves. The harsh, threatening industrial environment transforms into something mystical and contemplative, with moody cinematic lighting that emphasizes the contrast between the decaying industrial space and the otherworldly presence now filling it.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_36fcc8ae5e8bd6a84c5a0f384866fb6bf5fb7744e4439de0a22c3b0429876c40",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A lone explorer stands motionless in quiet contemplation within a derelict industrial hall, bathed in the soft, rhythmic pulsing glow of mysterious symbols that cast ethereal light across the concrete floors and brick walls. The high gabled ceiling with repeating skylights allows cool, diffuse natural light to filter down, mixing with the warm, pulsing illumination from the symbols to create an enigmatic, almost sacred atmosphere. The steel beams and symmetrical architecture frame the figure as ancient mysteries seem to awaken around them. Handheld camera slowly circles the explorer with subtle, organic movement, capturing the interplay of natural and supernatural light as the pulsing glow intensifies and dims in gentle waves. The harsh, threatening industrial environment transforms into something mystical and contemplative, with moody cinematic lighting that emphasizes the contrast between the decaying industrial space and the otherworldly presence now filling it.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_36fcc8ae5e8bd6a84c5a0f384866fb6bf5fb7744e4439de0a22c3b0429876c40",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:53:41.146Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A hooded figure stands motionless in an abandoned industrial warehouse, surrounded by mysterious glowing orange symbols on both the floor and far wall. The cinematic vertical video maintains a consistent composition throughout, with the camera slowly moving closer to the subject while the mystical illuminated patterns create an atmospheric, ritualistic scene within the decaying industrial space.",
+      "transcript": "You",
+      "tags": [
+        "abandoned",
+        "against",
+        "behind",
+        "center",
+        "centered",
+        "closer",
+        "continues",
+        "figure",
+        "glowing",
+        "hooded",
+        "industrial",
+        "medium",
+        "motionless",
+        "mysterious",
+        "now",
+        "person",
+        "perspective",
+        "remains",
+        "shown",
+        "silhouetted",
+        "slightly",
+        "speech",
+        "standing",
+        "stands",
+        "stationary",
+        "surrounded",
+        "viewed",
+        "warehouse",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure stands centered in an abandoned industrial warehouse, viewed from behind. The person wears a hooded jacket and cargo pants, standing on a concrete floor illuminated by glowing orange-yellow symbols and geometric patterns. Three illuminated symbols resembling stylized characters or runes glow on the brick wall ahead. The warehouse features a high vaulted ceiling with skylights allowing natural light to filter through. Steel support columns frame the scene on both sides, creating dramatic depth."
+        },
+        {
+          "seconds": 2,
+          "text": "The same hooded figure remains stationary in the center of the abandoned warehouse, silhouetted against the glowing orange symbols on the far brick wall. The floor beneath displays intricate glowing geometric patterns including circles and angular shapes. The industrial setting shows weathered brick walls, metal support beams, and large skylights in the peaked roof. The composition creates a mystical, cinematic atmosphere with the figure positioned as the focal point between the floor and wall illuminations."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The hooded figure continues standing in the warehouse, now shown from a slightly closer perspective. The camera has moved nearer, making the person appear larger in frame. The glowing orange symbols on the wall appear partially visible, with two characters flanking the figure. The floor patterns remain illuminated with geometric designs. The industrial architecture with its exposed beams, brick walls, and skylights creates a dramatic backdrop. The figure's silhouette is backlit by the ambient light from above."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abandoned",
+    "against",
+    "behind",
+    "center",
+    "centered",
+    "closer",
+    "continues",
+    "figure",
+    "glowing",
+    "hooded",
+    "industrial",
+    "medium",
+    "motionless",
+    "mysterious",
+    "now",
+    "person",
+    "perspective",
+    "remains",
+    "shown",
+    "silhouetted",
+    "slightly",
+    "speech",
+    "standing",
+    "stands",
+    "stationary",
+    "surrounded",
+    "viewed",
+    "warehouse",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

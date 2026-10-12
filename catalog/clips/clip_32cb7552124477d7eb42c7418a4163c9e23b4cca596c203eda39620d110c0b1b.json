@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_32cb7552124477d7eb42c7418a4163c9e23b4cca596c203eda39620d110c0b1b",
+  "sha256": "32cb7552124477d7eb42c7418a4163c9e23b4cca596c203eda39620d110c0b1b",
+  "bytes": 19765051,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 98.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 2373,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "polis-hall-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

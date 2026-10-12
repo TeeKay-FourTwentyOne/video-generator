@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_68bc1207cc47df368626e91e2f9b618d09d49922833b7658be5f7e3e8ef1de51",
+  "sha256": "68bc1207cc47df368626e91e2f9b618d09d49922833b7658be5f7e3e8ef1de51",
+  "bytes": 1546405,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767492152523_iam0dv.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767492152523_iam0dv"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A pristine white circular dinner plate sits centered on a dark tablecloth, perfectly positioned to mirror the moon's luminous presence. Gentle wisps of steam rise gracefully from the hot food on the plate, drifting upward like ethereal clouds against the darkness. The camera holds a static, centered composition in 9:16 aspect ratio, maintaining the same intimate framing as the celestial scene before. Dramatic side lighting illuminates the plate's pristine white surface, creating a soft glow that echoes the moon's radiance while casting deep shadows across the dark fabric. The steam moves organically, curling and dispersing in delicate tendrils that catch the warm light. The atmosphere is moody and cinematic, with rich contrast between the bright plate and the enveloping darkness. Subtle details emerge - the texture of the food, the smooth ceramic surface, the fine weave of the tablecloth - all bathed in intimate restaurant lighting that creates depth and mystery. The overall composition maintains perfect symmetry, with the plate as a luminous focal point against the vast darkness, completing the visual metaphor from moon to meal.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7d2cfb80eed3bd2290dd19b5a78e2fe13e18b2947b056ec8b84cb2a8cb354fd9",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A pristine white circular dinner plate sits centered on a dark tablecloth, perfectly positioned to mirror the moon's luminous presence. Gentle wisps of steam rise gracefully from the hot food on the plate, drifting upward like ethereal clouds against the darkness. The camera holds a static, centered composition in 9:16 aspect ratio, maintaining the same intimate framing as the celestial scene before. Dramatic side lighting illuminates the plate's pristine white surface, creating a soft glow that echoes the moon's radiance while casting deep shadows across the dark fabric. The steam moves organically, curling and dispersing in delicate tendrils that catch the warm light. The atmosphere is moody and cinematic, with rich contrast between the bright plate and the enveloping darkness. Subtle details emerge - the texture of the food, the smooth ceramic surface, the fine weave of the tablecloth - all bathed in intimate restaurant lighting that creates depth and mystery. The overall composition maintains perfect symmetry, with the plate as a luminous focal point against the vast darkness, completing the visual metaphor from moon to meal.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7d2cfb80eed3bd2290dd19b5a78e2fe13e18b2947b056ec8b84cb2a8cb354fd9",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T02:01:36.168Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip transitions from nighttime footage of a full moon against a black sky to an artistic dining scene featuring an empty white plate with rising steam. The Japanese speech translates to 'Thank you for watching,' suggesting this is an end card or closing sequence. The visual style shifts from natural celestial imagery to dramatic, theatrical food presentation aesthetics.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "against",
+        "black",
+        "center",
+        "centered",
+        "ceramic",
+        "change",
+        "clip",
+        "complete",
+        "completely",
+        "composition",
+        "continues",
+        "dark",
+        "dining",
+        "dominates",
+        "fabric",
+        "final",
+        "first",
+        "footage",
+        "frame",
+        "full",
+        "identical",
+        "indoor",
+        "medium",
+        "moon",
+        "multi-scene",
+        "nearly",
+        "night",
+        "nighttime",
+        "plate",
+        "rising",
+        "scene",
+        "setting",
+        "showing",
+        "sits",
+        "sky",
+        "speech",
+        "steam",
+        "surface",
+        "transitions",
+        "video",
+        "voluminous",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A full moon dominates the center of the frame against a completely black night sky. The moon appears bright white/cream colored with visible gray surface details showing craters and maria. Wispy dark clouds are visible at the edges of the frame, particularly on the left side and bottom. The composition is centered with the luminous moon providing the only light source. Shot appears to be taken with telephoto lens capturing lunar detail."
+        },
+        {
+          "seconds": 1.19,
+          "text": "Nearly identical composition to the first frame showing the full moon centered against the black night sky. The moon maintains its bright cream-white appearance with visible surface features. Dark wispy clouds have shifted slightly, now more visible on the left edge and lower portion of the frame. The lighting remains consistent with the moon as the sole illumination source. Vertical portrait orientation emphasizes the celestial subject."
+        },
+        {
+          "seconds": 1.39,
+          "text": "Complete scene change to an indoor dining setting. A white ceramic plate sits centered on a dark gray/charcoal tablecloth or placemat. Steam or smoke rises dramatically from the empty plate, creating ethereal wisps against the dark background. A silver fork is visible on the left side, spoon partially visible on right. Soft lighting illuminates the plate from above, creating a bright reflection in the center. Blurred colored lights (green, yellow) visible in background."
+        },
+        {
+          "seconds": 3,
+          "text": "Same dining scene continues with the white plate on dark fabric surface. Steam continues rising from the plate in elegant swirling patterns, now more defined and vertical. The fork remains positioned on the left, spoon on right. The plate's center shows a bright light reflection. Background remains dark with subtle blurred colored lights (green, purple hints). The composition maintains its centered, symmetrical arrangement with dramatic low-key lighting."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Final frame of the dining scene showing the white plate with more voluminous steam rising and dispersing into complex swirling patterns. The smoke has expanded significantly, filling more of the upper frame with ethereal wisps. Fork and spoon remain in position flanking the plate. The dark tablecloth and background persist, with subtle green and yellow bokeh lights visible in the upper background. Dramatic theatrical lighting continues highlighting the plate's surface."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "black",
+    "center",
+    "centered",
+    "ceramic",
+    "change",
+    "clip",
+    "complete",
+    "completely",
+    "composition",
+    "continues",
+    "dark",
+    "dining",
+    "dominates",
+    "fabric",
+    "final",
+    "first",
+    "footage",
+    "frame",
+    "full",
+    "identical",
+    "indoor",
+    "medium",
+    "moon",
+    "multi-scene",
+    "nearly",
+    "night",
+    "nighttime",
+    "plate",
+    "rising",
+    "scene",
+    "setting",
+    "showing",
+    "sits",
+    "sky",
+    "speech",
+    "steam",
+    "surface",
+    "transitions",
+    "video",
+    "voluminous",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

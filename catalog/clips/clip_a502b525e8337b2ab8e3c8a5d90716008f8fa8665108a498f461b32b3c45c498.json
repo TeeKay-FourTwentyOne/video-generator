@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a502b525e8337b2ab8e3c8a5d90716008f8fa8665108a498f461b32b3c45c498",
+  "sha256": "a502b525e8337b2ab8e3c8a5d90716008f8fa8665108a498f461b32b3c45c498",
+  "bytes": 2988065,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "veo_1777264326751_m82seo.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "The person's hands lift the walnut box from atop the manila folder on their lap. The fingers open the brass-hinged lid of the box. The lid opens fully. The hands hold the open box just above the lap, steady. Manila folder undisturbed beneath. Hospital waiting room background unchanged — other patients barely visible, heavily out of focus. Pale fabric chair edge and beige tile floor steady. Soft fluorescent overhead light unchanging. Static camera framing the lap and hands, no movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fdf82ffa9d627a1d2520d0647fa28ff61d5f2b5de5100336830fa85d8b2c8725",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 730031876,
+      "createdAt": "2026-04-27T04:30:14.353Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8b85254f6d84eb35740773ff474d33bba49764f8c8517983cbdc28a531c512f3",
+  "sha256": "8b85254f6d84eb35740773ff474d33bba49764f8c8517983cbdc28a531c512f3",
+  "bytes": 6339858,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 540,
+    "height": 960,
+    "frameRate": "24/1",
+    "frameCount": 1344,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "full-animatic-muted.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

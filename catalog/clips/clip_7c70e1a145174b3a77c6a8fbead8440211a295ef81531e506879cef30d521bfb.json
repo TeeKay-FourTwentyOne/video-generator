@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7c70e1a145174b3a77c6a8fbead8440211a295ef81531e506879cef30d521bfb",
+  "sha256": "7c70e1a145174b3a77c6a8fbead8440211a295ef81531e506879cef30d521bfb",
+  "bytes": 2301839,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "four-way-comparison-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

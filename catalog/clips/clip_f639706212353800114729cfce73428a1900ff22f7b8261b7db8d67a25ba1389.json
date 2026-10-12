@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f639706212353800114729cfce73428a1900ff22f7b8261b7db8d67a25ba1389",
+  "sha256": "f639706212353800114729cfce73428a1900ff22f7b8261b7db8d67a25ba1389",
+  "bytes": 1572588,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S11_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Close-up on a small entry-hall side table beside a burning brass oil lamp. A black-gloved hand places a neat stack of old gold coins on the wood in one deliberate motion and withdraws. The coins throw warm glints. Sound: rain muffled; the soft weighted click of gold coins set on wood.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_854529897899cc07ca5470a9172a2c483f1f2eed5a60b71b8a3e2ea3a93e58c8",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

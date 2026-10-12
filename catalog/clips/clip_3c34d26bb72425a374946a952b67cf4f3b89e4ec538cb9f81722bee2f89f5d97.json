@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3c34d26bb72425a374946a952b67cf4f3b89e4ec538cb9f81722bee2f89f5d97",
+  "sha256": "3c34d26bb72425a374946a952b67cf4f3b89e4ec538cb9f81722bee2f89f5d97",
+  "bytes": 22164558,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Dark_opulent_1970s_4k_202602211519.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_095e95b97edd7effb0ada20f7f8a633d5ce9082c06cde77e34581620654e4e4d",
+  "sha256": "095e95b97edd7effb0ada20f7f8a633d5ce9082c06cde77e34581620654e4e4d",
+  "bytes": 1563821,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "pumpjack.mp4"
+  ],
+  "collections": [
+    "full-disclosure"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

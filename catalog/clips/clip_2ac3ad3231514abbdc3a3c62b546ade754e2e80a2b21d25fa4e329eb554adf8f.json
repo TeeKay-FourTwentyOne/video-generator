@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2ac3ad3231514abbdc3a3c62b546ade754e2e80a2b21d25fa4e329eb554adf8f",
+  "sha256": "2ac3ad3231514abbdc3a3c62b546ade754e2e80a2b21d25fa4e329eb554adf8f",
+  "bytes": 95697,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "T01.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

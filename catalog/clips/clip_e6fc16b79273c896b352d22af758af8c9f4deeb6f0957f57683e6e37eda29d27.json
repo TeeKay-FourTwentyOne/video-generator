@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e6fc16b79273c896b352d22af758af8c9f4deeb6f0957f57683e6e37eda29d27",
+  "sha256": "e6fc16b79273c896b352d22af758af8c9f4deeb6f0957f57683e6e37eda29d27",
+  "bytes": 1155575,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_3_1766526375870.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_3_1766526375870"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Wall clock showing time slowly passing from 10:58 to 11:00, emphasizing the tedium of waiting on hold. Blue sky through window contrasts with the indoor waiting experience.",
+      "transcript": "You",
+      "tags": [
+        "approaches",
+        "approximately",
+        "around",
+        "beige",
+        "black",
+        "clock",
+        "emphasizing",
+        "face",
+        "framed",
+        "hand",
+        "hands",
+        "hold",
+        "medium",
+        "minute",
+        "moved",
+        "nearly",
+        "now",
+        "passage",
+        "passing",
+        "progression",
+        "reinforces",
+        "showing",
+        "slow",
+        "slowly",
+        "speech",
+        "subtle",
+        "tedium",
+        "time",
+        "vertical",
+        "waiting",
+        "wall",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Black-framed wall clock on beige wall showing approximately 10:58. White face with black numerals. Blue sky with clouds visible through window on right edge. Classic office clock aesthetic."
+        },
+        {
+          "seconds": 3,
+          "text": "Same clock now showing around 10:59, minute hand has moved. The subtle time passage emphasizes waiting. Window with blue sky provides contrast to indoor setting."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Clock approaches 11:00, hands nearly vertical. The slow progression of time reinforces the tedium of being on hold. Clean, minimal composition."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "approaches",
+    "approximately",
+    "around",
+    "beige",
+    "black",
+    "clock",
+    "emphasizing",
+    "face",
+    "framed",
+    "hand",
+    "hands",
+    "hold",
+    "medium",
+    "minute",
+    "moved",
+    "nearly",
+    "now",
+    "passage",
+    "passing",
+    "progression",
+    "reinforces",
+    "showing",
+    "slow",
+    "slowly",
+    "speech",
+    "subtle",
+    "tedium",
+    "time",
+    "vertical",
+    "waiting",
+    "wall",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_62fb93a7f619ed9216bccc0e8dcd27f5f12c7b5fe7fc6924e0d320c324fafea8",
+  "sha256": "62fb93a7f619ed9216bccc0e8dcd27f5f12c7b5fe7fc6924e0d320c324fafea8",
+  "bytes": 3088998,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767757791829_9kns5r.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767757791829_9kns5r"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip follows a woman from a studio portrait shot to an outdoor urban scene where she investigates a street storm drain. The sequence transitions from a formal standing pose against a dark backdrop to an intimate close-up of her face, then to her crouching and examining a metal sewer grate on a sunlit street. Japanese text appears as a closing message thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "against",
+        "angle",
+        "body",
+        "brown",
+        "centered",
+        "circular",
+        "clip",
+        "close",
+        "crouched",
+        "dark",
+        "down",
+        "drain",
+        "extreme",
+        "face",
+        "fills",
+        "follows",
+        "frame",
+        "golden",
+        "hair",
+        "hour",
+        "identical",
+        "length",
+        "looking",
+        "lower",
+        "medium",
+        "metal",
+        "multi-scene",
+        "near",
+        "nearly",
+        "now",
+        "outdoor",
+        "peering",
+        "portrait",
+        "previous",
+        "remains",
+        "scene",
+        "she",
+        "shot",
+        "shoulder",
+        "shows",
+        "speech",
+        "stands",
+        "storm",
+        "street",
+        "studio",
+        "urban",
+        "warm",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.07,
+          "text": "A woman with shoulder-length brown hair stands centered in frame against a dark gray studio backdrop. She wears a cream/off-white sweater, blue jeans rolled at the ankles, and dark Converse-style sneakers. A small olive/tan crossbody bag hangs at her hip. The lighting is dramatic with a spotlight effect illuminating her from the front while the background remains dark. She stands with arms at her sides in a neutral pose, facing the camera directly. The composition is vertical with black bars on either side."
+        },
+        {
+          "seconds": 1.07,
+          "text": "An extreme close-up of the same woman's face fills the frame, shot in warm golden-hour lighting. Her striking green-gray eyes are prominently featured, looking directly at the camera with an intense, contemplative expression. Her brown wavy hair frames her face on both sides. The lighting creates soft shadows on one side of her face while highlighting her features warmly. The background is blurred but suggests an outdoor urban environment. Natural skin texture and subtle makeup are visible."
+        },
+        {
+          "seconds": 1.27,
+          "text": "The woman is now crouched down on a street, peering into a circular metal storm drain or sewer grate. She's viewed from above at a high angle, wearing the same cream sweater, blue jeans, and black Converse sneakers with white laces. Her olive crossbody bag hangs at her side. The rusty brown metal grate has a geometric pattern with bars and triangular sections. Warm sunlight casts strong shadows on the asphalt surface. The curb and street are visible."
+        },
+        {
+          "seconds": 2,
+          "text": "Nearly identical to the previous frame, the woman remains crouched and looking into the storm drain grate. The high-angle shot continues showing her from above. Her brown wavy hair falls forward as she leans toward the opening. The warm afternoon lighting creates defined shadows on the pavement. The metal grate shows signs of rust and wear. The composition emphasizes her curiosity about something below the street level. Her posture suggests focused attention on the drain."
+        },
+        {
+          "seconds": 3.9,
+          "text": "A lower angle shot shows the woman's lower body as she stands near the storm drain. The frame captures her from approximately waist-down, showing her cream sweater, olive crossbody bag, blue rolled jeans, and black Converse sneakers. She appears to be stepping or standing on the edge of the circular metal grate. The warm sunlight continues to illuminate the scene, casting her shadow on the sidewalk. The asphalt street and curb are visible in the background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "body",
+    "brown",
+    "centered",
+    "circular",
+    "clip",
+    "close",
+    "crouched",
+    "dark",
+    "down",
+    "drain",
+    "extreme",
+    "face",
+    "fills",
+    "follows",
+    "frame",
+    "golden",
+    "hair",
+    "hour",
+    "identical",
+    "length",
+    "looking",
+    "lower",
+    "medium",
+    "metal",
+    "multi-scene",
+    "near",
+    "nearly",
+    "now",
+    "outdoor",
+    "peering",
+    "portrait",
+    "previous",
+    "remains",
+    "scene",
+    "she",
+    "shot",
+    "shoulder",
+    "shows",
+    "speech",
+    "stands",
+    "storm",
+    "street",
+    "studio",
+    "urban",
+    "warm",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

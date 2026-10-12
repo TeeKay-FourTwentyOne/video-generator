@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5416bea2d14cc12dcf9d70ac0b1408798cb5b557cfcd6f0cad9a670948394845",
+  "sha256": "5416bea2d14cc12dcf9d70ac0b1408798cb5b557cfcd6f0cad9a670948394845",
+  "bytes": 575997,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "beat1_prize.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

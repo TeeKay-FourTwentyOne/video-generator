@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1dd341692b1dcbe351aa41b0d3be6a992ef6b450d46f9fce12c31337a277968e",
+  "sha256": "1dd341692b1dcbe351aa41b0d3be6a992ef6b450d46f9fce12c31337a277968e",
+  "bytes": 2359795,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S7_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "From inside a dim entry hall, over a young woman's shoulder in the near foreground, the front door swings slowly open. {{VASCARI_LOCK}} He stands motionless on the rain-lashed porch, a small brown leather traveling case in one gloved hand, lamplight from inside catching his pale face. He inclines his head slightly. He does not step forward. Sound: heavy rain, loud then shielded under the porch roof; the door's slow hinge; a settling quiet.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0c2aced7fad55292a69d1bc213cc6101a6f653fd0134d9fbe58ec50d6da75fb7",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f6a735d50c59de2c52365f8d8cb478c6f626e8c2edaa04d9389add051c576c1f",
+  "sha256": "f6a735d50c59de2c52365f8d8cb478c6f626e8c2edaa04d9389add051c576c1f",
+  "bytes": 985251,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot10.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

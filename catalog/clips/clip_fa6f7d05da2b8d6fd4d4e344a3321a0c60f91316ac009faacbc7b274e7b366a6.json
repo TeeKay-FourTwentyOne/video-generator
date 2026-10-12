@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fa6f7d05da2b8d6fd4d4e344a3321a0c60f91316ac009faacbc7b274e7b366a6",
+  "sha256": "fa6f7d05da2b8d6fd4d4e344a3321a0c60f91316ac009faacbc7b274e7b366a6",
+  "bytes": 15785281,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sweat_drop_plant.mp4"
+  ],
+  "collections": [
+    "feb-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

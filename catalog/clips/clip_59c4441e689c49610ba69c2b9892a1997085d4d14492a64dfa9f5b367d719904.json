@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_59c4441e689c49610ba69c2b9892a1997085d4d14492a64dfa9f5b367d719904",
+  "sha256": "59c4441e689c49610ba69c2b9892a1997085d4d14492a64dfa9f5b367d719904",
+  "bytes": 2010039,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668480477_ye6t1t.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668480477_ye6t1t"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot tracking smoothly sideways through a warmly lit coffee shop, following a man in his 30s as he gestures gently toward an empty chair. Golden afternoon sunlight floods through large windows, creating luminous outlines around both figures and casting long, soft shadows across wooden tables. The camera movement is fluid and purposeful, bridging the space between two people as warm amber light bathes the scene in hopeful tones. A woman in her 20s stands with initially tense shoulders that gradually soften and drop as the camera settles into a balanced two-shot composition. The coffee shop's cozy atmosphere envelops them - steam rising from nearby cups catches the golden light, creating ethereal wisps in the air. Soft lens flare kisses the frame edges as sunlight streams through the windows. The tracking movement ends in a perfectly composed frame showing both figures with breathing room between them, the warm wooden interior and soft furnishings creating an intimate, welcoming environment. Naturalistic lighting with honeyed tones, shallow depth of field keeping the background pleasantly soft while maintaining sharp focus on the two people.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Can I... would it be okay if I sat?\"\n- FRIEND_1 (male, 20s, natural): \"I should probably go.\"\n- FRIEND_2 (male, 30s, warm, optimistic): \"Please. Just for a minute?\"\n- FRIEND_1 (male, 20s, natural): \"Okay. Just... okay.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a30ad70ba824489987caa4c9028b4381946c5635b31f121b4c68eb84e79fc50a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot tracking smoothly sideways through a warmly lit coffee shop, following a man in his 30s as he gestures gently toward an empty chair. Golden afternoon sunlight floods through large windows, creating luminous outlines around both figures and casting long, soft shadows across wooden tables. The camera movement is fluid and purposeful, bridging the space between two people as warm amber light bathes the scene in hopeful tones. A woman in her 20s stands with initially tense shoulders that gradually soften and drop as the camera settles into a balanced two-shot composition. The coffee shop's cozy atmosphere envelops them - steam rising from nearby cups catches the golden light, creating ethereal wisps in the air. Soft lens flare kisses the frame edges as sunlight streams through the windows. The tracking movement ends in a perfectly composed frame showing both figures with breathing room between them, the warm wooden interior and soft furnishings creating an intimate, welcoming environment. Naturalistic lighting with honeyed tones, shallow depth of field keeping the background pleasantly soft while maintaining sharp focus on the two people.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Can I... would it be okay if I sat?\"\n- FRIEND_1 (male, 20s, natural): \"I should probably go.\"\n- FRIEND_2 (male, 30s, warm, optimistic): \"Please. Just for a minute?\"\n- FRIEND_1 (male, 20s, natural): \"Okay. Just... okay.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a30ad70ba824489987caa4c9028b4381946c5635b31f121b4c68eb84e79fc50a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:00:38.492Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A man enters a warm, sunlit café and approaches a booth where he meets a woman in a cream sweater. He pulls out a chair for her in a courteous gesture while they exchange pleasant expressions. The scene captures an intimate, friendly meeting in a cozy café setting with golden natural lighting and wooden décor.",
+      "transcript": "Thank you. You're gonna be okay, it's sad.",
+      "tags": [
+        "appears",
+        "approaches",
+        "blue",
+        "booth",
+        "brown",
+        "button",
+        "caf",
+        "chair",
+        "cream",
+        "dark",
+        "down",
+        "enters",
+        "faces",
+        "foreground",
+        "gonna",
+        "hair",
+        "length",
+        "light",
+        "man",
+        "medium",
+        "meets",
+        "now",
+        "okay",
+        "out",
+        "pants",
+        "pulls",
+        "sad",
+        "shirt",
+        "shoulder",
+        "speech",
+        "sunlit",
+        "thank",
+        "visible",
+        "walks",
+        "warm",
+        "wearing",
+        "woman",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man in a light blue button-down shirt and dark pants walks through a warm, sunlit café interior. He reaches toward a wooden chair near a booth with pink upholstery. The setting features wooden shelving with cups and dishes, a coffee grinder on the left, and large windows letting in golden natural light. A steaming coffee cup sits on the wooden table. The camera captures him from a medium shot, slightly angled, showing his profile as he moves toward the seating area."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man now faces a woman with shoulder-length brown hair wearing a cream-colored sweater. They stand near the booth, appearing to have just met or greeted each other. The warm café lighting continues to illuminate the scene through large windows. The coffee cup remains on the table. The man's expression appears friendly and engaged. The camera frames both subjects in a medium two-shot, capturing their interaction in the cozy café environment with wooden décor and ambient lighting."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man pulls out the wooden chair while the woman, now more visible in the foreground, appears to be moving toward the seat. She has a gentle smile on her face. The man looks down at the chair as he assists her. The warm golden lighting from the windows creates a soft, intimate atmosphere. The camera maintains a medium shot capturing both figures, with the woman slightly closer to camera and the man behind the chair in a gentlemanly gesture."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "approaches",
+    "blue",
+    "booth",
+    "brown",
+    "button",
+    "caf",
+    "chair",
+    "cream",
+    "dark",
+    "down",
+    "enters",
+    "faces",
+    "foreground",
+    "gonna",
+    "hair",
+    "length",
+    "light",
+    "man",
+    "medium",
+    "meets",
+    "now",
+    "okay",
+    "out",
+    "pants",
+    "pulls",
+    "sad",
+    "shirt",
+    "shoulder",
+    "speech",
+    "sunlit",
+    "thank",
+    "visible",
+    "walks",
+    "warm",
+    "wearing",
+    "woman",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

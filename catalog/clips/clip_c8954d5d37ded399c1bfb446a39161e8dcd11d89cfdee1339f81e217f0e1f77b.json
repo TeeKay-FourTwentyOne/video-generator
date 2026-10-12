@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c8954d5d37ded399c1bfb446a39161e8dcd11d89cfdee1339f81e217f0e1f77b",
+  "sha256": "c8954d5d37ded399c1bfb446a39161e8dcd11d89cfdee1339f81e217f0e1f77b",
+  "bytes": 3848408,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767596790936_qikw40.mp4"
+  ],
+  "collections": [
+    "two_estranged_siblings_marcus__1767596552762"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767596790936_qikw40"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression, wearing a black V-neck sweater and a bright red scarf with a delicate silver necklace, discovers a worn photograph box. Close-up handheld camera slowly pushes in on her face as her eyes widen with recognition, golden afternoon light filtering through a window illuminating dust motes and casting warm highlights on her features while cool blue shadows define the contours of her expression. Her fingers tentatively touch the box's edges as the camera maintains intimate proximity. Rack focus shifts to reveal a Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard, stocky broad-shouldered build, wearing an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt with dark olive-green pants and brown boots, watching her from across the room. His serious expression gradually softens as golden light breaks through the window behind him, creating a halo effect that mixes with cool shadows across his weathered face. The naturalistic handheld camera work creates documentary-style intimacy, with muted winter colors dominating the palette except for her bright red scarf. Soft window light creates a bittersweet atmosphere as warm amber tones clash with melancholic blue shadows, the fading afternoon sun suggesting time passing and memories surfacing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5be8c5ad80f99cc5a66ae4133a5b446b70fccad1b8ecf3a8f3f81c2d5817a769",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression, wearing a black V-neck sweater and a bright red scarf with a delicate silver necklace, discovers a worn photograph box. Close-up handheld camera slowly pushes in on her face as her eyes widen with recognition, golden afternoon light filtering through a window illuminating dust motes and casting warm highlights on her features while cool blue shadows define the contours of her expression. Her fingers tentatively touch the box's edges as the camera maintains intimate proximity. Rack focus shifts to reveal a Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard, stocky broad-shouldered build, wearing an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt with dark olive-green pants and brown boots, watching her from across the room. His serious expression gradually softens as golden light breaks through the window behind him, creating a halo effect that mixes with cool shadows across his weathered face. The naturalistic handheld camera work creates documentary-style intimacy, with muted winter colors dominating the palette except for her bright red scarf. Soft window light creates a bittersweet atmosphere as warm amber tones clash with melancholic blue shadows, the fading afternoon sun suggesting time passing and memories surfacing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5be8c5ad80f99cc5a66ae4133a5b446b70fccad1b8ecf3a8f3f81c2d5817a769",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T07:05:03.595Z",
+      "parameters": {
+        "durationSeconds": 10,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip depicts an intimate scene between a woman examining old documents or books and a bearded man who enters and observes her. The warm, golden backlighting and teal walls create a cinematic atmosphere as the two characters share a tense or contemplative moment, with the woman focused on her task while the man watches silently.",
+      "transcript": "You",
+      "tags": [
+        "aged",
+        "beard",
+        "bearded",
+        "black",
+        "books",
+        "both",
+        "brown",
+        "characters",
+        "clearer",
+        "clip",
+        "curly",
+        "dark",
+        "depicts",
+        "documents",
+        "examining",
+        "gray",
+        "hair",
+        "intimate",
+        "jacket",
+        "man",
+        "medium",
+        "middle",
+        "old",
+        "pulled",
+        "red",
+        "scarf",
+        "scene",
+        "shifts",
+        "shot",
+        "show",
+        "shows",
+        "speech",
+        "top",
+        "two",
+        "wearing",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with dark curly hair pulled up, wearing a red scarf and black top with a silver necklace, looks down intently at what appears to be old, weathered books or documents. Dust particles float visibly in warm golden backlighting coming from behind her. The background shows a teal/blue-green wall. The composition is a close-up shot from a slight angle, capturing her concentrated expression as she examines the aged materials before her."
+        },
+        {
+          "seconds": 4,
+          "text": "The scene shifts to show a middle-aged man with gray beard and hair, wearing a tan/brown jacket over a blue plaid flannel shirt with a leather belt. He stands in the background looking toward the woman, who is now shown from behind in the right foreground. A bright window provides backlighting between them. The teal wall continues as the backdrop. The framing creates depth with the two figures at different distances from camera."
+        },
+        {
+          "seconds": 7.9,
+          "text": "A clearer two-shot shows both characters. The bearded man in the brown jacket and plaid shirt stands with hands in pockets, watching with a serious expression. The woman with the red scarf is in the right foreground, head bowed, looking downward. Warm golden light streams through the window behind them. The teal wall provides contrast to the warm tones of their clothing. The composition suggests tension or contemplation between them."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_025",
+      "name": "Frank",
+      "description": "Bearded man with grey-brown hair, brown jacket over plaid flannel shirt, rustic setting, warm paternal presence",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_026",
+      "name": "Lily",
+      "description": "Young Asian woman with long black hair, bright blue jacket, cheerful smile, busy city street background",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "beard",
+    "bearded",
+    "black",
+    "books",
+    "both",
+    "brown",
+    "characters",
+    "clearer",
+    "clip",
+    "curly",
+    "dark",
+    "depicts",
+    "documents",
+    "examining",
+    "gray",
+    "hair",
+    "intimate",
+    "jacket",
+    "man",
+    "medium",
+    "middle",
+    "old",
+    "pulled",
+    "red",
+    "scarf",
+    "scene",
+    "shifts",
+    "shot",
+    "show",
+    "shows",
+    "speech",
+    "top",
+    "two",
+    "wearing",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

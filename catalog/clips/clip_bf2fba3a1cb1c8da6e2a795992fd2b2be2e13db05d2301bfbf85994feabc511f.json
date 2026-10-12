@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bf2fba3a1cb1c8da6e2a795992fd2b2be2e13db05d2301bfbf85994feabc511f",
+  "sha256": "bf2fba3a1cb1c8da6e2a795992fd2b2be2e13db05d2301bfbf85994feabc511f",
+  "bytes": 6043139,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S_STONE.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_724ff5c9bbb89ea46b1bcef1cfe07571a4aaaccbb0eb2b3b7631f1696583f1c1",
+  "sha256": "724ff5c9bbb89ea46b1bcef1cfe07571a4aaaccbb0eb2b3b7631f1696583f1c1",
+  "bytes": 8653917,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v2_stinger_raw.mp4"
+  ],
+  "collections": [
+    "hall-of-mirrors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

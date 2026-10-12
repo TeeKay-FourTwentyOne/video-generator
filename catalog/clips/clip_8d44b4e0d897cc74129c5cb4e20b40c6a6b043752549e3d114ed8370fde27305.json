@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8d44b4e0d897cc74129c5cb4e20b40c6a6b043752549e3d114ed8370fde27305",
+  "sha256": "8d44b4e0d897cc74129c5cb4e20b40c6a6b043752549e3d114ed8370fde27305",
+  "bytes": 2341146,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S3_RAW.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "{{CORA_LOCK}} Close-up over her shoulder: her finger tracks down a handwritten ledger column by lamplight, a pencil taps twice, and she closes the book softly. The figures stay soft-focus and indistinct. Sound: rain, two pencil taps, the soft clap of the ledger closing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4f968652c83254f0de167bcc9a0bb2ef3c940afefe6402d8a8d3c9f14a8641ba",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

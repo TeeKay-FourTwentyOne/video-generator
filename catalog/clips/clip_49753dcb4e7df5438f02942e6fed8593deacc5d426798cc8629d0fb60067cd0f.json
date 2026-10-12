@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_49753dcb4e7df5438f02942e6fed8593deacc5d426798cc8629d0fb60067cd0f",
+  "sha256": "49753dcb4e7df5438f02942e6fed8593deacc5d426798cc8629d0fb60067cd0f",
+  "bytes": 11253159,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b4_writhe.mp4"
+  ],
+  "collections": [
+    "instar"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

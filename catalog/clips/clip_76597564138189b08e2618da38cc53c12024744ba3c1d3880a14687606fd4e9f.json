@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_76597564138189b08e2618da38cc53c12024744ba3c1d3880a14687606fd4e9f",
+  "sha256": "76597564138189b08e2618da38cc53c12024744ba3c1d3880a14687606fd4e9f",
+  "bytes": 3254246,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763289752_g9v1e3.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763289752_g9v1e3"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second clip presents a static, stylized sepia-toned image of two silhouetted soldiers standing on cracked desert ground, viewed through a circular frame of barbed wire. The composition remains essentially unchanged throughout, creating a dramatic, contemplative wartime tableau with strong backlighting and vintage film aesthetics.",
+      "transcript": null,
+      "tags": [
+        "clip",
+        "composition",
+        "dramatic",
+        "final",
+        "frame",
+        "framed",
+        "identical",
+        "image",
+        "maintains",
+        "medium",
+        "military",
+        "nearly",
+        "presents",
+        "second",
+        "sepia",
+        "showing",
+        "side",
+        "silent",
+        "silhouette",
+        "silhouetted",
+        "silhouettes",
+        "soldiers",
+        "standing",
+        "static",
+        "stylized",
+        "toned",
+        "two",
+        "viewed"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Sepia-toned silhouette image showing two soldiers standing side by side against a bright backlit sky. The left soldier wears a distinctive military helmet and carries equipment, while the right soldier wears an officer's cap. They are framed through a circular loop of barbed wire in the foreground. The ground shows cracked, dry earth. Strong backlighting creates dramatic contrast with the figures appearing completely black against the pale sky. Low angle composition emphasizes their imposing presence."
+        },
+        {
+          "seconds": 2,
+          "text": "Nearly identical sepia-toned composition showing the two silhouetted soldiers framed through barbed wire. The soldiers maintain their positions - helmeted soldier on left, officer-capped figure on right. The cracked desert ground remains visible in the foreground with coiled barbed wire creating a natural frame. The bright, overexposed sky behind them creates strong contrast. The image has a vintage, historical documentary quality with slight grain visible throughout."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The final frame maintains the same dramatic sepia composition of two military silhouettes viewed through barbed wire. Both soldiers stand stationary on the cracked, arid ground. The circular barbed wire framing device remains prominent in the foreground. Backlighting continues to render the figures as stark black shapes against the bright sky. The vintage aesthetic with film grain persists, suggesting historical wartime footage or stylized recreation."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "clip",
+    "composition",
+    "dramatic",
+    "final",
+    "frame",
+    "framed",
+    "identical",
+    "image",
+    "maintains",
+    "medium",
+    "military",
+    "nearly",
+    "presents",
+    "second",
+    "sepia",
+    "showing",
+    "side",
+    "silent",
+    "silhouette",
+    "silhouetted",
+    "silhouettes",
+    "soldiers",
+    "standing",
+    "static",
+    "stylized",
+    "toned",
+    "two",
+    "viewed"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

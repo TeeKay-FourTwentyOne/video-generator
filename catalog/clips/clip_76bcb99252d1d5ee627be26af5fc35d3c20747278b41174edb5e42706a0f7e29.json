@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_76bcb99252d1d5ee627be26af5fc35d3c20747278b41174edb5e42706a0f7e29",
+  "sha256": "76bcb99252d1d5ee627be26af5fc35d3c20747278b41174edb5e42706a0f7e29",
+  "bytes": 1590051,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668914757_pz4gwm.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668914757_pz4gwm"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot tracking smoothly sideways as a man in his early 30s with short brown hair wearing a gray sweater gestures gently toward an empty wooden chair at a small café table. The camera movement follows his gesture, bridging the space between him and another figure - a person in their 20s wearing a dark jacket who stands with initially tense shoulders that gradually relax and drop. Warm golden afternoon light floods through large windows, creating luminous outlines around both figures and casting long, soft shadows across weathered wooden floors. The tracking shot settles into a perfectly balanced two-shot composition, both people framed equally with breathing room around them. Steam rises from coffee cups on nearby tables, catching the honeyed light. The café's cozy atmosphere - exposed brick walls, vintage pendant lights, potted plants on windowsills - wraps around them in soft focus. Natural, documentary-style cinematography with handheld steadiness, shallow depth of field keeping the background pleasantly blurred while maintaining sharp focus on both figures.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Can I... would it be okay if I sat?\"\n- FRIEND_1 (male, 20s, natural): \"I should probably go.\"\n- FRIEND_2 (male, 30s, warm, optimistic): \"Please. Just for a minute?\"\n- FRIEND_1 (male, 20s, natural): \"Okay. Just... okay.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ceb8f6c95120c485eefefe228141700be56962d246e3493c573ef90793e63d52",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot tracking smoothly sideways as a man in his early 30s with short brown hair wearing a gray sweater gestures gently toward an empty wooden chair at a small café table. The camera movement follows his gesture, bridging the space between him and another figure - a person in their 20s wearing a dark jacket who stands with initially tense shoulders that gradually relax and drop. Warm golden afternoon light floods through large windows, creating luminous outlines around both figures and casting long, soft shadows across weathered wooden floors. The tracking shot settles into a perfectly balanced two-shot composition, both people framed equally with breathing room around them. Steam rises from coffee cups on nearby tables, catching the honeyed light. The café's cozy atmosphere - exposed brick walls, vintage pendant lights, potted plants on windowsills - wraps around them in soft focus. Natural, documentary-style cinematography with handheld steadiness, shallow depth of field keeping the background pleasantly blurred while maintaining sharp focus on both figures.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Can I... would it be okay if I sat?\"\n- FRIEND_1 (male, 20s, natural): \"I should probably go.\"\n- FRIEND_2 (male, 30s, warm, optimistic): \"Please. Just for a minute?\"\n- FRIEND_1 (male, 20s, natural): \"Okay. Just... okay.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ceb8f6c95120c485eefefe228141700be56962d246e3493c573ef90793e63d52",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:07:51.892Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a brief encounter between two men in a warm, sunlit café with exposed brick walls and potted plants. The older man in a gray sweater appears to have been seated when approached by a younger man in a dark jacket, and they engage in what appears to be a parting conversation. The transcription suggests one is leaving, saying 'I should really go.'",
+      "transcript": "All right, we'll be okay inside. I should really go.",
+      "tags": [
+        "appears",
+        "brief",
+        "caf",
+        "clip",
+        "composition",
+        "continue",
+        "conversation",
+        "cozy",
+        "encounter",
+        "exposed",
+        "face",
+        "gray",
+        "inside",
+        "left",
+        "man",
+        "medium",
+        "men",
+        "okay",
+        "reaching",
+        "really",
+        "remains",
+        "right",
+        "setting",
+        "shown",
+        "shows",
+        "side",
+        "speech",
+        "sunlit",
+        "sweater",
+        "their",
+        "two",
+        "warm",
+        "wears"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man in a gray sweater is shown from the side in a cozy café setting. He appears to be reaching toward or pulling out a wooden chair. The background features exposed brick walls, large windows with natural daylight streaming in, and several potted plants on windowsills in terracotta pots. Two wooden tables are visible with coffee cups on them. Industrial-style pendant lights hang from above. The warm, golden lighting creates an inviting atmosphere. The camera frames the scene from a medium distance, capturing both the man and the café interior."
+        },
+        {
+          "seconds": 2,
+          "text": "Two men face each other in conversation inside the café. The man on the left wears a gray sweater and is shown in profile, while the younger man on the right wears a dark jacket over a white shirt. They stand between the café tables with coffee cups visible. The exposed brick wall and framed artwork are centered between them. Natural light floods through the large windows behind each person, creating a backlit silhouette effect. Pendant lamps hang overhead, and potted plants line the windowsills."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The same two men continue their face-to-face conversation in the café. The composition remains similar with both figures in profile view. The man in the gray sweater stands on the left, while the younger man in the dark jacket is on the right. The warm natural lighting from the windows creates a soft glow around their silhouettes. The brick wall, framed picture, wooden chairs, and café tables with coffee cups remain visible. The scene suggests an intimate or meaningful exchange between the two individuals."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "brief",
+    "caf",
+    "clip",
+    "composition",
+    "continue",
+    "conversation",
+    "cozy",
+    "encounter",
+    "exposed",
+    "face",
+    "gray",
+    "inside",
+    "left",
+    "man",
+    "medium",
+    "men",
+    "okay",
+    "reaching",
+    "really",
+    "remains",
+    "right",
+    "setting",
+    "shown",
+    "shows",
+    "side",
+    "speech",
+    "sunlit",
+    "sweater",
+    "their",
+    "two",
+    "warm",
+    "wears"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

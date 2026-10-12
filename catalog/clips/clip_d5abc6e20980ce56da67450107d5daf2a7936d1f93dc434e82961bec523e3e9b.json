@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d5abc6e20980ce56da67450107d5daf2a7936d1f93dc434e82961bec523e3e9b",
+  "sha256": "d5abc6e20980ce56da67450107d5daf2a7936d1f93dc434e82961bec523e3e9b",
+  "bytes": 12584511,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "whip_tv_donut.mp4"
+  ],
+  "collections": [
+    "archive-civilwarastrology"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

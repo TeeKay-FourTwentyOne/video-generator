@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a6b60fd5d26e3266c04c280edbed03dc6522decb1a0278af5a31611c075cb0a6",
+  "sha256": "a6b60fd5d26e3266c04c280edbed03dc6522decb1a0278af5a31611c075cb0a6",
+  "bytes": 9209957,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_5_golden.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_5_golden"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Golden sunset between snow-covered pine trees with vintage film borders. Long shadows on pristine snow create classic winter landscape with warm, nostalgic atmosphere.",
+      "transcript": "チャンネル登録をお願いいたします。",
+      "tags": [
+        "borders",
+        "casting",
+        "composition",
+        "continues",
+        "covered",
+        "evergreen",
+        "film",
+        "flanking",
+        "glow",
+        "golden",
+        "hour",
+        "landscape",
+        "light",
+        "long",
+        "longer",
+        "lower",
+        "medium",
+        "pine",
+        "pines",
+        "shadows",
+        "slightly",
+        "snow",
+        "speech",
+        "stretch",
+        "sun",
+        "sunset",
+        "symmetrical",
+        "trees",
+        "vintage",
+        "warm",
+        "winter"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Snow-covered evergreen trees flanking golden sunset. Long shadows stretch across pristine white snow. Vintage film sprockets visible on edges. Brilliant orange sun sits between dark pine silhouettes."
+        },
+        {
+          "seconds": 4,
+          "text": "Sun continues to glow between the pines, casting warm light on snow. The symmetrical composition of trees framing the sunset creates peaceful balance. Winter wonderland scene."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Sun slightly lower, shadows longer on the snow. The golden hour winter landscape maintains its serene beauty. Tracks or footprints faintly visible in snow."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "borders",
+    "casting",
+    "composition",
+    "continues",
+    "covered",
+    "evergreen",
+    "film",
+    "flanking",
+    "glow",
+    "golden",
+    "hour",
+    "landscape",
+    "light",
+    "long",
+    "longer",
+    "lower",
+    "medium",
+    "pine",
+    "pines",
+    "shadows",
+    "slightly",
+    "snow",
+    "speech",
+    "stretch",
+    "sun",
+    "sunset",
+    "symmetrical",
+    "trees",
+    "vintage",
+    "warm",
+    "winter"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

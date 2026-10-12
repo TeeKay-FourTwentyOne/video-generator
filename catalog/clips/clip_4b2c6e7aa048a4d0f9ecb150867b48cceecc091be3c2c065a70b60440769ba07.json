@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4b2c6e7aa048a4d0f9ecb150867b48cceecc091be3c2c065a70b60440769ba07",
+  "sha256": "4b2c6e7aa048a4d0f9ecb150867b48cceecc091be3c2c065a70b60440769ba07",
+  "bytes": 1041145,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767534746318_fho33g.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767534746318_fho33g"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A professional woman in her 30s with dark hair pulled back in a navy blazer stands in an elevator. The elevator doors begin their slow mechanical slide open, revealing the first glimpse of natural golden light spilling into the confined space. Her posture shifts slightly forward, drawn by what lies beyond. The contrast between artificial interior light and warm natural light creates a moment suspended between two worlds. Camera holds steady, cinematic.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_167b8adb0e339131dbb7f39173b98ab2f6336dcca032e362e80ca6a6d5f53e17",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A professional woman in her 30s with dark hair pulled back in a navy blazer stands in an elevator. The elevator doors begin their slow mechanical slide open, revealing the first glimpse of natural golden light spilling into the confined space. Her posture shifts slightly forward, drawn by what lies beyond. The contrast between artificial interior light and warm natural light creates a moment suspended between two worlds. Camera holds steady, cinematic.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_167b8adb0e339131dbb7f39173b98ab2f6336dcca032e362e80ca6a6d5f53e17",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T13:51:42.277Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip shows a professional Black woman in business attire transitioning from inside a dimly lit elevator to a bright, modern office space. The sequence captures her composed demeanor as elevator doors open to reveal the workspace, with the lighting shifting from cool and moody to warm and natural. Japanese text in the transcription suggests this may be content thanking viewers.",
+      "transcript": "見てくれてありがとう:)",
+      "tags": [
+        "appear",
+        "approximately",
+        "attire",
+        "black",
+        "bright",
+        "brushed",
+        "business",
+        "camera",
+        "centered",
+        "chest",
+        "clip",
+        "closer",
+        "doors",
+        "elevator",
+        "forward",
+        "frame",
+        "her",
+        "inside",
+        "medium",
+        "modern",
+        "moved",
+        "now",
+        "opening",
+        "professional",
+        "revealing",
+        "showing",
+        "shows",
+        "speech",
+        "stainless",
+        "stands",
+        "stepped",
+        "transitioning",
+        "vertical",
+        "video",
+        "visible",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young Black woman stands centered in frame inside an elevator with brushed stainless steel doors behind her. She wears a navy blue blazer over a white collared blouse with dark pants, presenting a professional business appearance. Her black hair is pulled back neatly. The lighting is dim and moody with cool tones. An elevator control panel is visible on the left side. She maintains a neutral, composed expression while facing the camera directly in a medium shot composition."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now visible as elevator doors appear to be opening, revealing a bright modern office space behind her. The background shows warm natural lighting streaming through large windows, office furniture including chairs, and fluorescent ceiling lights. She maintains the same centered position and professional attire - navy blazer and white shirt. The contrast between the darker elevator frame and bright office creates a transitional moment. Her expression remains calm and professional."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has stepped forward or the camera has moved closer, showing her from approximately chest level up. She stands in the bright office environment with warm ambient lighting, large windows visible behind her, and linear ceiling lights overhead. The office space appears modern and minimalist with blurred furniture in the background. Her navy blazer and white collared shirt remain prominent. The lighting is warmer and more flattering than the elevator scene, with soft natural light from the windows."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_012",
+      "name": "Nina",
+      "description": "Professional Black woman with natural hair pulled back, navy blazer over white blouse, elevator setting, composed expression",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appear",
+    "approximately",
+    "attire",
+    "black",
+    "bright",
+    "brushed",
+    "business",
+    "camera",
+    "centered",
+    "chest",
+    "clip",
+    "closer",
+    "doors",
+    "elevator",
+    "forward",
+    "frame",
+    "her",
+    "inside",
+    "medium",
+    "modern",
+    "moved",
+    "now",
+    "opening",
+    "professional",
+    "revealing",
+    "showing",
+    "shows",
+    "speech",
+    "stainless",
+    "stands",
+    "stepped",
+    "transitioning",
+    "vertical",
+    "video",
+    "visible",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

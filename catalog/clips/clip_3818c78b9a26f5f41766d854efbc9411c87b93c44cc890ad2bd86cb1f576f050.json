@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3818c78b9a26f5f41766d854efbc9411c87b93c44cc890ad2bd86cb1f576f050",
+  "sha256": "3818c78b9a26f5f41766d854efbc9411c87b93c44cc890ad2bd86cb1f576f050",
+  "bytes": 3314363,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767581196474_kk8pna.mp4"
+  ],
+  "collections": [
+    "a_single_candle_flame_flickers_1767581095602"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767581196474_kk8pna"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Extreme close-up of a single flame filling the entire frame, camera tracking in a tight, accelerating arc around the dancing fire. The flame stretches and contracts violently, its base glowing deep blue-black while the tip burns warm amber. Smoke streams sideways as if caught in an invisible wind. The camera movement becomes increasingly dizzying and dynamic, circling the flame faster. Shallow depth of field pulses rhythmically, making the flame appear to breathe heavily. The flickering light casts moving shadows across unseen surfaces in the pure black darkness surrounding it. Intimate macro cinematography with contemplative pacing despite the frenetic camera movement. The flame's light creates brief glimpses of texture in the void. Underexposed background maintains deep, impenetrable blacks. Cold undertones in the shadows contrast with the warm amber flame tip, creating an ominous atmosphere through the interplay of light and absolute darkness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_700db9fa2110a728a7083ecc827d522ebfd3655700500e1378f5fda2a6fd23a3",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme close-up of a single flame filling the entire frame, camera tracking in a tight, accelerating arc around the dancing fire. The flame stretches and contracts violently, its base glowing deep blue-black while the tip burns warm amber. Smoke streams sideways as if caught in an invisible wind. The camera movement becomes increasingly dizzying and dynamic, circling the flame faster. Shallow depth of field pulses rhythmically, making the flame appear to breathe heavily. The flickering light casts moving shadows across unseen surfaces in the pure black darkness surrounding it. Intimate macro cinematography with contemplative pacing despite the frenetic camera movement. The flame's light creates brief glimpses of texture in the void. Underexposed background maintains deep, impenetrable blacks. Cold undertones in the shadows contrast with the warm amber flame tip, creating an ominous atmosphere through the interplay of light and absolute darkness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_700db9fa2110a728a7083ecc827d522ebfd3655700500e1378f5fda2a6fd23a3",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:45:23.277Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 8-second vertical video captures a close-up of a burning flame, likely from a fire starter or torch, against a completely dark background. The flame exhibits characteristic blue, orange, and yellow coloring while dancing and shifting shape throughout the clip. The footage emphasizes the mesmerizing, organic movement of fire with pieces of wood visible at the base.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "blue",
+        "burning",
+        "captures",
+        "close",
+        "dark",
+        "dynamic",
+        "elongated",
+        "extending",
+        "fire",
+        "flame",
+        "frame",
+        "inner",
+        "likely",
+        "medium",
+        "multiple",
+        "opening",
+        "outward",
+        "returns",
+        "second",
+        "shape",
+        "shifted",
+        "shot",
+        "silent",
+        "similar",
+        "spreading",
+        "starter",
+        "tall",
+        "tongues",
+        "vertical",
+        "video"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A close-up shot of a tall flame burning against a dark black background. The flame displays a distinctive color gradient - a blue base transitioning to bright orange and yellow at the top. A dark charred object or wick is visible within the flame's center. Wisps of gray smoke drift to the right side. At the bottom, pieces of wood or kindling are partially visible. The vertical composition emphasizes the flame's height and dancing movement."
+        },
+        {
+          "seconds": 4,
+          "text": "The flame has shifted into a more dynamic, spreading shape with multiple tongues of fire extending outward. The blue base remains prominent while the orange-yellow flames dance more vigorously, creating a wider spread. The charred material in the center appears more pronounced. Gray smoke is visible on the right side of the frame. The wooden pieces at the bottom are more clearly visible, showing rough bark texture. The dark background maintains strong contrast."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The flame returns to a more vertical, elongated shape similar to the opening frame. The blue inner core is clearly defined, surrounded by bright orange and yellow flames that twist upward in an S-curve pattern. The charred wick or material remains centered within the flame. The composition is tightly framed on the fire against the pure black background, with wooden kindling visible at the bottom edge. Subtle smoke wisps appear on the edges."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "blue",
+    "burning",
+    "captures",
+    "close",
+    "dark",
+    "dynamic",
+    "elongated",
+    "extending",
+    "fire",
+    "flame",
+    "frame",
+    "inner",
+    "likely",
+    "medium",
+    "multiple",
+    "opening",
+    "outward",
+    "returns",
+    "second",
+    "shape",
+    "shifted",
+    "shot",
+    "silent",
+    "similar",
+    "spreading",
+    "starter",
+    "tall",
+    "tongues",
+    "vertical",
+    "video"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

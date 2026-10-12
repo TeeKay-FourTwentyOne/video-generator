@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c6f0d4b507ba40b9e9cd431cdba3ecf1b584d826abc576e0fbc3eea54af204b9",
+  "sha256": "c6f0d4b507ba40b9e9cd431cdba3ecf1b584d826abc576e0fbc3eea54af204b9",
+  "bytes": 20694822,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 38,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 912,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "clean-picture-1080.mp4"
+  ],
+  "collections": [
+    "scary-woods-episode-01"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

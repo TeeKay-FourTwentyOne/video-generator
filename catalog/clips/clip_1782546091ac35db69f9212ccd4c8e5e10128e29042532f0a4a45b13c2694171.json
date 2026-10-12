@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1782546091ac35db69f9212ccd4c8e5e10128e29042532f0a4a45b13c2694171",
+  "sha256": "1782546091ac35db69f9212ccd4c8e5e10128e29042532f0a4a45b13c2694171",
+  "bytes": 3794672,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "dialogue_test_nomusic.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:dialogue_test_nomusic"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A dialogue scene of two young Asian people having an animated conversation at a cozy cafe. They share coffee and engage in natural, warm interaction with smiles and laughter. Warm ambient lighting creates an intimate atmosphere.",
+      "transcript": "You look absolutely beautiful in this light, you know that? Oh stop, you're making me blush, but thank you.",
+      "tags": [
+        "absolutely",
+        "across",
+        "animated",
+        "animatedly",
+        "asian",
+        "beautiful",
+        "blush",
+        "both",
+        "cafe",
+        "conversation",
+        "cozy",
+        "dialogue",
+        "down",
+        "examining",
+        "forward",
+        "having",
+        "know",
+        "laughter",
+        "leans",
+        "light",
+        "look",
+        "looking",
+        "making",
+        "medium",
+        "mid",
+        "moment",
+        "mouth",
+        "now",
+        "open",
+        "people",
+        "scene",
+        "sharing",
+        "sit",
+        "speaking",
+        "speech",
+        "stop",
+        "table",
+        "thank",
+        "two",
+        "woman",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two young Asian people sit across from each other at a cozy cafe table. The woman in a tan coat holds a white coffee cup while smiling at the man in a dark sweater. Warm ambient lighting, blurred cafe background with espresso machines and pendant lights."
+        },
+        {
+          "seconds": 4,
+          "text": "Same cafe scene, the woman leans forward animatedly while speaking, mouth open mid-conversation. The man listens with a warm smile. Coffee cups and small plates on the wooden table. Bokeh background shows other patrons and cafe equipment."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Both people now looking down at the table, sharing a moment of laughter or examining something together. Relaxed, intimate body language. The warm golden cafe lighting creates a romantic atmosphere. Natural, candid interaction."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "absolutely",
+    "across",
+    "animated",
+    "animatedly",
+    "asian",
+    "beautiful",
+    "blush",
+    "both",
+    "cafe",
+    "conversation",
+    "cozy",
+    "dialogue",
+    "down",
+    "examining",
+    "forward",
+    "having",
+    "know",
+    "laughter",
+    "leans",
+    "light",
+    "look",
+    "looking",
+    "making",
+    "medium",
+    "mid",
+    "moment",
+    "mouth",
+    "now",
+    "open",
+    "people",
+    "scene",
+    "sharing",
+    "sit",
+    "speaking",
+    "speech",
+    "stop",
+    "table",
+    "thank",
+    "two",
+    "woman",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

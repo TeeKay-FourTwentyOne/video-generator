@@ -1,0 +1,342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Content-addressed clip metadata",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^clip_[a-f0-9]{64}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "extension": {
+      "enum": [
+        ".mp4",
+        ".mov",
+        ".webm",
+        ".mkv",
+        ".m4v",
+        ".avi"
+      ]
+    },
+    "kind": {
+      "enum": [
+        "source",
+        "derived",
+        "delivery",
+        "unknown"
+      ]
+    },
+    "technical": {
+      "type": "object",
+      "properties": {
+        "durationSeconds": {
+          "type": "number",
+          "minimum": 0.000001
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "frameRate": {
+          "type": "string",
+          "pattern": "^[0-9]+/[1-9][0-9]*$"
+        },
+        "frameCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "videoCodec": {
+          "type": "string"
+        },
+        "audioCodec": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "durationSeconds",
+        "width",
+        "height",
+        "frameRate",
+        "frameCount",
+        "videoCodec",
+        "audioCodec"
+      ],
+      "additionalProperties": false
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "legacyIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "promptStatus": {
+            "enum": [
+              "recorded",
+              "unknown",
+              "withheld"
+            ]
+          },
+          "promptId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^prompt_[a-f0-9]{64}$"
+          },
+          "provider": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "seed": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "createdAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "durationSeconds": {
+                "type": "number",
+                "minimum": 0
+              },
+              "aspectRatio": {
+                "type": "string"
+              },
+              "resolution": {
+                "type": "string"
+              },
+              "generateAudio": {
+                "type": "boolean"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "source",
+          "prompt",
+          "promptStatus",
+          "promptId",
+          "provider",
+          "model",
+          "seed",
+          "createdAt",
+          "parameters"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "analysis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "transcript": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "seconds": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "seconds",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "source",
+          "model",
+          "summary",
+          "transcript",
+          "tags",
+          "frames"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "availability": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "local-only",
+            "public"
+          ]
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "urls",
+        "license"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "sha256",
+    "bytes",
+    "extension",
+    "kind",
+    "technical",
+    "labels",
+    "collections",
+    "legacyIds",
+    "tags",
+    "generations",
+    "analysis",
+    "characters",
+    "availability"
+  ],
+  "additionalProperties": false
+}

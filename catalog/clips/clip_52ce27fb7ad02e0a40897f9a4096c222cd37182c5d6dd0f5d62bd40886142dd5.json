@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_52ce27fb7ad02e0a40897f9a4096c222cd37182c5d6dd0f5d62bd40886142dd5",
+  "sha256": "52ce27fb7ad02e0a40897f9a4096c222cd37182c5d6dd0f5d62bd40886142dd5",
+  "bytes": 1211926,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767660299784_a5l4j2.mp4"
+  ],
+  "collections": [
+    "noir_dialogue_test"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767660299784_a5l4j2"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A detective in his 40s with a weathered face, wearing a rumpled trench coat and loosened tie, steps forward from deep shadows into the harsh light of a single hanging bulb. The camera holds steady at eye level as half his face emerges into the stark illumination while the other half remains shrouded in darkness. His tired eyes scan across the dimly lit room with weary determination. The single bulb casts dramatic shadows, creating strong contrast between light and dark. Cool blue-gray shadows fill the space while the warm tungsten bulb creates a small pool of amber light. He pauses, takes a breath, and speaks with a tense, gravelly voice: \"I have been looking for you.\" The words hang in the air as dust motes drift through the shaft of light. Moody noir lighting emphasizes the mysterious atmosphere, with most of the frame consumed by shadows. 9:16 vertical format, 4 seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_20e3deeafb1599a4cd0de50c163b4aa55200b0b58954a0669f46f3b10e653e1a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A detective in his 40s with a weathered face, wearing a rumpled trench coat and loosened tie, steps forward from deep shadows into the harsh light of a single hanging bulb. The camera holds steady at eye level as half his face emerges into the stark illumination while the other half remains shrouded in darkness. His tired eyes scan across the dimly lit room with weary determination. The single bulb casts dramatic shadows, creating strong contrast between light and dark. Cool blue-gray shadows fill the space while the warm tungsten bulb creates a small pool of amber light. He pauses, takes a breath, and speaks with a tense, gravelly voice: \"I have been looking for you.\" The words hang in the air as dust motes drift through the shaft of light. Moody noir lighting emphasizes the mysterious atmosphere, with most of the frame consumed by shadows. 9:16 vertical format, 4 seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_20e3deeafb1599a4cd0de50c163b4aa55200b0b58954a0669f46f3b10e653e1a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T00:44:17.312Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This noir-style vertical video clip shows a man in a tan trench coat speaking in a dramatically lit dark room, illuminated only by a single hanging incandescent bulb. The man appears to be delivering dialogue with varying expressions of concern and contemplation across the 4-second duration. The cinematography emphasizes classic film noir aesthetics with high contrast lighting and deep shadows.",
+      "transcript": "You",
+      "tags": [
+        "aged",
+        "brown",
+        "bulb",
+        "centered",
+        "clearly",
+        "clip",
+        "coat",
+        "exposed",
+        "face",
+        "frame",
+        "fully",
+        "hair",
+        "his",
+        "illuminated",
+        "illuminating",
+        "left",
+        "man",
+        "medium",
+        "middle",
+        "nearly",
+        "noir",
+        "now",
+        "partially",
+        "portion",
+        "position",
+        "remains",
+        "short",
+        "shows",
+        "speech",
+        "still",
+        "style",
+        "tan",
+        "trench",
+        "vertical",
+        "video",
+        "visible",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with short brown hair is partially visible in the left portion of the frame, wearing a tan/beige trench coat over a white dress shirt with a dark tie. The scene is dramatically lit by a single exposed incandescent light bulb hanging from the ceiling in the upper right. The background is very dark, creating a noir-style atmosphere. The man's face is mostly in shadow, with only partial illumination from the warm-toned bulb. The vertical framing suggests mobile/portrait orientation."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man is now more centered and fully visible in the frame, his face clearly illuminated by the hanging light bulb to his right. He appears to be speaking, with his mouth slightly open and an intense, concerned expression. He wears the tan trench coat with a striped dark tie over a cream-colored dress shirt. The warm golden light creates dramatic shadows across half his face. The background remains completely dark, emphasizing the film noir aesthetic. His gaze is directed slightly off-camera."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man remains in nearly the same position, still centered in frame with the exposed bulb illuminating him from the upper right. His expression has shifted slightly, appearing more contemplative or questioning, with his mouth slightly parted as if mid-speech. The dramatic chiaroscuro lighting continues, with warm tones on his face contrasting with deep shadows. His tan trench coat and striped tie remain visible. The composition maintains the noir-style atmosphere with the single light source against the dark void background."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_035",
+      "name": "The Inspector",
+      "description": "Man in tan trench coat, illuminated by single hanging bulb, dramatic noir lighting, detective/spy aesthetic",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "brown",
+    "bulb",
+    "centered",
+    "clearly",
+    "clip",
+    "coat",
+    "exposed",
+    "face",
+    "frame",
+    "fully",
+    "hair",
+    "his",
+    "illuminated",
+    "illuminating",
+    "left",
+    "man",
+    "medium",
+    "middle",
+    "nearly",
+    "noir",
+    "now",
+    "partially",
+    "portion",
+    "position",
+    "remains",
+    "short",
+    "shows",
+    "speech",
+    "still",
+    "style",
+    "tan",
+    "trench",
+    "vertical",
+    "video",
+    "visible",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

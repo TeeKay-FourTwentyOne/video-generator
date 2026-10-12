@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7570036dbc23e5ad5bf4490bfa2e5f37dd705c99b2582d08e66a4fe777ae2b9f",
+  "sha256": "7570036dbc23e5ad5bf4490bfa2e5f37dd705c99b2582d08e66a4fe777ae2b9f",
+  "bytes": 6083471,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "test_gen3_edges_color.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:test_gen3_edges_color"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This is a heavily stylized artistic video clip featuring a man standing on a rural road with agricultural fields, rendered in strong orange tones with a ghostly face superimposed in the sky. The clip appears to be promotional or artistic content with minimal movement, accompanied by speech in what appears to be Sinhala saying 'thank you'. The visual treatment creates a surreal, dreamlike atmosphere throughout the 4-second duration.",
+      "transcript": "ස්තූතියි",
+      "tags": [
+        "artistic",
+        "clip",
+        "color",
+        "composition",
+        "continues",
+        "face",
+        "featuring",
+        "final",
+        "frame",
+        "ghostly",
+        "grading",
+        "heavily",
+        "image",
+        "long",
+        "maintains",
+        "man",
+        "medium",
+        "orange",
+        "overlay",
+        "road",
+        "rural",
+        "shows",
+        "speech",
+        "standing",
+        "stylized",
+        "tinted",
+        "treatment",
+        "video"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A stylized, heavily orange-tinted artistic image shows a man standing on a long straight road that extends to the horizon. He wears a jacket over dark clothing and stands centered in the frame. The road is flanked by agricultural fields with parallel furrows. A ghostly, translucent face of what appears to be the same person is superimposed in the sky above. The image has a painterly, posterized effect with strong orange and yellow tones throughout."
+        },
+        {
+          "seconds": 2,
+          "text": "The same artistic composition continues with the man standing on the rural road. The orange color grading remains dominant. The ghostly face in the sky appears slightly shifted. The man's posture is relaxed, standing with arms at his sides. The converging lines of the road and field furrows create strong perspective leading to the horizon. The stylized filter gives the scene a surreal, dreamlike quality with enhanced contrast between light and shadow areas."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The final frame maintains the same artistic treatment with the man on the road. The ghostly face overlay in the sky has shifted slightly to the right. The orange and amber color palette persists throughout. The agricultural fields on either side show detailed furrow patterns. The man remains stationary in the center of the frame, creating a symmetrical composition. The overall effect suggests a music video or artistic promotional content with heavy post-processing."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "artistic",
+    "clip",
+    "color",
+    "composition",
+    "continues",
+    "face",
+    "featuring",
+    "final",
+    "frame",
+    "ghostly",
+    "grading",
+    "heavily",
+    "image",
+    "long",
+    "maintains",
+    "man",
+    "medium",
+    "orange",
+    "overlay",
+    "road",
+    "rural",
+    "shows",
+    "speech",
+    "standing",
+    "stylized",
+    "tinted",
+    "treatment",
+    "video"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

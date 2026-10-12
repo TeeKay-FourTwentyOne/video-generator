@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29306776b45a19ef1b73ae8fe627f4331c1015c05f4cf08eded4944502e288df",
+  "sha256": "29306776b45a19ef1b73ae8fe627f4331c1015c05f4cf08eded4944502e288df",
+  "bytes": 534563,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 7,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 168,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v2_reveal_kenburns.mp4"
+  ],
+  "collections": [
+    "hall-of-mirrors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9ec1178b49436dd641ea0d1853ee09d8d08443e79ad1fe3c457692e71c6df66b",
+  "sha256": "9ec1178b49436dd641ea0d1853ee09d8d08443e79ad1fe3c457692e71c6df66b",
+  "bytes": 4002725,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767516996301_ssniaa.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767516996301_ssniaa"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A weathered humanoid robot emerges from shadows into clearer view, navigating through scattered concrete ruins and twisted metal debris. The robot's rust-stained chassis bears the patina of ages, with oxidized copper and steel panels telling stories of survival. Its joints emit soft mechanical creaks and subtle servo whirs with each deliberate, calculated step over broken stones and rubble.\n\nCamera begins with a medium shot, slowly pushing in to reveal intricate details of the robot's battle-scarred exterior. The movement follows the robot's steady gait, maintaining focus on its measured navigation through the post-apocalyptic landscape. Two bright blue optical sensors pierce through the gloom, casting subtle light reflections on nearby debris, conveying an unmistakable sense of wonder and persistent curiosity despite the desolation.\n\nCinematic lighting features dramatic chiaroscuro with shafts of dusty sunlight filtering through broken structures. The color palette emphasizes desaturated earth tones - rust oranges, weathered grays, and muted browns - contrasted by the cool cyan glow of the robot's sensors. Atmospheric haze and floating dust particles add depth and texture to the post-apocalyptic setting.\n\nThe camera work employs shallow depth of field to isolate the robot against the blurred ruins, creating an intimate yet epic feeling. Subtle handheld movement suggests documentary realism while maintaining cinematic polish.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0b24cd3069ed96e47a0f795c4b54d92a0c8fae7ce6981d86770ba57465d41fba",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A weathered humanoid robot emerges from shadows into clearer view, navigating through scattered concrete ruins and twisted metal debris. The robot's rust-stained chassis bears the patina of ages, with oxidized copper and steel panels telling stories of survival. Its joints emit soft mechanical creaks and subtle servo whirs with each deliberate, calculated step over broken stones and rubble.\n\nCamera begins with a medium shot, slowly pushing in to reveal intricate details of the robot's battle-scarred exterior. The movement follows the robot's steady gait, maintaining focus on its measured navigation through the post-apocalyptic landscape. Two bright blue optical sensors pierce through the gloom, casting subtle light reflections on nearby debris, conveying an unmistakable sense of wonder and persistent curiosity despite the desolation.\n\nCinematic lighting features dramatic chiaroscuro with shafts of dusty sunlight filtering through broken structures. The color palette emphasizes desaturated earth tones - rust oranges, weathered grays, and muted browns - contrasted by the cool cyan glow of the robot's sensors. Atmospheric haze and floating dust particles add depth and texture to the post-apocalyptic setting.\n\nThe camera work employs shallow depth of field to isolate the robot against the blurred ruins, creating an intimate yet epic feeling. Subtle handheld movement suggests documentary realism while maintaining cinematic polish.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0b24cd3069ed96e47a0f795c4b54d92a0c8fae7ce6981d86770ba57465d41fba",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T08:55:53.069Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip showcases a battle-damaged humanoid robot with distinctive glowing blue eyes traversing through a post-apocalyptic wasteland filled with rubble and destroyed structures. The robot moves with purposeful strides across the debris-strewn terrain, captured from dramatic low angles that emphasize its imposing mechanical form. Japanese text appears as a closing message thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "advancing",
+        "apocalyptic",
+        "armor",
+        "battle",
+        "blue",
+        "captured",
+        "cinematic",
+        "clip",
+        "continues",
+        "crouched",
+        "damaged",
+        "dark",
+        "devastated",
+        "distinctive",
+        "figure",
+        "glowing",
+        "humanoid",
+        "landscape",
+        "mechanized",
+        "medium",
+        "metallic",
+        "mid",
+        "now",
+        "orange",
+        "post",
+        "purposeful",
+        "robot",
+        "rust",
+        "showcases",
+        "shown",
+        "slightly",
+        "speech",
+        "stands",
+        "stride",
+        "wasteland",
+        "weathered",
+        "worn"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A weathered humanoid robot with rust-orange and dark metallic armor stands in a crouched, forward-leaning pose amid rubble and debris. The robot features distinctive glowing cyan/blue eyes that pierce through the dim, dusty atmosphere. Its body shows battle damage with scratches and worn patches across the torso and limbs. The background reveals destroyed structures with metal beams silhouetted against hazy, brownish lighting. Low angle shot emphasizes the robot's imposing presence, with dramatic rim lighting highlighting its metallic surfaces."
+        },
+        {
+          "seconds": 2,
+          "text": "The same battle-worn robot is captured mid-stride, advancing through the post-apocalyptic wasteland. Its glowing blue eyes remain prominently visible as it moves forward with arms positioned for balance. The rust-colored and dark gray armor plating shows extensive weathering and damage. Dust particles float in the warm, amber-tinted atmosphere. The camera maintains a low angle, tracking the robot's movement across rocky, debris-strewn terrain. Background shows blurred destruction with warm backlighting creating atmospheric depth."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The mechanized figure continues its purposeful stride through the devastated landscape, now shown from a slightly different angle revealing more of its articulated leg mechanisms. The cyan optical sensors glow intensely against the warm brown and orange color palette of the environment. Heavy armor plating on shoulders and torso catches highlights from diffused lighting. The robot's posture suggests determined forward movement. Destroyed structures and debris remain visible in the blurred background, maintaining the apocalyptic atmosphere throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "advancing",
+    "apocalyptic",
+    "armor",
+    "battle",
+    "blue",
+    "captured",
+    "cinematic",
+    "clip",
+    "continues",
+    "crouched",
+    "damaged",
+    "dark",
+    "devastated",
+    "distinctive",
+    "figure",
+    "glowing",
+    "humanoid",
+    "landscape",
+    "mechanized",
+    "medium",
+    "metallic",
+    "mid",
+    "now",
+    "orange",
+    "post",
+    "purposeful",
+    "robot",
+    "rust",
+    "showcases",
+    "shown",
+    "slightly",
+    "speech",
+    "stands",
+    "stride",
+    "wasteland",
+    "weathered",
+    "worn"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

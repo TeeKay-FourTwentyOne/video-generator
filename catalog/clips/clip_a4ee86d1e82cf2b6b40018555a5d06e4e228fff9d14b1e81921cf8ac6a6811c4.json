@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a4ee86d1e82cf2b6b40018555a5d06e4e228fff9d14b1e81921cf8ac6a6811c4",
+  "sha256": "a4ee86d1e82cf2b6b40018555a5d06e4e228fff9d14b1e81921cf8ac6a6811c4",
+  "bytes": 3993872,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.625,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 63,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S7_pour_trim.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_baad261749d2f2c2067fe43fccf01e0acaf6d58e1a6a6e286dfc98041b69bbb8",
+  "sha256": "baad261749d2f2c2067fe43fccf01e0acaf6d58e1a6a6e286dfc98041b69bbb8",
+  "bytes": 3282172,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b2_road.mp4"
+  ],
+  "collections": [
+    "passenger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

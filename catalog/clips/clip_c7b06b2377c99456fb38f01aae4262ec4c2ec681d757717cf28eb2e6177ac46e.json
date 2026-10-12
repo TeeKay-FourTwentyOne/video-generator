@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c7b06b2377c99456fb38f01aae4262ec4c2ec681d757717cf28eb2e6177ac46e",
+  "sha256": "c7b06b2377c99456fb38f01aae4262ec4c2ec681d757717cf28eb2e6177ac46e",
+  "bytes": 87306898,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 56.5,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 1356,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "borrowed-light-compare_4k.mp4"
+  ],
+  "collections": [
+    "borrowed-light-compare"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

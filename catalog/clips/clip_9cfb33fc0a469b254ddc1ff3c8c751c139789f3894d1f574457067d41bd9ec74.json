@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9cfb33fc0a469b254ddc1ff3c8c751c139789f3894d1f574457067d41bd9ec74",
+  "sha256": "9cfb33fc0a469b254ddc1ff3c8c751c139789f3894d1f574457067d41bd9ec74",
+  "bytes": 9092376,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767759524084_xijea0.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767759524084_xijea0"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip transitions from a studio portrait of a woman in a burgundy dress and beige trench coat to a cinematic nighttime scene on a rainy European cobblestone street. The woman expresses joy in the rain with outstretched arms before settling into a contemplative pose beside a vintage street lamp. Korean speech indicates gratitude for watching, suggesting this is the conclusion of a video presentation.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "against",
+        "beige",
+        "beside",
+        "black",
+        "brown",
+        "burgundy",
+        "clip",
+        "cobblestone",
+        "dark",
+        "dress",
+        "european",
+        "gray",
+        "hair",
+        "lamp",
+        "medium",
+        "night",
+        "now",
+        "ornate",
+        "portrait",
+        "rain",
+        "rainfall",
+        "relaxed",
+        "she",
+        "soaked",
+        "speech",
+        "stands",
+        "street",
+        "studio",
+        "transitions",
+        "trench",
+        "video",
+        "wavy",
+        "wet",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with wavy brown hair stands against a dark gray studio backdrop, smiling warmly at the camera. She wears a burgundy/maroon knee-length dress with a fitted silhouette and a beige trench coat that she holds open at the sides in a playful pose. She has on matching burgundy heels. The lighting is professional studio lighting, creating even illumination on her figure. The composition is a full-body portrait shot with the subject centered, appearing to walk toward the camera."
+        },
+        {
+          "seconds": 3,
+          "text": "The same woman now stands on a wet cobblestone European street at night during rainfall. She has her arms spread wide in a joyful, embracing pose next to a vintage black street lamp that illuminates the scene with warm yellow light. Rain is visibly falling, creating streaks in the light. She wears the same burgundy dress and beige trench coat. Historic white buildings with storefronts line both sides of the empty street. The wet stones reflect the ambient lighting beautifully."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The woman stands more relaxed beside the ornate black street lamp on the rain-soaked cobblestone street. Her arms are now at her sides as rain continues to fall heavily around her. The warm glow from the lamp creates dramatic backlighting while European-style buildings with illuminated shop windows frame the scene. The wet cobblestones create reflective surfaces throughout. The composition shows a low-angle shot emphasizing the lamp post and the atmospheric rainy night setting in what appears to be a historic European city center."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_044",
+      "name": "Margot",
+      "description": "Woman in burgundy dress with tan overcoat, rainy European cobblestone street, cinematic composition, sophisticated traveler",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "beige",
+    "beside",
+    "black",
+    "brown",
+    "burgundy",
+    "clip",
+    "cobblestone",
+    "dark",
+    "dress",
+    "european",
+    "gray",
+    "hair",
+    "lamp",
+    "medium",
+    "night",
+    "now",
+    "ornate",
+    "portrait",
+    "rain",
+    "rainfall",
+    "relaxed",
+    "she",
+    "soaked",
+    "speech",
+    "stands",
+    "street",
+    "studio",
+    "transitions",
+    "trench",
+    "video",
+    "wavy",
+    "wet",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

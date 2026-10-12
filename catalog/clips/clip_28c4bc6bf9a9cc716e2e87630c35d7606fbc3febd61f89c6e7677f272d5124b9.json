@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_28c4bc6bf9a9cc716e2e87630c35d7606fbc3febd61f89c6e7677f272d5124b9",
+  "sha256": "28c4bc6bf9a9cc716e2e87630c35d7606fbc3febd61f89c6e7677f272d5124b9",
+  "bytes": 2236071,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8.041667,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 193,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V3-runway-v1.mp4",
+    "bus.mp4"
+  ],
+  "collections": [
+    "verify",
+    "verify-runway-v1"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "saved-operation-request",
+      "prompt": "Fixed tripod shot at eye level of a mid-sized city street intersection on an overcast day. A white-striped zebra crosswalk runs across the foreground. A traffic light, parked cars and low commercial buildings remain still in the background. The first half-second shows an empty intersection. One large, plain city bus enters from the left, drives steadily broadside across the foreground from left to right, briefly blocking most of the view, and fully exits through the right edge by six seconds. The last two seconds show the same empty intersection and parked cars. The bus continues straight at a constant pace. The camera stays completely stationary for the whole shot. Flat even daylight, muted washed-out colors, low contrast, slightly soft street-mapping photograph texture. One continuous eight-second shot. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a35d519448d27666c915275e5541b3e1da409e61bc144fdcb74508dd13a2f889",
+      "provider": "runway",
+      "model": "gen4.5",
+      "seed": 421,
+      "createdAt": "2026-10-12T01:38:24.751Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

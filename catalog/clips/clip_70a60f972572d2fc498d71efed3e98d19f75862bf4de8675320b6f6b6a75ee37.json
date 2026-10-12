@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_70a60f972572d2fc498d71efed3e98d19f75862bf4de8675320b6f6b6a75ee37",
+  "sha256": "70a60f972572d2fc498d71efed3e98d19f75862bf4de8675320b6f6b6a75ee37",
+  "bytes": 721546,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545176724_4tyl1m.mp4"
+  ],
+  "collections": [
+    "eternal_commuter"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545176724_4tyl1m"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young Caucasian woman in her early 20s with long straight center-parted brown hair stands perfectly still at a modern dark metal and glass bus shelter on a concrete sidewalk. The dramatic sunset sky transforms from warm orange to deep purple hues above the city skyline. Long shadows stretch and shift across the concrete as the amber city lights begin to glow around her motionless figure. Static medium shot holds steady on her unchanged silhouette against the evolving twilight, capturing the contrast between her stillness and the dynamic time-lapse movement of light and shadow. Cinematic lighting with rich golden hour tones transitioning to purple dusk. The streetlight overhead begins to illuminate as day becomes night.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5cf7e88eceaf2e3841528d8d107171b0ded96e4b9a6b58398ee2774cdcd7fdc5",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young Caucasian woman in her early 20s with long straight center-parted brown hair stands perfectly still at a modern dark metal and glass bus shelter on a concrete sidewalk. The dramatic sunset sky transforms from warm orange to deep purple hues above the city skyline. Long shadows stretch and shift across the concrete as the amber city lights begin to glow around her motionless figure. Static medium shot holds steady on her unchanged silhouette against the evolving twilight, capturing the contrast between her stillness and the dynamic time-lapse movement of light and shadow. Cinematic lighting with rich golden hour tones transitioning to purple dusk. The streetlight overhead begins to illuminate as day becomes night.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5cf7e88eceaf2e3841528d8d107171b0ded96e4b9a6b58398ee2774cdcd7fdc5",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:45:35.395Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a contemplative scene of a woman with long hair standing alone at a modern bus stop shelter during a vibrant urban sunset. The static shot emphasizes the beautiful color gradient of the twilight sky transitioning from purple to orange, with city buildings silhouetted in the background. The clip concludes with a spoken 'Thank you for watching,' suggesting this is an outro or closing shot.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "alone",
+        "bus",
+        "captures",
+        "contemplative",
+        "figure",
+        "hair",
+        "her",
+        "largely",
+        "long",
+        "medium",
+        "modern",
+        "remains",
+        "scene",
+        "shelter",
+        "silhouetted",
+        "speech",
+        "standing",
+        "stands",
+        "still",
+        "stop",
+        "thank",
+        "unchanged",
+        "vertical",
+        "video",
+        "viewed",
+        "visible",
+        "watching",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure with long hair stands at a modern bus stop shelter, viewed from behind. The person wears dark clothing and faces a stunning sunset sky that transitions from deep purple at the top through pink and orange to golden yellow at the horizon. City buildings and skyscrapers are visible in the distance. A street lamp glows orange above the shelter, and the shelter's light illuminates from within. The vertical composition emphasizes the urban twilight atmosphere."
+        },
+        {
+          "seconds": 2,
+          "text": "The same silhouetted woman remains standing at the bus shelter, her long hair visible against the vibrant sunset backdrop. The sky maintains its gradient of purple, pink, orange, and yellow hues. The urban skyline with illuminated buildings frames the right side. Street lights and building lights dot the cityscape. The glass panels of the shelter reflect some of the warm sunset colors. The composition remains static with the subject centered under the shelter's canopy."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The scene remains largely unchanged with the silhouetted figure still standing at the bus stop, facing the colorful sunset. The woman's posture appears slightly shifted, with her long hair catching subtle light from the setting sun. The dramatic sky continues its purple-to-orange gradient. City lights twinkle in the background while the street lamp and shelter light provide warm artificial illumination. The vertical framing creates an intimate, contemplative urban moment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alone",
+    "bus",
+    "captures",
+    "contemplative",
+    "figure",
+    "hair",
+    "her",
+    "largely",
+    "long",
+    "medium",
+    "modern",
+    "remains",
+    "scene",
+    "shelter",
+    "silhouetted",
+    "speech",
+    "standing",
+    "stands",
+    "still",
+    "stop",
+    "thank",
+    "unchanged",
+    "vertical",
+    "video",
+    "viewed",
+    "visible",
+    "watching",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

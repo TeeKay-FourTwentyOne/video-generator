@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_40a2fadf84752853e8495c6c2374d0f7a90850fc58623bb47fdf9586b99270c9",
+  "sha256": "40a2fadf84752853e8495c6c2374d0f7a90850fc58623bb47fdf9586b99270c9",
+  "bytes": 5188420,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot7_full_clean.mp4"
+  ],
+  "collections": [
+    "mine-too"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

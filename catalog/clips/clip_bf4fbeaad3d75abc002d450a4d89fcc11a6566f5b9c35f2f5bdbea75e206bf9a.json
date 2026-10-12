@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bf4fbeaad3d75abc002d450a4d89fcc11a6566f5b9c35f2f5bdbea75e206bf9a",
+  "sha256": "bf4fbeaad3d75abc002d450a4d89fcc11a6566f5b9c35f2f5bdbea75e206bf9a",
+  "bytes": 21673194,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S05-v1.mp4",
+    "veo_1791067491845_59mqm7.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "The upward motion continues at the same speed without any pause: the camera keeps rising smoothly and the tumbling white sheet keeps climbing and twisting in the wind, clearing the last laundry line and the top edge of the courtyard walls into the open blue sky, the balconies and rooflines sliding down and out of the bottom of the frame as the courtyard falls away below. The sheet turns slowly in bright sunlight against clear cloudless blue, rising free, never falling back. One continuous smooth upward camera move, no cuts; exactly one sheet; no people; nothing new appears. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5117d38c7d380eb2c0b3fcc72b87ea600ac03664f549913f47a2fb7bc1b284ef",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1029159914,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

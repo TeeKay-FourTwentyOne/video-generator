@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_de3ecf92827d9bcf62b93c5888bb68963dc387e1a7bec4e85bee96e177f166bb",
+  "sha256": "de3ecf92827d9bcf62b93c5888bb68963dc387e1a7bec4e85bee96e177f166bb",
+  "bytes": 2434188,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "N3_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "A close shot low across a wooden checkerboard on a worn oilcloth table, a brass oil lamp glowing just out of frame. A lean elderly white-mustached man in a collarless shirt and dark suspenders slides a red checker in two quick hops over two black pieces, lifts the captured pieces off the board, and sets his red piece down on the back row with one small decisive tap of his finger. He sits back with quiet satisfaction, half-smiling, and says, in a warm gravelly old man's voice with a soft North Carolina drawl: \"King me.\" Across the board a heavyset bald man in a grey work shirt groans good-naturedly and shakes his head. Soft laughter around the table, a young woman's laugh among it. Brass chimney oil lamps only. Rain running down dark window glass. Deep brown shadow, dark walnut panelling. Sound: checkers clicking on wood, the old man's line, a rueful groan, easy laughter, rain on the window.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_57255e578f424b9c841257a984f21bba07afcc15e8c21f5af61fb59bfda92d1a",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

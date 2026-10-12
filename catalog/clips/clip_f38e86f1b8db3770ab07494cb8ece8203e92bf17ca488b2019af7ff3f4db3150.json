@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f38e86f1b8db3770ab07494cb8ece8203e92bf17ca488b2019af7ff3f4db3150",
+  "sha256": "f38e86f1b8db3770ab07494cb8ece8203e92bf17ca488b2019af7ff3f4db3150",
+  "bytes": 4502348,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v4_sharks.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

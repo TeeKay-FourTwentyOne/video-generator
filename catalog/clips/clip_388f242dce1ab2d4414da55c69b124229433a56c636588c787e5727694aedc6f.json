@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_388f242dce1ab2d4414da55c69b124229433a56c636588c787e5727694aedc6f",
+  "sha256": "388f242dce1ab2d4414da55c69b124229433a56c636588c787e5727694aedc6f",
+  "bytes": 1555702,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "temporal_gen3_inverted_annotated.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:temporal_gen3_inverted_annotated"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video demonstrates a color inversion effect applied to footage of a man standing on a rural road surrounded by wheat fields. The clip transitions from normal warm-toned colors to a full photographic negative with blue tones, then shows a partial transition state. The word 'Install' is spoken during this visual effects demonstration.",
+      "transcript": "Install",
+      "tags": [
+        "applied",
+        "color",
+        "colors",
+        "demonstrates",
+        "effect",
+        "extends",
+        "fields",
+        "footage",
+        "golden",
+        "hair",
+        "image",
+        "install",
+        "inversion",
+        "inverted",
+        "length",
+        "man",
+        "medium",
+        "negative",
+        "normal",
+        "portion",
+        "previously",
+        "road",
+        "rural",
+        "scene",
+        "shoulder",
+        "show",
+        "shows",
+        "sky",
+        "speech",
+        "standing",
+        "stands",
+        "state",
+        "straight",
+        "top",
+        "transformed",
+        "transitional",
+        "video",
+        "wavy",
+        "wheat"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man with shoulder-length wavy hair stands on a straight rural road that extends to the horizon. He wears a dark green jacket over a lighter shirt with tan/khaki pants and brown boots. Golden wheat fields flank both sides of the road. A ghostly double-exposure effect shows a larger version of his face in the sky above. The image has warm, golden-hour tones with natural daylight. Text overlays read 'Gen 3: Original → Inverted' at top and 'Expect: Normal → Negative colors' at bottom."
+        },
+        {
+          "seconds": 2,
+          "text": "The same scene has transformed to show inverted/negative colors. The previously golden wheat fields now appear in blue and white tones, the sky is deep blue, and the man's clothing appears in reversed colors - his jacket now appears light/white. The double-exposure face effect remains visible but also inverted. The entire image has a cool blue color palette characteristic of a photographic negative. The composition and framing remain identical to the first frame."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The image shows a transitional state between normal and inverted colors. The sky portion at top appears gray/normal while the lower portion with the fields and road maintains the blue inverted color scheme. The man's figure shows mixed coloring with blue-tinted skin and partially inverted clothing. The ghostly face overlay in the sky appears darker/inverted. This creates a split visual effect demonstrating the color inversion process mid-transition."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_007",
+      "name": "The Wanderer",
+      "description": "Solitary man standing on straight road through wheat fields, ghostly face apparition in sky above, surreal/dreamlike quality",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "applied",
+    "color",
+    "colors",
+    "demonstrates",
+    "effect",
+    "extends",
+    "fields",
+    "footage",
+    "golden",
+    "hair",
+    "image",
+    "install",
+    "inversion",
+    "inverted",
+    "length",
+    "man",
+    "medium",
+    "negative",
+    "normal",
+    "portion",
+    "previously",
+    "road",
+    "rural",
+    "scene",
+    "shoulder",
+    "show",
+    "shows",
+    "sky",
+    "speech",
+    "standing",
+    "stands",
+    "state",
+    "straight",
+    "top",
+    "transformed",
+    "transitional",
+    "video",
+    "wavy",
+    "wheat"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

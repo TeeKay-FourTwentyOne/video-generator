@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3d5bea58ce9abe106b90073e24ae50c647c9fedb82bb20729178513c0f966256",
+  "sha256": "3d5bea58ce9abe106b90073e24ae50c647c9fedb82bb20729178513c0f966256",
+  "bytes": 3440671,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767579680431_8qnq0p.mp4"
+  ],
+  "collections": [
+    "a_cup_of_coffee_on_a_table__1767579562401"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767579680431_8qnq0p"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The camera drifts almost imperceptibly closer to a coffee cup in medium close-up, steam rising from the dark liquid surface caught in selective lighting that transforms the vapor into ghostly, mysterious forms. Through heavy film grain, shapes begin to emerge within the steam - ephemeral suggestions of buildings and faces that materialize and dissolve, obscured and dreamlike. Deep noir shadows engulf the cup's edges while cool undertones dominate the frame, punctuated by warm amber highlights catching the steam. The camera floats gently forward with extreme macro detail, each wisp of vapor revealing surreal micro-landscapes and fleeting memories embedded in the mist. Time dilates as the steam curls upward, morphing between abstract forms and half-recognized shapes, the selective lighting creating pockets of clarity within the mysterious haze. The film grain adds texture to the shadows, while the steam catches light like gossamer threads, revealing hidden worlds within each tendril before they vanish into the darkness above.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8a4a7caccb0675e7d6f2024fb5c76777b07f6ca9dac6e5941293e25ddd48116f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The camera drifts almost imperceptibly closer to a coffee cup in medium close-up, steam rising from the dark liquid surface caught in selective lighting that transforms the vapor into ghostly, mysterious forms. Through heavy film grain, shapes begin to emerge within the steam - ephemeral suggestions of buildings and faces that materialize and dissolve, obscured and dreamlike. Deep noir shadows engulf the cup's edges while cool undertones dominate the frame, punctuated by warm amber highlights catching the steam. The camera floats gently forward with extreme macro detail, each wisp of vapor revealing surreal micro-landscapes and fleeting memories embedded in the mist. Time dilates as the steam curls upward, morphing between abstract forms and half-recognized shapes, the selective lighting creating pockets of clarity within the mysterious haze. The film grain adds texture to the shadows, while the steam catches light like gossamer threads, revealing hidden worlds within each tendril before they vanish into the darkness above.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8a4a7caccb0675e7d6f2024fb5c76777b07f6ca9dac6e5941293e25ddd48116f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:19:41.754Z",
+      "parameters": {
+        "durationSeconds": 10,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This artistic video clip captures a beverage preparation or pouring sequence, likely coffee or tea, filmed against a stark black background with dramatic lighting. The progression shows steam rising, liquid being poured, and the resulting swirling vapor, all rendered in warm sepia and golden tones. The clip includes speech in Sinhala expressing gratitude ('thank you very much').",
+      "transcript": "හොඳින් ස්තූතියි",
+      "tags": [
+        "appears",
+        "artistic",
+        "beverage",
+        "captures",
+        "circular",
+        "clip",
+        "coffee",
+        "colored",
+        "cup",
+        "dark",
+        "dramatic",
+        "frame",
+        "golden",
+        "likely",
+        "liquid",
+        "medium",
+        "metallic",
+        "moody",
+        "possibly",
+        "pouring",
+        "preparation",
+        "rim",
+        "ring",
+        "rising",
+        "sepia",
+        "sequence",
+        "showing",
+        "smoke",
+        "speech",
+        "steam",
+        "swirling",
+        "toned",
+        "video",
+        "warm",
+        "what"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, moody frame showing a circular metallic ring or rim (possibly a cup or bowl) positioned in the lower-center portion of the frame. Above it, wispy gray-white smoke or steam rises against a pure black background. There appear to be faint silhouettes of buildings or structures visible through the smoke, creating a ghostly, ethereal effect. The lighting is minimal with the metallic rim catching some light, creating a subtle glow. The composition is vertical with high contrast between the dark background and lighter elements."
+        },
+        {
+          "seconds": 4,
+          "text": "A dramatic sepia-toned or golden-colored frame showing what appears to be liquid being poured into a circular vessel or cup. The liquid creates organic, flowing shapes as it descends toward the illuminated rim below. The metallic circular rim is visible in the lower portion, catching warm golden light. The background remains completely black, emphasizing the warm amber tones of the liquid. The composition creates an artistic, almost abstract quality with the fluid motion captured mid-pour."
+        },
+        {
+          "seconds": 7.9,
+          "text": "A warm, golden-toned frame showing swirling smoke or steam rising above a circular metallic rim or vessel. The smoke creates elegant, curving patterns in shades of amber and gold against the black background. The circular rim at the bottom glows with warm light, and there appears to be some residual motion or turbulence in the smoke patterns. Small particles or dust are visible in the air, catching the light. The overall mood is atmospheric and artistic with dramatic lighting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "artistic",
+    "beverage",
+    "captures",
+    "circular",
+    "clip",
+    "coffee",
+    "colored",
+    "cup",
+    "dark",
+    "dramatic",
+    "frame",
+    "golden",
+    "likely",
+    "liquid",
+    "medium",
+    "metallic",
+    "moody",
+    "possibly",
+    "pouring",
+    "preparation",
+    "rim",
+    "ring",
+    "rising",
+    "sepia",
+    "sequence",
+    "showing",
+    "smoke",
+    "speech",
+    "steam",
+    "swirling",
+    "toned",
+    "video",
+    "warm",
+    "what"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

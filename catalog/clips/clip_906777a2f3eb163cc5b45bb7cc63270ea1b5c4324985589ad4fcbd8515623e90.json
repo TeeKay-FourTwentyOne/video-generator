@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_906777a2f3eb163cc5b45bb7cc63270ea1b5c4324985589ad4fcbd8515623e90",
+  "sha256": "906777a2f3eb163cc5b45bb7cc63270ea1b5c4324985589ad4fcbd8515623e90",
+  "bytes": 760998,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot05_5.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

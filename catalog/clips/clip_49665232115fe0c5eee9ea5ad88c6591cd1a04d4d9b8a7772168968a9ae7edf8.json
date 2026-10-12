@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_49665232115fe0c5eee9ea5ad88c6591cd1a04d4d9b8a7772168968a9ae7edf8",
+  "sha256": "49665232115fe0c5eee9ea5ad88c6591cd1a04d4d9b8a7772168968a9ae7edf8",
+  "bytes": 3872277,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot5_face_chained_seed2176916252.mp4",
+    "veo_1772422927646_x3cy6u.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "A person looks directly into the camera with a calm, neutral expression. Not smiling. Not performing. Just present, aware. Warm natural window light on their face. Shallow depth of field. The camera has drifted up from their lap to their face. They notice the camera. A beat of recognition. Close-up portrait framing. Soft, intimate lighting. 9:16 vertical.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3c3b449441a52e77e70b402f5f84d5de9663ccc2ea26c0d31b6f9b4d407f0b4d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2176916252,
+      "createdAt": "2026-03-02T03:41:04.060Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

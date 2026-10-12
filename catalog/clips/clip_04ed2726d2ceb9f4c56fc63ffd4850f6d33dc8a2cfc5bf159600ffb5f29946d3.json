@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_04ed2726d2ceb9f4c56fc63ffd4850f6d33dc8a2cfc5bf159600ffb5f29946d3",
+  "sha256": "04ed2726d2ceb9f4c56fc63ffd4850f6d33dc8a2cfc5bf159600ffb5f29946d3",
+  "bytes": 4929761,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 114.333333,
+    "width": 960,
+    "height": 540,
+    "frameRate": "24/1",
+    "frameCount": 2744,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "past5_blkloop.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fb341d2f80e54f64ce5393ebc495083a32403aaee6c8980cdb691299f7c0d8da",
+  "sha256": "fb341d2f80e54f64ce5393ebc495083a32403aaee6c8980cdb691299f7c0d8da",
+  "bytes": 8613750,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "join-fast.mp4"
+  ],
+  "collections": [
+    "seamless-joins"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

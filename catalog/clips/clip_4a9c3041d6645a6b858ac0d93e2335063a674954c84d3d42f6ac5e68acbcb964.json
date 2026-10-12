@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4a9c3041d6645a6b858ac0d93e2335063a674954c84d3d42f6ac5e68acbcb964",
+  "sha256": "4a9c3041d6645a6b858ac0d93e2335063a674954c84d3d42f6ac5e68acbcb964",
+  "bytes": 37506038,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 121,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 2904,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "deep-time-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

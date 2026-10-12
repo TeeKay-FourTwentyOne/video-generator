@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_783a9a71cd4fce9dd0d578bee704a90550c274e403d1fe845c99f8a3ad2ddf9e",
+  "sha256": "783a9a71cd4fce9dd0d578bee704a90550c274e403d1fe845c99f8a3ad2ddf9e",
+  "bytes": 1855961,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5.666667,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 136,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot_08.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

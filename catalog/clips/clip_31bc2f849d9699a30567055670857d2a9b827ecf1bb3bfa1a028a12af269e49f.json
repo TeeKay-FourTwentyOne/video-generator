@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_31bc2f849d9699a30567055670857d2a9b827ecf1bb3bfa1a028a12af269e49f",
+  "sha256": "31bc2f849d9699a30567055670857d2a9b827ecf1bb3bfa1a028a12af269e49f",
+  "bytes": 6534013,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S07-v1.mp4",
+    "veo_1791077949547_hggxfl.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "The camera holds absolutely still in this high view over terracotta rooftops and the calm blue sea. A soft updraft lifts ONE ordinary rectangular white linen sheet from below the visible courtyard opening at bottom center. It enters continuously from INSIDE that opening, already loose, billows naturally and drifts UP toward the open blue sky, never falling. After three seconds a SECOND white sheet rises out of the SAME opening below the first, well separated from it; after five seconds a THIRD follows. Maximum three sheets in the air, no cloning or clusters. Each is a broad plain rectangular piece of linen with four corners, no pegs, no wire, no tether, no bird transformation. They travel steadily upward and away while the little red garment remains pinned deep inside the courtyard. Vast clear blue sky, unchanged late-morning light, static architecture. No other people, birds, boats, text, clouds, dissolve, or new ropes in the sky. Eight seconds, no audio.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c44d57e2b02b8f1a3a0c327e7253f9d8e9b3d6e8edf0c52ecc37699eadd1c71a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2811586565,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

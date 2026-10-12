@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d515e1bf3626609ba853dd900e3ab55d2958a53826a07858165bfa34ed0c3e08",
+  "sha256": "d515e1bf3626609ba853dd900e3ab55d2958a53826a07858165bfa34ed0c3e08",
+  "bytes": 726864,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767547588019_gtkj45.mp4"
+  ],
+  "collections": [
+    "impossible_orbit"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767547588019_gtkj45"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot of an East Asian woman in her 30s with shoulder-length dark hair, wearing a white blouse, maintaining direct eye contact with camera and unwavering forward-facing stance. Behind her, a prominent stacked stone fireplace fills the background against dark-toned walls with dark wood floors. Camera continues smooth orbital movement around the subject while she remains perfectly stationary and forward-facing, creating the effect that only the background environment rotates behind her - her white blouse, facial expression, and body position remain completely identical throughout the 180-degree environmental shift. Soft natural lighting from large window creates warm ambient illumination with recessed ceiling lights providing gentle fill. Slightly desaturated color palette maintains cinematic consistency. The woman's gaze never wavers from camera despite the dramatic background transformation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_db5bf97a8f93cf8d5d5be5c0018877d95b854875caa5edfac540782643bbd073",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot of an East Asian woman in her 30s with shoulder-length dark hair, wearing a white blouse, maintaining direct eye contact with camera and unwavering forward-facing stance. Behind her, a prominent stacked stone fireplace fills the background against dark-toned walls with dark wood floors. Camera continues smooth orbital movement around the subject while she remains perfectly stationary and forward-facing, creating the effect that only the background environment rotates behind her - her white blouse, facial expression, and body position remain completely identical throughout the 180-degree environmental shift. Soft natural lighting from large window creates warm ambient illumination with recessed ceiling lights providing gentle fill. Slightly desaturated color palette maintains cinematic consistency. The woman's gaze never wavers from camera despite the dramatic background transformation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_db5bf97a8f93cf8d5d5be5c0018877d95b854875caa5edfac540782643bbd073",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:25:45.841Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A professional-looking Asian woman in a white blouse speaks directly to camera in what appears to be a modern rustic interior with a stone fireplace. The clip shows her saying 'Yeah, yeah, yeah' with subtle changes in her facial expressions and mouth movements across the frames. The setting and framing remain consistent throughout the 4-second clip.",
+      "transcript": "Yeah. Yeah. Yeah.",
+      "tags": [
+        "asian",
+        "black",
+        "blouse",
+        "camera",
+        "centered",
+        "continues",
+        "different",
+        "directly",
+        "expression",
+        "frame",
+        "hair",
+        "her",
+        "length",
+        "looking",
+        "medium",
+        "mid",
+        "mouth",
+        "now",
+        "ongoing",
+        "open",
+        "position",
+        "professional",
+        "shoulder",
+        "speaking",
+        "speaks",
+        "speech",
+        "stands",
+        "suggesting",
+        "wearing",
+        "what",
+        "white",
+        "woman",
+        "word",
+        "yeah"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An Asian woman with shoulder-length black hair stands centered in frame, wearing a white collared button-up blouse. She has a neutral, composed expression with closed lips. Behind her is a rustic stone fireplace wall with brown and gray tones, and a large window on the left letting in natural light. The ceiling features dark wooden beams with recessed lighting. The composition is a medium shot, professionally lit with soft lighting on her face."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now speaking, her mouth open mid-word. Her expression is more animated and engaged compared to the first frame. She maintains the same centered position in the frame, wearing the white collared blouse. The background remains identical with the stone fireplace and window. The lighting continues to be soft and professional, highlighting her face while the background is slightly darker, creating depth."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues speaking with her mouth open in a different position, suggesting ongoing speech. Her facial expression shows engagement as she communicates. She remains in the same position wearing the white blouse. The rustic interior setting with stone fireplace and natural window light persists. The professional medium shot framing and soft lighting remain consistent throughout, maintaining visual continuity."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "asian",
+    "black",
+    "blouse",
+    "camera",
+    "centered",
+    "continues",
+    "different",
+    "directly",
+    "expression",
+    "frame",
+    "hair",
+    "her",
+    "length",
+    "looking",
+    "medium",
+    "mid",
+    "mouth",
+    "now",
+    "ongoing",
+    "open",
+    "position",
+    "professional",
+    "shoulder",
+    "speaking",
+    "speaks",
+    "speech",
+    "stands",
+    "suggesting",
+    "wearing",
+    "what",
+    "white",
+    "woman",
+    "word",
+    "yeah"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

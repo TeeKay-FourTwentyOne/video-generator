@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_80b698328668acf70d03f1757d11bae7bcd93ff24be3e336042a5c5e2a83eec2",
+  "sha256": "80b698328668acf70d03f1757d11bae7bcd93ff24be3e336042a5c5e2a83eec2",
+  "bytes": 1504221,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545328779_khq2do.mp4"
+  ],
+  "collections": [
+    "style_shift"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545328779_khq2do"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build walks gracefully through a dreamy watercolor cityscape. The entire scene appears as a living impressionist painting with soft pastel colors bleeding into each other - lavender buildings melting into peachy skies, mint green trees with edges that blur into golden light. Visible brushstrokes texture every surface as if painted with wet watercolor on canvas. The woman moves with fluid, ethereal grace as colors flow and blend around her silhouette. Soft, diffused lighting creates a luminous, dreamlike atmosphere where architectural forms dissolve into abstract washes of color. The camera follows with a gentle floating movement, maintaining focus on the woman while the painted cityscape shimmers and bleeds like wet pigment. Monet-inspired color palette of blues, purples, pinks, and golden yellows with that characteristic soft-focus, hand-painted aesthetic where reality becomes pure impressionistic beauty.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_708e099e793e28b2bd03e20f49a0bbf848e74f4cc0ade9fe25785f2f7c42bdfd",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build walks gracefully through a dreamy watercolor cityscape. The entire scene appears as a living impressionist painting with soft pastel colors bleeding into each other - lavender buildings melting into peachy skies, mint green trees with edges that blur into golden light. Visible brushstrokes texture every surface as if painted with wet watercolor on canvas. The woman moves with fluid, ethereal grace as colors flow and blend around her silhouette. Soft, diffused lighting creates a luminous, dreamlike atmosphere where architectural forms dissolve into abstract washes of color. The camera follows with a gentle floating movement, maintaining focus on the woman while the painted cityscape shimmers and bleeds like wet pigment. Monet-inspired color palette of blues, purples, pinks, and golden yellows with that characteristic soft-focus, hand-painted aesthetic where reality becomes pure impressionistic beauty.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_708e099e793e28b2bd03e20f49a0bbf848e74f4cc0ade9fe25785f2f7c42bdfd",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:48:07.150Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This animated watercolor-style clip depicts a young Black woman in a flowing lavender dress walking barefoot through a stylized urban street lined with purple buildings and colorful trees. The dreamy scene features a warm peach sky contrasting with cool purple and blue tones, creating a contemplative, artistic atmosphere as she moves forward through the cityscape.",
+      "transcript": null,
+      "tags": [
+        "animated",
+        "black",
+        "centrally",
+        "clip",
+        "continues",
+        "depicts",
+        "flowing",
+        "foot",
+        "her",
+        "illustrated",
+        "landscape",
+        "lavender",
+        "medium",
+        "mid",
+        "natural",
+        "now",
+        "one",
+        "positioned",
+        "progressed",
+        "scene",
+        "short",
+        "showing",
+        "shown",
+        "silent",
+        "slightly",
+        "stride",
+        "style",
+        "urban",
+        "walk",
+        "walking",
+        "watercolor",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An illustrated scene in watercolor style showing a young Black woman with short natural hair, wearing a flowing lavender/white sleeveless dress, walking barefoot through a stylized urban street. She is positioned center-right, shown in profile facing left. Tall purple and violet buildings line both sides creating depth perspective. Teal/turquoise trees on the left and golden/olive trees on the right frame the scene. The sky features peach and coral tones with white swirling clouds. The ground appears blue-tinted with reflective qualities."
+        },
+        {
+          "seconds": 2,
+          "text": "The same illustrated woman continues walking through the urban landscape, now positioned slightly more centrally in the frame. Her dress flows behind her suggesting forward movement. The composition remains similar with purple/violet buildings creating a corridor effect. The colorful trees - teal on left, golden on right - provide contrast. The peach-colored sky with white flowing clouds creates a dreamy atmosphere. Her shadow is visible on the blue-tinted ground. The watercolor artistic style gives everything soft, painterly edges."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has progressed further in her walk, now shown mid-stride with one foot lifted, positioned center-left of frame. Her flowing lavender dress billows with movement. The urban setting with purple buildings extends into the background with strong perspective lines. The teal and golden trees remain prominent on either side. The warm peach sky contrasts with the cool purple architecture. Her shadow stretches behind her on the blue ground. The overall composition suggests contemplative forward motion through this dreamlike cityscape."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "animated",
+    "black",
+    "centrally",
+    "clip",
+    "continues",
+    "depicts",
+    "flowing",
+    "foot",
+    "her",
+    "illustrated",
+    "landscape",
+    "lavender",
+    "medium",
+    "mid",
+    "natural",
+    "now",
+    "one",
+    "positioned",
+    "progressed",
+    "scene",
+    "short",
+    "showing",
+    "shown",
+    "silent",
+    "slightly",
+    "stride",
+    "style",
+    "urban",
+    "walk",
+    "walking",
+    "watercolor",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

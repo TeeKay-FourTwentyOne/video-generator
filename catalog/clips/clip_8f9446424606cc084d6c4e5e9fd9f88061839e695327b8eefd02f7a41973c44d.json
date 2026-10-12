@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8f9446424606cc084d6c4e5e9fd9f88061839e695327b8eefd02f7a41973c44d",
+  "sha256": "8f9446424606cc084d6c4e5e9fd9f88061839e695327b8eefd02f7a41973c44d",
+  "bytes": 3150112,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "beat4_younger.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

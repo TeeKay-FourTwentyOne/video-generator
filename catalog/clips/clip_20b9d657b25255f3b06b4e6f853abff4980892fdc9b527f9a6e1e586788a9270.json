@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_20b9d657b25255f3b06b4e6f853abff4980892fdc9b527f9a6e1e586788a9270",
+  "sha256": "20b9d657b25255f3b06b4e6f853abff4980892fdc9b527f9a6e1e586788a9270",
+  "bytes": 5404189,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767756941672_ec1bps.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767756941672_ec1bps"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 6-second clip follows a young person walking through a suburban neighborhood during golden hour, transitioning from a contemplative profile shot to a dramatic reveal of an open manhole in their path. The cinematography builds tension through progressive camera angles, moving from a medium shot to a ground-level close-up that emphasizes the hazard. Japanese text indicates this is likely the conclusion of a video, thanking viewers for watching.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "angle",
+        "approximately",
+        "black",
+        "chest",
+        "clip",
+        "close",
+        "cropped",
+        "dark",
+        "follows",
+        "golden",
+        "gray",
+        "ground",
+        "hair",
+        "hoodie",
+        "hour",
+        "jeans",
+        "knees",
+        "legs",
+        "length",
+        "level",
+        "light",
+        "lower",
+        "medium",
+        "neighborhood",
+        "now",
+        "person",
+        "second",
+        "shot",
+        "shoulder",
+        "shown",
+        "shows",
+        "speech",
+        "suburban",
+        "they",
+        "walking",
+        "wearing",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young person with shoulder-length dark hair wearing a light gray hoodie and dark blue jeans stands on a suburban sidewalk. They are shown in profile view, looking downward with a contemplative expression. The setting is a residential neighborhood during golden hour, with warm sunlight creating a backlit effect. Houses, parked cars, bare trees, and manicured lawns are visible in the blurred background. The composition places the subject right of center with the sidewalk leading into the distance."
+        },
+        {
+          "seconds": 3,
+          "text": "The same person is now shown from a lower angle, cropped from approximately chest to knees. They appear to be walking along the sidewalk, with the camera positioned behind and below them. The golden hour sunlight creates a strong lens flare effect through the bare tree branches. The suburban setting remains consistent with houses and parked cars visible. The warm lighting illuminates the grass on either side of the concrete sidewalk, creating a golden-green glow."
+        },
+        {
+          "seconds": 5.9,
+          "text": "A close-up ground-level shot shows a person's legs in dark jeans and black shoes standing at the edge of an open manhole on the sidewalk. The circular manhole cover has been removed, revealing a dark void below. The concrete sidewalk is bathed in warm golden light, with green grass visible on both sides. The composition creates tension as the person's foot is positioned dangerously close to the open hole's edge, suggesting imminent danger."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "angle",
+    "approximately",
+    "black",
+    "chest",
+    "clip",
+    "close",
+    "cropped",
+    "dark",
+    "follows",
+    "golden",
+    "gray",
+    "ground",
+    "hair",
+    "hoodie",
+    "hour",
+    "jeans",
+    "knees",
+    "legs",
+    "length",
+    "level",
+    "light",
+    "lower",
+    "medium",
+    "neighborhood",
+    "now",
+    "person",
+    "second",
+    "shot",
+    "shoulder",
+    "shown",
+    "shows",
+    "speech",
+    "suburban",
+    "they",
+    "walking",
+    "wearing",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

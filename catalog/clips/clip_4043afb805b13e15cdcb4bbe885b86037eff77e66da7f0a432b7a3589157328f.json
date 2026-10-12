@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4043afb805b13e15cdcb4bbe885b86037eff77e66da7f0a432b7a3589157328f",
+  "sha256": "4043afb805b13e15cdcb4bbe885b86037eff77e66da7f0a432b7a3589157328f",
+  "bytes": 20048548,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_scroll_clip2_reef.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_scroll_clip2_reef"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video transitions dramatically from a murky, monochromatic underwater shot looking up at the surface to vibrant, colorful coral reef scenes teeming with tropical fish. The clip showcases diverse marine life including clownfish, blue tang, and yellow fish swimming above elaborate coral formations. Korean text in the audio translates to 'Thank you for watching!' suggesting this is the conclusion of an underwater nature video.",
+      "transcript": "시청해 주셔서 감사합니다!",
+      "tags": [
+        "another",
+        "blue",
+        "bright",
+        "bursting",
+        "color",
+        "colors",
+        "coral",
+        "desaturated",
+        "dominated",
+        "dramatically",
+        "grayscale",
+        "heavily",
+        "looking",
+        "medium",
+        "monochromatic",
+        "multiple",
+        "murky",
+        "powder",
+        "reef",
+        "scene",
+        "school",
+        "shot",
+        "showing",
+        "species",
+        "speech",
+        "stunning",
+        "surface",
+        "transitions",
+        "tropical",
+        "underwater",
+        "vibrant",
+        "video",
+        "view"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An underwater scene shot in grayscale or heavily desaturated colors showing a view looking upward toward the water's surface. Light filters through from above creating a silvery, rippled effect on the surface. The water appears murky with limited visibility. At the bottom of the frame, there's a partially visible spherical object, possibly a person's head submerged underwater. Two vertical lines or poles are visible on either side of the frame. The composition creates a moody, atmospheric underwater perspective."
+        },
+        {
+          "seconds": 4,
+          "text": "A vibrant underwater coral reef scene bursting with color. Multiple species of tropical fish swim above elaborate coral formations. Orange and white clownfish, bright blue tang fish with yellow accents, and yellow fish populate the upper portion. The coral below displays various textures and colors including tan, pink, purple, and brown formations. The water is crystal clear blue, and natural light illuminates the scene from above. The camera angle looks down at the reef at a slight angle, capturing the rich biodiversity."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Another stunning coral reef view dominated by a school of bright blue powder blue tang fish with distinctive black markings and yellow fins swimming in formation across the middle of the frame. Below them, various coral formations in tan, brown, pink, and cream colors create a textured landscape. Yellow fish are scattered throughout. The clear turquoise water provides excellent visibility. The camera maintains a downward angle, showcasing the reef's diversity and the coordinated movement of the fish school."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "another",
+    "blue",
+    "bright",
+    "bursting",
+    "color",
+    "colors",
+    "coral",
+    "desaturated",
+    "dominated",
+    "dramatically",
+    "grayscale",
+    "heavily",
+    "looking",
+    "medium",
+    "monochromatic",
+    "multiple",
+    "murky",
+    "powder",
+    "reef",
+    "scene",
+    "school",
+    "shot",
+    "showing",
+    "species",
+    "speech",
+    "stunning",
+    "surface",
+    "transitions",
+    "tropical",
+    "underwater",
+    "vibrant",
+    "video",
+    "view"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

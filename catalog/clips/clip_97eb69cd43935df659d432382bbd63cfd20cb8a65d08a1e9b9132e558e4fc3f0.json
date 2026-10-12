@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_97eb69cd43935df659d432382bbd63cfd20cb8a65d08a1e9b9132e558e4fc3f0",
+  "sha256": "97eb69cd43935df659d432382bbd63cfd20cb8a65d08a1e9b9132e558e4fc3f0",
+  "bytes": 7259828,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s6v5_trapdoor.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

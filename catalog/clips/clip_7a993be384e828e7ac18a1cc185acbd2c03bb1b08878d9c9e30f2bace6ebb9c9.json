@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7a993be384e828e7ac18a1cc185acbd2c03bb1b08878d9c9e30f2bace6ebb9c9",
+  "sha256": "7a993be384e828e7ac18a1cc185acbd2c03bb1b08878d9c9e30f2bace6ebb9c9",
+  "bytes": 17703239,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.083333,
+    "width": 720,
+    "height": 5120,
+    "frameRate": "24/1",
+    "frameCount": 194,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "ocean_canvas_framed.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_canvas_framed"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Framed presentation version of the ocean canvas with decorative borders. Same four-zone vertical composition (surface, reef, kelp, abyss) but with added frame elements and a purple-violet color treatment that gives it a more stylized, artistic appearance suitable for display purposes.",
+      "transcript": null,
+      "tags": [
+        "animation",
+        "border",
+        "borders",
+        "bubbles",
+        "canvas",
+        "color",
+        "complete",
+        "decorative",
+        "edges",
+        "elements",
+        "final",
+        "four",
+        "frame",
+        "framed",
+        "journey",
+        "long",
+        "mid",
+        "ocean",
+        "presentation",
+        "purple",
+        "reef",
+        "rise",
+        "showing",
+        "silent",
+        "surface",
+        "treatment",
+        "version",
+        "vertical",
+        "violet",
+        "visible",
+        "waters",
+        "zone"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Framed version of the four-zone ocean canvas with visible border elements on edges. Shows sunlit surface, purple-tinted coral reef, kelp forest, and abyss zones stacked vertically. The frame adds a presentation/display quality to the composition."
+        },
+        {
+          "seconds": 4.0416665,
+          "text": "Mid-animation with frame borders visible. Bubbles rise through surface waters, reef shows active fish movement among pink-purple corals, kelp forest has darker purple-blue tones. Overall violet color cast throughout the framed composition."
+        },
+        {
+          "seconds": 7.983333,
+          "text": "Final frame showing complete ocean journey with purple-violet color treatment. Surface light streams down, dense coral gardens visible, kelp rendered in darker tones, pink jellyfish glows in the abyss. Frame borders clearly visible on sides."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "animation",
+    "border",
+    "borders",
+    "bubbles",
+    "canvas",
+    "color",
+    "complete",
+    "decorative",
+    "edges",
+    "elements",
+    "final",
+    "four",
+    "frame",
+    "framed",
+    "journey",
+    "long",
+    "mid",
+    "ocean",
+    "presentation",
+    "purple",
+    "reef",
+    "rise",
+    "showing",
+    "silent",
+    "surface",
+    "treatment",
+    "version",
+    "vertical",
+    "violet",
+    "visible",
+    "waters",
+    "zone"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

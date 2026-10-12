@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fdd4d85d777e2f1e21ee0c1f64cd7807cf8cc5dbc08c6adf08416a4067aa09d7",
+  "sha256": "fdd4d85d777e2f1e21ee0c1f64cd7807cf8cc5dbc08c6adf08416a4067aa09d7",
+  "bytes": 8929791,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "02.mp4"
+  ],
+  "collections": [
+    "parking-lot-gospel"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

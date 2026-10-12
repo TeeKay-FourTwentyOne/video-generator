@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_89ed8296c94c77c403c0eb7167b4e2d7bd7dcaf828f8823405eae030c6d90641",
+  "sha256": "89ed8296c94c77c403c0eb7167b4e2d7bd7dcaf828f8823405eae030c6d90641",
+  "bytes": 1606229,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Man_on_damaged_202604252117.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

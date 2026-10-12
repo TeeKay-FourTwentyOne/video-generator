@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_26e5fb563d09d03837a71441b18760a299e7cec26ecf46e3ecb53695ed831dd9",
+  "sha256": "26e5fb563d09d03837a71441b18760a299e7cec26ecf46e3ecb53695ed831dd9",
+  "bytes": 172435,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 13.8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 414,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot06.mp4"
+  ],
+  "collections": [
+    "ramsey-books"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

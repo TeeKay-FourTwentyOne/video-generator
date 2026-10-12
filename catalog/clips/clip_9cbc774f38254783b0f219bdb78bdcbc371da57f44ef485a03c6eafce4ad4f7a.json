@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9cbc774f38254783b0f219bdb78bdcbc371da57f44ef485a03c6eafce4ad4f7a",
+  "sha256": "9cbc774f38254783b0f219bdb78bdcbc371da57f44ef485a03c6eafce4ad4f7a",
+  "bytes": 11460544,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.541667,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 61,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "edit_05_perspective.mp4"
+  ],
+  "collections": [
+    "alphaville-moon"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

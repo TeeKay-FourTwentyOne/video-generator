@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2e97650e8a64cfe3f9ec1cd07033f218e1882d7f4c80f3f1f3ecf08ce4f8a15a",
+  "sha256": "2e97650e8a64cfe3f9ec1cd07033f218e1882d7f4c80f3f1f3ecf08ce4f8a15a",
+  "bytes": 11839328,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot3_murmuration_seed1078861312.mp4",
+    "veo_1772420798664_xj83t2.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "A massive flock of starlings murmurating against a deep orange sunset sky. The swarm contracts, expands, splits into two bodies, then reforms into one. The individual birds are nearly invisible — what you see is the fluid, organic shape they make together. The shape pulses and breathes like a living thing. Wide shot, the murmuration fills most of the frame against the glowing sky. Cinematic nature documentary, 9:16 vertical frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d0e4bbc558387456aa7eeb57e744a2105783af3e8fddbc5502a4cd8e60dc3599",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 1078861312,
+      "createdAt": "2026-03-02T03:05:15.321Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

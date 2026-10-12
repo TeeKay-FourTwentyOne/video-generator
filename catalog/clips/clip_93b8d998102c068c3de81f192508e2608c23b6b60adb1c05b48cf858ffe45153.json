@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_93b8d998102c068c3de81f192508e2608c23b6b60adb1c05b48cf858ffe45153",
+  "sha256": "93b8d998102c068c3de81f192508e2608c23b6b60adb1c05b48cf858ffe45153",
+  "bytes": 15331466,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S07-v1.mp4",
+    "veo_1791066999009_qmhsfh.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, late morning, a locked-off high wide view over the terracotta rooftops of a hill town to the calm blue sea under a clear cloudless sky. From the dark narrow courtyard opening among the roofs, plain white sheets rise one after another into the sunlight: the first sheet already in the air climbs higher, twisting slowly; then a second sheet lifts out of the courtyard, then a third, each spaced well apart from the others, drifting upward and out over the roofs, brilliant white against the blue. At most three sheets in the air, never clustered. The camera does not move. No people, nothing falls back, nothing new appears except the rising sheets. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9b726db0bbfd6874a0f80fa6d740746fc9230d582c66d5a8238b5b522a88797a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2811586565,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

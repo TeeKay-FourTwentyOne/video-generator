@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a9c3a9a064df8d6f07102534324c556654d04d311f6edc80518ab441d120bbfb",
+  "sha256": "a9c3a9a064df8d6f07102534324c556654d04d311f6edc80518ab441d120bbfb",
+  "bytes": 11279078,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "8second_shot_use_202601130806_v9gv3.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:8second_shot_use_202601130806_v9gv3"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video depicts a dramatic visual transformation from a dark, monochromatic scene featuring a crystalline ring structure to a vivid neon green bioluminescent tunnel environment. The sequence suggests movement through an organic, cave-like space with glowing elements, creating an otherworldly or sci-fi atmosphere with strong contrast between darkness and intense green illumination.",
+      "transcript": null,
+      "tags": [
+        "appearing",
+        "black",
+        "camera",
+        "cave",
+        "circular",
+        "closer",
+        "continues",
+        "dark",
+        "depicts",
+        "dramatic",
+        "featuring",
+        "frame",
+        "green",
+        "illuminated",
+        "intricate",
+        "like",
+        "lit",
+        "made",
+        "medium",
+        "monochromatic",
+        "moved",
+        "now",
+        "organic",
+        "perspective",
+        "predominantly",
+        "ring",
+        "scene",
+        "shows",
+        "silent",
+        "structure",
+        "transformation",
+        "tunnel",
+        "vertical",
+        "video",
+        "visual",
+        "vivid"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, predominantly black frame featuring an intricate circular ring structure made of silvery-white, crystalline or ice-like formations. The ring appears to float in the center of the frame against a pure black background. Around the edges of the frame, there are textured, organic-looking formations with similar silvery-gray coloring. The composition is centered with high contrast between the bright white details and the deep black void. The style appears abstract or artistic, possibly representing a portal or organic structure."
+        },
+        {
+          "seconds": 4,
+          "text": "A dramatic transformation shows a tunnel-like cave structure now illuminated in vivid neon green and bright yellow-green colors. The perspective appears to be looking down into a spiraling organic tunnel with wet, textured walls. Multiple bright yellow-green light sources emanate from within the depths, creating an eerie, bioluminescent effect. The walls have a slimy, organic texture with veins and ridges. The composition creates depth through the spiral formation leading the eye into the glowing center."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The green-lit organic tunnel continues with the camera appearing to have moved closer or the perspective shifted. The bright neon green and yellow illumination reveals more textured, rocky or organic surfaces with multiple glowing points. A dark circular void or tunnel opening is visible on the left side. The lighting creates strong contrast between the bright green-yellow highlights and deep black shadows. The surface appears wet and alive with an alien or biological quality to the textures."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appearing",
+    "black",
+    "camera",
+    "cave",
+    "circular",
+    "closer",
+    "continues",
+    "dark",
+    "depicts",
+    "dramatic",
+    "featuring",
+    "frame",
+    "green",
+    "illuminated",
+    "intricate",
+    "like",
+    "lit",
+    "made",
+    "medium",
+    "monochromatic",
+    "moved",
+    "now",
+    "organic",
+    "perspective",
+    "predominantly",
+    "ring",
+    "scene",
+    "shows",
+    "silent",
+    "structure",
+    "transformation",
+    "tunnel",
+    "vertical",
+    "video",
+    "visual",
+    "vivid"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

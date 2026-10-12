@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_41f18ac946b2f8ce6378fe479bb235e92c16e6bee543d72c8bbdb88b6ecc7540",
+  "sha256": "41f18ac946b2f8ce6378fe479bb235e92c16e6bee543d72c8bbdb88b6ecc7540",
+  "bytes": 4350014,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_why_choose.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_why_choose"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Philosophical portrait clip of the Sagittarius character delivering the thematic line 'Why? Why choose?' The auburn-haired young man's expressions shift from bright optimism through knowing contemplation to peaceful acceptance, embodying the sign's open-minded approach to life's many possibilities.",
+      "transcript": "Why? Why choose? Why choose?",
+      "tags": [
+        "appears",
+        "auburn",
+        "bright",
+        "character",
+        "choose",
+        "clip",
+        "close",
+        "contemplative",
+        "delivering",
+        "down",
+        "expression",
+        "eyes",
+        "freckled",
+        "gentle",
+        "haired",
+        "half",
+        "intimate",
+        "knowing",
+        "line",
+        "looking",
+        "making",
+        "medium",
+        "open",
+        "partially",
+        "philosophical",
+        "portrait",
+        "sagittarius",
+        "shifted",
+        "showing",
+        "smile",
+        "speech",
+        "thematic"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Intimate close-up of the auburn-haired Sagittarius character with bright, open smile. Freckled face glowing in warm golden light. Blue-green eyes sparkle with characteristic optimism. Forest bokeh creates soft green-gold background."
+        },
+        {
+          "seconds": 4,
+          "text": "Same close portrait, expression shifted to knowing half-smile. The character appears to be making a philosophical point. Warm backlight creates rim lighting on curly red hair. Thoughtful yet playful energy."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Portrait showing the character looking down with gentle, contemplative smile. Eyes partially closed in moment of peaceful reflection. The soft expression suggests acceptance and wisdom - 'why choose' embodied in gesture."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_005",
+      "name": "Archer",
+      "description": "Young man with curly red hair, warm smile, Sagittarius text overlay, cheerful demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appears",
+    "auburn",
+    "bright",
+    "character",
+    "choose",
+    "clip",
+    "close",
+    "contemplative",
+    "delivering",
+    "down",
+    "expression",
+    "eyes",
+    "freckled",
+    "gentle",
+    "haired",
+    "half",
+    "intimate",
+    "knowing",
+    "line",
+    "looking",
+    "making",
+    "medium",
+    "open",
+    "partially",
+    "philosophical",
+    "portrait",
+    "sagittarius",
+    "shifted",
+    "showing",
+    "smile",
+    "speech",
+    "thematic"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

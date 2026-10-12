@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_728261cd4081807f233e28ebb95363bfed61920d1642ccbe8d5d6ba6ae3cd255",
+  "sha256": "728261cd4081807f233e28ebb95363bfed61920d1642ccbe8d5d6ba6ae3cd255",
+  "bytes": 2700232,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767517004690_yev7my.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767517004690_yev7my"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A weathered, humanoid robot moving through a desolate post-apocalyptic landscape suddenly stops mid-stride, its mechanical form freezing as blue sensor lights flicker and intensify on its head. The camera holds at medium shot, then slowly pushes in as a single, impossibly vibrant flower - bright magenta petals with golden center - emerges and blooms from a jagged crack in broken concrete at the robot's feet. The flower's vivid colors create a striking contrast against the surrounding monochrome ruins of twisted metal and crumbling structures. Soft, diffused overcast lighting filters through atmospheric haze, with a subtle warm glow emanating from the flower. The robot's head mechanically tilts downward in a gesture of curiosity and wonder, optical sensors focusing intently on this miracle of life. Camera movement: smooth push-in from medium to close-up, ending on the robot's tilted head with the flower visible in foreground. Cinematic color grading with desaturated backgrounds and vibrant flower tones. 9:16 vertical aspect ratio.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4df0f3085246b400b5250b1a2ade5b0d70dead8dc23a92493c8e3295c01548bc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A weathered, humanoid robot moving through a desolate post-apocalyptic landscape suddenly stops mid-stride, its mechanical form freezing as blue sensor lights flicker and intensify on its head. The camera holds at medium shot, then slowly pushes in as a single, impossibly vibrant flower - bright magenta petals with golden center - emerges and blooms from a jagged crack in broken concrete at the robot's feet. The flower's vivid colors create a striking contrast against the surrounding monochrome ruins of twisted metal and crumbling structures. Soft, diffused overcast lighting filters through atmospheric haze, with a subtle warm glow emanating from the flower. The robot's head mechanically tilts downward in a gesture of curiosity and wonder, optical sensors focusing intently on this miracle of life. Camera movement: smooth push-in from medium to close-up, ending on the robot's tilted head with the flower visible in foreground. Cinematic color grading with desaturated backgrounds and vibrant flower tones. 9:16 vertical aspect ratio.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4df0f3085246b400b5250b1a2ade5b0d70dead8dc23a92493c8e3295c01548bc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T08:56:01.701Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short clip depicts a weathered humanoid robot walking through a post-apocalyptic wasteland who discovers a single vibrant pink flower growing through cracked pavement. The narrative arc moves from desolation to hope as the robot crouches to examine this unexpected sign of life, with the selective color technique emphasizing the flower's significance against the monochromatic ruins.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "angle",
+        "apocalyptic",
+        "body",
+        "camera",
+        "clip",
+        "close",
+        "closer",
+        "crouched",
+        "depicts",
+        "down",
+        "downward",
+        "even",
+        "examining",
+        "gazing",
+        "gray",
+        "head",
+        "humanoid",
+        "intently",
+        "low",
+        "medium",
+        "metallic",
+        "now",
+        "perspective",
+        "post",
+        "robot",
+        "short",
+        "shows",
+        "speech",
+        "thanks",
+        "tilted",
+        "toward",
+        "vibrant",
+        "view",
+        "walking",
+        "walks",
+        "wasteland",
+        "watching",
+        "weathered",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A humanoid robot with a weathered white and gray metallic body walks toward the camera through a post-apocalyptic wasteland. The robot has glowing blue eyes and a smooth oval head. The scene is predominantly monochromatic with destroyed buildings and debris flanking both sides. Cracked concrete ground dominates the foreground. The low-angle shot emphasizes the robot's imposing presence against an overcast gray sky. The robot's mid-stride pose suggests purposeful forward movement through the desolate environment."
+        },
+        {
+          "seconds": 2,
+          "text": "Close-up low-angle view of the same robot now crouched down, examining a vibrant pink daisy flower with a yellow center growing from cracked pavement. The flower provides striking color contrast against the grayscale devastated backdrop. The robot's blue glowing eyes and facial lights are clearly visible as it leans forward. Warm orange light emanates from the crack where the flower grows. Ruined structures remain visible in the blurred background. The composition emphasizes discovery and curiosity."
+        },
+        {
+          "seconds": 3.9,
+          "text": "An even closer perspective shows the robot's head tilted downward, gazing intently at the pink flower. The robot's weathered gray metallic face displays multiple small blue LED lights arranged in a pattern suggesting facial features. The flower remains prominently positioned in the foreground with vivid magenta petals and orange-yellow center. Green stem and leaves add additional color. Warm backlighting creates a glowing effect around the flower. The intimate framing suggests a moment of wonder or connection."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "angle",
+    "apocalyptic",
+    "body",
+    "camera",
+    "clip",
+    "close",
+    "closer",
+    "crouched",
+    "depicts",
+    "down",
+    "downward",
+    "even",
+    "examining",
+    "gazing",
+    "gray",
+    "head",
+    "humanoid",
+    "intently",
+    "low",
+    "medium",
+    "metallic",
+    "now",
+    "perspective",
+    "post",
+    "robot",
+    "short",
+    "shows",
+    "speech",
+    "thanks",
+    "tilted",
+    "toward",
+    "vibrant",
+    "view",
+    "walking",
+    "walks",
+    "wasteland",
+    "watching",
+    "weathered",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

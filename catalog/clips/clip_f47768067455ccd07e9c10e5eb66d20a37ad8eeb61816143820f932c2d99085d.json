@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f47768067455ccd07e9c10e5eb66d20a37ad8eeb61816143820f932c2d99085d",
+  "sha256": "f47768067455ccd07e9c10e5eb66d20a37ad8eeb61816143820f932c2d99085d",
+  "bytes": 1692240,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "gravity_memories_shot_1_1766615138796.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:gravity_memories_shot_1_1766615138796"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A vintage brown leather wallet or small journal floating against pure black, rotating slowly as if in zero gravity. The object shows natural aging and patina, suggesting personal significance and memories attached to this keepsake.",
+      "transcript": "you",
+      "tags": [
+        "against",
+        "angle",
+        "appears",
+        "black",
+        "bottom",
+        "brass",
+        "brown",
+        "centered",
+        "closure",
+        "continues",
+        "depth",
+        "floating",
+        "full",
+        "journal",
+        "leather",
+        "medium",
+        "now",
+        "pure",
+        "rotated",
+        "showing",
+        "sits",
+        "slight",
+        "slightly",
+        "small",
+        "snap",
+        "speech",
+        "vintage",
+        "wallet",
+        "worn",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A worn brown leather wallet or journal with brass snap closure sits at the bottom of the frame against pure black background. The leather shows natural aging and patina. Minimal composition focuses attention on this single personal object floating in darkness."
+        },
+        {
+          "seconds": 3,
+          "text": "The same leather wallet/journal now appears more centered and slightly rotated, showing its full rectangular form. Rich brown leather with visible stitching along edges. The brass button clasp catches subtle light. Object appears to be floating or falling in zero gravity."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The wallet continues floating against black, now at a slight angle showing depth. Natural leather texture and wear patterns visible. The object maintains its suspended quality, suggesting weightlessness or a dream-like state."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "appears",
+    "black",
+    "bottom",
+    "brass",
+    "brown",
+    "centered",
+    "closure",
+    "continues",
+    "depth",
+    "floating",
+    "full",
+    "journal",
+    "leather",
+    "medium",
+    "now",
+    "pure",
+    "rotated",
+    "showing",
+    "sits",
+    "slight",
+    "slightly",
+    "small",
+    "snap",
+    "speech",
+    "vintage",
+    "wallet",
+    "worn",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

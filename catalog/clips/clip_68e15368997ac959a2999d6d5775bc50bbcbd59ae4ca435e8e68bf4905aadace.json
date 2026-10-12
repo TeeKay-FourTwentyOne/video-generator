@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_68e15368997ac959a2999d6d5775bc50bbcbd59ae4ca435e8e68bf4905aadace",
+  "sha256": "68e15368997ac959a2999d6d5775bc50bbcbd59ae4ca435e8e68bf4905aadace",
+  "bytes": 2596772,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767757762371_3bi2ln.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767757762371_3bi2ln"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A cinematic establishing shot of a quiet suburban neighborhood during golden hour, featuring a woman in casual clothing walking along a sidewalk. The scene captures the idyllic American suburban aesthetic with white picket fences, manicured lawns, and tree-lined streets bathed in warm evening light. The transcribed dialogue 'I'm full!' suggests the woman may be speaking as she walks.",
+      "transcript": "I'm full!",
+      "tags": [
+        "casting",
+        "centrally",
+        "cinematic",
+        "continues",
+        "curb",
+        "establishing",
+        "featuring",
+        "frame",
+        "full",
+        "fully",
+        "golden",
+        "hour",
+        "long",
+        "medium",
+        "moved",
+        "multi-scene",
+        "near",
+        "neighborhood",
+        "now",
+        "quiet",
+        "residential",
+        "scene",
+        "shadows",
+        "she",
+        "shot",
+        "sidewalk",
+        "speech",
+        "standing",
+        "street",
+        "suburban",
+        "sunlight",
+        "visible",
+        "warm",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A suburban residential street during golden hour with warm sunlight casting long shadows. On the left side, a woman in a white/cream sweater and blue jeans is partially visible at the edge of frame, appearing to walk on the sidewalk. The scene features well-maintained lawns, white picket fences, mature deciduous trees with yellow-green spring foliage, and single-family homes. Several parked cars line the street in the middle distance. The composition uses a wide establishing shot with cinematic letterboxing."
+        },
+        {
+          "seconds": 2,
+          "text": "The same suburban street scene continues with the woman now more fully visible in frame, standing on the sidewalk near a wooden mailbox post. She wears a cream-colored long-sleeve top and blue jeans, with shoulder-length dark hair. The golden hour lighting creates dramatic shadows across the asphalt road. White picket fences border the manicured green lawns on both sides. The street extends into the distance with parked vehicles and suburban homes visible. Cinematic wide-angle framing with letterbox bars."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has moved further into frame, now standing more centrally on the sidewalk near the curb. She faces toward the street, her full figure visible in the cream sweater and blue jeans. The warm evening sunlight continues to illuminate the scene from behind, creating a backlit effect on the trees. The suburban setting remains consistent with white fences, green lawns, parked cars, and residential homes. The composition maintains the wide establishing shot with cinematic letterboxing."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "casting",
+    "centrally",
+    "cinematic",
+    "continues",
+    "curb",
+    "establishing",
+    "featuring",
+    "frame",
+    "full",
+    "fully",
+    "golden",
+    "hour",
+    "long",
+    "medium",
+    "moved",
+    "multi-scene",
+    "near",
+    "neighborhood",
+    "now",
+    "quiet",
+    "residential",
+    "scene",
+    "shadows",
+    "she",
+    "shot",
+    "sidewalk",
+    "speech",
+    "standing",
+    "street",
+    "suburban",
+    "sunlight",
+    "visible",
+    "warm",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

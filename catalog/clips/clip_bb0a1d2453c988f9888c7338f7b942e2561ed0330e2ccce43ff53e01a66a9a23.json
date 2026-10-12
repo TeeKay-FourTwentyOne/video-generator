@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bb0a1d2453c988f9888c7338f7b942e2561ed0330e2ccce43ff53e01a66a9a23",
+  "sha256": "bb0a1d2453c988f9888c7338f7b942e2561ed0330e2ccce43ff53e01a66a9a23",
+  "bytes": 194276503,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 76.083333,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 1826,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hellzapoppin4_v20_clean_4k.mp4"
+  ],
+  "collections": [
+    "hellzapoppin4-loading-dock-2"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

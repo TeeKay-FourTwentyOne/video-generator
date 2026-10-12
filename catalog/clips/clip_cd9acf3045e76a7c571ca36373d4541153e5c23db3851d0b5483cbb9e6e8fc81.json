@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cd9acf3045e76a7c571ca36373d4541153e5c23db3851d0b5483cbb9e6e8fc81",
+  "sha256": "cd9acf3045e76a7c571ca36373d4541153e5c23db3851d0b5483cbb9e6e8fc81",
+  "bytes": 951960,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.25,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 54,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S3_v4.mp4"
+  ],
+  "collections": [
+    "church-grim"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

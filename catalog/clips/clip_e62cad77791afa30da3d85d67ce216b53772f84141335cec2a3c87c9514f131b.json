@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e62cad77791afa30da3d85d67ce216b53772f84141335cec2a3c87c9514f131b",
+  "sha256": "e62cad77791afa30da3d85d67ce216b53772f84141335cec2a3c87c9514f131b",
+  "bytes": 4102747,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_scroll_clip4_abyss.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_scroll_clip4_abyss"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip transitions from a black and white underwater kelp forest scene to a dark aquarium display featuring bioluminescent moon jellyfish. The jellyfish glow bright cyan against the deep blue-black water, with bubbles rising and illuminated coral visible at the bottom. The footage captures the ethereal, otherworldly quality of marine life in both natural and aquarium settings.",
+      "transcript": null,
+      "tags": [
+        "aquarium",
+        "bioluminescent",
+        "black",
+        "bright",
+        "clip",
+        "continuation",
+        "cyan",
+        "dark",
+        "featuring",
+        "forest",
+        "glowing",
+        "jellyfish",
+        "kelp",
+        "long",
+        "medium",
+        "moon",
+        "scene",
+        "showing",
+        "silent",
+        "tall",
+        "transitions",
+        "two",
+        "underwater",
+        "vertical",
+        "video",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Black and white underwater scene showing tall kelp forest with long vertical fronds extending upward toward the water surface. The kelp leaves are dark silhouettes against a bright, hazy background suggesting sunlight filtering through water. Coral formations visible on the sandy seafloor at the bottom. Small fish appear scattered in the middle distance. The composition creates a cathedral-like vertical perspective looking up through the kelp canopy. Shot in portrait orientation with dramatic contrast between dark vegetation and luminous water."
+        },
+        {
+          "seconds": 4,
+          "text": "Dark aquarium scene featuring two bioluminescent moon jellyfish glowing bright cyan blue against a deep navy black background. One jellyfish in upper left shows dome and trailing tentacles, another in lower right displays characteristic four-leaf clover pattern of reproductive organs. Streams of small white bubbles rise vertically through center frame. Bottom shows illuminated coral and rocks with blue and green accent lighting. A gray geometric shape visible in upper left corner suggests aquarium structure."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Continuation of the dark aquarium jellyfish scene with two cyan-glowing moon jellyfish. One partially visible in upper left corner, another centered in lower portion showing translucent dome with distinctive four circular gonads visible inside. Vertical stream of white bubbles continues rising through dark water. Bottom of frame shows rocky substrate with scattered blue and green bioluminescent lighting effects. Deep blue-black water creates dramatic contrast with the ethereal glowing jellyfish."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aquarium",
+    "bioluminescent",
+    "black",
+    "bright",
+    "clip",
+    "continuation",
+    "cyan",
+    "dark",
+    "featuring",
+    "forest",
+    "glowing",
+    "jellyfish",
+    "kelp",
+    "long",
+    "medium",
+    "moon",
+    "scene",
+    "showing",
+    "silent",
+    "tall",
+    "transitions",
+    "two",
+    "underwater",
+    "vertical",
+    "video",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

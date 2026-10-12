@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_951d216564aea1d1bec34ab1194b2aa558c35a297942eb655d722f6f8ecbb1e0",
+  "sha256": "951d216564aea1d1bec34ab1194b2aa558c35a297942eb655d722f6f8ecbb1e0",
+  "bytes": 11536978,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s5_disco.mp4"
+  ],
+  "collections": [
+    "floors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1435dd659e943bced504aad982dec7c9b971cf9c7708fb669f364cca011fa1db",
+  "sha256": "1435dd659e943bced504aad982dec7c9b971cf9c7708fb669f364cca011fa1db",
+  "bytes": 2636735,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_4_1766536484788.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_4_1766536484788"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Conference room plant wilting time-lapse from day to night. Dramatic backlit silhouette of the plant's collapse emphasizes the passage of an entire day on hold.",
+      "transcript": "여러분 덕분에 오늘도 맛있는 식사를 즐겼습니다.",
+      "tags": [
+        "backlight",
+        "backlit",
+        "blue",
+        "centered",
+        "collapsed",
+        "completely",
+        "conference",
+        "dark",
+        "day",
+        "defeat",
+        "down",
+        "dramatic",
+        "dramatically",
+        "golden",
+        "hanging",
+        "lapse",
+        "large",
+        "leaves",
+        "medium",
+        "night",
+        "now",
+        "office",
+        "plant",
+        "potted",
+        "room",
+        "scene",
+        "small",
+        "speech",
+        "strong",
+        "table",
+        "time",
+        "touching",
+        "wilted",
+        "wilting",
+        "windows"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Small potted plant centered on conference table, backlit by large windows. Office chairs visible in silhouette. The plant has upright leaves catching the light."
+        },
+        {
+          "seconds": 4,
+          "text": "Plant dramatically wilted, leaves hanging down in defeat. Strong golden backlight creates dramatic rim lighting on drooping foliage. Conference room setting maintained."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Scene now dark blue/night, plant completely collapsed with leaves touching table. Monitors or windows glow in background. The plant's death complete as day turns to night."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "backlight",
+    "backlit",
+    "blue",
+    "centered",
+    "collapsed",
+    "completely",
+    "conference",
+    "dark",
+    "day",
+    "defeat",
+    "down",
+    "dramatic",
+    "dramatically",
+    "golden",
+    "hanging",
+    "lapse",
+    "large",
+    "leaves",
+    "medium",
+    "night",
+    "now",
+    "office",
+    "plant",
+    "potted",
+    "room",
+    "scene",
+    "small",
+    "speech",
+    "strong",
+    "table",
+    "time",
+    "touching",
+    "wilted",
+    "wilting",
+    "windows"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

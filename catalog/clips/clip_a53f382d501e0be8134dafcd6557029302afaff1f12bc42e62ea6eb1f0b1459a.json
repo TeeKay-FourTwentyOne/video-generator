@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a53f382d501e0be8134dafcd6557029302afaff1f12bc42e62ea6eb1f0b1459a",
+  "sha256": "a53f382d501e0be8134dafcd6557029302afaff1f12bc42e62ea6eb1f0b1459a",
+  "bytes": 15048746,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot-2-take-2.mp4",
+    "veo_1789363105307_mokmbf.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

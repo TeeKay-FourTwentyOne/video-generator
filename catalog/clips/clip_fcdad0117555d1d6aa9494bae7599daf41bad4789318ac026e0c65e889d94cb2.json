@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fcdad0117555d1d6aa9494bae7599daf41bad4789318ac026e0c65e889d94cb2",
+  "sha256": "fcdad0117555d1d6aa9494bae7599daf41bad4789318ac026e0c65e889d94cb2",
+  "bytes": 1643474,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_3_1766536306065.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_3_1766536306065"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Modern chrome-framed clock showing time passing around 4:20. Alternative take with more contemporary clock design, same waiting-on-hold theme.",
+      "transcript": "You",
+      "tags": [
+        "alternative",
+        "approximately",
+        "around",
+        "black",
+        "blur",
+        "catches",
+        "chrome",
+        "clock",
+        "continues",
+        "face",
+        "frame",
+        "framed",
+        "hand",
+        "light",
+        "medium",
+        "minute",
+        "modern",
+        "motion",
+        "moved",
+        "passage",
+        "passing",
+        "progressing",
+        "showing",
+        "shows",
+        "silver",
+        "slightly",
+        "slow",
+        "speech",
+        "take",
+        "time",
+        "wall",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Silver/chrome-framed wall clock showing approximately 4:20. White face with black numerals, more modern styling than black-framed version. Window with blue sky and clouds visible at right."
+        },
+        {
+          "seconds": 3,
+          "text": "Clock shows time progressing, minute hand moved slightly. Some motion blur or soft focus effect visible. Modern office environment suggested."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Clock continues showing slow time passage. The chrome frame catches light. Persistent blue sky through window maintains consistent backdrop."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alternative",
+    "approximately",
+    "around",
+    "black",
+    "blur",
+    "catches",
+    "chrome",
+    "clock",
+    "continues",
+    "face",
+    "frame",
+    "framed",
+    "hand",
+    "light",
+    "medium",
+    "minute",
+    "modern",
+    "motion",
+    "moved",
+    "passage",
+    "passing",
+    "progressing",
+    "showing",
+    "shows",
+    "silver",
+    "slightly",
+    "slow",
+    "speech",
+    "take",
+    "time",
+    "wall",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

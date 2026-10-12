@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7e226a78501c84a69371c94e5d56f6faa210ac8ce2027868c171488c8547f917",
+  "sha256": "7e226a78501c84a69371c94e5d56f6faa210ac8ce2027868c171488c8547f917",
+  "bytes": 2164641,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_1_frost_sprocket.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_1_frost_sprocket"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Frost crystal footage with vivid magenta/pink color treatment. The psychedelic color overlay transforms natural ice patterns into surreal, otherworldly imagery while maintaining vintage film aesthetic.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "bright",
+        "brilliant",
+        "center",
+        "color",
+        "continues",
+        "crystal",
+        "dominates",
+        "film",
+        "footage",
+        "frost",
+        "glow",
+        "highlights",
+        "intensifying",
+        "magenta",
+        "medium",
+        "outward",
+        "overlay",
+        "patterns",
+        "pink",
+        "psychedelic",
+        "radiating",
+        "speech",
+        "sprocket",
+        "treatment",
+        "vivid",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Frost crystal patterns with vivid magenta/pink color overlay. Film sprocket borders visible. The ice formations glow in hot pink against darker purple background. Psychedelic reinterpretation of natural frost."
+        },
+        {
+          "seconds": 4,
+          "text": "Magenta frost continues with bright white-pink highlights intensifying. The color treatment creates surreal, otherworldly aesthetic. Film grain and sprockets maintain vintage feel despite unnatural colors."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Brilliant white-pink glow dominates center, frost patterns radiating outward. The intense color saturation creates dreamlike, almost infrared quality to the ice crystals."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bright",
+    "brilliant",
+    "center",
+    "color",
+    "continues",
+    "crystal",
+    "dominates",
+    "film",
+    "footage",
+    "frost",
+    "glow",
+    "highlights",
+    "intensifying",
+    "magenta",
+    "medium",
+    "outward",
+    "overlay",
+    "patterns",
+    "pink",
+    "psychedelic",
+    "radiating",
+    "speech",
+    "sprocket",
+    "treatment",
+    "vivid",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

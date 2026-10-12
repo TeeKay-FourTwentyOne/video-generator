@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d3e3ea25f5e9d9579b9ed3165436232119ad7f46e7aeaf0e4b2addcdb2e3f7df",
+  "sha256": "d3e3ea25f5e9d9579b9ed3165436232119ad7f46e7aeaf0e4b2addcdb2e3f7df",
+  "bytes": 1073301,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_1_1766531793662.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_1_1766531793662"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Static shot of a beige office landline telephone on a desk, establishing the \"hold music\" concept. The phone sits untouched throughout, suggesting someone waiting on the line.",
+      "transcript": null,
+      "tags": [
+        "angle",
+        "background",
+        "beige",
+        "close",
+        "coiled",
+        "cord",
+        "darker",
+        "desk",
+        "different",
+        "establishing",
+        "frame",
+        "gray",
+        "handset",
+        "hold",
+        "landline",
+        "light",
+        "medium",
+        "music",
+        "office",
+        "phone",
+        "prominent",
+        "remains",
+        "rests",
+        "shot",
+        "silent",
+        "slightly",
+        "static",
+        "stationary",
+        "telephone",
+        "top",
+        "visible"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up of a beige office landline telephone on a light gray desk. The handset rests in its cradle with coiled cord visible. Numeric keypad with buttons clearly shown. Shallow depth of field with blurred background."
+        },
+        {
+          "seconds": 3,
+          "text": "Same beige office phone from slightly different angle. The handset and coiled cord prominent in frame. Clean office environment with neutral tones. Static composition suggesting waiting or anticipation."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The office phone remains stationary on the desk. Darker background visible at top of frame. The phone appears untouched, emphasizing the concept of being on hold or waiting for a call."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "angle",
+    "background",
+    "beige",
+    "close",
+    "coiled",
+    "cord",
+    "darker",
+    "desk",
+    "different",
+    "establishing",
+    "frame",
+    "gray",
+    "handset",
+    "hold",
+    "landline",
+    "light",
+    "medium",
+    "music",
+    "office",
+    "phone",
+    "prominent",
+    "remains",
+    "rests",
+    "shot",
+    "silent",
+    "slightly",
+    "static",
+    "stationary",
+    "telephone",
+    "top",
+    "visible"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

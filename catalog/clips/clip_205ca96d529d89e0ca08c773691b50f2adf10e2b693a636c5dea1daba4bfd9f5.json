@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_205ca96d529d89e0ca08c773691b50f2adf10e2b693a636c5dea1daba4bfd9f5",
+  "sha256": "205ca96d529d89e0ca08c773691b50f2adf10e2b693a636c5dea1daba4bfd9f5",
+  "bytes": 17081499,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 144.766667,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "30/1",
+    "frameCount": 4343,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "post_training_v1_4k.mp4"
+  ],
+  "collections": [
+    "post-training"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_867b646faa95487058f38a6de6ddb77a323d6b10035ac9edb9c6af0cb29eaa17",
+  "sha256": "867b646faa95487058f38a6de6ddb77a323d6b10035ac9edb9c6af0cb29eaa17",
+  "bytes": 6123162,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539227541_tpbqfp.mp4"
+  ],
+  "collections": [
+    "a_solitary_astronaut_floats_th_1767539132269"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539227541_tpbqfp"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Ancient alien symbols suddenly ignite across the submerged cavern walls in cascading waves of brilliant bioluminescent fire, their otherworldly script pulsing and flaring with increasing urgency and intensity. An astronaut in a sleek space suit moves with newfound purpose through the glowing underwater chamber, their movements fluid and determined as they're drawn toward the mysterious heart of the cavern. The water itself shimmers and crackles with electric blue energy, creating rippling patterns of light that dance across the walls. Camera pushes forward with a smooth dolly movement, following the astronaut's purposeful advance while tilting slightly upward to capture the full majesty of the awakening symbols. The lighting builds from deep oceanic blues and teals to brilliant bioluminescent whites and electric blues, with pulsing accents that create a dreamlike, almost hypnotic atmosphere. The energy intensifies throughout the shot, building to a crescendo of discovery as more symbols blaze to life in perfect synchronization, creating an overwhelming sense of ancient power awakening. Cinematic sci-fi aesthetic with ethereal underwater lighting effects and mysterious alien technology coming alive.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_daec895d6fa04fe39698a32669f816abb754540a05ece0233e5de60c02e1bf15",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Ancient alien symbols suddenly ignite across the submerged cavern walls in cascading waves of brilliant bioluminescent fire, their otherworldly script pulsing and flaring with increasing urgency and intensity. An astronaut in a sleek space suit moves with newfound purpose through the glowing underwater chamber, their movements fluid and determined as they're drawn toward the mysterious heart of the cavern. The water itself shimmers and crackles with electric blue energy, creating rippling patterns of light that dance across the walls. Camera pushes forward with a smooth dolly movement, following the astronaut's purposeful advance while tilting slightly upward to capture the full majesty of the awakening symbols. The lighting builds from deep oceanic blues and teals to brilliant bioluminescent whites and electric blues, with pulsing accents that create a dreamlike, almost hypnotic atmosphere. The energy intensifies throughout the shot, building to a crescendo of discovery as more symbols blaze to life in perfect synchronization, creating an overwhelming sense of ancient power awakening. Cinematic sci-fi aesthetic with ethereal underwater lighting effects and mysterious alien technology coming alive.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_daec895d6fa04fe39698a32669f816abb754540a05ece0233e5de60c02e1bf15",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:06:14.480Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This sci-fi video clip shows an astronaut walking through a mysterious alien cave tunnel illuminated by bioluminescent cyan floor patterns and floating glowing symbols. The astronaut progresses deeper into the tunnel throughout the clip while alien text scrolls above. The scene concludes with a 'Thank you for watching' message, suggesting this is the end of a larger video presentation.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "alien",
+        "appearing",
+        "astronaut",
+        "away",
+        "behind",
+        "blue",
+        "cave",
+        "cavernous",
+        "clip",
+        "continues",
+        "dark",
+        "deeper",
+        "frame",
+        "illuminated",
+        "medium",
+        "move",
+        "mysterious",
+        "progressed",
+        "sci",
+        "shown",
+        "shows",
+        "slightly",
+        "smaller",
+        "spacesuit",
+        "speech",
+        "still",
+        "thank",
+        "they",
+        "tunnel",
+        "video",
+        "viewed",
+        "walking",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An astronaut in a white spacesuit is shown from behind, walking through a dark, cavernous tunnel with blue-tinted rocky walls. The floor features glowing cyan/turquoise bioluminescent patterns creating an ethereal effect. Above the astronaut, multiple rows of glowing white alien or futuristic symbols/text float in the air, decreasing in size with distance. The scene has a strong sci-fi atmosphere with dramatic blue lighting contrasting against the dark cave environment. The vertical framing emphasizes the tunnel's depth."
+        },
+        {
+          "seconds": 2,
+          "text": "The astronaut continues walking deeper into the illuminated cave tunnel, still viewed from behind. The glowing alien symbols above have shifted slightly, with some characters appearing more prominent. The cyan bioluminescent floor patterns continue to cast an otherworldly glow upward. The cave walls maintain their dark blue, textured appearance. The astronaut's white suit creates a strong silhouette against the glowing elements. The composition draws the eye forward through the tunnel toward the mysterious floating text."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The astronaut has progressed further into the cave, appearing slightly smaller in frame as they move away from the camera. The floating alien symbols have scrolled or shifted, with different characters now visible at the top of frame. The glowing floor patterns remain vibrant with cyan/turquoise energy-like veins. The tunnel appears to open up slightly ahead. The overall blue color palette dominates, creating a mysterious, alien atmosphere. The vertical composition continues to emphasize the journey forward into the unknown."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alien",
+    "appearing",
+    "astronaut",
+    "away",
+    "behind",
+    "blue",
+    "cave",
+    "cavernous",
+    "clip",
+    "continues",
+    "dark",
+    "deeper",
+    "frame",
+    "illuminated",
+    "medium",
+    "move",
+    "mysterious",
+    "progressed",
+    "sci",
+    "shown",
+    "shows",
+    "slightly",
+    "smaller",
+    "spacesuit",
+    "speech",
+    "still",
+    "thank",
+    "they",
+    "tunnel",
+    "video",
+    "viewed",
+    "walking",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

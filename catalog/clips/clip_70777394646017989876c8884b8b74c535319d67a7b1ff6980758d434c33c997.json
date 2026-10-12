@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_70777394646017989876c8884b8b74c535319d67a7b1ff6980758d434c33c997",
+  "sha256": "70777394646017989876c8884b8b74c535319d67a7b1ff6980758d434c33c997",
+  "bytes": 9577281,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S06-v2.mp4",
+    "veo_1791078209639_28hq80.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Locked medium shot, one woman. First one second she remains looking up, then lowers her eyes toward the WOODEN PEG already between the fingers of her raised hand. That hand squeezes the peg and draws it DOWN and back toward her hip. At the instant the peg leaves the rope, the WIND pulls the white linen sharply UP and RIGHT, completely away from her, without her touching or lifting the cloth. Her other hand stays resting on the black railing for the entire six seconds. Her peg-holding hand moves DOWN ONLY, never upward, and ends resting beside her hip with the small wooden peg still in it. The released sheet immediately rises out of the TOP RIGHT edge on its own and does not come back. Empty space remains where that sheet was. The next sheet farther away stays pinned. She watches upward after it, quiet neutral face. The performance is extremely small: eyes, pinching fingers, lowered hand. Cloth carries all the movement. Natural linen and physical wind. No throwing, waving, flapping, lifting or gathering the sheet. No other people, hands, extra pegs, objects, text or clouds. Same blue headscarf black dress floral apron bare wrists, architecture, daylight and camera. Silent, six seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3cf34a41aa9145f93e2e623bf3b43618a1485b2e0c8374f7dd30315ce9cb4e33",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1817154525,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

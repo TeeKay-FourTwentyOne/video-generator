@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b1aaab7b99fa23eff6f9395f1a6c39e1beb4f4bc10f680efa95c1a9c77d55138",
+  "sha256": "b1aaab7b99fa23eff6f9395f1a6c39e1beb4f4bc10f680efa95c1a9c77d55138",
+  "bytes": 1782283,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 47,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 1410,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "drift_poc.mp4"
+  ],
+  "collections": [
+    "false-color-motion"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

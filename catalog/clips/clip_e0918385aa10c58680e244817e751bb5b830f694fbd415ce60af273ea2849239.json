@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e0918385aa10c58680e244817e751bb5b830f694fbd415ce60af273ea2849239",
+  "sha256": "e0918385aa10c58680e244817e751bb5b830f694fbd415ce60af273ea2849239",
+  "bytes": 12620148,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "flir_zoom_1080.mp4"
+  ],
+  "collections": [
+    "dual-use"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

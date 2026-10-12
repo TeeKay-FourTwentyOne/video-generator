@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9cf4a800191bb0a8851a3eb42902f86e4751f0af470b3a295ad408d59682b003",
+  "sha256": "9cf4a800191bb0a8851a3eb42902f86e4751f0af470b3a295ad408d59682b003",
+  "bytes": 2946524,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "X5.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

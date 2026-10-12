@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_386020393bd5df65cc2701991e8c57c6496f4ab8cb5da77281e2ade159881bd7",
+  "sha256": "386020393bd5df65cc2701991e8c57c6496f4ab8cb5da77281e2ade159881bd7",
+  "bytes": 1917373,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767657546738_reoda6.mp4"
+  ],
+  "collections": [
+    "test_dialogue_veo_001"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767657546738_reoda6"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A man in his 30s with short brown hair wearing a gray sweater sits alone at an outdoor cafe table, his coffee cup cradled between his hands. Golden hour sunlight filters through nearby trees, casting dappled shadows across the weathered wooden table. He glances up, his expression shifting from contemplative to uncertain recognition. As someone approaches from off-frame, he slowly rises from his chair with visible hesitation, his hand still resting on the table for support. The camera holds a medium shot at eye level, capturing the delicate interplay of warm sunset light on his face contrasted with the cool blue shadows beginning to creep across the cafe terrace. Soft focus edges frame the scene with a dreamy, nostalgic quality as autumn leaves drift lazily in the background. His movements are tentative and naturalistic, conveying the weight of unspoken history in this chance encounter.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_56361947d07645fc9aad36ec34b6339067ce02810d9db1b088ca50562ec8fc3f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A man in his 30s with short brown hair wearing a gray sweater sits alone at an outdoor cafe table, his coffee cup cradled between his hands. Golden hour sunlight filters through nearby trees, casting dappled shadows across the weathered wooden table. He glances up, his expression shifting from contemplative to uncertain recognition. As someone approaches from off-frame, he slowly rises from his chair with visible hesitation, his hand still resting on the table for support. The camera holds a medium shot at eye level, capturing the delicate interplay of warm sunset light on his face contrasted with the cool blue shadows beginning to creep across the cafe terrace. Soft focus edges frame the scene with a dreamy, nostalgic quality as autumn leaves drift lazily in the background. His movements are tentative and naturalistic, conveying the weight of unspoken history in this chance encounter.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_56361947d07645fc9aad36ec34b6339067ce02810d9db1b088ca50562ec8fc3f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:58:14.616Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a young man in a gray sweater having a conversation at an outdoor café table during autumn. He transitions from holding a cup to a more relaxed posture while engaging with someone across from him. The scene captures a casual urban moment with warm lighting and fallen leaves creating an autumnal atmosphere.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "arms",
+        "back",
+        "both",
+        "brown",
+        "caf",
+        "clip",
+        "conversation",
+        "gray",
+        "hair",
+        "having",
+        "his",
+        "leaning",
+        "light",
+        "maintains",
+        "man",
+        "medium",
+        "now",
+        "one",
+        "outdoor",
+        "position",
+        "seated",
+        "shows",
+        "similar",
+        "sits",
+        "slightly",
+        "speech",
+        "spread",
+        "sweater",
+        "table",
+        "weathered",
+        "wider",
+        "wooden",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young man with light brown hair sits at a weathered wooden outdoor table, wearing a gray crewneck sweater. He holds a small white cup with both hands, looking directly ahead with a neutral, attentive expression. The setting is an autumn urban street scene with fallen yellow leaves scattered on the ground. Behind him, blurred buildings, parked cars, and trees with autumn foliage are visible. Warm natural lighting illuminates his face. A partial view of another person's shoulder and head appears on the right edge of frame."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man is now leaning back slightly with his arms spread wider, one hand resting on the table edge. A paper coffee cup now sits on the wooden table in front of him. His expression appears more contemplative or questioning as he looks toward the person across from him. The autumn street setting remains consistent with fallen leaves, parked vehicles, and urban architecture in the soft-focused background. The composition maintains the over-the-shoulder framing with the other person visible on the right."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man maintains a similar seated position at the outdoor wooden table, with both arms resting at his sides. The paper coffee cup remains centered on the table. His facial expression is calm and attentive, looking toward his conversation partner. The autumn atmosphere continues with warm lighting, scattered leaves on the cobblestone ground, and blurred urban elements including trees, buildings, and parked cars in the background. The over-the-shoulder shot composition remains consistent throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_034",
+      "name": "James",
+      "description": "Young man with wavy brown hair, grey crewneck sweater, sitting at outdoor cafe table with coffee, autumn leaves on ground",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "arms",
+    "back",
+    "both",
+    "brown",
+    "caf",
+    "clip",
+    "conversation",
+    "gray",
+    "hair",
+    "having",
+    "his",
+    "leaning",
+    "light",
+    "maintains",
+    "man",
+    "medium",
+    "now",
+    "one",
+    "outdoor",
+    "position",
+    "seated",
+    "shows",
+    "similar",
+    "sits",
+    "slightly",
+    "speech",
+    "spread",
+    "sweater",
+    "table",
+    "weathered",
+    "wider",
+    "wooden",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

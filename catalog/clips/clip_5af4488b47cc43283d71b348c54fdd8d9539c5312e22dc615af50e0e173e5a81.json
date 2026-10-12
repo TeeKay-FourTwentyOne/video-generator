@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5af4488b47cc43283d71b348c54fdd8d9539c5312e22dc615af50e0e173e5a81",
+  "sha256": "5af4488b47cc43283d71b348c54fdd8d9539c5312e22dc615af50e0e173e5a81",
+  "bytes": 3210580,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767596770227_2kwauh.mp4"
+  ],
+  "collections": [
+    "two_estranged_siblings_marcus__1767596552762"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767596770227_2kwauh"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. Medium two-shot in a dim, narrow hallway with muted winter light filtering through an unseen window. The man emerges from deep shadow on the left side of frame, his weathered face half-hidden in darkness. The woman steps into frame from the right, soft window light catching her tired eyes and the side of her face. Empty space stretches between them like a chasm. The bright red scarf creates stark visual tension against his earth-toned jacket. Handheld camera with subtle breathing movement, documentary-style intimacy. High contrast lighting emphasizes the shadows, creating sharp divisions between light and dark. The hallway walls press in from both sides, creating a claustrophobic frame. Desaturated color palette except for the punctuation of red. They hold their positions, the stillness heavy and charged with unspoken tension.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8da27e974f23be0268e406d445b2c4d33b27ccc590d200b5b7ab53ae5d3eb7ba",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. Medium two-shot in a dim, narrow hallway with muted winter light filtering through an unseen window. The man emerges from deep shadow on the left side of frame, his weathered face half-hidden in darkness. The woman steps into frame from the right, soft window light catching her tired eyes and the side of her face. Empty space stretches between them like a chasm. The bright red scarf creates stark visual tension against his earth-toned jacket. Handheld camera with subtle breathing movement, documentary-style intimacy. High contrast lighting emphasizes the shadows, creating sharp divisions between light and dark. The hallway walls press in from both sides, creating a claustrophobic frame. Desaturated color palette except for the punctuation of red. They hold their positions, the stillness heavy and charged with unspoken tension.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8da27e974f23be0268e406d445b2c4d33b27ccc590d200b5b7ab53ae5d3eb7ba",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T07:04:41.627Z",
+      "parameters": {
+        "durationSeconds": 10,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows two people—a middle-aged bearded man in workwear and a younger woman with a red scarf—standing together in a dimly lit interior room, both displaying serious and concerned expressions. The camera gradually moves closer throughout the sequence, intensifying the emotional weight of the scene. Japanese text appears as a closing message thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "aged",
+        "bearded",
+        "clip",
+        "close",
+        "closest",
+        "dimly",
+        "final",
+        "frame",
+        "framing",
+        "individuals",
+        "interior",
+        "jacket",
+        "left",
+        "lit",
+        "man",
+        "medium",
+        "middle",
+        "pair",
+        "people",
+        "room",
+        "shown",
+        "shows",
+        "slightly",
+        "speech",
+        "stand",
+        "tan",
+        "tighter",
+        "two",
+        "workwear",
+        "yet",
+        "younger"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people stand in a dimly lit interior room. On the left, a middle-aged man with gray hair and beard wears a tan canvas jacket over a blue plaid flannel shirt, looking downward with a serious expression. On the right, a younger woman with dark curly hair wears a black top with a bright red scarf and a pendant necklace, gazing forward with concern. Natural light enters from a window on the right. The composition is a medium shot with muted, earthy tones."
+        },
+        {
+          "seconds": 4,
+          "text": "The same two individuals are shown in a slightly tighter framing. The bearded man in the tan jacket now looks more directly forward with a stern, contemplative expression. The woman with the red scarf maintains her worried gaze, her curly hair loosely pulled back. The interior setting remains dim with natural window light illuminating the right side. A doorway is visible in the background. The camera has moved slightly closer, emphasizing their serious demeanor."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The final frame shows the pair in the closest framing yet, a medium close-up. The man's weathered face and gray beard are more prominent, his expression stoic and watchful. The woman's face shows subtle distress, her dark eyes conveying worry. Her red scarf provides the main color accent against the muted browns and blacks. The window light creates soft illumination on the right. Both subjects appear stationary, facing something off-camera with apprehension."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aged",
+    "bearded",
+    "clip",
+    "close",
+    "closest",
+    "dimly",
+    "final",
+    "frame",
+    "framing",
+    "individuals",
+    "interior",
+    "jacket",
+    "left",
+    "lit",
+    "man",
+    "medium",
+    "middle",
+    "pair",
+    "people",
+    "room",
+    "shown",
+    "shows",
+    "slightly",
+    "speech",
+    "stand",
+    "tan",
+    "tighter",
+    "two",
+    "workwear",
+    "yet",
+    "younger"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

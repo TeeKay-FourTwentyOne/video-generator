@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bc75707095f02e1823a685c1074ee4a12eee0db248ceb2166549470ac757be60",
+  "sha256": "bc75707095f02e1823a685c1074ee4a12eee0db248ceb2166549470ac757be60",
+  "bytes": 52062410,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 48.166667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 1156,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "film_debug.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

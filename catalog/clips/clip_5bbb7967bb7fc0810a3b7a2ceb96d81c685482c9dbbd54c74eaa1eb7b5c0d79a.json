@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5bbb7967bb7fc0810a3b7a2ceb96d81c685482c9dbbd54c74eaa1eb7b5c0d79a",
+  "sha256": "5bbb7967bb7fc0810a3b7a2ceb96d81c685482c9dbbd54c74eaa1eb7b5c0d79a",
+  "bytes": 2501137,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "N7_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Medium close shot at a small writing desk inside a pool of brass oil lamp light, the rest of the room dark. {{CORA_LOCK}} She sits counting a small handful of coins into a dented tin cash box, laying them in one at a time. She picks up a folded slip of paper, holds it a moment, lets out the faintest breath, and drops it into the box on top of the coins. She glances aside at an open ledger on the desk, then closes the tin lid gently with both hands until the latch clicks shut. Brass chimney oil lamps only. Rain running down dark window glass. Deep brown shadow, dark walnut panelling. Sound: coins set down one by one, a rustle of paper, the small metallic click of a latch, steady rain, a floorboard creaking upstairs.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_30aeaf328c13fe2e0fe42a55aa45a4d3f64fd20975134bd5dc545378b5ba2f23",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

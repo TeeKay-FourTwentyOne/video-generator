@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_017802fffaf17b4919f511c5659965e9953e1183ca4b2ce1f71ab4470729051d",
+  "sha256": "017802fffaf17b4919f511c5659965e9953e1183ca4b2ce1f71ab4470729051d",
+  "bytes": 4924416,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_arrow_2.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_arrow_2"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Second close-up portrait of the Sagittarius character exploring his philosophical side. The auburn-haired young man transitions from bright smile through thoughtful gesture to peaceful contentment with eyes closed. Features dialogue 'Why choose? Why choose?' suggesting the sign's duality and open-minded nature.",
+      "transcript": "Why choose? Why choose?",
+      "tags": [
+        "appears",
+        "auburn",
+        "bright",
+        "broad",
+        "centaur",
+        "character",
+        "choose",
+        "close",
+        "closed",
+        "contentment",
+        "conversational",
+        "exploring",
+        "eyes",
+        "face",
+        "freckled",
+        "gentle",
+        "genuine",
+        "haired",
+        "half",
+        "hand",
+        "his",
+        "man",
+        "medium",
+        "near",
+        "peaceful",
+        "philosophical",
+        "portrait",
+        "raised",
+        "sagittarius",
+        "second",
+        "side",
+        "smile",
+        "speech",
+        "thoughtful",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up of the auburn-haired centaur character's face, broad genuine smile, bright eyes. Freckled complexion glowing in warm sunlight. Forest background soft and out of focus. Radiates optimism and adventure."
+        },
+        {
+          "seconds": 4,
+          "text": "The young man with a thoughtful half-smile, hand raised near face in conversational gesture. Curly red hair backlit by sun. Expression suggests he's making a philosophical point - fitting the Sagittarius seeker archetype."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Eyes closed in peaceful contentment, gentle smile on freckled face. The character appears to be savoring a moment of satisfaction or inner peace. Warm golden light continues to illuminate the scene."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_005",
+      "name": "Archer",
+      "description": "Young man with curly red hair, warm smile, Sagittarius text overlay, cheerful demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appears",
+    "auburn",
+    "bright",
+    "broad",
+    "centaur",
+    "character",
+    "choose",
+    "close",
+    "closed",
+    "contentment",
+    "conversational",
+    "exploring",
+    "eyes",
+    "face",
+    "freckled",
+    "gentle",
+    "genuine",
+    "haired",
+    "half",
+    "hand",
+    "his",
+    "man",
+    "medium",
+    "near",
+    "peaceful",
+    "philosophical",
+    "portrait",
+    "raised",
+    "sagittarius",
+    "second",
+    "side",
+    "smile",
+    "speech",
+    "thoughtful",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

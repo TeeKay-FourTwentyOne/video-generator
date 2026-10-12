@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_85e79298503144a242507024e61f4d30eb522aea3c61fbe4ae2a29c63e2cb815",
+  "sha256": "85e79298503144a242507024e61f4d30eb522aea3c61fbe4ae2a29c63e2cb815",
+  "bytes": 1116099,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 12,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 288,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "moon_to_plate.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

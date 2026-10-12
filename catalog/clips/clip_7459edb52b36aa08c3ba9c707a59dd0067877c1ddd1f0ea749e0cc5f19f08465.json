@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7459edb52b36aa08c3ba9c707a59dd0067877c1ddd1f0ea749e0cc5f19f08465",
+  "sha256": "7459edb52b36aa08c3ba9c707a59dd0067877c1ddd1f0ea749e0cc5f19f08465",
+  "bytes": 2688941,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "N5_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "A close shot looking down onto a worn oilcloth tabletop in warm oil lamp light, hands only, faces out of frame. An elderly man's weathered hand counts small worn coins out of his cupped palm and sets them down one at a time in a short row on the cloth — then stops, because there are no more. He sets a folded slip of paper down beside the coins, still folded, and slides a small wire basket of brown eggs into frame beside it. A young woman's hands come in and gather the coins together without hurry, and after a beat one of her hands comes to rest on the back of his. Neither hand pulls away quickly. Brass chimney oil lamps only. Rain running down dark window glass. Deep brown shadow, dark walnut panelling. Sound: small coins set down on wood, a soft rustle of paper, a chair shifting somewhere behind, steady rain.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ea0bb2b0181dd029c3ab3e3e96dfdce8afd6bc3119ae8d34d8b0cfa2dd83727c",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

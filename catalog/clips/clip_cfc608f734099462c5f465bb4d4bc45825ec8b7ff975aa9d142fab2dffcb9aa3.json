@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cfc608f734099462c5f465bb4d4bc45825ec8b7ff975aa9d142fab2dffcb9aa3",
+  "sha256": "cfc608f734099462c5f465bb4d4bc45825ec8b7ff975aa9d142fab2dffcb9aa3",
+  "bytes": 4272978,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v2_stinger_reversed.mp4"
+  ],
+  "collections": [
+    "hall-of-mirrors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

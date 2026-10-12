@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1cadccec53e8f510a50560d11a83557399632752047af5ca94d65b39a1808085",
+  "sha256": "1cadccec53e8f510a50560d11a83557399632752047af5ca94d65b39a1808085",
+  "bytes": 11676806,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_scroll_clip3_kelp.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_scroll_clip3_kelp"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This underwater video transitions from a black and white coral reef scene with butterflyfish to a colorful kelp forest environment. The footage showcases marine biodiversity including tropical fish, coral formations, and towering kelp stalks bathed in natural sunlight filtering through turquoise water. The vertical 9:16 format emphasizes the height and depth of these underwater ecosystems.",
+      "transcript": null,
+      "tags": [
+        "black",
+        "brown",
+        "butterflyfish",
+        "color",
+        "colorful",
+        "continuation",
+        "coral",
+        "displayed",
+        "forest",
+        "fronds",
+        "full",
+        "golden",
+        "kelp",
+        "medium",
+        "multiple",
+        "prominently",
+        "reef",
+        "scene",
+        "showing",
+        "silent",
+        "swimming",
+        "tall",
+        "transitions",
+        "underwater",
+        "vibrant",
+        "video",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Black and white underwater scene showing a coral reef with multiple butterflyfish swimming above table corals. The fish display distinctive black and white striped patterns on their bodies. Various coral formations fill the frame, including branching and plate corals with textured surfaces. The monochromatic treatment creates a dramatic, artistic effect. Camera angle is slightly elevated, looking down at the reef. The composition is dense with marine life scattered throughout the upper portion of the frame."
+        },
+        {
+          "seconds": 4,
+          "text": "Vibrant underwater kelp forest scene in full color. Multiple tall kelp stalks with golden-brown and olive-green blade-shaped leaves extend vertically through turquoise-blue water. Light filters down from above, illuminating the kelp fronds. The seafloor is visible below with coral formations. A few small silvery fish are visible swimming between the kelp stalks in the middle distance. The camera angle looks upward through the kelp canopy, creating depth and dimension."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Continuation of the kelp forest scene with golden-brown kelp fronds prominently displayed in the foreground on both sides. A school of small silvery fish swims through the center of the frame between the kelp stalks. The turquoise water provides beautiful contrast against the warm-toned kelp. Coral-covered seafloor visible at the bottom. Sunlight penetrates from above, creating natural lighting. The vertical composition emphasizes the height of the kelp forest environment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "black",
+    "brown",
+    "butterflyfish",
+    "color",
+    "colorful",
+    "continuation",
+    "coral",
+    "displayed",
+    "forest",
+    "fronds",
+    "full",
+    "golden",
+    "kelp",
+    "medium",
+    "multiple",
+    "prominently",
+    "reef",
+    "scene",
+    "showing",
+    "silent",
+    "swimming",
+    "tall",
+    "transitions",
+    "underwater",
+    "vibrant",
+    "video",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

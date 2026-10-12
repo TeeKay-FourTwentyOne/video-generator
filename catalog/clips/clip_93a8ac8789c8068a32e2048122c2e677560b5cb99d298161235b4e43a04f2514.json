@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_93a8ac8789c8068a32e2048122c2e677560b5cb99d298161235b4e43a04f2514",
+  "sha256": "93a8ac8789c8068a32e2048122c2e677560b5cb99d298161235b4e43a04f2514",
+  "bytes": 8746757,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-v1.mp4",
+    "veo_1791067404684_won7x5.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

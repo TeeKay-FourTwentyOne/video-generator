@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1c4ef202ddb8e5e0a3f2d9cf9e2cdccd67b489ecb50b7825a97e8fe8df04da6c",
+  "sha256": "1c4ef202ddb8e5e0a3f2d9cf9e2cdccd67b489ecb50b7825a97e8fe8df04da6c",
+  "bytes": 4948198,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "N06.mp4",
+    "veo_1790653721752_n7ky4f.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_87bea2aa00124701d6bbb59f19a6516a784ad38578ffdd5a70449bb9f1ee3381",
+  "sha256": "87bea2aa00124701d6bbb59f19a6516a784ad38578ffdd5a70449bb9f1ee3381",
+  "bytes": 1396781,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767488470718_q4gs5w.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767488470718_q4gs5w"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A red apple slowly rotating on a white surface, soft studio lighting, smooth motion, 9:16 vertical",
+      "promptStatus": "recorded",
+      "promptId": "prompt_667c8ada80d364738cb9a86c8ca7f7898442d4d8f11a06176ae6427ed02f48af",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A red apple slowly rotating on a white surface, soft studio lighting, smooth motion, 9:16 vertical",
+      "promptStatus": "recorded",
+      "promptId": "prompt_667c8ada80d364738cb9a86c8ca7f7898442d4d8f11a06176ae6427ed02f48af",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T01:00:26.287Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short video clip showcases a single red apple rotating slowly against a clean white background in a product photography style. The apple displays a glossy, deep red surface with natural variations and a brown stem, filmed with consistent studio lighting. The clip appears to be an outro segment with the spoken message thanking viewers for watching.",
+      "transcript": "Thank you so much for watching !",
+      "tags": [
+        "against",
+        "appears",
+        "apple",
+        "background",
+        "centered",
+        "clip",
+        "continues",
+        "displayed",
+        "glossy",
+        "identical",
+        "medium",
+        "much",
+        "nearly",
+        "now",
+        "position",
+        "pure",
+        "red",
+        "rotating",
+        "short",
+        "showcases",
+        "showing",
+        "single",
+        "slightly",
+        "slowly",
+        "speech",
+        "thank",
+        "video",
+        "viewing",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A single glossy red apple is centered against a pure white background. The apple displays a vibrant crimson color with small yellow-orange patches visible on the upper right side. A brown stem extends upward from the top. The apple's surface shows natural light reflections creating white highlights on its smooth, waxy skin. Small natural speckles are visible across the surface. The composition is clean and minimalist with a subtle reflection visible beneath the fruit on the white surface."
+        },
+        {
+          "seconds": 2,
+          "text": "The same red apple appears in a nearly identical position, centered on the white background. The viewing angle has shifted very slightly, showing a more uniform red coloration across the surface. The yellow-orange patch is now visible near the stem area at the top. Light reflections create bright highlights on the left side of the apple. The brown stem remains prominently visible. The clean studio-style lighting maintains consistent illumination with a soft reflection on the surface below."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The red apple continues to be displayed against the white background, now showing a slightly different angle. The apple appears to have rotated slightly, revealing a more uniformly deep red surface. The stem is positioned slightly to the right. White light reflections appear on the upper left portion of the apple's glossy surface. The composition remains centered and minimalist, with the subtle surface reflection still visible below. The lighting is bright and even throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "appears",
+    "apple",
+    "background",
+    "centered",
+    "clip",
+    "continues",
+    "displayed",
+    "glossy",
+    "identical",
+    "medium",
+    "much",
+    "nearly",
+    "now",
+    "position",
+    "pure",
+    "red",
+    "rotating",
+    "short",
+    "showcases",
+    "showing",
+    "single",
+    "slightly",
+    "slowly",
+    "speech",
+    "thank",
+    "video",
+    "viewing",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

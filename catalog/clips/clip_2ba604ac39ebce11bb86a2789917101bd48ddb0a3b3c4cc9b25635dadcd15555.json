@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2ba604ac39ebce11bb86a2789917101bd48ddb0a3b3c4cc9b25635dadcd15555",
+  "sha256": "2ba604ac39ebce11bb86a2789917101bd48ddb0a3b3c4cc9b25635dadcd15555",
+  "bytes": 32932670,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "wall_street_celebration.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

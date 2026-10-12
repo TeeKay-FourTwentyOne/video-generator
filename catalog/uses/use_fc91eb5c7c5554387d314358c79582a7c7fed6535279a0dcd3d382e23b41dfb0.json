@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_e60cb795cd114b4bcf1d766f31885f62567fad27cde732acf32894524be0a7d4",
+  "projectId": "washing-day-claude",
+  "editVersion": "edit/v1.pre",
+  "segmentIndex": 5,
+  "shotId": "S06",
+  "status": "planned",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 24,
+    "length": 144,
+    "fps": 24
+  },
+  "timelineStartFrame": 572,
+  "outputSha256": null,
+  "schemaVersion": 1,
+  "id": "use_fc91eb5c7c5554387d314358c79582a7c7fed6535279a0dcd3d382e23b41dfb0"
+}

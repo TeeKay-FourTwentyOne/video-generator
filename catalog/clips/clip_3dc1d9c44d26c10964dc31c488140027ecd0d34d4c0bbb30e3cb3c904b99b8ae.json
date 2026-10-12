@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3dc1d9c44d26c10964dc31c488140027ecd0d34d4c0bbb30e3cb3c904b99b8ae",
+  "sha256": "3dc1d9c44d26c10964dc31c488140027ecd0d34d4c0bbb30e3cb3c904b99b8ae",
+  "bytes": 46805934,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 187.75,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 4506,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "act1_r1_v1.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

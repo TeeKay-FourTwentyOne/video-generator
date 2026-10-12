@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_801a1214d3bcafcb5d045b5132c885171bfd570f9c0dfc85127cdf375f7d2c38",
+  "sha256": "801a1214d3bcafcb5d045b5132c885171bfd570f9c0dfc85127cdf375f7d2c38",
+  "bytes": 1154477,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot02.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

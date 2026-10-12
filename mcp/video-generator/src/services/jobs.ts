@@ -200,10 +200,11 @@ async function pollVeoJob(jobId: string, operationName: string, modelId?: string
     if (result.done && result.video) {
       try {
         // Download video and save to disk
-        const download = await downloadVeoVideo(result);
+        const existingJob = getJob(jobId);
+        const download = await downloadVeoVideo(result, { request: { ...existingJob?.input,
+          model: existingJob?.result?.model, seed: existingJob?.result?.seed } });
 
         // Preserve model and seed from the initial submission
-        const existingJob = getJob(jobId);
         updateJob(jobId, {
           status: "complete",
           result: {

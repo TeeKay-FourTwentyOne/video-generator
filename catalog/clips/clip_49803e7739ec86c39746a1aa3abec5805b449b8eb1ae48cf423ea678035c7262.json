@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_49803e7739ec86c39746a1aa3abec5805b449b8eb1ae48cf423ea678035c7262",
+  "sha256": "49803e7739ec86c39746a1aa3abec5805b449b8eb1ae48cf423ea678035c7262",
+  "bytes": 5726918,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "02_spin_cycle.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "A handcrafted miniature stop-motion film, vertical 9:16 composition. Macro lens, beautifully tactile materials, subtle stop-motion cadence. Straight-on close view of exactly ONE vintage mint-green enamel front-loading washing machine. Its large round brass-rimmed glass door occupies the center of the portrait frame. Warm buttery yellow lighting. Behind the CLOSED glass door, one soft cotton-wool cloud tumbles slowly inside the rotating drum, like wool laundry. The cloud starts smoky gray and gradually becomes clean ivory white as it turns. A little soapy water sits at the bottom behind the glass. The machine casing and round rim stay completely rigid and unchanged; only the drum, cloud and water move. Rotation gently slows at the end. A single amber indicator light switches off at the end and there is one pleasant mechanical bell ding. No opening door, no hands, no people, no lettering, no digits, no captions, no logos. Locked camera, one continuous shot, charming meticulous practical miniature. Sound: soft rhythmic washer chug, gentle swishing water, slowing motor and a single finish bell; no music, no speech.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c0716e44c30061e07c1839497f335a7a470e03ef0b1d7cb5a75dd507150f4eb3",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9122602,
+      "createdAt": "2026-09-12T18:39:26.369Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

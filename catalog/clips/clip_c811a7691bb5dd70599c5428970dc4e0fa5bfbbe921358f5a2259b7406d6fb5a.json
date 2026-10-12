@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c811a7691bb5dd70599c5428970dc4e0fa5bfbbe921358f5a2259b7406d6fb5a",
+  "sha256": "c811a7691bb5dd70599c5428970dc4e0fa5bfbbe921358f5a2259b7406d6fb5a",
+  "bytes": 6457108,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S1_exterior.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_394b4a12d4a633ae94d8ce8955b8301865cac10228ff12445fd3630c8c28699c",
+  "sha256": "394b4a12d4a633ae94d8ce8955b8301865cac10228ff12445fd3630c8c28699c",
+  "bytes": 5383823,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 1.208333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 29,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "FLATTEN.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

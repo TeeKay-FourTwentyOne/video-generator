@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_847324cf16b7d2d8a1739bc0067329f0ea6e67fd3634e3e927f5f17efbc80eca",
+  "sha256": "847324cf16b7d2d8a1739bc0067329f0ea6e67fd3634e3e927f5f17efbc80eca",
+  "bytes": 1450126,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545175340_sqnfev.mp4"
+  ],
+  "collections": [
+    "eternal_commuter"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545175340_sqnfev"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Early morning golden hour scene in 9:16 aspect ratio. A young Caucasian woman in her early 20s with long, straight, center-parted brown hair and slim build stands perfectly motionless at a modern dark metal and glass bus shelter. She holds a briefcase, frozen like a statue with not a single muscle moving. The concrete sidewalk stretches before her with a streetlight overhead. Soft pink dawn light bathes the empty city street in warm, ethereal tones. Camera holds a steady, contemplative wide shot capturing her statuesque stillness against the quiet urban landscape. The lighting gradually shifts through subtle golden hour variations as shadows lengthen imperceptibly. Cinematic composition with time-lapse aesthetic emphasizing the contrast between her absolute stillness and the slowly changing morning light. The world feels suspended, waiting, with complete silence and serenity. 3-second duration maintaining her frozen pose throughout.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1d754e66e3c76da26e7a5fe6e095c430898c9e4bf7654fd010ce70b76b049f77",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Early morning golden hour scene in 9:16 aspect ratio. A young Caucasian woman in her early 20s with long, straight, center-parted brown hair and slim build stands perfectly motionless at a modern dark metal and glass bus shelter. She holds a briefcase, frozen like a statue with not a single muscle moving. The concrete sidewalk stretches before her with a streetlight overhead. Soft pink dawn light bathes the empty city street in warm, ethereal tones. Camera holds a steady, contemplative wide shot capturing her statuesque stillness against the quiet urban landscape. The lighting gradually shifts through subtle golden hour variations as shadows lengthen imperceptibly. Cinematic composition with time-lapse aesthetic emphasizing the contrast between her absolute stillness and the slowly changing morning light. The world feels suspended, waiting, with complete silence and serenity. 3-second duration maintaining her frozen pose throughout.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1d754e66e3c76da26e7a5fe6e095c430898c9e4bf7654fd010ce70b76b049f77",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:45:23.095Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a professional woman waiting alone at a modern urban bus stop during sunset. The clip maintains a static, contemplative mood throughout its 4-second duration, with the subject silhouetted against a beautiful pink-purple gradient sky while holding a briefcase. The cinematic golden hour lighting creates a visually striking scene of everyday urban life.",
+      "transcript": "you",
+      "tags": [
+        "alone",
+        "briefcase",
+        "bus",
+        "captures",
+        "continues",
+        "golden",
+        "her",
+        "hour",
+        "identical",
+        "maintaining",
+        "medium",
+        "modern",
+        "nearly",
+        "position",
+        "professional",
+        "remains",
+        "she",
+        "silhouette",
+        "silhouetted",
+        "speech",
+        "standing",
+        "stands",
+        "still",
+        "stop",
+        "sunset",
+        "urban",
+        "vertical",
+        "video",
+        "waiting",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman stands in silhouette at a modern bus stop during golden hour/sunset. She wears a white long-sleeved top and dark pants, holding a black briefcase. The bus shelter features glass panels and a wooden bench. The sky displays soft pink and purple gradient tones. A street lamp is illuminated in the upper right. Urban buildings are visible in the background. The composition is vertical with the subject positioned right of center, backlit by the setting sun creating a dramatic rim light effect on her long hair."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains standing at the bus stop in nearly identical position, still silhouetted against the sunset. Her posture is patient and still, facing left toward the street. The warm golden light continues to backlight her figure, highlighting her hair edges. The pink-purple sky gradient persists. The modern glass and metal bus shelter with wooden bench remains prominent on the left. Street lamps and urban architecture frame the scene. The vertical framing emphasizes the waiting moment."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues waiting at the bus stop, maintaining her standing position with briefcase in hand. The sunset lighting has slightly shifted, with the sun appearing to have moved marginally lower on the horizon. Her silhouette remains clearly defined against the warm sky. The urban environment with buildings, street lamps, and the glass bus shelter structure persist in frame. The composition remains consistent with previous frames, capturing a contemplative moment of urban commuting during twilight hours."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alone",
+    "briefcase",
+    "bus",
+    "captures",
+    "continues",
+    "golden",
+    "her",
+    "hour",
+    "identical",
+    "maintaining",
+    "medium",
+    "modern",
+    "nearly",
+    "position",
+    "professional",
+    "remains",
+    "she",
+    "silhouette",
+    "silhouetted",
+    "speech",
+    "standing",
+    "stands",
+    "still",
+    "stop",
+    "sunset",
+    "urban",
+    "vertical",
+    "video",
+    "waiting",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

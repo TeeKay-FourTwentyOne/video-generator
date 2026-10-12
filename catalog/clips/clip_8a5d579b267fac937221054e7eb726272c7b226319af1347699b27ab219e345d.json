@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8a5d579b267fac937221054e7eb726272c7b226319af1347699b27ab219e345d",
+  "sha256": "8a5d579b267fac937221054e7eb726272c7b226319af1347699b27ab219e345d",
+  "bytes": 2519416,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot1_banner_v1.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-loading-dock"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

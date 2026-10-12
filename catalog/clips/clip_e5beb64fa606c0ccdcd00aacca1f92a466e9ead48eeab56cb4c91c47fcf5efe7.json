@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e5beb64fa606c0ccdcd00aacca1f92a466e9ead48eeab56cb4c91c47fcf5efe7",
+  "sha256": "e5beb64fa606c0ccdcd00aacca1f92a466e9ead48eeab56cb4c91c47fcf5efe7",
+  "bytes": 11606533,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "V10-v1.mp4",
+    "veo_1791428456367_ucaiih.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Eye level on the floor of a deep excavation trench at dusk, dim cool light. The trench walls of dark earth rise above head height to the rim. In a square sondage cut into the trench floor, black oily mud surrounds a flat square grey stone slab. A tall three-legged metal hoist with a hand winch stands with its feet around the sondage, and two flat straps run from the winch down and under the slab. An older woman with grey hair tied back in a dark field jacket turns the winch handle slowly and the slab rises straight up a few centimeters at a time, level, without tilting or swinging. As it lifts, bright blue daylight shines upward through the gap beneath it and lights the underside of the slab, the black mud and the dark earth walls, while the trench stays in dusk. A bearded man in an olive cap and a woman with a long dark braid stand on the trench floor and watch without moving. Camera is fixed, no camera movement. Audio: a winch clicking, straps creaking, wind. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ce183c3f6a4c2b2fa7e924292ae3ff96e9fadb03c3c14d930e5f0b744a34ddc8",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3790413276,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

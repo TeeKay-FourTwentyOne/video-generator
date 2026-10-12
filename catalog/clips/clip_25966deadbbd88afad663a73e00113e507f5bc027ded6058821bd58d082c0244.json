@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_25966deadbbd88afad663a73e00113e507f5bc027ded6058821bd58d082c0244",
+  "sha256": "25966deadbbd88afad663a73e00113e507f5bc027ded6058821bd58d082c0244",
+  "bytes": 83189105,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 43.208333,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 1037,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "april_v3_4k.mp4"
+  ],
+  "collections": [
+    "april"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

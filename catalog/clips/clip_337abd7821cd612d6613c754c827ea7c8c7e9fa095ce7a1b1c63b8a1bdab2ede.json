@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_337abd7821cd612d6613c754c827ea7c8c7e9fa095ce7a1b1c63b8a1bdab2ede",
+  "sha256": "337abd7821cd612d6613c754c827ea7c8c7e9fa095ce7a1b1c63b8a1bdab2ede",
+  "bytes": 1775220,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767517011978_e432r6.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767517011978_e432r6"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A weathered robotic hand with exposed mechanical joints and rust-stained metal plating slowly extends toward a single delicate flower blooming from cracked concrete. The robot's articulated fingers tremble with careful, unprecedented gentleness as they reach for the vibrant petals. The flower sways subtly in a ghostly breeze, its vivid colors stark against the desolate surroundings. Soft, diffused light filters through thick atmospheric haze, creating dramatic chiaroscuro lighting that highlights the contrast between cold machinery and organic life. Close-up shot with shallow depth of field, slowly pushing in on the interaction. The camera captures intricate details of worn servos and delicate petal textures. Desaturated color palette with the flower's colors providing the only vibrant accent. Cinematic post-apocalyptic atmosphere with particles floating in the hazy air. 9:16 aspect ratio, 2-second duration with smooth, contemplative pacing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d7e55b56aa3284b9ef7e4bf1ef5cd40e0b2761c928b0e0eba80f20bdde2b74eb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A weathered robotic hand with exposed mechanical joints and rust-stained metal plating slowly extends toward a single delicate flower blooming from cracked concrete. The robot's articulated fingers tremble with careful, unprecedented gentleness as they reach for the vibrant petals. The flower sways subtly in a ghostly breeze, its vivid colors stark against the desolate surroundings. Soft, diffused light filters through thick atmospheric haze, creating dramatic chiaroscuro lighting that highlights the contrast between cold machinery and organic life. Close-up shot with shallow depth of field, slowly pushing in on the interaction. The camera captures intricate details of worn servos and delicate petal textures. Desaturated color palette with the flower's colors providing the only vibrant accent. Cinematic post-apocalyptic atmosphere with particles floating in the hazy air. 9:16 aspect ratio, 2-second duration with smooth, contemplative pacing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d7e55b56aa3284b9ef7e4bf1ef5cd40e0b2761c928b0e0eba80f20bdde2b74eb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T08:56:08.918Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This artistic video clip depicts a weathered robotic hand reaching toward a solitary pink flower growing through cracked concrete in a post-apocalyptic setting. The sequence captures a poignant moment of potential connection between machine and nature, with the robot appearing to gently approach rather than harm the resilient bloom. The clip concludes with a 'Thanks for watching' message, suggesting this is the end of a larger video piece.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "almost",
+        "artistic",
+        "clip",
+        "closer",
+        "corner",
+        "depicts",
+        "down",
+        "extends",
+        "fingers",
+        "flower",
+        "gentle",
+        "gesture",
+        "hand",
+        "hovers",
+        "left",
+        "mechanical",
+        "medium",
+        "moved",
+        "nearly",
+        "now",
+        "pink",
+        "protective",
+        "reaching",
+        "robotic",
+        "rusted",
+        "rusty",
+        "solitary",
+        "speech",
+        "thanks",
+        "touching",
+        "toward",
+        "upper",
+        "video",
+        "watching",
+        "weathered"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A weathered, rusty robotic hand extends from the upper left corner, reaching down toward a single pink/magenta flower growing from cracked concrete ground. The mechanical hand features articulated metal fingers with visible joints and rust patches. The flower has delicate petals and a green stem with narrow leaves, emerging from a dark crack in the gray pavement. The background shows a moody, overcast sky with dramatic clouds and soft backlighting from the upper right. Low-angle composition emphasizes the contrast between machine and nature."
+        },
+        {
+          "seconds": 2,
+          "text": "The robotic hand has moved closer to the pink flower, fingers now nearly touching the bloom. The weathered metal appendage shows detailed rust and wear patterns across its segmented fingers and palm. The flower remains upright, its vibrant magenta petals contrasting sharply against the desaturated gray environment. Cracked concrete stretches across the foreground with deep fissures. Atmospheric fog and dramatic cloudy sky create a post-apocalyptic mood. The camera maintains a low angle, capturing the intimate moment between technology and organic life."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The mechanical hand hovers above the pink flower in a gentle, almost protective gesture. The rusted robotic fingers are spread open, positioned just above the delicate bloom without touching it. The flower stands resilient in the crack of broken concrete, its pink petals and yellow center providing the only warm colors in the otherwise cold, gray scene. Dramatic backlighting creates a hazy atmosphere with moody clouds. The composition suggests themes of hope, resilience, and the relationship between technology and nature."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "almost",
+    "artistic",
+    "clip",
+    "closer",
+    "corner",
+    "depicts",
+    "down",
+    "extends",
+    "fingers",
+    "flower",
+    "gentle",
+    "gesture",
+    "hand",
+    "hovers",
+    "left",
+    "mechanical",
+    "medium",
+    "moved",
+    "nearly",
+    "now",
+    "pink",
+    "protective",
+    "reaching",
+    "robotic",
+    "rusted",
+    "rusty",
+    "solitary",
+    "speech",
+    "thanks",
+    "touching",
+    "toward",
+    "upper",
+    "video",
+    "watching",
+    "weathered"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

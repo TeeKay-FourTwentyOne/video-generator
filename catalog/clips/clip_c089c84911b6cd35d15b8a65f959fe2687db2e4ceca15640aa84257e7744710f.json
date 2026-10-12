@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c089c84911b6cd35d15b8a65f959fe2687db2e4ceca15640aa84257e7744710f",
+  "sha256": "c089c84911b6cd35d15b8a65f959fe2687db2e4ceca15640aa84257e7744710f",
+  "bytes": 11077734,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s4_tundra.mp4"
+  ],
+  "collections": [
+    "floors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

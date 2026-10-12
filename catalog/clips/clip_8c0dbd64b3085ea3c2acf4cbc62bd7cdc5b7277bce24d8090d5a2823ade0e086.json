@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8c0dbd64b3085ea3c2acf4cbc62bd7cdc5b7277bce24d8090d5a2823ade0e086",
+  "sha256": "8c0dbd64b3085ea3c2acf4cbc62bd7cdc5b7277bce24d8090d5a2823ade0e086",
+  "bytes": 8049007,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 38,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 912,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "dunham_hall_v1.mp4"
+  ],
+  "collections": [
+    "dunham-hall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

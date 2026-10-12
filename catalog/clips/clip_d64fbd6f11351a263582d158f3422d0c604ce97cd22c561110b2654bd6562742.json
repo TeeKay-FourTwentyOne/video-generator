@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d64fbd6f11351a263582d158f3422d0c604ce97cd22c561110b2654bd6562742",
+  "sha256": "d64fbd6f11351a263582d158f3422d0c604ce97cd22c561110b2654bd6562742",
+  "bytes": 1073194,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767509507390_xwad8m.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767509507390_xwad8m"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A single drop of black ink falls into crystal clear water, captured in extreme macro detail. The camera holds a static close-up position, focusing on the mesmerizing fluid dynamics as delicate tendrils unfurl and spiral downward in slow motion. The ink creates ethereal ribbons that twist and curl with ballet-like grace, their sharp black edges gradually softening into flowing gradients as they disperse through the liquid medium. Organic, cloud-like formations bloom and drift with hypnotic beauty, creating abstract patterns that shift and evolve. Shot in high-contrast black and white with dramatic lighting that emphasizes the stark interplay between the dark ink and transparent water, revealing every intricate detail of the fluid's graceful dance through the frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4228936751ac0e891443cedab2d2f077fd7b0949d1bfde10b034dbf961b36fd8",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A single drop of black ink falls into crystal clear water, captured in extreme macro detail. The camera holds a static close-up position, focusing on the mesmerizing fluid dynamics as delicate tendrils unfurl and spiral downward in slow motion. The ink creates ethereal ribbons that twist and curl with ballet-like grace, their sharp black edges gradually softening into flowing gradients as they disperse through the liquid medium. Organic, cloud-like formations bloom and drift with hypnotic beauty, creating abstract patterns that shift and evolve. Shot in high-contrast black and white with dramatic lighting that emphasizes the stark interplay between the dark ink and transparent water, revealing every intricate detail of the fluid's graceful dance through the frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4228936751ac0e891443cedab2d2f077fd7b0949d1bfde10b034dbf961b36fd8",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T06:51:05.562Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This monochromatic video captures the mesmerizing dispersion of dark ink dropping into clear water over approximately 4 seconds. The sequence shows the progression from initial entry as a small dark mass, through dramatic expansion into billowing cloud-like formations, to a complex, organic structure filling most of the frame with intricate swirling patterns.",
+      "transcript": null,
+      "tags": [
+        "appearing",
+        "black",
+        "blurry",
+        "captures",
+        "center",
+        "clear",
+        "cloud",
+        "dark",
+        "dispersing",
+        "dispersion",
+        "dramatic",
+        "dropping",
+        "expanded",
+        "filling",
+        "frame",
+        "grayscale",
+        "image",
+        "ink",
+        "intricate",
+        "liquid",
+        "medium",
+        "mesmerizing",
+        "monochromatic",
+        "now",
+        "object",
+        "patterns",
+        "showing",
+        "significantly",
+        "silent",
+        "swirling",
+        "top",
+        "video",
+        "water",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A grayscale image showing a dark, blurry object at the top center of the frame, appearing to be the beginning of a drop or liquid entering the frame from above. The background is a uniform medium gray gradient, slightly lighter at the top and darker toward the bottom. The composition is minimalist with the small dark mass positioned in the upper portion of the vertical frame. The camera angle appears to be straight-on, capturing what seems to be the initial moment of liquid being introduced."
+        },
+        {
+          "seconds": 2,
+          "text": "A dramatic black and white image showing dark ink or liquid dispersing in water, creating an organic, cloud-like formation. The ink has descended from the top of the frame, creating a billowing, irregular shape with bulbous protrusions extending outward. The surface tension line is visible at the top where the ink entered. The background remains a neutral gray, providing strong contrast against the deep black ink. The vertical composition emphasizes the downward flow and expansion of the liquid."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The ink cloud has expanded significantly, now filling most of the frame with intricate, swirling patterns. The formation shows complex, organic tendrils and curling edges with varying degrees of opacity - some areas appear more translucent while the core remains densely black. The ink has spread both downward and outward, creating an almost tree-like or mushroom cloud structure. The gray background is now mostly obscured by the expanding dark mass, with only portions visible at the top and edges of the frame."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appearing",
+    "black",
+    "blurry",
+    "captures",
+    "center",
+    "clear",
+    "cloud",
+    "dark",
+    "dispersing",
+    "dispersion",
+    "dramatic",
+    "dropping",
+    "expanded",
+    "filling",
+    "frame",
+    "grayscale",
+    "image",
+    "ink",
+    "intricate",
+    "liquid",
+    "medium",
+    "mesmerizing",
+    "monochromatic",
+    "now",
+    "object",
+    "patterns",
+    "showing",
+    "significantly",
+    "silent",
+    "swirling",
+    "top",
+    "video",
+    "water",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e8496ffa48c4bc1244d607535dce578805ce7e3f8dd682b0eead8e96324498e7",
+  "sha256": "e8496ffa48c4bc1244d607535dce578805ce7e3f8dd682b0eead8e96324498e7",
+  "bytes": 42244712,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 187.75,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 4506,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "_silent_master.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

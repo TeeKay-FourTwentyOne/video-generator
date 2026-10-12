@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d163c28164b5e51c1f552f0b13324355e823b37135b58c3d7f70b4c748ba6534",
+  "sha256": "d163c28164b5e51c1f552f0b13324355e823b37135b58c3d7f70b4c748ba6534",
+  "bytes": 18482726,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "couch_to_window.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

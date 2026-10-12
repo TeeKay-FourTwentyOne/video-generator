@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29e1aa1264f5e8a0840496a3627af6cdaba5d0f5e7c92bbf418a06253c233695",
+  "sha256": "29e1aa1264f5e8a0840496a3627af6cdaba5d0f5e7c92bbf418a06253c233695",
+  "bytes": 13047653,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 22.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 540,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "weather-service.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

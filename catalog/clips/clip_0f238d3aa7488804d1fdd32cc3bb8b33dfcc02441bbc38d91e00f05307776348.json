@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0f238d3aa7488804d1fdd32cc3bb8b33dfcc02441bbc38d91e00f05307776348",
+  "sha256": "0f238d3aa7488804d1fdd32cc3bb8b33dfcc02441bbc38d91e00f05307776348",
+  "bytes": 2314894,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot4.mp4"
+  ],
+  "collections": [
+    "charro-context-window"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1600d79c7e2c504ee468e826f42a8bc3f52112288a5cb91105eb566788f696f9",
+  "sha256": "1600d79c7e2c504ee468e826f42a8bc3f52112288a5cb91105eb566788f696f9",
+  "bytes": 1300315,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767532046925_1dq6e2.mp4"
+  ],
+  "collections": [
+    "person_a_makes_a_phone_call_pe_1767531881917"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767532046925_1dq6e2"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A person sits motionless in a chair by a large window, bathed in warm golden afternoon sunlight that streams across their face and body. Their phone rests gently in their open palm, screen dark. The honey-colored light creates soft, dappled shadows across their contemplative expression as they stare down at the device with quiet determination. Camera holds a medium close-up at eye level, perfectly still to emphasize the moment of hesitation. The lighting is split - warm amber tones dominate the sunlit side of their face while cooler blue shadows fall across the opposite side, creating dramatic color contrast. Cinematic depth of field keeps the person sharp against a softly blurred background of window frames and interior details. The scene captures the weighted silence before an important decision, with natural film grain and rich, saturated colors that emphasize the emotional tension of gathering courage.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2c3fd0b75b4f3354f4474efeccb5dd1907d545fb09d107bca6e72da5b507c9a2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A person sits motionless in a chair by a large window, bathed in warm golden afternoon sunlight that streams across their face and body. Their phone rests gently in their open palm, screen dark. The honey-colored light creates soft, dappled shadows across their contemplative expression as they stare down at the device with quiet determination. Camera holds a medium close-up at eye level, perfectly still to emphasize the moment of hesitation. The lighting is split - warm amber tones dominate the sunlit side of their face while cooler blue shadows fall across the opposite side, creating dramatic color contrast. Cinematic depth of field keeps the person sharp against a softly blurred background of window frames and interior details. The scene captures the weighted silence before an important decision, with natural film grain and rich, saturated colors that emphasize the emotional tension of gathering courage.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2c3fd0b75b4f3354f4474efeccb5dd1907d545fb09d107bca6e72da5b507c9a2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T13:06:43.916Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A short video clip showing a young woman with short dark hair sitting on a gray couch, intently looking at her smartphone throughout the entire duration. The scene is bathed in warm golden hour sunlight from a window, creating dramatic side lighting. Her expression remains focused and slightly pensive as she reads or scrolls through her phone, with minimal movement across the frames.",
+      "transcript": "you",
+      "tags": [
+        "black",
+        "chair",
+        "clip",
+        "continues",
+        "continuing",
+        "couch",
+        "dark",
+        "down",
+        "gray",
+        "hair",
+        "her",
+        "identical",
+        "look",
+        "looking",
+        "medium",
+        "position",
+        "remains",
+        "seated",
+        "short",
+        "showing",
+        "sits",
+        "sitting",
+        "speech",
+        "still",
+        "video",
+        "wavy",
+        "woman",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with short, dark wavy hair sits on a gray couch or chair, looking down at a black smartphone she holds in both hands. She wears a teal/dark blue crew neck t-shirt. Warm golden sunlight streams in from a window behind her on the right side, creating dramatic side lighting on her face. The background shows beige curtains and window frames. Her expression appears focused and slightly concerned as she reads her phone. The shot is a medium close-up in portrait orientation."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman continues sitting in the identical position on the gray couch, still looking down at her smartphone. The warm golden hour lighting remains consistent, illuminating the left side of her face while the right side stays in shadow. Her short dark hair catches highlights from the sunlight. She maintains a concentrated, somewhat pensive expression. The composition remains unchanged with the window and beige curtains visible in the background. Her blue t-shirt contrasts with the warm ambient lighting."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman remains seated on the gray couch in the same position, continuing to look at her black smartphone held in both hands. The golden sunlight still illuminates her from the window behind her right side. Her expression appears slightly more contemplative or concerned compared to earlier frames. The lighting creates a warm, intimate atmosphere with strong contrast between lit and shadowed areas of her face. The portrait framing and composition stay consistent throughout the sequence."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "black",
+    "chair",
+    "clip",
+    "continues",
+    "continuing",
+    "couch",
+    "dark",
+    "down",
+    "gray",
+    "hair",
+    "her",
+    "identical",
+    "look",
+    "looking",
+    "medium",
+    "position",
+    "remains",
+    "seated",
+    "short",
+    "showing",
+    "sits",
+    "sitting",
+    "speech",
+    "still",
+    "video",
+    "wavy",
+    "woman",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c9cd7b773c97f674930ffe202bff731e195f8926424c9146d7240041133a8d8a",
+  "sha256": "c9cd7b773c97f674930ffe202bff731e195f8926424c9146d7240041133a8d8a",
+  "bytes": 18101189,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "view_outside_clouds.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

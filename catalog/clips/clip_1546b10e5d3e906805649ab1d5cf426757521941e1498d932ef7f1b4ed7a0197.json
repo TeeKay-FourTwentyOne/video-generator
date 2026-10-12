@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1546b10e5d3e906805649ab1d5cf426757521941e1498d932ef7f1b4ed7a0197",
+  "sha256": "1546b10e5d3e906805649ab1d5cf426757521941e1498d932ef7f1b4ed7a0197",
+  "bytes": 177880943,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 170.166667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 4084,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "carnival-dream-kinetic-princess-draft-5-1080p.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

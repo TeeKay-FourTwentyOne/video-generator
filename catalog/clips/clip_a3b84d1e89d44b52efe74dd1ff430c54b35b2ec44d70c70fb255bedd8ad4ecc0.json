@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a3b84d1e89d44b52efe74dd1ff430c54b35b2ec44d70c70fb255bedd8ad4ecc0",
+  "sha256": "a3b84d1e89d44b52efe74dd1ff430c54b35b2ec44d70c70fb255bedd8ad4ecc0",
+  "bytes": 4564479,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763330475_55zjac.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763330475_55zjac"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This stylized vintage war clip depicts WWI soldiers charging across a muddy battlefield before transitioning to scenes of celebration, embracing, and handshakes. The sepia-toned footage with heavy film aging effects creates an archival documentary aesthetic, capturing a narrative arc from combat advance to joyful reunion or victory celebration among comrades.",
+      "transcript": "Go! Go! Go! Go! Go!",
+      "tags": [
+        "across",
+        "approximately",
+        "celebration",
+        "charging",
+        "clip",
+        "depicts",
+        "embracing",
+        "era",
+        "footage",
+        "gear",
+        "group",
+        "medium",
+        "military",
+        "muddy",
+        "scene",
+        "sepia",
+        "seven",
+        "showing",
+        "soldiers",
+        "speech",
+        "style",
+        "stylized",
+        "toned",
+        "vintage",
+        "war",
+        "wwi"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Sepia-toned vintage war footage showing soldiers in WWI-era military uniforms and Brodie helmets running forward through muddy battlefield terrain. Five soldiers are visible, advancing toward the camera with expressions of determination and excitement. The ground is churned mud with debris. Smoke or haze fills the background creating an atmospheric, dramatic effect. The image has film grain, scratches, and aging effects typical of archival footage. Vertical framing captures the soldiers in dynamic forward motion."
+        },
+        {
+          "seconds": 2,
+          "text": "Sepia-toned scene showing soldiers in WWI military gear embracing each other in celebration. Two soldiers in the center are hugging tightly, one visibly smiling with joy. Other helmeted soldiers surround them, some also embracing. The atmosphere suggests a moment of victory or relief. Heavy film grain and scratches overlay the image. The muddy ground and hazy background remain consistent. The composition centers on the emotional embrace, capturing camaraderie among the troops."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Sepia vintage-style footage showing a group of approximately seven soldiers in WWI uniforms and helmets gathered together, shaking hands and smiling. The central figures are engaged in a handshake while others look on with pleased expressions. The mood is celebratory and relieved. Film aging effects including grain, dust, and vertical scratches are prominent. The soldiers stand in muddy conditions with a hazy, smoke-filled background. Medium shot framing captures the group interaction."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_045",
+      "name": "The Tommies",
+      "description": "WWI soldiers in sepia-toned image, helmets and uniforms, carrying wounded comrade across muddy battlefield with explosions, historical war scene",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "across",
+    "approximately",
+    "celebration",
+    "charging",
+    "clip",
+    "depicts",
+    "embracing",
+    "era",
+    "footage",
+    "gear",
+    "group",
+    "medium",
+    "military",
+    "muddy",
+    "scene",
+    "sepia",
+    "seven",
+    "showing",
+    "soldiers",
+    "speech",
+    "style",
+    "stylized",
+    "toned",
+    "vintage",
+    "war",
+    "wwi"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

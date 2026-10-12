@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_88b95bc7a042918268f9c7cce07417e800d4394b39101fd2f35738b966c69695",
+  "sha256": "88b95bc7a042918268f9c7cce07417e800d4394b39101fd2f35738b966c69695",
+  "bytes": 860259,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767656109448_gqnv5u.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767656109448_gqnv5u"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A person stands in a doorway with arms crossed defensively across their chest, head tilted slightly to one side with a guarded, wary expression. The camera holds a medium shot with subtle handheld movement, creating an intimate yet unstable feeling. Natural lighting from inside casts sharp shadows across half their face while harsh daylight backlights their silhouette in the doorframe, creating high contrast that emphasizes the barrier between inside and outside. The framing is deliberately tight, with the doorframe edges visible to create a claustrophobic feeling. Their body language remains rigid and closed-off throughout, eyes narrowed and jaw set, suggesting internal conflict or distrust. The shallow depth of field keeps the background slightly out of focus, isolating them in this moment of tension. Muted, desaturated colors enhance the naturalistic style while the subtle camera shake adds to the uneasy atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9ccced270668ca4369ddfe6ef97198db5547131e93ca64e53f62f01acfafc18d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A person stands in a doorway with arms crossed defensively across their chest, head tilted slightly to one side with a guarded, wary expression. The camera holds a medium shot with subtle handheld movement, creating an intimate yet unstable feeling. Natural lighting from inside casts sharp shadows across half their face while harsh daylight backlights their silhouette in the doorframe, creating high contrast that emphasizes the barrier between inside and outside. The framing is deliberately tight, with the doorframe edges visible to create a claustrophobic feeling. Their body language remains rigid and closed-off throughout, eyes narrowed and jaw set, suggesting internal conflict or distrust. The shallow depth of field keeps the background slightly out of focus, isolating them in this moment of tension. Muted, desaturated colors enhance the naturalistic style while the subtle camera shake adds to the uneasy atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9ccced270668ca4369ddfe6ef97198db5547131e93ca64e53f62f01acfafc18d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:34:27.392Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A short-haired woman stands silhouetted in a doorway throughout the clip, maintaining a defensive posture with crossed arms. The scene features dramatic backlighting from outside that creates strong contrast between the dark interior and bright exterior. Her expression and body language suggest skepticism or concern as she appears to be listening or waiting.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "against",
+        "arms",
+        "backlighting",
+        "bright",
+        "clip",
+        "crossed",
+        "dark",
+        "defensive",
+        "directly",
+        "doorway",
+        "facing",
+        "hair",
+        "haired",
+        "her",
+        "maintaining",
+        "maintains",
+        "medium",
+        "now",
+        "position",
+        "remains",
+        "short",
+        "silhouetted",
+        "speech",
+        "stance",
+        "standing",
+        "stands",
+        "throughout",
+        "toward",
+        "unchanged",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short dark hair stands in a doorway, silhouetted against bright backlighting from outside. She wears a gray short-sleeved t-shirt and dark pants, with her arms crossed in front of her chest. Her head is tilted slightly to the side with a contemplative or skeptical expression. A wooden door with glass panels is visible to her right. The interior is dark, creating strong contrast with the bright exterior light behind her."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains standing in the doorway with arms crossed, now facing more directly toward the camera. Her posture appears defensive or guarded. The backlighting continues to create a silhouette effect, with her face partially visible but shadowed. The wooden door frame and glass-paneled door remain visible on the right side. The bright white light from outside dominates the background, creating a high-contrast scene."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman maintains her position in the doorway with crossed arms, her stance unchanged. Her expression appears serious or concerned as she looks forward. The silhouette effect from the strong backlighting persists, with the bright exterior light washing out the background. The composition remains centered on her figure framed by the dark wooden doorway. Green foliage is barely visible through the bright background on the left side."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_031",
+      "name": "Kate",
+      "description": "Woman with short dark hair, grey t-shirt, arms crossed, silhouetted in doorway with bright backlight, guarded posture",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "arms",
+    "backlighting",
+    "bright",
+    "clip",
+    "crossed",
+    "dark",
+    "defensive",
+    "directly",
+    "doorway",
+    "facing",
+    "hair",
+    "haired",
+    "her",
+    "maintaining",
+    "maintains",
+    "medium",
+    "now",
+    "position",
+    "remains",
+    "short",
+    "silhouetted",
+    "speech",
+    "stance",
+    "standing",
+    "stands",
+    "throughout",
+    "toward",
+    "unchanged",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_006156219955cb181c2c8bed9d6a6217324d0a4d496976180939802f0ffc918e",
+  "sha256": "006156219955cb181c2c8bed9d6a6217324d0a4d496976180939802f0ffc918e",
+  "bytes": 879032,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "A_caucasian_man_202601140347_7qn8u.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

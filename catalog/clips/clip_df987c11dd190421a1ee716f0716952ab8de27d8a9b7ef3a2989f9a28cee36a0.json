@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_df987c11dd190421a1ee716f0716952ab8de27d8a9b7ef3a2989f9a28cee36a0",
+  "sha256": "df987c11dd190421a1ee716f0716952ab8de27d8a9b7ef3a2989f9a28cee36a0",
+  "bytes": 770106,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767489829552_rdc5om.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767489829552_rdc5om"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A pristine white taper candle in an ornate brass candlestick holder with a small, steady flame. The flame begins to flicker gently, starting to dance slightly. Dramatic chiaroscuro lighting against pure black background. The wax is still solid and unmelted. Intimate, contemplative atmosphere. Camera is stationary. Photorealistic, 9:16 vertical format.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8fc4253a28c5ec22293e8a00e7d2e81f81938482132022b8a4d07dd61f2673c2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A pristine white taper candle in an ornate brass candlestick holder with a small, steady flame. The flame begins to flicker gently, starting to dance slightly. Dramatic chiaroscuro lighting against pure black background. The wax is still solid and unmelted. Intimate, contemplative atmosphere. Camera is stationary. Photorealistic, 9:16 vertical format.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8fc4253a28c5ec22293e8a00e7d2e81f81938482132022b8a4d07dd61f2673c2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T01:23:05.526Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 6-second vertical video captures a single white taper candle burning steadily in an ornate brass candlestick holder against a pure black background. The flame flickers naturally throughout the clip while the composition remains static, creating a meditative, atmospheric scene. The dramatic lighting from the candle flame provides the only illumination, emphasizing the elegant simplicity of the subject.",
+      "transcript": "😘😘😘😘😘",
+      "tags": [
+        "brass",
+        "burning",
+        "burns",
+        "candle",
+        "candlestick",
+        "captures",
+        "continued",
+        "continues",
+        "flame",
+        "holder",
+        "maintaining",
+        "medium",
+        "natural",
+        "ornate",
+        "persists",
+        "position",
+        "second",
+        "showing",
+        "single",
+        "speech",
+        "steadily",
+        "taper",
+        "vertical",
+        "video",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A single white taper candle burns steadily in an ornate brass candlestick holder against a completely black background. The flame displays warm orange and yellow tones with a slight blue base near the wick. The brass holder features a decorative circular base with embossed radial patterns and a curved finger loop handle on the right side. The candle is positioned center-left in the frame, with the vertical composition emphasizing the tall, elegant form. The lighting is entirely from the candle flame, creating dramatic contrast."
+        },
+        {
+          "seconds": 3,
+          "text": "The white taper candle continues burning in the brass candlestick holder, maintaining its position against the pure black backdrop. The flame appears slightly different in shape, showing the natural flickering movement of a live flame with orange-yellow coloring and a subtle blue core. The composition remains identical with the candle centered in frame. The brass holder's patina and decorative details are visible, illuminated softly by the warm candlelight. The vertical 9:16 aspect ratio emphasizes the candle's height."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The burning white candle persists in its brass holder, the flame showing continued natural movement with warm orange and yellow hues. The black background provides complete isolation of the subject. The ornate brass candlestick with its circular decorated base and curved handle remains unchanged. The candle appears to have burned minimally, maintaining its tall tapered form. The dramatic low-key lighting creates an intimate, contemplative atmosphere with the flame as the sole light source in the composition."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "brass",
+    "burning",
+    "burns",
+    "candle",
+    "candlestick",
+    "captures",
+    "continued",
+    "continues",
+    "flame",
+    "holder",
+    "maintaining",
+    "medium",
+    "natural",
+    "ornate",
+    "persists",
+    "position",
+    "second",
+    "showing",
+    "single",
+    "speech",
+    "steadily",
+    "taper",
+    "vertical",
+    "video",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

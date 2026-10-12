@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_93f98b9fa1483c39fa98ce895741e9ecbea044975fe711701e24c67fdfc574f4",
+  "sha256": "93f98b9fa1483c39fa98ce895741e9ecbea044975fe711701e24c67fdfc574f4",
+  "bytes": 4080879,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_3_walker_sprocket.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_3_walker_sprocket"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This stylized video clip shows a person walking toward the camera down a European cobblestone street, filmed with a heavy magenta/pink color filter and vintage film strip border effect. The figure progresses from distant to closer over the 8-second duration while maintaining center frame composition. The audio contains repetitive vocalizations ('ah, ah, ah') accompanying the atmospheric urban scene.",
+      "transcript": "Ah, ah, ah, ah, ah, ah",
+      "tags": [
+        "appearing",
+        "camera",
+        "center",
+        "centered",
+        "clip",
+        "closer",
+        "cobblestone",
+        "continues",
+        "down",
+        "european",
+        "figure",
+        "forward",
+        "frame",
+        "larger",
+        "maintaining",
+        "medium",
+        "now",
+        "person",
+        "progressed",
+        "shows",
+        "silhouetted",
+        "slightly",
+        "speech",
+        "stands",
+        "street",
+        "stylized",
+        "toward",
+        "video",
+        "walking"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure stands centered in a European cobblestone street, walking toward the camera. The person wears a long coat and winter hat with a pom-pom. The entire image has a strong magenta/pink color filter applied, creating a surreal aesthetic. Historic buildings line both sides of the narrow street, with vintage street lamps visible. The composition uses strong leading lines from the cobblestones and buildings converging at the bright, overexposed sky. Film sprocket holes frame the edges, suggesting analog film aesthetic."
+        },
+        {
+          "seconds": 4,
+          "text": "The same silhouetted figure continues walking forward on the cobblestone street, now slightly closer to the camera. The person's walking motion is captured mid-stride with one leg forward. The magenta/pink color treatment remains consistent. The European architecture and street lamps remain visible on both sides. A lens flare appears on the left side of the frame. The film strip border with sprocket holes continues to frame the image, maintaining the vintage film aesthetic throughout."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The silhouetted figure has progressed closer to the camera, appearing larger in frame while maintaining center composition. The person continues walking with hands in pockets, wearing the same winter coat and pom-pom hat. The cobblestone street texture is more prominent in the foreground. The magenta/pink filter persists, with the bright overexposed sky creating strong backlighting. Buildings and street lamps remain visible, and the film sprocket border frames the shot consistently with previous frames."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appearing",
+    "camera",
+    "center",
+    "centered",
+    "clip",
+    "closer",
+    "cobblestone",
+    "continues",
+    "down",
+    "european",
+    "figure",
+    "forward",
+    "frame",
+    "larger",
+    "maintaining",
+    "medium",
+    "now",
+    "person",
+    "progressed",
+    "shows",
+    "silhouetted",
+    "slightly",
+    "speech",
+    "stands",
+    "street",
+    "stylized",
+    "toward",
+    "video",
+    "walking"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

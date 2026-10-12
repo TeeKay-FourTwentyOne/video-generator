@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f7756c782bed36a962d9003aa3db6ea576a61c69205a48080007a15caad6561a",
+  "sha256": "f7756c782bed36a962d9003aa3db6ea576a61c69205a48080007a15caad6561a",
+  "bytes": 3524139,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "60/1",
+    "frameCount": 3360,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "magenta_v3_preview720.mp4"
+  ],
+  "collections": [
+    "false-color-magenta"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_30e43ea6581d33403a91e1a6b0cfa05948a9dca6942777dca674755bc1a99aee",
+  "sha256": "30e43ea6581d33403a91e1a6b0cfa05948a9dca6942777dca674755bc1a99aee",
+  "bytes": 3205373,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545616261_ewvh8h.mp4"
+  ],
+  "collections": [
+    "style_shift_character_only"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545616261_ewvh8h"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Black woman in her 20s with very short, curly black hair walks down a city street rendered in striking black and white film noir style - high contrast shadows, dramatic chiaroscuro lighting, and classic 1940s cinematography aesthetic. She moves through a photorealistic modern city environment that remains in full color: warm amber streetlights, glowing storefront windows, and deep blue dusk sky creating a surreal juxtaposition. The camera follows her with a smooth tracking shot at eye level, maintaining the film noir contrast as she moves past colorful brick buildings that form a deep perspective canyon. Her monochrome figure cuts through the vibrant urban landscape, cigarette smoke-like shadows trailing behind her noir silhouette while the realistic modern city bustles around her in full saturated color. Dramatic side lighting emphasizes the stark visual contrast between her vintage black and white appearance and the contemporary colored world.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0d11704ab39ce5e7f2b22e787ad4a0e1ba664064fe64796d84c9bca69ebc5796",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Black woman in her 20s with very short, curly black hair walks down a city street rendered in striking black and white film noir style - high contrast shadows, dramatic chiaroscuro lighting, and classic 1940s cinematography aesthetic. She moves through a photorealistic modern city environment that remains in full color: warm amber streetlights, glowing storefront windows, and deep blue dusk sky creating a surreal juxtaposition. The camera follows her with a smooth tracking shot at eye level, maintaining the film noir contrast as she moves past colorful brick buildings that form a deep perspective canyon. Her monochrome figure cuts through the vibrant urban landscape, cigarette smoke-like shadows trailing behind her noir silhouette while the realistic modern city bustles around her in full saturated color. Dramatic side lighting emphasizes the stark visual contrast between her vintage black and white appearance and the contemporary colored world.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0d11704ab39ce5e7f2b22e787ad4a0e1ba664064fe64796d84c9bca69ebc5796",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:52:43.556Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This stylized noir clip depicts a mysterious figure in a black trench coat and fedora walking toward the camera through a rain-soaked urban street at twilight. The scene features dramatic contrast between warm orange street lighting and a vivid blue sky, with colorful buildings flanking both sides. The figure maintains center frame throughout, creating a cinematic, atmospheric mood reminiscent of classic detective films.",
+      "transcript": null,
+      "tags": [
+        "advanced",
+        "appearing",
+        "black",
+        "camera",
+        "centered",
+        "clip",
+        "closer",
+        "coat",
+        "continues",
+        "depicts",
+        "fedora",
+        "figure",
+        "forward",
+        "frame",
+        "hat",
+        "larger",
+        "long",
+        "maintaining",
+        "medium",
+        "mysterious",
+        "noir",
+        "now",
+        "silent",
+        "silhouetted",
+        "slightly",
+        "styled",
+        "stylized",
+        "trench",
+        "walking",
+        "wearing"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure wearing a black fedora hat and long black trench coat walks toward the camera down a wet, rain-slicked urban street. The figure has a white collar visible beneath the coat. The scene features dramatic lighting with warm orange street lamps on the left contrasting against a vivid blue twilight sky. Multi-story buildings in red, orange, and teal tones line both sides. Steam or smoke rises in the background. The wet pavement reflects the colorful lights creating a noir aesthetic. Low-angle frontal shot emphasizes the mysterious figure."
+        },
+        {
+          "seconds": 2,
+          "text": "The same noir-styled figure continues walking forward, now slightly closer to camera. The black-clad person maintains center frame position against the dramatic urban backdrop. Warm amber street lights illuminate the left side while the right shows illuminated storefronts. The blue hour sky remains prominent above. Steam wisps behind the figure. The wet cobblestone street reflects golden and blue hues. Buildings display vibrant colors - orange, red, teal, and purple. The composition maintains strong symmetry with the figure as the dark focal point against the colorful environment."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The mysterious figure has advanced closer to the camera, appearing larger in frame while maintaining the centered composition. The black trench coat, fedora, and white collar remain clearly visible. The urban street scene continues with warm orange street lamps creating atmospheric glow on the left. Steam or mist lingers in the mid-ground. The wet pavement shows strong reflections of the ambient lighting. The blue twilight sky provides contrast to the warm artificial lighting. The noir cinematic aesthetic persists with the silhouetted figure against the vibrant, rain-soaked cityscape."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "advanced",
+    "appearing",
+    "black",
+    "camera",
+    "centered",
+    "clip",
+    "closer",
+    "coat",
+    "continues",
+    "depicts",
+    "fedora",
+    "figure",
+    "forward",
+    "frame",
+    "hat",
+    "larger",
+    "long",
+    "maintaining",
+    "medium",
+    "mysterious",
+    "noir",
+    "now",
+    "silent",
+    "silhouetted",
+    "slightly",
+    "styled",
+    "stylized",
+    "trench",
+    "walking",
+    "wearing"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

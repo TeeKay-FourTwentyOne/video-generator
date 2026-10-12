@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_eebbe1884ef8a8c5209908d253cfef0a6097064959b185c4341abf02b3149aa8",
+  "sha256": "eebbe1884ef8a8c5209908d253cfef0a6097064959b185c4341abf02b3149aa8",
+  "bytes": 1152713,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767656197672_lvb7st.mp4"
+  ],
+  "collections": [
+    "test_char_action_001"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767656197672_lvb7st"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A person walks through a dimly lit doorway into a room with deep shadows, their silhouette backlit by cool fluorescent light from the hallway behind them. Handheld camera follows at shoulder height, slight organic shake as it tracks their movement. As they cross the threshold, pools of amber light from an unseen source catch their face revealing a sudden expression of surprise. They stop abruptly mid-stride, body tensing, hand instinctively reaching out to grasp the worn wooden door frame for support. The camera holds on their frozen posture, shallow depth of field blurring the mysterious space beyond them while selective rim lighting defines their form against the darkness. Cool blue-gray shadows dominate the frame with warm honey-colored highlights creating stark contrast. Natural, documentary-style cinematography with subtle camera breathing. 16:9 aspect ratio, 4 seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_899d19f30fc2d4cd2697490d196b493c86e7f25384e1913bdddaa38731a0266f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A person walks through a dimly lit doorway into a room with deep shadows, their silhouette backlit by cool fluorescent light from the hallway behind them. Handheld camera follows at shoulder height, slight organic shake as it tracks their movement. As they cross the threshold, pools of amber light from an unseen source catch their face revealing a sudden expression of surprise. They stop abruptly mid-stride, body tensing, hand instinctively reaching out to grasp the worn wooden door frame for support. The camera holds on their frozen posture, shallow depth of field blurring the mysterious space beyond them while selective rim lighting defines their form against the darkness. Cool blue-gray shadows dominate the frame with warm honey-colored highlights creating stark contrast. Natural, documentary-style cinematography with subtle camera breathing. 16:9 aspect ratio, 4 seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_899d19f30fc2d4cd2697490d196b493c86e7f25384e1913bdddaa38731a0266f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:35:55.458Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a woman cautiously moving through a dimly lit, deteriorating interior space, transitioning from a silhouetted figure to a clearly visible person expressing fear or shock. The scene features strong contrast between cool blue hallway lighting and warm-toned decaying walls, creating an atmospheric, suspenseful mood typical of horror or thriller genres.",
+      "transcript": "ご視聴ありがとうございました。",
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "bracing",
+        "cautious",
+        "cautiously",
+        "clip",
+        "continues",
+        "dark",
+        "deteriorating",
+        "dimly",
+        "emerges",
+        "figure",
+        "hair",
+        "hallway",
+        "her",
+        "herself",
+        "interior",
+        "left",
+        "lit",
+        "long",
+        "medium",
+        "movement",
+        "moving",
+        "peeling",
+        "scene",
+        "short",
+        "shows",
+        "side",
+        "silhouetted",
+        "sleeved",
+        "space",
+        "speech",
+        "still",
+        "top",
+        "visible",
+        "wearing",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dimly lit hallway scene with a silhouetted figure visible in the background. The left side shows a blue-tinted corridor with a framed mirror on the wall and what appears to be a light source. The right side features a deteriorated wall with peeling beige/tan paint and dark stains. The figure appears blurred and is wearing dark clothing. The composition creates a stark contrast between the cool blue hallway and the warm, decaying wall surface."
+        },
+        {
+          "seconds": 2,
+          "text": "A woman with short dark hair wearing a black long-sleeved top emerges from the hallway, her face now clearly visible. She displays an expression of shock or fear, with wide eyes and mouth slightly open. Her right hand is placed against the deteriorating wall. The lighting creates warm tones on her face while the background hallway remains cool blue. A window with sheer curtains is visible behind her, providing backlighting."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The same woman continues her cautious movement, still bracing herself against the peeling wall. Her expression remains tense and apprehensive, looking toward something off-camera to the right. The framing is similar to the previous shot but slightly adjusted. The contrast between the blue-lit hallway with the mirror and the warm, damaged wall creates a visually unsettling atmosphere. Her body language suggests alertness and fear."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "bracing",
+    "cautious",
+    "cautiously",
+    "clip",
+    "continues",
+    "dark",
+    "deteriorating",
+    "dimly",
+    "emerges",
+    "figure",
+    "hair",
+    "hallway",
+    "her",
+    "herself",
+    "interior",
+    "left",
+    "lit",
+    "long",
+    "medium",
+    "movement",
+    "moving",
+    "peeling",
+    "scene",
+    "short",
+    "shows",
+    "side",
+    "silhouetted",
+    "sleeved",
+    "space",
+    "speech",
+    "still",
+    "top",
+    "visible",
+    "wearing",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

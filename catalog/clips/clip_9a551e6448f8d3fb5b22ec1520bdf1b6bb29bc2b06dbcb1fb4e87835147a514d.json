@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9a551e6448f8d3fb5b22ec1520bdf1b6bb29bc2b06dbcb1fb4e87835147a514d",
+  "sha256": "9a551e6448f8d3fb5b22ec1520bdf1b6bb29bc2b06dbcb1fb4e87835147a514d",
+  "bytes": 1597982,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_2_1766526023568.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_2_1766526023568"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Close-up of a hand waiting impatiently on a desk while on hold. The wedding-ringed hand barely moves throughout, conveying the tedium and frustration of phone hold time.",
+      "transcript": null,
+      "tags": [
+        "barely",
+        "close",
+        "curled",
+        "dark",
+        "desk",
+        "emphasizes",
+        "fingers",
+        "hand",
+        "hold",
+        "impatiently",
+        "medium",
+        "moved",
+        "perhaps",
+        "persistent",
+        "phone",
+        "position",
+        "reinforces",
+        "remains",
+        "resting",
+        "ringed",
+        "silent",
+        "slightly",
+        "spread",
+        "stillness",
+        "tedium",
+        "unchanged",
+        "waiting",
+        "wedding",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up of a hand resting on dark wooden desk, fingers slightly curled in waiting posture. Gold wedding ring visible. Black office phone blurred in background. The hand conveys impatience of someone on hold."
+        },
+        {
+          "seconds": 3,
+          "text": "Same hand on desk, barely moved. The stillness emphasizes the tedium of waiting. Phone remains out of focus in background. Subtle tension in the relaxed but waiting fingers."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Hand position unchanged, perhaps fingers slightly more spread. The persistent stillness reinforces the monotony of being stuck on hold. Dark wood grain visible on desk surface."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "barely",
+    "close",
+    "curled",
+    "dark",
+    "desk",
+    "emphasizes",
+    "fingers",
+    "hand",
+    "hold",
+    "impatiently",
+    "medium",
+    "moved",
+    "perhaps",
+    "persistent",
+    "phone",
+    "position",
+    "reinforces",
+    "remains",
+    "resting",
+    "ringed",
+    "silent",
+    "slightly",
+    "spread",
+    "stillness",
+    "tedium",
+    "unchanged",
+    "waiting",
+    "wedding",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

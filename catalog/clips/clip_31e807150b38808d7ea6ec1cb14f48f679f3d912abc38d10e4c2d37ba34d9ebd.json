@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_31e807150b38808d7ea6ec1cb14f48f679f3d912abc38d10e4c2d37ba34d9ebd",
+  "sha256": "31e807150b38808d7ea6ec1cb14f48f679f3d912abc38d10e4c2d37ba34d9ebd",
+  "bytes": 709158,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot7_composite.mp4"
+  ],
+  "collections": [
+    "dunham-hall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

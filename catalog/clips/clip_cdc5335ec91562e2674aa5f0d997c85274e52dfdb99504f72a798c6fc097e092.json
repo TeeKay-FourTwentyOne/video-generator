@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cdc5335ec91562e2674aa5f0d997c85274e52dfdb99504f72a798c6fc097e092",
+  "sha256": "cdc5335ec91562e2674aa5f0d997c85274e52dfdb99504f72a798c6fc097e092",
+  "bytes": 172613,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 1,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 24,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot09c.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

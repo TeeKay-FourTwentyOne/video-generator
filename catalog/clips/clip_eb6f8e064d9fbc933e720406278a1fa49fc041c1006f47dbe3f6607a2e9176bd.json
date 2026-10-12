@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_eb6f8e064d9fbc933e720406278a1fa49fc041c1006f47dbe3f6607a2e9176bd",
+  "sha256": "eb6f8e064d9fbc933e720406278a1fa49fc041c1006f47dbe3f6607a2e9176bd",
+  "bytes": 1006937,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 1.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 36,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "cx_loop.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

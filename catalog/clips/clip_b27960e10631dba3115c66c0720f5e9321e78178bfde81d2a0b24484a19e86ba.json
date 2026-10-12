@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b27960e10631dba3115c66c0720f5e9321e78178bfde81d2a0b24484a19e86ba",
+  "sha256": "b27960e10631dba3115c66c0720f5e9321e78178bfde81d2a0b24484a19e86ba",
+  "bytes": 1307413,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767488550632_xrrl7n.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767488550632_xrrl7n"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The red apple slowly rotates clockwise, revealing a small bruise on the back side, soft studio lighting, smooth motion",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d7ba9cd12d9d6ac5c2149aae29a1feec86a63828f3af36a408dd703b799f5ca8",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The red apple slowly rotates clockwise, revealing a small bruise on the back side, soft studio lighting, smooth motion",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d7ba9cd12d9d6ac5c2149aae29a1feec86a63828f3af36a408dd703b799f5ca8",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T01:01:57.080Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short video clip shows a single red apple slowly rotating against a minimalist white background, revealing different sides of the fruit including natural color variations and small imperfections. The clip appears to be a product-style showcase with Japanese audio thanking viewers for watching. The consistent lighting and clean composition suggest professional or semi-professional video production.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "against",
+        "angle",
+        "appearing",
+        "apple",
+        "clean",
+        "clip",
+        "coloring",
+        "different",
+        "displayed",
+        "glossy",
+        "gray",
+        "light",
+        "medium",
+        "mixed",
+        "now",
+        "orange",
+        "prominently",
+        "red",
+        "revealing",
+        "rotated",
+        "rotating",
+        "short",
+        "shown",
+        "shows",
+        "side",
+        "single",
+        "slightly",
+        "slowly",
+        "speech",
+        "video",
+        "white",
+        "yellow"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A single red apple is prominently displayed against a clean white/light gray background. The apple appears glossy with visible light reflections on its surface, showing small white speckles (lenticels) across the skin. A brown stem protrudes from the top center. The apple is positioned centrally in the vertical frame, with the camera capturing it straight-on at eye level. The lighting is soft and even, creating a professional product photography aesthetic with subtle shadows beneath the fruit."
+        },
+        {
+          "seconds": 2,
+          "text": "The same red apple is shown from a slightly different angle, appearing to have rotated slightly. The glossy red surface continues to reflect light, with the stem still visible at the top. A small dark spot or blemish is now visible on the right side of the apple. The white background remains consistent, and the apple maintains its central position in the vertical frame. The lighting remains even and soft, typical of studio product photography."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The apple has rotated further, now revealing a different side with more yellow-orange coloring mixed with the red, particularly visible on the lower right portion. The stem appears slightly angled. A small dark mark is visible on the upper left area. The apple shows natural color variation typical of real fruit. The clean white background and centered composition remain consistent, with soft even lighting maintaining the professional product shot appearance throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "appearing",
+    "apple",
+    "clean",
+    "clip",
+    "coloring",
+    "different",
+    "displayed",
+    "glossy",
+    "gray",
+    "light",
+    "medium",
+    "mixed",
+    "now",
+    "orange",
+    "prominently",
+    "red",
+    "revealing",
+    "rotated",
+    "rotating",
+    "short",
+    "shown",
+    "shows",
+    "side",
+    "single",
+    "slightly",
+    "slowly",
+    "speech",
+    "video",
+    "white",
+    "yellow"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

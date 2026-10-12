@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b05cf5f36805798361232b9bb306e0b04de836284b6a9bf00bb2d448beb37c5d",
+  "sha256": "b05cf5f36805798361232b9bb306e0b04de836284b6a9bf00bb2d448beb37c5d",
+  "bytes": 11971133,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "tour-retimed.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

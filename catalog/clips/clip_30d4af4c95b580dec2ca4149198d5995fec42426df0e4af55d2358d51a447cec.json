@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_30d4af4c95b580dec2ca4149198d5995fec42426df0e4af55d2358d51a447cec",
+  "sha256": "30d4af4c95b580dec2ca4149198d5995fec42426df0e4af55d2358d51a447cec",
+  "bytes": 19721886,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S05-v1.mp4",
+    "veo_1791058284909_7kxgdb.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Inside a dark greenhouse tower at night, a hand-built cinematic miniature. The camera rises slowly and smoothly up the trunk of the dry dead tree, tilting upward as it climbs, while warm amber light travels up the trunk and spreads into the bare twisting branches: each branch lights from within like a filament, the glow reaching the twig tips one after another, until the whole crown glows warm amber and the light warms the oxidized iron ribs and smoked glass panes high overhead. Fine dust drifts in the light. One smooth continuous camera rise, no cuts, no new objects, nothing else moves. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_de3eab11645793ca13517b82e8cb046f89c1d2d7ef83e4e09bf0fe97d57b3efc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1029159914,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

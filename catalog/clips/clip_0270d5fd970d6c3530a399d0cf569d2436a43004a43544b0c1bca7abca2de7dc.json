@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0270d5fd970d6c3530a399d0cf569d2436a43004a43544b0c1bca7abca2de7dc",
+  "sha256": "0270d5fd970d6c3530a399d0cf569d2436a43004a43544b0c1bca7abca2de7dc",
+  "bytes": 146954396,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 41.083333,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 986,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "may_2026_v4_4k.mp4"
+  ],
+  "collections": [
+    "may-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

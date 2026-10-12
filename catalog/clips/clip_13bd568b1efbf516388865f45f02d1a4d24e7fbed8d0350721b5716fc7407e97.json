@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_13bd568b1efbf516388865f45f02d1a4d24e7fbed8d0350721b5716fc7407e97",
+  "sha256": "13bd568b1efbf516388865f45f02d1a4d24e7fbed8d0350721b5716fc7407e97",
+  "bytes": 366152,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.458333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 203,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot02.mp4"
+  ],
+  "collections": [
+    "model-weights"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

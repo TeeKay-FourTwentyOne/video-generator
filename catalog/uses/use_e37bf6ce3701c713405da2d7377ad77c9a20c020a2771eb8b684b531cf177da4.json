@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_6b97f4bb645f4960100bf08069a67658e2d47baf1d269f34a5b75e43bbdd1c11",
+  "projectId": "borrowed-light",
+  "editVersion": "edit/v1",
+  "segmentIndex": 4,
+  "shotId": "S05",
+  "status": "planned",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 192,
+    "fps": 24
+  },
+  "timelineStartFrame": 396,
+  "outputSha256": null,
+  "schemaVersion": 1,
+  "id": "use_e37bf6ce3701c713405da2d7377ad77c9a20c020a2771eb8b684b531cf177da4"
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8b7ca263ccb3a6b50d1c55e0d5afc8ee3d3a4f3eb038e5f017608544a4136bf9",
+  "sha256": "8b7ca263ccb3a6b50d1c55e0d5afc8ee3d3a4f3eb038e5f017608544a4136bf9",
+  "bytes": 32427439,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 17.166667,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 412,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "still_juggling_v12_4k.mp4"
+  ],
+  "collections": [
+    "still-juggling"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

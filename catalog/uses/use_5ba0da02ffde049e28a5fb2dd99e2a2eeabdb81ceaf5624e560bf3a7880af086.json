@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_3018665c4c171cae5e2e2b3e39c47fb571aeafc1dfc427778bf3bbe937b860dc",
+  "projectId": "borrowed-light-fable",
+  "editVersion": "edit/v1",
+  "segmentIndex": 5,
+  "shotId": "S06",
+  "status": "planned",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 192,
+    "fps": 24
+  },
+  "timelineStartFrame": 526,
+  "outputSha256": null,
+  "schemaVersion": 1,
+  "id": "use_5ba0da02ffde049e28a5fb2dd99e2a2eeabdb81ceaf5624e560bf3a7880af086"
+}

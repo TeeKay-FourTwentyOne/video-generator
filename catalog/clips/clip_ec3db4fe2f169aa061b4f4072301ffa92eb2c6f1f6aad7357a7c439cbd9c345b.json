@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ec3db4fe2f169aa061b4f4072301ffa92eb2c6f1f6aad7357a7c439cbd9c345b",
+  "sha256": "ec3db4fe2f169aa061b4f4072301ffa92eb2c6f1f6aad7357a7c439cbd9c345b",
+  "bytes": 11808028,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s3_placard.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e402f8747a98f393d69aff3f2a30d19df1dfbde49ed57a9efc267a23bd3b26b5",
+  "sha256": "e402f8747a98f393d69aff3f2a30d19df1dfbde49ed57a9efc267a23bd3b26b5",
+  "bytes": 1050475,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_2_coffee_sprocket.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_2_coffee_sprocket"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This is a stylized, static shot of a coffee cup on a wooden surface, heavily filtered with magenta/pink coloring and framed with a decorative film strip border. The clip appears to be an outro or closing segment of a video, with Japanese text thanking viewers for watching. The composition remains essentially unchanged throughout the 8-second duration, serving as a visual backdrop for the closing message.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "bathed",
+        "center",
+        "coffee",
+        "color",
+        "cup",
+        "displayed",
+        "filtered",
+        "final",
+        "frame",
+        "heavily",
+        "identical",
+        "intense",
+        "magenta",
+        "maintains",
+        "medium",
+        "mug",
+        "nearly",
+        "position",
+        "prominently",
+        "remains",
+        "right",
+        "shot",
+        "sitting",
+        "speech",
+        "static",
+        "still",
+        "stylized",
+        "surface",
+        "treatment",
+        "what",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A coffee cup or mug is prominently displayed in the center-right of the frame, sitting on what appears to be a wooden surface. The entire image has a strong magenta/pink color filter applied, giving it a stylized, artistic appearance. The cup appears to be white or light-colored with a handle visible on the right side. There's a bright light source from the left creating highlights and shadows. The frame has a film strip border effect with sprocket holes visible at top and bottom, along with text reading 'APO' and 'APR'."
+        },
+        {
+          "seconds": 4,
+          "text": "The same coffee cup remains in nearly identical position, still bathed in the intense magenta/pink lighting. The cup sits on the wooden table surface with its shadow visible beneath. The background shows soft, diffused lighting creating a gradient effect. The film strip aesthetic continues with the decorative border. The composition remains static with the cup as the central subject. The lighting appears slightly different with subtle variations in the pink tones and shadow definition compared to the first frame."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The coffee cup maintains its position in this final frame, with the magenta color treatment still dominant throughout the image. Light rays or beams appear more visible in the upper left portion of the frame, creating diagonal streaks. The wooden surface texture is visible beneath the cup, and the shadow pattern remains consistent. The film strip border with 'APO' and 'APR' text continues to frame the image. The overall composition has remained remarkably stable throughout the clip."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bathed",
+    "center",
+    "coffee",
+    "color",
+    "cup",
+    "displayed",
+    "filtered",
+    "final",
+    "frame",
+    "heavily",
+    "identical",
+    "intense",
+    "magenta",
+    "maintains",
+    "medium",
+    "mug",
+    "nearly",
+    "position",
+    "prominently",
+    "remains",
+    "right",
+    "shot",
+    "sitting",
+    "speech",
+    "static",
+    "still",
+    "stylized",
+    "surface",
+    "treatment",
+    "what",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

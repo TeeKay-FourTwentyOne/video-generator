@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e4d82319b911499b4befc3cf795921a066caa5c4de4eaee5961f20ba6cdbaeb1",
+  "sha256": "e4d82319b911499b4befc3cf795921a066caa5c4de4eaee5961f20ba6cdbaeb1",
+  "bytes": 31035,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.083333,
+    "width": 720,
+    "height": 5120,
+    "frameRate": "24/1",
+    "frameCount": 194,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "tube_overlay_video.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:tube_overlay_video"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 8-second video clip consists entirely of black frames with thin gray borders on the sides, showing no discernible content, subjects, or visual information throughout its duration. The footage appears to be either corrupted, a placeholder, or intentionally blank, with no changes occurring between the start, middle, and end frames.",
+      "transcript": null,
+      "tags": [
+        "almost",
+        "black",
+        "borders",
+        "characteristics",
+        "clip",
+        "completely",
+        "consists",
+        "continues",
+        "display",
+        "entirely",
+        "final",
+        "frame",
+        "frames",
+        "gray",
+        "image",
+        "left",
+        "long",
+        "maintains",
+        "middle",
+        "nearly",
+        "predominantly",
+        "previous",
+        "screen",
+        "second",
+        "shows",
+        "silent",
+        "subtle",
+        "thin",
+        "vertical",
+        "video",
+        "visual"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "The frame shows an almost entirely black image with thin gray borders on the left and right edges. The composition is extremely dark with no discernible subjects, objects, or environmental details visible. The vertical aspect ratio creates a tall, narrow frame. There appears to be no lighting source illuminating the scene, resulting in a completely dark or blank frame that may indicate a transition, loading screen, or technical issue with the video content."
+        },
+        {
+          "seconds": 4.04,
+          "text": "This middle frame continues to display a predominantly black screen with subtle gray vertical borders on both sides. The image remains devoid of any visible content, subjects, or distinguishable features. The extremely dark composition persists throughout, with the tall vertical format maintained. No changes in lighting, color, or visual elements are apparent from the starting frame, suggesting either intentional darkness or a technical display issue."
+        },
+        {
+          "seconds": 7.98,
+          "text": "The final frame maintains the same visual characteristics as the previous frames - a nearly completely black screen with thin grayish borders along the left and right edges. The vertical orientation continues with no visible subjects, actions, or environmental details. The consistent darkness throughout all frames suggests this may be placeholder content, a technical error, or intentionally blank footage. No motion or change is implied."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "almost",
+    "black",
+    "borders",
+    "characteristics",
+    "clip",
+    "completely",
+    "consists",
+    "continues",
+    "display",
+    "entirely",
+    "final",
+    "frame",
+    "frames",
+    "gray",
+    "image",
+    "left",
+    "long",
+    "maintains",
+    "middle",
+    "nearly",
+    "predominantly",
+    "previous",
+    "screen",
+    "second",
+    "shows",
+    "silent",
+    "subtle",
+    "thin",
+    "vertical",
+    "video",
+    "visual"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

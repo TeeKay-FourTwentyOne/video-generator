@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5dedcc835233627df4023170802e4dd89364009f624f23ff89f73f6902119fe2",
+  "sha256": "5dedcc835233627df4023170802e4dd89364009f624f23ff89f73f6902119fe2",
+  "bytes": 908045,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot3.mp4"
+  ],
+  "collections": [
+    "cherries-thawing"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

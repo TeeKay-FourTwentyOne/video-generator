@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c89b9c67948c0fef0adeb79eae1293d1614b773a749e28cbd3802f60463d42c7",
+  "sha256": "c89b9c67948c0fef0adeb79eae1293d1614b773a749e28cbd3802f60463d42c7",
+  "bytes": 772544,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767548605442_0o52fl.mp4"
+  ],
+  "collections": [
+    "impossible_orbit_v2"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767548605442_0o52fl"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian woman in her 30s with a medium build, chin-length dark brown hair, and brown eyes. She is wearing a loose-fitting white V-neck blouse with three-quarter rolled-up sleeves, dark blue skinny jeans, and black pointed-toe stiletto heels, holding a calm, neutral expression. Medium shot of the woman standing still in a contemporary rustic interior featuring a prominent stacked stone corner fireplace and medium-toned wood plank floors. The space has neutral taupe walls and a flat ceiling with spotlights, creating a warm atmosphere. She faces the camera directly with calm, unwavering eye contact, maintaining her gaze as the camera slowly tracks right in a smooth orbital movement around her. Soft natural daylight filters through a large window behind her, creating gentle illumination across her figure. The lighting is soft and natural with a slightly desaturated color palette. The woman remains perfectly still and composed, her eyes following the camera's movement to maintain direct eye contact throughout the 4-second duration. The camera movement is fluid and controlled, beginning the orbital path while keeping her centered in the medium shot frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b9cd1cf652d35f0acc1aac6fe18836dff3bfb176cabd87ddc13ef624b530c53e",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian woman in her 30s with a medium build, chin-length dark brown hair, and brown eyes. She is wearing a loose-fitting white V-neck blouse with three-quarter rolled-up sleeves, dark blue skinny jeans, and black pointed-toe stiletto heels, holding a calm, neutral expression. Medium shot of the woman standing still in a contemporary rustic interior featuring a prominent stacked stone corner fireplace and medium-toned wood plank floors. The space has neutral taupe walls and a flat ceiling with spotlights, creating a warm atmosphere. She faces the camera directly with calm, unwavering eye contact, maintaining her gaze as the camera slowly tracks right in a smooth orbital movement around her. Soft natural daylight filters through a large window behind her, creating gentle illumination across her figure. The lighting is soft and natural with a slightly desaturated color palette. The woman remains perfectly still and composed, her eyes following the camera's movement to maintain direct eye contact throughout the 4-second duration. The camera movement is fluid and controlled, beginning the orbital path while keeping her centered in the medium shot frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b9cd1cf652d35f0acc1aac6fe18836dff3bfb176cabd87ddc13ef624b530c53e",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:42:43.359Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A woman in a white blouse and dark jeans stands in a living room with a stone fireplace, speaking directly to camera about needing to leave. She gestures expressively mid-clip while delivering her message about being late, then returns to a neutral pose. The clip appears to be a casual home video or social media content filmed in portrait orientation.",
+      "transcript": "Wow, honey. I have to speak now or I'm going to be late.",
+      "tags": [
+        "against",
+        "blouse",
+        "bob",
+        "both",
+        "brown",
+        "centered",
+        "dark",
+        "extended",
+        "fireplace",
+        "frame",
+        "gesturing",
+        "going",
+        "hair",
+        "hands",
+        "her",
+        "honey",
+        "jeans",
+        "late",
+        "length",
+        "living",
+        "medium",
+        "mouth",
+        "neutral",
+        "now",
+        "open",
+        "pose",
+        "resting",
+        "returned",
+        "room",
+        "short",
+        "sides",
+        "speak",
+        "speaking",
+        "speech",
+        "standing",
+        "stands",
+        "stone",
+        "wearing",
+        "white",
+        "woman",
+        "wow"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short brown bob-length hair stands centered in frame, wearing a loose white V-neck blouse with rolled sleeves and dark blue skinny jeans with black pointed-toe heels. She has a slight smile and her arms are relaxed at her sides. Behind her is a living room with beige walls, a large window with wooden trim on the left, and a stone fireplace on the right. The hardwood floor is visible, and natural light streams in from the window. The composition is a full-body portrait shot."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now speaking with her mouth open, gesturing with both hands extended outward at hip level in an explanatory manner. Her expression is animated and engaged. The setting remains identical - the living room with stone fireplace, large window, beige walls, and hardwood flooring. She maintains the same centered position in the frame. The lighting conditions are consistent with natural daylight from the window creating soft illumination on her white blouse."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has returned to a more neutral standing pose with hands resting at her sides against her thighs. Her expression shows a slight smile as she appears to be finishing her statement. She remains in the same position and outfit - white V-neck blouse, dark skinny jeans, and black heels. The background elements are unchanged: stone fireplace to the right, window with wooden frame to the left, beige walls, and wooden flooring. The vertical phone-style framing captures her full body."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_022",
+      "name": "Claire",
+      "description": "Woman with dark bob haircut, white v-neck blouse, dark jeans and black heels, standing in living room with stone fireplace, surprised expression",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "blouse",
+    "bob",
+    "both",
+    "brown",
+    "centered",
+    "dark",
+    "extended",
+    "fireplace",
+    "frame",
+    "gesturing",
+    "going",
+    "hair",
+    "hands",
+    "her",
+    "honey",
+    "jeans",
+    "late",
+    "length",
+    "living",
+    "medium",
+    "mouth",
+    "neutral",
+    "now",
+    "open",
+    "pose",
+    "resting",
+    "returned",
+    "room",
+    "short",
+    "sides",
+    "speak",
+    "speaking",
+    "speech",
+    "standing",
+    "stands",
+    "stone",
+    "wearing",
+    "white",
+    "woman",
+    "wow"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

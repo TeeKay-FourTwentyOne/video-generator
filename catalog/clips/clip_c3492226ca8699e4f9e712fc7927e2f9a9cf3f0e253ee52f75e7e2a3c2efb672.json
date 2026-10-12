@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c3492226ca8699e4f9e712fc7927e2f9a9cf3f0e253ee52f75e7e2a3c2efb672",
+  "sha256": "c3492226ca8699e4f9e712fc7927e2f9a9cf3f0e253ee52f75e7e2a3c2efb672",
+  "bytes": 2562464,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Medium_closeup_of_202512221301_2pgsz.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3ef3ae0a81388113f0a4486deb62f4a92fdacc2e95741f1121917f556111c86d",
+  "sha256": "3ef3ae0a81388113f0a4486deb62f4a92fdacc2e95741f1121917f556111c86d",
+  "bytes": 31903582,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "face_sweating.mp4"
+  ],
+  "collections": [
+    "feb-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

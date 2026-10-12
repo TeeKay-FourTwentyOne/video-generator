@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bb0c7467964682d6103c5a916c80c35911d5b02e31b97600e2ee8d31511f59f4",
+  "sha256": "bb0c7467964682d6103c5a916c80c35911d5b02e31b97600e2ee8d31511f59f4",
+  "bytes": 3380491,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "D2-BL35.mp4",
+    "veo_1790664348454_68a5ub.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

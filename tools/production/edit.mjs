@@ -4,25 +4,36 @@ import path from 'node:path';
 import { command, probe, hashFile, readJson, localPath, loadPlan } from './film.mjs';
 import { PROJECT_ROOT } from '../../mcp/video-generator/dist/utils/paths.js';
 import { atomicJson, readLedger, budgetSummary } from '../../mcp/video-generator/dist/production/ledger.js';
+import { importClip, resolveClip, recordUse } from './clip-library.mjs';
+import { projectIdFor } from './clip-import.mjs';
+
+export function segmentSource(root, segment, catalogRoot = PROJECT_ROOT) {
+  if (segment.clipId) {
+    if (segment.source !== undefined) throw new Error('Use either clipId or a legacy source path, not both');
+    return resolveClip(segment.clipId, catalogRoot);
+  }
+  return localPath(root, segment.source);
+}
+const segmentHash = segment => segment.sha256 ?? segment.clipId?.slice(5);
 
 const validVersion = version => {
   if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,39}$/.test(version ?? '')) throw new Error('Specify a new safe edit version, e.g. v1');
 };
-export function validateEdit(root, edit, plan) {
+export function validateEdit(root, edit, plan, { catalogRoot = PROJECT_ROOT } = {}) {
   if (edit.schemaVersion !== 1 || !Array.isArray(edit.segments) || !edit.segments.length) throw new Error('Invalid edit');
   if (budgetSummary(readLedger(path.join(root, 'budget.json'))).remainingUsd < 0) throw new Error('Budget overrun must be resolved before delivery');
   let total = 0;
   for (const segment of edit.segments) {
     if (!plan.shots.some(s => s.id === segment.shotId)) throw new Error('Edit references an unknown shot');
-    const source = localPath(root, segment.source);
-    if (hashFile(source) !== segment.sha256) throw new Error(`Source hash changed: ${segment.shotId}`);
+    const source = segmentSource(root, segment, catalogRoot);
+    if (hashFile(source) !== segmentHash(segment)) throw new Error(`Source hash changed: ${segment.shotId}`);
     if (!Number.isInteger(segment.inFrame) || segment.inFrame < 0 || !Number.isInteger(segment.frames) || segment.frames < 1)
       throw new Error('Trims require nonnegative integer inFrame and positive frames');
     const fadeIn = segment.fadeInFrames ?? 0, fadeOut = segment.fadeOutFrames ?? 0;
     if (![fadeIn, fadeOut].every(n => Number.isInteger(n) && n >= 0) || fadeIn + fadeOut >= segment.frames)
       throw new Error('Fades are nonnegative integer frame counts that fit inside the segment');
     const decision = readJson(localPath(root, segment.decisionFile));
-    if (!['keep', 'edit-around'].includes(decision.decision) || !decision.notes?.trim() || decision.sha256 !== segment.sha256
+    if (!['keep', 'edit-around'].includes(decision.decision) || !decision.notes?.trim() || decision.sha256 !== segmentHash(segment)
         || !Number.isInteger(decision.startFrame) || !Number.isInteger(decision.endFrameExclusive)
         || decision.startFrame < 0 || decision.endFrameExclusive <= decision.startFrame)
       throw new Error(`Missing source-specific acceptance decision: ${segment.shotId}`);
@@ -43,14 +54,21 @@ export function validateEdit(root, edit, plan) {
   }
   return { frames: total, seconds: total / plan.fps };
 }
-export function assemble(root, version) {
+export function assemble(root, version, { catalogRoot = PROJECT_ROOT } = {}) {
   validVersion(version);
   const plan = loadPlan(root);
-  const edit = readJson(localPath(root, `edit/${version}.json`));
-  const expected = validateEdit(root, edit, plan);
+  const originalEdit = readJson(localPath(root, `edit/${version}.json`));
+  const expected = validateEdit(root, originalEdit, plan, { catalogRoot });
   const folder = localPath(root, `final/${version}`);
   // Refuse existing version, even if it is incomplete. A crash must not overwrite evidence.
   fs.mkdirSync(folder);
+  const projectId = projectIdFor(root, catalogRoot);
+  const edit = { ...originalEdit, segments: originalEdit.segments.map(segment => {
+    const clip = segment.clipId ? { id: segment.clipId, sha256: segmentHash(segment) }
+      : importClip(localPath(root, segment.source), { collections: [projectId] }, catalogRoot);
+    const { source, ...rest } = segment;
+    return { ...rest, clipId: clip.id, sha256: clip.sha256 };
+  }) };
   const files = [];
   for (const [i, segment] of edit.segments.entries()) {
     const filename = `segment-${String(i + 1).padStart(2, '0')}.mp4`;
@@ -61,7 +79,7 @@ export function assemble(root, version) {
     // FFmpeg ramps from the frame after `s`, so the first N frames rise from black and the last N frames end on black.
     if (segment.fadeInFrames) filters.push(`fade=t=in:s=0:n=${segment.fadeInFrames}`);
     if (segment.fadeOutFrames) filters.push(`fade=t=out:s=${segment.frames - segment.fadeOutFrames - 1}:n=${segment.fadeOutFrames}`);
-    command('ffmpeg', ['-v', 'error', '-n', '-i', localPath(root, segment.source), '-an', '-vf', filters.join(','),
+    command('ffmpeg', ['-v', 'error', '-n', '-i', segmentSource(root, segment, catalogRoot), '-an', '-vf', filters.join(','),
       '-frames:v', String(segment.frames), '-r', String(plan.fps), '-c:v', 'libx264', '-preset', 'medium', '-crf', '18',
       '-pix_fmt', 'yuv420p', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', output]);
     files.push(filename);
@@ -79,13 +97,21 @@ export function assemble(root, version) {
   const video = details.streams.find(s => s.codec_type === 'video');
   if (Number(video.nb_read_frames) !== expected.frames || video.width !== plan.width || video.height !== plan.height)
     throw new Error('Rendered delivery does not match the edit contract');
-  for (const segment of edit.segments)
-    if (hashFile(localPath(root, segment.source)) !== segment.sha256) throw new Error('Source mutated during rendering');
+  for (const segment of originalEdit.segments)
+    if (hashFile(segmentSource(root, segment, catalogRoot)) !== segmentHash(segment)) throw new Error('Source mutated during rendering');
   const report = { schemaVersion: 1, version, title: plan.title, output: path.relative(root, output), sha256: hashFile(output),
     expected, probe: details, checks: { fullDecode: true, dimensions: true, frameCount: true, sourceHashes: true },
     audioReview: 'Technical verification only; listening review is separate.', budget: budgetSummary(readLedger(path.join(root, 'budget.json'))),
     edit, artisticApproval: false, publication: null };
   atomicJson(path.join(folder, 'delivery.json'), report);
+  let atFrame = 0;
+  for (const [index, segment] of edit.segments.entries()) {
+    recordUse({ clipId: segment.clipId, projectId, editVersion: `edit/${version}`, segmentIndex: index,
+      shotId: segment.shotId, status: 'rendered', evidence: 'saved-frame-edit',
+      range: { unit: 'frames', start: segment.inFrame, length: segment.frames, fps: plan.fps },
+      timelineStartFrame: atFrame, outputSha256: report.sha256 }, catalogRoot);
+    atFrame += segment.frames;
+  }
   return { output: report.output, sha256: report.sha256, ...expected, checks: report.checks };
 }
 const escape = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -102,7 +128,7 @@ export function review(root, version, options = {}) {
   let frame = 0;
   const cards = report.edit.segments.map((s, i) => {
     const image = `shot-${i + 1}.jpg`;
-    command('ffmpeg', ['-v', 'error', '-n', '-ss', String((s.inFrame + s.frames * .5) / plan.fps), '-i', localPath(root, s.source),
+    command('ffmpeg', ['-v', 'error', '-n', '-ss', String((s.inFrame + s.frames * .5) / plan.fps), '-i', segmentSource(root, s, options.catalogRoot),
       '-vf', 'scale=324:-2', '-frames:v', '1', path.join(folder, image)]);
     const at = frame / plan.fps; frame += s.frames;
     const decision = readJson(localPath(root, s.decisionFile));

@@ -131,10 +131,15 @@ paid prompt generation; migrate its shot descriptions into an explicit film plan
 
 ## Review and edit
 
+Provider polling returns a stable `clipId` and repository-relative master path in
+`data/clips/`. Search existing footage with `npm run clips -- search QUERY` before
+buying or copying a source. Use the [shared clip library](clip-library.md) for local
+imports, public metadata and usage analytics; full originals stay in that library.
+
 For a generated continuation, extract the chosen moving frame by decoded index:
 
 ```sh
-npm run film -- join-anchor data/workspace/my-film-v1 clips/S04-v1.mp4 156 refs/S05.png
+npm run film -- join-anchor data/workspace/my-film-v1 "$CLIP_ID" 156 refs/S05.png
 ```
 
 This local command writes the PNG and a hash-bound `.png.json` provenance record.
@@ -174,8 +179,8 @@ Write `edit/v1.json` with the final frame ranges:
 {
   "schemaVersion": 1,
   "segments": [{
-    "shotId": "S01", "source": "clips/S01-v1.mp4",
-    "sha256": "SOURCE_SHA256", "inFrame": 12, "frames": 168,
+    "shotId": "S01", "clipId": "clip_<full-sha256>",
+    "inFrame": 12, "frames": 168,
     "decisionFile": "qa/S01.json"
   }],
   "audio": { "path": "edit/score.wav", "sha256": "AUDIO_SHA256" }
@@ -189,7 +194,10 @@ npm run film -- review data/workspace/my-film-v1 v1 --overlay
 
 Assembly checks input hashes and accepted frame ranges, refuses an existing
 version, preserves source media, encodes local segments, and verifies full decode,
-dimensions and actual decoded frame count. `final/v1/film.mp4`, `delivery.json`,
+dimensions and actual decoded frame count. It records each segment's clip ID,
+source frame range and delivered output hash in `catalog/uses/`. Legacy workspace
+`source` plus `sha256` edits are still supported and are imported during assembly.
+`final/v1/film.mp4`, `delivery.json`,
 and `review.html` form a native review package; `--overlay` adds `film_debug.mp4`,
 a frame and timecode burn for review notes in source time. Failed/incomplete versions remain
 inspectable; choose a new version after fixing the cause. The review page can be

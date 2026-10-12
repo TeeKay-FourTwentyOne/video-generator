@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_48f6d662f88b47c0c8e3fdd9e2b448aac43937d7ee0539033924d75d3e6cb802",
+  "sha256": "48f6d662f88b47c0c8e3fdd9e2b448aac43937d7ee0539033924d75d3e6cb802",
+  "bytes": 1743997,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Man_on_spaceship_202604252117.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

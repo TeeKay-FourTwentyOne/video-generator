@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5136f5e3cabe18497e4954bf85881af6b7d587ac395a0d4744d9cde9a05779f7",
+  "sha256": "5136f5e3cabe18497e4954bf85881af6b7d587ac395a0d4744d9cde9a05779f7",
+  "bytes": 36252480,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 51.85,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "60/1",
+    "frameCount": 3111,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "broken_record_v2_1_4k.mp4"
+  ],
+  "collections": [
+    "broken-record"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_677bdd264741674037cb6bb73593d0e951c03f78d302081ac299e3e8db0228e6",
+  "sha256": "677bdd264741674037cb6bb73593d0e951c03f78d302081ac299e3e8db0228e6",
+  "bytes": 11713306,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S02-v1.mp4",
+    "veo_1791058561342_emhsa6.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "A hand-built cinematic miniature. The small maintenance machine rolls in from the right on its two caterpillar tracks and comes to a stop beside the low round planter holding the dry dead tree, its amber chest lamp lighting the roots and the small empty brass socket at the base of the trunk. It pauses. Then its small cream ceramic head tilts slowly downward toward the socket, and its brass two-prong gripper reaches out slowly and hovers just at the socket's rim without touching it. The camera is locked off at floor level, perfectly still. Soft, deliberate mechanical movement; the tree and planter do not move; no other light appears; the machine keeps its one chest lamp. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4a3e39585a8414f59f94e288bc6a5f16cb006e1a85437cefe808cbbdb90d52d3",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2000717644,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

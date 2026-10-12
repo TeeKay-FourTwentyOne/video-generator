@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0c9085e16fe4ed0bc0cb4ace04970d13965d51ec22ad9221aa3ca46c7a48e5d6",
+  "sha256": "0c9085e16fe4ed0bc0cb4ace04970d13965d51ec22ad9221aa3ca46c7a48e5d6",
+  "bytes": 6574013,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "large_sovereigns.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

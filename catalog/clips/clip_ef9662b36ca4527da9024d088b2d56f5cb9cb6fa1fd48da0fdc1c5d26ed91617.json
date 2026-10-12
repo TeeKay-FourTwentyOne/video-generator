@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ef9662b36ca4527da9024d088b2d56f5cb9cb6fa1fd48da0fdc1c5d26ed91617",
+  "sha256": "ef9662b36ca4527da9024d088b2d56f5cb9cb6fa1fd48da0fdc1c5d26ed91617",
+  "bytes": 16503760,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S06-v1.mp4",
+    "veo_1791077712789_nd95i2.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_97634b9c3a9653dc02acfeda316e266f19529397a3fe517f932978b5ec0118d9",
+  "sha256": "97634b9c3a9653dc02acfeda316e266f19529397a3fe517f932978b5ec0118d9",
+  "bytes": 4068084,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S8_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Medium close-up. {{VASCARI_LOCK}} He stands in the open front doorway at night, on the porch just outside the threshold, warm lamplight from inside on his face, porch eaves shedding rain behind him. He remains standing exactly where he is for the entire shot; he does not step forward and does not cross the threshold; his feet stay planted. He speaks quietly, with unhurried old-world courtesy, in a low, faintly accented voice: \"Good evening, ma'am. I'm told you let rooms.\" A small bow of the head, nothing more. Sound: rain on the porch roof; his low voice; stillness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e5b3e3cf4f12dbe73914da804d3af79ff1137ceab34c25a31ab7f3b7a74d4871",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

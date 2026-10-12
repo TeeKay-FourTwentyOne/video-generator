@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f32a10dd5ef69243a3f286690d6ea3288bd9819d9ab848497d356418ff292702",
+  "sha256": "f32a10dd5ef69243a3f286690d6ea3288bd9819d9ab848497d356418ff292702",
+  "bytes": 2199046,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v3_whale_settle.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_34510457e3190100a774714a518e9eba6a10d99bcf98b9156d048fb885104112",
+  "sha256": "34510457e3190100a774714a518e9eba6a10d99bcf98b9156d048fb885104112",
+  "bytes": 7743698,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "A_nature_documentary_202601030514_o8hvy.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

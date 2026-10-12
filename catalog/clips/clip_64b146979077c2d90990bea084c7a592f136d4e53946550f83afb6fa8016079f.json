@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_64b146979077c2d90990bea084c7a592f136d4e53946550f83afb6fa8016079f",
+  "sha256": "64b146979077c2d90990bea084c7a592f136d4e53946550f83afb6fa8016079f",
+  "bytes": 25041557,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 5.125,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 123,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "edit_11_see_if_it_holds.mp4"
+  ],
+  "collections": [
+    "alphaville-moon"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

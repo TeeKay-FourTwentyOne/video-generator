@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_68df8cb2dc00d603303d9289fe8ea7570bc53c7c728ebe47370325824c588c16",
+  "sha256": "68df8cb2dc00d603303d9289fe8ea7570bc53c7c728ebe47370325824c588c16",
+  "bytes": 136423912,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 37.5,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 900,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "passenger_v1_4k.mp4"
+  ],
+  "collections": [
+    "passenger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

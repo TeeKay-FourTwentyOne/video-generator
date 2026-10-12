@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b82f84fa5adabea583467dd00f5dacc8c339fcebb5994486add28ab19c2d86b7",
+  "sha256": "b82f84fa5adabea583467dd00f5dacc8c339fcebb5994486add28ab19c2d86b7",
+  "bytes": 64346394,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "meridian-house-documentary-full-turn-review.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

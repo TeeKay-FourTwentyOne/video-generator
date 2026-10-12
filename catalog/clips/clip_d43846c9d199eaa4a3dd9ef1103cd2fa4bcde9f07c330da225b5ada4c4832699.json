@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d43846c9d199eaa4a3dd9ef1103cd2fa4bcde9f07c330da225b5ada4c4832699",
+  "sha256": "d43846c9d199eaa4a3dd9ef1103cd2fa4bcde9f07c330da225b5ada4c4832699",
+  "bytes": 6547199,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b_q720.mp4"
+  ],
+  "collections": [
+    "seamless-joins"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

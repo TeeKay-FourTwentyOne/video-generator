@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d025039b21fe6c96fba9cae49da2cbcfcb08bab8f1285235be71032816610cd1",
+  "sha256": "d025039b21fe6c96fba9cae49da2cbcfcb08bab8f1285235be71032816610cd1",
+  "bytes": 3063081,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Additional_targets_magically_202601130358_myu.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

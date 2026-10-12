@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ec355c2e6499c0251109ec1a3cf61145823c41b900b633786b10ef59c326deff",
+  "sha256": "ec355c2e6499c0251109ec1a3cf61145823c41b900b633786b10ef59c326deff",
+  "bytes": 31519672,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Happier_1.mp4"
+  ],
+  "collections": [
+    "alphaville-moon"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

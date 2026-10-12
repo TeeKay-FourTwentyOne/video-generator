@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8b702f15dc3ac1bc3238c1ed18931e332062fa154d622b317a668a517801a5d4",
+  "sha256": "8b702f15dc3ac1bc3238c1ed18931e332062fa154d622b317a668a517801a5d4",
+  "bytes": 4829909,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "tour.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

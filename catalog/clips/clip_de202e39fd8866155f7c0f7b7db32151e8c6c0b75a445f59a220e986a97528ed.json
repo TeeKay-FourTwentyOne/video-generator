@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_de202e39fd8866155f7c0f7b7db32151e8c6c0b75a445f59a220e986a97528ed",
+  "sha256": "de202e39fd8866155f7c0f7b7db32151e8c6c0b75a445f59a220e986a97528ed",
+  "bytes": 6980031,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "flamen-fire.mp4"
+  ],
+  "collections": [
+    "may-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

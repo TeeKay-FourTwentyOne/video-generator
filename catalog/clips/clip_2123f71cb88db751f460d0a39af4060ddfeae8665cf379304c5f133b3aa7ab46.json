@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2123f71cb88db751f460d0a39af4060ddfeae8665cf379304c5f133b3aa7ab46",
+  "sha256": "2123f71cb88db751f460d0a39af4060ddfeae8665cf379304c5f133b3aa7ab46",
+  "bytes": 29034889,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "factory_workers.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

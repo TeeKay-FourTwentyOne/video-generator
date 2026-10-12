@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_2d35f6769f40cbf6f938e03ac247b91b486c732631889f907197d4c72e88d369",
+  "projectId": "washing-day-codex",
+  "editVersion": "edit/v1",
+  "segmentIndex": 1,
+  "shotId": "S02",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 114,
+    "fps": 24
+  },
+  "timelineStartFrame": 84,
+  "outputSha256": "77c08db5d32f57311a90bb745dd2c6e7a547c6a1cb200b5c03c7d133c9c2c670",
+  "schemaVersion": 1,
+  "id": "use_e36206bde729723476965792780fc47f229205b108c7ab225bfdac03dd437dcc"
+}

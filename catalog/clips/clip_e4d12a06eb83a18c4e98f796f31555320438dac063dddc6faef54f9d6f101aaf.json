@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e4d12a06eb83a18c4e98f796f31555320438dac063dddc6faef54f9d6f101aaf",
+  "sha256": "e4d12a06eb83a18c4e98f796f31555320438dac063dddc6faef54f9d6f101aaf",
+  "bytes": 3159433,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 30,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "angles-solid-silver-30s.mp4"
+  ],
+  "collections": [
+    "angles"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

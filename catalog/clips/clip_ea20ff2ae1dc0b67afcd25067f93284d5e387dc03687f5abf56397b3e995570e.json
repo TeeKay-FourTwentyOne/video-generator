@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ea20ff2ae1dc0b67afcd25067f93284d5e387dc03687f5abf56397b3e995570e",
+  "sha256": "ea20ff2ae1dc0b67afcd25067f93284d5e387dc03687f5abf56397b3e995570e",
+  "bytes": 5047565,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b_720.mp4"
+  ],
+  "collections": [
+    "seamless-joins"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

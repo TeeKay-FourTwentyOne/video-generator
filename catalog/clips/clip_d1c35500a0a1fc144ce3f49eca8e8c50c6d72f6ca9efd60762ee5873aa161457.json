@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d1c35500a0a1fc144ce3f49eca8e8c50c6d72f6ca9efd60762ee5873aa161457",
+  "sha256": "d1c35500a0a1fc144ce3f49eca8e8c50c6d72f6ca9efd60762ee5873aa161457",
+  "bytes": 7073190,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "VA4-v1.mp4",
+    "veo_1791428236285_nauzkw.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up, 85 mm lens, shallow depth of field, late afternoon low golden sun. A woman with a long dark braid, in a faded khaki shirt and blue nitrile gloves, stands shoulder-deep in a deep excavation trench. She sets down a full bucket of dark earth, straightens, wipes her forehead with the back of her gloved hand and looks up toward the rim and the sky, squinting in the sun, then looks back down to the work. Dust in the light. She does not look at the camera and does not speak. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b00f6dbd4e769bcc81d8d67e1c1368187345a761a29d8770a1ad8b27c9fac91f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3737115415,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

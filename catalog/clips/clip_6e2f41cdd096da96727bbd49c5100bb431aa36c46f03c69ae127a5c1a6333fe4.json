@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6e2f41cdd096da96727bbd49c5100bb431aa36c46f03c69ae127a5c1a6333fe4",
+  "sha256": "6e2f41cdd096da96727bbd49c5100bb431aa36c46f03c69ae127a5c1a6333fe4",
+  "bytes": 6031557,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 27,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 648,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "act3_m5_v1.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

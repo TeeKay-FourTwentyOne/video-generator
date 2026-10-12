@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a55ec082d3b66f5204e211f83fadfa954de765951b3df1103bd557226944e167",
+  "sha256": "a55ec082d3b66f5204e211f83fadfa954de765951b3df1103bd557226944e167",
+  "bytes": 3005042,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v1_whale_drift.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

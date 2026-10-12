@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8042991883992f0e2203a4280a268278c82438414c3d1828f8b7aa6ca8bcce0e",
+  "sha256": "8042991883992f0e2203a4280a268278c82438414c3d1828f8b7aa6ca8bcce0e",
+  "bytes": 1780381,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767516986432_z2afix.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767516986432_z2afix"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A vast post-apocalyptic wasteland extends to the horizon under a thick, ash-laden sky heavy with gray clouds. The barren landscape is littered with twisted metal wreckage and chunks of crumbling concrete scattered across the scorched earth. In the far distance, a solitary mechanical figure walks with slow, deliberate steps, its silhouette barely visible against the desolate backdrop. The camera holds a wide establishing shot from a low angle, emphasizing the scale and emptiness of the devastated world. Harsh, diffused lighting filters through the ashen atmosphere, casting muted shadows and creating a desaturated color palette of grays, browns, and burnt oranges. The robot's movement is steady and methodical, each step purposeful as it traverses the wasteland. Cinematic composition with deep depth of field captures both the immediate debris in the foreground and the distant mechanical wanderer. Post-apocalyptic atmosphere with gritty, weathered textures and a sense of haunting solitude pervades the scene.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_324ede35b3c1ca76fe93b6e3e67aa5db1b1ac86c15027f73344e0b703c5b51ba",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A vast post-apocalyptic wasteland extends to the horizon under a thick, ash-laden sky heavy with gray clouds. The barren landscape is littered with twisted metal wreckage and chunks of crumbling concrete scattered across the scorched earth. In the far distance, a solitary mechanical figure walks with slow, deliberate steps, its silhouette barely visible against the desolate backdrop. The camera holds a wide establishing shot from a low angle, emphasizing the scale and emptiness of the devastated world. Harsh, diffused lighting filters through the ashen atmosphere, casting muted shadows and creating a desaturated color palette of grays, browns, and burnt oranges. The robot's movement is steady and methodical, each step purposeful as it traverses the wasteland. Cinematic composition with deep depth of field captures both the immediate debris in the foreground and the distant mechanical wanderer. Post-apocalyptic atmosphere with gritty, weathered textures and a sense of haunting solitude pervades the scene.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_324ede35b3c1ca76fe93b6e3e67aa5db1b1ac86c15027f73344e0b703c5b51ba",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T08:55:42.603Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip depicts a humanoid figure walking through a devastated, post-apocalyptic landscape toward the camera. The consistent low-angle framing, dramatic backlighting with god rays, and extensive debris create an ominous atmosphere. Japanese text overlay indicates this is likely an ending sequence thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "against",
+        "apocalyptic",
+        "appearing",
+        "atmosphere",
+        "bright",
+        "center",
+        "cinematic",
+        "clip",
+        "composition",
+        "depicts",
+        "devastated",
+        "dramatic",
+        "figure",
+        "first",
+        "frame",
+        "humanoid",
+        "identical",
+        "landscape",
+        "larger",
+        "maintaining",
+        "maintains",
+        "medium",
+        "nearly",
+        "now",
+        "post",
+        "scene",
+        "showing",
+        "silhouette",
+        "silhouetted",
+        "slightly",
+        "speech",
+        "walking"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dramatic post-apocalyptic scene showing a humanoid figure silhouetted against a bright, cloud-filtered sky. The figure stands centered in the mid-ground, surrounded by extensive debris and rubble. The foreground features broken concrete and rocks in dark tones, while twisted metal structures frame both sides. Dramatic god rays pierce through heavy clouds, creating an orange-brown atmospheric haze. Low-angle camera perspective emphasizes the desolation, with strong backlighting creating a cinematic, ominous mood."
+        },
+        {
+          "seconds": 2,
+          "text": "Nearly identical composition to the first frame, maintaining the silhouetted humanoid figure at center against the dramatic backlit sky. The devastated landscape continues with scattered debris, broken concrete slabs, and metallic wreckage on both sides. The lighting remains consistent with bright white light breaking through dark storm clouds, casting warm orange tones across the horizon. The figure appears slightly more defined, suggesting subtle forward movement. Ground-level camera angle persists, emphasizing scale of destruction."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The scene maintains its apocalyptic atmosphere with the humanoid silhouette now appearing slightly larger, indicating approach toward the camera. Rubble and debris fill the foreground with cracked earth and broken stones. The dramatic sky continues with god rays streaming through parting clouds, creating strong contrast between bright whites and dark grays. Twisted metal poles and structural remnants frame the composition. The warm sepia-toned color palette reinforces the desolate, cinematic atmosphere throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "apocalyptic",
+    "appearing",
+    "atmosphere",
+    "bright",
+    "center",
+    "cinematic",
+    "clip",
+    "composition",
+    "depicts",
+    "devastated",
+    "dramatic",
+    "figure",
+    "first",
+    "frame",
+    "humanoid",
+    "identical",
+    "landscape",
+    "larger",
+    "maintaining",
+    "maintains",
+    "medium",
+    "nearly",
+    "now",
+    "post",
+    "scene",
+    "showing",
+    "silhouette",
+    "silhouetted",
+    "slightly",
+    "speech",
+    "walking"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

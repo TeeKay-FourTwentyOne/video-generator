@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_309820732bd5e19a75d19a1fa9497501830731f7dbc1efc3702551ff2a583ff9",
+  "sha256": "309820732bd5e19a75d19a1fa9497501830731f7dbc1efc3702551ff2a583ff9",
+  "bytes": 2184006,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s11_button.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-5-cancan"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

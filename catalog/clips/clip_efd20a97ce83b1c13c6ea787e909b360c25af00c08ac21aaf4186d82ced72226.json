@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_efd20a97ce83b1c13c6ea787e909b360c25af00c08ac21aaf4186d82ced72226",
+  "sha256": "efd20a97ce83b1c13c6ea787e909b360c25af00c08ac21aaf4186d82ced72226",
+  "bytes": 9495830,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tour-comparison.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

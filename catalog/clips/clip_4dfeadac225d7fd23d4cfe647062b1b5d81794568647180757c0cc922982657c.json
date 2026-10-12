@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4dfeadac225d7fd23d4cfe647062b1b5d81794568647180757c0cc922982657c",
+  "sha256": "4dfeadac225d7fd23d4cfe647062b1b5d81794568647180757c0cc922982657c",
+  "bytes": 1095471,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 7,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 168,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot_1-13_PLACEHOLDER.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29401f003f506f8b75750f1474257ccfc814aaacedc3b6f1b34fb99a2541b6f5",
+  "sha256": "29401f003f506f8b75750f1474257ccfc814aaacedc3b6f1b34fb99a2541b6f5",
+  "bytes": 34859,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "end-card.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

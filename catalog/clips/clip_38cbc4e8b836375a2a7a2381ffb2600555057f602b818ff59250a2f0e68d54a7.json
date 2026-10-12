@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_38cbc4e8b836375a2a7a2381ffb2600555057f602b818ff59250a2f0e68d54a7",
+  "sha256": "38cbc4e8b836375a2a7a2381ffb2600555057f602b818ff59250a2f0e68d54a7",
+  "bytes": 22580811,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 332.083333,
+    "width": 2560,
+    "height": 1440,
+    "frameRate": "24/1",
+    "frameCount": 7970,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "fgc_00.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

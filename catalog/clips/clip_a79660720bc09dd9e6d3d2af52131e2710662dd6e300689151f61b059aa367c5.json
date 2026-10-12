@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a79660720bc09dd9e6d3d2af52131e2710662dd6e300689151f61b059aa367c5",
+  "sha256": "a79660720bc09dd9e6d3d2af52131e2710662dd6e300689151f61b059aa367c5",
+  "bytes": 517561,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767581206361_jphgl2.mp4"
+  ],
+  "collections": [
+    "a_single_candle_flame_flickers_1767581095602"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767581206361_jphgl2"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A single white pillar candle with hardened wax rivulets stands alone in complete darkness. The camera begins in extreme close-up on the flame's dancing orange heart, then executes a slow, floating pull-back over 5 seconds, gradually revealing the candle's full form. The flame settles into a steady, unwavering burn as the camera retreats, its golden light casting a warm amber glow on the textured wax surface. A thin column of smoke rises perfectly vertical, undisturbed, creating delicate wisps that catch the light. Shot with shallow depth of field, the background remains pure black, soft and out of focus, creating a meditative void around the solitary candle. The camera movement is smooth and contemplative, almost breathing, as it transitions from intimate macro detail to a centered medium shot. Warm candlelight provides the only illumination, creating gentle gradients from bright amber at the flame to deep shadows at the edges of the frame. The overall composition maintains perfect symmetry and balance, with the candle centered in the vertical 9:16 frame throughout the subtle backward drift.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_865e24b90fc59d032ec1f3dfe752240317004a637d132719cf6d23339e641fb8",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A single white pillar candle with hardened wax rivulets stands alone in complete darkness. The camera begins in extreme close-up on the flame's dancing orange heart, then executes a slow, floating pull-back over 5 seconds, gradually revealing the candle's full form. The flame settles into a steady, unwavering burn as the camera retreats, its golden light casting a warm amber glow on the textured wax surface. A thin column of smoke rises perfectly vertical, undisturbed, creating delicate wisps that catch the light. Shot with shallow depth of field, the background remains pure black, soft and out of focus, creating a meditative void around the solitary candle. The camera movement is smooth and contemplative, almost breathing, as it transitions from intimate macro detail to a centered medium shot. Warm candlelight provides the only illumination, creating gentle gradients from bright amber at the flame to deep shadows at the edges of the frame. The overall composition maintains perfect symmetry and balance, with the candle centered in the vertical 9:16 frame throughout the subtle backward drift.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_865e24b90fc59d032ec1f3dfe752240317004a637d132719cf6d23339e641fb8",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:45:32.953Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second vertical video captures a single cream-colored pillar candle burning steadily against a pure black background. The flame remains remarkably consistent throughout, with minimal flickering, while melted wax drips are visible on the candle's right side. The intimate, meditative composition creates a calm, contemplative atmosphere with the brief audio transcription 'you' suggesting this may be part of a spoken message or dedication.",
+      "transcript": "you",
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "burning",
+        "candle",
+        "captures",
+        "colored",
+        "completely",
+        "consistent",
+        "continues",
+        "cream",
+        "dominates",
+        "flame",
+        "frame",
+        "intensity",
+        "lit",
+        "medium",
+        "pillar",
+        "position",
+        "pure",
+        "remains",
+        "second",
+        "single",
+        "speech",
+        "steadily",
+        "still",
+        "vertical",
+        "video",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A single lit candle dominates the frame against a completely black background. The cream/ivory colored pillar candle shows signs of previous burning with melted wax drips visible on the right side. The flame burns steadily with a bright white-yellow core transitioning to orange at the edges. The wick is dark and centered. The composition is vertical with the candle positioned in the lower half, creating an intimate, meditative atmosphere. Warm golden light illuminates the wax surface."
+        },
+        {
+          "seconds": 2,
+          "text": "The same cream-colored pillar candle continues burning steadily against the pure black background. The flame maintains its elongated teardrop shape with a bright white center and warm orange-yellow outer glow. Melted wax drips remain visible on the right side of the candle. The lighting creates a soft gradient on the candle's surface, brightest near the flame and gradually darker toward the bottom. The vertical portrait framing emphasizes the flame's upward reach."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The pillar candle remains in the same position, flame still burning with consistent intensity. The white-hot core of the flame is surrounded by warm yellow and orange tones. The cream-colored wax body shows the same melted drip patterns on the right side. The completely black background provides maximum contrast, making the flame appear luminous and ethereal. The centered composition and close framing create an intimate, contemplative mood throughout the clip."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "burning",
+    "candle",
+    "captures",
+    "colored",
+    "completely",
+    "consistent",
+    "continues",
+    "cream",
+    "dominates",
+    "flame",
+    "frame",
+    "intensity",
+    "lit",
+    "medium",
+    "pillar",
+    "position",
+    "pure",
+    "remains",
+    "second",
+    "single",
+    "speech",
+    "steadily",
+    "still",
+    "vertical",
+    "video",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

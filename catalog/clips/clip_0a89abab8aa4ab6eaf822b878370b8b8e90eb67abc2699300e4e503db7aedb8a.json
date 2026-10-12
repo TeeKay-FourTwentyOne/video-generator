@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0a89abab8aa4ab6eaf822b878370b8b8e90eb67abc2699300e4e503db7aedb8a",
+  "sha256": "0a89abab8aa4ab6eaf822b878370b8b8e90eb67abc2699300e4e503db7aedb8a",
+  "bytes": 2270393,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767596810928_37cus2.mp4"
+  ],
+  "collections": [
+    "two_estranged_siblings_marcus__1767596552762"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767596810928_37cus2"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. Wide static handheld shot from a hallway looking into a room where Marcus and Elena sit side by side on the floor, their silhouettes backlit by warm golden window light streaming through sheer curtains. They sort through photographs together, their movements gentle and synchronized as they pass photos between them, occasionally pausing to study one more closely. Dust motes float and dance through the diagonal shaft of honeyed light that bathes them. The red scarf is draped over a cardboard box beside them, catching the light. The camera holds steady with subtle documentary-style breathing, maintaining the intimate distance. Soft focus edges frame the scene while the center remains sharp. The muted winter palette of browns, grays and deep blues contrasts with the hopeful warmth of the golden hour light, creating a gentle lens flare that speaks to reconciliation and shared purpose.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_176fb8fd3f5b550c24ce3f6ce894c6328dcd948e15a2574767a047eb42a84854",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. Wide static handheld shot from a hallway looking into a room where Marcus and Elena sit side by side on the floor, their silhouettes backlit by warm golden window light streaming through sheer curtains. They sort through photographs together, their movements gentle and synchronized as they pass photos between them, occasionally pausing to study one more closely. Dust motes float and dance through the diagonal shaft of honeyed light that bathes them. The red scarf is draped over a cardboard box beside them, catching the light. The camera holds steady with subtle documentary-style breathing, maintaining the intimate distance. Soft focus edges frame the scene while the center remains sharp. The muted winter palette of browns, grays and deep blues contrasts with the hopeful warmth of the golden hour light, creating a gentle lens flare that speaks to reconciliation and shared purpose.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_176fb8fd3f5b550c24ce3f6ce894c6328dcd948e15a2574767a047eb42a84854",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T07:05:24.046Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A man and woman sit together in front of a sunlit window, sorting through old photographs from a cardboard box. The warm, golden backlighting creates an intimate, nostalgic atmosphere as they share memories, examining and discussing various photos. The scene conveys a sense of reflection and connection between the two individuals.",
+      "transcript": "見てくれてありがとう",
+      "tags": [
+        "box",
+        "bright",
+        "continue",
+        "continues",
+        "curtains",
+        "different",
+        "examining",
+        "front",
+        "holds",
+        "left",
+        "man",
+        "medium",
+        "now",
+        "old",
+        "pair",
+        "people",
+        "photo",
+        "photographs",
+        "points",
+        "sheer",
+        "sit",
+        "sorting",
+        "speech",
+        "sunlit",
+        "together",
+        "two",
+        "white",
+        "window",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people sit in front of a bright window with sheer white curtains. On the left, a heavyset middle-aged man with gray hair and beard wears a brown jacket over a plaid shirt. On the right, a woman with dark curly hair wears a black top with a red scarf. They are looking through photographs from a cardboard box between them. A red fabric drapes over the box. Warm golden backlighting creates a soft, intimate atmosphere. Medium shot framing captures both subjects from waist up."
+        },
+        {
+          "seconds": 4,
+          "text": "The same two people continue examining photographs. The man holds a photo and points at it while the woman holds the same photograph, both looking at it together. The woman appears to be speaking or reacting to what she sees. The warm backlight from the window creates a silhouette effect around their figures. The composition remains centered with the cardboard box of photos visible between them. The intimate moment of shared memory viewing is captured in this medium shot."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The pair continues sorting through the box of photographs. The man now holds a different photo in his hands, examining it closely while the woman reaches into the cardboard box, possibly retrieving another item. The red scarf and red fabric on the box provide color contrast against the warm golden tones. Both subjects have their gazes directed downward at the materials. The backlighting from the window maintains the warm, nostalgic atmosphere of the scene."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_028",
+      "name": "Rosa",
+      "description": "Woman with dark curly hair pulled up, red scarf, looking through photo albums with Frank, warm indoor lighting",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_029",
+      "name": "Rosa (Photos)",
+      "description": "Same woman with red scarf, examining old photographs, contemplative expression",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "box",
+    "bright",
+    "continue",
+    "continues",
+    "curtains",
+    "different",
+    "examining",
+    "front",
+    "holds",
+    "left",
+    "man",
+    "medium",
+    "now",
+    "old",
+    "pair",
+    "people",
+    "photo",
+    "photographs",
+    "points",
+    "sheer",
+    "sit",
+    "sorting",
+    "speech",
+    "sunlit",
+    "together",
+    "two",
+    "white",
+    "window",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

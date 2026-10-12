@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_72b391822bab80eb8318c51781fb899c56e5dd3c8056133199a1336131e801dd",
+  "sha256": "72b391822bab80eb8318c51781fb899c56e5dd3c8056133199a1336131e801dd",
+  "bytes": 1717561,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 18.083333,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 434,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "01-work-routine-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

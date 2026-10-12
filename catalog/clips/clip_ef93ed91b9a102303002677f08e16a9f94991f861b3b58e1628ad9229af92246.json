@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ef93ed91b9a102303002677f08e16a9f94991f861b3b58e1628ad9229af92246",
+  "sha256": "ef93ed91b9a102303002677f08e16a9f94991f861b3b58e1628ad9229af92246",
+  "bytes": 11281075,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S04-v1.mp4",
+    "veo_1791077911584_omq62h.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "A single freed rectangular white linen sheet, already entirely loose above the highest clothesline which is BELOW the frame, catches a strong updraft. It lifts continuously UP toward the blue opening, turning over once with natural billowing broad folds, never going back down or snagging. The camera glides upward with this sheet through the upper courtyard shaft. The ochre and rose walls and their green shutters slide lower. All clotheslines, the woman, and remaining attached washing are below and outside the frame; no new rope or laundry enters view. One flying sheet only, ordinary rectangular linen without pegs, without holes, without fragments, without turning into a ribbon or bird. Keep all four corners materially connected in one large fabric surface. Follow it upward toward the roof rim. Photoreal physical daylight. Eight seconds, silent; no other people, text, clouds, birds, slow motion or handheld movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b90677863d8cf8378386fc7af102b36dcf68ef5efea50a37d0efa0cedb658035",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9c74453ccdad5cbff8864383a8aca0f28385b8824f6ed12196fd85f554baffd9",
+  "sha256": "9c74453ccdad5cbff8864383a8aca0f28385b8824f6ed12196fd85f554baffd9",
+  "bytes": 1877735,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S13_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Close-up. {{CORA_LOCK}} Her eyes rest on someone just off frame, not answering. The flame of her oil lamp shivers once in a draft; the shadows sway; her expression does not. Sound: rain; the faint gutter of a lamp flame; a clock ticking.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5d4b4f44794a7ae8f2fb00cc74018d8031b28c72b4b4d13f26e4504b896043c6",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

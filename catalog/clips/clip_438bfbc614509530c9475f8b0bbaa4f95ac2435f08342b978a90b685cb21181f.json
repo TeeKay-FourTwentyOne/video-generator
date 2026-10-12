@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_438bfbc614509530c9475f8b0bbaa4f95ac2435f08342b978a90b685cb21181f",
+  "sha256": "438bfbc614509530c9475f8b0bbaa4f95ac2435f08342b978a90b685cb21181f",
+  "bytes": 50404746,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 306,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 7344,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hall-through-departure-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

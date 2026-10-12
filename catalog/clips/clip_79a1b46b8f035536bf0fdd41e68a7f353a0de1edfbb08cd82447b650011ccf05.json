@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_79a1b46b8f035536bf0fdd41e68a7f353a0de1edfbb08cd82447b650011ccf05",
+  "sha256": "79a1b46b8f035536bf0fdd41e68a7f353a0de1edfbb08cd82447b650011ccf05",
+  "bytes": 2295698,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_4_1766536607075.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_4_1766536607075"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Peace lily wilting time-lapse with phone in foreground. Day transitions to night as the plant dies, dramatizing the interminable wait on hold.",
+      "transcript": "Thank you so much for watching",
+      "tags": [
+        "against",
+        "beginning",
+        "beige",
+        "blue",
+        "ceramic",
+        "dark",
+        "day",
+        "dramatic",
+        "droop",
+        "foreground",
+        "golden",
+        "green",
+        "lapse",
+        "leaves",
+        "light",
+        "lily",
+        "medium",
+        "much",
+        "night",
+        "now",
+        "peace",
+        "phone",
+        "plant",
+        "pot",
+        "scene",
+        "silhouette",
+        "silhouetted",
+        "speech",
+        "spiky",
+        "sunset",
+        "thank",
+        "time",
+        "transitions",
+        "upright",
+        "watching",
+        "white",
+        "wilted",
+        "wilting",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Peace lily plant with upright green leaves in white ceramic pot. Beige office phone in foreground. Window with blinds provides backlight. Healthy plant at start of wait."
+        },
+        {
+          "seconds": 4,
+          "text": "Plant silhouetted against golden sunset light, leaves beginning to droop. Dramatic color shift to warm orange tones. The wilting process is underway."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Dark blue night scene, plant now a spiky silhouette of wilted leaves against window. The complete day-to-night transition shows endless hold time."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "beginning",
+    "beige",
+    "blue",
+    "ceramic",
+    "dark",
+    "day",
+    "dramatic",
+    "droop",
+    "foreground",
+    "golden",
+    "green",
+    "lapse",
+    "leaves",
+    "light",
+    "lily",
+    "medium",
+    "much",
+    "night",
+    "now",
+    "peace",
+    "phone",
+    "plant",
+    "pot",
+    "scene",
+    "silhouette",
+    "silhouetted",
+    "speech",
+    "spiky",
+    "sunset",
+    "thank",
+    "time",
+    "transitions",
+    "upright",
+    "watching",
+    "white",
+    "wilted",
+    "wilting",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

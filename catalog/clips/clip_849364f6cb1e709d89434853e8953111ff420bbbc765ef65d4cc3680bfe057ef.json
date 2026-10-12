@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_849364f6cb1e709d89434853e8953111ff420bbbc765ef65d4cc3680bfe057ef",
+  "sha256": "849364f6cb1e709d89434853e8953111ff420bbbc765ef65d4cc3680bfe057ef",
+  "bytes": 98586411,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 62.875,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 1509,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "touch_v12_4k.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

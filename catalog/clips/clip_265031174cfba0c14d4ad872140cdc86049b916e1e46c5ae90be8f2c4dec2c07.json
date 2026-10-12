@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_265031174cfba0c14d4ad872140cdc86049b916e1e46c5ae90be8f2c4dec2c07",
+  "sha256": "265031174cfba0c14d4ad872140cdc86049b916e1e46c5ae90be8f2c4dec2c07",
+  "bytes": 1090543,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767656119900_dxz72b.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767656119900_dxz72b"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "An East Asian woman in her 30s with shoulder-length black hair wearing a white blouse and navy pants stands in a doorway facing a Caucasian man in his 40s with salt-and-pepper hair wearing a dark sweater, both characters captured in a wide shot. The camera holds steady with a subtle handheld drift, framing them in the doorway as golden hour light spills from behind, creating long shadows across the floor. They stand still for a beat, the space between them charged with unspoken words, dust motes floating in the amber light. Then the man takes a small, reluctant step backward, his movement barely perceptible but emotionally significant. The naturalistic lighting catches the bittersweet tension - warm honey tones from the setting sun contrasting with cool blue shadows creeping in from the interior, while the doorframe creates a natural vignette around this moment of separation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_540647e072b71d4ed7c48abb37c796a3604e5ddee6299f491776c1d61de957b2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "An East Asian woman in her 30s with shoulder-length black hair wearing a white blouse and navy pants stands in a doorway facing a Caucasian man in his 40s with salt-and-pepper hair wearing a dark sweater, both characters captured in a wide shot. The camera holds steady with a subtle handheld drift, framing them in the doorway as golden hour light spills from behind, creating long shadows across the floor. They stand still for a beat, the space between them charged with unspoken words, dust motes floating in the amber light. Then the man takes a small, reluctant step backward, his movement barely perceptible but emotionally significant. The naturalistic lighting catches the bittersweet tension - warm honey tones from the setting sun contrasting with cool blue shadows creeping in from the interior, while the doorframe creates a natural vignette around this moment of separation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_540647e072b71d4ed7c48abb37c796a3604e5ddee6299f491776c1d61de957b2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:34:36.207Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A man and woman exchange goodbyes at a doorway before walking together into a home's interior hallway. The scene is characterized by dramatic natural backlighting from the open door, creating silhouettes and warm rim lighting. The mood appears somewhat somber or reflective as they move through the space.",
+      "transcript": "Bye.  Bye. Bye. Bye.",
+      "tags": [
+        "backlight",
+        "both",
+        "bright",
+        "bye",
+        "doorway",
+        "exchange",
+        "facing",
+        "figures",
+        "forward",
+        "goodbyes",
+        "hallway",
+        "home",
+        "interior",
+        "man",
+        "medium",
+        "moved",
+        "natural",
+        "now",
+        "people",
+        "shot",
+        "shown",
+        "space",
+        "speech",
+        "stand",
+        "stepped",
+        "streaming",
+        "tighter",
+        "together",
+        "two",
+        "walking",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people stand facing each other in a doorway with bright natural backlight streaming in. A woman with dark shoulder-length hair wearing a light blue blouse and dark jeans stands on the left. A taller man with gray hair wearing a dark cable-knit sweater and dark pants stands on the right. The interior has warm wooden floors and blue-painted walls. A white porch railing and trees are visible through the open door. The composition creates a silhouette effect with dramatic rim lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "The same two people are now walking forward through the doorway into the interior space. The man has stepped ahead, looking downward, while the woman follows slightly behind on his left. The bright backlight continues to illuminate them from behind, creating strong contrast. The woman wears a cream/beige blouse and dark jeans. The man wears a dark navy sweater. The wooden floor and blue wall remain visible, with a light switch panel on the right wall."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Both figures have moved further into the hallway, now shown in a tighter medium shot. The man in the dark sweater is in the foreground right, partially cropped. The woman with black hair wearing a white V-neck blouse and dark pants walks behind him, her expression appearing contemplative or somber. The golden backlight from the doorway creates a warm glow around her silhouette. The composition emphasizes depth with the narrow hallway framing."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "backlight",
+    "both",
+    "bright",
+    "bye",
+    "doorway",
+    "exchange",
+    "facing",
+    "figures",
+    "forward",
+    "goodbyes",
+    "hallway",
+    "home",
+    "interior",
+    "man",
+    "medium",
+    "moved",
+    "natural",
+    "now",
+    "people",
+    "shot",
+    "shown",
+    "space",
+    "speech",
+    "stand",
+    "stepped",
+    "streaming",
+    "tighter",
+    "together",
+    "two",
+    "walking",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d8a1d4fc4f7c7d9f34dda609f17a607c71c8eed33e72270e280dcaa65cdc5515",
+  "sha256": "d8a1d4fc4f7c7d9f34dda609f17a607c71c8eed33e72270e280dcaa65cdc5515",
+  "bytes": 15792864,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "b2_dish.mp4"
+  ],
+  "collections": [
+    "dignity-of-work"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

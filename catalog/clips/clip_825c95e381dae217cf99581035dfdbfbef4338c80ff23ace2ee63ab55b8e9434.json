@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_825c95e381dae217cf99581035dfdbfbef4338c80ff23ace2ee63ab55b8e9434",
+  "sha256": "825c95e381dae217cf99581035dfdbfbef4338c80ff23ace2ee63ab55b8e9434",
+  "bytes": 3848957,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 15,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 360,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot09_built.mp4"
+  ],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

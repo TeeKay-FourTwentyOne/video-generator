@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d0f7ffe53d1ed81a789813ef6247c5e184f9bdca5505f5eb696684255cddd16e",
+  "sha256": "d0f7ffe53d1ed81a789813ef6247c5e184f9bdca5505f5eb696684255cddd16e",
+  "bytes": 1194157,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 40.333333,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 968,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "01-factory-circle-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

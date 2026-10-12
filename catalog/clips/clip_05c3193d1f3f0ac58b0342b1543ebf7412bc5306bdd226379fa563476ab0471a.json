@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_05c3193d1f3f0ac58b0342b1543ebf7412bc5306bdd226379fa563476ab0471a",
+  "sha256": "05c3193d1f3f0ac58b0342b1543ebf7412bc5306bdd226379fa563476ab0471a",
+  "bytes": 963819,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 30,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "03-ending-crowd-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

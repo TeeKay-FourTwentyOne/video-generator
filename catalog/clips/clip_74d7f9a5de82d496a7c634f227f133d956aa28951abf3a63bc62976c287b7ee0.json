@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_74d7f9a5de82d496a7c634f227f133d956aa28951abf3a63bc62976c287b7ee0",
+  "sha256": "74d7f9a5de82d496a7c634f227f133d956aa28951abf3a63bc62976c287b7ee0",
+  "bytes": 12022944,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ocean_zone2_reef.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_zone2_reef"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Stunning coral reef footage showcasing tropical marine life and vibrant coral formations. Features diverse tropical fish including butterflyfish, blue tangs, and clownfish swimming among pink and purple soft corals. The clip captures the rich biodiversity and vivid colors of a healthy reef ecosystem.",
+      "transcript": "💜💜💜💜💜",
+      "tags": [
+        "anemones",
+        "black",
+        "butterflyfish",
+        "centered",
+        "colorful",
+        "composition",
+        "coral",
+        "corals",
+        "dense",
+        "dominating",
+        "filled",
+        "flowing",
+        "footage",
+        "foreground",
+        "frame",
+        "garden",
+        "life",
+        "marine",
+        "medium",
+        "pink",
+        "prominent",
+        "purple",
+        "reef",
+        "scene",
+        "school",
+        "sea",
+        "showcasing",
+        "soft",
+        "speech",
+        "stunning",
+        "tropical",
+        "vibrant",
+        "yellow"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Vibrant coral reef scene with pink and purple soft corals dominating the foreground. Various tropical fish swim through the frame including blue tangs and orange butterflyfish. Sandy ocean floor visible at the bottom, clear blue water extends into the background with schools of fish."
+        },
+        {
+          "seconds": 4,
+          "text": "Colorful reef composition with a prominent yellow-and-black butterflyfish centered in frame. School of bright blue fish swim above the coral formations. Layered depth created by pink coral structures of varying heights, rich marine biodiversity on display."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Dense coral garden filled with pink soft corals and sea anemones with flowing tentacles. A small orange clownfish is visible among the anemone. Rich color palette of pinks, purples, and coral oranges creates a lush underwater garden effect."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "anemones",
+    "black",
+    "butterflyfish",
+    "centered",
+    "colorful",
+    "composition",
+    "coral",
+    "corals",
+    "dense",
+    "dominating",
+    "filled",
+    "flowing",
+    "footage",
+    "foreground",
+    "frame",
+    "garden",
+    "life",
+    "marine",
+    "medium",
+    "pink",
+    "prominent",
+    "purple",
+    "reef",
+    "scene",
+    "school",
+    "sea",
+    "showcasing",
+    "soft",
+    "speech",
+    "stunning",
+    "tropical",
+    "vibrant",
+    "yellow"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7ee6371e6248b6ea7e70c9bace9dd1751192b9bb89fc3e7b7b8869a300d09055",
+  "sha256": "7ee6371e6248b6ea7e70c9bace9dd1751192b9bb89fc3e7b7b8869a300d09055",
+  "bytes": 1384387,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot4_hands_seed722556099.mp4",
+    "veo_1772420677952_2yb92i.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "Close-up of a person's hands resting in their lap, fidgeting gently. Fingers thread together, a thumb taps against a knuckle, small unconscious movements. The person sits alone by a window, warm soft natural light from the left. Simple dark clothing. The camera is close and intimate. In the final moments, the camera begins a very slow upward drift, the bottom of the frame starting to reveal the person's lower chest. Contemplative, quiet, intimate. 9:16 vertical frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9c85fc62e7338696da9df721f1df322c02e4d6f3e7efe7bbf093b81fa031b77c",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 722556099,
+      "createdAt": "2026-03-02T03:03:45.618Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

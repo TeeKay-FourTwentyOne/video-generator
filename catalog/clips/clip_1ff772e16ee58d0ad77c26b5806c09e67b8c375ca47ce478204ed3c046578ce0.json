@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1ff772e16ee58d0ad77c26b5806c09e67b8c375ca47ce478204ed3c046578ce0",
+  "sha256": "1ff772e16ee58d0ad77c26b5806c09e67b8c375ca47ce478204ed3c046578ce0",
+  "bytes": 1912777,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "original-passage-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

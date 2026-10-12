@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_74df746613172aed36f526d9542376b6b8dafa94f056f8aaddcc4b89680a9ae3",
+  "sha256": "74df746613172aed36f526d9542376b6b8dafa94f056f8aaddcc4b89680a9ae3",
+  "bytes": 72037702,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "plankton2.mp4"
+  ],
+  "collections": [
+    "full-disclosure"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

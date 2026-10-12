@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_430b19beb526b86850813630c0f7a6fd194096d31153376713b5dd701fa76edf",
+  "sha256": "430b19beb526b86850813630c0f7a6fd194096d31153376713b5dd701fa76edf",
+  "bytes": 1796997,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545182687_7slo4t.mp4"
+  ],
+  "collections": [
+    "eternal_commuter"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545182687_7slo4t"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young Caucasian woman in her early 20s with long, straight, center-parted brown hair stands perfectly motionless at a modern dark metal and glass bus shelter on a concrete sidewalk. She remains completely frozen like a statue in the exact same position throughout the entire shot. Around her, pedestrians blur past in rapid accelerated motion, creating streaking movement trails as they rush by. The harsh midday sun casts sharp shadows and creates high contrast lighting. The camera holds a steady medium shot, capturing the striking juxtaposition between her absolute stillness and the chaotic rushing world around her. Time-lapse style motion blur affects everything except the perfectly still woman, emphasizing how time moves around her but not through her. Cinematic composition with the streetlight overhead and urban environment remaining constant while human traffic flows past in fast-forward motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aaadeb538cacc2df4274ce780d9d27e0273017352d7c97c428cc858279eb3975",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young Caucasian woman in her early 20s with long, straight, center-parted brown hair stands perfectly motionless at a modern dark metal and glass bus shelter on a concrete sidewalk. She remains completely frozen like a statue in the exact same position throughout the entire shot. Around her, pedestrians blur past in rapid accelerated motion, creating streaking movement trails as they rush by. The harsh midday sun casts sharp shadows and creates high contrast lighting. The camera holds a steady medium shot, capturing the striking juxtaposition between her absolute stillness and the chaotic rushing world around her. Time-lapse style motion blur affects everything except the perfectly still woman, emphasizing how time moves around her but not through her. Cinematic composition with the streetlight overhead and urban environment remaining constant while human traffic flows past in fast-forward motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aaadeb538cacc2df4274ce780d9d27e0273017352d7c97c428cc858279eb3975",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:45:29.474Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This urban time-lapse video features a young woman standing completely still under a modern bus shelter while pedestrians and city life blur past her in motion. The artistic composition uses long exposure or time-lapse techniques to contrast her stationary presence against the constant flow of urban movement. Japanese text appears as a closing thank-you message to viewers.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "blurred",
+        "brown",
+        "bus",
+        "center",
+        "centered",
+        "clearer",
+        "completely",
+        "features",
+        "figure",
+        "final",
+        "frame",
+        "hair",
+        "her",
+        "lapse",
+        "long",
+        "maintains",
+        "medium",
+        "motion",
+        "motionless",
+        "multi-scene",
+        "multiple",
+        "now",
+        "passing",
+        "position",
+        "remains",
+        "shelter",
+        "shows",
+        "speech",
+        "standing",
+        "stands",
+        "stationary",
+        "still",
+        "time",
+        "urban",
+        "video",
+        "visibility",
+        "wearing",
+        "white",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with long brown hair stands centered in frame, wearing a white short-sleeved t-shirt and dark pants. She's positioned under a modern black metal and glass bus shelter structure with an illuminated pendant light above. The urban setting shows buildings and pedestrians in motion blur on both sides, creating a time-lapse effect. Bright daylight creates strong contrast, with the sky blown out white. The composition uses the shelter's geometric frame to center the stationary subject against the moving city."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains stationary in the center of the bus shelter frame. A motion-blurred figure in dark clothing passes prominently in the right foreground, creating a ghostly effect. The architectural framing remains consistent with black metal beams and glass panels. Urban buildings and a traffic light are visible in the background. The lighting continues to be high-contrast with bright backlighting. The composition emphasizes stillness versus motion, with the subject as the fixed point."
+        },
+        {
+          "seconds": 2.31,
+          "text": "The woman maintains her centered position under the shelter, now with clearer visibility as the passing pedestrian has moved out of frame. The urban environment shows parked cars on the right side of the street and buildings in the background. The pendant light glows warmly above her. The geometric black frame of the shelter creates strong leading lines. High-key lighting from behind creates silhouette-like contrast on her figure while her white shirt remains bright."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The final frame shows the woman still standing motionless in the shelter's center while multiple motion-blurred pedestrians pass on both sides, creating ghostly streaks. One figure with a backpack passes behind her on the left, while others blur past on the right sidewalk. The urban setting with buildings and street elements remains visible. The time-lapse effect is most pronounced here, emphasizing the contrast between her stillness and the city's constant movement."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_019",
+      "name": "Waiting Girl",
+      "description": "Young woman with long straight hair, white t-shirt and dark jeans, standing at bus stop in bright daylight, urban setting",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "blurred",
+    "brown",
+    "bus",
+    "center",
+    "centered",
+    "clearer",
+    "completely",
+    "features",
+    "figure",
+    "final",
+    "frame",
+    "hair",
+    "her",
+    "lapse",
+    "long",
+    "maintains",
+    "medium",
+    "motion",
+    "motionless",
+    "multi-scene",
+    "multiple",
+    "now",
+    "passing",
+    "position",
+    "remains",
+    "shelter",
+    "shows",
+    "speech",
+    "standing",
+    "stands",
+    "stationary",
+    "still",
+    "time",
+    "urban",
+    "video",
+    "visibility",
+    "wearing",
+    "white",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

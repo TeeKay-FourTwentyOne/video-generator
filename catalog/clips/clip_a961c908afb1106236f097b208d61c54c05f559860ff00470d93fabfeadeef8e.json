@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a961c908afb1106236f097b208d61c54c05f559860ff00470d93fabfeadeef8e",
+  "sha256": "a961c908afb1106236f097b208d61c54c05f559860ff00470d93fabfeadeef8e",
+  "bytes": 124492863,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 40,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 960,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "the-last-screening-1080p.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

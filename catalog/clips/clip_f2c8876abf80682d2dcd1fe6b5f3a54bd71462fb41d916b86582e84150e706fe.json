@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f2c8876abf80682d2dcd1fe6b5f3a54bd71462fb41d916b86582e84150e706fe",
+  "sha256": "f2c8876abf80682d2dcd1fe6b5f3a54bd71462fb41d916b86582e84150e706fe",
+  "bytes": 929915,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767504976986_5au53c.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767504976986_5au53c"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A child's small hand slowly opens, releasing its grip on a bright red balloon's string. The balloon begins to drift upward in slow motion, the white string slipping gracefully away from the outstretched fingers. Shot with a close-up camera angle that follows the balloon's ascent, starting focused on the hand and tilting upward as the balloon rises past the child's face against a pale, overcast sky. The red balloon appears vivid and saturated against the muted background. Cinematic lighting with soft, diffused natural light creates gentle shadows. The camera movement is smooth and deliberate, maintaining focus on the balloon as it gains freedom. Bold color grading emphasizes the striking contrast between the brilliant red balloon and the washed-out sky, evoking a sense of gentle melancholy and anticipation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ddc845ce1186f3c2fac1e0c457877d224a82228b9e2133b78648e02edab12b8c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A child's small hand slowly opens, releasing its grip on a bright red balloon's string. The balloon begins to drift upward in slow motion, the white string slipping gracefully away from the outstretched fingers. Shot with a close-up camera angle that follows the balloon's ascent, starting focused on the hand and tilting upward as the balloon rises past the child's face against a pale, overcast sky. The red balloon appears vivid and saturated against the muted background. Cinematic lighting with soft, diffused natural light creates gentle shadows. The camera movement is smooth and deliberate, maintaining focus on the balloon as it gains freedom. Bold color grading emphasizes the striking contrast between the brilliant red balloon and the washed-out sky, evoking a sense of gentle melancholy and anticipation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ddc845ce1186f3c2fac1e0c457877d224a82228b9e2133b78648e02edab12b8c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T05:35:34.623Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a child interacting with a bright red balloon against a pale sky. The sequence shows the progression from the child's hand grasping the balloon to it floating higher with the string visible, ending with the balloon appearing to drift away as the hand recedes from frame. The clip concludes with a spoken 'Thank you for watching.'",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "against",
+        "balloon",
+        "bright",
+        "captures",
+        "child",
+        "dominates",
+        "floats",
+        "frame",
+        "higher",
+        "interacting",
+        "large",
+        "left",
+        "light",
+        "medium",
+        "moved",
+        "now",
+        "pale",
+        "portion",
+        "positioned",
+        "red",
+        "speech",
+        "thank",
+        "upper",
+        "vertical",
+        "video",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A large bright red balloon dominates the upper portion of the frame against a pale blue-gray sky. A child's hand reaches up from below, fingers spread wide, touching or grasping the balloon. The hand appears silhouetted against the balloon's vibrant red surface. A white ribbon or string hangs down from the balloon. In the lower right corner, blonde hair is partially visible, suggesting a child looking up. The composition is shot from a low angle looking upward."
+        },
+        {
+          "seconds": 2,
+          "text": "The red balloon has moved higher in the frame, now positioned in the upper left portion against the pale sky. The balloon's tied knot and white string are clearly visible hanging down. A hand reaches up from the bottom of the frame, fingers extended toward the string. The partial profile of a person's face is visible on the right side, showing their nose and lips as they look upward at the balloon. Blonde hair is visible at the bottom right."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The bright red balloon floats in the upper left portion of the frame against a light gray-blue sky. The balloon's knot and white string extend downward through the center of the image. Only a small portion of what appears to be a hand or fingers is barely visible at the bottom right edge of the frame, suggesting the balloon may be floating away or being released. The composition emphasizes the balloon's isolation against the sky."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "balloon",
+    "bright",
+    "captures",
+    "child",
+    "dominates",
+    "floats",
+    "frame",
+    "higher",
+    "interacting",
+    "large",
+    "left",
+    "light",
+    "medium",
+    "moved",
+    "now",
+    "pale",
+    "portion",
+    "positioned",
+    "red",
+    "speech",
+    "thank",
+    "upper",
+    "vertical",
+    "video",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

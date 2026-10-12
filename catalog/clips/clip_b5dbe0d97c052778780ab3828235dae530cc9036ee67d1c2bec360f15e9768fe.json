@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b5dbe0d97c052778780ab3828235dae530cc9036ee67d1c2bec360f15e9768fe",
+  "sha256": "b5dbe0d97c052778780ab3828235dae530cc9036ee67d1c2bec360f15e9768fe",
+  "bytes": 3118268,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scroll_test_down100.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:scroll_test_down100"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Scroll test demonstrating downward vertical pan at 100 pixels/second through a vintage film strip composition. Shows soldier-with-flower silhouette against golden sunset, with the 'camera' scrolling down to reveal flowers. Film sprocket holes create classic cinema aesthetic.",
+      "transcript": "美味しい一日を!",
+      "tags": [
+        "100",
+        "aesthetic",
+        "along",
+        "backlighting",
+        "centered",
+        "demonstrating",
+        "down",
+        "downward",
+        "edges",
+        "effect",
+        "film",
+        "flower",
+        "golden",
+        "holes",
+        "light",
+        "medium",
+        "moved",
+        "moving",
+        "now",
+        "pan",
+        "pixels",
+        "scroll",
+        "scrolled",
+        "second",
+        "seen",
+        "silhouette",
+        "single",
+        "speech",
+        "sprocket",
+        "strip",
+        "sunset",
+        "test",
+        "vertical",
+        "view",
+        "vintage",
+        "visible"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Film strip aesthetic with visible sprocket holes on edges. Golden sunset backlighting a silhouetted soldier kneeling with rifle, holding a delicate flower. Sepia-toned vintage cinema look."
+        },
+        {
+          "seconds": 4,
+          "text": "Vertical scroll effect has moved view downward along the film strip. Now showing silhouetted flowers against the golden sun, framed within the film sprocket border. Multiple frames visible."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Further scrolled down - a single flower silhouette centered in the golden light, seen through the moving film strip frame. The scroll creates a dreamy vertical panning effect."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "100",
+    "aesthetic",
+    "along",
+    "backlighting",
+    "centered",
+    "demonstrating",
+    "down",
+    "downward",
+    "edges",
+    "effect",
+    "film",
+    "flower",
+    "golden",
+    "holes",
+    "light",
+    "medium",
+    "moved",
+    "moving",
+    "now",
+    "pan",
+    "pixels",
+    "scroll",
+    "scrolled",
+    "second",
+    "seen",
+    "silhouette",
+    "single",
+    "speech",
+    "sprocket",
+    "strip",
+    "sunset",
+    "test",
+    "vertical",
+    "view",
+    "vintage",
+    "visible"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

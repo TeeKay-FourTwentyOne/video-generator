@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_89b6baa1c3125a5113765a5260b75ba03856d0cc14261b305bd59f6c206af5dd",
+  "sha256": "89b6baa1c3125a5113765a5260b75ba03856d0cc14261b305bd59f6c206af5dd",
+  "bytes": 28451661,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "face_moss_flames.mp4"
+  ],
+  "collections": [
+    "feb-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

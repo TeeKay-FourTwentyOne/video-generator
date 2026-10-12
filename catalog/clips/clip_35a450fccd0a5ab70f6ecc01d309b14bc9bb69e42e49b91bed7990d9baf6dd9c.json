@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_35a450fccd0a5ab70f6ecc01d309b14bc9bb69e42e49b91bed7990d9baf6dd9c",
+  "sha256": "35a450fccd0a5ab70f6ecc01d309b14bc9bb69e42e49b91bed7990d9baf6dd9c",
+  "bytes": 18236308,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tunnel_clip1.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:tunnel_clip1"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 8-second vertical video clip features highly stylized, edge-detected imagery creating an abstract black and white visual with organic, branch-like textures surrounding a central dark void. The footage appears to show subtle movement or transformation of these outlined shapes, with the density of detail expanding and contracting throughout the clip. The overall effect is atmospheric and somewhat surreal, possibly processed footage of natural elements like foliage or underwater scenes.",
+      "transcript": null,
+      "tags": [
+        "abstract",
+        "black",
+        "central",
+        "circular",
+        "clearly",
+        "clip",
+        "composition",
+        "continues",
+        "contrast",
+        "detected",
+        "edge",
+        "expanded",
+        "features",
+        "fill",
+        "frame",
+        "high",
+        "highly",
+        "image",
+        "imagery",
+        "medium",
+        "organic",
+        "oval",
+        "returns",
+        "second",
+        "shape",
+        "showing",
+        "significantly",
+        "silent",
+        "similar",
+        "start",
+        "style",
+        "stylized",
+        "textures",
+        "vertical",
+        "video",
+        "visual",
+        "void",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A high-contrast black and white image showing an abstract circular or oval shape in the center, rendered with white outline edges against a pure black background. The effect appears to be edge detection or emboss filter applied to footage. Organic, branch-like or coral-like textures frame the edges of the frame, particularly visible in the corners and top portion. The central void is completely black, creating a tunnel or portal-like appearance. The composition is centered with a vertical portrait orientation."
+        },
+        {
+          "seconds": 4,
+          "text": "The same edge-detected visual style continues, but the organic textures have expanded significantly to fill more of the frame. The white outlined shapes now create a denser, more intricate pattern surrounding a central dark void. The branch-like or root-like structures appear more interconnected, creating a web-like appearance. The central black area remains as a focal point, though slightly smaller due to the expanded surrounding detail. The overall effect is more claustrophobic and dense."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The frame returns to a composition similar to the start, with the central oval/circular void more clearly defined. White edge-detected outlines create organic, flowing shapes around the periphery and through the middle section. The textures appear slightly shifted, with more detail visible in the lower left corner and along the right edge. The central dark space maintains its prominence, and the overall aesthetic remains consistently abstract with the high-contrast black and white edge detection effect."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "black",
+    "central",
+    "circular",
+    "clearly",
+    "clip",
+    "composition",
+    "continues",
+    "contrast",
+    "detected",
+    "edge",
+    "expanded",
+    "features",
+    "fill",
+    "frame",
+    "high",
+    "highly",
+    "image",
+    "imagery",
+    "medium",
+    "organic",
+    "oval",
+    "returns",
+    "second",
+    "shape",
+    "showing",
+    "significantly",
+    "silent",
+    "similar",
+    "start",
+    "style",
+    "stylized",
+    "textures",
+    "vertical",
+    "video",
+    "visual",
+    "void",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

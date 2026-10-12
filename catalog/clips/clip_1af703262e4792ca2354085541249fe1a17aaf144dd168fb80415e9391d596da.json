@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1af703262e4792ca2354085541249fe1a17aaf144dd168fb80415e9391d596da",
+  "sha256": "1af703262e4792ca2354085541249fe1a17aaf144dd168fb80415e9391d596da",
+  "bytes": 661031,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.25,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 54,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot12A.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9919617dca5d4625a9bb14dfdf5800424545fdb073383376b7d13f71e539fa88",
+  "sha256": "9919617dca5d4625a9bb14dfdf5800424545fdb073383376b7d13f71e539fa88",
+  "bytes": 1634892,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_1_1766535338542.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_1_1766535338542"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Office phone scene with active workplace background. A person works at a computer while the phone sits waiting, culminating in a hand reaching to answer - the end of being on hold.",
+      "transcript": "Thanks for watching.",
+      "tags": [
+        "active",
+        "activity",
+        "answered",
+        "background",
+        "blurred",
+        "call",
+        "computer",
+        "continues",
+        "desk",
+        "finally",
+        "hand",
+        "hands",
+        "handset",
+        "keyboard",
+        "medium",
+        "office",
+        "person",
+        "phone",
+        "reaches",
+        "scene",
+        "sits",
+        "speech",
+        "suggesting",
+        "thanks",
+        "toward",
+        "visible",
+        "watching",
+        "wooden",
+        "working",
+        "workplace",
+        "works"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Office phone on wooden desk with person working at computer visible in blurred background. Beige handset in cradle with coiled cord. More dynamic office environment than other takes."
+        },
+        {
+          "seconds": 3,
+          "text": "The phone sits on desk while office activity continues in background. Keyboard and person's hands visible. Creates context of busy workplace where caller is left waiting."
+        },
+        {
+          "seconds": 5.9,
+          "text": "A hand reaches toward the phone handset, suggesting the call may finally be answered. Office worker in background. The moment before picking up after being on hold."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "active",
+    "activity",
+    "answered",
+    "background",
+    "blurred",
+    "call",
+    "computer",
+    "continues",
+    "desk",
+    "finally",
+    "hand",
+    "hands",
+    "handset",
+    "keyboard",
+    "medium",
+    "office",
+    "person",
+    "phone",
+    "reaches",
+    "scene",
+    "sits",
+    "speech",
+    "suggesting",
+    "thanks",
+    "toward",
+    "visible",
+    "watching",
+    "wooden",
+    "working",
+    "workplace",
+    "works"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

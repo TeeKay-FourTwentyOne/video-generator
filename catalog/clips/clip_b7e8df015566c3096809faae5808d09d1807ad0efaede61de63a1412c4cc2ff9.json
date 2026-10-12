@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b7e8df015566c3096809faae5808d09d1807ad0efaede61de63a1412c4cc2ff9",
+  "sha256": "b7e8df015566c3096809faae5808d09d1807ad0efaede61de63a1412c4cc2ff9",
+  "bytes": 2240706,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767766249496_pmmckt.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767766249496_pmmckt"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip displays animated glowing orange crystal formations floating against a black background, with the crystals rotating or changing orientation throughout the sequence. The crystals transition from a diagonal upper-right orientation to vertical, then to a diagonal lower-right pattern, suggesting a rotating or animated loop effect. The clip ends with a spoken 'Thank you for watching' indicating this is likely an outro or closing segment of a larger video.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "against",
+        "animated",
+        "background",
+        "black",
+        "clip",
+        "clusters",
+        "crystal",
+        "crystals",
+        "diagonally",
+        "displays",
+        "float",
+        "floating",
+        "formations",
+        "glowing",
+        "left",
+        "lower",
+        "medium",
+        "multiple",
+        "now",
+        "orange",
+        "oriented",
+        "pointing",
+        "pure",
+        "speech",
+        "thank",
+        "tilting",
+        "upper",
+        "upward",
+        "vertically",
+        "video",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Multiple glowing orange crystal clusters float against a pure black background. The crystals appear translucent with an inner amber-yellow luminescence, creating a warm, fiery glow. Each crystal formation consists of pointed hexagonal shapes clustered together, oriented diagonally from lower-left to upper-right. The crystals are scattered across the frame in a repeating pattern, with approximately 15-20 visible formations of varying sizes. The lighting appears to emanate from within the crystals themselves, creating bright highlights and deeper orange shadows."
+        },
+        {
+          "seconds": 2,
+          "text": "The orange crystal formations are now oriented more vertically, pointing upward against the black background. The crystals maintain their glowing amber-orange translucent appearance with internal illumination. The arrangement appears more organized with crystals distributed evenly across the frame. Each cluster features a dominant central crystal point with smaller crystals at the base. The composition shows approximately 12-15 crystal formations, creating a symmetrical pattern. The warm golden-orange glow contrasts dramatically with the dark void background."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The glowing orange crystals are now oriented diagonally, tilting from upper-left to lower-right direction. The formations appear arranged in diagonal rows across the black background, creating a more uniform pattern. The crystals retain their warm amber-orange luminescence with bright yellow-white highlights at their cores. The composition shows approximately 15 crystal clusters distributed in a grid-like diagonal arrangement. The overall lighting remains consistent with the internal glow effect, and the crystals appear slightly smaller or more distant than in previous frames."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "animated",
+    "background",
+    "black",
+    "clip",
+    "clusters",
+    "crystal",
+    "crystals",
+    "diagonally",
+    "displays",
+    "float",
+    "floating",
+    "formations",
+    "glowing",
+    "left",
+    "lower",
+    "medium",
+    "multiple",
+    "now",
+    "orange",
+    "oriented",
+    "pointing",
+    "pure",
+    "speech",
+    "thank",
+    "tilting",
+    "upper",
+    "upward",
+    "vertically",
+    "video",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

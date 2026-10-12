@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4b4a63a6e98ab4609b5a549a8a9baf16efa5cece9fbbbb1f5da0dee2706a8a5c",
+  "sha256": "4b4a63a6e98ab4609b5a549a8a9baf16efa5cece9fbbbb1f5da0dee2706a8a5c",
+  "bytes": 6834601,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s2_jungle.mp4"
+  ],
+  "collections": [
+    "floors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

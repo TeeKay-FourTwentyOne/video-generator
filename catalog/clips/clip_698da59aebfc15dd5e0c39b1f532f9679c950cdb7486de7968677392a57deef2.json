@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_698da59aebfc15dd5e0c39b1f532f9679c950cdb7486de7968677392a57deef2",
+  "sha256": "698da59aebfc15dd5e0c39b1f532f9679c950cdb7486de7968677392a57deef2",
+  "bytes": 2684753,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767579699968_r1o7gs.mp4"
+  ],
+  "collections": [
+    "a_cup_of_coffee_on_a_table__1767579562401"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767579699968_r1o7gs"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The camera gently pulls back in a slow, floating retreat through soft noir atmosphere, revealing a simple coffee cup in its wholeness as steam rises in peaceful, undulating columns that no longer form shapes but simply exist as pure vapor. Extreme macro photography captures the cup centered in perfect symmetry on a dark wooden table, bathed in soft, diffused light that filters through the atmospheric haze like morning sun through venetian blinds. The steam rises in gentle, meditative spirals, catching the light in ethereal wisps that dance upward without urgency or transformation. Film grain softens from pronounced texture to a subtle, dreamlike quality as time resumes its normal flow, the motion slowing to real-world physics. The camera's retreat is smooth and contemplative, maintaining the cup in center frame as it pulls back to reveal more of the peaceful scene - the quiet table surface, the gentle play of light and shadow, the simple beauty of steam rising from hot coffee. Muted tones dominate the palette - soft grays, warm browns, and cream highlights creating a sense of calm resolution. The lighting creates a gentle glow around the cup's rim and catches the steam in translucent ribbons that fade into the shadowy background, completing the journey with a sense of quiet fulfillment and rest.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9161a849273e12ce419d554385296c1c674a47f8c3cf6869585c19fc241b0f2c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The camera gently pulls back in a slow, floating retreat through soft noir atmosphere, revealing a simple coffee cup in its wholeness as steam rises in peaceful, undulating columns that no longer form shapes but simply exist as pure vapor. Extreme macro photography captures the cup centered in perfect symmetry on a dark wooden table, bathed in soft, diffused light that filters through the atmospheric haze like morning sun through venetian blinds. The steam rises in gentle, meditative spirals, catching the light in ethereal wisps that dance upward without urgency or transformation. Film grain softens from pronounced texture to a subtle, dreamlike quality as time resumes its normal flow, the motion slowing to real-world physics. The camera's retreat is smooth and contemplative, maintaining the cup in center frame as it pulls back to reveal more of the peaceful scene - the quiet table surface, the gentle play of light and shadow, the simple beauty of steam rising from hot coffee. Muted tones dominate the palette - soft grays, warm browns, and cream highlights creating a sense of calm resolution. The lighting creates a gentle glow around the cup's rim and catches the steam in translucent ribbons that fade into the shadowy background, completing the journey with a sense of quiet fulfillment and rest.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9161a849273e12ce419d554385296c1c674a47f8c3cf6869585c19fc241b0f2c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:20:25.392Z",
+      "parameters": {
+        "durationSeconds": 12,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This atmospheric 8-second vertical video captures a steaming cup of coffee on a wooden table, with dramatic lighting from window blinds creating striped shadow patterns. The steam rises continuously throughout the clip, changing shape and intensity while the camera maintains a steady, contemplative composition. The cinematic lighting and dark background create a moody, intimate morning coffee scene.",
+      "transcript": null,
+      "tags": [
+        "atmospheric",
+        "beverage",
+        "brown",
+        "captures",
+        "centered",
+        "ceramic",
+        "coffee",
+        "creating",
+        "cup",
+        "curved",
+        "dark",
+        "filled",
+        "frame",
+        "full",
+        "light",
+        "likely",
+        "medium",
+        "now",
+        "remains",
+        "revealing",
+        "rising",
+        "second",
+        "shown",
+        "silent",
+        "steam",
+        "steaming",
+        "table",
+        "thicker",
+        "vertical",
+        "video",
+        "view",
+        "vigorously",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark ceramic coffee cup filled with a light brown beverage (likely coffee with cream) dominates the lower portion of the frame. Wispy white steam rises dramatically from the cup, curling upward against a dark background. The cup sits on what appears to be a textured surface with striped light patterns, suggesting sunlight filtering through blinds. The composition is vertical with cinematic black bars at top and bottom. Warm, moody lighting creates strong contrast between the illuminated steam and dark surroundings."
+        },
+        {
+          "seconds": 4,
+          "text": "The same dark ceramic coffee cup is now shown in full view, revealing its curved shape and small handle on the right side. Steam continues to rise in elegant wisps, drifting leftward. The cup sits on a dark wooden surface with dramatic striped shadows from window blinds creating diagonal light patterns. Horizontal blinds are visible and blurred in the background. The lighting remains warm and atmospheric, with strong contrast highlighting the steam against the dark backdrop."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The coffee cup remains centered in frame with steam rising more vigorously, creating thicker, more turbulent wisps that curl and twist upward and to the right. The striped shadow pattern on the wooden table surface is more pronounced, with brighter light streaks visible. Window blinds in the background appear slightly more illuminated. The cup casts a distinct shadow on the table. The overall mood remains warm and contemplative with dramatic chiaroscuro lighting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "atmospheric",
+    "beverage",
+    "brown",
+    "captures",
+    "centered",
+    "ceramic",
+    "coffee",
+    "creating",
+    "cup",
+    "curved",
+    "dark",
+    "filled",
+    "frame",
+    "full",
+    "light",
+    "likely",
+    "medium",
+    "now",
+    "remains",
+    "revealing",
+    "rising",
+    "second",
+    "shown",
+    "silent",
+    "steam",
+    "steaming",
+    "table",
+    "thicker",
+    "vertical",
+    "video",
+    "view",
+    "vigorously",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

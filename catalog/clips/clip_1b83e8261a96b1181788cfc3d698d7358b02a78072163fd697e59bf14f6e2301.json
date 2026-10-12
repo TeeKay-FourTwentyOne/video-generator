@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1b83e8261a96b1181788cfc3d698d7358b02a78072163fd697e59bf14f6e2301",
+  "sha256": "1b83e8261a96b1181788cfc3d698d7358b02a78072163fd697e59bf14f6e2301",
+  "bytes": 6366239,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "01_dirty_weather.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "A handcrafted miniature stop-motion film, vertical 9:16 composition. Macro lens, beautifully tactile materials, subtle stop-motion cadence, shallow depth of field. Inside a tiny vintage laundromat, mint-green tile wall, buttery yellow light. A single oval yellow enamel laundry basin sits on a wooden counter in the lower half of the frame. Exactly ONE small charcoal-gray cotton-wool storm cloud floats just above the basin, already present at the beginning. Thin silver threads of rain trickle steadily from the cloud into the basin; tiny ripples form. The cloud gives one very small disgruntled rumble and a brief soft internal flicker, then keeps raining. Camera makes a very slow straight push in. Charming, melancholy, spare composition, museum-quality practical miniature, no people, no hands, no faces on the cloud, no other clouds, no lettering, no captions, no logos. One uninterrupted shot. Sound: delicate water drops into an enamel bowl and a tiny muffled thunder grumble, quiet room tone, no music, no speech.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4d9a79d535ae4e853a591b8b26cfc107ef95a4dfa311b06aba291d4b900b2735",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9122601,
+      "createdAt": "2026-09-12T18:39:14.955Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

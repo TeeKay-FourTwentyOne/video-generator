@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9edda8dd91279349343abe6401bcae84007d4b8b78f61be6dcb26356ee942df9",
+  "sha256": "9edda8dd91279349343abe6401bcae84007d4b8b78f61be6dcb26356ee942df9",
+  "bytes": 827381,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 0.666667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 16,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "cx_fwd.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

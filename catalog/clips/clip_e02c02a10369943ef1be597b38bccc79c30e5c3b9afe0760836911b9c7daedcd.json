@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e02c02a10369943ef1be597b38bccc79c30e5c3b9afe0760836911b9c7daedcd",
+  "sha256": "e02c02a10369943ef1be597b38bccc79c30e5c3b9afe0760836911b9c7daedcd",
+  "bytes": 1943675,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 34.083333,
+    "width": 960,
+    "height": 540,
+    "frameRate": "24/1",
+    "frameCount": 818,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "future2_u1.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

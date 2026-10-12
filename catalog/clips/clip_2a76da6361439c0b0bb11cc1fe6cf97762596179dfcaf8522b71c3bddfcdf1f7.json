@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2a76da6361439c0b0bb11cc1fe6cf97762596179dfcaf8522b71c3bddfcdf1f7",
+  "sha256": "2a76da6361439c0b0bb11cc1fe6cf97762596179dfcaf8522b71c3bddfcdf1f7",
+  "bytes": 15503242,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "v4_s2_keaton_raw.mp4"
+  ],
+  "collections": [
+    "steamboat-wilhelm"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

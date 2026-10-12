@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a9d2d56ad190bb1f745c4778fb6a13c544ae26c91885e03f77b640aca0276c9e",
+  "sha256": "a9d2d56ad190bb1f745c4778fb6a13c544ae26c91885e03f77b640aca0276c9e",
+  "bytes": 1529649,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668904189_fjza73.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668904189_fjza73"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Handheld medium two-shot, camera positioned uncomfortably close to two men facing each other in a sunlit interior space. The frame is tight with minimal headroom, their faces filling most of the 16:9 composition. Dramatic side lighting streams through a window, casting stark shadows across half their faces while warm golden light illuminates the other half. The camera has subtle handheld movement, creating nervous energy. Friend_2 (male, 30s) moves into frame from the right, while Friend_1 (male, 20s) suddenly lifts his head to look up at him. Their eyes meet and widen in recognition, a sharp intake of breath visible. The naturalistic lighting emphasizes skin texture and micro-expressions as surprise registers on both faces. The camera holds this intimate proximity, capturing the raw moment of unexpected recognition. Their expressions shift subtly from shock to something more complex and unreadable. High saturation enhances the warm tones while the dramatic side lighting creates strong contrast between light and shadow.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, quick, intense): \"Sarah? Is that really you?\"\n- FRIEND_1 (male, 20s, natural): \"Oh my god... Michael.\"\n- FRIEND_2 (male, 30s, quick, intense): \"I can't believe it's been—\"\n- FRIEND_1 (male, 20s, controlled, tight): \"Three years. Since the wedding.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7848f2225a4da1a716f04e7fa8a64bd736dc4e1b15f649f174f9b33ec42734ef",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Handheld medium two-shot, camera positioned uncomfortably close to two men facing each other in a sunlit interior space. The frame is tight with minimal headroom, their faces filling most of the 16:9 composition. Dramatic side lighting streams through a window, casting stark shadows across half their faces while warm golden light illuminates the other half. The camera has subtle handheld movement, creating nervous energy. Friend_2 (male, 30s) moves into frame from the right, while Friend_1 (male, 20s) suddenly lifts his head to look up at him. Their eyes meet and widen in recognition, a sharp intake of breath visible. The naturalistic lighting emphasizes skin texture and micro-expressions as surprise registers on both faces. The camera holds this intimate proximity, capturing the raw moment of unexpected recognition. Their expressions shift subtly from shock to something more complex and unreadable. High saturation enhances the warm tones while the dramatic side lighting creates strong contrast between light and shadow.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, quick, intense): \"Sarah? Is that really you?\"\n- FRIEND_1 (male, 20s, natural): \"Oh my god... Michael.\"\n- FRIEND_2 (male, 30s, quick, intense): \"I can't believe it's been—\"\n- FRIEND_1 (male, 20s, controlled, tight): \"Three years. Since the wedding.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7848f2225a4da1a716f04e7fa8a64bd736dc4e1b15f649f174f9b33ec42734ef",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:07:40.313Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures an intense face-to-face conversation between two young men, shot in dramatic profile with strong backlighting from a window. The dialogue reveals a moment of recognition, with one person calling out 'Sarah' and then 'Michael,' suggesting a case of mistaken identity or surprise reunion. The cinematography emphasizes emotional tension through close framing and warm, golden lighting.",
+      "transcript": "Sarah, is that really you? Oh my God. Michael.",
+      "tags": [
+        "both",
+        "captures",
+        "clip",
+        "close",
+        "confrontation",
+        "continue",
+        "continues",
+        "conversation",
+        "exchange",
+        "face",
+        "facing",
+        "god",
+        "intense",
+        "left",
+        "man",
+        "medium",
+        "men",
+        "michael",
+        "profile",
+        "really",
+        "sarah",
+        "shot",
+        "speech",
+        "still",
+        "their",
+        "two",
+        "view",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up profile shot of two young men facing each other in an intense conversation. The man on the left has light brown wavy hair, light stubble, and wears a gray shirt. The man on the right has darker hair and wears a dark navy shirt, his face partially silhouetted. Strong backlighting from a bright window creates a warm golden glow around their figures. Both men have their mouths slightly open as if mid-speech, creating dramatic tension."
+        },
+        {
+          "seconds": 2,
+          "text": "The same two men continue their face-to-face exchange in profile view. The left man's face is more illuminated, showing his concerned expression with furrowed brow and parted lips. The right man remains more shadowed against the bright window backdrop. The warm, golden backlighting persists, creating a cinematic atmosphere. The framing is tight, emphasizing the emotional intensity of their interaction. Both appear to be speaking or reacting to each other."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The confrontation continues with both men still in close profile view. The left man appears to be speaking, his mouth open and expression earnest. The right man's silhouetted profile shows him listening or responding. The bright window behind them creates strong contrast and rim lighting on their hair and shoulders. The composition remains symmetrical with both figures occupying equal frame space, suggesting an emotionally charged dialogue between them."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "both",
+    "captures",
+    "clip",
+    "close",
+    "confrontation",
+    "continue",
+    "continues",
+    "conversation",
+    "exchange",
+    "face",
+    "facing",
+    "god",
+    "intense",
+    "left",
+    "man",
+    "medium",
+    "men",
+    "michael",
+    "profile",
+    "really",
+    "sarah",
+    "shot",
+    "speech",
+    "still",
+    "their",
+    "two",
+    "view",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

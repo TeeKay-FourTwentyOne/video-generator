@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d915b9dfa6c1759df54ef81334ce59fe2293e7b471878c2c3d6fda808aab68c8",
+  "sha256": "d915b9dfa6c1759df54ef81334ce59fe2293e7b471878c2c3d6fda808aab68c8",
+  "bytes": 8351985,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "left_hand_1080.mp4"
+  ],
+  "collections": [
+    "dual-use"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

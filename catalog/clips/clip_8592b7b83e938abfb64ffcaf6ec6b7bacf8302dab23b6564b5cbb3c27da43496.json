@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8592b7b83e938abfb64ffcaf6ec6b7bacf8302dab23b6564b5cbb3c27da43496",
+  "sha256": "8592b7b83e938abfb64ffcaf6ec6b7bacf8302dab23b6564b5cbb3c27da43496",
+  "bytes": 11512,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "april_endcard.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

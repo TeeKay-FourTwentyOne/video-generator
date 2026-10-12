@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d59a0074930f409bde93b3a40473e1ff39f9c18e5300283b2ff190d354b587d2",
+  "sha256": "d59a0074930f409bde93b3a40473e1ff39f9c18e5300283b2ff190d354b587d2",
+  "bytes": 3821607,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "gravity_memories_shot_3_1766616604749.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:gravity_memories_shot_3_1766616604749"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A vintage brass compass floating against deep blue velvet, rotating to reveal its detailed compass rose face. The antique navigation instrument suggests themes of direction, journey, and cherished memories.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "angle",
+        "appearing",
+        "blue",
+        "brass",
+        "close",
+        "compass",
+        "deep",
+        "detailed",
+        "fabric",
+        "fall",
+        "float",
+        "floating",
+        "frame",
+        "gold",
+        "loop",
+        "markings",
+        "medium",
+        "now",
+        "ornate",
+        "polished",
+        "rests",
+        "reveal",
+        "ring",
+        "rose",
+        "rotating",
+        "showing",
+        "silent",
+        "tilted",
+        "velvet",
+        "vintage"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A vintage brass compass rests on deep blue velvet fabric. The polished gold-toned metal gleams against the dark luxurious background. Classic navigation instrument with visible compass rose under glass dome."
+        },
+        {
+          "seconds": 4,
+          "text": "The brass compass now tilted at an angle, appearing to float or fall. Ring loop at top visible. The compass face shows cardinal directions under aged glass. Deep blue velvet background creates rich contrast."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Close-up of the compass showing detailed compass rose with N/S/E/W markings. Ornate brass frame with decorative ring. The vintage instrument appears suspended against the blue fabric backdrop."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "appearing",
+    "blue",
+    "brass",
+    "close",
+    "compass",
+    "deep",
+    "detailed",
+    "fabric",
+    "fall",
+    "float",
+    "floating",
+    "frame",
+    "gold",
+    "loop",
+    "markings",
+    "medium",
+    "now",
+    "ornate",
+    "polished",
+    "rests",
+    "reveal",
+    "ring",
+    "rose",
+    "rotating",
+    "showing",
+    "silent",
+    "tilted",
+    "velvet",
+    "vintage"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

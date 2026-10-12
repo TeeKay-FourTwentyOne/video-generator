@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ef3a94837191d9b18aa5661ef182ba4a02c32724ea0936a6aaeec692ccba1203",
+  "sha256": "ef3a94837191d9b18aa5661ef182ba4a02c32724ea0936a6aaeec692ccba1203",
+  "bytes": 4484921,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_1_frost.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_1_frost"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Macro shot of frost crystals on window glass with vintage film aesthetic. Sepia-toned with sprocket borders, the ice patterns glow increasingly warm as light intensifies through the shot.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "aesthetic",
+        "brighter",
+        "brilliant",
+        "catch",
+        "continuing",
+        "crystal",
+        "crystalline",
+        "crystals",
+        "dominates",
+        "film",
+        "frost",
+        "glass",
+        "glowing",
+        "golden",
+        "intricate",
+        "light",
+        "macro",
+        "medium",
+        "now",
+        "patterns",
+        "sepia",
+        "shifting",
+        "shot",
+        "slightly",
+        "small",
+        "speech",
+        "structures",
+        "toned",
+        "vintage",
+        "warmly",
+        "window"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Intricate frost crystal patterns on window glass, sepia-toned with vintage film sprocket borders on sides. Delicate ice formations resemble fern fronds or feathers. Golden backlight creates warm glow through frozen surface."
+        },
+        {
+          "seconds": 4,
+          "text": "Frost patterns continuing, light shifting slightly brighter. The crystalline structures catch more light, revealing intricate branching details. Film grain and sprocket holes maintain vintage aesthetic."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Brilliant golden light now dominates, frost crystals glowing warmly. Some small particles or snow visible. The organic ice patterns create natural abstract art against warm backlight."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aesthetic",
+    "brighter",
+    "brilliant",
+    "catch",
+    "continuing",
+    "crystal",
+    "crystalline",
+    "crystals",
+    "dominates",
+    "film",
+    "frost",
+    "glass",
+    "glowing",
+    "golden",
+    "intricate",
+    "light",
+    "macro",
+    "medium",
+    "now",
+    "patterns",
+    "sepia",
+    "shifting",
+    "shot",
+    "slightly",
+    "small",
+    "speech",
+    "structures",
+    "toned",
+    "vintage",
+    "warmly",
+    "window"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e5ac2ef4fbfc2535408746a9011822866639102a316e2631b2a083a683f16112",
+  "sha256": "e5ac2ef4fbfc2535408746a9011822866639102a316e2631b2a083a683f16112",
+  "bytes": 17242744,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b1_glass.mp4"
+  ],
+  "collections": [
+    "passenger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

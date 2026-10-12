@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e035a4a133f8009abde6f9ff300a577b634f7ec5d4268e4fd91decc42bfe07b4",
+  "sha256": "e035a4a133f8009abde6f9ff300a577b634f7ec5d4268e4fd91decc42bfe07b4",
+  "bytes": 6510623,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "missile_camera_1080.mp4"
+  ],
+  "collections": [
+    "dual-use"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

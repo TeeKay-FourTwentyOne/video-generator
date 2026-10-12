@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_eb1ca6834467a75678067d07ff71f267075bb0bc4428ec395fa37d38c1e76691",
+  "sha256": "eb1ca6834467a75678067d07ff71f267075bb0bc4428ec395fa37d38c1e76691",
+  "bytes": 5473763,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S5_nearlook_std_keep.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

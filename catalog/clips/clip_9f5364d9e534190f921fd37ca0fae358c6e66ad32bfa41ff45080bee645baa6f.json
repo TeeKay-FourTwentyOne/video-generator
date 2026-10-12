@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9f5364d9e534190f921fd37ca0fae358c6e66ad32bfa41ff45080bee645baa6f",
+  "sha256": "9f5364d9e534190f921fd37ca0fae358c6e66ad32bfa41ff45080bee645baa6f",
+  "bytes": 25910403,
+  "extension": ".mov",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 17.25,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 414,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s24le"
+  },
+  "labels": [
+    "exchange-native.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

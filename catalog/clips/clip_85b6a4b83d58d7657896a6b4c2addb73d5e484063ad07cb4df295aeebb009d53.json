@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_85b6a4b83d58d7657896a6b4c2addb73d5e484063ad07cb4df295aeebb009d53",
+  "sha256": "85b6a4b83d58d7657896a6b4c2addb73d5e484063ad07cb4df295aeebb009d53",
+  "bytes": 10992932,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S9_gesture_q.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

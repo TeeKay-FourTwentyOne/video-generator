@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_65aded4833acd1401b079f5cd8d6881d26c79220a68c1032b246c074f4f74231",
+  "sha256": "65aded4833acd1401b079f5cd8d6881d26c79220a68c1032b246c074f4f74231",
+  "bytes": 11248759,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "05_patron.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "One continuous 8-second shot. Photoreal underwater cinema, subtle film grain, cobalt blue water, faded oxblood seats, tarnished brass Art Deco details, suspended particles. Match the first frame faithfully. All architecture and seats are rigid and remain in place. Natural smooth motion at 24fps, not stop motion. No people, divers, text, subtitles, logos, cuts, dissolves, floating furniture or cartoon anatomy. Intimate locked close-up: exactly ONE natural silver fish hovers above a single faded burgundy velvet seat, facing screen right. Its pectoral fins move delicately and gills breathe; its body drifts forward only a few centimeters. Warm moving amber light from the unseen movie screen brushes its silver scales against deep blue water. Fish stays a fish, no human expression, no other creatures, no splitting or duplicated body. Background seats stay fixed. Quiet underwater hum and remote projector chatter; no music or speech.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_de502dcff76a4d4968cbe4a2def7feaa2c74c760fa7a145600aaf677aa5d91a4",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9162604,
+      "createdAt": "2026-09-16T16:40:53.811Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

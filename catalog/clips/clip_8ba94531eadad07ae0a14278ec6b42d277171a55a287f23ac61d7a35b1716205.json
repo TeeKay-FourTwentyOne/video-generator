@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8ba94531eadad07ae0a14278ec6b42d277171a55a287f23ac61d7a35b1716205",
+  "sha256": "8ba94531eadad07ae0a14278ec6b42d277171a55a287f23ac61d7a35b1716205",
+  "bytes": 6501297,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jabB_elder_4k.mp4"
+  ],
+  "collections": [
+    "guess-booth"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

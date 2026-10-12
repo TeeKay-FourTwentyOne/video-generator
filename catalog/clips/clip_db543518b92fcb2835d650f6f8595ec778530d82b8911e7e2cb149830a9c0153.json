@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_db543518b92fcb2835d650f6f8595ec778530d82b8911e7e2cb149830a9c0153",
+  "sha256": "db543518b92fcb2835d650f6f8595ec778530d82b8911e7e2cb149830a9c0153",
+  "bytes": 1257639,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "C-city-of-gold-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

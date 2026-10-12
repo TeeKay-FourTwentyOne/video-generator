@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cde484bab7fc675dc9ff707d3e85e15d71095498abea5ff2f1e9776c35bc15ae",
+  "sha256": "cde484bab7fc675dc9ff707d3e85e15d71095498abea5ff2f1e9776c35bc15ae",
+  "bytes": 5787745,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "source.mp4",
+    "veo_1767669412582_8dzt8g.mp4"
+  ],
+  "collections": [
+    "two_friends_meet_unexpectedly__1767668356193"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767669412582_8dzt8g"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Tight two-shot captured with handheld camera energy, medium framing with minimal headroom as two men face each other in stark recognition. The camera holds uncomfortably close, their faces filling the frame - one man in his 30s approaching from frame left, another in his 20s suddenly looking up from frame right. Sharp intake of breath, eyes widening in the moment of surprise. Dramatic side lighting from an unseen window creates strong contrast, casting half their faces in shadow while warm, naturalistic tones highlight their expressions. The handheld camera maintains this intimate proximity, slight tremor suggesting urgency as surprise shifts to something unreadable in their eyes. High saturation emphasizes the warm interior lighting against cool window light. The tension is palpable in the narrow space between them, camera holding steady on their faces throughout the emotional exchange.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, quick, intense): \"Sarah? Is that really you?\"\n- FRIEND_1 (male, 20s, natural): \"Oh my god... Michael.\"\n- FRIEND_2 (male, 30s, quick, intense): \"I can't believe it's been—\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_af24699204d1a738dbf0167d96e6fe177df3648251a901b9b8a085704ee46d81",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Tight two-shot captured with handheld camera energy, medium framing with minimal headroom as two men face each other in stark recognition. The camera holds uncomfortably close, their faces filling the frame - one man in his 30s approaching from frame left, another in his 20s suddenly looking up from frame right. Sharp intake of breath, eyes widening in the moment of surprise. Dramatic side lighting from an unseen window creates strong contrast, casting half their faces in shadow while warm, naturalistic tones highlight their expressions. The handheld camera maintains this intimate proximity, slight tremor suggesting urgency as surprise shifts to something unreadable in their eyes. High saturation emphasizes the warm interior lighting against cool window light. The tension is palpable in the narrow space between them, camera holding steady on their faces throughout the emotional exchange.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, quick, intense): \"Sarah? Is that really you?\"\n- FRIEND_1 (male, 20s, natural): \"Oh my god... Michael.\"\n- FRIEND_2 (male, 30s, quick, intense): \"I can't believe it's been—\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_af24699204d1a738dbf0167d96e6fe177df3648251a901b9b8a085704ee46d81",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:15:25.111Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This dramatic clip captures an emotional reunion between two men, beginning with mutual shock and surprise as they recognize each other, transitioning to face-to-face conversation, and culminating in an intense emotional reaction. The transcription suggests they are reuniting after a long separation, with names Sarah and Michael mentioned, indicating possible mistaken identity or a complex relationship dynamic.",
+      "transcript": "Sarah? Is that really you? Oh my God. Michael, I can't believe it's been.",
+      "tags": [
+        "beginning",
+        "believe",
+        "captures",
+        "caucasian",
+        "clip",
+        "close",
+        "conversation",
+        "dramatic",
+        "emotional",
+        "escalation",
+        "expressions",
+        "facing",
+        "god",
+        "left",
+        "man",
+        "medium",
+        "men",
+        "michael",
+        "mutual",
+        "now",
+        "profile",
+        "really",
+        "remains",
+        "reunion",
+        "sarah",
+        "scene",
+        "shock",
+        "shocked",
+        "shot",
+        "shows",
+        "speech",
+        "surprised",
+        "two",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of two men with surprised, shocked expressions. On the left, a Caucasian man with dark hair and stubble wears a blue denim jacket over a gray shirt, mouth open in disbelief. On the right, an Asian man with black hair wears a white dress shirt, also with mouth agape showing surprise. Both face slightly toward camera. Background shows muted olive/beige wall with wooden door frame visible. Natural lighting from window on right illuminates the scene. Cinematic shallow depth of field focuses on faces."
+        },
+        {
+          "seconds": 4,
+          "text": "Profile shot of the same two men now facing each other in conversation. The Caucasian man on the left shows his side profile with visible stubble and ear, mouth slightly open as if speaking. The Asian man on the right faces left, also in profile view, appearing to respond. Both maintain serious, engaged expressions. Same indoor setting with olive wall and wooden door frame. Warm natural lighting creates contrast between shadowed and lit areas. Medium close-up framing emphasizes their interaction."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The scene shows emotional escalation. The Caucasian man remains in profile on the left, watching intently. The Asian man on the right displays intense emotion - eyes squeezed shut, face contorted, mouth open wide as if crying or exclaiming, hand raised to his chest gripping his white shirt collar. Motion blur on his face suggests movement. Same indoor setting with warm lighting. The composition captures a dramatic emotional moment, with the Asian man's distress being the focal point."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "beginning",
+    "believe",
+    "captures",
+    "caucasian",
+    "clip",
+    "close",
+    "conversation",
+    "dramatic",
+    "emotional",
+    "escalation",
+    "expressions",
+    "facing",
+    "god",
+    "left",
+    "man",
+    "medium",
+    "men",
+    "michael",
+    "mutual",
+    "now",
+    "profile",
+    "really",
+    "remains",
+    "reunion",
+    "sarah",
+    "scene",
+    "shock",
+    "shocked",
+    "shot",
+    "shows",
+    "speech",
+    "surprised",
+    "two",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6bc4d95124f20ee620a171ba376f202621d0105a74008667e5b0d007b182031a",
+  "sha256": "6bc4d95124f20ee620a171ba376f202621d0105a74008667e5b0d007b182031a",
+  "bytes": 2032966,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767547581121_x7m5fi.mp4"
+  ],
+  "collections": [
+    "impossible_orbit"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767547581121_x7m5fi"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot of an East Asian woman in her 30s with shoulder-length dark hair, facing directly toward camera with a calm, serene expression. She remains perfectly still and centered in frame as the camera continues its slow, steady rightward orbital movement around her. Behind her, a tall bookshelf filled with books spans the background, replacing the previous window view. The modern interior maintains its dark wood floors, stacked stone fireplace elements, and dark-toned walls with recessed lighting. The woman's position and facial expression remain unchanged - she continues to face the camera directly without turning her head or body. Soft, natural lighting creates a slightly desaturated color palette. The camera movement is smooth and deliberate, showing how the background has rotated 90 degrees while the subject remains stationary and facing forward.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f00b80c23c7294efd23f623fa831ca9fb4dde25e02d663d5870161b8315697f3",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot of an East Asian woman in her 30s with shoulder-length dark hair, facing directly toward camera with a calm, serene expression. She remains perfectly still and centered in frame as the camera continues its slow, steady rightward orbital movement around her. Behind her, a tall bookshelf filled with books spans the background, replacing the previous window view. The modern interior maintains its dark wood floors, stacked stone fireplace elements, and dark-toned walls with recessed lighting. The woman's position and facial expression remain unchanged - she continues to face the camera directly without turning her head or body. Soft, natural lighting creates a slightly desaturated color palette. The camera movement is smooth and deliberate, showing how the background has rotated 90 degrees while the subject remains stationary and facing forward.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f00b80c23c7294efd23f623fa831ca9fb4dde25e02d663d5870161b8315697f3",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:25:39.174Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A short vertical video clip showing a woman with black shoulder-length hair in a dark gray t-shirt, filmed in what appears to be a modern home library or study. The camera perspective shifts slightly across frames, revealing different background elements including windows, extensive bookshelves, and a stone fireplace. The woman maintains a calm, contemplative demeanor throughout the brief clip.",
+      "transcript": "You",
+      "tags": [
+        "black",
+        "camera",
+        "clip",
+        "directly",
+        "faces",
+        "fireplace",
+        "framing",
+        "gray",
+        "hair",
+        "length",
+        "medium",
+        "mid",
+        "neutral",
+        "now",
+        "positioned",
+        "profile",
+        "quarter",
+        "remains",
+        "she",
+        "short",
+        "shoulder",
+        "showing",
+        "shown",
+        "similar",
+        "speech",
+        "stands",
+        "stone",
+        "three",
+        "torso",
+        "vertical",
+        "video",
+        "view",
+        "wall",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with shoulder-length black hair stands in three-quarter profile view, facing right. She wears a dark charcoal gray crew-neck t-shirt. The setting appears to be a modern living room with large windows showing trees outside, a bookshelf on the left, and dark furniture. Natural light streams in from the windows, creating soft illumination on her face. The composition places her slightly left of center with shallow depth of field blurring the background."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman now faces the camera more directly, shown from mid-torso up. She has a neutral, contemplative expression. Behind her is an extensive floor-to-ceiling bookshelf filled with colorful books in various sizes. The lighting is warm and even, highlighting her face against the blurred literary backdrop. She continues wearing the same dark gray t-shirt. The framing is a medium close-up portrait style with the subject centered."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman remains in similar framing, now positioned with a gray stone fireplace wall visible on the left side and bookshelves on the right. A recessed ceiling light is visible above. The fireplace appears to have a warm glow. Her expression remains calm and attentive, looking slightly off-camera. The lighting combines warm ambient tones from the fireplace area with softer overhead illumination. She maintains the same dark gray t-shirt throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "black",
+    "camera",
+    "clip",
+    "directly",
+    "faces",
+    "fireplace",
+    "framing",
+    "gray",
+    "hair",
+    "length",
+    "medium",
+    "mid",
+    "neutral",
+    "now",
+    "positioned",
+    "profile",
+    "quarter",
+    "remains",
+    "she",
+    "short",
+    "shoulder",
+    "showing",
+    "shown",
+    "similar",
+    "speech",
+    "stands",
+    "stone",
+    "three",
+    "torso",
+    "vertical",
+    "video",
+    "view",
+    "wall",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

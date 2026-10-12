@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fc244a1abe6eff5f9abd7918b64aa55d68b1ee785b2a6b95480f42b46f96f266",
+  "sha256": "fc244a1abe6eff5f9abd7918b64aa55d68b1ee785b2a6b95480f42b46f96f266",
+  "bytes": 2231800,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s4b_palm_setup.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-5-cancan"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

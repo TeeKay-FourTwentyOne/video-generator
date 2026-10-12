@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ce74171acce1794dab0594f6b14e111f852debf322e78cee238f0296be8d8677",
+  "sha256": "ce74171acce1794dab0594f6b14e111f852debf322e78cee238f0296be8d8677",
+  "bytes": 7765715,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 39.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 957,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "polis-scene-draft-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

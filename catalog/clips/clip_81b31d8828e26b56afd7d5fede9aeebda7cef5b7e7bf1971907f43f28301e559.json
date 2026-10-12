@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_81b31d8828e26b56afd7d5fede9aeebda7cef5b7e7bf1971907f43f28301e559",
+  "sha256": "81b31d8828e26b56afd7d5fede9aeebda7cef5b7e7bf1971907f43f28301e559",
+  "bytes": 2786071,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767509504130_j2gcc9.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767509504130_j2gcc9"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A macro close-up captures the violent moment of impact as a droplet crashes through a pristine liquid surface, exploding into a chaotic symphony of crystalline spray. The collision transforms peaceful serenity into sudden drama, with razor-sharp droplets bursting outward like shattered glass fragments. Shot in extreme slow motion with macro photography techniques, every microscopic detail is frozen in time - the crown-like splash formation, the cascading rivulets, and the intricate pattern of secondary droplets suspended in mid-air. High contrast black and white cinematography emphasizes the sculptural quality of the liquid explosion, with dramatic lighting creating stark shadows and brilliant highlights that transform each droplet into a gleaming jewel. The camera maintains a fixed macro position, allowing the explosive action to fill the 9:16 vertical frame completely. The lighting is precise and directional, casting deep shadows while illuminating the liquid spray with crystalline clarity, creating a monochromatic masterpiece that captures the raw physics of impact in breathtaking detail.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7e725fc955460bb58d5d17f067793552ae7856af6e65268da51e6a608c15d13f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A macro close-up captures the violent moment of impact as a droplet crashes through a pristine liquid surface, exploding into a chaotic symphony of crystalline spray. The collision transforms peaceful serenity into sudden drama, with razor-sharp droplets bursting outward like shattered glass fragments. Shot in extreme slow motion with macro photography techniques, every microscopic detail is frozen in time - the crown-like splash formation, the cascading rivulets, and the intricate pattern of secondary droplets suspended in mid-air. High contrast black and white cinematography emphasizes the sculptural quality of the liquid explosion, with dramatic lighting creating stark shadows and brilliant highlights that transform each droplet into a gleaming jewel. The camera maintains a fixed macro position, allowing the explosive action to fill the 9:16 vertical frame completely. The lighting is precise and directional, casting deep shadows while illuminating the liquid spray with crystalline clarity, creating a monochromatic masterpiece that captures the raw physics of impact in breathtaking detail.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7e725fc955460bb58d5d17f067793552ae7856af6e65268da51e6a608c15d13f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T06:50:59.890Z",
+      "parameters": {
+        "durationSeconds": 1,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This high-speed photography clip captures the complete sequence of a water droplet falling and creating a crown splash in dramatic black and white. The footage progresses from a single falling droplet, through the peak crown formation moment, to the settling aftermath with rippling water surface. The minimalist monochromatic treatment emphasizes the sculptural beauty of water dynamics.",
+      "transcript": "you",
+      "tags": [
+        "aftermath",
+        "black",
+        "captured",
+        "captures",
+        "clip",
+        "close",
+        "complete",
+        "crown",
+        "dramatic",
+        "drop",
+        "droplet",
+        "falling",
+        "formation",
+        "high",
+        "image",
+        "impact",
+        "medium",
+        "peak",
+        "photography",
+        "sequence",
+        "shot",
+        "showing",
+        "single",
+        "speech",
+        "speed",
+        "splash",
+        "water",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A black and white high-speed photography shot showing a single water droplet at the top of the frame, appearing spherical and translucent with light reflections. Below it, a smaller droplet or splash formation is visible at the bottom. The background is completely black at the top, transitioning to a gradient gray surface below, creating a minimalist composition. The lighting creates strong contrast highlighting the water's reflective properties."
+        },
+        {
+          "seconds": 2,
+          "text": "A dramatic black and white close-up of a water crown splash formation captured at peak height. The splash creates a symmetrical crown shape with multiple pointed projections rising upward, each topped with small water droplets. The water surface shows ripples and reflections. Strong side lighting creates high contrast, emphasizing the intricate details of the water structure. Small droplets are scattered in the air above the crown."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Black and white image showing the aftermath of the water drop impact. A single water droplet is suspended in mid-air above a disturbed water surface covered in ripples and small waves. Several smaller droplets are visible near the surface. The water surface shows complex wave patterns radiating outward. The lighting creates silvery highlights on the water texture against the dark background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aftermath",
+    "black",
+    "captured",
+    "captures",
+    "clip",
+    "close",
+    "complete",
+    "crown",
+    "dramatic",
+    "drop",
+    "droplet",
+    "falling",
+    "formation",
+    "high",
+    "image",
+    "impact",
+    "medium",
+    "peak",
+    "photography",
+    "sequence",
+    "shot",
+    "showing",
+    "single",
+    "speech",
+    "speed",
+    "splash",
+    "water",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_092195f0dc71733ad430159df10a5fcc8f4062fdd9c55755150fbe481378ce73",
+  "sha256": "092195f0dc71733ad430159df10a5fcc8f4062fdd9c55755150fbe481378ce73",
+  "bytes": 179613,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 75,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "ad_slot_video.mp4"
+  ],
+  "collections": [
+    "ai-explains-steg"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

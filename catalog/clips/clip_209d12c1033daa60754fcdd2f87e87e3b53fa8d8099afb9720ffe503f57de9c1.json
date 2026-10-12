@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_209d12c1033daa60754fcdd2f87e87e3b53fa8d8099afb9720ffe503f57de9c1",
+  "sha256": "209d12c1033daa60754fcdd2f87e87e3b53fa8d8099afb9720ffe503f57de9c1",
+  "bytes": 1836250,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scroll_test_down100_ann.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:scroll_test_down100_ann"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip simulates a vintage film strip scrolling downward at a slow pace, featuring silhouetted imagery of a soldier with flowers in a rifle barrel transitioning to standalone flower silhouettes. The warm sepia/amber backlighting creates a nostalgic, anti-war artistic aesthetic. Japanese text audio says 'Have a delicious day!' contrasting with the visual's contemplative war-and-peace theme.",
+      "transcript": "美味しい一日を!",
+      "tags": [
+        "aesthetic",
+        "both",
+        "clip",
+        "continues",
+        "different",
+        "dominates",
+        "down",
+        "downward",
+        "featuring",
+        "film",
+        "frame",
+        "holes",
+        "medium",
+        "new",
+        "now",
+        "pace",
+        "revealing",
+        "scrolled",
+        "scrolling",
+        "showing",
+        "silhouetted",
+        "simulates",
+        "single",
+        "slow",
+        "speech",
+        "sprocket",
+        "strip",
+        "vintage",
+        "visible",
+        "within"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A vintage film strip aesthetic dominates the frame, with sprocket holes visible on both sides. The central image shows a silhouetted soldier figure wearing a helmet, holding a rifle with flowers emerging from the barrel. The background glows with warm sepia/amber tones suggesting a sunset or sunrise. Text overlay reads 'TEST 1: 100px DOWN' and 'Expect: Sprockets scroll DOWNWARD (slow)' in yellow. The composition creates a poignant anti-war imagery with the juxtaposition of military and floral elements."
+        },
+        {
+          "seconds": 4,
+          "text": "The film strip continues scrolling downward, now showing a different frame within the vintage film aesthetic. The soldier silhouette has moved out of frame, replaced by silhouetted flower stems against the warm amber/sepia backlit background. The sprocket holes on both sides remain visible, creating the authentic film reel appearance. The same test text overlays persist at the top. The bright light source creates a glowing effect in the center, with darker vignetting around the edges."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The film strip has scrolled further down, revealing a new frame showing a single silhouetted flower on a stem against the warm, glowing amber background. At the top edge, a partial silhouette of what appears to be the soldier figure is barely visible, having scrolled mostly out of view. The sprocket holes continue along both edges. The composition maintains the vintage film aesthetic with strong backlighting creating the sepia-toned glow. Test text remains visible at the top of the frame."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aesthetic",
+    "both",
+    "clip",
+    "continues",
+    "different",
+    "dominates",
+    "down",
+    "downward",
+    "featuring",
+    "film",
+    "frame",
+    "holes",
+    "medium",
+    "new",
+    "now",
+    "pace",
+    "revealing",
+    "scrolled",
+    "scrolling",
+    "showing",
+    "silhouetted",
+    "simulates",
+    "single",
+    "slow",
+    "speech",
+    "sprocket",
+    "strip",
+    "vintage",
+    "visible",
+    "within"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

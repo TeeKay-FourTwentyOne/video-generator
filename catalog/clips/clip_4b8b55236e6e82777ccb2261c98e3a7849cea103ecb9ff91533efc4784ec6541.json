@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4b8b55236e6e82777ccb2261c98e3a7849cea103ecb9ff91533efc4784ec6541",
+  "sha256": "4b8b55236e6e82777ccb2261c98e3a7849cea103ecb9ff91533efc4784ec6541",
+  "bytes": 5436977,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_arrow.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_arrow"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Close-up character portrait of the Sagittarius centaur's human half - a charming young man with wild auburn hair and freckles. The clip captures his charismatic, free-spirited personality through expressive smiles and gestures, bathed in golden forest light. Dialogue: 'Never miss a shot when the light's like this.'",
+      "transcript": "Never miss a shot when the light's like this.",
+      "tags": [
+        "auburn",
+        "bright",
+        "centaur",
+        "character",
+        "charming",
+        "close",
+        "content",
+        "continuing",
+        "curly",
+        "explanatory",
+        "giving",
+        "hair",
+        "haired",
+        "half",
+        "hand",
+        "human",
+        "light",
+        "like",
+        "man",
+        "medium",
+        "miss",
+        "never",
+        "one",
+        "portrait",
+        "quarter",
+        "raised",
+        "red",
+        "sagittarius",
+        "shot",
+        "slight",
+        "speech",
+        "squint",
+        "subtle",
+        "three",
+        "view",
+        "wild",
+        "wink",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up portrait of a young man with wild curly auburn-red hair, bright smile showing teeth, freckled fair skin. Forest bokeh background with golden sunlight. Joyful, charismatic expression. This is the human half of the Sagittarius centaur character."
+        },
+        {
+          "seconds": 4,
+          "text": "Same young man in slight three-quarter view, one hand raised in explanatory gesture. Arrows visible over shoulder. Warm, friendly expression with slight knowing smile. Backlit by golden forest light creating hair glow."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Portrait continuing with the red-haired man giving a subtle wink or squint, content smile. Freckles prominent on sun-touched skin. Natural charismatic presence suggesting the free-spirited Sagittarius personality."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_005",
+      "name": "Archer",
+      "description": "Young man with curly red hair, warm smile, Sagittarius text overlay, cheerful demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "auburn",
+    "bright",
+    "centaur",
+    "character",
+    "charming",
+    "close",
+    "content",
+    "continuing",
+    "curly",
+    "explanatory",
+    "giving",
+    "hair",
+    "haired",
+    "half",
+    "hand",
+    "human",
+    "light",
+    "like",
+    "man",
+    "medium",
+    "miss",
+    "never",
+    "one",
+    "portrait",
+    "quarter",
+    "raised",
+    "red",
+    "sagittarius",
+    "shot",
+    "slight",
+    "speech",
+    "squint",
+    "subtle",
+    "three",
+    "view",
+    "wild",
+    "wink",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

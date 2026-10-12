@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9078ab7df7ef29e827d8ed40961d2d7b8725c31fcf7feab47b50d77039893cca",
+  "sha256": "9078ab7df7ef29e827d8ed40961d2d7b8725c31fcf7feab47b50d77039893cca",
+  "bytes": 3295164,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767596771315_e3ovzh.mp4"
+  ],
+  "collections": [
+    "two_estranged_siblings_marcus__1767596552762"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767596771315_e3ovzh"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression, wearing a black V-neck sweater and a bright red scarf, with a delicate silver necklace, stands alone on a wooden porch. Wide establishing shot filmed through a rain-streaked window, handheld camera with subtle documentary-style movement. The woman pauses at the door, her bright red scarf creating the only vivid color against the desaturated gray winter morning. She places one hand on the weathered doorknob and her shoulders rise as she takes a deep, contemplative breath. Soft, diffused overcast light filters through heavy clouds, catching tiny droplets of moisture suspended in the cold air. The rain-blurred window glass in the foreground creates a dreamy, melancholic barrier between viewer and subject. Muted color palette dominated by grays and cool blues, with naturalistic lighting that emphasizes the quiet, introspective moment. The camera holds steady despite the handheld style, maintaining the wide framing throughout as morning mist drifts across the porch.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_36e67d6c1db50c7c5ab70d10dd0f3b8b80c3ada80f55ed9209f773d2b6cbe56d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression, wearing a black V-neck sweater and a bright red scarf, with a delicate silver necklace, stands alone on a wooden porch. Wide establishing shot filmed through a rain-streaked window, handheld camera with subtle documentary-style movement. The woman pauses at the door, her bright red scarf creating the only vivid color against the desaturated gray winter morning. She places one hand on the weathered doorknob and her shoulders rise as she takes a deep, contemplative breath. Soft, diffused overcast light filters through heavy clouds, catching tiny droplets of moisture suspended in the cold air. The rain-blurred window glass in the foreground creates a dreamy, melancholic barrier between viewer and subject. Muted color palette dominated by grays and cool blues, with naturalistic lighting that emphasizes the quiet, introspective moment. The camera holds steady despite the handheld style, maintaining the wide framing throughout as morning mist drifts across the porch.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_36e67d6c1db50c7c5ab70d10dd0f3b8b80c3ada80f55ed9209f773d2b6cbe56d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T07:04:32.608Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This atmospheric winter scene shows a woman in a black coat and red scarf standing on the porch of a weathered wooden house during heavy snowfall. Throughout the 8-second clip, she appears contemplative while holding a door handle, eventually turning her attention to something off-screen. The Japanese audio suggests this may be a closing scene with the speaker thanking viewers for watching.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "alert",
+        "atmospheric",
+        "black",
+        "closer",
+        "coat",
+        "curious",
+        "curly",
+        "dark",
+        "door",
+        "expression",
+        "framing",
+        "hair",
+        "hand",
+        "handle",
+        "her",
+        "left",
+        "looks",
+        "medium",
+        "now",
+        "off",
+        "porch",
+        "red",
+        "scarf",
+        "scene",
+        "she",
+        "shown",
+        "shows",
+        "snowstorm",
+        "speech",
+        "standing",
+        "stands",
+        "still",
+        "weathered",
+        "winter",
+        "woman",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with dark curly hair stands on a weathered wooden porch during a snowstorm. She wears a black coat with a vibrant red knitted scarf draped around her neck. Her hand rests on an old wooden door with peeling gray-white paint. Snow falls heavily in the foreground, creating a dreamy, atmospheric effect. The background shows a snowy winter landscape with bare trees and what appears to be a distant vehicle with headlights. The composition places her slightly right of center, with cool blue-gray tones dominating."
+        },
+        {
+          "seconds": 4,
+          "text": "The same woman is shown in a closer framing, still on the porch with her hand on the door handle. She looks downward with a contemplative expression. Her red scarf hangs long against her black clothing, and a small pendant necklace is visible. The weathered wooden siding of the house shows extensive peeling paint. Heavy snowfall continues, with snowflakes visible throughout the frame. The lighting is soft and diffused, creating a melancholic winter atmosphere with predominantly cool gray and blue tones contrasted by the warm red scarf."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The woman now looks off to her left with an alert or curious expression, her gaze directed toward something off-screen. She maintains her position at the door, hand still on the handle. Her curly dark hair frames her face, and the red scarf remains prominently visible against her black attire. The snowy porch railing is visible on the left side. Snowflakes continue falling throughout the scene. The composition is slightly wider than the previous frame, showing more of the deteriorating wooden structure and the winter landscape beyond."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alert",
+    "atmospheric",
+    "black",
+    "closer",
+    "coat",
+    "curious",
+    "curly",
+    "dark",
+    "door",
+    "expression",
+    "framing",
+    "hair",
+    "hand",
+    "handle",
+    "her",
+    "left",
+    "looks",
+    "medium",
+    "now",
+    "off",
+    "porch",
+    "red",
+    "scarf",
+    "scene",
+    "she",
+    "shown",
+    "shows",
+    "snowstorm",
+    "speech",
+    "standing",
+    "stands",
+    "still",
+    "weathered",
+    "winter",
+    "woman",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e0afe7889cc86115d7e2e05a4fc354a1e90586024575b3f4cde4bd93692d0602",
+  "sha256": "e0afe7889cc86115d7e2e05a4fc354a1e90586024575b3f4cde4bd93692d0602",
+  "bytes": 3896810,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ocean_zone4_abyss.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_zone4_abyss"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Deep ocean abyss footage featuring bioluminescent jellyfish glowing in the darkness. Multiple jellyfish in blue and pink-purple hues drift through the inky black water, their translucent bodies and trailing tentacles creating an ethereal, otherworldly atmosphere. Particle effects add to the sense of vast oceanic depth.",
+      "transcript": "୧༼ಠ益ಠ༽ད",
+      "tags": [
+        "abyss",
+        "bioluminescent",
+        "blue",
+        "dark",
+        "darkness",
+        "decorated",
+        "deep",
+        "displayed",
+        "featuring",
+        "flowing",
+        "footage",
+        "glowing",
+        "jellyfish",
+        "large",
+        "medium",
+        "multiple",
+        "ocean",
+        "one",
+        "pink",
+        "prominently",
+        "purple",
+        "scene",
+        "speech",
+        "tentacles",
+        "top",
+        "trailing",
+        "translucent",
+        "two"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Dark deep ocean abyss scene with bioluminescent jellyfish. A large blue-glowing jellyfish floats on the left side, another smaller glowing form visible in the distance. Deep blue-black water with tiny particles floating like stars in the darkness."
+        },
+        {
+          "seconds": 4,
+          "text": "Two bioluminescent jellyfish in the dark abyss - a blue translucent one at the top trailing bubbles and delicate tentacles, and a pink-purple one below. Rich contrast between the glowing ethereal creatures and the deep black water."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Large pink-purple bioluminescent jellyfish prominently displayed with flowing tentacles decorated with dotted patterns. A small glowing blue fish swims in the upper left. Deep dark blue water with scattered particle effects creates a magical atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abyss",
+    "bioluminescent",
+    "blue",
+    "dark",
+    "darkness",
+    "decorated",
+    "deep",
+    "displayed",
+    "featuring",
+    "flowing",
+    "footage",
+    "glowing",
+    "jellyfish",
+    "large",
+    "medium",
+    "multiple",
+    "ocean",
+    "one",
+    "pink",
+    "prominently",
+    "purple",
+    "scene",
+    "speech",
+    "tentacles",
+    "top",
+    "trailing",
+    "translucent",
+    "two"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

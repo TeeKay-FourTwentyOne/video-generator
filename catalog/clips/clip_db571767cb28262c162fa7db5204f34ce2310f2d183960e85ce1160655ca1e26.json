@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_db571767cb28262c162fa7db5204f34ce2310f2d183960e85ce1160655ca1e26",
+  "sha256": "db571767cb28262c162fa7db5204f34ce2310f2d183960e85ce1160655ca1e26",
+  "bytes": 18274103,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 170.166667,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 4084,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "carnival-dream-blockout-720p.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

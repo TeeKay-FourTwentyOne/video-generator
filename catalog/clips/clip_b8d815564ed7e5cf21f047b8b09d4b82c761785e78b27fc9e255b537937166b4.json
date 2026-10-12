@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b8d815564ed7e5cf21f047b8b09d4b82c761785e78b27fc9e255b537937166b4",
+  "sha256": "b8d815564ed7e5cf21f047b8b09d4b82c761785e78b27fc9e255b537937166b4",
+  "bytes": 1736520,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Man_speaks_on_202604252116.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

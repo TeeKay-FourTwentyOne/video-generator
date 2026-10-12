@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5fdd407640e4dbc071493804be8c86bcdfbfa9d4dd293a6c9168a7148bebd9de",
+  "sha256": "5fdd407640e4dbc071493804be8c86bcdfbfa9d4dd293a6c9168a7148bebd9de",
+  "bytes": 697237,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767548623384_z7ryn3.mp4"
+  ],
+  "collections": [
+    "impossible_orbit_v2"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767548623384_z7ryn3"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian woman in her 30s with a medium build, chin-length dark brown hair, and brown eyes. She is wearing a loose-fitting white V-neck blouse with three-quarter rolled-up sleeves, dark blue skinny jeans, and black pointed-toe stiletto heels, holding a calm, neutral expression. Medium shot showing her facing directly toward the camera with the same calm, neutral expression throughout. Behind her, a tall bookshelf filled with books spans the background, replacing the previous window view. The camera continues its slow, steady rightward orbital movement around her while she remains completely stationary, never turning or moving - she maintains direct eye contact with the lens. The background gradually shifts 90 degrees as the camera's position changes, revealing more of the bookshelf's book spines and shelving details. The contemporary rustic interior maintains its medium-toned wood plank floors, neutral taupe walls, and soft natural lighting with slightly desaturated tones. The flat ceiling with spotlights provides warm, even illumination that creates gentle shadows and highlights on her white blouse.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3be5e382ab6622499fd4bf3c8077cc794fcd4a2e4a75cdac8895cea343026606",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian woman in her 30s with a medium build, chin-length dark brown hair, and brown eyes. She is wearing a loose-fitting white V-neck blouse with three-quarter rolled-up sleeves, dark blue skinny jeans, and black pointed-toe stiletto heels, holding a calm, neutral expression. Medium shot showing her facing directly toward the camera with the same calm, neutral expression throughout. Behind her, a tall bookshelf filled with books spans the background, replacing the previous window view. The camera continues its slow, steady rightward orbital movement around her while she remains completely stationary, never turning or moving - she maintains direct eye contact with the lens. The background gradually shifts 90 degrees as the camera's position changes, revealing more of the bookshelf's book spines and shelving details. The contemporary rustic interior maintains its medium-toned wood plank floors, neutral taupe walls, and soft natural lighting with slightly desaturated tones. The flat ceiling with spotlights provides warm, even illumination that creates gentle shadows and highlights on her white blouse.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3be5e382ab6622499fd4bf3c8077cc794fcd4a2e4a75cdac8895cea343026606",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:42:51.408Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A short video clip showing a woman with a brown bob haircut standing in front of library bookshelves, transitioning from a neutral expression to speaking and smiling. She wears a white V-neck blouse and dark jeans with black heels, with a lavalier microphone attached. The setting is a professional-looking library or study space with warm wooden tones and even lighting throughout.",
+      "transcript": "you",
+      "tags": [
+        "bob",
+        "brown",
+        "centered",
+        "central",
+        "clip",
+        "continues",
+        "forming",
+        "frame",
+        "front",
+        "hair",
+        "haircut",
+        "her",
+        "identical",
+        "length",
+        "medium",
+        "mouth",
+        "now",
+        "position",
+        "pronounced",
+        "remains",
+        "setting",
+        "short",
+        "showing",
+        "slight",
+        "smile",
+        "speech",
+        "standing",
+        "stands",
+        "video",
+        "wearing",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short brown bob-length hair stands centered in frame, wearing a loose white V-neck blouse with rolled sleeves and dark blue skinny jeans with black high heels. She has a small lavalier microphone clipped to her shirt. Her expression is neutral with closed lips. Behind her are wooden bookshelves filled with colorful books. The floor is light wood laminate. Track lighting is visible at the top. The framing is full-body, vertical/portrait orientation with professional studio-style lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains in the identical position and setting, now with a slight smile forming on her face and her mouth slightly open as if beginning to speak. Her posture is relaxed with arms at her sides. The library background with wooden shelves and multicolored books remains unchanged. The lighting continues to be even and professional, illuminating her white blouse prominently against the warm-toned background. Full-body vertical framing maintained."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues standing in the same central position, now with a more pronounced smile and her mouth open mid-speech. Her body language appears engaged and friendly. The setting remains consistent with the wooden bookshelves filled with various colored book spines visible behind her. Track lighting overhead, wooden floor below. The composition maintains the same full-body vertical framing with professional, even lighting highlighting the subject against the library backdrop."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_024",
+      "name": "Claire (Library)",
+      "description": "Same dark-haired woman with bob, white top and jeans, now standing in front of built-in bookshelves",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "bob",
+    "brown",
+    "centered",
+    "central",
+    "clip",
+    "continues",
+    "forming",
+    "frame",
+    "front",
+    "hair",
+    "haircut",
+    "her",
+    "identical",
+    "length",
+    "medium",
+    "mouth",
+    "now",
+    "position",
+    "pronounced",
+    "remains",
+    "setting",
+    "short",
+    "showing",
+    "slight",
+    "smile",
+    "speech",
+    "standing",
+    "stands",
+    "video",
+    "wearing",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

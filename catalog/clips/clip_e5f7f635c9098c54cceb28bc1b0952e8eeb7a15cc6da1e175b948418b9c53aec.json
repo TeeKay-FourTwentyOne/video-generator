@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e5f7f635c9098c54cceb28bc1b0952e8eeb7a15cc6da1e175b948418b9c53aec",
+  "sha256": "e5f7f635c9098c54cceb28bc1b0952e8eeb7a15cc6da1e175b948418b9c53aec",
+  "bytes": 1068970,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_3_1766536370343.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_3_1766536370343"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "White minimalist clock approaching noon, from 11:58 to 12:00. The countdown to midday adds subtle anticipation to the waiting-on-hold theme.",
+      "transcript": "If you find this video useful, please like, share, and subscribe. Thanks for watching!",
+      "tags": [
+        "about",
+        "achieved",
+        "adds",
+        "anticipation",
+        "approaching",
+        "approximately",
+        "beige",
+        "both",
+        "clean",
+        "clock",
+        "countdown",
+        "find",
+        "framed",
+        "hand",
+        "hands",
+        "like",
+        "medium",
+        "midday",
+        "minimalist",
+        "minute",
+        "moment",
+        "near",
+        "nearly",
+        "noon",
+        "please",
+        "pointing",
+        "share",
+        "showing",
+        "shows",
+        "speech",
+        "subscribe",
+        "subtle",
+        "thanks",
+        "useful",
+        "video",
+        "waiting",
+        "wall",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "White-framed minimalist wall clock on beige wall showing approximately 11:58. Clean modern design with thin hands. Blue sky visible through window. Approaching noon."
+        },
+        {
+          "seconds": 3,
+          "text": "Clock shows about 11:59, minute hand nearly at 12. The anticipation of noon adds subtle tension. Bright daylight from window."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Clock at or very near 12:00, both hands pointing up. The midday moment achieved after waiting. Clean white frame against neutral wall."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "about",
+    "achieved",
+    "adds",
+    "anticipation",
+    "approaching",
+    "approximately",
+    "beige",
+    "both",
+    "clean",
+    "clock",
+    "countdown",
+    "find",
+    "framed",
+    "hand",
+    "hands",
+    "like",
+    "medium",
+    "midday",
+    "minimalist",
+    "minute",
+    "moment",
+    "near",
+    "nearly",
+    "noon",
+    "please",
+    "pointing",
+    "share",
+    "showing",
+    "shows",
+    "speech",
+    "subscribe",
+    "subtle",
+    "thanks",
+    "useful",
+    "video",
+    "waiting",
+    "wall",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

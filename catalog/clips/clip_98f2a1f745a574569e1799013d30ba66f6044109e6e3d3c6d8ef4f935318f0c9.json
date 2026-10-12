@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_98f2a1f745a574569e1799013d30ba66f6044109e6e3d3c6d8ef4f935318f0c9",
+  "sha256": "98f2a1f745a574569e1799013d30ba66f6044109e6e3d3c6d8ef4f935318f0c9",
+  "bytes": 3728355,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S04-v1.mp4",
+    "veo_1791015234717_24q7wj.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Portrait 9:16. Extreme macro cinematography of this exact single warm amber capsule lamp already fully seated in a brass socket on the outside wall of the dark stone planter. Preserve the exact bulb, socket, tree trunk and stone proportions. Handcrafted stop-motion miniature with tangible surfaces, deep teal background and amber practical lighting. Locked camera. During eight seconds the filament gently brightens once, settles, and a faint warm pulse of light rises up a thin root immediately above it toward the tree. Only subtle dust motes drift. The bulb never moves, does not change size or shape, never duplicates. No robot or hand enters this macro frame. No new object, no text, no cut. Quiet, intimate, almost sacred stillness. Let the warm light play on the chipped stone and brass. No flashing or neon beams. Final two seconds are steady.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f85d4af0c95ba5db95b22d683977a8c396efd4c3d0136aa2544ec9e438f44680",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

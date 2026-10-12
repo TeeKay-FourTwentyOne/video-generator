@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9b7d9e337d2f0a85e678e0d39d0ba45f5f0a339fd18db038ec3f3ac334a0b5cd",
+  "sha256": "9b7d9e337d2f0a85e678e0d39d0ba45f5f0a339fd18db038ec3f3ac334a0b5cd",
+  "bytes": 23559,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "T01.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

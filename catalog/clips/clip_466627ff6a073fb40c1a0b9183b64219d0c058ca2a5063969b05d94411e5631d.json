@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_466627ff6a073fb40c1a0b9183b64219d0c058ca2a5063969b05d94411e5631d",
+  "sha256": "466627ff6a073fb40c1a0b9183b64219d0c058ca2a5063969b05d94411e5631d",
+  "bytes": 6201999,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-v2.mp4",
+    "veo_1791077994275_d8vnc1.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "A fixed macro shot of this ONE wooden clothespin holding white linen on a rope. Wind acts on the CLOTH only. The linen gradually swells from below; its hem strains against the wooden jaws. At about three seconds a sharp upward gust pulls the white corner out from under the peg and whisks the cloth upward-right out of the close framing. The same wooden peg stays on the rope, now empty. The rope and peg sway a little from the gust but keep their identity. No other object ever enters frame: NO second clothespin, NO hand, NO finger, NO tool, NO person. The release is caused solely by air pressure on the cloth. Cloth never tears into pieces. Keep the fixed macro optics, real woven hem and wood grain, blurred ochre rose background and blue patch. No camera motion, no text, no audio. Six seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b21af2d5a2dff5eb09f653ea395bbbd4d6dab179bfaa7a9226ad72e548d53c02",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 914109982,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

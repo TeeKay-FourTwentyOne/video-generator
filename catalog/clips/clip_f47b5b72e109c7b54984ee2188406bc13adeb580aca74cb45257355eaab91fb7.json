@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f47b5b72e109c7b54984ee2188406bc13adeb580aca74cb45257355eaab91fb7",
+  "sha256": "f47b5b72e109c7b54984ee2188406bc13adeb580aca74cb45257355eaab91fb7",
+  "bytes": 342884,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767509495119_z78b9u.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767509495119_z78b9u"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A single droplet of dark ink hovers in pristine white space, suspended in perfect spherical form against a luminous void. The droplet begins its slow, graceful descent through the ethereal emptiness, maintaining its flawless geometry as gravity gently pulls it downward. Macro lens captures every subtle detail of the sphere's surface tension, revealing the liquid's mirror-like quality. High contrast black and white cinematography emphasizes the stark opposition between the deep obsidian ink and the radiant white background. Camera follows the droplet's movement with a slow, fluid tracking shot, maintaining perfect focus on the falling sphere. Soft, diffused lighting creates a meditative atmosphere, stretching time through the deliberate pacing of the descent. The composition captures the zen-like quality of this moment of anticipation, with the droplet moving through the frame like a dark meditation against infinite brightness. Ultra-sharp macro detail reveals the hypnotic perfection of the liquid form as it gracefully travels through the luminous void.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4791910e21e2238df27865d06f56877ba8f04e83113c00979096f628674a5231",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A single droplet of dark ink hovers in pristine white space, suspended in perfect spherical form against a luminous void. The droplet begins its slow, graceful descent through the ethereal emptiness, maintaining its flawless geometry as gravity gently pulls it downward. Macro lens captures every subtle detail of the sphere's surface tension, revealing the liquid's mirror-like quality. High contrast black and white cinematography emphasizes the stark opposition between the deep obsidian ink and the radiant white background. Camera follows the droplet's movement with a slow, fluid tracking shot, maintaining perfect focus on the falling sphere. Soft, diffused lighting creates a meditative atmosphere, stretching time through the deliberate pacing of the descent. The composition captures the zen-like quality of this moment of anticipation, with the droplet moving through the frame like a dark meditation against infinite brightness. Ultra-sharp macro detail reveals the hypnotic perfection of the liquid form as it gracefully travels through the luminous void.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4791910e21e2238df27865d06f56877ba8f04e83113c00979096f628674a5231",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T06:50:52.487Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This slow-motion video captures a viscous black liquid (likely oil or ink) forming and elongating as a droplet against a pristine white background. Over the 4-second duration, the glossy teardrop-shaped drop descends while remaining connected by an increasingly thin strand to its source above. The minimalist composition and high contrast create an artistic study of fluid dynamics, accompanied by a 'Thank you for watching!' audio message.",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "against",
+        "black",
+        "captures",
+        "centered",
+        "clean",
+        "compared",
+        "descended",
+        "droplet",
+        "frame",
+        "glossy",
+        "ink",
+        "likely",
+        "liquid",
+        "lower",
+        "medium",
+        "motion",
+        "moved",
+        "now",
+        "oil",
+        "portion",
+        "positioned",
+        "remains",
+        "significantly",
+        "slightly",
+        "slow",
+        "speech",
+        "suspended",
+        "thank",
+        "upper",
+        "video",
+        "viscous",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A glossy black liquid droplet is suspended in the upper portion of the frame against a clean white/light gray gradient background. The droplet has a classic teardrop shape with a narrow neck extending upward out of frame. The surface shows reflective highlights on both sides of the bulbous bottom portion, indicating a highly viscous, shiny substance like oil or ink. The composition is minimalist and centered, shot from a straight-on angle with high contrast between the dark subject and bright background."
+        },
+        {
+          "seconds": 2,
+          "text": "The black liquid droplet remains centered in frame but has descended slightly lower compared to the first frame. The elongated neck connecting to the source above is now more visible, extending further into the frame from the top. The droplet maintains its glossy, reflective surface with visible light reflections on its curved sides. The white gradient background remains consistent, creating strong visual contrast. The vertical composition emphasizes the stretching, dripping motion of the viscous liquid."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The black liquid droplet has moved significantly lower in the frame, now positioned in the lower-center area. The connecting strand above has become much longer and thinner, stretching from the top of the frame down to the teardrop-shaped bulb. The droplet appears to be in the process of elongating and potentially about to detach. The glossy surface still shows subtle reflections. The minimalist white background maintains the high-contrast aesthetic throughout this slow-motion capture of liquid dynamics."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "black",
+    "captures",
+    "centered",
+    "clean",
+    "compared",
+    "descended",
+    "droplet",
+    "frame",
+    "glossy",
+    "ink",
+    "likely",
+    "liquid",
+    "lower",
+    "medium",
+    "motion",
+    "moved",
+    "now",
+    "oil",
+    "portion",
+    "positioned",
+    "remains",
+    "significantly",
+    "slightly",
+    "slow",
+    "speech",
+    "suspended",
+    "thank",
+    "upper",
+    "video",
+    "viscous",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

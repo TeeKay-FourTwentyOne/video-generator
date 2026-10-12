@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a63da785d9915fe0efd067ccec663d0ae56966a9bde8fafb406483e3ed9e8380",
+  "sha256": "a63da785d9915fe0efd067ccec663d0ae56966a9bde8fafb406483e3ed9e8380",
+  "bytes": 24298647,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tunnel_clip3.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:tunnel_clip3"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 8-second abstract video clip displays processed black and white imagery featuring organic, web-like white line patterns against a pure black background. The visualization cycles through variations of a central void or ring structure surrounded by intricate edge-detected patterns, creating a hypnotic tunnel or portal effect. The style suggests heavy post-processing such as edge detection applied to original footage, resulting in an ethereal, otherworldly aesthetic.",
+      "transcript": null,
+      "tags": [
+        "abstract",
+        "against",
+        "black",
+        "center",
+        "central",
+        "circular",
+        "clip",
+        "composition",
+        "defined",
+        "displays",
+        "featuring",
+        "first",
+        "frame",
+        "image",
+        "imagery",
+        "intricate",
+        "larger",
+        "line",
+        "medium",
+        "oval",
+        "pattern",
+        "patterns",
+        "processed",
+        "returns",
+        "ring",
+        "second",
+        "show",
+        "showing",
+        "silent",
+        "similar",
+        "structure",
+        "transformed",
+        "video",
+        "visualization",
+        "void",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Abstract black and white image showing intricate white line patterns against a pure black background. A central circular or ring-like structure made of detailed, organic-looking white lines dominates the center of the frame. The edges of the frame feature textured, web-like or coral-like patterns. The composition creates a tunnel or portal effect with the dark void in the center. The style appears to be edge-detection or line-art processing applied to footage, creating an ethereal, otherworldly aesthetic."
+        },
+        {
+          "seconds": 4,
+          "text": "The abstract visualization has transformed to show a larger, more defined oval or circular void in the center, surrounded by intricate white line patterns on black. The textured borders have expanded and become more prominent, framing the central darkness. The organic, vein-like or root-like white lines create a frame effect around the edges, with the composition suggesting looking through a tunnel or opening. The pattern appears more spread out compared to the first frame."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The abstract pattern returns to a composition similar to the first frame, with a central ring structure made of detailed white line work against the black background. The circular formation in the center is more defined, with intricate mesh-like patterns forming the ring shape. Textured, organic patterns occupy the corners and edges of the frame. Small scattered elements appear in the lower portion. The overall effect maintains the ethereal, processed aesthetic with strong contrast between white lines and black void."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "black",
+    "center",
+    "central",
+    "circular",
+    "clip",
+    "composition",
+    "defined",
+    "displays",
+    "featuring",
+    "first",
+    "frame",
+    "image",
+    "imagery",
+    "intricate",
+    "larger",
+    "line",
+    "medium",
+    "oval",
+    "pattern",
+    "patterns",
+    "processed",
+    "returns",
+    "ring",
+    "second",
+    "show",
+    "showing",
+    "silent",
+    "similar",
+    "structure",
+    "transformed",
+    "video",
+    "visualization",
+    "void",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

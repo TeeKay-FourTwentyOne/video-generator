@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_67a36c5d568a19ef3f3518255bf328db5a24ff5e84548b35d9595fc8c9805732",
+  "sha256": "67a36c5d568a19ef3f3518255bf328db5a24ff5e84548b35d9595fc8c9805732",
+  "bytes": 4029735342,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 3600,
+    "width": 2560,
+    "height": 1440,
+    "frameRate": "24/1",
+    "frameCount": 86400,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "the_other_window_v2_1440.mp4"
+  ],
+  "collections": [
+    "the-other-window"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

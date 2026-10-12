@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0f642caf5d116034085b7133e3719d56ee760c12fdf7bf1f6af74dde17879032",
+  "sha256": "0f642caf5d116034085b7133e3719d56ee760c12fdf7bf1f6af74dde17879032",
+  "bytes": 3876193,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 9.541667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 229,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "opening-motion-check.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

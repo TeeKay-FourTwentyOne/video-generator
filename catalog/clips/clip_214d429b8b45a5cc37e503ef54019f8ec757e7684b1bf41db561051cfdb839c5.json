@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_214d429b8b45a5cc37e503ef54019f8ec757e7684b1bf41db561051cfdb839c5",
+  "sha256": "214d429b8b45a5cc37e503ef54019f8ec757e7684b1bf41db561051cfdb839c5",
+  "bytes": 122130323,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 36.416667,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 874,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "floors_v2_4k.mp4"
+  ],
+  "collections": [
+    "floors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

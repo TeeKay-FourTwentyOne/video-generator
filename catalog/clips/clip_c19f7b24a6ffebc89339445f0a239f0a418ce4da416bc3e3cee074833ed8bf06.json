@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c19f7b24a6ffebc89339445f0a239f0a418ce4da416bc3e3cee074833ed8bf06",
+  "sha256": "c19f7b24a6ffebc89339445f0a239f0a418ce4da416bc3e3cee074833ed8bf06",
+  "bytes": 292463,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 7,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 210,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "s7.mp4"
+  ],
+  "collections": [
+    "burger-djinn"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

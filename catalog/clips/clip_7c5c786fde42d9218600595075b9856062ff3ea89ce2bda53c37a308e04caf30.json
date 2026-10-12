@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7c5c786fde42d9218600595075b9856062ff3ea89ce2bda53c37a308e04caf30",
+  "sha256": "7c5c786fde42d9218600595075b9856062ff3ea89ce2bda53c37a308e04caf30",
+  "bytes": 4326477,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767749199870_w72r7e.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767749199870_w72r7e"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A cinematic sequence showing two people having a meaningful conversation on a remote country road during golden hour. The camera progressively moves closer, transitioning from a full two-shot to an intimate close-up of the woman, suggesting an emotional moment of reflection about choices made at this symbolic crossroads location over twenty-five years.",
+      "transcript": "Twenty-five-five years I've stood at this crossroads, watched people choose.",
+      "tags": [
+        "alone",
+        "choose",
+        "cinematic",
+        "close",
+        "conversation",
+        "country",
+        "crossroads",
+        "extends",
+        "facing",
+        "five",
+        "having",
+        "horizon",
+        "left",
+        "long",
+        "looking",
+        "looks",
+        "meaningful",
+        "medium",
+        "now",
+        "off",
+        "people",
+        "portrait",
+        "remote",
+        "road",
+        "rural",
+        "sequence",
+        "shot",
+        "showing",
+        "side",
+        "slightly",
+        "speech",
+        "stand",
+        "stood",
+        "straight",
+        "thoughtful",
+        "twenty",
+        "two",
+        "watched",
+        "woman",
+        "years"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people stand facing each other on a long, straight country road that extends to the horizon. On the left, a woman with dark hair pulled back wears a brown suede vest over a light blue denim shirt with brown trousers and brown leather shoes. On the right, a bearded man with shoulder-length dark hair wears an olive green jacket over a cream henley shirt with khaki cargo pants and tan boots. Golden hour sunlight illuminates the scene, casting warm tones across expansive harvested wheat fields on both sides."
+        },
+        {
+          "seconds": 3,
+          "text": "Medium shot of the same two people in conversation on the rural road. The woman on the left looks toward the man with a contemplative expression, her face bathed in warm golden light. The man on the right is partially visible, looking down toward her. The long straight road creates strong leading lines toward the vanishing point on the horizon. The wheat fields show harvesting patterns, and the lighting creates rich amber and golden tones throughout the composition."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Close-up portrait of the woman alone, now looking off to the side with a thoughtful, slightly melancholic expression. Her gray-streaked dark hair is pulled back, and she wears small earrings. The brown suede vest and blue denim shirt are clearly visible. Warm golden hour light illuminates her face from the side, creating soft shadows. The long country road and wheat fields remain visible in the blurred background, emphasizing depth and the rural setting."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_041",
+      "name": "Mama June",
+      "description": "Older Black woman with grey hair pulled back, denim shirt under brown leather vest, standing on road through golden wheat fields at sunset",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "alone",
+    "choose",
+    "cinematic",
+    "close",
+    "conversation",
+    "country",
+    "crossroads",
+    "extends",
+    "facing",
+    "five",
+    "having",
+    "horizon",
+    "left",
+    "long",
+    "looking",
+    "looks",
+    "meaningful",
+    "medium",
+    "now",
+    "off",
+    "people",
+    "portrait",
+    "remote",
+    "road",
+    "rural",
+    "sequence",
+    "shot",
+    "showing",
+    "side",
+    "slightly",
+    "speech",
+    "stand",
+    "stood",
+    "straight",
+    "thoughtful",
+    "twenty",
+    "two",
+    "watched",
+    "woman",
+    "years"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

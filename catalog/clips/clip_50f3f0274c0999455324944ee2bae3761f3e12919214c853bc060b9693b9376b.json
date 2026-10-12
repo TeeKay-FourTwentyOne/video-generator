@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_50f3f0274c0999455324944ee2bae3761f3e12919214c853bc060b9693b9376b",
+  "sha256": "50f3f0274c0999455324944ee2bae3761f3e12919214c853bc060b9693b9376b",
+  "bytes": 43929680,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "bucket_water.mp4"
+  ],
+  "collections": [
+    "feb-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

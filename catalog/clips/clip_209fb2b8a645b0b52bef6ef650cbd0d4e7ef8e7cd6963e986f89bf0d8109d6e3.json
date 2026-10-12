@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_209fb2b8a645b0b52bef6ef650cbd0d4e7ef8e7cd6963e986f89bf0d8109d6e3",
+  "sha256": "209fb2b8a645b0b52bef6ef650cbd0d4e7ef8e7cd6963e986f89bf0d8109d6e3",
+  "bytes": 12395363,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S02-v1.mp4",
+    "veo_1791504871625_m4shra.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, mid-morning inside a city tram, 35 mm. The silver-haired woman in the mustard-yellow raincoat draws in the sketchbook on her knee as the tram sways gently and daylight slides across the windows; she looks across the aisle at the two young passengers, then back to the page. The young man and the young woman across the aisle talk to each other in a quiet, natural, continuous conversation, turned toward each other. Sound: their conversation, clearly audible, with the hum and rattle of the tram and a soft bell at a stop; no music. The camera is locked off and does not move. She does not speak. Exactly the people already in the frame; nobody new enters. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_93faae4888081c6f03bb74c1692373f0e99a00fa3aae28f144efdd5a176abfc8",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2000717644,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

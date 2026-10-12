@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bec56ae7a7d49c7d0c11d40a2b385e94e1c396919c22d4c66d9b5ff078c2781e",
+  "sha256": "bec56ae7a7d49c7d0c11d40a2b385e94e1c396919c22d4c66d9b5ff078c2781e",
+  "bytes": 11967032,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "before-after.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

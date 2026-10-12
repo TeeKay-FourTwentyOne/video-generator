@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1254263acef68b0a606fa0ca6224310b6ebf94a1ac8408831ee9abfeeebfa8d6",
+  "sha256": "1254263acef68b0a606fa0ca6224310b6ebf94a1ac8408831ee9abfeeebfa8d6",
+  "bytes": 15348542,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 62.966016,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "30/1",
+    "frameCount": 1889,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "steg_v3_wm_4k.mp4"
+  ],
+  "collections": [
+    "ai-explains-steg"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

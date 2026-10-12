@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9f841d93b53abcd42a521396bf706e28f16fa94925c3e1efb4c00197ae569b80",
+  "sha256": "9f841d93b53abcd42a521396bf706e28f16fa94925c3e1efb4c00197ae569b80",
+  "bytes": 2928003,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scroll_test_up100.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:scroll_test_up100"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Upward scroll test at 100 pixels/second through film strip composition. Features elegant silhouette of woman with afro holding flower against golden sunset. The reverse scroll direction (compared to down tests) reveals the figure from bottom to top.",
+      "transcript": "시청 해주셔서 감사합니다.",
+      "tags": [
+        "100",
+        "afro",
+        "composition",
+        "edge",
+        "elegant",
+        "features",
+        "feet",
+        "figure",
+        "film",
+        "frame",
+        "full",
+        "hair",
+        "hairstyle",
+        "head",
+        "holding",
+        "holes",
+        "medium",
+        "now",
+        "pixels",
+        "reveals",
+        "scroll",
+        "scrolled",
+        "second",
+        "showing",
+        "silhouette",
+        "speech",
+        "sprocket",
+        "strip",
+        "test",
+        "top",
+        "upper",
+        "upward",
+        "visible",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Film strip with sprocket holes showing silhouette of woman with afro hairstyle holding a flower, backlit by golden sunset. Lower portion of figure visible at start of upward scroll."
+        },
+        {
+          "seconds": 4,
+          "text": "Upward scroll reveals more of the woman's elegant silhouette - full figure now visible with flower held gracefully. Golden light creates glowing rim around the afro hairstyle."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Scrolled to top - feet visible at upper frame edge, head/hair silhouette at bottom. The upward pan has traveled the full height of the composition, completing the reverse journey."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "100",
+    "afro",
+    "composition",
+    "edge",
+    "elegant",
+    "features",
+    "feet",
+    "figure",
+    "film",
+    "frame",
+    "full",
+    "hair",
+    "hairstyle",
+    "head",
+    "holding",
+    "holes",
+    "medium",
+    "now",
+    "pixels",
+    "reveals",
+    "scroll",
+    "scrolled",
+    "second",
+    "showing",
+    "silhouette",
+    "speech",
+    "sprocket",
+    "strip",
+    "test",
+    "top",
+    "upper",
+    "upward",
+    "visible",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

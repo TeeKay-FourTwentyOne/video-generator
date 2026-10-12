@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One evidenced use of a clip in an edit",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^use_[a-f0-9]{64}$"
+    },
+    "clipId": {
+      "type": "string",
+      "pattern": "^clip_[a-f0-9]{64}$"
+    },
+    "projectId": {
+      "type": "string"
+    },
+    "editVersion": {
+      "type": "string"
+    },
+    "segmentIndex": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "shotId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "rendered"
+      ]
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "range": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "unit": {
+          "enum": [
+            "frames",
+            "seconds"
+          ]
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "length": {
+          "type": "number",
+          "minimum": 0.000001
+        },
+        "fps": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0.000001
+        }
+      },
+      "required": [
+        "unit",
+        "start",
+        "length",
+        "fps"
+      ],
+      "additionalProperties": false
+    },
+    "timelineStartFrame": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "outputSha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "clipId",
+    "projectId",
+    "editVersion",
+    "segmentIndex",
+    "shotId",
+    "status",
+    "evidence",
+    "range",
+    "timelineStartFrame",
+    "outputSha256"
+  ],
+  "additionalProperties": false
+}

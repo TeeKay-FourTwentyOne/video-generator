@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5755d643e048ba5eb842b759b92b20d16cf72afc18edcd730f048d4920c8d328",
+  "sha256": "5755d643e048ba5eb842b759b92b20d16cf72afc18edcd730f048d4920c8d328",
+  "bytes": 38194,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 240,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "vertical_reveal_test.mp4"
+  ],
+  "collections": [
+    "text-reveal-test"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

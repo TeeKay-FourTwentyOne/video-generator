@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b079a2eaa39b23e65562f38d6ec981a311e2ec2cf2eef8155030d5e8952c327a",
+  "sha256": "b079a2eaa39b23e65562f38d6ec981a311e2ec2cf2eef8155030d5e8952c327a",
+  "bytes": 2446899,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 1.641667,
+    "width": 1920,
+    "height": 1440,
+    "frameRate": "13800/493",
+    "frameCount": 46,
+    "videoCodec": "hevc",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "cc_9855_live.mov"
+  ],
+  "collections": [
+    "floss"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

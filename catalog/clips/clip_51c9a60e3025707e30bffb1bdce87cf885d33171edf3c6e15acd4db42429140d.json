@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_51c9a60e3025707e30bffb1bdce87cf885d33171edf3c6e15acd4db42429140d",
+  "sha256": "51c9a60e3025707e30bffb1bdce87cf885d33171edf3c6e15acd4db42429140d",
+  "bytes": 20088667,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 12.083333,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 290,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tunnel_3clips_2x.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:tunnel_3clips_2x"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This artistic video presents a three-part journey through an abstract tunnel visualization using edge-detection effects, progressing from 'Entrance' through 'Deeper' to 'Emergence'. The monochromatic white-on-black aesthetic creates a dramatic, cave-like atmosphere with organic textures. The clip concludes with a 'Thanks for watching!' message, suggesting this is the end of a visual art piece or tutorial.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "abstract",
+        "artistic",
+        "central",
+        "circular",
+        "clip",
+        "contours",
+        "deeper",
+        "denser",
+        "detected",
+        "detection",
+        "edge",
+        "emergence",
+        "final",
+        "frame",
+        "journey",
+        "labeled",
+        "like",
+        "long",
+        "outline",
+        "part",
+        "presents",
+        "pronounced",
+        "showing",
+        "shows",
+        "similar",
+        "speech",
+        "structure",
+        "style",
+        "thanks",
+        "three",
+        "tunnel",
+        "using",
+        "video",
+        "visualization",
+        "watching",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Edge-detected visualization showing a tunnel-like structure with white outline contours against a pure black background. A circular opening or portal is visible in the center, surrounded by organic, rocky textures rendered as thin white lines. The composition creates a sense of depth, looking into a dark void. Text overlay reads 'CLIP 1 - ENTRANCE' in yellow at top left, with timestamp visible at bottom. The effect resembles looking down into a cave or geological formation."
+        },
+        {
+          "seconds": 6.04,
+          "text": "Similar edge-detection style showing 'CLIP 2 - DEEPER' with more pronounced, denser white contour lines forming concentric tunnel walls. The circular central void remains prominent but appears closer or more defined. The rocky, organic textures surrounding the opening are more detailed and complex, with intricate branching patterns. The overall composition suggests progression deeper into the tunnel structure. Double-edge processing creates a more three-dimensional, textured appearance."
+        },
+        {
+          "seconds": 11.98,
+          "text": "Final frame labeled 'CLIP 3 - EMERGENCE' shows the tunnel structure with the central circular opening now appearing more prominent and defined. The edge-detected contours reveal detailed organic textures with scattered smaller elements in the lower portion. The composition suggests movement toward or emergence from the tunnel opening. White line work against black creates high contrast, with the void center drawing the eye. Small bubble-like shapes appear scattered in the lower right area."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "artistic",
+    "central",
+    "circular",
+    "clip",
+    "contours",
+    "deeper",
+    "denser",
+    "detected",
+    "detection",
+    "edge",
+    "emergence",
+    "final",
+    "frame",
+    "journey",
+    "labeled",
+    "like",
+    "long",
+    "outline",
+    "part",
+    "presents",
+    "pronounced",
+    "showing",
+    "shows",
+    "similar",
+    "speech",
+    "structure",
+    "style",
+    "thanks",
+    "three",
+    "tunnel",
+    "using",
+    "video",
+    "visualization",
+    "watching",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ea09e936fde44bf385437a4a42cb75fc7e369cba1c386c9b684216662ec70971",
+  "sha256": "ea09e936fde44bf385437a4a42cb75fc7e369cba1c386c9b684216662ec70971",
+  "bytes": 6087414,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ocean_zone3_kelp.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_zone3_kelp"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Ethereal kelp forest footage with golden-brown kelp stalks rising through turquoise water toward the sunlit surface. The backlit kelp leaves create stunning amber and gold tones against the cool blue water. The vertical composition and cathedral-like lighting evoke a sense of peaceful underwater majesty.",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "amber",
+        "brown",
+        "central",
+        "close",
+        "coloring",
+        "darker",
+        "detail",
+        "ethereal",
+        "footage",
+        "foreground",
+        "forest",
+        "golden",
+        "kelp",
+        "leaves",
+        "medium",
+        "orange",
+        "perspective",
+        "prominent",
+        "reaching",
+        "rich",
+        "rising",
+        "sharp",
+        "speech",
+        "stalk",
+        "stalks",
+        "sunlit",
+        "surface",
+        "tall",
+        "thank",
+        "toward",
+        "turquoise",
+        "visible",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Kelp forest with tall stalks reaching toward the sunlit surface. Golden-brown kelp leaves are dramatically backlit against turquoise water. Strong vertical composition with multiple kelp columns and light streaming from above, creating a cathedral-like atmosphere."
+        },
+        {
+          "seconds": 4,
+          "text": "Central kelp stalk with prominent golden-amber leaves in sharp detail, darker silhouettes of additional kelp columns in the background. Beautifully backlit with warm amber tones contrasting against the cool turquoise-blue water."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Close-up perspective of kelp leaves in the foreground, rich golden-orange coloring with visible leaf texture. Kelp forest stretches into the blue distance behind. Beautiful color contrast between the warm amber leaves and cyan ocean water."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "amber",
+    "brown",
+    "central",
+    "close",
+    "coloring",
+    "darker",
+    "detail",
+    "ethereal",
+    "footage",
+    "foreground",
+    "forest",
+    "golden",
+    "kelp",
+    "leaves",
+    "medium",
+    "orange",
+    "perspective",
+    "prominent",
+    "reaching",
+    "rich",
+    "rising",
+    "sharp",
+    "speech",
+    "stalk",
+    "stalks",
+    "sunlit",
+    "surface",
+    "tall",
+    "thank",
+    "toward",
+    "turquoise",
+    "visible",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

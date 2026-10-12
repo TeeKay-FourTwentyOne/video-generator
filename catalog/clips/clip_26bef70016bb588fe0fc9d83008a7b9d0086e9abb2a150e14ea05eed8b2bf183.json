@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_26bef70016bb588fe0fc9d83008a7b9d0086e9abb2a150e14ea05eed8b2bf183",
+  "sha256": "26bef70016bb588fe0fc9d83008a7b9d0086e9abb2a150e14ea05eed8b2bf183",
+  "bytes": 2267605,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545618195_0iiv6i.mp4"
+  ],
+  "collections": [
+    "style_shift_character_only"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545618195_0iiv6i"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build walks forward through a city street canyon lined with traditional multi-story brick buildings. She is rendered in soft watercolor painting style with bleeding colors, impressionistic brushstrokes, and ethereal translucent edges that blur and flow as she moves. The entire environment remains photorealistic - sharp brick textures, concrete sidewalks, glass windows, metal fixtures. Warm amber streetlamp light and storefront illumination cast against dark blue dusk sky. Camera follows her with a smooth forward tracking shot at eye level, maintaining focus on the striking contrast between her dreamlike painted form and the harsh concrete reality surrounding her. The watercolor effect should pulse and shift subtly as she walks, with colors bleeding beyond her silhouette while the background stays crisp and real.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_28846dae8125e12347c69376b14191d59cd25a8b8ea851de73e1153bcca7d33b",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build walks forward through a city street canyon lined with traditional multi-story brick buildings. She is rendered in soft watercolor painting style with bleeding colors, impressionistic brushstrokes, and ethereal translucent edges that blur and flow as she moves. The entire environment remains photorealistic - sharp brick textures, concrete sidewalks, glass windows, metal fixtures. Warm amber streetlamp light and storefront illumination cast against dark blue dusk sky. Camera follows her with a smooth forward tracking shot at eye level, maintaining focus on the striking contrast between her dreamlike painted form and the harsh concrete reality surrounding her. The watercolor effect should pulse and shift subtly as she walks, with colors bleeding beyond her silhouette while the background stays crisp and real.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_28846dae8125e12347c69376b14191d59cd25a8b8ea851de73e1153bcca7d33b",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:52:56.461Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A woman in a blue fitted dress walks away from the camera down a narrow urban street during twilight. The clip captures her confident stride through a warmly-lit city alley with classic architecture and fire escapes, creating a cinematic atmosphere with contrasting warm street lights against the cool blue evening sky.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "alley",
+        "appearing",
+        "away",
+        "behind",
+        "black",
+        "blue",
+        "camera",
+        "continues",
+        "curly",
+        "down",
+        "dress",
+        "fitted",
+        "frame",
+        "hair",
+        "her",
+        "medium",
+        "narrow",
+        "natural",
+        "now",
+        "progressed",
+        "she",
+        "shown",
+        "smaller",
+        "speech",
+        "street",
+        "thank",
+        "urban",
+        "walking",
+        "walks",
+        "watching",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with natural curly black hair is shown from behind, walking down a narrow urban street at dusk. She wears a fitted blue dress that appears to have colorful paint splatter effects on it. The scene is framed by tall brick buildings on both sides with warm orange-yellow street lights illuminating the facades. Fire escapes are visible on the right building. The sky shows a clear blue twilight. The composition creates strong leading lines drawing the eye forward."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman continues walking away from the camera down the urban alley. Her blue fitted dress now appears cleaner without the paint effects. The warm golden street lighting contrasts beautifully with the blue twilight sky above. Buildings with illuminated storefronts line both sides of the narrow street. A classic street lamp is prominently visible on the right side. The woman's arms are relaxed at her sides as she walks confidently forward."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has progressed further down the street, now appearing smaller in the frame as she walks away. She maintains the same blue fitted dress and natural hairstyle. The urban canyon of buildings continues on both sides with warm ambient lighting from shops and street lamps. The blue hour sky remains visible above. Her walking posture shows natural arm movement. The composition emphasizes depth and the journey forward through the city street."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alley",
+    "appearing",
+    "away",
+    "behind",
+    "black",
+    "blue",
+    "camera",
+    "continues",
+    "curly",
+    "down",
+    "dress",
+    "fitted",
+    "frame",
+    "hair",
+    "her",
+    "medium",
+    "narrow",
+    "natural",
+    "now",
+    "progressed",
+    "she",
+    "shown",
+    "smaller",
+    "speech",
+    "street",
+    "thank",
+    "urban",
+    "walking",
+    "walks",
+    "watching",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

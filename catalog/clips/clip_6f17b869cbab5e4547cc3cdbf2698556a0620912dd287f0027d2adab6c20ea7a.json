@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6f17b869cbab5e4547cc3cdbf2698556a0620912dd287f0027d2adab6c20ea7a",
+  "sha256": "6f17b869cbab5e4547cc3cdbf2698556a0620912dd287f0027d2adab6c20ea7a",
+  "bytes": 10781944,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 54,
+    "width": 2560,
+    "height": 1440,
+    "frameRate": "24/1",
+    "frameCount": 1296,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "slice_silent.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

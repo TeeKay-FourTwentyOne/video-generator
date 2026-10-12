@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f419043de45915222f302e5f98f2427b80f3519c59ac40f1da2f4d0b1462e4b7",
+  "sha256": "f419043de45915222f302e5f98f2427b80f3519c59ac40f1da2f4d0b1462e4b7",
+  "bytes": 2592890,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "STINGER.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

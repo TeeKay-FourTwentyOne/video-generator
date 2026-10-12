@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_075d775fe51ccd6d9a39999b857ca2543da7af22a2dea6321389a6aa8595266c",
+  "sha256": "075d775fe51ccd6d9a39999b857ca2543da7af22a2dea6321389a6aa8595266c",
+  "bytes": 6816865,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767596803213_dpdejp.mp4"
+  ],
+  "collections": [
+    "two_estranged_siblings_marcus__1767596552762"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767596803213_dpdejp"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. They sit together on a wooden floor with a weathered photo box between them. Intimate medium shot at eye level, handheld camera with gentle breathing movement. Soft winter light streams through an unseen window, creating natural highlights on their faces. Elena lifts an old photograph from the box, her expression shifting from somber to genuine laughter as she shows it to Marcus. He leans forward, his serious demeanor melting into a warm smile. As their laughter subsides, Marcus reaches across the space between them, his weathered hand gently covering hers on the photograph. The camera holds this tender moment with shallow depth of field, the background falling into soft bokeh. Muted color palette with warm skin tones against cool winter light. Documentary-style naturalistic lighting emphasizes the authentic emotional connection between them.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_af4d599a49335de6adc2cce4ee6bfc13568ad7e3b54d7beb91a341668231834a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short salt-and-pepper hair and a full gray beard has a stocky, broad-shouldered build. He wears an unbuttoned brown canvas jacket over a blue and tan plaid flannel shirt, dark olive-green pants, and brown boots, maintaining a serious, direct gaze. A woman in her 30s with an olive skin tone, dark curly hair pulled back messily, and a somber expression. She wears a black V-neck sweater and a bright red scarf, with a delicate silver necklace. They sit together on a wooden floor with a weathered photo box between them. Intimate medium shot at eye level, handheld camera with gentle breathing movement. Soft winter light streams through an unseen window, creating natural highlights on their faces. Elena lifts an old photograph from the box, her expression shifting from somber to genuine laughter as she shows it to Marcus. He leans forward, his serious demeanor melting into a warm smile. As their laughter subsides, Marcus reaches across the space between them, his weathered hand gently covering hers on the photograph. The camera holds this tender moment with shallow depth of field, the background falling into soft bokeh. Muted color palette with warm skin tones against cool winter light. Documentary-style naturalistic lighting emphasizes the authentic emotional connection between them.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_af4d599a49335de6adc2cce4ee6bfc13568ad7e3b54d7beb91a341668231834a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T07:05:13.544Z",
+      "parameters": {
+        "durationSeconds": 12,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures an intimate moment between an older bearded man and a younger woman with a red scarf as they discover and examine old photographs from a wooden keepsake box in a rustic cabin setting. Their emotional journey progresses from curious examination to joyful laughter as they share memories, with the dialogue revealing they're looking at childhood photos and reminiscing about the past.",
+      "transcript": "Oh my gosh, remember this. Look at your hair. I can't believe you found that one.",
+      "tags": [
+        "bearded",
+        "believe",
+        "box",
+        "captures",
+        "clip",
+        "continues",
+        "examining",
+        "expressions",
+        "found",
+        "gosh",
+        "hair",
+        "holds",
+        "indoors",
+        "intimate",
+        "joyfully",
+        "laughing",
+        "look",
+        "looking",
+        "man",
+        "medium",
+        "metal",
+        "moment",
+        "now",
+        "old",
+        "older",
+        "one",
+        "pair",
+        "people",
+        "photograph",
+        "red",
+        "remember",
+        "sepia",
+        "sit",
+        "speech",
+        "together",
+        "toned",
+        "two",
+        "vintage",
+        "warm",
+        "woman",
+        "wooden",
+        "you",
+        "younger",
+        "your"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people sit together indoors examining an old wooden box with a metal clasp. On the left, an older man with gray beard wears a brown sherpa-lined jacket over a blue and tan plaid flannel shirt with olive pants. On the right, a woman with dark hair in a bun wears a black V-neck sweater with a bright red knit scarf and a small pendant necklace. She looks down at the box with a concerned or curious expression. The setting appears to be a rustic cabin with wooden floors and window frames visible in the background."
+        },
+        {
+          "seconds": 4,
+          "text": "The same two people are now laughing joyfully together while looking at an old sepia-toned photograph the man is holding. The photograph shows what appears to be a young child. Both subjects display genuine, wide smiles with their faces turned toward each other in a moment of shared amusement. The woman's head is tilted back in laughter. Natural light streams through large windows behind them, creating a warm, intimate atmosphere. The composition captures their upper bodies in a medium shot."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The pair continues examining the vintage photograph together with warm expressions. The man holds the small sepia photo in both hands while leaning slightly toward the woman. She smiles softly while looking down at the image. Their body language suggests comfortable familiarity and shared nostalgia. The lighting remains soft and natural from the windows behind them. The wooden cabin interior with its dark wood frames creates a cozy, rustic backdrop for this intimate moment of reminiscence."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_027",
+      "name": "Frank & Rosa",
+      "description": "Couple looking at old photos together - bearded man and woman with dark curly hair in red scarf, laughing warmly",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "bearded",
+    "believe",
+    "box",
+    "captures",
+    "clip",
+    "continues",
+    "examining",
+    "expressions",
+    "found",
+    "gosh",
+    "hair",
+    "holds",
+    "indoors",
+    "intimate",
+    "joyfully",
+    "laughing",
+    "look",
+    "looking",
+    "man",
+    "medium",
+    "metal",
+    "moment",
+    "now",
+    "old",
+    "older",
+    "one",
+    "pair",
+    "people",
+    "photograph",
+    "red",
+    "remember",
+    "sepia",
+    "sit",
+    "speech",
+    "together",
+    "toned",
+    "two",
+    "vintage",
+    "warm",
+    "woman",
+    "wooden",
+    "you",
+    "younger",
+    "your"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

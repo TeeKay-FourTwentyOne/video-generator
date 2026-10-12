@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ae35434791f9beb4ac7bef4ad330d7284c2b40d2cb68b260c7c3891f74c31006",
+  "sha256": "ae35434791f9beb4ac7bef4ad330d7284c2b40d2cb68b260c7c3891f74c31006",
+  "bytes": 1935520,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767657798998_d9q4o8.mp4"
+  ],
+  "collections": [
+    "test_dialogue_v3"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767657798998_d9q4o8"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Young woman with dark hair wearing a blue jacket stands on a bustling city street in soft morning light. She notices someone off-camera, her face brightening with recognition. With a warm, cheerful tone, she raises her hand and waves enthusiastically while saying \"Hey, good morning!\" Her genuine smile and friendly gesture are captured in a medium shot as gentle sunlight filters between buildings, creating a peaceful urban atmosphere. The camera holds steady at eye level, framing her against softly blurred pedestrians and storefronts in the background. Natural ambient street sounds complement the scene as she delivers her greeting with authentic warmth.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4565cbaf6ca6c2bc727bc2bd52a5fb5cb930081c02eae0b2d960df06526452e7",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Young woman with dark hair wearing a blue jacket stands on a bustling city street in soft morning light. She notices someone off-camera, her face brightening with recognition. With a warm, cheerful tone, she raises her hand and waves enthusiastically while saying \"Hey, good morning!\" Her genuine smile and friendly gesture are captured in a medium shot as gentle sunlight filters between buildings, creating a peaceful urban atmosphere. The camera holds steady at eye level, framing her against softly blurred pedestrians and storefronts in the background. Natural ambient street sounds complement the scene as she delivers her greeting with authentic warmth.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4565cbaf6ca6c2bc727bc2bd52a5fb5cb930081c02eae0b2d960df06526452e7",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T00:02:35.207Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A young Asian woman in a blue jacket greets someone on a busy city street, transitioning from a neutral expression to an enthusiastic wave and smile while saying 'Hey, good morning!' The clip captures a friendly street encounter with consistent urban backdrop and warm natural lighting throughout the 4-second duration.",
+      "transcript": "Hey, good morning!",
+      "tags": [
+        "asian",
+        "black",
+        "blue",
+        "busy",
+        "captured",
+        "center",
+        "city",
+        "continues",
+        "conversation",
+        "engaged",
+        "enthusiastic",
+        "frame",
+        "friendly",
+        "good",
+        "greeting",
+        "greets",
+        "hair",
+        "hand",
+        "her",
+        "hey",
+        "jacket",
+        "long",
+        "medium",
+        "mid",
+        "morning",
+        "mouth",
+        "now",
+        "open",
+        "raised",
+        "right",
+        "slightly",
+        "someone",
+        "speaking",
+        "speech",
+        "stands",
+        "street",
+        "wearing",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young Asian woman with long black hair stands in the center of the frame, wearing a bright blue zip-up jacket over a black top. She has a slight, pleasant expression on her face, looking toward someone partially visible on the right edge of frame. The background shows a busy urban street scene with pedestrians walking, storefronts with warm lighting, and buildings creating depth. Natural daylight illuminates the scene from behind, creating a soft backlit effect on her hair. The composition uses shallow depth of field to blur the background."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now captured mid-greeting, her right hand raised in an enthusiastic wave with fingers spread open. Her expression has transformed into a bright, joyful smile with her mouth open as she speaks. She maintains the same position in frame, still wearing the blue jacket. The urban street background remains consistent with pedestrians walking and storefronts visible. The warm backlighting continues to highlight her hair, and the shallow depth of field keeps focus on her animated expression and gesture."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues speaking, her mouth slightly open in conversation, with a friendly, engaged expression. Her hand has lowered from the wave, returning to a more relaxed position. She remains centered in frame wearing the blue jacket, looking toward the person on the right. The busy city street background shows different pedestrians now walking past, including someone in a gray hoodie. The lighting and composition remain consistent with warm natural light and blurred background creating visual separation from the subject."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_026",
+      "name": "Lily",
+      "description": "Young Asian woman with long black hair, bright blue jacket, cheerful smile, busy city street background",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "asian",
+    "black",
+    "blue",
+    "busy",
+    "captured",
+    "center",
+    "city",
+    "continues",
+    "conversation",
+    "engaged",
+    "enthusiastic",
+    "frame",
+    "friendly",
+    "good",
+    "greeting",
+    "greets",
+    "hair",
+    "hand",
+    "her",
+    "hey",
+    "jacket",
+    "long",
+    "medium",
+    "mid",
+    "morning",
+    "mouth",
+    "now",
+    "open",
+    "raised",
+    "right",
+    "slightly",
+    "someone",
+    "speaking",
+    "speech",
+    "stands",
+    "street",
+    "wearing",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

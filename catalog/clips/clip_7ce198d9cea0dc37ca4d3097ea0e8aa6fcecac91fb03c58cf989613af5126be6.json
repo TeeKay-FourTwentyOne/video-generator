@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7ce198d9cea0dc37ca4d3097ea0e8aa6fcecac91fb03c58cf989613af5126be6",
+  "sha256": "7ce198d9cea0dc37ca4d3097ea0e8aa6fcecac91fb03c58cf989613af5126be6",
+  "bytes": 1786547,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_2_coffee.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_2_coffee"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Steaming coffee mug in golden morning light with vintage film borders. The warm, cozy scene captures the simple comfort of a hot drink on a winter morning.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "atmosphere",
+        "beams",
+        "borders",
+        "ceramic",
+        "coffee",
+        "continues",
+        "cozy",
+        "creates",
+        "film",
+        "golden",
+        "hot",
+        "hour",
+        "intimate",
+        "light",
+        "lighting",
+        "medium",
+        "morning",
+        "mug",
+        "pronounced",
+        "rising",
+        "speech",
+        "steam",
+        "steaming",
+        "still",
+        "surface",
+        "vintage",
+        "warm",
+        "white",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "White ceramic coffee mug on wooden surface, steam rising into golden morning light. Vintage film sprocket borders frame the shot. Warm sepia tones with sun rays visible through steam."
+        },
+        {
+          "seconds": 4,
+          "text": "Coffee mug continues steaming, light beams more pronounced. The cozy morning atmosphere emphasized by warm tones. Bokeh and light flares in background."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Steam still rising from the hot coffee. Golden hour lighting creates intimate, peaceful mood. The simple pleasure of a warm drink on a cold morning."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "atmosphere",
+    "beams",
+    "borders",
+    "ceramic",
+    "coffee",
+    "continues",
+    "cozy",
+    "creates",
+    "film",
+    "golden",
+    "hot",
+    "hour",
+    "intimate",
+    "light",
+    "lighting",
+    "medium",
+    "morning",
+    "mug",
+    "pronounced",
+    "rising",
+    "speech",
+    "steam",
+    "steaming",
+    "still",
+    "surface",
+    "vintage",
+    "warm",
+    "white",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

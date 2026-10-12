@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4a47e63216d176ad7d128c3d5db2cecea264e004ae9a79e72d2187f95e448ecf",
+  "sha256": "4a47e63216d176ad7d128c3d5db2cecea264e004ae9a79e72d2187f95e448ecf",
+  "bytes": 1275955,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_6_window_sprocket.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_6_window_sprocket"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a gradual zoom or approach toward an illuminated window on a building, shot through what appears to be color-inverted or infrared film stock creating a distinctive magenta/purple color palette. The footage maintains a vintage film aesthetic with visible sprocket holes throughout. Japanese speech accompanies the visuals, asking viewers to subscribe and indicating it would be helpful.",
+      "transcript": "購読することを忘れないでください。それは私にとって大きな助けです。",
+      "tags": [
+        "appears",
+        "approach",
+        "building",
+        "camera",
+        "center",
+        "central",
+        "clearer",
+        "clip",
+        "closer",
+        "color",
+        "dominates",
+        "even",
+        "exterior",
+        "film",
+        "focus",
+        "footage",
+        "frame",
+        "gradual",
+        "illuminated",
+        "inverted",
+        "larger",
+        "medium",
+        "moved",
+        "negative",
+        "now",
+        "remains",
+        "shot",
+        "shown",
+        "shows",
+        "speech",
+        "toward",
+        "what",
+        "which",
+        "window",
+        "zoom"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A building exterior shot through what appears to be film negative or color-inverted footage, giving everything a strong magenta/purple tint. A two-story structure is visible with a prominent illuminated window in the center-right. The roofline shows architectural details including what appears to be a chimney silhouette on the left. Film sprocket holes are visible along the top and bottom edges, creating a vintage film strip aesthetic. The sky appears in lighter purple-pink tones against the darker building."
+        },
+        {
+          "seconds": 4,
+          "text": "The camera has moved closer to the illuminated window, which now dominates the center of the frame. The window appears to be a double-hung style with two panes, both glowing bright pink/magenta from interior lighting. The surrounding building facade is deep purple/magenta. Film sprocket holes remain visible at top and bottom edges. A vertical line runs through the center of the frame, possibly a film artifact or scratch. The composition is tighter, more focused on the window detail."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The window remains the central focus, now shown even larger in frame with clearer detail of the two-pane structure. The upper and lower window sections glow bright pink with visible curtain or drape shadows creating diagonal lines within. The building exterior maintains its deep magenta/purple color cast. Film sprocket holes frame the top and bottom. The overall aesthetic continues the color-inverted or infrared photography style, creating a surreal, dreamlike quality."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "approach",
+    "building",
+    "camera",
+    "center",
+    "central",
+    "clearer",
+    "clip",
+    "closer",
+    "color",
+    "dominates",
+    "even",
+    "exterior",
+    "film",
+    "focus",
+    "footage",
+    "frame",
+    "gradual",
+    "illuminated",
+    "inverted",
+    "larger",
+    "medium",
+    "moved",
+    "negative",
+    "now",
+    "remains",
+    "shot",
+    "shown",
+    "shows",
+    "speech",
+    "toward",
+    "what",
+    "which",
+    "window",
+    "zoom"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

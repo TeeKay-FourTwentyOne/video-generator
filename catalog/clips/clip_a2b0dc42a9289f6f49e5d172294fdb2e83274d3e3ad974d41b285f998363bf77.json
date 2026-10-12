@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a2b0dc42a9289f6f49e5d172294fdb2e83274d3e3ad974d41b285f998363bf77",
+  "sha256": "a2b0dc42a9289f6f49e5d172294fdb2e83274d3e3ad974d41b285f998363bf77",
+  "bytes": 2153833,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767657545630_ix30q0.mp4"
+  ],
+  "collections": [
+    "test_dialogue_veo_001"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767657545630_ix30q0"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Two people in a sunlit room - one smiling warmly and reaching out with open arms toward the other for an embrace. Medium shot, camera slowly dollies in as the embrace begins. Warm golden afternoon light streams through a window creating soft, hopeful illumination with gentle lens flares dancing across the frame. The reaching figure's expression radiates genuine warmth and connection. Natural, documentary-style cinematography with shallow depth of field creating a dreamy, soft focus on the background. The movement is unhurried and tender, capturing an authentic moment of human connection. Naturalistic color grading with warm amber tones in the highlights.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d84840c3745376ccd6aad85ccbeba3493e50c86bd351251bae7796bd9491c963",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Two people in a sunlit room - one smiling warmly and reaching out with open arms toward the other for an embrace. Medium shot, camera slowly dollies in as the embrace begins. Warm golden afternoon light streams through a window creating soft, hopeful illumination with gentle lens flares dancing across the frame. The reaching figure's expression radiates genuine warmth and connection. Natural, documentary-style cinematography with shallow depth of field creating a dreamy, soft focus on the background. The movement is unhurried and tender, capturing an authentic moment of human connection. Naturalistic color grading with warm amber tones in the highlights.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d84840c3745376ccd6aad85ccbeba3493e50c86bd351251bae7796bd9491c963",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:58:21.491Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This warm, intimate clip shows a blonde woman in a cream sweater greeting and embracing someone in a sunlit living room. The sequence progresses from an initial joyful smile to a tender, prolonged hug, bathed in golden natural light streaming through a window. Japanese text at the end suggests this is a closing scene thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "against",
+        "arms",
+        "around",
+        "blonde",
+        "bun",
+        "clip",
+        "continues",
+        "cream",
+        "embrace",
+        "embracing",
+        "greeting",
+        "hair",
+        "head",
+        "her",
+        "intimate",
+        "lit",
+        "medium",
+        "messy",
+        "now",
+        "person",
+        "resting",
+        "shoulder",
+        "shows",
+        "speech",
+        "stands",
+        "styled",
+        "sweater",
+        "their",
+        "warm",
+        "warmly",
+        "woman",
+        "wrapped",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with blonde hair styled in a messy bun stands in a warmly lit living room, wearing a cream-colored cable-knit sweater. She is smiling broadly, looking toward someone partially visible on the right side of the frame (only their shoulder and profile visible, wearing dark clothing). Bright natural sunlight streams through a large window behind them, creating a warm golden glow. The background shows beige walls and curtains. Medium shot composition with shallow depth of field focusing on the woman."
+        },
+        {
+          "seconds": 2,
+          "text": "The same blonde woman is now embracing the other person, her arms wrapped around their shoulders. Her eyes are closed and she displays a joyful, content smile. The person she's hugging wears a dark gray or navy sweater and has short brown hair, shown from behind. The warm golden lighting continues from the window on the right. A framed picture is visible on the wall behind them. The shot is a medium close-up capturing the intimate moment."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The embrace continues with the woman now resting her head against the other person's shoulder, eyes closed with a peaceful, happy expression. Her blonde hair in the messy bun is clearly visible. She's holding them close, her cream sweater sleeves visible against their dark clothing. The warm, golden backlighting from the window creates a soft, romantic atmosphere. A houseplant and framed artwork are visible in the background. The composition emphasizes warmth and intimacy."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "arms",
+    "around",
+    "blonde",
+    "bun",
+    "clip",
+    "continues",
+    "cream",
+    "embrace",
+    "embracing",
+    "greeting",
+    "hair",
+    "head",
+    "her",
+    "intimate",
+    "lit",
+    "medium",
+    "messy",
+    "now",
+    "person",
+    "resting",
+    "shoulder",
+    "shows",
+    "speech",
+    "stands",
+    "styled",
+    "sweater",
+    "their",
+    "warm",
+    "warmly",
+    "woman",
+    "wrapped",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

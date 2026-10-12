@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_663003d244244d4c0280155ec5af1f4a165aad2fca63bade62f4f3452eadfd6c",
+  "sha256": "663003d244244d4c0280155ec5af1f4a165aad2fca63bade62f4f3452eadfd6c",
+  "bytes": 17587693,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Transit_D.mp4"
+  ],
+  "collections": [
+    "alphaville-moon"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

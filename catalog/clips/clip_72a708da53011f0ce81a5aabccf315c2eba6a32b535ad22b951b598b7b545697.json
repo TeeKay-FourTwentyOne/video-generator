@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_72a708da53011f0ce81a5aabccf315c2eba6a32b535ad22b951b598b7b545697",
+  "sha256": "72a708da53011f0ce81a5aabccf315c2eba6a32b535ad22b951b598b7b545697",
+  "bytes": 39661440,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 63.125,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "12096/505",
+    "frameCount": 1512,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "no_enemy_v1.mp4"
+  ],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_46082beba4e9fc3d2ba946127a4061564bfcfa444db9cf5105c70852013f5db6",
+  "sha256": "46082beba4e9fc3d2ba946127a4061564bfcfa444db9cf5105c70852013f5db6",
+  "bytes": 514554,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "s9p2.mp4"
+  ],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_077de40a9f2e890ccf503f82de848259db670e3a7079d12f6039be8cfcf37751",
+  "sha256": "077de40a9f2e890ccf503f82de848259db670e3a7079d12f6039be8cfcf37751",
+  "bytes": 6800941,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 7.75,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 186,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "opening-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

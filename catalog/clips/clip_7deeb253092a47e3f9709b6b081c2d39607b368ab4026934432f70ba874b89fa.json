@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7deeb253092a47e3f9709b6b081c2d39607b368ab4026934432f70ba874b89fa",
+  "sha256": "7deeb253092a47e3f9709b6b081c2d39607b368ab4026934432f70ba874b89fa",
+  "bytes": 852513,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Alien_vampire_woman_202604252116.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

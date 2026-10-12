@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3b128de1226ec0450e98369e546849f5c5146133ce39a20ed00d5d03a38fb544",
+  "sha256": "3b128de1226ec0450e98369e546849f5c5146133ce39a20ed00d5d03a38fb544",
+  "bytes": 791719,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot08.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

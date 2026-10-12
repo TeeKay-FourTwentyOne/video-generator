@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5b80754c386de0ffe4b6bdc557aca0e4132064e47c106c0cf4e9a25e15a4e0a3",
+  "sha256": "5b80754c386de0ffe4b6bdc557aca0e4132064e47c106c0cf4e9a25e15a4e0a3",
+  "bytes": 3124755,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 18,
+    "width": 1664,
+    "height": 936,
+    "frameRate": "24/1",
+    "frameCount": 432,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "01-work-routine.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

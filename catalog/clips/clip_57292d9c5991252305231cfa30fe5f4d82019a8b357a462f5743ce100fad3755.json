@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_57292d9c5991252305231cfa30fe5f4d82019a8b357a462f5743ce100fad3755",
+  "sha256": "57292d9c5991252305231cfa30fe5f4d82019a8b357a462f5743ce100fad3755",
+  "bytes": 31431040,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "bedroom_dolly.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

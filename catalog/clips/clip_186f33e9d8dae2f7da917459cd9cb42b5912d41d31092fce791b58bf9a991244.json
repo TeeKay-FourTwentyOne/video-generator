@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_186f33e9d8dae2f7da917459cd9cb42b5912d41d31092fce791b58bf9a991244",
+  "sha256": "186f33e9d8dae2f7da917459cd9cb42b5912d41d31092fce791b58bf9a991244",
+  "bytes": 8128473,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S01-v2.mp4",
+    "veo_1791506519780_r05x5j.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, early morning in a small city café, 35 mm, locked-off camera that does not move. The two women at the table behind, one in a red scarf and one with dark curly hair, are the only people talking: they lean toward each other in a quiet, natural, continuous conversation, their lips moving, one of them laughing briefly. The man behind the counter wipes the counter without speaking. The silver-haired woman in the mustard-yellow raincoat at the window table is completely silent: her lips stay closed and still for the whole shot, she never speaks, mouths words, laughs or hums; she listens with a faint closed-mouth smile, glances once toward the two women, then looks down and draws in her sketchbook, her pencil moving. No new person enters; nothing new appears. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_cfb659d0c6bde9d436476c34790ea801b477088367ec5dc2991ecd8699ac9f84",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1231616283,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

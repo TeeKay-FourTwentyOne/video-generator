@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_150e8f7cac8bd73db1f3e42a13b897049b77b13960d8c51412f1aa2dda4a8a3a",
+  "sha256": "150e8f7cac8bd73db1f3e42a13b897049b77b13960d8c51412f1aa2dda4a8a3a",
+  "bytes": 6775095,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V11-v1.mp4",
+    "veo_1791428334959_t6uvtr.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Medium close-up at dusk at the bottom of a deep excavation trench. Three people kneel side by side on planks laid on the black mud of a square sondage, at the edge of a square opening in its floor, looking down into it: an older woman with grey hair tied back in a dark field jacket, a bearded man in an olive cap, a woman with a long dark braid, all in blue nitrile gloves. Their faces are lit from below by bright blue daylight coming up through the opening; behind them the trench's dark earth walls are in dusk shadow. A light steady breeze from below stirs their hair upward. They do not speak and do not move except to breathe; their mouths stay closed and their hands stay on their knees; nobody reaches toward the opening. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ad125c0040ce53f61cfbfd585eecce5494c188c06da8603b3411742f9214876a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2019107957,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

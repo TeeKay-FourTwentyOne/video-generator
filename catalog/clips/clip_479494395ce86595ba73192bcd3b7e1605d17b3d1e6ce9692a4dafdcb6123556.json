@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_479494395ce86595ba73192bcd3b7e1605d17b3d1e6ce9692a4dafdcb6123556",
+  "sha256": "479494395ce86595ba73192bcd3b7e1605d17b3d1e6ce9692a4dafdcb6123556",
+  "bytes": 13405261,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "VF2.mp4"
+  ],
+  "collections": [
+    "august"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

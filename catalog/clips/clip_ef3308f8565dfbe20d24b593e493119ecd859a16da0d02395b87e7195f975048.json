@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ef3308f8565dfbe20d24b593e493119ecd859a16da0d02395b87e7195f975048",
+  "sha256": "ef3308f8565dfbe20d24b593e493119ecd859a16da0d02395b87e7195f975048",
+  "bytes": 18335067,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "b1_kitchen.mp4"
+  ],
+  "collections": [
+    "dignity-of-work"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_51e9d89efcdcd1168ad26d926c940f303b9669f550e251ccab44b220e279dbee",
+  "sha256": "51e9d89efcdcd1168ad26d926c940f303b9669f550e251ccab44b220e279dbee",
+  "bytes": 1926823,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767517022123_u1gful.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767517022123_u1gful"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A towering, battle-scarred robot slowly kneels beside a delicate, vibrant flower blooming impossibly from cracked wasteland earth. The massive mechanical being curves its enormous frame protectively over the small blossom, its posture reverent and gentle despite its intimidating size. The flower pulses with soft, natural light - bright petals unfurling in stark contrast to the desolate, ash-covered landscape stretching endlessly behind them. \n\nCamera begins with a wide establishing shot showing the robot's full imposing silhouette against the barren horizon, then slowly pushes in to a medium shot capturing both the mechanical giant and the precious flower. The movement is deliberate and contemplative, settling into perfect stillness that mirrors the robot's protective vigil.\n\nCinematography: muted, desaturated color palette with warm golden hour lighting filtering through perpetual dust clouds. The flower glows with an inner luminescence - the only source of pure, saturated color in frame. Deep shadows and dramatic contrast create a painterly, almost religious quality. Particles drift lazily through the air, catching fragments of light.\n\nThe scene holds with profound quiet dignity, the robot's servos barely humming as it maintains its guardian stance. This moment of unexpected tenderness blooms in the wasteland - mechanical devotion protecting organic hope in a world that has forgotten both.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d368ede94aa6c4289aaed02d2b741d554e07124e61292f511e610ed473fd4671",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A towering, battle-scarred robot slowly kneels beside a delicate, vibrant flower blooming impossibly from cracked wasteland earth. The massive mechanical being curves its enormous frame protectively over the small blossom, its posture reverent and gentle despite its intimidating size. The flower pulses with soft, natural light - bright petals unfurling in stark contrast to the desolate, ash-covered landscape stretching endlessly behind them. \n\nCamera begins with a wide establishing shot showing the robot's full imposing silhouette against the barren horizon, then slowly pushes in to a medium shot capturing both the mechanical giant and the precious flower. The movement is deliberate and contemplative, settling into perfect stillness that mirrors the robot's protective vigil.\n\nCinematography: muted, desaturated color palette with warm golden hour lighting filtering through perpetual dust clouds. The flower glows with an inner luminescence - the only source of pure, saturated color in frame. Deep shadows and dramatic contrast create a painterly, almost religious quality. Particles drift lazily through the air, catching fragments of light.\n\nThe scene holds with profound quiet dignity, the robot's servos barely humming as it maintains its guardian stance. This moment of unexpected tenderness blooms in the wasteland - mechanical devotion protecting organic hope in a world that has forgotten both.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d368ede94aa6c4289aaed02d2b741d554e07124e61292f511e610ed473fd4671",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T08:56:19.088Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip depicts a giant battle-worn robot discovering a glowing lotus flower in a desolate desert landscape. The robot transitions from a powerful standing pose to a gentle crouch, appearing to protect or marvel at the delicate bloom. The sequence contrasts themes of destruction and hope through the juxtaposition of the massive mechanical figure and the fragile, luminous flower.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "against",
+        "arms",
+        "around",
+        "battle",
+        "bending",
+        "bright",
+        "cinematic",
+        "clip",
+        "continuing",
+        "crouched",
+        "depicts",
+        "discovering",
+        "down",
+        "dramatic",
+        "flower",
+        "forward",
+        "giant",
+        "glowing",
+        "hazy",
+        "humanoid",
+        "lotus",
+        "massive",
+        "mech",
+        "medium",
+        "observe",
+        "pink",
+        "position",
+        "positioned",
+        "protect",
+        "remains",
+        "robot",
+        "silhouette",
+        "speech",
+        "stands",
+        "thanks",
+        "watching",
+        "worn"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A massive humanoid robot/mech stands in dramatic silhouette against a bright, hazy sepia-toned sky. The robot is shown from a low angle, emphasizing its imposing scale and power. It stands on cracked, barren desert terrain with mountains visible in the background. The backlighting creates a stark contrast, rendering the robot almost entirely black against the glowing horizon. The robot has a distinctive head with glowing eyes and heavy armored plating across its body. A small vertical element (possibly a plant stem) is visible between its legs."
+        },
+        {
+          "seconds": 2,
+          "text": "The robot has crouched down, bending forward with arms positioned around a glowing pink lotus flower that has emerged from the cracked ground. The flower emits a soft, ethereal white-pink glow that illuminates the robot's torso and hands. The sepia-toned desert landscape and mountains remain in the background. The robot's posture suggests curiosity or protective intent toward the delicate flower. The contrast between the massive mechanical figure and the fragile organic bloom creates a poignant visual juxtaposition."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The robot remains in its crouched position, continuing to observe or protect the glowing lotus flower. The composition is nearly identical to the previous frame, with the pink-white luminescent flower centered between the robot's massive hands and body. More surface detail is visible on the robot's weathered, battle-scarred armor. The warm sepia lighting persists, with misty mountains in the background. The cracked earth texture is prominent in the foreground, emphasizing the barren environment where this single flower has bloomed."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "arms",
+    "around",
+    "battle",
+    "bending",
+    "bright",
+    "cinematic",
+    "clip",
+    "continuing",
+    "crouched",
+    "depicts",
+    "discovering",
+    "down",
+    "dramatic",
+    "flower",
+    "forward",
+    "giant",
+    "glowing",
+    "hazy",
+    "humanoid",
+    "lotus",
+    "massive",
+    "mech",
+    "medium",
+    "observe",
+    "pink",
+    "position",
+    "positioned",
+    "protect",
+    "remains",
+    "robot",
+    "silhouette",
+    "speech",
+    "stands",
+    "thanks",
+    "watching",
+    "worn"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

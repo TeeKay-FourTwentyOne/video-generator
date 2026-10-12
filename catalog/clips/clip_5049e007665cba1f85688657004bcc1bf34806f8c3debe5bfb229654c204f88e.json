@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5049e007665cba1f85688657004bcc1bf34806f8c3debe5bfb229654c204f88e",
+  "sha256": "5049e007665cba1f85688657004bcc1bf34806f8c3debe5bfb229654c204f88e",
+  "bytes": 1995918,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767766270665_6wxb9n.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767766270665_6wxb9n"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This is an animated outro or end screen featuring abstract diagonal neon light streaks in magenta/pink and cyan colors against a black background, accompanied by the audio message 'Thanks for watching!' The visual style is characteristic of synthwave or retro-futuristic motion graphics, with moving lens flares adding dynamic visual interest throughout the 4-second clip.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "abstract",
+        "against",
+        "animated",
+        "animation",
+        "background",
+        "black",
+        "continuation",
+        "continues",
+        "cyan",
+        "diagonal",
+        "digital",
+        "end",
+        "featuring",
+        "light",
+        "magenta",
+        "medium",
+        "neon",
+        "outro",
+        "pink",
+        "screen",
+        "speech",
+        "streaks",
+        "thanks",
+        "vibrant",
+        "watching"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Abstract digital background featuring diagonal neon light streaks against a black backdrop. Bright magenta/pink and cyan/turquoise colored beams stretch across the frame from upper left to lower right. A bright white lens flare appears on the right side of the frame. The composition creates a dynamic, high-energy aesthetic typical of motion graphics or video outros. The lighting is entirely artificial with glowing, saturated colors creating a synthwave or retro-futuristic atmosphere."
+        },
+        {
+          "seconds": 2,
+          "text": "Continuation of the abstract neon light animation with diagonal streaks of vibrant magenta/pink and cyan blue colors against a dark background. The light beams appear slightly shifted in position compared to the first frame, suggesting animation movement. A small bright lens flare is visible in the center-right area. The overall composition maintains the same dynamic diagonal pattern with the characteristic synthwave color palette of hot pink and electric blue tones."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The abstract neon background continues with diagonal light streaks in magenta/pink and cyan colors. A prominent starburst lens flare now appears on the left side of the frame, creating a bright white focal point with radiating light rays. The diagonal neon beams continue their pattern across the dark background. The composition shifts slightly with more emphasis on the lower portion of the frame, maintaining the energetic, digital aesthetic throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "animated",
+    "animation",
+    "background",
+    "black",
+    "continuation",
+    "continues",
+    "cyan",
+    "diagonal",
+    "digital",
+    "end",
+    "featuring",
+    "light",
+    "magenta",
+    "medium",
+    "neon",
+    "outro",
+    "pink",
+    "screen",
+    "speech",
+    "streaks",
+    "thanks",
+    "vibrant",
+    "watching"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

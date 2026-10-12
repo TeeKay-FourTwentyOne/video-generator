@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_52af4e6c80b6e77c83ba988cecdfc973ab490a11ff89d031c87c64aa615fb15c",
+  "sha256": "52af4e6c80b6e77c83ba988cecdfc973ab490a11ff89d031c87c64aa615fb15c",
+  "bytes": 4515198,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767759521334_pwf9ij.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767759521334_pwf9ij"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip shows a transition from a studio portrait to a romantic rainy night scene on a European cobblestone street. A joyful young woman in a burgundy dress and tan trench coat dances and walks through the rain, having abandoned her umbrella, creating a carefree, cinematic moment reminiscent of classic film scenes.",
+      "transcript": "📢 Share this video with your friends on social media.",
+      "tags": [
+        "against",
+        "brown",
+        "camera",
+        "captured",
+        "clip",
+        "cobblestone",
+        "cobblestones",
+        "european",
+        "faces",
+        "forward",
+        "friends",
+        "glistening",
+        "hair",
+        "her",
+        "length",
+        "media",
+        "medium",
+        "mid",
+        "multi-scene",
+        "neutral",
+        "night",
+        "portrait",
+        "rain",
+        "rainfall",
+        "rainy",
+        "romantic",
+        "scene",
+        "share",
+        "shoulder",
+        "shows",
+        "soaked",
+        "social",
+        "speech",
+        "spin",
+        "stands",
+        "street",
+        "studio",
+        "tan",
+        "transition",
+        "transitions",
+        "trench",
+        "video",
+        "walking",
+        "walks",
+        "wavy",
+        "woman",
+        "young",
+        "your"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with shoulder-length wavy brown hair stands against a neutral gray studio backdrop. She wears a burgundy/maroon knee-length fitted dress with a rounded neckline, paired with an open tan/beige trench coat. She has burgundy heels matching her dress. Her expression is joyful with a wide smile, and her arms are slightly extended from her sides. The lighting is soft and even, typical of studio photography. Full-body shot with centered composition."
+        },
+        {
+          "seconds": 0.31,
+          "text": "The scene transitions to a European cobblestone street at night during rainfall. The same woman walks forward on wet golden-hued cobblestones, wearing the identical burgundy dress and tan trench coat. Rain is visible falling, and her hair appears wet. A black umbrella lies on the ground to her left. Yellow-lit storefronts and classic architecture line both sides of the narrow street. An ornate street lamp glows warmly overhead. She's laughing joyfully with arms slightly spread."
+        },
+        {
+          "seconds": 2,
+          "text": "The woman is captured mid-spin on the rain-soaked cobblestone street, her trench coat now closed and billowing outward from the rotational movement. Her hair flies dynamically as she turns, looking back over her shoulder with a delighted expression. The same black umbrella remains on the wet ground. The European architecture and warm street lighting create a romantic, cinematic atmosphere. Rain continues to fall, creating reflections on the golden-toned wet stones."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman faces the camera again, walking forward on the glistening cobblestones with her tan trench coat open, revealing the burgundy dress beneath. Her wet hair frames her smiling face as rain continues to fall. The black umbrella remains abandoned on the ground to her left. The warm yellow lighting from the street lamp and storefronts illuminates the scene, creating beautiful reflections on the wet pavement. Her burgundy heels are visible as she steps forward confidently."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_027",
+      "name": "Frank & Rosa",
+      "description": "Couple looking at old photos together - bearded man and woman with dark curly hair in red scarf, laughing warmly",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_044",
+      "name": "Margot",
+      "description": "Woman in burgundy dress with tan overcoat, rainy European cobblestone street, cinematic composition, sophisticated traveler",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "brown",
+    "camera",
+    "captured",
+    "clip",
+    "cobblestone",
+    "cobblestones",
+    "european",
+    "faces",
+    "forward",
+    "friends",
+    "glistening",
+    "hair",
+    "her",
+    "length",
+    "media",
+    "medium",
+    "mid",
+    "multi-scene",
+    "neutral",
+    "night",
+    "portrait",
+    "rain",
+    "rainfall",
+    "rainy",
+    "romantic",
+    "scene",
+    "share",
+    "shoulder",
+    "shows",
+    "soaked",
+    "social",
+    "speech",
+    "spin",
+    "stands",
+    "street",
+    "studio",
+    "tan",
+    "transition",
+    "transitions",
+    "trench",
+    "video",
+    "walking",
+    "walks",
+    "wavy",
+    "woman",
+    "young",
+    "your"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

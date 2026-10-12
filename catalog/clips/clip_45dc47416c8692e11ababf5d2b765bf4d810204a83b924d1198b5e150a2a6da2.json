@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_45dc47416c8692e11ababf5d2b765bf4d810204a83b924d1198b5e150a2a6da2",
+  "sha256": "45dc47416c8692e11ababf5d2b765bf4d810204a83b924d1198b5e150a2a6da2",
+  "bytes": 588770,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot4_kenburns.mp4"
+  ],
+  "collections": [
+    "april"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

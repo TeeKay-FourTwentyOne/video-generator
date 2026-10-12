@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3b2aa54e648c5b7514ea2006232e0a9485ab51cf7595baef928d8b8a2363c296",
+  "sha256": "3b2aa54e648c5b7514ea2006232e0a9485ab51cf7595baef928d8b8a2363c296",
+  "bytes": 120033515,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 32.916667,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 790,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "film_4k.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

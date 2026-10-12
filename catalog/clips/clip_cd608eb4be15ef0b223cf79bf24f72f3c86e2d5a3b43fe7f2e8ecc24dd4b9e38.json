@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cd608eb4be15ef0b223cf79bf24f72f3c86e2d5a3b43fe7f2e8ecc24dd4b9e38",
+  "sha256": "cd608eb4be15ef0b223cf79bf24f72f3c86e2d5a3b43fe7f2e8ecc24dd4b9e38",
+  "bytes": 5452051,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S02-v1.mp4",
+    "veo_1791014260987_6k4haa.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Continue this exact handmade miniature scene with restrained stop-motion motion and cinematic lighting. Maintain the exact robot, one tree, planter, bulb, paint chips and greenhouse geometry in the supplied first frame. 9:16 portrait. One continuous shot, no cuts, no dissolve, no text, no speech. No other characters, no new objects, no duplicate limbs. Robot always has two arms with two-prong grippers and two caterpillar tracks.\nA slow intimate push-in. The robot gently reaches its right gripper down toward the empty brass socket on the OUTSIDE FRONT WALL of the planter and pauses just in front of it. It tilts its head down to study the empty hole, then turns its head slightly down toward its own amber chest lamp. The chest lamp remains firmly installed and lit throughout. The gripper holds nothing and removes nothing. The dry tree never moves, no leaves. Single clear thoughtful gesture, tiny mechanical movements, pause at the end. Do not insert a bulb yet.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c89e031df04f9b0ee2a7a00846493b0df3e7bb499e77de275ebe268090299abc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2000717644,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

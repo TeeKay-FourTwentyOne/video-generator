@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d041db771b507c065eea7a7276939b12d5bb1c7ed8304af68d42e7a2eb7fbcdc",
+  "sha256": "d041db771b507c065eea7a7276939b12d5bb1c7ed8304af68d42e7a2eb7fbcdc",
+  "bytes": 3512380,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767543011133_on26um.mp4"
+  ],
+  "collections": [
+    "the_spill_1767542795801"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767543011133_on26um"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young Caucasian woman in her early 20s with wavy shoulder-length dark brown hair and slim build sits in a rustic coffee shop with exposed red brick walls and dark wood floors. Warm directional sunlight streams through large multi-paned windows creating deep shadows across the wooden counter and intimate seating. She maintains intense eye contact off-camera while confidently lifting a coffee cup toward her mouth. As the cup reaches her lips, coffee suddenly splashes against her chin and cascades down her light-colored sweater in a steady stream. Her expression immediately transforms from confidence to wide-eyed mortification as she realizes what happened. Shot with shallow depth of field, warm indie film aesthetic with soft natural lighting that catches the liquid as it falls. Close-up to medium shot capturing her facial expression change and the coffee spill in detail.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aaa246d6125ce3e1af8809dd5665d988343e5afe83c632d182639a7e737d6d4e",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young Caucasian woman in her early 20s with wavy shoulder-length dark brown hair and slim build sits in a rustic coffee shop with exposed red brick walls and dark wood floors. Warm directional sunlight streams through large multi-paned windows creating deep shadows across the wooden counter and intimate seating. She maintains intense eye contact off-camera while confidently lifting a coffee cup toward her mouth. As the cup reaches her lips, coffee suddenly splashes against her chin and cascades down her light-colored sweater in a steady stream. Her expression immediately transforms from confidence to wide-eyed mortification as she realizes what happened. Shot with shallow depth of field, warm indie film aesthetic with soft natural lighting that catches the liquid as it falls. Close-up to medium shot capturing her facial expression change and the coffee spill in detail.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aaa246d6125ce3e1af8809dd5665d988343e5afe83c632d182639a7e737d6d4e",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:09:18.992Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short clip shows a woman in a cream cable-knit sweater experiencing a coffee spill accident in a cafe setting with exposed brick walls. She begins holding a cup with a concerned expression, then drinks from it while a large brown stain appears on her sweater, and finally looks down at the damage with disappointment. The warm, natural lighting and industrial loft aesthetic create a cozy atmosphere that contrasts with the unfortunate mishap.",
+      "transcript": null,
+      "tags": [
+        "appears",
+        "brown",
+        "cable",
+        "clip",
+        "coffee",
+        "cream",
+        "cup",
+        "drinking",
+        "experiencing",
+        "hair",
+        "hand",
+        "her",
+        "holds",
+        "knit",
+        "large",
+        "length",
+        "lower",
+        "lowered",
+        "medium",
+        "mouth",
+        "now",
+        "partially",
+        "raised",
+        "right",
+        "short",
+        "shows",
+        "silent",
+        "sits",
+        "sweater",
+        "wavy",
+        "what",
+        "which",
+        "white",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with medium-length wavy brown hair sits in what appears to be a cafe or loft space with exposed brick walls. She wears a cream-colored cable-knit sweater and holds a white coffee cup in her right hand. Her expression appears concerned or surprised, with slightly furrowed brows and parted lips. Warm natural light streams through large windows on the left, creating dramatic side lighting. The composition is a medium close-up shot in portrait orientation, with shallow depth of field blurring the industrial background."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now drinking from the white cup, which is raised to her mouth. A large brown coffee stain is now visible running down the center front of her cream cable-knit sweater, suggesting a spill has occurred. Her eyes look to the side with a concerned expression. The warm lighting from the windows continues to illuminate the scene, with the exposed brick wall visible in the background. The framing remains a medium close-up portrait shot with consistent shallow depth of field."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has lowered the cup and now holds it in her lower right hand, partially visible at the bottom of frame. The brown coffee stain on her cream sweater is prominently displayed down the center. Her expression shows dismay or disappointment, with slightly parted lips and downcast eyes. The warm natural lighting continues from the left side windows, with the brick wall and wooden surfaces visible in the blurred background. The portrait-oriented medium shot maintains focus on her reaction to the spill."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_014",
+      "name": "Sophie",
+      "description": "Young woman with wavy brown hair, cream cable-knit sweater, holding coffee cup in cafe with brick walls and warm lighting",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appears",
+    "brown",
+    "cable",
+    "clip",
+    "coffee",
+    "cream",
+    "cup",
+    "drinking",
+    "experiencing",
+    "hair",
+    "hand",
+    "her",
+    "holds",
+    "knit",
+    "large",
+    "length",
+    "lower",
+    "lowered",
+    "medium",
+    "mouth",
+    "now",
+    "partially",
+    "raised",
+    "right",
+    "short",
+    "shows",
+    "silent",
+    "sits",
+    "sweater",
+    "wavy",
+    "what",
+    "which",
+    "white",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

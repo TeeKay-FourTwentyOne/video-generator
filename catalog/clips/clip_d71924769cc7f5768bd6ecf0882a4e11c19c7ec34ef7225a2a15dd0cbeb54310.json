@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d71924769cc7f5768bd6ecf0882a4e11c19c7ec34ef7225a2a15dd0cbeb54310",
+  "sha256": "d71924769cc7f5768bd6ecf0882a4e11c19c7ec34ef7225a2a15dd0cbeb54310",
+  "bytes": 4383656,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "mw_future1.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

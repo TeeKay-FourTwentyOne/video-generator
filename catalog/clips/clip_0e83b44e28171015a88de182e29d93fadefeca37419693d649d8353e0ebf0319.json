@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0e83b44e28171015a88de182e29d93fadefeca37419693d649d8353e0ebf0319",
+  "sha256": "0e83b44e28171015a88de182e29d93fadefeca37419693d649d8353e0ebf0319",
+  "bytes": 1384488,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767513297133_tmeg19.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767513297133_tmeg19"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A single drop of black ink makes contact with pristine clear water in extreme macro detail. The moment of impact unfolds in dramatic slow motion as the ink pierces the surface tension like liquid lightning, creating perfect circular ripples that radiate outward in concentric waves. The drop's spherical form instantly shatters upon contact, transforming into serpentine tendrils of pure darkness that spiral and bloom through the crystal-clear water. Shot with a macro lens from directly above, the camera remains perfectly still to capture every intricate detail of this mesmerizing collision. Soft, diffused lighting illuminates the water from below, creating a luminous backdrop that makes the black ink appear even more striking as it disperses in organic, flowing patterns. The contemplative cinematography emphasizes the meditative beauty of this fleeting moment, with the stark contrast between the dark ink and transparent water creating an almost ethereal visual poetry.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ae10616a4d11a4e4a3d3336894808673365f062e501fc03d2d19de153fb84263",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A single drop of black ink makes contact with pristine clear water in extreme macro detail. The moment of impact unfolds in dramatic slow motion as the ink pierces the surface tension like liquid lightning, creating perfect circular ripples that radiate outward in concentric waves. The drop's spherical form instantly shatters upon contact, transforming into serpentine tendrils of pure darkness that spiral and bloom through the crystal-clear water. Shot with a macro lens from directly above, the camera remains perfectly still to capture every intricate detail of this mesmerizing collision. Soft, diffused lighting illuminates the water from below, creating a luminous backdrop that makes the black ink appear even more striking as it disperses in organic, flowing patterns. The contemplative cinematography emphasizes the meditative beauty of this fleeting moment, with the stark contrast between the dark ink and transparent water creating an almost ethereal visual poetry.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ae10616a4d11a4e4a3d3336894808673365f062e501fc03d2d19de153fb84263",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T07:54:14.107Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This high-speed video captures a black ink droplet falling and impacting a white liquid surface, creating a dramatic crown splash that then disperses into an organic, cloud-like formation. The sequence progresses from a single suspended droplet to an explosive splash pattern to a diffused ink cloud, all shot against a stark white background in a vertical format.",
+      "transcript": "you",
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "captured",
+        "captures",
+        "center",
+        "circular",
+        "cloud",
+        "diffused",
+        "dramatic",
+        "droplet",
+        "evolved",
+        "explosion",
+        "falling",
+        "form",
+        "frame",
+        "high",
+        "impacting",
+        "ink",
+        "medium",
+        "mid",
+        "minimalist",
+        "organic",
+        "positioned",
+        "resembling",
+        "showing",
+        "small",
+        "speech",
+        "speed",
+        "splash",
+        "underwater",
+        "upper",
+        "video",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A minimalist frame showing a small black circular droplet positioned in the upper-center portion of the image against a pure white background. The droplet appears to have two tiny white reflective spots, giving it a glossy appearance. The composition is stark and simple with high contrast between the black droplet and the bright white background. The camera angle appears to be straight-on, capturing what seems to be the beginning of a liquid drop experiment."
+        },
+        {
+          "seconds": 2,
+          "text": "A dramatic ink splash captured mid-explosion against a white background. Black liquid has impacted a surface and created a crown-like splash pattern with multiple tendrils and droplets shooting outward in all directions. The central mass is dense black while the extending arms show varying degrees of transparency. Circular ripples are visible at the bottom of the frame. Small satellite droplets are suspended in the air above the main splash. High contrast black and white composition."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The ink splash has evolved into a more diffused, organic form resembling an underwater ink cloud or abstract flower shape. The black liquid has spread outward with wispy, flowing tendrils extending in multiple directions. The center remains densely black while the edges show gray gradients as the ink disperses. Concentric ripple patterns are visible at the bottom. The composition maintains the stark black and white contrast with the ink mass positioned centrally in the frame."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "captured",
+    "captures",
+    "center",
+    "circular",
+    "cloud",
+    "diffused",
+    "dramatic",
+    "droplet",
+    "evolved",
+    "explosion",
+    "falling",
+    "form",
+    "frame",
+    "high",
+    "impacting",
+    "ink",
+    "medium",
+    "mid",
+    "minimalist",
+    "organic",
+    "positioned",
+    "resembling",
+    "showing",
+    "small",
+    "speech",
+    "speed",
+    "splash",
+    "underwater",
+    "upper",
+    "video",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

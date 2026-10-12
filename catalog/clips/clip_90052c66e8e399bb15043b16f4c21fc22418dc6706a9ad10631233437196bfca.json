@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_90052c66e8e399bb15043b16f4c21fc22418dc6706a9ad10631233437196bfca",
+  "sha256": "90052c66e8e399bb15043b16f4c21fc22418dc6706a9ad10631233437196bfca",
+  "bytes": 587691,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1664,
+    "height": 936,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "robot.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

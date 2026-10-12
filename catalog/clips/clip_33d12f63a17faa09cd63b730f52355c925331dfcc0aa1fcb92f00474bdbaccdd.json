@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_33d12f63a17faa09cd63b730f52355c925331dfcc0aa1fcb92f00474bdbaccdd",
+  "sha256": "33d12f63a17faa09cd63b730f52355c925331dfcc0aa1fcb92f00474bdbaccdd",
+  "bytes": 5168099,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 43.333333,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "frameCount": 1300,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "burger_djinn_v3_720.mp4"
+  ],
+  "collections": [
+    "burger-djinn"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

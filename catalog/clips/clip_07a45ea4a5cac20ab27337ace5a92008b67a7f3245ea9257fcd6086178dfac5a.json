@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_07a45ea4a5cac20ab27337ace5a92008b67a7f3245ea9257fcd6086178dfac5a",
+  "sha256": "07a45ea4a5cac20ab27337ace5a92008b67a7f3245ea9257fcd6086178dfac5a",
+  "bytes": 28060013,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "02_projector.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "One continuous 8-second shot. Photoreal underwater cinema, subtle film grain, cobalt blue water, faded oxblood seats, tarnished brass Art Deco details, suspended particles. Match the first frame faithfully. All architecture and seats are rigid and remain in place. Natural smooth motion at 24fps, not stop motion. No people, divers, text, subtitles, logos, cuts, dissolves, floating furniture or cartoon anatomy. Locked camera on the single vintage film projector. The two metal film reels begin a slow steady rigid rotation. At second 2 the lamp comes alive, warming from a pinprick to a steady soft amber light; a narrow warm conical beam extends from the lens to screen right through the water. Machine body stays absolutely rigid, film stays threaded. Surreal operating-underwater premise is intentional. Do not add fish. Sound: a gentle mechanical click, slow soft film-projector chatter, muffled watery resonance; no music, speech or explosive startup.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ec0f278d53512efe9bc0a4e01619914a4160405de53fe9b9a192b6b29ba42f03",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9162601,
+      "createdAt": "2026-09-16T16:39:33.812Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

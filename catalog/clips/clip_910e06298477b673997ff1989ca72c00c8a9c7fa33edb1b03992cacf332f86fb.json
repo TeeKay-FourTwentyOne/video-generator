@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_910e06298477b673997ff1989ca72c00c8a9c7fa33edb1b03992cacf332f86fb",
+  "sha256": "910e06298477b673997ff1989ca72c00c8a9c7fa33edb1b03992cacf332f86fb",
+  "bytes": 3388663,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S2_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Medium shot. {{CORA_LOCK}} She gathers untouched place settings from a long empty dining table by the light of a single oil lamp, stacking plates with practiced, tired economy. Quiet evening interior, rain on the windows behind her. Sound: rain, the soft clink of china, floorboards.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5584822e5578a6a1763eec5c713cc57f0834d0623178aa95fbf74a0a6d43648a",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

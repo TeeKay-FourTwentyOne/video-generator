@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0452d878926994189dd8e6546505c6284f299e25e5b4d3a88dd6da0d6594be79",
+  "sha256": "0452d878926994189dd8e6546505c6284f299e25e5b4d3a88dd6da0d6594be79",
+  "bytes": 32649295,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "soccer_players.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_71ea43812465984700affc57ad8a7347aeeae86b2aea63dc665f00b8748b3948",
+  "sha256": "71ea43812465984700affc57ad8a7347aeeae86b2aea63dc665f00b8748b3948",
+  "bytes": 2432223,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 30,
+    "width": 480,
+    "height": 270,
+    "frameRate": "60/1",
+    "frameCount": 1800,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "angles-acceleration-30s.mp4"
+  ],
+  "collections": [
+    "angles"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

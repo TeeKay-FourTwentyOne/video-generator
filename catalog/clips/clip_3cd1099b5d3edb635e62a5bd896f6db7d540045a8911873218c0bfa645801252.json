@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3cd1099b5d3edb635e62a5bd896f6db7d540045a8911873218c0bfa645801252",
+  "sha256": "3cd1099b5d3edb635e62a5bd896f6db7d540045a8911873218c0bfa645801252",
+  "bytes": 3153926,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "abstract_b2_orange.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:abstract_b2_orange"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Abstract visualization of orange smoke or flame rising and transforming against a black background. The clip begins with a glowing orb at the bottom, which expands into elaborate swirling smoke formations that shift and morph throughout the 8-second duration. No speech, continuous fluid animation.",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "abstract",
+        "against",
+        "background",
+        "billowing",
+        "black",
+        "bottom",
+        "column",
+        "curling",
+        "edge",
+        "elongated",
+        "emerging",
+        "flame",
+        "formation",
+        "frame",
+        "glowing",
+        "medium",
+        "mostly",
+        "orange",
+        "orb",
+        "rising",
+        "shape",
+        "smoke",
+        "speech",
+        "thank",
+        "transforming",
+        "vertical",
+        "vibrant",
+        "visualization",
+        "watching",
+        "yellow",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A mostly black frame with a glowing orange-yellow orb emerging at the bottom edge, resembling a rising sun or ember. Faint orange wisps trail upward in the darkness. The composition is minimal and dramatic with high contrast against the pure black background."
+        },
+        {
+          "seconds": 4,
+          "text": "Vibrant orange smoke or flame formation billowing against a black background. The shape resembles an abstract mushroom or jellyfish with a bulbous top and flowing tendrils below. Swirling wisps of bright orange and yellow create an organic, fluid form with smooth gradients."
+        },
+        {
+          "seconds": 7.9,
+          "text": "An elongated vertical column of orange smoke or flame against black. The formation has curling wisps and spiral patterns, stretched vertically. Rich orange dominates with lighter yellow highlights along the edges where the smoke thins. Suggests upward movement and organic fluidity."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "background",
+    "billowing",
+    "black",
+    "bottom",
+    "column",
+    "curling",
+    "edge",
+    "elongated",
+    "emerging",
+    "flame",
+    "formation",
+    "frame",
+    "glowing",
+    "medium",
+    "mostly",
+    "orange",
+    "orb",
+    "rising",
+    "shape",
+    "smoke",
+    "speech",
+    "thank",
+    "transforming",
+    "vertical",
+    "vibrant",
+    "visualization",
+    "watching",
+    "yellow",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

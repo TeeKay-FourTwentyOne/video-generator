@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ab6fdf2c5f07fe3e596e16471ce286dc9d4cd054f65380efc3b67e142ce5a56b",
+  "sha256": "ab6fdf2c5f07fe3e596e16471ce286dc9d4cd054f65380efc3b67e142ce5a56b",
+  "bytes": 1473957,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767488147490_fojsea.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767488147490_fojsea"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short video clip shows a single red apple slowly rotating on a white background in a product photography style setup. The apple displays its glossy surface, brown stem, and subtle color variations as it turns. The minimalist presentation with professional lighting suggests this is commercial or educational content, with the word 'You' spoken during the clip.",
+      "transcript": "You",
+      "tags": [
+        "against",
+        "angle",
+        "another",
+        "appears",
+        "apple",
+        "background",
+        "brown",
+        "centered",
+        "clip",
+        "continues",
+        "different",
+        "displaying",
+        "frame",
+        "glossy",
+        "medium",
+        "now",
+        "pure",
+        "red",
+        "rotated",
+        "rotating",
+        "rotation",
+        "short",
+        "showing",
+        "shows",
+        "single",
+        "slightly",
+        "slow",
+        "slowly",
+        "speech",
+        "video",
+        "white",
+        "yet",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A glossy red apple is centered in the frame against a pure white background. The apple has a brown stem pointing upward and slightly to the right. There's a small yellow-orange patch visible on the upper left side of the apple. The fruit shows natural light reflections creating white highlights on its smooth surface, with small speckles visible on the skin. A subtle reflection of the apple appears on the white surface below. The composition is clean and minimalist with professional product photography lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "The same red apple appears to have rotated slightly, now showing a different angle. The brown stem is more prominently visible and appears slightly curved at the top. The apple maintains its deep red coloring with visible light speckles across the surface. Light reflections create soft highlights on the glossy skin. The yellow-orange patch is less visible from this angle. The white background remains consistent, and the subtle reflection beneath the apple persists. The framing remains centered and the lighting unchanged."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The red apple continues its slow rotation, now displaying yet another angle of its surface. The brown stem leans slightly to the right. A small yellow-orange area is visible near the stem on the left side. The apple's glossy surface shows characteristic light reflections and natural speckles. The composition maintains its clean, centered framing against the seamless white background. The reflection below the apple remains visible, and the professional lighting continues to highlight the fruit's smooth, polished appearance."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "another",
+    "appears",
+    "apple",
+    "background",
+    "brown",
+    "centered",
+    "clip",
+    "continues",
+    "different",
+    "displaying",
+    "frame",
+    "glossy",
+    "medium",
+    "now",
+    "pure",
+    "red",
+    "rotated",
+    "rotating",
+    "rotation",
+    "short",
+    "showing",
+    "shows",
+    "single",
+    "slightly",
+    "slow",
+    "slowly",
+    "speech",
+    "video",
+    "white",
+    "yet",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

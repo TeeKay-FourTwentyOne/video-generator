@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4a7da9b4aea35a5249d72e16b08a46bf2acb1c511f9258c254bffa3dc9b41031",
+  "sha256": "4a7da9b4aea35a5249d72e16b08a46bf2acb1c511f9258c254bffa3dc9b41031",
+  "bytes": 1126497,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767544763034_ivqr5w.mp4"
+  ],
+  "collections": [
+    "sentient_stapler_comedy"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767544763034_ivqr5w"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short graying hair, average build, and neat goatee sits at his desk in a sterile corporate office. The camera captures him in a medium shot as he slowly reaches across his desk toward a document, his hand deliberately hovering over a silver stapler. The stapler gleams unnaturally bright under the harsh fluorescent lighting from the grid-patterned drop ceiling, casting an ominous shadow that appears slightly misaligned from its actual position. Quick cut to a close-up of his expressionless face showing deadpan concentration, then cut back to his hand still suspended above the gleaming stapler. The beige cubicle partitions and thick square support pillars frame the background in monochromatic greige tones. The fluorescent lights create cool, diffuse illumination that emphasizes the stapler's unnatural brightness. The man's movements are deliberately slow and measured, building comedic tension through timing. Camera maintains steady framing with occasional quick cuts between his face and the stapler to heighten the absurd suspense of this mundane office moment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_651676082a4515eb042a2fff9f51b5c60bba913d235da74085f6321a38435cfc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short graying hair, average build, and neat goatee sits at his desk in a sterile corporate office. The camera captures him in a medium shot as he slowly reaches across his desk toward a document, his hand deliberately hovering over a silver stapler. The stapler gleams unnaturally bright under the harsh fluorescent lighting from the grid-patterned drop ceiling, casting an ominous shadow that appears slightly misaligned from its actual position. Quick cut to a close-up of his expressionless face showing deadpan concentration, then cut back to his hand still suspended above the gleaming stapler. The beige cubicle partitions and thick square support pillars frame the background in monochromatic greige tones. The fluorescent lights create cool, diffuse illumination that emphasizes the stapler's unnatural brightness. The man's movements are deliberately slow and measured, building comedic tension through timing. Camera maintains steady framing with occasional quick cuts between his face and the stapler to heighten the absurd suspense of this mundane office moment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_651676082a4515eb042a2fff9f51b5c60bba913d235da74085f6321a38435cfc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:38:30.911Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A professionally dressed older businessman with gray hair and beard picks up his eyeglasses from a desk in a corporate office setting while saying 'Bye bye.' The sequence shows him reaching for, lifting, and then looking directly at the camera with a serious expression, suggesting the conclusion of a meeting or conversation.",
+      "transcript": "Bye bye.",
+      "tags": [
+        "appears",
+        "beard",
+        "businessman",
+        "bye",
+        "camera",
+        "directly",
+        "dressed",
+        "environment",
+        "expression",
+        "eyeglasses",
+        "gray",
+        "hair",
+        "hand",
+        "his",
+        "lifting",
+        "looks",
+        "man",
+        "medium",
+        "motion",
+        "now",
+        "office",
+        "older",
+        "picks",
+        "professionally",
+        "right",
+        "serious",
+        "sits",
+        "somewhat",
+        "speech",
+        "stern",
+        "toward",
+        "wearing",
+        "what"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An older man with gray hair and a gray beard sits in an office environment, wearing a dark navy suit, light blue dress shirt, and a navy striped tie with red/pink stripes. He is reaching down toward a wooden desk surface where eyeglasses are visible. His left hand rests on the desk showing a wedding ring. The background shows typical office cubicle partitions in beige/gray tones with fluorescent ceiling lights. The framing is a medium close-up shot from slightly below eye level."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man is now lifting what appears to be eyeglasses in his right hand, the motion causing slight blur. His expression appears focused and somewhat stern as he looks downward. He maintains the same seated position in the office setting with cubicle walls and fluorescent lighting visible behind him. His left hand remains on the desk surface, wedding ring visible. The camera angle and framing remain consistent with the previous shot, capturing him from chest level up."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man now looks directly toward the camera with a serious, somewhat stern expression. His hands are no longer visible in frame as the shot has tightened slightly. His gray hair, beard, and professional attire (navy suit, blue shirt, striped tie) are clearly visible. The office background with beige cubicle partitions and fluorescent ceiling panels remains consistent. The lighting is even and typical of corporate office environments. His expression suggests he has just finished speaking."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_016",
+      "name": "Mr. Henderson",
+      "description": "Older man with grey hair and full beard, dark suit with striped tie, stern expression, corporate office environment",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appears",
+    "beard",
+    "businessman",
+    "bye",
+    "camera",
+    "directly",
+    "dressed",
+    "environment",
+    "expression",
+    "eyeglasses",
+    "gray",
+    "hair",
+    "hand",
+    "his",
+    "lifting",
+    "looks",
+    "man",
+    "medium",
+    "motion",
+    "now",
+    "office",
+    "older",
+    "picks",
+    "professionally",
+    "right",
+    "serious",
+    "sits",
+    "somewhat",
+    "speech",
+    "stern",
+    "toward",
+    "wearing",
+    "what"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

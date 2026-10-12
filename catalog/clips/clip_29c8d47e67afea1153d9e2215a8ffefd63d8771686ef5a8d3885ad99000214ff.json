@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29c8d47e67afea1153d9e2215a8ffefd63d8771686ef5a8d3885ad99000214ff",
+  "sha256": "29c8d47e67afea1153d9e2215a8ffefd63d8771686ef5a8d3885ad99000214ff",
+  "bytes": 212793,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 12.2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 366,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot02.mp4"
+  ],
+  "collections": [
+    "ramsey-books"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

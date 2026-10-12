@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6ae0bd6f5eb51ae995d773447b3774921b2cd3998fd208ff101900d428e502f6",
+  "sha256": "6ae0bd6f5eb51ae995d773447b3774921b2cd3998fd208ff101900d428e502f6",
+  "bytes": 6560217,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shotB_quality.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-4-scene3-bucket-gag",
+    "hellzapoppin4-loading-dock"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

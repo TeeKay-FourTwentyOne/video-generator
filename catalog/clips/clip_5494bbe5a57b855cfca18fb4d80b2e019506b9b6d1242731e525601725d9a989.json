@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5494bbe5a57b855cfca18fb4d80b2e019506b9b6d1242731e525601725d9a989",
+  "sha256": "5494bbe5a57b855cfca18fb4d80b2e019506b9b6d1242731e525601725d9a989",
+  "bytes": 100373218,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 31.208333,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 749,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "film_4k.blend50.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

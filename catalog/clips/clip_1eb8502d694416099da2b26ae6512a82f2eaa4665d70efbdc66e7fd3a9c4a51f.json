@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1eb8502d694416099da2b26ae6512a82f2eaa4665d70efbdc66e7fd3a9c4a51f",
+  "sha256": "1eb8502d694416099da2b26ae6512a82f2eaa4665d70efbdc66e7fd3a9c4a51f",
+  "bytes": 32906196,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "06_full_house.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "One continuous 8-second shot. Photoreal underwater cinema, subtle film grain, cobalt blue water, faded oxblood seats, tarnished brass Art Deco details, suspended particles. Match the first frame faithfully. All architecture and seats are rigid and remain in place. Natural smooth motion at 24fps, not stop motion. No people, divers, text, subtitles, logos, cuts, dissolves, floating furniture or cartoon anatomy. Slow gentle pull back down the central aisle, preserving the exact cinema geometry. A loose audience of the small silver fish visible in the first frame swims very slowly horizontally through the open water above the rows, with tiny natural fin movements and slight individual drift. The flat projected meadow film moves only within the screen: sunlit grasses sway softly under blue sky. Warm amber screen light glances on the old burgundy seats; cobalt water and subtle motes. No new fish materialize, no fish merge, no floating seats. The warm film continues until the end; no fade to black. Sound: intimate underwater ambience and distant gentle projector chatter, no music or speech.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_97b476a8e0fdef9d866ab3de9997498dda39f58f1fb96c270c753bdcf0b9734e",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9162605,
+      "createdAt": "2026-09-16T16:43:47.681Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

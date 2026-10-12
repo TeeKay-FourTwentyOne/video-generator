@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ab36d6ec5e6d510c42a4ca543e93fe9420baf5412aece7bb8e3a4b8a4e3bcc89",
+  "sha256": "ab36d6ec5e6d510c42a4ca543e93fe9420baf5412aece7bb8e3a4b8a4e3bcc89",
+  "bytes": 6761793,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1777263995156_frmif5.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "The woman looks directly into the camera with a calm, warm half-smile. She speaks the line clearly and naturally, with placid, steady, almost too-calm delivery — a hair detached, conversational warmth: \"I left him at the altar this morning. I made the right choice.\" Her gaze remains unblinking and slightly-too-steady throughout the line. Subtle natural micro-expressions — a slight tilt of the head, a barely perceptible lift at the corner of her mouth on the words \"right choice.\" Clear intimate testimonial speaking voice — neither emotional nor flat. Soft natural window light unchanging. Static camera, framed chest-up, no zoom or pan. Quiet living room ambience, no music.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_27c9e28deabc41e42cfcb835a3bf32624ef32550ad0b706db5cddd2e8bfa963c",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3869939987,
+      "createdAt": "2026-04-27T04:24:17.855Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

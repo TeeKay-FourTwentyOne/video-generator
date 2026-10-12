@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_88031a8c90aa0fab80ca71d15a96e62bdff46c106d0e85536ceb186004079699",
+  "sha256": "88031a8c90aa0fab80ca71d15a96e62bdff46c106d0e85536ceb186004079699",
+  "bytes": 216507722,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 38.625,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 927,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "instar_v1_4k.mp4"
+  ],
+  "collections": [
+    "instar"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

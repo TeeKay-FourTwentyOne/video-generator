@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e7d2fabbf53ba7869c82aabfc0d12aaa467363eea673265d3efdfe37174942da",
+  "sha256": "e7d2fabbf53ba7869c82aabfc0d12aaa467363eea673265d3efdfe37174942da",
+  "bytes": 2582,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 0.125,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 3,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot09_black.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

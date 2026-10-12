@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9dc84087ef2bf40334de1e5ac62ae1821ec64ae19d72e48d116eebe805376379",
+  "sha256": "9dc84087ef2bf40334de1e5ac62ae1821ec64ae19d72e48d116eebe805376379",
+  "bytes": 7100648,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S05-v2.mp4",
+    "veo_1791506540372_ljbol0.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, dusk in a quiet bar, 35 mm, locked-off camera that does not move. The man and the woman in the leather booth behind are the only people talking: they lean toward each other over their drinks in a low, natural, continuous conversation, their lips moving. The bartender at the far end polishes a glass and sets it down without speaking and does not approach. The silver-haired woman in the mustard-yellow raincoat at the near end of the bar is completely silent: her lips stay closed and still for the whole shot, she never speaks, mouths words, laughs or hums; she draws in the sketchbook on the bar, pauses to look at the window as it deepens blue, takes one small sip of wine and sets the glass down exactly where it was, then draws again. No new person enters; nothing new appears. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7ff154072ceaf26bf7b806f04816d4640eea6a89ccf1dcc791ac5748da731148",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1369620103,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

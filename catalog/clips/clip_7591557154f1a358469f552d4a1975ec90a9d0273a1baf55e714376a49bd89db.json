@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7591557154f1a358469f552d4a1975ec90a9d0273a1baf55e714376a49bd89db",
+  "sha256": "7591557154f1a358469f552d4a1975ec90a9d0273a1baf55e714376a49bd89db",
+  "bytes": 14075839,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S02-v1.mp4",
+    "veo_1791066777125_uo8k58.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, late morning, a locked-off medium shot across the narrow courtyard at the top-floor balcony. The old woman at the railing finishes pressing a wooden clothespin onto the corner of the white sheet on the line, smooths the sheet flat with one hand, then reaches along the line to check the next pin. Then the breeze rises: the white sheet beside her bellies out and fills like a sail, lifting and pulling at its clothespins, the small red shirt flapping, her headscarf and apron stirring. She pauses and looks at the straining sheet, one hand on the line. The camera does not move. Sound: the click of a wooden clothespin, cloth snapping and rustling as the wind rises, swifts far off. No speech, no music. Exactly one person; the sheets stay pinned to the line for the whole shot; nothing new appears. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_81ff99fbbda1bab5329eeb7dabed955a49343a2906b7bbd4f962a429cedb49e9",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2000717644,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

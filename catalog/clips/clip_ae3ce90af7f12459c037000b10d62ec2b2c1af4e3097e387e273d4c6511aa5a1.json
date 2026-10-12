@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ae3ce90af7f12459c037000b10d62ec2b2c1af4e3097e387e273d4c6511aa5a1",
+  "sha256": "ae3ce90af7f12459c037000b10d62ec2b2c1af4e3097e387e273d4c6511aa5a1",
+  "bytes": 28054646,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "mansion_living_room.mp4"
+  ],
+  "collections": [
+    "elvis-prophet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

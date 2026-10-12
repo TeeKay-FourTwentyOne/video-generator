@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8d763fd0a4f59e6bc2f035b274de444e583a1f65d467952b5dcb92c3032c9187",
+  "sha256": "8d763fd0a4f59e6bc2f035b274de444e583a1f65d467952b5dcb92c3032c9187",
+  "bytes": 6333975,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "The_narrator_mentions_202601030514_rxr0h.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

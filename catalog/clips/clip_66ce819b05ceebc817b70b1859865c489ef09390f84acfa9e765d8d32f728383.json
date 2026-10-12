@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_66ce819b05ceebc817b70b1859865c489ef09390f84acfa9e765d8d32f728383",
+  "sha256": "66ce819b05ceebc817b70b1859865c489ef09390f84acfa9e765d8d32f728383",
+  "bytes": 42958846,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "space_station.mp4"
+  ],
+  "collections": [
+    "dual-use"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

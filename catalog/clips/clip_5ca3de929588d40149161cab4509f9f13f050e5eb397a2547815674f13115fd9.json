@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5ca3de929588d40149161cab4509f9f13f050e5eb397a2547815674f13115fd9",
+  "sha256": "5ca3de929588d40149161cab4509f9f13f050e5eb397a2547815674f13115fd9",
+  "bytes": 5751172,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v5_eels.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

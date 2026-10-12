@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ff0669091a2728106bdd34b3c617f86a50205c23ba6dda3e99b9a128534d2e0e",
+  "sha256": "ff0669091a2728106bdd34b3c617f86a50205c23ba6dda3e99b9a128534d2e0e",
+  "bytes": 1167701,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767532061311_63xc2z.mp4"
+  ],
+  "collections": [
+    "person_a_makes_a_phone_call_pe_1767531881917"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767532061311_63xc2z"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Split screen composition dividing the frame vertically down the middle. Left side: Person A sits in warm golden lighting, amber and honey tones casting anxious shadows across their face, fidgeting hands visible in medium shot. Right side: Person B in cool blue-tinted environment, steel blue and cyan shadows creating distance and isolation, also in medium shot. A phone sits prominently in Person A's golden-lit space, suddenly erupting with a sharp, jarring ring. Camera holds steady on both subjects simultaneously as they react to the sound - Person A startled and hesitant, Person B unaware in their separate world. The ring reverberates across both spaces, creating visual sound waves or subtle screen vibrations. Golden warm light pulses slightly with each ring on the left while cool blue shadows deepen on the right. Time feels suspended as uncertainty builds in the space between the two worlds, the phone continuing its urgent call across the divide.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ebc6dac6d92fd35b3298372b5694074b2e5458f74c507fccc5f9fcf557c9aceb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Split screen composition dividing the frame vertically down the middle. Left side: Person A sits in warm golden lighting, amber and honey tones casting anxious shadows across their face, fidgeting hands visible in medium shot. Right side: Person B in cool blue-tinted environment, steel blue and cyan shadows creating distance and isolation, also in medium shot. A phone sits prominently in Person A's golden-lit space, suddenly erupting with a sharp, jarring ring. Camera holds steady on both subjects simultaneously as they react to the sound - Person A startled and hesitant, Person B unaware in their separate world. The ring reverberates across both spaces, creating visual sound waves or subtle screen vibrations. Golden warm light pulses slightly with each ring on the left while cool blue shadows deepen on the right. Time feels suspended as uncertainty builds in the space between the two worlds, the phone continuing its urgent call across the divide.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ebc6dac6d92fd35b3298372b5694074b2e5458f74c507fccc5f9fcf557c9aceb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T13:06:59.201Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This stylized split-screen clip depicts two women in a phone conversation, visually separated by contrasting warm orange and cool blue lighting schemes. The woman on the left with curly hair answers a vintage rotary phone and displays increasing alarm, while the woman on the right in a denim jacket maintains a guarded, serious demeanor throughout. The single word 'You' in the transcription suggests the beginning of an intense or confrontational exchange.",
+      "transcript": "You",
+      "tags": [
+        "both",
+        "clip",
+        "composition",
+        "continues",
+        "contrasting",
+        "conversation",
+        "curly",
+        "depicts",
+        "engaged",
+        "format",
+        "haired",
+        "left",
+        "lighting",
+        "maintains",
+        "medium",
+        "now",
+        "phone",
+        "positions",
+        "scene",
+        "screen",
+        "showing",
+        "similar",
+        "speech",
+        "split",
+        "stylized",
+        "two",
+        "visually",
+        "woman",
+        "women",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Split-screen composition showing two women in contrasting lighting. On the left, a woman with short curly brown hair wearing a dark gray t-shirt sits at a desk with a vintage black rotary telephone, bathed in warm orange/amber lighting. She appears concerned or worried, looking downward. On the right, a woman with shoulder-length wavy brown hair wearing a light blue denim jacket sits with arms crossed, illuminated by cool blue/teal lighting. Her expression is serious and guarded. The vertical split creates a stark visual contrast between warm and cool tones."
+        },
+        {
+          "seconds": 2,
+          "text": "The split-screen continues with both women now more engaged. The curly-haired woman on the left has picked up the rotary phone receiver, holding it to her ear with a shocked or alarmed expression, eyes wide and mouth slightly open. The warm amber lighting emphasizes her distressed reaction. On the right, the woman in the denim jacket maintains her serious, somewhat skeptical expression with arms still crossed, bathed in the same cool blue lighting. The composition suggests a phone conversation between the two characters across different visual spaces."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The scene maintains the split-screen format with both women in similar positions. The woman on the left continues holding the vintage phone to her ear, her expression still showing concern or disbelief with furrowed brows and parted lips. The rotary phone base remains visible on the desk. On the right, the blue-lit woman's expression has subtly shifted to show slight concern or uncertainty while maintaining her crossed-arm posture. The dramatic color contrast between orange and blue continues to divide the frame vertically."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_009",
+      "name": "The Caller",
+      "description": "Split-screen composition: young person with curly hair holding phone (orange lighting) and blonde woman (blue lighting) - telephone conversation scene",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_010",
+      "name": "Phone Girl",
+      "description": "Same split-screen phone call scene - blonde woman in blue-tinted frame, appears contemplative",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "both",
+    "clip",
+    "composition",
+    "continues",
+    "contrasting",
+    "conversation",
+    "curly",
+    "depicts",
+    "engaged",
+    "format",
+    "haired",
+    "left",
+    "lighting",
+    "maintains",
+    "medium",
+    "now",
+    "phone",
+    "positions",
+    "scene",
+    "screen",
+    "showing",
+    "similar",
+    "speech",
+    "split",
+    "stylized",
+    "two",
+    "visually",
+    "woman",
+    "women",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

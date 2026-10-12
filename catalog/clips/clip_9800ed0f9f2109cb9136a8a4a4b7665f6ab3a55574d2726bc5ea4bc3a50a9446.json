@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9800ed0f9f2109cb9136a8a4a4b7665f6ab3a55574d2726bc5ea4bc3a50a9446",
+  "sha256": "9800ed0f9f2109cb9136a8a4a4b7665f6ab3a55574d2726bc5ea4bc3a50a9446",
+  "bytes": 3529613,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S9_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Medium close-up. {{CORA_LOCK}} She stands in the lamplit entry hall, her oil lamp held at chest height under-lighting her face, wary and level. She answers in a soft North Carolina accent, guarded: \"Three dollars a week, with board. Supper's at six.\" A held beat, then she steps back and aside to admit the visitor. Sound: rain muffled indoors; her voice close and quiet; one floorboard as she steps back.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4e0ebd356c940a9304563525d56e10d4459a14f58262436aab58a10d556b4f06",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

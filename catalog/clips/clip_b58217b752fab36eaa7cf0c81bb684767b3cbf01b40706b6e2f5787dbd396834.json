@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b58217b752fab36eaa7cf0c81bb684767b3cbf01b40706b6e2f5787dbd396834",
+  "sha256": "b58217b752fab36eaa7cf0c81bb684767b3cbf01b40706b6e2f5787dbd396834",
+  "bytes": 18693569,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ocean_zone1_surface.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_zone1_surface"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Underwater surface zone footage showing the interplay of sunlight and water. The clip captures peaceful underwater views looking up at the sun-dappled surface, transitioning through a dynamic bubble-filled sequence before returning to calm. Beautiful turquoise-blue water with natural lighting effects throughout the 8-second duration.",
+      "transcript": "最後までご視聴頂き有難う御座いました。",
+      "tags": [
+        "blue",
+        "bubbles",
+        "calm",
+        "calmer",
+        "captures",
+        "catching",
+        "clip",
+        "creating",
+        "down",
+        "dynamic",
+        "filled",
+        "filtering",
+        "footage",
+        "gentle",
+        "interplay",
+        "looking",
+        "medium",
+        "ocean",
+        "rays",
+        "return",
+        "rising",
+        "scene",
+        "showing",
+        "sparkles",
+        "speech",
+        "state",
+        "sunlight",
+        "surface",
+        "toward",
+        "turquoise",
+        "underwater",
+        "view",
+        "water",
+        "zone"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Underwater view looking up toward the ocean surface. Calm turquoise-blue water with gentle sunlight rays penetrating from above, creating a rippled light pattern at the water's surface. The scene has a peaceful, serene atmosphere with clear visibility and a natural gradient from light blue near the surface to deeper blue below."
+        },
+        {
+          "seconds": 4,
+          "text": "Dynamic underwater scene filled with rising bubbles catching sunlight, creating sparkles and movement throughout the frame. The surface is more agitated with golden-orange sunlight filtering through. Countless tiny bubbles ascend in streams, illuminated against the turquoise background."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Return to calmer underwater state with gentle rays of sunlight filtering down through the surface. Soft ripples visible at the water's surface, overall tranquil atmosphere with turquoise-blue gradient. Scattered small bubbles remain suspended in the clear water."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "blue",
+    "bubbles",
+    "calm",
+    "calmer",
+    "captures",
+    "catching",
+    "clip",
+    "creating",
+    "down",
+    "dynamic",
+    "filled",
+    "filtering",
+    "footage",
+    "gentle",
+    "interplay",
+    "looking",
+    "medium",
+    "ocean",
+    "rays",
+    "return",
+    "rising",
+    "scene",
+    "showing",
+    "sparkles",
+    "speech",
+    "state",
+    "sunlight",
+    "surface",
+    "toward",
+    "turquoise",
+    "underwater",
+    "view",
+    "water",
+    "zone"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

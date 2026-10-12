@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a81f464aff0fc1f94cc1bd452e4ced25bc771aaabd52bf527112ff3e25d36e44",
+  "sha256": "a81f464aff0fc1f94cc1bd452e4ced25bc771aaabd52bf527112ff3e25d36e44",
+  "bytes": 1420038,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767567841690_urdit5.mp4"
+  ],
+  "collections": [
+    "january_4th_2026_an_ordinary_s_1767567066360"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767567841690_urdit5"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The camera pulls back slowly from medium to wide shot, revealing a person seated motionless by the window in perfect stillness, their form becoming another shape among the furniture and shadows of the room. Soft morning light streams through the window at a low angle, creating long shadows across wooden floorboards and illuminating countless dust motes that drift lazily through the golden beams. The person sits completely still in a simple wooden chair, their silhouette merging with the room's geometry - as fixed and permanent as the bookshelf against the wall, the small side table, the potted plant on the windowsill. Natural lighting bathes everything in warm, honeyed tones with gentle contrast. Film grain texture adds organic quality to the image. The camera movement is slow and deliberate, pulling back with barely perceptible motion over 6 seconds until settling into a static wide shot that holds this peaceful tableau. Through the window, hints of the outside world - perhaps tree branches swaying slightly, clouds drifting past - continue their eternal motion while inside remains a pocket of absolute stillness. The composition is balanced and observational, capturing this moment of human quietude within the larger indifferent flow of time, the strengthening morning light gradually shifting the room's shadows as Earth continues its ancient rotation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_71cf8587e4f3aae8194e193f848cfc04689e76672a63eb0d78aa228312bb5e30",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The camera pulls back slowly from medium to wide shot, revealing a person seated motionless by the window in perfect stillness, their form becoming another shape among the furniture and shadows of the room. Soft morning light streams through the window at a low angle, creating long shadows across wooden floorboards and illuminating countless dust motes that drift lazily through the golden beams. The person sits completely still in a simple wooden chair, their silhouette merging with the room's geometry - as fixed and permanent as the bookshelf against the wall, the small side table, the potted plant on the windowsill. Natural lighting bathes everything in warm, honeyed tones with gentle contrast. Film grain texture adds organic quality to the image. The camera movement is slow and deliberate, pulling back with barely perceptible motion over 6 seconds until settling into a static wide shot that holds this peaceful tableau. Through the window, hints of the outside world - perhaps tree branches swaying slightly, clouds drifting past - continue their eternal motion while inside remains a pocket of absolute stillness. The composition is balanced and observational, capturing this moment of human quietude within the larger indifferent flow of time, the strengthening morning light gradually shifting the room's shadows as Earth continues its ancient rotation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_71cf8587e4f3aae8194e193f848cfc04689e76672a63eb0d78aa228312bb5e30",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T23:03:08.795Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This contemplative video clip shows a person sitting alone in silhouette, facing a window during golden hour. The static scene emphasizes warm amber lighting, floating dust particles, and a peaceful interior setting with a bookshelf and wooden floors. The minimal movement creates a meditative, introspective atmosphere throughout the 6-second duration.",
+      "transcript": "you",
+      "tags": [
+        "alone",
+        "behind",
+        "ceiling",
+        "chair",
+        "clip",
+        "composition",
+        "contemplative",
+        "facing",
+        "figure",
+        "identical",
+        "large",
+        "maintains",
+        "medium",
+        "nearly",
+        "paneling",
+        "person",
+        "remains",
+        "scene",
+        "seated",
+        "shows",
+        "silhouette",
+        "silhouetted",
+        "sits",
+        "sitting",
+        "speech",
+        "video",
+        "viewed",
+        "warm",
+        "window",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure sits on a wooden chair facing a large window, viewed from behind at a low angle. Warm golden-hour sunlight streams through the window, creating dramatic light rays and casting long shadows across wooden plank flooring. A bookshelf with white-framed compartments stands on the left wall. A potted plant sits near the window on the right. Dust particles float visibly in the light beams. The scene has a contemplative, cinematic quality with rich amber and brown tones."
+        },
+        {
+          "seconds": 3,
+          "text": "The same silhouetted figure remains seated facing the window in this nearly identical composition. The warm sunset lighting continues to illuminate the room, with visible dust particles dancing in the light rays. The wooden floor planks lead the eye toward the subject. A pendant lamp is visible in the upper right corner. The bookshelf on the left contains books on its shelves. The overall mood remains contemplative and peaceful with the same golden color palette."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The scene maintains the same composition with the silhouetted person seated at the window. The ceiling with wooden paneling is now more visible in the upper portion of the frame. The pendant light fixture hangs prominently in the upper right. Light continues streaming through the window, illuminating dust particles. The potted plant beside the window and bookshelf remain in position. The warm, nostalgic atmosphere persists with amber lighting creating a serene, reflective mood."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alone",
+    "behind",
+    "ceiling",
+    "chair",
+    "clip",
+    "composition",
+    "contemplative",
+    "facing",
+    "figure",
+    "identical",
+    "large",
+    "maintains",
+    "medium",
+    "nearly",
+    "paneling",
+    "person",
+    "remains",
+    "scene",
+    "seated",
+    "shows",
+    "silhouette",
+    "silhouetted",
+    "sits",
+    "sitting",
+    "speech",
+    "video",
+    "viewed",
+    "warm",
+    "window",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

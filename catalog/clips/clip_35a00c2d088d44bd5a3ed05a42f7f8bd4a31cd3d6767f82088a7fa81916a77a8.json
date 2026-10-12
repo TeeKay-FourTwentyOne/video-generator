@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_35a00c2d088d44bd5a3ed05a42f7f8bd4a31cd3d6767f82088a7fa81916a77a8",
+  "sha256": "35a00c2d088d44bd5a3ed05a42f7f8bd4a31cd3d6767f82088a7fa81916a77a8",
+  "bytes": 3238865,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sprocket_gen1.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sprocket_gen1"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Poetic war-themed clip with vintage film sprocket overlay. A soldier silhouetted against golden sunset holds both rifle and flower, exploring the contrast between violence and beauty. Sepia tones and film grain create nostalgic cinema aesthetic. No speech - purely visual storytelling.",
+      "transcript": null,
+      "tags": [
+        "bursting",
+        "clip",
+        "close",
+        "dramatic",
+        "film",
+        "flare",
+        "frame",
+        "gently",
+        "gripping",
+        "hands",
+        "holding",
+        "kneeling",
+        "lens",
+        "medium",
+        "one",
+        "overlay",
+        "poetic",
+        "rifle",
+        "scene",
+        "sepia",
+        "showing",
+        "silent",
+        "silhouette",
+        "silhouetted",
+        "soldier",
+        "sprocket",
+        "starburst",
+        "sun",
+        "themed",
+        "toned",
+        "vintage",
+        "war",
+        "warm",
+        "wildflowers"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Vintage sepia-toned film frame showing silhouette of soldier kneeling with rifle, holding a delicate flower. Golden sunset creates dramatic backlighting. Film sprocket holes visible on edges creating authentic vintage cinema aesthetic."
+        },
+        {
+          "seconds": 4,
+          "text": "Close-up of soldier's hands - one gripping rifle, the other gently holding wildflowers. Same warm sepia tone with film grain texture. The juxtaposition of weapon and flowers creates powerful visual poetry."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Dramatic sun starburst/lens flare bursting through the scene. Soldier silhouette with rifle visible against the intense golden backlight. Cinematically composed with classic film aesthetic."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bursting",
+    "clip",
+    "close",
+    "dramatic",
+    "film",
+    "flare",
+    "frame",
+    "gently",
+    "gripping",
+    "hands",
+    "holding",
+    "kneeling",
+    "lens",
+    "medium",
+    "one",
+    "overlay",
+    "poetic",
+    "rifle",
+    "scene",
+    "sepia",
+    "showing",
+    "silent",
+    "silhouette",
+    "silhouetted",
+    "soldier",
+    "sprocket",
+    "starburst",
+    "sun",
+    "themed",
+    "toned",
+    "vintage",
+    "war",
+    "warm",
+    "wildflowers"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

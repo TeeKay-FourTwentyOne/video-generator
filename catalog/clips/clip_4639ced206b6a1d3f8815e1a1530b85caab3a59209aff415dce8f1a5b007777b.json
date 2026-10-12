@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4639ced206b6a1d3f8815e1a1530b85caab3a59209aff415dce8f1a5b007777b",
+  "sha256": "4639ced206b6a1d3f8815e1a1530b85caab3a59209aff415dce8f1a5b007777b",
+  "bytes": 1715212,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "abstract_g_green.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:abstract_g_green"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Abstract green aurora or flame visualization with flowing ribbon-like forms twisting against a starfield background. The neon green ribbons dance and spiral with organic fluid motion, creating an ethereal northern lights effect.",
+      "transcript": ".",
+      "tags": [
+        "abstract",
+        "against",
+        "aurora",
+        "background",
+        "black",
+        "bottom",
+        "continue",
+        "dance",
+        "different",
+        "flame",
+        "flowing",
+        "forms",
+        "green",
+        "like",
+        "medium",
+        "now",
+        "ribbon",
+        "ribbons",
+        "rises",
+        "slender",
+        "speckled",
+        "speech",
+        "spiral",
+        "star",
+        "their",
+        "twist",
+        "twisted",
+        "twisting",
+        "upward",
+        "visualization"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A slender green flame or aurora rises from the bottom of a star-speckled black background. The bright green wisp tapers to a point, glowing with neon intensity. Scattered white dots suggest a night sky or space setting."
+        },
+        {
+          "seconds": 4,
+          "text": "Flowing green aurora-like ribbons twist and spiral upward against black. The bright emerald green has smooth gradients from bright lime to deeper forest tones. The organic S-curve shape suggests fluid motion, reminiscent of northern lights."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Green aurora ribbons continue their flowing dance, now with a different twisted configuration. The luminous green bands show layered depth with brighter edges and darker centers. Graceful curves create an ethereal, otherworldly atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "aurora",
+    "background",
+    "black",
+    "bottom",
+    "continue",
+    "dance",
+    "different",
+    "flame",
+    "flowing",
+    "forms",
+    "green",
+    "like",
+    "medium",
+    "now",
+    "ribbon",
+    "ribbons",
+    "rises",
+    "slender",
+    "speckled",
+    "speech",
+    "spiral",
+    "star",
+    "their",
+    "twist",
+    "twisted",
+    "twisting",
+    "upward",
+    "visualization"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

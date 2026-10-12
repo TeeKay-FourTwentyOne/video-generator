@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f0bc4ec8b068c931bb4bb6ae026f3d28556f6184f7583ca0a204586f5cb8c599",
+  "sha256": "f0bc4ec8b068c931bb4bb6ae026f3d28556f6184f7583ca0a204586f5cb8c599",
+  "bytes": 180837505,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "runners_desert_green.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d65e231e75d196baf3d3021a4b113b7cb7466804151728ce3be2fdc04336d01c",
+  "sha256": "d65e231e75d196baf3d3021a4b113b7cb7466804151728ce3be2fdc04336d01c",
+  "bytes": 5659145,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "gravity_memories_shot_3_1766616699780.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:gravity_memories_shot_3_1766616699780"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Alternative take of the vintage compass, focusing on extreme close-ups that reveal verdigris patina and aged details. The compass opens to show its compass rose, emphasizing the weathered beauty of this antique keepsake.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "aged",
+        "alternative",
+        "brass",
+        "close",
+        "compass",
+        "decorative",
+        "detailed",
+        "directional",
+        "dusty",
+        "edge",
+        "extreme",
+        "face",
+        "focusing",
+        "full",
+        "glass",
+        "medium",
+        "open",
+        "opens",
+        "ornate",
+        "patina",
+        "reveal",
+        "rose",
+        "showing",
+        "speech",
+        "take",
+        "thanks",
+        "ups",
+        "verdigris",
+        "view",
+        "vintage",
+        "visible",
+        "watching"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Extreme close-up of an ornate brass compass edge showing verdigris patina and decorative details. Blue sparkly surface below suggests velvet or fabric. Shallow depth of field creates artistic blur."
+        },
+        {
+          "seconds": 4,
+          "text": "The compass opens to reveal its face - an aged compass rose visible through dusty glass. Turquoise-green patina on brass rim contrasts with golden interior. Blue glittery surface below."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Full view of the open compass face showing detailed compass rose with directional markings. Ornate brass frame with green-turquoise patina. The N marker and star design clearly visible. Rich blue background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aged",
+    "alternative",
+    "brass",
+    "close",
+    "compass",
+    "decorative",
+    "detailed",
+    "directional",
+    "dusty",
+    "edge",
+    "extreme",
+    "face",
+    "focusing",
+    "full",
+    "glass",
+    "medium",
+    "open",
+    "opens",
+    "ornate",
+    "patina",
+    "reveal",
+    "rose",
+    "showing",
+    "speech",
+    "take",
+    "thanks",
+    "ups",
+    "verdigris",
+    "view",
+    "vintage",
+    "visible",
+    "watching"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

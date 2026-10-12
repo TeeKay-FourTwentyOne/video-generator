@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b36033f849daec010d0a1af2aeae4de66d4b65267e53596ae0d1ee357cfbef9a",
+  "sha256": "b36033f849daec010d0a1af2aeae4de66d4b65267e53596ae0d1ee357cfbef9a",
+  "bytes": 4527065,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3.583333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 86,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s6_v4.mp4"
+  ],
+  "collections": [
+    "guess-booth"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

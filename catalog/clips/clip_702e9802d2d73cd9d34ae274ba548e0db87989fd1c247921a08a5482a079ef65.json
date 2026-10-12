@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_702e9802d2d73cd9d34ae274ba548e0db87989fd1c247921a08a5482a079ef65",
+  "sha256": "702e9802d2d73cd9d34ae274ba548e0db87989fd1c247921a08a5482a079ef65",
+  "bytes": 19367886,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot-1.mp4",
+    "veo_1789362833904_r6vnvd.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

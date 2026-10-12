@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d2f0156d01ecb1f8f9f00419d7686f1bac32421cc5cfbc7c6c92756e42cbc529",
+  "sha256": "d2f0156d01ecb1f8f9f00419d7686f1bac32421cc5cfbc7c6c92756e42cbc529",
+  "bytes": 126941020,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 38.625,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 927,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "instar_youtube_sim.mp4"
+  ],
+  "collections": [
+    "steg-test"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

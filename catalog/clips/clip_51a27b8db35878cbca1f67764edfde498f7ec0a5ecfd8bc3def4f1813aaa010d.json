@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_51a27b8db35878cbca1f67764edfde498f7ec0a5ecfd8bc3def4f1813aaa010d",
+  "sha256": "51a27b8db35878cbca1f67764edfde498f7ec0a5ecfd8bc3def4f1813aaa010d",
+  "bytes": 1089447,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767663538142_v625wy.mp4"
+  ],
+  "collections": [
+    "dialogue_test_v2"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767663538142_v625wy"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A middle-aged detective in his 40s, wearing a dark gray suit and loosened tie, stands silhouetted in a doorway, his broad shoulders filling the frame. Low angle shot looking up at him, creating an imposing presence. The hallway behind him is dimly lit with cool fluorescent light, while warm amber light spills from the room he's facing into. His face is partially obscured by shadow, only his jaw and the glint of his eyes visible. The camera holds steady on this dramatic composition as dust motes drift through the shaft of light. Deep shadows create high contrast, with the doorframe creating strong vertical lines. The detective remains perfectly still, his body language tense and controlled.\n\n---\nDIALOGUE:\n- DETECTIVE (male, 40s, controlled, tight): \"I have been looking for you.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fcd54c09dcd18585ce7f66889c5f67f1b776d6c5c6b4ebe37c90a84952f7142f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A middle-aged detective in his 40s, wearing a dark gray suit and loosened tie, stands silhouetted in a doorway, his broad shoulders filling the frame. Low angle shot looking up at him, creating an imposing presence. The hallway behind him is dimly lit with cool fluorescent light, while warm amber light spills from the room he's facing into. His face is partially obscured by shadow, only his jaw and the glint of his eyes visible. The camera holds steady on this dramatic composition as dust motes drift through the shaft of light. Deep shadows create high contrast, with the doorframe creating strong vertical lines. The detective remains perfectly still, his body language tense and controlled.\n\n---\nDIALOGUE:\n- DETECTIVE (male, 40s, controlled, tight): \"I have been looking for you.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fcd54c09dcd18585ce7f66889c5f67f1b776d6c5c6b4ebe37c90a84952f7142f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T01:38:14.182Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A man in a formal dark business suit enters through a doorway from a blue-lit corridor into a warmer-lit room, advancing toward the camera with a serious, determined expression. The clip creates a tense, dramatic atmosphere through contrasting lighting and the man's deliberate forward movement, suggesting he is investigating or confronting something.",
+      "transcript": "And have a little look and see.",
+      "tags": [
+        "advance",
+        "black",
+        "blue",
+        "business",
+        "centered",
+        "continues",
+        "corridor",
+        "dark",
+        "dimly",
+        "doorway",
+        "dress",
+        "enters",
+        "formal",
+        "forward",
+        "frame",
+        "lit",
+        "little",
+        "look",
+        "man",
+        "medium",
+        "moved",
+        "now",
+        "partially",
+        "see",
+        "shirt",
+        "speech",
+        "suit",
+        "tie",
+        "walking",
+        "wears",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man in a dark business suit with white dress shirt and black tie is partially visible, standing in a doorway. He appears to be entering or peering through a beige/tan colored door that is partially open. The hallway behind him is lit with cool blue fluorescent lighting. His expression appears serious or scrutinizing. The composition creates a sense of intrusion or surveillance, with warm lighting on the door contrasting with the cold blue corridor behind."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man in the dark suit has now moved further into the frame, walking through the doorway into a dimly lit space. His face is partially illuminated by warm side lighting while the background maintains the cool blue fluorescent glow of the corridor. There appears to be some smoke or haze visible in the air behind him. His expression remains serious and focused. The camera frames him from approximately chest level up in a medium shot."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man continues to advance forward, now more centered in the frame. He wears the same dark suit, white shirt, and black tie. The lighting creates dramatic contrast with warm tones on one side of his face and cool blue tones from the corridor behind. His expression is stern and determined. A door frame is visible on the right edge. The composition emphasizes his imposing presence as he moves toward the camera in what appears to be a tense moment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "advance",
+    "black",
+    "blue",
+    "business",
+    "centered",
+    "continues",
+    "corridor",
+    "dark",
+    "dimly",
+    "doorway",
+    "dress",
+    "enters",
+    "formal",
+    "forward",
+    "frame",
+    "lit",
+    "little",
+    "look",
+    "man",
+    "medium",
+    "moved",
+    "now",
+    "partially",
+    "see",
+    "shirt",
+    "speech",
+    "suit",
+    "tie",
+    "walking",
+    "wears",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

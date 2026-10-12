@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3018665c4c171cae5e2e2b3e39c47fb571aeafc1dfc427778bf3bbe937b860dc",
+  "sha256": "3018665c4c171cae5e2e2b3e39c47fb571aeafc1dfc427778bf3bbe937b860dc",
+  "bytes": 17176435,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S06-v1-fixed.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

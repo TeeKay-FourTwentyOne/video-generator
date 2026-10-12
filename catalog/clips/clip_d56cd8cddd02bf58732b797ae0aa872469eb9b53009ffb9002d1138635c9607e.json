@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d56cd8cddd02bf58732b797ae0aa872469eb9b53009ffb9002d1138635c9607e",
+  "sha256": "d56cd8cddd02bf58732b797ae0aa872469eb9b53009ffb9002d1138635c9607e",
+  "bytes": 9776261,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_3_walker.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_3_walker"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Silhouetted figure walking down cobblestone European street in golden light. Vintage film aesthetic with sepia tones creates nostalgic, cinematic atmosphere.",
+      "transcript": "♪ Ah, ah, ah, ah ♪",
+      "tags": [
+        "against",
+        "approach",
+        "camera",
+        "closer",
+        "coat",
+        "cobblestone",
+        "continues",
+        "down",
+        "european",
+        "figure",
+        "golden",
+        "grows",
+        "larger",
+        "light",
+        "long",
+        "medium",
+        "methodical",
+        "now",
+        "person",
+        "silhouette",
+        "silhouetted",
+        "slightly",
+        "speech",
+        "still",
+        "street",
+        "toward",
+        "vintage",
+        "walker",
+        "walking"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Silhouette of person in long coat walking toward camera on cobblestone European street. Golden backlight, sepia tones, vintage film sprockets. Historic buildings line both sides. Long shadow stretches toward viewer."
+        },
+        {
+          "seconds": 4,
+          "text": "Walker continues approach down the cobblestone street. The figure grows slightly larger in frame. Golden light catches the wet stones. Atmospheric, cinematic quality."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Person now closer, still silhouetted against golden light. The methodical walking motion creates meditative rhythm. European architecture frames the solitary figure."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "approach",
+    "camera",
+    "closer",
+    "coat",
+    "cobblestone",
+    "continues",
+    "down",
+    "european",
+    "figure",
+    "golden",
+    "grows",
+    "larger",
+    "light",
+    "long",
+    "medium",
+    "methodical",
+    "now",
+    "person",
+    "silhouette",
+    "silhouetted",
+    "slightly",
+    "speech",
+    "still",
+    "street",
+    "toward",
+    "vintage",
+    "walker",
+    "walking"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

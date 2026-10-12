@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5d52d59324dae172fc91631f6dcd7e8834244002e7f4ca9b5e92168247784018",
+  "sha256": "5d52d59324dae172fc91631f6dcd7e8834244002e7f4ca9b5e92168247784018",
+  "bytes": 2237355,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763282565_hq7pbs.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763282565_hq7pbs"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This appears to be a dramatic war film scene showing a soldier in emotional distress, head bowed in what could be grief or prayer. The man remains relatively static throughout the clip, surrounded by military helmets in rainy conditions with atmospheric debris. The cinematic sepia color grading and dramatic lighting create an intense, somber wartime atmosphere.",
+      "transcript": "you",
+      "tags": [
+        "appears",
+        "bowed",
+        "close",
+        "composition",
+        "consistent",
+        "dark",
+        "dirt",
+        "distress",
+        "down",
+        "dramatic",
+        "emotional",
+        "film",
+        "hair",
+        "hand",
+        "head",
+        "his",
+        "identical",
+        "man",
+        "medium",
+        "nearly",
+        "pose",
+        "position",
+        "raised",
+        "remains",
+        "scene",
+        "showing",
+        "shown",
+        "soldier",
+        "speech",
+        "still",
+        "war",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man with dark hair is shown in close-up, head bowed down in an emotional pose. His face is covered in dirt and grime, wearing a dark olive/brown military-style jacket that appears worn and weathered. His right hand is raised near his face in a gesture of distress. Water droplets or rain are visible falling. Military helmets are visible in the lower portion of the frame. The lighting is dramatic with warm sepia tones, creating a somber war-time atmosphere."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man remains in nearly identical position, head still bowed with his dirt-covered face partially visible. The military jacket shows signs of wear and damage. His raised fist near his face suggests emotional anguish or prayer. Rain continues to fall, visible as streaks in the frame. Military helmets with water droplets remain visible at the bottom. The warm, desaturated color grading emphasizes the gritty wartime setting with dramatic side lighting."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The composition remains consistent with the man in the same emotional pose, head bowed and hand raised. A vertical line or crack appears to run through the center of the frame. His weathered military clothing and dirt-streaked face are clearly visible. Debris or particles float in the air around him. The military helmets are still present in the lower frame. The sepia-toned, high-contrast lighting maintains the intense dramatic atmosphere of what appears to be a war scene."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "bowed",
+    "close",
+    "composition",
+    "consistent",
+    "dark",
+    "dirt",
+    "distress",
+    "down",
+    "dramatic",
+    "emotional",
+    "film",
+    "hair",
+    "hand",
+    "head",
+    "his",
+    "identical",
+    "man",
+    "medium",
+    "nearly",
+    "pose",
+    "position",
+    "raised",
+    "remains",
+    "scene",
+    "showing",
+    "shown",
+    "soldier",
+    "speech",
+    "still",
+    "war",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

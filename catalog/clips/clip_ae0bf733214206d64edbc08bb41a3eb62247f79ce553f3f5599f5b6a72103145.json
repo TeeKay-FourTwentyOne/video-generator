@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ae0bf733214206d64edbc08bb41a3eb62247f79ce553f3f5599f5b6a72103145",
+  "sha256": "ae0bf733214206d64edbc08bb41a3eb62247f79ce553f3f5599f5b6a72103145",
+  "bytes": 18457950,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V13-v1.mp4",
+    "veo_1791428363000_hkm8z6.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Looking straight down into a square sondage at the bottom of a deep excavation trench at dusk, black, wet, oily mud with a dull sheen. In the center is a square opening about seventy centimeters on a side; through it, bright blue daylight sky with small white clouds drifting slowly, far brighter than the black mud around it. For the first moments nothing moves except the clouds. Then a blue nitrile-gloved hand enters from the right, sets a small black-and-white photographic scale bar with plain alternating black and white segments and no numbers on the black mud at the edge of the opening, then a small plastic north arrow beside it, and withdraws out of the frame. Nothing enters the opening and nothing falls into it. Camera is fixed, looking down, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c00aef3bec2a5d33491ba24be13a900941cb9aa133b4107726dbec321844803e",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3783086383,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

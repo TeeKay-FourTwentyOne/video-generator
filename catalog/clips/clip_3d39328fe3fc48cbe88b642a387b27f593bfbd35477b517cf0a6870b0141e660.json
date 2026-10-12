@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3d39328fe3fc48cbe88b642a387b27f593bfbd35477b517cf0a6870b0141e660",
+  "sha256": "3d39328fe3fc48cbe88b642a387b27f593bfbd35477b517cf0a6870b0141e660",
+  "bytes": 423755,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot06.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

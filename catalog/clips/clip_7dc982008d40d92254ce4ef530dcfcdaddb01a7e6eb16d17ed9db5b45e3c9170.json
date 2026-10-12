@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7dc982008d40d92254ce4ef530dcfcdaddb01a7e6eb16d17ed9db5b45e3c9170",
+  "sha256": "7dc982008d40d92254ce4ef530dcfcdaddb01a7e6eb16d17ed9db5b45e3c9170",
+  "bytes": 1326105,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763314406_a7urr9.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763314406_a7urr9"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip depicts a soldier silhouetted against a golden sunset, interacting with a rifle planted vertically in the ground in what appears to be a memorial or tribute scene. The sequence shows the figure approaching and seemingly placing something atop the weapon, all captured with dramatic backlighting and a vintage film strip aesthetic. The clip concludes with a 'Thank you for watching' message, suggesting this is the end of a larger video.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "adjust",
+        "against",
+        "appearing",
+        "assault",
+        "beside",
+        "both",
+        "cinematic",
+        "clip",
+        "closer",
+        "crouching",
+        "depicts",
+        "dramatic",
+        "figure",
+        "golden",
+        "interacting",
+        "medium",
+        "moved",
+        "now",
+        "place",
+        "reaching",
+        "rifle",
+        "shot",
+        "showing",
+        "silhouette",
+        "silhouetted",
+        "soldier",
+        "something",
+        "speech",
+        "standing",
+        "sunset",
+        "thank",
+        "top",
+        "toward",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dramatic silhouette shot showing a soldier figure crouching beside an assault rifle (appears to be an AK-style weapon) planted vertically in the ground. The scene is backlit by a bright golden-orange sunset/sunrise, creating a powerful contrast. The soldier wears what appears to be a cap or helmet. The composition is framed with film strip borders on top and bottom, giving it a cinematic quality. Dust or haze is visible in the warm atmospheric lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "The silhouetted soldier has moved closer to the rifle, now standing and reaching toward it with both hands. The same golden sunset backlighting creates a glowing halo effect around the weapon. The soldier's profile is clearly visible against the warm orange sky. Film grain and dust particles are visible in the atmospheric shot. The rifle remains planted vertically in what appears to be dirt or rough terrain. The film strip border effect continues."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The soldier is now crouching beside the rifle, appearing to place or adjust something at the top of the weapon - possibly flowers as a memorial gesture. The golden sunset continues to provide dramatic backlighting. The silhouette composition remains strong with the figure positioned to the right of frame. The dusty, hazy atmosphere and warm orange tones persist. The film strip aesthetic frames the emotional scene."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "adjust",
+    "against",
+    "appearing",
+    "assault",
+    "beside",
+    "both",
+    "cinematic",
+    "clip",
+    "closer",
+    "crouching",
+    "depicts",
+    "dramatic",
+    "figure",
+    "golden",
+    "interacting",
+    "medium",
+    "moved",
+    "now",
+    "place",
+    "reaching",
+    "rifle",
+    "shot",
+    "showing",
+    "silhouette",
+    "silhouetted",
+    "soldier",
+    "something",
+    "speech",
+    "standing",
+    "sunset",
+    "thank",
+    "top",
+    "toward",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

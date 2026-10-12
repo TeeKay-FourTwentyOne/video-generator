@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4c8283feda720b7d80e5a91f79dd78203dd1070ea0eb8c476c41b422ca418fd2",
+  "sha256": "4c8283feda720b7d80e5a91f79dd78203dd1070ea0eb8c476c41b422ca418fd2",
+  "bytes": 1143022,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767546762379_dc0cd8.mp4"
+  ],
+  "collections": [
+    "infinite_corridor"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767546762379_dc0cd8"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A fair-skinned woman in her 30s with short brown hair and medium build walks steadily down an endless institutional corridor with plain gray walls and highly reflective dark floors. The camera maintains a fixed wide shot from behind at floor level, creating a perfect symmetrical composition with extreme one-point perspective. Harsh fluorescent ceiling lights create a hypnotic rhythm as she passes beneath them, each light casting sharp pools of cool illumination that reflect dramatically on the polished floor. The identical doors blur past in mechanical repetition. Despite her consistent forward movement, the distant vanishing point remains impossibly static - never growing closer, creating an unsettling infinite loop effect. The lighting is moody and slightly desaturated with cool blue-gray tones. The camera work is Kubrickian - perfectly centered, mathematically precise framing that emphasizes the corridor's geometric infinity and the walker's futile progress toward an unreachable destination.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1c676c4a6299b937bc75ef6477be3440219c6e52e1e20336f93596f89f0736f4",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A fair-skinned woman in her 30s with short brown hair and medium build walks steadily down an endless institutional corridor with plain gray walls and highly reflective dark floors. The camera maintains a fixed wide shot from behind at floor level, creating a perfect symmetrical composition with extreme one-point perspective. Harsh fluorescent ceiling lights create a hypnotic rhythm as she passes beneath them, each light casting sharp pools of cool illumination that reflect dramatically on the polished floor. The identical doors blur past in mechanical repetition. Despite her consistent forward movement, the distant vanishing point remains impossibly static - never growing closer, creating an unsettling infinite loop effect. The lighting is moody and slightly desaturated with cool blue-gray tones. The camera work is Kubrickian - perfectly centered, mathematically precise framing that emphasizes the corridor's geometric infinity and the walker's futile progress toward an unreachable destination.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1c676c4a6299b937bc75ef6477be3440219c6e52e1e20336f93596f89f0736f4",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:11:59.950Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A short video clip showing a woman in a dark dress walking away from the camera down a long, blue-lit institutional corridor. The cinematography emphasizes symmetry, depth, and a moody atmosphere through cool lighting and reflective surfaces. The single word 'You' is spoken during this atmospheric sequence.",
+      "transcript": "You",
+      "tags": [
+        "appearing",
+        "away",
+        "camera",
+        "clip",
+        "closer",
+        "continues",
+        "corridor",
+        "dark",
+        "dimly",
+        "down",
+        "dress",
+        "frame",
+        "hair",
+        "long",
+        "medium",
+        "moves",
+        "now",
+        "perspective",
+        "progressed",
+        "she",
+        "short",
+        "showing",
+        "slightly",
+        "smaller",
+        "speech",
+        "video",
+        "walking",
+        "walks",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short dark hair walks away from the camera down a long, dimly lit corridor. She wears a dark fitted dress and heels, appearing as a silhouette against the cool blue-tinted lighting. The hallway features multiple doors on both sides, fluorescent ceiling lights creating a stark linear perspective. The polished floor reflects the overhead lights, creating a moody, cinematic atmosphere. The composition emphasizes depth and isolation through strong symmetrical framing."
+        },
+        {
+          "seconds": 2,
+          "text": "The woman continues walking down the same corridor, now slightly closer to the camera's perspective. Her gray/dark dress and short bob haircut are more visible in this frame. The blue-tinted lighting remains consistent, with fluorescent panels illuminating the ceiling. Multiple dark doorways line both walls, creating a repetitive pattern. The reflective floor shows light reflections, and the overall mood remains atmospheric and suspenseful. Her walking posture suggests purposeful movement forward."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has progressed further down the corridor, appearing smaller in the frame as she moves away. The same cool blue lighting dominates the scene, with ceiling fluorescent lights creating strong leading lines toward the vanishing point. Her silhouette remains centered in the composition, walking confidently toward the corridor's end. The symmetrical framing and reflective floor maintain the cinematic, slightly ominous atmosphere. The depth of the hallway is emphasized by the diminishing figure."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appearing",
+    "away",
+    "camera",
+    "clip",
+    "closer",
+    "continues",
+    "corridor",
+    "dark",
+    "dimly",
+    "down",
+    "dress",
+    "frame",
+    "hair",
+    "long",
+    "medium",
+    "moves",
+    "now",
+    "perspective",
+    "progressed",
+    "she",
+    "short",
+    "showing",
+    "slightly",
+    "smaller",
+    "speech",
+    "video",
+    "walking",
+    "walks",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

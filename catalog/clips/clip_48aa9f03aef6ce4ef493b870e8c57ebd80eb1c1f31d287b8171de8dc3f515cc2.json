@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_48aa9f03aef6ce4ef493b870e8c57ebd80eb1c1f31d287b8171de8dc3f515cc2",
+  "sha256": "48aa9f03aef6ce4ef493b870e8c57ebd80eb1c1f31d287b8171de8dc3f515cc2",
+  "bytes": 1002399,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_1_1766535272437.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_1_1766535272437"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Alternative take of the office phone scene with green plant visible in background. The phone remains static throughout, emphasizing the waiting-on-hold experience.",
+      "transcript": "You",
+      "tags": [
+        "against",
+        "alternative",
+        "background",
+        "beige",
+        "blurred",
+        "color",
+        "composition",
+        "contrast",
+        "desk",
+        "foliage",
+        "green",
+        "greenery",
+        "maintains",
+        "medium",
+        "neutral",
+        "office",
+        "phone",
+        "plant",
+        "position",
+        "provides",
+        "quality",
+        "reinforcing",
+        "scene",
+        "speech",
+        "static",
+        "stationary",
+        "take",
+        "telephone",
+        "throughout",
+        "unchanged",
+        "visible",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Beige office telephone on white desk with green plant foliage blurred in background. The handset rests in cradle with coiled cord. Small brown spot visible on desk surface. Clean office aesthetic."
+        },
+        {
+          "seconds": 3,
+          "text": "Same composition with phone stationary. The plant greenery provides color contrast against the neutral phone and desk. Waiting atmosphere conveyed through stillness."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Office phone unchanged in position. The scene maintains its static quality throughout, reinforcing the theme of being on hold. Natural office lighting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "alternative",
+    "background",
+    "beige",
+    "blurred",
+    "color",
+    "composition",
+    "contrast",
+    "desk",
+    "foliage",
+    "green",
+    "greenery",
+    "maintains",
+    "medium",
+    "neutral",
+    "office",
+    "phone",
+    "plant",
+    "position",
+    "provides",
+    "quality",
+    "reinforcing",
+    "scene",
+    "speech",
+    "static",
+    "stationary",
+    "take",
+    "telephone",
+    "throughout",
+    "unchanged",
+    "visible",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1b4961cd1cccdd99cca547dee82059d15866dc9f09322c6981d18c4ee02c1652",
+  "sha256": "1b4961cd1cccdd99cca547dee82059d15866dc9f09322c6981d18c4ee02c1652",
+  "bytes": 4123600,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545337401_uy8n76.mp4"
+  ],
+  "collections": [
+    "style_shift"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545337401_uy8n76"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build strides confidently through a neon-drenched cyberpunk cityscape at night. She walks forward through towering holographic advertisements flickering in electric blues, hot pinks, and acid greens that cast vibrant reflections on the rain-slicked pavement beneath her feet. Glowing neon signs buzz and flicker overhead as she moves through this dystopian future street with purposeful determination. The camera follows her in a smooth tracking shot at eye level, maintaining her central position as the colorful light washes over her silhouette. Heavy rain falls continuously, creating shimmering pools of reflected neon light on the wet asphalt. The atmosphere is thick with cyberpunk noir aesthetic - moody, atmospheric lighting with high contrast between the brilliant neon colors and deep shadows. Steam rises from manholes and the overall mood evokes classic Blade Runner cinematography with its blend of futuristic technology and urban decay.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_26ed6ae5f551cc3977db14aae5a7dc58d161bc4f4c9fe7e71411571de54f89dc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build strides confidently through a neon-drenched cyberpunk cityscape at night. She walks forward through towering holographic advertisements flickering in electric blues, hot pinks, and acid greens that cast vibrant reflections on the rain-slicked pavement beneath her feet. Glowing neon signs buzz and flicker overhead as she moves through this dystopian future street with purposeful determination. The camera follows her in a smooth tracking shot at eye level, maintaining her central position as the colorful light washes over her silhouette. Heavy rain falls continuously, creating shimmering pools of reflected neon light on the wet asphalt. The atmosphere is thick with cyberpunk noir aesthetic - moody, atmospheric lighting with high contrast between the brilliant neon colors and deep shadows. Steam rises from manholes and the overall mood evokes classic Blade Runner cinematography with its blend of futuristic technology and urban decay.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_26ed6ae5f551cc3977db14aae5a7dc58d161bc4f4c9fe7e71411571de54f89dc",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:48:14.321Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cyberpunk-styled video clip shows a woman in a dark tactical suit walking confidently toward the camera through a rain-soaked city street at night. The scene features dramatic neon lighting in various colors reflecting off wet pavement, creating a moody atmospheric aesthetic. Korean speech audio thanks viewers for watching as the subject approaches through the urban environment.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "appearing",
+        "camera",
+        "city",
+        "clip",
+        "closer",
+        "continues",
+        "curly",
+        "cyberpunk",
+        "dark",
+        "forward",
+        "frame",
+        "hair",
+        "her",
+        "larger",
+        "lit",
+        "maintaining",
+        "medium",
+        "moved",
+        "neon",
+        "now",
+        "rain",
+        "rainy",
+        "short",
+        "shows",
+        "silhouette",
+        "soaked",
+        "speech",
+        "street",
+        "styled",
+        "suit",
+        "tactical",
+        "toward",
+        "video",
+        "walking",
+        "walks",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short curly hair walks toward the camera on a rain-soaked city street at night. She wears a dark, form-fitting tactical suit or bodysuit. The scene is dominated by vibrant neon lights in cyan, purple, pink, orange, and green from billboards and signs on both sides. Rain is actively falling, creating reflections on the wet pavement. The composition is centered with shallow depth of field blurring the background. Low angle shot emphasizes her silhouette against the glowing urban backdrop."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman continues walking forward through the neon-lit rainy street. Her silhouette remains dark against the colorful backdrop of cyan, purple, and orange neon signs. Steam or mist rises from the ground on both sides. The wet street surface creates vivid reflections of the multicolored lights. Rain continues to fall visibly. The camera maintains a low frontal angle, keeping her centered in frame. The cyberpunk aesthetic is enhanced by the blurred urban environment and dramatic lighting contrast."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has moved closer to the camera, now appearing larger in frame while maintaining her centered position. She continues walking confidently through the rain-drenched cyberpunk cityscape. The neon reflections on the wet pavement are more prominent, showing purple, cyan, green, and orange hues. Her dark outfit contrasts sharply with the bright background lights. The shallow depth of field keeps focus on her silhouette while the urban environment remains artistically blurred. Rain persists throughout the scene."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appearing",
+    "camera",
+    "city",
+    "clip",
+    "closer",
+    "continues",
+    "curly",
+    "cyberpunk",
+    "dark",
+    "forward",
+    "frame",
+    "hair",
+    "her",
+    "larger",
+    "lit",
+    "maintaining",
+    "medium",
+    "moved",
+    "neon",
+    "now",
+    "rain",
+    "rainy",
+    "short",
+    "shows",
+    "silhouette",
+    "soaked",
+    "speech",
+    "street",
+    "styled",
+    "suit",
+    "tactical",
+    "toward",
+    "video",
+    "walking",
+    "walks",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

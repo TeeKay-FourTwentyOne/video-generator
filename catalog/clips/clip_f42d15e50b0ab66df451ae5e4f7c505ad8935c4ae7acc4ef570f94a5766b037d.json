@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f42d15e50b0ab66df451ae5e4f7c505ad8935c4ae7acc4ef570f94a5766b037d",
+  "sha256": "f42d15e50b0ab66df451ae5e4f7c505ad8935c4ae7acc4ef570f94a5766b037d",
+  "bytes": 2127636,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scroll_test_down200_ann.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:scroll_test_down200_ann"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This test clip demonstrates a vintage film strip animation with sprockets scrolling downward, featuring a silhouetted figure walking toward an intense golden light source. The sepia-toned footage progresses from showing the figure's legs to full body silhouette, culminating in a bright, blurred climax. The clip includes technical test overlay text and maintains a consistent cinematic, nostalgic aesthetic throughout.",
+      "transcript": "🔥🔥🔥",
+      "tags": [
+        "35mm",
+        "abstract",
+        "animation",
+        "backlit",
+        "blurred",
+        "center",
+        "classic",
+        "clip",
+        "demonstrates",
+        "dominates",
+        "downward",
+        "dramatic",
+        "figure",
+        "film",
+        "frame",
+        "golden",
+        "human",
+        "intense",
+        "medium",
+        "movie",
+        "reveal",
+        "scene",
+        "scrolled",
+        "scrolling",
+        "showing",
+        "shows",
+        "silhouette",
+        "speech",
+        "sprockets",
+        "standing",
+        "strip",
+        "test",
+        "vertical",
+        "view",
+        "vintage",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A vertical film strip dominates the center of the frame, showing classic 35mm movie film with visible sprocket holes along both edges. The film appears sepia-toned with warm golden-orange lighting emanating from the center, creating a dramatic backlit effect. At the top of the film frame, silhouetted legs of a figure are visible. Yellow test text overlay reads 'TEST 3: 200px DOWN' and 'Expect: Sprockets scroll DOWNWARD (fast)'. Film reels are partially visible on either side. The composition suggests a vintage cinema aesthetic."
+        },
+        {
+          "seconds": 4,
+          "text": "The film strip has scrolled to reveal a dramatic silhouette of a standing human figure, backlit by intense golden-orange light creating a halo effect. The person appears to be walking toward the light source, positioned centrally within the film frame. The sprocket holes are no longer visible, suggesting the film has advanced. Vertical film edges frame the scene on both sides. The same yellow test text remains at the top. The lighting creates an ethereal, cinematic atmosphere with strong contrast between the dark silhouette and bright background."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The scene shows an abstract, blurred view through the film strip with intense golden-white light dominating the center. The human figure is now barely discernible, obscured by motion blur and bright light effects suggesting rapid movement or transition. The vertical film strip edges remain visible on both sides, maintaining the cinema frame aesthetic. The lighting has intensified to near white-out levels in the center. The yellow test text overlay persists at the top. The overall effect suggests climactic intensity or transformation."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "35mm",
+    "abstract",
+    "animation",
+    "backlit",
+    "blurred",
+    "center",
+    "classic",
+    "clip",
+    "demonstrates",
+    "dominates",
+    "downward",
+    "dramatic",
+    "figure",
+    "film",
+    "frame",
+    "golden",
+    "human",
+    "intense",
+    "medium",
+    "movie",
+    "reveal",
+    "scene",
+    "scrolled",
+    "scrolling",
+    "showing",
+    "shows",
+    "silhouette",
+    "speech",
+    "sprockets",
+    "standing",
+    "strip",
+    "test",
+    "vertical",
+    "view",
+    "vintage",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

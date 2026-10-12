@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_38778be547dc37586bab0ad883f5fa9cb2fe26c266be77a85f323cafd04c7b55",
+  "sha256": "38778be547dc37586bab0ad883f5fa9cb2fe26c266be77a85f323cafd04c7b55",
+  "bytes": 124958803,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 121,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 2904,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "deep-time.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

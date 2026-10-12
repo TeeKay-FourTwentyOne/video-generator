@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_40418ff85c9b9f7665fbd7b5f13cd62fb6bf4cfadfd37bd44f851ae943074ed4",
+  "sha256": "40418ff85c9b9f7665fbd7b5f13cd62fb6bf4cfadfd37bd44f851ae943074ed4",
+  "bytes": 3208090,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S1_RAW.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Static wide shot, slow almost-imperceptible push. A gable-fronted two-story frame Victorian boarding house at last light, weathered whitewash, deep porch with a porch swing, picket fence and garden bed, a great oak in full summer leaf, a single amber-lit window downstairs. Steady warm rain, damp rutted lane with puddles reflecting the lit window, dripping eaves. Sound: steady rain on a tin roof, cicadas dulled by the rain, distant low thunder.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3873910ca04d540c1f98f96999d14398bfec39a93a6b9e1819c696165139e6e7",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

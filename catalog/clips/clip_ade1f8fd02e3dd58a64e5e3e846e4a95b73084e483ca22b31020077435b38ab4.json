@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ade1f8fd02e3dd58a64e5e3e846e4a95b73084e483ca22b31020077435b38ab4",
+  "sha256": "ade1f8fd02e3dd58a64e5e3e846e4a95b73084e483ca22b31020077435b38ab4",
+  "bytes": 862335,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot2slice.mp4"
+  ],
+  "collections": [
+    "the-lodger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5b128f60efa8af0a1860b1e369445498071e8bd7087d0aee109de4c2166d2591",
+  "sha256": "5b128f60efa8af0a1860b1e369445498071e8bd7087d0aee109de4c2166d2591",
+  "bytes": 14441393,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S03-v1.mp4",
+    "veo_1791504912629_l4v0tk.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

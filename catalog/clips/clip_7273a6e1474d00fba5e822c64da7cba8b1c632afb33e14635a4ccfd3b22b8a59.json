@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7273a6e1474d00fba5e822c64da7cba8b1c632afb33e14635a4ccfd3b22b8a59",
+  "sha256": "7273a6e1474d00fba5e822c64da7cba8b1c632afb33e14635a4ccfd3b22b8a59",
+  "bytes": 2629716,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "02-hall-emerald-strata.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_81a79ef6a48c6471b65c032f345d6a1e17a5e0f0ee86e94034dc1f1715d87ded",
+  "sha256": "81a79ef6a48c6471b65c032f345d6a1e17a5e0f0ee86e94034dc1f1715d87ded",
+  "bytes": 14661670,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "8second_shot_use_202601130807_elpe7.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:8second_shot_use_202601130807_elpe7"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This abstract video clip transitions through different visual states of a circular, portal-like organic structure. It begins with white line art on black, transforms into a vibrant green and brown bioluminescent appearance at its peak, then returns to monochromatic styling. The clip appears to be a stylized animation or visual effect piece with a 'Thank you for watching' message.",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "abstract",
+        "against",
+        "appearance",
+        "art",
+        "black",
+        "circular",
+        "clip",
+        "creating",
+        "dark",
+        "different",
+        "dramatic",
+        "featuring",
+        "frame",
+        "illuminated",
+        "like",
+        "line",
+        "medium",
+        "monochromatic",
+        "neon",
+        "now",
+        "organic",
+        "portal",
+        "predominantly",
+        "returns",
+        "scene",
+        "showing",
+        "silver",
+        "speech",
+        "states",
+        "structure",
+        "thank",
+        "transformation",
+        "transitions",
+        "vibrant",
+        "video",
+        "visual",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, predominantly black frame featuring abstract white line art creating an organic, circular pattern in the center. The design resembles a wreath or portal made of intricate, vein-like white outlines against the pure black background. Additional organic textures and patterns frame the edges of the image, creating a cave-like or biological appearance. The composition is centered with high contrast between the white linework and black void."
+        },
+        {
+          "seconds": 4,
+          "text": "A dramatic transformation showing a circular organic structure now illuminated with vibrant neon green and earthy brown/tan colors. The central ring appears moss-covered or organic, with bright green bioluminescent-like textures spreading throughout. The surrounding area features intricate green vein-like patterns against the black background. The composition creates a portal or cave opening effect with the green glow emanating from within the circular formation."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The scene returns to a monochromatic appearance with white/silver line art against a black background. An oval or circular ring structure made of intricate, crystalline or organic white outlines dominates the center. Rocky or textured formations frame the corners of the image. The composition maintains the portal-like aesthetic with the central void remaining completely black, creating depth and mystery in the abstract design."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "appearance",
+    "art",
+    "black",
+    "circular",
+    "clip",
+    "creating",
+    "dark",
+    "different",
+    "dramatic",
+    "featuring",
+    "frame",
+    "illuminated",
+    "like",
+    "line",
+    "medium",
+    "monochromatic",
+    "neon",
+    "now",
+    "organic",
+    "portal",
+    "predominantly",
+    "returns",
+    "scene",
+    "showing",
+    "silver",
+    "speech",
+    "states",
+    "structure",
+    "thank",
+    "transformation",
+    "transitions",
+    "vibrant",
+    "video",
+    "visual",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

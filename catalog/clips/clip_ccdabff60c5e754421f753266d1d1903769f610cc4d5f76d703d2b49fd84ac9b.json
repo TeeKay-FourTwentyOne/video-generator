@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ccdabff60c5e754421f753266d1d1903769f610cc4d5f76d703d2b49fd84ac9b",
+  "sha256": "ccdabff60c5e754421f753266d1d1903769f610cc4d5f76d703d2b49fd84ac9b",
+  "bytes": 16363643,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "seg1v2_s2718_RAW.mp4"
+  ],
+  "collections": [
+    "personal-best"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

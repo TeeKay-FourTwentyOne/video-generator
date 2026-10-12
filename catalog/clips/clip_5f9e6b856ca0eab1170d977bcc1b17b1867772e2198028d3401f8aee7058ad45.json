@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5f9e6b856ca0eab1170d977bcc1b17b1867772e2198028d3401f8aee7058ad45",
+  "sha256": "5f9e6b856ca0eab1170d977bcc1b17b1867772e2198028d3401f8aee7058ad45",
+  "bytes": 1872501,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767756940208_p5slzh.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767756940208_p5slzh"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip follows a young person with striking green eyes as they approach and peer into a mysterious circular opening in the ground. The sequence transitions from an intense extreme close-up of their face to a bird's eye view revealing an ornate metal grate surrounding a dark void. The warm, golden lighting and dramatic composition create a sense of mystery and anticipation.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "approach",
+        "bird",
+        "cinematic",
+        "clip",
+        "close",
+        "down",
+        "extreme",
+        "eye",
+        "eyes",
+        "face",
+        "focusing",
+        "follows",
+        "green",
+        "hazel",
+        "including",
+        "large",
+        "looking",
+        "medium",
+        "now",
+        "peering",
+        "person",
+        "showing",
+        "slightly",
+        "speech",
+        "striking",
+        "their",
+        "they",
+        "view",
+        "who",
+        "wider",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Extreme close-up of a young person's face, focusing on their striking green-hazel eyes with golden undertones. Dark brown hair falls across their forehead in messy strands. The lighting is warm and dramatic, with golden tones illuminating the left side of the face while the right remains in shadow. The subject has an intense, focused gaze directed slightly off-camera. A hooded garment is partially visible on the right edge. The shallow depth of field creates an intimate, cinematic quality."
+        },
+        {
+          "seconds": 2,
+          "text": "Slightly wider close-up of the same young person, now showing more of their face including nose and partial lips. Their intense green-hazel eyes maintain the same focused expression. The warm golden lighting continues from the left side. A dark hood or fabric is visible on the right. In the lower portion of the frame, metallic bars or a grate structure becomes visible, suggesting they are looking down at something. The composition creates tension and mystery."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Bird's eye view looking down at the same person who is now peering into a large circular opening with an ornate metal grate border featuring triangular geometric patterns. The center is completely black/dark, creating a void. The person's hands grip the edges of the opening. Warm sunlight illuminates the sandy/dusty ground and metal structure. The subject wears dark clothing. The composition emphasizes the mysterious dark opening."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "approach",
+    "bird",
+    "cinematic",
+    "clip",
+    "close",
+    "down",
+    "extreme",
+    "eye",
+    "eyes",
+    "face",
+    "focusing",
+    "follows",
+    "green",
+    "hazel",
+    "including",
+    "large",
+    "looking",
+    "medium",
+    "now",
+    "peering",
+    "person",
+    "showing",
+    "slightly",
+    "speech",
+    "striking",
+    "their",
+    "they",
+    "view",
+    "who",
+    "wider",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0299ab5f35d60d6ab04fd9862b5fa6eb68eb7148044d0a63e28edaa3290b7e85",
+  "sha256": "0299ab5f35d60d6ab04fd9862b5fa6eb68eb7148044d0a63e28edaa3290b7e85",
+  "bytes": 10199,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "april_credits.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

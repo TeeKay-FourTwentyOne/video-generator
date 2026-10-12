@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c1c134704ae3a1d0d938916268423db6ea87d298494decb66f9f66105a375454",
+  "sha256": "c1c134704ae3a1d0d938916268423db6ea87d298494decb66f9f66105a375454",
+  "bytes": 17194264,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S06-v1.cap.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

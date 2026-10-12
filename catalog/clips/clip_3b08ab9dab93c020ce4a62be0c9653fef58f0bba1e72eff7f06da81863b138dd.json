@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3b08ab9dab93c020ce4a62be0c9653fef58f0bba1e72eff7f06da81863b138dd",
+  "sha256": "3b08ab9dab93c020ce4a62be0c9653fef58f0bba1e72eff7f06da81863b138dd",
+  "bytes": 14847094,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "N2_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "A slow, almost imperceptible push forward from a doorway into a warm lamplit boarding house common room in the evening. At the near end of a long supper table a lean elderly man with a white mustache, in a collarless white shirt and dark suspenders, and a heavyset bald man in a grey work shirt lean over a wooden checkerboard mid-game, talking easily to each other. Further down the table a woman in her forties in a navy dress and wire spectacles marks a stack of blank papers by lamplight. {{CORA_LOCK}} She moves along the table carrying a white enamel coffee pot, leaning in to refill their cups, easy and practiced, and smiles down at something one of the men says. Beside the cold swept fireplace at the back of the room a worn brown leather armchair stands alone and empty; nobody sits in it and nobody looks at it. Brass chimney oil lamps only. Rain running down dark window glass. Deep brown shadow, dark walnut panelling. Sound: warm overlapping conversation with the words indistinct, a soft laugh, coffee pouring, checkers clicking on wood, steady rain on the roof.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6ad52217d92cff2851b95629ae428c941c5b2f214b56643c62f14e2b5189bc03",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {
+        "resolution": "1080p"
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

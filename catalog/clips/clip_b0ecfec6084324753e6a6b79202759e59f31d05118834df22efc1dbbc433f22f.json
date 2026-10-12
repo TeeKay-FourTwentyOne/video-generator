@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b0ecfec6084324753e6a6b79202759e59f31d05118834df22efc1dbbc433f22f",
+  "sha256": "b0ecfec6084324753e6a6b79202759e59f31d05118834df22efc1dbbc433f22f",
+  "bytes": 1902989,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "temporal_gen2_posterized.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:temporal_gen2_posterized"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Technical effects test applying posterization filter to the crossroads scene. The realistic footage gradually transforms into a stylized graphic look with reduced color palette and strong warm tones. Demonstrates another visual effect option for creative video processing.",
+      "transcript": "You",
+      "tags": [
+        "applied",
+        "applying",
+        "centered",
+        "colors",
+        "continues",
+        "creating",
+        "crossroads",
+        "effect",
+        "effects",
+        "face",
+        "fields",
+        "filter",
+        "footage",
+        "ghostly",
+        "graphic",
+        "limited",
+        "man",
+        "medium",
+        "overlay",
+        "palette",
+        "posterization",
+        "realistic",
+        "reduced",
+        "remains",
+        "road",
+        "scene",
+        "shifts",
+        "sky",
+        "speech",
+        "standing",
+        "stretching",
+        "stylized",
+        "subtle",
+        "technical",
+        "test",
+        "tonal",
+        "wheat",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Man standing on road through wheat fields with ghostly face overlay in sky. Same crossroads composition as other Sagittarius clips. Golden sunset lighting bathes the scene."
+        },
+        {
+          "seconds": 2,
+          "text": "Scene continues with subtle tonal shifts. The man remains centered on the road stretching to the horizon. Wheat fields glow golden in late afternoon light."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Posterization effect applied - colors reduced to limited palette creating stylized graphic look. Strong orange/amber tones dominate, giving the scene an illustrated quality."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_007",
+      "name": "The Wanderer",
+      "description": "Solitary man standing on straight road through wheat fields, ghostly face apparition in sky above, surreal/dreamlike quality",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "applied",
+    "applying",
+    "centered",
+    "colors",
+    "continues",
+    "creating",
+    "crossroads",
+    "effect",
+    "effects",
+    "face",
+    "fields",
+    "filter",
+    "footage",
+    "ghostly",
+    "graphic",
+    "limited",
+    "man",
+    "medium",
+    "overlay",
+    "palette",
+    "posterization",
+    "realistic",
+    "reduced",
+    "remains",
+    "road",
+    "scene",
+    "shifts",
+    "sky",
+    "speech",
+    "standing",
+    "stretching",
+    "stylized",
+    "subtle",
+    "technical",
+    "test",
+    "tonal",
+    "wheat",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

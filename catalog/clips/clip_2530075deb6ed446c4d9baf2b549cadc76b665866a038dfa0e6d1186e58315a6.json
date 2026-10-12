@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2530075deb6ed446c4d9baf2b549cadc76b665866a038dfa0e6d1186e58315a6",
+  "sha256": "2530075deb6ed446c4d9baf2b549cadc76b665866a038dfa0e6d1186e58315a6",
+  "bytes": 1225207,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767532069950_li08b7.mp4"
+  ],
+  "collections": [
+    "person_a_makes_a_phone_call_pe_1767531881917"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767532069950_li08b7"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Close-up split screen composition showing two people in separate spaces connected by technology. Left side: Person A bathed in warm golden light, their tense expression gradually relaxing into relief as they exhale softly, the harsh golden glow mellowing to a gentle amber warmth. Right side: Person B illuminated by cool blue light from their device, their initially neutral face softening with recognition and warmth, the stark blue tones gradually warming to a softer cyan. Camera holds steady on both faces as the lighting subtly shifts - the golden side becoming less intense and more peaceful, the blue side gaining subtle warm undertones. The color temperatures slowly converge toward a more harmonious balance, suggesting emotional connection bridging physical distance. Intimate framing captures micro-expressions of relief and recognition. Cinematic lighting with gradual color temperature shifts, soft focus background, emotional realism.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d860adedd250173fba5123218024bbfc434151a1ec330524c363338daf7afe69",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Close-up split screen composition showing two people in separate spaces connected by technology. Left side: Person A bathed in warm golden light, their tense expression gradually relaxing into relief as they exhale softly, the harsh golden glow mellowing to a gentle amber warmth. Right side: Person B illuminated by cool blue light from their device, their initially neutral face softening with recognition and warmth, the stark blue tones gradually warming to a softer cyan. Camera holds steady on both faces as the lighting subtly shifts - the golden side becoming less intense and more peaceful, the blue side gaining subtle warm undertones. The color temperatures slowly converge toward a more harmonious balance, suggesting emotional connection bridging physical distance. Intimate framing captures micro-expressions of relief and recognition. Cinematic lighting with gradual color temperature shifts, soft focus background, emotional realism.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d860adedd250173fba5123218024bbfc434151a1ec330524c363338daf7afe69",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T13:07:07.459Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This split-screen video contrasts two women with dramatically different lighting and emotional states - one in warm amber tones appearing tense or confrontational, the other in cool blue lighting transitioning from neutral to genuinely happy while looking at a device. The composition creates visual tension through color contrast while the word 'you' suggests direct communication between them.",
+      "transcript": "you",
+      "tags": [
+        "both",
+        "close",
+        "composition",
+        "continues",
+        "contrasts",
+        "different",
+        "dramatically",
+        "emotional",
+        "haired",
+        "left",
+        "lighting",
+        "maintains",
+        "medium",
+        "persists",
+        "screen",
+        "short",
+        "showing",
+        "side",
+        "speech",
+        "split",
+        "two",
+        "video",
+        "woman",
+        "women",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Split-screen composition showing two women. Left side: woman with short dark hair, warm orange/amber lighting, intense expression with furrowed brow and slightly open mouth, appearing distressed or confrontational. Right side: woman with long wavy brown hair, cool blue lighting, neutral expression, holding a phone or tablet at bottom of frame. Both are shown in close-up portrait framing, faces filling most of their respective halves. Strong color contrast between warm and cool tones creates dramatic visual tension."
+        },
+        {
+          "seconds": 2,
+          "text": "Same split-screen composition continues. Left side: short-haired woman maintains serious expression under warm amber lighting, mouth slightly open as if speaking, intense gaze. Right side: long-haired woman now displays a broad smile, eyes squinting with genuine happiness, still illuminated by cool blue lighting while holding device. The emotional contrast between the two subjects has shifted dramatically - one remains tense while the other appears delighted."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Split-screen persists with both women in close-up. Left side: short-haired woman's expression has softened slightly, still bathed in warm orange/amber tones, looking contemplative with closed mouth. Right side: long-haired woman continues smiling warmly, teeth visible, blue lighting casting cool tones across her face, phone/tablet visible at bottom edge. The composition maintains strong warm/cool color dichotomy throughout the sequence."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "both",
+    "close",
+    "composition",
+    "continues",
+    "contrasts",
+    "different",
+    "dramatically",
+    "emotional",
+    "haired",
+    "left",
+    "lighting",
+    "maintains",
+    "medium",
+    "persists",
+    "screen",
+    "short",
+    "showing",
+    "side",
+    "speech",
+    "split",
+    "two",
+    "video",
+    "woman",
+    "women",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

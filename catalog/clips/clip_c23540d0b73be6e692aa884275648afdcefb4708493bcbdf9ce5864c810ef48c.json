@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c23540d0b73be6e692aa884275648afdcefb4708493bcbdf9ce5864c810ef48c",
+  "sha256": "c23540d0b73be6e692aa884275648afdcefb4708493bcbdf9ce5864c810ef48c",
+  "bytes": 897342,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 11,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 330,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "seg_driftC.mp4"
+  ],
+  "collections": [
+    "false-color-motion"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

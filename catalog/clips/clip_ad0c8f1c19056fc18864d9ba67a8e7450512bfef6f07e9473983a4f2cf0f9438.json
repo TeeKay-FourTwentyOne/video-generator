@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ad0c8f1c19056fc18864d9ba67a8e7450512bfef6f07e9473983a4f2cf0f9438",
+  "sha256": "ad0c8f1c19056fc18864d9ba67a8e7450512bfef6f07e9473983a4f2cf0f9438",
+  "bytes": 13389981,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "v2_s4_jungle_raw.mp4"
+  ],
+  "collections": [
+    "steamboat-wilhelm"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

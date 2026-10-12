@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d9e2ae255e8c0a35cf00edcaf67714bbb2ed025e2d3b1511b439fa89e2aa4041",
+  "sha256": "d9e2ae255e8c0a35cf00edcaf67714bbb2ed025e2d3b1511b439fa89e2aa4041",
+  "bytes": 1433172,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot14.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

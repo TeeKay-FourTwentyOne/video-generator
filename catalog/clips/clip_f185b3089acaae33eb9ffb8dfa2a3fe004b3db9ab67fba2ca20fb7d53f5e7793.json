@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f185b3089acaae33eb9ffb8dfa2a3fe004b3db9ab67fba2ca20fb7d53f5e7793",
+  "sha256": "f185b3089acaae33eb9ffb8dfa2a3fe004b3db9ab67fba2ca20fb7d53f5e7793",
+  "bytes": 2046167,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668460605_p3tw6c.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668460605_p3tw6c"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Wide shot through a rain-streaked coffee shop window showing a woman sitting alone at a corner table, laptop closed in front of her, both hands wrapped around a ceramic mug as she stares pensively into the middle distance. Soft morning light filters through the wet glass, creating a gentle, diffused glow that bathes her figure. The camera remains perfectly still throughout, capturing the scene with balanced symmetry. Faint reflections of the busy street overlay the window, creating ethereal layers that emphasize her solitude. Warm wood tones of the coffee shop interior contrast with the cool, muted grays of the rainy street outside. Gentle steam rises from her coffee mug, adding a subtle sense of life to the stillness. The naturalistic lighting emphasizes the quiet, contemplative mood as she sits motionless in her corner sanctuary, the urban world moving silently beyond the glass barrier.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a7d3710281c9728df847cfa1690053a7d77cdaaa3c95190eeb6acf2c5f2d90e2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Wide shot through a rain-streaked coffee shop window showing a woman sitting alone at a corner table, laptop closed in front of her, both hands wrapped around a ceramic mug as she stares pensively into the middle distance. Soft morning light filters through the wet glass, creating a gentle, diffused glow that bathes her figure. The camera remains perfectly still throughout, capturing the scene with balanced symmetry. Faint reflections of the busy street overlay the window, creating ethereal layers that emphasize her solitude. Warm wood tones of the coffee shop interior contrast with the cool, muted grays of the rainy street outside. Gentle steam rises from her coffee mug, adding a subtle sense of life to the stillness. The naturalistic lighting emphasizes the quiet, contemplative mood as she sits motionless in her corner sanctuary, the urban world moving silently beyond the glass barrier.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a7d3710281c9728df847cfa1690053a7d77cdaaa3c95190eeb6acf2c5f2d90e2",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:00:08.043Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A contemplative woman sits in a cozy café on a rainy day, holding a coffee cup while gazing out a rain-streaked window as vehicles pass by outside. The 4-second clip captures a peaceful, reflective moment with Japanese audio expressing gratitude to viewers for watching until the end. The scene emphasizes the contrast between the warm café interior and the gray, wet street through layered window reflections.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "caf",
+        "coffee",
+        "contemplative",
+        "continues",
+        "cozy",
+        "cup",
+        "dark",
+        "day",
+        "gray",
+        "hair",
+        "held",
+        "her",
+        "holding",
+        "inside",
+        "medium",
+        "pose",
+        "rainy",
+        "remains",
+        "seated",
+        "sits",
+        "speech",
+        "still",
+        "sweater",
+        "table",
+        "wearing",
+        "woman",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with dark hair wearing a gray sweater sits at a wooden table inside a café, viewed through a rain-covered window. She holds a white coffee cup with both hands, gazing pensively to her right. A silver laptop is open in front of her, and a small potted plant sits nearby. The interior features warm wooden paneling. Street reflections are visible on the wet glass, creating a layered, atmospheric composition with soft natural lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains seated in the café, still holding her coffee cup in the same contemplative pose. Through the rain-streaked window, a blurred white vehicle with a red taillight passes by on the street, creating motion blur in the reflection. The café's warm wooden interior contrasts with the gray, rainy exterior. Her expression remains thoughtful as she looks toward the window. The laptop and plant maintain their positions on the table."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues her contemplative pose at the café table, coffee cup held in both hands. A larger vehicle reflection now dominates the window, showing a silver/gray car passing by with visible motion blur. The rain droplets on the glass remain prominent. Her gray sweater and dark hair contrast against the warm wooden café interior. The composition maintains the through-the-window perspective, emphasizing the cozy indoor atmosphere against the rainy street scene outside."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "caf",
+    "coffee",
+    "contemplative",
+    "continues",
+    "cozy",
+    "cup",
+    "dark",
+    "day",
+    "gray",
+    "hair",
+    "held",
+    "her",
+    "holding",
+    "inside",
+    "medium",
+    "pose",
+    "rainy",
+    "remains",
+    "seated",
+    "sits",
+    "speech",
+    "still",
+    "sweater",
+    "table",
+    "wearing",
+    "woman",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

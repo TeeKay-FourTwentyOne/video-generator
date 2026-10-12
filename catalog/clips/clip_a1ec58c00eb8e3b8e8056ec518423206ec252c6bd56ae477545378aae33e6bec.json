@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a1ec58c00eb8e3b8e8056ec518423206ec252c6bd56ae477545378aae33e6bec",
+  "sha256": "a1ec58c00eb8e3b8e8056ec518423206ec252c6bd56ae477545378aae33e6bec",
+  "bytes": 1624727,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3.083333,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 74,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S4_coldcoffee_trim.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

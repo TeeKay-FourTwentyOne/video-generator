@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9c7a353eb2208b6814a2ed5fc8a3bb2d238009fa85fefbdcf3595465cabb1e7f",
+  "sha256": "9c7a353eb2208b6814a2ed5fc8a3bb2d238009fa85fefbdcf3595465cabb1e7f",
+  "bytes": 9868570,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "v8b_s1_cartoon_raw.mp4"
+  ],
+  "collections": [
+    "steamboat-wilhelm"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

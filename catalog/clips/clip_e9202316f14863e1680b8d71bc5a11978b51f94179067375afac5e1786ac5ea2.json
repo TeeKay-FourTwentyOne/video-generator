@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e9202316f14863e1680b8d71bc5a11978b51f94179067375afac5e1786ac5ea2",
+  "sha256": "e9202316f14863e1680b8d71bc5a11978b51f94179067375afac5e1786ac5ea2",
+  "bytes": 77795972,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 32.5,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 780,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "film_4k.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

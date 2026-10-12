@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_51ebd1b362eade86627ea45354c5b8504354d89766491934601ac3e9bbc61a50",
+  "sha256": "51ebd1b362eade86627ea45354c5b8504354d89766491934601ac3e9bbc61a50",
+  "bytes": 748663,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot07_built.mp4"
+  ],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

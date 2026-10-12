@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a36dcf0a010600bcc49699212a2c7d0fef9aefb968d23b3451f5800089f3a9ab",
+  "sha256": "a36dcf0a010600bcc49699212a2c7d0fef9aefb968d23b3451f5800089f3a9ab",
+  "bytes": 1282549,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot5_face_seed3916197490.mp4",
+    "veo_1772421349472_yccyve.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "A person sits alone by a window. Camera frames them from chest up, then slowly drifts to their face. They wear simple dark clothing, warm soft natural light from the left. They look directly into the camera with a calm, neutral expression. Not smiling, not performing. A quiet moment of recognition. Hold on the face for the final three seconds. Sepia-toned, contemplative, intimate. 9:16 vertical frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_238f21137e461a43da8d84194bd5fa6dabaf44882aa881e4c960399ae79dc494",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 3916197490,
+      "createdAt": "2026-03-02T03:14:58.206Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

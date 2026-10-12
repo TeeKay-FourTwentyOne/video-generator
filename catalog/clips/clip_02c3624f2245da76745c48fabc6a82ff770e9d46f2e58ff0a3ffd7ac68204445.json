@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_02c3624f2245da76745c48fabc6a82ff770e9d46f2e58ff0a3ffd7ac68204445",
+  "sha256": "02c3624f2245da76745c48fabc6a82ff770e9d46f2e58ff0a3ffd7ac68204445",
+  "bytes": 9909447,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s5a_house_lean.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

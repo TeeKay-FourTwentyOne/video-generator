@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bd325ccef807f0b50a6d1d4fae1d9e6d6e2f6f63df6cdc781ef213384734e356",
+  "sha256": "bd325ccef807f0b50a6d1d4fae1d9e6d6e2f6f63df6cdc781ef213384734e356",
+  "bytes": 26053720,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "meridian-house-tour-v2.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

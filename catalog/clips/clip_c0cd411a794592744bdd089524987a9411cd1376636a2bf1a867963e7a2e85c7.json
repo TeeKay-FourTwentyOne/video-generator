@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c0cd411a794592744bdd089524987a9411cd1376636a2bf1a867963e7a2e85c7",
+  "sha256": "c0cd411a794592744bdd089524987a9411cd1376636a2bf1a867963e7a2e85c7",
+  "bytes": 4008543,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545322306_l1u1zu.mp4"
+  ],
+  "collections": [
+    "style_shift"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545322306_l1u1zu"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A confident Black woman in her 20s with very short, curly black hair and average build walks down a vibrant Japanese city street in anime cel-shaded animation style. She moves with an exaggerated confident stride, her body language bold and purposeful. The scene features flat, saturated colors with thick black outlines characteristic of traditional anime. Speed lines streak horizontally across the background, emphasizing her forward motion. Delicate pink cherry blossom petals drift gracefully past the frame in slow arcs. The street is stylized with typical Japanese urban elements - colorful signage, power lines, and architectural details rendered in the clean, geometric Studio Ghibli aesthetic mixed with modern anime flair. Camera follows her with a smooth tracking shot at eye level, maintaining focus on her determined expression and confident body language. Lighting is bright and even with subtle cel-shading shadows that define her form against the vivid background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c2c34646a89c2cc3accb2372983ed3b51e14d92fe695562191c12156f631c896",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A confident Black woman in her 20s with very short, curly black hair and average build walks down a vibrant Japanese city street in anime cel-shaded animation style. She moves with an exaggerated confident stride, her body language bold and purposeful. The scene features flat, saturated colors with thick black outlines characteristic of traditional anime. Speed lines streak horizontally across the background, emphasizing her forward motion. Delicate pink cherry blossom petals drift gracefully past the frame in slow arcs. The street is stylized with typical Japanese urban elements - colorful signage, power lines, and architectural details rendered in the clean, geometric Studio Ghibli aesthetic mixed with modern anime flair. Camera follows her with a smooth tracking shot at eye level, maintaining focus on her determined expression and confident body language. Lighting is bright and even with subtle cel-shading shadows that define her form against the vivid background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c2c34646a89c2cc3accb2372983ed3b51e14d92fe695562191c12156f631c896",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:47:59.858Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This animated clip depicts a determined Black female character running through a vibrant Japanese city street during cherry blossom season. The sequence shows her sprinting toward the camera with a brief moment where pink smoke obscures her face, then clearing to reveal her focused expression. The stylized animation features colorful urban Japanese aesthetics with power lines, signage, and floating cherry blossom petals.",
+      "transcript": "This is it.",
+      "tags": [
+        "animated",
+        "black",
+        "character",
+        "clip",
+        "closer",
+        "continues",
+        "curly",
+        "depicts",
+        "determined",
+        "face",
+        "female",
+        "fully",
+        "hair",
+        "head",
+        "her",
+        "japanese",
+        "medium",
+        "now",
+        "obscured",
+        "running",
+        "runs",
+        "short",
+        "shown",
+        "speech",
+        "street",
+        "toward",
+        "vibrant",
+        "view",
+        "visible"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An animated Black female character with short curly black hair runs toward the camera on a Japanese city street. She wears a colorful rainbow/tie-dye jacket over a white top and dark blue pants with a yellow emblem. The setting features typical Japanese urban elements: overhead power lines, colorful vertical signs with Japanese text (red, orange, green), multi-story buildings, and a crosswalk. Pink cherry blossom petals float in the air. The sky is bright blue with white clouds. Low-angle frontal shot emphasizing her determined expression."
+        },
+        {
+          "seconds": 2,
+          "text": "The same animated character continues running through the Japanese street, now with her head obscured by a large pink cloud or smoke effect. Her colorful jacket and white top remain visible as she crosses the zebra crossing. The urban Japanese setting persists with power lines, colorful signage, and buildings on both sides. Cherry blossoms are visible in the upper left corner. Pink petals scatter around her feet. The camera maintains the same low frontal angle, creating dynamic forward motion."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The animated character is now shown in a closer view, her face fully visible again with a determined, focused expression. She continues her running motion with arms pumping. Her rainbow-colored jacket shows purple, pink, orange, yellow, and blue sections. Cherry blossom branches with pink flowers are prominently visible in the upper left. The Japanese street scene continues with vertical signs, power lines, and buildings. A single pink petal floats near the bottom right. Dynamic low-angle shot emphasizes movement and urgency."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_021",
+      "name": "Hiro",
+      "description": "Athletic Black man running through Japanese street with cherry blossoms, colorful jacket, carrying basketball, anime-inspired style",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "animated",
+    "black",
+    "character",
+    "clip",
+    "closer",
+    "continues",
+    "curly",
+    "depicts",
+    "determined",
+    "face",
+    "female",
+    "fully",
+    "hair",
+    "head",
+    "her",
+    "japanese",
+    "medium",
+    "now",
+    "obscured",
+    "running",
+    "runs",
+    "short",
+    "shown",
+    "speech",
+    "street",
+    "toward",
+    "vibrant",
+    "view",
+    "visible"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

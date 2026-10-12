@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b39714699b76bb53ee5f2aa48e0ef8a2adb625f50cbb0e934329ada99b129f18",
+  "sha256": "b39714699b76bb53ee5f2aa48e0ef8a2adb625f50cbb0e934329ada99b129f18",
+  "bytes": 3557559,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "03_line_dry.edit.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_940a968a9349ec826d0fe565896bc730ad2da8a1ef9f58d9ad6accd84492088d",
+  "sha256": "940a968a9349ec826d0fe565896bc730ad2da8a1ef9f58d9ad6accd84492088d",
+  "bytes": 1753430,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767577920436_sa7kai.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767577838356"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767577920436_sa7kai"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A dynamic tracking shot circles an antique leather wallet floating at chest height, camera moving with increasing energy and urgency around the suspended object. The wallet's worn burgundy leather and ornate brass clasp catch golden hour light that gradually fades into cool blue shadows, creating a visual transition from warmth to melancholy. The camera spirals around the wallet in smooth, accelerating arcs, maintaining intimate close-up framing with shallow depth of field that keeps the background in soft, dreamy bokeh. As the brass clasp rotates through the changing light, it creates fleeting flashes of brilliance - moments of golden warmth that are immediately swallowed by encroaching blue shadows. The lighting shift happens progressively throughout the 4-second shot, starting with rich amber tones that slowly drain away, replaced by cooler, sadder blues. Dust motes drift through the shifting light, adding to the sense of time passing. The camera movement grows more desperate and searching as it circles, as if trying to hold onto something slipping away. Shot in slow motion to emphasize both the beauty and the aching sadness of the moment, with the wallet floating in a void of soft, out-of-focus atmosphere that transitions from sunset gold to twilight blue.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_407b6a5106b0a072fe30923d0e574f84d7c584631e0b5168e570d01d25dd41bb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A dynamic tracking shot circles an antique leather wallet floating at chest height, camera moving with increasing energy and urgency around the suspended object. The wallet's worn burgundy leather and ornate brass clasp catch golden hour light that gradually fades into cool blue shadows, creating a visual transition from warmth to melancholy. The camera spirals around the wallet in smooth, accelerating arcs, maintaining intimate close-up framing with shallow depth of field that keeps the background in soft, dreamy bokeh. As the brass clasp rotates through the changing light, it creates fleeting flashes of brilliance - moments of golden warmth that are immediately swallowed by encroaching blue shadows. The lighting shift happens progressively throughout the 4-second shot, starting with rich amber tones that slowly drain away, replaced by cooler, sadder blues. Dust motes drift through the shifting light, adding to the sense of time passing. The camera movement grows more desperate and searching as it circles, as if trying to hold onto something slipping away. Shot in slow motion to emphasize both the beauty and the aching sadness of the moment, with the wallet floating in a void of soft, out-of-focus atmosphere that transitions from sunset gold to twilight blue.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_407b6a5106b0a072fe30923d0e574f84d7c584631e0b5168e570d01d25dd41bb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:51:15.397Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic product video showcases a handcrafted brown leather wallet with brass button clasp, transitioning from an artistic abstract opening shot to clear product reveals. The clip features dramatic lighting changes from warm golden sunset tones to cool blue hour colors, with the wallet appearing to float against sky backgrounds. The clicking sounds in the audio likely correspond to the button clasp mechanism being demonstrated.",
+      "transcript": "Click, click, click, click.",
+      "tags": [
+        "against",
+        "angle",
+        "bivalve",
+        "blue",
+        "brass",
+        "brown",
+        "button",
+        "card",
+        "cinematic",
+        "clearly",
+        "click",
+        "closed",
+        "dark",
+        "elongated",
+        "gradient",
+        "handcrafted",
+        "holder",
+        "leather",
+        "medium",
+        "mussel",
+        "now",
+        "object",
+        "product",
+        "resembling",
+        "rich",
+        "shell",
+        "showcases",
+        "shown",
+        "similar",
+        "sky",
+        "soft",
+        "speech",
+        "video",
+        "wallet"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, elongated object resembling a closed mussel shell or similar bivalve is shown in profile against a warm, golden-orange background with soft bokeh effects. A small spherical metallic object (possibly a pearl or button) sits atop the shell. The lighting is dramatic with warm amber tones creating a sunset-like atmosphere. The composition is centered with shallow depth of field, creating an artistic, cinematic quality. The image suggests the beginning of a transformation sequence."
+        },
+        {
+          "seconds": 2,
+          "text": "A rich brown leather wallet or card holder is shown at an angle against a soft, hazy sky background with warm sunset tones. The wallet features visible stitching along its edges and a prominent brass or gold-colored spherical button clasp in the center. The lighting creates a warm glow on the left side of the leather. The wallet appears to be floating or suspended, shot from a low angle with shallow depth of field creating a dreamy, ethereal quality."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The same brown leather wallet is now shown more clearly against a gradient blue sky background transitioning from light blue at top to deeper blue below. The wallet is tilted at an angle, displaying its full front face with detailed saddle stitching visible along all edges. The brass button clasp with decorative plate is prominently featured. Warm lighting illuminates the left side while cooler blue tones affect the right, creating dramatic contrast. The composition suggests the wallet is floating in mid-air."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "bivalve",
+    "blue",
+    "brass",
+    "brown",
+    "button",
+    "card",
+    "cinematic",
+    "clearly",
+    "click",
+    "closed",
+    "dark",
+    "elongated",
+    "gradient",
+    "handcrafted",
+    "holder",
+    "leather",
+    "medium",
+    "mussel",
+    "now",
+    "object",
+    "product",
+    "resembling",
+    "rich",
+    "shell",
+    "showcases",
+    "shown",
+    "similar",
+    "sky",
+    "soft",
+    "speech",
+    "video",
+    "wallet"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

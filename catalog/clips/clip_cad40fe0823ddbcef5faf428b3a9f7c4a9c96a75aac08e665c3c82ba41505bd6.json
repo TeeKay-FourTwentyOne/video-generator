@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cad40fe0823ddbcef5faf428b3a9f7c4a9c96a75aac08e665c3c82ba41505bd6",
+  "sha256": "cad40fe0823ddbcef5faf428b3a9f7c4a9c96a75aac08e665c3c82ba41505bd6",
+  "bytes": 596448,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "p2b.mp4"
+  ],
+  "collections": [
+    "head-fake"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

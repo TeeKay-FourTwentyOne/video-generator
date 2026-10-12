@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e7f66c0385cc4d9be1687686fc8f816be749a5fd927587c979d4c35fa7e7b465",
+  "sha256": "e7f66c0385cc4d9be1687686fc8f816be749a5fd927587c979d4c35fa7e7b465",
+  "bytes": 4035155,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 14.583333,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 350,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "headfake_rough_v1.mp4"
+  ],
+  "collections": [
+    "head-fake"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

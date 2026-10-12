@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4d1d282f1f5f795899f40caeb52b8c6d3d7bcae8fb43a9ec65a5a85f6d66b85d",
+  "sha256": "4d1d282f1f5f795899f40caeb52b8c6d3d7bcae8fb43a9ec65a5a85f6d66b85d",
+  "bytes": 18057641,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 46.25,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 1110,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "polis-invitation.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

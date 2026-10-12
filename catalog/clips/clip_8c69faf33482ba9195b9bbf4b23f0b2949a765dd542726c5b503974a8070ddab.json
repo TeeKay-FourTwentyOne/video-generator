@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8c69faf33482ba9195b9bbf4b23f0b2949a765dd542726c5b503974a8070ddab",
+  "sha256": "8c69faf33482ba9195b9bbf4b23f0b2949a765dd542726c5b503974a8070ddab",
+  "bytes": 12977777,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S06-v1.mp4",
+    "veo_1791058294419_7sdowa.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "A wide, locked-off view inside a tall greenhouse tower at night, a hand-built cinematic miniature. The dead tree glows warm amber from every branch, filling the tall structure with soft light that breathes very gently, and fine dust drifts through the glow. On the aisle beside the planter, the small maintenance machine stands completely still and dark: its chest holds only an empty dark socket ring, it gives off no light of its own, and its chest stays dark for the whole shot. Over the course of the shot its small cream ceramic head turns slowly toward the glowing tree and tilts gently upward toward the branches, and nothing else about it moves. The camera never moves. No new light sources appear, no new objects, no people. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_16ad55381cef23d30a8d76f5f7a3412f24a2a4d95ab35cb29466e281640885b5",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

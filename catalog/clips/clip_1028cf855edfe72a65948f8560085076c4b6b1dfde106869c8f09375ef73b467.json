@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1028cf855edfe72a65948f8560085076c4b6b1dfde106869c8f09375ef73b467",
+  "sha256": "1028cf855edfe72a65948f8560085076c4b6b1dfde106869c8f09375ef73b467",
+  "bytes": 3033106,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767741905686_b61f0e.mp4"
+  ],
+  "collections": [
+    "sagittarius_why_choose"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767741905686_b61f0e"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots, maintaining a neutral, direct expression, stands alone on a narrow rocky ridgeline at the summit of a sharp mountain peak. Wide shot capturing the figure small against the vast landscape. Golden hour sunlight bathes the entire scene in warm amber tones, creating long shadows across the rocky terrain and grassy slopes below. The man stands still, gazing out at endless mountain peaks that stretch to the horizon, layered in atmospheric perspective from warm golden foregrounds to cool blue distant ranges. A gentle breeze moves his shoulder-length hair and open jacket subtly. The camera executes an extremely slow, almost imperceptible push forward toward the solitary figure over 5 seconds, maintaining the wide framing throughout. The composition emphasizes the immense scale of the landscape, with the traveler centered but dwarfed by the surrounding peaks. Soft, even lighting creates balanced exposure across the frame, with the low-angle sun providing natural rim lighting on the figure and ridgeline. The scene maintains a contemplative stillness despite the subtle movement of wind and camera.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_86b07c1a0f2b8506dda1d36ec8a24392211f5ef3f982b3e7cdb47254a8bc465c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots, maintaining a neutral, direct expression, stands alone on a narrow rocky ridgeline at the summit of a sharp mountain peak. Wide shot capturing the figure small against the vast landscape. Golden hour sunlight bathes the entire scene in warm amber tones, creating long shadows across the rocky terrain and grassy slopes below. The man stands still, gazing out at endless mountain peaks that stretch to the horizon, layered in atmospheric perspective from warm golden foregrounds to cool blue distant ranges. A gentle breeze moves his shoulder-length hair and open jacket subtly. The camera executes an extremely slow, almost imperceptible push forward toward the solitary figure over 5 seconds, maintaining the wide framing throughout. The composition emphasizes the immense scale of the landscape, with the traveler centered but dwarfed by the surrounding peaks. Soft, even lighting creates balanced exposure across the frame, with the low-angle sun providing natural rim lighting on the figure and ridgeline. The scene maintains a contemplative stillness despite the subtle movement of wind and camera.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_86b07c1a0f2b8506dda1d36ec8a24392211f5ef3f982b3e7cdb47254a8bc465c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T23:24:13.006Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip shows a bearded man with long hair standing atop a mountain summit during golden hour, gazing contemplatively at the surrounding mountain panorama. The camera slowly shifts perspective while maintaining focus on the subject against the dramatic alpine backdrop. The clip concludes with the spoken phrase 'Thanks for watching!' suggesting this is the ending of a longer outdoor or travel video.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "aged",
+        "atop",
+        "beard",
+        "bearded",
+        "brown",
+        "clip",
+        "confidently",
+        "continues",
+        "gaze",
+        "hair",
+        "his",
+        "length",
+        "long",
+        "looking",
+        "maintaining",
+        "man",
+        "medium",
+        "middle",
+        "mountain",
+        "peak",
+        "remains",
+        "right",
+        "rightward",
+        "rocky",
+        "shoulder",
+        "shows",
+        "speech",
+        "standing",
+        "stands",
+        "still",
+        "summit",
+        "thanks",
+        "toward",
+        "vertical",
+        "video",
+        "watching",
+        "wavy"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with shoulder-length wavy brown hair and a beard stands on a rocky mountain summit. He wears an olive green jacket over a beige henley shirt, khaki pants, and tan hiking boots. He gazes to his right with a contemplative expression. The background reveals a stunning panoramic view of layered mountain ranges bathed in warm golden hour sunlight. Gray rocky outcrops frame the foreground, with the sky showing soft blue and pale orange tones. The vertical composition emphasizes the dramatic elevation."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man remains standing on the mountain peak, maintaining his rightward gaze. His full body is visible, positioned centrally in the frame. The warm sunset lighting illuminates his face and clothing with golden tones. The mountain ridge extends behind him, showing grassy alpine terrain transitioning to rocky peaks. Multiple mountain layers recede into atmospheric haze in the background. The camera angle is slightly low, shooting upward to emphasize his commanding position atop the summit."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man continues standing confidently on the rocky summit, still looking toward the right. The camera has shifted slightly, revealing more of the mountain ridge extending behind him to the right. The golden hour lighting creates warm highlights on the terrain and his clothing. Distant mountain peaks are visible through atmospheric haze, with some showing distinctive rocky formations. The composition maintains the vertical format with rocky foreground elements and expansive mountain vistas filling the background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aged",
+    "atop",
+    "beard",
+    "bearded",
+    "brown",
+    "clip",
+    "confidently",
+    "continues",
+    "gaze",
+    "hair",
+    "his",
+    "length",
+    "long",
+    "looking",
+    "maintaining",
+    "man",
+    "medium",
+    "middle",
+    "mountain",
+    "peak",
+    "remains",
+    "right",
+    "rightward",
+    "rocky",
+    "shoulder",
+    "shows",
+    "speech",
+    "standing",
+    "stands",
+    "still",
+    "summit",
+    "thanks",
+    "toward",
+    "vertical",
+    "video",
+    "watching",
+    "wavy"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_279df77aad87349e583e5687db6e6fb04071a2ca354c8a035fd832a770d0abd3",
+  "sha256": "279df77aad87349e583e5687db6e6fb04071a2ca354c8a035fd832a770d0abd3",
+  "bytes": 57549111,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 26.916667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 646,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "GEO6.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

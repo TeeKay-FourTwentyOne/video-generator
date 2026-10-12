@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a0cbd92d01e41be1194f562d8998ecd8bfb6b2b6dfd22b4a8d0ea9d1e26251dc",
+  "sha256": "a0cbd92d01e41be1194f562d8998ecd8bfb6b2b6dfd22b4a8d0ea9d1e26251dc",
+  "bytes": 1552426,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767544758542_y4ntw3.mp4"
+  ],
+  "collections": [
+    "sentient_stapler_comedy"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767544758542_y4ntw3"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short graying hair, neat goatee, and wire-rimmed glasses sits at his desk in a sterile corporate office with beige cubicle partitions and thick square support pillars. Cool fluorescent lighting from the grid-patterned drop ceiling creates a monochromatic greige atmosphere. The camera starts with a medium shot of the accountant, then quick-cuts to extreme close-ups of his widening eyes behind glasses showing deadpan surprise. Cut to macro shots of a black stapler's metal jaws opening and closing rhythmically - once, twice, three times - with no human hand touching it. The metallic clicking sound punctuates the quiet office ambiance. Quick cuts between his increasingly bewildered expression and the autonomous stapler create comedic timing. The lighting remains consistently cool and diffuse throughout, emphasizing the absurdity of the supernatural office equipment malfunction against the mundane corporate backdrop.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e8839a6ed52503192c25eb3ff5d8d5385bf450e46d451dcdd8fd44a342b32568",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short graying hair, neat goatee, and wire-rimmed glasses sits at his desk in a sterile corporate office with beige cubicle partitions and thick square support pillars. Cool fluorescent lighting from the grid-patterned drop ceiling creates a monochromatic greige atmosphere. The camera starts with a medium shot of the accountant, then quick-cuts to extreme close-ups of his widening eyes behind glasses showing deadpan surprise. Cut to macro shots of a black stapler's metal jaws opening and closing rhythmically - once, twice, three times - with no human hand touching it. The metallic clicking sound punctuates the quiet office ambiance. Quick cuts between his increasingly bewildered expression and the autonomous stapler create comedic timing. The lighting remains consistently cool and diffuse throughout, emphasizing the absurdity of the supernatural office equipment malfunction against the mundane corporate backdrop.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e8839a6ed52503192c25eb3ff5d8d5385bf450e46d451dcdd8fd44a342b32568",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:38:37.091Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short comedic clip shows an office worker transitioning from a calm, neutral expression to one of exaggerated shock and horror. The dramatic reveal focuses on a mundane black stapler, suggesting a humorous overreaction to an everyday office object. The clip uses dramatic camera work and depth-of-field effects to build comedic tension, ending with the man saying 'Bye bye' to the stapler.",
+      "transcript": "Bye bye.",
+      "tags": [
+        "aged",
+        "alarm",
+        "black",
+        "bye",
+        "calm",
+        "clip",
+        "close",
+        "comedic",
+        "composition",
+        "continues",
+        "cubicle",
+        "dramatic",
+        "dramatically",
+        "expression",
+        "extreme",
+        "eyes",
+        "face",
+        "final",
+        "focus",
+        "foreground",
+        "frame",
+        "goatee",
+        "gray",
+        "hair",
+        "his",
+        "identical",
+        "intensified",
+        "maintaining",
+        "maintains",
+        "man",
+        "medium",
+        "metal",
+        "middle",
+        "multi-scene",
+        "neutral",
+        "office",
+        "position",
+        "prominently",
+        "remains",
+        "setting",
+        "sharp",
+        "shifts",
+        "shock",
+        "shocked",
+        "short",
+        "show",
+        "showing",
+        "shows",
+        "sits",
+        "slightly",
+        "speech",
+        "stapler",
+        "transitioning",
+        "worker"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with gray hair and a gray goatee sits in an office cubicle environment. He wears rectangular wire-framed glasses, a light blue dress shirt with a breast pocket, and a gray patterned tie. His expression is neutral and composed. The background shows beige cubicle partitions, fluorescent ceiling lights, and white support columns typical of a corporate office. The framing is a medium shot, centered on the subject from chest up, with soft, even office lighting."
+        },
+        {
+          "seconds": 0.44,
+          "text": "The same man remains in the identical position and setting, maintaining his neutral expression. The office environment with beige cubicle walls and fluorescent lighting continues to be visible behind him. He sits in what appears to be a black office chair. The composition remains unchanged from the previous frame - a straightforward medium shot with the subject centered. The lighting is flat and typical of corporate office environments."
+        },
+        {
+          "seconds": 2,
+          "text": "Dramatic close-up of the man's face showing an expression of shock or alarm. His eyes are wide open, eyebrows raised, and mouth agape. The camera has moved much closer, filling the frame with his face from forehead to chin. His wire-framed glasses and gray goatee are clearly visible. The blue shirt collar and a different patterned tie are partially visible. The background is now blurred, with only hints of the office environment remaining."
+        },
+        {
+          "seconds": 2.27,
+          "text": "The extreme close-up continues with the man's shocked expression slightly intensified. His eyes remain wide with visible whites around the irises, mouth still open in apparent disbelief or fear. The framing is nearly identical to the previous frame, focusing tightly on his facial features. Forehead wrinkles are prominent, emphasizing his alarmed state. The blurred office background remains barely visible at the edges of the frame."
+        },
+        {
+          "seconds": 2.48,
+          "text": "The composition shifts dramatically to show a black metal stapler in sharp focus in the foreground, positioned on a light-colored desk surface. The man's face is now blurred in the background, still showing his shocked expression with wide eyes and open mouth. This creates a dramatic depth-of-field effect emphasizing the stapler as the object of his attention. The stapler appears to be a standard office model with chrome accents."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The final frame maintains the same composition with the black stapler prominently in focus in the foreground. The man's blurred face in the background continues to display his shocked, open-mouthed expression. The shallow depth of field keeps the stapler sharp while the subject remains soft. The lighting highlights the stapler's metallic surfaces. This framing suggests the stapler is the source of his dramatic reaction, creating comedic tension."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_015",
+      "name": "Gerald",
+      "description": "Middle-aged man with grey hair, beard, rectangular glasses, light blue dress shirt and patterned tie, office cubicle setting",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "alarm",
+    "black",
+    "bye",
+    "calm",
+    "clip",
+    "close",
+    "comedic",
+    "composition",
+    "continues",
+    "cubicle",
+    "dramatic",
+    "dramatically",
+    "expression",
+    "extreme",
+    "eyes",
+    "face",
+    "final",
+    "focus",
+    "foreground",
+    "frame",
+    "goatee",
+    "gray",
+    "hair",
+    "his",
+    "identical",
+    "intensified",
+    "maintaining",
+    "maintains",
+    "man",
+    "medium",
+    "metal",
+    "middle",
+    "multi-scene",
+    "neutral",
+    "office",
+    "position",
+    "prominently",
+    "remains",
+    "setting",
+    "sharp",
+    "shifts",
+    "shock",
+    "shocked",
+    "short",
+    "show",
+    "showing",
+    "shows",
+    "sits",
+    "slightly",
+    "speech",
+    "stapler",
+    "transitioning",
+    "worker"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

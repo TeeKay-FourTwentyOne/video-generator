@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_73f2a400ad8180da72126e77f23e44d353bc319be47a6cc89f27cfe482626976",
+  "sha256": "73f2a400ad8180da72126e77f23e44d353bc319be47a6cc89f27cfe482626976",
+  "bytes": 23021238,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "conveyor_boxes.mp4"
+  ],
+  "collections": [
+    "dual-use"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bcd6dda7d22c28d2d4e74552190e1a30bf0a6acf4ec55dd207724f44716d94ac",
+  "sha256": "bcd6dda7d22c28d2d4e74552190e1a30bf0a6acf4ec55dd207724f44716d94ac",
+  "bytes": 9439926,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767757836107_1ybatz.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767757836107_1ybatz"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a woman transitioning from a studio portrait setting to an outdoor suburban scene where she rescues baby ducklings from a storm drain. The narrative arc captures her discovery, retrieval, and joyful moment holding the rescued ducklings during golden hour lighting. The clip appears to be a heartwarming advertisement or short film about an unexpected act of kindness.",
+      "transcript": "Oh.",
+      "tags": [
+        "bending",
+        "brown",
+        "centered",
+        "clip",
+        "down",
+        "ducklings",
+        "golden",
+        "hair",
+        "holding",
+        "hour",
+        "length",
+        "medium",
+        "now",
+        "outdoor",
+        "outdoors",
+        "over",
+        "portrait",
+        "scene",
+        "setting",
+        "shoulder",
+        "shows",
+        "small",
+        "speech",
+        "stands",
+        "street",
+        "studio",
+        "suburban",
+        "transitioning",
+        "two",
+        "upright",
+        "wavy",
+        "woman",
+        "yellow"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with shoulder-length brown wavy hair stands centered in a studio setting against a dark gray backdrop. She wears a cream/off-white knit sweater, blue jeans, and dark sneakers. A small cream-colored crossbody bag hangs at her hip on a dark strap. She stands with arms at her sides, facing the camera directly. The lighting is dramatic with a spotlight effect creating shadows on the floor. Black vertical bars frame the sides of the image."
+        },
+        {
+          "seconds": 4,
+          "text": "The same woman is now outdoors on a suburban street during golden hour, bending down over an open storm drain or manhole. She's smiling and reaching into the drain with both hands, appearing to retrieve something yellow (possibly ducklings). Her crossbody bag has changed to a dark green/teal color. The warm sunset lighting creates long shadows on the asphalt road. Houses, parked cars, and green lawns are visible in the background."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The woman stands upright on the suburban street, holding two small yellow ducklings close to her chest with both hands. She's smiling warmly, looking down at the ducklings. The golden hour sunlight creates a bright backlit effect with lens flare. The suburban neighborhood setting shows houses with garages, parked cars, trees, and manicured lawns. Her cream sweater and dark crossbody bag are clearly visible against the warm-toned background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bending",
+    "brown",
+    "centered",
+    "clip",
+    "down",
+    "ducklings",
+    "golden",
+    "hair",
+    "holding",
+    "hour",
+    "length",
+    "medium",
+    "now",
+    "outdoor",
+    "outdoors",
+    "over",
+    "portrait",
+    "scene",
+    "setting",
+    "shoulder",
+    "shows",
+    "small",
+    "speech",
+    "stands",
+    "street",
+    "studio",
+    "suburban",
+    "transitioning",
+    "two",
+    "upright",
+    "wavy",
+    "woman",
+    "yellow"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

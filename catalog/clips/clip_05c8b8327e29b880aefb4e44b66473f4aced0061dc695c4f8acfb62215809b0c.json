@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_05c8b8327e29b880aefb4e44b66473f4aced0061dc695c4f8acfb62215809b0c",
+  "sha256": "05c8b8327e29b880aefb4e44b66473f4aced0061dc695c4f8acfb62215809b0c",
+  "bytes": 18091142,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s02b.mp4",
+    "veo_1789507533576_znlvg5.mp4"
+  ],
+  "collections": [
+    "scary-woods-episode-02"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

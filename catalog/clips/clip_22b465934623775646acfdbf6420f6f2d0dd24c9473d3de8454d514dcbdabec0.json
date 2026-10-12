@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_22b465934623775646acfdbf6420f6f2d0dd24c9473d3de8454d514dcbdabec0",
+  "sha256": "22b465934623775646acfdbf6420f6f2d0dd24c9473d3de8454d514dcbdabec0",
+  "bytes": 1081340,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "D-gold-city-quiet-people-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

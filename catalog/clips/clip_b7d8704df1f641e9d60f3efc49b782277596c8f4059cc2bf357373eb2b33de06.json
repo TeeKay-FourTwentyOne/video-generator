@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b7d8704df1f641e9d60f3efc49b782277596c8f4059cc2bf357373eb2b33de06",
+  "sha256": "b7d8704df1f641e9d60f3efc49b782277596c8f4059cc2bf357373eb2b33de06",
+  "bytes": 2866341,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S4_coldcoffee.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

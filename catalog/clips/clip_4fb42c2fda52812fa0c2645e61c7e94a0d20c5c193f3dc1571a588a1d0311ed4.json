@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4fb42c2fda52812fa0c2645e61c7e94a0d20c5c193f3dc1571a588a1d0311ed4",
+  "sha256": "4fb42c2fda52812fa0c2645e61c7e94a0d20c5c193f3dc1571a588a1d0311ed4",
+  "bytes": 5076490,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v6_fish.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

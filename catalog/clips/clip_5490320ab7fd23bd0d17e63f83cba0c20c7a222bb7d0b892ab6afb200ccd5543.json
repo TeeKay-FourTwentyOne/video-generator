@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5490320ab7fd23bd0d17e63f83cba0c20c7a222bb7d0b892ab6afb200ccd5543",
+  "sha256": "5490320ab7fd23bd0d17e63f83cba0c20c7a222bb7d0b892ab6afb200ccd5543",
+  "bytes": 3187129,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545325346_5m5hlp.mp4"
+  ],
+  "collections": [
+    "style_shift"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545325346_5m5hlp"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build walks confidently down a rain-slicked city street at night in classic film noir style. Shot in dramatic black and white with harsh shadows and high contrast lighting. Pools of bright light from vintage streetlamps create dramatic chiaroscuro effects on the wet pavement. Venetian blind shadows stripe across building walls and her silhouette. She moves with a slow, deliberate stride, her footsteps echoing on the reflective asphalt. Camera follows her at a low angle, emphasizing her confident presence against the moody urban backdrop. Classic 1940s detective movie aesthetic with deep shadows, sharp contrasts, and atmospheric street lighting cutting through the darkness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2f62a5f8b53be4de46cd80499e9516cd8fbabc9104f5aa2b582c5458cf4e9f08",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Black woman in her 20s with very short, curly black hair and average build walks confidently down a rain-slicked city street at night in classic film noir style. Shot in dramatic black and white with harsh shadows and high contrast lighting. Pools of bright light from vintage streetlamps create dramatic chiaroscuro effects on the wet pavement. Venetian blind shadows stripe across building walls and her silhouette. She moves with a slow, deliberate stride, her footsteps echoing on the reflective asphalt. Camera follows her at a low angle, emphasizing her confident presence against the moody urban backdrop. Classic 1940s detective movie aesthetic with deep shadows, sharp contrasts, and atmospheric street lighting cutting through the darkness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2f62a5f8b53be4de46cd80499e9516cd8fbabc9104f5aa2b582c5458cf4e9f08",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:47:52.826Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short clip presents a classic film noir aesthetic in black and white, featuring a woman in period-appropriate attire (fedora and long coat) on a rain-soaked nighttime street. The sequence progresses from a stationary pose to walking movement, with vintage street lamps providing dramatic lighting against wet reflective pavement. The clip concludes with a 'Thank you for watching' message delivered over the atmospheric imagery.",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "across",
+        "aesthetic",
+        "black",
+        "classic",
+        "clip",
+        "coat",
+        "continues",
+        "featuring",
+        "fedora",
+        "film",
+        "final",
+        "frame",
+        "fuller",
+        "image",
+        "long",
+        "medium",
+        "mid",
+        "noir",
+        "now",
+        "presents",
+        "scene",
+        "short",
+        "showing",
+        "shown",
+        "shows",
+        "silhouette",
+        "speech",
+        "street",
+        "stride",
+        "style",
+        "thank",
+        "walking",
+        "watching",
+        "wearing",
+        "wet",
+        "white",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A black and white noir-style image showing a woman in silhouette wearing a fedora hat and long dark coat, standing on a wet cobblestone street at night. She faces right in profile view. A vintage street lamp glows in the upper left corner, casting light on a building with horizontal siding and shuttered windows. The wet pavement reflects the lamplight, creating dramatic contrast. The composition places the figure on the right third of the frame."
+        },
+        {
+          "seconds": 2,
+          "text": "The same noir scene continues with the woman in fedora and long coat now shown in fuller figure, standing on the rain-slicked street. The vintage street lamp remains visible in the upper left, illuminating the building facade behind her. Her silhouette is more defined against the wet pavement's reflections. The camera angle appears slightly wider, showing more of her full-length coat. The dramatic black and white contrast emphasizes the classic film noir aesthetic with strong shadows."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The final frame shows the woman mid-stride, walking across the wet street in her long coat and fedora. Multiple street lamps are now visible receding into the background, creating depth. Her posture suggests forward movement with one leg extended. The wet pavement continues to reflect the lamplight dramatically. The camera has pulled back slightly to capture her walking motion. Additional distant lights create atmospheric depth in this classic noir composition."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "across",
+    "aesthetic",
+    "black",
+    "classic",
+    "clip",
+    "coat",
+    "continues",
+    "featuring",
+    "fedora",
+    "film",
+    "final",
+    "frame",
+    "fuller",
+    "image",
+    "long",
+    "medium",
+    "mid",
+    "noir",
+    "now",
+    "presents",
+    "scene",
+    "short",
+    "showing",
+    "shown",
+    "shows",
+    "silhouette",
+    "speech",
+    "street",
+    "stride",
+    "style",
+    "thank",
+    "walking",
+    "watching",
+    "wearing",
+    "wet",
+    "white",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

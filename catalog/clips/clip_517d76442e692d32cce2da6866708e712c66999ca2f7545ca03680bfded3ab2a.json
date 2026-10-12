@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_517d76442e692d32cce2da6866708e712c66999ca2f7545ca03680bfded3ab2a",
+  "sha256": "517d76442e692d32cce2da6866708e712c66999ca2f7545ca03680bfded3ab2a",
+  "bytes": 5131292,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539224168_h9epap.mp4"
+  ],
+  "collections": [
+    "a_solitary_astronaut_floats_th_1767539132269"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539224168_h9epap"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A lone astronaut in a pristine white spacesuit stands at the threshold of a vast underground cavern, slowly walking forward into the sacred center as massive glowing hieroglyphs begin to pulse and spiral across every curved wall and surface around them. The ancient symbols illuminate in waves of deep blues and brilliant teals, creating a bioluminescent symphony that bathes the explorer in an ethereal aurora of cosmic light. The camera slowly pushes forward following the astronaut, then gently tilts upward to reveal the full majesty of the spiraling hieroglyphs that cover the domed ceiling above. The astronaut's reflective helmet visor captures and multiplies the dancing patterns of light, creating prismatic reflections of the ancient knowledge surrounding them. Cinematic lighting with deep blue and teal bioluminescent accents creates a dreamlike, mysterious atmosphere as the symbols pulse in perfect harmony, their luminous energy casting moving shadows and highlights across the astronaut's suit. The scene has a reverent, awe-inspiring quality as if witnessing the revelation of profound cosmic secrets written in light itself.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_646a26f3eea8721fd2b00acae280d05d0c79bd073914fd10a17686042b7b3314",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A lone astronaut in a pristine white spacesuit stands at the threshold of a vast underground cavern, slowly walking forward into the sacred center as massive glowing hieroglyphs begin to pulse and spiral across every curved wall and surface around them. The ancient symbols illuminate in waves of deep blues and brilliant teals, creating a bioluminescent symphony that bathes the explorer in an ethereal aurora of cosmic light. The camera slowly pushes forward following the astronaut, then gently tilts upward to reveal the full majesty of the spiraling hieroglyphs that cover the domed ceiling above. The astronaut's reflective helmet visor captures and multiplies the dancing patterns of light, creating prismatic reflections of the ancient knowledge surrounding them. Cinematic lighting with deep blue and teal bioluminescent accents creates a dreamlike, mysterious atmosphere as the symbols pulse in perfect harmony, their luminous energy casting moving shadows and highlights across the astronaut's suit. The scene has a reverent, awe-inspiring quality as if witnessing the revelation of profound cosmic secrets written in light itself.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_646a26f3eea8721fd2b00acae280d05d0c79bd073914fd10a17686042b7b3314",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:06:21.719Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This CGI/digital art video clip shows an astronaut standing before a mesmerizing spiral tunnel of glowing cyan Korean-style characters, creating a sci-fi portal effect. Throughout the 4-second clip, the figure remains stationary while the luminescent text pattern appears to slowly rotate, with a glowing ring appearing beneath the astronaut by the end. The audio includes a 'Thank you for watching' message, suggesting this is an outro sequence.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "art",
+        "astronaut",
+        "back",
+        "blue",
+        "camera",
+        "centered",
+        "cgi",
+        "characters",
+        "circle",
+        "clip",
+        "cyan",
+        "digital",
+        "distinct",
+        "facing",
+        "glowing",
+        "hypnotic",
+        "luminescent",
+        "medium",
+        "mesmerizing",
+        "now",
+        "position",
+        "remains",
+        "ring",
+        "shows",
+        "spacesuit",
+        "speech",
+        "spiral",
+        "standing",
+        "stands",
+        "still",
+        "thank",
+        "their",
+        "video",
+        "visible",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An astronaut in a white spacesuit stands with their back to the camera, facing a mesmerizing spiral tunnel of glowing cyan/blue Korean-style characters and symbols. The figure is centered in the frame, illuminated by the ethereal blue light emanating from the swirling text vortex. The environment appears dark and cave-like at the edges, with the astronaut standing on what seems to be a reflective surface showing a glowing arrow symbol. The vertical 9:16 composition creates an immersive portal effect."
+        },
+        {
+          "seconds": 2,
+          "text": "The astronaut remains centered, still facing the hypnotic spiral of luminescent blue characters that appear to rotate or shift slightly. The white spacesuit reflects the cyan glow, with visible equipment including an orange accent piece on the back. The spiral pattern of alien or stylized text continues to dominate the background, creating depth as characters appear smaller toward the center. The rocky, dark terrain frames the bottom of the scene while the figure maintains their contemplative stance."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The astronaut stands in the same position, now with a distinct glowing cyan ring or circle visible on the ground beneath them. The spiral of illuminated characters has shifted, showing different symbols in the rotating pattern. The overall blue-cyan color palette remains dominant, with the spacesuit appearing slightly more illuminated. The composition maintains the dramatic vertical framing with the figure dwarfed by the massive swirling vortex of mysterious glowing text surrounding them."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "art",
+    "astronaut",
+    "back",
+    "blue",
+    "camera",
+    "centered",
+    "cgi",
+    "characters",
+    "circle",
+    "clip",
+    "cyan",
+    "digital",
+    "distinct",
+    "facing",
+    "glowing",
+    "hypnotic",
+    "luminescent",
+    "medium",
+    "mesmerizing",
+    "now",
+    "position",
+    "remains",
+    "ring",
+    "shows",
+    "spacesuit",
+    "speech",
+    "spiral",
+    "standing",
+    "stands",
+    "still",
+    "thank",
+    "their",
+    "video",
+    "visible",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

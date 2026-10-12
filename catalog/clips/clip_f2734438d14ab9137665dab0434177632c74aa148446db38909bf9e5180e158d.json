@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f2734438d14ab9137665dab0434177632c74aa148446db38909bf9e5180e158d",
+  "sha256": "f2734438d14ab9137665dab0434177632c74aa148446db38909bf9e5180e158d",
+  "bytes": 4631653,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "A-gilt-edges.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d7295d0995961829192de76207f119b4e7c2c6e8192fbfaea62840e1810c0c11",
+  "sha256": "d7295d0995961829192de76207f119b4e7c2c6e8192fbfaea62840e1810c0c11",
+  "bytes": 922569,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767578315705_pps7p9.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767578225875"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767578315705_pps7p9"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The camera pulls back rapidly with handheld energy, breathing with visceral movement as it retreats from extreme close-up to a wide symmetrical frame. A worn leather wallet rotates slowly through the air in slow motion, its brass clasp catching then losing the last rays of golden hour light. As the camera settles into stillness, the wallet hovers perfectly centered in frame, suspended against a background where warm amber light battles cool blue shadows creeping in from the edges. The handheld shakiness gradually calms to complete stability. Heavy film grain blooms across the image, softening all edges like a fading photograph. The wallet completes its final rotation, the brass clasp now dim and tarnished in the dying light. Golden warmth slowly gives way to melancholic blue tones as shadows claim more of the frame. The camera holds absolutely still on this bittersweet tableau - the wallet frozen in space, bathed in the last nostalgic glow of sunset transitioning to twilight, grain texture rendering everything dreamlike and ephemeral, as if capturing the exact moment a memory begins to fade.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a6cfa80560bf237d65866c597f9eddd76d215799c630f105b4a36704324f1229",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The camera pulls back rapidly with handheld energy, breathing with visceral movement as it retreats from extreme close-up to a wide symmetrical frame. A worn leather wallet rotates slowly through the air in slow motion, its brass clasp catching then losing the last rays of golden hour light. As the camera settles into stillness, the wallet hovers perfectly centered in frame, suspended against a background where warm amber light battles cool blue shadows creeping in from the edges. The handheld shakiness gradually calms to complete stability. Heavy film grain blooms across the image, softening all edges like a fading photograph. The wallet completes its final rotation, the brass clasp now dim and tarnished in the dying light. Golden warmth slowly gives way to melancholic blue tones as shadows claim more of the frame. The camera holds absolutely still on this bittersweet tableau - the wallet frozen in space, bathed in the last nostalgic glow of sunset transitioning to twilight, grain texture rendering everything dreamlike and ephemeral, as if capturing the exact moment a memory begins to fade.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a6cfa80560bf237d65866c597f9eddd76d215799c630f105b4a36704324f1229",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:57:52.366Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip showcases a brown leather wallet being displayed against a sunset/dusk sky backdrop. The sequence begins with an extremely blurred shot that gradually comes into sharp focus, revealing the wallet's craftsmanship details including brass hardware and stitching. The dramatic backlighting creates a silhouette effect while highlighting the product's features in what appears to be a stylized product showcase video.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "bifold",
+        "blurred",
+        "brown",
+        "centrally",
+        "clip",
+        "dark",
+        "displayed",
+        "dusk",
+        "focus",
+        "heavily",
+        "held",
+        "image",
+        "leather",
+        "medium",
+        "now",
+        "out",
+        "positioned",
+        "remains",
+        "shapes",
+        "sharp",
+        "showcases",
+        "showing",
+        "silent",
+        "silhouetted",
+        "sky",
+        "sunset",
+        "suspended",
+        "vertical",
+        "video",
+        "wallet"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A heavily blurred, out-of-focus image showing dark silhouetted shapes against a gradient sky transitioning from blue at the top to warm orange/yellow near the horizon. The main subject appears to be an indistinct dark form, possibly a hand holding an object, positioned center-frame. The composition suggests a sunset or dusk setting with the camera very close to the subject, creating extreme bokeh. The vertical framing and low angle emphasize the sky backdrop."
+        },
+        {
+          "seconds": 2,
+          "text": "A brown leather bifold wallet is now in sharp focus, suspended or held against a twilight sky. The wallet features visible stitching along the edges, a brass snap button closure on a leather tab on the right side, and a small metallic ball or bead attachment at the top. The background shows a gradient sky from blue to orange with a dark horizon line. The wallet is silhouetted, creating dramatic backlighting. Shot from a low angle in vertical portrait orientation."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The same brown leather wallet remains in focus, positioned centrally against the dusk sky. The composition is nearly identical to the previous frame, showing the wallet's brass snap closure, leather tab, and metallic ball attachment clearly visible. The stitching detail along the wallet's edges is apparent. The background maintains the blue-to-orange gradient sky with a dark, blurred horizon. The lighting creates a silhouette effect while still revealing the wallet's texture and hardware details."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "bifold",
+    "blurred",
+    "brown",
+    "centrally",
+    "clip",
+    "dark",
+    "displayed",
+    "dusk",
+    "focus",
+    "heavily",
+    "held",
+    "image",
+    "leather",
+    "medium",
+    "now",
+    "out",
+    "positioned",
+    "remains",
+    "shapes",
+    "sharp",
+    "showcases",
+    "showing",
+    "silent",
+    "silhouetted",
+    "sky",
+    "sunset",
+    "suspended",
+    "vertical",
+    "video",
+    "wallet"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

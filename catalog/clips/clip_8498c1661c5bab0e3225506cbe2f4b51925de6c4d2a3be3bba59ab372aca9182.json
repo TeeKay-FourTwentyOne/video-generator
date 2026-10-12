@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8498c1661c5bab0e3225506cbe2f4b51925de6c4d2a3be3bba59ab372aca9182",
+  "sha256": "8498c1661c5bab0e3225506cbe2f4b51925de6c4d2a3be3bba59ab372aca9182",
+  "bytes": 1130698,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 30,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "03-ending-daughter.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

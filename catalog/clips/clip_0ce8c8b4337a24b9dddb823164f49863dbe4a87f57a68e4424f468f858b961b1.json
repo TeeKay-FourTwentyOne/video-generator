@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0ce8c8b4337a24b9dddb823164f49863dbe4a87f57a68e4424f468f858b961b1",
+  "sha256": "0ce8c8b4337a24b9dddb823164f49863dbe4a87f57a68e4424f468f858b961b1",
+  "bytes": 3116473,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767756922254_ujutz7.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767756922254_ujutz7"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A peaceful suburban street scene during golden hour showing a man walking along a sidewalk past mailboxes in a typical American neighborhood. The clip captures the warm, nostalgic atmosphere of a tree-lined residential street with parked cars and white houses. Korean speech at the end translates to 'Thank you for watching,' suggesting this is the conclusion of a video.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "along",
+        "appears",
+        "bathed",
+        "checking",
+        "closer",
+        "continues",
+        "dark",
+        "golden",
+        "hour",
+        "mailbox",
+        "man",
+        "medium",
+        "near",
+        "now",
+        "passed",
+        "past",
+        "peaceful",
+        "possibly",
+        "residential",
+        "scene",
+        "showing",
+        "speech",
+        "standing",
+        "stopping",
+        "street",
+        "suburban",
+        "sunlight",
+        "walking",
+        "warm"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A suburban residential street bathed in warm golden hour sunlight. A man in dark clothing walks on the left sidewalk, approaching a black mailbox with red flag. Several cars are parked along both sides of the tree-lined street. White houses with porches and white picket fences are visible on both sides. Large mature trees create dappled shadows across the asphalt road. The sun creates a bright backlit effect through the foliage. Camera is positioned low, looking down the street toward the sun."
+        },
+        {
+          "seconds": 2,
+          "text": "The same suburban street scene continues with the man now closer to the mailbox, walking past it on the sidewalk. The golden sunset lighting remains consistent, casting long shadows across the road. Parked vehicles including a silver sedan on the left and several cars on the right remain stationary. The composition maintains the low angle perspective looking down the tree-lined street. White residential homes with manicured lawns frame both sides of the scene."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man has now passed the mailbox and appears to be stopping or standing near it, possibly checking mail. He remains in dark clothing on the left side of frame. The warm golden hour lighting continues to illuminate the peaceful suburban scene. The street perspective remains unchanged with parked cars, mature trees, and white houses visible. Fallen autumn leaves are scattered along the curb. The backlit sun creates a glowing effect through the tree canopy."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "along",
+    "appears",
+    "bathed",
+    "checking",
+    "closer",
+    "continues",
+    "dark",
+    "golden",
+    "hour",
+    "mailbox",
+    "man",
+    "medium",
+    "near",
+    "now",
+    "passed",
+    "past",
+    "peaceful",
+    "possibly",
+    "residential",
+    "scene",
+    "showing",
+    "speech",
+    "standing",
+    "stopping",
+    "street",
+    "suburban",
+    "sunlight",
+    "walking",
+    "warm"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

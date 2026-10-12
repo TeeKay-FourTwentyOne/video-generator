@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e1508f455d8dcb9d69937ed874067037860c0d79c2e633b52f9d369ce66d9cf7",
+  "sha256": "e1508f455d8dcb9d69937ed874067037860c0d79c2e633b52f9d369ce66d9cf7",
+  "bytes": 4353136,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1772416288980_0lfn51.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "A red fox trots through a snow-covered pine forest at golden hour. Sunlight streams through the trees casting long amber shadows across pristine white snow. The fox pauses, looks directly at the camera, breath visible in the cold air. Cinematic nature documentary style, shallow depth of field, warm golden backlight.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_af723f00df4d16f3a23a91692f5c58221a7c55ae583d767bf3adeed1700516dd",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-03-02T01:50:05.700Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

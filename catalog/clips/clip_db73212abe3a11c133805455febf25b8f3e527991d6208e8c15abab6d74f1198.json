@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_db73212abe3a11c133805455febf25b8f3e527991d6208e8c15abab6d74f1198",
+  "sha256": "db73212abe3a11c133805455febf25b8f3e527991d6208e8c15abab6d74f1198",
+  "bytes": 1553596,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot_3-17_r1.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

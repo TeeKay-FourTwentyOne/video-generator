@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_08020ae8f0cda83afd105993311674b323c7f628f7bb14ba7025c37fe5bcf092",
+  "sha256": "08020ae8f0cda83afd105993311674b323c7f628f7bb14ba7025c37fe5bcf092",
+  "bytes": 1299077,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668458325_9hb8kp.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668458325_9hb8kp"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot from behind a man's shoulder as he enters a dimly lit coffee shop, the camera slowly pushing past him into the interior space. Tables and chairs emerge from soft blur in the foreground while cool fluorescent ceiling lights mix with warm Edison bulbs hanging at varying heights, creating dramatic pockets of golden light and deep shadows throughout the space. The camera continues its deliberate forward movement, gradually bringing a woman sitting alone at a distant table into sharp focus in the background, her face illuminated by a warm pool of light while she remains unaware of his presence. The doorbell's metallic chime echoes through the hushed atmosphere as shadows dance across worn wooden floors and the steam from coffee machines creates a hazy, dreamlike quality in the amber-tinted air.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_416a81c3d2799677a60c5e2ba04469be29b6d6dcb0a9359f3b6b0d0e151d2ced",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot from behind a man's shoulder as he enters a dimly lit coffee shop, the camera slowly pushing past him into the interior space. Tables and chairs emerge from soft blur in the foreground while cool fluorescent ceiling lights mix with warm Edison bulbs hanging at varying heights, creating dramatic pockets of golden light and deep shadows throughout the space. The camera continues its deliberate forward movement, gradually bringing a woman sitting alone at a distant table into sharp focus in the background, her face illuminated by a warm pool of light while she remains unaware of his presence. The doorbell's metallic chime echoes through the hushed atmosphere as shadows dance across worn wooden floors and the steam from coffee machines creates a hazy, dreamlike quality in the amber-tinted air.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_416a81c3d2799677a60c5e2ba04469be29b6d6dcb0a9359f3b6b0d0e151d2ced",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:00:15.018Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures a peaceful moment inside a rustic coffee shop, beginning with a man's back in the foreground observing a woman reading alone at a table. As the camera reveals more of the space, the man exits the frame, leaving focus on the woman enjoying her book in the warm, Edison-lit atmosphere with professional coffee equipment visible on the counter.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "amber",
+        "beginning",
+        "blue",
+        "captures",
+        "clip",
+        "coffee",
+        "continued",
+        "cozy",
+        "dark",
+        "frame",
+        "hair",
+        "her",
+        "inside",
+        "interior",
+        "lighting",
+        "longer",
+        "man",
+        "medium",
+        "moment",
+        "now",
+        "peaceful",
+        "reading",
+        "ribbed",
+        "rustic",
+        "shop",
+        "speech",
+        "still",
+        "table",
+        "view",
+        "warm",
+        "window",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Interior of a cozy coffee shop with warm amber lighting. A man with dark hair and beard is shown from behind in the right foreground, wearing a dark collared shirt. In the background, a woman in a blue sweater sits at a wooden table reading a book with a white cup nearby. Edison-style pendant bulbs hang from the ceiling, and a coffee grinder is visible on the right. The scene has wooden wainscoting, cream walls, and a wooden door in the background."
+        },
+        {
+          "seconds": 2,
+          "text": "The same coffee shop interior, now with the man no longer in frame. The woman in the blue ribbed sweater remains seated at the wooden table, focused on reading her book with a white coffee cup beside her. The counter area on the right shows an espresso machine and coffee grinder with steam rising. Warm Edison bulbs illuminate the space. A menu board is visible on the wall. The wooden floor and rustic decor create an inviting atmosphere."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Continued view of the coffee shop with the woman still reading at her table by the window. Natural light enters from the left window while warm pendant lights provide ambient illumination. The espresso machine and grinder on the wooden counter remain prominent on the right side. The composition shows the full depth of the space with cream-colored walls, wooden wainscoting, and a closed wooden door in the background. Steam or haze adds atmosphere near the counter area."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "amber",
+    "beginning",
+    "blue",
+    "captures",
+    "clip",
+    "coffee",
+    "continued",
+    "cozy",
+    "dark",
+    "frame",
+    "hair",
+    "her",
+    "inside",
+    "interior",
+    "lighting",
+    "longer",
+    "man",
+    "medium",
+    "moment",
+    "now",
+    "peaceful",
+    "reading",
+    "ribbed",
+    "rustic",
+    "shop",
+    "speech",
+    "still",
+    "table",
+    "view",
+    "warm",
+    "window",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

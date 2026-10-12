@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9ab9f05a67bf0f863de66abf79205d18db24353e9c9a0df0157238728efc0200",
+  "sha256": "9ab9f05a67bf0f863de66abf79205d18db24353e9c9a0df0157238728efc0200",
+  "bytes": 11433,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "title_card.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_dba7a4018c3d1482a7a17e259db7bdb037889da152be242e3c3440bfff3ad1e2",
+  "sha256": "dba7a4018c3d1482a7a17e259db7bdb037889da152be242e3c3440bfff3ad1e2",
+  "bytes": 5021731,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V14-v1.mp4",
+    "veo_1791430804706_x0xskn.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Camera lies on the floor of a deep excavation pit at dusk, looking straight up. The pit's black, wet mud walls rise on all sides to a ragged opening of dim evening sky. An older woman with grey hair tied back in a dark field jacket leans over the rim of the pit and looks down at the camera, almost still: she breathes slowly, her head turns a little, a few strands of her hair move in the wind. Her face stays visible against the sky. Nobody else; nothing is lowered into the pit. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f1fe33b6d1119469f17e3bcde03693b4df71774c435f5a3b6ac493379971e3c4",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1888099556,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

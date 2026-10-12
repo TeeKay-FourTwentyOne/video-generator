@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_82201b39cccc016270d39a1ab267ff5ba36e86e6f187099c5832d433fde50941",
+  "sha256": "82201b39cccc016270d39a1ab267ff5ba36e86e6f187099c5832d433fde50941",
+  "bytes": 11748,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "beat0_title.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

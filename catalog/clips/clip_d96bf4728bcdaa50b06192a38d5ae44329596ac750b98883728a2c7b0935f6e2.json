@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d96bf4728bcdaa50b06192a38d5ae44329596ac750b98883728a2c7b0935f6e2",
+  "sha256": "d96bf4728bcdaa50b06192a38d5ae44329596ac750b98883728a2c7b0935f6e2",
+  "bytes": 1411941,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Hand_pours_wine_202604252117.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

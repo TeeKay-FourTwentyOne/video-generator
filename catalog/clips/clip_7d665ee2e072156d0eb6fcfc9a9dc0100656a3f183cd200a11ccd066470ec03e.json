@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7d665ee2e072156d0eb6fcfc9a9dc0100656a3f183cd200a11ccd066470ec03e",
+  "sha256": "7d665ee2e072156d0eb6fcfc9a9dc0100656a3f183cd200a11ccd066470ec03e",
+  "bytes": 2139349,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "gravity_memories_shot_1_1766615770464.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:gravity_memories_shot_1_1766615770464"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Alternative take of a vintage leather wallet tumbling slowly in zero gravity against black. The rotation reveals different angles of the worn leather object, emphasizing its suspended, dreamlike quality.",
+      "transcript": "www.microsoft.com",
+      "tags": [
+        "against",
+        "alternative",
+        "angle",
+        "appearing",
+        "black",
+        "brown",
+        "close",
+        "clutch",
+        "com",
+        "diagonal",
+        "dramatic",
+        "edge",
+        "elongated",
+        "floating",
+        "form",
+        "gravity",
+        "leather",
+        "medium",
+        "microsoft",
+        "now",
+        "object",
+        "rectangular",
+        "returns",
+        "rotates",
+        "seen",
+        "showing",
+        "slowly",
+        "speech",
+        "take",
+        "thin",
+        "tilted",
+        "tumbling",
+        "vintage",
+        "visible",
+        "wallet",
+        "worn",
+        "www",
+        "zero"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up of a brown leather wallet or clutch floating against black, tilted at a diagonal angle. Light catches the worn leather surface creating highlights. The object appears suspended in darkness with no visible support."
+        },
+        {
+          "seconds": 3,
+          "text": "The leather object now seen edge-on, appearing thin and elongated as it rotates. Dramatic lighting creates a rim highlight along the edge. The motion blur suggests slow tumbling through space."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The wallet returns to a more visible angle, showing its rectangular form against black. Worn brown leather texture visible with natural patina. Continued floating motion creates dreamlike atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "alternative",
+    "angle",
+    "appearing",
+    "black",
+    "brown",
+    "close",
+    "clutch",
+    "com",
+    "diagonal",
+    "dramatic",
+    "edge",
+    "elongated",
+    "floating",
+    "form",
+    "gravity",
+    "leather",
+    "medium",
+    "microsoft",
+    "now",
+    "object",
+    "rectangular",
+    "returns",
+    "rotates",
+    "seen",
+    "showing",
+    "slowly",
+    "speech",
+    "take",
+    "thin",
+    "tilted",
+    "tumbling",
+    "vintage",
+    "visible",
+    "wallet",
+    "worn",
+    "www",
+    "zero"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

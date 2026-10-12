@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c1a5d8e135a784dcbcb2e77667403d59a80ec0bf7c51849634993aea941570d9",
+  "sha256": "c1a5d8e135a784dcbcb2e77667403d59a80ec0bf7c51849634993aea941570d9",
+  "bytes": 37994358,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 39.375,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "7528/315",
+    "frameCount": 941,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "mine_too_v3.mp4"
+  ],
+  "collections": [
+    "mine-too"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

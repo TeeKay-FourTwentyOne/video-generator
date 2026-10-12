@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3e347c0abfe59d0530779c5f8a2e36c70947e5cbfbc4b8fa2ec51bb3d8789eb6",
+  "sha256": "3e347c0abfe59d0530779c5f8a2e36c70947e5cbfbc4b8fa2ec51bb3d8789eb6",
+  "bytes": 115399340,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 32.583333,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 782,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hall_of_mirrors_v2e_4k.mp4"
+  ],
+  "collections": [
+    "hall-of-mirrors"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

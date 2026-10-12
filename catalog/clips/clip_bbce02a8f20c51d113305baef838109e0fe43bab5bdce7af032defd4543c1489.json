@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bbce02a8f20c51d113305baef838109e0fe43bab5bdce7af032defd4543c1489",
+  "sha256": "bbce02a8f20c51d113305baef838109e0fe43bab5bdce7af032defd4543c1489",
+  "bytes": 1784642,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669369242_9gdvs0.mp4"
+  ],
+  "collections": [
+    "two_friends_meet_unexpectedly__1767668356193"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767669369242_9gdvs0"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot from behind a man's shoulder as he pushes open a glass coffee shop door, the camera slowly tracking past him into the interior. The space reveals itself through selective focus - wooden tables and mismatched chairs emerge from soft blur like half-remembered dreams. Cool fluorescent ceiling lights mix with warm Edison bulbs strung along exposed brick walls, creating dramatic pockets of amber light and deep blue shadows. The camera continues its deliberate forward push, depth of field shifting as patrons become silhouettes in the mysterious atmosphere. In the background, a woman at a corner table sharpens into focus, absorbed in her book, unaware of the new arrival. The brass doorbell's chime resonates through the hushed space, mixing with the distant hiss of the espresso machine. Naturalistic handheld movement, 16:9 aspect ratio.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_edcfc788e997a54aa1574f9420a392ff981389d60077e6d6c1db3bfe8ba59daa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot from behind a man's shoulder as he pushes open a glass coffee shop door, the camera slowly tracking past him into the interior. The space reveals itself through selective focus - wooden tables and mismatched chairs emerge from soft blur like half-remembered dreams. Cool fluorescent ceiling lights mix with warm Edison bulbs strung along exposed brick walls, creating dramatic pockets of amber light and deep blue shadows. The camera continues its deliberate forward push, depth of field shifting as patrons become silhouettes in the mysterious atmosphere. In the background, a woman at a corner table sharpens into focus, absorbed in her book, unaware of the new arrival. The brass doorbell's chime resonates through the hushed space, mixing with the distant hiss of the espresso machine. Naturalistic handheld movement, 16:9 aspect ratio.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_edcfc788e997a54aa1574f9420a392ff981389d60077e6d6c1db3bfe8ba59daa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:15:15.719Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures someone entering a modern urban cafe with distinctive dual lighting - cool fluorescent overhead and warm Edison bulbs against exposed brick. The scene transitions from a close-up entry shot to reveal the full interior with several patrons, including a woman reading at a table. Japanese text at the end suggests this may be closing credits thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました。",
+      "tags": [
+        "aesthetic",
+        "behind",
+        "cafe",
+        "captures",
+        "clip",
+        "composition",
+        "cozy",
+        "dark",
+        "distinctive",
+        "door",
+        "dual",
+        "entering",
+        "exposed",
+        "frame",
+        "full",
+        "gray",
+        "gripping",
+        "hand",
+        "hoodie",
+        "identical",
+        "industrial",
+        "interior",
+        "lighting",
+        "medium",
+        "middle",
+        "modern",
+        "nearly",
+        "person",
+        "right",
+        "seen",
+        "shot",
+        "showing",
+        "someone",
+        "speech",
+        "their",
+        "urban",
+        "wide",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A person in a dark gray hoodie is seen from behind, their hand gripping a door handle as they enter a cafe. The left side shows cool blue fluorescent lighting while the right features warm Edison bulb string lights against an exposed brick wall. A woman in a white sweater sits at a wooden table in the background, slightly blurred. The composition creates a strong contrast between the cool and warm lighting zones, with the entering figure partially obscuring the view."
+        },
+        {
+          "seconds": 2,
+          "text": "Wide interior shot of a cozy cafe with industrial-modern aesthetic. On the right, exposed brick wall with warm Edison string lights creates an inviting atmosphere. A woman in a cream sweater reads a book at a wooden table. Left side shows a white counter with coffee equipment and a chalkboard menu. Multiple patrons sit at tables near a large window showing an urban street view. Cool fluorescent ceiling lights contrast with warm accent lighting. Gray concrete floor throughout."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Nearly identical composition to the middle frame, showing the full cafe interior. The woman continues reading at her table against the brick wall. Other customers remain seated near the window, including a person in black facing away. The lighting balance between cool overhead fluorescents and warm Edison bulbs remains consistent. Coffee bar equipment visible on the left. The scene appears static with minimal movement, suggesting a peaceful, relaxed cafe atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aesthetic",
+    "behind",
+    "cafe",
+    "captures",
+    "clip",
+    "composition",
+    "cozy",
+    "dark",
+    "distinctive",
+    "door",
+    "dual",
+    "entering",
+    "exposed",
+    "frame",
+    "full",
+    "gray",
+    "gripping",
+    "hand",
+    "hoodie",
+    "identical",
+    "industrial",
+    "interior",
+    "lighting",
+    "medium",
+    "middle",
+    "modern",
+    "nearly",
+    "person",
+    "right",
+    "seen",
+    "shot",
+    "showing",
+    "someone",
+    "speech",
+    "their",
+    "urban",
+    "wide",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fdbb544f3a176fc0af85e2461bbeb0989c55767d90f03c1f34a737f18dd57c8b",
+  "sha256": "fdbb544f3a176fc0af85e2461bbeb0989c55767d90f03c1f34a737f18dd57c8b",
+  "bytes": 2228073,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767543013914_372k2a.mp4"
+  ],
+  "collections": [
+    "the_spill_1767542795801"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767543013914_372k2a"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young Caucasian woman in her early 20s with wavy shoulder-length dark brown hair and slim build looks down at her coffee-stained sweater with initial embarrassment, then lifts her gaze back up to meet the eyes of a young white man in his early 20s with short dark brown hair in a side part. As their eyes connect, both characters break into genuine, warm laughter - her face transforming from embarrassment to pure joy. The camera captures this intimate moment with a shallow depth of field, keeping both characters in focus while softly blurring the rustic coffee shop background of exposed red brick walls and dark wood floors. Warm, natural sunlight streams through large multi-paned windows, creating a golden, cinematic glow that enhances the authentic connection forming between them. The lighting is soft and directional, casting gentle shadows that add depth to their expressions. Shot with a warm indie film aesthetic, slightly handheld for intimacy, medium close-up framing that captures both their faces and upper bodies as the magical moment of connection unfolds in real-time.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1d411d4b06d026180cbbc696576d1ed2daa08e56695c6e35893b61b0ce7917e6",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young Caucasian woman in her early 20s with wavy shoulder-length dark brown hair and slim build looks down at her coffee-stained sweater with initial embarrassment, then lifts her gaze back up to meet the eyes of a young white man in his early 20s with short dark brown hair in a side part. As their eyes connect, both characters break into genuine, warm laughter - her face transforming from embarrassment to pure joy. The camera captures this intimate moment with a shallow depth of field, keeping both characters in focus while softly blurring the rustic coffee shop background of exposed red brick walls and dark wood floors. Warm, natural sunlight streams through large multi-paned windows, creating a golden, cinematic glow that enhances the authentic connection forming between them. The lighting is soft and directional, casting gentle shadows that add depth to their expressions. Shot with a warm indie film aesthetic, slightly handheld for intimacy, medium close-up framing that captures both their faces and upper bodies as the magical moment of connection unfolds in real-time.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1d411d4b06d026180cbbc696576d1ed2daa08e56695c6e35893b61b0ce7917e6",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:09:32.080Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures an intimate café moment showing a woman's emotional transition from quiet contemplation to joyful engagement with a male companion. The warm, natural lighting and cozy brick-walled setting create a romantic atmosphere as the woman laughs and connects with the partially-visible man. The brief transcription 'You' suggests the beginning of dialogue between them.",
+      "transcript": "You",
+      "tags": [
+        "animated",
+        "bright",
+        "brown",
+        "caf",
+        "captures",
+        "close",
+        "continues",
+        "conversation",
+        "emotional",
+        "face",
+        "hair",
+        "her",
+        "illuminated",
+        "intimate",
+        "joyful",
+        "laugh",
+        "long",
+        "looking",
+        "man",
+        "medium",
+        "moment",
+        "now",
+        "portrait",
+        "shot",
+        "showing",
+        "shown",
+        "smiling",
+        "speech",
+        "transition",
+        "vertical",
+        "video",
+        "warm",
+        "warmly",
+        "wavy",
+        "whose",
+        "woman",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with long, wavy brown hair is shown in a close-up portrait shot, looking downward with a contemplative expression. She wears a cream-colored knit sweater. The setting appears to be a cozy café with exposed brick walls visible in the blurred background. Warm, natural light streams in from a window on the right side, creating golden highlights in her hair. The composition is intimate with shallow depth of field, focusing on her face and upper body."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now looking up with a bright, joyful laugh, her face illuminated by warm natural light. A man's silhouette is partially visible on the right side of the frame. She's still wearing the cream sweater, which now shows some stains. The café setting remains consistent with brick walls, pendant lighting, and a potted plant near the window. Her expression has transformed from contemplative to genuinely happy, suggesting an engaging conversation."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues her animated conversation, smiling warmly while looking up at the man whose profile is now more visible on the right. Her wavy brown hair catches the golden backlight from the window. The intimate café atmosphere persists with warm tones throughout. The framing creates a romantic, candid moment between two people, with the woman as the clear focal point while the man remains partially silhouetted."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "animated",
+    "bright",
+    "brown",
+    "caf",
+    "captures",
+    "close",
+    "continues",
+    "conversation",
+    "emotional",
+    "face",
+    "hair",
+    "her",
+    "illuminated",
+    "intimate",
+    "joyful",
+    "laugh",
+    "long",
+    "looking",
+    "man",
+    "medium",
+    "moment",
+    "now",
+    "portrait",
+    "shot",
+    "showing",
+    "shown",
+    "smiling",
+    "speech",
+    "transition",
+    "vertical",
+    "video",
+    "warm",
+    "warmly",
+    "wavy",
+    "whose",
+    "woman",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

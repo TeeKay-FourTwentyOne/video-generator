@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_32159dd882f1825a8f5b0432effec8d031e108bae1423950233b87ab80ce953e",
+  "sha256": "32159dd882f1825a8f5b0432effec8d031e108bae1423950233b87ab80ce953e",
+  "bytes": 1074914,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767509487440_u2l701.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767509487440_u2l701"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A perfectly spherical droplet of black ink suspended motionless in mid-air above a mirror-like surface of clear water, captured in extreme macro detail. The scene exists in pure monochrome with soft gradients of gray creating an ethereal, dreamlike atmosphere. Every element is rendered in crystalline sharpness - the droplet's flawless geometry catches subtle light reflections while the undisturbed water below creates perfect mirror reflections. The camera holds a steady macro lens position, focused precisely on the suspended droplet with shallow depth of field isolating it against the serene background. Soft, diffused lighting creates gentle gradients and highlights the surface tension of both the droplet and water. The composition maintains perfect stillness and silence, emphasizing the tension of the moment before impact. High contrast black and white cinematography with deep shadows and bright highlights. The water surface remains completely motionless, creating perfect reflections. Ultra-sharp focus on the droplet's surface detail and the pristine water below.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5b923933495f3d8733bcf9f237cd2d667bc2b30475bf78779141b3c317153ab5",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A perfectly spherical droplet of black ink suspended motionless in mid-air above a mirror-like surface of clear water, captured in extreme macro detail. The scene exists in pure monochrome with soft gradients of gray creating an ethereal, dreamlike atmosphere. Every element is rendered in crystalline sharpness - the droplet's flawless geometry catches subtle light reflections while the undisturbed water below creates perfect mirror reflections. The camera holds a steady macro lens position, focused precisely on the suspended droplet with shallow depth of field isolating it against the serene background. Soft, diffused lighting creates gentle gradients and highlights the surface tension of both the droplet and water. The composition maintains perfect stillness and silence, emphasizing the tension of the moment before impact. High contrast black and white cinematography with deep shadows and bright highlights. The water surface remains completely motionless, creating perfect reflections. Ultra-sharp focus on the droplet's surface detail and the pristine water below.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5b923933495f3d8733bcf9f237cd2d667bc2b30475bf78779141b3c317153ab5",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T06:50:44.856Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This high-speed photography clip captures a black liquid droplet falling and impacting a water surface in monochromatic black and white. The sequence shows the progression from the droplet suspended in air above an initial splash, through the formation of concentric ripples, to the final moment where the droplet merges with the surface creating expanding wave patterns. The minimalist aesthetic and precise timing create an artistic study of fluid dynamics.",
+      "transcript": "you",
+      "tags": [
+        "against",
+        "air",
+        "background",
+        "black",
+        "captures",
+        "clip",
+        "contact",
+        "creating",
+        "dome",
+        "droplet",
+        "falling",
+        "frame",
+        "glossy",
+        "gradient",
+        "gray",
+        "high",
+        "impacting",
+        "liquid",
+        "made",
+        "maintaining",
+        "medium",
+        "mid",
+        "now",
+        "photography",
+        "portion",
+        "protrusion",
+        "remains",
+        "shaped",
+        "speech",
+        "speed",
+        "spherical",
+        "surface",
+        "suspended",
+        "upper",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A black spherical droplet is suspended in mid-air against a gradient gray background that transitions from dark at the top to lighter gray below. The droplet appears glossy with a small white highlight reflection visible on its surface. Below the droplet, there's a dark splash formation on what appears to be a liquid surface, with another smaller droplet visible at the bottom of the frame. The composition is vertically oriented with the main droplet positioned in the upper third of the frame. The monochromatic black and white aesthetic creates a minimalist, artistic feel."
+        },
+        {
+          "seconds": 2,
+          "text": "The black spherical droplet remains suspended in the upper portion of the frame, maintaining its glossy appearance with visible highlight reflections. Below it, concentric circular ripples have formed on the liquid surface, creating an elegant pattern radiating outward from the center. A smaller dark droplet is visible at the bottom edge of the frame. The gray gradient background persists, and the composition emphasizes the relationship between the falling droplet and the expanding ripple pattern. The image captures the moment of fluid dynamics in high-speed photography style."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The droplet has now made contact with the liquid surface, creating a dome-shaped protrusion emerging from the water. Multiple concentric ripples extend outward from the impact point, filling most of the frame. The black droplet sits partially submerged at the center, with a small white highlight still visible on its surface. The gray gradient background continues from dark at top to lighter below. The composition has shifted downward to focus on the water surface and the expanding wave pattern, capturing the aftermath of the droplet's impact."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "air",
+    "background",
+    "black",
+    "captures",
+    "clip",
+    "contact",
+    "creating",
+    "dome",
+    "droplet",
+    "falling",
+    "frame",
+    "glossy",
+    "gradient",
+    "gray",
+    "high",
+    "impacting",
+    "liquid",
+    "made",
+    "maintaining",
+    "medium",
+    "mid",
+    "now",
+    "photography",
+    "portion",
+    "protrusion",
+    "remains",
+    "shaped",
+    "speech",
+    "speed",
+    "spherical",
+    "surface",
+    "suspended",
+    "upper",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

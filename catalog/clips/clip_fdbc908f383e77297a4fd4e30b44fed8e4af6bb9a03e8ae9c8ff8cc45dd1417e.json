@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fdbc908f383e77297a4fd4e30b44fed8e4af6bb9a03e8ae9c8ff8cc45dd1417e",
+  "sha256": "fdbc908f383e77297a4fd4e30b44fed8e4af6bb9a03e8ae9c8ff8cc45dd1417e",
+  "bytes": 6411066,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "insert-bread.mp4"
+  ],
+  "collections": [
+    "may-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

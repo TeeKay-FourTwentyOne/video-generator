@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_961ac405fa9d08afca9893c86fbac48796b005766a1fe1f294dad4bcd1055183",
+  "sha256": "961ac405fa9d08afca9893c86fbac48796b005766a1fe1f294dad4bcd1055183",
+  "bytes": 1808765,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sprocket_gen1_annotated.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sprocket_gen1_annotated"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This artistic video clip presents a poignant war memorial-style scene featuring a soldier's silhouette with a rifle and flowers, shot against a dramatic golden sunset. The footage employs vintage film strip aesthetics with sprocket holes and sepia toning, transitioning from a kneeling position to standing while maintaining the contemplative juxtaposition of warfare and peace symbolism.",
+      "transcript": null,
+      "tags": [
+        "artistic",
+        "beside",
+        "clip",
+        "close",
+        "daisy",
+        "dramatic",
+        "featuring",
+        "frame",
+        "gripping",
+        "guard",
+        "hands",
+        "intense",
+        "kneeling",
+        "medium",
+        "memorial",
+        "planted",
+        "poignant",
+        "presents",
+        "prominent",
+        "rifle",
+        "scene",
+        "shifted",
+        "shot",
+        "show",
+        "showing",
+        "silent",
+        "silhouette",
+        "soldier",
+        "standing",
+        "still",
+        "stock",
+        "style",
+        "trigger",
+        "two",
+        "vertically",
+        "video",
+        "war"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dramatic silhouette shot showing a soldier kneeling beside a rifle planted vertically in the ground, holding a single daisy flower. The scene is backlit by a golden sunset creating strong lens flare. The composition features vintage film strip borders with sprocket holes visible at top and bottom. Text overlays read 'GEN 1' and 'Original + Edges as first/last frame' at top, 'Testing sprocket preservation' at bottom. The sepia-toned imagery evokes war memorial symbolism with the contrast between weapon and flower."
+        },
+        {
+          "seconds": 4,
+          "text": "Close-up silhouette of hands gripping the rifle's stock and trigger guard, with two daisy flowers now visible against the bright golden sunset. The camera has moved closer, emphasizing the juxtaposition of the weapon and delicate flowers. Strong backlighting creates a warm amber glow with visible sun rays. The film strip aesthetic continues with sprocket holes framing the image. A dog's silhouette appears on the right side of frame. The composition maintains the contemplative, memorial-like atmosphere."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The silhouette has shifted to show the soldier standing, with the rifle still prominent in frame. Intense sun rays burst from behind the figure creating dramatic lens flare effects. The flowers are no longer visible in this frame. The soldier's posture appears more upright and alert. The dusty, barren ground is visible at the bottom. The vintage film aesthetic persists with sprocket holes and text overlays. The golden hour lighting bathes the entire scene in warm sepia tones."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "artistic",
+    "beside",
+    "clip",
+    "close",
+    "daisy",
+    "dramatic",
+    "featuring",
+    "frame",
+    "gripping",
+    "guard",
+    "hands",
+    "intense",
+    "kneeling",
+    "medium",
+    "memorial",
+    "planted",
+    "poignant",
+    "presents",
+    "prominent",
+    "rifle",
+    "scene",
+    "shifted",
+    "shot",
+    "show",
+    "showing",
+    "silent",
+    "silhouette",
+    "soldier",
+    "standing",
+    "still",
+    "stock",
+    "style",
+    "trigger",
+    "two",
+    "vertically",
+    "video",
+    "war"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

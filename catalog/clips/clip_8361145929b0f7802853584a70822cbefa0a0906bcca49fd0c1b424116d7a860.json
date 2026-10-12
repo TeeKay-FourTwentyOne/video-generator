@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8361145929b0f7802853584a70822cbefa0a0906bcca49fd0c1b424116d7a860",
+  "sha256": "8361145929b0f7802853584a70822cbefa0a0906bcca49fd0c1b424116d7a860",
+  "bytes": 5849237,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "The_narrator_continues_202601030515_kz1ls.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

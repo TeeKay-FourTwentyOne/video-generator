@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7090415faf9cb8cffa0d907847cb8fdf07ca0e265220562d6783ba0627d29831",
+  "sha256": "7090415faf9cb8cffa0d907847cb8fdf07ca0e265220562d6783ba0627d29831",
+  "bytes": 632114,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767656216912_rz3rbh.mp4"
+  ],
+  "collections": [
+    "test_char_action_001"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767656216912_rz3rbh"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Caucasian person in their 30s with short brown hair wearing a dark jacket stands in a doorway, arms crossed tightly across their chest with a guarded, defensive expression and slight head tilt to the right. The camera holds a medium shot with subtle handheld movement, creating an intimate yet uneasy feeling. Natural lighting from the hallway behind creates a rim light effect, while the room they're facing remains darker, casting sharp shadows across half their face. The doorframe creates a natural border that emphasizes their blocked, protective stance. High contrast between the lit hallway and shadowed interior heightens the tense atmosphere. The shot maintains a tight, claustrophobic framing that captures their defensive body language and wary expression throughout the 4-second duration.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_afe608d2b8a0d42d3f34be307c31d560de472279a70c8cd15d07b98ae7027afa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Caucasian person in their 30s with short brown hair wearing a dark jacket stands in a doorway, arms crossed tightly across their chest with a guarded, defensive expression and slight head tilt to the right. The camera holds a medium shot with subtle handheld movement, creating an intimate yet uneasy feeling. Natural lighting from the hallway behind creates a rim light effect, while the room they're facing remains darker, casting sharp shadows across half their face. The doorframe creates a natural border that emphasizes their blocked, protective stance. High contrast between the lit hallway and shadowed interior heightens the tense atmosphere. The shot maintains a tight, claustrophobic framing that captures their defensive body language and wary expression throughout the 4-second duration.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_afe608d2b8a0d42d3f34be307c31d560de472279a70c8cd15d07b98ae7027afa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:36:03.412Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second clip shows a woman with short brown hair standing motionless in a doorway, arms crossed, silhouetted against bright backlighting. Her expression subtly shifts from serious to concerned throughout the clip while Japanese text is spoken, suggesting she is listening to someone off-camera. The static composition and dramatic lighting create a tense, contemplative atmosphere.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "against",
+        "arms",
+        "backlighting",
+        "bright",
+        "brown",
+        "clip",
+        "continues",
+        "crossed",
+        "doorway",
+        "frame",
+        "hair",
+        "her",
+        "maintaining",
+        "medium",
+        "motionless",
+        "position",
+        "posture",
+        "previous",
+        "remains",
+        "second",
+        "short",
+        "shows",
+        "silhouetted",
+        "speech",
+        "standing",
+        "stands",
+        "unchanged",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short brown hair stands in a doorway, silhouetted against bright backlighting from a window. She wears a black jacket with a collar and has her arms crossed in front of her chest. Her expression appears serious or contemplative. The composition frames her between dark door frames on either side, creating a dramatic contrast between the bright background and darker foreground elements. The camera is positioned at approximately eye level, capturing her from roughly the waist up."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains in the doorway with arms crossed, maintaining her position from the previous frame. Her facial expression has shifted slightly, appearing more concerned or questioning. The backlighting from the window continues to create a strong silhouette effect, with her features partially illuminated. The dark wooden door frame is visible on the right side. The composition and framing remain consistent, with the subject centered in the bright doorway opening."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues standing in the doorway with crossed arms, her posture unchanged. Her expression appears slightly more neutral or resigned compared to earlier frames. The dramatic backlighting persists, creating the same silhouette effect against the bright window. The dark door panels frame the shot on both sides. The camera angle and framing remain static throughout, maintaining the medium shot composition that emphasizes her contemplative stance in the doorway."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_033",
+      "name": "Detective Shaw",
+      "description": "Woman with short auburn hair, dark jacket, arms crossed, standing in hallway with dramatic backlight, authoritative presence",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "arms",
+    "backlighting",
+    "bright",
+    "brown",
+    "clip",
+    "continues",
+    "crossed",
+    "doorway",
+    "frame",
+    "hair",
+    "her",
+    "maintaining",
+    "medium",
+    "motionless",
+    "position",
+    "posture",
+    "previous",
+    "remains",
+    "second",
+    "short",
+    "shows",
+    "silhouetted",
+    "speech",
+    "standing",
+    "stands",
+    "unchanged",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

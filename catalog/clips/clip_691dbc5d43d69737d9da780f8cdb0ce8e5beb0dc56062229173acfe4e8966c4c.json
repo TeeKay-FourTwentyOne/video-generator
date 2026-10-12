@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_691dbc5d43d69737d9da780f8cdb0ce8e5beb0dc56062229173acfe4e8966c4c",
+  "sha256": "691dbc5d43d69737d9da780f8cdb0ce8e5beb0dc56062229173acfe4e8966c4c",
+  "bytes": 5640913,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "test_gen1_silhouette.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:test_gen1_silhouette"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip transitions from a heavily stylized red and black artistic treatment to black and white footage of a man posing contemplatively in a misty pine forest. The consistent element throughout is the dramatic lighting with sun rays piercing through fog, creating an atmospheric, artistic mood. The clip appears to be a stylized outro or thank-you message, as indicated by the spoken 'Thank you for watching!'",
+      "transcript": "Thank you for watching!",
+      "tags": [
+        "artistic",
+        "black",
+        "clip",
+        "color",
+        "composition",
+        "continues",
+        "dramatic",
+        "frame",
+        "heavily",
+        "highly",
+        "identical",
+        "man",
+        "medium",
+        "misty",
+        "nearly",
+        "next",
+        "pine",
+        "previous",
+        "red",
+        "showing",
+        "silhouette",
+        "speech",
+        "standing",
+        "stylized",
+        "thank",
+        "transitions",
+        "treatment",
+        "trees",
+        "vertical",
+        "video",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A highly stylized frame with dramatic red and black color treatment showing a silhouette of a person standing in what appears to be a misty forest or field. The figure is positioned in the lower center of the frame, with converging lines (possibly tree rows or paths) leading to a bright horizon. A large circular shape (sun or moon) is visible at the top. The extreme contrast creates an ominous, artistic mood with vertical portrait framing."
+        },
+        {
+          "seconds": 2,
+          "text": "Black and white frame showing a man standing next to pine trees in a misty forest setting. He wears a casual jacket over a t-shirt with jeans and sneakers, leaning with one arm against a tree trunk. Dramatic sunbeams pierce through the fog in the background, creating radiating light rays. Rows of tall trees line both sides creating depth. The composition places the subject in the lower third with atmospheric lighting above."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Nearly identical black and white composition to the previous frame - the man continues standing beside the pine tree in the foggy forest, arm extended to touch the trunk. The misty atmosphere persists with visible sun rays streaming through the trees in the background. His posture remains relaxed and contemplative. The vertical framing emphasizes the height of the trees and the dramatic sky, maintaining the moody, artistic aesthetic throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "artistic",
+    "black",
+    "clip",
+    "color",
+    "composition",
+    "continues",
+    "dramatic",
+    "frame",
+    "heavily",
+    "highly",
+    "identical",
+    "man",
+    "medium",
+    "misty",
+    "nearly",
+    "next",
+    "pine",
+    "previous",
+    "red",
+    "showing",
+    "silhouette",
+    "speech",
+    "standing",
+    "stylized",
+    "thank",
+    "transitions",
+    "treatment",
+    "trees",
+    "vertical",
+    "video",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_14f69a0acaa6a8e9b8387d257ac8026865e9269d8d2456449d2ab12b8b262df9",
+  "sha256": "14f69a0acaa6a8e9b8387d257ac8026865e9269d8d2456449d2ab12b8b262df9",
+  "bytes": 2654500,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "B-painted-city-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a8c91e941919c8f071ba31c3cde506cdd2374a3edb1ef698f0f7060529fa5a20",
+  "sha256": "a8c91e941919c8f071ba31c3cde506cdd2374a3edb1ef698f0f7060529fa5a20",
+  "bytes": 5131576,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "01_dirty_weather.edit.mp4"
+  ],
+  "collections": [
+    "weather-service"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

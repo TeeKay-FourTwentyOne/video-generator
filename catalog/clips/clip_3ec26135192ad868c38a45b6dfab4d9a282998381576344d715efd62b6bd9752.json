@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3ec26135192ad868c38a45b6dfab4d9a282998381576344d715efd62b6bd9752",
+  "sha256": "3ec26135192ad868c38a45b6dfab4d9a282998381576344d715efd62b6bd9752",
+  "bytes": 7066381,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 86.125,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 2067,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "polis-conversation-and-invitation-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

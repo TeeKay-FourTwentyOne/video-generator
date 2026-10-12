@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0b036757312892deed699b3b76385e1d025198abaab1e87632ca3c27aece6db2",
+  "sha256": "0b036757312892deed699b3b76385e1d025198abaab1e87632ca3c27aece6db2",
+  "bytes": 2767036,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_multiple_targets.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_multiple_targets"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Establishing shot of a magical forest archery range with multiple wooden targets hanging from ancient trees. The rustic targets with red and white rings create a whimsical practice ground for the Sagittarius archer. By clip's end, arrows are embedded in targets showing successful shots.",
+      "transcript": "🔥🔥🔥🔥🔥",
+      "tags": [
+        "archery",
+        "arrows",
+        "composition",
+        "disc",
+        "embedded",
+        "enchanted",
+        "establishing",
+        "evidence",
+        "filled",
+        "forest",
+        "gently",
+        "hangers",
+        "hanging",
+        "magical",
+        "medium",
+        "multiple",
+        "now",
+        "range",
+        "rope",
+        "rustic",
+        "scene",
+        "several",
+        "shot",
+        "shots",
+        "show",
+        "speech",
+        "successful",
+        "swing",
+        "target",
+        "targets",
+        "their",
+        "them",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Enchanted forest scene filled with rustic archery targets. Multiple wooden disc targets with red and white concentric rings hang from tree branches at varying heights. Lush green ferns carpet the forest floor. Soft golden light filters through the canopy."
+        },
+        {
+          "seconds": 4,
+          "text": "Same forest target range composition. The targets swing gently on their rope hangers. Natural wood grain visible on each target face. Moss-covered trees and verdant undergrowth create a fairy-tale archery range atmosphere."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Several targets now show arrows embedded in them - evidence of successful shots. The forest archery range tells the story of the centaur's practice. Golden hour light continues to illuminate the whimsical scene."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "archery",
+    "arrows",
+    "composition",
+    "disc",
+    "embedded",
+    "enchanted",
+    "establishing",
+    "evidence",
+    "filled",
+    "forest",
+    "gently",
+    "hangers",
+    "hanging",
+    "magical",
+    "medium",
+    "multiple",
+    "now",
+    "range",
+    "rope",
+    "rustic",
+    "scene",
+    "several",
+    "shot",
+    "shots",
+    "show",
+    "speech",
+    "successful",
+    "swing",
+    "target",
+    "targets",
+    "their",
+    "them",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

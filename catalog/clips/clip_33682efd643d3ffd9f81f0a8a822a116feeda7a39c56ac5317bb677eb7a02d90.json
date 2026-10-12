@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_33682efd643d3ffd9f81f0a8a822a116feeda7a39c56ac5317bb677eb7a02d90",
+  "sha256": "33682efd643d3ffd9f81f0a8a822a116feeda7a39c56ac5317bb677eb7a02d90",
+  "bytes": 4219272,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s7v2_beam.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

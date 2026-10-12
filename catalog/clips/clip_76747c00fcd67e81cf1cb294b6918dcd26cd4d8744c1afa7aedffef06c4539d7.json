@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_76747c00fcd67e81cf1cb294b6918dcd26cd4d8744c1afa7aedffef06c4539d7",
+  "sha256": "76747c00fcd67e81cf1cb294b6918dcd26cd4d8744c1afa7aedffef06c4539d7",
+  "bytes": 34311917,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V04-v1.mp4",
+    "veo_1791428236378_v5gxl3.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up, looking straight down at dark, wet, freshly dug earth with black water pooling in the trowel marks on the floor of a deep excavation trench, in dusk light. A blue nitrile-gloved hand scrapes with a small pointed steel trowel and uncovers a dark corroded iron arrowhead, lying in the dark earth. The hand sets the trowel aside out of frame, places a small black-and-white photographic scale bar with plain alternating black and white segments and no numbers on the earth beside the arrowhead, then a small plastic north arrow beside it, and withdraws out of the frame, leaving the arrowhead, the scale bar and the arrow alone in the frame. Camera is fixed, looking down, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2cf834e150e64f8f4aacfdbaae5b5408034614f47c6099d875e1ddeb1df209cc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2861649662,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

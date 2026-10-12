@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3fa9cce83ed4abe7823ed311f5f283069692bd03998234722e0a8c1ab1271021",
+  "sha256": "3fa9cce83ed4abe7823ed311f5f283069692bd03998234722e0a8c1ab1271021",
+  "bytes": 24077764,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tour-review.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

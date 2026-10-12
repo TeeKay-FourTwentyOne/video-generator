@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a86e151ce3ec793b169a6de2e995309deccb31ff1fb2c34c1d6539926fad7bfd",
+  "sha256": "a86e151ce3ec793b169a6de2e995309deccb31ff1fb2c34c1d6539926fad7bfd",
+  "bytes": 4855508,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-v1.mp4",
+    "veo_1791014262733_j0e549.mp4"
+  ],
+  "collections": [
+    "borrowed-light"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Continue this exact handmade miniature scene with restrained stop-motion motion and cinematic lighting. Maintain the exact robot, one tree, planter, bulb, paint chips and greenhouse geometry in the supplied first frame. 9:16 portrait. One continuous shot, no cuts, no dissolve, no text, no speech. No other characters, no new objects, no duplicate limbs. Robot always has two arms with two-prong grippers and two caterpillar tracks.\nLocked macro composition, focus on the single amber chest bulb. The right gripper already holds the glass gently. After one second of hesitation, the robot slowly twists the bulb counterclockwise and draws it horizontally outward from the brass socket by a few centimeters. Exactly ONE bulb separates cleanly from the chest. The bulb continues glowing softly in its hand as a self-contained light capsule; the circular socket left in the chest is DARK and EMPTY. The head stays bowed toward the light. Hold the one detached bulb still for the final two seconds. No second light source appears on the chest. The same two-prong gripper throughout. No cutting away, no hand change, no transformation, no extra parts.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ac3a380dcc5f1cc0c76c76171cd63b044544d99fd26796f1c70f36c1f858a09f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3072175904,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

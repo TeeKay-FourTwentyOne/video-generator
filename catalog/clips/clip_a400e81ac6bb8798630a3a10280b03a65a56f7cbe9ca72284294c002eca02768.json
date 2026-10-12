@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a400e81ac6bb8798630a3a10280b03a65a56f7cbe9ca72284294c002eca02768",
+  "sha256": "a400e81ac6bb8798630a3a10280b03a65a56f7cbe9ca72284294c002eca02768",
+  "bytes": 1002143,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 11,
+    "width": 540,
+    "height": 960,
+    "frameRate": "24/1",
+    "frameCount": 264,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "ending-review.mp4"
+  ],
+  "collections": [
+    "forest-spirit",
+    "scary-woods-episode-03"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

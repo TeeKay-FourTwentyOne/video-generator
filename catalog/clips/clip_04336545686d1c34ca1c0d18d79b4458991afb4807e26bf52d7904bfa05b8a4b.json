@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_04336545686d1c34ca1c0d18d79b4458991afb4807e26bf52d7904bfa05b8a4b",
+  "sha256": "04336545686d1c34ca1c0d18d79b4458991afb4807e26bf52d7904bfa05b8a4b",
+  "bytes": 2423884,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767578305192_w9xly3.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767578225875"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767578305192_w9xly3"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Moving closer now, an unsettling medium close-up frames the wallet off-center as it continues its supernatural ballet. The camera tracks smoothly around the rotating leather wallet, maintaining uncomfortable proximity while the brass clasp glints with each turn. The framing feels wrong - too tight, too close for comfort, with the wallet positioned awkwardly in the lower third of the frame. The camera moves in a slow, predatory circle around the floating object, capturing every worn detail of the leather surface. Warm golden lighting creates harsh shadows that shift unnaturally as the wallet rotates, while film grain intensifies in the darker areas. The monochrome palette shifts toward cooler blue-grey tones in the shadows, contrasting with the golden highlights on the brass clasp. Shot in slow motion, the wallet's rotation feels both mesmerizing and deeply wrong, defying gravity with supernatural grace. The intimate framing and circling camera movement create a sense of claustrophobia and unease, as if witnessing something that shouldn't exist.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_92590d45e0d5c1e63ff19c544765707892f0148772dc626532d4baa17197f1bf",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Moving closer now, an unsettling medium close-up frames the wallet off-center as it continues its supernatural ballet. The camera tracks smoothly around the rotating leather wallet, maintaining uncomfortable proximity while the brass clasp glints with each turn. The framing feels wrong - too tight, too close for comfort, with the wallet positioned awkwardly in the lower third of the frame. The camera moves in a slow, predatory circle around the floating object, capturing every worn detail of the leather surface. Warm golden lighting creates harsh shadows that shift unnaturally as the wallet rotates, while film grain intensifies in the darker areas. The monochrome palette shifts toward cooler blue-grey tones in the shadows, contrasting with the golden highlights on the brass clasp. Shot in slow motion, the wallet's rotation feels both mesmerizing and deeply wrong, defying gravity with supernatural grace. The intimate framing and circling camera movement create a sense of claustrophobia and unease, as if witnessing something that shouldn't exist.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_92590d45e0d5c1e63ff19c544765707892f0148772dc626532d4baa17197f1bf",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:57:31.020Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip showcases a tan leather wallet with a snap closure rotating slowly against a stark black background in a product photography style. The warm, dramatic lighting highlights the wallet's craftsmanship and leather texture throughout the 6-second duration. The single spoken word 'You' suggests this may be part of a promotional or instructional video.",
+      "transcript": "You",
+      "tags": [
+        "against",
+        "angle",
+        "appearing",
+        "caramel",
+        "card",
+        "cleaner",
+        "clip",
+        "closure",
+        "colored",
+        "completely",
+        "continues",
+        "different",
+        "front",
+        "holder",
+        "leather",
+        "medium",
+        "now",
+        "rotating",
+        "rotation",
+        "showcases",
+        "showing",
+        "shown",
+        "slightly",
+        "slowly",
+        "snap",
+        "speech",
+        "tan",
+        "upright",
+        "video",
+        "view",
+        "wallet",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A tan/caramel colored leather wallet or card holder is shown against a completely black background. The wallet appears to be floating or suspended, tilted at an angle with the snap closure visible on the right side. The lighting creates a warm, golden glow on the leather surface, highlighting its smooth texture. The composition is minimalist with dramatic contrast between the illuminated wallet and the dark void surrounding it. Some motion blur is visible, suggesting movement or rotation."
+        },
+        {
+          "seconds": 3,
+          "text": "The same tan leather wallet is now shown from a slightly different angle, appearing more upright and centered in the frame. The brass or gold-toned snap button closure is prominently visible in the center. Visible stitching along the edges adds detail to the craftsmanship. The warm lighting continues to emphasize the rich caramel color of the leather. The black background maintains the dramatic, product-photography style presentation. The wallet appears more stable with less motion blur."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The leather wallet continues its rotation, now showing a cleaner front view with the snap closure positioned toward the upper right. The golden-brown leather surface appears smooth and well-lit with warm tones. The wallet is tilted slightly to the left. The minimalist black background persists, creating a floating effect. The lighting accentuates the leather's natural texture and the metallic sheen of the button closure. The composition suggests a product showcase or advertisement style."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "appearing",
+    "caramel",
+    "card",
+    "cleaner",
+    "clip",
+    "closure",
+    "colored",
+    "completely",
+    "continues",
+    "different",
+    "front",
+    "holder",
+    "leather",
+    "medium",
+    "now",
+    "rotating",
+    "rotation",
+    "showcases",
+    "showing",
+    "shown",
+    "slightly",
+    "slowly",
+    "snap",
+    "speech",
+    "tan",
+    "upright",
+    "video",
+    "view",
+    "wallet",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

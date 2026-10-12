@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9772d0ada9be775dad2691f744f8077acb9bf7771e400d2abc185aae904dca9d",
+  "sha256": "9772d0ada9be775dad2691f744f8077acb9bf7771e400d2abc185aae904dca9d",
+  "bytes": 4593103,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot7_v1.mp4"
+  ],
+  "collections": [
+    "seconds"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

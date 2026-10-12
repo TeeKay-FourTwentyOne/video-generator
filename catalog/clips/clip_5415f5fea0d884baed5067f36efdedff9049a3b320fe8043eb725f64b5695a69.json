@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5415f5fea0d884baed5067f36efdedff9049a3b320fe8043eb725f64b5695a69",
+  "sha256": "5415f5fea0d884baed5067f36efdedff9049a3b320fe8043eb725f64b5695a69",
+  "bytes": 134991273,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 306,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 7344,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "context-picture.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

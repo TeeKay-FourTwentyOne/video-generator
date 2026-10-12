@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_10796c7c911821463df6242827e7bbbfae440de9b9d60868d257aa1755871c51",
+  "sha256": "10796c7c911821463df6242827e7bbbfae440de9b9d60868d257aa1755871c51",
+  "bytes": 5311583,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763541365_1fko81.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763541365_1fko81"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip depicts an army of red-eyed humanoid robots advancing through a destroyed industrial warehouse in a post-apocalyptic setting. The dramatic sepia-toned visuals feature heavy backlighting, smoke effects, and debris-strewn floors as the machines march forward menacingly. The brief audio of someone saying 'I'm out' suggests a human perspective of retreat or defeat against these mechanical forces.",
+      "transcript": "I'm out.",
+      "tags": [
+        "advanced",
+        "advancing",
+        "approximately",
+        "army",
+        "camera",
+        "cinematic",
+        "clip",
+        "closer",
+        "composition",
+        "continues",
+        "depicts",
+        "destroyed",
+        "devastated",
+        "eyed",
+        "eyes",
+        "figures",
+        "formation",
+        "glowing",
+        "group",
+        "humanoid",
+        "medium",
+        "menacing",
+        "out",
+        "prominent",
+        "red",
+        "robot",
+        "robotic",
+        "robots",
+        "setting",
+        "shows",
+        "speech",
+        "stands",
+        "their",
+        "warehouse",
+        "within"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A group of menacing humanoid robots with glowing red eyes stands in formation within a destroyed industrial warehouse. The scene is rendered in dark, desaturated sepia tones with dramatic backlighting from a beam of light cutting through smoke and haze from the upper right. Debris, rubble, and weapons litter the cracked concrete floor. Metal structural beams are visible in the background. The robots have skeletal metallic bodies with battle damage, creating an apocalyptic atmosphere. Low angle shot emphasizes their threatening presence."
+        },
+        {
+          "seconds": 2,
+          "text": "The robot army continues advancing through the devastated warehouse setting. The composition shows approximately 8-10 humanoid machines with glowing red optical sensors, their bulky armored bodies silhouetted against smoky backlighting. The dramatic shaft of light from upper right illuminates dust particles in the air. Scattered weapons and concrete debris remain on the ground. The robots appear slightly closer, suggesting forward movement. Industrial ceiling structure visible above. Dark, monochromatic color palette with high contrast creates cinematic dystopian mood."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The robotic figures have advanced closer to camera, their red glowing eyes more prominent and menacing. The lead robot stands center frame with arms slightly positioned outward in an aggressive stance. Smoke continues billowing in the background beneath industrial metal framework. The ground shows extensive damage with chunks of concrete and abandoned firearms. Lighting remains dramatically backlit with the diagonal light beam cutting through atmospheric haze. The sepia-toned, high-contrast cinematography maintains the post-apocalyptic science fiction aesthetic throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "advanced",
+    "advancing",
+    "approximately",
+    "army",
+    "camera",
+    "cinematic",
+    "clip",
+    "closer",
+    "composition",
+    "continues",
+    "depicts",
+    "destroyed",
+    "devastated",
+    "eyed",
+    "eyes",
+    "figures",
+    "formation",
+    "glowing",
+    "group",
+    "humanoid",
+    "medium",
+    "menacing",
+    "out",
+    "prominent",
+    "red",
+    "robot",
+    "robotic",
+    "robots",
+    "setting",
+    "shows",
+    "speech",
+    "stands",
+    "their",
+    "warehouse",
+    "within"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

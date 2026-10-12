@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_85cdbe0a6ae1840fdf5608aba25514e4d80a9f8b8d58da651cbbcebd88afcee8",
+  "projectId": "one-unit-apart",
+  "editVersion": "edit/v2",
+  "segmentIndex": 3,
+  "shotId": "S04",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 360,
+    "fps": 30
+  },
+  "timelineStartFrame": 720,
+  "outputSha256": "a797570ffe9a03305a8b60b94a50747130ab1fe94f727830cd0986337143f040",
+  "schemaVersion": 1,
+  "id": "use_ec7869d4e38c3eb982c486e5d4e951269605d78682f0f805ff9a6de13b713262"
+}

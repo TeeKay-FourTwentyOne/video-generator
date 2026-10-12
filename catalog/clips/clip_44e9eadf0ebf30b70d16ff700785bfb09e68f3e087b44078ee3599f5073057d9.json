@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_44e9eadf0ebf30b70d16ff700785bfb09e68f3e087b44078ee3599f5073057d9",
+  "sha256": "44e9eadf0ebf30b70d16ff700785bfb09e68f3e087b44078ee3599f5073057d9",
+  "bytes": 14528578,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 31.291667,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 751,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "august_2026_v3_720.mp4"
+  ],
+  "collections": [
+    "august"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

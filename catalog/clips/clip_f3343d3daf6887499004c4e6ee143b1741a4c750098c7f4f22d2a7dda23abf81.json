@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f3343d3daf6887499004c4e6ee143b1741a4c750098c7f4f22d2a7dda23abf81",
+  "sha256": "f3343d3daf6887499004c4e6ee143b1741a4c750098c7f4f22d2a7dda23abf81",
+  "bytes": 1368625,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "LED_E.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

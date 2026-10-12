@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_77c4b781f166c6835e97772d13db3d517d2336740863816e1ea7c128b53fd719",
+  "sha256": "77c4b781f166c6835e97772d13db3d517d2336740863816e1ea7c128b53fd719",
+  "bytes": 48254213,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "vikings_night.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

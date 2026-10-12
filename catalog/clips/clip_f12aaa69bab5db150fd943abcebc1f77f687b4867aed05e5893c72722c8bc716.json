@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f12aaa69bab5db150fd943abcebc1f77f687b4867aed05e5893c72722c8bc716",
+  "sha256": "f12aaa69bab5db150fd943abcebc1f77f687b4867aed05e5893c72722c8bc716",
+  "bytes": 4743243,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "veo_1777264308735_wjeb2c.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "The bride's hands hold the walnut box steady at chest level. Her fingertips lift the brass-hinged lid of the box. The lid opens slowly and fully. She holds the open box before her chest, hands steady, no other movement. White lace bodice and tulle of the wedding dress unmoving. Ornate church bathroom background unchanged — gilded mirror edge, bouquet on marble counter behind, soft warm gold sconce light. Static camera, no pan, no zoom.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5423159c6b16a9b3e817dbdd3bcaf45e9974d748a8516f9fab02a3c6febf3050",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1336144208,
+      "createdAt": "2026-04-27T04:30:05.722Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a8d5710451f0df19aebe8c3adfc6156084bbaf63091fa163601997a8a97dba8f",
+  "sha256": "a8d5710451f0df19aebe8c3adfc6156084bbaf63091fa163601997a8a97dba8f",
+  "bytes": 1130282,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.833333,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 68,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669465440_zpys41_trimmed.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767669465440_zpys41_trimmed"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures an intimate conversation between a man and woman in a modern open-concept home. Over approximately 3 seconds, they transition from facing forward to engaging directly with each other in what appears to be a serious discussion, with the man speaking the words 'three years since.' The warm domestic setting and their body language suggest a meaningful personal conversation.",
+      "transcript": "three years since",
+      "tags": [
+        "asian",
+        "captures",
+        "clip",
+        "concept",
+        "continues",
+        "conversation",
+        "gaze",
+        "her",
+        "home",
+        "individuals",
+        "intimate",
+        "left",
+        "living",
+        "looking",
+        "maintains",
+        "man",
+        "modern",
+        "now",
+        "open",
+        "people",
+        "position",
+        "shifted",
+        "short",
+        "since",
+        "space",
+        "speech",
+        "stand",
+        "subjects",
+        "three",
+        "toward",
+        "turned",
+        "two",
+        "woman",
+        "years"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people stand in an open-concept living space. On the left, an Asian woman with shoulder-length black hair wears a white V-neck blouse and dark navy pants, looking slightly to her right with a neutral expression. On the right, a Caucasian man with brown hair wears a gray quarter-zip sweater over a white t-shirt and dark jeans, his right hand on his hip, looking forward with a slightly concerned expression. Behind them, a kitchen with wooden cabinets, stainless steel appliances, and a pendant light is visible. Warm, natural lighting fills the scene."
+        },
+        {
+          "seconds": 1.42,
+          "text": "The same two individuals are now turned toward each other in conversation. The woman has shifted her gaze to look directly at the man, her expression attentive. The man has turned his head to face her, maintaining his hand-on-hip posture with a serious, engaged expression. The background remains unchanged with the kitchen visible through the archway. A table lamp with a cream shade is visible behind the man near a gray couch. The lighting remains warm and natural, creating an intimate domestic atmosphere."
+        },
+        {
+          "seconds": 2.73,
+          "text": "The conversation continues between the two subjects. The woman maintains her position, looking at the man with a slightly concerned or thoughtful expression. The man appears to be speaking, his mouth slightly open, still facing the woman with his hand on his hip. His expression suggests he's explaining something serious. The composition remains stable with both subjects in medium shot, the kitchen background softly blurred. The warm ambient lighting and domestic setting create a sense of an important personal discussion."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_040",
+      "name": "The Couple",
+      "description": "Asian woman and tall man with brown hair in grey sweater, modern kitchen setting, appears to be same woman as Mei",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "asian",
+    "captures",
+    "clip",
+    "concept",
+    "continues",
+    "conversation",
+    "gaze",
+    "her",
+    "home",
+    "individuals",
+    "intimate",
+    "left",
+    "living",
+    "looking",
+    "maintains",
+    "man",
+    "modern",
+    "now",
+    "open",
+    "people",
+    "position",
+    "shifted",
+    "short",
+    "since",
+    "space",
+    "speech",
+    "stand",
+    "subjects",
+    "three",
+    "toward",
+    "turned",
+    "two",
+    "woman",
+    "years"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

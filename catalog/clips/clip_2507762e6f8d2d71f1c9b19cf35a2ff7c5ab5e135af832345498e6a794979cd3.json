@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2507762e6f8d2d71f1c9b19cf35a2ff7c5ab5e135af832345498e6a794979cd3",
+  "sha256": "2507762e6f8d2d71f1c9b19cf35a2ff7c5ab5e135af832345498e6a794979cd3",
+  "bytes": 12483703,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot2_commuters_seed3912710368.mp4",
+    "veo_1772420197127_6ekt6n.mp4"
+  ],
+  "collections": [
+    "patterns-knit"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "Bird's eye view looking straight down at a dense crowd of commuters moving through a wide corridor or transit plaza. They flow like fluid through a pipe, splitting around pillars and obstacles, merging at bottlenecks. Nobody touches, nobody looks up. Faces are too far away to be recognizable. The movement is hypnotic and continuous. Muted clothing colors, grey and navy tones. Overhead fluorescent or natural light casting soft shadows directly below each figure. Cinematic aerial photography, 9:16 vertical frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5080267fdce7d04a6937327cae493f948ea3691bb9254cb436b55a2feef04ae9",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 3912710368,
+      "createdAt": "2026-03-02T02:55:12.656Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

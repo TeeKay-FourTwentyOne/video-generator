@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_07b9e616d07b7bc817e77cfa8fe1ddc7cff39ef19ba82f761024805ae3dfcdfb",
+  "sha256": "07b9e616d07b7bc817e77cfa8fe1ddc7cff39ef19ba82f761024805ae3dfcdfb",
+  "bytes": 104142599,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 31.208333,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 749,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "film_4k.lanczos.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8548b449598b88812a04d1dccd360f66dbb52b80611e261d1cdf283c91c6de3f",
+  "sha256": "8548b449598b88812a04d1dccd360f66dbb52b80611e261d1cdf283c91c6de3f",
+  "bytes": 26657641,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "thats_the_problem.mp4"
+  ],
+  "collections": [
+    "alphaville-moon"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

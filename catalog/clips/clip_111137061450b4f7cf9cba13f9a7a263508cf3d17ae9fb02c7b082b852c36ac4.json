@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_111137061450b4f7cf9cba13f9a7a263508cf3d17ae9fb02c7b082b852c36ac4",
+  "sha256": "111137061450b4f7cf9cba13f9a7a263508cf3d17ae9fb02c7b082b852c36ac4",
+  "bytes": 447371,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 540,
+    "height": 960,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "bridge-review.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

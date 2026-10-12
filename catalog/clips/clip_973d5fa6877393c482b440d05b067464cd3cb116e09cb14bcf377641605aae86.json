@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_973d5fa6877393c482b440d05b067464cd3cb116e09cb14bcf377641605aae86",
+  "sha256": "973d5fa6877393c482b440d05b067464cd3cb116e09cb14bcf377641605aae86",
+  "bytes": 56150465,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 57.333333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 1376,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "clean-picture-1080.mp4"
+  ],
+  "collections": [
+    "scary-woods-episode-04"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

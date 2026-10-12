@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_33d4a8d924c831fa936a4f3c8ba2392b2c8195fca5d75d1d727754fd88273034",
+  "sha256": "33d4a8d924c831fa936a4f3c8ba2392b2c8195fca5d75d1d727754fd88273034",
+  "bytes": 1481906,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767543016728_ik4za6.mp4"
+  ],
+  "collections": [
+    "the_spill_1767542795801"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767543016728_ik4za6"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A young white man in his early 20s with short dark brown hair in a side part sits in a rustic coffee shop with exposed red brick walls and dark wood floors. Warm sunlight streams through large multi-paned windows, casting soft directional light across his face. He presses his lips together tightly, his shoulders beginning to shake subtly as he fights to contain his laughter. His eyes crinkle at the corners with barely suppressed amusement, but there's a tender, affectionate quality in his expression. The camera holds a close-up shot with shallow depth of field, the warm indie film aesthetic enhanced by the natural golden hour lighting. The background coffee shop interior with wooden counter and intimate seating remains softly blurred. His internal struggle between composure and laughter plays across his features as his shoulders continue their gentle trembling motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6510ddeeec97aa31968fc4ed642aabc0265c35cccfa9e6c0240b7b806e349e96",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A young white man in his early 20s with short dark brown hair in a side part sits in a rustic coffee shop with exposed red brick walls and dark wood floors. Warm sunlight streams through large multi-paned windows, casting soft directional light across his face. He presses his lips together tightly, his shoulders beginning to shake subtly as he fights to contain his laughter. His eyes crinkle at the corners with barely suppressed amusement, but there's a tender, affectionate quality in his expression. The camera holds a close-up shot with shallow depth of field, the warm indie film aesthetic enhanced by the natural golden hour lighting. The background coffee shop interior with wooden counter and intimate seating remains softly blurred. His internal struggle between composure and laughter plays across his features as his shoulders continue their gentle trembling motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6510ddeeec97aa31968fc4ed642aabc0265c35cccfa9e6c0240b7b806e349e96",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:09:25.054Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip captures a young man in a rustic cafe setting experiencing a full arc of laughter - from an explosive, head-thrown-back laugh, through an intense bent-over moment, to a calm recovery with a knowing smirk. The Japanese transcription 'ご視聴ありがとうございました' (Thank you for watching) suggests this is the closing moment of a video, possibly a vlog or content creator's sign-off.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "bent",
+        "brown",
+        "cafe",
+        "captured",
+        "captures",
+        "clip",
+        "down",
+        "experiencing",
+        "eyes",
+        "forward",
+        "hair",
+        "head",
+        "laugh",
+        "laughing",
+        "light",
+        "man",
+        "medium",
+        "mid",
+        "now",
+        "partially",
+        "recovered",
+        "rustic",
+        "setting",
+        "showing",
+        "smirk",
+        "speech",
+        "squeezed",
+        "subtle",
+        "tilted",
+        "vertical",
+        "video",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young man with light brown hair is captured mid-laugh, head tilted back with eyes closed and mouth wide open showing teeth. He wears a dark olive/brown t-shirt. The setting is a cafe or restaurant with exposed red brick walls, large industrial-style windows on the left letting in natural daylight, and a pendant light visible above. The composition is a medium close-up shot with shallow depth of field, warm ambient lighting creating a cozy atmosphere. The vertical framing emphasizes the subject's joyful expression."
+        },
+        {
+          "seconds": 2,
+          "text": "The same young man is now bent forward, head tilted down with eyes squeezed shut, continuing to laugh intensely. His light brown wavy hair is visible from above. He still wears the dark olive t-shirt. The background shows the same brick wall interior with wooden shelving containing jars or containers, and the industrial pendant light. Natural light streams from the window on the left. The camera maintains a close-up framing, capturing the peak of his laughter with motion blur suggesting movement."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The young man has recovered from laughing, now showing a subtle smirk with eyes partially squinted in an amused expression. His head is upright, facing slightly to the right. His light brown hair is neatly styled, swept to the side. The same cafe environment with brick walls, large windows, and pendant lighting remains visible. Warm natural light illuminates the left side of his face. The medium close-up shot captures his transition to a calmer, contemplative expression while maintaining the vertical portrait orientation."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bent",
+    "brown",
+    "cafe",
+    "captured",
+    "captures",
+    "clip",
+    "down",
+    "experiencing",
+    "eyes",
+    "forward",
+    "hair",
+    "head",
+    "laugh",
+    "laughing",
+    "light",
+    "man",
+    "medium",
+    "mid",
+    "now",
+    "partially",
+    "recovered",
+    "rustic",
+    "setting",
+    "showing",
+    "smirk",
+    "speech",
+    "squeezed",
+    "subtle",
+    "tilted",
+    "vertical",
+    "video",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

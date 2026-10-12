@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29fe002673a9429b259663ad7428d16a71590157c678d60b9ba28c21cc8e2375",
+  "sha256": "29fe002673a9429b259663ad7428d16a71590157c678d60b9ba28c21cc8e2375",
+  "bytes": 1188926,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 540,
+    "height": 960,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "fold-sign-muted.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

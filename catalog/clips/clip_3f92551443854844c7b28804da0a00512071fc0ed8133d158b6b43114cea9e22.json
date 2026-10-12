@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3f92551443854844c7b28804da0a00512071fc0ed8133d158b6b43114cea9e22",
+  "sha256": "3f92551443854844c7b28804da0a00512071fc0ed8133d158b6b43114cea9e22",
+  "bytes": 5219590,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4.166016,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "452/19",
+    "frameCount": 226,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "final_button.mp4"
+  ],
+  "collections": [
+    "mine-too"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

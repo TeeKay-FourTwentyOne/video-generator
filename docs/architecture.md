@@ -30,6 +30,13 @@ records substitutes for the others.
 `docs/schemas/production-record.schema.json`, then generates current project
 views. It imports no provider clients or compiled MCP modules and works without
 ignored media. Explicit local-evidence checks reuse the intact archive verifier.
+`clip-library.mjs` owns immutable content-addressed media in `data/clips/` and
+schema-checked public records in `catalog/clips/` and `catalog/uses/`. `clips.mjs`
+provides offline search, ingestion, range extraction and analytics; `clip-import.mjs`
+reconciles historical metadata while preserving all original paths. Maintained
+provider polling returns clip IDs; editing materializes frame ranges and records
+their use. [Clip library and evidence limits](clip-library.md).
+
 `accounting.mjs` derives itemized private reports from existing ledgers; it neither
 changes spending authority nor publishes financial details. See
 [the record workflow](production-records.md).
@@ -59,7 +66,7 @@ changes spending authority nor publishes financial details. See
   existing output versions. Full decode and actual frame counts are checked.
 - `src/tools/production.ts`: MCP wrappers invoke the same CLI; no duplicate
   state machine or separate interpretation of the budget.
-- Default MCP profile: nine production tools and read-only configuration presence.
+- Default MCP profile: ten production tools (including clip discovery) and read-only configuration presence.
   `VIDEO_MCP_PROFILE=legacy` restores the full specialist catalog on restart.
   This reduces tool selection ambiguity and keeps unqualified paths out of new films.
 
@@ -92,8 +99,9 @@ the shared path when a second real production demonstrates the need.
 - `src/agents/`, `public/`, `realtime-narrative/` and `stegasus/` are preserved
   experiments/legacy applications, not a required modern agent harness. Some SDK
   agents expect HTTP application endpoints not served by this MCP process.
-- `mcp/veo-clips-mcp/` is a separate catalog/search server; it is not the submission
-  authority. Its existing configuration is preserved.
+- `mcp/veo-clips-mcp/` is a preserved historical catalog/search server; its metadata
+  is imported into the shared catalog. Use `production_clips` or `npm run clips`
+  for current discovery. Neither catalog is a submission authority.
 - Detailed Claude rules moved to `docs/craft/`; their former locations contain
   short routing notes. The canonical production skill lives under `.agents/skills`
   with a Claude-compatible link. Historical bulk-workflow documents live in

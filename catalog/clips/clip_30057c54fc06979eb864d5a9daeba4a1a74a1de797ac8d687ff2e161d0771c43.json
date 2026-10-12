@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_30057c54fc06979eb864d5a9daeba4a1a74a1de797ac8d687ff2e161d0771c43",
+  "sha256": "30057c54fc06979eb864d5a9daeba4a1a74a1de797ac8d687ff2e161d0771c43",
+  "bytes": 1401066,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_2_1766536145897.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_2_1766536145897"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Clean shot of hand waiting on desk with phone more visible in background. The stationary hand and clearly visible phone establish the on-hold scenario directly.",
+      "transcript": "If you have any questions or other problems, please post them in the comments.",
+      "tags": [
+        "any",
+        "background",
+        "black",
+        "clean",
+        "clearer",
+        "comments",
+        "consistent",
+        "desk",
+        "emphasizes",
+        "establishing",
+        "flat",
+        "focus",
+        "hand",
+        "interminable",
+        "medium",
+        "phone",
+        "please",
+        "polished",
+        "position",
+        "post",
+        "problems",
+        "professional",
+        "prominent",
+        "quality",
+        "questions",
+        "remains",
+        "ring",
+        "shot",
+        "single",
+        "speech",
+        "static",
+        "stationary",
+        "take",
+        "them",
+        "throughout",
+        "visible",
+        "wait",
+        "waiting",
+        "wedding",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Single hand flat on polished wooden desk, wedding ring prominent. Black office phone sharply visible in background showing keypad. Clean composition with warm wood tones."
+        },
+        {
+          "seconds": 3,
+          "text": "Hand remains stationary in waiting position. The phone is more in focus in this take, establishing clearer connection between the waiting hand and the device."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Hand position consistent throughout. The static quality emphasizes the interminable wait. Professional office environment suggested by clean desk and phone."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "any",
+    "background",
+    "black",
+    "clean",
+    "clearer",
+    "comments",
+    "consistent",
+    "desk",
+    "emphasizes",
+    "establishing",
+    "flat",
+    "focus",
+    "hand",
+    "interminable",
+    "medium",
+    "phone",
+    "please",
+    "polished",
+    "position",
+    "post",
+    "problems",
+    "professional",
+    "prominent",
+    "quality",
+    "questions",
+    "remains",
+    "ring",
+    "shot",
+    "single",
+    "speech",
+    "static",
+    "stationary",
+    "take",
+    "them",
+    "throughout",
+    "visible",
+    "wait",
+    "waiting",
+    "wedding",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

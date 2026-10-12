@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b022c164e9c1aa31ecbbbe6ee05d70c18acde427df2511c6ae0ed22f6bb278c9",
+  "sha256": "b022c164e9c1aa31ecbbbe6ee05d70c18acde427df2511c6ae0ed22f6bb278c9",
+  "bytes": 1329340,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767567831305_etix2l.mp4"
+  ],
+  "collections": [
+    "january_4th_2026_an_ordinary_s_1767567066360"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767567831305_etix2l"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A person stands at a window in profile, coffee cup cradled in both hands, captured in medium close-up against a brightening dawn sky where golden light bleeds into lingering blue. The camera performs a gentle, subtle push-in toward them, observational and unhurried. Their eyes reflect something distant - not sadness exactly, but a quiet awareness of time passing. Natural morning light streams through the window, creating warm highlights on their face while cool shadows define the room behind them. The image has a soft, nostalgic quality with subtle film grain texture. As the camera's forward drift slows to a stop, a bird suddenly crosses through the frame outside the window, its silhouette breaking the contemplative spell. The lighting captures that bittersweet golden hour moment as night yields to day, with warm amber tones gradually overtaking the cool blue shadows. Shot with minimal camera movement, maintaining a naturalistic, documentary-like perspective throughout the intimate 6-second take.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7390c578f13de1cfef0157f7f3161c856bc78e6e3e4db5383fdcad4791979c35",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A person stands at a window in profile, coffee cup cradled in both hands, captured in medium close-up against a brightening dawn sky where golden light bleeds into lingering blue. The camera performs a gentle, subtle push-in toward them, observational and unhurried. Their eyes reflect something distant - not sadness exactly, but a quiet awareness of time passing. Natural morning light streams through the window, creating warm highlights on their face while cool shadows define the room behind them. The image has a soft, nostalgic quality with subtle film grain texture. As the camera's forward drift slows to a stop, a bird suddenly crosses through the frame outside the window, its silhouette breaking the contemplative spell. The lighting captures that bittersweet golden hour moment as night yields to day, with warm amber tones gradually overtaking the cool blue shadows. Shot with minimal camera movement, maintaining a naturalistic, documentary-like perspective throughout the intimate 6-second take.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7390c578f13de1cfef0157f7f3161c856bc78e6e3e4db5383fdcad4791979c35",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T23:02:56.953Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This intimate portrait-oriented video captures a woman enjoying a quiet moment with her beverage by a window during golden hour. Throughout the 6-second clip, she holds her mug at varying heights while gazing outward, with warm sunset light beautifully illuminating her profile against a blue sky background. The scene conveys a peaceful, contemplative mood with minimal movement.",
+      "transcript": ". .",
+      "tags": [
+        "both",
+        "captures",
+        "chest",
+        "colored",
+        "continues",
+        "dark",
+        "enjoying",
+        "hair",
+        "held",
+        "her",
+        "holding",
+        "intimate",
+        "level",
+        "light",
+        "medium",
+        "moment",
+        "mug",
+        "now",
+        "oriented",
+        "portrait",
+        "position",
+        "profile",
+        "quiet",
+        "remains",
+        "short",
+        "shown",
+        "slightly",
+        "speech",
+        "video",
+        "view",
+        "white",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short dark hair is shown in profile view, holding a dark-colored mug close to her face as if about to drink. She is positioned on the right side of the frame, facing left toward a window. Golden hour sunlight illuminates her face warmly from the left, creating dramatic contrast with deep shadows. The background shows a blue sky with some clouds and a distant horizon. The composition is intimate and contemplative, shot in portrait orientation with shallow depth of field."
+        },
+        {
+          "seconds": 3,
+          "text": "The same woman continues in profile, now with the white/light-colored mug held slightly lower, near chin level. Her face is more fully illuminated by the warm golden light, revealing more facial detail. Her eyes appear to be gazing outward through the window. The window frame is visible on the right edge. The blue sky background remains consistent with soft clouds. The lighting creates a warm, peaceful atmosphere with the subject bathed in sunset tones against the cooler blue exterior."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The woman remains in the same profile position, holding the white mug at chest level with both hands wrapped around it. A subtle smile appears on her face, suggesting contentment. The golden hour lighting continues to illuminate her features warmly. The composition remains consistent with the window frame visible on the right. The background shows the same blue sky with distant landscape silhouettes. The overall mood is serene and reflective, capturing a quiet moment of enjoyment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "both",
+    "captures",
+    "chest",
+    "colored",
+    "continues",
+    "dark",
+    "enjoying",
+    "hair",
+    "held",
+    "her",
+    "holding",
+    "intimate",
+    "level",
+    "light",
+    "medium",
+    "moment",
+    "mug",
+    "now",
+    "oriented",
+    "portrait",
+    "position",
+    "profile",
+    "quiet",
+    "remains",
+    "short",
+    "shown",
+    "slightly",
+    "speech",
+    "video",
+    "view",
+    "white",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

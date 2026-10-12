@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_26becae9a4dbc5842f951c759493f6f985a339d4ce1927c2514f6776c697ab9f",
+  "sha256": "26becae9a4dbc5842f951c759493f6f985a339d4ce1927c2514f6776c697ab9f",
+  "bytes": 4264325,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot-5.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

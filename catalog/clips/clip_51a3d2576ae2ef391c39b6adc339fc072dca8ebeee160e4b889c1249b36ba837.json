@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_51a3d2576ae2ef391c39b6adc339fc072dca8ebeee160e4b889c1249b36ba837",
+  "sha256": "51a3d2576ae2ef391c39b6adc339fc072dca8ebeee160e4b889c1249b36ba837",
+  "bytes": 2720181,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Closeup_on_the_202512221301_5hpfn.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

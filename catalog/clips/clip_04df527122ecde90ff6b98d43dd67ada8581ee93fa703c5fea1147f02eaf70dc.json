@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_04df527122ecde90ff6b98d43dd67ada8581ee93fa703c5fea1147f02eaf70dc",
+  "sha256": "04df527122ecde90ff6b98d43dd67ada8581ee93fa703c5fea1147f02eaf70dc",
+  "bytes": 36157,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tunnel_title_card.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:tunnel_title_card"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This is a static title card or credits sequence for an AI-generated video project called 'TUNNEL SCROLL TEST'. The frame displays technical information about the autonomous AI pipeline used, including Claude Opus 4.5, Veo 3.1, Imagen 3, and FFmpeg, emphasizing that no human video editing was involved in the production.",
+      "transcript": "you",
+      "tags": [
+        "background",
+        "black",
+        "called",
+        "card",
+        "centered",
+        "changes",
+        "completely",
+        "continues",
+        "credits",
+        "displaying",
+        "displays",
+        "elements",
+        "frames",
+        "generated",
+        "main",
+        "previous",
+        "project",
+        "remain",
+        "remains",
+        "sequence",
+        "short",
+        "solid",
+        "speech",
+        "static",
+        "text",
+        "title",
+        "tunnel",
+        "video",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A title card on a solid black background displays centered text. The main title 'TUNNEL SCROLL TEST' appears in large white bold letters at the top. Below it, 'January 7, 2026' is shown in gray text, followed by a green URL 'github.com/TeeKay-FourTwentyOne/video-generator'. A horizontal line separates sections. Below, blue text reads 'Edge-reinforced Veo frame chaining' with gray subtitle text. An orange header 'AUTONOMOUS AI PIPELINE' introduces a list of tools including Claude Opus 4.5, Veo 3.1, Imagen 3, and FFmpeg with their functions."
+        },
+        {
+          "seconds": 1,
+          "text": "The same static title card continues displaying on the black background. All text elements remain in identical positions - the white 'TUNNEL SCROLL TEST' header, gray date, green GitHub URL, blue technical description about edge-reinforced Veo frame chaining, and the orange 'AUTONOMOUS AI PIPELINE' section listing the AI tools used. At the bottom, red text states 'No human video editing' with gray text below reading 'AI-directed from concept to export'. The composition is centered and professional, resembling technical documentation or credits."
+        },
+        {
+          "seconds": 1.9,
+          "text": "The title card remains completely static with no changes from previous frames. The black background continues to display all the same text elements in their original positions. The hierarchical information layout shows the project title, date, repository link, technical methodology description, and the complete AI pipeline stack. The color coding remains consistent - white for main title, gray for dates and subtitles, green for URL, blue for technical terms, orange for section headers, and red for the 'No human video editing' disclaimer at the bottom."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "background",
+    "black",
+    "called",
+    "card",
+    "centered",
+    "changes",
+    "completely",
+    "continues",
+    "credits",
+    "displaying",
+    "displays",
+    "elements",
+    "frames",
+    "generated",
+    "main",
+    "previous",
+    "project",
+    "remain",
+    "remains",
+    "sequence",
+    "short",
+    "solid",
+    "speech",
+    "static",
+    "text",
+    "title",
+    "tunnel",
+    "video",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6f6c198a553a8d1f42897f474509103ae209cacb770bfd4b488e72d3176db960",
+  "sha256": "6f6c198a553a8d1f42897f474509103ae209cacb770bfd4b488e72d3176db960",
+  "bytes": 1213325,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767577900315_lb5evw.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767577838356"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767577900315_lb5evw"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Wide establishing shot of a dusty wooden floor in early morning light, the camera perfectly still and locked off. Soft, diffused sunlight streams through an unseen window, creating long shadows across worn, weathered floorboards rendered in muted, desaturated browns and grays. In the center of the frame, a weathered leather wallet lies abandoned, its aged brown surface scarred with use, while its brass clasp catches a single ray of golden light that pierces through the melancholic atmosphere. The shallow depth of field keeps the wallet in sharp focus while the edges of the frame fall into gentle blur. Empty space dominates the composition, with dust motes floating slowly through the air in the morning light. The overcast quality of the light creates soft shadows and a contemplative mood, while the vertical 9:16 framing emphasizes the loneliness of the object against the vast expanse of empty floor. The scene remains utterly still for 6 seconds, allowing the viewer to absorb the sense of absence and loss suggested by the abandoned wallet in this quiet, melancholic morning moment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fbdfea26f4ec6025f1b5866267ac149b57b99b2aef4860b8c434e26e0050e9aa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Wide establishing shot of a dusty wooden floor in early morning light, the camera perfectly still and locked off. Soft, diffused sunlight streams through an unseen window, creating long shadows across worn, weathered floorboards rendered in muted, desaturated browns and grays. In the center of the frame, a weathered leather wallet lies abandoned, its aged brown surface scarred with use, while its brass clasp catches a single ray of golden light that pierces through the melancholic atmosphere. The shallow depth of field keeps the wallet in sharp focus while the edges of the frame fall into gentle blur. Empty space dominates the composition, with dust motes floating slowly through the air in the morning light. The overcast quality of the light creates soft shadows and a contemplative mood, while the vertical 9:16 framing emphasizes the loneliness of the object against the vast expanse of empty floor. The scene remains utterly still for 6 seconds, allowing the viewer to absorb the sense of absence and loss suggested by the abandoned wallet in this quiet, melancholic morning moment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fbdfea26f4ec6025f1b5866267ac149b57b99b2aef4860b8c434e26e0050e9aa",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:50:46.956Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This atmospheric video clip features a static shot of a worn brown leather wallet resting on rustic wooden floorboards, illuminated by natural window light creating geometric shadow patterns. The scene remains essentially unchanged throughout the 6-second duration, creating a contemplative, cinematic mood with its shallow depth of field and warm lighting. A brief audio element with the word 'you' accompanies the otherwise still visual composition.",
+      "transcript": "you",
+      "tags": [
+        "atmospheric",
+        "brass",
+        "brown",
+        "clip",
+        "closure",
+        "composition",
+        "continues",
+        "features",
+        "floor",
+        "floorboards",
+        "leather",
+        "lighting",
+        "medium",
+        "natural",
+        "planks",
+        "position",
+        "remains",
+        "rest",
+        "rustic",
+        "shot",
+        "sits",
+        "snap",
+        "speech",
+        "static",
+        "stationary",
+        "video",
+        "wallet",
+        "weathered",
+        "window",
+        "wooden",
+        "worn",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A worn brown leather wallet with a brass snap closure sits on weathered wooden floorboards. Natural light streams through a window visible in the upper left corner, creating geometric light patterns on the floor. The wallet is positioned in the lower center of the frame, partially illuminated by the sunlight. The scene has a moody, atmospheric quality with dust particles visible in the light beams. The camera angle is low, shooting at floor level with shallow depth of field."
+        },
+        {
+          "seconds": 3,
+          "text": "The same brown leather wallet remains stationary on the rustic wooden floor planks. The composition is nearly identical to the first frame, with warm sunlight continuing to cast rectangular shadows from the window panes onto the floor. The wallet shows visible wear and scratches on its leather surface. The background remains softly blurred with the window frame visible. The lighting creates a nostalgic, contemplative atmosphere with strong contrast between light and shadow areas."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The leather wallet continues to rest on the wooden floorboards in the same position. The natural lighting from the window creates consistent geometric patterns across the floor surface. The wallet's brass hardware catches some of the ambient light. The wood grain texture is visible in the foreground planks. The scene maintains its still-life quality with the shallow depth of field keeping focus on the wallet while the background window and wall remain softly out of focus."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "atmospheric",
+    "brass",
+    "brown",
+    "clip",
+    "closure",
+    "composition",
+    "continues",
+    "features",
+    "floor",
+    "floorboards",
+    "leather",
+    "lighting",
+    "medium",
+    "natural",
+    "planks",
+    "position",
+    "remains",
+    "rest",
+    "rustic",
+    "shot",
+    "sits",
+    "snap",
+    "speech",
+    "static",
+    "stationary",
+    "video",
+    "wallet",
+    "weathered",
+    "window",
+    "wooden",
+    "worn",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

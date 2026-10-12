@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_07cf32120620c7ef2d087027d4359f22ad75f68ba6fc89c1cae060287fa1b88b",
+  "sha256": "07cf32120620c7ef2d087027d4359f22ad75f68ba6fc89c1cae060287fa1b88b",
+  "bytes": 2077650,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767741913615_yyazn2.mp4"
+  ],
+  "collections": [
+    "sagittarius_why_choose"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767741913615_yyazn2"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots, maintaining a neutral, direct expression, stands on a modern rooftop with large grey stone pavers and metal railings at golden hour. Medium shot capturing him as he gazes out over the sprawling cityscape below, where thousands of windows begin to illuminate in warm amber light against the deepening twilight. The camera starts at his eye level, then begins a slow, majestic orbit around him, revealing the full panorama of the vertical city stretching endlessly in all directions. Wind catches his open jacket and hair, creating subtle movement. The warm orange sunset glow on the horizon bathes him in heroic golden light, while cool blue twilight fills the sky above, creating a dramatic color contrast. Building lights twinkle like stars below, and distant skyscrapers pierce the glowing atmosphere. The camera movement is smooth and deliberate, slightly low angle to emphasize his confident stance against the vast urban landscape. Natural sound includes the gentle wind, distant city ambience, and the subtle rustle of his clothing in the breeze.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_979277e717839db77953e05a69fd6a408d3aee6c9363fafd3cb6adee48bdf072",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots, maintaining a neutral, direct expression, stands on a modern rooftop with large grey stone pavers and metal railings at golden hour. Medium shot capturing him as he gazes out over the sprawling cityscape below, where thousands of windows begin to illuminate in warm amber light against the deepening twilight. The camera starts at his eye level, then begins a slow, majestic orbit around him, revealing the full panorama of the vertical city stretching endlessly in all directions. Wind catches his open jacket and hair, creating subtle movement. The warm orange sunset glow on the horizon bathes him in heroic golden light, while cool blue twilight fills the sky above, creating a dramatic color contrast. Building lights twinkle like stars below, and distant skyscrapers pierce the glowing atmosphere. The camera movement is smooth and deliberate, slightly low angle to emphasize his confident stance against the vast urban landscape. Natural sound includes the gentle wind, distant city ambience, and the subtle rustle of his clothing in the breeze.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_979277e717839db77953e05a69fd6a408d3aee6c9363fafd3cb6adee48bdf072",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T23:24:31.417Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A bearded man with long wavy hair stands on a high-rise observation deck overlooking the New York City skyline at twilight. Throughout the 4-second clip, he maintains a contemplative pose while gazing to his left, with One World Trade Center becoming increasingly prominent in the background as the camera perspective subtly shifts. The scene captures the golden hour transition with warm lighting on the subject against the glittering cityscape below.",
+      "transcript": "♪♪♪",
+      "tags": [
+        "aged",
+        "beard",
+        "bearded",
+        "contemplative",
+        "continues",
+        "deck",
+        "gazing",
+        "hair",
+        "high",
+        "his",
+        "identical",
+        "left",
+        "leftward",
+        "length",
+        "long",
+        "looking",
+        "man",
+        "medium",
+        "middle",
+        "new",
+        "observation",
+        "pose",
+        "remains",
+        "rise",
+        "rooftop",
+        "shoulder",
+        "speech",
+        "stance",
+        "standing",
+        "stands",
+        "still",
+        "wavy"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with shoulder-length wavy hair and a beard stands on a rooftop observation deck. He wears a gray henley shirt under an open olive/tan jacket with a dark layer beneath, khaki cargo pants, and tan hiking boots. He's positioned center-frame, looking to his left. Behind him is a glass safety barrier and a stunning twilight cityscape with illuminated buildings. The sky shows a gradient from deep blue to warm orange at the horizon. Golden hour lighting illuminates his face warmly."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man remains standing on the observation deck in an identical pose, gazing leftward. The New York City skyline is visible behind him, with One World Trade Center now more prominently visible on the right side of frame. The twilight sky maintains its blue-to-orange gradient. City lights twinkle across the urban landscape below. His shadow is cast on the gray stone floor tiles. The composition is vertical/portrait orientation with the subject centered."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man continues his contemplative stance on the rooftop, still looking to his left. One World Trade Center is now clearly visible and prominent in the background skyline. The cityscape stretches across the frame with thousands of illuminated windows. The sky has deepened slightly in blue tones while maintaining the warm orange horizon glow. The glass barrier and metal railings frame the scene. His layered outfit and rugged boots suggest casual urban exploration attire."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aged",
+    "beard",
+    "bearded",
+    "contemplative",
+    "continues",
+    "deck",
+    "gazing",
+    "hair",
+    "high",
+    "his",
+    "identical",
+    "left",
+    "leftward",
+    "length",
+    "long",
+    "looking",
+    "man",
+    "medium",
+    "middle",
+    "new",
+    "observation",
+    "pose",
+    "remains",
+    "rise",
+    "rooftop",
+    "shoulder",
+    "speech",
+    "stance",
+    "standing",
+    "stands",
+    "still",
+    "wavy"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_575ce1bcd0e7258f354e7288f5527e770010afcb94190caa44c8fe4cb484b54e",
+  "sha256": "575ce1bcd0e7258f354e7288f5527e770010afcb94190caa44c8fe4cb484b54e",
+  "bytes": 9211707,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s4b_deposit.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

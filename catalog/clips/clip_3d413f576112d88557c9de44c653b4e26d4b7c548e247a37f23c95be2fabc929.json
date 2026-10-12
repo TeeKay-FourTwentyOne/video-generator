@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3d413f576112d88557c9de44c653b4e26d4b7c548e247a37f23c95be2fabc929",
+  "sha256": "3d413f576112d88557c9de44c653b4e26d4b7c548e247a37f23c95be2fabc929",
+  "bytes": 1054848,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767660816055_das6c7.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767660816055_das6c7"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A woman in her 30s with sharp features wearing a dark dress sits in harsh interrogation room lighting. Close-up on her face as her guarded expression slowly cracks and transforms. She speaks, her voice wavering with unexpected vulnerability: \"Because I had no choice.\" As she delivers the line, her defensive mask crumbles - her eyes soften, the tension in her jaw releases, and a flicker of genuine pain crosses her features. The emotional shift is visible and profound, from cold and guarded to exposed and vulnerable. A single tear may catch the light. The venetian blind shadows on her face seem to shift as her expression changes. The camera holds tight on this transformation, capturing every micro-expression. Noir lighting creates stark contrast - half her face in shadow, half illuminated by the harsh overhead bulb. Cool blue shadows frame warm skin tones where the light touches. 9:16 vertical format, 4 seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9ebfd96364f10e56b0fe73cc55b68d82d6e411a39153a383076952fb84921620",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A woman in her 30s with sharp features wearing a dark dress sits in harsh interrogation room lighting. Close-up on her face as her guarded expression slowly cracks and transforms. She speaks, her voice wavering with unexpected vulnerability: \"Because I had no choice.\" As she delivers the line, her defensive mask crumbles - her eyes soften, the tension in her jaw releases, and a flicker of genuine pain crosses her features. The emotional shift is visible and profound, from cold and guarded to exposed and vulnerable. A single tear may catch the light. The venetian blind shadows on her face seem to shift as her expression changes. The camera holds tight on this transformation, capturing every micro-expression. Noir lighting creates stark contrast - half her face in shadow, half illuminated by the harsh overhead bulb. Cool blue shadows frame warm skin tones where the light touches. 9:16 vertical format, 4 seconds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9ebfd96364f10e56b0fe73cc55b68d82d6e411a39153a383076952fb84921620",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T00:52:40.997Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This dramatic close-up sequence captures a woman delivering an emotionally charged confession in low-key cinematic lighting. Her expression transitions from stern confrontation to anguished explanation to vulnerable concern as she states 'Because I had no choice.' The consistent noir-style lighting with warm overhead illumination against a dark background emphasizes the intensity and gravity of the moment.",
+      "transcript": "Because I had no choice.",
+      "tags": [
+        "appearing",
+        "bright",
+        "captures",
+        "charged",
+        "choice",
+        "close",
+        "concerned",
+        "confession",
+        "delivering",
+        "dramatic",
+        "emotional",
+        "emotionally",
+        "expression",
+        "eyes",
+        "face",
+        "glistening",
+        "her",
+        "intensity",
+        "key",
+        "lighting",
+        "look",
+        "low",
+        "medium",
+        "mouth",
+        "now",
+        "open",
+        "sequence",
+        "shot",
+        "shown",
+        "speaking",
+        "speech",
+        "transitioned",
+        "vulnerable",
+        "warm",
+        "wide",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of a woman's face in dramatic low-key lighting. A bright warm light source positioned above and behind her head creates a halo effect while casting deep shadows across her features. She has dark hair pulled back, intense eyes looking directly at camera, and dark lipstick. Her expression is stern and confrontational. The background is completely dark, creating a noir-style atmosphere. The vertical framing emphasizes the intimacy and intensity of the moment."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now shown with her mouth open, appearing to be speaking with emotional intensity. Her facial expression has shifted to one of distress or anguish, with furrowed brows and visible tension in her features. The lighting remains consistent with the warm overhead source illuminating her forehead while shadows define her cheekbones. Her eyes appear slightly squinted as she delivers dialogue. The dark background maintains the dramatic, isolated feel."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman's expression has transitioned to a more vulnerable, concerned look. Her eyes are wide and glistening, suggesting emotional weight to her words. The overhead warm light continues to illuminate her forehead and create a rim light effect on her hair. Her lips are slightly parted, and her face shows subtle signs of moisture or perspiration. The blue-tinted shadows on the lower portion of her face contrast with the warm highlights above."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_036",
+      "name": "Shadowy Sylvia",
+      "description": "Extreme close-up of woman's face, dramatic overhead lighting, dark setting, intense gaze, thriller atmosphere",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appearing",
+    "bright",
+    "captures",
+    "charged",
+    "choice",
+    "close",
+    "concerned",
+    "confession",
+    "delivering",
+    "dramatic",
+    "emotional",
+    "emotionally",
+    "expression",
+    "eyes",
+    "face",
+    "glistening",
+    "her",
+    "intensity",
+    "key",
+    "lighting",
+    "look",
+    "low",
+    "medium",
+    "mouth",
+    "now",
+    "open",
+    "sequence",
+    "shot",
+    "shown",
+    "speaking",
+    "speech",
+    "transitioned",
+    "vulnerable",
+    "warm",
+    "wide",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

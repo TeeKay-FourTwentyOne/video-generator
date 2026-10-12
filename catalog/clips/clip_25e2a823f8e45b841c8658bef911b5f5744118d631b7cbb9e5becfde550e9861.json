@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_25e2a823f8e45b841c8658bef911b5f5744118d631b7cbb9e5becfde550e9861",
+  "sha256": "25e2a823f8e45b841c8658bef911b5f5744118d631b7cbb9e5becfde550e9861",
+  "bytes": 1528104,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669724287_x4cast.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767669724287_x4cast"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "East Asian man in his 30s with short black hair wearing a gray henley shirt sits at a wooden table in a warmly lit café. Medium shot frames him from chest up, positioned slightly right of center. Soft afternoon light filters through a window camera-left, creating gentle highlights on his face while the background falls into creamy bokeh. The camera holds steady on his earnest expression as he leans forward slightly, hands resting on the table. Warm wood tones and soft amber lighting create an intimate atmosphere. His eyes maintain gentle focus toward someone off-screen left, conveying genuine understanding and shared emotion. The shallow depth of field isolates him from the blurred café environment behind.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, natural): \"Yeah. Me too, Sarah. Me too.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_10239c78f27015bc43a9d4124fb41928426207e611e2e14e4fc64dec34f324df",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "East Asian man in his 30s with short black hair wearing a gray henley shirt sits at a wooden table in a warmly lit café. Medium shot frames him from chest up, positioned slightly right of center. Soft afternoon light filters through a window camera-left, creating gentle highlights on his face while the background falls into creamy bokeh. The camera holds steady on his earnest expression as he leans forward slightly, hands resting on the table. Warm wood tones and soft amber lighting create an intimate atmosphere. His eyes maintain gentle focus toward someone off-screen left, conveying genuine understanding and shared emotion. The shallow depth of field isolates him from the blurred café environment behind.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, natural): \"Yeah. Me too, Sarah. Me too.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_10239c78f27015bc43a9d4124fb41928426207e611e2e14e4fc64dec34f324df",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:21:19.956Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A warm, intimate scene of a man and woman enjoying coffee together at a café, engaged in pleasant conversation. The clip captures their natural chemistry through genuine smiles and eye contact, set against a cozy café backdrop with golden lighting. The dialogue suggests mutual agreement or shared sentiment between the two.",
+      "transcript": "Yeah, me too, Sarah. Me too. Me too.",
+      "tags": [
+        "both",
+        "caf",
+        "coffee",
+        "contact",
+        "continues",
+        "conversation",
+        "couple",
+        "directly",
+        "downward",
+        "engaged",
+        "enjoying",
+        "eye",
+        "faces",
+        "facing",
+        "intimate",
+        "looking",
+        "making",
+        "man",
+        "medium",
+        "now",
+        "sarah",
+        "scene",
+        "sit",
+        "smiles",
+        "smiling",
+        "speech",
+        "subtle",
+        "table",
+        "their",
+        "together",
+        "warm",
+        "warmly",
+        "woman",
+        "yeah"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man and woman sit facing each other at a café table, both smiling warmly. The man on the left wears a gray long-sleeve shirt and holds a small espresso cup. The woman on the right has blonde hair and wears a brown/tan top, holding a dark coffee mug near her face. The background shows a warmly lit café interior with bokeh lights, wooden shelves, and blurred patrons. Golden warm lighting creates an intimate atmosphere. Medium close-up shot with shallow depth of field."
+        },
+        {
+          "seconds": 2,
+          "text": "The same couple now faces each other more directly, making eye contact with subtle smiles. The man in gray holds his espresso cup at table level while the woman holds her dark mug. Both appear engaged in conversation. The café background remains warmly lit with visible pendant lights and blurred figures of other customers. The composition is balanced with subjects on either side of frame. Warm golden tones dominate the color palette with soft natural lighting from the right."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The couple continues their intimate café conversation, both smiling and looking downward at their drinks. The man raises his cup slightly while the woman's hands rest near her dark coffee mug on the table. Her eyes are closed in a genuine smile. The warm bokeh background shows café ambiance with soft lighting. The shot maintains the same medium close-up framing with shallow depth of field, emphasizing the connection between the two subjects."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "both",
+    "caf",
+    "coffee",
+    "contact",
+    "continues",
+    "conversation",
+    "couple",
+    "directly",
+    "downward",
+    "engaged",
+    "enjoying",
+    "eye",
+    "faces",
+    "facing",
+    "intimate",
+    "looking",
+    "making",
+    "man",
+    "medium",
+    "now",
+    "sarah",
+    "scene",
+    "sit",
+    "smiles",
+    "smiling",
+    "speech",
+    "subtle",
+    "table",
+    "their",
+    "together",
+    "warm",
+    "warmly",
+    "woman",
+    "yeah"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f8a685128bcce3f7f82dfdc6616806f8fa40cc46ca3c5c6e10b4e70685e605c3",
+  "sha256": "f8a685128bcce3f7f82dfdc6616806f8fa40cc46ca3c5c6e10b4e70685e605c3",
+  "bytes": 184252802,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 93.216992,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "83400/2797",
+    "frameCount": 2780,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "v1.mp4"
+  ],
+  "collections": [
+    "gardening-social-1"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

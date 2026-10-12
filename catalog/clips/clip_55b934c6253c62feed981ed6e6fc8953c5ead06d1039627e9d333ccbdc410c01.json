@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_55b934c6253c62feed981ed6e6fc8953c5ead06d1039627e9d333ccbdc410c01",
+  "sha256": "55b934c6253c62feed981ed6e6fc8953c5ead06d1039627e9d333ccbdc410c01",
+  "bytes": 15991919,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_scroll_clip1_surface.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_scroll_clip1_surface"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This underwater video clip transitions from a dark, murky deep-water scene to bright, sunlit shallow water views. The footage captures the dramatic contrast between the depths and the surface, showcasing clear turquoise water with sunlight filtering through and air bubbles rising. The Japanese audio thanks viewers for watching, suggesting this is the conclusion of a video.",
+      "transcript": "ご視聴ありがとうございました。",
+      "tags": [
+        "blue",
+        "bright",
+        "brilliant",
+        "clear",
+        "clip",
+        "coloring",
+        "dark",
+        "deep",
+        "dominating",
+        "frame",
+        "image",
+        "looking",
+        "medium",
+        "murky",
+        "scene",
+        "shot",
+        "speech",
+        "surface",
+        "teal",
+        "toward",
+        "transitions",
+        "turquoise",
+        "underwater",
+        "upward",
+        "video",
+        "view",
+        "water",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A very dark underwater scene with deep teal-blue coloring dominating the frame. The image is almost entirely black with subtle dark blue-green tones. At the bottom center, there appears to be a small, faint whitish-gray shape that could be a marine creature or object barely visible in the murky depths. The lighting is extremely low, creating an atmospheric, mysterious underwater environment. The vertical portrait orientation suggests this was filmed with a mobile device."
+        },
+        {
+          "seconds": 4,
+          "text": "A bright underwater scene shot from below looking up toward the water's surface. Brilliant white sunlight penetrates through the rippling surface, creating a luminous glow at the top of the frame. The water is a vibrant turquoise-blue color with numerous small air bubbles scattered throughout, rising toward the surface. Two vertical lines (possibly ropes or cables) extend from top to bottom on the right side. The composition captures the ethereal quality of light filtering through clear ocean water."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Underwater view looking upward toward the bright surface with clear turquoise-blue water filling the frame. The water surface is visible at the top, showing rippling patterns with bright white sunlight breaking through. The water appears clearer with fewer bubbles than the previous frame. Two vertical lines (ropes or cables) are visible on the right side. At the bottom center, there's a small bright reflection or light source. The overall scene conveys a serene, peaceful underwater atmosphere with excellent visibility."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "blue",
+    "bright",
+    "brilliant",
+    "clear",
+    "clip",
+    "coloring",
+    "dark",
+    "deep",
+    "dominating",
+    "frame",
+    "image",
+    "looking",
+    "medium",
+    "murky",
+    "scene",
+    "shot",
+    "speech",
+    "surface",
+    "teal",
+    "toward",
+    "transitions",
+    "turquoise",
+    "underwater",
+    "upward",
+    "video",
+    "view",
+    "water",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

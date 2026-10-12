@@ -13,7 +13,8 @@ import { miniMaxCredentialsConfigured, prepareMiniMaxRequest, submitMiniMaxGener
 import { runwayCredentialsConfigured, prepareRunwayRequest, submitRunwayGeneration, pollRunwayOperation,
   downloadRunwayVideo, getRunwayAccount, recoverRunwayOperation } from '../../mcp/video-generator/dist/clients/runway.js';
 import { loadConfig } from '../../mcp/video-generator/dist/utils/config.js';
-import { PROJECT_ROOT, VIDEO_DIR } from '../../mcp/video-generator/dist/utils/paths.js';
+import { PROJECT_ROOT } from '../../mcp/video-generator/dist/utils/paths.js';
+import { importClip, resolveClip, generationMetadata } from './clip-library.mjs';
 
 export const hashFile = p => createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 export const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -118,7 +119,7 @@ export function imageOptions(args) {
   if (!files.length) throw new Error('Specify at least one image request file');
   return { files, reconcile, spacingSeconds };
 }
-export async function main(argv) {
+export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
   const [verb, location, ...args] = argv;
   if (!verb || verb === 'help') return { commands: [
     'doctor', 'init WORKSPACE LIMIT_USD AUTHORIZATION', 'status WORKSPACE', 'plan WORKSPACE',
@@ -128,8 +129,12 @@ export async function main(argv) {
     'reserve WORKSPACE ID USD CATEGORY PURPOSE', 'reconcile WORKSPACE ID USD EVIDENCE',
     'image WORKSPACE REQUEST_JSON [MORE_JSON...] [--reconcile] [--spacing=SECONDS]', 'reconcile-image WORKSPACE IMAGE_ID',
     'join-anchor WORKSPACE SOURCE FRAME OUTPUT.png',
-    'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION [--overlay]'
+    'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION [--overlay]', 'clips search|show|resolve|analytics [QUERY_OR_ID]'
   ], note: 'Only submit/image perform generation. Poll retrieves an existing operation; it never submits. Several image requests run in order, spaced apart; --reconcile (or reconcile-image) reduces an image reservation to its saved-usage list-price estimate.' };
+  if (verb === 'clips') {
+    if (!['search', 'show', 'resolve', 'analytics'].includes(location)) throw new Error('Use npm run clips for catalog mutations');
+    return (await import('./clips.mjs')).main([location, ...args], catalogRoot);
+  }
   if (verb === 'doctor') {
     const config = loadConfig();
     return { node: process.version, ffmpeg: command('ffmpeg', ['-version']).split('\n')[0],
@@ -175,7 +180,9 @@ export async function main(argv) {
     const operationFile = localPath(root, `operations/${request.requestId}.json`);
     const result = provider === 'minimax' ? await submitMiniMaxGeneration(request)
       : provider === 'runway' ? await submitRunwayGeneration(request) : await submitVeoGeneration(request);
-    if (provider === 'veo') atomicJson(operationFile, result);
+    if (provider === 'veo') atomicJson(operationFile, { ...result, provider, prompt: request.prompt,
+      parameters: { durationSeconds: request.durationSeconds, aspectRatio: request.aspectRatio, resolution: request.resolution, generateAudio: request.generateAudio },
+      createdAt: fs.existsSync(operationFile) ? readJson(operationFile).createdAt ?? new Date().toISOString() : new Date().toISOString() });
     return { shot: args[0], requestId: request.requestId, status: 'submitted', model: result.model };
   }
   if (verb === 'recover-minimax') {
@@ -212,12 +219,24 @@ export async function main(argv) {
     if (provider === 'runway' && prepareRunwayRequest(request).fingerprint !== entry.fingerprint)
       throw new Error('Runway request changed after submission; restore its original plan before polling');
     const record = localPath(root, `operations/${request.requestId}.asset.json`);
+    const operationFile = localPath(root, `operations/${request.requestId}.json`);
+    const operation = fs.existsSync(operationFile) ? readJson(operationFile) : {};
+    const generationSource = operation.prompt ? 'saved-operation-request' : 'film-plan';
+    const generationRequest = { ...request, ...operation.parameters, prompt: operation.prompt ?? request.prompt,
+      provider, model: entry.model, seed: entry.seed ?? request.seed, createdAt: operation.createdAt };
     if (fs.existsSync(record)) {
-      const asset = readJson(record);
-      if (hashFile(localPath(root, asset.path)) !== asset.sha256) throw new Error('Downloaded source changed');
+      let asset = readJson(record);
+      const source = asset.clipId ? resolveClip(asset.clipId, catalogRoot) : localPath(root, asset.path);
+      if (hashFile(source) !== asset.sha256) throw new Error('Downloaded source changed');
+      if (!asset.clipId) {
+        const clip = importClip(source, { kind: 'source', collections: [path.basename(root)],
+          generations: [generationMetadata(generationRequest, generationSource)] }, catalogRoot);
+        asset = { ...asset, legacyPath: asset.path, path: clip.path, clipId: clip.id };
+        atomicJson(record, asset);
+      }
       if (!['complete', 'reconciled'].includes(entry.status))
         updateSpend(budget, entry.id, { status: 'complete', evidence: `Recovered downloaded SHA256 ${asset.sha256}` });
-      return { shot: args[0], status: 'complete', path: asset.path, sha256: asset.sha256 };
+      return { shot: args[0], status: 'complete', path: asset.path, clipId: asset.clipId, sha256: asset.sha256 };
     }
     // --wait keeps polling the SAME operation at a bounded cadence; it never submits.
     const { waitSeconds, intervalSeconds } = pollOptions(args.slice(1));
@@ -241,20 +260,29 @@ export async function main(argv) {
       updateSpend(budget, entry.id, { status: 'failed', evidence: result.error });
       throw new Error(result.error);
     }
-    const output = localPath(root, `clips/${request.requestId}.mp4`);
-    if (fs.existsSync(output)) throw new Error('Unrecorded output exists; inspect it before recovery');
-    if (provider === 'minimax') await downloadMiniMaxVideo(result, output);
-    else if (provider === 'runway') await downloadRunwayVideo(result, output);
-    else {
-      const video = await downloadVeoVideo(result);
-      fs.copyFileSync(path.join(VIDEO_DIR, video.filename), output, fs.constants.COPYFILE_EXCL);
+    const incoming = path.join(catalogRoot, 'data/clips/.incoming');
+    fs.mkdirSync(incoming, { recursive: true });
+    const output = path.join(incoming, `${createHash('sha256').update(root + request.requestId + entry.operationName).digest('hex')}.mp4`);
+    let clip;
+    if (provider === 'veo') {
+      const video = await downloadVeoVideo(result, { request: generationRequest, generationSource, catalogRoot });
+      clip = { id: video.clipId, sha256: video.sha256, path: video.path };
+    } else {
+      // Resume a completed download after interruption; never generate again to repair ingestion.
+      if (!fs.existsSync(output)) {
+        if (provider === 'minimax') await downloadMiniMaxVideo(result, output);
+        else await downloadRunwayVideo(result, output);
+      }
+      clip = importClip(output, { kind: 'source', collections: [path.basename(root)],
+        generations: [generationMetadata(generationRequest, generationSource)] }, catalogRoot);
     }
-    const asset = { path: path.relative(root, output), sha256: hashFile(output), probe: probe(output) };
+    const asset = { clipId: clip.id, path: clip.path, sha256: clip.sha256, probe: probe(resolveClip(clip.id, catalogRoot)) };
     if (provider !== 'veo' && !asset.probe.streams?.some(s => s.codec_type === 'video' && s.width > 0 && s.height > 0))
       throw new Error('Provider output has no usable video stream; preserved for inspection');
     atomicJson(record, asset);
+    if (fs.existsSync(output)) fs.unlinkSync(output);
     updateSpend(budget, entry.id, { status: 'complete', evidence: `Downloaded SHA256 ${asset.sha256}` });
-    return { shot: args[0], status: 'complete', path: asset.path, sha256: asset.sha256 };
+    return { shot: args[0], status: 'complete', path: asset.path, clipId: asset.clipId, sha256: asset.sha256 };
   }
   if (verb === 'image') {
     const { generateAnchor } = await import('./google-image.mjs');
@@ -286,14 +314,14 @@ export async function main(argv) {
   if (verb === 'join-anchor') {
     if (args.length !== 3) throw new Error('join-anchor needs SOURCE FRAME OUTPUT.png');
     const { joinAnchor } = await import('./join-anchor.mjs');
-    return joinAnchor(root, args[0], Number(args[1]), args[2]);
+    return joinAnchor(root, args[0], Number(args[1]), args[2], { catalogRoot });
   }
   if (verb === 'assemble' || verb === 'review') {
     const { assemble, review } = await import('./edit.mjs');
-    if (verb === 'assemble') return assemble(root, args[0]);
+    if (verb === 'assemble') return assemble(root, args[0], { catalogRoot });
     const flags = args.slice(1);
     for (const f of flags) if (f !== '--overlay') throw new Error(`Unknown review option: ${f}`);
-    return review(root, args[0], { overlay: flags.includes('--overlay') });
+    return review(root, args[0], { overlay: flags.includes('--overlay'), catalogRoot });
   }
   throw new Error(`Unknown command: ${verb}`);
 }

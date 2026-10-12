@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f2c0f8fe2c8280b0bbe71925e256cab75860079db18b56fd6bf6b1e8dc7dc4b2",
+  "sha256": "f2c0f8fe2c8280b0bbe71925e256cab75860079db18b56fd6bf6b1e8dc7dc4b2",
+  "bytes": 1357472506,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 95.5,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 2292,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "whalefall_v1_4k.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bf1ee889e0a458fc7a6aa1ac8f72388bc6e3d8d060b08f6ca25ff91c24a4910f",
+  "sha256": "bf1ee889e0a458fc7a6aa1ac8f72388bc6e3d8d060b08f6ca25ff91c24a4910f",
+  "bytes": 10100045,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S04-v1.mp4",
+    "veo_1791504940181_o1dbdy.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, afternoon in a small laundromat, 35 mm. The silver-haired woman in the mustard-yellow raincoat draws in the sketchbook on her knee while the washing machines turn behind her; she glances at the two people folding at the table and back to the page. The young man and the middle-aged woman at the folding table fold a sheet between them, stepping together and apart, talking to each other in a quiet, natural, continuous conversation. Sound: their conversation, clearly audible, with the tumble and hum of the machines and the snap of a sheet; no music. The camera is locked off and does not move. She does not speak. Exactly the people already in the frame; nobody new enters. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0feb725e943c75bf0a3f8c004aa81ff85a500ad2a39287c0ef02fdf9ed121b93",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

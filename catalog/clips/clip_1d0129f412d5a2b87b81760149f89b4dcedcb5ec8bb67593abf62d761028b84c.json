@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1d0129f412d5a2b87b81760149f89b4dcedcb5ec8bb67593abf62d761028b84c",
+  "sha256": "1d0129f412d5a2b87b81760149f89b4dcedcb5ec8bb67593abf62d761028b84c",
+  "bytes": 40647073,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 61.208008,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 1469,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ep01_v2_review.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

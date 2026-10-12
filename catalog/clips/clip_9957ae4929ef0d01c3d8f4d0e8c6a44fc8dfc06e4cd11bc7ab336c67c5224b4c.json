@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9957ae4929ef0d01c3d8f4d0e8c6a44fc8dfc06e4cd11bc7ab336c67c5224b4c",
+  "sha256": "9957ae4929ef0d01c3d8f4d0e8c6a44fc8dfc06e4cd11bc7ab336c67c5224b4c",
+  "bytes": 12044951,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S01-v1.mp4",
+    "veo_1791058272587_9uhsgz.mp4"
+  ],
+  "collections": [
+    "borrowed-light-fable"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Inside a dark abandoned greenhouse tower at night, a hand-built cinematic miniature. The small maintenance machine rolls slowly and steadily forward from the far doorway along the tiled aisle toward the camera on its two caterpillar tracks. Its round amber chest lamp is the only warm light; its small pool of amber light slides over the cracked tiles and dead leaves ahead of it and brushes the nearest iron ribs as it passes. The camera is locked off, low and wide, perfectly still. The dry tree in the planter stays dark. Fine dust drifts in the faint teal moonlight. Slow, quiet, continuous movement; nothing else moves and no other light appears. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e5ee6b2f6a35c632b6cf121067664649c16d04736f65a0ed1794cb919ab21dfa",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

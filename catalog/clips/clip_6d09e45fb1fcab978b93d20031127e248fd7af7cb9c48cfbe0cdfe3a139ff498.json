@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6d09e45fb1fcab978b93d20031127e248fd7af7cb9c48cfbe0cdfe3a139ff498",
+  "sha256": "6d09e45fb1fcab978b93d20031127e248fd7af7cb9c48cfbe0cdfe3a139ff498",
+  "bytes": 54918266,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "dining_table.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

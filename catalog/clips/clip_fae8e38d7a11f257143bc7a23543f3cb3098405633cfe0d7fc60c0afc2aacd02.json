@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fae8e38d7a11f257143bc7a23543f3cb3098405633cfe0d7fc60c0afc2aacd02",
+  "sha256": "fae8e38d7a11f257143bc7a23543f3cb3098405633cfe0d7fc60c0afc2aacd02",
+  "bytes": 193774633,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 306,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 7344,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "hall-through-departure.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

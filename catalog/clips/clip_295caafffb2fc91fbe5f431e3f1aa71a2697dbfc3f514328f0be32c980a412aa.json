@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_295caafffb2fc91fbe5f431e3f1aa71a2697dbfc3f514328f0be32c980a412aa",
+  "sha256": "295caafffb2fc91fbe5f431e3f1aa71a2697dbfc3f514328f0be32c980a412aa",
+  "bytes": 16714193,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "empty_desert.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

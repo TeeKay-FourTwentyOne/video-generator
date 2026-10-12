@@ -13,6 +13,11 @@ async function invoke(args: string[]) {
 }
 const workspace = z.string().describe("Project-local workspace under data/workspace");
 export const productionTools = {
+  production_clips: {
+    name: "production_clips", description: "Search the shared clip catalog, inspect public metadata and recorded uses, or resolve a verified local master by stable clip ID. Read-only; no provider calls.",
+    inputSchema: { command: z.enum(["search", "show", "resolve", "analytics"]), query: z.string().optional() },
+    handler: async (a: { command: string; query?: string }) => invoke(["clips", a.command, ...(a.query ? [a.query] : [])]),
+  },
   production_doctor: {
     name: "production_doctor", description: "Inspect local prerequisites and credential presence. No network calls or installations.",
     inputSchema: {}, handler: async () => invoke(["doctor"]),

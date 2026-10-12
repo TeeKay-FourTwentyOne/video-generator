@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d483ce92d2e1ee6f2b021bd94d58a7d20518e310577f05c81055a624fb968906",
+  "sha256": "d483ce92d2e1ee6f2b021bd94d58a7d20518e310577f05c81055a624fb968906",
+  "bytes": 35996292,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 756.083333,
+    "width": 960,
+    "height": 540,
+    "frameRate": "24/1",
+    "frameCount": 18146,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "future4_hold.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

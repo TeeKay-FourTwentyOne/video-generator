@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c795d6a1e703f5847db94b534a8848445e0a484e76992d2df25c221319a1dadd",
+  "sha256": "c795d6a1e703f5847db94b534a8848445e0a484e76992d2df25c221319a1dadd",
+  "bytes": 12436191,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b4_drowsy.mp4"
+  ],
+  "collections": [
+    "passenger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

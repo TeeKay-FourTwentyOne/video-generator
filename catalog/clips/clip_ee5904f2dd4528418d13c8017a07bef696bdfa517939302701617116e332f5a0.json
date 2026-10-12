@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ee5904f2dd4528418d13c8017a07bef696bdfa517939302701617116e332f5a0",
+  "sha256": "ee5904f2dd4528418d13c8017a07bef696bdfa517939302701617116e332f5a0",
+  "bytes": 8082210,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 540,
+    "height": 960,
+    "frameRate": "24/1",
+    "frameCount": 1344,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scary-woods-episode-05-phone.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

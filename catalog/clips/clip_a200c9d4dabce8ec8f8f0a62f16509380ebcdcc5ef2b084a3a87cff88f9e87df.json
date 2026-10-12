@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a200c9d4dabce8ec8f8f0a62f16509380ebcdcc5ef2b084a3a87cff88f9e87df",
+  "sha256": "a200c9d4dabce8ec8f8f0a62f16509380ebcdcc5ef2b084a3a87cff88f9e87df",
+  "bytes": 1654284,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669465440_zpys41.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767669465440_zpys41"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "East Asian woman, 30s, shoulder-length black hair, white blouse, navy pants, stands in frame left. Caucasian man, 20s, brown hair, gray sweater, navy jeans, frame right. Medium shot, eye-level camera on tripod, slight handheld drift for naturalistic feel. Warm tungsten practicals create dramatic side lighting from frame right, casting angular shadows. High saturation emphasizes skin tones and fabric textures. Friend_1 maintains steady eye contact, jaw slightly tense, hands clasped in front. Minimal movement - subtle weight shift, controlled breathing visible. Kitchen/living room boundary visible in soft-focus background. 16:9 aspect ratio, 4-second duration.\n\n---\nDIALOGUE:\n- FRIEND_1 (male, 20s, controlled, tight): \"Three years. Since the wedding.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_423c4b903c71c4029bec8e70ebad38fd653fb2c4081d68b0de1ca1bd4c3c29b7",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "East Asian woman, 30s, shoulder-length black hair, white blouse, navy pants, stands in frame left. Caucasian man, 20s, brown hair, gray sweater, navy jeans, frame right. Medium shot, eye-level camera on tripod, slight handheld drift for naturalistic feel. Warm tungsten practicals create dramatic side lighting from frame right, casting angular shadows. High saturation emphasizes skin tones and fabric textures. Friend_1 maintains steady eye contact, jaw slightly tense, hands clasped in front. Minimal movement - subtle weight shift, controlled breathing visible. Kitchen/living room boundary visible in soft-focus background. 16:9 aspect ratio, 4-second duration.\n\n---\nDIALOGUE:\n- FRIEND_1 (male, 20s, controlled, tight): \"Three years. Since the wedding.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_423c4b903c71c4029bec8e70ebad38fd653fb2c4081d68b0de1ca1bd4c3c29b7",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:17:01.479Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A tense conversation between a man and woman in a residential living room setting, with dialogue referencing 'three years since the wedding.' The scene progresses from initial positioning to direct engagement, with the woman appearing increasingly contemplative while the man maintains a concerned, attentive demeanor throughout the exchange.",
+      "transcript": "Three years. Since the wedding.",
+      "tags": [
+        "background",
+        "closed",
+        "continues",
+        "conversation",
+        "dialogue",
+        "eyes",
+        "her",
+        "individuals",
+        "kitchen",
+        "left",
+        "living",
+        "man",
+        "medium",
+        "multi-scene",
+        "now",
+        "open",
+        "partially",
+        "people",
+        "referencing",
+        "residential",
+        "room",
+        "setting",
+        "shifted",
+        "since",
+        "speech",
+        "standing",
+        "tense",
+        "three",
+        "toward",
+        "turned",
+        "two",
+        "visible",
+        "wedding",
+        "woman",
+        "years"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people standing in a living room with an open kitchen visible in the background. On the left, an Asian woman with shoulder-length black hair wearing a white V-neck blouse and dark navy skirt, looking slightly to her right with a neutral expression. On the right, a Caucasian man with brown hair wearing a gray quarter-zip sweater over a white shirt and jeans, standing with his hand on his hip, looking forward with a concerned expression. The kitchen features wooden cabinets, stainless steel appliances, and natural light from a window."
+        },
+        {
+          "seconds": 2,
+          "text": "The same two individuals in the living room, now turned toward each other in conversation. The woman has shifted her gaze to look directly at the man, her expression appearing attentive and slightly serious. The man has turned his head to face her, maintaining his stance with hand on hip, his expression showing concern or intensity. The background remains unchanged with the warm-toned kitchen, pendant light, and table lamp visible. Medium shot framing captures both subjects from approximately waist up."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The conversation continues between the two people. The woman now has her eyes partially closed or looking downward, suggesting a moment of reflection or emotional response. The man continues looking at her with a serious, engaged expression, his posture unchanged with hand still on hip. The lighting remains consistent with warm tones from the kitchen area contrasting with cooler light on the right side. The composition maintains the same medium two-shot framing throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_002",
+      "name": "Mei",
+      "description": "East Asian woman with shoulder-length black hair, wearing a white blouse, modern interior setting with stone wall",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_040",
+      "name": "The Couple",
+      "description": "Asian woman and tall man with brown hair in grey sweater, modern kitchen setting, appears to be same woman as Mei",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "background",
+    "closed",
+    "continues",
+    "conversation",
+    "dialogue",
+    "eyes",
+    "her",
+    "individuals",
+    "kitchen",
+    "left",
+    "living",
+    "man",
+    "medium",
+    "multi-scene",
+    "now",
+    "open",
+    "partially",
+    "people",
+    "referencing",
+    "residential",
+    "room",
+    "setting",
+    "shifted",
+    "since",
+    "speech",
+    "standing",
+    "tense",
+    "three",
+    "toward",
+    "turned",
+    "two",
+    "visible",
+    "wedding",
+    "woman",
+    "years"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

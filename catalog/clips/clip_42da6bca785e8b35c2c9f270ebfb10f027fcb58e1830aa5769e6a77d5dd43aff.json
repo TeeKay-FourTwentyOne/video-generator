@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_42da6bca785e8b35c2c9f270ebfb10f027fcb58e1830aa5769e6a77d5dd43aff",
+  "sha256": "42da6bca785e8b35c2c9f270ebfb10f027fcb58e1830aa5769e6a77d5dd43aff",
+  "bytes": 1116612,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767504976110_oq5fbh.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767504976110_oq5fbh"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A vibrant red balloon soars majestically through an endless azure sky, appearing as a brilliant crimson dot against the vast blue expanse. The balloon moves with dramatic sweeping motions carried by powerful wind currents, its trailing string whipping and flowing gracefully behind like a delicate ribbon. Camera follows with a smooth tracking movement, maintaining the balloon's position in frame as it journeys toward the distant horizon. The scene is shot with a wide telephoto lens that compresses the sky's depth while isolating the balloon against the pure blue backdrop. Cinematic lighting bathes the scene in natural daylight with rich color saturation that makes the red balloon pop dramatically against the heavenly blue canvas. The movement conveys pure freedom and exhilaration as the balloon grows smaller in the distance, eventually becoming a tiny speck before disappearing toward the horizon line. Wind effects are visible in the string's flowing motion and the balloon's subtle bobbing trajectory through the boundless atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_73ba6943e208974f83416f4173db9a2ef9787ab7c9786c29dc0ce2f44a6f909f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A vibrant red balloon soars majestically through an endless azure sky, appearing as a brilliant crimson dot against the vast blue expanse. The balloon moves with dramatic sweeping motions carried by powerful wind currents, its trailing string whipping and flowing gracefully behind like a delicate ribbon. Camera follows with a smooth tracking movement, maintaining the balloon's position in frame as it journeys toward the distant horizon. The scene is shot with a wide telephoto lens that compresses the sky's depth while isolating the balloon against the pure blue backdrop. Cinematic lighting bathes the scene in natural daylight with rich color saturation that makes the red balloon pop dramatically against the heavenly blue canvas. The movement conveys pure freedom and exhilaration as the balloon grows smaller in the distance, eventually becoming a tiny speck before disappearing toward the horizon line. Wind effects are visible in the string's flowing motion and the balloon's subtle bobbing trajectory through the boundless atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_73ba6943e208974f83416f4173db9a2ef9787ab7c9786c29dc0ce2f44a6f909f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T05:35:39.405Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a red and white spherical kite or balloon floating and ascending in a clear blue sky. Over the 4-second duration, the object moves from a closer position in the upper-left to a more distant position in the upper-right, with pink and white streamers trailing behind it. The clip ends with a spoken 'Thank you for watching' as the kite continues its flight.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "against",
+        "appearing",
+        "appears",
+        "ascending",
+        "balloon",
+        "captures",
+        "central",
+        "clear",
+        "even",
+        "floating",
+        "floats",
+        "frame",
+        "higher",
+        "kite",
+        "large",
+        "medium",
+        "moved",
+        "position",
+        "positioned",
+        "red",
+        "sky",
+        "smaller",
+        "speech",
+        "spherical",
+        "thank",
+        "upper",
+        "vertical",
+        "vibrant",
+        "video",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A large red and white spherical kite or balloon floats against a clear, vibrant blue sky. The object appears inflated and round, with red being the dominant color and white accents visible on the lower portion. Pink and white streamers or tails trail from the bottom, extending diagonally toward the lower right of the frame. The camera angle is looking upward, capturing the object in the upper-left portion of the vertical frame. The lighting is bright and natural, suggesting daytime conditions."
+        },
+        {
+          "seconds": 2,
+          "text": "The red and white spherical kite has moved to a more central-upper position in the frame, appearing smaller as it has gained altitude or distance. The object maintains its round shape against the uniform bright blue sky. Multiple streamers - pink and white - trail behind it, extending toward the right side of the frame. A small dark speck, possibly a bird, is visible in the lower portion of the sky. The composition remains vertical with the camera still angled upward."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The red and white kite appears even smaller and higher in the sky, positioned in the upper-right quadrant of the frame. The spherical shape is still visible but with less detail due to increased distance. The trailing streamers extend horizontally to the right, appearing more stretched out. The clear blue sky dominates the frame, with a tiny dark speck visible below the kite. The upward camera angle captures the object's continued ascent or drift away from the viewer."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "appearing",
+    "appears",
+    "ascending",
+    "balloon",
+    "captures",
+    "central",
+    "clear",
+    "even",
+    "floating",
+    "floats",
+    "frame",
+    "higher",
+    "kite",
+    "large",
+    "medium",
+    "moved",
+    "position",
+    "positioned",
+    "red",
+    "sky",
+    "smaller",
+    "speech",
+    "spherical",
+    "thank",
+    "upper",
+    "vertical",
+    "vibrant",
+    "video",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

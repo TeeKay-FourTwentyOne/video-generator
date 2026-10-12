@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c16473bf1917f0aa9eb1aafbb5197bd1c4be3d2dbb3e1b7bf884bccb83006437",
+  "sha256": "c16473bf1917f0aa9eb1aafbb5197bd1c4be3d2dbb3e1b7bf884bccb83006437",
+  "bytes": 3571072,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767542055130_d2huj4.mp4"
+  ],
+  "collections": [
+    "environment_test_1767541954624"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767542055130_d2huj4"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Wide establishing shot of a derelict industrial hall with high gabled ceiling and repeating skylights casting cool, diffuse natural light through grimy glass. The long symmetrical space features weathered concrete floors, aged brick walls, and exposed steel beam framework. A lone silhouette figure moves slowly through the cavernous gloom, dwarfed by the vast abandoned interior. Handheld camera captures the scene with subtle organic movement, emphasizing the desolate atmosphere. Moody cinematic lighting with pale, filtered daylight creating dramatic shadows and highlighting the skeletal metal structure. The figure's movement creates a sense of scale and isolation within the empty industrial space.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9c176d226adcfedd130c603b2491dce5049e3d4d151bf5b3996f5665b6db5621",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Wide establishing shot of a derelict industrial hall with high gabled ceiling and repeating skylights casting cool, diffuse natural light through grimy glass. The long symmetrical space features weathered concrete floors, aged brick walls, and exposed steel beam framework. A lone silhouette figure moves slowly through the cavernous gloom, dwarfed by the vast abandoned interior. Handheld camera captures the scene with subtle organic movement, emphasizing the desolate atmosphere. Moody cinematic lighting with pale, filtered daylight creating dramatic shadows and highlighting the skeletal metal structure. The figure's movement creates a sense of scale and isolation within the empty industrial space.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9c176d226adcfedd130c603b2491dce5049e3d4d151bf5b3996f5665b6db5621",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:53:21.846Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a solitary figure walking through an abandoned industrial warehouse toward a bright exit doorway. The dramatic setting features a peaked glass ceiling, rusted metal framework, and weathered brick walls, creating a cinematic atmosphere of isolation and decay. The steady forward movement and symmetrical composition emphasize themes of journey and transition from darkness to light.",
+      "transcript": null,
+      "tags": [
+        "abandoned",
+        "appearing",
+        "away",
+        "bright",
+        "camera",
+        "captures",
+        "continues",
+        "derelict",
+        "doorway",
+        "end",
+        "far",
+        "figure",
+        "illuminated",
+        "industrial",
+        "lone",
+        "medium",
+        "now",
+        "opening",
+        "person",
+        "progressed",
+        "rectangular",
+        "silent",
+        "silhouetted",
+        "solitary",
+        "space",
+        "toward",
+        "vast",
+        "vertical",
+        "video",
+        "walking",
+        "walks",
+        "warehouse"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure walks away from the camera through a vast abandoned industrial warehouse. The space features a dramatic peaked glass ceiling with rusted metal framework allowing bright daylight to flood in. Weathered steel columns line both sides, with exposed brick walls visible in the background. The concrete floor shows significant wear and decay. The composition creates strong symmetry with leading lines drawing the eye toward the distant doorway where natural light creates a bright exit point. Cool blue-gray tones dominate with rust accents."
+        },
+        {
+          "seconds": 2,
+          "text": "The lone figure continues walking toward the illuminated doorway at the far end of the derelict factory hall. The person appears slightly closer to the exit, maintaining center frame position. The industrial architecture remains prominent with its triangular glass roof panels, some showing rust staining and deterioration. Multiple support columns create rhythmic vertical elements on both sides. The floor consists of large concrete slabs with visible cracks and discoloration. Dramatic contrast between the dark interior shadows and bright exterior light creates a cinematic atmosphere."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The silhouetted person has progressed further toward the bright rectangular doorway opening, now appearing smaller in the frame due to increased distance. The abandoned warehouse interior maintains its imposing industrial character with the peaked skylight roof structure overhead. Exposed brick walls with multiple window openings are visible on both sides. Debris and vegetation growth can be seen along the edges of the floor. The symmetrical composition and strong perspective lines emphasize the solitary journey through this decaying space toward the light."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abandoned",
+    "appearing",
+    "away",
+    "bright",
+    "camera",
+    "captures",
+    "continues",
+    "derelict",
+    "doorway",
+    "end",
+    "far",
+    "figure",
+    "illuminated",
+    "industrial",
+    "lone",
+    "medium",
+    "now",
+    "opening",
+    "person",
+    "progressed",
+    "rectangular",
+    "silent",
+    "silhouetted",
+    "solitary",
+    "space",
+    "toward",
+    "vast",
+    "vertical",
+    "video",
+    "walking",
+    "walks",
+    "warehouse"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a93a4522322e373b35dda5accd8c1ff0431a843de856a03a6c5feff99f552c1c",
+  "sha256": "a93a4522322e373b35dda5accd8c1ff0431a843de856a03a6c5feff99f552c1c",
+  "bytes": 14241935,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 185,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 4440,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "polis-three-scenes-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

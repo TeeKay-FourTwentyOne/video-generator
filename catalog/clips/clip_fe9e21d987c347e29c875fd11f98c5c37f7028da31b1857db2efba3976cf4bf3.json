@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fe9e21d987c347e29c875fd11f98c5c37f7028da31b1857db2efba3976cf4bf3",
+  "sha256": "fe9e21d987c347e29c875fd11f98c5c37f7028da31b1857db2efba3976cf4bf3",
+  "bytes": 2663782,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767579669870_wcd3qs.mp4"
+  ],
+  "collections": [
+    "a_cup_of_coffee_on_a_table__1767579562401"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767579669870_wcd3qs"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Extreme macro lens pushes dramatically forward into the surface of black coffee until it fills the entire vertical frame, the dark liquid transforming into an obsidian mirror. Sharp, high-contrast lighting creates deep shadows around the cup's rim as the camera moves inward with urgent momentum. In the coffee's reflective surface, distorted memories appear - fragmented faces and places warping across the liquid like fever dreams. Steam rises and morphs into crystalline formations and surreal landscapes, each tendril becoming a ghostly memory frozen in vapor. The camera movement accelerates into the depths of the coffee, creating a vertigo-inducing spiral as reflections multiply and fragment. Heavy film grain dances across the surface like television static, adding texture and unease. Time dilates as steam particles slow to near-stillness, forming one final, sharp image in the vapor - a moment of terrible recognition. The camera freezes at maximum magnification, the coffee's surface now an infinite black void filled with swirling reflections and suspended steam, trapped in that instant of revelation. Harsh directional lighting from above creates a stark chiaroscuro effect, with the steam catching light like crystal shards against the inky darkness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6ae8c7828cfdbdc221f9fb6b5ef1ca7142791483e133d56a77fe54504fa97e20",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme macro lens pushes dramatically forward into the surface of black coffee until it fills the entire vertical frame, the dark liquid transforming into an obsidian mirror. Sharp, high-contrast lighting creates deep shadows around the cup's rim as the camera moves inward with urgent momentum. In the coffee's reflective surface, distorted memories appear - fragmented faces and places warping across the liquid like fever dreams. Steam rises and morphs into crystalline formations and surreal landscapes, each tendril becoming a ghostly memory frozen in vapor. The camera movement accelerates into the depths of the coffee, creating a vertigo-inducing spiral as reflections multiply and fragment. Heavy film grain dances across the surface like television static, adding texture and unease. Time dilates as steam particles slow to near-stillness, forming one final, sharp image in the vapor - a moment of terrible recognition. The camera freezes at maximum magnification, the coffee's surface now an infinite black void filled with swirling reflections and suspended steam, trapped in that instant of revelation. Harsh directional lighting from above creates a stark chiaroscuro effect, with the steam catching light like crystal shards against the inky darkness.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6ae8c7828cfdbdc221f9fb6b5ef1ca7142791483e133d56a77fe54504fa97e20",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:20:05.999Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This artistic video clip shows a surreal transformation sequence beginning with a simple overhead shot of black coffee in a white cup, transitioning through an explosive burst of white powder or liquid, and culminating in a dramatic reveal of a person's face surrounded by crystalline ice-like shards. The entire sequence uses high contrast black and white imagery with dramatic lighting to create a visually striking metamorphosis effect.",
+      "transcript": null,
+      "tags": [
+        "abstract",
+        "against",
+        "artistic",
+        "background",
+        "beginning",
+        "black",
+        "bursts",
+        "center",
+        "ceramic",
+        "clip",
+        "coffee",
+        "containing",
+        "crystalline",
+        "cup",
+        "dark",
+        "dramatic",
+        "emerges",
+        "explosion",
+        "face",
+        "liquid",
+        "medium",
+        "mug",
+        "outward",
+        "overhead",
+        "pattern",
+        "person",
+        "powder",
+        "sequence",
+        "shown",
+        "shows",
+        "silent",
+        "simple",
+        "surreal",
+        "swirling",
+        "top",
+        "transformation",
+        "video",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A white ceramic cup or mug containing dark black coffee is shown from a top-down perspective against a completely black background. The cup is positioned in the upper portion of the frame, with the white rim creating a stark contrast against the dark liquid inside. A subtle brown reflection or highlight is visible on the coffee's surface near the edge. The minimalist composition emphasizes the circular shape and the contrast between white, brown, and black tones."
+        },
+        {
+          "seconds": 3,
+          "text": "A dramatic abstract explosion of white powder or liquid bursts outward in a swirling pattern against a pure black background. The motion creates dynamic radiating streaks and splashes emanating from a central dark vortex. A hint of skin tone (possibly a hand or face) is barely visible through the chaotic white spray. The image captures frozen motion with high contrast between the bright white particles and the dark void, creating an intense, energetic visual effect."
+        },
+        {
+          "seconds": 5.9,
+          "text": "A person's face emerges from the center of a dramatic crystalline explosion against a black background. The subject has a neutral expression with eyes looking slightly downward, fair skin, and appears to have long dark hair. Surrounding their head is a spectacular burst of ice-like or glass-like shards and white crystalline fragments radiating outward in all directions, creating a crown or halo effect. The lighting dramatically illuminates the face while the background remains completely black."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "artistic",
+    "background",
+    "beginning",
+    "black",
+    "bursts",
+    "center",
+    "ceramic",
+    "clip",
+    "coffee",
+    "containing",
+    "crystalline",
+    "cup",
+    "dark",
+    "dramatic",
+    "emerges",
+    "explosion",
+    "face",
+    "liquid",
+    "medium",
+    "mug",
+    "outward",
+    "overhead",
+    "pattern",
+    "person",
+    "powder",
+    "sequence",
+    "shown",
+    "shows",
+    "silent",
+    "simple",
+    "surreal",
+    "swirling",
+    "top",
+    "transformation",
+    "video",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bb999536873042f5ad4d05bbd9744c99e53636e53e8d55e0fe0cb38eaf09b8e3",
+  "sha256": "bb999536873042f5ad4d05bbd9744c99e53636e53e8d55e0fe0cb38eaf09b8e3",
+  "bytes": 12290035,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-v2.mp4",
+    "veo_1791506540372_2hiysb.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, noon in a city park, 35 mm, locked-off camera that does not move. The two old men in flat caps on the bench behind are the only people talking: they turn toward each other in a slow, natural, continuous conversation, their lips moving, one gesturing with a hand. The woman with the pram walks along the path behind them and out of frame without speaking. The silver-haired woman in the mustard-yellow raincoat on the near bench is completely silent: her lips stay closed and still for the whole shot, she never speaks, mouths words, laughs or hums; she closes her eyes for a moment in the sun, glances toward the two old men with a faint closed-mouth smile, then looks down and draws in her sketchbook, her pencil moving. Dappled light moves on the gravel as the leaves stir. No new person enters; nothing new appears. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_634957d1a91436fcdfd2c3f5c3904e1cd8b4409e0ff40f171673930931950b6a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 914109982,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

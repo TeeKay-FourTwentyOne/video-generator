@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b98bb888d82dc91951fe8d1143bdf29b27b73886701c6f94b658e58ed1214a12",
+  "sha256": "b98bb888d82dc91951fe8d1143bdf29b27b73886701c6f94b658e58ed1214a12",
+  "bytes": 1398332,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "v8_whale_swim.mp4"
+  ],
+  "collections": [
+    "whalefall"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

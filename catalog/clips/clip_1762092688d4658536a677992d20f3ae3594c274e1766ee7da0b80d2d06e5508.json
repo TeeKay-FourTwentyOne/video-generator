@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1762092688d4658536a677992d20f3ae3594c274e1766ee7da0b80d2d06e5508",
+  "sha256": "1762092688d4658536a677992d20f3ae3594c274e1766ee7da0b80d2d06e5508",
+  "bytes": 3464318,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Closeup_of_the_202512221248_oblli.mp4",
+    "Closeup_of_the_202512221305_ud58j.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

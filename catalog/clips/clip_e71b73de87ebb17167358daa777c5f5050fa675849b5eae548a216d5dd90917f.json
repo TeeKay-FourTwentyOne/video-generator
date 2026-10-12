@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e71b73de87ebb17167358daa777c5f5050fa675849b5eae548a216d5dd90917f",
+  "sha256": "e71b73de87ebb17167358daa777c5f5050fa675849b5eae548a216d5dd90917f",
+  "bytes": 8411768,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "8second_shot_use_202601130807_sfn3b.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:8second_shot_use_202601130807_sfn3b"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip appears to be an artistic visualization transitioning between stylized black-and-white edge-detected imagery and a colorful nature scene of a moss-covered cave or sinkhole. The clip creates a hypnotic tunnel effect with a central void, cycling through different visual treatments while maintaining the same basic circular composition. The transcription indicates this is a thank-you message to viewers, suggesting it may be an outro or artistic interlude.",
+      "transcript": "🙏🙏🙏 Thank you for watching! 🙏🙏",
+      "tags": [
+        "abstract",
+        "appears",
+        "artistic",
+        "background",
+        "black",
+        "cave",
+        "circular",
+        "clip",
+        "colorful",
+        "dark",
+        "first",
+        "frame",
+        "gray",
+        "like",
+        "line",
+        "looking",
+        "medium",
+        "natural",
+        "predominantly",
+        "ring",
+        "showing",
+        "shows",
+        "similar",
+        "speech",
+        "structure",
+        "stylized",
+        "thank",
+        "transitioning",
+        "vertical",
+        "vibrant",
+        "video",
+        "view",
+        "visualization",
+        "watching",
+        "what",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, predominantly black frame showing an abstract circular or ring-like structure in the center, rendered in white/gray line art style resembling an edge-detection or embossed effect. The ring appears organic and irregular, surrounded by similar textured formations in the corners that suggest rocky or cave-like surfaces. The composition creates a tunnel or portal-like appearance with the void in the center being pure black. The aesthetic is minimalist and mysterious."
+        },
+        {
+          "seconds": 4,
+          "text": "A vibrant, colorful frame showing what appears to be a view looking up through a natural cave or sinkhole opening. The scene is dominated by lush green moss and vegetation covering rocky surfaces, with bright lime green highlights creating a bioluminescent or enhanced appearance. A dark black void sits in the center representing the opening or sky above. Brown and rust-colored rock textures are visible beneath the green growth. The composition creates a dramatic circular framing effect."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Similar to the first frame, this shows a dark black background with white/gray line art depicting an irregular circular opening or ring structure in the center. The style appears to be an edge-detection or embossed filter effect applied to the cave imagery. Textured rocky formations frame the corners of the image. The central void remains pure black, and scattered debris-like elements float around the main ring structure. The overall mood is dark and abstract."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "appears",
+    "artistic",
+    "background",
+    "black",
+    "cave",
+    "circular",
+    "clip",
+    "colorful",
+    "dark",
+    "first",
+    "frame",
+    "gray",
+    "like",
+    "line",
+    "looking",
+    "medium",
+    "natural",
+    "predominantly",
+    "ring",
+    "showing",
+    "shows",
+    "similar",
+    "speech",
+    "structure",
+    "stylized",
+    "thank",
+    "transitioning",
+    "vertical",
+    "vibrant",
+    "video",
+    "view",
+    "visualization",
+    "watching",
+    "what",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

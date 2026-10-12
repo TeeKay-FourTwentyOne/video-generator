@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7c5392ea66fe293c2ad9400a9feb4b63ec94c16e25193d0ae426a68123478060",
+  "sha256": "7c5392ea66fe293c2ad9400a9feb4b63ec94c16e25193d0ae426a68123478060",
+  "bytes": 1476891,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668479679_i0dmfx.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668479679_i0dmfx"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Tight handheld two-shot, camera positioned uncomfortably close as a man in his 30s approaches from frame right while another man in his 20s suddenly looks up from frame left. Medium framing captures both faces with minimal headroom, the frame trembling slightly with documentary-style energy. Sharp dramatic side lighting from an unseen window cuts across the scene, casting the right half of their faces in deep shadow while warm light illuminates their left profiles. The approaching figure stops abruptly as their eyes meet, both faces registering sudden recognition - eyes widening, a visible sharp intake of breath. The camera holds this invasive proximity, capturing every micro-expression as initial surprise shifts into something more complex and unreadable. Natural, saturated colors with high contrast between light and shadow areas, the warm window light creating an amber glow against cooler shadows. The handheld camera maintains its too-close position throughout, creating visual tension through the uncomfortable intimacy of the framing.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, quick, intense): \"Sarah? Is that really you?\"\n- FRIEND_1 (male, 20s, natural): \"Oh my god... Michael.\"\n- FRIEND_2 (male, 30s, quick, intense): \"I can't believe it's been—\"\n- FRIEND_1 (male, 20s, controlled, tight): \"Three years. Since the wedding.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_231ee736302149b67d8dd6bfb0d288329ae6c5138f5ad2dd4df62c7855608c74",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Tight handheld two-shot, camera positioned uncomfortably close as a man in his 30s approaches from frame right while another man in his 20s suddenly looks up from frame left. Medium framing captures both faces with minimal headroom, the frame trembling slightly with documentary-style energy. Sharp dramatic side lighting from an unseen window cuts across the scene, casting the right half of their faces in deep shadow while warm light illuminates their left profiles. The approaching figure stops abruptly as their eyes meet, both faces registering sudden recognition - eyes widening, a visible sharp intake of breath. The camera holds this invasive proximity, capturing every micro-expression as initial surprise shifts into something more complex and unreadable. Natural, saturated colors with high contrast between light and shadow areas, the warm window light creating an amber glow against cooler shadows. The handheld camera maintains its too-close position throughout, creating visual tension through the uncomfortable intimacy of the framing.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, quick, intense): \"Sarah? Is that really you?\"\n- FRIEND_1 (male, 20s, natural): \"Oh my god... Michael.\"\n- FRIEND_2 (male, 30s, quick, intense): \"I can't believe it's been—\"\n- FRIEND_1 (male, 20s, controlled, tight): \"Three years. Since the wedding.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_231ee736302149b67d8dd6bfb0d288329ae6c5138f5ad2dd4df62c7855608c74",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:00:26.455Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows an intense face-to-face conversation between two men - one with dark hair in a gray shirt and another with wavy brown hair in a navy blue shirt. The exclamation 'Oh my god, Michael!' suggests surprise or shock during their exchange. The warm backlighting and intimate profile framing create a dramatic, emotionally charged atmosphere throughout the scene.",
+      "transcript": "Oh my god, Michael!",
+      "tags": [
+        "clearly",
+        "clip",
+        "close",
+        "continuing",
+        "conversation",
+        "dark",
+        "face",
+        "facing",
+        "god",
+        "intense",
+        "left",
+        "man",
+        "medium",
+        "men",
+        "michael",
+        "now",
+        "one",
+        "positions",
+        "profile",
+        "proximity",
+        "range",
+        "remain",
+        "shown",
+        "shows",
+        "speech",
+        "their",
+        "two",
+        "view"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two men are shown in profile view facing each other in close proximity. The man on the left has dark hair and appears to be looking downward. The man on the right has lighter, wavy brown hair and is wearing a dark blue shirt with an open collar. Warm golden backlighting from a window creates silhouettes and rim lighting on their hair. The composition is intimate with shallow depth of field, creating a dramatic, tense atmosphere."
+        },
+        {
+          "seconds": 2,
+          "text": "The same two men are now shown more clearly in profile, facing each other at close range. The dark-haired man on the left wears a light gray shirt and has his mouth slightly open as if speaking. The man on the right with wavy brown hair wears a dark navy blue button-up shirt and appears to be responding. Warm window light illuminates the scene from behind, with green curtains visible in the background. The framing suggests an intense conversation."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The two men remain in the same profile positions, continuing their face-to-face conversation. The dark-haired man on the left has his mouth open, appearing to speak with some emotion. The brown-haired man on the right maintains his position, his expression engaged in the exchange. The warm backlighting continues to create atmospheric rim lighting on both subjects. The intimate framing and close proximity suggest a dramatic or confrontational moment between the characters."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "clearly",
+    "clip",
+    "close",
+    "continuing",
+    "conversation",
+    "dark",
+    "face",
+    "facing",
+    "god",
+    "intense",
+    "left",
+    "man",
+    "medium",
+    "men",
+    "michael",
+    "now",
+    "one",
+    "positions",
+    "profile",
+    "proximity",
+    "range",
+    "remain",
+    "shown",
+    "shows",
+    "speech",
+    "their",
+    "two",
+    "view"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

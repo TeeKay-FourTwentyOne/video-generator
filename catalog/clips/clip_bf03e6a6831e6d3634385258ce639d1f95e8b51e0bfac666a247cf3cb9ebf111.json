@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bf03e6a6831e6d3634385258ce639d1f95e8b51e0bfac666a247cf3cb9ebf111",
+  "sha256": "bf03e6a6831e6d3634385258ce639d1f95e8b51e0bfac666a247cf3cb9ebf111",
+  "bytes": 1005829,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767489950017_xln7y1.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767489950017_xln7y1"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The candle flame flickers more dynamically, dancing and wavering in the darkness. The wax begins to soften and show the first signs of melting at the top. Warm golden light from the flame creates soft, shifting shadows. The flame grows slightly larger and more active. Black background, dramatic chiaroscuro lighting, intimate contemplative mood. Photorealistic, 9:16 vertical format.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_647a5bcd32d9e6bcb15d7977a9f5ee3fdb8212b7436a0c6af64ba770069c8d27",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The candle flame flickers more dynamically, dancing and wavering in the darkness. The wax begins to soften and show the first signs of melting at the top. Warm golden light from the flame creates soft, shifting shadows. The flame grows slightly larger and more active. Black background, dramatic chiaroscuro lighting, intimate contemplative mood. Photorealistic, 9:16 vertical format.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_647a5bcd32d9e6bcb15d7977a9f5ee3fdb8212b7436a0c6af64ba770069c8d27",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T01:25:05.850Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a white taper candle burning in an ornate brass candlestick holder against a black background. Over the duration, the candle progressively melts, developing dramatic wax drippings down its side, while smoke begins rising from the flame. Korean text appears as speech, thanking viewers for watching.",
+      "transcript": "시청해주셔서 감사합니다.",
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "brass",
+        "burned",
+        "burning",
+        "candle",
+        "candlestick",
+        "captures",
+        "continues",
+        "covered",
+        "drippings",
+        "heavily",
+        "holder",
+        "medium",
+        "melted",
+        "now",
+        "ornate",
+        "shorter",
+        "significantly",
+        "speech",
+        "stands",
+        "tall",
+        "taper",
+        "vertical",
+        "video",
+        "wax",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A tall white taper candle stands in an ornate brass candlestick holder against a pure black background. The candle is lit with a warm orange-yellow flame at its tip. The brass holder features a decorative circular base with embossed patterns and a curved finger loop handle on the right side. The candle appears fresh and unmelted, with clean straight edges. The lighting creates dramatic contrast between the bright flame and dark surroundings, with the candle centered in the vertical frame."
+        },
+        {
+          "seconds": 3,
+          "text": "The same white taper candle continues burning in the brass holder against the black background. A small amount of melted wax has begun forming on the left side near the top of the candle, creating a slight drip formation. The flame remains steady and bright with orange-yellow coloring. The composition remains centered with the ornate brass candlestick base visible, featuring its decorative embossed pattern and curved handle. The dramatic lighting emphasizes the candle against the dark void."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The candle has burned significantly shorter and is now heavily covered in melted wax drippings cascading down the left side. Wispy gray-white smoke rises from the flame, curling upward and to the left in elegant swirls. The wax has formed thick, organic drip patterns with multiple rivulets and droplets. The brass holder is now shown in a tighter crop, focusing on just the cup portion. The flame burns smaller but still bright, creating warm illumination against the black background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "brass",
+    "burned",
+    "burning",
+    "candle",
+    "candlestick",
+    "captures",
+    "continues",
+    "covered",
+    "drippings",
+    "heavily",
+    "holder",
+    "medium",
+    "melted",
+    "now",
+    "ornate",
+    "shorter",
+    "significantly",
+    "speech",
+    "stands",
+    "tall",
+    "taper",
+    "vertical",
+    "video",
+    "wax",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

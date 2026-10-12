@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1b2438892368156cc36ea9171825da733e460691df6b167db24bca7c02c54c62",
+  "sha256": "1b2438892368156cc36ea9171825da733e460691df6b167db24bca7c02c54c62",
+  "bytes": 1091059,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767534658267_nl3yow.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767534658267_nl3yow"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A professional woman in her 30s with dark hair pulled back stands quietly in a sleek elevator, soft fluorescent lighting casting gentle shadows across her composed face. She glances down at her wristwatch with subtle anticipation, her navy blazer crisp against the muted metal walls. The atmosphere feels hushed and expectant. Camera holds steady, cinematic shallow depth of field.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5e63ab946fdb9ff91e548909c7e69ca63b2107d0cffb1074cadd458a139ee262",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A professional woman in her 30s with dark hair pulled back stands quietly in a sleek elevator, soft fluorescent lighting casting gentle shadows across her composed face. She glances down at her wristwatch with subtle anticipation, her navy blazer crisp against the muted metal walls. The atmosphere feels hushed and expectant. Camera holds steady, cinematic shallow depth of field.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5e63ab946fdb9ff91e548909c7e69ca63b2107d0cffb1074cadd458a139ee262",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T13:50:14.446Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short vertical video shows a professional businesswoman in an elevator, dressed in formal corporate attire. She transitions from looking to the side with a pleasant expression to checking her wristwatch, maintaining a calm, composed demeanor throughout. The Japanese speech translates to a thank you message for watching, suggesting this is the closing segment of a video.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "brushed",
+        "businesswoman",
+        "continues",
+        "corporate",
+        "dark",
+        "directed",
+        "down",
+        "downward",
+        "dressed",
+        "elevator",
+        "formal",
+        "gaze",
+        "hair",
+        "her",
+        "left",
+        "looking",
+        "medium",
+        "metal",
+        "now",
+        "professional",
+        "she",
+        "short",
+        "shows",
+        "soft",
+        "speech",
+        "stands",
+        "still",
+        "vertical",
+        "video",
+        "walls",
+        "which",
+        "woman",
+        "wrist",
+        "wristwatch"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A professional woman stands in an elevator with brushed metal walls. She has dark hair pulled back in a neat bun, wearing a navy blue blazer over a white collared dress shirt. Her expression shows a slight, pleasant smile as she looks slightly to her left. The lighting is soft and even, creating a polished corporate atmosphere. The framing is a medium close-up shot in portrait orientation, capturing her from chest level up. The composition centers her against the metallic elevator background."
+        },
+        {
+          "seconds": 2,
+          "text": "The same businesswoman is now looking down at her wristwatch on her left wrist, which has a black leather strap with gold accents. Her eyes are cast downward with a gentle smile, suggesting she's checking the time casually. She maintains the same professional attire - navy blazer and white shirt. The elevator's brushed steel panels remain visible behind her. The shot is slightly wider, showing more of her upper body and the watch-checking gesture. Soft, diffused lighting illuminates her face evenly."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues in the elevator, now with her gaze still directed downward with a soft, content expression. Her watch is partially visible at the bottom of the frame on her wrist. The same navy blazer and white collared shirt are visible. Her hair remains neatly styled in a bun. The metallic elevator walls provide a consistent professional backdrop. The portrait framing maintains focus on her upper body, with warm, even lighting creating a pleasant corporate aesthetic."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_011",
+      "name": "Elena",
+      "description": "Professional Latina woman with dark hair in a sleek bun, navy blazer over white blouse, standing in elevator, confident smile",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "brushed",
+    "businesswoman",
+    "continues",
+    "corporate",
+    "dark",
+    "directed",
+    "down",
+    "downward",
+    "dressed",
+    "elevator",
+    "formal",
+    "gaze",
+    "hair",
+    "her",
+    "left",
+    "looking",
+    "medium",
+    "metal",
+    "now",
+    "professional",
+    "she",
+    "short",
+    "shows",
+    "soft",
+    "speech",
+    "stands",
+    "still",
+    "vertical",
+    "video",
+    "walls",
+    "which",
+    "woman",
+    "wrist",
+    "wristwatch"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

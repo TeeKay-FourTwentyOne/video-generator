@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c20633ae67786463899f5e3b4fdbc7fd84fc916a59571fa8e379c15b914ac6ae",
+  "sha256": "c20633ae67786463899f5e3b4fdbc7fd84fc916a59571fa8e379c15b914ac6ae",
+  "bytes": 1896287,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 960,
+    "height": 540,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "camera-guide.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

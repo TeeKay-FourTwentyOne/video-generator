@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_486eae9fe33de2848c72d69f12bd521272e754d488ab8281d2f25fd3d1591192",
+  "sha256": "486eae9fe33de2848c72d69f12bd521272e754d488ab8281d2f25fd3d1591192",
+  "bytes": 2337227,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539818481_tvupn0.mp4"
+  ],
+  "collections": [
+    "a_chef_prepares_a_simple_dish__1767539717092"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539818481_tvupn0"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A chef's hand gently stirs a simmering pan with slow, meditative circular motions as delicate bubbles rise to the surface. Aromatic steam curls upward in soft, wispy ribbons that catch and diffuse through warm natural light streaming from a nearby window. The camera maintains a close-up angle focused on the pan and stirring action, with shallow depth of field that softly blurs the kitchen background. Documentary-style cinematography captures the peaceful, contemplative atmosphere with warm golden tones and natural shadows. The chef's steady, measured movements create a sense of calm focus as ingredients slowly transform in the gently bubbling liquid. Subtle camera movement follows the stirring motion organically, emphasizing the meditative quality of the cooking process in this serene kitchen environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_77c7e2cd5a4229cb38490552c9b846b52f9a62d44770b6a47495e29415f7f5d0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A chef's hand gently stirs a simmering pan with slow, meditative circular motions as delicate bubbles rise to the surface. Aromatic steam curls upward in soft, wispy ribbons that catch and diffuse through warm natural light streaming from a nearby window. The camera maintains a close-up angle focused on the pan and stirring action, with shallow depth of field that softly blurs the kitchen background. Documentary-style cinematography captures the peaceful, contemplative atmosphere with warm golden tones and natural shadows. The chef's steady, measured movements create a sense of calm focus as ingredients slowly transform in the gently bubbling liquid. Subtle camera movement follows the stirring motion organically, emphasizing the meditative quality of the cooking process in this serene kitchen environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_77c7e2cd5a4229cb38490552c9b846b52f9a62d44770b6a47495e29415f7f5d0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:16:16.896Z",
+      "parameters": {
+        "durationSeconds": 2.5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical cooking video captures someone stirring an orange curry or sauce in a pan over a gas flame. The dramatic steam rising from the hot liquid is beautifully backlit by natural window light, creating an atmospheric culinary scene. The Korean speech 'Thank you!' accompanies this brief cooking demonstration.",
+      "transcript": "감사합니다!",
+      "tags": [
+        "actively",
+        "billowing",
+        "captures",
+        "close",
+        "colored",
+        "continues",
+        "cooking",
+        "curry",
+        "dark",
+        "dramatic",
+        "hand",
+        "medium",
+        "moved",
+        "orange",
+        "pan",
+        "right",
+        "sauce",
+        "scene",
+        "shot",
+        "side",
+        "someone",
+        "speech",
+        "spoon",
+        "steam",
+        "stirring",
+        "upward",
+        "vertical",
+        "video"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A close-up shot of a hand stirring an orange-colored sauce or curry in a dark pan on a gas stove. The blue flame is visible at the bottom of the frame. Steam rises dramatically from the hot liquid, backlit by natural light from a window. A metal spoon is submerged in the bubbling sauce. The background shows blurred greenery and warm ambient lighting, creating a cozy kitchen atmosphere. The vertical framing emphasizes the cooking action."
+        },
+        {
+          "seconds": 2,
+          "text": "The same cooking scene continues with the hand actively stirring the orange sauce in the pan. Steam continues to rise prominently, catching the backlight from the window. The sauce appears thick and bubbling, with visible texture. The gas flame remains lit beneath the pan. The composition remains consistent with shallow depth of field keeping focus on the pan and hand while the background stays softly blurred with hints of green plants."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The hand has moved the spoon to the right side of the pan, with more steam billowing upward in dramatic wisps. The orange sauce is still simmering actively. The hand is now partially visible at the edge of the frame. The blue gas flame continues burning beneath the dark pan. Natural backlighting creates atmospheric steam effects. The kitchen setting remains consistent with blurred window and greenery in the background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "actively",
+    "billowing",
+    "captures",
+    "close",
+    "colored",
+    "continues",
+    "cooking",
+    "curry",
+    "dark",
+    "dramatic",
+    "hand",
+    "medium",
+    "moved",
+    "orange",
+    "pan",
+    "right",
+    "sauce",
+    "scene",
+    "shot",
+    "side",
+    "someone",
+    "speech",
+    "spoon",
+    "steam",
+    "stirring",
+    "upward",
+    "vertical",
+    "video"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

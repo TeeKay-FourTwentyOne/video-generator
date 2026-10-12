@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7698d5e089a27dddc538820b427ed5845b7652475882636ee20c9070c07c3ab4",
+  "sha256": "7698d5e089a27dddc538820b427ed5845b7652475882636ee20c9070c07c3ab4",
+  "bytes": 4104,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 0.583333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 14,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "black_gap.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

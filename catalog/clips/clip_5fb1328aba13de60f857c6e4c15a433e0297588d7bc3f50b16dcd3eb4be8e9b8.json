@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5fb1328aba13de60f857c6e4c15a433e0297588d7bc3f50b16dcd3eb4be8e9b8",
+  "sha256": "5fb1328aba13de60f857c6e4c15a433e0297588d7bc3f50b16dcd3eb4be8e9b8",
+  "bytes": 1108312,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-local-v1.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

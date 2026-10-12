@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9e16e806439be2d78f8755880206108cfeef15e36e8f9b29de9f0db4fce11819",
+  "sha256": "9e16e806439be2d78f8755880206108cfeef15e36e8f9b29de9f0db4fce11819",
+  "bytes": 2143220,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 84,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s0_banner.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

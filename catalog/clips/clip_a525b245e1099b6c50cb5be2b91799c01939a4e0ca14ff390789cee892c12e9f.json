@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a525b245e1099b6c50cb5be2b91799c01939a4e0ca14ff390789cee892c12e9f",
+  "sha256": "a525b245e1099b6c50cb5be2b91799c01939a4e0ca14ff390789cee892c12e9f",
+  "bytes": 4019689,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sprocket_gen2.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sprocket_gen2"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Emotional war-themed clip showing a WWII soldier discovering a moment of peace through a simple flower. The sequence moves from full military stance to intimate contemplation, exploring humanity within conflict. Vintage sepia film aesthetic with sprocket overlay reinforces historical/nostalgic mood.",
+      "transcript": "最後まで視聴してくださって 本当にありがとうございます。",
+      "tags": [
+        "clip",
+        "close",
+        "contemplatively",
+        "contrast",
+        "daisy",
+        "discovering",
+        "doughboy",
+        "emotional",
+        "era",
+        "examines",
+        "expression",
+        "field",
+        "flower",
+        "gazing",
+        "hand",
+        "held",
+        "helmet",
+        "his",
+        "intimate",
+        "medium",
+        "military",
+        "moment",
+        "open",
+        "peace",
+        "profile",
+        "shot",
+        "showing",
+        "small",
+        "softening",
+        "soldier",
+        "speech",
+        "standing",
+        "themed",
+        "uniform",
+        "war",
+        "warrior",
+        "wwii"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "WWII-era soldier in doughboy helmet and military uniform standing in an open field, rifle in hand. Sepia-toned with film sprocket holes framing the shot. Full body composition against hazy sky."
+        },
+        {
+          "seconds": 4,
+          "text": "Intimate close-up as the soldier examines a small daisy flower, expression softening from warrior to human. Rifle still present but attention fully on the delicate bloom. Powerful emotional moment."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Profile shot of the soldier gazing contemplatively at the flower held in his hand. The contrast between military gear and gentle gesture speaks to humanity amid conflict. Warm sepia vintage film treatment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "clip",
+    "close",
+    "contemplatively",
+    "contrast",
+    "daisy",
+    "discovering",
+    "doughboy",
+    "emotional",
+    "era",
+    "examines",
+    "expression",
+    "field",
+    "flower",
+    "gazing",
+    "hand",
+    "held",
+    "helmet",
+    "his",
+    "intimate",
+    "medium",
+    "military",
+    "moment",
+    "open",
+    "peace",
+    "profile",
+    "shot",
+    "showing",
+    "small",
+    "softening",
+    "soldier",
+    "speech",
+    "standing",
+    "themed",
+    "uniform",
+    "war",
+    "warrior",
+    "wwii"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

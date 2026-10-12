@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_af767c9cf9810724de06db41a3950955895a7d7aeb1c16d84518c20be341eeee",
+  "sha256": "af767c9cf9810724de06db41a3950955895a7d7aeb1c16d84518c20be341eeee",
+  "bytes": 9407867,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s8_postclose.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

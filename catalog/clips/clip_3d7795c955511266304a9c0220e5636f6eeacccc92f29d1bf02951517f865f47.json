@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3d7795c955511266304a9c0220e5636f6eeacccc92f29d1bf02951517f865f47",
+  "sha256": "3d7795c955511266304a9c0220e5636f6eeacccc92f29d1bf02951517f865f47",
+  "bytes": 1020578,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "face_stone_clip.mp4"
+  ],
+  "collections": [
+    "feb-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

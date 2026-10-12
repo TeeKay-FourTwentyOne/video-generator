@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_dd83f5d71c88b93f54d0df6cfd4a4862ac9f4cc940721ab443eecbded9301486",
+  "sha256": "dd83f5d71c88b93f54d0df6cfd4a4862ac9f4cc940721ab443eecbded9301486",
+  "bytes": 5418219,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669520649_l9tkrl.mp4"
+  ],
+  "collections": [
+    "two_friends_meet_unexpectedly__1767668356193"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767669520649_l9tkrl"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot tracking smoothly sideways as a man in his 30s with gentle eyes and casual attire gestures toward an empty wooden chair in a cozy coffee shop. The camera movement follows his gesture, bridging the space between him and a woman in her 20s sitting at the table. Warm golden afternoon light floods through large windows, creating luminous outlines around both figures and casting long shadows across worn wooden floors. The woman's initially defensive posture - arms crossed, shoulders raised - begins to soften visibly as her shoulders drop and tension releases. The camera settles into a perfectly balanced two-shot composition, both figures framed equally with breathing room around them. Soft focus on the background emphasizes the intimate moment while steam from coffee cups catches the honeyed light. The coffee shop's ambient warmth - exposed brick walls glowing amber, vintage pendant lights creating pools of golden illumination - wraps around them protectively. Natural, documentary-style cinematography with handheld steadiness, shallow depth of field keeping focus on the emotional connection forming between them.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Can I... would it be okay if I sat?\"\n- FRIEND_1 (male, 20s, natural): \"I should probably go.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6a953d5fa75ce6e895cec9e768eeaabddf3515e4a4a221fd6e78f67f1f22793d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot tracking smoothly sideways as a man in his 30s with gentle eyes and casual attire gestures toward an empty wooden chair in a cozy coffee shop. The camera movement follows his gesture, bridging the space between him and a woman in her 20s sitting at the table. Warm golden afternoon light floods through large windows, creating luminous outlines around both figures and casting long shadows across worn wooden floors. The woman's initially defensive posture - arms crossed, shoulders raised - begins to soften visibly as her shoulders drop and tension releases. The camera settles into a perfectly balanced two-shot composition, both figures framed equally with breathing room around them. Soft focus on the background emphasizes the intimate moment while steam from coffee cups catches the honeyed light. The coffee shop's ambient warmth - exposed brick walls glowing amber, vintage pendant lights creating pools of golden illumination - wraps around them protectively. Natural, documentary-style cinematography with handheld steadiness, shallow depth of field keeping focus on the emotional connection forming between them.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Can I... would it be okay if I sat?\"\n- FRIEND_1 (male, 20s, natural): \"I should probably go.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6a953d5fa75ce6e895cec9e768eeaabddf3515e4a4a221fd6e78f67f1f22793d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:17:11.757Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures a café meeting between a man and woman, progressing from the man's welcoming gesture to an initially reserved conversation, ending with both parties warming up to each other and sharing genuine smiles. The warm, sunlit industrial café setting with exposed brick walls creates an intimate atmosphere that mirrors the developing connection between the two people.",
+      "transcript": "Please, have a seat. It's nice and warm here in the light. Thank you. It looks very cozy.",
+      "tags": [
+        "across",
+        "asian",
+        "beige",
+        "both",
+        "cable",
+        "caf",
+        "captures",
+        "clip",
+        "collar",
+        "couple",
+        "cozy",
+        "dark",
+        "gesture",
+        "knit",
+        "light",
+        "looks",
+        "man",
+        "medium",
+        "meeting",
+        "nice",
+        "now",
+        "opened",
+        "people",
+        "please",
+        "posture",
+        "progressing",
+        "seat",
+        "sit",
+        "smiling",
+        "speech",
+        "sweater",
+        "table",
+        "thank",
+        "two",
+        "warm",
+        "warmly",
+        "wearing",
+        "welcoming",
+        "woman",
+        "wooden",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young Asian man wearing a beige cable-knit sweater with dark collar trim and dark jeans stands in a sunlit café with exposed brick walls. He is smiling and gesturing with his left hand extended, appearing to welcome someone. The space features large windows letting in warm natural light, wooden chairs and tables, and hardwood flooring. The composition is medium shot, capturing him from mid-thigh up, with warm golden lighting creating an inviting atmosphere."
+        },
+        {
+          "seconds": 4,
+          "text": "Two people sit across from each other at a wooden café table. The man in the beige sweater is on the left, holding a white coffee cup. A woman with long dark hair wearing a black leather jacket over a white top sits on the right with arms crossed, appearing somewhat reserved. Steam rises from their coffee cups. The background shows exposed brick, other patrons, and café equipment. Warm ambient lighting with shallow depth of field focuses on the couple."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The same couple at the café table, now both smiling warmly at each other. The woman's posture has opened up, her hands gesturing as she speaks animatedly. The man looks down with a genuine smile, still holding his coffee cup. Steam continues rising from the cups. The warm, golden lighting and blurred background with other patrons creates an intimate, cozy atmosphere. The composition remains a medium two-shot with soft bokeh."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "across",
+    "asian",
+    "beige",
+    "both",
+    "cable",
+    "caf",
+    "captures",
+    "clip",
+    "collar",
+    "couple",
+    "cozy",
+    "dark",
+    "gesture",
+    "knit",
+    "light",
+    "looks",
+    "man",
+    "medium",
+    "meeting",
+    "nice",
+    "now",
+    "opened",
+    "people",
+    "please",
+    "posture",
+    "progressing",
+    "seat",
+    "sit",
+    "smiling",
+    "speech",
+    "sweater",
+    "table",
+    "thank",
+    "two",
+    "warm",
+    "warmly",
+    "wearing",
+    "welcoming",
+    "woman",
+    "wooden",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_99f244fd887103fc4f26b81b052ea6ac103386528747762e903205b659acd514",
+  "sha256": "99f244fd887103fc4f26b81b052ea6ac103386528747762e903205b659acd514",
+  "bytes": 3341045,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot2.mp4"
+  ],
+  "collections": [
+    "the-lodger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

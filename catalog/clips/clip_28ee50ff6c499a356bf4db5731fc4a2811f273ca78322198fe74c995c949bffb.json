@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_28ee50ff6c499a356bf4db5731fc4a2811f273ca78322198fe74c995c949bffb",
+  "sha256": "28ee50ff6c499a356bf4db5731fc4a2811f273ca78322198fe74c995c949bffb",
+  "bytes": 3879424,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_2.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_2"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Sagittarius archery sequence showing the centaur's full action arc: from relaxed stance to drawing the bow to the target. The narrative follows the archer preparing and aiming at a rustic forest target, embodying the zodiac sign's association with precision and purpose. Golden forest lighting throughout.",
+      "transcript": "Thank you for watching, please don't forget to like, share and subscribe to my channel.",
+      "tags": [
+        "action",
+        "aiming",
+        "arc",
+        "archery",
+        "auburn",
+        "back",
+        "bow",
+        "branch",
+        "centaur",
+        "channel",
+        "concentric",
+        "don",
+        "drawing",
+        "dynamic",
+        "forest",
+        "forget",
+        "full",
+        "hanging",
+        "like",
+        "looking",
+        "medium",
+        "over",
+        "photorealistic",
+        "please",
+        "pose",
+        "red",
+        "relaxed",
+        "rings",
+        "rustic",
+        "sagittarius",
+        "sequence",
+        "share",
+        "shot",
+        "shoulder",
+        "showing",
+        "speech",
+        "stance",
+        "subscribe",
+        "target",
+        "thank",
+        "tree",
+        "unseen",
+        "watching",
+        "white",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Photorealistic centaur in forest, looking back over shoulder in relaxed pose. Auburn-haired young man with green vest, chestnut horse body. Tail swishes naturally. Golden sunlight filters through the dense green forest canopy."
+        },
+        {
+          "seconds": 4,
+          "text": "Dynamic action shot of the centaur drawing a bow, aiming at an unseen target. Full draw position with focused expression. Green tunic, muscular pose. Sunlight streams dramatically from behind, creating rim lighting on the figure."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Rustic wooden target with red and white concentric rings hanging from a tree branch by rope. Forest setting with soft lighting. The target represents the centaur's aim, connecting to the Sagittarius archer symbolism."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_004",
+      "name": "Chiron",
+      "description": "Photorealistic centaur with brown horse body, human torso in green vest and cream shirt, wavy brown hair, bow and arrows, forest setting",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "action",
+    "aiming",
+    "arc",
+    "archery",
+    "auburn",
+    "back",
+    "bow",
+    "branch",
+    "centaur",
+    "channel",
+    "concentric",
+    "don",
+    "drawing",
+    "dynamic",
+    "forest",
+    "forget",
+    "full",
+    "hanging",
+    "like",
+    "looking",
+    "medium",
+    "over",
+    "photorealistic",
+    "please",
+    "pose",
+    "red",
+    "relaxed",
+    "rings",
+    "rustic",
+    "sagittarius",
+    "sequence",
+    "share",
+    "shot",
+    "shoulder",
+    "showing",
+    "speech",
+    "stance",
+    "subscribe",
+    "target",
+    "thank",
+    "tree",
+    "unseen",
+    "watching",
+    "white",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

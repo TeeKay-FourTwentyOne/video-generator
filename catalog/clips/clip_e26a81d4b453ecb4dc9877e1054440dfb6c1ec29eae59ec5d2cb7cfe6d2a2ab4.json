@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e26a81d4b453ecb4dc9877e1054440dfb6c1ec29eae59ec5d2cb7cfe6d2a2ab4",
+  "sha256": "e26a81d4b453ecb4dc9877e1054440dfb6c1ec29eae59ec5d2cb7cfe6d2a2ab4",
+  "bytes": 2203796,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767578294987_8neihy.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767578225875"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767578294987_8neihy"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A worn leather wallet rests on a surface in deep shadow, barely visible until our gaze shifts rightward, catching movement in peripheral vision. The wallet begins an impossible ascent, slowly lifting from its resting place as if pulled by invisible strings. Camera executes a subtle push-in, maintaining medium distance while tracking the floating wallet's gentle upward drift. The worn leather rotates lazily in the air, its aged brass clasp catching fragments of warm morning sunlight that pierce through darkness. Deep shadows dominate the frame, obscuring background details while selective shafts of golden light create mysterious highlights on the wallet's textured surface. The camera drifts almost imperceptibly forward, following the supernatural ascent with dreamlike smoothness. Cool undertones fill the shadows while warm amber light kisses only the floating object. Slow motion emphasizes the unnatural levitation, the wallet turning gracefully to reveal different facets - scratched leather, tarnished metal, worn edges that speak of years of use. The intimate framing captures every detail of this impossible moment, the contrast between deep shadow and golden highlights creating an atmosphere of beautiful unease.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_826deea54086010e192a44ca080a5a2cd3fddfccfa1ae113ecdb6391145ffa0b",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A worn leather wallet rests on a surface in deep shadow, barely visible until our gaze shifts rightward, catching movement in peripheral vision. The wallet begins an impossible ascent, slowly lifting from its resting place as if pulled by invisible strings. Camera executes a subtle push-in, maintaining medium distance while tracking the floating wallet's gentle upward drift. The worn leather rotates lazily in the air, its aged brass clasp catching fragments of warm morning sunlight that pierce through darkness. Deep shadows dominate the frame, obscuring background details while selective shafts of golden light create mysterious highlights on the wallet's textured surface. The camera drifts almost imperceptibly forward, following the supernatural ascent with dreamlike smoothness. Cool undertones fill the shadows while warm amber light kisses only the floating object. Slow motion emphasizes the unnatural levitation, the wallet turning gracefully to reveal different facets - scratched leather, tarnished metal, worn edges that speak of years of use. The intimate framing captures every detail of this impossible moment, the contrast between deep shadow and golden highlights creating an atmosphere of beautiful unease.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_826deea54086010e192a44ca080a5a2cd3fddfccfa1ae113ecdb6391145ffa0b",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:57:22.446Z",
+      "parameters": {
+        "durationSeconds": 7,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This product video showcases a handcrafted brown leather wallet with brass hardware through a dynamic sequence. The wallet transitions from lying flat, to being tossed in the air, to landing upright in a final display position. The dramatic black background and warm lighting emphasize the wallet's artisanal quality and natural leather texture.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "air",
+        "angle",
+        "brass",
+        "brown",
+        "captured",
+        "dark",
+        "displayed",
+        "dynamic",
+        "flat",
+        "handcrafted",
+        "hardware",
+        "leather",
+        "lies",
+        "medium",
+        "mid",
+        "now",
+        "product",
+        "pure",
+        "showcase",
+        "showcases",
+        "silent",
+        "slightly",
+        "stands",
+        "surface",
+        "suspended",
+        "tilted",
+        "upright",
+        "vertically",
+        "video",
+        "wallet",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A brown leather wallet lies flat on a dark wooden surface against a pure black background. The wallet appears well-worn with visible creases and has a brass/gold snap closure with a leather strap. Some dust particles are visible floating in the air above the wallet, illuminated by dramatic side lighting. The composition is minimalist with the wallet positioned in the lower third of the vertical frame, creating a moody, product-photography aesthetic."
+        },
+        {
+          "seconds": 3,
+          "text": "The same brown leather wallet is captured mid-air, suspended and slightly tilted at an angle as if it has been tossed or is falling. The wallet is positioned in the center of the frame against the black background, with the wooden surface visible at the bottom. The warm lighting highlights the leather's texture and the brass closure. Motion blur is minimal, suggesting high-speed capture of the wallet's trajectory."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The leather wallet now stands upright on the wooden surface, displayed vertically to showcase its front face. The warm brown leather shows natural wear patterns and scratches, with visible hand-stitching along the edges. The brass snap button closure is prominently displayed in the center. The dramatic lighting creates a golden glow on the leather while the black background isolates the product beautifully in this portrait-oriented product shot."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "air",
+    "angle",
+    "brass",
+    "brown",
+    "captured",
+    "dark",
+    "displayed",
+    "dynamic",
+    "flat",
+    "handcrafted",
+    "hardware",
+    "leather",
+    "lies",
+    "medium",
+    "mid",
+    "now",
+    "product",
+    "pure",
+    "showcase",
+    "showcases",
+    "silent",
+    "slightly",
+    "stands",
+    "surface",
+    "suspended",
+    "tilted",
+    "upright",
+    "vertically",
+    "video",
+    "wallet",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

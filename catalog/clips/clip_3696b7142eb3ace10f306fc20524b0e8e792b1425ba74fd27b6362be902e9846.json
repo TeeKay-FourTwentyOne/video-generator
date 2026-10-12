@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3696b7142eb3ace10f306fc20524b0e8e792b1425ba74fd27b6362be902e9846",
+  "sha256": "3696b7142eb3ace10f306fc20524b0e8e792b1425ba74fd27b6362be902e9846",
+  "bytes": 6484984,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s5_return_raw.mp4"
+  ],
+  "collections": [
+    "steamboat-wilhelm"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

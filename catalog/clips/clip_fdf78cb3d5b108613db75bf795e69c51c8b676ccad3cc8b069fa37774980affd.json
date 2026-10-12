@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fdf78cb3d5b108613db75bf795e69c51c8b676ccad3cc8b069fa37774980affd",
+  "sha256": "fdf78cb3d5b108613db75bf795e69c51c8b676ccad3cc8b069fa37774980affd",
+  "bytes": 1718730,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scroll_test_up100_ann.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:scroll_test_up100_ann"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip demonstrates a vertical film strip scrolling effect, showing silhouetted figures against warm amber backlighting. The footage simulates vintage film projection with visible sprocket holes that scroll upward at 100 pixels, transitioning between frames showing a figure holding flowers. Korean text transcription indicates a thank you message to viewers.",
+      "transcript": "시청 해주셔서 감사합니다.",
+      "tags": [
+        "afro",
+        "against",
+        "body",
+        "clip",
+        "demonstrates",
+        "effect",
+        "feminine",
+        "figure",
+        "figures",
+        "film",
+        "frame",
+        "full",
+        "golden",
+        "hairstyle",
+        "lower",
+        "medium",
+        "now",
+        "orange",
+        "portion",
+        "previous",
+        "profile",
+        "scrolled",
+        "scrolling",
+        "showing",
+        "shown",
+        "shows",
+        "silhouette",
+        "silhouetted",
+        "speech",
+        "standing",
+        "strip",
+        "upright",
+        "upward",
+        "vertical",
+        "view",
+        "warm"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouette of a figure with an afro hairstyle is shown in profile against a warm golden-orange backlit background. The figure holds flowers with visible stems and petals. The image is framed within a vintage film strip border with sprocket holes visible on both sides. Text overlay reads 'TEST 2: 100px UP' and 'Expect: Sprockets scroll UPWARD' in white and yellow. The composition creates a nostalgic, cinematic aesthetic with dramatic backlighting."
+        },
+        {
+          "seconds": 4,
+          "text": "The silhouette now shows a full-body view of a feminine figure standing upright, still holding flowers. The figure appears to be wearing a dress or skirt with detailed clothing visible in silhouette. The warm amber backlighting continues, creating a dramatic contrast. The film strip border with sprocket holes frames the image, and the same test text remains visible at top. The figure is centered in the frame with elegant posture."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The film strip has scrolled upward, now showing the lower portion of the previous frame (feet and legs visible at top) and a new frame entering from below showing the top of a figure's head with curly/afro hair. The transition between two film frames is visible with the black horizontal bar separating them. The sprocket holes have moved upward as indicated by the test parameters. The warm golden backlighting persists throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "afro",
+    "against",
+    "body",
+    "clip",
+    "demonstrates",
+    "effect",
+    "feminine",
+    "figure",
+    "figures",
+    "film",
+    "frame",
+    "full",
+    "golden",
+    "hairstyle",
+    "lower",
+    "medium",
+    "now",
+    "orange",
+    "portion",
+    "previous",
+    "profile",
+    "scrolled",
+    "scrolling",
+    "showing",
+    "shown",
+    "shows",
+    "silhouette",
+    "silhouetted",
+    "speech",
+    "standing",
+    "strip",
+    "upright",
+    "upward",
+    "vertical",
+    "view",
+    "warm"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8562d1f0cca10b0e0ab86bf1c4d7c25be590e9aa95fdf995872c39411c76177b",
+  "sha256": "8562d1f0cca10b0e0ab86bf1c4d7c25be590e9aa95fdf995872c39411c76177b",
+  "bytes": 2947628,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767757793493_1gcd9w.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767757793493_1gcd9w"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip transitions from a studio portrait shot to an outdoor suburban setting, following a woman in a cream sweater through what appears to be an emotional moment. The audio indicates sighing as she walks through a residential neighborhood during golden hour, her expression shifting from contemplative downward gaze to direct eye contact with the camera, suggesting internal distress or realization.",
+      "transcript": "sigh sigh sigh",
+      "tags": [
+        "against",
+        "brown",
+        "clip",
+        "close",
+        "following",
+        "framing",
+        "gaze",
+        "golden",
+        "hair",
+        "her",
+        "hour",
+        "length",
+        "lifted",
+        "medium",
+        "multi-scene",
+        "now",
+        "outdoor",
+        "outdoors",
+        "portrait",
+        "residential",
+        "setting",
+        "she",
+        "shot",
+        "shoulder",
+        "sigh",
+        "speech",
+        "stands",
+        "street",
+        "studio",
+        "suburban",
+        "transitions",
+        "wavy",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.07,
+          "text": "A woman with shoulder-length brown wavy hair stands in a studio setting against a dark gray backdrop. She wears a cream/beige knit sweater, dark blue jeans, and dark sneakers. A crossbody bag with an olive strap hangs at her hip. She stands centered in the frame with arms at her sides, facing the camera directly. Dramatic lighting from the lower left creates shadows on the backdrop and illuminates her figure. The composition is vertical with black bars on either side."
+        },
+        {
+          "seconds": 3,
+          "text": "Close-up shot of the same woman now outdoors in a suburban residential street during golden hour. Warm sunlight illuminates the left side of her face while the right side is in shadow. Her brown wavy hair catches the light, showing auburn highlights. She wears the same cream sweater with the olive bag strap visible. Her gaze is downcast with a contemplative or melancholic expression. Blurred houses, bare trees, and parked cars form the background. Shallow depth of field keeps focus on her face."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Same close-up framing of the woman on the suburban street, but now she has lifted her gaze to look directly at the camera with a concerned or troubled expression. The golden hour lighting remains consistent, casting warm tones on her face. Her lips are slightly parted. The background shows the same blurred residential neighborhood with houses on both sides of the street. The composition centers her face in the frame with the cream sweater visible at the bottom edge."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_043",
+      "name": "Worried Wendy",
+      "description": "Woman with dark hair pulled back, dark jacket, concerned/worried expression, suburban street at dusk, anxious demeanor",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "brown",
+    "clip",
+    "close",
+    "following",
+    "framing",
+    "gaze",
+    "golden",
+    "hair",
+    "her",
+    "hour",
+    "length",
+    "lifted",
+    "medium",
+    "multi-scene",
+    "now",
+    "outdoor",
+    "outdoors",
+    "portrait",
+    "residential",
+    "setting",
+    "she",
+    "shot",
+    "shoulder",
+    "sigh",
+    "speech",
+    "stands",
+    "street",
+    "studio",
+    "suburban",
+    "transitions",
+    "wavy",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

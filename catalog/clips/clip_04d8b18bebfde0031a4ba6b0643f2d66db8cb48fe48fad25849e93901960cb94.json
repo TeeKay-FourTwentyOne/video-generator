@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_04d8b18bebfde0031a4ba6b0643f2d66db8cb48fe48fad25849e93901960cb94",
+  "sha256": "04d8b18bebfde0031a4ba6b0643f2d66db8cb48fe48fad25849e93901960cb94",
+  "bytes": 28624280,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "tv_intro.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-workspace"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

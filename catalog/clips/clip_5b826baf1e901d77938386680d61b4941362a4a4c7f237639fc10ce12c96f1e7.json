@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5b826baf1e901d77938386680d61b4941362a4a4c7f237639fc10ce12c96f1e7",
+  "sha256": "5b826baf1e901d77938386680d61b4941362a4a4c7f237639fc10ce12c96f1e7",
+  "bytes": 4389021,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 11.541667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 277,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "chorus-motion-check.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

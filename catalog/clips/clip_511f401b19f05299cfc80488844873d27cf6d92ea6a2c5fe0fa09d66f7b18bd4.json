@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_511f401b19f05299cfc80488844873d27cf6d92ea6a2c5fe0fa09d66f7b18bd4",
+  "sha256": "511f401b19f05299cfc80488844873d27cf6d92ea6a2c5fe0fa09d66f7b18bd4",
+  "bytes": 7633165,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767749366721_kz7mkx.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767749366721_kz7mkx"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip captures an intimate conversation between a man and woman on a deserted rural road during golden hour. The sequence progresses from a solo portrait of the bearded man to a two-shot showing both characters in dialogue, with the transcription suggesting a philosophical discussion about staying versus leaving. The cinematic lighting and expansive landscape create a contemplative, emotionally resonant atmosphere.",
+      "transcript": "doesn't it? Why choose? Because some things only grow if you stay.",
+      "tags": [
+        "aged",
+        "beard",
+        "both",
+        "camera",
+        "captures",
+        "choose",
+        "clip",
+        "conversation",
+        "dark",
+        "deserted",
+        "distance",
+        "doesn",
+        "empty",
+        "facing",
+        "figures",
+        "full",
+        "grow",
+        "hair",
+        "intimate",
+        "left",
+        "length",
+        "man",
+        "medium",
+        "middle",
+        "now",
+        "people",
+        "remain",
+        "road",
+        "rural",
+        "shoulder",
+        "speech",
+        "stand",
+        "stay",
+        "stretches",
+        "things",
+        "toward",
+        "two",
+        "vertical",
+        "video",
+        "wavy",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with shoulder-length wavy dark hair and a full beard with gray streaks stands facing the camera. He wears an olive green military-style jacket over a beige henley shirt. The golden hour lighting creates a warm glow around his hair and illuminates his face from behind. The background shows an open rural landscape with fields under a hazy sunset sky. The composition is a medium close-up shot with the subject centered, creating an intimate portrait feel."
+        },
+        {
+          "seconds": 4,
+          "text": "Two people stand on an empty rural road that stretches into the distance. On the left, a woman with dark hair pulled back wears a light blue button-up shirt, brown leather vest, and rust-colored wide-leg pants with a red belt. On the right, the bearded man from before wears the same olive jacket and beige shirt with dark pants. They face each other in conversation. Golden sunset light illuminates the scene with flat farmland on both sides of the road."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The same two figures remain on the rural road, now both facing more toward the camera. The woman on the left looks toward the man while he gazes forward with a contemplative expression. The long straight road extends to the horizon between them, creating strong leading lines. The warm golden hour lighting continues to bathe the scene in amber tones. The composition emphasizes the vast open landscape and the intimate moment between the two characters."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_042",
+      "name": "Sunset Wanderer",
+      "description": "Man with long wavy dark hair and salt-pepper beard, olive green jacket over grey henley, standing in golden fields at sunset, content smile",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "beard",
+    "both",
+    "camera",
+    "captures",
+    "choose",
+    "clip",
+    "conversation",
+    "dark",
+    "deserted",
+    "distance",
+    "doesn",
+    "empty",
+    "facing",
+    "figures",
+    "full",
+    "grow",
+    "hair",
+    "intimate",
+    "left",
+    "length",
+    "man",
+    "medium",
+    "middle",
+    "now",
+    "people",
+    "remain",
+    "road",
+    "rural",
+    "shoulder",
+    "speech",
+    "stand",
+    "stay",
+    "stretches",
+    "things",
+    "toward",
+    "two",
+    "vertical",
+    "video",
+    "wavy",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

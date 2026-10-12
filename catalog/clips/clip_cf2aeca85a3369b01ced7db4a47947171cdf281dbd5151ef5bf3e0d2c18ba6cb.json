@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cf2aeca85a3369b01ced7db4a47947171cdf281dbd5151ef5bf3e0d2c18ba6cb",
+  "sha256": "cf2aeca85a3369b01ced7db4a47947171cdf281dbd5151ef5bf3e0d2c18ba6cb",
+  "bytes": 243830,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 11.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 345,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot07.mp4"
+  ],
+  "collections": [
+    "ramsey-books"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

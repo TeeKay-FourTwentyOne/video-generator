@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ea1a46dee739b0461f8f528cb5acca240384fb9750f37623d0fbce90a3c7052c",
+  "sha256": "ea1a46dee739b0461f8f528cb5acca240384fb9750f37623d0fbce90a3c7052c",
+  "bytes": 3137639,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s8bv2_palm.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c6491aab6cb8b582335cd13693a370eaa5cc04e692dc73b44d66210659d07403",
+  "sha256": "c6491aab6cb8b582335cd13693a370eaa5cc04e692dc73b44d66210659d07403",
+  "bytes": 14919093,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "BEACH.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

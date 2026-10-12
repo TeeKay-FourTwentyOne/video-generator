@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2f9af1263dcc53dfa8cadf8113ef8c00b9a11522b4229a20264fc747d5bd383a",
+  "sha256": "2f9af1263dcc53dfa8cadf8113ef8c00b9a11522b4229a20264fc747d5bd383a",
+  "bytes": 3276446,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "C-city-of-gold-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

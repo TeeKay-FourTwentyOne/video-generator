@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a153b3f5bfed0291abd89c631b04053546bbd0451bc5ca1ce7df7a88fc6b5eb2",
+  "sha256": "a153b3f5bfed0291abd89c631b04053546bbd0451bc5ca1ce7df7a88fc6b5eb2",
+  "bytes": 119558134,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 106.616374,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "15716352/655051",
+    "frameCount": 2558,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "vascari_v6_4k.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

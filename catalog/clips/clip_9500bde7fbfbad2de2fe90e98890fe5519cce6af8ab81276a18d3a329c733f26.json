@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9500bde7fbfbad2de2fe90e98890fe5519cce6af8ab81276a18d3a329c733f26",
+  "sha256": "9500bde7fbfbad2de2fe90e98890fe5519cce6af8ab81276a18d3a329c733f26",
+  "bytes": 34614525,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V03-v1.mp4",
+    "veo_1791428236402_64ywi8.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up, looking straight down at dark, wet, freshly dug earth with black water pooling in the trowel marks on the floor of a deep excavation trench, in lower, warmer late afternoon light. A blue nitrile-gloved hand scrapes with a small pointed steel trowel along a corroded iron Roman gladius, a short sword lying diagonally in the dark earth, and uncovers more of its pitted iron body and its bone and wood grip. The hand sets the trowel aside out of frame, places a small black-and-white photographic scale bar with plain alternating black and white segments and no numbers on the earth beside the gladius, then a small plastic north arrow beside it, and withdraws out of the frame, leaving the gladius, the scale bar and the arrow alone in the frame. Camera is fixed, looking down, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b65e00561be1b9cdb3fbd3427280844df938ab6589d63c6e7e476de35638976b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1688386332,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

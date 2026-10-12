@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8315eb325ba6bd3e90de47333b94f5cbc5b21b5e2d8ae8ee17607d830219ef7e",
+  "sha256": "8315eb325ba6bd3e90de47333b94f5cbc5b21b5e2d8ae8ee17607d830219ef7e",
+  "bytes": 4955037,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_1_new.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_1_new"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Alternate version of Sagittarius animation showing line-art-to-color transition. Features the same Art Nouveau centaur design transforming into photorealistic render. The auburn-haired archer centaur moves through an enchanted forest bathed in golden light, with vintage film sprocket overlay adding cinematic texture.",
+      "transcript": "♪♪",
+      "tags": [
+        "alternate",
+        "animation",
+        "art",
+        "auburn",
+        "border",
+        "centaur",
+        "clearing",
+        "color",
+        "decorative",
+        "features",
+        "forest",
+        "frame",
+        "full",
+        "golden",
+        "haired",
+        "illustration",
+        "line",
+        "lit",
+        "medium",
+        "nouveau",
+        "photorealistic",
+        "pose",
+        "profile",
+        "rendered",
+        "sagittarius",
+        "showing",
+        "slightly",
+        "speech",
+        "transition",
+        "turned",
+        "version",
+        "warm",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Line art illustration of a Sagittarius centaur with decorative Art Nouveau border frame. The figure holds a bow with quiver on back, positioned in a detailed forest scene. Black and white coloring book style with intricate linework and a luminous halo."
+        },
+        {
+          "seconds": 4,
+          "text": "Full-color rendered centaur in golden-lit forest. Auburn-haired young man in cream shirt and green vest merged with chestnut horse body. Film sprocket holes frame the image. Lush vegetation and dappled sunlight create magical atmosphere."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Photorealistic centaur in forest clearing, slightly turned pose showing profile. Warm golden lighting illuminates the scene. The character has a gentle, contemplative expression. Rich green foliage surrounds the figure."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_003",
+      "name": "Sagittarius Sketch",
+      "description": "Line art illustration of a centaur archer with curly hair, bow and quiver, ornate art nouveau frame",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_004",
+      "name": "Chiron",
+      "description": "Photorealistic centaur with brown horse body, human torso in green vest and cream shirt, wavy brown hair, bow and arrows, forest setting",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "alternate",
+    "animation",
+    "art",
+    "auburn",
+    "border",
+    "centaur",
+    "clearing",
+    "color",
+    "decorative",
+    "features",
+    "forest",
+    "frame",
+    "full",
+    "golden",
+    "haired",
+    "illustration",
+    "line",
+    "lit",
+    "medium",
+    "nouveau",
+    "photorealistic",
+    "pose",
+    "profile",
+    "rendered",
+    "sagittarius",
+    "showing",
+    "slightly",
+    "speech",
+    "transition",
+    "turned",
+    "version",
+    "warm",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

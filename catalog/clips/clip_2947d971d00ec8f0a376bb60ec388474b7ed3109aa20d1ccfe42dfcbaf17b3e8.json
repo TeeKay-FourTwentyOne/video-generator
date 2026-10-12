@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2947d971d00ec8f0a376bb60ec388474b7ed3109aa20d1ccfe42dfcbaf17b3e8",
+  "sha256": "2947d971d00ec8f0a376bb60ec388474b7ed3109aa20d1ccfe42dfcbaf17b3e8",
+  "bytes": 2860832,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4.833008,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 116,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "v003_trim.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

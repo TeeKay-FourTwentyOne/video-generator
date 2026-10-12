@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4d0b8ab89cba24aad8b0be6f3f91baa4f9142c9446dccd5fb6cf346d11c92c30",
+  "sha256": "4d0b8ab89cba24aad8b0be6f3f91baa4f9142c9446dccd5fb6cf346d11c92c30",
+  "bytes": 3812716,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "no_music_test_1767673178286.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:no_music_test_1767673178286"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Atmospheric café scene test clip (16:9 landscape) featuring a woman working remotely on a rainy day. She sits by a rain-streaked window with her laptop and coffee, watching pedestrians pass with umbrellas. Captures the cozy, contemplative mood of a rainy day café experience. No background music - ambient audio only.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "absorbed",
+        "atmospheric",
+        "black",
+        "caf",
+        "clip",
+        "contemplative",
+        "continued",
+        "cozy",
+        "featuring",
+        "interior",
+        "landscape",
+        "medium",
+        "moment",
+        "past",
+        "person",
+        "rain",
+        "rainy",
+        "remains",
+        "remotely",
+        "scene",
+        "she",
+        "sitting",
+        "speech",
+        "still",
+        "streaked",
+        "street",
+        "test",
+        "thank",
+        "umbrella",
+        "walks",
+        "watching",
+        "window",
+        "woman",
+        "working",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Cozy café scene with a Black woman sitting by a rain-streaked window. She wears glasses and a cream cable-knit sweater, hair pulled up. Laptop open on wooden table, coffee cup held in both hands. Gazing thoughtfully out at the rainy street. 16:9 landscape format."
+        },
+        {
+          "seconds": 4,
+          "text": "Same café interior with the woman still watching the rain. A person with an umbrella walks past outside, visible through the wet window. Warm interior lighting contrasts with the gray rainy day. Coffee equipment visible on shelves behind."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Continued contemplative moment in the café. The woman remains absorbed in watching the rainy street scene, coffee cup in hand. The atmosphere captures that specific cozy feeling of being warm inside while rain falls outside."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "absorbed",
+    "atmospheric",
+    "black",
+    "caf",
+    "clip",
+    "contemplative",
+    "continued",
+    "cozy",
+    "featuring",
+    "interior",
+    "landscape",
+    "medium",
+    "moment",
+    "past",
+    "person",
+    "rain",
+    "rainy",
+    "remains",
+    "remotely",
+    "scene",
+    "she",
+    "sitting",
+    "speech",
+    "still",
+    "streaked",
+    "street",
+    "test",
+    "thank",
+    "umbrella",
+    "walks",
+    "watching",
+    "window",
+    "woman",
+    "working",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

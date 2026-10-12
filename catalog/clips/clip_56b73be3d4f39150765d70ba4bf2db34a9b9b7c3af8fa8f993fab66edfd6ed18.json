@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_56b73be3d4f39150765d70ba4bf2db34a9b9b7c3af8fa8f993fab66edfd6ed18",
+  "sha256": "56b73be3d4f39150765d70ba4bf2db34a9b9b7c3af8fa8f993fab66edfd6ed18",
+  "bytes": 7225910,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S2_master_q.mp4"
+  ],
+  "collections": [
+    "after-hours"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

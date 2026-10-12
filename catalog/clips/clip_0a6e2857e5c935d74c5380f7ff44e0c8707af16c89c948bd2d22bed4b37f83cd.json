@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0a6e2857e5c935d74c5380f7ff44e0c8707af16c89c948bd2d22bed4b37f83cd",
+  "sha256": "0a6e2857e5c935d74c5380f7ff44e0c8707af16c89c948bd2d22bed4b37f83cd",
+  "bytes": 5974374,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "C7.mp4"
+  ],
+  "collections": [
+    "august"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

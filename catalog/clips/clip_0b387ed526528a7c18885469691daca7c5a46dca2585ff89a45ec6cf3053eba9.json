@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0b387ed526528a7c18885469691daca7c5a46dca2585ff89a45ec6cf3053eba9",
+  "sha256": "0b387ed526528a7c18885469691daca7c5a46dca2585ff89a45ec6cf3053eba9",
+  "bytes": 3868725,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "veo_1777264585289_czj59h.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "The man's free hand moves smoothly the last few inches across the stainless steel tray and grasps the walnut box. With his fingertips he lifts the brass-hinged lid open. The lid opens fully. The hand rests beside the open box. The walnut box has exactly ONE brass hinge at the back and ONE small brass clasp at the front — these never duplicate, change, or shift in shape or position throughout the shot. The box geometry remains identical to the first frame. The forearm with the fresh geometric tattoo remains still on the black leather armrest. Static overhead camera, no zoom, no pan. Tattoo studio background steady — neon glow and out-of-focus ink bottles unchanging. Soft warm indoor light. No other movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2a799578e0d1b484c88120972e899f8664757534803e6a50dfc945904c1a922f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 539417718,
+      "createdAt": "2026-04-27T04:34:39.403Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_18470b8bc28fe3a722454366bfb05615337fed1a3249d7343b001b3fb252abb2",
+  "sha256": "18470b8bc28fe3a722454366bfb05615337fed1a3249d7343b001b3fb252abb2",
+  "bytes": 4761374,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ramp_pixel_raw.mp4"
+  ],
+  "collections": [
+    "steamboat-wilhelm"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

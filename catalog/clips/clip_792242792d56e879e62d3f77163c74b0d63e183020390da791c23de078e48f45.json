@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_792242792d56e879e62d3f77163c74b0d63e183020390da791c23de078e48f45",
+  "sha256": "792242792d56e879e62d3f77163c74b0d63e183020390da791c23de078e48f45",
+  "bytes": 1105025,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767546755501_4vt12k.mp4"
+  ],
+  "collections": [
+    "infinite_corridor"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767546755501_4vt12k"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A fair-skinned woman in her 30s with short brown hair and medium build stands at the entrance of an impossibly long institutional corridor with plain gray walls and a dark, highly reflective floor. The hallway stretches endlessly ahead with a long row of harsh fluorescent ceiling lights creating dramatic one-point perspective, flanked by repeating identical doors that vanish into a distant point. She takes her first deliberate steps forward into the corridor, her footsteps echoing in the hollow space. Static camera positioned low behind the walker maintains perfect symmetrical composition with extreme linear perspective. Cool, desaturated color palette with harsh fluorescent lighting casting stark shadows. The reflective floor mirrors the ceiling lights creating double infinity effect. Kubrick-esque cinematography with meticulous symmetrical framing and institutional atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5c4a19c268bc48e226d69e10a7d53c9a79004a0fd92660e0898dde4eebf64366",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A fair-skinned woman in her 30s with short brown hair and medium build stands at the entrance of an impossibly long institutional corridor with plain gray walls and a dark, highly reflective floor. The hallway stretches endlessly ahead with a long row of harsh fluorescent ceiling lights creating dramatic one-point perspective, flanked by repeating identical doors that vanish into a distant point. She takes her first deliberate steps forward into the corridor, her footsteps echoing in the hollow space. Static camera positioned low behind the walker maintains perfect symmetrical composition with extreme linear perspective. Cool, desaturated color palette with harsh fluorescent lighting casting stark shadows. The reflective floor mirrors the ceiling lights creating double infinity effect. Kubrick-esque cinematography with meticulous symmetrical framing and institutional atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5c4a19c268bc48e226d69e10a7d53c9a79004a0fd92660e0898dde4eebf64366",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:11:52.971Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A short vertical video clip showing a woman in a gray dress walking away from the camera down a long, sterile institutional corridor with symmetrical dark doorways on both sides. The cold blue-gray color grading and harsh fluorescent lighting create an ominous, clinical atmosphere as she progresses steadily toward the vanishing point. The single word 'You' is spoken during this contemplative, cinematic sequence.",
+      "transcript": "You",
+      "tags": [
+        "appearing",
+        "away",
+        "brown",
+        "camera",
+        "clip",
+        "continues",
+        "corridor",
+        "distance",
+        "down",
+        "dress",
+        "due",
+        "frame",
+        "gray",
+        "hair",
+        "her",
+        "increased",
+        "length",
+        "long",
+        "medium",
+        "now",
+        "posture",
+        "progressed",
+        "short",
+        "shoulder",
+        "showing",
+        "slightly",
+        "smaller",
+        "speech",
+        "vertical",
+        "video",
+        "walking",
+        "walks",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with shoulder-length brown hair walks away from the camera down a long, sterile corridor. She wears a fitted gray short-sleeved dress that falls to knee length. The hallway features stark white/gray walls with multiple dark doorways on both sides creating a symmetrical pattern. Fluorescent lights run along the ceiling center, creating harsh overhead illumination. The polished floor reflects the lights. The composition uses strong one-point perspective, drawing the eye toward the vanishing point. The overall color palette is cold blue-gray tones."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman continues walking down the corridor, now slightly further from camera. Her posture remains upright and purposeful as she strides forward. The symmetrical hallway stretches ahead with identical dark doorways lining both walls. The fluorescent ceiling lights create a bright central line leading to the distant end. The reflective floor mirrors the overhead lighting. The cold, institutional atmosphere persists with the blue-gray color grading. The camera maintains its static position, emphasizing the corridor's depth and the woman's solitary journey."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman has progressed further down the corridor, appearing smaller in frame due to increased distance from camera. She maintains her steady walking pace toward the corridor's end. The perspective lines of the walls, floor, and ceiling lights converge dramatically at the vanishing point. Multiple dark doorways continue on both sides. The harsh fluorescent lighting creates a clinical, somewhat ominous atmosphere. The blue-gray color palette and reflective floor persist. The composition emphasizes isolation and the seemingly endless nature of the institutional hallway."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appearing",
+    "away",
+    "brown",
+    "camera",
+    "clip",
+    "continues",
+    "corridor",
+    "distance",
+    "down",
+    "dress",
+    "due",
+    "frame",
+    "gray",
+    "hair",
+    "her",
+    "increased",
+    "length",
+    "long",
+    "medium",
+    "now",
+    "posture",
+    "progressed",
+    "short",
+    "shoulder",
+    "showing",
+    "slightly",
+    "smaller",
+    "speech",
+    "vertical",
+    "video",
+    "walking",
+    "walks",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

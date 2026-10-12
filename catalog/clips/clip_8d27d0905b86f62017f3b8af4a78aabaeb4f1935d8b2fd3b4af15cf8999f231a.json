@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8d27d0905b86f62017f3b8af4a78aabaeb4f1935d8b2fd3b4af15cf8999f231a",
+  "sha256": "8d27d0905b86f62017f3b8af4a78aabaeb4f1935d8b2fd3b4af15cf8999f231a",
+  "bytes": 1296659,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767532052859_6adncs.mp4"
+  ],
+  "collections": [
+    "person_a_makes_a_phone_call_pe_1767531881917"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767532052859_6adncs"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Close-up shot of trembling fingers hovering over a smartphone screen in warm amber lighting. The fingers move deliberately as they tap each number, with slight hesitation between presses. Camera holds steady on the phone, capturing the weight of each touch. Warm golden light bathes the scene, creating an intimate cocoon effect around the hands and device. The lighting intensifies gradually, emphasizing the nervous energy. Shot in 9:16 vertical format with cinematic depth of field, focusing on the tactile interaction between fingers and screen. The ambient lighting creates soft shadows and highlights the texture of skin and phone surface. Each number tap should feel purposeful yet anxious, with the warm amber tones dominating the frame to convey emotional tension and anticipation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_931a953852458937c46f0711ec456f27ce76a1e93c64d9ed99ecab1b9a9a7657",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Close-up shot of trembling fingers hovering over a smartphone screen in warm amber lighting. The fingers move deliberately as they tap each number, with slight hesitation between presses. Camera holds steady on the phone, capturing the weight of each touch. Warm golden light bathes the scene, creating an intimate cocoon effect around the hands and device. The lighting intensifies gradually, emphasizing the nervous energy. Shot in 9:16 vertical format with cinematic depth of field, focusing on the tactile interaction between fingers and screen. The ambient lighting creates soft shadows and highlights the texture of skin and phone surface. Each number tap should feel purposeful yet anxious, with the warm amber tones dominating the frame to convey emotional tension and anticipation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_931a953852458937c46f0711ec456f27ce76a1e93c64d9ed99ecab1b9a9a7657",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T13:06:50.829Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip shows a close-up of a hand interacting with a white remote control in a dark setting with dramatic warm orange lighting. The sequence captures the motion of pressing a button on the device, from approach to contact to withdrawal. The word 'You' is spoken during this brief interaction.",
+      "transcript": "You",
+      "tags": [
+        "back",
+        "button",
+        "clip",
+        "close",
+        "closer",
+        "contact",
+        "control",
+        "device",
+        "finger",
+        "fingers",
+        "hand",
+        "hovering",
+        "human",
+        "index",
+        "interacting",
+        "making",
+        "medium",
+        "moved",
+        "now",
+        "over",
+        "pressing",
+        "pulling",
+        "remote",
+        "shot",
+        "shows",
+        "slightly",
+        "speech",
+        "vertical",
+        "video",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of a human hand hovering over a white remote control or device with multiple buttons. The hand is illuminated with warm orange lighting from the left side, creating dramatic contrast against the dark black background. The fingers are slightly curved, positioned as if about to press a button. The remote shows colored buttons including red, yellow, and green at the top row. The shallow depth of field keeps focus on the hand while the device remains slightly blurred."
+        },
+        {
+          "seconds": 2,
+          "text": "The hand has moved closer to the remote control, with the index finger now making contact with or pressing one of the buttons on the device. The same warm orange lighting illuminates the skin, creating a glowing effect on the fingers. The white remote control with its grid of buttons is more visible, showing navigation arrows and colored function buttons. The composition maintains the intimate close-up framing with the dark background emphasizing the interaction between hand and device."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The hand is now pulling back slightly from the remote control after pressing the button. The fingers remain curved but are positioned higher above the device compared to the previous frame. The warm orange lighting continues to cast dramatic shadows and highlights on the skin. The white remote control remains in the lower portion of the frame, held by another hand visible at the bottom. The dark background maintains the moody, intimate atmosphere of the scene."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "back",
+    "button",
+    "clip",
+    "close",
+    "closer",
+    "contact",
+    "control",
+    "device",
+    "finger",
+    "fingers",
+    "hand",
+    "hovering",
+    "human",
+    "index",
+    "interacting",
+    "making",
+    "medium",
+    "moved",
+    "now",
+    "over",
+    "pressing",
+    "pulling",
+    "remote",
+    "shot",
+    "shows",
+    "slightly",
+    "speech",
+    "vertical",
+    "video",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a96ced2d6617f884582fc9da6ae438517d7e05646d61bcd8a74f1b3be6a3b41e",
+  "sha256": "a96ced2d6617f884582fc9da6ae438517d7e05646d61bcd8a74f1b3be6a3b41e",
+  "bytes": 8628849,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "VA3-v1.mp4",
+    "veo_1791428236206_vzgipp.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up, 85 mm lens, shallow depth of field, late afternoon low golden sun from the side. An older woman with grey hair tied back in a dark field jacket kneels at the dark earth wall of a deep excavation trench and scrapes carefully at the wall with a small pointed trowel held in a blue nitrile-gloved hand, her lined face calm and concentrated, a smear of dark mud on one cheek; fine dust drifts in the light; the wall is soft behind her. She does not look at the camera and does not speak. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eb9345b992c9061fd054f86df3df161105505edca2f8f4b9eca051610b537f4b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3622217779,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a26e02b45e981e1e933b1ca3ebbd4bc1661a01d91c9133f0c8f84733dd8c6298",
+  "sha256": "a26e02b45e981e1e933b1ca3ebbd4bc1661a01d91c9133f0c8f84733dd8c6298",
+  "bytes": 11651,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "sprocket_overlay_fast.mp4",
+    "sprocket_overlay_medium.mp4",
+    "sprocket_overlay_slow.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sprocket_overlay_fast",
+    "clip-metadata:sprocket_overlay_medium",
+    "clip-metadata:sprocket_overlay_slow"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "The entire video clip appears to consist of completely black frames with no visible content throughout its 8-second duration. All three sampled frames show uniform darkness with no subjects, objects, text, or visual elements present. This could indicate a technical issue, corrupted video file, or intentionally blank footage.",
+      "transcript": null,
+      "tags": [
+        "appears",
+        "black",
+        "clip",
+        "completely",
+        "consist",
+        "content",
+        "displays",
+        "elements",
+        "entire",
+        "frame",
+        "frames",
+        "medium",
+        "objects",
+        "screen",
+        "shows",
+        "silent",
+        "subjects",
+        "video",
+        "visible",
+        "visual",
+        "whatsoever"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "The frame shows a completely black screen with no visible content, subjects, or visual elements. The entire frame is uniformly dark with no discernible lighting, colors, or compositional elements. This appears to be either a fade-in transition, a technical issue, or an intentionally blank frame at the start of the video clip. No camera movement or action can be detected."
+        },
+        {
+          "seconds": 4,
+          "text": "The frame displays a completely black screen with no visible content whatsoever. There are no subjects, objects, text, or visual elements present. The entire frame is uniformly dark black, suggesting either a transition period, technical issue with the recording, or intentionally blank footage. No lighting, colors, or compositional elements can be identified in this middle portion of the clip."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The frame shows a completely black screen with no visible visual content. The entire frame remains uniformly dark with no subjects, objects, lighting, or any discernible elements. This appears to be consistent with the previous frames, suggesting the entire video clip may be blank, corrupted, or intentionally showing a black screen throughout its duration. No motion or action is visible."
+        }
+      ]
+    },
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 8-second video clip consists entirely of black frames throughout its duration, with no visible content, subjects, or visual elements at any point. The video may represent a technical issue, an intentional blackout sequence, or corrupted/missing video data. No speech or visual activity is present in any of the sampled frames.",
+      "transcript": null,
+      "tags": [
+        "black",
+        "clip",
+        "completely",
+        "consists",
+        "content",
+        "displays",
+        "distinguishable",
+        "duration",
+        "elements",
+        "entire",
+        "entirely",
+        "features",
+        "frame",
+        "frames",
+        "image",
+        "medium",
+        "screen",
+        "second",
+        "shows",
+        "silent",
+        "subjects",
+        "throughout",
+        "video",
+        "visible",
+        "visual"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "The frame shows a completely black screen with no visible content, subjects, or distinguishable features. The entire frame is uniformly dark with no lighting, colors, or compositional elements visible. This appears to be either a fade-in from black, a technical issue, or an intentionally dark scene. No camera movement or action can be detected in this frame."
+        },
+        {
+          "seconds": 4,
+          "text": "The frame displays a completely black screen with no visible content or subjects. The entire image is uniformly dark without any distinguishable features, lighting sources, or visual elements. This could represent a transition, intentional blackout, or technical limitation in the video. No movement, action, or compositional elements are present."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The frame shows a completely black screen with no visible content, subjects, or visual elements. The entire frame remains uniformly dark throughout, with no lighting, colors, or distinguishable features present. This appears to be either an intentional black screen, a fade-out, or possibly a technical issue with the video content. No action or movement is detectable."
+        }
+      ]
+    },
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 8-second video clip consists entirely of black frames with no visible content throughout its duration. All three sampled frames at the start, middle, and end show complete darkness with no subjects, objects, lighting, or environmental details. This may represent a technical issue, intentional blackout, or corrupted video file.",
+      "transcript": null,
+      "tags": [
+        "black",
+        "clip",
+        "completely",
+        "consists",
+        "content",
+        "continuing",
+        "dark",
+        "discernible",
+        "entire",
+        "entirely",
+        "first",
+        "frame",
+        "frames",
+        "identical",
+        "image",
+        "medium",
+        "pattern",
+        "previous",
+        "remains",
+        "second",
+        "showing",
+        "silent",
+        "throughout",
+        "uniformly",
+        "video",
+        "visible",
+        "whatsoever"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A completely black frame with no visible content. The entire image is uniformly dark with no discernible subjects, objects, or environmental details. There is no lighting, no colors other than black, and no compositional elements to analyze. This appears to be either a fade-in from black, a technical issue, or an intentionally dark scene. The vertical 9:16 aspect ratio suggests mobile phone recording format."
+        },
+        {
+          "seconds": 4,
+          "text": "A completely black frame identical to the first, showing no visible content whatsoever. The entire screen remains uniformly dark with no subjects, objects, lighting, or environmental details visible. There are no colors, shapes, or compositional elements present. This continues the pattern of complete darkness seen at the start of the clip, suggesting either an intentional blackout sequence or technical recording issues."
+        },
+        {
+          "seconds": 7.9,
+          "text": "A completely black frame continuing the pattern from previous frames. The entire image remains uniformly dark with absolutely no visible content, subjects, objects, or environmental details. There is no lighting, no color variation, and no compositional elements to describe. The frame maintains the same vertical 9:16 mobile format but contains no discernible visual information throughout the entire duration of the clip."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "black",
+    "clip",
+    "completely",
+    "consist",
+    "consists",
+    "content",
+    "continuing",
+    "dark",
+    "discernible",
+    "displays",
+    "distinguishable",
+    "duration",
+    "elements",
+    "entire",
+    "entirely",
+    "features",
+    "first",
+    "frame",
+    "frames",
+    "identical",
+    "image",
+    "medium",
+    "objects",
+    "pattern",
+    "previous",
+    "remains",
+    "screen",
+    "second",
+    "showing",
+    "shows",
+    "silent",
+    "subjects",
+    "throughout",
+    "uniformly",
+    "video",
+    "visible",
+    "visual",
+    "whatsoever"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ae51aa43b40c299f5de05077e6b0febeec461c7677fc1f5f62471ecc04b73cdb",
+  "sha256": "ae51aa43b40c299f5de05077e6b0febeec461c7677fc1f5f62471ecc04b73cdb",
+  "bytes": 605664,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_5_1766536743346.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_5_1766536743346"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Close-up of vintage rotary phone on dark wood desk. Detailed view of the dial mechanism adds tactile quality to the on-hold concept.",
+      "transcript": "you",
+      "tags": [
+        "angle",
+        "black",
+        "center",
+        "chrome",
+        "close",
+        "composition",
+        "dark",
+        "desk",
+        "detailed",
+        "details",
+        "dial",
+        "focal",
+        "identical",
+        "maintained",
+        "medium",
+        "phone",
+        "point",
+        "rotary",
+        "showing",
+        "speech",
+        "static",
+        "telephone",
+        "unchanged",
+        "view",
+        "vintage",
+        "visible",
+        "white",
+        "wood",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Black vintage rotary telephone on dark wooden desk. Close-up showing detailed dial mechanism with finger holes. Circular coffee stain on wood surface."
+        },
+        {
+          "seconds": 2,
+          "text": "Same rotary phone from identical angle. The white dial center and chrome details visible. Warm ambient lighting."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Phone unchanged, static composition maintained. The vintage rotary dial is the focal point against the dark wood grain."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "angle",
+    "black",
+    "center",
+    "chrome",
+    "close",
+    "composition",
+    "dark",
+    "desk",
+    "detailed",
+    "details",
+    "dial",
+    "focal",
+    "identical",
+    "maintained",
+    "medium",
+    "phone",
+    "point",
+    "rotary",
+    "showing",
+    "speech",
+    "static",
+    "telephone",
+    "unchanged",
+    "view",
+    "vintage",
+    "visible",
+    "white",
+    "wood",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

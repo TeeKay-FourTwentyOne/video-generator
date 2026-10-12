@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_82da66dee87710432e662908f8bc97cc4dc65c9defe020a32322ff0c2f100d57",
+  "sha256": "82da66dee87710432e662908f8bc97cc4dc65c9defe020a32322ff0c2f100d57",
+  "bytes": 14749216,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "VA2-v1.mp4",
+    "veo_1791428236415_n22njn.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Late afternoon, low golden sun from the side, long shadows. Medium shot inside a deep excavation trench. A bearded man in an olive cap, in muted field clothes, knee pads and blue nitrile gloves, stands shoulder-deep against the dark earth wall of the trench and swings a long-handled pick into the wall at chest height, steadily, again and again; clods of dark wet earth fall at his feet beside a black puddle; dust drifts through the shaft of sunlight. Behind him the trench wall rises to the rim, a taut string line and a strip of sky. He does not look at the camera. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ed9f32cc164b67b42cca3ce9ffb78ddde7a194254f51ef29ce439e53aa31cf33",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 333916526,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

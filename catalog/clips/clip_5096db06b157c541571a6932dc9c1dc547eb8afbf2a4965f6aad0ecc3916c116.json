@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5096db06b157c541571a6932dc9c1dc547eb8afbf2a4965f6aad0ecc3916c116",
+  "sha256": "5096db06b157c541571a6932dc9c1dc547eb8afbf2a4965f6aad0ecc3916c116",
+  "bytes": 3947651,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jan7_shot_5_golden_sprocket.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:jan7_shot_5_golden_sprocket"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a stylized winter landscape with a strong magenta/pink color filter, featuring snow-covered evergreen trees and a bright sun on the horizon. The footage has a vintage film strip aesthetic with visible sprocket holes. Japanese text appears requesting channel subscription, suggesting this is social media content with an artistic, dreamy visual treatment.",
+      "transcript": "チャンネル登録をお願いいたします。",
+      "tags": [
+        "applied",
+        "camera",
+        "central",
+        "clip",
+        "color",
+        "continuing",
+        "evergreen",
+        "filter",
+        "grading",
+        "heavy",
+        "landscape",
+        "magenta",
+        "medium",
+        "movement",
+        "pink",
+        "progression",
+        "scene",
+        "showing",
+        "shows",
+        "similar",
+        "slight",
+        "speech",
+        "strong",
+        "stylized",
+        "trees",
+        "two",
+        "winter"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A winter landscape scene with heavy magenta/pink color filter applied, showing snow-covered evergreen trees (likely pine or spruce) framing both sides of the image. A bright glowing light source (sun) is visible on the horizon between the trees, creating a dreamy, ethereal atmosphere. The foreground shows a snow-covered open field or clearing. Film strip borders with sprocket holes are visible on the edges, giving it a vintage film aesthetic. Text overlay shows '10:0_10' in the corner."
+        },
+        {
+          "seconds": 4,
+          "text": "Similar winter scene continuing with the strong magenta/pink color grading. Two prominent evergreen trees stand in the center-left of frame, with the bright sun still glowing behind them at the horizon. The snow-covered ground extends toward the viewer with visible shadows cast by the trees. The film strip border effect remains consistent. A thin vertical line (possibly a wire or artifact) is visible in the sky area. The lighting creates a surreal, dreamlike quality."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The scene shows slight camera movement or progression, with the two central evergreen trees now more prominently positioned. The sun has moved slightly lower or the camera angle has shifted, with the bright glow now appearing between and behind the two main trees. The magenta/pink filter remains strong throughout. Snow-covered ground fills the lower portion of the frame, with tree shadows stretching toward the camera. Film strip borders continue framing the image."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "applied",
+    "camera",
+    "central",
+    "clip",
+    "color",
+    "continuing",
+    "evergreen",
+    "filter",
+    "grading",
+    "heavy",
+    "landscape",
+    "magenta",
+    "medium",
+    "movement",
+    "pink",
+    "progression",
+    "scene",
+    "showing",
+    "shows",
+    "similar",
+    "slight",
+    "speech",
+    "strong",
+    "stylized",
+    "trees",
+    "two",
+    "winter"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

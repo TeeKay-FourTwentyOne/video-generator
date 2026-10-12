@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_abf508dea8f8356c1d4c4f044c1942de4900eb302e72d24a1066f9575bee8d05",
+  "sha256": "abf508dea8f8356c1d4c4f044c1942de4900eb302e72d24a1066f9575bee8d05",
+  "bytes": 5679995,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767756984655_aj1vnb.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767756984655_aj1vnb"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This heartwarming clip shows a man in a plaid shirt discovering and rescuing baby ducklings from a storm drain in a suburban neighborhood during golden hour. The sequence progresses from his initial reaction, to the rescue moment with water dripping from the ducklings, to his satisfied smile while holding the three rescued birds. The warm lighting and suburban setting create an uplifting atmosphere for this animal rescue moment.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "baby",
+        "beard",
+        "brown",
+        "clip",
+        "close",
+        "crouched",
+        "curb",
+        "discovering",
+        "down",
+        "downward",
+        "drain",
+        "ducklings",
+        "hair",
+        "heartwarming",
+        "holding",
+        "lifting",
+        "looking",
+        "man",
+        "medium",
+        "near",
+        "now",
+        "plaid",
+        "rescuing",
+        "shirt",
+        "short",
+        "shown",
+        "shows",
+        "sitting",
+        "smiling",
+        "speech",
+        "storm",
+        "thank",
+        "three",
+        "two",
+        "warmly",
+        "watching",
+        "yellow",
+        "you",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young man with short brown hair and a beard is shown in close-up, looking downward with his mouth open as if speaking or reacting to something. He wears a red and black buffalo plaid flannel shirt over a white t-shirt. The setting is a suburban residential street during golden hour, with warm sunlight illuminating his face from the right side. Houses with garages and green lawns are visible but blurred in the background. The shallow depth of field keeps focus on his face while the street extends behind him."
+        },
+        {
+          "seconds": 4,
+          "text": "The same man in the plaid shirt is crouched down near a storm drain, lifting two small yellow and brown ducklings from the drain opening. Water is dripping from the ducklings as he rescues them. His arms are extended, hands cupped around the baby ducks. The scene is shot from a low angle showing the curb, green grass lawn, and suburban street in warm golden hour lighting. His tan boots and dark pants are partially visible as he kneels by the drain grate."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The man is now sitting on the curb, smiling warmly while holding three yellow ducklings in his cupped hands at chest level. His expression shows joy and satisfaction as he looks down at the rescued birds. The suburban neighborhood is clearly visible behind him with beige houses, green lawns, and trees. Golden hour sunlight creates a warm, soft glow across the entire scene. The camera frames him from a medium shot, capturing his happy expression and the ducklings prominently."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "baby",
+    "beard",
+    "brown",
+    "clip",
+    "close",
+    "crouched",
+    "curb",
+    "discovering",
+    "down",
+    "downward",
+    "drain",
+    "ducklings",
+    "hair",
+    "heartwarming",
+    "holding",
+    "lifting",
+    "looking",
+    "man",
+    "medium",
+    "near",
+    "now",
+    "plaid",
+    "rescuing",
+    "shirt",
+    "short",
+    "shown",
+    "shows",
+    "sitting",
+    "smiling",
+    "speech",
+    "storm",
+    "thank",
+    "three",
+    "two",
+    "warmly",
+    "watching",
+    "yellow",
+    "you",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

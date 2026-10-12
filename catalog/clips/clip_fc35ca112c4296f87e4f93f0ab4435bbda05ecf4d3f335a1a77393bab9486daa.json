@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fc35ca112c4296f87e4f93f0ab4435bbda05ecf4d3f335a1a77393bab9486daa",
+  "sha256": "fc35ca112c4296f87e4f93f0ab4435bbda05ecf4d3f335a1a77393bab9486daa",
+  "bytes": 20390144,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V05-v1.mp4",
+    "veo_1791428262754_ssj6ru.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up, looking straight down at dark, wet, freshly dug earth with black water pooling in the trowel marks on the floor of a deep excavation trench, in dusk light. A blue nitrile-gloved hand scrapes with a small pointed steel trowel and uncovers a green-corroded bronze spearhead, lying in the dark earth. The hand sets the trowel aside out of frame, places a small black-and-white photographic scale bar with plain alternating black and white segments and no numbers on the earth beside the spearhead, then a small plastic north arrow beside it, and withdraws out of the frame, leaving the spearhead, the scale bar and the arrow alone in the frame. Camera is fixed, looking down, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_64687f9e186dc2f90c8d317a09fe567fada172c6fda06050fa677c769f7e2569",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2658814507,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

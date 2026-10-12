@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_074b4171c83e8a86e9c1f935d8cca67eef138ec1f9b426f08de6436720e87c4f",
+  "sha256": "074b4171c83e8a86e9c1f935d8cca67eef138ec1f9b426f08de6436720e87c4f",
+  "bytes": 44444864,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "satellite.mp4"
+  ],
+  "collections": [
+    "dual-use"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_82b1d961b6096600657a9c9d29e64b79d2de154cafe2db2c003f2359a3485d3e",
+  "sha256": "82b1d961b6096600657a9c9d29e64b79d2de154cafe2db2c003f2359a3485d3e",
+  "bytes": 16976130,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "king-approved-edit-v4.mp4",
+    "veo_1789754510114_tkpl7a.mp4"
+  ],
+  "collections": [
+    "scary-woods-episode-03"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

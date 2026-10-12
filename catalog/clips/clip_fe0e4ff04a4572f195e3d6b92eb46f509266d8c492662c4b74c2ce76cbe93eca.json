@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fe0e4ff04a4572f195e3d6b92eb46f509266d8c492662c4b74c2ce76cbe93eca",
+  "sha256": "fe0e4ff04a4572f195e3d6b92eb46f509266d8c492662c4b74c2ce76cbe93eca",
+  "bytes": 1066565,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "temporal_gen2_posterized_annotated.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:temporal_gen2_posterized_annotated"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This demonstration video shows a posterization effect being applied to an image of a man standing on a rural road surrounded by wheat fields. The clip progresses from natural photographic colors to a heavily stylized orange/sepia posterized look with flattened tones and added grain. Text overlays indicate this is a 'Gen 2' comparison showing the transformation from original to posterized styling.",
+      "transcript": "You",
+      "tags": [
+        "applied",
+        "brown",
+        "centered",
+        "colors",
+        "composition",
+        "curly",
+        "demonstration",
+        "effect",
+        "first",
+        "frame",
+        "hair",
+        "identical",
+        "image",
+        "man",
+        "medium",
+        "mustache",
+        "nearly",
+        "orange",
+        "posterization",
+        "predominantly",
+        "reddish",
+        "remains",
+        "road",
+        "rural",
+        "scene",
+        "shifted",
+        "shows",
+        "speech",
+        "standing",
+        "stands",
+        "straight",
+        "strong",
+        "transformed",
+        "video",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man with curly reddish-brown hair and mustache stands centered on a straight rural road stretching to the horizon. He wears a dark green jacket over a lighter shirt with tan/khaki pants and brown boots. Golden wheat fields flank both sides of the road. A ghostly double-exposure effect shows his face superimposed in the sky above. Text overlays read 'Gen 2: Original → Posterized' at top and 'Expect: Natural → Flat/Graphic' at bottom. Warm golden hour lighting with muted natural colors."
+        },
+        {
+          "seconds": 2,
+          "text": "Nearly identical composition to the first frame - the man remains standing on the rural road with wheat fields on either side. The double-exposure of his face persists in the sky. The warm golden tones continue throughout the scene. The same text overlays remain visible. Very minimal change from the opening frame, suggesting this is a demonstration video showing image processing effects. The natural photographic quality is still largely preserved at this point."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The scene has transformed with a strong posterization effect applied. Colors have shifted to predominantly orange/sepia tones with reduced color gradients and flattened tonal ranges. The man's figure appears more graphic and less photorealistic. The wheat fields now display uniform orange coloring. The ghostly face overlay in the sky has become more prominent with the simplified color palette. Visible noise/grain texture has been added. The transformation from natural to flat/graphic style is now complete."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_007",
+      "name": "The Wanderer",
+      "description": "Solitary man standing on straight road through wheat fields, ghostly face apparition in sky above, surreal/dreamlike quality",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "applied",
+    "brown",
+    "centered",
+    "colors",
+    "composition",
+    "curly",
+    "demonstration",
+    "effect",
+    "first",
+    "frame",
+    "hair",
+    "identical",
+    "image",
+    "man",
+    "medium",
+    "mustache",
+    "nearly",
+    "orange",
+    "posterization",
+    "predominantly",
+    "reddish",
+    "remains",
+    "road",
+    "rural",
+    "scene",
+    "shifted",
+    "shows",
+    "speech",
+    "standing",
+    "stands",
+    "straight",
+    "strong",
+    "transformed",
+    "video",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

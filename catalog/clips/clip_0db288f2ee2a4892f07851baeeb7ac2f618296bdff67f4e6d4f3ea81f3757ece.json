@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0db288f2ee2a4892f07851baeeb7ac2f618296bdff67f4e6d4f3ea81f3757ece",
+  "sha256": "0db288f2ee2a4892f07851baeeb7ac2f618296bdff67f4e6d4f3ea81f3757ece",
+  "bytes": 5060795,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "sagittarius_1.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:sagittarius_1"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Sagittarius zodiac concept video transitioning from black-and-white Art Nouveau line art to fully rendered photorealistic centaur animation. Features a young auburn-haired archer centaur in an enchanted forest with golden sunlight. The film sprocket overlay mid-clip adds vintage cinema aesthetic to the fantasy imagery.",
+      "transcript": "Thanks for watching. I'll see you next time.  Bye.",
+      "tags": [
+        "art",
+        "auburn",
+        "black",
+        "bye",
+        "centaur",
+        "color",
+        "concept",
+        "curly",
+        "enchanted",
+        "figure",
+        "forest",
+        "full",
+        "illustration",
+        "line",
+        "looks",
+        "lush",
+        "man",
+        "medium",
+        "next",
+        "nouveau",
+        "ornate",
+        "photorealistic",
+        "pose",
+        "sagittarius",
+        "scene",
+        "see",
+        "setting",
+        "side",
+        "slight",
+        "speech",
+        "thanks",
+        "time",
+        "transitioning",
+        "variation",
+        "video",
+        "watching",
+        "white",
+        "you",
+        "young",
+        "zodiac"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Line art illustration of a centaur (Sagittarius) in a forest setting with ornate Art Nouveau decorative border. The centaur carries a quiver of arrows and bow, surrounded by detailed trees and ferns. Black and white coloring book style with a glowing halo behind the figure."
+        },
+        {
+          "seconds": 4,
+          "text": "Full-color photorealistic centaur in an enchanted forest. Young man with curly auburn hair wearing a green vest, merged with a brown horse body. Dappled golden sunlight filters through trees. Film sprocket holes visible on edges suggesting vintage film aesthetic."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Same photorealistic centaur scene with slight pose variation - the figure looks to the side. Lush green forest environment with ferns and moss. Golden hour lighting creates warm atmosphere. No sprocket holes visible in this frame."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_003",
+      "name": "Sagittarius Sketch",
+      "description": "Line art illustration of a centaur archer with curly hair, bow and quiver, ornate art nouveau frame",
+      "source": "legacy-character-cluster"
+    },
+    {
+      "id": "char_004",
+      "name": "Chiron",
+      "description": "Photorealistic centaur with brown horse body, human torso in green vest and cream shirt, wavy brown hair, bow and arrows, forest setting",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "art",
+    "auburn",
+    "black",
+    "bye",
+    "centaur",
+    "color",
+    "concept",
+    "curly",
+    "enchanted",
+    "figure",
+    "forest",
+    "full",
+    "illustration",
+    "line",
+    "looks",
+    "lush",
+    "man",
+    "medium",
+    "next",
+    "nouveau",
+    "ornate",
+    "photorealistic",
+    "pose",
+    "sagittarius",
+    "scene",
+    "see",
+    "setting",
+    "side",
+    "slight",
+    "speech",
+    "thanks",
+    "time",
+    "transitioning",
+    "variation",
+    "video",
+    "watching",
+    "white",
+    "you",
+    "young",
+    "zodiac"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

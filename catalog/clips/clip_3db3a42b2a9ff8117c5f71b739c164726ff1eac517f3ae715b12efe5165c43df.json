@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3db3a42b2a9ff8117c5f71b739c164726ff1eac517f3ae715b12efe5165c43df",
+  "sha256": "3db3a42b2a9ff8117c5f71b739c164726ff1eac517f3ae715b12efe5165c43df",
+  "bytes": 9762328,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767759510916_fb3mql.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767759510916_fb3mql"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short video shows a woman in a burgundy dress and tan trench coat transitioning from a studio setting to walking through a romantic, rain-soaked European street at twilight. The clip demonstrates a before/after style transformation, moving from a plain backdrop to an atmospheric urban scene with warm street lighting and wet cobblestones, accompanied by Korean speech thanking viewers for watching.",
+      "transcript": "시청해 주셔서 감사합니다.",
+      "tags": [
+        "against",
+        "along",
+        "bright",
+        "brown",
+        "burgundy",
+        "camera",
+        "coat",
+        "cobblestone",
+        "continuing",
+        "dark",
+        "dress",
+        "dusk",
+        "european",
+        "evening",
+        "gray",
+        "hair",
+        "medium",
+        "multi-scene",
+        "now",
+        "rainy",
+        "short",
+        "shows",
+        "smile",
+        "speech",
+        "stands",
+        "street",
+        "studio",
+        "tan",
+        "toward",
+        "transitioning",
+        "trench",
+        "video",
+        "walks",
+        "wavy",
+        "wet",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.07,
+          "text": "A young woman with wavy brown hair stands against a dark gray studio backdrop, smiling warmly. She wears a burgundy/maroon knee-length dress with a fitted silhouette and an open tan/beige trench coat. Her burgundy heels match her dress. She appears to be walking forward with arms slightly extended, holding the coat open. The lighting is soft and even, creating a professional portrait-style composition. Full-body framing with centered subject."
+        },
+        {
+          "seconds": 3,
+          "text": "The same woman now walks along a wet European cobblestone street at dusk or evening. Rain is visible falling, and the street glistens with reflections from warm yellow street lamps. She holds her trench coat lapels open, looking down with a joyful smile. Historic buildings line both sides of the narrow street. The scene has a romantic, cinematic quality with blue twilight sky contrasting warm artificial lighting. Full-body shot, slightly low angle."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Continuing on the same rainy cobblestone street, the woman walks toward the camera with a bright smile, looking ahead. Her trench coat now hangs naturally open at her sides. The wet cobblestones reflect golden light from ornate street lamps. Rain continues to fall against the dusky blue sky. European architecture frames both sides. The composition maintains the romantic evening atmosphere with warm-cool color contrast. Full-body framing, centered subject walking forward."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_044",
+      "name": "Margot",
+      "description": "Woman in burgundy dress with tan overcoat, rainy European cobblestone street, cinematic composition, sophisticated traveler",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "along",
+    "bright",
+    "brown",
+    "burgundy",
+    "camera",
+    "coat",
+    "cobblestone",
+    "continuing",
+    "dark",
+    "dress",
+    "dusk",
+    "european",
+    "evening",
+    "gray",
+    "hair",
+    "medium",
+    "multi-scene",
+    "now",
+    "rainy",
+    "short",
+    "shows",
+    "smile",
+    "speech",
+    "stands",
+    "street",
+    "studio",
+    "tan",
+    "toward",
+    "transitioning",
+    "trench",
+    "video",
+    "walks",
+    "wavy",
+    "wet",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

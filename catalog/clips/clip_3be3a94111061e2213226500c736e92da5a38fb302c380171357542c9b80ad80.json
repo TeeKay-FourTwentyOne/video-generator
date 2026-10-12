@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3be3a94111061e2213226500c736e92da5a38fb302c380171357542c9b80ad80",
+  "sha256": "3be3a94111061e2213226500c736e92da5a38fb302c380171357542c9b80ad80",
+  "bytes": 42267984,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 37.75,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 906,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "the_lodger_v4_4k.mp4"
+  ],
+  "collections": [
+    "the-lodger"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

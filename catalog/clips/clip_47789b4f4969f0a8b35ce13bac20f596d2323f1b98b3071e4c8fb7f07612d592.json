@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_47789b4f4969f0a8b35ce13bac20f596d2323f1b98b3071e4c8fb7f07612d592",
+  "sha256": "47789b4f4969f0a8b35ce13bac20f596d2323f1b98b3071e4c8fb7f07612d592",
+  "bytes": 97020807,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 170.166667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 4084,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "carnival-dream-borrowed-light-draft-1080p.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

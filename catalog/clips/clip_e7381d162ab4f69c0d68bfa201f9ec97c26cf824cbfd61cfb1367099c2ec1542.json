@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e7381d162ab4f69c0d68bfa201f9ec97c26cf824cbfd61cfb1367099c2ec1542",
+  "sha256": "e7381d162ab4f69c0d68bfa201f9ec97c26cf824cbfd61cfb1367099c2ec1542",
+  "bytes": 7279763,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767741934439_0y9cze.mp4"
+  ],
+  "collections": [
+    "sagittarius_why_choose"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767741934439_0y9cze"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots, walks steadily along a forest path. Smooth tracking shot from behind, following at shoulder height as he moves through tall trees with easy, familiar strides. Golden hour sunlight filters through the dense canopy above, creating dappled patterns of warm light across his back and the forest floor. He tilts his head upward to appreciate the canopy, sunbeams catching in his wavy hair. The camera maintains a constant distance, gliding through the lush foliage as shafts of hazy, golden backlight pierce through gaps in the leaves, creating a dreamy, ethereal atmosphere. Soft shadows and warm highlights paint the scene in amber and bronze tones. The path ahead hints at a classical stone archway in the distance through the trees.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4f03d09fd14f50624ebdd53db11f7db6d1162985309dd0722ee974367456c567",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A middle-aged Caucasian man with a medium build, shoulder-length wavy dark brown and gray hair, and a salt-and-pepper beard, wearing an unzipped olive green utility jacket over a beige henley shirt, dark olive cargo pants, and tan hiking boots, walks steadily along a forest path. Smooth tracking shot from behind, following at shoulder height as he moves through tall trees with easy, familiar strides. Golden hour sunlight filters through the dense canopy above, creating dappled patterns of warm light across his back and the forest floor. He tilts his head upward to appreciate the canopy, sunbeams catching in his wavy hair. The camera maintains a constant distance, gliding through the lush foliage as shafts of hazy, golden backlight pierce through gaps in the leaves, creating a dreamy, ethereal atmosphere. Soft shadows and warm highlights paint the scene in amber and bronze tones. The path ahead hints at a classical stone archway in the distance through the trees.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4f03d09fd14f50624ebdd53db11f7db6d1162985309dd0722ee974367456c567",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T23:24:39.241Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A person in an olive jacket walks away from the camera through a misty autumn forest bathed in golden sunlight. The 4-second clip captures their steady progression along a leaf-covered path toward a mysterious silhouetted structure in the distance. The atmospheric lighting creates dramatic sun rays through the trees, establishing a contemplative, cinematic mood.",
+      "transcript": null,
+      "tags": [
+        "along",
+        "autumn",
+        "away",
+        "bathed",
+        "camera",
+        "continues",
+        "covered",
+        "dark",
+        "figure",
+        "forest",
+        "forward",
+        "hair",
+        "jacket",
+        "leaf",
+        "length",
+        "medium",
+        "misty",
+        "now",
+        "olive",
+        "path",
+        "person",
+        "positioned",
+        "progressed",
+        "shoulder",
+        "silent",
+        "slightly",
+        "their",
+        "walker",
+        "walking",
+        "walks"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A person with shoulder-length dark hair walks away from the camera through an autumn forest. They wear an olive-green jacket over a light-colored shirt and dark pants. The forest floor is covered with fallen orange and brown leaves. Golden sunlight streams through the trees from the upper left, creating dramatic rays through the misty atmosphere. Tall deciduous trees with green and yellow foliage frame the scene. A silhouetted structure is visible in the foggy distance. The vertical framing emphasizes the height of the trees."
+        },
+        {
+          "seconds": 2,
+          "text": "The same person continues walking forward on the leaf-covered forest path, now slightly closer to the camera's center. Their arms swing naturally at their sides in a walking motion. The golden hour lighting remains prominent, with sun rays filtering through the canopy creating a warm, ethereal glow. The mysterious silhouetted structure ahead becomes slightly more defined through the haze. Green foliage and yellow-tinted leaves create a rich autumn color palette. The composition maintains the vertical format with the subject centered."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The walker has progressed further along the forest path, their figure now positioned slightly lower in the frame as they continue toward the distant structure. The sunlight appears more intense, creating stronger lens flare effects in the upper left. The person's walking stride is captured mid-step with one leg forward. The autumn leaves on the ground show warm orange and brown tones. The misty atmosphere softens the background trees while maintaining the mysterious silhouette ahead. Vertical composition emphasizes depth."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "along",
+    "autumn",
+    "away",
+    "bathed",
+    "camera",
+    "continues",
+    "covered",
+    "dark",
+    "figure",
+    "forest",
+    "forward",
+    "hair",
+    "jacket",
+    "leaf",
+    "length",
+    "medium",
+    "misty",
+    "now",
+    "olive",
+    "path",
+    "person",
+    "positioned",
+    "progressed",
+    "shoulder",
+    "silent",
+    "slightly",
+    "their",
+    "walker",
+    "walking",
+    "walks"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0fe4e56e21a6adc42ae7d44d2d5a1a01f6eeb09de05812434bb3ca15107eaf7e",
+  "sha256": "0fe4e56e21a6adc42ae7d44d2d5a1a01f6eeb09de05812434bb3ca15107eaf7e",
+  "bytes": 6012975,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "jabA_marge_4k.mp4"
+  ],
+  "collections": [
+    "guess-booth"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

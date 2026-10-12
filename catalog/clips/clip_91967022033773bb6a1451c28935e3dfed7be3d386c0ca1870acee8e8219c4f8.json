@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_91967022033773bb6a1451c28935e3dfed7be3d386c0ca1870acee8e8219c4f8",
+  "sha256": "91967022033773bb6a1451c28935e3dfed7be3d386c0ca1870acee8e8219c4f8",
+  "bytes": 21122766,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 1344,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "clean-master-1080.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

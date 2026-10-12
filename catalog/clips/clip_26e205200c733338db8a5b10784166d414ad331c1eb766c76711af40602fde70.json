@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_26e205200c733338db8a5b10784166d414ad331c1eb766c76711af40602fde70",
+  "sha256": "26e205200c733338db8a5b10784166d414ad331c1eb766c76711af40602fde70",
+  "bytes": 1980898,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539230507_zuqs6o.mp4"
+  ],
+  "collections": [
+    "a_solitary_astronaut_floats_th_1767539132269"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539230507_zuqs6o"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A lone astronaut floats in perfect stillness within a vast alien chamber, suspended weightlessly in zero gravity as bioluminescent symbols pulse gently around them like a cosmic heartbeat. The ancient glyphs emit a soft, rhythmic glow in ethereal blues and teals, their light reflecting off the astronaut's helmet visor. The camera holds a steady, contemplative medium shot, slowly drifting in a subtle circular motion around the motionless figure. Deep space ambiance fills the scene with mysterious, dreamlike lighting that shifts from deep navy to luminescent aqua. The bioluminescent patterns breathe with organic rhythm, creating an atmosphere of profound transcendence and alien wisdom. Cinematic sci-fi aesthetic with ethereal depth of field, emphasizing the serene moment of cosmic revelation and the astronaut's transformative encounter with otherworldly intelligence.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_159a36bd16286e4a1b68bb95b7be5df6feee9e4375bfe7abc6d538502f3fa444",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A lone astronaut floats in perfect stillness within a vast alien chamber, suspended weightlessly in zero gravity as bioluminescent symbols pulse gently around them like a cosmic heartbeat. The ancient glyphs emit a soft, rhythmic glow in ethereal blues and teals, their light reflecting off the astronaut's helmet visor. The camera holds a steady, contemplative medium shot, slowly drifting in a subtle circular motion around the motionless figure. Deep space ambiance fills the scene with mysterious, dreamlike lighting that shifts from deep navy to luminescent aqua. The bioluminescent patterns breathe with organic rhythm, creating an atmosphere of profound transcendence and alien wisdom. Cinematic sci-fi aesthetic with ethereal depth of field, emphasizing the serene moment of cosmic revelation and the astronaut's transformative encounter with otherworldly intelligence.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_159a36bd16286e4a1b68bb95b7be5df6feee9e4375bfe7abc6d538502f3fa444",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:06:28.905Z",
+      "parameters": {
+        "durationSeconds": 1,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video features a CGI astronaut floating in space surrounded by glowing cyan alien symbols, with a dramatic serpentine energy effect appearing mid-clip before dissipating. The consistent cool blue-teal color palette and mystical floating symbols create a sci-fi aesthetic throughout the 4-second clip, which concludes with a spoken 'Thank you for watching' message.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "against",
+        "astronaut",
+        "background",
+        "bright",
+        "centered",
+        "centrally",
+        "cgi",
+        "cleaner",
+        "composition",
+        "cyan",
+        "dark",
+        "features",
+        "first",
+        "floating",
+        "floats",
+        "frame",
+        "full",
+        "glowing",
+        "large",
+        "medium",
+        "now",
+        "remains",
+        "returns",
+        "serpentine",
+        "shaped",
+        "similar",
+        "space",
+        "spacesuit",
+        "speech",
+        "starfield",
+        "surrounded",
+        "thank",
+        "vertical",
+        "video",
+        "watching",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A white astronaut in a full spacesuit floats centrally against a dark starfield background. The astronaut faces the viewer with arms slightly extended, wearing a black reflective helmet visor with a small light point visible. Surrounding the figure are numerous glowing cyan/turquoise symbols and characters that appear to be alien or mystical in nature, floating at various depths. The lighting is predominantly cool blue-teal, creating a sci-fi atmosphere. The vertical 9:16 framing places the astronaut prominently in the center."
+        },
+        {
+          "seconds": 2,
+          "text": "The same astronaut remains centered but now a large, bright cyan serpentine or S-shaped glowing energy trail curves dramatically behind and around the figure. This luminous element dominates the composition, creating a dynamic swirling effect. The floating alien symbols persist but are partially obscured by the bright glow. A distinct symbol appears at the bottom center. The astronaut's pose is similar, with the reflective visor showing the ambient cyan lighting. The overall illumination is brighter due to the energy trail."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The astronaut returns to a cleaner composition similar to the first frame, floating centrally against the dark space background. The large energy trail has dissipated, leaving only the scattered glowing cyan symbols floating around the figure. The astronaut maintains the same forward-facing pose with arms relaxed at sides. A partial symbol is visible at the bottom left corner. The cool blue-teal lighting continues to illuminate the white spacesuit, and the starfield background remains consistent with subtle depth."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "astronaut",
+    "background",
+    "bright",
+    "centered",
+    "centrally",
+    "cgi",
+    "cleaner",
+    "composition",
+    "cyan",
+    "dark",
+    "features",
+    "first",
+    "floating",
+    "floats",
+    "frame",
+    "full",
+    "glowing",
+    "large",
+    "medium",
+    "now",
+    "remains",
+    "returns",
+    "serpentine",
+    "shaped",
+    "similar",
+    "space",
+    "spacesuit",
+    "speech",
+    "starfield",
+    "surrounded",
+    "thank",
+    "vertical",
+    "video",
+    "watching",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

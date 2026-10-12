@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5a888818b6f45c0063263d4c9163a73ef1e78a9830d7ed6dc797f5974c7460fa",
+  "sha256": "5a888818b6f45c0063263d4c9163a73ef1e78a9830d7ed6dc797f5974c7460fa",
+  "bytes": 875676,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767504986219_getrml.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767504986219_getrml"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A child's small hand gently grips a vibrant red balloon string, fingers loosely curled around the thin ribbon. The balloon hovers in frame, its glossy surface reflecting soft natural light as it sways almost imperceptibly in a gentle breeze. Camera holds a steady medium close-up shot at eye level, capturing the delicate interaction between hand and balloon. Warm, diffused lighting creates subtle shadows and highlights the balloon's rich crimson color against a softly blurred background. The atmosphere is serene and contemplative, with the balloon's gentle bobbing motion being the only movement in this quiet, expectant moment. Cinematic color grading emphasizes the bold red of the balloon while maintaining natural skin tones and soft ambient lighting.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_54696e765c509e1ff841487221e6112b6e7727a8d108d9789b28d41e4773857f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A child's small hand gently grips a vibrant red balloon string, fingers loosely curled around the thin ribbon. The balloon hovers in frame, its glossy surface reflecting soft natural light as it sways almost imperceptibly in a gentle breeze. Camera holds a steady medium close-up shot at eye level, capturing the delicate interaction between hand and balloon. Warm, diffused lighting creates subtle shadows and highlights the balloon's rich crimson color against a softly blurred background. The atmosphere is serene and contemplative, with the balloon's gentle bobbing motion being the only movement in this quiet, expectant moment. Cinematic color grading emphasizes the bold red of the balloon while maintaining natural skin tones and soft ambient lighting.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_54696e765c509e1ff841487221e6112b6e7727a8d108d9789b28d41e4773857f",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T05:35:28.446Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short vertical video clip shows a static close-up shot of a hand holding a bright red balloon by its curled ribbon string against a blurred dark background. The composition remains essentially unchanged throughout the 4-second duration, with warm natural lighting highlighting the glossy balloon and the person's hand. The clip ends with a spoken 'Thanks for watching!' indicating this is likely the conclusion of a longer video.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "balloon",
+        "bright",
+        "clip",
+        "close",
+        "composition",
+        "first",
+        "frame",
+        "hand",
+        "holding",
+        "human",
+        "identical",
+        "largely",
+        "medium",
+        "nearly",
+        "red",
+        "remains",
+        "ribbon",
+        "short",
+        "shot",
+        "showing",
+        "shows",
+        "speech",
+        "static",
+        "still",
+        "thanks",
+        "unchanged",
+        "vertical",
+        "video",
+        "watching"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of a human hand holding a bright red balloon by its red ribbon string. The hand is positioned in the lower center of the frame, gripping the curled ribbon firmly between thumb and fingers. The balloon appears glossy and inflated, occupying the upper portion of the frame. The background is heavily blurred with dark, muted tones creating a bokeh effect. Warm natural lighting illuminates the hand and balloon from the right side, creating subtle highlights on the balloon's surface."
+        },
+        {
+          "seconds": 2,
+          "text": "Nearly identical composition to the first frame, showing the same hand holding the red balloon by its curled ribbon. The glossy red balloon remains in the upper portion of the frame with its tied knot visible. The hand maintains the same grip position on the ribbon. The blurred background continues with dark gray and brown tones. The lighting remains consistent with warm tones highlighting the skin and the balloon's reflective surface. Minimal movement is apparent between frames."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The composition remains largely unchanged with the hand still holding the red balloon's ribbon in the lower center frame. The bright red balloon occupies the upper left area, showing its smooth, inflated surface with light reflections. The curled ribbon connects the balloon to the gripping hand. Background maintains the same soft bokeh effect with muted dark tones. The vertical 9:16 aspect ratio emphasizes the upward reach of the balloon. Natural warm lighting continues to illuminate the scene."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "balloon",
+    "bright",
+    "clip",
+    "close",
+    "composition",
+    "first",
+    "frame",
+    "hand",
+    "holding",
+    "human",
+    "identical",
+    "largely",
+    "medium",
+    "nearly",
+    "red",
+    "remains",
+    "ribbon",
+    "short",
+    "shot",
+    "showing",
+    "shows",
+    "speech",
+    "static",
+    "still",
+    "thanks",
+    "unchanged",
+    "vertical",
+    "video",
+    "watching"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

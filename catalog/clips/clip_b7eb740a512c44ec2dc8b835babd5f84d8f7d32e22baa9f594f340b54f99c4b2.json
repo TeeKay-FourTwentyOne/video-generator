@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b7eb740a512c44ec2dc8b835babd5f84d8f7d32e22baa9f594f340b54f99c4b2",
+  "sha256": "b7eb740a512c44ec2dc8b835babd5f84d8f7d32e22baa9f594f340b54f99c4b2",
+  "bytes": 33642416,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "03_arrivals.mp4"
+  ],
+  "collections": [
+    "the-last-screening"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-job-prompt-file",
+      "prompt": "One continuous 8-second shot. Photoreal underwater cinema, subtle film grain, cobalt blue water, faded oxblood seats, tarnished brass Art Deco details, suspended particles. Match the first frame faithfully. All architecture and seats are rigid and remain in place. Natural smooth motion at 24fps, not stop motion. No people, divers, text, subtitles, logos, cuts, dissolves, floating furniture or cartoon anatomy. A nearly locked slow lateral drift along the row of velvet seats. The seven small silver fish already present swim gently together toward screen right through the warm projector beam. Maintain distinct natural fish bodies, no merging, no sudden multiplication. No additional fish appear in empty space; gentle fin motion. Tiny particles float in the beam. The screen is out of frame. Soft underwater ambience, distant muffled projector chatter, no speech or music.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0f92ffe3809961b1ebcbeedeb805454cca4a7c6be1c31769110c6ca8affb7092",
+      "provider": null,
+      "model": "veo-3.1-generate-001",
+      "seed": 9162602,
+      "createdAt": "2026-09-16T16:39:40.634Z",
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6af29a328c4db2db8fb502151e2f2312df8eef0c5a9f5898a229087f0b20b89c",
+  "sha256": "6af29a328c4db2db8fb502151e2f2312df8eef0c5a9f5898a229087f0b20b89c",
+  "bytes": 42718549,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 3840,
+    "height": 2160,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "bedside_table.mp4"
+  ],
+  "collections": [
+    "elvis-prophet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2de0fd194abb4cd577256b5e653cfe1ad24ad46af3634dabe01b7420b2864fc3",
+  "sha256": "2de0fd194abb4cd577256b5e653cfe1ad24ad46af3634dabe01b7420b2864fc3",
+  "bytes": 2557476,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 54,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 1296,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "slice_proof_720.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

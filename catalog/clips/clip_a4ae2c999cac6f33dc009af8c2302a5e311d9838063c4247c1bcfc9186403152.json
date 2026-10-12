@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a4ae2c999cac6f33dc009af8c2302a5e311d9838063c4247c1bcfc9186403152",
+  "sha256": "a4ae2c999cac6f33dc009af8c2302a5e311d9838063c4247c1bcfc9186403152",
+  "bytes": 415732,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "candle_4s_test.mp4",
+    "veo_1772418070714_0krp13.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "A single white candle flame flickering in a dark room. Extreme close-up, shallow depth of field, warm orange glow against pure black background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b92418ff3981552e6689d70a0bc25cd2f741f6de2bdb1afa6ff43266cffc4c86",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 3547709163,
+      "createdAt": "2026-03-02T02:20:28.725Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

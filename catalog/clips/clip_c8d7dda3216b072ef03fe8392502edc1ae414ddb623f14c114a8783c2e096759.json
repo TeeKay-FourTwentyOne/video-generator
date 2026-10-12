@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c8d7dda3216b072ef03fe8392502edc1ae414ddb623f14c114a8783c2e096759",
+  "sha256": "c8d7dda3216b072ef03fe8392502edc1ae414ddb623f14c114a8783c2e096759",
+  "bytes": 2323204,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "morph_rgb_tear.mp4"
+  ],
+  "collections": [
+    "archive-civilwarastrology"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

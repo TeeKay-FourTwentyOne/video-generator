@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f6a83cec40be5f8e5a50d89f5787c197bf9af3a2b5cfeba24430e4dd4c923d1e",
+  "sha256": "f6a83cec40be5f8e5a50d89f5787c197bf9af3a2b5cfeba24430e4dd4c923d1e",
+  "bytes": 1050813,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_5_1766537857519.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_5_1766537857519"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Alternative take of beige office phone on white desk. Nearly identical to other shot 5 variants, establishing the mundane corporate phone experience.",
+      "transcript": "チャンネル登録をお願いいたします。",
+      "tags": [
+        "alternative",
+        "beige",
+        "button",
+        "coiled",
+        "color",
+        "composition",
+        "continues",
+        "cord",
+        "desk",
+        "focus",
+        "hold",
+        "identical",
+        "idle",
+        "laminate",
+        "lighting",
+        "maintained",
+        "medium",
+        "nearly",
+        "neutral",
+        "office",
+        "phone",
+        "push",
+        "reinforcing",
+        "shot",
+        "sits",
+        "slight",
+        "speech",
+        "static",
+        "take",
+        "theme",
+        "unchanged",
+        "variation",
+        "waiting",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Beige push-button office phone on white laminate desk. Coiled cord trailing to side. Green houseplant provides color in blurred background. Clean office aesthetic."
+        },
+        {
+          "seconds": 2,
+          "text": "Phone unchanged, slight variation in lighting or focus. The waiting continues. Neutral color palette dominates."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Static composition maintained. The phone sits idle, reinforcing the theme of waiting on hold in a corporate environment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "alternative",
+    "beige",
+    "button",
+    "coiled",
+    "color",
+    "composition",
+    "continues",
+    "cord",
+    "desk",
+    "focus",
+    "hold",
+    "identical",
+    "idle",
+    "laminate",
+    "lighting",
+    "maintained",
+    "medium",
+    "nearly",
+    "neutral",
+    "office",
+    "phone",
+    "push",
+    "reinforcing",
+    "shot",
+    "sits",
+    "slight",
+    "speech",
+    "static",
+    "take",
+    "theme",
+    "unchanged",
+    "variation",
+    "waiting",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

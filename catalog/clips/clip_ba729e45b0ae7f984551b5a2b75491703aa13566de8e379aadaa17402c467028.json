@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ba729e45b0ae7f984551b5a2b75491703aa13566de8e379aadaa17402c467028",
+  "sha256": "ba729e45b0ae7f984551b5a2b75491703aa13566de8e379aadaa17402c467028",
+  "bytes": 4489715,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V10B-v1.mp4",
+    "veo_1791428306505_0f6i8z.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up at dusk, 85 mm lens, shallow depth of field. An older woman with grey hair tied back in a dark field jacket turns the handle of a hand winch slowly with both blue nitrile-gloved hands, her face set and watchful, looking down past the winch; a cool blue light from below touches her chin and the underside of her jaw and grows a little brighter as she turns; the dark earth wall of the trench is soft behind her. She does not look at the camera and does not speak. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_36e46f87eae695ac44dd18487de0b3103e39af9a2bd6f05a3f6e7f7c5f6876dc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 85408753,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cea7edabaa5d107ced37eb400591390b720413de2a93431ee79e497672844821",
+  "sha256": "cea7edabaa5d107ced37eb400591390b720413de2a93431ee79e497672844821",
+  "bytes": 1127145,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Vampire_aristocrat_on_202604252120 (1).mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

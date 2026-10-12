@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_02b63fda95a9bd3eba4a99095a51a2452dbb9ac1e653ef982f375f5e7d91f5a0",
+  "sha256": "02b63fda95a9bd3eba4a99095a51a2452dbb9ac1e653ef982f375f5e7d91f5a0",
+  "bytes": 3299328,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668501506_dmeu9j.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668501506_dmeu9j"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Close two-shot across a wooden café table, camera positioned at eye level with both men in frame. Shallow depth of field renders the busy coffee shop background into soft, dreamy bokeh. The camera drifts almost imperceptibly closer, a subtle push-in as the two friends lean slightly toward each other across the table. Warm, golden afternoon light streams through a window frame-left, creating soft directional illumination that bathes their faces in honeyed tones, highlighting the genuine crinkles around their eyes as they share gentle laughter. Two ceramic coffee cups sit between them on the table, steam still rising faintly, creating an intimate geography in the foreground. The camera movement is minimal and organic, finally settling into a static hold that frames them perfectly in this moment of rediscovered connection. Natural, documentary-style cinematography with warm color grading emphasizing skin tones.\n\n---\nDIALOGUE:\n- FRIEND_1 (male, 20s, natural): \"You still make that terrible face when you laugh.\"\n- FRIEND_2 (male, 30s, natural): \"And you still call me out on everything.\"\n- FRIEND_1 (male, 20s, natural): \"I missed this. I missed you.\"\n- FRIEND_2 (male, 30s, natural): \"Yeah. Me too, Sarah. Me too.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_339752a8847ca95bf940f1ea06883f0d00caab4729c42a204cea11e9d8195a4d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Close two-shot across a wooden café table, camera positioned at eye level with both men in frame. Shallow depth of field renders the busy coffee shop background into soft, dreamy bokeh. The camera drifts almost imperceptibly closer, a subtle push-in as the two friends lean slightly toward each other across the table. Warm, golden afternoon light streams through a window frame-left, creating soft directional illumination that bathes their faces in honeyed tones, highlighting the genuine crinkles around their eyes as they share gentle laughter. Two ceramic coffee cups sit between them on the table, steam still rising faintly, creating an intimate geography in the foreground. The camera movement is minimal and organic, finally settling into a static hold that frames them perfectly in this moment of rediscovered connection. Natural, documentary-style cinematography with warm color grading emphasizing skin tones.\n\n---\nDIALOGUE:\n- FRIEND_1 (male, 20s, natural): \"You still make that terrible face when you laugh.\"\n- FRIEND_2 (male, 30s, natural): \"And you still call me out on everything.\"\n- FRIEND_1 (male, 20s, natural): \"I missed this. I missed you.\"\n- FRIEND_2 (male, 30s, natural): \"Yeah. Me too, Sarah. Me too.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_339752a8847ca95bf940f1ea06883f0d00caab4729c42a204cea11e9d8195a4d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:00:48.431Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Two male friends share coffee and laughter at a café, engaging in playful banter about each other's habits. The clip captures their genuine connection through animated expressions and comfortable body language as they tease each other about familiar quirks. The warm café setting with soft lighting creates an intimate atmosphere for their friendly exchange.",
+      "transcript": "You still make that terrible face when you laugh. You still call me out on everything.",
+      "tags": [
+        "animated",
+        "banter",
+        "both",
+        "caf",
+        "call",
+        "coffee",
+        "contact",
+        "continue",
+        "continues",
+        "conversation",
+        "cups",
+        "dark",
+        "engaging",
+        "everything",
+        "eye",
+        "face",
+        "friends",
+        "heartily",
+        "holding",
+        "laugh",
+        "laughing",
+        "laughter",
+        "maintaining",
+        "make",
+        "male",
+        "man",
+        "medium",
+        "men",
+        "out",
+        "playful",
+        "share",
+        "sit",
+        "smiling",
+        "speech",
+        "still",
+        "table",
+        "terrible",
+        "their",
+        "two",
+        "warmly",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two men sit at a café table, both holding dark coffee cups with latte art visible. The man on the left wears a gray v-neck t-shirt with short brown hair, while the man on the right has longer dark hair and wears a blue denim jacket over a white t-shirt. Both are laughing genuinely, facing each other in conversation. The background shows a blurred café interior with warm lighting, pendant lights, and other patrons. Medium close-up shot with shallow depth of field creates intimate atmosphere."
+        },
+        {
+          "seconds": 2,
+          "text": "The same two men continue their animated conversation, both still laughing heartily. The man in gray leans slightly toward his companion while holding his coffee cup. The man in denim looks down slightly while laughing, showing genuine amusement. Their body language suggests comfortable familiarity. The café background remains softly blurred with warm amber tones from hanging lights. Coffee cups are held at chest level. Natural daylight from the left window mixes with interior lighting."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The conversation continues with both men maintaining eye contact and smiling warmly. The man in gray has a softer smile now, looking directly at his friend. The man in denim jacket still smiles while looking toward his companion. Both continue holding their coffee cups. The framing remains consistent as a medium close-up shot. Background café elements stay blurred with warm lighting. Their expressions suggest the punchline of their exchange has landed, creating a moment of connection."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_038",
+      "name": "Coffee Buddies",
+      "description": "Two men at cafe - one in grey t-shirt, one in denim shirt - sharing coffee and laughing together, warm friendship",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "animated",
+    "banter",
+    "both",
+    "caf",
+    "call",
+    "coffee",
+    "contact",
+    "continue",
+    "continues",
+    "conversation",
+    "cups",
+    "dark",
+    "engaging",
+    "everything",
+    "eye",
+    "face",
+    "friends",
+    "heartily",
+    "holding",
+    "laugh",
+    "laughing",
+    "laughter",
+    "maintaining",
+    "make",
+    "male",
+    "man",
+    "medium",
+    "men",
+    "out",
+    "playful",
+    "share",
+    "sit",
+    "smiling",
+    "speech",
+    "still",
+    "table",
+    "terrible",
+    "their",
+    "two",
+    "warmly",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

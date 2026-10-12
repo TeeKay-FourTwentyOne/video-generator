@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0c8e5423acc67db3099fb2e23ac79bf27422d457fef10027c671747a700f6be9",
+  "sha256": "0c8e5423acc67db3099fb2e23ac79bf27422d457fef10027c671747a700f6be9",
+  "bytes": 2190446,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767664364372_wf8nqw.mp4"
+  ],
+  "collections": [
+    "dialogue_vo_test"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767664364372_wf8nqw"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A professional chef in his 30s with short dark hair, wearing a pristine white chef's coat and black apron, stands at a stainless steel kitchen counter in a modern restaurant kitchen. Medium shot from slightly low angle, camera slowly pushes in as he lifts a wooden spoon to his lips. Warm, professional kitchen lighting with soft key light from above left, creating gentle shadows. Steam rises subtly from unseen pots in the background. The chef tastes thoughtfully, his eyes closing briefly as he savors the flavor, then opens them with a satisfied expression, giving a small, confident nod of approval. His posture relaxes slightly, shoulders dropping as contentment washes over his face. Background shows blurred kitchen activity with soft bokeh of hanging copper pots and industrial equipment.\n\n---\nDIALOGUE:\n- CHEF (male, 30s, warm, bright): \"Perfect.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4f7f3ec02fd2b5041b56d534a8cd4b27ab9b50d33a7ae39851de64ef3a99cd97",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A professional chef in his 30s with short dark hair, wearing a pristine white chef's coat and black apron, stands at a stainless steel kitchen counter in a modern restaurant kitchen. Medium shot from slightly low angle, camera slowly pushes in as he lifts a wooden spoon to his lips. Warm, professional kitchen lighting with soft key light from above left, creating gentle shadows. Steam rises subtly from unseen pots in the background. The chef tastes thoughtfully, his eyes closing briefly as he savors the flavor, then opens them with a satisfied expression, giving a small, confident nod of approval. His posture relaxes slightly, shoulders dropping as contentment washes over his face. Background shows blurred kitchen activity with soft bokeh of hanging copper pots and industrial equipment.\n\n---\nDIALOGUE:\n- CHEF (male, 30s, warm, bright): \"Perfect.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4f7f3ec02fd2b5041b56d534a8cd4b27ab9b50d33a7ae39851de64ef3a99cd97",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T01:51:49.176Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A professional chef in a white coat and black apron is shown tasting and evaluating food in a well-equipped commercial kitchen. The sequence captures him going from contemplation, to actively tasting with a wooden spoon, to expressing satisfaction with the result. The warm lighting and copper cookware create an upscale culinary atmosphere throughout the 6-second clip.",
+      "transcript": "Protect",
+      "tags": [
+        "apron",
+        "black",
+        "chef",
+        "closed",
+        "coat",
+        "dark",
+        "downward",
+        "evaluating",
+        "eyes",
+        "face",
+        "food",
+        "hair",
+        "his",
+        "holding",
+        "kitchen",
+        "looks",
+        "male",
+        "medium",
+        "near",
+        "now",
+        "partially",
+        "professional",
+        "protect",
+        "satisfied",
+        "short",
+        "shown",
+        "slight",
+        "smile",
+        "speech",
+        "spoon",
+        "stands",
+        "tasting",
+        "wearing",
+        "white",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A male chef with short dark hair stands in a professional kitchen, wearing a white chef's coat with black apron. His eyes are closed with a subtle smile, appearing contemplative. Behind him, steam rises from cooking pots on the left, copper pans hang from brass hooks on the right, and a large stainless steel hood is visible. The lighting is warm and atmospheric, with soft focus on the background creating depth. Medium shot framing centers the chef in the composition."
+        },
+        {
+          "seconds": 3,
+          "text": "The same chef is now holding a wooden spoon near his face, eyes closed with lips pursed as if tasting or blowing on food. Steam continues rising from the cooking area behind him. The warm kitchen lighting illuminates his face from the left side. Copper pans remain visible hanging in the background right. The composition maintains the medium shot framing, capturing his engaged expression during the cooking process. His posture suggests active food preparation."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The chef now looks downward with a slight satisfied smile, eyes partially closed in a content expression. His hands are no longer visible in frame, suggesting he has lowered the spoon. The professional kitchen background remains consistent with steam, copper pans, and stainless steel equipment. Warm ambient lighting continues to create an inviting atmosphere. The medium shot framing captures his pleased demeanor, suggesting satisfaction with his culinary work."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_037",
+      "name": "Chef Marco",
+      "description": "Young male chef with dark hair, white chef's coat and black apron, professional kitchen with copper pans, focused on cooking",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "apron",
+    "black",
+    "chef",
+    "closed",
+    "coat",
+    "dark",
+    "downward",
+    "evaluating",
+    "eyes",
+    "face",
+    "food",
+    "hair",
+    "his",
+    "holding",
+    "kitchen",
+    "looks",
+    "male",
+    "medium",
+    "near",
+    "now",
+    "partially",
+    "professional",
+    "protect",
+    "satisfied",
+    "short",
+    "shown",
+    "slight",
+    "smile",
+    "speech",
+    "spoon",
+    "stands",
+    "tasting",
+    "wearing",
+    "white",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

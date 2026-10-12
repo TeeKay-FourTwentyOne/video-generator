@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9692aca7b24927be0266aca626176227db6a94af5dcf7f991ee677ca931b6dc7",
+  "sha256": "9692aca7b24927be0266aca626176227db6a94af5dcf7f991ee677ca931b6dc7",
+  "bytes": 34804849,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "b6_courier2.mp4"
+  ],
+  "collections": [
+    "dignity-of-work"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

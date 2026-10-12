@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_916282043a1b4ce416dc634851ec67939ede4860cfc4a7ea7f798df13eba2ae7",
+  "sha256": "916282043a1b4ce416dc634851ec67939ede4860cfc4a7ea7f798df13eba2ae7",
+  "bytes": 3552771,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 4.166667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 100,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "segment-07.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

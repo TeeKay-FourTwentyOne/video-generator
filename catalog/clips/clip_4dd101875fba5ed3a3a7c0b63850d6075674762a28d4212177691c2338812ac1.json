@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4dd101875fba5ed3a3a7c0b63850d6075674762a28d4212177691c2338812ac1",
+  "sha256": "4dd101875fba5ed3a3a7c0b63850d6075674762a28d4212177691c2338812ac1",
+  "bytes": 10661927,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 22,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 528,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "stars-and-failures-motion-check.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

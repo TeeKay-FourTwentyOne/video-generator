@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1c5a854ea91a865bdd58534c86704396f993b46f6d849c656e756f8425e3a1c6",
+  "sha256": "1c5a854ea91a865bdd58534c86704396f993b46f6d849c656e756f8425e3a1c6",
+  "bytes": 2366234,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767579648009_itox3e.mp4"
+  ],
+  "collections": [
+    "a_cup_of_coffee_on_a_table__1767579562401"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767579648009_itox3e"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "From eye level, peer down at a white porcelain coffee cup centered on a weathered wooden table with visible grain and age marks. The scene is lit by a single shaft of light streaming through unseen venetian blinds, creating stark parallel shadows across the cup and table surface. Film noir aesthetic with high contrast monochrome treatment and visible film grain texture. The camera remains perfectly still in a wide tableau shot, positioning the coffee cup as a monolithic presence in an otherwise empty, shadow-filled space. Steam rises from the coffee in extreme slow motion, the vapor tendrils morphing and transforming into ethereal, surreal landscapes - miniature mountains, clouds, and abstract memory fragments that dissolve and reform in the rising mist. The steam's movement is the only motion in this suspended moment, captured with extreme macro detail that reveals every swirl and wisp. Deep blacks and silvery highlights create a contemplative, timeless atmosphere where the ordinary coffee cup becomes a portal to inner worlds. The 9:16 vertical frame emphasizes the upward journey of the transforming steam against the static, film-grain textured environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_214255719132485af54dbd3f12597ac182f7d8e321c718be4a71f1e27a2160e1",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "From eye level, peer down at a white porcelain coffee cup centered on a weathered wooden table with visible grain and age marks. The scene is lit by a single shaft of light streaming through unseen venetian blinds, creating stark parallel shadows across the cup and table surface. Film noir aesthetic with high contrast monochrome treatment and visible film grain texture. The camera remains perfectly still in a wide tableau shot, positioning the coffee cup as a monolithic presence in an otherwise empty, shadow-filled space. Steam rises from the coffee in extreme slow motion, the vapor tendrils morphing and transforming into ethereal, surreal landscapes - miniature mountains, clouds, and abstract memory fragments that dissolve and reform in the rising mist. The steam's movement is the only motion in this suspended moment, captured with extreme macro detail that reveals every swirl and wisp. Deep blacks and silvery highlights create a contemplative, timeless atmosphere where the ordinary coffee cup becomes a portal to inner worlds. The 9:16 vertical frame emphasizes the upward journey of the transforming steam against the static, film-grain textured environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_214255719132485af54dbd3f12597ac182f7d8e321c718be4a71f1e27a2160e1",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:19:32.223Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This atmospheric black and white video captures a steaming coffee cup on a rustic wooden table, dramatically lit by light filtering through window blinds. The clip progresses from a still, steamless cup to showing elegant wisps of steam rising and curling against the dark background, creating a contemplative, noir-style mood piece.",
+      "transcript": ". .",
+      "tags": [
+        "atmospheric",
+        "black",
+        "captures",
+        "ceramic",
+        "coffee",
+        "continues",
+        "cup",
+        "dark",
+        "disperses",
+        "dramatic",
+        "emit",
+        "flowing",
+        "graceful",
+        "handle",
+        "image",
+        "medium",
+        "moody",
+        "now",
+        "prominently",
+        "rises",
+        "rising",
+        "rustic",
+        "showing",
+        "speech",
+        "steam",
+        "steaming",
+        "video",
+        "visible",
+        "white",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, moody black and white image showing a ceramic coffee cup with handle positioned in the lower right portion of the frame. The cup sits on a rustic wooden table with visible grain patterns. Dramatic lighting comes from the left through window blinds, creating horizontal striped shadows across the wall and table surface. The composition is minimalist with deep shadows dominating most of the frame, creating a noir aesthetic. No steam is visible from the cup."
+        },
+        {
+          "seconds": 4,
+          "text": "The same white ceramic coffee cup is now prominently visible with dramatic steam rising from it, curling and swirling upward in elegant wisps against the dark background. The black and white image shows stronger contrast with the cup appearing brighter. Window blinds on the left cast horizontal light stripes across the wooden table surface. The steam catches the light beautifully, creating an ethereal quality. The composition remains centered on the cup with the steam as the dynamic focal point."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The white coffee cup continues to emit graceful steam that rises and disperses in flowing patterns against the black background. The black and white aesthetic remains consistent with strong contrast. Light from window blinds creates striped shadows on the weathered wooden table. The steam appears slightly less dense than the middle frame, suggesting natural dissipation. The cup maintains its position in the lower center-right of the frame, with the rustic wood grain visible beneath."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "atmospheric",
+    "black",
+    "captures",
+    "ceramic",
+    "coffee",
+    "continues",
+    "cup",
+    "dark",
+    "disperses",
+    "dramatic",
+    "emit",
+    "flowing",
+    "graceful",
+    "handle",
+    "image",
+    "medium",
+    "moody",
+    "now",
+    "prominently",
+    "rises",
+    "rising",
+    "rustic",
+    "showing",
+    "speech",
+    "steam",
+    "steaming",
+    "video",
+    "visible",
+    "white",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

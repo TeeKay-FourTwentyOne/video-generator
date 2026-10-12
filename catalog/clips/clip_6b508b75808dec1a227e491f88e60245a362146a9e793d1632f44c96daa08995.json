@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6b508b75808dec1a227e491f88e60245a362146a9e793d1632f44c96daa08995",
+  "sha256": "6b508b75808dec1a227e491f88e60245a362146a9e793d1632f44c96daa08995",
+  "bytes": 2101834,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767577920882_09ov8m.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767577838356"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767577920882_09ov8m"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A worn leather wallet floats upward through the air, rotating slowly with deliberate grace in extreme slow motion. Medium close-up shot with the camera tracking smoothly upward, following the wallet's gentle ascent while maintaining sharp focus on its weathered surface. The leather shows deep fingertip impressions and countless scratches that catch the warm golden hour light streaming from the side, each mark and scuff rendered in intimate detail. The wallet rotates languidly as it rises, revealing different angles of its worn edges and faded corners. Shallow depth of field transforms the background into a soft, dreamlike wash of warm amber bokeh circles that shimmer and blend together. The golden sunlight creates subtle highlights along the wallet's creases and emphasizes the texture of the aged leather, while casting delicate shadows that enhance its three-dimensional form. The camera movement is perfectly smooth and measured, matching the wallet's unhurried upward drift through the frame, creating a meditation on time and memory through this simple object's graceful flight.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a202d6835d98a75574d9b23a8a649b9392611b12f71f4b18d668eb4eb8f29f09",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A worn leather wallet floats upward through the air, rotating slowly with deliberate grace in extreme slow motion. Medium close-up shot with the camera tracking smoothly upward, following the wallet's gentle ascent while maintaining sharp focus on its weathered surface. The leather shows deep fingertip impressions and countless scratches that catch the warm golden hour light streaming from the side, each mark and scuff rendered in intimate detail. The wallet rotates languidly as it rises, revealing different angles of its worn edges and faded corners. Shallow depth of field transforms the background into a soft, dreamlike wash of warm amber bokeh circles that shimmer and blend together. The golden sunlight creates subtle highlights along the wallet's creases and emphasizes the texture of the aged leather, while casting delicate shadows that enhance its three-dimensional form. The camera movement is perfectly smooth and measured, matching the wallet's unhurried upward drift through the frame, creating a meditation on time and memory through this simple object's graceful flight.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a202d6835d98a75574d9b23a8a649b9392611b12f71f4b18d668eb4eb8f29f09",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:51:03.817Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video clip showcases a leather wallet rotating or being displayed from multiple angles against a warm, golden bokeh background. The wallet transitions from showing its textured exterior surface to a side profile view and finally to a darker silhouette angle. The consistent warm amber lighting and soft bokeh effects create an atmospheric, product-showcase style presentation.",
+      "transcript": "You",
+      "tags": [
+        "against",
+        "angle",
+        "angles",
+        "appearing",
+        "bokeh",
+        "brown",
+        "clip",
+        "dark",
+        "different",
+        "displayed",
+        "golden",
+        "leather",
+        "medium",
+        "multiple",
+        "now",
+        "open",
+        "partially",
+        "profile",
+        "rectangular",
+        "rotating",
+        "showcases",
+        "shown",
+        "side",
+        "silhouette",
+        "speech",
+        "video",
+        "view",
+        "wallet",
+        "warm",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark brown leather wallet is shown at an angle against a warm, golden bokeh background. The wallet displays visible texture with natural creases and wear patterns on its surface. Hand-stitching is visible along the edges. The lighting creates a warm amber glow with multiple soft, circular bokeh lights scattered throughout the background. The camera captures the wallet from above at a slight angle, with shallow depth of field keeping focus on the leather texture."
+        },
+        {
+          "seconds": 3,
+          "text": "The leather wallet is now shown from a side profile view, appearing to be open or partially open. The warm golden bokeh background continues with multiple soft circular lights. The wallet appears lighter in color from this angle due to the lighting, showing the interior or lighter leather side. A dark silhouette forms on one side. The composition is vertical with the wallet positioned centrally, surrounded by the atmospheric warm-toned bokeh effect."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The wallet is now shown from a different angle, appearing as a dark rectangular silhouette against the warm amber bokeh background. The surface appears smoother and darker, with less visible texture than the first frame. The wallet is positioned diagonally in the frame with rounded corners visible. The bokeh lights continue to create a warm, atmospheric background with soft golden circular highlights scattered around the dark wallet shape."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "angle",
+    "angles",
+    "appearing",
+    "bokeh",
+    "brown",
+    "clip",
+    "dark",
+    "different",
+    "displayed",
+    "golden",
+    "leather",
+    "medium",
+    "multiple",
+    "now",
+    "open",
+    "partially",
+    "profile",
+    "rectangular",
+    "rotating",
+    "showcases",
+    "shown",
+    "side",
+    "silhouette",
+    "speech",
+    "video",
+    "view",
+    "wallet",
+    "warm",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

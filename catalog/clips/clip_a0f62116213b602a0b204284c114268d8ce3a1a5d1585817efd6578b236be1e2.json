@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a0f62116213b602a0b204284c114268d8ce3a1a5d1585817efd6578b236be1e2",
+  "sha256": "a0f62116213b602a0b204284c114268d8ce3a1a5d1585817efd6578b236be1e2",
+  "bytes": 5505695,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S01-v1.mp4",
+    "veo_1791066756645_zza2se.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, late morning. A locked-off view from the floor of a deep, narrow courtyard looking steeply up the shaft at a hard blue cloudless rectangle of sky, five floors of balconies converging toward it, four laundry lines crossing it with plain white sheets and one small red shirt pinned on them. The camera does not move. Bright dust drifts in the sunlight high in the shaft. A light breeze moves the hanging sheets gently; they sway and billow softly on their lines. On the top-left balcony, tiny with distance, the old woman at the railing presses a clothespin onto the top line and reaches along to the next. Two swifts dart across the blue sky. Sound: the small wooden clicks of clothespins far above, swifts screaming faintly as they pass, the muffled murmur of a radio from a window far below, too distant to make out, the breeze in cloth. No speech, no music. The sheets stay on their lines; nothing falls, nothing new appears. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_56a74fa5ff437aa67add37be5fe8a2cf46480cded5419dc3496124b76285536b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

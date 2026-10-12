@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d05164daa333da139c0af1d9b476a800dbf65ad5b41fd16c12064027049f162d",
+  "sha256": "d05164daa333da139c0af1d9b476a800dbf65ad5b41fd16c12064027049f162d",
+  "bytes": 1647588,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767509521318_38hkwr.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767509521318_38hkwr"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Extreme macro shot of delicate ink wisps gently settling and diffusing through crystal-clear water, transitioning from subtle motion to perfect stillness. The wispy tendrils slowly dissolve into soft, dreamlike gray clouds that float ethereally like fading memories. Camera remains perfectly still with sharp focus on the intricate patterns as they drift peacefully through the liquid medium. High contrast black and white cinematography emphasizes the delicate textures and gradients. Gentle, diffused lighting creates luminous transparency in the water while the ink forms create beautiful negative space. The motion gradually slows to complete tranquility, ending in a serene composition of floating gray wisps suspended in crystalline clarity. Ultra-detailed macro lens captures every subtle movement and texture transition with pristine clarity.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eeaab6befddc3fb54afeb18ea7f6e3198bc78bd186b83a12b12da45f04e5a941",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme macro shot of delicate ink wisps gently settling and diffusing through crystal-clear water, transitioning from subtle motion to perfect stillness. The wispy tendrils slowly dissolve into soft, dreamlike gray clouds that float ethereally like fading memories. Camera remains perfectly still with sharp focus on the intricate patterns as they drift peacefully through the liquid medium. High contrast black and white cinematography emphasizes the delicate textures and gradients. Gentle, diffused lighting creates luminous transparency in the water while the ink forms create beautiful negative space. The motion gradually slows to complete tranquility, ending in a serene composition of floating gray wisps suspended in crystalline clarity. Ultra-detailed macro lens captures every subtle movement and texture transition with pristine clarity.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eeaab6befddc3fb54afeb18ea7f6e3198bc78bd186b83a12b12da45f04e5a941",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T06:51:19.544Z",
+      "parameters": {
+        "durationSeconds": 1,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures black ink dispersing in clear liquid over approximately 4 seconds, showing the gradual diffusion from concentrated dark clouds to lighter, more spread-out formations. The monochromatic footage emphasizes the fluid dynamics and organic patterns created as the ink mixes with the surrounding medium, creating an abstract, artistic visual effect.",
+      "transcript": "you",
+      "tags": [
+        "across",
+        "against",
+        "appearing",
+        "appears",
+        "approximately",
+        "becoming",
+        "black",
+        "captures",
+        "clear",
+        "continued",
+        "creating",
+        "diffuse",
+        "dilute",
+        "disperse",
+        "dispersed",
+        "dispersing",
+        "dramatic",
+        "formation",
+        "ink",
+        "lighter",
+        "liquid",
+        "medium",
+        "much",
+        "now",
+        "over",
+        "patterns",
+        "significantly",
+        "speech",
+        "spread",
+        "swirling",
+        "tone",
+        "vertical",
+        "video",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Black ink dispersing in clear liquid, creating dramatic swirling patterns against a white/light gray background. The ink forms dense, cloud-like formations in the center-right of the frame, with wispy tendrils extending upward. The contrast between the deep black ink and pale background creates a striking monochromatic composition. Shot in portrait orientation with the main mass of ink occupying the middle portion of the frame. The fluid dynamics create organic, billowing shapes suggesting downward motion."
+        },
+        {
+          "seconds": 2,
+          "text": "The ink has dispersed further, becoming more diffuse and lighter in tone. The formation now appears more spread out with a denser cloud mass in the lower portion and delicate, translucent wisps rising upward. The overall appearance is softer and more ethereal compared to the first frame. The grayscale tones range from medium gray to darker concentrations. The composition remains centered with the ink cloud filling much of the vertical frame space."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The ink has continued to disperse and dilute significantly, appearing much lighter and more spread across the frame. The cloud formations are now predominantly medium gray with softer edges and less defined boundaries. Wispy, thread-like patterns extend throughout the upper portion while a denser mass remains in the lower section. The overall image has a more uniform, hazy quality as the ink continues mixing with the surrounding liquid. The monochromatic palette remains consistent."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "across",
+    "against",
+    "appearing",
+    "appears",
+    "approximately",
+    "becoming",
+    "black",
+    "captures",
+    "clear",
+    "continued",
+    "creating",
+    "diffuse",
+    "dilute",
+    "disperse",
+    "dispersed",
+    "dispersing",
+    "dramatic",
+    "formation",
+    "ink",
+    "lighter",
+    "liquid",
+    "medium",
+    "much",
+    "now",
+    "over",
+    "patterns",
+    "significantly",
+    "speech",
+    "spread",
+    "swirling",
+    "tone",
+    "vertical",
+    "video",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

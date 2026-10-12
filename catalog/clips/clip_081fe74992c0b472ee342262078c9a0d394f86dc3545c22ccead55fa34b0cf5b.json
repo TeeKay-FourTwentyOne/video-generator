@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_081fe74992c0b472ee342262078c9a0d394f86dc3545c22ccead55fa34b0cf5b",
+  "sha256": "081fe74992c0b472ee342262078c9a0d394f86dc3545c22ccead55fa34b0cf5b",
+  "bytes": 26849757,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Tense_0.mp4"
+  ],
+  "collections": [
+    "alphaville-moon"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

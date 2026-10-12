@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_57e7dbf33efb623dfb6bf46ca5fb17b241dcdc9364cc901e7d6addb5fb52712c",
+  "sha256": "57e7dbf33efb623dfb6bf46ca5fb17b241dcdc9364cc901e7d6addb5fb52712c",
+  "bytes": 180739941,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 170.166667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 4084,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "pre-polish.mp4"
+  ],
+  "collections": [
+    "carnival-dream"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

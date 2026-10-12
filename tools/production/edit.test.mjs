@@ -5,8 +5,10 @@ import os from 'node:os';
 import path from 'node:path';
 import { createLedger } from '../../mcp/video-generator/dist/production/ledger.js';
 import { configurationSummary } from '../../mcp/video-generator/dist/tools/config.js';
-import { validateEdit, assemble, review } from './edit.mjs';
+import { validateEdit, assemble as assembleEdit, review as reviewEdit } from './edit.mjs';
 import { command, hashFile, localPath } from './film.mjs';
+const assemble = (root, version) => assembleEdit(root, version, { catalogRoot: root });
+const review = (root, version) => reviewEdit(root, version, { catalogRoot: root });
 
 test('configuration presence never exposes historical aliases, unknown fields or nested secrets', () => {
   const marker = 'synthetic-private-value';

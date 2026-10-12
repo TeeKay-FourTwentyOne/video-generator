@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b6c66046d5dc6c21d238d5758cd39a67f8db85dd19bb54080c674cf0d945abcf",
+  "sha256": "b6c66046d5dc6c21d238d5758cd39a67f8db85dd19bb54080c674cf0d945abcf",
+  "bytes": 5641722,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8.083008,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 194,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "ocean_descent.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:ocean_descent"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Ocean descent journey video showing a vertical pan/scroll from sunlit surface waters down through coral reef and kelp forest zones, finally arriving at the dark abyss with bioluminescent jellyfish. The framed composition creates a guided tour through ocean depth zones with a purple-violet color aesthetic.",
+      "transcript": null,
+      "tags": [
+        "abyss",
+        "arrival",
+        "bioluminescent",
+        "coral",
+        "deep",
+        "descent",
+        "elaborate",
+        "featuring",
+        "jellyfish",
+        "journey",
+        "large",
+        "long",
+        "mid",
+        "multiple",
+        "near",
+        "ocean",
+        "pan",
+        "pink",
+        "purple",
+        "reef",
+        "ripples",
+        "scroll",
+        "showing",
+        "silent",
+        "sunlight",
+        "sunlit",
+        "surface",
+        "tinted",
+        "transition",
+        "underwater",
+        "vertical",
+        "video",
+        "view",
+        "violet",
+        "water",
+        "zones"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Near-surface underwater view with purple-violet tinted water. Sunlight ripples visible above, vast open water with subtle gradient into deeper blue. A hint of content visible at the very bottom edge suggests the beginning of a descent journey."
+        },
+        {
+          "seconds": 4.041504,
+          "text": "Mid-descent transition showing multiple ocean zones. Pink coral reef visible at top of frame, kelp forest stalks in the middle section. Visible frame border suggests this is a scrolling/panning composition moving through the vertical ocean canvas."
+        },
+        {
+          "seconds": 7.983008,
+          "text": "Deep abyss arrival featuring a large pink-purple bioluminescent jellyfish with elaborate flowing tentacles. Small blue fish swims nearby. Dark background with particle effects. Frame border visible, completing the descent journey to the ocean depths."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abyss",
+    "arrival",
+    "bioluminescent",
+    "coral",
+    "deep",
+    "descent",
+    "elaborate",
+    "featuring",
+    "jellyfish",
+    "journey",
+    "large",
+    "long",
+    "mid",
+    "multiple",
+    "near",
+    "ocean",
+    "pan",
+    "pink",
+    "purple",
+    "reef",
+    "ripples",
+    "scroll",
+    "showing",
+    "silent",
+    "sunlight",
+    "sunlit",
+    "surface",
+    "tinted",
+    "transition",
+    "underwater",
+    "vertical",
+    "video",
+    "view",
+    "violet",
+    "water",
+    "zones"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

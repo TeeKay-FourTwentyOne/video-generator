@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9a57f6fd96709ee902a2530ffe36f5f289b7f8815d52736d89312559ee0c667d",
+  "sha256": "9a57f6fd96709ee902a2530ffe36f5f289b7f8815d52736d89312559ee0c667d",
+  "bytes": 22371613,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s4bv5_toss.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

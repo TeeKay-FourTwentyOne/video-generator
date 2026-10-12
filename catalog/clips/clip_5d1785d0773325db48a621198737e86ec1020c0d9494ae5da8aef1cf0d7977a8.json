@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5d1785d0773325db48a621198737e86ec1020c0d9494ae5da8aef1cf0d7977a8",
+  "sha256": "5d1785d0773325db48a621198737e86ec1020c0d9494ae5da8aef1cf0d7977a8",
+  "bytes": 3837897,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 15.75,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 378,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "splice-aligned.mp4"
+  ],
+  "collections": [
+    "april"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

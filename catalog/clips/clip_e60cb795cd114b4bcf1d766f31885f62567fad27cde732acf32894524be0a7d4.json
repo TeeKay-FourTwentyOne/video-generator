@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e60cb795cd114b4bcf1d766f31885f62567fad27cde732acf32894524be0a7d4",
+  "sha256": "e60cb795cd114b4bcf1d766f31885f62567fad27cde732acf32894524be0a7d4",
+  "bytes": 11559699,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S06-v1.mp4",
+    "veo_1791067109860_jxb4jq.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal, late morning, a locked-off medium shot across the narrow courtyard at the top-floor balcony. The old woman stands at the railing with her hands on it, watching the sky above the frame for a long quiet moment as something rises out of sight. Then she turns to the laundry line beside her, reaches up with both hands and opens the two wooden clothespins holding the one remaining white sheet. Released, the sheet lifts on its own in the wind, bellying and rising up and out of the top of the frame while she lets it go and stands with her hands lowered, watching it rise. The small red shirt stays pinned on the line. The camera does not move. Exactly one person; no one else appears; nothing new appears. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7a86c534c1aa67cd633a3df67d95fa5ad8aca9c6e5307695b2b4bf25618b701f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

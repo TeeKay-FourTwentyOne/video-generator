@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7d97b6880505964eda2acd9545ee0c1af86473f332e9a46f6b15be10bf53f3a9",
+  "sha256": "7d97b6880505964eda2acd9545ee0c1af86473f332e9a46f6b15be10bf53f3a9",
+  "bytes": 55970773,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 26.791667,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 643,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "reassurance_box_v3_4k.mp4"
+  ],
+  "collections": [
+    "reassurance-box"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

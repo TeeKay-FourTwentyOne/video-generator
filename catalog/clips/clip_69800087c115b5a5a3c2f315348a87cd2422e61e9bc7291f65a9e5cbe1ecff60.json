@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_69800087c115b5a5a3c2f315348a87cd2422e61e9bc7291f65a9e5cbe1ecff60",
+  "sha256": "69800087c115b5a5a3c2f315348a87cd2422e61e9bc7291f65a9e5cbe1ecff60",
+  "bytes": 1479890,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "temporal_gen1_edges_annotated.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:temporal_gen1_edges_annotated"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip demonstrates an image processing transformation from a realistic photograph to an edge-detection sketch effect. A man standing on a rural road surrounded by wheat fields transitions from full-color realistic imagery to a black and white line-art rendering that extracts only the contours and edges of the scene.",
+      "transcript": null,
+      "tags": [
+        "beard",
+        "black",
+        "clip",
+        "continues",
+        "curly",
+        "demonstrates",
+        "detection",
+        "distance",
+        "edge",
+        "effect",
+        "face",
+        "faint",
+        "flanked",
+        "ghostly",
+        "hair",
+        "image",
+        "man",
+        "medium",
+        "outline",
+        "photograph",
+        "processing",
+        "realistic",
+        "rendering",
+        "road",
+        "rural",
+        "scene",
+        "silent",
+        "sketch",
+        "slight",
+        "stands",
+        "stretching",
+        "style",
+        "transformation",
+        "transformed",
+        "variation",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man with curly hair and beard stands on a rural road stretching into the distance, flanked by golden wheat fields. He wears a layered outfit with olive/khaki jackets and brown pants with boots. A ghostly double exposure effect shows his face superimposed in the sky above. Text overlays read 'Gen 1: Original → Edges' at top and 'Expect: Realistic → Sketch-like' at bottom. Warm golden hour lighting bathes the scene with a dusky sky."
+        },
+        {
+          "seconds": 2,
+          "text": "The image has transformed into a black and white edge-detection/sketch style rendering. The same scene is now depicted with white outline strokes on a black background, showing the man's silhouette, the converging road lines, and field textures as linear patterns. The artistic filter extracts only the edges and contours, creating a technical sketch-like appearance. Text overlays remain visible in yellow against the dark background."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The edge-detection effect continues with a slight variation - a faint ghostly face outline appears in the upper portion of the frame, mirroring the double exposure from the original. The white line work on black background maintains the sketch aesthetic, with the standing figure, road perspective, and field patterns clearly delineated through edge detection. The composition demonstrates the 'Original to Edges' transformation referenced in the title text."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_007",
+      "name": "The Wanderer",
+      "description": "Solitary man standing on straight road through wheat fields, ghostly face apparition in sky above, surreal/dreamlike quality",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "beard",
+    "black",
+    "clip",
+    "continues",
+    "curly",
+    "demonstrates",
+    "detection",
+    "distance",
+    "edge",
+    "effect",
+    "face",
+    "faint",
+    "flanked",
+    "ghostly",
+    "hair",
+    "image",
+    "man",
+    "medium",
+    "outline",
+    "photograph",
+    "processing",
+    "realistic",
+    "rendering",
+    "road",
+    "rural",
+    "scene",
+    "silent",
+    "sketch",
+    "slight",
+    "stands",
+    "stretching",
+    "style",
+    "transformation",
+    "transformed",
+    "variation",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

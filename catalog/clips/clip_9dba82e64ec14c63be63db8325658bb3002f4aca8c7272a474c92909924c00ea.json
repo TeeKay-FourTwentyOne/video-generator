@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9dba82e64ec14c63be63db8325658bb3002f4aca8c7272a474c92909924c00ea",
+  "sha256": "9dba82e64ec14c63be63db8325658bb3002f4aca8c7272a474c92909924c00ea",
+  "bytes": 4115291,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Extreme_closeup_of_202601140052_vls9e.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

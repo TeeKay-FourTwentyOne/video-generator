@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3880ab7dc2e058e5bad7a1b288d33f6486d2f5fded35e8c3d2501102af596e24",
+  "sha256": "3880ab7dc2e058e5bad7a1b288d33f6486d2f5fded35e8c3d2501102af596e24",
+  "bytes": 1042350,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767656100683_mhtczd.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767656100683_mhtczd"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A person walks through a doorway into a dimly lit room, their silhouette briefly outlined by cooler light from behind before stepping into pools of amber light filtering through unseen windows. Handheld camera follows at shoulder height, slight organic movement as they cross the threshold. As they enter, deep shadows obscure parts of their face until they stop abruptly mid-stride, eyes widening in surprise. Their hand instinctively reaches out to grip the weathered wooden door frame for support, fingers tensing against the grain. The camera holds on their startled expression, soft key light catching the surprise in their eyes while shadows play across half their face. Cool blue undertones from the hallway behind contrast with warm, dusty light rays cutting through the mysterious interior space ahead. Naturalistic color grading with desaturated tones except for subtle warm highlights on skin.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3675179786b950b9b26fcdc72ed019fc9f989a44d5b43c9c95fe26ce72ac15f9",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A person walks through a doorway into a dimly lit room, their silhouette briefly outlined by cooler light from behind before stepping into pools of amber light filtering through unseen windows. Handheld camera follows at shoulder height, slight organic movement as they cross the threshold. As they enter, deep shadows obscure parts of their face until they stop abruptly mid-stride, eyes widening in surprise. Their hand instinctively reaches out to grip the weathered wooden door frame for support, fingers tensing against the grain. The camera holds on their startled expression, soft key light catching the surprise in their eyes while shadows play across half their face. Cool blue undertones from the hallway behind contrast with warm, dusty light rays cutting through the mysterious interior space ahead. Naturalistic color grading with desaturated tones except for subtle warm highlights on skin.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3675179786b950b9b26fcdc72ed019fc9f989a44d5b43c9c95fe26ce72ac15f9",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:34:17.606Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip shows a tense moment where a woman with dark hair emerges through a blue wooden doorway into a dimly lit rustic interior, displaying an expression of shock or fear. The dramatic lighting contrasts warm golden window light against dark shadows, creating a suspenseful atmosphere typical of thriller or horror genres.",
+      "transcript": "ご視聴ありがとうございました。",
+      "tags": [
+        "alarmed",
+        "blue",
+        "brown",
+        "clip",
+        "continues",
+        "dark",
+        "door",
+        "doorway",
+        "emerges",
+        "expression",
+        "hair",
+        "her",
+        "length",
+        "maintaining",
+        "medium",
+        "moment",
+        "moody",
+        "open",
+        "painted",
+        "partially",
+        "shot",
+        "shoulder",
+        "showing",
+        "shows",
+        "speech",
+        "standing",
+        "tense",
+        "wide",
+        "woman",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, moody shot showing a partially open blue-painted wooden door on the left side of the frame. Through the narrow gap, warm golden light streams in from a window visible in the background room. A silhouetted figure is barely visible in the doorway opening. The right side shows dark wooden wall paneling. The composition creates a sense of mystery and anticipation with strong contrast between the dark foreground and illuminated background."
+        },
+        {
+          "seconds": 2,
+          "text": "A woman with shoulder-length dark brown hair emerges through the blue doorway, her face clearly visible now. She wears a dark long-sleeved top and displays an expression of shock or fear, with wide eyes and slightly open mouth. Her right hand grips the blue door frame while her left hand reaches toward the opposite side. Warm golden light from two windows behind her creates a backlit effect. The setting appears to be an old, rustic interior."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The same woman continues standing in the doorway, maintaining her alarmed expression with wide blue eyes and parted lips. Her posture remains tense, with one hand still on the blue door frame. The warm amber backlighting from the windows creates dramatic contrast against her dark clothing. The composition frames her centrally between the blue door on the left and weathered wooden wall on the right, emphasizing her vulnerable position."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_030",
+      "name": "Haunted Hannah",
+      "description": "Woman with shoulder-length brown hair, dark sweater, pushing open old doors in dusty house, fearful/tense expression, horror atmosphere",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "alarmed",
+    "blue",
+    "brown",
+    "clip",
+    "continues",
+    "dark",
+    "door",
+    "doorway",
+    "emerges",
+    "expression",
+    "hair",
+    "her",
+    "length",
+    "maintaining",
+    "medium",
+    "moment",
+    "moody",
+    "open",
+    "painted",
+    "partially",
+    "shot",
+    "shoulder",
+    "showing",
+    "shows",
+    "speech",
+    "standing",
+    "tense",
+    "wide",
+    "woman",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

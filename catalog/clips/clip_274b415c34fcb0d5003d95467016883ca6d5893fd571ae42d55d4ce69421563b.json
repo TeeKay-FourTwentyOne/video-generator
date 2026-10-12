@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_274b415c34fcb0d5003d95467016883ca6d5893fd571ae42d55d4ce69421563b",
+  "sha256": "274b415c34fcb0d5003d95467016883ca6d5893fd571ae42d55d4ce69421563b",
+  "bytes": 1702422,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s3.mp4"
+  ],
+  "collections": [
+    "spider-arrest"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

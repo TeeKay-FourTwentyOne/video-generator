@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0ca05aa072f6280926534d6b49f7f9a1fb85321b2f9cbc8f5399504dd7b851a1",
+  "sha256": "0ca05aa072f6280926534d6b49f7f9a1fb85321b2f9cbc8f5399504dd7b851a1",
+  "bytes": 6678468,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "c3v2_gods.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

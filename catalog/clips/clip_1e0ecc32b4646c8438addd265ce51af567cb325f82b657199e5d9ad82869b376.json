@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1e0ecc32b4646c8438addd265ce51af567cb325f82b657199e5d9ad82869b376",
+  "sha256": "1e0ecc32b4646c8438addd265ce51af567cb325f82b657199e5d9ad82869b376",
+  "bytes": 23146054,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "b8_ticket.mp4"
+  ],
+  "collections": [
+    "dignity-of-work"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

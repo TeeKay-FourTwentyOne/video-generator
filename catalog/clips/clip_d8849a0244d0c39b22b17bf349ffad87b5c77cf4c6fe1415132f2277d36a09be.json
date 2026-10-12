@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d8849a0244d0c39b22b17bf349ffad87b5c77cf4c6fe1415132f2277d36a09be",
+  "sha256": "d8849a0244d0c39b22b17bf349ffad87b5c77cf4c6fe1415132f2277d36a09be",
+  "bytes": 1192537,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S10_RAW.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Close-up at floor level on a boarding house threshold at night. Weathered porch boards wet with rain, mud-flecked at the sill. A pair of pristine black leather boots, entirely unmarked, steps unhurried across the threshold into warm lamplight. Sound: rain behind; two soft unhurried footfalls; a floorboard that does not creak.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c87ccf64b78602d0fedfa5c7e45384b20a6f798628bdf756f35555f0f2f4629b",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

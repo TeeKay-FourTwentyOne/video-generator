@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3aae129050ef4908013418a7881953ee2c53d12f29cc38cc24c6f8e2d1ad3855",
+  "sha256": "3aae129050ef4908013418a7881953ee2c53d12f29cc38cc24c6f8e2d1ad3855",
+  "bytes": 3517255,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "scroll_test_down200.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:scroll_test_down200"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Scroll test at faster 200 pixels/second downward velocity through vintage film strip. Features dramatic backlit silhouette walking through fog/dust with strong sun creating atmospheric haze. Demonstrates faster scroll speed comparison to the 100px version.",
+      "transcript": "🔥🔥🔥",
+      "tags": [
+        "200",
+        "abstract",
+        "backlit",
+        "bright",
+        "centerpiece",
+        "downward",
+        "dramatic",
+        "dramatically",
+        "dust",
+        "faster",
+        "figure",
+        "film",
+        "fog",
+        "frame",
+        "haze",
+        "light",
+        "medium",
+        "person",
+        "pixels",
+        "revealed",
+        "scroll",
+        "scrolling",
+        "second",
+        "seen",
+        "silhouette",
+        "source",
+        "speech",
+        "sprocket",
+        "strip",
+        "sun",
+        "test",
+        "velocity",
+        "vintage",
+        "walking"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Film strip frame with dramatic bright sun/light source as centerpiece. Sprocket holes visible on edges. Silhouetted elements at top of frame. Warm golden sepia tones throughout."
+        },
+        {
+          "seconds": 4,
+          "text": "Faster scroll has revealed more - silhouette of person walking through fog or dust, dramatically backlit by the sun. Atmospheric, mysterious scene through the film strip window."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Abstract backlit figure in haze/fog, seen through the scrolling film frame. The faster 200px/s scroll creates more dramatic reveal of the cinematic scene."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "200",
+    "abstract",
+    "backlit",
+    "bright",
+    "centerpiece",
+    "downward",
+    "dramatic",
+    "dramatically",
+    "dust",
+    "faster",
+    "figure",
+    "film",
+    "fog",
+    "frame",
+    "haze",
+    "light",
+    "medium",
+    "person",
+    "pixels",
+    "revealed",
+    "scroll",
+    "scrolling",
+    "second",
+    "seen",
+    "silhouette",
+    "source",
+    "speech",
+    "sprocket",
+    "strip",
+    "sun",
+    "test",
+    "velocity",
+    "vintage",
+    "walking"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

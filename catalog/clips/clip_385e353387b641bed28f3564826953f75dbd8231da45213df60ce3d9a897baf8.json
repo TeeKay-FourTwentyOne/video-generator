@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_385e353387b641bed28f3564826953f75dbd8231da45213df60ce3d9a897baf8",
+  "sha256": "385e353387b641bed28f3564826953f75dbd8231da45213df60ce3d9a897baf8",
+  "bytes": 1692666,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 3.375,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot_16.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

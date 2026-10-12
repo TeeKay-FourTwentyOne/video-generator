@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c8ad747a9c947e14d854ceb42f72088321132fe0c1805af8581431313841d47b",
+  "sha256": "c8ad747a9c947e14d854ceb42f72088321132fe0c1805af8581431313841d47b",
+  "bytes": 10876892,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S04-v1.cap.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

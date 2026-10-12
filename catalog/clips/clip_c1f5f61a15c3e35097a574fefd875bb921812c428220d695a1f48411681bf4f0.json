@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c1f5f61a15c3e35097a574fefd875bb921812c428220d695a1f48411681bf4f0",
+  "sha256": "c1f5f61a15c3e35097a574fefd875bb921812c428220d695a1f48411681bf4f0",
+  "bytes": 3385874,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539212227_us9qh9.mp4"
+  ],
+  "collections": [
+    "a_solitary_astronaut_floats_th_1767539132269"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539212227_us9qh9"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A lone astronaut in a sleek, reflective spacesuit drifts weightlessly at the entrance of a vast underwater cavern on an alien world. The cavern walls pulse with ethereal bioluminescent patterns in soft blue-green light that ripples through crystal-clear alien waters. The camera slowly pushes forward in a smooth dolly movement, following the astronaut deeper into the mysterious depths. Cinematic sci-fi lighting with deep blues and teals dominates the palette, punctuated by the organic glow of alien bioluminescence. The water is perfectly transparent, creating dreamlike light caustics that dance across the cavern walls. Mysterious darkness stretches beyond the illuminated entrance, suggesting infinite depths ahead. The astronaut's suit catches and reflects the otherworldly glow as they drift serenely through this alien aquatic environment. Shot with a wide-angle lens to capture the cavern's immense scale, with subtle particle effects in the water adding to the ethereal atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a460e42894241749402db9dfa4c2a5b29ebd2f82b6af14173451332a33a7b000",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A lone astronaut in a sleek, reflective spacesuit drifts weightlessly at the entrance of a vast underwater cavern on an alien world. The cavern walls pulse with ethereal bioluminescent patterns in soft blue-green light that ripples through crystal-clear alien waters. The camera slowly pushes forward in a smooth dolly movement, following the astronaut deeper into the mysterious depths. Cinematic sci-fi lighting with deep blues and teals dominates the palette, punctuated by the organic glow of alien bioluminescence. The water is perfectly transparent, creating dreamlike light caustics that dance across the cavern walls. Mysterious darkness stretches beyond the illuminated entrance, suggesting infinite depths ahead. The astronaut's suit catches and reflects the otherworldly glow as they drift serenely through this alien aquatic environment. Shot with a wide-angle lens to capture the cavern's immense scale, with subtle particle effects in the water adding to the ethereal atmosphere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a460e42894241749402db9dfa4c2a5b29ebd2f82b6af14173451332a33a7b000",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:05:58.419Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic clip depicts a solitary figure in a spacesuit or diving suit walking through a surreal, bioluminescent underwater tunnel toward a bright light source. The scene features stunning cyan and teal color grading with swirling energy patterns on the cave walls and reflective water surfaces. The clip concludes with a 'Thank you for watching' audio message, suggesting this is the ending of a larger video or animation project.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "appearing",
+        "away",
+        "bright",
+        "bulky",
+        "camera",
+        "cinematic",
+        "clip",
+        "continues",
+        "cyan",
+        "dark",
+        "depicts",
+        "diving",
+        "figure",
+        "forward",
+        "glowing",
+        "medium",
+        "move",
+        "now",
+        "progressed",
+        "shallow",
+        "slightly",
+        "smaller",
+        "solitary",
+        "spacesuit",
+        "speech",
+        "suit",
+        "suited",
+        "surreal",
+        "thank",
+        "they",
+        "toward",
+        "tunnel",
+        "underwater",
+        "walking",
+        "walks",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A figure in a dark, bulky spacesuit or diving suit walks away from the camera through shallow, luminescent turquoise water. The environment appears to be an otherworldly underwater cave or tunnel with swirling, bioluminescent blue and cyan energy patterns forming an arch overhead. The tunnel opens to a bright cyan-white light source in the distance. The figure is silhouetted against this backlight, creating a dramatic contrast. The water reflects the ethereal glow, with green-tinted caustics visible on the surface."
+        },
+        {
+          "seconds": 2,
+          "text": "The suited figure continues walking forward through the glowing underwater tunnel, now slightly closer to the camera's perspective. The astronaut/diver's helmet and backpack equipment are more visible, with reflective surfaces catching the cyan ambient light. The swirling energy formations around the tunnel walls display intricate wave-like patterns with bright teal and green highlights. The figure's reflection is clearly visible in the calm, luminescent water below. The composition remains centered with the bright tunnel opening as the focal point."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The figure has progressed further into the tunnel, appearing smaller as they move toward the bright cyan light source ahead. The suited explorer is captured mid-stride, with one leg lifted in a walking motion. The bioluminescent cave walls continue their swirling, organic patterns with cyan, teal, and green energy streams. The water surface shows beautiful caustic light patterns and reflections. The overall atmosphere is mysterious and ethereal, with the figure's dark silhouette contrasting against the bright tunnel exit."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appearing",
+    "away",
+    "bright",
+    "bulky",
+    "camera",
+    "cinematic",
+    "clip",
+    "continues",
+    "cyan",
+    "dark",
+    "depicts",
+    "diving",
+    "figure",
+    "forward",
+    "glowing",
+    "medium",
+    "move",
+    "now",
+    "progressed",
+    "shallow",
+    "slightly",
+    "smaller",
+    "solitary",
+    "spacesuit",
+    "speech",
+    "suit",
+    "suited",
+    "surreal",
+    "thank",
+    "they",
+    "toward",
+    "tunnel",
+    "underwater",
+    "walking",
+    "walks",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

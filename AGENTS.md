@@ -43,6 +43,10 @@ ledger, not a clerk with a camera.
 - Start new media in a versioned `data/workspace/<slug>/`. Keep plans, budget,
   provider records, sources, edits and QA together. Preserve existing media and
   unrelated working-tree changes.
+- Store reusable video masters in `data/clips/` through `npm run clips -- import`;
+  maintained provider polling does this automatically. Reference clip IDs in edits
+  and materialize only the needed ranges. Public metadata and use records live in
+  `catalog/`; see `docs/clip-library.md`. Preserve historical paths and archives.
 - Start source documentation in `briefs/<project-id>/`; see
   `docs/production-records.md` for validated records and generated current views.
   Prices, budgets, spending amounts and itemized accounting stay in ignored

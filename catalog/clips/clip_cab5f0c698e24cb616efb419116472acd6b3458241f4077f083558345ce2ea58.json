@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cab5f0c698e24cb616efb419116472acd6b3458241f4077f083558345ce2ea58",
+  "sha256": "cab5f0c698e24cb616efb419116472acd6b3458241f4077f083558345ce2ea58",
+  "bytes": 7963105,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V08-v1.mp4",
+    "veo_1791428306744_qu8m02.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Looking straight down into a square sondage at the bottom of a deep excavation trench at dusk, black, wet, oily mud with a dull sheen. Two blue nitrile-gloved hands, one holding a small pointed trowel and one holding a wet grey cloth, scrape and wipe the black mud off a flat, square, cut stone slab about seventy centimeters on a side, until its whole smooth grey surface and worn edges are exposed, clean grey stone surrounded by black mud. The slab is plain grey with no markings. At the end the hands withdraw out of the frame, leaving the slab clear with the trowel and the cloth lying on the mud at its edge. Camera is fixed, looking down, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5f78cd25dbab45258f38495afb1802a8a41fb006ec87797fa7a1e2a4e8fa8f6e",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 130020940,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

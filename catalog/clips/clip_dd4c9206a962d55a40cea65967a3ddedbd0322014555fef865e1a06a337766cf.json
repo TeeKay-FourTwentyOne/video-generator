@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_dd4c9206a962d55a40cea65967a3ddedbd0322014555fef865e1a06a337766cf",
+  "sha256": "dd4c9206a962d55a40cea65967a3ddedbd0322014555fef865e1a06a337766cf",
+  "bytes": 1586644,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767577898729_wjlhwq.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767577838356"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767577898729_wjlhwq"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A worn leather wallet lies on a dusty wooden floor in the early morning light. The camera begins with an intimate close-up, then executes an almost imperceptible push-in as deep shadows pool dramatically around the edges of the frame. Selective shafts of golden hour sunlight pierce through unseen windows, creating mysterious patterns across the dust particles floating in the air. The wallet trembles subtly against the floorboards, then defies gravity as it slowly begins to lift, rotating gently as if pulled by invisible strings. Cool blue undertones dominate the shadows while warm amber light catches the brass clasp, creating a haunting contrast. Shot in slow motion with extremely shallow depth of field, the background melts into abstract shapes. The camera movement is minimal and deliberate, maintaining focus on the supernatural movement of the wallet as it hovers mysteriously in the dusty, light-streaked air.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_04168c2202c7898f4d6d2c1c82609c6b402cf0c75bb09a711b04834fd3f729f0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A worn leather wallet lies on a dusty wooden floor in the early morning light. The camera begins with an intimate close-up, then executes an almost imperceptible push-in as deep shadows pool dramatically around the edges of the frame. Selective shafts of golden hour sunlight pierce through unseen windows, creating mysterious patterns across the dust particles floating in the air. The wallet trembles subtly against the floorboards, then defies gravity as it slowly begins to lift, rotating gently as if pulled by invisible strings. Cool blue undertones dominate the shadows while warm amber light catches the brass clasp, creating a haunting contrast. Shot in slow motion with extremely shallow depth of field, the background melts into abstract shapes. The camera movement is minimal and deliberate, maintaining focus on the supernatural movement of the wallet as it hovers mysteriously in the dusty, light-streaked air.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_04168c2202c7898f4d6d2c1c82609c6b402cf0c75bb09a711b04834fd3f729f0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:50:54.947Z",
+      "parameters": {
+        "durationSeconds": 5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This cinematic product video showcases a brown leather wallet on a rustic wooden surface with dramatic lighting and atmospheric smoke effects. The wallet is shown resting, then tossed in the air, and landing back down while dust particles and mist create a mystical ambiance. The clip ends with a 'Thank you for watching' message as the wallet settles back into position.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "air",
+        "angle",
+        "back",
+        "brown",
+        "captured",
+        "cinematic",
+        "closure",
+        "dropped",
+        "flat",
+        "landed",
+        "leather",
+        "medium",
+        "mid",
+        "now",
+        "plank",
+        "product",
+        "resting",
+        "rests",
+        "rustic",
+        "showcases",
+        "similar",
+        "snap",
+        "speech",
+        "surface",
+        "thank",
+        "tilted",
+        "video",
+        "wallet",
+        "watching",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A brown leather wallet with a snap closure rests flat on a rustic wooden surface with visible grain and gaps between planks. The scene is dramatically lit with warm golden light from the right side and cool blue tones in the background. Dust particles are visible floating in the dark, starry-looking background. The composition uses shallow depth of field with the wallet in sharp focus. Low angle shot emphasizing the wallet's craftsmanship and texture."
+        },
+        {
+          "seconds": 2,
+          "text": "The same brown leather wallet is now captured mid-air, tilted at an angle as if being dropped or tossed. A circular snap button is visible on its front. Smoke or mist wisps around the wallet, creating an atmospheric effect. The wooden surface below is blurred due to shallow depth of field. Warm golden lighting illuminates the scene from below while the background remains dark with floating particles. Dynamic action shot capturing motion."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The leather wallet has landed back on the wooden plank surface, resting flat in a similar position to the opening frame. Smoke or mist rises dramatically behind and around the wallet, creating a mystical atmosphere. The warm golden lighting from the right contrasts with cool blue tones on the left. Dust particles continue floating in the dark background. The shallow depth of field keeps focus on the wallet while blurring the atmospheric effects."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "air",
+    "angle",
+    "back",
+    "brown",
+    "captured",
+    "cinematic",
+    "closure",
+    "dropped",
+    "flat",
+    "landed",
+    "leather",
+    "medium",
+    "mid",
+    "now",
+    "plank",
+    "product",
+    "resting",
+    "rests",
+    "rustic",
+    "showcases",
+    "similar",
+    "snap",
+    "speech",
+    "surface",
+    "thank",
+    "tilted",
+    "video",
+    "wallet",
+    "watching",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

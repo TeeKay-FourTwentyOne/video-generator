@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1f7b24d4ea0f58c3ff1b83500a62660e81e00b890a3151aacde5d429fc25211c",
+  "sha256": "1f7b24d4ea0f58c3ff1b83500a62660e81e00b890a3151aacde5d429fc25211c",
+  "bytes": 1128411,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767548619886_itgqq3.mp4"
+  ],
+  "collections": [
+    "impossible_orbit_v2"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767548619886_itgqq3"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian woman in her 30s with a medium build, chin-length dark brown hair, and brown eyes. She is wearing a loose-fitting white V-neck blouse with three-quarter rolled-up sleeves, dark blue skinny jeans, and black pointed-toe stiletto heels, holding a calm, neutral expression. Medium shot of the woman maintaining perfect forward-facing position with unwavering direct gaze toward camera. The prominent stacked stone corner fireplace now dominates the background behind her against medium-toned wood plank floors, neutral taupe walls, and flat ceiling with spotlights. Camera continues smooth orbital movement around her stationary figure, completing the 180-degree rotation while she remains absolutely motionless - same stance, same neutral expression, same direct eye contact. Her body position and facial expression are completely identical to previous moment, creating the striking effect that only the contemporary rustic interior environment has rotated behind her. Soft natural lighting with slightly desaturated color palette maintains warm atmosphere throughout the continuous camera movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5a1b0c96dd478367c7fa6226332506d11990f3ee1f51178c2eac63ed9462db79",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian woman in her 30s with a medium build, chin-length dark brown hair, and brown eyes. She is wearing a loose-fitting white V-neck blouse with three-quarter rolled-up sleeves, dark blue skinny jeans, and black pointed-toe stiletto heels, holding a calm, neutral expression. Medium shot of the woman maintaining perfect forward-facing position with unwavering direct gaze toward camera. The prominent stacked stone corner fireplace now dominates the background behind her against medium-toned wood plank floors, neutral taupe walls, and flat ceiling with spotlights. Camera continues smooth orbital movement around her stationary figure, completing the 180-degree rotation while she remains absolutely motionless - same stance, same neutral expression, same direct eye contact. Her body position and facial expression are completely identical to previous moment, creating the striking effect that only the contemporary rustic interior environment has rotated behind her. Soft natural lighting with slightly desaturated color palette maintains warm atmosphere throughout the continuous camera movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5a1b0c96dd478367c7fa6226332506d11990f3ee1f51178c2eac63ed9462db79",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:42:57.923Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second vertical video shows a woman with a short brown bob standing stationary in a living room with a stone fireplace, appearing to address the camera directly. The clip features minimal movement with consistent framing, suggesting this is likely an introduction or greeting segment of a longer video. The single word 'you' in the transcription indicates she is speaking directly to viewers.",
+      "transcript": "you",
+      "tags": [
+        "arms",
+        "bob",
+        "brown",
+        "centered",
+        "dark",
+        "facing",
+        "frame",
+        "frames",
+        "haircut",
+        "her",
+        "identical",
+        "maintains",
+        "medium",
+        "minimal",
+        "movement",
+        "nearly",
+        "position",
+        "previous",
+        "relaxed",
+        "remains",
+        "second",
+        "short",
+        "shows",
+        "speech",
+        "standing",
+        "stands",
+        "stationary",
+        "straight",
+        "vertical",
+        "video",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with short dark brown bob haircut stands centered in frame, facing the camera directly. She wears a loose-fitting cream/beige V-neck blouse with short sleeves, dark blue skinny jeans, and black high heels. Behind her is a rustic stone fireplace with a wooden mantel, set against beige walls. The room has dark hardwood flooring and recessed ceiling lights provide warm, even illumination. The composition is a full-body portrait shot in vertical/portrait orientation."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains in nearly identical position, standing straight with arms relaxed at her sides. Her expression appears neutral with a slight smile. The stone fireplace with its layered brown and gray stones remains prominently visible behind her. The lighting continues to be warm and well-balanced from the recessed ceiling fixtures. The camera framing is consistent, showing her full body from head to toe in the center of the frame against the living room backdrop."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman maintains her centered standing position with minimal movement from previous frames. The camera angle appears slightly adjusted, revealing more of the room including a doorway visible on the left side. The stone fireplace hearth and its gray stone base are more visible. Her posture remains upright and composed, with the same cream blouse, dark jeans, and black heels. The warm interior lighting and hardwood floors create a cozy residential atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_023",
+      "name": "Claire (Alt)",
+      "description": "Same woman with dark bob - standing pose by stone fireplace, composed expression, same outfit",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "arms",
+    "bob",
+    "brown",
+    "centered",
+    "dark",
+    "facing",
+    "frame",
+    "frames",
+    "haircut",
+    "her",
+    "identical",
+    "maintains",
+    "medium",
+    "minimal",
+    "movement",
+    "nearly",
+    "position",
+    "previous",
+    "relaxed",
+    "remains",
+    "second",
+    "short",
+    "shows",
+    "speech",
+    "standing",
+    "stands",
+    "stationary",
+    "straight",
+    "vertical",
+    "video",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

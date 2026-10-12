@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_80e89dd7d52937ba11fa363926ab5c2a4cdfbf4be734c3c2eed14ef24eb11ab8",
+  "sha256": "80e89dd7d52937ba11fa363926ab5c2a4cdfbf4be734c3c2eed14ef24eb11ab8",
+  "bytes": 6833,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 0.5,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 12,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "black_hold.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

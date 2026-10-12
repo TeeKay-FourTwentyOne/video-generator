@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_997d823b5a390bb956637ca7bda42de840e3024d7bc69ee4e485e6f05f6ff61b",
+  "sha256": "997d823b5a390bb956637ca7bda42de840e3024d7bc69ee4e485e6f05f6ff61b",
+  "bytes": 1561493,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767509517731_sobpiz.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767509517731_sobpiz"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Extreme macro close-up of black ink erupting violently into crystal clear water, creating massive billowing plumes that mushroom upward and outward in dramatic clouds. The ink disperses in intricate swirling patterns, with every wisp, curl, and tendril captured in razor-sharp detail against the bright, luminous water background. The dispersion intensifies throughout the sequence, reaching peak dramatic intensity as the dark fluid fills more of the frame with hypnotic, flowing motion. Shot with macro lens at high speed, black and white cinematography with stark high contrast lighting that makes the ink appear as pure darkness against brilliant white water. The camera remains steady to capture every nuance of the fluid dynamics, with the vertical 9:16 frame emphasizing the upward surge of the ink plumes. The lighting creates sculptural definition in each flowing form, transforming the dispersion into an abstract masterpiece of liquid motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_743e147b2784f42327839aaa696418e6d369e7b21525192fb23331f0aea2d96c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Extreme macro close-up of black ink erupting violently into crystal clear water, creating massive billowing plumes that mushroom upward and outward in dramatic clouds. The ink disperses in intricate swirling patterns, with every wisp, curl, and tendril captured in razor-sharp detail against the bright, luminous water background. The dispersion intensifies throughout the sequence, reaching peak dramatic intensity as the dark fluid fills more of the frame with hypnotic, flowing motion. Shot with macro lens at high speed, black and white cinematography with stark high contrast lighting that makes the ink appear as pure darkness against brilliant white water. The camera remains steady to capture every nuance of the fluid dynamics, with the vertical 9:16 frame emphasizing the upward surge of the ink plumes. The lighting creates sculptural definition in each flowing form, transforming the dispersion into an abstract masterpiece of liquid motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_743e147b2784f42327839aaa696418e6d369e7b21525192fb23331f0aea2d96c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T06:51:12.870Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This video captures black ink dispersing in liquid (likely water) against a white background, filmed in portrait orientation. The sequence progresses from initial small ink drops at the top and bottom of frame to a massive, cloud-like formation that eventually fills nearly the entire frame. The clip ends with a 'Thanks for watching!' message, suggesting this is the conclusion of a visual effects or artistic demonstration video.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "against",
+        "black",
+        "captures",
+        "cloud",
+        "composition",
+        "continued",
+        "creating",
+        "diffuse",
+        "dispersing",
+        "dramatically",
+        "entire",
+        "expand",
+        "expanded",
+        "fill",
+        "formations",
+        "frame",
+        "ink",
+        "large",
+        "likely",
+        "liquid",
+        "medium",
+        "minimalist",
+        "nearly",
+        "now",
+        "occupying",
+        "organic",
+        "separate",
+        "showing",
+        "speech",
+        "thanks",
+        "two",
+        "video",
+        "watching",
+        "water",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A minimalist black and white composition showing two separate black ink formations against a pure white background. At the top of the frame, a small irregular black ink blob appears to be dripping or falling downward. At the bottom of the frame, another black ink formation with a fuzzy, brush-like texture sits at the edge. The vertical 9:16 portrait orientation creates significant negative white space between the two elements, suggesting the beginning of ink dispersing in liquid."
+        },
+        {
+          "seconds": 2,
+          "text": "The black ink has dramatically expanded to fill most of the frame, creating a large, organic cloud-like formation against the white background. The ink displays characteristic fluid dynamics with billowing, rounded edges and varying densities - darker concentrated areas in the center with more translucent, wispy tendrils extending outward on both sides. The shape is roughly symmetrical and vertical, resembling smoke or ink dispersing in water, with the white background visible only at the edges."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The black ink cloud has continued to expand and diffuse, now occupying nearly the entire frame with only small portions of white visible at the top corners and edges. The ink formation shows more dispersed, smoky tendrils around its perimeter, with the center remaining densely black. The edges have become more feathered and ethereal, displaying the characteristic swirling patterns of ink or dye mixing in liquid. The composition is almost entirely dominated by the dark mass."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "black",
+    "captures",
+    "cloud",
+    "composition",
+    "continued",
+    "creating",
+    "diffuse",
+    "dispersing",
+    "dramatically",
+    "entire",
+    "expand",
+    "expanded",
+    "fill",
+    "formations",
+    "frame",
+    "ink",
+    "large",
+    "likely",
+    "liquid",
+    "medium",
+    "minimalist",
+    "nearly",
+    "now",
+    "occupying",
+    "organic",
+    "separate",
+    "showing",
+    "speech",
+    "thanks",
+    "two",
+    "video",
+    "watching",
+    "water",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

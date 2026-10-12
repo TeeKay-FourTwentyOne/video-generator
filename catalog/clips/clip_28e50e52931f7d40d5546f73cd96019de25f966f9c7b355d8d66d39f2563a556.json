@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_28e50e52931f7d40d5546f73cd96019de25f966f9c7b355d8d66d39f2563a556",
+  "sha256": "28e50e52931f7d40d5546f73cd96019de25f966f9c7b355d8d66d39f2563a556",
+  "bytes": 2885971,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767763273974_2teofo.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767763273974_2teofo"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short clip shows a weathered, skeletal robot in a post-apocalyptic setting, raising its hand in what appears to be a waving gesture. The sepia-toned footage maintains a consistent apocalyptic atmosphere with smoke, rubble, and dramatic lighting throughout. The clip ends with a 'Thanks for watching!' message, suggesting this is an outro sequence for video content.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "apocalyptic",
+        "arm",
+        "clip",
+        "continues",
+        "figure",
+        "gesture",
+        "hand",
+        "higher",
+        "humanoid",
+        "lowered",
+        "medium",
+        "metallic",
+        "monochrome",
+        "now",
+        "open",
+        "palm",
+        "positioned",
+        "post",
+        "raised",
+        "raising",
+        "right",
+        "robot",
+        "sepia",
+        "setting",
+        "short",
+        "shown",
+        "shows",
+        "skeletal",
+        "slightly",
+        "speech",
+        "still",
+        "thanks",
+        "tones",
+        "watching",
+        "weathered"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A metallic humanoid robot figure is shown in sepia/monochrome tones, positioned on the right side of the frame. The robot has a skeletal, mechanical appearance with visible joints, gears, and weathered metal plating. Its right arm is extended forward, appearing to reach toward something. The background shows billowing smoke or clouds against a dark sky. Rubble and debris are visible at the bottom of the frame. The composition creates a post-apocalyptic atmosphere with dramatic lighting highlighting the robot's metallic surfaces."
+        },
+        {
+          "seconds": 2,
+          "text": "The same metallic robot is now shown with its right arm raised higher, hand open with fingers spread in what appears to be a waving or signaling gesture. The robot's head is visible in profile, showing circular mechanical eye sockets and articulated neck components. The sepia-toned image maintains the apocalyptic setting with smoke clouds in the background and concrete rubble below. Metal rebar or poles are visible on the left side. The weathered, battle-damaged appearance of the robot is clearly visible."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The robot continues its gesture with the raised hand now slightly lowered, palm still facing outward. The mechanical figure remains positioned among rubble and debris, with smoke continuing to billow in the background. The sepia monochrome treatment persists, creating a vintage war photograph aesthetic. The robot's torso shows detailed mechanical components including circular joints at the shoulder. The dramatic low-angle composition emphasizes the imposing nature of the machine against the smoky sky."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "apocalyptic",
+    "arm",
+    "clip",
+    "continues",
+    "figure",
+    "gesture",
+    "hand",
+    "higher",
+    "humanoid",
+    "lowered",
+    "medium",
+    "metallic",
+    "monochrome",
+    "now",
+    "open",
+    "palm",
+    "positioned",
+    "post",
+    "raised",
+    "raising",
+    "right",
+    "robot",
+    "sepia",
+    "setting",
+    "short",
+    "shown",
+    "shows",
+    "skeletal",
+    "slightly",
+    "speech",
+    "still",
+    "thanks",
+    "tones",
+    "watching",
+    "weathered"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

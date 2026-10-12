@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d9bfbb56b5e89b7632757d29e27ef0746b53c709f71e6664a455a632a0df5775",
+  "sha256": "d9bfbb56b5e89b7632757d29e27ef0746b53c709f71e6664a455a632a0df5775",
+  "bytes": 1092634,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767656216867_cntj75.mp4"
+  ],
+  "collections": [
+    "test_char_action_001"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767656216867_cntj75"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Two people stand in a doorway - one person inside the apartment, the other in the hallway outside. Wide shot capturing both figures in full, framed by the doorway. The camera holds steady with subtle handheld movement, creating an intimate, documentary feel. They face each other in a moment of suspended stillness, the space between them charged with unspoken emotion. After a beat, the person in the hallway takes a small, hesitant step backward. Warm golden hour light spills from inside the apartment, casting long shadows into the cooler blue-tinted hallway. The doorframe creates a natural divide between the warm interior and cool exterior spaces. Soft, naturalistic lighting with gentle lens flares from the apartment lights. The focus pulls slightly between the two figures, adding to the bittersweet atmosphere as the physical distance between them increases with that single backward step.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_075d02f9b1e5fe68a88913d7c792a7e0ec20c55ee76043bec3f4d5b9a4fcc606",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Two people stand in a doorway - one person inside the apartment, the other in the hallway outside. Wide shot capturing both figures in full, framed by the doorway. The camera holds steady with subtle handheld movement, creating an intimate, documentary feel. They face each other in a moment of suspended stillness, the space between them charged with unspoken emotion. After a beat, the person in the hallway takes a small, hesitant step backward. Warm golden hour light spills from inside the apartment, casting long shadows into the cooler blue-tinted hallway. The doorframe creates a natural divide between the warm interior and cool exterior spaces. Soft, naturalistic lighting with gentle lens flares from the apartment lights. The focus pulls slightly between the two figures, adding to the bittersweet atmosphere as the physical distance between them increases with that single backward step.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_075d02f9b1e5fe68a88913d7c792a7e0ec20c55ee76043bec3f4d5b9a4fcc606",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T23:36:13.111Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A couple appears to be having a tense moment in a bedroom doorway. The woman turns away from the man and walks through the doorway toward the camera while he follows behind, both displaying somber body language. The scene contrasts warm bedroom lighting with cooler blue hallway tones, creating a visually striking frame within the doorway.",
+      "transcript": null,
+      "tags": [
+        "appears",
+        "away",
+        "bedroom",
+        "blue",
+        "camera",
+        "closer",
+        "concerned",
+        "continues",
+        "couple",
+        "door",
+        "doorway",
+        "expression",
+        "face",
+        "facing",
+        "forward",
+        "framed",
+        "frames",
+        "having",
+        "her",
+        "medium",
+        "moment",
+        "now",
+        "painted",
+        "people",
+        "silent",
+        "stand",
+        "tense",
+        "toward",
+        "troubled",
+        "turned",
+        "turns",
+        "two",
+        "walking",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people stand facing each other in a doorway, framed by blue-painted door frames. On the left is a Black man with long dreadlocks wearing a light gray button-up shirt and dark pants. On the right is a blonde woman wearing a denim jacket over a light top with gray jeans. Behind them is a sunlit bedroom with white curtains, a window, and a bed visible. The warm golden light from the room contrasts with the cooler blue tones of the foreground hallway."
+        },
+        {
+          "seconds": 2,
+          "text": "The woman has turned and is now walking toward the camera through the doorway, with a concerned or troubled expression on her face. The man remains behind her, looking at her with his body angled toward her. She wears a denim jacket over a light tank top and dark jeans. The bedroom behind them remains visible with warm natural lighting streaming through the window. The framing creates depth with the blue doorframe edges visible on both sides."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues walking forward through the doorway, now closer to the camera with her face partially visible showing a pensive expression. The man follows behind her, his face partially visible as he looks down. The warm golden light from the bedroom creates a strong backlight effect. The composition shows the woman in the foreground with the man slightly behind, both moving through the blue-framed doorway into the darker hallway space."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_032",
+      "name": "Marcus & Jess",
+      "description": "Couple in hallway - man with dreadlocks and woman with blonde hair in denim jacket, casual intimate moment",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "appears",
+    "away",
+    "bedroom",
+    "blue",
+    "camera",
+    "closer",
+    "concerned",
+    "continues",
+    "couple",
+    "door",
+    "doorway",
+    "expression",
+    "face",
+    "facing",
+    "forward",
+    "framed",
+    "frames",
+    "having",
+    "her",
+    "medium",
+    "moment",
+    "now",
+    "painted",
+    "people",
+    "silent",
+    "stand",
+    "tense",
+    "toward",
+    "troubled",
+    "turned",
+    "turns",
+    "two",
+    "walking",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

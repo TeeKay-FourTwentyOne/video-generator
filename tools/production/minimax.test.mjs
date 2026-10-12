@@ -7,7 +7,8 @@ import { createLedger, readLedger, updateSpend, budgetSummary } from '../../mcp/
 import { qualifyMiniMax } from '../../mcp/video-generator/dist/production/minimax-spec.js';
 import { prepareMiniMaxRequest, submitMiniMaxGeneration, pollMiniMaxOperation, interpretMiniMaxTask,
   listMiniMaxTasks, recoverMiniMaxOperation, downloadMiniMaxVideo } from '../../mcp/video-generator/dist/clients/minimax.js';
-import { main, readJson, hashFile, videoProvider } from './film.mjs';
+import { main as filmMain, readJson, hashFile, videoProvider } from './film.mjs';
+const main = args => filmMain(args, { catalogRoot: args[1] && path.isAbsolute(args[1]) ? path.join(args[1], 'catalog-fixture') : undefined });
 
 const credential = 'synthetic-minimax-credential';
 const outputUrl = 'https://video-product.cdn.minimax.io/fixture.mp4?token=private-fixture';
@@ -259,8 +260,16 @@ test('CLI plans mixed providers offline, submits MiniMax, saves usage/media and 
   assert.equal(readLedger(budgetFile).entries[0].status, 'complete');
   const before = calls.length;
   await main(['poll', root, 'S01']); assert.equal(calls.length, before);
-  fs.appendFileSync(path.join(root, result.path), 'changed');
-  await assert.rejects(main(['poll', root, 'S01']), /source changed/);
+  // A pre-library asset receipt is upgraded locally without a provider call.
+  const oldCopy = path.join(root, 'clips/legacy.mp4');
+  fs.copyFileSync(path.join(root, 'catalog-fixture', result.path), oldCopy);
+  fs.writeFileSync(path.join(root, 'operations/S01-v1.asset.json'), JSON.stringify({ path: 'clips/legacy.mp4', sha256: result.sha256 }));
+  assert.equal((await main(['poll', root, 'S01'])).clipId, result.clipId);
+  assert.equal(calls.length, before); assert.ok(fs.existsSync(oldCopy));
+  assert.match(result.clipId, /^clip_[a-f0-9]{64}$/);
+  const master = path.join(root, 'catalog-fixture', result.path);
+  fs.chmodSync(master, 0o644); fs.appendFileSync(master, 'changed');
+  await assert.rejects(main(['poll', root, 'S01']), /source hash changed/);
 });
 
 test('concurrent attempts with the same ID cannot send a second paid submission', async t => {

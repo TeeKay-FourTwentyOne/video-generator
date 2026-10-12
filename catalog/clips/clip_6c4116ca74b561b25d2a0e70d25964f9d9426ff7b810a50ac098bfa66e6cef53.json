@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6c4116ca74b561b25d2a0e70d25964f9d9426ff7b810a50ac098bfa66e6cef53",
+  "sha256": "6c4116ca74b561b25d2a0e70d25964f9d9426ff7b810a50ac098bfa66e6cef53",
+  "bytes": 249334,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 3,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 72,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "plinth_establish.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

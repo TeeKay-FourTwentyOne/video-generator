@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_57e51fa5f75025a313d765c764421d1bc1c218f7a5cff8497e924dae744c662e",
+  "sha256": "57e51fa5f75025a313d765c764421d1bc1c218f7a5cff8497e924dae744c662e",
+  "bytes": 2856781,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767489083042_x2t5mu.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767489083042_x2t5mu"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A vintage gold pocket watch with ornate engravings begins to levitate from deep burgundy velvet surface, starting to spin slowly clockwise, warm golden light from the right casting soft shadows, the chain starts to unfurl and lift, macro cinematography with shallow depth of field, elegant and magical atmosphere",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8861d4206d44fbaff03af37978d0be7a76c741017be97891b857bf568795ef81",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A vintage gold pocket watch with ornate engravings begins to levitate from deep burgundy velvet surface, starting to spin slowly clockwise, warm golden light from the right casting soft shadows, the chain starts to unfurl and lift, macro cinematography with shallow depth of field, elegant and magical atmosphere",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8861d4206d44fbaff03af37978d0be7a76c741017be97891b857bf568795ef81",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T01:10:27.380Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video showcases an antique gold pocket watch with elaborate Victorian-style engravings, displayed on burgundy velvet. The static product shot maintains consistent warm lighting throughout, highlighting the watch's craftsmanship while a voice says 'Thanks for watching!' suggesting this is the closing segment of a longer presentation or review video.",
+      "transcript": "Thanks for watching!",
+      "tags": [
+        "antique",
+        "backdrop",
+        "burgundy",
+        "composition",
+        "continues",
+        "deep",
+        "displayed",
+        "elaborate",
+        "elegant",
+        "engravings",
+        "floral",
+        "gold",
+        "intricate",
+        "medium",
+        "ornate",
+        "pocket",
+        "positioned",
+        "remains",
+        "rests",
+        "rich",
+        "showcases",
+        "speech",
+        "style",
+        "surface",
+        "thanks",
+        "velvet",
+        "vertical",
+        "victorian",
+        "video",
+        "watch",
+        "watching"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An ornate gold pocket watch with intricate floral engravings rests on a deep burgundy velvet surface. The watch face features blue hands pointing to approximately 10:10, with a smaller seconds subdial at the bottom. The hinged cover is open, revealing matching engraved patterns on its interior. A gold chain extends from the crown, curving elegantly across the velvet with a decorative loop at the bottom. Warm lighting from the upper right creates rich golden highlights against the dark red background."
+        },
+        {
+          "seconds": 3,
+          "text": "The same antique gold pocket watch continues to be displayed on the burgundy velvet surface. The composition remains nearly identical with the ornately engraved watch face showing blue hands at approximately 10:10. The hinged protective cover stands open to the left, showcasing detailed scrollwork patterns. The gold chain drapes across the velvet, with the decorative loop visible in the lower left portion of the frame. The lighting maintains warm golden tones highlighting the watch's craftsmanship."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The elegant gold pocket watch remains positioned on the rich burgundy velvet backdrop. The camera angle appears slightly adjusted, showing more of the watch's side profile and the engraved case edge. The blue hands still indicate approximately 10:10 on the ornate gold dial with its Roman numeral subdial. The gold chain extends to the right side of the frame, partially visible. Warm ambient lighting continues to emphasize the luxurious golden finish and intricate Victorian-style engravings throughout the timepiece."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "antique",
+    "backdrop",
+    "burgundy",
+    "composition",
+    "continues",
+    "deep",
+    "displayed",
+    "elaborate",
+    "elegant",
+    "engravings",
+    "floral",
+    "gold",
+    "intricate",
+    "medium",
+    "ornate",
+    "pocket",
+    "positioned",
+    "remains",
+    "rests",
+    "rich",
+    "showcases",
+    "speech",
+    "style",
+    "surface",
+    "thanks",
+    "velvet",
+    "vertical",
+    "victorian",
+    "video",
+    "watch",
+    "watching"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

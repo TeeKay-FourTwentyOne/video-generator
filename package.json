@@ -16,11 +16,13 @@
     "privacy:outgoing": "node tools/privacy-check.mjs --outgoing",
     "privacy:test": "node --test tools/privacy-check.test.mjs",
     "film": "node tools/production/film.mjs",
+    "clips": "node tools/production/clips.mjs",
+    "clips:check": "node tools/production/clips.mjs validate && node tools/production/clips.mjs index --check",
     "records": "node tools/production/records.mjs",
     "records:check": "node tools/production/records.mjs validate && node tools/production/records.mjs build --check",
     "accounting": "node tools/production/accounting.mjs",
     "test": "npm run build && node --test tools/production/*.test.mjs",
-    "test:local": "npm test && npm run records:check && npm run scene:test && npm run privacy:test"
+    "test:local": "npm test && npm run records:check && npm run clips:check && npm run scene:test && npm run privacy:test"
   },
   "keywords": [
     "mcp",

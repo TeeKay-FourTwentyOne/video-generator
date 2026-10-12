@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f041559bb1c4afa34df137e6b2bb7c7198b6ea87369e2304f873d3865419dc0e",
+  "sha256": "f041559bb1c4afa34df137e6b2bb7c7198b6ea87369e2304f873d3865419dc0e",
+  "bytes": 1539858,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "burn_silent.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

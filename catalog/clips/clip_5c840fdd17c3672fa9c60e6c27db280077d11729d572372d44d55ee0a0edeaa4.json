@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5c840fdd17c3672fa9c60e6c27db280077d11729d572372d44d55ee0a0edeaa4",
+  "sha256": "5c840fdd17c3672fa9c60e6c27db280077d11729d572372d44d55ee0a0edeaa4",
+  "bytes": 5224468,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545196156_p7x4gn.mp4"
+  ],
+  "collections": [
+    "eternal_commuter"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545196156_p7x4gn"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Night scene in vertical 9:16 aspect ratio. A young Caucasian woman in her early 20s with long straight center-parted brown hair stands completely motionless at a modern dark metal and glass bus shelter on a concrete sidewalk. She wears a dark coat as steady rain falls around her, raindrops visibly catching and beading on her coat fabric and streaming down her hair. Neon signs from nearby buildings cast vibrant colored reflections - blues, pinks, and yellows - across the wet pavement and puddles. The streetlight overhead creates a dramatic pool of light. Camera holds a static wide shot capturing both the woman and the shelter, with a subtle time-lapse feeling as rain continues to fall in consistent vertical streaks. The woman remains perfectly still like a statue, never shifting position or moving, creating an eternal, melancholic atmosphere. Cinematic lighting with strong contrast between the warm streetlight and cool neon reflections on the glossy wet surfaces.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8398bba97e8a2c3c8a2091dc55ec7f19d2ba4df2440375f4a0140e81d685b40d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Night scene in vertical 9:16 aspect ratio. A young Caucasian woman in her early 20s with long straight center-parted brown hair stands completely motionless at a modern dark metal and glass bus shelter on a concrete sidewalk. She wears a dark coat as steady rain falls around her, raindrops visibly catching and beading on her coat fabric and streaming down her hair. Neon signs from nearby buildings cast vibrant colored reflections - blues, pinks, and yellows - across the wet pavement and puddles. The streetlight overhead creates a dramatic pool of light. Camera holds a static wide shot capturing both the woman and the shelter, with a subtle time-lapse feeling as rain continues to fall in consistent vertical streaks. The woman remains perfectly still like a statue, never shifting position or moving, creating an eternal, melancholic atmosphere. Cinematic lighting with strong contrast between the warm streetlight and cool neon reflections on the glossy wet surfaces.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8398bba97e8a2c3c8a2091dc55ec7f19d2ba4df2440375f4a0140e81d685b40d",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:45:43.282Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This atmospheric night scene shows a woman standing motionless at a bus stop during heavy rainfall, with dramatic neo-noir lighting combining warm amber overhead light and purple-pink neon backlighting. The clip maintains a static composition throughout its 4-second duration, emphasizing mood and visual aesthetics over action. Korean speech at the end translates to 'Thank you for watching,' suggesting this is the conclusion of a video presentation.",
+      "transcript": "시청해주셔서 감사합니다.",
+      "tags": [
+        "atmospheric",
+        "brown",
+        "bus",
+        "centered",
+        "continues",
+        "hair",
+        "heavy",
+        "her",
+        "long",
+        "maintaining",
+        "medium",
+        "motionless",
+        "night",
+        "pink",
+        "position",
+        "purple",
+        "rain",
+        "reddish",
+        "remains",
+        "scene",
+        "shelter",
+        "shows",
+        "soaked",
+        "speech",
+        "standing",
+        "stands",
+        "stop",
+        "woman",
+        "young"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A young woman with long reddish-brown hair stands at a bus stop shelter during heavy rainfall at night. She wears a black leather coat and dark clothing. The scene is dramatically lit with warm orange light from an overhead shelter lamp and purple-pink neon reflections from behind. Rain streaks are visible falling heavily around her. The wet pavement reflects colorful lights in blues, purples, and oranges. The composition is vertical with the woman centered, shot from a low angle looking slightly up."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman remains standing motionless at the bus shelter, maintaining her centered position. Heavy rain continues to fall around the shelter structure. The lighting remains consistent with warm amber from above and vibrant purple-magenta backlighting creating a cinematic neo-noir atmosphere. Street lights appear as blue bokeh in the background left. The wet tile ground shows strong reflections of the colorful lighting. Her expression appears neutral or contemplative as she faces the camera directly."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman continues standing in the same position at the rain-soaked bus stop. The purple and pink neon reflections behind her appear slightly more prominent, creating stronger colorful reflections on the wet pavement. Rain continues falling heavily outside the shelter. The urban nighttime setting shows blurred city lights in the background. The overall composition maintains the moody, atmospheric quality with the subject framed centrally under the shelter's protective canopy, creating a striking contrast between shelter and storm."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_020",
+      "name": "Rainy",
+      "description": "Woman in dark coat with long hair, standing at bus stop at night in heavy rain, neon lights reflecting on wet pavement, noir atmosphere",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "atmospheric",
+    "brown",
+    "bus",
+    "centered",
+    "continues",
+    "hair",
+    "heavy",
+    "her",
+    "long",
+    "maintaining",
+    "medium",
+    "motionless",
+    "night",
+    "pink",
+    "position",
+    "purple",
+    "rain",
+    "reddish",
+    "remains",
+    "scene",
+    "shelter",
+    "shows",
+    "soaked",
+    "speech",
+    "standing",
+    "stands",
+    "stop",
+    "woman",
+    "young"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

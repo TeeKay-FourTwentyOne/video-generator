@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_526c68655a589fe1b2c16b1c91f2c4e5b9cc84d1c86c5f784bf4409f55b58d6c",
+  "sha256": "526c68655a589fe1b2c16b1c91f2c4e5b9cc84d1c86c5f784bf4409f55b58d6c",
+  "bytes": 24635382,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "rugby_players.mp4"
+  ],
+  "collections": [
+    "march-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

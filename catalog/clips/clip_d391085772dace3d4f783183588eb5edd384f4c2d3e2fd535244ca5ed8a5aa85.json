@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d391085772dace3d4f783183588eb5edd384f4c2d3e2fd535244ca5ed8a5aa85",
+  "sha256": "d391085772dace3d4f783183588eb5edd384f4c2d3e2fd535244ca5ed8a5aa85",
+  "bytes": 4326149,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V09B-v1.mp4",
+    "veo_1791428262779_eq07j4.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up at the edge of an excavation trench in soft low light. Two blue nitrile-gloved hands lower a long corroded iron object wrapped loosely in white tissue into a long grey foam-lined tray, settle it, and withdraw. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_466623b6e4118699b4ebf3965b6c695aba1fc667aaedb6ca877286c5edae2f1a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3209278757,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

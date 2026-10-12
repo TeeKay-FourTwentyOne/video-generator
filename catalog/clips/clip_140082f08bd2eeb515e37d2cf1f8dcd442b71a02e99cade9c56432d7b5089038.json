@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_140082f08bd2eeb515e37d2cf1f8dcd442b71a02e99cade9c56432d7b5089038",
+  "sha256": "140082f08bd2eeb515e37d2cf1f8dcd442b71a02e99cade9c56432d7b5089038",
+  "bytes": 720033,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4.5,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 108,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot18.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0cbf32f129a0c9c422031ac4e26d86e23f7b57e92a668690818ca24432f34d6c",
+  "sha256": "0cbf32f129a0c9c422031ac4e26d86e23f7b57e92a668690818ca24432f34d6c",
+  "bytes": 1471298,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767660308996_24sx45.mp4"
+  ],
+  "collections": [
+    "noir_dialogue_test"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767660308996_24sx45"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A woman in her 30s with sharp features wearing a dark dress sits in a dimly lit room, cigarette held between her fingers as smoke curls upward through stark venetian blind shadows that stripe across her face and body. She looks directly at the camera with a guarded, knowing expression, then speaks in a mysterious, measured tone: \"I know. I have been waiting.\" The camera holds a medium close-up shot at eye level, static and intimate. Deep shadows dominate the frame with cool blue-grey undertones, while warm amber light filters through the blinds creating dramatic contrast. The smoke drifts lazily through the light beams, adding layers of atmosphere. Her voice is low and controlled, with a slight rasp that suggests secrets held back. The venetian blind shadows shift subtly as she speaks, emphasizing the noir atmosphere of concealment and revelation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c7faba47de39eb571775b8d762118b0147824d7e00662ab11ccfa241f60ffccb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A woman in her 30s with sharp features wearing a dark dress sits in a dimly lit room, cigarette held between her fingers as smoke curls upward through stark venetian blind shadows that stripe across her face and body. She looks directly at the camera with a guarded, knowing expression, then speaks in a mysterious, measured tone: \"I know. I have been waiting.\" The camera holds a medium close-up shot at eye level, static and intimate. Deep shadows dominate the frame with cool blue-grey undertones, while warm amber light filters through the blinds creating dramatic contrast. The smoke drifts lazily through the light beams, adding layers of atmosphere. Her voice is low and controlled, with a slight rasp that suggests secrets held back. The venetian blind shadows shift subtly as she speaks, emphasizing the noir atmosphere of concealment and revelation.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c7faba47de39eb571775b8d762118b0147824d7e00662ab11ccfa241f60ffccb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T00:44:25.808Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A cinematic noir-style video clip featuring a woman with dark wavy hair smoking a cigarette in a dimly lit room. Venetian blind shadows create dramatic horizontal stripes across her face and body as she smokes and exhales, delivering the line 'I have been waiting' with a mysterious, contemplative demeanor. The warm amber lighting and classic film noir aesthetic create an atmospheric, intimate portrait.",
+      "transcript": "I have been waiting.",
+      "tags": [
+        "appears",
+        "billows",
+        "blue",
+        "cigarette",
+        "cinematic",
+        "clearer",
+        "clip",
+        "dark",
+        "dramatic",
+        "exhaling",
+        "face",
+        "featuring",
+        "gray",
+        "hair",
+        "knowing",
+        "length",
+        "medium",
+        "noir",
+        "now",
+        "she",
+        "shoulder",
+        "shown",
+        "smoke",
+        "speech",
+        "style",
+        "subtle",
+        "upward",
+        "video",
+        "visible",
+        "waiting",
+        "wavy",
+        "which",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A woman with shoulder-length dark wavy hair is shown in a dramatic noir-style portrait. She holds a cigarette to her lips with her right hand, wearing red lipstick and a black sleeveless V-neck top. Horizontal striped shadows from venetian blinds cast across her face and body, creating a classic film noir aesthetic. The warm amber lighting contrasts with the dark background. She gazes directly at the camera with an intense, contemplative expression. Smoke wisps rise from the cigarette."
+        },
+        {
+          "seconds": 2,
+          "text": "The same woman is now exhaling cigarette smoke, which billows upward in blue-gray wisps partially obscuring her face. Her mouth is slightly open, lips painted red. The venetian blind shadow pattern continues across her skin and black top. Her hands are now lowered, with the cigarette visible in her right hand at the bottom of frame. The moody, atmospheric lighting maintains the noir aesthetic with warm tones on her skin against the dark striped background."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The woman now appears with a clearer face, no smoke visible. She has a subtle, knowing expression with a slight smile, red lipstick prominent. Her dark wavy hair frames her face as she looks slightly upward and to the side. The horizontal shadow stripes from the blinds continue across her face, neck, and chest. Her arms are crossed in front of her. The composition remains intimate and cinematic with warm amber lighting creating the classic noir mood."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appears",
+    "billows",
+    "blue",
+    "cigarette",
+    "cinematic",
+    "clearer",
+    "clip",
+    "dark",
+    "dramatic",
+    "exhaling",
+    "face",
+    "featuring",
+    "gray",
+    "hair",
+    "knowing",
+    "length",
+    "medium",
+    "noir",
+    "now",
+    "she",
+    "shoulder",
+    "shown",
+    "smoke",
+    "speech",
+    "style",
+    "subtle",
+    "upward",
+    "video",
+    "visible",
+    "waiting",
+    "wavy",
+    "which",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

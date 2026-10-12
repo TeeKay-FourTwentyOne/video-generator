@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2638f198cef0a431f8a6e25328313dfb02a1c9ab2e95bb8fe46e2ba45a8e62cc",
+  "sha256": "2638f198cef0a431f8a6e25328313dfb02a1c9ab2e95bb8fe46e2ba45a8e62cc",
+  "bytes": 1193451,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767581167184_l53lyj.mp4"
+  ],
+  "collections": [
+    "a_single_candle_flame_flickers_1767581095602"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767581167184_l53lyj"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Wide shot of absolute darkness, a single candle emerges in the lower third of frame, its tiny flame a pinprick of amber light against the void. Eye-level camera remains perfectly still as the flame flickers gently, casting minimal illumination that barely penetrates the surrounding blackness. Wisps of smoke curl upward through the darkness, catching faint highlights from the flame below. The candle base dissolves into shadow, its form suggested rather than revealed. Intimate macro photography with extremely shallow depth of field focuses solely on the flame while everything else falls into soft obscurity. Deep blacks dominate the frame with the warm amber glow providing the only light source, creating stark contrast. The vast negative space above the candle emphasizes isolation and mystery. Subtle variations in the darkness hint at unseen depths. The flame's micro-movements and smoke patterns provide the only motion in this contemplative, 6-second meditation on light and void.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b37055b134cbea8066c84a40398a518c3d3f0a3de899b7afb9f705a9a607296a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Wide shot of absolute darkness, a single candle emerges in the lower third of frame, its tiny flame a pinprick of amber light against the void. Eye-level camera remains perfectly still as the flame flickers gently, casting minimal illumination that barely penetrates the surrounding blackness. Wisps of smoke curl upward through the darkness, catching faint highlights from the flame below. The candle base dissolves into shadow, its form suggested rather than revealed. Intimate macro photography with extremely shallow depth of field focuses solely on the flame while everything else falls into soft obscurity. Deep blacks dominate the frame with the warm amber glow providing the only light source, creating stark contrast. The vast negative space above the candle emphasizes isolation and mystery. Subtle variations in the darkness hint at unseen depths. The flame's micro-movements and smoke patterns provide the only motion in this contemplative, 6-second meditation on light and void.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b37055b134cbea8066c84a40398a518c3d3f0a3de899b7afb9f705a9a607296a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:45:04.170Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a white candle being lit and burning against a pure black background. The sequence shows the progression from initial ignition with a tiny flame to a fully developed, steady burning flame with characteristic yellow-orange coloring and subtle smoke wisps rising upward.",
+      "transcript": "You",
+      "tags": [
+        "against",
+        "black",
+        "brightly",
+        "burning",
+        "candle",
+        "captures",
+        "center",
+        "completely",
+        "continues",
+        "cylindrical",
+        "developed",
+        "displays",
+        "elongated",
+        "established",
+        "flame",
+        "frame",
+        "fully",
+        "lit",
+        "lower",
+        "maintains",
+        "medium",
+        "now",
+        "positioned",
+        "pure",
+        "speech",
+        "steadily",
+        "tall",
+        "vertical",
+        "video",
+        "well",
+        "white",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A white cylindrical candle positioned in the lower center of the frame against a completely black background. The candle has just been lit, showing a tiny orange-red flame at the tip of the wick. The flame is very small and appears to be in its initial ignition stage. The candle appears to be a standard pillar-style white wax candle. The composition is minimalist with strong contrast between the white candle and dark surroundings. The camera angle is straight-on at eye level."
+        },
+        {
+          "seconds": 3,
+          "text": "The white candle now displays a fully developed, tall flame burning brightly. The flame shows classic teardrop shape with a bright white-yellow core transitioning to orange at the edges, and a blue base near the wick. Subtle gray smoke wisps are visible rising and dispersing in the upper portion of the frame. The flame illuminates the top portion of the white candle body. The black background remains consistent, creating dramatic contrast with the warm flame colors."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The candle continues burning steadily with a well-established flame. The flame maintains its elongated teardrop shape with the characteristic color gradient from bright white-yellow center to orange outer edges and blue base. The white candle body is partially visible at the bottom of frame. The background remains pure black, emphasizing the warm glow of the flame. A subtle warm ambient glow surrounds the flame area. The composition remains centered and minimalist."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "black",
+    "brightly",
+    "burning",
+    "candle",
+    "captures",
+    "center",
+    "completely",
+    "continues",
+    "cylindrical",
+    "developed",
+    "displays",
+    "elongated",
+    "established",
+    "flame",
+    "frame",
+    "fully",
+    "lit",
+    "lower",
+    "maintains",
+    "medium",
+    "now",
+    "positioned",
+    "pure",
+    "speech",
+    "steadily",
+    "tall",
+    "vertical",
+    "video",
+    "well",
+    "white",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

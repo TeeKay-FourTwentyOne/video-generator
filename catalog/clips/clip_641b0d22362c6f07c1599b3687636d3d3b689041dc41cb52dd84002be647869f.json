@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_641b0d22362c6f07c1599b3687636d3d3b689041dc41cb52dd84002be647869f",
+  "sha256": "641b0d22362c6f07c1599b3687636d3d3b689041dc41cb52dd84002be647869f",
+  "bytes": 3391268,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "gravity_memories_shot_2_1766616464850.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:gravity_memories_shot_2_1766616464850"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Red canvas sneaker floating and rotating against golden backlit atmosphere. The clip transitions from an abstract lens flare to reveal the shoe tumbling weightlessly, creating a nostalgic memory-like feeling.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "atmosphere",
+        "backlit",
+        "canvas",
+        "clearly",
+        "clip",
+        "continues",
+        "curved",
+        "dangling",
+        "dominates",
+        "dramatic",
+        "flare",
+        "floating",
+        "frame",
+        "golden",
+        "heel",
+        "intense",
+        "laces",
+        "lens",
+        "medium",
+        "now",
+        "object",
+        "possibly",
+        "red",
+        "rim",
+        "rotating",
+        "showing",
+        "side",
+        "silent",
+        "silhouetted",
+        "sneaker",
+        "visible",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Intense golden lens flare dominates the frame with a silhouetted curved object (possibly the sneaker) partially visible. Warm amber light creates an overexposed, dreamlike quality. Strong backlight obscures details."
+        },
+        {
+          "seconds": 4,
+          "text": "Red canvas sneaker now clearly visible, floating with white laces dangling. Golden hour backlighting with bokeh circles in background. The shoe rotates slowly showing its side profile with white rubber sole stripe."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The red sneaker continues rotating, now showing more of the heel and side. Dramatic rim lighting outlines the shoe shape. Warm golden atmosphere persists with scattered light particles visible."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "atmosphere",
+    "backlit",
+    "canvas",
+    "clearly",
+    "clip",
+    "continues",
+    "curved",
+    "dangling",
+    "dominates",
+    "dramatic",
+    "flare",
+    "floating",
+    "frame",
+    "golden",
+    "heel",
+    "intense",
+    "laces",
+    "lens",
+    "medium",
+    "now",
+    "object",
+    "possibly",
+    "red",
+    "rim",
+    "rotating",
+    "showing",
+    "side",
+    "silent",
+    "silhouetted",
+    "sneaker",
+    "visible",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

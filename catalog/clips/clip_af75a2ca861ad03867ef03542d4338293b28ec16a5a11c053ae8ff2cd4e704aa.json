@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_af75a2ca861ad03867ef03542d4338293b28ec16a5a11c053ae8ff2cd4e704aa",
+  "sha256": "af75a2ca861ad03867ef03542d4338293b28ec16a5a11c053ae8ff2cd4e704aa",
+  "bytes": 4041824,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot_3-2_r1.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

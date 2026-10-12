@@ -7,7 +7,8 @@ import { createLedger, readLedger, updateSpend, budgetSummary } from '../../mcp/
 import { qualifyRunway, prepareRunwayRequest } from '../../mcp/video-generator/dist/production/runway-spec.js';
 import { submitRunwayGeneration, pollRunwayOperation, interpretRunwayTask, getRunwayAccount,
   recoverRunwayOperation, downloadRunwayVideo } from '../../mcp/video-generator/dist/clients/runway.js';
-import { main, readJson, hashFile, videoProvider } from './film.mjs';
+import { main as filmMain, readJson, hashFile, videoProvider } from './film.mjs';
+const main = args => filmMain(args, { catalogRoot: args[1] && path.isAbsolute(args[1]) ? path.join(args[1], 'catalog-fixture') : undefined });
 
 const credential = 'synthetic-runway-credential';
 const id = '00000000-0000-4000-8000-000000000001';

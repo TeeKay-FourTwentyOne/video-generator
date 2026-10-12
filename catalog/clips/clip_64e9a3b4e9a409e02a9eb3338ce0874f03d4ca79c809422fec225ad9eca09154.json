@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_64e9a3b4e9a409e02a9eb3338ce0874f03d4ca79c809422fec225ad9eca09154",
+  "sha256": "64e9a3b4e9a409e02a9eb3338ce0874f03d4ca79c809422fec225ad9eca09154",
+  "bytes": 832586,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767544772679_5gkvo8.mp4"
+  ],
+  "collections": [
+    "sentient_stapler_comedy"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767544772679_5gkvo8"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Caucasian man in his late 50s with short graying hair and neat goatee sits motionless at his desk in a sterile corporate office, staring down at a red stapler with a resigned, deadpan expression. The camera holds a medium shot from slightly above, capturing his defeated posture against beige cubicle partitions and thick square support pillars. Cool fluorescent lights from the grid-patterned drop ceiling cast harsh, even illumination across the monochromatic greige and off-white environment. The accountant's eyes remain fixed on the stapler, his face conveying the quiet desperation of a man processing an absurd Tuesday morning revelation. Subtle ambient hum of fluorescent lights fills the uncomfortable silence. The shot maintains perfect stillness except for the barely perceptible rise and fall of his shoulders as he breathes, emphasizing the awkward pause before inevitable comedic payoff. Corporate office atmosphere feels suffocatingly mundane, with deep perspective showing rows of empty cubicles stretching into the background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b9defe32b5537c8121926fb11e8669c4ce0027590c3e1cad4477c596d0dea9f4",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Caucasian man in his late 50s with short graying hair and neat goatee sits motionless at his desk in a sterile corporate office, staring down at a red stapler with a resigned, deadpan expression. The camera holds a medium shot from slightly above, capturing his defeated posture against beige cubicle partitions and thick square support pillars. Cool fluorescent lights from the grid-patterned drop ceiling cast harsh, even illumination across the monochromatic greige and off-white environment. The accountant's eyes remain fixed on the stapler, his face conveying the quiet desperation of a man processing an absurd Tuesday morning revelation. Subtle ambient hum of fluorescent lights fills the uncomfortable silence. The shot maintains perfect stillness except for the barely perceptible rise and fall of his shoulders as he breathes, emphasizing the awkward pause before inevitable comedic payoff. Corporate office atmosphere feels suffocatingly mundane, with deep perspective showing rows of empty cubicles stretching into the background.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b9defe32b5537c8121926fb11e8669c4ce0027590c3e1cad4477c596d0dea9f4",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:38:50.593Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A middle-aged office worker in a blue dress shirt sits motionless at his desk, gazing contemplatively at a red Swingline stapler throughout the clip. The scene evokes the iconic 'Office Space' character Milton, with minimal movement and a melancholic atmosphere in a typical corporate cubicle environment. The single word 'you' is spoken during this brief, static scene.",
+      "transcript": "you",
+      "tags": [
+        "aged",
+        "blue",
+        "continues",
+        "desk",
+        "down",
+        "downward",
+        "dress",
+        "gazing",
+        "goatee",
+        "gray",
+        "hair",
+        "his",
+        "identical",
+        "maintaining",
+        "man",
+        "medium",
+        "middle",
+        "motionless",
+        "nearly",
+        "office",
+        "position",
+        "posture",
+        "red",
+        "remains",
+        "seated",
+        "shirt",
+        "sits",
+        "sitting",
+        "speech",
+        "still",
+        "worker",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A middle-aged man with gray hair and a gray goatee sits at a desk in an office cubicle environment. He wears a light blue button-down dress shirt and looks downward with a contemplative or slightly melancholic expression. In front of him on the beige desk sits a distinctive red Swingline stapler. The background shows typical office elements including fluorescent ceiling lights, beige cubicle partitions, and a white support column. The composition is centered, shot from a medium close-up angle."
+        },
+        {
+          "seconds": 2,
+          "text": "The same man remains seated at his desk, maintaining nearly identical posture and downward gaze toward the red stapler. His hands rest on the desk surface on either side of the stapler. The office setting remains unchanged with fluorescent lighting illuminating the scene evenly. His expression appears contemplative or resigned as he focuses on the stapler. The framing and composition remain consistent with the previous frame, creating a static, deliberate mood."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The man continues sitting at his desk in the same position, still gazing down at the red stapler with an unchanged expression. His hands remain positioned on the desk near the stapler. The office environment with cubicle walls, fluorescent lights, and white column remains visible in the blurred background. The consistent framing and minimal movement throughout creates a sense of stillness and quiet contemplation, emphasizing the man's apparent attachment to the stapler."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_018",
+      "name": "Milton",
+      "description": "Middle-aged man with grey hair and beard, blue dress shirt, looking down at red stapler on desk, office cubicle - Office Space vibes",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "aged",
+    "blue",
+    "continues",
+    "desk",
+    "down",
+    "downward",
+    "dress",
+    "gazing",
+    "goatee",
+    "gray",
+    "hair",
+    "his",
+    "identical",
+    "maintaining",
+    "man",
+    "medium",
+    "middle",
+    "motionless",
+    "nearly",
+    "office",
+    "position",
+    "posture",
+    "red",
+    "remains",
+    "seated",
+    "shirt",
+    "sits",
+    "sitting",
+    "speech",
+    "still",
+    "worker",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

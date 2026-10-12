@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b1b2c070f6ceba38ea5e9247e8e71654e6ec4376494e76e8f6453212cebddb27",
+  "sha256": "b1b2c070f6ceba38ea5e9247e8e71654e6ec4376494e76e8f6453212cebddb27",
+  "bytes": 18202771,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V01-v1.mp4",
+    "veo_1791428236316_q7n15u.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Late afternoon, low golden sun and long shadows, dust hanging in the light. A high, wide view of a large modern archaeological excavation in a field at the edge of a forest: a rectangular trench the size of half a field, cut in stepped levels about a meter and a half deep, with straight walls and baulks of dark earth, string lines on pegs, aluminium ladders, wheelbarrows and buckets, a sieve station, and a white canopy with a table at the rim. The trench floor is dark wet earth with black water pooling in the lowest parts; in the deepest corner a square sondage holds a pool of black oily mud with a dull sheen. Eight people in muted field clothes and blue nitrile gloves work spread out through the trench, some standing shoulder-deep against the walls with mattocks and trowels, two carrying buckets up a ladder, one at the sieve. The camera drifts forward very slowly and smoothly over the site. Modern equipment only. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_32e5bab6a674b6dd1e91c057eda411e83ffa822a510bcd97f5e137d20d6b9d89",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 460703372,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

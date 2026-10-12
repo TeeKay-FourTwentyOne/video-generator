@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b6bf02bd9dd93a7440404d904868288060c7432e9f9cf1079fdea34a1b1a2586",
+  "sha256": "b6bf02bd9dd93a7440404d904868288060c7432e9f9cf1079fdea34a1b1a2586",
+  "bytes": 1753276,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 9.916667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 238,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot05.mp4"
+  ],
+  "collections": [
+    "model-weights"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

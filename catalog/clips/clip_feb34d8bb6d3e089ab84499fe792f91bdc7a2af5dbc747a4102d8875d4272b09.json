@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_feb34d8bb6d3e089ab84499fe792f91bdc7a2af5dbc747a4102d8875d4272b09",
+  "sha256": "feb34d8bb6d3e089ab84499fe792f91bdc7a2af5dbc747a4102d8875d4272b09",
+  "bytes": 966219,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767546772805_k96afu.mp4"
+  ],
+  "collections": [
+    "infinite_corridor"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767546772805_k96afu"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A fair-skinned woman in her 30s with short brown hair and medium build walks at a steady, measured pace down an endless institutional corridor with plain gray walls and highly reflective dark floors. She appears as a diminishing silhouette against the overwhelming geometric perspective of the hallway. The camera maintains a static low angle position behind her, emphasizing the relentless one-point perspective created by harsh fluorescent ceiling lights that stretch infinitely toward a distant vanishing point. Identical doors repeat endlessly along both walls. The lighting is stark and institutional with cool fluorescent tones casting the woman as a dark figure against the bright corridor. The composition is perfectly symmetrical and geometric, reminiscent of Kubrick's visual style. Colors are slightly desaturated with cool gray and blue tones dominating. Despite her continuous walking motion, the perspective creates the haunting illusion that no progress is being made toward the unreachable vanishing point. The woman's silhouette remains consistent in size and position, emphasizing the futility of the endless journey. Cinematic framing with moody, atmospheric lighting that reinforces the sense of infinite, inescapable geometry.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a1eab7e197fbf48706574d3a9e916499610c8fa7f26da09144e06c969c4bc710",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A fair-skinned woman in her 30s with short brown hair and medium build walks at a steady, measured pace down an endless institutional corridor with plain gray walls and highly reflective dark floors. She appears as a diminishing silhouette against the overwhelming geometric perspective of the hallway. The camera maintains a static low angle position behind her, emphasizing the relentless one-point perspective created by harsh fluorescent ceiling lights that stretch infinitely toward a distant vanishing point. Identical doors repeat endlessly along both walls. The lighting is stark and institutional with cool fluorescent tones casting the woman as a dark figure against the bright corridor. The composition is perfectly symmetrical and geometric, reminiscent of Kubrick's visual style. Colors are slightly desaturated with cool gray and blue tones dominating. Despite her continuous walking motion, the perspective creates the haunting illusion that no progress is being made toward the unreachable vanishing point. The woman's silhouette remains consistent in size and position, emphasizing the futility of the endless journey. Cinematic framing with moody, atmospheric lighting that reinforces the sense of infinite, inescapable geometry.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a1eab7e197fbf48706574d3a9e916499610c8fa7f26da09144e06c969c4bc710",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T17:12:09.341Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second vertical video clip shows a silhouetted figure walking steadily away from the camera down a long, sterile institutional corridor bathed in cool blue-gray lighting. The cinematography emphasizes symmetry, depth, and isolation through centered framing, strong perspective lines, and dramatic backlighting. The mood is mysterious and cinematic, suggesting a thriller or dramatic narrative.",
+      "transcript": null,
+      "tags": [
+        "away",
+        "camera",
+        "clip",
+        "continues",
+        "corridor",
+        "detail",
+        "distant",
+        "down",
+        "figure",
+        "hair",
+        "length",
+        "long",
+        "medium",
+        "now",
+        "person",
+        "progressed",
+        "second",
+        "shoulder",
+        "shows",
+        "silent",
+        "silhouetted",
+        "slightly",
+        "steadily",
+        "their",
+        "vertical",
+        "video",
+        "visible",
+        "walking",
+        "walks"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure with shoulder-length hair walks away from the camera down a long, sterile institutional corridor. The person appears to be wearing dark formal attire, possibly a suit. The hallway features cool blue-gray tones with fluorescent ceiling lights creating a stark, clinical atmosphere. Multiple dark doorways line both walls, creating strong perspective lines. The polished floor reflects the figure and lights. The composition is perfectly centered with dramatic backlighting creating a mysterious, cinematic mood."
+        },
+        {
+          "seconds": 2,
+          "text": "The same silhouetted figure continues walking down the corridor, now slightly further from the camera. The person maintains a steady, purposeful gait with arms at their sides. The institutional hallway remains unchanged with its cold blue lighting and symmetrical rows of doors. The fluorescent lights create bright spots along the ceiling while the figure remains in shadow. The reflective floor shows subtle mirror images. The centered framing and strong vanishing point create depth and tension."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The figure has progressed further down the corridor, now more distant from the camera. More detail is visible on their dark blazer/suit jacket due to the overhead lighting. The person's bob-length hair is more distinguishable. The sterile blue-gray corridor stretches ahead with its repeating pattern of doors and lights. The composition maintains perfect symmetry with the figure centered in frame. The floor's reflection and converging lines enhance the sense of depth and isolation."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "away",
+    "camera",
+    "clip",
+    "continues",
+    "corridor",
+    "detail",
+    "distant",
+    "down",
+    "figure",
+    "hair",
+    "length",
+    "long",
+    "medium",
+    "now",
+    "person",
+    "progressed",
+    "second",
+    "shoulder",
+    "shows",
+    "silent",
+    "silhouetted",
+    "slightly",
+    "steadily",
+    "their",
+    "vertical",
+    "video",
+    "visible",
+    "walking",
+    "walks"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

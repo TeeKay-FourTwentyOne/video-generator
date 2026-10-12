@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bc30aeddd36046b8d0829d737c16083d35bdaacbd3110411433e48e43b27faba",
+  "sha256": "bc30aeddd36046b8d0829d737c16083d35bdaacbd3110411433e48e43b27faba",
+  "bytes": 2090948,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S5_RAW.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Medium close-up. {{CORA_LOCK}} She writes in a ledger by lamplight at a small parlor desk, rain heavy on the windows. Three slow, deliberate knocks sound from the front door. Her pencil stops mid-stroke. She lifts only her eyes. Sound: rain; three unhurried knocks on a heavy wooden door; a pencil scratch that stops.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_af8f66e3f7ce35514bb38518d841a98d2a7794a372d9af9063ccb8ef13a026da",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

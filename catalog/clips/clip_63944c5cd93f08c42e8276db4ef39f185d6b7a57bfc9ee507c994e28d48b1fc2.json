@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_63944c5cd93f08c42e8276db4ef39f185d6b7a57bfc9ee507c994e28d48b1fc2",
+  "sha256": "63944c5cd93f08c42e8276db4ef39f185d6b7a57bfc9ee507c994e28d48b1fc2",
+  "bytes": 13397817,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S02-v1.cap.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

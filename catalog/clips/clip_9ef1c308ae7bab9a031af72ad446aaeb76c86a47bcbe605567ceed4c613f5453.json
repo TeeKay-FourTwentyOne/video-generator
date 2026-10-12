@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9ef1c308ae7bab9a031af72ad446aaeb76c86a47bcbe605567ceed4c613f5453",
+  "sha256": "9ef1c308ae7bab9a031af72ad446aaeb76c86a47bcbe605567ceed4c613f5453",
+  "bytes": 1294421,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hold_music_v1_shot_2_1766536079842.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:hold_music_v1_shot_2_1766536079842"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Two hands resting on desk while waiting on hold, showing more elaborate waiting posture. The interlaced fingers suggest patience mixed with restlessness.",
+      "transcript": null,
+      "tags": [
+        "continue",
+        "create",
+        "desk",
+        "doubled",
+        "elaborate",
+        "finger",
+        "fingers",
+        "hands",
+        "hold",
+        "interlaced",
+        "maintain",
+        "medium",
+        "movement",
+        "overlapping",
+        "patient",
+        "position",
+        "posture",
+        "repositioning",
+        "resting",
+        "sense",
+        "showing",
+        "silent",
+        "stronger",
+        "subtle",
+        "surface",
+        "their",
+        "two",
+        "vigil",
+        "visible",
+        "waiting",
+        "wedding",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two hands resting on wooden desk surface, fingers interlaced or overlapping. Wedding ring on left hand. Black phone visible but blurred in background. Body language suggests patient waiting."
+        },
+        {
+          "seconds": 3,
+          "text": "Hands maintain their position on the desk. The doubled hands create stronger sense of waiting than single hand. Phone remains defocused behind."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Subtle finger movement or repositioning visible. The hands continue their patient vigil. Warm wood tones contrast with the cold black phone in background."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "continue",
+    "create",
+    "desk",
+    "doubled",
+    "elaborate",
+    "finger",
+    "fingers",
+    "hands",
+    "hold",
+    "interlaced",
+    "maintain",
+    "medium",
+    "movement",
+    "overlapping",
+    "patient",
+    "position",
+    "posture",
+    "repositioning",
+    "resting",
+    "sense",
+    "showing",
+    "silent",
+    "stronger",
+    "subtle",
+    "surface",
+    "their",
+    "two",
+    "vigil",
+    "visible",
+    "waiting",
+    "wedding",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

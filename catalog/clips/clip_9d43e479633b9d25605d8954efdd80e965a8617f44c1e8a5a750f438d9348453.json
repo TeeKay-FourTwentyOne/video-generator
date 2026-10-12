@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9d43e479633b9d25605d8954efdd80e965a8617f44c1e8a5a750f438d9348453",
+  "sha256": "9d43e479633b9d25605d8954efdd80e965a8617f44c1e8a5a750f438d9348453",
+  "bytes": 5426649,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "V09-v1.mp4",
+    "veo_1791428262746_zualo1.mp4"
+  ],
+  "collections": [
+    "october"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Close-up at the edge of an excavation trench in soft low light. A blue nitrile-gloved hand drops a small dark object into a clear plastic zip bag held open by another blue nitrile-gloved hand; the bag is pressed closed between the fingers. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e1b09517c5183ceefc7f03941572fa5072d1cbaaa31f0cda76351f66b36c5203",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3275919516,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

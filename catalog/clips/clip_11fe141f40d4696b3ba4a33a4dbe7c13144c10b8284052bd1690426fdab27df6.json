@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_11fe141f40d4696b3ba4a33a4dbe7c13144c10b8284052bd1690426fdab27df6",
+  "sha256": "11fe141f40d4696b3ba4a33a4dbe7c13144c10b8284052bd1690426fdab27df6",
+  "bytes": 5597743,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 13.875,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 333,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "C-city-of-gold.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

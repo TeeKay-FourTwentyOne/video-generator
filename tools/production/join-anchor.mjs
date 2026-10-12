@@ -4,13 +4,14 @@
  */
 import fs from 'node:fs';
 import { command, hashFile, localPath, probe } from './film.mjs';
+import { resolveClip } from './clip-library.mjs';
 
-export function joinAnchor(root, source, frame, output) {
+export function joinAnchor(root, source, frame, output, { catalogRoot } = {}) {
   if (!Number.isSafeInteger(frame) || frame < 1)
     throw new Error('Continuation frame must be a positive integer with a preceding frame');
   if (typeof output !== 'string' || !output.endsWith('.png'))
     throw new Error('Continuation output must be a PNG');
-  const input = localPath(root, source), out = localPath(root, output);
+  const input = source.startsWith('clip_') ? resolveClip(source, catalogRoot) : localPath(root, source), out = localPath(root, output);
   const recordPath = out + '.json';
   if (fs.existsSync(out) || fs.existsSync(recordPath))
     throw new Error('Refusing to overwrite a continuation anchor or its record');

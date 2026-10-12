@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5bd1d2a4c499bbda983d4a0c96560d9a0035ae747e1bf9d08dc50abcaf62abf7",
+  "sha256": "5bd1d2a4c499bbda983d4a0c96560d9a0035ae747e1bf9d08dc50abcaf62abf7",
+  "bytes": 1547977,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 16,
+    "width": 2560,
+    "height": 1440,
+    "frameRate": "24/1",
+    "frameCount": 384,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "moth_test.mp4"
+  ],
+  "collections": [
+    "surveyors-table"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

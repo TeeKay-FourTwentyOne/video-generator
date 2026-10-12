@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_748dec3a496c3c951877a1172d1bd09f840ca7462e9c1e3e13c4eb18a706d646",
+  "sha256": "748dec3a496c3c951877a1172d1bd09f840ca7462e9c1e3e13c4eb18a706d646",
+  "bytes": 20379070,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot-2-take-4.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

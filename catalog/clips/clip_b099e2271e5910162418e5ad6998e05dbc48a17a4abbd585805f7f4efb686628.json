@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b099e2271e5910162418e5ad6998e05dbc48a17a4abbd585805f7f4efb686628",
+  "sha256": "b099e2271e5910162418e5ad6998e05dbc48a17a4abbd585805f7f4efb686628",
+  "bytes": 5486690,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 21.583333,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 518,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "seer_sequence_draft_v1_silent.mp4"
+  ],
+  "collections": [
+    "da-derga"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9d9b26bc9f8b7eecdb1f1d88cc2a5d7a4ee348d4d880628830d40c5ccc92c208",
+  "sha256": "9d9b26bc9f8b7eecdb1f1d88cc2a5d7a4ee348d4d880628830d40c5ccc92c208",
+  "bytes": 1175265,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539814977_eka7ey.mp4"
+  ],
+  "collections": [
+    "a_chef_prepares_a_simple_dish__1767539717092"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539814977_eka7ey"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A professional chef stands serenely in a sunlit kitchen, wearing a pristine white coat and perfectly positioned toque, hands resting confidently on a marble counter. Warm, golden afternoon sunlight streams through large windows, casting soft, natural shadows across the spacious workspace. Gleaming stainless steel pots, copper cookware, and vibrant fresh ingredients are artfully arranged around the kitchen counter. The chef remains perfectly still in a moment of quiet anticipation, embodying culinary mastery and readiness. Camera holds a medium shot with subtle handheld movement, capturing the serene atmosphere with documentary-style authenticity. The lighting is entirely natural, warm and golden, creating beautiful rim lighting on the chef's white uniform and highlighting the textures of the ingredients and kitchen surfaces.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d833acb719249e450182045d5360ab4d6d473b814158baa471790b7755f415eb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A professional chef stands serenely in a sunlit kitchen, wearing a pristine white coat and perfectly positioned toque, hands resting confidently on a marble counter. Warm, golden afternoon sunlight streams through large windows, casting soft, natural shadows across the spacious workspace. Gleaming stainless steel pots, copper cookware, and vibrant fresh ingredients are artfully arranged around the kitchen counter. The chef remains perfectly still in a moment of quiet anticipation, embodying culinary mastery and readiness. Camera holds a medium shot with subtle handheld movement, capturing the serene atmosphere with documentary-style authenticity. The lighting is entirely natural, warm and golden, creating beautiful rim lighting on the chef's white uniform and highlighting the textures of the ingredients and kitchen surfaces.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d833acb719249e450182045d5360ab4d6d473b814158baa471790b7755f415eb",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:16:02.859Z",
+      "parameters": {
+        "durationSeconds": 2,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video clip shows a professional chef in traditional white attire standing at a marble counter in an upscale kitchen, bathed in warm natural window light. The chef makes subtle hand movements near a cutting board while colorful vegetables are displayed in the foreground. The scene maintains a consistent contemplative mood with minimal action throughout the 4-second duration.",
+      "transcript": ". .",
+      "tags": [
+        "attire",
+        "both",
+        "breasted",
+        "chef",
+        "clip",
+        "coat",
+        "counter",
+        "double",
+        "hands",
+        "his",
+        "identical",
+        "maintains",
+        "male",
+        "marble",
+        "medium",
+        "nearly",
+        "now",
+        "placed",
+        "position",
+        "professional",
+        "remains",
+        "shows",
+        "speech",
+        "standing",
+        "tall",
+        "traditional",
+        "vertical",
+        "video",
+        "white"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A male chef in traditional white double-breasted chef's coat and tall white toque stands in profile view at a marble countertop in a professional kitchen. His hands rest near the counter as he gazes toward a window on the left. In the foreground, a white plate holds colorful bell peppers (red, yellow, green) and a lemon. Stainless steel pots sit on a gas stovetop behind him. Warm golden sunlight streams through the window, creating dramatic side lighting. Dark wooden shelving with copper cookware visible in background."
+        },
+        {
+          "seconds": 2,
+          "text": "The same chef remains in nearly identical position, standing at the marble counter in his white chef's uniform and toque. His right hand now reaches toward a wooden cutting board with vegetables while his left hand rests flat on the counter. The colorful vegetable plate remains in foreground. Warm natural light continues to illuminate the scene from the window. A green potted plant is visible near the window. The composition maintains the same profile angle with professional kitchen shelving in the dark background."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The chef maintains his standing position at the counter, now with both hands placed on the marble surface. His profile remains oriented toward the window with warm golden hour lighting casting soft shadows. The vegetable arrangement on the white plate is prominently visible in the lower left foreground. Stainless steel cookware on the gas range and dark wooden shelving create depth in the background. The overall composition emphasizes the chef's contemplative pose in this upscale kitchen environment with natural lighting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "attire",
+    "both",
+    "breasted",
+    "chef",
+    "clip",
+    "coat",
+    "counter",
+    "double",
+    "hands",
+    "his",
+    "identical",
+    "maintains",
+    "male",
+    "marble",
+    "medium",
+    "nearly",
+    "now",
+    "placed",
+    "position",
+    "professional",
+    "remains",
+    "shows",
+    "speech",
+    "standing",
+    "tall",
+    "traditional",
+    "vertical",
+    "video",
+    "white"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

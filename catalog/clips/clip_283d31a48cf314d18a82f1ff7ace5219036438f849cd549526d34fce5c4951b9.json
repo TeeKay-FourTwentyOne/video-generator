@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_283d31a48cf314d18a82f1ff7ace5219036438f849cd549526d34fce5c4951b9",
+  "sha256": "283d31a48cf314d18a82f1ff7ace5219036438f849cd549526d34fce5c4951b9",
+  "bytes": 63448495,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 576,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "meridian-house-documentary-24s-1080p.mp4"
+  ],
+  "collections": [
+    "meridian-house"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

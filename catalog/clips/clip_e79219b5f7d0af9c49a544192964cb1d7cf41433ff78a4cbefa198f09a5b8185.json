@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e79219b5f7d0af9c49a544192964cb1d7cf41433ff78a4cbefa198f09a5b8185",
+  "sha256": "e79219b5f7d0af9c49a544192964cb1d7cf41433ff78a4cbefa198f09a5b8185",
+  "bytes": 1972825,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767539813526_lhefxv.mp4"
+  ],
+  "collections": [
+    "a_chef_prepares_a_simple_dish__1767539717092"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767539813526_lhefxv"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Close-up shot of a chef's hands wielding a sharp knife in rapid, rhythmic chopping motions against a wooden cutting board. Steam erupts dramatically with each precise strike as fresh vegetables are diced, sending tiny droplets of moisture floating through the frame. The blade catches warm golden light with each movement, creating glinting reflections. Camera holds steady at a slight overhead angle, capturing the fluid, masterful technique of the chef's hands. Warm natural lighting bathes the scene with soft, honeyed tones typical of a professional kitchen. The chef's focused expression is partially visible in the upper portion of the frame, conveying intensity and expertise. Documentary-style cinematography with shallow depth of field keeps focus sharp on the cutting action while gently blurring the background. Each chop creates small puffs of steam that dance upward through the warm light, emphasizing the fresh, hot ingredients being prepared with precise, almost violent efficiency.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_24d212f69f96436e0c9610e6be15014f4c7ff2834d9c1be2bfd9010d61088eef",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Close-up shot of a chef's hands wielding a sharp knife in rapid, rhythmic chopping motions against a wooden cutting board. Steam erupts dramatically with each precise strike as fresh vegetables are diced, sending tiny droplets of moisture floating through the frame. The blade catches warm golden light with each movement, creating glinting reflections. Camera holds steady at a slight overhead angle, capturing the fluid, masterful technique of the chef's hands. Warm natural lighting bathes the scene with soft, honeyed tones typical of a professional kitchen. The chef's focused expression is partially visible in the upper portion of the frame, conveying intensity and expertise. Documentary-style cinematography with shallow depth of field keeps focus sharp on the cutting action while gently blurring the background. Each chop creates small puffs of steam that dance upward through the warm light, emphasizing the fresh, hot ingredients being prepared with precise, almost violent efficiency.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_24d212f69f96436e0c9610e6be15014f4c7ff2834d9c1be2bfd9010d61088eef",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T15:16:10.776Z",
+      "parameters": {
+        "durationSeconds": 1.5,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short cooking video captures a close-up view of skilled knife work, showing hands finely chopping what appears to be onions or garlic on a cutting board. The warm, atmospheric lighting and rising steam create a professional kitchen ambiance. Japanese speech thanks viewers for watching and wishes them a good day.",
+      "transcript": "私のビデオを見てくれてありがとう。良い一日を!",
+      "tags": [
+        "action",
+        "angle",
+        "blade",
+        "board",
+        "both",
+        "captures",
+        "catches",
+        "chopping",
+        "close",
+        "continuation",
+        "continues",
+        "cooking",
+        "cutting",
+        "different",
+        "frame",
+        "golden",
+        "hands",
+        "ingredients",
+        "knife",
+        "lighting",
+        "medium",
+        "minced",
+        "motion",
+        "now",
+        "positioned",
+        "short",
+        "shot",
+        "showing",
+        "skilled",
+        "speech",
+        "video",
+        "view",
+        "visible",
+        "warm",
+        "work"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of hands chopping ingredients on a cutting board in warm, golden lighting. A chef's knife is held in the right hand while the left hand guides the food. Finely diced white ingredients (appears to be onion or garlic) are visible on the wooden cutting board. Steam or smoke rises from the surface. The background is dark and blurred, with hints of white clothing visible. The composition creates an intimate, professional kitchen atmosphere with dramatic low-key lighting."
+        },
+        {
+          "seconds": 2,
+          "text": "Continuation of the chopping action with both hands visible in the frame. The knife blade catches the warm ambient light as it moves through the ingredients. The pile of finely minced white vegetables has grown slightly larger. A small piece of red ingredient (possibly tomato or pepper) is visible to the left. The shallow depth of field keeps focus on the cutting action while the background remains softly blurred. Steam continues to rise, adding atmosphere to the scene."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The chopping motion continues with the knife now positioned at a different angle through the minced ingredients. The chef's hands show skilled technique with curled fingers guiding the food safely. The warm golden lighting illuminates the cutting board surface and the growing pile of finely diced white vegetables. Wisps of steam or smoke are still visible. The intimate close-up framing emphasizes the culinary craftsmanship, with the dark background creating strong contrast against the lit work surface."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "action",
+    "angle",
+    "blade",
+    "board",
+    "both",
+    "captures",
+    "catches",
+    "chopping",
+    "close",
+    "continuation",
+    "continues",
+    "cooking",
+    "cutting",
+    "different",
+    "frame",
+    "golden",
+    "hands",
+    "ingredients",
+    "knife",
+    "lighting",
+    "medium",
+    "minced",
+    "motion",
+    "now",
+    "positioned",
+    "short",
+    "shot",
+    "showing",
+    "skilled",
+    "speech",
+    "video",
+    "view",
+    "visible",
+    "warm",
+    "work"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

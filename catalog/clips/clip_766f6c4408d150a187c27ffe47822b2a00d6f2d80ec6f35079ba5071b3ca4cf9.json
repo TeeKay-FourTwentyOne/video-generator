@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_766f6c4408d150a187c27ffe47822b2a00d6f2d80ec6f35079ba5071b3ca4cf9",
+  "sha256": "766f6c4408d150a187c27ffe47822b2a00d6f2d80ec6f35079ba5071b3ca4cf9",
+  "bytes": 1780377,
+  "extension": ".mov",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4.5,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 108,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s24le"
+  },
+  "labels": [
+    "EX04-still.mov"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

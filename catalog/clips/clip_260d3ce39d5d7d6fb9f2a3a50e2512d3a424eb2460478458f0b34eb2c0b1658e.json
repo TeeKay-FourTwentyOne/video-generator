@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_260d3ce39d5d7d6fb9f2a3a50e2512d3a424eb2460478458f0b34eb2c0b1658e",
+  "sha256": "260d3ce39d5d7d6fb9f2a3a50e2512d3a424eb2460478458f0b34eb2c0b1658e",
+  "bytes": 14673636,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s5bv2_windup.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_03dd35865fd574dc2d4972697b65b6da1d1dcd288bd294dbeb266edc3262086e",
+  "sha256": "03dd35865fd574dc2d4972697b65b6da1d1dcd288bd294dbeb266edc3262086e",
+  "bytes": 104675350,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 121,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 2904,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "deep-time-1080p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

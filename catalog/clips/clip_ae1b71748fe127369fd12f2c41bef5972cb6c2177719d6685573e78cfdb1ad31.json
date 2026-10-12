@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ae1b71748fe127369fd12f2c41bef5972cb6c2177719d6685573e78cfdb1ad31",
+  "sha256": "ae1b71748fe127369fd12f2c41bef5972cb6c2177719d6685573e78cfdb1ad31",
+  "bytes": 8632552,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S05-v1.mp4",
+    "veo_1791078442131_mcjkm3.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Continue from this exact frame without stopping: one large plain rectangular WHITE LINEN SHEET is moving UP AND AWAY from the camera on an updraft. The sheet must become steadily SMALLER as it gains altitude; it is not falling toward the lens. The camera itself cranes UP vertically through the courtyard opening, so all four roof edges expand outward toward the image borders and then slide completely OUT of frame. By five seconds nothing surrounds the sheet except entirely clear hard BLUE SKY. The same sheet keeps billowing in broad loose folds, all corners connected, turning gently as it rises away toward the TOP of the frame. No ropes or pins attach to it, no new objects, no other cloth, no birds or people, no clouds, no cuts, no dissolve. It never comes toward the camera, never gets larger, never drops down through the shaft. Photoreal daylight, smooth continuous upward camera move, natural light, eight seconds, silent.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_293209875c2cfca6e4ee17e635c661aca3f038f43e82caa6ee4a7ea2685f8fd0",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1029159914,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

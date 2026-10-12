@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3d362f1e2a08089dfb0f2a2bdcee917b943e9abfb554b1bc011954ae62e68fc6",
+  "sha256": "3d362f1e2a08089dfb0f2a2bdcee917b943e9abfb554b1bc011954ae62e68fc6",
+  "bytes": 5078205,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "molten.mp4"
+  ],
+  "collections": [
+    "full-disclosure"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

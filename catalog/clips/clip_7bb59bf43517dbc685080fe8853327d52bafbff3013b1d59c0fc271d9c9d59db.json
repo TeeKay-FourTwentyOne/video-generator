@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7bb59bf43517dbc685080fe8853327d52bafbff3013b1d59c0fc271d9c9d59db",
+  "sha256": "7bb59bf43517dbc685080fe8853327d52bafbff3013b1d59c0fc271d9c9d59db",
+  "bytes": 5558264,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "large_younger.mp4"
+  ],
+  "collections": [
+    "june-2026"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7c7edd0a0d68b943f7ecd3b449f0270963a5875cd9a4aaac7e9611a7840cd0bb",
+  "sha256": "7c7edd0a0d68b943f7ecd3b449f0270963a5875cd9a4aaac7e9611a7840cd0bb",
+  "bytes": 23376780,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "b1_loom.mp4"
+  ],
+  "collections": [
+    "instar"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

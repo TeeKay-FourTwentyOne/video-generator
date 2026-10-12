@@ -10,7 +10,8 @@ import {
   buildObjectName,
   inferImageMimeType,
 } from "./gcs.js";
-import { VIDEO_DIR, resolvePath } from "../utils/paths.js";
+import { resolvePath } from "../utils/paths.js";
+import { importClip, generationMetadata, REPO } from "../../../../tools/production/clip-library.mjs";
 import { loadConfig } from "../utils/config.js";
 
 const VEO_MODEL_DEFAULT = "veo-3.1-generate-001";
@@ -50,6 +51,8 @@ export interface VeoDownloadResult {
   filename: string;
   path: string;
   duration: number | null;
+  clipId: string;
+  sha256: string;
 }
 
 /**
@@ -239,7 +242,8 @@ export function interpretVeoOperation(raw: unknown, operationName: string): VeoP
  * Download video from Veo result and save to disk
  */
 export async function downloadVeoVideo(
-  result: VeoPollResult
+  result: VeoPollResult,
+  options: { request?: Record<string, unknown>; generationSource?: string; catalogRoot?: string } = {}
 ): Promise<VeoDownloadResult> {
   if (!result.video) {
     throw new Error("No video in result");
@@ -248,11 +252,12 @@ export async function downloadVeoVideo(
   const timestamp = Date.now();
   const randomId = Math.random().toString(36).substring(2, 8);
   const filename = `veo_${timestamp}_${randomId}.mp4`;
-  const outputPath = path.join(VIDEO_DIR, filename);
+  const incoming = path.join(options.catalogRoot ?? REPO, 'data/clips/.incoming');
+  const outputPath = path.join(incoming, filename);
 
   // Ensure video directory exists
-  if (!fs.existsSync(VIDEO_DIR)) {
-    fs.mkdirSync(VIDEO_DIR, { recursive: true });
+  if (!fs.existsSync(incoming)) {
+    fs.mkdirSync(incoming, { recursive: true });
   }
 
   const gcsUri = result.video.gcsUri || result.video.uri;
@@ -267,13 +272,16 @@ export async function downloadVeoVideo(
     throw new Error("No video data or URI in result");
   }
 
-  // Get video duration via ffprobe
-  const duration = await getVideoDuration(outputPath);
+  const clip = importClip(outputPath, { kind: 'source',
+    generations: [generationMetadata({ ...options.request, provider: 'veo' }, options.generationSource)] }, options.catalogRoot);
+  fs.unlinkSync(outputPath);
 
   return {
-    filename,
-    path: `/video/${filename}`,
-    duration,
+    filename: `${clip.id}.mp4`,
+    path: clip.path,
+    duration: clip.record.technical.durationSeconds,
+    clipId: clip.id,
+    sha256: clip.sha256,
   };
 }
 
@@ -305,22 +313,4 @@ async function downloadFromGcs(
 
   const arrayBuffer = await response.arrayBuffer();
   return Buffer.from(arrayBuffer);
-}
-
-/**
- * Get video duration using ffprobe
- */
-async function getVideoDuration(filepath: string): Promise<number | null> {
-  const { execFile } = await import("child_process");
-  const { promisify } = await import("util");
-  const execAsync = promisify(execFile);
-
-  try {
-    const { stdout } = await execAsync(
-      "ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", filepath]
-    );
-    return parseFloat(stdout.trim());
-  } catch {
-    return null;
-  }
 }

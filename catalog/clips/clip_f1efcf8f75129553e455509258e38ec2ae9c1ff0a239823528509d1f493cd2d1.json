@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f1efcf8f75129553e455509258e38ec2ae9c1ff0a239823528509d1f493cd2d1",
+  "sha256": "f1efcf8f75129553e455509258e38ec2ae9c1ff0a239823528509d1f493cd2d1",
+  "bytes": 3253128,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S6_NORM.mp4"
+  ],
+  "collections": [
+    "lodger-ep01"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "paired-media-record",
+      "prompt": "Tall shot down a narrow entry hall. {{CORA_LOCK}} Seen from behind, she walks slowly away from the camera down the hall toward the closed front door, carrying her burning brass oil lamp, a steep staircase rising dark beside her, the camera holding static. The front door remains closed for the entire shot; she does not reach the door and does not turn around. Evening rain-dark glass in the door's oval window. Sound: rain; her slow footsteps on wooden boards; fabric moving.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_51529ae68800b502bae0cc28e55a23f1f57fe9ad29e0aeda449d677f3a60548f",
+      "provider": null,
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

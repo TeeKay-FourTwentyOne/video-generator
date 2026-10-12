@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4b6948f42bdd3465968149e279efbc18f1d590918c9dfb41f2c6258c64efee8e",
+  "sha256": "4b6948f42bdd3465968149e279efbc18f1d590918c9dfb41f2c6258c64efee8e",
+  "bytes": 4334025,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 2.916667,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 70,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "segment-03.mp4"
+  ],
+  "collections": [
+    "walla"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

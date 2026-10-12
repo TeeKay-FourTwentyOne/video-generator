@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2e29d99cfc6ecf77164611f59bf356e0b0769d0ce78a8f02c3d5dfed91dfa5e8",
+  "sha256": "2e29d99cfc6ecf77164611f59bf356e0b0769d0ce78a8f02c3d5dfed91dfa5e8",
+  "bytes": 917747,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767492000180_i8bq4p.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767492000180_i8bq4p"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A luminous full moon glows brilliantly at the center of a deep black night sky, partially veiled by dark wispy clouds that drift gracefully across its surface. The clouds move slowly and organically, creating an ethereal dance as they alternately obscure and reveal portions of the moon's radiant face. Static camera holds a steady, centered composition capturing the moon in perfect symmetry. The stark contrast between the moon's bright luminescence and the inky darkness creates dramatic chiaroscuro lighting. Wisps of cloud material flow like silk across the lunar surface, their edges softly illuminated by moonlight. The atmosphere is profoundly serene and contemplative, with deep blacks maintaining rich detail in the shadows while the moon serves as the sole light source. Cinematic night photography aesthetic with pristine clarity and gentle, hypnotic cloud movement that enhances the meditative quality of the nocturnal scene.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e0f579ce132300b4db809a8673fec0a54aa9417c5ec579a1a753042fe19f7bcf",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A luminous full moon glows brilliantly at the center of a deep black night sky, partially veiled by dark wispy clouds that drift gracefully across its surface. The clouds move slowly and organically, creating an ethereal dance as they alternately obscure and reveal portions of the moon's radiant face. Static camera holds a steady, centered composition capturing the moon in perfect symmetry. The stark contrast between the moon's bright luminescence and the inky darkness creates dramatic chiaroscuro lighting. Wisps of cloud material flow like silk across the lunar surface, their edges softly illuminated by moonlight. The atmosphere is profoundly serene and contemplative, with deep blacks maintaining rich detail in the shadows while the moon serves as the sole light source. Cinematic night photography aesthetic with pristine clarity and gentle, hypnotic cloud movement that enhances the meditative quality of the nocturnal scene.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e0f579ce132300b4db809a8673fec0a54aa9417c5ec579a1a753042fe19f7bcf",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T01:59:13.988Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a full moon against a dark night sky over approximately 6 seconds, with clouds drifting across the frame creating changing atmospheric conditions. The moon remains the constant central subject while surrounding clouds shift position and catch varying amounts of moonlight. The clip concludes with a spoken 'Thank you for watching' indicating this is likely the end of a longer video about the moon or night sky.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "against",
+        "appearing",
+        "black",
+        "bright",
+        "captures",
+        "center",
+        "centered",
+        "central",
+        "continues",
+        "dark",
+        "different",
+        "dominates",
+        "focal",
+        "frame",
+        "full",
+        "luminous",
+        "medium",
+        "moon",
+        "night",
+        "over",
+        "pitch",
+        "point",
+        "portion",
+        "position",
+        "positioned",
+        "remains",
+        "sky",
+        "slightly",
+        "smaller",
+        "speech",
+        "thank",
+        "upper",
+        "vertical",
+        "video",
+        "watching",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A bright, luminous full moon dominates the center of the frame against a pitch-black night sky. The moon displays visible surface details including craters and maria (dark patches). Wispy clouds are visible in the lower left and right portions of the frame, with some clouds showing warm amber tones from moonlight illumination. The composition is vertical (portrait orientation) with the moon positioned slightly above center. The stark contrast between the bright white-gray moon and the dark sky creates a dramatic, atmospheric nighttime scene."
+        },
+        {
+          "seconds": 3,
+          "text": "The full moon remains centered in the frame, appearing slightly smaller or at a different position than the first frame. Dark clouds have moved across the sky, now visible above and below the moon, creating a more dramatic atmospheric effect. The clouds appear as dark gray silhouettes against the black sky. The moon's surface features remain clearly visible with its characteristic craters and light-dark patterns. The overall mood is mysterious and serene, with the moonlight creating subtle illumination on the surrounding cloud edges."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The full moon continues to be the central focal point, positioned in the upper-center portion of the frame. The moon appears bright and fully illuminated with visible surface details. Cloud formations have shifted, with darker clouds visible on the left side and lighter, amber-tinted clouds appearing in the lower right portion of the frame. The composition maintains the vertical portrait orientation with the moon against the deep black night sky. The scene conveys a peaceful, contemplative nighttime atmosphere."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "against",
+    "appearing",
+    "black",
+    "bright",
+    "captures",
+    "center",
+    "centered",
+    "central",
+    "continues",
+    "dark",
+    "different",
+    "dominates",
+    "focal",
+    "frame",
+    "full",
+    "luminous",
+    "medium",
+    "moon",
+    "night",
+    "over",
+    "pitch",
+    "point",
+    "portion",
+    "position",
+    "positioned",
+    "remains",
+    "sky",
+    "slightly",
+    "smaller",
+    "speech",
+    "thank",
+    "upper",
+    "vertical",
+    "video",
+    "watching",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

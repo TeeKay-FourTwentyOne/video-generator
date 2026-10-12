@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7197a9cab48a65d01bd4b9442c631c64f5303b1773155e15e9decb4e4e21929b",
+  "sha256": "7197a9cab48a65d01bd4b9442c631c64f5303b1773155e15e9decb4e4e21929b",
+  "bytes": 2765465,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767545623178_jhqw52.mp4"
+  ],
+  "collections": [
+    "style_shift_character_only"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767545623178_jhqw52"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A Black woman in her 20s with very short, curly black hair walks confidently down a city street at dusk. She is rendered in bold anime cel-shaded style with thick black outlines, flat saturated colors, and stylized facial features, contrasting dramatically against the photorealistic environment around her. Traditional multi-story brick buildings line both sides of the street creating deep perspective, all rendered in hyper-realistic detail. Warm amber streetlights and glowing storefronts cast realistic lighting and shadows on the pavement while the dark blue dusk sky overhead appears naturally atmospheric. The camera follows her with a steady tracking shot at eye level, maintaining smooth forward movement as she strides purposefully through this mixed reality where only she exists as an animated character in an otherwise completely realistic urban setting. Her cel-shaded form moves with fluid anime-style animation while interacting naturally with the photorealistic lighting and environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_14867fecc24d0756df28d02e6ea9767c230da190a2240f2abeda1dab1b7d7c58",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A Black woman in her 20s with very short, curly black hair walks confidently down a city street at dusk. She is rendered in bold anime cel-shaded style with thick black outlines, flat saturated colors, and stylized facial features, contrasting dramatically against the photorealistic environment around her. Traditional multi-story brick buildings line both sides of the street creating deep perspective, all rendered in hyper-realistic detail. Warm amber streetlights and glowing storefronts cast realistic lighting and shadows on the pavement while the dark blue dusk sky overhead appears naturally atmospheric. The camera follows her with a steady tracking shot at eye level, maintaining smooth forward movement as she strides purposefully through this mixed reality where only she exists as an animated character in an otherwise completely realistic urban setting. Her cel-shaded form moves with fluid anime-style animation while interacting naturally with the photorealistic lighting and environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_14867fecc24d0756df28d02e6ea9767c230da190a2240f2abeda1dab1b7d7c58",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T16:52:49.994Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This animated clip shows a stylized Black woman walking confidently down an urban street at twilight, rendered in a flat cartoon style against a photorealistic city background. The camera appears to track backward as she approaches, creating a sense of forward movement. Japanese text audio accompanies the visual, thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "animated",
+        "approximately",
+        "black",
+        "camera",
+        "centered",
+        "clip",
+        "closer",
+        "confidently",
+        "continues",
+        "curly",
+        "down",
+        "forward",
+        "hair",
+        "medium",
+        "mid",
+        "moved",
+        "now",
+        "short",
+        "shown",
+        "shows",
+        "slightly",
+        "speech",
+        "stands",
+        "street",
+        "stylized",
+        "thigh",
+        "toward",
+        "urban",
+        "walking",
+        "woman"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "An animated Black woman with short curly hair stands centered in an urban street scene at dusk. She wears a bright yellow sleeveless turtleneck top and high-waisted blue pants with black heels. Gold hoop earrings accent her look. The background shows a photorealistic city street with brick buildings, warm street lamps, parked cars, and a deep blue twilight sky. The composition creates strong leading lines toward the subject, with warm orange lighting contrasting against the cool blue sky."
+        },
+        {
+          "seconds": 2,
+          "text": "The same animated woman continues walking forward toward the camera, now slightly closer in frame. Her posture shows confident forward motion with arms naturally at her sides. The urban nighttime setting remains consistent with glowing street lamps illuminating the wet cobblestone street. Brick apartment buildings with fire escapes line both sides. The contrast between her flat animated style and the photorealistic background creates a distinctive mixed-media aesthetic. Her shadow is visible on the ground."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The animated woman has moved closer to the camera, now shown from approximately mid-thigh up. Her facial features are more visible, showing a calm, confident expression. The yellow top and blue pants remain prominent against the warm-lit urban backdrop. The perspective emphasizes the narrow street corridor with buildings converging toward the blue evening sky. Street lamps continue to cast warm golden light on the wet pavement and building facades on both sides."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_021",
+      "name": "Hiro",
+      "description": "Athletic Black man running through Japanese street with cherry blossoms, colorful jacket, carrying basketball, anime-inspired style",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "animated",
+    "approximately",
+    "black",
+    "camera",
+    "centered",
+    "clip",
+    "closer",
+    "confidently",
+    "continues",
+    "curly",
+    "down",
+    "forward",
+    "hair",
+    "medium",
+    "mid",
+    "moved",
+    "now",
+    "short",
+    "shown",
+    "shows",
+    "slightly",
+    "speech",
+    "stands",
+    "street",
+    "stylized",
+    "thigh",
+    "toward",
+    "urban",
+    "walking",
+    "woman"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_35f4890498d044b9b89588d74c7413ce5a75da3e975c7e007448b005ad091493",
+  "sha256": "35f4890498d044b9b89588d74c7413ce5a75da3e975c7e007448b005ad091493",
+  "bytes": 19363289,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 30,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "angles-audition.mp4"
+  ],
+  "collections": [
+    "angles"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

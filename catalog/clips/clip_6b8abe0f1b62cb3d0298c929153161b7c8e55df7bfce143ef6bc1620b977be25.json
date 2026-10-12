@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6b8abe0f1b62cb3d0298c929153161b7c8e55df7bfce143ef6bc1620b977be25",
+  "sha256": "6b8abe0f1b62cb3d0298c929153161b7c8e55df7bfce143ef6bc1620b977be25",
+  "bytes": 2210570,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767660319744_43bom9.mp4"
+  ],
+  "collections": [
+    "noir_dialogue_test"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767660319744_43bom9"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A weathered detective in his 40s with a rumpled trench coat and loosened tie stands in deep shadow, filmed in extreme close-up focusing on his face. The camera holds steady on his features as harsh side lighting creates a stark division between light and shadow across his face. His jaw visibly tightens, the muscles flexing beneath weathered skin. As he processes a dark realization, a shadow slowly creeps across his eyes from above, plunging them into darkness while leaving his clenched jaw partially illuminated. He speaks with grim finality, his voice low and ominous: \"Neither do I.\" The background is completely underexposed to black, with only a cold blue rim light outlining his silhouette. The lighting emphasizes every line and crease in his face, creating a noir-style portrait of a man making a fateful decision. Shot on 9:16 vertical format with shallow depth of field, the focus remains razor-sharp on his tightening expression as darkness literally and metaphorically overtakes him.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eb41b48e1c6ccade6d9eec9381d5bf97e9db3aa558303427a30daa12751fe724",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A weathered detective in his 40s with a rumpled trench coat and loosened tie stands in deep shadow, filmed in extreme close-up focusing on his face. The camera holds steady on his features as harsh side lighting creates a stark division between light and shadow across his face. His jaw visibly tightens, the muscles flexing beneath weathered skin. As he processes a dark realization, a shadow slowly creeps across his eyes from above, plunging them into darkness while leaving his clenched jaw partially illuminated. He speaks with grim finality, his voice low and ominous: \"Neither do I.\" The background is completely underexposed to black, with only a cold blue rim light outlining his silhouette. The lighting emphasizes every line and crease in his face, creating a noir-style portrait of a man making a fateful decision. Shot on 9:16 vertical format with shallow depth of field, the focus remains razor-sharp on his tightening expression as darkness literally and metaphorically overtakes him.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eb41b48e1c6ccade6d9eec9381d5bf97e9db3aa558303427a30daa12751fe724",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T00:44:35.586Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 4-second vertical video clip features an extreme close-up of a man's face delivering the line 'Neither are I' in dramatic noir-style lighting. The consistent split lighting with warm tones on one side and cool blue on the other creates an intense, mysterious atmosphere throughout. The minimal movement focuses attention on the subject's subtle facial expressions as he speaks.",
+      "transcript": "Neither are I.",
+      "tags": [
+        "aged",
+        "clip",
+        "close",
+        "composition",
+        "consistent",
+        "continuing",
+        "delivering",
+        "dramatic",
+        "extreme",
+        "face",
+        "features",
+        "framing",
+        "his",
+        "identical",
+        "key",
+        "lighting",
+        "low",
+        "man",
+        "medium",
+        "middle",
+        "neither",
+        "remains",
+        "second",
+        "speech",
+        "split",
+        "tight",
+        "vertical",
+        "video",
+        "warm"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Extreme close-up of a middle-aged man's face in dramatic low-key lighting. Only his left eye and partial face are illuminated by warm light from the left, while cool blue light catches the right side of his face and neck. He wears a white dress shirt with dark tie. His expression is serious and intense, with visible facial stubble and skin texture. The background is completely black, creating a noir-style cinematic atmosphere. His mouth is closed in a neutral position."
+        },
+        {
+          "seconds": 2,
+          "text": "Same extreme close-up composition of the man's face with identical dramatic split lighting. His mouth is now slightly open as if speaking, consistent with the transcribed dialogue. The warm key light from the left illuminates his left eye, nose, and partial cheek, while blue fill light accents his right side. His expression appears more engaged, with visible tension in his features. The stark contrast between light and shadow creates a mysterious, intense mood."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Continuing the same tight close-up framing of the man's face. The lighting remains consistent with warm tones on the left and cool blue on the right. His mouth appears to be finishing speech, slightly parted. His blue-gray eye is visible and focused, conveying intensity. The white collar of his dress shirt is visible at the bottom of frame. The overall composition maintains the dramatic noir aesthetic with deep shadows obscuring half his face."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "aged",
+    "clip",
+    "close",
+    "composition",
+    "consistent",
+    "continuing",
+    "delivering",
+    "dramatic",
+    "extreme",
+    "face",
+    "features",
+    "framing",
+    "his",
+    "identical",
+    "key",
+    "lighting",
+    "low",
+    "man",
+    "medium",
+    "middle",
+    "neither",
+    "remains",
+    "second",
+    "speech",
+    "split",
+    "tight",
+    "vertical",
+    "video",
+    "warm"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

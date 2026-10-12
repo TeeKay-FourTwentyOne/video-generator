@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5868bc73d4bc3916731c6f0da6450bff71ed97018bb53e6b14acef8472a40983",
+  "sha256": "5868bc73d4bc3916731c6f0da6450bff71ed97018bb53e6b14acef8472a40983",
+  "bytes": 41835,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4.8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "s8.mp4"
+  ],
+  "collections": [
+    "burger-djinn"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

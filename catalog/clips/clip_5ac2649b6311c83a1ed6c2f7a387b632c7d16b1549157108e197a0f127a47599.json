@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5ac2649b6311c83a1ed6c2f7a387b632c7d16b1549157108e197a0f127a47599",
+  "sha256": "5ac2649b6311c83a1ed6c2f7a387b632c7d16b1549157108e197a0f127a47599",
+  "bytes": 1923937,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.583333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 62,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "PHONE_R.mp4"
+  ],
+  "collections": [
+    "september"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

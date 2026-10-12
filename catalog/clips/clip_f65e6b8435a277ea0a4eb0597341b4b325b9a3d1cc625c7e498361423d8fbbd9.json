@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f65e6b8435a277ea0a4eb0597341b4b325b9a3d1cc625c7e498361423d8fbbd9",
+  "sha256": "f65e6b8435a277ea0a4eb0597341b4b325b9a3d1cc625c7e498361423d8fbbd9",
+  "bytes": 2861446,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767578305787_3qxdkg.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767578225875"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767578305787_3qxdkg"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Through tired eyes, we see the dusty wooden floor stretching endlessly in the dim morning light. A wide view from low angle, as if we're collapsed on the ground, captures the desolate expanse of worn planks disappearing into shadow. The camera remains perfectly still, locked in this moment of emptiness. Harsh side-light cuts through grimy windows, creating stark patterns across the cold blue-grey monochrome space while film grain dances in the darker corners. The wooden floor appears infinite, each plank weathered and forgotten, bathed in flat, unforgiving light that emphasizes the vast negative space above. Dust particles hang motionless in the pale beams, suspended in the heavy stillness of abandonment. The extreme low angle makes the empty room feel crushing in its vastness, the floorboards leading nowhere, offering no comfort or warmth despite the morning hour.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_132ef83285886fa145d7b61a99ce42a03960113a447835ddf9f5d3b56b6d0535",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Through tired eyes, we see the dusty wooden floor stretching endlessly in the dim morning light. A wide view from low angle, as if we're collapsed on the ground, captures the desolate expanse of worn planks disappearing into shadow. The camera remains perfectly still, locked in this moment of emptiness. Harsh side-light cuts through grimy windows, creating stark patterns across the cold blue-grey monochrome space while film grain dances in the darker corners. The wooden floor appears infinite, each plank weathered and forgotten, bathed in flat, unforgiving light that emphasizes the vast negative space above. Dust particles hang motionless in the pale beams, suspended in the heavy stillness of abandonment. The extreme low angle makes the empty room feel crushing in its vastness, the floorboards leading nowhere, offering no comfort or warmth despite the morning hour.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_132ef83285886fa145d7b61a99ce42a03960113a447835ddf9f5d3b56b6d0535",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:57:11.839Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This atmospheric video clip shows a static scene of an old, abandoned interior space with weathered wooden floorboards, captured from a very low angle. Dramatic diagonal light beams stream through what appears to be a window, creating shifting patterns of light across the floor. The clip ends with a 'Thank you for watching' message, suggesting this is the conclusion of a longer video presentation.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "abandoned",
+        "across",
+        "aged",
+        "angle",
+        "area",
+        "atmospheric",
+        "camera",
+        "clip",
+        "closer",
+        "composition",
+        "dark",
+        "first",
+        "floor",
+        "floorboards",
+        "foreground",
+        "frame",
+        "illuminated",
+        "interior",
+        "low",
+        "maintaining",
+        "medium",
+        "now",
+        "old",
+        "perspective",
+        "positioned",
+        "scene",
+        "shifted",
+        "shot",
+        "showing",
+        "shows",
+        "similar",
+        "slightly",
+        "space",
+        "speech",
+        "static",
+        "thank",
+        "video",
+        "watching",
+        "weathered",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A dark, atmospheric interior scene showing weathered wooden floorboards in the foreground, shot from a very low angle. Dramatic diagonal light beams stream in from the upper left, likely from a window, creating a bright horizontal strip of illumination across the floor. The background shows a dimly lit wall with what appears to be rough stone or concrete texture. The color palette is predominantly cool blue-gray tones with high contrast between the bright light and deep shadows."
+        },
+        {
+          "seconds": 4,
+          "text": "Similar composition to the first frame, maintaining the low-angle perspective across the aged wooden floorboards. The light beams continue streaming diagonally from the upper left, with the illuminated strip on the floor appearing slightly more prominent. The worn texture of the wooden planks is clearly visible, showing scratches and weathering. A thin vertical line, possibly a wire or crack, is visible in the middle of the frame. The moody blue-gray color grading persists."
+        },
+        {
+          "seconds": 7.9,
+          "text": "The scene has shifted slightly, with the camera now positioned closer to the illuminated area on the floor. The bright light patch is more prominent and centered in the frame, revealing more detail in the weathered wooden floorboards. The diagonal light beams from the upper left are still visible but less pronounced. The floor texture shows significant wear, scratches, and debris. The overall lighting is brighter than previous frames while maintaining the cool blue-gray aesthetic."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abandoned",
+    "across",
+    "aged",
+    "angle",
+    "area",
+    "atmospheric",
+    "camera",
+    "clip",
+    "closer",
+    "composition",
+    "dark",
+    "first",
+    "floor",
+    "floorboards",
+    "foreground",
+    "frame",
+    "illuminated",
+    "interior",
+    "low",
+    "maintaining",
+    "medium",
+    "now",
+    "old",
+    "perspective",
+    "positioned",
+    "scene",
+    "shifted",
+    "shot",
+    "showing",
+    "shows",
+    "similar",
+    "slightly",
+    "space",
+    "speech",
+    "static",
+    "thank",
+    "video",
+    "watching",
+    "weathered",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

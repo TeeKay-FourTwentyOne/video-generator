@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a72eeeb5a68f8b667145e1e08b7c738b3c956f2e4c83f6a1208b63f800fc7c41",
+  "sha256": "a72eeeb5a68f8b667145e1e08b7c738b3c956f2e4c83f6a1208b63f800fc7c41",
+  "bytes": 354422,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "02-robot-performance-720p.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

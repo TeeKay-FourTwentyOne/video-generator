@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_145fc6a0df459853f81570b9abcba1737332e791c2e01339e0fbf7be5c2deb9c",
+  "sha256": "145fc6a0df459853f81570b9abcba1737332e791c2e01339e0fbf7be5c2deb9c",
+  "bytes": 4673250,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "musician_D_3.1_seed1756929755_run1.mp4",
+    "veo_1772417780229_5phf3e.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "legacy-job",
+      "prompt": "A lone musician plays a strange instrument on the rooftop of an abandoned building at twilight. The city stretches out below, lights flickering on. Something unexpected begins to happen in the sky above. Atmospheric, dreamlike, slow camera movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fca1cb9b446e12b6feb320c4a4648317931ac1eb6cf4704355559984bca55efa",
+      "provider": "veo",
+      "model": "veo-3.1-generate-preview",
+      "seed": 1756929755,
+      "createdAt": "2026-03-02T02:15:06.886Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

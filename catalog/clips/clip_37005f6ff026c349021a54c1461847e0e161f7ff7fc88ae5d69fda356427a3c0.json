@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_37005f6ff026c349021a54c1461847e0e161f7ff7fc88ae5d69fda356427a3c0",
+  "sha256": "37005f6ff026c349021a54c1461847e0e161f7ff7fc88ae5d69fda356427a3c0",
+  "bytes": 890741,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 1664,
+    "height": 936,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "lever.mp4"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

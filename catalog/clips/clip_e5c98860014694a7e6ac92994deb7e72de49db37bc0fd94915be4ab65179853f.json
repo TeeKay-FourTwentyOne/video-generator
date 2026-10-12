@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e5c98860014694a7e6ac92994deb7e72de49db37bc0fd94915be4ab65179853f",
+  "sha256": "e5c98860014694a7e6ac92994deb7e72de49db37bc0fd94915be4ab65179853f",
+  "bytes": 11754113,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s1_tenor.mp4"
+  ],
+  "collections": [
+    "hz-paradise"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

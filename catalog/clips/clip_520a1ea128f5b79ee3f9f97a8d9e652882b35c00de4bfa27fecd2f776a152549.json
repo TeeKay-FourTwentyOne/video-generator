@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_520a1ea128f5b79ee3f9f97a8d9e652882b35c00de4bfa27fecd2f776a152549",
+  "sha256": "520a1ea128f5b79ee3f9f97a8d9e652882b35c00de4bfa27fecd2f776a152549",
+  "bytes": 3428311,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "ramp_marionette_raw.mp4"
+  ],
+  "collections": [
+    "steamboat-wilhelm"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

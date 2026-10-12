@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_63a272848e0381e1dbc290f32eeecf217191a121f5b9482708bc280219dc90ae",
+  "sha256": "63a272848e0381e1dbc290f32eeecf217191a121f5b9482708bc280219dc90ae",
+  "bytes": 2232216,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Vampire_aristocrat_speaks_202604252118.mp4"
+  ],
+  "collections": [
+    "vascari-death-scene"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

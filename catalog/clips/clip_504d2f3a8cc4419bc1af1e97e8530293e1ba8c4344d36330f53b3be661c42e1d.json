@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_504d2f3a8cc4419bc1af1e97e8530293e1ba8c4344d36330f53b3be661c42e1d",
+  "sha256": "504d2f3a8cc4419bc1af1e97e8530293e1ba8c4344d36330f53b3be661c42e1d",
+  "bytes": 2152238,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "shot04_final.mp4"
+  ],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

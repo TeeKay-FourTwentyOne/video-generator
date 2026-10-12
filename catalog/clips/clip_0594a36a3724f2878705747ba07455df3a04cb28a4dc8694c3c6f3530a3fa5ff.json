@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0594a36a3724f2878705747ba07455df3a04cb28a4dc8694c3c6f3530a3fa5ff",
+  "sha256": "0594a36a3724f2878705747ba07455df3a04cb28a4dc8694c3c6f3530a3fa5ff",
+  "bytes": 1094309,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767513282935_liucem.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767513282935_liucem"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "A pristine glass vessel sits in perfect stillness, filled with crystal-clear water that acts as an undisturbed mirror surface. The camera holds a steady macro shot, capturing the vessel from a slightly elevated angle to showcase both the water's glassy surface and the elegant curves of the glass container. Soft, diffused natural light filters from above, creating gentle highlights along the rim of the vessel and subtle reflections that dance across the water's perfectly calm surface. The lighting is warm and ethereal, casting delicate shadows that enhance the vessel's translucent beauty. The background dissolves into a soft, neutral blur, maintaining focus on the meditative subject. Throughout the 4-second duration, the water remains in absolute stillness, with only the most subtle play of light creating gentle, almost imperceptible shifts in the surface reflections. The overall atmosphere is one of profound tranquility and contemplative silence, with the macro perspective revealing the pristine clarity and perfect smoothness of both glass and water in this moment of complete serenity.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_704c72855855ebc48e8e2c074786e620c76277cfbd2da3677e617e029d362fc0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "A pristine glass vessel sits in perfect stillness, filled with crystal-clear water that acts as an undisturbed mirror surface. The camera holds a steady macro shot, capturing the vessel from a slightly elevated angle to showcase both the water's glassy surface and the elegant curves of the glass container. Soft, diffused natural light filters from above, creating gentle highlights along the rim of the vessel and subtle reflections that dance across the water's perfectly calm surface. The lighting is warm and ethereal, casting delicate shadows that enhance the vessel's translucent beauty. The background dissolves into a soft, neutral blur, maintaining focus on the meditative subject. Throughout the 4-second duration, the water remains in absolute stillness, with only the most subtle play of light creating gentle, almost imperceptible shifts in the surface reflections. The overall atmosphere is one of profound tranquility and contemplative silence, with the macro perspective revealing the pristine clarity and perfect smoothness of both glass and water in this moment of complete serenity.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_704c72855855ebc48e8e2c074786e620c76277cfbd2da3677e617e029d362fc0",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-04T07:53:58.556Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This short vertical video clip shows a close-up view of a clear, spherical glass container filled with water. Throughout the clip, the water displays varying degrees of movement and turbulence, creating swirling patterns and light refractions. The camera remains stationary, focusing on the aesthetic interplay of light, glass, and water movement.",
+      "transcript": "you",
+      "tags": [
+        "bowl",
+        "clear",
+        "clip",
+        "close",
+        "container",
+        "continued",
+        "continues",
+        "displays",
+        "filled",
+        "frame",
+        "gentle",
+        "glass",
+        "inside",
+        "medium",
+        "movement",
+        "pronounced",
+        "remains",
+        "short",
+        "shot",
+        "showing",
+        "shown",
+        "shows",
+        "speech",
+        "spherical",
+        "surface",
+        "swirling",
+        "turbulence",
+        "vertical",
+        "vessel",
+        "video",
+        "view",
+        "water",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Close-up shot of a clear glass container or bowl filled with water. The water surface shows subtle movement and ripples. The glass has a rounded, spherical shape with a visible rim at the top. Light reflects off the water surface creating silvery highlights and refractions. The background is blurred with warm, neutral tones. The composition is centered on the vessel, shot from a slightly elevated angle looking down into the water."
+        },
+        {
+          "seconds": 2,
+          "text": "The same glass vessel continues to be shown in close-up. The water inside displays more pronounced swirling motion, with visible turbulence patterns creating cloudy, milky streaks in the otherwise clear water. The circular rim of the glass container is visible at the top of frame. Light continues to refract through the curved glass walls, creating bright highlights at the bottom. The camera maintains its steady, centered position."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The glass container remains in frame with water showing continued gentle movement. The turbulence has slightly settled compared to the middle frame, with the water appearing clearer. The spherical glass shape is prominent, with the curved walls creating optical distortions. Warm ambient lighting illuminates the scene from behind, creating a soft glow through the water and glass. The composition remains consistent with previous frames."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "bowl",
+    "clear",
+    "clip",
+    "close",
+    "container",
+    "continued",
+    "continues",
+    "displays",
+    "filled",
+    "frame",
+    "gentle",
+    "glass",
+    "inside",
+    "medium",
+    "movement",
+    "pronounced",
+    "remains",
+    "short",
+    "shot",
+    "showing",
+    "shown",
+    "shows",
+    "speech",
+    "spherical",
+    "surface",
+    "swirling",
+    "turbulence",
+    "vertical",
+    "vessel",
+    "video",
+    "view",
+    "water",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

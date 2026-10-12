@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fe9dbfa4f874d6ad416833d04a630131675be3402df6475668f3f5f98b7dd76e",
+  "sha256": "fe9dbfa4f874d6ad416833d04a630131675be3402df6475668f3f5f98b7dd76e",
+  "bytes": 50464,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4.25,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 102,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "touch_title_card.mp4"
+  ],
+  "collections": [
+    "touch-trailer"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

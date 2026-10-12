@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d5b36e6257a41d9b2d420f981092bc7ded9972252fffa65696a6cd3a50913796",
+  "sha256": "d5b36e6257a41d9b2d420f981092bc7ded9972252fffa65696a6cd3a50913796",
+  "bytes": 8265889,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "s2.mp4"
+  ],
+  "collections": [
+    "july-rose"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

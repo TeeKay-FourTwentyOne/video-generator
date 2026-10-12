@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_c1c134704ae3a1d0d938916268423db6ea87d298494decb66f9f66105a375454",
+  "projectId": "walla",
+  "editVersion": "edit/v3",
+  "segmentIndex": 5,
+  "shotId": "S06C",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 180,
+    "fps": 24
+  },
+  "timelineStartFrame": 488,
+  "outputSha256": "2b463c17147d4a9576747f515571069172568d20866733a2a282d93dc990949b",
+  "schemaVersion": 1,
+  "id": "use_11e43949118b6b8ce9e2c7c8a352e3275a87649978711a88e37b97a91e63ba7e"
+}

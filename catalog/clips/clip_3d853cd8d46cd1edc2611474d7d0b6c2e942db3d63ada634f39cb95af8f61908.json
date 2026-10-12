@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3d853cd8d46cd1edc2611474d7d0b6c2e942db3d63ada634f39cb95af8f61908",
+  "sha256": "3d853cd8d46cd1edc2611474d7d0b6c2e942db3d63ada634f39cb95af8f61908",
+  "bytes": 1199527,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767668893315_v4x18z.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767668893315_v4x18z"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium shot from behind a man's shoulder as he enters a dimly lit coffee shop, camera slowly pushing past him into the interior space. Tables and chairs emerge from soft blur in the foreground while cool fluorescent ceiling lights mix with warm Edison bulbs hanging at varying heights, creating dramatic pockets of light and shadow throughout the space. The camera continues its deliberate forward movement, gradually revealing a woman sitting alone at a table in the background, coming into sharp focus while she remains unaware, absorbed in her own thoughts. Naturalistic style with mysterious atmosphere, deep shadows contrasting with selective warm lighting, muted color palette with cool undertones. The scene captures a moment of quiet anticipation, hushed ambient sounds with the lingering echo of a doorbell chime.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_990ebf1af56baa600f4e88e3e64fc3d0e06244fc795f45e67671ad11410d009c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium shot from behind a man's shoulder as he enters a dimly lit coffee shop, camera slowly pushing past him into the interior space. Tables and chairs emerge from soft blur in the foreground while cool fluorescent ceiling lights mix with warm Edison bulbs hanging at varying heights, creating dramatic pockets of light and shadow throughout the space. The camera continues its deliberate forward movement, gradually revealing a woman sitting alone at a table in the background, coming into sharp focus while she remains unaware, absorbed in her own thoughts. Naturalistic style with mysterious atmosphere, deep shadows contrasting with selective warm lighting, muted color palette with cool undertones. The scene captures a moment of quiet anticipation, hushed ambient sounds with the lingering echo of a doorbell chime.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_990ebf1af56baa600f4e88e3e64fc3d0e06244fc795f45e67671ad11410d009c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:07:29.722Z",
+      "parameters": {
+        "durationSeconds": 3,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This clip captures a quiet moment in a rustic Japanese café, beginning with a silhouetted figure entering the space and revealing a lone woman in a blue sweater seated at a booth. The scene emphasizes the cozy, contemplative atmosphere through warm lighting, wooden interiors, and minimal activity, ending with Japanese text thanking viewers for watching.",
+      "transcript": "ご視聴ありがとうございました",
+      "tags": [
+        "adjusted",
+        "beginning",
+        "behind",
+        "caf",
+        "captures",
+        "center",
+        "clip",
+        "clothing",
+        "composition",
+        "cozy",
+        "dark",
+        "dominates",
+        "figure",
+        "floors",
+        "frame",
+        "identical",
+        "interior",
+        "japanese",
+        "left",
+        "medium",
+        "moment",
+        "nearly",
+        "previous",
+        "quiet",
+        "rustic",
+        "seen",
+        "shot",
+        "showing",
+        "silhouetted",
+        "slightly",
+        "speech",
+        "wearing",
+        "wide",
+        "wood",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A silhouetted figure seen from behind, wearing dark clothing, dominates the center-left of the frame. The person appears to be entering or standing in a dimly lit café or restaurant interior. The background shows blurred warm pendant lights, wood-paneled walls, and what appears to be booth seating. The shallow depth of field keeps the subject in soft focus while ambient lighting creates a moody, cinematic atmosphere. The composition suggests movement into the space."
+        },
+        {
+          "seconds": 2,
+          "text": "Wide interior shot of a cozy café with rustic wooden floors and dark wood wainscoting. A woman in a light blue sweater sits alone at a table along a dark green leather banquette. Warm Edison-style pendant bulbs hang from the ceiling. The left side shows a service counter with coffee equipment. Framed pictures adorn the walls, and natural light filters through windows. The space appears nearly empty, creating a quiet, contemplative mood."
+        },
+        {
+          "seconds": 3.9,
+          "text": "Nearly identical composition to the previous frame, showing the same café interior from a slightly adjusted angle. The woman in the blue sweater remains seated at the banquette, appearing to look down or to the side. The warm pendant lighting, wooden floors, coffee counter on the left, and dark green booth seating remain consistent. The scene maintains its calm, atmospheric quality with muted colors and soft natural lighting from the windows."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "adjusted",
+    "beginning",
+    "behind",
+    "caf",
+    "captures",
+    "center",
+    "clip",
+    "clothing",
+    "composition",
+    "cozy",
+    "dark",
+    "dominates",
+    "figure",
+    "floors",
+    "frame",
+    "identical",
+    "interior",
+    "japanese",
+    "left",
+    "medium",
+    "moment",
+    "nearly",
+    "previous",
+    "quiet",
+    "rustic",
+    "seen",
+    "shot",
+    "showing",
+    "silhouetted",
+    "slightly",
+    "speech",
+    "wearing",
+    "wide",
+    "wood",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

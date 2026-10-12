@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e768e4e6a3b1689cbd5aac8c57478dcb917d9da25727a71db71110f38ca1422f",
+  "sha256": "e768e4e6a3b1689cbd5aac8c57478dcb917d9da25727a71db71110f38ca1422f",
+  "bytes": 2945478,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669585711_4mfeae.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767669585711_4mfeae"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Two male friends in their 30s and 20s respectively continue their conversation in warm golden afternoon light, the scene bathed in soft, hopeful tones with gentle lens flare from a nearby window. Medium shot holds steady on both figures, the 30-something man on the left with an earnest, optimistic expression, the younger man on the right showing subtle acceptance. The camera remains static at eye level, capturing both in profile as they face each other, warm naturalistic lighting creating a gentle glow around their forms. Minimal movement as they maintain their positions, the atmosphere intimate and quietly uplifting with soft focus edges and golden hour quality to the light.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Please. Just for a minute?\"\n- FRIEND_1 (male, 20s, natural): \"Okay. Just... okay.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_45d352b284103ca1e94288a2c82ccc48de29427f1c6f39b5bc349b4a6b76eedf",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Two male friends in their 30s and 20s respectively continue their conversation in warm golden afternoon light, the scene bathed in soft, hopeful tones with gentle lens flare from a nearby window. Medium shot holds steady on both figures, the 30-something man on the left with an earnest, optimistic expression, the younger man on the right showing subtle acceptance. The camera remains static at eye level, capturing both in profile as they face each other, warm naturalistic lighting creating a gentle glow around their forms. Minimal movement as they maintain their positions, the atmosphere intimate and quietly uplifting with soft focus edges and golden hour quality to the light.\n\n---\nDIALOGUE:\n- FRIEND_2 (male, 30s, warm, optimistic): \"Please. Just for a minute?\"\n- FRIEND_1 (male, 20s, natural): \"Okay. Just... okay.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_45d352b284103ca1e94288a2c82ccc48de29427f1c6f39b5bc349b4a6b76eedf",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:18:51.802Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A warm, intimate scene of a man and woman having coffee together in a cozy industrial-style café with exposed brick walls. Their interaction progresses from initial conversation to a shared moment of connection, with both eventually looking down at their cups while smiling. The dialogue suggests a brief negotiation or request being accepted between them.",
+      "transcript": "Please. Just for a minute? Okay. Just. Okay.",
+      "tags": [
+        "across",
+        "beige",
+        "both",
+        "brick",
+        "caf",
+        "coffee",
+        "continues",
+        "conversation",
+        "couple",
+        "cozy",
+        "cups",
+        "down",
+        "engaged",
+        "exposed",
+        "genuine",
+        "having",
+        "holds",
+        "industrial",
+        "intimate",
+        "looking",
+        "man",
+        "medium",
+        "minute",
+        "now",
+        "okay",
+        "please",
+        "scene",
+        "sit",
+        "speech",
+        "subjects",
+        "sweater",
+        "table",
+        "their",
+        "together",
+        "warm",
+        "woman",
+        "wooden"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man and woman sit across from each other at a wooden table in a cozy café with exposed brick walls. The man on the left wears a cream-colored cable-knit sweater and holds a white coffee cup. The woman on the right wears a black leather jacket over a white top, with long dark hair. Both are smiling warmly at each other. Two steaming coffee cups with latte art sit on the table. Warm ambient lighting from pendant lamps creates a golden atmosphere. Other patrons are visible in the blurred background."
+        },
+        {
+          "seconds": 3,
+          "text": "The same café scene continues with the couple engaged in conversation. The man in the beige sweater holds his coffee cup while looking at the woman with a gentle smile. The woman in the black leather jacket smiles back, appearing to be listening. Steam rises from both coffee cups on the wooden table. The industrial-style café features exposed brick, large windows letting in natural light, and warm pendant lighting. Background patrons remain softly blurred, maintaining focus on the couple."
+        },
+        {
+          "seconds": 5.9,
+          "text": "Both subjects are now looking down at their coffee cups with warm, genuine smiles, suggesting a shared moment of connection or laughter. The man's hands rest near his cup while the woman reaches toward her steaming latte. The warm golden lighting continues to illuminate the scene. Their body language has shifted to a more intimate, synchronized posture. The café's cozy atmosphere with brick walls and ambient lighting remains consistent. The composition draws attention to their shared enjoyment of the moment."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "across",
+    "beige",
+    "both",
+    "brick",
+    "caf",
+    "coffee",
+    "continues",
+    "conversation",
+    "couple",
+    "cozy",
+    "cups",
+    "down",
+    "engaged",
+    "exposed",
+    "genuine",
+    "having",
+    "holds",
+    "industrial",
+    "intimate",
+    "looking",
+    "man",
+    "medium",
+    "minute",
+    "now",
+    "okay",
+    "please",
+    "scene",
+    "sit",
+    "speech",
+    "subjects",
+    "sweater",
+    "table",
+    "their",
+    "together",
+    "warm",
+    "woman",
+    "wooden"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

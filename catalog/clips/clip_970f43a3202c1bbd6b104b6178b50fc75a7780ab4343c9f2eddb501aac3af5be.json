@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_970f43a3202c1bbd6b104b6178b50fc75a7780ab4343c9f2eddb501aac3af5be",
+  "sha256": "970f43a3202c1bbd6b104b6178b50fc75a7780ab4343c9f2eddb501aac3af5be",
+  "bytes": 2788613,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767669593094_rlcsjx.mp4"
+  ],
+  "collections": [
+    "two_friends_meet_unexpectedly__1767668356193"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767669593094_rlcsjx"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Close two-shot across a café table, shallow depth of field rendering the busy coffee shop into soft bokeh behind two people in their late 20s. The camera drifts almost imperceptibly forward as they lean toward each other, animated with gentle laughter. Warm directional window light bathes their faces in golden hour tones, highlighting the authentic crinkles around their eyes as genuine smiles bloom. Coffee cups between them create an intimate geography, steam rising lazily in the soft light. The handheld camera movement is subtle and breathing, finally settling into a steady frame that holds them in this moment of rediscovered connection. Natural, documentary-style cinematography with warm color grading emphasizing skin tones.\n\n---\nDIALOGUE:\n- FRIEND_1 (male, 20s, natural): \"You still make that terrible face when you laugh.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0a2e825bc76086dba6cb9731872a5b0653aa5d048d8b33664155a483a372ec4c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Close two-shot across a café table, shallow depth of field rendering the busy coffee shop into soft bokeh behind two people in their late 20s. The camera drifts almost imperceptibly forward as they lean toward each other, animated with gentle laughter. Warm directional window light bathes their faces in golden hour tones, highlighting the authentic crinkles around their eyes as genuine smiles bloom. Coffee cups between them create an intimate geography, steam rising lazily in the soft light. The handheld camera movement is subtle and breathing, finally settling into a steady frame that holds them in this moment of rediscovered connection. Natural, documentary-style cinematography with warm color grading emphasizing skin tones.\n\n---\nDIALOGUE:\n- FRIEND_1 (male, 20s, natural): \"You still make that terrible face when you laugh.\"\n\nVOICE DIRECTION: Close-mic'd, clear audio, minimal room reverb. Natural speaking pace.\n---",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0a2e825bc76086dba6cb9731872a5b0653aa5d048d8b33664155a483a372ec4c",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-06T03:18:58.165Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "16:9"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A man and woman share a warm, intimate moment at a café table, engaged in animated conversation with genuine laughter throughout the clip. The warm, golden lighting and shallow depth of field create a romantic atmosphere as steam rises from their coffee cups. The dialogue suggests familiarity between them, with playful teasing about the woman's laugh.",
+      "transcript": "You still make that terrible face when you laugh.",
+      "tags": [
+        "animated",
+        "apparent",
+        "both",
+        "caf",
+        "continues",
+        "conversation",
+        "couple",
+        "displaying",
+        "engaged",
+        "face",
+        "facing",
+        "intimate",
+        "joyful",
+        "laugh",
+        "lit",
+        "maintain",
+        "make",
+        "man",
+        "medium",
+        "moment",
+        "remains",
+        "setting",
+        "share",
+        "sit",
+        "small",
+        "smiles",
+        "speech",
+        "still",
+        "subjects",
+        "table",
+        "terrible",
+        "their",
+        "warm",
+        "warmly",
+        "wide",
+        "woman",
+        "wooden",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A man and woman sit facing each other at a small wooden table in a warmly-lit café. The man on the left wears a gray long-sleeve sweater, has short dark hair, and displays a broad smile showing teeth. The woman on the right has long blonde hair and wears a brown/olive cardigan, also laughing openly. Two steaming coffee cups sit on the table between them. The background shows blurred café interior with warm bokeh lights and other patrons. Medium shot composition with shallow depth of field creates intimate atmosphere."
+        },
+        {
+          "seconds": 3,
+          "text": "The same couple continues their animated conversation in the café setting. Both subjects maintain genuine smiling expressions as they face each other in profile view. The man's gray sweater and the woman's brown cardigan remain visible. Steam rises visibly from the coffee cups on the wooden table. The warm, golden ambient lighting from the café creates a cozy atmosphere. Background remains softly blurred with bokeh effects from overhead lights. The framing remains consistent as a medium two-shot capturing their engaged interaction."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The couple remains engaged in joyful conversation, both displaying wide smiles and apparent laughter. The man in gray sweater is shown in left profile while the blonde woman in brown cardigan faces him from the right. Both are now holding their coffee cups - she grips hers with both hands. Steam continues rising from the hot beverages. The warm café lighting bathes the scene in golden tones. Blurred background shows café equipment and other customers. The intimate medium shot maintains focus on their connection."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "animated",
+    "apparent",
+    "both",
+    "caf",
+    "continues",
+    "conversation",
+    "couple",
+    "displaying",
+    "engaged",
+    "face",
+    "facing",
+    "intimate",
+    "joyful",
+    "laugh",
+    "lit",
+    "maintain",
+    "make",
+    "man",
+    "medium",
+    "moment",
+    "remains",
+    "setting",
+    "share",
+    "sit",
+    "small",
+    "smiles",
+    "speech",
+    "still",
+    "subjects",
+    "table",
+    "terrible",
+    "their",
+    "warm",
+    "warmly",
+    "wide",
+    "woman",
+    "wooden",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

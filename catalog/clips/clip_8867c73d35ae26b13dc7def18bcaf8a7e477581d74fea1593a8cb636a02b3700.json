@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8867c73d35ae26b13dc7def18bcaf8a7e477581d74fea1593a8cb636a02b3700",
+  "sha256": "8867c73d35ae26b13dc7def18bcaf8a7e477581d74fea1593a8cb636a02b3700",
+  "bytes": 73236,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6.766016,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 203,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "shot05.mp4"
+  ],
+  "collections": [
+    "ramsey-books"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

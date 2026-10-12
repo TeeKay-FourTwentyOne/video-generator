@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8db3d33fb02e20390cd7a02089acebc2537f862653a2f97579763be8da4dbae5",
+  "sha256": "8db3d33fb02e20390cd7a02089acebc2537f862653a2f97579763be8da4dbae5",
+  "bytes": 1395474,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767581177943_2cg5x7.mp4"
+  ],
+  "collections": [
+    "a_single_candle_flame_flickers_1767581095602"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767581177943_2cg5x7"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Medium close-up of a single candle flame positioned off-center in the frame, creating immediate visual tension. The camera begins with an almost imperceptible dolly movement forward, drifting toward the flame as if pulled by an invisible force. Extreme shallow depth of field transforms the flame's edges into abstract, dreamlike patterns of molten gold and burnt orange, while the background dissolves into pure black void. Smoke tendrils writhe and curl in unnatural, serpentine patterns despite the complete absence of air movement, their ghostly forms catching amber light. The flame itself dances with an unsettling rhythm, its movements too fluid, too alive. Warm amber tones dominate the color palette but with a slightly sickly yellow-green tinge in the shadows. The unmotivated camera drift continues throughout, slow and hypnotic, as the flame grows larger in frame, its abstract patterns becoming more prominent and disorienting. Intimate macro cinematography style with contemplative pacing, the slight off-kilter framing maintaining constant visual unease. The pure black negative space feels oppressive, swallowing the edges of light.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_014a367834838c1962edb0e0945b77bc4809a15313c71a0d4320a3284e942a65",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Medium close-up of a single candle flame positioned off-center in the frame, creating immediate visual tension. The camera begins with an almost imperceptible dolly movement forward, drifting toward the flame as if pulled by an invisible force. Extreme shallow depth of field transforms the flame's edges into abstract, dreamlike patterns of molten gold and burnt orange, while the background dissolves into pure black void. Smoke tendrils writhe and curl in unnatural, serpentine patterns despite the complete absence of air movement, their ghostly forms catching amber light. The flame itself dances with an unsettling rhythm, its movements too fluid, too alive. Warm amber tones dominate the color palette but with a slightly sickly yellow-green tinge in the shadows. The unmotivated camera drift continues throughout, slow and hypnotic, as the flame grows larger in frame, its abstract patterns becoming more prominent and disorienting. Intimate macro cinematography style with contemplative pacing, the slight off-kilter framing maintaining constant visual unease. The pure black negative space feels oppressive, swallowing the edges of light.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_014a367834838c1962edb0e0945b77bc4809a15313c71a0d4320a3284e942a65",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:45:15.306Z",
+      "parameters": {
+        "durationSeconds": 7,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This 6-second vertical video captures a single lit candle against a black background, focusing on the flame's natural movement and smoke patterns. The sequence shows the flame transitioning from producing dramatic swirling smoke to burning more cleanly and steadily. The intimate close-up composition emphasizes the warm orange-yellow tones of the flame against the dark void.",
+      "transcript": null,
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "burning",
+        "burns",
+        "candle",
+        "captures",
+        "center",
+        "cleanly",
+        "continues",
+        "dominates",
+        "elongated",
+        "flame",
+        "frame",
+        "lit",
+        "maintains",
+        "medium",
+        "minimal",
+        "pure",
+        "second",
+        "shape",
+        "silent",
+        "single",
+        "smoke",
+        "steadily",
+        "vertical",
+        "video",
+        "visible"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A lit candle flame dominates the center of the frame against a pure black background. The flame displays a gradient from bright white-yellow at its core to orange at the edges. Wispy orange-tinted smoke curls dramatically above and around the flame in swirling patterns. The candle itself appears cream/beige colored and slightly out of focus at the bottom. The vertical portrait orientation emphasizes the upward movement of flame and smoke. Low-key lighting creates high contrast."
+        },
+        {
+          "seconds": 3,
+          "text": "The candle flame continues burning steadily in the center of the frame. The flame maintains its elongated teardrop shape with a bright white-yellow core transitioning to orange edges. Smoke is visible but less prominent than the first frame, appearing as subtle wisps on the right side. The cream-colored candle base remains blurred in the lower portion. A faint blue zone is visible at the flame's base near the wick. The black background provides stark contrast."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The candle flame burns cleanly with minimal visible smoke in this frame. The flame shape is tall and pointed, with the characteristic bright white-yellow center and orange outer glow. The flame appears more stable and symmetrical compared to earlier frames. The blurred cream candle is visible at the bottom, with the dark wick area barely discernible. The composition remains centered with the pure black background creating dramatic isolation of the flame."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "burning",
+    "burns",
+    "candle",
+    "captures",
+    "center",
+    "cleanly",
+    "continues",
+    "dominates",
+    "elongated",
+    "flame",
+    "frame",
+    "lit",
+    "maintains",
+    "medium",
+    "minimal",
+    "pure",
+    "second",
+    "shape",
+    "silent",
+    "single",
+    "smoke",
+    "steadily",
+    "vertical",
+    "video",
+    "visible"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

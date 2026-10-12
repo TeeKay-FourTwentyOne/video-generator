@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0669619afdfd26bd6120fd20c2492c7f2b037c824b9a729e344abe802c64b2bd",
+  "sha256": "0669619afdfd26bd6120fd20c2492c7f2b037c824b9a729e344abe802c64b2bd",
+  "bytes": 550667,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767581185044_k9r3in.mp4"
+  ],
+  "collections": [
+    "a_single_candle_flame_flickers_1767581095602"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767581185044_k9r3in"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "Wide static shot perfectly centers a single candle flame in the frame, creating absolute symmetry in the composition. The small, steady flame burns motionlessly at the exact center, its warm amber glow forming a precise golden circle of light on the surface below. Thin wisps of smoke rise perfectly straight upward through the still air, undisturbed by any movement. The surrounding darkness is pure black but soft and protective, cradling the solitary flame in peaceful isolation. The camera remains completely static throughout, holding this meditative tableau with no movement or adjustment. Shot with intimate macro photography using extremely shallow depth of field that keeps only the flame in sharp focus while the edges dissolve into velvety darkness. The warm amber and gold tones of the flame contrast gently against the pure black void, creating a contemplative atmosphere of profound stillness and serenity. The image maintains perfect balance and symmetry for the entire duration, breathing with quietude and peaceful solitude.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_49a7852ecd4f52020233a88616e12c758ee94870b4e06851f061e57716fc439e",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "Wide static shot perfectly centers a single candle flame in the frame, creating absolute symmetry in the composition. The small, steady flame burns motionlessly at the exact center, its warm amber glow forming a precise golden circle of light on the surface below. Thin wisps of smoke rise perfectly straight upward through the still air, undisturbed by any movement. The surrounding darkness is pure black but soft and protective, cradling the solitary flame in peaceful isolation. The camera remains completely static throughout, holding this meditative tableau with no movement or adjustment. Shot with intimate macro photography using extremely shallow depth of field that keeps only the flame in sharp focus while the edges dissolve into velvety darkness. The warm amber and gold tones of the flame contrast gently against the pure black void, creating a contemplative atmosphere of profound stillness and serenity. The image maintains perfect balance and symmetry for the entire duration, breathing with quietude and peaceful solitude.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_49a7852ecd4f52020233a88616e12c758ee94870b4e06851f061e57716fc439e",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T02:45:41.796Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This vertical video captures a single lit candle burning steadily against a completely black background over approximately 4 seconds. The flame exhibits subtle natural variations in height and shape while maintaining its characteristic warm color gradient. The minimalist composition and portrait orientation create an intimate, contemplative atmosphere, accompanied by a brief spoken word 'you' in the audio.",
+      "transcript": "you",
+      "tags": [
+        "against",
+        "background",
+        "black",
+        "bottom",
+        "burn",
+        "burning",
+        "candle",
+        "captures",
+        "center",
+        "completely",
+        "continues",
+        "dominates",
+        "flame",
+        "frame",
+        "identically",
+        "lit",
+        "lower",
+        "medium",
+        "persists",
+        "portion",
+        "positioned",
+        "pure",
+        "single",
+        "speech",
+        "steadily",
+        "steady",
+        "vertical",
+        "video",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A single lit candle dominates the lower portion of the frame against a completely black background. The flame burns tall and steady, displaying a gradient from bright white at its core through yellow to orange at the edges. The candle appears to be a tea light or small votive with a golden-yellow wax surface visible. A dark wick is centered in the wax pool. The composition is minimalist and centered, shot from a slightly elevated angle. Subtle lens flare artifacts appear above the flame."
+        },
+        {
+          "seconds": 2,
+          "text": "The same candle continues burning in the center-bottom of the frame against the pure black background. The flame maintains its elongated teardrop shape with the characteristic color gradient from white-hot center to orange outer edges. The golden wax surface reflects the warm light, creating a glowing pool around the dark wick. A subtle circular lens flare is visible to the right of the flame. The vertical portrait orientation emphasizes the upward reach of the flame."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The candle flame persists in its steady burn, positioned identically in the lower-center of the frame. The flame appears slightly shorter compared to earlier frames, with the same white-yellow-orange color progression. The black background remains completely dark, creating strong contrast with the warm illumination. The wax surface continues to glow with reflected amber light. A faint lens flare artifact appears near the flame. The intimate, meditative composition remains unchanged throughout."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "against",
+    "background",
+    "black",
+    "bottom",
+    "burn",
+    "burning",
+    "candle",
+    "captures",
+    "center",
+    "completely",
+    "continues",
+    "dominates",
+    "flame",
+    "frame",
+    "identically",
+    "lit",
+    "lower",
+    "medium",
+    "persists",
+    "portion",
+    "positioned",
+    "pure",
+    "single",
+    "speech",
+    "steadily",
+    "steady",
+    "vertical",
+    "video",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

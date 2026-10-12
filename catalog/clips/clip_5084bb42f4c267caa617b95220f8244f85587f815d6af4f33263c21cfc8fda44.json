@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5084bb42f4c267caa617b95220f8244f85587f815d6af4f33263c21cfc8fda44",
+  "sha256": "5084bb42f4c267caa617b95220f8244f85587f815d6af4f33263c21cfc8fda44",
+  "bytes": 990303,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767766242368_927e6g.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767766242368_927e6g"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This abstract video clip showcases a glowing, serpentine ribbon of light with a blue-to-purple gradient against a pure black background. The ribbon appears to slowly shift or rotate throughout the 4-second duration, revealing different portions of its twisted form. The clip concludes with a spoken 'Thank you for watching' as the luminous abstract shape continues its subtle movement.",
+      "transcript": "Thank you for watching.",
+      "tags": [
+        "abstract",
+        "against",
+        "background",
+        "black",
+        "blue",
+        "clip",
+        "continues",
+        "differently",
+        "downward",
+        "form",
+        "frame",
+        "glowing",
+        "gradient",
+        "light",
+        "luminous",
+        "medium",
+        "now",
+        "positioned",
+        "pure",
+        "purple",
+        "revealing",
+        "ribbon",
+        "serpentine",
+        "shifted",
+        "showcases",
+        "slightly",
+        "speech",
+        "structure",
+        "thank",
+        "twisted",
+        "twists",
+        "vertically",
+        "video",
+        "watching",
+        "within",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "A luminous, serpentine ribbon of light twists vertically against a pure black background. The ribbon displays a gradient of colors transitioning from bright blue on the left edges to vibrant purple and magenta on the right side. The form creates an elegant S-curve pattern with smooth, flowing curves. The lighting appears to emanate from within the ribbon itself, creating a soft glow effect. A subtle purple glow is visible in the upper right corner. The composition is centered, shot in portrait orientation with the abstract light form as the sole subject."
+        },
+        {
+          "seconds": 2,
+          "text": "The glowing ribbon continues its serpentine form, now positioned slightly differently within the frame. The same blue-to-purple gradient illuminates the twisted shape against the dark void. The curves appear slightly more compressed vertically, with the ribbon showing four distinct wave peaks. The luminosity remains consistent with soft, diffused edges where the light meets the darkness. Small imperfections or particles are visible on the ribbon's surface. The composition maintains its centered, vertical orientation with the abstract light sculpture dominating the frame."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The twisted light ribbon has shifted downward in the frame, revealing more of its serpentine structure. The gradient coloring persists from electric blue on the outer curves to rich purple and pink on the inner surfaces. The form now shows approximately three and a half visible wave curves. The glow effect creates a soft halo around the edges of the ribbon. Small dark spots or particles are scattered across the illuminated surface. The black background remains completely dark, emphasizing the ethereal quality of the glowing subject."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "against",
+    "background",
+    "black",
+    "blue",
+    "clip",
+    "continues",
+    "differently",
+    "downward",
+    "form",
+    "frame",
+    "glowing",
+    "gradient",
+    "light",
+    "luminous",
+    "medium",
+    "now",
+    "positioned",
+    "pure",
+    "purple",
+    "revealing",
+    "ribbon",
+    "serpentine",
+    "shifted",
+    "showcases",
+    "slightly",
+    "speech",
+    "structure",
+    "thank",
+    "twisted",
+    "twists",
+    "vertically",
+    "video",
+    "watching",
+    "within",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

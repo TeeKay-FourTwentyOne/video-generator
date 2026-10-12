@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4332629982312ae8cefcaf26d693fdcdccdc6a76b53c9a8f8f4baa259f70eba9",
+  "sha256": "4332629982312ae8cefcaf26d693fdcdccdc6a76b53c9a8f8f4baa259f70eba9",
+  "bytes": 993929,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767577929705_ovmgni.mp4"
+  ],
+  "collections": [
+    "a_worn_leather_wallet_slowly_r_1767577838356"
+  ],
+  "legacyIds": [
+    "clip-metadata:veo_1767577929705_ovmgni"
+  ],
+  "generations": [
+    {
+      "source": "legacy-clip-metadata",
+      "prompt": "The camera suddenly pulls back rapidly from extreme close-up to wide shot, revealing a worn leather wallet suspended in mid-air at the center of a vast, empty room. The kinetic backward movement creates a visceral sense of abandonment as harsh, flat fluorescent lighting floods the space, washing out all warmth and replacing golden tones with cold blue-grey hues. The wallet hangs motionless in the air, slowly rotating, now tiny and isolated in the desolate room with bare concrete walls and floors. The camera movement decelerates to a complete stop, framing the wallet in the dead center of the composition with massive negative space surrounding it on all sides. Shallow depth of field gradually expands to sharp focus throughout, emphasizing the emptiness. The lighting is stark and unforgiving, creating no shadows, just flat, lifeless illumination that drains all color to desaturated blue-grey tones. The frame settles into perfect stillness for the final moments, the small leather wallet floating alone like a relic or memorial, abandoned in the cold, cavernous space. Melancholic and deeply lonely atmosphere with the wallet as the sole object in an otherwise completely barren environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7ef78ab0ee1ab1eeb8ef00764addf35ad71146f7ccafc61a9add872beeadfb1a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": null,
+      "parameters": {}
+    },
+    {
+      "source": "legacy-job",
+      "prompt": "The camera suddenly pulls back rapidly from extreme close-up to wide shot, revealing a worn leather wallet suspended in mid-air at the center of a vast, empty room. The kinetic backward movement creates a visceral sense of abandonment as harsh, flat fluorescent lighting floods the space, washing out all warmth and replacing golden tones with cold blue-grey hues. The wallet hangs motionless in the air, slowly rotating, now tiny and isolated in the desolate room with bare concrete walls and floors. The camera movement decelerates to a complete stop, framing the wallet in the dead center of the composition with massive negative space surrounding it on all sides. Shallow depth of field gradually expands to sharp focus throughout, emphasizing the emptiness. The lighting is stark and unforgiving, creating no shadows, just flat, lifeless illumination that drains all color to desaturated blue-grey tones. The frame settles into perfect stillness for the final moments, the small leather wallet floating alone like a relic or memorial, abandoned in the cold, cavernous space. Melancholic and deeply lonely atmosphere with the wallet as the sole object in an otherwise completely barren environment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7ef78ab0ee1ab1eeb8ef00764addf35ad71146f7ccafc61a9add872beeadfb1a",
+      "provider": "veo",
+      "model": null,
+      "seed": null,
+      "createdAt": "2026-01-05T01:51:26.853Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16"
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "This product video showcases a brown leather wallet, transitioning from an extreme close-up detail shot to a dramatic sequence of the wallet falling through an industrial concrete space before landing on the floor. The stark, minimalist concrete environment with fluorescent lighting creates a high-contrast artistic presentation that emphasizes the warm brown tones of the leather against the cool gray surroundings.",
+      "transcript": null,
+      "tags": [
+        "air",
+        "appears",
+        "brown",
+        "close",
+        "concrete",
+        "detail",
+        "extreme",
+        "falling",
+        "filling",
+        "floating",
+        "floor",
+        "frame",
+        "industrial",
+        "item",
+        "leather",
+        "medium",
+        "mid",
+        "now",
+        "product",
+        "rests",
+        "shot",
+        "showcases",
+        "silent",
+        "space",
+        "transitioning",
+        "video",
+        "wallet",
+        "within"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Extreme close-up shot of a brown leather wallet or leather item filling most of the frame. The leather has a rich cognac/burnt orange color with natural texture variations and slight wrinkles visible on the surface. The edges show stitching detail. A light blue-gray background is partially visible at the top and bottom edges of the frame. The lighting creates warm tones on the leather surface, emphasizing its texture and quality."
+        },
+        {
+          "seconds": 2,
+          "text": "A brown leather wallet appears to be floating or falling in mid-air within an industrial concrete room. The space features bare gray concrete walls with visible tie holes and seams, and two long horizontal fluorescent light tubes mounted on the ceiling. The wallet is positioned center-frame, tilted at an angle. The lighting is cool and stark, creating a minimalist, dramatic atmosphere. The camera captures a straight-on view of the space."
+        },
+        {
+          "seconds": 3.9,
+          "text": "The same brown leather wallet now rests on the concrete floor of the industrial space. The wallet sits upright in the center-bottom portion of the frame, appearing small against the vast gray concrete environment. The two fluorescent ceiling lights remain visible above, casting even illumination across the scene. The concrete walls show industrial texture with visible seams and marks. The composition emphasizes the wallet's isolation in the stark, minimalist setting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "air",
+    "appears",
+    "brown",
+    "close",
+    "concrete",
+    "detail",
+    "extreme",
+    "falling",
+    "filling",
+    "floating",
+    "floor",
+    "frame",
+    "industrial",
+    "item",
+    "leather",
+    "medium",
+    "mid",
+    "now",
+    "product",
+    "rests",
+    "shot",
+    "showcases",
+    "silent",
+    "space",
+    "transitioning",
+    "video",
+    "wallet",
+    "within"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

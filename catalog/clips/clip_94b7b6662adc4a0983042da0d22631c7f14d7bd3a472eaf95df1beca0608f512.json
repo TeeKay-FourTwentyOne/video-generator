@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_94b7b6662adc4a0983042da0d22631c7f14d7bd3a472eaf95df1beca0608f512",
+  "sha256": "94b7b6662adc4a0983042da0d22631c7f14d7bd3a472eaf95df1beca0608f512",
+  "bytes": 7190583,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S03-v2.mp4",
+    "veo_1791067763809_szqok9.mp4"
+  ],
+  "collections": [
+    "washing-day-claude"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Photoreal close-up on a laundry line in hard sunlight, locked-off camera, no cuts. The weathered wooden clothespin grips the top corner of the white cotton sheet on the taut cord. A hard gust fills the sheet: the cotton snaps and bellies like a sail, the cord bounces and sings, and the clothespin tilts and strains under the pull. The gust keeps building until the corner of the sheet rips out of the clothespin's jaws on its own and whips away upward and to the left, out of the top of the frame, while the empty clothespin stays on the cord, swinging. Only the wind moves the sheet: no hands, no people, no new clothespins, nothing new enters the frame; the camera does not move. No on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_27233cffbb4ef72cc9eea1d242b95537a49e0cc185c8a195d9761094a2421b0b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 914109982,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

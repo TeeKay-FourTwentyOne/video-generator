@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_98841c77681184bd63a8306951fe4497e3c30f472177dd92867242f22239fa4f",
+  "sha256": "98841c77681184bd63a8306951fe4497e3c30f472177dd92867242f22239fa4f",
+  "bytes": 1913575,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "veo_1767749118477_jees7y.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:veo_1767749118477_jees7y"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "A man and woman have an intimate conversation while standing on a long, straight country road cutting through golden wheat fields during sunset. The dialogue suggests the woman has traveled extensively while the man has remained local. The warm golden hour lighting and rural setting create a contemplative, cinematic atmosphere throughout the brief exchange.",
+      "transcript": "You've been everywhere. Not everywhere, just not here.",
+      "tags": [
+        "appear",
+        "both",
+        "continues",
+        "conversation",
+        "country",
+        "cutting",
+        "everywhere",
+        "facing",
+        "figures",
+        "golden",
+        "her",
+        "hour",
+        "intimate",
+        "left",
+        "long",
+        "maintains",
+        "man",
+        "medium",
+        "now",
+        "people",
+        "position",
+        "remain",
+        "road",
+        "rural",
+        "speech",
+        "stand",
+        "standing",
+        "straight",
+        "subjects",
+        "two",
+        "woman",
+        "you"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Two people stand facing each other on a long, straight country road during golden hour. On the left, a woman with dark hair pulled back wears a light blue denim shirt under a brown suede vest, brown cropped trousers, and brown leather shoes. On the right, a bearded man with shoulder-length wavy hair wears an olive green jacket over a cream henley shirt, dark pants, and tan hiking boots. The road stretches into the distance between golden wheat fields under a pale sky. Warm sunset lighting illuminates the scene from the left."
+        },
+        {
+          "seconds": 3,
+          "text": "The same two people remain on the country road. The woman maintains her position on the left, looking toward the man with a contemplative expression. The man has shifted his gaze slightly toward the camera with a more serious expression. The composition remains identical with the long straight road creating strong leading lines through the wheat fields. Golden hour lighting continues to cast warm tones across the rural landscape, with trees visible on the distant horizon."
+        },
+        {
+          "seconds": 5.9,
+          "text": "The conversation continues between the two figures on the rural road. Both subjects now appear more engaged with each other, with the man looking down toward the woman with a slight smile. The woman maintains her relaxed stance with hands in pockets. The warm golden light continues to bathe the scene, highlighting the textures of their clothing and the surrounding wheat fields. The endless road behind them emphasizes the remote, peaceful setting."
+        }
+      ]
+    }
+  ],
+  "characters": [],
+  "tags": [
+    "appear",
+    "both",
+    "continues",
+    "conversation",
+    "country",
+    "cutting",
+    "everywhere",
+    "facing",
+    "figures",
+    "golden",
+    "her",
+    "hour",
+    "intimate",
+    "left",
+    "long",
+    "maintains",
+    "man",
+    "medium",
+    "now",
+    "people",
+    "position",
+    "remain",
+    "road",
+    "rural",
+    "speech",
+    "stand",
+    "standing",
+    "straight",
+    "subjects",
+    "two",
+    "woman",
+    "you"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

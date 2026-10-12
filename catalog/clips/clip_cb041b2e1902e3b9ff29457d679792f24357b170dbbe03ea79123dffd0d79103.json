@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cb041b2e1902e3b9ff29457d679792f24357b170dbbe03ea79123dffd0d79103",
+  "sha256": "cb041b2e1902e3b9ff29457d679792f24357b170dbbe03ea79123dffd0d79103",
+  "bytes": 19736103,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 1344,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "clean-picture-1080.mp4"
+  ],
+  "collections": [
+    "forest-spirit"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

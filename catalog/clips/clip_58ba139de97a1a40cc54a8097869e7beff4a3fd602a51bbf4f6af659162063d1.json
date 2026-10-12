@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_58ba139de97a1a40cc54a8097869e7beff4a3fd602a51bbf4f6af659162063d1",
+  "sha256": "58ba139de97a1a40cc54a8097869e7beff4a3fd602a51bbf4f6af659162063d1",
+  "bytes": 7749310,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "S01-v1.mp4",
+    "veo_1791077021016_4w1dnr.mp4"
+  ],
+  "collections": [
+    "washing-day-codex"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "film-plan",
+      "prompt": "Locked-off vertical wide from the ground up the courtyard. The solitary woman on the highest left balcony performs one small practiced pinning gesture. White linen breathes lightly on exactly four laundry lines at four separate levels; count and position of all attached sheets stay fixed. Three white sheets plus one little red garment on the highest line, one white sheet each on the three lower lines. Nothing releases yet. A brief swift passes the blue opening. Real-world scale. Sound: distant courtyard air, faint wooden peg click, two distant swift chirps, a barely audible old radio playing a few instrumental plucked tones behind a closed shutter. No voices, speech or vocals, no dramatic music. Six seconds.\n\nPhotoreal, real Mediterranean courtyard in constant hard late-morning daylight, clear cloudless blue sky, ochre and dusty rose plaster, green shutters, simple black iron balconies. One woman only: small elderly woman with strong lined hands, plain blue headscarf, black dress and floral apron, no glasses or jewellery. No other people anywhere, no text, no labels, no patterned linen, no clouds. All architecture and lighting retain their design. Natural real linen weight and aerodynamics. No slow motion, no handheld movement.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_deceb7c856892c3aaad47d025aa1c9110ecbad7abac8731540b429456e145e6c",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": null,
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true
+      }
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

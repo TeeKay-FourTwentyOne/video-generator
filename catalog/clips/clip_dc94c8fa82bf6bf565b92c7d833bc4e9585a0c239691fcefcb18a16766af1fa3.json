@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_dc94c8fa82bf6bf565b92c7d833bc4e9585a0c239691fcefcb18a16766af1fa3",
+  "sha256": "dc94c8fa82bf6bf565b92c7d833bc4e9585a0c239691fcefcb18a16766af1fa3",
+  "bytes": 2252066,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "s10_MC.mp4"
+  ],
+  "collections": [
+    "hellzapoppin-5-cancan"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

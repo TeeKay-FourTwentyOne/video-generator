@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_507944689bc26947c91d32fadf5ebbe2f16001d64e596ef1df95cd9677a76a42",
+  "sha256": "507944689bc26947c91d32fadf5ebbe2f16001d64e596ef1df95cd9677a76a42",
+  "bytes": 3724408,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "abstract_e_red.mp4"
+  ],
+  "collections": [],
+  "legacyIds": [
+    "clip-metadata:abstract_e_red"
+  ],
+  "generations": [],
+  "analysis": [
+    {
+      "source": "legacy-clip-metadata",
+      "model": null,
+      "summary": "Abstract red smoke or flame visualization rising from glowing embers against black. The formation evolves from a wide mushroom shape to a tall elegant column with curling wisps. Deep crimson and bright orange-red tones create dramatic contrast.",
+      "transcript": null,
+      "tags": [
+        "abstract",
+        "against",
+        "billows",
+        "black",
+        "bottom",
+        "bright",
+        "central",
+        "column",
+        "embers",
+        "expanding",
+        "flame",
+        "formation",
+        "frame",
+        "glowing",
+        "medium",
+        "narrow",
+        "red",
+        "rises",
+        "rising",
+        "silent",
+        "smoke",
+        "start",
+        "stretches",
+        "structured",
+        "top",
+        "towering",
+        "upward",
+        "vertically",
+        "visualization",
+        "vivid",
+        "waist"
+      ],
+      "frames": [
+        {
+          "seconds": 0.1,
+          "text": "Vivid red smoke billows upward from glowing embers at the bottom of the frame against a black background. The smoke spreads wide at the top creating an organic mushroom shape. Bright orange-red core transitions to deep crimson at the edges with wispy tendrils."
+        },
+        {
+          "seconds": 4,
+          "text": "A towering column of red smoke rises from embers, more vertically structured than the start. The central column glows bright red-orange while the edges fade to darker crimson. Curling wisps spiral outward creating an elegant flowing form."
+        },
+        {
+          "seconds": 7.9,
+          "text": "Red smoke formation stretches vertically with a narrow waist and expanding top. The bright core illuminates from below by glowing coals. Symmetrical curling wisps on both sides create a flame-like silhouette against pure black."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_001",
+      "name": "Phantom Flame",
+      "description": "Abstract red smoke/flame visual - likely a false positive from fire/smoke effects rather than a person",
+      "source": "legacy-character-cluster"
+    }
+  ],
+  "tags": [
+    "abstract",
+    "against",
+    "billows",
+    "black",
+    "bottom",
+    "bright",
+    "central",
+    "column",
+    "embers",
+    "expanding",
+    "flame",
+    "formation",
+    "frame",
+    "glowing",
+    "medium",
+    "narrow",
+    "red",
+    "rises",
+    "rising",
+    "silent",
+    "smoke",
+    "start",
+    "stretches",
+    "structured",
+    "top",
+    "towering",
+    "upward",
+    "vertically",
+    "visualization",
+    "vivid",
+    "waist"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
