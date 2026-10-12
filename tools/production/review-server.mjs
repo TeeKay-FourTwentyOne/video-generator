@@ -6,8 +6,8 @@ import { realpath, lstat } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-const allowed = /^(review\.html|delivery\.json|film(?:_debug)?\.mp4|shot-\d+\.jpg)$/;
-const mime = { '.html': 'text/html; charset=utf-8', '.json': 'application/json', '.mp4': 'video/mp4', '.jpg': 'image/jpeg' };
+const allowed = /^(review\.html|delivery\.json|description\.txt|film(?:_debug)?\.mp4|shot-\d+\.jpg)$/;
+const mime = { '.html': 'text/html; charset=utf-8', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8', '.mp4': 'video/mp4', '.jpg': 'image/jpeg' };
 
 export function byteRange(header, size) {
   const m = /^bytes=(\d*)-(\d*)$/.exec(header);

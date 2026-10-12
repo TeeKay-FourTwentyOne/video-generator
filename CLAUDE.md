@@ -7,6 +7,12 @@ at `.claude/skills/produce-video/SKILL.md` and `.agents/skills/produce-video/SKI
 `docs/production.md` describes the maintained CLI/MCP workflow; load detailed craft
 notes only when the shot or edit needs them.
 
+For post-publication wrap-up, use `.claude/skills/post-publication/SKILL.md`, a
+relative link to the shared `.agents/skills/post-publication/SKILL.md`.
+`docs/post-publication.md` covers documentation, source publication, intact
+archival and process improvements. The older `archive-workspace` skill routes
+archive-only requests to the same archive procedure.
+
 Claude Code specifics (zsh Bash tool, background jobs, timeouts, memory, MCP
 profile) are in `docs/harness/claude-code.md`.
 

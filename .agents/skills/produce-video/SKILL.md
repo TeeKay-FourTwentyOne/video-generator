@@ -44,3 +44,7 @@ estimate/reserves, and verification evidence. Distinguish frame inspection and
 computational audio checks from full playback/listening. Preserve sources and
 alternates. Publication, source commits, and requested finishing are separate
 actions governed by the user's authorization and `AGENTS.md`.
+
+When the user requests the post-publication wrap-up, use the shared
+`post-publication` skill and `docs/post-publication.md` to update documentation,
+commit/push reviewed source, archive intact and record a process improvement.

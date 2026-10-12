@@ -1,0 +1,4 @@
+interface:
+  display_name: "Post-publication wrap-up"
+  short_description: "Document, push and archive a published film"
+  default_prompt: "Use $post-publication to finish this film's documentation, reviewed source commit and push, intact workspace archive, and process improvement."

@@ -4,6 +4,9 @@ These rules apply to all agents in this repository. For film production, use
 `docs/production.md` and the shared `produce-video` skill. For code changes, read
 only the relevant module and tests; detailed craft references are in `docs/craft/`.
 Read `docs/source-privacy.md` before preparing any commit or push.
+For post-publication wrap-up, use the shared `post-publication` skill and
+`docs/post-publication.md`: update documentation, commit/push reviewed source,
+archive the named workspace intact, and suggest a process improvement.
 
 ## This is an artistic project
 

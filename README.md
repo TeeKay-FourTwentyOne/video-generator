@@ -27,6 +27,13 @@ recoverable polling, source hashes, reviewed frame ranges, versioned edits and a
 local review player. `npm run film -- plan WORKSPACE` is a dry run. Only explicit
 submission/image commands buy new media.
 
+After publication, use the shared
+[post-publication skill](.agents/skills/post-publication/SKILL.md) and
+[close-out workflow](docs/post-publication.md). They cover final documentation,
+reviewed source commit/push, intact workspace archival and a process improvement.
+The [production-record organization handoff](docs/production-records-proposal.md)
+describes the proposed next step for `briefs/`; that migration is not yet applied.
+
 MCP now defaults to ten focused tools. Existing specialist callers can set
 `VIDEO_MCP_PROFILE=legacy` in their server environment and reconnect. The CLI
 works directly for Codex, Claude Code and other agents with local file access.
@@ -37,6 +44,7 @@ works directly for Codex, Claude Code and other agents with local file access.
 | --- | --- |
 | `AGENTS.md`, `CLAUDE.md` | Short shared operating rules and Claude import |
 | `.agents/skills/produce-video/` | Canonical production skill; Claude links to it |
+| `.agents/skills/post-publication/` | Shared release wrap-up; Claude links to it |
 | `tools/production/` | Agent CLI, local editing, review and offline tests |
 | `mcp/video-generator/src/production/` | Budget and qualified provider specifications |
 | `mcp/video-generator/src/clients/` | Google, MiniMax, Runway, Anthropic and ElevenLabs clients |
@@ -51,8 +59,9 @@ works directly for Codex, Claude Code and other agents with local file access.
 | `data/workspace-archive/<slug>/` | Preserved older productions |
 
 [Architecture and compatibility](docs/architecture.md) distinguishes the maintained
-path from historical bulk executors, SDK agents and experiments. Existing media
-and prior production directories are not moved by the new tools.
+path from historical bulk executors, SDK agents and experiments. Production tools
+leave prior media in place; the explicit archive command moves only its named
+workspace intact after inventory and verifies it at the destination.
 
 [Pricing](PRICING.md) records Google, MiniMax and Runway rates and accounting limits.
 [MiniMax H3/H3 Max](docs/minimax.md) supports the same plan/submit/poll workflow;

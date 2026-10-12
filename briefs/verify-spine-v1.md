@@ -3,7 +3,7 @@
 Standalone conceptual piece · original spine dated 2026-10-06.
 The original treatment below proposed NBP → Veo → FFmpeg; production used Runway instead.
 
-## Delivered revision — v4
+## Published revision — v4
 
 The user-approved production direction uses Runway Gen-4.5 footage, with locally
 rendered interface graphics and synthesized sound. V4 applies the requested
@@ -15,9 +15,29 @@ no-selection direction below.
 
 The native review is 1080×1920; the explicitly authorized 4K finish is 2160×3840,
 with the interface rendered at that resolution and original footage scaled
-locally. Sources, edits and verification remain under the ignored
-`data/workspace/verify-film-v1/`. The ready-to-copy publication text is
-[verify_description.md](verify_description.md). No publication URL has been supplied.
+locally. The final user-edited publication text, including the concept credit and
+related links, is preserved in [verify_description.md](verify_description.md).
+
+Publication: [VERIFY on YouTube Shorts](https://youtube.com/shorts/lb9vcB07CRg).
+Recorded 2026-10-12 from the user's supplied publication URL; user-confirmed,
+not independently verified through the public page. This recording date is not
+an assertion of the platform's publication date.
+
+The released local master is `final/v4-4k/film.mp4`: 2160×3840, 24 fps,
+546 frames / 22.75 seconds. SHA-256:
+`a9efb8f799372976d070df3bda390874477de2915356a86c57678354b90da75a`.
+Runway production spend, including auditions, was $6.72; Veo spend was $0.
+Editing, sound and 4K finishing added no generation cost.
+
+Verified local archive: `data/workspace-archive/verify-film-v1/` (2026-10-12).
+The intact archive preserves sources, alternates, native exports, all revisions,
+recipes, ledgers and QA: 2,062 inventoried files, plus the archive manifest.
+Content hashes, sizes and permissions were verified after moving. Its local
+publication record links the final description and release evidence. The
+[post-publication workflow](../docs/post-publication.md) records the reusable
+close-out procedure; the [production-record handoff](../docs/production-records-proposal.md)
+describes the proposed documentation organization. The original treatment below is retained as history;
+its proposed tools, durations and actions are superseded by this production record.
 
 ---
 

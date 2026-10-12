@@ -1,0 +1,1 @@
+../../../.agents/skills/post-publication/SKILL.md

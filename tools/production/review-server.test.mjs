@@ -10,6 +10,7 @@ test('review server supports native video ranges without exposing the workspace'
   await fs.writeFile(path.join(root, 'film.mp4'), '01234567');
   await fs.writeFile(path.join(root, 'review.html'), '<video src="film.mp4"></video>');
   await fs.writeFile(path.join(root, 'private.txt'), 'must not serve');
+  await fs.writeFile(path.join(root, 'description.txt'), 'Approved publication copy.');
   await fs.symlink(path.join(root, 'private.txt'), path.join(root, 'delivery.json'));
   const { server, url } = await startReviewServer(root);
   t.after(async () => { server.closeAllConnections(); await new Promise(r => server.close(r)); await fs.rm(root, { recursive: true, force: true }); });
@@ -28,6 +29,10 @@ test('review server supports native video ranges without exposing the workspace'
   assert.equal(head.status, 200); assert.equal(head.headers.get('content-length'), '8'); assert.equal(await head.text(), '');
   assert.equal(await (await fetch(movie)).text(), '01234567');
   assert.equal((await fetch(url)).status, 200);
+  const description = await fetch(new URL('description.txt', url));
+  assert.equal(description.status, 200);
+  assert.equal(description.headers.get('content-type'), 'text/plain; charset=utf-8');
+  assert.equal(await description.text(), 'Approved publication copy.');
   assert.equal((await fetch(movie, { method: 'POST' })).status, 405);
   for (const name of ['private.txt', 'delivery.json', '%2e%2e%2fprivate.txt', '']) {
     const target = name ? new URL(name, url) : new URL('nested/', url);
