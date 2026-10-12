@@ -10,7 +10,7 @@ public/
 
 ## What's here
 
-Single page. Brand mark, tagline, plain-English explainer of the 16-byte product, examples, $15 price, email-notify CTA (mailto, no backend).
+Single page. Brand mark, tagline, plain-English explainer of the 16-byte product, examples, and pricing.
 
 That's Ring 1: make the URL embedded in the first video's audio watermark not a lie. When the viewer decodes `stegasus.net` from the audio and types it in, they land somewhere real that explains what they just found.
 
@@ -44,10 +44,6 @@ In the Pages project → Custom domains → Add → enter `stegasus.net`.
 - Registrar is somewhere other than Cloudflare? Cloudflare gives you the DNS records to add at the registrar (nameserver delegation is cleanest; CNAME also works).
 - Add `www.stegasus.net` too if you want both to resolve.
 
-### Contact
-
-CTA is a plain `mailto:` link to `stephen+stegasus@centaur-services.com`. Address is visible in page source — fine for this stage; the `+stegasus` tag makes it easy to filter signups in inbox rules. Swap to a form backend (Formspree, Basin, etc.) later if scraping becomes a problem.
-
 ---
 
 ## Verifying the loop
@@ -67,7 +63,7 @@ Then the moment of truth: publish the video, decode the watermark from a downloa
 
 Per the Ring 1 / Ring 2 / Ring 3 split:
 
-- **No backend.** Email signup is `mailto:` for now. When you want a real list, swap in Buttondown / Listmonk / a tiny serverless function.
+- **No backend.** No contact link, signup form, or mailing-list integration.
 - **No hosted decoder.** Curious viewers install `audiowmark` themselves. That's fine — it filters for the right audience. Ring 2 ships a web-based decoder (drag a video file in, see the 16 bytes pop out).
 - **No checkout.** The "$15" is positioning copy until the actual sender flow ships. Ring 2.
 - **No moderation queue / submission form.** Ring 2.
