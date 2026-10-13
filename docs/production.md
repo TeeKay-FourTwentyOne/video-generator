@@ -85,6 +85,41 @@ POST again. Polling is separate and can continue across process restarts.
 Finished filtered/empty outputs are terminal failures. Seeds record intent but do
 not guarantee identical regenerated pixels.
 
+### Creation-time metadata
+
+Every maintained Veo, MiniMax and Runway submission writes an immutable private
+`operations/<request-id>.request.json` after reservation and **before authentication,
+uploads or generation**. Failure to save it prevents the generation call. The
+snapshot preserves the exact prompt (including whitespace), requested model alias
+and resolved model ID, effective settings/defaults, seed when known, reference
+roles/hashes/sizes and available dimensions/durations, provider/API endpoint and
+version, request fingerprint and UTC capture time. A provider-selected seed or
+hidden model version stays unknown. These records do not promise deterministic
+regeneration.
+
+Polling uses that saved request, even if prompts, reference files or `film.json`
+controls subsequently change. Keep the shot's request ID to retrieve that attempt;
+use a new ID to generate a different take. Recovery preserves the original
+snapshot and creation time. The operation journal retains the provider operation
+ID; the asset receipt connects the snapshot hash to the clip ID and output hash.
+Legacy operations without snapshots retain their existing evidence labels and
+unknowns; polling does not invent a creation-time snapshot for them.
+
+The full snapshot is also retained with the master under
+`data/clips/<clip-id>/generations/<snapshot-sha256>.json`. A privacy-filtered
+projection in `catalog/clips/` includes prompt/model/settings and reference hashes;
+credentials, operation IDs, local paths and accounting do not enter that public
+record. Private prompts that cannot be published remain intact in the ignored
+snapshot. See [clip metadata and verification](clip-library.md).
+
+The maintained Google image route records the same creation evidence for anchors,
+plus a hash-linked asset receipt and any provider-reported model version in the
+usage record. A new provider adapter must capture equivalent evidence before its
+first generation request. For external generation, preserve the original
+creation record and import it with `clips import --snapshot=...`. Local renders
+instead need their recipe/tool version, settings and source hashes; do not invent
+a model or prompt for deterministic work.
+
 The current adapter qualifies GA Veo 3.1 Quality/Fast, 9:16 or 16:9, 720p/1080p,
 and exact 4/6/8-second durations. Old bare aliases resolve to GA. Unsupported
 variants fail locally; changing capabilities needs current official documentation

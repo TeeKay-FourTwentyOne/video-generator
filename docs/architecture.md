@@ -37,6 +37,12 @@ reconciles historical metadata while preserving all original paths. Maintained
 provider polling returns clip IDs; editing materializes frame ranges and records
 their use. [Clip library and evidence limits](clip-library.md).
 
+`generation-snapshot.mjs` freezes private request evidence before maintained
+generation calls. Provider journals bind its hash to the operation; ingestion
+keeps a copy beside the master and projects only allowed fields into the catalog.
+Polling reads that snapshot rather than mutable planning files. Snapshot writing
+is atomic and refuses replacement; recovery never synthesizes historical evidence.
+
 `accounting.mjs` derives itemized private reports from existing ledgers; it neither
 changes spending authority nor publishes financial details. See
 [the record workflow](production-records.md).

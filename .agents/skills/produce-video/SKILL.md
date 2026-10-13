@@ -37,6 +37,16 @@ the request ID, and poll the existing operation. An uncertain submission retains
 its reservation; recover from its record before considering another attempt.
 Choose retakes deliberately based on reviewed defects and remaining budget.
 
+Preserve creation-time metadata for every generated source. Maintained clients
+freeze the exact prompt, requested/resolved model, effective settings and seed,
+reference hashes and API identity before submission; polling retains the private
+snapshot with the clip master and adds a privacy-filtered catalog entry. Verify
+that receipt when reviewing a take. For any outside generation route, capture
+the same evidence at creation and import it with `clips import --snapshot=...`
+(see `docs/clip-library.md`). Never infer a hidden model or label a later film
+plan as the submitted request. Local renders have no model prompt unless one was
+actually used; preserve their recipe and source hashes instead.
+
 For acceptance, use `docs/craft/clip-acceptance-gate.md`: technical decode,
 contextual visual review, dense inspection of motion/transfer windows, then a
 keep/edit-around/reject decision tied to the source hash and clean frame range.

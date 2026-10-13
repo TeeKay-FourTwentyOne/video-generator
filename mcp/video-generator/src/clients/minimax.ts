@@ -7,6 +7,7 @@ import { resolvePath } from "../utils/paths.js";
 import { atomicJson, readLedger, reserveSpend, updateSpend } from "../production/ledger.js";
 import { MINIMAX_MODELS, type MiniMaxModel, type MiniMaxSpec } from "../production/minimax-spec.js";
 import { prepareMiniMaxRequest } from "../production/minimax-media.js";
+import { saveGenerationSnapshot, snapshotHash } from "../../../../tools/production/generation-snapshot.mjs";
 export { prepareMiniMaxRequest } from "../production/minimax-media.js";
 
 const API_ROOT = "https://api.minimax.io";
@@ -97,6 +98,14 @@ export async function submitMiniMaxGeneration(options: MiniMaxSubmitOptions): Pr
     quote: a.quote, prompt: options.prompt, sources: a.sources, createdAt: new Date().toISOString() };
   let operationName: string | undefined;
   try {
+    const snapshot = saveGenerationSnapshot(a.budgetFile, { provider: "minimax", requestId: options.requestId,
+      fingerprint: a.fingerprint, prompt: options.prompt, requestedModel: options.model, model: a.quote.modelId,
+      parameters: { durationSeconds: a.quote.durationSeconds, aspectRatio: a.quote.aspectRatio,
+        resolution: a.quote.resolution, mode: a.quote.mode,
+        ratio: a.quote.mode === "image-to-video" ? "adaptive" : a.quote.aspectRatio,
+        promptExpansionMode: a.quote.promptExpansionMode }, sources: a.sources,
+      api: { endpoint: "/v2/video_generation", version: "v2" } });
+    Object.assign(record, { snapshotSha256: snapshotHash(snapshot) });
     atomicJson(a.journalFile, { ...record, status: "reserved" });
     const data = await requestJson("/v2/video_generation", "POST", a.serializedBody, key);
     operationName = taskId(data.task_id);
@@ -169,8 +178,9 @@ export async function recoverMiniMaxOperation(options: MiniMaxSubmitOptions, ope
     throw new Error("Recovery task parameters differ from the reserved request");
   fs.mkdirSync(path.dirname(a.journalFile), { recursive: true });
   const result: MiniMaxSubmitResult = { provider: "minimax", operationName, model: a.quote.modelId };
-  atomicJson(a.journalFile, { ...result, requestId: options.requestId, fingerprint: a.fingerprint, quote: a.quote,
-    sources: a.sources, prompt: options.prompt, recoveredAt: new Date().toISOString(), evidence });
+  const saved = fs.existsSync(a.journalFile) ? JSON.parse(fs.readFileSync(a.journalFile, "utf8")) : {};
+  atomicJson(a.journalFile, { ...saved, ...result, requestId: options.requestId, fingerprint: a.fingerprint, quote: a.quote,
+    sources: a.sources, prompt: options.prompt, status: "submitted", recoveredAt: new Date().toISOString(), evidence });
   updateSpend(a.budgetFile, options.requestId, { operationName, model: a.quote.modelId, status: "submitted", evidence });
   return result;
 }

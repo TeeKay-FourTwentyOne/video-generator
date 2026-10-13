@@ -6,6 +6,7 @@ import { loadConfig } from "../utils/config.js";
 import { resolvePath } from "../utils/paths.js";
 import { atomicJson, readLedger, reserveSpend, updateSpend } from "../production/ledger.js";
 import { RUNWAY_MODELS, prepareRunwayRequest, type RunwayModel, type RunwaySpec } from "../production/runway-spec.js";
+import { saveGenerationSnapshot, snapshotHash } from "../../../../tools/production/generation-snapshot.mjs";
 export { prepareRunwayRequest } from "../production/runway-spec.js";
 
 const API_ROOT = "https://api.dev.runwayml.com";
@@ -93,6 +94,13 @@ export async function submitRunwayGeneration(options: RunwaySubmitOptions): Prom
     quote: a.quote, endpoint: a.endpoint, prompt: options.prompt, sources: a.sources, createdAt: new Date().toISOString() };
   let operationName: string | undefined;
   try {
+    const snapshot = saveGenerationSnapshot(a.budgetFile, { provider: "runway", requestId: options.requestId,
+      fingerprint: a.fingerprint, prompt: options.prompt, requestedModel: options.model, model: a.quote.modelId,
+      seed: a.quote.seed, parameters: { durationSeconds: a.quote.durationSeconds, aspectRatio: a.quote.aspectRatio,
+        resolution: a.quote.resolution, generateAudio: a.quote.generateAudio, mode: a.quote.mode,
+        ratio: a.quote.ratio, outputFormat: a.quote.outputFormat }, sources: a.sources,
+      api: { endpoint: a.endpoint, version: API_VERSION } });
+    Object.assign(record, { snapshotSha256: snapshotHash(snapshot) });
     atomicJson(a.journalFile, { ...record, status: "reserved" });
     operationName = taskId((await requestJson(a.endpoint, "POST", a.serializedBody, key)).id);
     const result: RunwaySubmitResult = { provider: "runway", operationName, model: a.quote.modelId };
@@ -159,8 +167,9 @@ export async function recoverRunwayOperation(options: RunwaySubmitOptions, opera
   await pollRunwayOperation(operationName, a.quote.modelId);
   fs.mkdirSync(path.dirname(a.journalFile), { recursive: true });
   const result: RunwaySubmitResult = { provider: "runway", operationName, model: a.quote.modelId };
-  atomicJson(a.journalFile, { ...result, requestId: options.requestId, fingerprint: a.fingerprint,
-    quote: a.quote, sources: a.sources, prompt: options.prompt, recoveredAt: new Date().toISOString(), evidence });
+  const saved = fs.existsSync(a.journalFile) ? JSON.parse(fs.readFileSync(a.journalFile, "utf8")) : {};
+  atomicJson(a.journalFile, { ...saved, ...result, requestId: options.requestId, fingerprint: a.fingerprint,
+    quote: a.quote, sources: a.sources, prompt: options.prompt, status: "submitted", recoveredAt: new Date().toISOString(), evidence });
   updateSpend(a.budgetFile, options.requestId, { operationName, model: a.quote.modelId, status: "submitted", evidence });
   return result;
 }

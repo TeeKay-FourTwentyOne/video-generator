@@ -47,6 +47,11 @@ ledger, not a clerk with a camera.
   maintained provider polling does this automatically. Reference clip IDs in edits
   and materialize only the needed ranges. Public metadata and use records live in
   `catalog/`; see `docs/clip-library.md`. Preserve historical paths and archives.
+- Snapshot generation metadata before submitting: exact prompt, resolved model,
+  effective controls and seeds, reference hashes, provider/API and creation time.
+  Maintained clients do this automatically. Keep the private snapshot with the
+  clip master; never reconstruct creation evidence from a later plan or guess
+  missing historical model information. See `docs/production.md`.
 - Start source documentation in `briefs/<project-id>/`; see
   `docs/production-records.md` for validated records and generated current views.
   Prices, budgets, spending amounts and itemized accounting stay in ignored

@@ -124,6 +124,12 @@ test('submission reserves before POST, stores safe provenance and resumes withou
     assert.ok(options.signal instanceof AbortSignal);
     assert.equal(readLedger(budgetFile).entries[0].reservedMicros, 480000);
     assert.equal(readJson(path.join(root, 'operations/S01-v1.json')).status, 'reserved');
+    const snapshot = readJson(path.join(root, 'operations/S01-v1.request.json'));
+    assert.equal(snapshot.prompt, base.prompt);
+    assert.equal(snapshot.model, 'MiniMax-H3-Max');
+    assert.equal(snapshot.parameters.promptExpansionMode, 'balanced');
+    assert.equal(snapshot.parameters.ratio, 'adaptive');
+    assert.equal(snapshot.sources[0].sha256, hashFile(image));
     assert.equal(JSON.parse(options.body).content[1].role, 'first_frame');
     return json({ task_id: 'fixture-task', ignored_debug: credential });
   });
@@ -134,7 +140,7 @@ test('submission reserves before POST, stores safe provenance and resumes withou
   fs.appendFileSync(image, 'changed-source');
   await assert.rejects(submitMiniMaxGeneration(request), /changed content/);
   assert.equal(calls.length, 1);
-  for (const p of [budgetFile, path.join(root, 'operations/S01-v1.json')]) {
+  for (const p of [budgetFile, path.join(root, 'operations/S01-v1.json'), path.join(root, 'operations/S01-v1.request.json')]) {
     const text = fs.readFileSync(p, 'utf8');
     assert.ok(!text.includes(credential)); assert.ok(!text.includes('data:image/'));
   }
@@ -199,6 +205,9 @@ test('read-only task listing and evidence-based recovery never issue another POS
     return json({ task: recoveredTask });
   });
   await assert.rejects(submitMiniMaxGeneration(request));
+  const snapshotFile = path.join(path.dirname(budgetFile), 'operations/S01-v1.request.json');
+  const snapshotBefore = fs.readFileSync(snapshotFile, 'utf8');
+  const createdAt = readJson(path.join(path.dirname(budgetFile), 'operations/S01-v1.json')).createdAt;
   assert.equal((await listMiniMaxTasks(2)).tasks[0].operationName, 'fixture-task');
   await assert.rejects(listMiniMaxTasks(0), /page/);
   await assert.rejects(recoverMiniMaxOperation(request, 'fixture-task', ''), /evidence/);
@@ -206,6 +215,9 @@ test('read-only task listing and evidence-based recovery never issue another POS
   await assert.rejects(recoverMiniMaxOperation(request, 'fixture-task', 'Synthetic provider match'), /parameters differ/);
   recoveredTask = task();
   await recoverMiniMaxOperation(request, 'fixture-task', 'Synthetic provider match');
+  assert.equal(fs.readFileSync(snapshotFile, 'utf8'), snapshotBefore);
+  assert.equal(readJson(path.join(path.dirname(budgetFile), 'operations/S01-v1.json')).createdAt, createdAt);
+  assert.equal(readJson(path.join(path.dirname(budgetFile), 'operations/S01-v1.json')).status, 'submitted');
   assert.equal(readLedger(budgetFile).entries[0].operationName, 'fixture-task');
   assert.equal(calls.filter(c => c.options.method === 'POST').length, 1);
   await assert.rejects(pollMiniMaxOperation('fixture-task', 'MiniMax-H3'), /model differs/);
@@ -252,10 +264,21 @@ test('CLI plans mixed providers offline, submits MiniMax, saves usage/media and 
   const doctor = await main(['doctor']);
   assert.equal(doctor.minimaxCredentialsConfigured, true); assert.ok(!JSON.stringify(doctor).includes(credential));
   await main(['submit', root, 'S01']);
+  const anchorHash = hashFile(image);
+  const changedPlan = readJson(path.join(root, 'film.json'));
+  changedPlan.shots[0].request = { provider: 'runway', promptFile: 'prompts/removed.txt', firstFramePath: 'refs/moved.png' };
+  fs.writeFileSync(path.join(root, 'film.json'), JSON.stringify(changedPlan));
+  fs.appendFileSync(image, 'edited after submission');
   const result = await main(['poll', root, 'S01']);
   assert.equal(result.status, 'complete');
   assert.equal(result.sha256, hashFile(video));
-  assert.equal(readJson(path.join(root, 'operations/S01-v1.json')).sources[0].sha256, hashFile(image));
+  assert.equal(readJson(path.join(root, 'operations/S01-v1.json')).sources[0].sha256, anchorHash);
+  const catalog = readJson(path.join(root, 'catalog-fixture/catalog/clips', `${result.clipId}.json`));
+  const generation = catalog.generations[0];
+  assert.equal(generation.source, 'creation-snapshot'); assert.equal(generation.prompt, base.prompt);
+  assert.equal(generation.parameters.durationSeconds, 6); assert.equal(generation.provider, 'minimax');
+  assert.equal(generation.sources[0].sha256, anchorHash);
+  assert.ok(fs.existsSync(path.join(root, 'catalog-fixture/data/clips', result.clipId, 'generations', `${generation.snapshotSha256}.json`)));
   assert.equal(readJson(path.join(root, 'operations/S01-v1.poll.json')).usage.output_seconds, 6);
   assert.equal(readLedger(budgetFile).entries[0].status, 'complete');
   const before = calls.length;

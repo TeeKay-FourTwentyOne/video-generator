@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash, randomUUID } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { scanText } from '../privacy-check.mjs';
+import { readSnapshot, snapshotHash, validateSnapshot, writeSnapshot } from './generation-snapshot.mjs';
 
 export const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const VIDEO_EXTENSIONS = new Set(['.mp4', '.mov', '.webm', '.mkv', '.m4v', '.avi']);
@@ -65,8 +66,9 @@ export const publicStrings = values => [...new Set((Array.isArray(values) ? valu
 export function generationMetadata(input = {}, source = 'generation-request') {
   const raw = input.prompt ?? input.veo_prompt ?? input.veoPrompt, prompt = publicText(raw);
   const parameters = {};
-  for (const key of ['durationSeconds', 'aspectRatio', 'resolution', 'generateAudio']) {
-    const value = input[key];
+  for (const key of ['durationSeconds', 'aspectRatio', 'resolution', 'generateAudio', 'mode', 'ratio',
+    'outputFormat', 'promptExpansionMode', 'sampleCount']) {
+    const value = (input.parameters ?? input)[key];
     if (typeof value === 'string' && publicText(value)) parameters[key] = value;
     else if (typeof value === 'boolean' || typeof value === 'number' && Number.isFinite(value)) parameters[key] = value;
   }
@@ -74,7 +76,14 @@ export function generationMetadata(input = {}, source = 'generation-request') {
     promptId: prompt ? `prompt_${digest(prompt)}` : null, provider: publicText(input.provider), model: publicText(input.model),
     seed: Number.isSafeInteger(input.seed) ? input.seed : null,
     createdAt: typeof input.createdAt === 'string' && /^\d{4}-\d{2}-\d{2}T[\d:.]+Z$/.test(input.createdAt) ? input.createdAt : null,
-    parameters };
+    parameters,
+    ...(Object.hasOwn(input, 'requestedModel') ? { requestedModel: publicText(input.requestedModel) } : {}),
+    ...(Array.isArray(input.sources) ? { sources: input.sources.map(s => {
+      const ref = { role: publicText(s.role), sha256: s.sha256, bytes: s.bytes };
+      for (const k of ['width', 'height', 'durationSeconds']) if (Number.isFinite(s[k])) ref[k] = s[k];
+      if (publicText(s.mimeType)) ref.mimeType = s.mimeType;
+      return ref;
+    }) } : {}) };
 }
 export function assertId(id) {
   if (!/^clip_[a-f0-9]{64}$/.test(id ?? '')) throw new Error('Invalid clip ID; use clip_<SHA-256>');
@@ -111,6 +120,9 @@ export function mergeClip(record, metadata = {}) {
 /** Independent copy (APFS reflink when available), verified before atomic no-clobber install. */
 export function importClip(file, metadata = {}, repo = REPO) {
   const sha256 = hashFile(file), id = `clip_${sha256}`;
+  const snapshot = metadata.generationSnapshot ? validateSnapshot(metadata.generationSnapshot) : null;
+  if (snapshot) metadata = { ...metadata, generations: [...(metadata.generations ?? []),
+    { ...generationMetadata(snapshot, 'creation-snapshot'), snapshotSha256: snapshotHash(snapshot) }] };
   return lock(id, repo, () => {
     const recordPath = metadataPath(id, repo);
     const existing = fs.existsSync(recordPath) ? readClip(id, repo) : null;
@@ -128,9 +140,21 @@ export function importClip(file, metadata = {}, repo = REPO) {
         fs.chmodSync(tmp, 0o444); fs.linkSync(tmp, target);
       } finally { fs.rmSync(tmp, { force: true }); }
     } else if (hashFile(target) !== sha256) throw new Error('Existing clip master hash mismatch; never overwrite it');
+    // Retain exact private evidence with the content-addressed master, independently of the workspace.
+    if (snapshot) writeSnapshot(safePath(repo, `data/clips/${id}/generations/${snapshotHash(snapshot)}.json`), snapshot);
     atomicJson(recordPath, record);
     return { id, sha256, path: path.relative(repo, target).split(path.sep).join('/'), record };
   });
+}
+export function verifyClipSnapshots(record, repo = REPO) {
+  for (const generation of record.generations) {
+    if (!generation.snapshotSha256) continue;
+    const file = safePath(repo, `data/clips/${record.id}/generations/${generation.snapshotSha256}.json`);
+    const snapshot = readSnapshot(file);
+    if (snapshotHash(snapshot) !== generation.snapshotSha256
+        || !equal(generation, { ...generationMetadata(snapshot, 'creation-snapshot'), snapshotSha256: snapshotHash(snapshot) }))
+      throw new Error('Clip generation snapshot differs from its catalog evidence');
+  }
 }
 export function updateClip(id, metadata, repo = REPO) {
   return lock(id, repo, () => { const record = mergeClip(readClip(id, repo), metadata); atomicJson(metadataPath(id, repo), record); return record; });

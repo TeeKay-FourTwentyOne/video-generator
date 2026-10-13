@@ -15,6 +15,7 @@ import { runwayCredentialsConfigured, prepareRunwayRequest, submitRunwayGenerati
 import { loadConfig } from '../../mcp/video-generator/dist/utils/config.js';
 import { PROJECT_ROOT } from '../../mcp/video-generator/dist/utils/paths.js';
 import { importClip, resolveClip, generationMetadata } from './clip-library.mjs';
+import { readGenerationSnapshot, snapshotHash } from './generation-snapshot.mjs';
 
 export const hashFile = p => createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 export const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -63,14 +64,20 @@ export function loadPlan(root) {
   }
   return plan;
 }
-export function shotRequest(root, id) {
+function shotAttempt(root, id) {
   const plan = loadPlan(root);
   const shot = plan.shots.find(s => s.id === id);
-  if (!shot?.request) throw new Error('Shot has no generation request');
-  const request = { ...shot.request, requestId: shot.requestId ?? `${id}-v1`, budgetFile: localPath(root, 'budget.json') };
-  videoProvider(request);
-  if (typeof request.requestId !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$/.test(request.requestId))
+  if (!shot) throw new Error('Unknown shot');
+  const requestId = shot.requestId ?? `${id}-v1`;
+  if (typeof requestId !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._-]{0,95}$/.test(requestId))
     throw new Error('Shot requires a stable request ID');
+  return { plan, shot, requestId };
+}
+export function shotRequest(root, id) {
+  const { plan, shot, requestId } = shotAttempt(root, id);
+  if (!shot.request) throw new Error('Shot has no generation request');
+  const request = { ...shot.request, requestId, budgetFile: localPath(root, 'budget.json') };
+  videoProvider(request);
   if (request.promptFile) {
     request.prompt = fs.readFileSync(localPath(root, request.promptFile), 'utf8'); delete request.promptFile;
   }
@@ -177,12 +184,10 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     const { request } = shotRequest(root, args[0]);
     const provider = videoProvider(request);
     // Resolve before the client writes its journal; this also rejects symlinked operation directories.
-    const operationFile = localPath(root, `operations/${request.requestId}.json`);
+    localPath(root, `operations/${request.requestId}.json`);
+    localPath(root, `operations/${request.requestId}.request.json`);
     const result = provider === 'minimax' ? await submitMiniMaxGeneration(request)
       : provider === 'runway' ? await submitRunwayGeneration(request) : await submitVeoGeneration(request);
-    if (provider === 'veo') atomicJson(operationFile, { ...result, provider, prompt: request.prompt,
-      parameters: { durationSeconds: request.durationSeconds, aspectRatio: request.aspectRatio, resolution: request.resolution, generateAudio: request.generateAudio },
-      createdAt: fs.existsSync(operationFile) ? readJson(operationFile).createdAt ?? new Date().toISOString() : new Date().toISOString() });
     return { shot: args[0], requestId: request.requestId, status: 'submitted', model: result.model };
   }
   if (verb === 'recover-minimax') {
@@ -200,38 +205,49 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     return { shot: args[0], requestId: request.requestId, status: 'recovered', model: result.model };
   }
   if (verb === 'reconcile-runway') {
-    const { request } = shotRequest(root, args[0]);
-    const entry = readLedger(budget).entries.find(e => e.id === request.requestId);
-    const result = readJson(localPath(root, `operations/${request.requestId}.poll.json`));
-    if (videoProvider(request) !== 'runway' || entry?.category !== 'runway' || !entry.operationName
+    const { requestId } = shotAttempt(root, args[0]);
+    const entry = readLedger(budget).entries.find(e => e.id === requestId);
+    const result = readJson(localPath(root, `operations/${requestId}.poll.json`));
+    if (entry?.category !== 'runway' || !entry.operationName
       || !result.done || result.operationName !== entry.operationName || !Number.isSafeInteger(result.costCredits) || result.costCredits < 0)
       throw new Error('Reconciliation requires a matching terminal Runway task with nonnegative reported cost');
     const usd = result.costCredits / 100;
-    return { shot: args[0], usd, entry: reconcileSpend(budget, request.requestId, usd,
-      `Runway terminal task reports cost.credits=${result.costCredits}; USD 0.01/credit; saved in operations/${request.requestId}.poll.json. Excludes tax.`) };
+    return { shot: args[0], usd, entry: reconcileSpend(budget, requestId, usd,
+      `Runway terminal task reports cost.credits=${result.costCredits}; USD 0.01/credit; saved in operations/${requestId}.poll.json. Excludes tax.`) };
   }
   if (verb === 'poll') {
-    const { request } = shotRequest(root, args[0]);
-    const entry = readLedger(budget).entries.find(e => e.id === request.requestId);
+    const { requestId } = shotAttempt(root, args[0]);
+    const entry = readLedger(budget).entries.find(e => e.id === requestId);
     if (!entry?.operationName) throw new Error('No known operation to poll; do not resubmit');
-    const provider = videoProvider(request);
-    if (entry.category !== provider) throw new Error('Planned provider differs from the existing reservation');
-    if (provider === 'runway' && prepareRunwayRequest(request).fingerprint !== entry.fingerprint)
-      throw new Error('Runway request changed after submission; restore its original plan before polling');
-    const record = localPath(root, `operations/${request.requestId}.asset.json`);
-    const operationFile = localPath(root, `operations/${request.requestId}.json`);
+    const record = localPath(root, `operations/${requestId}.asset.json`);
+    const operationFile = localPath(root, `operations/${requestId}.json`);
     const operation = fs.existsSync(operationFile) ? readJson(operationFile) : {};
+    if (operation.operationName && operation.operationName !== entry.operationName)
+      throw new Error('Operation record differs from the reserved operation');
+    localPath(root, `operations/${requestId}.request.json`);
+    const snapshot = readGenerationSnapshot(budget, requestId, { provider: entry.category,
+      fingerprint: entry.fingerprint, model: entry.model, snapshotSha256: operation.snapshotSha256 });
+    // New attempts never reread mutable prompts/references or fill defaults from a later plan.
+    const request = snapshot ? null : shotRequest(root, args[0]).request;
+    const provider = snapshot?.provider ?? videoProvider(request);
+    if (!['veo', 'minimax', 'runway'].includes(provider) || entry.category !== provider)
+      throw new Error('Provider differs from the existing reservation');
+    if (!snapshot && provider === 'runway' && prepareRunwayRequest(request).fingerprint !== entry.fingerprint)
+      throw new Error('Runway request changed after submission; restore its original plan before polling');
     const generationSource = operation.prompt ? 'saved-operation-request' : 'film-plan';
-    const generationRequest = { ...request, ...operation.parameters, prompt: operation.prompt ?? request.prompt,
-      provider, model: entry.model, seed: entry.seed ?? request.seed, createdAt: operation.createdAt };
+    const generationRequest = snapshot ?? { ...(operation.prompt ? operation.quote ?? {} : request),
+      ...operation.parameters, prompt: operation.prompt ?? request.prompt,
+      provider, model: entry.model, seed: entry.seed, createdAt: operation.createdAt };
+    const metadata = { kind: 'source', collections: [path.basename(root)], generationSnapshot: snapshot,
+      generations: snapshot ? [] : [generationMetadata(generationRequest, generationSource)] };
     if (fs.existsSync(record)) {
       let asset = readJson(record);
       const source = asset.clipId ? resolveClip(asset.clipId, catalogRoot) : localPath(root, asset.path);
       if (hashFile(source) !== asset.sha256) throw new Error('Downloaded source changed');
-      if (!asset.clipId) {
-        const clip = importClip(source, { kind: 'source', collections: [path.basename(root)],
-          generations: [generationMetadata(generationRequest, generationSource)] }, catalogRoot);
-        asset = { ...asset, legacyPath: asset.path, path: clip.path, clipId: clip.id };
+      if (!asset.clipId || snapshot) {
+        const clip = importClip(source, metadata, catalogRoot);
+        asset = { ...asset, ...(!asset.clipId ? { legacyPath: asset.path } : {}), path: clip.path, clipId: clip.id,
+          ...(snapshot ? { snapshotSha256: snapshotHash(snapshot) } : {}) };
         atomicJson(record, asset);
       }
       if (!['complete', 'reconciled'].includes(entry.status))
@@ -245,7 +261,9 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
       const result = provider === 'minimax' ? await pollMiniMaxOperation(entry.operationName, entry.model)
         : provider === 'runway' ? await pollRunwayOperation(entry.operationName, entry.model)
         : await pollVeoOperation(entry.operationName, entry.model);
-      if (provider !== 'veo') atomicJson(localPath(root, `operations/${request.requestId}.poll.json`), result);
+      // Veo inline media is already preserved as the master; do not duplicate base64 in the journal.
+      atomicJson(localPath(root, `operations/${requestId}.poll.json`), provider === 'veo'
+        ? { ...result, video: result.video ? { uri: result.video.gcsUri ?? result.video.uri, inline: !!result.video.bytesBase64Encoded } : undefined } : result);
       return result;
     };
     let result = await poll();
@@ -262,10 +280,11 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     }
     const incoming = path.join(catalogRoot, 'data/clips/.incoming');
     fs.mkdirSync(incoming, { recursive: true });
-    const output = path.join(incoming, `${createHash('sha256').update(root + request.requestId + entry.operationName).digest('hex')}.mp4`);
+    const output = path.join(incoming, `${createHash('sha256').update(root + requestId + entry.operationName).digest('hex')}.mp4`);
     let clip;
     if (provider === 'veo') {
-      const video = await downloadVeoVideo(result, { request: generationRequest, generationSource, catalogRoot });
+      const video = await downloadVeoVideo(result, { request: generationRequest, generationSource, generationSnapshot: snapshot,
+        collections: metadata.collections, catalogRoot });
       clip = { id: video.clipId, sha256: video.sha256, path: video.path };
     } else {
       // Resume a completed download after interruption; never generate again to repair ingestion.
@@ -273,10 +292,10 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
         if (provider === 'minimax') await downloadMiniMaxVideo(result, output);
         else await downloadRunwayVideo(result, output);
       }
-      clip = importClip(output, { kind: 'source', collections: [path.basename(root)],
-        generations: [generationMetadata(generationRequest, generationSource)] }, catalogRoot);
+      clip = importClip(output, metadata, catalogRoot);
     }
-    const asset = { clipId: clip.id, path: clip.path, sha256: clip.sha256, probe: probe(resolveClip(clip.id, catalogRoot)) };
+    const asset = { clipId: clip.id, path: clip.path, sha256: clip.sha256, probe: probe(resolveClip(clip.id, catalogRoot)),
+      ...(snapshot ? { snapshotSha256: snapshotHash(snapshot) } : {}) };
     if (provider !== 'veo' && !asset.probe.streams?.some(s => s.codec_type === 'video' && s.width > 0 && s.height > 0))
       throw new Error('Provider output has no usable video stream; preserved for inspection');
     atomicJson(record, asset);

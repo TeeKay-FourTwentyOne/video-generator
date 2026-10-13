@@ -4,8 +4,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { REPO, readJson, importClip, resolveClip, readClip, listClips, listUses, analytics, search, run,
-  hashFile, recordUse, safePath, atomicJson, validateUse, canonical } from './clip-library.mjs';
+  hashFile, recordUse, safePath, atomicJson, validateUse, canonical, verifyClipSnapshots } from './clip-library.mjs';
 import { migrate } from './clip-import.mjs';
+import { readSnapshot } from './generation-snapshot.mjs';
 
 export function extract(id, inFrame, frames, output, repo = REPO) {
   if (!Number.isSafeInteger(inFrame) || inFrame < 0 || !Number.isSafeInteger(frames) || frames < 1) throw new Error('Specify integer frame range');
@@ -28,7 +29,7 @@ export function extract(id, inFrame, frames, output, repo = REPO) {
 }
 export async function main(args, repo = REPO) {
   const [verb, ...rest] = args;
-  if (!verb || verb === 'help') return { commands: ['migrate', 'import FILE [PUBLIC_METADATA.json]', 'search QUERY', 'show CLIP_ID',
+  if (!verb || verb === 'help') return { commands: ['migrate', 'import FILE [PUBLIC_METADATA.json] [--snapshot=REQUEST.json]', 'search QUERY', 'show CLIP_ID',
     'resolve CLIP_ID', 'extract CLIP_ID IN_FRAME FRAMES data/workspace/PROJECT/edit/portion.mp4', 'record-use PUBLIC_USE.json',
     'analytics', 'index [--check]', 'validate [--media]'], storage: 'data/clips/<clip_id>/source.<ext>', metadata: 'catalog/clips and catalog/uses' };
   if (verb === 'migrate') {
@@ -36,7 +37,14 @@ export async function main(args, repo = REPO) {
     return { ...report, failedFiles: report.failedFiles.length, unresolvedMetadata: report.unresolvedMetadata.length,
       unsupportedEdits: report.unsupportedEdits.length, missingReferences: report.missingReferences.length, report: 'data/clips/migration-report.json' };
   }
-  if (verb === 'import') return importClip(path.resolve(rest[0]), rest[1] ? readJson(rest[1]) : {}, repo);
+  if (verb === 'import') {
+    const files = rest.filter(a => !a.startsWith('--')), flags = rest.filter(a => a.startsWith('--'));
+    if (files.length < 1 || files.length > 2 || flags.length > 1 || flags.some(a => !a.startsWith('--snapshot=') || !a.slice(11)))
+      throw new Error('Use import FILE [PUBLIC_METADATA.json] [--snapshot=REQUEST.json]');
+    const metadata = files[1] ? readJson(files[1]) : {};
+    if (flags.length) metadata.generationSnapshot = readSnapshot(flags[0].slice(11));
+    return importClip(path.resolve(files[0]), metadata, repo);
+  }
   if (verb === 'search') return search(rest.join(' '), repo);
   if (verb === 'show') return { ...readClip(rest[0], repo), uses: listUses(repo).filter(u => u.clipId === rest[0]) };
   if (verb === 'resolve') return { path: path.relative(repo, resolveClip(rest[0], repo)) };
@@ -63,7 +71,7 @@ export async function main(args, repo = REPO) {
       if (!ids.has(use.clipId)) throw new Error('Usage references missing clip metadata');
       validateUse(use, ids.get(use.clipId));
     }
-    if (rest.includes('--media')) for (const clip of clips) resolveClip(clip.id, repo);
+    if (rest.includes('--media')) for (const clip of clips) { resolveClip(clip.id, repo); verifyClipSnapshots(clip, repo); }
     return { clips: clips.length, uses: uses.length, mediaVerified: rest.includes('--media'), valid: true };
   }
   throw new Error('Unknown clips command; run npm run clips -- help');

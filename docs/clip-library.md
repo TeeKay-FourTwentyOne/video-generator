@@ -8,6 +8,7 @@ imported. This ID will also identify the clip when public hosting is added.
 | Location | Contents | Git |
 | --- | --- | --- |
 | `data/clips/<clip-id>/source.<ext>` | Verified, read-only original bytes | Ignored |
+| `data/clips/<clip-id>/generations/<snapshot-sha256>.json` | Exact private creation-time request snapshots | Ignored |
 | `catalog/clips/<clip-id>.json` | Technical properties, prompts, analysis, characters, collections | Tracked |
 | `catalog/uses/<use-id>.json` | One occurrence in an edit, its source range and output hash | Tracked |
 | `data/clips/locations.json` | Historical local paths mapped to IDs | Ignored |
@@ -33,7 +34,8 @@ npm run clips -- validate --media
 
 Search includes prompts, descriptions, tags, character names, collections and
 legacy identifiers. `resolve` verifies local bytes against the catalog hash.
-`validate` needs metadata only; `--media` additionally hashes every master.
+`validate` needs metadata only; `--media` additionally hashes every master and
+verifies retained creation snapshots against their hashes and catalog projections.
 `index` rebuilds the compact Git-tracked browse index; `clips:check` also verifies
 that index is current. Regenerate it after adding sources or uses, before committing.
 MCP `production_clips` exposes `search`, `show`, `resolve` and `analytics` through
@@ -57,6 +59,44 @@ projected onto the schema allowlist; provider operations, credentials, paths and
 accounting are never copied into public records. A prompt rejected by the privacy
 filter is marked `withheld`, with its text and prompt ID absent. The filter is a
 backstop; manually review metadata before committing it.
+
+### Generation snapshots
+
+New maintained Veo, MiniMax and Runway attempts save a private, immutable request
+snapshot before any generation request. This also covers Veo legacy jobs using
+the shared client. Polling attaches the saved snapshot to the clip, without
+re-reading prompt files or using changed plan settings. The public generation
+entry has `source: "creation-snapshot"` and `snapshotSha256`, plus the safe prompt,
+resolved model, requested alias, known seed, effective controls, capture timestamp
+and ordered reference hashes/roles/sizes. API details and exact untrimmed prompt
+remain in the private copy. Missing model versions and provider-selected seeds
+stay unknown. Repeated polling is idempotent; different attempts yielding the
+same video bytes retain separate snapshots under the shared clip ID.
+
+For another generation route, capture its request at creation using
+`saveGenerationSnapshot` in `tools/production/generation-snapshot.mjs`, then attach
+that record when importing its video:
+
+```sh
+npm run clips -- import data/workspace/example/source.mp4 --snapshot=data/workspace/example/operations/S01-v1.request.json
+```
+
+The helper takes the budget-file location and an object containing `provider`,
+`requestId`, `fingerprint` (SHA-256 of the request), `prompt`, `requestedModel`,
+`model`, `seed`, `parameters`, `sources` and `api`. A source has `role`, `sha256`
+and `bytes`, with available `mimeType`, `width`, `height` and `durationSeconds`.
+Use `null` for an unknown model/seed; never infer them from a tool's branding.
+The helper adds the timestamp and schema/evidence labels. Capture normalized
+defaults and the exact bytes sent, exclude credentials and media payloads, and
+keep later outcomes in a separate operation/asset receipt. This helper records
+provenance; it does not authorize or reserve spending for an external route.
+
+Keep both the workspace record and library copy when archiving. A snapshot
+conflict or hash mismatch stops ingestion; restore original evidence rather than
+overwriting it. Historical imports remain distinguished by their original
+evidence source. A later reconstruction must not be labelled `creation-snapshot`.
+Local animation and derived edits retain their recipes and source hashes; a
+generative model and prompt are applicable only when actually used.
 
 New `edit/v1.json` segments refer directly to the master:
 
