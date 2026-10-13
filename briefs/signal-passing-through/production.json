@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "projectId": "signal-passing-through",
+  "title": "A Signal Passing Through",
+  "kind": "film",
+  "status": "delivered",
+  "statusNote": "The director approved native v2. The 4K finish is delivered with identical audio and timing. Publication wording is prepared; no platform URL has been supplied.",
+  "briefPath": "briefs/signal-passing-through/brief.md",
+  "descriptionPath": "briefs/signal-passing-through/description.md",
+  "descriptionSha256": "8f3e0c58f88ecf08efd499e8613a153ff814785ea30cbdc093937d4e45e5fa53",
+  "decisionsPath": "briefs/signal-passing-through/decisions.md",
+  "handoffPath": "briefs/signal-passing-through/handoff.md",
+  "workspace": {
+    "path": "data/workspace-archive/signal-passing-through-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "758f2efbb6bbbf93dbfe264a571a5d75d260db888d182b3ffa2b4ada9de56d37",
+      "width": 720,
+      "height": 1280,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1080,
+      "durationSeconds": 45,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v1/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "width": 720,
+      "height": 1280,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1080,
+      "durationSeconds": 45,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v2/description.txt",
+      "deliveryRecordPath": "final/v2/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v2-4k",
+      "path": "final/v2-4k/film.mp4",
+      "sha256": "0473cd912707582a5bd7ae56a68cafb470606adaaf014cbc0c3bc604427140d6",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1080,
+      "durationSeconds": 45,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v2-4k/description.txt",
+      "deliveryRecordPath": "final/v2-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo (reused library footage)"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Runway",
+        "model": "gen4.5"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local numerical synthesis"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Direction, editing and original local sound composition",
+        "model": "OpenAI GPT-6",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "758f2efbb6bbbf93dbfe264a571a5d75d260db888d182b3ffa2b4ada9de56d37",
+      "recordedDate": "2026-10-12",
+      "evidence": "Maintained editor verified full decode, exact frame count, dimensions and source hashes. Local soundtrack measured separately.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "recordedDate": "2026-10-12",
+      "evidence": "Full decode, 1080 frames, dimensions, all nine source hashes and nine final use ranges/output hashes verified. First 984 decoded frames match v1 exactly. AAC audio measures -19 LUFS and -3.4 dBTP; correlation to the prepared soundtrack is 0.999812 at zero offset.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "recordedDate": "2026-10-12",
+      "evidence": "Source contact sheets, dense motion strips and flagged boundaries inspected. The lamp ember effect is an explicit retained creative adaptation. New candle extinction passes general and duplication QA.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2",
+      "artifactSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "recordedDate": "2026-10-12",
+      "evidence": "Only computational audio checks were performed. Browser playback does not establish real-time listening by the agent.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "recordedDate": "2026-10-12",
+      "evidence": "The native review is ready for the director; no approval has been inferred.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "recordedDate": "2026-10-12",
+      "evidence": "The director stated that they loved the native review and requested the 4K finish and standard publication flow.",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v2",
+      "artifactSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "recordedDate": "2026-10-12",
+      "evidence": "The director explicitly requested a 4K upscale of the approved cut.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "0473cd912707582a5bd7ae56a68cafb470606adaaf014cbc0c3bc604427140d6",
+      "recordedDate": "2026-10-12",
+      "evidence": "Full decode passed: 2160 by 3840, 1080 frames at 24 fps, exactly 45 seconds. All video presentation timestamps and all 2111 AAC packet payloads and timestamps match the approved native master. Native bytes remain unchanged.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "0473cd912707582a5bd7ae56a68cafb470606adaaf014cbc0c3bc604427140d6",
+      "recordedDate": "2026-10-12",
+      "evidence": "Compared six native-resolution finishing samples and inspected a finished contact sheet covering all nine shots. Lanczos retains the source metal and projection textures.",
+      "outcome": "inspected"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/signal-passing-through-v1/workspace-archive-manifest.json",
+    "inventorySha256": "a5969b45866b3168aa4e56ef3526b5bfe3975ebade3af2620c1e6f91102b1c34",
+    "verifiedDate": "2026-10-12"
+  },
+  "legacyPaths": []
+}

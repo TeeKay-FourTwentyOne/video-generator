@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_8f52dc273c91d986c204a09b6c6cd602d2f374216da5d1bf026dd28be18ba534",
+  "projectId": "signal-passing-through",
+  "editVersion": "edit/v2",
+  "segmentIndex": 7,
+  "shotId": "S08",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 192,
+    "fps": 24
+  },
+  "timelineStartFrame": 792,
+  "outputSha256": "499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+  "schemaVersion": 1,
+  "id": "use_5a4598921e8ad32255980dd732e1342eb68b69104ce1d546aa3a1cbbadc7073d"
+}

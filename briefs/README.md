@@ -69,6 +69,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Scary Woods — Episode 04: Small Steps](scary-woods-episode-04/README.md) | published | scary-woods | [Brief](scary-woods-episode-04/brief.md) · [Description](scary-woods-episode-04/description.md) · [Decisions](scary-woods-episode-04/decisions.md) · [Record](scary-woods-episode-04/production.json) |
 | [Scary Woods — Episode 05: Wrong Turns](scary-woods-episode-05/README.md) | review | scary-woods | [Brief](scary-woods-episode-05/brief.md) · [Record](scary-woods-episode-05/production.json) |
 | [SECONDS](seconds/README.md) | published | — | [Brief](seconds/brief.md) · [Record](seconds/production.json) |
+| [A Signal Passing Through](signal-passing-through/README.md) | delivered | — | [Brief](signal-passing-through/brief.md) · [Description](signal-passing-through/description.md) · [Decisions](signal-passing-through/decisions.md) · [Record](signal-passing-through/production.json) |
 | [SPIDER ARREST](spider-arrest/README.md) | review | — | [Brief](spider-arrest/brief.md) · [Description](spider-arrest/description.md) · [Record](spider-arrest/production.json) |
 | [STEAMBOAT WILHELM](steamboat-wilhelm/README.md) | unknown | — | [Brief](steamboat-wilhelm/brief.md) · [Record](steamboat-wilhelm/production.json) |
 | [Steamboat Wilhelm III](steamboat-wilhelm-iii/README.md) | published | — | [Brief](steamboat-wilhelm-iii/brief.md) · [Decisions](steamboat-wilhelm-iii/decisions.md) · [Record](steamboat-wilhelm-iii/production.json) |

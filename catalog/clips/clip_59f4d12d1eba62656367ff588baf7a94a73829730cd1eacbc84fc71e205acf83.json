@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_59f4d12d1eba62656367ff588baf7a94a73829730cd1eacbc84fc71e205acf83",
+  "sha256": "59f4d12d1eba62656367ff588baf7a94a73829730cd1eacbc84fc71e205acf83",
+  "bytes": 503467,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4.041667,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 97,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "signal-passing-through",
+    "signal-passing-through-v1"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous locked-off macro shot, exactly matching the supplied first frame: one small white candle low in a tall black frame. Hold this framing and the solid candle perfectly still. During the first second the existing flame burns gently. At about 1.3 seconds a single soft unseen breath bends the flame to the right and extinguishes it completely. The wick glows a tiny dull orange, then cools. A fine pale thread of smoke curls slowly upward through the black negative space for the remaining time. End with the candle unlit, almost dark. Preserve the exact candle shape, scale and position. Real candle combustion, restrained and intimate, no camera motion, no hand or face entering, no second candle, no relighting, no text, no cuts.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_744187d1fe9e611ea26fdad24ed20cb693deefe98d1b9f6d809d46257d9f4070",
+      "provider": "runway",
+      "model": "gen4.5",
+      "seed": 4211012,
+      "createdAt": "2026-10-13T02:13:09.059Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "720p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "ratio": "720:1280",
+        "outputFormat": "mp4"
+      },
+      "requestedModel": "gen4.5",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "19a61a0c0c4ba2636f5b6ef92c05b60e40420bf2064578818d82d3b337665ff4",
+          "bytes": 248025,
+          "width": 720,
+          "height": 1280
+        }
+      ],
+      "snapshotSha256": "de59302922284a92b7ea6c8378cb54742044f64d0be10c1d932f26c461d232ff"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

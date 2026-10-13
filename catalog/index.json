@@ -1352,7 +1352,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 2
       }
     },
     {
@@ -5004,7 +5004,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 3
       }
     },
     {
@@ -5609,7 +5609,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 4
       }
     },
     {
@@ -7310,7 +7310,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 3
       }
     },
     {
@@ -13838,6 +13838,24 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_59f4d12d1eba62656367ff588baf7a94a73829730cd1eacbc84fc71e205acf83",
+      "metadata": "clips/clip_59f4d12d1eba62656367ff588baf7a94a73829730cd1eacbc84fc71e205acf83.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "signal-passing-through",
+        "signal-passing-through-v1"
+      ],
+      "durationSeconds": 4.041667,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -22899,7 +22917,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 2
       }
     },
     {
@@ -24231,7 +24249,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 2,
-        "rendered": 0
+        "rendered": 2
       }
     },
     {
@@ -38692,7 +38710,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 2
       }
     },
     {
@@ -39220,7 +39238,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 0
+        "rendered": 2
       }
     },
     {
