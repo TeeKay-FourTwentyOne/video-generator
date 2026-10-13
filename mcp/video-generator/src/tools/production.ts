@@ -23,9 +23,12 @@ export const productionTools = {
     inputSchema: {}, handler: async () => invoke(["doctor"]),
   },
   production_init: {
-    name: "production_init", description: "Create a local workspace and all-in ledger from the user's explicit spend authorization. Never resets an existing budget.",
-    inputSchema: { workspace, limitUsd: z.number().positive(), authorization: z.string().min(1) },
-    handler: async (a: { workspace: string; limitUsd: number; authorization: string }) => invoke(["init", a.workspace, String(a.limitUsd), a.authorization]),
+    name: "production_init", description: "Create a local workspace with a stable project identity and all-in ledger from the user's explicit spend authorization. Never resets an existing budget.",
+    inputSchema: { workspace, limitUsd: z.number().positive(), authorization: z.string().min(1),
+      projectId: z.string().max(100).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional()
+        .describe("Stable public project ID shared by versioned workspaces and briefs; omit only for legacy initialization") },
+    handler: async (a: { workspace: string; limitUsd: number; authorization: string; projectId?: string }) =>
+      invoke(["init", a.workspace, String(a.limitUsd), a.authorization, ...(a.projectId === undefined ? [] : [`--project-id=${a.projectId}`])]),
   },
   production_status: {
     name: "production_status", description: "Read the all-in budget and reservation states. Local only.",

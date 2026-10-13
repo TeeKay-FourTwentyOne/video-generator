@@ -18,9 +18,31 @@ the connection to expose the historical specialist tools. This is an intentional
 compatibility change; film recipes and media remain in place.
 
 ```sh
-npm run film -- init data/workspace/my-film-v1 "$AUTHORIZED_BUDGET_USD" "User-approved total allocation and scope"
+npm run film -- init data/workspace/my-film-v1 "$AUTHORIZED_BUDGET_USD" "User-approved total allocation and scope" --project-id=my-film
 npm run film -- plan data/workspace/my-film-v1
 ```
+
+Choose the stable project ID before initialization and reuse it for later
+workspaces, such as `my-film-v2`, and `briefs/my-film/`. Use at most 100 lowercase
+letters or digits separated by single hyphens. MCP `production_init` accepts the
+same optional `projectId` field. Initialization saves
+`workspace.json` as `{ "schemaVersion": 1, "projectId": "my-film" }`, separate from
+`budget.json`. It refuses to replace an identity or reset an existing ledger.
+
+Assembly and provider polling resolve identity from `workspace.json`, then a
+public production record whose workspace path matches, then the workspace folder
+name. Explicit identity allows assembly before the public record exists. Any
+disagreement between explicit identity and matching public records, or between
+matching records, fails before catalog writes; malformed explicit IDs fail before
+initialization writes anything. Existing workspaces and old init calls without
+`--project-id` keep the public-record/folder fallback without creating metadata.
+For those workspaces, create the canonical production record before first assembly.
+This adds no migration: existing collection labels, use IDs, creation snapshots,
+archives and financial ledgers are not renamed or rewritten.
+Edit version names are project-wide: use distinct versions such as `v1` and `v2`
+across workspaces. The project ID, edit version, segment index and evidence type
+continue to identify each use; changing the workspace folder does not create a
+new use identity.
 
 Skim `docs/craft/field-notes/` for known provider behavior before writing anchors
 and prompts. Then plan with conviction: the brief is a vision to push, and the

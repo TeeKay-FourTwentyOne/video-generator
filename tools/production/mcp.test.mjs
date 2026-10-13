@@ -1,10 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
+import fs from 'node:fs';
 import { Client } from '../../mcp/video-generator/node_modules/@modelcontextprotocol/sdk/dist/esm/client/index.js';
 import { StdioClientTransport } from '../../mcp/video-generator/node_modules/@modelcontextprotocol/sdk/dist/esm/client/stdio.js';
 
-test('default MCP exposes only the maintained production surface', async () => {
+test('default MCP exposes only the maintained production surface', async t => {
+  fs.mkdirSync('data/workspace', { recursive: true });
+  const root = fs.mkdtempSync(path.resolve('data/workspace/mcp-identity-test-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   const transport = new StdioClientTransport({ command: process.execPath,
     args: [path.resolve('mcp/video-generator/dist/server.js')], env: { VIDEO_MCP_PROFILE: 'production' }, stderr: 'pipe' });
   const client = new Client({ name: 'offline-profile-test', version: '1' });
@@ -15,6 +19,19 @@ test('default MCP exposes only the maintained production surface', async () => {
     for (const name of ['production_init', 'production_doctor', 'production_image', 'production_assemble', 'production_clips'])
       assert.ok(tools.some(t => t.name === name), name);
     assert.ok(!tools.some(t => ['save_config', 'execute_project', 'create_job'].includes(t.name)));
+    const initSchema = tools.find(t => t.name === 'production_init').inputSchema;
+    assert.ok(initSchema.properties.projectId);
+    assert.ok(!initSchema.required.includes('projectId'), 'legacy MCP calls remain compatible');
+    const initialized = await client.callTool({ name: 'production_init', arguments: { workspace: root,
+      projectId: 'mcp-fixture', limitUsd: 1, authorization: 'Synthetic offline test allocation' } });
+    assert.ok(!initialized.isError);
+    assert.equal(JSON.parse(initialized.content[0].text).projectId, 'mcp-fixture');
+    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, 'workspace.json'), 'utf8')),
+      { schemaVersion: 1, projectId: 'mcp-fixture' });
+    const invalid = await client.callTool({ name: 'production_init', arguments: { workspace: path.join(root, 'invalid'),
+      projectId: 'Bad-ID', limitUsd: 1, authorization: 'Synthetic offline test allocation' } });
+    assert.equal(invalid.isError, true);
+    assert.equal(fs.existsSync(path.join(root, 'invalid')), false);
     const refusal = await client.callTool({ name: 'production_status', arguments: { workspace: 'outside-workspace' } });
     assert.equal(refusal.isError, true);
   } finally { await client.close(); }

@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { createLedger, readLedger, reserveSpend, reconcileSpend, updateSpend, budgetSummary, atomicJson } from '../../mcp/video-generator/dist/production/ledger.js';
+import { createLedger, readLedger, reserveSpend, reconcileSpend, updateSpend, budgetSummary, atomicJson, micros } from '../../mcp/video-generator/dist/production/ledger.js';
 import { qualifyVeo } from '../../mcp/video-generator/dist/production/veo-spec.js';
 import { submitVeoGeneration, pollVeoOperation, downloadVeoVideo } from '../../mcp/video-generator/dist/clients/veo.js';
 import { miniMaxCredentialsConfigured, prepareMiniMaxRequest, submitMiniMaxGeneration, pollMiniMaxOperation,
@@ -16,6 +16,8 @@ import { loadConfig } from '../../mcp/video-generator/dist/utils/config.js';
 import { PROJECT_ROOT } from '../../mcp/video-generator/dist/utils/paths.js';
 import { importClip, resolveClip, generationMetadata } from './clip-library.mjs';
 import { readGenerationSnapshot, snapshotHash } from './generation-snapshot.mjs';
+import { projectIdFor } from './clip-import.mjs';
+import { validateProjectId, writeProjectIdentity } from './project-identity.mjs';
 
 export const hashFile = p => createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 export const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -126,10 +128,26 @@ export function imageOptions(args) {
   if (!files.length) throw new Error('Specify at least one image request file');
   return { files, reconcile, spacingSeconds };
 }
+function initOptions(args) {
+  const limitUsd = Number(args[0]), words = [];
+  let projectId;
+  for (let i = 1; i < args.length; i++) {
+    const arg = args[i];
+    if (arg === '--project-id' || arg.startsWith('--project-id=')) {
+      if (projectId !== undefined) throw new Error('Specify --project-id only once');
+      projectId = validateProjectId(arg === '--project-id' ? args[++i] : arg.slice('--project-id='.length));
+    } else if (arg.startsWith('--')) throw new Error('Unknown init option');
+    else words.push(arg);
+  }
+  const authorization = words.join(' ');
+  if (!authorization.trim() || limitUsd <= 0) throw new Error('Positive limit and authorization are required');
+  micros(limitUsd);
+  return { limitUsd, authorization, projectId };
+}
 export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
   const [verb, location, ...args] = argv;
   if (!verb || verb === 'help') return { commands: [
-    'doctor', 'init WORKSPACE LIMIT_USD AUTHORIZATION', 'status WORKSPACE', 'plan WORKSPACE',
+    'doctor', 'init WORKSPACE LIMIT_USD AUTHORIZATION [--project-id=ID]', 'status WORKSPACE', 'plan WORKSPACE',
     'minimax-tasks [PAGE]', 'recover-minimax WORKSPACE SHOT_ID TASK_ID EVIDENCE',
     'runway-account', 'recover-runway WORKSPACE SHOT_ID TASK_ID EVIDENCE', 'reconcile-runway WORKSPACE SHOT_ID',
     'submit WORKSPACE SHOT_ID', 'poll WORKSPACE SHOT_ID [--wait[=SECONDS]] [--interval=SECONDS]',
@@ -159,9 +177,14 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
   const root = workspace(location);
   const budget = localPath(root, 'budget.json');
   if (verb === 'init') {
-    createLedger(budget, Number(args[0]), args.slice(1).join(' '));
+    const options = initOptions(args);
+    const projectId = projectIdFor(root, catalogRoot, options);
+    if (fs.existsSync(budget)) throw new Error('Budget already exists; refusing to reset spend');
+    // Save explicit identity first so an interrupted init can resume without falling back to the folder name.
+    if (options.projectId !== undefined) writeProjectIdentity(root, options.projectId);
+    createLedger(budget, options.limitUsd, options.authorization);
     for (const d of ['refs', 'prompts', 'clips', 'qa', 'edit', 'final', 'operations']) fs.mkdirSync(localPath(root, d), { recursive: true });
-    return { workspace: path.relative(PROJECT_ROOT, root), ...budgetSummary(readLedger(budget)) };
+    return { workspace: path.relative(PROJECT_ROOT, root), projectId, ...budgetSummary(readLedger(budget)) };
   }
   if (verb === 'status') return { ...budgetSummary(readLedger(budget)), reservations: readLedger(budget).entries.map(({ id, category, status, reservedMicros }) => ({ id, category, status, usd: reservedMicros / 1e6 })) };
   if (verb === 'reserve') return reserveSpend(budget, { id: args[0], usd: Number(args[1]), category: args[2], note: args.slice(3).join(' '), fingerprint: createHash('sha256').update(args.join('\n')).digest('hex') });
@@ -216,6 +239,7 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
       `Runway terminal task reports cost.credits=${result.costCredits}; USD 0.01/credit; saved in operations/${requestId}.poll.json. Excludes tax.`) };
   }
   if (verb === 'poll') {
+    const projectId = projectIdFor(root, catalogRoot);
     const { requestId } = shotAttempt(root, args[0]);
     const entry = readLedger(budget).entries.find(e => e.id === requestId);
     if (!entry?.operationName) throw new Error('No known operation to poll; do not resubmit');
@@ -238,14 +262,15 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     const generationRequest = snapshot ?? { ...(operation.prompt ? operation.quote ?? {} : request),
       ...operation.parameters, prompt: operation.prompt ?? request.prompt,
       provider, model: entry.model, seed: entry.seed, createdAt: operation.createdAt };
-    const metadata = { kind: 'source', collections: [path.basename(root)], generationSnapshot: snapshot,
+    const metadata = { kind: 'source', collections: [projectId], generationSnapshot: snapshot,
       generations: snapshot ? [] : [generationMetadata(generationRequest, generationSource)] };
     if (fs.existsSync(record)) {
       let asset = readJson(record);
       const source = asset.clipId ? resolveClip(asset.clipId, catalogRoot) : localPath(root, asset.path);
       if (hashFile(source) !== asset.sha256) throw new Error('Downloaded source changed');
       if (!asset.clipId || snapshot) {
-        const clip = importClip(source, metadata, catalogRoot);
+        // Replaying a completed receipt verifies its evidence without relabeling historical collections.
+        const clip = importClip(source, asset.clipId ? { ...metadata, collections: [] } : metadata, catalogRoot);
         asset = { ...asset, ...(!asset.clipId ? { legacyPath: asset.path } : {}), path: clip.path, clipId: clip.id,
           ...(snapshot ? { snapshotSha256: snapshotHash(snapshot) } : {}) };
         atomicJson(record, asset);

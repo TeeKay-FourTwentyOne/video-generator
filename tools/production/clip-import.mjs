@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { REPO, VIDEO_EXTENSIONS, readJson, hashFile, digest, importClip, updateClip, readClip, recordUse,
   atomicJson, publicText, publicStrings, generationMetadata, listClips, canonical } from './clip-library.mjs';
+import { readProjectIdentity, validateProjectId } from './project-identity.mjs';
 
 export function walk(root) {
   if (!fs.existsSync(root)) return [];
@@ -22,13 +23,18 @@ function workspaceFor(file, repo) {
   const m = /^(data\/(?:workspace|workspace-archive|projects)\/[^/]+)(?:\/|$)/.exec(relative);
   return m ? path.join(repo, m[1]) : null;
 }
-export function projectIdFor(root, repo = REPO) {
+export function projectIdFor(root, repo = REPO, { projectId } = {}) {
+  const explicit = readProjectIdentity(root);
+  const identities = new Set();
+  if (explicit !== undefined) identities.add(explicit);
+  if (projectId !== undefined) identities.add(validateProjectId(projectId));
   const relative = forward(path.relative(repo, root));
   for (const file of walk(path.join(repo, 'briefs')).filter(f => path.basename(f) === 'production.json')) {
     const record = read(file);
-    if (record?.workspace?.path === relative) return record.projectId;
+    if (record?.workspace?.path === relative) identities.add(validateProjectId(record.projectId));
   }
-  return publicText(path.basename(root)) ?? `collection-${digest(relative).slice(0, 12)}`;
+  if (identities.size > 1) throw new Error('Project identity conflict between initialization, workspace.json or public production records');
+  return identities.values().next().value ?? publicText(path.basename(root)) ?? `collection-${digest(relative).slice(0, 12)}`;
 }
 
 export function migrate(repo = REPO, progress = () => {}) {
@@ -44,6 +50,10 @@ export function migrate(repo = REPO, progress = () => {}) {
     if (!projectIds.has(ws)) projectIds.set(ws, projectIdFor(ws, repo));
     return projectIds.get(ws);
   };
+  const jsonFiles = ['workspace', 'workspace-archive', 'projects'].flatMap(base => walk(path.join(data, base)))
+    .filter(f => f.endsWith('.json') && fs.statSync(f).size <= 8 * 1024 * 1024);
+  // Resolve all workspace identities before importing any master or updating the catalog.
+  for (const file of [...files, ...jsonFiles]) collection(file);
   for (const [index, file] of files.entries()) {
     const relative = forward(path.relative(repo, file));
     try {
@@ -129,8 +139,6 @@ export function migrate(repo = REPO, progress = () => {}) {
     jobs.set(j.id, id);
     generation(id, { ...j.input, model: j.result?.model ?? j.input?.model, seed: j.result?.seed ?? j.input?.seed, provider: 'veo', createdAt: j.createdAt }, 'legacy-job');
   }
-  const jsonFiles = ['workspace', 'workspace-archive', 'projects'].flatMap(base => walk(path.join(data, base)))
-    .filter(f => f.endsWith('.json') && fs.statSync(f).size <= 8 * 1024 * 1024);
   const documents = new Map(jsonFiles.map(f => [f, read(f)]).filter(([, x]) => x));
   // Earlier shell generators saved a job receipt beside its exact prompt text.
   for (const [file, doc] of documents) {

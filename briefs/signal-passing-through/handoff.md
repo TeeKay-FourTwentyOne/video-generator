@@ -1,4 +1,4 @@
-# Next workflow improvement: explicit project identity
+# Workflow improvement: explicit project identity
 
 This production exposed an order-dependent identity bug: assembly before creation
 of the public production record used the versioned workspace name as the project
@@ -34,5 +34,23 @@ failure. No production tooling changed during the film or its finishing pass.
 - Completed polling remains idempotent and preserves creation snapshots exactly.
 - Offline production tests and catalog/record checks pass without paid requests.
 
-Until this is implemented, create the canonical production record before the
-first real assembly and explicitly verify each new generation's collections.
+## Implemented locally: 2026-10-12
+
+Initialization now accepts `--project-id=ID` (MCP: `projectId`) and saves the
+identity in versioned `workspace.json` metadata, separately from the ledger.
+Assembly and new polling imports share that identity before a public record
+exists. Matching public records are checked for conflicts before catalog writes;
+older workspaces retain the public-record/folder fallback. Completed polling
+preserves existing collection labels and original creation snapshots. Historical
+catalogs, use IDs, archives and financial ledgers were not migrated.
+
+The build and all 93 offline production tests passed, including two initialized
+workspace versions, assembly before public-record creation, MCP initialization,
+malformed/conflicting identity rejection, and repeated polling with exact snapshot
+preservation. Catalog and production-record checks also passed. Provider traffic
+in the regression tests was mocked; no paid requests were made.
+
+For new workspaces, pass the stable project ID at initialization and use distinct
+edit versions across workspaces belonging to that project. For older workspaces
+without explicit metadata, create the canonical production record before first
+assembly. See [the updated setup and compatibility rules](../../docs/production.md).

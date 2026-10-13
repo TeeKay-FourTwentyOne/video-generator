@@ -56,13 +56,13 @@ export function validateEdit(root, edit, plan, { catalogRoot = PROJECT_ROOT } = 
 }
 export function assemble(root, version, { catalogRoot = PROJECT_ROOT } = {}) {
   validVersion(version);
+  const projectId = projectIdFor(root, catalogRoot);
   const plan = loadPlan(root);
   const originalEdit = readJson(localPath(root, `edit/${version}.json`));
   const expected = validateEdit(root, originalEdit, plan, { catalogRoot });
   const folder = localPath(root, `final/${version}`);
   // Refuse existing version, even if it is incomplete. A crash must not overwrite evidence.
   fs.mkdirSync(folder);
-  const projectId = projectIdFor(root, catalogRoot);
   const edit = { ...originalEdit, segments: originalEdit.segments.map(segment => {
     const clip = segment.clipId ? { id: segment.clipId, sha256: segmentHash(segment) }
       : importClip(localPath(root, segment.source), { collections: [projectId] }, catalogRoot);
