@@ -1,0 +1,1116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Private immutable clip analysis run v1",
+  "description": "Private evidence only. Runtime validation additionally verifies the derived run ID, exact artifact inventory, source identity and all content hashes. Never project this object into public catalog records.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "extractor": {
+      "const": "clip-analysis/1"
+    },
+    "runId": {
+      "type": "string",
+      "pattern": "^run_[a-f0-9]{64}$"
+    },
+    "configSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "catalogSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "const": "complete"
+    },
+    "inputVerifiedBefore": {
+      "const": true
+    },
+    "inputVerifiedAfter": {
+      "const": true
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "completedAt": {
+      "type": "string"
+    },
+    "input": {
+      "type": "object",
+      "properties": {
+        "clipId": {
+          "type": "string",
+          "pattern": "^clip_[a-f0-9]{64}$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "clipId",
+        "sha256",
+        "bytes"
+      ],
+      "additionalProperties": false
+    },
+    "config": {
+      "type": "object",
+      "description": "All effective settings, required passes, explicit evidence allowlist and hash-pinned local adapters. See configFor in clip-analysis-store.mjs."
+    },
+    "tools": {
+      "type": "object",
+      "description": "Executable hashes and full versions/build configuration, operating system and extractor source hashes."
+    },
+    "steps": {
+      "type": "object",
+      "properties": {
+        "evidence": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "evidence"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "probe": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "probe"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "decode": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "decode"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "timing": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "timing"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "signal": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "signal"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "audio": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "audio"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "preview": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "preview"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "ocr": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "ocr"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "transcript": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "transcript"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "observations": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "observations"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "embeddings": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "embeddings"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        },
+        "audio-content": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "pending",
+                "complete",
+                "not-applicable",
+                "needs-review"
+              ]
+            },
+            "reason": {
+              "type": "string"
+            },
+            "schemaVersion": {
+              "const": 1
+            },
+            "runId": {
+              "type": "string"
+            },
+            "inputSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "step": {
+              "const": "audio-content"
+            },
+            "coverage": {
+              "type": "object"
+            },
+            "startedAt": {
+              "type": "string"
+            },
+            "completedAt": {
+              "type": "string"
+            },
+            "elapsedMs": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "commands": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "outputs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "state"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "evidence",
+        "probe",
+        "decode",
+        "timing",
+        "signal",
+        "audio",
+        "preview",
+        "ocr",
+        "transcript",
+        "observations",
+        "embeddings",
+        "audio-content"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^steps/[a-z-]+/[A-Za-z0-9_./-]+$"
+          },
+          "step": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "path",
+          "step",
+          "sha256",
+          "bytes"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "timeBases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "streamIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "timeBase": {
+            "type": "string",
+            "pattern": "^[0-9]+/[1-9][0-9]*$"
+          }
+        },
+        "required": [
+          "streamIndex",
+          "timeBase"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "pending",
+              "not-applicable",
+              "needs-review"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "step",
+          "state",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "extractor",
+    "runId",
+    "configSha256",
+    "catalogSha256",
+    "status",
+    "inputVerifiedBefore",
+    "inputVerifiedAfter",
+    "createdAt",
+    "completedAt",
+    "input",
+    "config",
+    "tools",
+    "steps",
+    "artifacts",
+    "timeBases",
+    "warnings"
+  ]
+}

@@ -114,6 +114,7 @@ const unique = rows => [...new Map(rows.map(x => [JSON.stringify(x), x])).values
 export function mergeClip(record, metadata = {}) {
   for (const field of ['labels', 'collections', 'legacyIds', 'tags']) record[field] = publicStrings([...record[field], ...(metadata[field] ?? [])]);
   for (const field of ['generations', 'analysis', 'characters']) record[field] = unique([...record[field], ...(metadata[field] ?? [])]);
+  if (metadata.analysisRefs) record.analysisRefs = unique([...(record.analysisRefs ?? []), ...metadata.analysisRefs]);
   if (metadata.kind && (record.kind === 'unknown' || metadata.kind === 'source')) record.kind = metadata.kind;
   validateClip(record); return record;
 }
@@ -208,6 +209,7 @@ export function validateRecord(record, name) {
 export function validateClip(record) {
   validateRecord(record, 'clip');
   if (record.id !== `clip_${record.sha256}`) throw new Error('Clip hash and ID disagree');
+  for (const ref of record.analysisRefs ?? []) if (ref.inputSha256 !== record.sha256) throw new Error('Analysis reference has a different input identity');
   for (const g of record.generations) {
     if ((g.promptStatus === 'recorded') !== (typeof g.prompt === 'string' && !!g.prompt)) throw new Error('Prompt status disagrees with text');
     if (g.promptId !== (g.prompt ? `prompt_${digest(g.prompt)}` : null)) throw new Error('Prompt ID mismatch');

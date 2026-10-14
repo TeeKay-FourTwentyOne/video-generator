@@ -37,6 +37,19 @@ reconciles historical metadata while preserving all original paths. Maintained
 provider polling returns clip IDs; editing materializes frame ranges and records
 their use. [Clip library and evidence limits](clip-library.md).
 
+`clip-cloud.mjs` adds explicit private backup and restore through `clips cloud`.
+It reuses content IDs, validates local and remote checksums, recovers resumable
+uploads and keeps destination configuration, budget reservations and receipts in
+ignored storage. Ordinary imports, provider polling and media resolution remain
+independent of the cloud mirror.
+
+`clip-analysis.mjs` coordinates immutable private extraction runs and a resumable
+queue. The store, process, extractor and adapter modules isolate evidence validation,
+bounded local execution and optional provisioned models. `clip-analysis-views.mjs`
+rebuilds private search and coverage, projects explicitly reviewed summaries and
+reports cleanup blockers. `clip-backup-set.mjs` joins complete backup membership,
+generation-pinned recovery and rehearsals. [Commands and current limits](clip-analysis.md).
+
 `generation-snapshot.mjs` freezes private request evidence before maintained
 generation calls. Provider journals bind its hash to the operation; ingestion
 keeps a copy beside the master and projects only allowed fields into the catalog.

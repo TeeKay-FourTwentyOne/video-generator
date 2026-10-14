@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Offline discovery, ingestion, validation and analytics. Never calls a provider. */
+/** Offline catalog commands; explicitly named cloud commands provide private backup. */
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -29,9 +29,11 @@ export function extract(id, inFrame, frames, output, repo = REPO) {
 }
 export async function main(args, repo = REPO) {
   const [verb, ...rest] = args;
+  if (verb === 'cloud') return (await import('./clip-cloud.mjs')).cloudMain(rest, repo);
+  if (verb === 'analysis') return (await import('./clip-analysis.mjs')).analysisMain(rest, repo);
   if (!verb || verb === 'help') return { commands: ['migrate', 'import FILE [PUBLIC_METADATA.json] [--snapshot=REQUEST.json]', 'search QUERY', 'show CLIP_ID',
     'resolve CLIP_ID', 'extract CLIP_ID IN_FRAME FRAMES data/workspace/PROJECT/edit/portion.mp4', 'record-use PUBLIC_USE.json',
-    'analytics', 'index [--check]', 'validate [--media]'], storage: 'data/clips/<clip_id>/source.<ext>', metadata: 'catalog/clips and catalog/uses' };
+    'analytics', 'index [--check]', 'validate [--media]', 'analysis help', 'cloud help'], storage: 'data/clips/<clip_id>/source.<ext>', metadata: 'catalog/clips and catalog/uses' };
   if (verb === 'migrate') {
     const report = migrate(repo, event => process.stderr.write(JSON.stringify(event) + '\n'));
     return { ...report, failedFiles: report.failedFiles.length, unresolvedMetadata: report.unresolvedMetadata.length,
@@ -77,6 +79,10 @@ export async function main(args, repo = REPO) {
   throw new Error('Unknown clips command; run npm run clips -- help');
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
-  main(process.argv.slice(2)).then(value => console.log(JSON.stringify(value, null, 2)))
+  main(process.argv.slice(2)).then(value => {
+    console.log(JSON.stringify(value, null, 2));
+    if (process.argv[2] === 'analysis' && ['run', 'work'].includes(process.argv[3])
+      && (value.status === 'incomplete' || value.states?.failed > 0)) process.exitCode = 1;
+  })
     .catch(error => { console.error(error.message); process.exitCode = 1; });
 }

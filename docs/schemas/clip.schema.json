@@ -385,6 +385,85 @@
         "license"
       ],
       "additionalProperties": false
+    },
+    "analysisRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "runId": {
+            "type": "string",
+            "pattern": "^run_[a-f0-9]{64}$"
+          },
+          "manifestSha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "inputSha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "extractor": {
+            "const": "clip-analysis/1"
+          },
+          "evidenceType": {
+            "const": "measured-and-reviewed"
+          },
+          "measured": {
+            "type": "object",
+            "properties": {
+              "fullDecode": {
+                "type": "boolean"
+              },
+              "videoFrames": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "timeBase": {
+                "type": "string",
+                "pattern": "^[0-9]+/[1-9][0-9]*$"
+              }
+            },
+            "required": [
+              "fullDecode",
+              "videoFrames",
+              "timeBase"
+            ],
+            "additionalProperties": false
+          },
+          "reviewedDescription": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reviewedTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "privacyReviewed": {
+            "const": true
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "runId",
+          "manifestSha256",
+          "inputSha256",
+          "extractor",
+          "evidenceType",
+          "measured",
+          "reviewedDescription",
+          "reviewedTags",
+          "privacyReviewed"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [

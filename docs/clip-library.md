@@ -19,6 +19,13 @@ media, providers or a database. A future SQLite index can be rebuilt from them;
 stable IDs and separate usage records provide the join keys. An opaque database
 file should not replace the reviewable public records.
 
+New extraction lives in private, immutable analysis runs under each clip's library
+directory. `npm run clips -- analysis help` exposes the resumable queue, pilot,
+preview/search views and review workflow. Optional `analysisRefs` in public clip
+records contain versioned hashes and explicitly reviewed summaries; raw extraction
+remains private. Complete backup sets include declared analysis dependencies and
+support generation-pinned recovery. See [private clip analysis](clip-analysis.md).
+
 ## Find and inspect existing clips
 
 ```sh
@@ -39,7 +46,8 @@ verifies retained creation snapshots against their hashes and catalog projection
 `index` rebuilds the compact Git-tracked browse index; `clips:check` also verifies
 that index is current. Regenerate it after adding sources or uses, before committing.
 MCP `production_clips` exposes `search`, `show`, `resolve` and `analytics` through
-the same CLI. No command here calls a generation or analysis provider.
+the same CLI. Catalog commands remain offline. The explicit `cloud` commands below
+access storage; no clip command calls a generation or analysis provider.
 
 ## New sources and edits
 
@@ -172,10 +180,97 @@ counts, distinct rendered projects, and source seconds used. Seconds count repea
 occurrences; they are not unique coverage or audience views. This supports prompt
 reuse research without conflating selection with quality or inferring causation.
 
+## Private cloud backup
+
+The optional Cloud Storage mirror is controlled by ignored
+`data/clips/cloud/config.json`. It records the destination, repository-relative
+credential file, authorized monthly budget, operating headroom, download allowance
+and dated rates. Configuration, accounting, resumable session URLs and receipts
+stay under `data/clips/cloud/`; never copy them into the public catalog or Git.
+Provision a dedicated Standard bucket in `US-CENTRAL1`, with uniform bucket-level
+access and public-access prevention enforced. Configure a monthly Cloud Billing
+budget for the project's Cloud Storage service and the bucket label
+`purpose=clip-library`. Keep private setup requests and provider receipts locally.
+Optional `uploadConcurrency` bounds simultaneous transfers. `uploadTransport`
+can select `curl` for native HTTP/2 uploads when Node connections are unreliable;
+this requires a local curl build with HTTP/2 support. Both transports preserve
+the same upload sessions, create-only preconditions and checksum checks.
+
+```sh
+npm run clips -- cloud help
+npm run clips -- cloud plan
+npm run clips -- cloud sync
+npm run clips -- cloud status
+npm run clips -- cloud restore "$CLIP_ID" data/workspace/example/restore/source.mp4
+npm run clips -- cloud fetch "$CLIP_ID"
+npm run clips -- cloud catalogs
+npm run clips -- cloud recover-catalog "$CATALOG_SHA256" data/workspace/example/recovered-catalog
+```
+
+Run `cloud sync` after a batch of imports when this private destination is
+configured and the ongoing storage authorization remains active. Import and
+provider polling stay offline with respect to the backup; sync is a separate,
+explicit network action. `plan` hashes the current library and writes an offline
+inventory. `status` reads local receipts and initial-backup job progress, not the
+live bucket. A running first mirror holds the cloud lock; let it finish before
+starting another sync. Its ignored `runner.json` records completion or failure.
+
+Sync copies one immutable master per clip ID, retained generation snapshots and
+an immutable compressed snapshot of the clip/use catalog. It uploads only this
+allowlist, never the repository's credential/configuration files or whole project
+directories. Existing originals and archives are preserved. Cloud object creation
+uses a generation precondition to prevent replacement. Repeated syncs skip only
+objects whose server MD5, byte length and recorded SHA-256 match verified local
+bytes. Final inventory checks also verify the bucket's privacy settings. Public
+access grants cause sync to stop, even with public-access prevention enabled.
+
+Interrupted uploads retain private resumable sessions. Run the same sync command
+again to recover their offsets. Never share session URLs. A process lock prevents
+concurrent accounting/sync runs; after a crash, verify the recorded process has
+stopped before removing `data/clips/cloud/.lock/`. Conflicting remote bytes stop
+the operation; they are never silently replaced or accepted under an existing ID.
+
+The local monthly ledger reserves projected full-month storage, request costs and
+downloads before proceeding, without assuming free-tier credits. Failed or
+uncertain requests retain their reservations. It refuses operations that exceed
+the configured budget, headroom or download allowance, and requires periodic rate
+refreshes. This is an estimate for this tool's activity, not a provider-enforced
+spending cap or a measurement of other tools' usage. Billing alerts provide a
+separate check; they do not stop charges automatically.
+
+Restore writes a new file under `data/workspace/`, pins the remote generation and
+verifies the downloaded SHA-256, MD5 and byte length. It never replaces an existing
+file. Keep its `.cloud.json` verification receipt with the restored copy. Ordinary
+`resolve` remains local so an edit cannot trigger unexpected cloud downloads.
+
+`cloud fetch` restores directly to the canonical library location, including exact
+private generation snapshots. It works with no local master or old upload receipt.
+Matching local media is reused; a conflicting file stops recovery. Downloads pin
+object generations and verify SHA-256, server MD5 and size before installation.
+Snapshot bytes and their canonical identities are checked separately, including
+their agreement with the public generation record. Missing required snapshots
+stop installation. Successful fetches write private receipts under
+`data/clips/cloud/restores/`. The restored clip immediately works with `resolve`
+and existing frame-based editors.
+
+`cloud catalogs` lists immutable catalog backups. `cloud recover-catalog` downloads
+one chosen by its SHA-256, validates its compressed bytes, schemas and use references,
+and stages the records in a new workspace directory. It preserves the current
+catalog. See [restoring on another machine](clip-restore.md) for the complete path.
+
+Complete backup sets additionally cover verified analysis runs, their declared
+artifacts and explicitly selected supporting evidence. Arbitrary workspace files
+are not included. `cloud plan --allow-absent` and `cloud sync --allow-absent` support
+deliberately absent masters only through a previously complete backup set, with
+fresh remote-generation verification during sync. Local eviction still requires
+a qualified extraction profile, reviewed pilot, recovery rehearsal and dependency
+audit; see [analysis recovery and cleanup readiness](clip-analysis.md).
+
 ## Public hosting and integrity
 
-`availability` starts with `status: local-only`, empty `urls`, and unknown `license`.
-No media was uploaded and no media-license grant is inferred from the code license.
+Public `availability` starts with `status: local-only`, empty `urls`, and unknown
+`license`. A private backup does not change these public fields or grant a media
+license. Private cloud locations are recorded only in ignored backup receipts.
 After a hosting and rights decision, attach unsigned public HTTPS URLs to the same
 ID and preserve its hash. Media paths, embedded tags, prompts and annotations still
 need publication review. Changing the bytes creates a new ID.
