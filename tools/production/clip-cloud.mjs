@@ -4,12 +4,11 @@ import path from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { gzipSync } from 'node:zlib';
-import { Readable, Transform } from 'node:stream';
-import { pipeline } from 'node:stream/promises';
 import { spawn } from 'node:child_process';
 import { REPO, safePath, readJson, listClips, listUses, mediaPath, readClip, canonical,
   verifyClipSnapshots } from './clip-library.mjs';
-import { listRuns, verifyRun, runPath, sha as recordDigest } from './clip-analysis-store.mjs';
+import { listRuns, verifyRun, runPath, configReference, sha as recordDigest } from './clip-analysis-store.mjs';
+import { SUPPORT_ROLES, supportPath, verifySupportClosure } from './clip-backup-support.mjs';
 import { readSnapshot, snapshotHash } from './generation-snapshot.mjs';
 
 const require = createRequire(import.meta.url);
@@ -91,6 +90,11 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
     for (const ref of clip.analysisRefs ?? []) if (!runs.includes(ref.runId)) throw new Error('Public analysis reference has no retained private run');
     for (const runId of runs) {
       const m = verifyRun(clip.id, runId, repo), dir = runPath(clip.id, runId, repo), prefix = `analysis/${clip.id}/${runId}`;
+      const ref = configReference(readJson(path.join(dir, 'manifest.json')));
+      if (ref && !objects.some(o => o.kind === 'analysis-inventory' && o.sha256 === ref.sha256)) {
+        const h = hashes(safePath(repo, ref.path));
+        objects.push({ name: `inventories/${ref.sha256}.json`, localPath: ref.path, ...h, kind: 'analysis-inventory' });
+      }
       for (const a of [{ path: 'manifest.json' }, ...m.artifacts]) {
         const file = safePath(dir, a.path), h = hashes(file);
         objects.push({ name: `${prefix}/${a.path}`, localPath: path.relative(repo, file), ...h, clipId: clip.id, runId,
@@ -112,12 +116,17 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
     const support = readJson(supportFile);
     if (support.schemaVersion !== 1 || !Array.isArray(support.files)) throw new Error('Invalid explicit analysis support allowlist');
     for (const entry of support.files) {
-      if (typeof entry.path !== 'string' || !entry.path.startsWith('data/') || !entry.path.endsWith('.json')
-        || !['dependency-audit', 'pilot-review', 'access-attestation', 'retention-plan'].includes(entry.role)) throw new Error('Unsupported backup support payload');
+      supportPath(entry.path);
+      if (!SUPPORT_ROLES.includes(entry.role)) throw new Error('Unsupported backup support payload');
       const file = safePath(repo, entry.path), h = hashes(file);
       if (h.sha256 !== entry.sha256 || h.bytes !== entry.bytes) throw new Error('Selected backup support evidence changed');
-      objects.push({ name: `support/${h.sha256}.json`, localPath: path.relative(repo, file), ...h, kind: 'analysis-support', role: entry.role });
+      const name = `support/${h.sha256}${path.extname(entry.path)}`, prior = objects.find(o => o.name === name);
+      if (prior) {
+        if (!prior.restorePaths.includes(entry.path)) prior.restorePaths.push(entry.path);
+      } else objects.push({ name, localPath: path.relative(repo, file), ...h, kind: 'analysis-support', role: entry.role, restorePaths: [entry.path] });
     }
+    for (const o of objects.filter(o => o.restorePaths)) o.restorePaths.sort();
+    verifySupportClosure(objects, repo);
   }
   const uses = listUses(repo), ids = new Set(clips.map(c => c.id));
   if (uses.some(u => !ids.has(u.clipId))) throw new Error('Catalog changed during backup inventory; retry the plan');
@@ -184,6 +193,9 @@ export class Gcs {
     const target = new URL(url);
     if (target.protocol !== 'https:' || target.hostname !== 'storage.googleapis.com' || target.username || target.password || target.port)
       throw new Error('Refusing cloud credentials outside the Storage API');
+    const { timeoutMs = 120000, ...fetchOptions } = options;
+    if (!Number.isSafeInteger(timeoutMs) || timeoutMs < 1000 || timeoutMs > 3600000)
+      throw new Error('Invalid cloud request timeout');
     if (!this.auth || this.expiresAt < Date.now() + 60000) {
       try { this.auth = await this.tokenProvider(safePath(this.repo, this.c.credentialFile)); }
       catch { throw new Error('Cloud authentication failed; credential details withheld'); }
@@ -194,8 +206,8 @@ export class Gcs {
       || options.method === 'PUT' && options.headers?.['Content-Length'] === '0';
     for (let attempt = 0; ; attempt++) {
       const started = Date.now();
-      try { return await this.fetcher(url, { ...options, redirect: 'manual', signal: AbortSignal.timeout(120000),
-        headers: { ...options.headers, Authorization: `Bearer ${this.auth.accessToken}` } }); }
+      try { return await this.fetcher(url, { ...fetchOptions, redirect: 'manual', signal: AbortSignal.timeout(timeoutMs),
+        headers: { ...fetchOptions.headers, Authorization: `Bearer ${this.auth.accessToken}` } }); }
       catch (e) {
         const file = local(this.repo, 'transport-errors.jsonl'); fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 });
         fs.appendFileSync(file, JSON.stringify({ at: stamp(), method: options.method ?? 'GET', endpoint: target.pathname,
@@ -405,19 +417,10 @@ export async function restore(id, output, repo = REPO, { client } = {}) {
     if (!remote || remote.metadata?.sha256 !== clip.sha256 || Number(remote.size) !== clip.bytes || !remote.md5Hash
         || remote.storageClass !== 'STANDARD' || !/^\d+$/.test(remote.generation))
       throw new Error('Restore source differs from catalog identity');
-    const url = client.url(`/o/${encodeURIComponent(name)}?alt=media&generation=${remote.generation}`);
-    const response = await client.request(url);
-    if (!response.ok) throw new Error(`Cloud restore failed (HTTP ${response.status}; details withheld)`);
     fs.mkdirSync(path.dirname(target), { recursive: true });
-    const tmp = `${target}.${randomUUID()}.part`, sha = createHash('sha256'), md5 = createHash('md5'); let bytes = 0;
+    const tmp = `${target}.${randomUUID()}.part`, bytes = clip.bytes;
     try {
-      await pipeline(Readable.fromWeb(response.body), new Transform({ transform(chunk, _, callback) {
-        bytes += chunk.length;
-        if (bytes > clip.bytes) return callback(new Error('Restore exceeded the reserved byte count'));
-        sha.update(chunk); md5.update(chunk); callback(null, chunk);
-      } }), fs.createWriteStream(tmp, { flags: 'wx', mode: 0o600 }));
-      if (bytes !== clip.bytes || sha.digest('hex') !== clip.sha256 || md5.digest('base64') !== remote.md5Hash)
-        throw new Error('Restored bytes failed checksum verification');
+      await (await import('./clip-cloud-restore.mjs')).download(client, remote, tmp);
       fs.linkSync(tmp, target); // Atomic installation without replacing any existing file.
       const receipt = { restoredAt: stamp(), clipId: id, sha256: clip.sha256, bytes, bucket: c.bucket, object: name, generation: remote.generation, output };
       privateJson(`${target}.cloud.json`, receipt); return receipt;
@@ -429,8 +432,9 @@ export async function cloudMain(args, repo = REPO) {
   if (!verb || verb === 'help') return { commands: ['cloud plan', 'cloud sync', 'cloud status', 'cloud restore CLIP_ID data/workspace/PROJECT/restore/source.mp4',
     'cloud fetch CLIP_ID', 'cloud catalogs', 'cloud recover-catalog SHA256 data/workspace/PROJECT/recovered-catalog',
     'cloud plan [--allow-absent]', 'cloud sync [--allow-absent]', 'cloud backup-sets', 'cloud verify-set SHA256',
-    'cloud recover-set SHA256 data/workspace/PROJECT/recovery CLIP_ID... [--rehearse]', 'cloud readiness PRIVATE_POLICY.json'],
-    configuration: `${BASE}/config.json`, network: 'sync, restore, fetch, catalogs, recover-catalog, backup-sets, verify-set, recover-set and readiness only', privacy: 'Private IAM access; no public or signed URLs' };
+    'cloud recover-set SHA256 data/workspace/PROJECT/recovery CLIP_ID... [--rehearse]', 'cloud readiness PRIVATE_POLICY.json',
+    'cloud cleanup-plan PRIVATE_POLICY.json PRIVATE_MANIFEST.json', 'cloud cleanup-apply PRIVATE_MANIFEST.json PRIVATE_APPROVAL.json'],
+    configuration: `${BASE}/config.json`, network: 'sync, restore, fetch, catalogs, recover-catalog, backup-sets, verify-set, recover-set, readiness and cleanup commands only', privacy: 'Private IAM access; no public or signed URLs' };
   if (verb === 'plan' && (rest.length === 0 || rest.length === 1 && rest[0] === '--allow-absent')) {
     const c = loadConfig(repo), plan = buildPlan(repo, progress, { allowAbsent: rest.includes('--allow-absent') });
     return { clips: plan.clips, objects: plan.objects.length, bytes: plan.bytes, storageUsdPerMonth: plan.bytes / GiB * c.rates.storageUsdPerGiBMonth,
@@ -438,6 +442,7 @@ export async function cloudMain(args, repo = REPO) {
   }
   if (verb === 'sync' && (rest.length === 0 || rest.length === 1 && rest[0] === '--allow-absent')) return sync(repo, { progress, allowAbsent: rest.includes('--allow-absent') });
   if (['backup-sets', 'verify-set', 'recover-set', 'readiness'].includes(verb)) return (await import('./clip-backup-set.mjs')).backupMain(verb, rest, repo);
+  if (['cleanup-plan', 'cleanup-apply'].includes(verb)) return (await import('./clip-cleanup.mjs')).cleanupMain(verb, rest, repo);
   if (verb === 'restore' && rest.length === 2) return restore(rest[0], rest[1], repo);
   if (verb === 'fetch' && rest.length === 1) return (await import('./clip-cloud-restore.mjs')).fetchClip(rest[0], repo);
   if (verb === 'catalogs' && !rest.length) return (await import('./clip-cloud-restore.mjs')).catalogs(repo);

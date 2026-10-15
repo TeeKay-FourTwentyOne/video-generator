@@ -101,7 +101,20 @@ export function readClip(id, repo = REPO) {
 }
 export function resolveClip(id, repo = REPO, verify = true) {
   const record = readClip(id, repo), file = mediaPath(record, repo);
-  if (!fs.existsSync(file)) throw new Error(`Clip bytes unavailable locally: ${id}`);
+  if (!fs.existsSync(file)) {
+    // Explicitly mapped historical copies remain local sources after duplicate
+    // reclamation. Always hash a fallback; never mask a corrupt canonical master.
+    const locationsFile = safePath(repo, 'data/clips/locations.json');
+    const locations = fs.existsSync(locationsFile) ? readJson(locationsFile) : null;
+    for (const [relative, mapping] of Object.entries(locations?.locations ?? {}).sort(([a], [b]) => a.localeCompare(b))) {
+      if (mapping.id !== id || mapping.bytes !== record.bytes) continue;
+      try {
+        const candidate = safePath(repo, relative), st = fs.lstatSync(candidate);
+        if (st.isFile() && st.size === record.bytes && hashFile(candidate) === record.sha256) return candidate;
+      } catch { /* An unavailable historical mapping is not verified media. */ }
+    }
+    throw new Error(`Clip bytes unavailable locally: ${id}; restore with clips cloud fetch`);
+  }
   if (verify && (fs.statSync(file).size !== record.bytes || hashFile(file) !== record.sha256)) throw new Error(`Clip source hash changed: ${id}`);
   return file;
 }

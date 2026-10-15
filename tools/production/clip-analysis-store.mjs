@@ -34,6 +34,35 @@ export function runPath(id, runId, repo = REPO) {
   return safePath(repo, `data/clips/${id}/analysis/${runId}`);
 }
 export function fileIdentity(file) { return { sha256: hashFile(file), bytes: fs.statSync(file).size }; }
+// Share the exact pinned configuration (including large runtime inventories).
+// Existing sealed documents remain inline and are never rewritten.
+export function retainConfig(config, repo = REPO) {
+  const bytes = Buffer.from(JSON.stringify(config, null, 2) + '\n'), hash = digest(bytes);
+  const relative = `data/clips/analysis/inventories/${hash}.json`, file = safePath(repo, relative);
+  privateJson(file, config, true);
+  return { path: relative, sha256: hash, bytes: bytes.length };
+}
+export function configReference(document) {
+  if (document.storageVersion === undefined && document.configRef === undefined) return null;
+  const ref = document.configRef;
+  assert(document.storageVersion === 2 && document.config === undefined && validHash(ref?.sha256)
+    && Number.isSafeInteger(ref.bytes) && ref.bytes > 0
+    && ref.path === `data/clips/analysis/inventories/${ref.sha256}.json`, 'Invalid shared analysis configuration');
+  return ref;
+}
+export function externalizeConfig(document, reference) {
+  const { config, ...rest } = document;
+  assert(config && reference, 'Cannot persist an analysis document without its configuration');
+  return { ...rest, storageVersion: 2, configRef: reference };
+}
+export function expandConfig(document, repo = REPO) {
+  const ref = configReference(document);
+  if (!ref) return document;
+  const file = safePath(repo, ref.path); verifyFile(file, ref);
+  const { configRef, storageVersion, ...rest } = document;
+  return { ...rest, config: readJson(file) };
+}
+export function readAnalysisDocument(file, repo = REPO) { return expandConfig(readJson(file), repo); }
 export function verifyFile(file, expected) {
   assert(fs.lstatSync(file).isFile(), 'Analysis artifact must be a regular file');
   const actual = fileIdentity(file);
@@ -92,7 +121,8 @@ export function runIdentity(clip, config, tools) {
   const identity = { schemaVersion: 1, extractor: VERSION, input, config, tools };
   return { ...identity, runId: `run_${sha(identity)}`, configSha256: sha(config) };
 }
-export function validateManifest(m) {
+export function validateManifest(m, repo = REPO) {
+  m = expandConfig(m, repo);
   assert(m?.schemaVersion === 1 && m.extractor === VERSION, 'Unsupported analysis manifest');
   assertId(m.input?.clipId);
   assert(m.input.clipId === `clip_${m.input.sha256}` && Number.isSafeInteger(m.input.bytes) && m.input.bytes > 0, 'Invalid analysis input');
@@ -120,7 +150,7 @@ export function validateManifest(m) {
   return m;
 }
 export function verifyRun(id, runId, repo = REPO) {
-  const dir = runPath(id, runId, repo), m = validateManifest(readJson(path.join(dir, 'manifest.json')));
+  const dir = runPath(id, runId, repo), m = validateManifest(readAnalysisDocument(path.join(dir, 'manifest.json'), repo));
   assert(m.input.clipId === id && m.runId === runId, 'Analysis manifest path disagrees with identity');
   for (const a of m.artifacts) verifyFile(artifactPath(dir, a.path), a);
   for (const [step, state] of Object.entries(m.steps)) {

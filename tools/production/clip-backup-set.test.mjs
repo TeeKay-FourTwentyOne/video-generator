@@ -8,7 +8,9 @@ import { analyzeClip } from './clip-analysis.mjs';
 import { configFor, privateJson, verifyRun, runPath, sha } from './clip-analysis-store.mjs';
 import { buildSearch, project, recordReview, readiness, freezeProfile, searchPrivate } from './clip-analysis-views.mjs';
 import { buildPlan, sync, hashes } from './clip-cloud.mjs';
-import { recoverSet, verifySet, validateBackupSet } from './clip-backup-set.mjs';
+import { recoverSet, verifySet, validateBackupSet, objectTarget } from './clip-backup-set.mjs';
+import { planDuplicates, applyDuplicates } from './clip-cleanup.mjs';
+import { verifySupportClosure } from './clip-backup-support.mjs';
 
 async function fixture(t) {
   const repo = fs.mkdtempSync(path.join(os.tmpdir(), 'analysis-backup-test-')); t.after(() => fs.rmSync(repo, { recursive: true, force: true }));
@@ -34,15 +36,76 @@ test('complete sets restore analysis, previews, source and search into an empty 
   const f = await fixture(t), first = await sync(f.repo, { client: f.client });
   assert.ok(first.backupSet.sha256); const setFile = path.join(f.repo, `data/clips/cloud/backup-sets/${first.backupSet.sha256}.json`);
   const set = validateBackupSet(readJson(setFile)); assert.ok(set.objects.some(o => o.kind === 'analysis-manifest'));
+  assert.equal(set.objects.filter(o => o.kind === 'analysis-inventory').length, 1);
   const runDir = runPath(f.clip.id, f.result.runId, f.repo); fs.writeFileSync(path.join(runDir, 'private-unlisted.txt'), 'not an allowed backup artifact');
   assert.ok(!buildPlan(f.repo).objects.some(o => o.localPath?.endsWith('private-unlisted.txt')));
   const empty = path.join(f.repo, 'empty-machine'); fs.mkdirSync(empty); privateJson(path.join(empty, 'data/clips/cloud/config.json'), f.c);
   const recovered = await recoverSet(first.backupSet.sha256, 'data/workspace/recovery', [f.clip.id], empty, { client: f.client, rehearse: true });
   assert.equal(recovered.fullDecode, true); assert.equal(recovered.emptyRootRecovery, true);
+  assert.equal(recovered.backupSetSha256, first.backupSet.sha256);
+  assert.equal(recovered.support.transitiveEvidenceVerified, true);
   const root = path.join(empty, recovered.output); verifyRun(f.clip.id, f.result.runId, root);
   assert.equal(hashFile(path.join(root, f.clip.path)), f.clip.sha256); assert.ok(readJson(path.join(root, 'data/clips/analysis/search.json')).sources.length > 0);
   await assert.rejects(recoverSet(first.backupSet.sha256, 'data/workspace/recovery', [f.clip.id], empty, { client: f.client }), /new directory/);
   const receipt = await verifySet(first.backupSet.sha256, f.repo, { client: f.client }); assert.equal(receipt.members, set.objects.length);
+});
+test('support recovery restores original mappings and rejects missing transitive evidence or conflicting targets', async t => {
+  const f = await fixture(t), childPath = 'data/workspace/qualification/fixture.json', parentPath = 'data/workspace/qualification/pilot.json';
+  privateJson(path.join(f.repo, childPath), { case: 'synthetic', passed: true });
+  const child = { path: childPath, ...hashes(path.join(f.repo, childPath)), role: 'qualification-evidence' };
+  privateJson(path.join(f.repo, parentPath), { evidence: { path: childPath, sha256: child.sha256, bytes: child.bytes },
+    samples: [{ clipId: f.clip.id, runId: f.result.runId, manifestSha256: hashFile(path.join(runPath(f.clip.id, f.result.runId, f.repo), 'manifest.json')) }] });
+  const parent = { path: parentPath, ...hashes(path.join(f.repo, parentPath)), role: 'pilot-review' };
+  const locationsPath = 'data/clips/locations.json';
+  privateJson(path.join(f.repo, locationsPath), { schemaVersion: 1, locations: { 'data/workspace/fixture/source.mp4': { id: f.clip.id, bytes: f.clip.bytes } } });
+  const locations = { path: locationsPath, ...hashes(path.join(f.repo, locationsPath)), role: 'historical-locations' };
+  const support = path.join(f.repo, 'data/clips/analysis/support.json');
+  privateJson(support, { schemaVersion: 1, files: [parent, locations] });
+  assert.throws(() => buildPlan(f.repo), /Transitive support evidence/);
+  privateJson(support, { schemaVersion: 1, files: [parent, child, locations] });
+  const plan = buildPlan(f.repo);
+  assert.throws(() => verifySupportClosure(plan.objects.filter(o => o.kind !== 'analysis-manifest'), f.repo), /Referenced analysis manifest/);
+  const synced = await sync(f.repo, { client: f.client });
+  const empty = path.join(f.repo, 'another-machine'); fs.mkdirSync(empty); privateJson(path.join(empty, 'data/clips/cloud/config.json'), f.c);
+  const recovered = await recoverSet(synced.backupSet.sha256, 'data/workspace/recovered', [f.clip.id], empty, { client: f.client, rehearse: true });
+  const root = path.join(empty, recovered.output);
+  assert.equal(hashFile(path.join(root, childPath)), child.sha256);
+  assert.equal(hashFile(path.join(root, locationsPath)), locations.sha256);
+  assert.equal(recovered.support.restoredPaths, 3);
+  const set = readJson(path.join(f.repo, `data/clips/cloud/backup-sets/${synced.backupSet.sha256}.json`));
+  set.objects.find(o => o.role === 'pilot-review').restorePaths.push(f.clip.path);
+  assert.throws(() => validateBackupSet(set), /Unsafe recovery support path|Conflicting/);
+});
+test('isolated qualification fixtures recover their catalog, source, inventory and complete declared run', async t => {
+  const f = await fixture(t), prefix = 'data/workspace/qualification/fixture-library';
+  const runRelative = `data/clips/${f.clip.id}/analysis/${f.result.runId}`;
+  const manifest = verifyRun(f.clip.id, f.result.runId, f.repo);
+  const raw = readJson(path.join(f.repo, runRelative, 'manifest.json'));
+  const paths = [`catalog/clips/${f.clip.id}.json`, f.clip.path, `${runRelative}/manifest.json`, raw.configRef.path,
+    ...manifest.artifacts.map(a => `${runRelative}/${a.path}`)];
+  const files = paths.map(relative => {
+    const target = `${prefix}/${relative}`, absolute = path.join(f.repo, target);
+    fs.mkdirSync(path.dirname(absolute), { recursive: true }); fs.copyFileSync(path.join(f.repo, relative), absolute);
+    return { path: target, ...hashes(absolute), role: 'qualification-evidence' };
+  });
+  const evidencePath = 'data/workspace/qualification/evidence.json';
+  privateJson(path.join(f.repo, evidencePath), { clipId: f.clip.id, runId: f.result.runId,
+    manifestSha256: hashFile(path.join(f.repo, runRelative, 'manifest.json')) });
+  files.push({ path: evidencePath, ...hashes(path.join(f.repo, evidencePath)), role: 'qualification-evidence' });
+  const supportFile = path.join(f.repo, 'data/clips/analysis/support.json');
+  privateJson(supportFile, { schemaVersion: 1, files: files.filter(f => !f.path.endsWith('poster.jpg')) });
+  assert.throws(() => buildPlan(f.repo), /Nested qualification fixture dependency/);
+  privateJson(supportFile, { schemaVersion: 1, files });
+  const plan = buildPlan(f.repo);
+  verifySupportClosure(plan.objects.filter(o => o.kind !== 'analysis-manifest'), f.repo);
+  const synced = await sync(f.repo, { client: f.client });
+  const empty = path.join(f.repo, 'fixture-recovery-machine'); fs.mkdirSync(empty);
+  privateJson(path.join(empty, 'data/clips/cloud/config.json'), f.c);
+  const recovered = await recoverSet(synced.backupSet.sha256, 'data/workspace/recovered', [f.clip.id], empty, { client: f.client });
+  const nested = path.join(empty, recovered.output, prefix);
+  verifyRun(f.clip.id, f.result.runId, nested);
+  assert.equal(hashFile(path.join(nested, f.clip.path)), f.clip.sha256);
+  assert.equal(recovered.support.transitiveEvidenceVerified, true);
 });
 test('absent masters need explicit complete-backup evidence and fresh remote checks; missing objects never become uploads', async t => {
   const f = await fixture(t); await sync(f.repo, { client: f.client });
@@ -63,6 +126,25 @@ test('truncated analysis downloads and unsafe declared payloads cannot install a
   const set = readJson(path.join(f.repo, `data/clips/cloud/backup-sets/${result.backupSet.sha256}.json`));
   const artifact = set.objects.find(o => o.kind === 'analysis-artifact'); artifact.artifactPath = '../../config.json';
   assert.throws(() => validateBackupSet(set), /Unsafe/);
+});
+test('a new recovery reuses verified cloud downloads and rejects altered failed-cache bytes', async t => {
+  const f = await fixture(t), synced = await sync(f.repo, { client: f.client });
+  const name = [...f.objects.keys()].find(n => n.endsWith('poster.jpg')), body = f.bodies.get(name);
+  f.bodies.set(name, body.subarray(0, 20));
+  await assert.rejects(recoverSet(synced.backupSet.sha256, 'data/workspace/failed', [f.clip.id], f.repo, { client: f.client }), /checksum verification/);
+  const parent = path.join(f.repo, 'data/clips/cloud/failed-recoveries');
+  const cache = path.join(parent, fs.readdirSync(parent)[0]);
+  const set = readJson(path.join(f.repo, `data/clips/cloud/backup-sets/${synced.backupSet.sha256}.json`));
+  const cached = set.objects.find(o => fs.existsSync(path.join(cache, objectTarget(o)))); assert.ok(cached);
+  f.bodies.set(name, body); f.calls.length = 0;
+  const recovered = await recoverSet(synced.backupSet.sha256, 'data/workspace/resumed', [f.clip.id], f.repo,
+    { client: f.client, downloadCache: cache, rehearse: true });
+  assert.ok(recovered.reusedCloudDownloadObjects > 0); assert.ok(recovered.reusedCloudDownloadBytes > 0);
+  assert.equal(recovered.resumedFromFailedSet, synced.backupSet.sha256);
+  assert.equal(f.calls.includes(cached.name), false); assert.ok(fs.existsSync(path.join(cache, 'failure.json')));
+  fs.appendFileSync(path.join(cache, objectTarget(cached)), 'altered');
+  await assert.rejects(recoverSet(synced.backupSet.sha256, 'data/workspace/invalid-cache', [f.clip.id], f.repo,
+    { client: f.client, downloadCache: cache }), /Cached recovery bytes failed checksum/);
 });
 test('public projection requires exact reviewed text, retains raw private observations and rejects private fields', async t => {
   const f = await fixture(t), dir = runPath(f.clip.id, f.result.runId, f.repo);
@@ -87,4 +169,42 @@ test('cleanup readiness blocks missing pilot, backup verification, independent a
   assert.ok(report.blockers.some(b => b.includes('remote-generation'))); assert.ok(report.rows[0].blockers.includes('Pending edit dependency is unresolved'));
   assert.throws(() => freezeProfile({ schemaVersion: 1, config: f.config, samples: [] }, f.repo), /24-clip/);
   assert.equal(hashFile(path.join(f.repo, f.clip.path)), f.clip.sha256);
+});
+test('duplicate cleanup requires exact approval, current remote bytes and retained originals before any removal', async t => {
+  const f = await fixture(t), scope = 'canonical-duplicates-with-retained-local-originals';
+  const original = 'data/workspace/original/source.mp4';
+  fs.mkdirSync(path.dirname(path.join(f.repo, original)), { recursive: true });
+  fs.copyFileSync(path.join(f.repo, f.clip.path), path.join(f.repo, original));
+  const locations = { schemaVersion: 1, locations: { [original]: { id: f.clip.id, bytes: f.clip.record.bytes } } };
+  privateJson(path.join(f.repo, 'data/clips/locations.json'), locations);
+  const save = (name, value) => { const relative = `data/workspace/cleanup/${name}.json`; privateJson(path.join(f.repo, relative), value);
+    return { path: relative, ...hashes(path.join(f.repo, relative)) }; };
+  const dependencyAudit = save('audit', { catalogSha256: sha(listClips(f.repo)), usesSha256: sha(listUses(f.repo)), locationsSha256: sha(locations),
+    clips: [{ clipId: f.clip.id, activeEditsReviewed: true, archivesReviewed: true, originalPathsReviewed: true,
+      alternatesReviewed: true, sharedSourcesReviewed: true, canonicalPathReferences: [], pendingUses: [] }] });
+  const accessEvidence = save('access', { independentlyRecoverable: true, reviewedAt: new Date().toISOString(), fixture: true });
+  privateJson(path.join(f.repo, 'data/clips/analysis/support.json'), { schemaVersion: 1,
+    files: [{ ...dependencyAudit, role: 'dependency-audit' }, { ...accessEvidence, role: 'access-attestation' }] });
+  const synced = await sync(f.repo, { client: f.client });
+  const recoveryEvidence = save('recovery', { backupSetSha256: synced.backupSet.sha256, restoredAt: new Date().toISOString(), fixture: true,
+    emptyRootRecovery: true, hashesVerified: true, fullDecode: true, searchRebuilt: true, normalFetchVerified: true,
+    editRangeVerified: true, sourceRecovered: true, support: { transitiveEvidenceVerified: true } });
+  const policy = { schemaVersion: 1, scope, clipIds: [f.clip.id], backupSetSha256: synced.backupSet.sha256,
+    dependencyAudit, accessEvidence, recoveryEvidence };
+  const planned = await planDuplicates(policy, 'data/workspace/cleanup/manifest.json', f.repo, { client: f.client });
+  let approval = save('approval', { schemaVersion: 1, scope, approvedBy: 'user', approvedAt: new Date().toISOString(), manifestSha256: 'a'.repeat(64) });
+  await assert.rejects(applyDuplicates(planned.manifest, approval.path, f.repo, { client: f.client }), /exact duplicate manifest/);
+  approval = save('approval', { schemaVersion: 1, scope, approvedBy: 'user', approvedAt: new Date().toISOString(), manifestSha256: planned.sha256 });
+  fs.chmodSync(path.join(f.repo, original), 0o600); fs.appendFileSync(path.join(f.repo, original), 'changed');
+  await assert.rejects(applyDuplicates(planned.manifest, approval.path, f.repo, { client: f.client }), /hash or size mismatch/);
+  assert.equal(hashFile(path.join(f.repo, f.clip.path)), f.clip.sha256);
+  fs.copyFileSync(path.join(f.repo, f.clip.path), path.join(f.repo, original));
+  const remote = f.objects.get(`clips/${f.clip.id}/source.mp4`), generation = remote.generation; remote.generation = '999999';
+  await assert.rejects(applyDuplicates(planned.manifest, approval.path, f.repo, { client: f.client }), /checksum or identity/);
+  remote.generation = generation;
+  const result = await applyDuplicates(planned.manifest, approval.path, f.repo, { client: f.client });
+  assert.equal(result.removed, 1); assert.equal(fs.existsSync(path.join(f.repo, f.clip.path)), false);
+  assert.equal(hashFile(path.join(f.repo, original)), f.clip.sha256); assert.ok(fs.existsSync(path.join(f.repo, result.receipt)));
+  verifyRun(f.clip.id, f.result.runId, f.repo);
+  await assert.rejects(applyDuplicates(planned.manifest, approval.path, f.repo, { client: f.client }), /ENOENT/);
 });

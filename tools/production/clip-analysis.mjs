@@ -5,7 +5,7 @@ import os from 'node:os';
 import { randomUUID } from 'node:crypto';
 import { REPO, safePath, readJson, listClips, readClip, resolveClip, hashFile, mediaPath } from './clip-library.mjs';
 import { VERSION, BASELINE, SEMANTIC, STEPS, configFor, runIdentity, runPath, verifyRun, withLock, privateJson,
-  fileIdentity, verifyFile, filesUnder, assert, sha, now, checkSpace, validateManifest } from './clip-analysis-store.mjs';
+  fileIdentity, verifyFile, filesUnder, assert, sha, now, checkSpace, validateManifest, retainConfig, externalizeConfig, readAnalysisDocument, expandConfig } from './clip-analysis-store.mjs';
 import { resolveBinary, toolVersion } from './clip-analysis-process.mjs';
 import { extractors } from './clip-analysis-extract.mjs';
 import { validateAdapter, semantic, pinAdapters, setupOcr } from './clip-analysis-adapters.mjs';
@@ -36,16 +36,17 @@ export async function analyzeClip(id, repo = REPO, { config: supplied = {}, retr
   return withLock(repo, id, async () => {
     const clip = readClip(id, repo), source = resolveClip(id, repo), identity = runIdentity(clip, config, { ...tools, catalogEvidenceSha256: sha(clip) });
     const dir = runPath(id, identity.runId, repo), stateFile = path.join(dir, 'state.json');
+    const configRef = retainConfig(config, repo);
     fs.mkdirSync(dir, { recursive: true, mode: 0o700 }); checkSpace(dir, config.limits);
     if (fs.existsSync(path.join(dir, 'manifest.json'))) { const m = verifyRun(id, identity.runId, repo); resolveClip(id, repo); return { clipId: id, runId: m.runId, status: 'complete', reused: true }; }
-    let state = fs.existsSync(stateFile) ? readJson(stateFile) : { ...identity, createdAt: now(), inputVerifiedBefore: true, steps: Object.fromEntries(STEPS.map(s => [s, { state: 'pending', reason: 'Not yet run' }])) };
+    let state = fs.existsSync(stateFile) ? readAnalysisDocument(stateFile, repo) : { ...identity, createdAt: now(), inputVerifiedBefore: true, steps: Object.fromEntries(STEPS.map(s => [s, { state: 'pending', reason: 'Not yet run' }])) };
     assert(state.runId === identity.runId && sha(state.config) === sha(config), 'Existing analysis state conflicts with this run');
-    privateJson(stateFile, state);
+    privateJson(stateFile, externalizeConfig(state, configRef));
     let baselineFailed = false;
     for (const step of STEPS) {
       const finalDir = path.join(dir, 'steps', step), receiptFile = path.join(finalDir, 'receipt.json');
       if (fs.existsSync(receiptFile)) {
-        state.steps[step] = verifyStep(finalDir, readJson(receiptFile), identity, step); privateJson(stateFile, state); continue;
+        state.steps[step] = verifyStep(finalDir, readJson(receiptFile), identity, step); privateJson(stateFile, externalizeConfig(state, configRef)); continue;
       }
       assert(!fs.existsSync(finalDir), 'Incomplete step installation; preserve and inspect the conflicting directory');
       if (baselineFailed) continue;
@@ -54,7 +55,7 @@ export async function analyzeClip(id, repo = REPO, { config: supplied = {}, retr
       if (state.steps[step].state === 'failed' && !retry) { if (BASELINE.includes(step)) baselineFailed = true; continue; }
       const attempt = path.join(dir, 'attempts', step, randomUUID()); fs.mkdirSync(attempt, { recursive: true, mode: 0o700 });
       const startedAt = now(), context = { repo, clip, source, config, tools, runDir: dir, dir: attempt, commands: [] };
-      state.steps[step] = { state: 'running', startedAt, attempt: path.relative(dir, attempt) }; privateJson(stateFile, state);
+      state.steps[step] = { state: 'running', startedAt, attempt: path.relative(dir, attempt) }; privateJson(stateFile, externalizeConfig(state, configRef));
       progress({ clipId: id, runId: identity.runId, step, state: 'running' });
       try {
         const result = BASELINE.includes(step) ? await extractors[step](context) : await withLock(repo, 'model-worker', () => semantic(step, context), { recover });
@@ -70,9 +71,9 @@ export async function analyzeClip(id, repo = REPO, { config: supplied = {}, retr
         privateJson(path.join(attempt, 'failure.json'), failure, true); state.steps[step] = failure;
         if (BASELINE.includes(step)) baselineFailed = true;
       }
-      state.updatedAt = now(); privateJson(stateFile, state); progress({ clipId: id, runId: identity.runId, step, state: state.steps[step].state });
+      state.updatedAt = now(); privateJson(stateFile, externalizeConfig(state, configRef)); progress({ clipId: id, runId: identity.runId, step, state: state.steps[step].state });
     }
-    privateJson(stateFile, state);
+    privateJson(stateFile, externalizeConfig(state, configRef));
     if (Object.values(state.steps).some(s => ['failed', 'running'].includes(s.state)) || config.required.some(s => state.steps[s].state === 'pending'))
       return { clipId: id, runId: identity.runId, status: 'incomplete', steps: Object.fromEntries(STEPS.map(s => [s, { state: state.steps[s].state, reason: state.steps[s].reason }])) };
     resolveClip(id, repo); // Hash again after all extraction, before an atomic completion manifest.
@@ -85,7 +86,7 @@ export async function analyzeClip(id, repo = REPO, { config: supplied = {}, retr
       inputVerifiedBefore: true, inputVerifiedAfter: true, steps: state.steps, artifacts,
       timeBases: technical.streams.filter(s => s.time_base).map(s => ({ streamIndex: s.index, timeBase: s.time_base })),
       warnings: STEPS.filter(s => state.steps[s].state !== 'complete').map(s => ({ step: s, state: state.steps[s].state, reason: state.steps[s].reason })) };
-    validateManifest(manifest); privateJson(path.join(dir, 'manifest.json'), manifest, true); verifyRun(id, identity.runId, repo);
+    validateManifest(manifest); privateJson(path.join(dir, 'manifest.json'), externalizeConfig(manifest, configRef), true); verifyRun(id, identity.runId, repo);
     return { clipId: id, runId: identity.runId, status: 'complete', requiredReview: config.required.filter(s => state.steps[s].state === 'needs-review'), bytes: artifacts.reduce((s, a) => s + a.bytes, 0), reused: false };
   }, { recover });
 }
@@ -148,16 +149,28 @@ export function pilotPlan(repo = REPO) {
 export async function enqueue(ids, repo = REPO, config = {}) {
   return withLock(repo, 'queue', async () => {
     const normalized = configFor(config), tools = toolIdentity(normalized), file = safePath(repo, 'data/clips/analysis/queue.json');
-    const queue = fs.existsSync(file) ? readJson(file) : { schemaVersion: 1, jobs: [] };
+    const queue = fs.existsSync(file) ? readQueue(file, repo) : { schemaVersion: 1, jobs: [] };
     assert(queue.schemaVersion === 1 && Array.isArray(queue.jobs), 'Invalid analysis queue');
     for (const id of ids) {
       const clip = readClip(id, repo), identity = runIdentity(clip, normalized, { ...tools, catalogEvidenceSha256: sha(clip) });
       if (!queue.jobs.some(j => j.clipId === id && j.runId === identity.runId)) queue.jobs.push({ clipId: id, runId: identity.runId,
         config: normalized, tools, state: 'pending', queuedAt: now(), priority: ['source', 'unknown'].includes(clip.kind) ? 0 : 1 });
     }
-    queue.jobs.sort((a, b) => a.priority - b.priority || a.queuedAt.localeCompare(b.queuedAt)); privateJson(file, queue);
+    queue.jobs.sort((a, b) => a.priority - b.priority || a.queuedAt.localeCompare(b.queuedAt)); writeQueue(file, queue, repo);
     return { queued: queue.jobs.length, pending: queue.jobs.filter(j => j.state === 'pending').length, queue: path.relative(repo, file) };
   });
+}
+function readQueue(file, repo) {
+  const queue = readJson(file);
+  return { ...queue, jobs: queue.jobs.map(job => expandConfig(job, repo)) };
+}
+function writeQueue(file, queue, repo) {
+  const configs = new Map();
+  privateJson(file, { ...queue, jobs: queue.jobs.map(job => {
+    const hash = sha(job.config);
+    if (!configs.has(hash)) configs.set(hash, retainConfig(job.config, repo));
+    return externalizeConfig(job, configs.get(hash));
+  }) });
 }
 function supersedeFailed(queue, completed) {
   for (const prior of queue.jobs) {
@@ -177,7 +190,7 @@ export async function adoptRun(id, runId, repo = REPO) {
   return withLock(repo, 'queue', async () => {
     const m = verifyRun(id, runId, repo), clip = readClip(id, repo);
     assert(m.input.sha256 === clip.sha256 && m.input.bytes === clip.bytes, 'Completed run belongs to another source');
-    const file = safePath(repo, 'data/clips/analysis/queue.json'), queue = fs.existsSync(file) ? readJson(file) : { schemaVersion: 1, jobs: [] };
+    const file = safePath(repo, 'data/clips/analysis/queue.json'), queue = fs.existsSync(file) ? readQueue(file, repo) : { schemaVersion: 1, jobs: [] };
     let job = queue.jobs.find(j => j.clipId === id && j.runId === runId);
     if (!job) {
       const { catalogEvidenceSha256, ...tools } = m.tools;
@@ -191,20 +204,20 @@ export async function adoptRun(id, runId, repo = REPO) {
       }
       job.state = 'complete'; job.finishedAt = m.completedAt;
     }
-    supersedeFailed(queue, job); privateJson(file, queue); return { adopted: runId, states: queueCounts(queue.jobs) };
+    supersedeFailed(queue, job); writeQueue(file, queue, repo); return { adopted: runId, states: queueCounts(queue.jobs) };
   });
 }
 export async function workQueue(repo = REPO, { limit = 1, retry = false, recover = false, progress = () => {} } = {}) {
   assert(Number.isSafeInteger(limit) && limit > 0, 'Queue worker needs a positive limit');
   return withLock(repo, 'queue', async () => {
-    const file = safePath(repo, 'data/clips/analysis/queue.json'), queue = readJson(file); let processed = 0;
+    const file = safePath(repo, 'data/clips/analysis/queue.json'), queue = readQueue(file, repo); let processed = 0;
     for (const job of queue.jobs) {
       if (processed >= limit) break;
       if (job.supersededBy || job.state === 'complete' || job.state === 'failed' && !retry) continue;
       processed++;
       if (job.state === 'failed') (job.history ??= []).push({ state: job.state, result: job.result, error: job.error, finishedAt: job.finishedAt });
       delete job.error; delete job.result;
-      job.state = 'running'; job.startedAt = now(); privateJson(file, queue);
+      job.state = 'running'; job.startedAt = now(); writeQueue(file, queue, repo);
       try {
         const current = toolIdentity(job.config);
         assert(sha(current) === sha(job.tools), 'Queued extractor changed; enqueue a new configuration instead of changing this job');
@@ -213,7 +226,7 @@ export async function workQueue(repo = REPO, { limit = 1, retry = false, recover
         job.state = out.status === 'complete' ? 'complete' : 'failed'; job.result = out;
         if (job.state === 'complete') supersedeFailed(queue, job);
       } catch (e) { job.state = 'failed'; job.error = e.message; }
-      job.finishedAt = now(); privateJson(file, queue);
+      job.finishedAt = now(); writeQueue(file, queue, repo);
     }
     return { processed, states: queueCounts(queue.jobs) };
   }, { recover });

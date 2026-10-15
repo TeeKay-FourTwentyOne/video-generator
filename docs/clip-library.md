@@ -262,9 +262,12 @@ Complete backup sets additionally cover verified analysis runs, their declared
 artifacts and explicitly selected supporting evidence. Arbitrary workspace files
 are not included. `cloud plan --allow-absent` and `cloud sync --allow-absent` support
 deliberately absent masters only through a previously complete backup set, with
-fresh remote-generation verification during sync. Local eviction still requires
+fresh remote-generation verification during sync. Removing a last local copy requires
 a qualified extraction profile, reviewed pilot, recovery rehearsal and dependency
 audit; see [analysis recovery and cleanup readiness](clip-analysis.md).
+The separate [duplicate reclamation workflow](clip-cleanup.md) can remove an
+explicitly approved canonical duplicate while retaining verified historical
+originals. Normal clip resolution verifies and uses those local mappings.
 
 ## Public hosting and integrity
 

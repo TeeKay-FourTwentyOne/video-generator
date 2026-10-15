@@ -88,6 +88,14 @@ evidence captured at the start. Inputs are hashed again before sealing completio
 Completed step directories are installed atomically and are recoverable even if
 the process stops before writing coordinator state.
 
+New runs and queue entries use `storageVersion: 2`: their `configRef` identifies
+one immutable configuration inventory under `data/clips/analysis/inventories/`.
+The exact configuration still determines the run identity. Readers verify the
+shared file before expanding it, and complete backups include it explicitly.
+Historical inline manifests remain readable and are never rewritten. Changing
+the extractor storage implementation creates new runs and requires qualification
+before those runs can replace a frozen profile.
+
 `complete` on a manifest means the immutable run was sealed. Each pass still has
 its own status. Optional unprovisioned passes stay `pending`; model observations
 start `needs-review`. A failed pass cannot be sealed as an empty successful
@@ -224,7 +232,24 @@ plans, create `data/clips/analysis/support.json` with `schemaVersion: 1` and a
 `files` array. Each entry has a private JSON `path`, its file `sha256`, `bytes`,
 and `role` (`dependency-audit`, `pilot-review`, `access-attestation` or
 `retention-plan`). Include an access-recovery attestation, never credentials.
-These selected support files are backed up by content hash.
+Additional roles are `historical-locations`, `qualification-evidence`,
+`source-recovery`, `relationship-evidence` and `recovery-policy`. Selected files
+must be under the private workspace or analysis directories, or be the historical
+`data/clips/locations.json` mapping. Supported evidence includes JSON, text/logs,
+source snippets and explicitly selected preview artifacts. Credentials and cloud
+configuration are excluded from these recovery paths.
+
+These selected support files are backed up by content hash, with their original
+relative paths in `restorePaths`. Nested private evidence references containing a
+path and SHA-256 must also be explicitly included; a missing dependency fails the
+plan. Recovery restores these mappings into the empty recovery root and checks
+the transitive evidence again. Absolute model/runtime pins describe separately
+provisioned software, not implicitly backed-up installations.
+
+An isolated qualification fixture keeps its nested library namespace. Explicitly
+include its catalog record, master, manifest, shared configuration inventory when
+present, and every declared artifact. Planning and recovery validate that complete
+run and reject a report whose referenced manifest or dependencies are absent.
 
 After syncing the members, the cloud command seals a separate immutable complete
 backup-set manifest. It joins catalog digests, canonical snapshot identities,
@@ -245,7 +270,9 @@ The final two commands explicitly declare intentional local absence. They requir
 a previously complete backup set and verify that same remote generation, checksum
 and size during sync. Missing or changed remote media fails before any attempted
 replacement. Missing local creation snapshots or analysis artifacts still fail.
-No command evicts a local file.
+These commands do not evict files. The separate
+[duplicate reclamation workflow](clip-cleanup.md) can remove an explicitly
+approved canonical duplicate while preserving hash-verified historical originals.
 
 `recover-set` works with independently provisioned cloud access and no local
 catalog, media, analysis, receipts or snapshot mapping. It downloads a selected
@@ -293,7 +320,8 @@ dependency decisions or retained-storage allowance all block readiness. Output
 is a concrete manifest of exact library master paths, hashes, backup sets and
 potential space savings. Historical workspace/archive copies are outside that
 manifest. Explicit cleanup authorization is still required; deletion is not
-implemented by these commands.
+implemented by these analysis-readiness commands. The duplicate-only workflow
+does not waive the requirements for removing a last local copy.
 
 Use the [backup-readiness handoff](clip-backup-readiness-handoff.md) for the
 remaining operational checks, including recovery dependencies and rehearsal

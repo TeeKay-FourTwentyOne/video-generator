@@ -8,16 +8,24 @@ import { assert, validHash, privateJson, sha, now, verifyRun, runPath, artifactP
 import { loadConfig, Gcs, locked, hashes, verifyObject, reserve } from './clip-cloud.mjs';
 import { download } from './clip-cloud-restore.mjs';
 import { execute, resolveBinary } from './clip-analysis-process.mjs';
+import { SUPPORT_ROLES, SUPPORT_EXTENSION, supportPath, installSupport } from './clip-backup-support.mjs';
 
 const base = 'data/clips/cloud';
 const local = (repo, name) => safePath(repo, `${base}/${name}`);
-const fields = o => Object.fromEntries(['name', 'sha256', 'bytes', 'md5Hash', 'kind', 'clipId', 'runId', 'artifactPath', 'snapshotSha256', 'reviewSha256', 'role'].filter(k => o[k] !== undefined).map(k => [k, o[k]]));
+const fields = o => Object.fromEntries(['name', 'sha256', 'bytes', 'md5Hash', 'kind', 'clipId', 'runId', 'artifactPath', 'snapshotSha256', 'reviewSha256', 'role', 'restorePaths'].filter(k => o[k] !== undefined).map(k => [k, o[k]]));
 
 export function objectTarget(o) {
+  if (o.kind === 'analysis-inventory') {
+    assert(o.name === `inventories/${o.sha256}.json`, 'Invalid shared analysis inventory');
+    return `data/clips/analysis/inventories/${o.sha256}.json`;
+  }
   if (o.kind === 'analysis-support') {
-    assert(['dependency-audit', 'pilot-review', 'access-attestation', 'retention-plan'].includes(o.role)
-      && o.name === `support/${o.sha256}.json`, 'Invalid analysis support member');
-    return `data/clips/analysis/support/${o.sha256}.json`;
+    const ext = path.extname(o.name);
+    assert(SUPPORT_ROLES.includes(o.role) && SUPPORT_EXTENSION.test(ext)
+      && o.name === `support/${o.sha256}${ext}`, 'Invalid analysis support member');
+    if (o.restorePaths !== undefined) assert(Array.isArray(o.restorePaths) && o.restorePaths.length > 0
+      && new Set(o.restorePaths).size === o.restorePaths.length && o.restorePaths.every(p => supportPath(p)), 'Invalid support recovery mapping');
+    return `data/clips/analysis/support/${o.sha256}${ext}`;
   }
   if (o.kind === 'catalog') {
     assert(o.name === `catalog/${o.sha256}.json.gz`, 'Invalid catalog backup member'); return `${base}/catalog/${o.sha256}.json.gz`;
@@ -53,8 +61,12 @@ export function validateBackupSet(set) {
     const target = objectTarget(o);
     assert(validHash(o.sha256) && Number.isSafeInteger(o.bytes) && o.bytes >= 0 && /^\d+$/.test(o.generation ?? '')
       && /^[A-Za-z0-9+/]{22}==$/.test(o.md5Hash ?? '') && !names.has(o.name) && !targets.has(target), 'Invalid or duplicate backup object');
-    if (!['catalog', 'analysis-support'].includes(o.kind)) assert(clips.has(o.clipId), 'Backup object is not a member of a known clip');
+    if (!['catalog', 'analysis-support', 'analysis-inventory'].includes(o.kind)) assert(clips.has(o.clipId), 'Backup object is not a member of a known clip');
     names.add(o.name); targets.add(target);
+  }
+  const mapped = new Set(targets);
+  for (const o of set.objects) for (const p of o.restorePaths ?? []) {
+    assert(!mapped.has(p), 'Conflicting backup recovery mapping'); mapped.add(p);
   }
   assert(set.objects.filter(o => o.kind === 'catalog').length === 1, 'Backup set needs exactly one catalog');
   for (const c of set.clips) {
@@ -96,8 +108,12 @@ async function loadRemoteSet(hash, repo, config, client) {
   return { set, remote };
 }
 async function verifyMembers(set, repo, config, client) {
-  reserve(repo, config, { storedBytes: set.objects.reduce((s, o) => s + o.bytes, 0), classB: set.objects.length + 1, action: 'verify-complete-backup-set' });
-  for (const o of set.objects) verifyObject(o, await client.get(o.name));
+  reserve(repo, config, { storedBytes: set.objects.reduce((s, o) => s + o.bytes, 0),
+    classA: Math.ceil(set.objects.length / 1000) + 10, classB: set.objects.length + 1, action: 'verify-complete-backup-set' });
+  // A fresh complete listing supplies the same generation and checksum fields
+  // without one round trip for each small analysis artifact.
+  const inventory = new Map((await client.list()).map(o => [o.name, o]));
+  for (const o of set.objects) verifyObject(o, inventory.get(o.name));
   await client.checkPrivate();
 }
 export async function verifySet(hash, repo = REPO, { client } = {}) {
@@ -133,10 +149,11 @@ export function formatSignature(clip, manifest, repo = REPO) {
   const dir = runPath(clip.id, manifest.runId, repo), p = readJson(path.join(dir, 'steps/probe/technical.json'));
   const t = readJson(path.join(dir, 'steps/timing/timing.json'));
   return sha({ extension: clip.extension, streams: p.streams.map(s => ({ type: s.codec_type, codec: s.codec_name, pixelFormat: s.pix_fmt,
-    transfer: s.color_transfer, rotated: s.side_data_list?.some(d => Number(d.rotation ?? 0) !== 0) ?? false,
+    transfer: s.color_transfer, channels: s.channels, channelLayout: s.channel_layout, sampleRate: s.sample_rate,
+    rotation: s.side_data_list?.find(d => d.rotation !== undefined)?.rotation ?? 0,
     vfr: t.streams.find(x => x.streamIndex === s.index)?.variableFrameTiming ?? false })) });
 }
-export async function recoverSet(hash, output, ids, repo = REPO, { client, rehearse = false } = {}) {
+export async function recoverSet(hash, output, ids, repo = REPO, { client, rehearse = false, downloadCache } = {}) {
   return locked(repo, async () => {
     assert(Array.isArray(ids) && ids.length && new Set(ids).size === ids.length, 'Select explicit clips for bounded recovery');
     const target = safePath(repo, output);
@@ -144,17 +161,44 @@ export async function recoverSet(hash, output, ids, repo = REPO, { client, rehea
     const config = loadConfig(repo); client ??= new Gcs(config, repo);
     const { set, remote } = await loadRemoteSet(hash, repo, config, client);
     assert(ids.every(id => set.clips.some(c => c.clipId === id)), 'Selected clip is absent from the backup set');
-    const selected = set.objects.filter(o => ['catalog', 'analysis-support'].includes(o.kind) || ids.includes(o.clipId));
+    const selected = set.objects.filter(o => ['catalog', 'analysis-support', 'analysis-inventory'].includes(o.kind) || ids.includes(o.clipId));
+    const cached = new Map(); let resumedFromFailedSet = null;
+    if (downloadCache) {
+      assert(path.isAbsolute(downloadCache) && /\/data\/clips\/cloud\/failed-recoveries\/set-[A-Za-z0-9_-]+$/.test(downloadCache)
+        && fs.lstatSync(downloadCache).isDirectory() && !fs.lstatSync(downloadCache).isSymbolicLink(), 'Select a preserved failed recovery cache');
+      const failure = readJson(safePath(downloadCache, 'failure.json'));
+      assert(failure.schemaVersion === 1 && validHash(failure.backupSetSha256)
+        && Number.isFinite(Date.parse(failure.failedAt)) && Date.parse(failure.failedAt) <= Date.now(), 'Invalid failed recovery provenance');
+      resumedFromFailedSet = failure.backupSetSha256;
+      for (const o of selected) {
+        const file = safePath(downloadCache, objectTarget(o)); if (!fs.existsSync(file)) continue;
+        assert(fs.lstatSync(file).isFile(), 'Recovery cache must contain regular files');
+        const h = hashes(file);
+        assert(h.sha256 === o.sha256 && h.md5Hash === o.md5Hash && h.bytes === o.bytes, 'Cached recovery bytes failed checksum verification');
+        cached.set(o.name, file);
+      }
+    }
+    const disk = fs.statfsSync(repo), downloadBytes = selected.reduce((s, o) => s + o.bytes, 0);
+    const reusedBytes = selected.filter(o => cached.has(o.name)).reduce((s, o) => s + o.bytes, 0);
+    const supportCopies = selected.filter(o => o.kind === 'analysis-support').reduce((s, o) => s + o.bytes * (o.restorePaths?.length ?? 0), 0);
+    assert(disk.bavail * disk.bsize >= configFor().limits.minFreeBytes + downloadBytes + supportCopies + 256 * 1024 * 1024,
+      'Recovery would consume the local free-space reserve');
     reserve(repo, config, { storedBytes: set.objects.reduce((s, o) => s + o.bytes, 0), classB: selected.length * 2,
-      downloadBytes: selected.reduce((s, o) => s + o.bytes, 0), action: 'recover-complete-backup-members' });
+      downloadBytes: downloadBytes - reusedBytes, action: 'recover-complete-backup-members' });
     const parent = local(repo, 'restore-staging'); fs.mkdirSync(parent, { recursive: true, mode: 0o700 });
     const stage = fs.mkdtempSync(path.join(parent, 'set-'));
     try {
       for (const o of selected) {
         const actual = verifyObject(o, await client.get(o.name)), file = safePath(stage, objectTarget(o));
-        fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 }); await download(client, actual, file);
+        fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 });
+        if (cached.has(o.name)) {
+          fs.copyFileSync(cached.get(o.name), file, fs.constants.COPYFILE_EXCL | fs.constants.COPYFILE_FICLONE);
+          const h = hashes(file);
+          assert(h.sha256 === o.sha256 && h.md5Hash === o.md5Hash && h.bytes === o.bytes, 'Copied recovery cache failed checksum verification');
+        } else await download(client, actual, file);
       }
       const catalogObject = selected.find(o => o.kind === 'catalog'); installCatalog(safePath(stage, objectTarget(catalogObject)), stage, set);
+      const support = installSupport(selected, stage, objectTarget, set.objects);
       const rehearsed = [];
       for (const id of ids) {
         const clip = readClip(id, stage); verifyClipSnapshots(clip, stage);
@@ -177,12 +221,21 @@ export async function recoverSet(hash, output, ids, repo = REPO, { client, rehea
       const search = await (await import('./clip-analysis-views.mjs')).buildSearch(stage);
       const receipt = { schemaVersion: 1, backupSetSha256: hash, backupSetGeneration: remote.generation, restoredAt: now(), clips: ids,
         objects: selected.length, bytes: selected.reduce((s, o) => s + o.bytes, 0), hashesVerified: true, emptyRootRecovery: true,
-        fullDecode: rehearse, searchRebuilt: true, searchRows: search.rows, formats: rehearsed, accessIndependence: 'Requires separate off-machine access attestation' };
+        fullDecode: rehearse, searchRebuilt: true, searchRows: search.rows, formats: rehearsed, support,
+        downloadedBytes: downloadBytes - reusedBytes, reusedCloudDownloadBytes: reusedBytes, reusedCloudDownloadObjects: cached.size,
+        resumedFromFailedSet,
+        accessIndependence: 'Requires separate off-machine access attestation' };
       privateJson(path.join(stage, 'recovery.json'), receipt, true);
       fs.mkdirSync(path.dirname(target), { recursive: true, mode: 0o700 }); fs.mkdirSync(target, { mode: 0o700 });
       for (const name of fs.readdirSync(stage)) fs.renameSync(path.join(stage, name), path.join(target, name));
       if (rehearse) privateJson(local(repo, `rehearsals/${hash}-${sha(ids)}.json`), receipt, true);
       return { ...receipt, output };
+    } catch (error) {
+      const failed = local(repo, `failed-recoveries/${path.basename(stage)}`);
+      privateJson(path.join(stage, 'failure.json'), { schemaVersion: 1, backupSetSha256: hash, failedAt: now(),
+        clips: ids, error: error.message, note: 'Preserved failed recovery; inspect before retrying into a new output directory.' }, true);
+      fs.mkdirSync(path.dirname(failed), { recursive: true, mode: 0o700 }); fs.renameSync(stage, failed);
+      throw error;
     } finally { fs.rmSync(stage, { recursive: true, force: true }); }
   });
 }

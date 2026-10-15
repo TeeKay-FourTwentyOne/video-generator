@@ -5,8 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
-import { privateJson } from './clip-cloud.mjs';
-import { fetchClip, catalogs, recoverCatalog } from './clip-cloud-restore.mjs';
+import { privateJson, Gcs } from './clip-cloud.mjs';
+import { fetchClip, catalogs, recoverCatalog, download } from './clip-cloud-restore.mjs';
 import { generationMetadata, resolveClip, verifyClipSnapshots } from './clip-library.mjs';
 import { snapshotHash } from './generation-snapshot.mjs';
 
@@ -52,6 +52,19 @@ test('fetch restores into an empty media library with exact private evidence and
   assert.equal(fs.statSync(resolveClip(f.id, f.repo)).mode & 0o777, 0o444);
   const repeat = await fetchClip(f.id, f.repo, { client: f.client }); assert.equal(repeat.sourceAlreadyPresent, true);
   assert.equal(f.requests.filter(n => n === f.source.name).length, 1);
+});
+test('large streamed restores get a bounded transfer deadline beyond the metadata timeout', async t => {
+  const f = fixture(t), c = JSON.parse(fs.readFileSync(path.join(f.repo, 'data/clips/cloud/config.json'))), deadlines = [];
+  t.mock.method(AbortSignal, 'timeout', milliseconds => { deadlines.push(milliseconds); return new AbortController().signal; });
+  const client = new Gcs(c, f.repo, async (url, options) => {
+    assert.equal(options.timeoutMs, undefined, 'Internal transfer controls are not passed to fetch');
+    return new Response(null, { status: 503 });
+  }, async () => ({ projectId: c.projectId, accessToken: 'fixture', expiresIn: 3600 }));
+  await client.request(client.url());
+  await assert.rejects(download(client, { ...f.source, size: String(2 * 1024 ** 3) }, path.join(f.repo, 'large-restore')), /HTTP 503/);
+  assert.equal(deadlines[0], 120000); assert.ok(deadlines[1] > deadlines[0] && deadlines[1] <= 3600000);
+  await assert.rejects(client.request(client.url(), { timeoutMs: Infinity }), /Invalid cloud request timeout/);
+  assert.equal(fs.existsSync(path.join(f.repo, 'large-restore')), false);
 });
 test('missing or mismatched snapshot evidence blocks installation of the media', async t => {
   const f = fixture(t); f.objects.delete(f.generation.name);

@@ -34,6 +34,18 @@ test('content identity deduplicates copies, survives relocation and isolates imm
   assert.throws(() => resolveClip(a.id, repo), /hash changed/);
   assert.throws(() => importClip(copy, {}, repo), /master hash mismatch/);
 });
+test('absent canonical masters resolve only hash-verified historical copies and still materialize exact edit ranges', t => {
+  const { repo, source } = fixture(t), clip = importClip(source, {}, repo), master = resolveClip(clip.id, repo);
+  atomicJson(path.join(repo, 'data/clips/locations.json'), { schemaVersion: 1,
+    locations: { [path.relative(repo, source)]: { id: clip.id, bytes: clip.record.bytes } } });
+  fs.chmodSync(master, 0o644); fs.appendFileSync(master, 'corrupt');
+  assert.throws(() => resolveClip(clip.id, repo), /hash changed/);
+  fs.unlinkSync(master);
+  assert.equal(resolveClip(clip.id, repo, false), source);
+  assert.equal(extract(clip.id, 5, 7, 'data/workspace/recovery/range.mp4', repo).frames, 7);
+  fs.appendFileSync(source, 'changed');
+  assert.throws(() => resolveClip(clip.id, repo, false), /unavailable locally/);
+});
 test('public metadata projects only known fields and withholds sensitive prompts without logging values', t => {
   const { repo, source } = fixture(t);
   const privateValue = ['gs:', '', 'private-fixture-bucket', 'operation'].join('/');

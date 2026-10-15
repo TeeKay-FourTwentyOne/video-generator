@@ -50,6 +50,24 @@ test('no audio is explicitly not-applicable; changed settings create a separate 
   const b = await analyzeClip(f.clip.id, f.repo, { config: { ...f.config, preview: { ...f.config.preview, gridSeconds: 0.5 } } });
   assert.notEqual(a.runId, b.runId); verifyRun(f.clip.id, a.runId, f.repo);
 });
+test('new runs share immutable inventories, reject missing or changed dependencies and still read inline manifests', async t => {
+  const f = fixture(t), result = await analyzeClip(f.clip.id, f.repo, { config: f.config });
+  const dir = runPath(f.clip.id, result.runId, f.repo), file = path.join(dir, 'manifest.json');
+  const stored = readJson(file), state = readJson(path.join(dir, 'state.json'));
+  assert.equal(stored.storageVersion, 2); assert.equal(stored.config, undefined);
+  assert.deepEqual(stored.configRef, state.configRef);
+  const inventory = path.join(f.repo, stored.configRef.path), original = fs.readFileSync(inventory);
+  fs.writeFileSync(inventory, '{}');
+  assert.throws(() => verifyRun(f.clip.id, result.runId, f.repo), /hash or size mismatch/);
+  fs.unlinkSync(inventory);
+  assert.throws(() => verifyRun(f.clip.id, result.runId, f.repo), /ENOENT/);
+  fs.writeFileSync(inventory, original);
+  const inline = verifyRun(f.clip.id, result.runId, f.repo);
+  privateJson(file, inline); const inlineHash = hashFile(file);
+  assert.equal(verifyRun(f.clip.id, result.runId, f.repo).runId, result.runId);
+  await analyzeClip(f.clip.id, f.repo, { config: f.config });
+  assert.equal(hashFile(file), inlineHash, 'Historical inline evidence must not be rewritten');
+});
 test('corrupt original bytes fail before extraction and never overwrite an existing result', async t => {
   const f = fixture(t), source = path.join(f.repo, f.clip.path); fs.chmodSync(source, 0o600); fs.appendFileSync(source, 'changed');
   await assert.rejects(analyzeClip(f.clip.id, f.repo, { config: f.config }), /hash changed/);

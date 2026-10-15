@@ -270,7 +270,10 @@ export function readiness(policy, repo = REPO, { verification } = {}) {
       if (!index?.sources.some(s => s.clipId === clip.id && s.runId === m.runId && s.manifestSha256 === manifestHash)) fail('Required run is absent from the local search index');
       const preview = path.join(runPath(clip.id, m.runId, repo), 'steps/preview/preview.mp4'); if (!fs.existsSync(preview)) fail('A verified seekable preview must remain local');
       const format = formatSignature(clip, m, repo), types = [...new Set(m.artifacts.map(a => path.extname(a.path)))];
-      if (!rehearsals.some(r => r.emptyRootRecovery && r.hashesVerified && r.fullDecode && r.searchRebuilt
+      if (!rehearsals.some(r => r.backupSetSha256 === policy.backupSetSha256
+        && Number.isFinite(Date.parse(r.restoredAt)) && Date.parse(r.restoredAt) <= Date.now()
+        && r.support?.transitiveEvidenceVerified === true
+        && r.emptyRootRecovery && r.hashesVerified && r.fullDecode && r.searchRebuilt
         && r.formats?.some(f => f.formatSignature === format && types.every(type => f.artifactTypes.includes(type))))) fail('No successful recovery rehearsal for this format and artifact set');
       const dependency = audit?.clips?.find(d => d.clipId === clip.id);
       if (!dependency || !['activeEditsReviewed', 'archivesReviewed', 'originalPathsReviewed', 'alternatesReviewed', 'sharedSourcesReviewed'].every(k => dependency[k] === true)) fail('Source/edit/archive dependency review is incomplete');

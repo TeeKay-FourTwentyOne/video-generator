@@ -33,7 +33,12 @@ function existing(target, remote) {
 }
 export async function download(client, remote, target) {
   const url = client.url(`/o/${encodeURIComponent(remote.name)}?alt=media&generation=${remote.generation}`);
-  const response = await client.request(url);
+  const expectedBytes = Number(remote.size);
+  if (!Number.isSafeInteger(expectedBytes) || expectedBytes < 0) throw new Error('Invalid cloud download size');
+  // The request signal also covers the streamed response body. A metadata-sized
+  // timeout can truncate a healthy multi-gigabyte restore on an ordinary link.
+  const timeoutMs = Math.min(3600000, 120000 + Math.ceil(expectedBytes / 1048576) * 1000);
+  const response = await client.request(url, { timeoutMs });
   if (!response.ok) throw new Error(`Cloud restore failed (HTTP ${response.status}; details withheld)`);
   const sha = createHash('sha256'), md5 = createHash('md5'); let bytes = 0;
   try {

@@ -1,5 +1,15 @@
 # Handoff: verify recovery before reclaiming clip storage
 
+Implementation follow-through: shared immutable configuration inventories,
+explicit support recovery mappings, transitive evidence checks, backup-set-bound
+rehearsals and guarded duplicate reclamation are now implemented. The production
+suite passes 143 offline regressions. Current operational evidence is retained in
+`data/workspace/clip-backup-readiness-v1/`; check its status before treating any
+sync, pilot or recovery attempt as complete. Human qualification and exact removal
+approval are still separate facts. The
+[duplicate-only workflow](clip-cleanup.md) requires its own explicit scope choice
+and preserves a verified full local original for every removed canonical copy.
+
 Status: 2026-10-14. The semantic implementation and a 24-clip technical pilot are
 complete. Human acceptance, a frozen profile, full-library coverage, current
 complete-backup verification and a production recovery rehearsal are still open.
@@ -227,9 +237,10 @@ archive copies are outside the current readiness manifest and need their own
 audit and approval. Shared bytes or filesystem clones can make logical byte totals
 differ from actual reclaimed space.
 
-Wait for explicit approval of that manifest before removing anything. The current
-commands perform no eviction; do not invent an existing delete command. Any later
-cleanup implementation must recheck path containment, original hashes, dependencies
+Wait for explicit approval of that manifest before removing anything. The
+analysis-readiness commands perform no eviction. The separately documented
+duplicate-only cleanup commands cannot remove the last local copy. Any cleanup
+implementation must recheck path containment, original hashes, dependencies
 and fresh recovery evidence, stop on change, and keep a private action receipt.
 Start with a bounded approved batch, then search, preview, restore and resolve a
 removed clip before expanding. Preserve all metadata, reviews, local previews and

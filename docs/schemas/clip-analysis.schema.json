@@ -1091,6 +1091,32 @@
         ],
         "additionalProperties": false
       }
+    },
+    "storageVersion": {
+      "const": 2
+    },
+    "configRef": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^data/clips/analysis/inventories/[a-f0-9]{64}\\.json$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "additionalProperties": false
     }
   },
   "additionalProperties": false,
@@ -1106,11 +1132,42 @@
     "createdAt",
     "completedAt",
     "input",
-    "config",
     "tools",
     "steps",
     "artifacts",
     "timeBases",
     "warnings"
+  ],
+  "oneOf": [
+    {
+      "required": [
+        "config"
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "configRef"
+            ]
+          },
+          {
+            "required": [
+              "storageVersion"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "required": [
+        "configRef",
+        "storageVersion"
+      ],
+      "not": {
+        "required": [
+          "config"
+        ]
+      }
+    }
   ]
 }

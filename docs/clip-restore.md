@@ -5,6 +5,12 @@ machine. It restores the original bytes and retained creation evidence into the
 shared library. Storage access stays authenticated; the commands never create
 public links or signed URLs.
 
+If the canonical master was removed as an approved duplicate, ordinary `resolve`
+can use an exact historical copy recorded in `data/clips/locations.json`. It hashes
+that copy before returning its path and performs no network operation. A corrupt
+canonical master still fails; a fallback never hides that corruption. `cloud fetch`
+can restore the canonical file even when a historical copy remains available.
+
 ## Restore a clip for an edit
 
 ```sh
@@ -121,3 +127,32 @@ that also includes immutable analysis, declared previews, adjacent evidence and
 reviews, use `cloud backup-sets`, `cloud verify-set`, and
 `cloud recover-set SET_SHA data/workspace/recovery CLIP_ID --rehearse`.
 See [private analysis recovery and cleanup readiness](clip-analysis.md).
+
+New backup sets retain original recovery paths for explicitly selected support
+files and include shared analysis configuration inventories. Recovery installs
+the historical location mapping, qualification evidence and other declared
+support paths inside the new root, then verifies nested references. Older sets
+without those mappings remain readable but do not establish the newer evidence
+recovery requirement. Rehearsal readiness binds the exact backup-set identity and
+includes audio layouts, sample rates and rotation in format coverage.
+
+Streamed downloads use a bounded timeout scaled to the object size. The shorter
+metadata timeout must not cut off a healthy large-file transfer. Interrupted
+recovery attempts retain their evidence and budget reservations; use a new output
+directory for the next attempt.
+
+The recovery API accepts an explicit `downloadCache` pointing to a preserved
+failed recovery. It verifies each reusable file's SHA-256, MD5 and size, rechecks
+the current pinned remote generation, and copies verified bytes into the new
+output. Corrupt cached bytes block recovery. The receipt distinguishes fresh
+downloads from reused cloud downloads and names the earlier failed set. Keep
+that provenance when documenting a resumed rehearsal; this is not reuse of the
+original clip library.
+
+Cloud overwrite/deletion protection is a separate check from checksums. Inspect
+the actual bucket policy and retain its dated private evidence. Google's
+[soft delete documentation](https://docs.cloud.google.com/storage/docs/soft-delete)
+describes the finite recovery window and that restoring an object creates a new
+generation. Such a restoration requires a newly verified backup set; do not edit
+an old set to make its pinned generation match. No cleanup command changes cloud
+retention, deletes cloud objects or grants public access.
