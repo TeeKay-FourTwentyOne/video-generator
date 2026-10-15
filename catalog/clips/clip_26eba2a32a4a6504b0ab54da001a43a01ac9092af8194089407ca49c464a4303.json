@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_26eba2a32a4a6504b0ab54da001a43a01ac9092af8194089407ca49c464a4303",
+  "sha256": "26eba2a32a4a6504b0ab54da001a43a01ac9092af8194089407ca49c464a4303",
+  "bytes": 898561,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 5,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 120,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "segment-01.mp4"
+  ],
+  "collections": [
+    "signal-passing-through"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

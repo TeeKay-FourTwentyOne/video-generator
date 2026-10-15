@@ -47,6 +47,10 @@ ledger, not a clerk with a camera.
   maintained provider polling does this automatically. Reference clip IDs in edits
   and materialize only the needed ranges. Public metadata and use records live in
   `catalog/`; see `docs/clip-library.md`. Preserve historical paths and archives.
+- When private cloud backup is configured and its storage authorization is active,
+  run `npm run clips -- cloud sync` after a batch of imports. It checks the private
+  bucket and local monthly budget before uploads. Keep cloud locations, credentials,
+  accounting and receipts in ignored `data/clips/cloud/`; imports remain offline.
 - Snapshot generation metadata before submitting: exact prompt, resolved model,
   effective controls and seeds, reference hashes, provider/API and creation time.
   Maintained clients do this automatically. Keep the private snapshot with the

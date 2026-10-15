@@ -695,6 +695,25 @@
       }
     },
     {
+      "id": "clip_0473cd912707582a5bd7ae56a68cafb470606adaaf014cbc0c3bc604427140d6",
+      "metadata": "clips/clip_0473cd912707582a5bd7ae56a68cafb470606adaaf014cbc0c3bc604427140d6.json",
+      "labels": [
+        "film.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 45,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_04801284882f9aab8fca522964028cba3fd32e693680c46ddd7fd359e225b9cd",
       "metadata": "clips/clip_04801284882f9aab8fca522964028cba3fd32e693680c46ddd7fd359e225b9cd.json",
       "labels": [
@@ -2428,6 +2447,25 @@
       "kind": "unknown",
       "collections": [],
       "durationSeconds": 4,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_107b8ce7e0593799ee5f4a75a22b030973c36bc694d968abf6df81fedbc92ef8",
+      "metadata": "clips/clip_107b8ce7e0593799ee5f4a75a22b030973c36bc694d968abf6df81fedbc92ef8.json",
+      "labels": [
+        "segment-08.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 8,
       "width": 720,
       "height": 1280,
       "hasPrompt": false,
@@ -5763,6 +5801,25 @@
       }
     },
     {
+      "id": "clip_26eba2a32a4a6504b0ab54da001a43a01ac9092af8194089407ca49c464a4303",
+      "metadata": "clips/clip_26eba2a32a4a6504b0ab54da001a43a01ac9092af8194089407ca49c464a4303.json",
+      "labels": [
+        "segment-01.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 5,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_27109cbbb0bad516feba31a27a461f8af27b3d67d0d8e9f76618e971aa5c2563",
       "metadata": "clips/clip_27109cbbb0bad516feba31a27a461f8af27b3d67d0d8e9f76618e971aa5c2563.json",
       "labels": [
@@ -8141,6 +8198,25 @@
       }
     },
     {
+      "id": "clip_369d670d3a62906b90d0095044e1fdfb105f0639fb6386e01181a006a0a825d1",
+      "metadata": "clips/clip_369d670d3a62906b90d0095044e1fdfb105f0639fb6386e01181a006a0a825d1.json",
+      "labels": [
+        "film.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 10,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_36a7116d7bcc2b4e0be667bdcd1e1100857025bec0b58c59d1125d949ca113f8",
       "metadata": "clips/clip_36a7116d7bcc2b4e0be667bdcd1e1100857025bec0b58c59d1125d949ca113f8.json",
       "labels": [
@@ -9511,6 +9587,25 @@
       "durationSeconds": 37,
       "width": 2160,
       "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_3f23de5f977c8175ef5ff7b63b6a1c2ee7d026508e05b67c9b03771f419d7c78",
+      "metadata": "clips/clip_3f23de5f977c8175ef5ff7b63b6a1c2ee7d026508e05b67c9b03771f419d7c78.json",
+      "labels": [
+        "segment-07.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 6.5,
+      "width": 720,
+      "height": 1280,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -11105,6 +11200,25 @@
       }
     },
     {
+      "id": "clip_499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1",
+      "metadata": "clips/clip_499313bad82d2687dc9e880c6aa55154aa39e9f28df58cc15e08cf78267a6ee1.json",
+      "labels": [
+        "film.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 45,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_49d46bf47f48144fc2a8e92423608c2a4751b9bee9ab208eccff8fdcc03714dc",
       "metadata": "clips/clip_49d46bf47f48144fc2a8e92423608c2a4751b9bee9ab208eccff8fdcc03714dc.json",
       "labels": [
@@ -12266,6 +12380,25 @@
       }
     },
     {
+      "id": "clip_51134e34fa3dca190effd9189188731274902d09044ec024048ee52cdbc30e23",
+      "metadata": "clips/clip_51134e34fa3dca190effd9189188731274902d09044ec024048ee52cdbc30e23.json",
+      "labels": [
+        "segment-09.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 4,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_51174dca2e91ff5da73cbfbccee4557f3c254a4a1af78361cb0f50c1663d6113",
       "metadata": "clips/clip_51174dca2e91ff5da73cbfbccee4557f3c254a4a1af78361cb0f50c1663d6113.json",
       "labels": [
@@ -12443,6 +12576,25 @@
       "durationSeconds": 37.083333,
       "width": 1080,
       "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_51d380a7cb9afa40be28418808f4aebafab6917065315e6b73d42209c159d166",
+      "metadata": "clips/clip_51d380a7cb9afa40be28418808f4aebafab6917065315e6b73d42209c159d166.json",
+      "labels": [
+        "segment-06.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 6.75,
+      "width": 720,
+      "height": 1280,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -14040,6 +14192,25 @@
       "durationSeconds": 8,
       "width": 1280,
       "height": 720,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_5aab6ced18b634b6e61e304442e26ca9378b18b54c53ee1ce21a75a413fd102b",
+      "metadata": "clips/clip_5aab6ced18b634b6e61e304442e26ca9378b18b54c53ee1ce21a75a413fd102b.json",
+      "labels": [
+        "segment-02.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 2.25,
+      "width": 720,
+      "height": 1280,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -18764,6 +18935,25 @@
       }
     },
     {
+      "id": "clip_758f2efbb6bbbf93dbfe264a571a5d75d260db888d182b3ffa2b4ada9de56d37",
+      "metadata": "clips/clip_758f2efbb6bbbf93dbfe264a571a5d75d260db888d182b3ffa2b4ada9de56d37.json",
+      "labels": [
+        "film.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 45,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_7591557154f1a358469f552d4a1975ec90a9d0273a1baf55e714376a49bd89db",
       "metadata": "clips/clip_7591557154f1a358469f552d4a1975ec90a9d0273a1baf55e714376a49bd89db.json",
       "labels": [
@@ -22750,6 +22940,25 @@
       }
     },
     {
+      "id": "clip_8dd8511ab75dea98f63bd6a6240ca61a704cc8910f0a8563868b350f1f4e6032",
+      "metadata": "clips/clip_8dd8511ab75dea98f63bd6a6240ca61a704cc8910f0a8563868b350f1f4e6032.json",
+      "labels": [
+        "segment-03.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 4.75,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_8ddb71622a736bf3833d8321aa3ac8537b3f12c62dc73b7d567a145829ee36c6",
       "metadata": "clips/clip_8ddb71622a736bf3833d8321aa3ac8537b3f12c62dc73b7d567a145829ee36c6.json",
       "labels": [
@@ -23334,6 +23543,25 @@
       "durationSeconds": 8,
       "width": 1080,
       "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_92663831c8cc8fc2d9f0501c410a0f4b720f8f767578254a1a83452d95b23e40",
+      "metadata": "clips/clip_92663831c8cc8fc2d9f0501c410a0f4b720f8f767578254a1a83452d95b23e40.json",
+      "labels": [
+        "segment-01.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 3,
+      "width": 720,
+      "height": 1280,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -24562,6 +24790,25 @@
       "durationSeconds": 170.166667,
       "width": 1920,
       "height": 1080,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_9af931ba077710949f1a34cdee8742300d7d4e1011d4918a309482c38092a832",
+      "metadata": "clips/clip_9af931ba077710949f1a34cdee8742300d7d4e1011d4918a309482c38092a832.json",
+      "labels": [
+        "segment-09.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 4,
+      "width": 720,
+      "height": 1280,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -31545,6 +31792,25 @@
       }
     },
     {
+      "id": "clip_c8845f2bb66aa0f0966b38701f7714974a2612271aeb15a8ffdcb285682aeb95",
+      "metadata": "clips/clip_c8845f2bb66aa0f0966b38701f7714974a2612271aeb15a8ffdcb285682aeb95.json",
+      "labels": [
+        "segment-03.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 5.5,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_c8954d5d37ded399c1bfb446a39161e8dcd11d89cfdee1339f81e217f0e1f77b",
       "metadata": "clips/clip_c8954d5d37ded399c1bfb446a39161e8dcd11d89cfdee1339f81e217f0e1f77b.json",
       "labels": [
@@ -32682,6 +32948,25 @@
       "uses": {
         "planned": 12,
         "rendered": 1
+      }
+    },
+    {
+      "id": "clip_d1e842f44338b4007d1f89b16942242d8c010821975dc464226404937eaa548a",
+      "metadata": "clips/clip_d1e842f44338b4007d1f89b16942242d8c010821975dc464226404937eaa548a.json",
+      "labels": [
+        "segment-05.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 3.5,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
       }
     },
     {
@@ -34762,6 +35047,25 @@
       "durationSeconds": 8,
       "width": 1080,
       "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_e0aef89a9bd40660df4a5dec9cbc747a3260fe99d0caead14cf7b45bcaba7ef4",
+      "metadata": "clips/clip_e0aef89a9bd40660df4a5dec9cbc747a3260fe99d0caead14cf7b45bcaba7ef4.json",
+      "labels": [
+        "segment-04.mp4"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "signal-passing-through"
+      ],
+      "durationSeconds": 3.5,
+      "width": 720,
+      "height": 1280,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
