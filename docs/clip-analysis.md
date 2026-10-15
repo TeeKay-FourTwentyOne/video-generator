@@ -10,7 +10,9 @@ capture, all-stream probing, full audio/video decode, compressed frame and packe
 tables, signal measurements, scene candidates, decoded frame hashes, audio
 measurements, and bounded previews. Native Apple Vision OCR is available through
 explicit local compilation. Optional adapters support provisioned whisper.cpp with
-VAD, MLX-VLM, OpenCLIP and CLAP. Their usefulness must be established on the pilot;
+VAD, MLX-VLM, OpenCLIP and CLAP. The core semantic candidate now has an
+[explicit setup recipe](clip-analysis-setup.md), pinned dependency versions,
+structured speech timing and matching image/text retrieval. Its usefulness must be established on the pilot;
 an adapter being implemented is not evidence that its model was installed or
 its output reviewed.
 
@@ -133,9 +135,9 @@ Keep an adapter entry for each desired pass:
 
 | Pass / kind | Required settings |
 | --- | --- |
-| `transcript` / `whisper.cpp` | `modelFile`, `vadModelFile`; optional `language` |
-| `observations` / `mlx-vlm` | `script`, `runtimeFiles`, local `modelPath`; optional `windowFrames`, `maxTokens`, `seed` |
-| `embeddings` / `openclip` | `script`, `runtimeFiles`, `architecture`, local `weights` |
+| `transcript` / `whisper.cpp` | Qualified bridge executable, `modelFile`, `vadModelFile`, `bridgeSource`, `timestampContract` and explicit VAD settings |
+| `observations` / `mlx-vlm` | `script`, `runtimeFiles`, local `modelPath`, `windowFrames`, `imageSide`, `maxTokens`, `seed` |
+| `embeddings` / `openclip` | `script`, `runtimeFiles`, `architecture`, local `weights`, `modelConfig`, `tokenizerFile`, `vectorDimensions` |
 | `audio-content` / `clap` | `script`, `runtimeFiles`, local `weights`, pinned `ffmpeg`; measured `durationSeconds` if absent from the stream |
 | supported pass / `json-command` | `args`; executable reads request/output paths appended as separate arguments |
 
@@ -154,11 +156,14 @@ analysis remains portable. FFmpeg input protocols are restricted to files/pipes.
 Changing a pinned file fails before execution and again at final verification.
 
 Visual meaning receives ordered timestamped windows with overlap and no creation
-prompt. MLX uses deterministic sampling settings. Whisper receives local mono
-audio with integrated VAD; raw outputs and token timestamps are preserved. Its
-VAD diagnostics are retained, but independently qualified speech/vocal labels
-and exact VAD-span export still need pilot validation. No speaker identities are
-inferred. CLAP initially supplies candidate embeddings, not event probabilities.
+prompt. MLX uses deterministic sampling settings and retains sampled-frame references,
+the exact formatted prompt and generation limits. Whisper receives local mono audio
+with timestamp-preserving resampling. Structured VAD, segment, token and word-group
+evidence retains both raw VAD-processed offsets and mapped original audio times.
+See the [speech contract](schemas/clip-speech.schema.json) and
+[timing limitations](clip-analysis-setup.md#evidence-and-limits). Language and
+speech/vocal labels remain uncalibrated and require review. No speaker identities
+are inferred. CLAP initially supplies candidate embeddings, not event probabilities.
 
 ## Search and review
 
@@ -176,10 +181,13 @@ The private JSON search index and HTML coverage dashboard are disposable; rebuil
 them from catalog records, verified runs and separate reviews. Results distinguish
 measured signals, inferred observations, historical analysis, creation prompts,
 human corrections and similarity candidates. They include clip identity, evidence
-time range, preview and private local presence. Remote presence remains unknown
+time range, matching preview times, sampled-frame paths and private local presence. Remote presence remains unknown
 until an explicit cloud verification. Public `availability` keeps its existing
 public-hosting meaning. No SQLite/vector service is required; vector comparisons
 currently scan the private index and require identical model configuration hashes.
+Wrong dimensions, nonfinite/zero values and nonunit vectors fail visibly. Coverage
+retains each pass's sampling limits; a missing pass or unsampled action cannot be
+interpreted as a negative finding.
 
 Review templates deliberately have no approval timestamp. A human record binds
 the exact manifest hash, step decisions with reasons, and optional corrections
@@ -256,6 +264,12 @@ remain unrun. The samples must use identical extractor/runtime identities, and
 cleanup candidates must match those frozen identities too. This is a reviewable
 decision, not an automatic benchmark score.
 
+Qualification version 2 additionally binds each sample to an immutable human
+review, requires structured original-time speech evidence and per-sample retrieval
+vectors, and verifies private fixture/query evidence files. The
+[setup and qualification guide](clip-analysis-setup.md#qualifying-the-candidate)
+describes those fields, including negative queries and recorded timing errors.
+
 `analysis readiness PRIVATE_POLICY.json` provides an offline blocker report.
 `cloud readiness PRIVATE_POLICY.json` additionally verifies every backup-set
 member's current generation and checksums before reporting readiness. A private
@@ -280,3 +294,7 @@ is a concrete manifest of exact library master paths, hashes, backup sets and
 potential space savings. Historical workspace/archive copies are outside that
 manifest. Explicit cleanup authorization is still required; deletion is not
 implemented by these commands.
+
+Use the [backup-readiness handoff](clip-backup-readiness-handoff.md) for the
+remaining operational checks, including recovery dependencies and rehearsal
+limitations that the automated gate does not yet enforce.

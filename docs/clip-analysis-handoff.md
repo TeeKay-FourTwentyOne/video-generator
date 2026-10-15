@@ -1,8 +1,53 @@
 # Clip analysis handoff: qualify the first semantic profile
 
-Status: next implementation task, following the baseline delivered on 2026-10-14.
+Status: core implementation and local provisioning completed on 2026-10-14;
+semantic pilot acceptance and profile freezing remain separate review steps.
 Read [the plan](clip-analysis-plan.md) for the full target and
 [the command guide](clip-analysis.md) for the implemented interfaces.
+For the remaining checks before relying on remote masters or reclaiming disk
+space, continue with [the backup-readiness handoff](clip-backup-readiness-handoff.md).
+
+## Implementation continuation
+
+The [reproducible setup](clip-analysis-setup.md) and placeholder configuration now
+cover the pinned Whisper/VAD bridge, MLX-VLM and OpenCLIP runtimes. Speech evidence
+retains structured VAD, source-aligned segment/token/word-group times, raw shortened
+offsets and resampling maps. Word intervals crossing VAD gaps are flagged rather
+than repaired silently. Padded VAD endpoints retain raw estimates and explicit
+boundary adjustments to the decoded sample range. Visual windows retain exact
+prompts and sampled-frame links. Image/text retrieval uses matching pinned preprocessing and rejects invalid
+vectors. Private search exposes original and preview times plus sampling limits.
+
+The follow-through evidence is under
+`data/workspace/clip-analysis-semantic-v1/`: `implementation.json`,
+`pilot-candidates-reviewed.json`, `real-fixtures.json`, `pilot-results.json`,
+`retrieval-results.json`, `review.html`, `reviews/` and `qa/`. Check the current
+status of those files; a running or incomplete report is not acceptance evidence.
+The candidate configuration is `data/clips/analysis/profiles/semantic-pinned-v1.json`.
+All raw model output, weights, environments and measurements remain ignored.
+
+The final technical pilot completed on 24 clips with identical configuration and
+extractor hashes. Ten scene queries returned the agent-nominated clip first within
+that pilot; an additional door-opening probe remains an unconfirmed action match.
+These are audition results, not human-ground-truth accuracy. Final delayed-audio
+and silent-audio fixtures passed, along with 136 offline regressions. The complete
+report is `pilot-evidence-final.json`; `agent-review-notes.json` and
+`pilot-review-draft.json` retain proposed acceptance criteria without approval.
+
+One original long candidate failed on overlapping decoded audio timestamps and
+was replaced; its evidence remains private. The endpoint-padding case found in
+another clip is now covered by an explicit regression and ambiguity flag. Runtime
+inventory duplication also needs attention before a full-library rollout: measure
+the complete retained footprint, not only declared media artifacts.
+
+The freeze gate now requires qualification version 2, immutable human reviews of
+the exact sample manifests, source-bound retrieval labels and retained query and
+fixture evidence. Agent inspection and passing regressions do not satisfy it.
+Subtle actions, inferred static claims, music/vocals and estimated word boundaries
+remain review concerns. No profile has been frozen by this implementation.
+
+The original scope below remains the acceptance checklist, not a claim that the
+human review or cloud recovery work has been completed.
 
 ## The next critical deliverable
 
@@ -13,8 +58,8 @@ or what is said. This is the largest remaining first-pass gap before relying on
 small local previews to select a remotely stored master.
 
 Keep the next increment focused on Whisper/VAD, prompt-blind visual descriptions
-and OpenCLIP image/text retrieval. The current adapters are starting implementations;
-they have not been qualified with installed models. CLAP, tracking, anatomy checks
+and OpenCLIP image/text retrieval. The baseline adapters were starting implementations;
+the core paths now have real local execution evidence. CLAP, tracking, anatomy checks
 and other advanced detectors can follow after this core profile is useful.
 
 ## What is already available
@@ -56,8 +101,8 @@ does not imply that its model observations have been reviewed.
    storage. Pin executables, runtime packages, tokenizers, weights, licenses,
    quantization and preprocessing. Missing files or attempted network access must
    fail visibly. Analysis must never install a package or fetch a model implicitly.
-2. **Finish auditable speech timing first.** The Whisper adapter currently retains
-   raw JSON/tokens and segment offsets but records VAD only as a diagnostic label.
+2. **Finish auditable speech timing first.** The baseline Whisper adapter retained
+   raw JSON/tokens and segment offsets but recorded VAD only as a diagnostic label.
    Add structured VAD spans and normalized word/segment evidence with stream IDs,
    source presentation times, raw offsets and the mapping from resampled audio.
    Verify whether the selected Whisper/VAD revision reports original or shortened
@@ -120,11 +165,11 @@ After explicit local provisioning, pin a private configuration and test one clip
 before enqueueing the selected pilot:
 
 ```sh
-npm run clips -- analysis pin data/clips/analysis/profiles/semantic-local.json data/clips/analysis/profiles/semantic-pinned.json
-npm run clips -- analysis run "$CLIP_ID" --config=data/clips/analysis/profiles/semantic-pinned.json
+npm run clips -- analysis pin data/clips/analysis/profiles/semantic-local-v1.json data/clips/analysis/profiles/semantic-pinned-v1.json
+npm run clips -- analysis run "$CLIP_ID" --config=data/clips/analysis/profiles/semantic-pinned-v1.json
 npm run clips -- analysis verify "$CLIP_ID" "$RUN_ID"
 npm run clips -- analysis index
-npm run clips -- analysis similar-text 'a person opening a door' --config=data/clips/analysis/profiles/semantic-pinned.json
+npm run clips -- analysis similar-text 'a person opening a door' --config=data/clips/analysis/profiles/semantic-pinned-v1.json
 npm run clips -- analysis review-template "$CLIP_ID" "$RUN_ID"
 ```
 

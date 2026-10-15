@@ -5,6 +5,7 @@ import { REPO, safePath, readJson, readClip, listClips, listUses, mediaPath, pub
 import { assert, sha, now, validHash, privateJson, runPath, listRuns, verifyRun, verifyFile, configFor, BASELINE, SEMANTIC, withLock, filesUnder } from './clip-analysis-store.mjs';
 import { seconds } from './clip-analysis-process.mjs';
 import { validateBackupSet, formatSignature } from './clip-backup-set.mjs';
+import { validateVector } from './clip-analysis-adapters.mjs';
 
 const local = (repo, name) => safePath(repo, `data/clips/analysis/${name}`);
 const escape = s => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -64,17 +65,32 @@ export async function buildSearch(repo = REPO) {
       const m = verifyRun(clip.id, runId, repo), dir = runPath(clip.id, runId, repo), manifestSha256 = hashFile(path.join(dir, 'manifest.json'));
       sources.push({ clipId: clip.id, runId, manifestSha256 });
       const previewFile = path.join(dir, 'steps/preview/preview.mp4'), preview = fs.existsSync(previewFile) ? path.relative(repo, previewFile) : null;
+      const previewInfoFile = path.join(dir, 'steps/preview/preview.json'), previewInfo = fs.existsSync(previewInfoFile) ? readJson(previewInfoFile) : null;
       coverage.push({ clipId: clip.id, runId, kind: clip.kind, states: Object.fromEntries(Object.entries(m.steps).map(([k, v]) => [k, v.state])),
-        required: m.config.required, bytes: m.artifacts.reduce((s, a) => s + a.bytes, 0), preview, presence: presence(clip, repo) });
+        required: m.config.required, passes: Object.fromEntries(Object.entries(m.steps).map(([k, v]) => [k, { reason: v.reason, coverage: v.coverage }])),
+        bytes: m.artifacts.reduce((s, a) => s + a.bytes, 0), preview, presence: presence(clip, repo) });
       const sceneFile = path.join(dir, 'steps/signal/scenes.json');
       if (fs.existsSync(sceneFile)) for (const s of readJson(sceneFile).streams) for (const span of s.spans) add({ runId, manifestSha256, evidenceType: 'measured-signal',
         text: `Scene span; ${s.consecutiveDuplicateFrames} consecutive duplicate frames in stream; ${s.cuts.length} cut candidates`, streamIndex: s.streamIndex,
         startSeconds: seconds(span.startPts, s.timeBase), endSeconds: span.endPts ? seconds(span.endPts, s.timeBase) : null, preview });
       for (const step of SEMANTIC) {
         const file = path.join(dir, 'steps', step, `${step}.json`); if (!fs.existsSync(file)) continue;
-        for (const o of readJson(file).observations ?? []) add({ runId, manifestSha256, observationSha256: sha(o), evidenceType: step === 'embeddings' || step === 'audio-content' ? 'similarity-candidate' : 'model-observation',
+        for (const o of readJson(file).observations ?? []) {
+          if (o.vector) validateVector(o.vector, m.config.adapters[step]?.settings.vectorDimensions);
+          add({ runId, manifestSha256, observationSha256: sha(o), evidenceType: step === 'embeddings' || step === 'audio-content' ? 'similarity-candidate' : 'model-observation',
           extractor: step, text: o.text, originalText: o.originalText, normalizedText: o.normalizedText, startSeconds: o.startSeconds, endSeconds: o.endSeconds,
-          streamIndex: o.streamIndex, frameIndices: o.frameIndices, confidence: o.confidence, preview, ...(o.vector ? { vector: o.vector, modelIdentitySha256: sha(m.config.adapters[step]) } : {}) });
+          streamIndex: o.streamIndex, frameIndices: o.frameIndices, confidence: o.confidence, preview,
+          previewStartSeconds: previewInfo ? o.startSeconds - previewInfo.previewOriginSourceSeconds : null,
+          previewEndSeconds: previewInfo ? o.endSeconds - previewInfo.previewOriginSourceSeconds : null,
+          timingWarning: o.timingWarning ?? null, vadIntersections: o.vadIntersections,
+          negativeFindingsSupported: false,
+          sampledFrames: (o.frameIndices ?? []).map(i => {
+            const f = previewInfo?.samples.find(f => f.streamIndex === o.streamIndex && f.frameIndex === i);
+            assert(f, 'Indexed observation references a missing sampled frame');
+            return { ...f, path: path.relative(repo, path.join(dir, 'steps/preview', f.path)) };
+          }), sampling: previewInfo?.coverage ?? null, generation: o.generation,
+          ...(o.vector ? { vector: o.vector, modelIdentitySha256: sha(m.config.adapters[step]) } : {}) });
+        }
       }
       const reviewDir = safePath(repo, `data/clips/${clip.id}/reviews`);
       if (fs.existsSync(reviewDir)) for (const name of fs.readdirSync(reviewDir).sort()) {
@@ -89,7 +105,7 @@ export async function buildSearch(repo = REPO) {
   const index = { schemaVersion: 1, builtAt: now(), catalogSha256: sha(clips), sources, rows };
   privateJson(local(repo, 'search.json'), index);
   privateJson(local(repo, 'coverage.json'), { schemaVersion: 1, builtAt: now(), clips: clips.length, analyzedClips: new Set(coverage.map(r => r.clipId)).size, runs: coverage });
-  const body = coverage.map(r => `<tr><td>${escape(r.clipId.slice(0, 17))}</td><td>${escape(r.kind)}</td><td>${Object.entries(r.states).map(([k, v]) => `${escape(k)}: ${escape(v)}`).join('<br>')}</td><td>${(r.bytes / 1048576).toFixed(1)} MiB</td><td>${r.preview ? `<a href="../../../${escape(r.preview)}">Preview</a>` : 'Needs review'}</td></tr>`).join('');
+  const body = coverage.map(r => `<tr><td>${escape(r.clipId.slice(0, 17))}</td><td>${escape(r.kind)}</td><td>${Object.entries(r.states).map(([k, v]) => `${escape(k)}: ${escape(v)}${r.passes[k].coverage?.sampledFrames !== undefined ? ` (${r.passes[k].coverage.sampledFrames} sampled frames)` : ''}`).join('<br>')}</td><td>${(r.bytes / 1048576).toFixed(1)} MiB</td><td>${r.preview ? `<a href="../../../${escape(r.preview)}">Preview</a>` : 'Needs review'}</td></tr>`).join('');
   const html = '<!doctype html><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; media-src \'self\'; img-src \'self\'"><title>Private clip analysis coverage</title>'
     + '<style>body{background:#15191f;color:#eef3f8;font:14px system-ui;padding:24px}table{border-collapse:collapse}td,th{padding:12px;border-bottom:1px solid #445;text-align:left}a{color:#8de2ed}</style>'
     + `<h1>Clip analysis coverage</h1><p>${clips.length} catalog clips; ${new Set(coverage.map(r => r.clipId)).size} analyzed. Pending and review states are not completed acceptance.</p><table><tr><th>Clip</th><th>Kind</th><th>Passes</th><th>Retained size</th><th>Review</th></tr>${body}</table>`;
@@ -111,31 +127,41 @@ export function searchPrivate(query, repo = REPO) {
 export function neighbors(id, runId, repo = REPO) {
   const rows = loadSearch(repo).rows.filter(r => r.vector), query = rows.filter(r => r.clipId === id && r.runId === runId);
   assert(query.length, 'No provisioned embeddings for this run');
-  const cosine = (a, b) => a.reduce((n, v, i) => n + v * b[i], 0) / Math.sqrt(a.reduce((n, v) => n + v * v, 0) * b.reduce((n, v) => n + v * v, 0));
+  for (const r of rows) validateVector(r.vector);
+  const cosine = (a, b) => { validateVector(b, a.length); return a.reduce((n, v, i) => n + v * b[i], 0); };
   return rows.filter(r => r.clipId !== id).flatMap(r => {
-    const matching = query.filter(q => q.modelIdentitySha256 === r.modelIdentitySha256 && q.vector.length === r.vector.length);
+    const matching = query.filter(q => q.modelIdentitySha256 === r.modelIdentitySha256);
     if (!matching.length) return [];
     const { vector, ...rest } = r; return [{ ...rest, similarity: Math.max(...matching.map(q => cosine(q.vector, vector))), interpretation: 'Candidate similarity, not probability or proof of shared source bytes' }];
   }).sort((a, b) => b.similarity - a.similarity).slice(0, 40);
 }
-export async function similarText(query, supplied, repo = REPO) {
+export function rankEmbeddings(vector, candidates, modelId, dimensions = vector.length) {
+  validateVector(vector, dimensions);
+  return candidates.filter(r => r.modelIdentitySha256 === modelId).map(({ vector: v, ...r }) => {
+    validateVector(v, dimensions);
+    return { ...r, similarity: v.reduce((s, n, i) => s + n * vector[i], 0), interpretation: 'Uncalibrated text/image similarity candidate' };
+  }).sort((a, b) => b.similarity - a.similarity).slice(0, 40);
+}
+export async function similarText(query, supplied, repo = REPO, { runIds } = {}) {
   assert(typeof query === 'string' && query.trim(), 'Provide a text query'); const config = configFor(supplied);
+  if (runIds !== undefined) assert(Array.isArray(runIds) && runIds.length > 0
+    && runIds.every(id => /^run_[a-f0-9]{64}$/.test(id)), 'Provide explicit run identities for bounded retrieval');
   const index = loadSearch(repo), modelId = sha(config.adapters.embeddings);
-  const candidates = index.rows.filter(r => r.vector && r.modelIdentitySha256 === modelId);
+  const candidates = index.rows.filter(r => r.vector && r.modelIdentitySha256 === modelId && (!runIds || runIds.includes(r.runId)));
   assert(candidates.length, 'Index has no embeddings from this exact pinned model configuration');
   return withLock(repo, 'model-worker', async () => {
     const parent = local(repo, 'queries'); fs.mkdirSync(parent, { recursive: true, mode: 0o700 });
     const dir = fs.mkdtempSync(path.join(parent, 'query-'));
     const vector = await (await import('./clip-analysis-adapters.mjs')).embedText(query, config, dir);
-    return candidates.filter(r => r.vector.length === vector.length).map(({ vector: v, ...r }) => ({ ...r,
-      similarity: v.reduce((s, n, i) => s + n * vector[i], 0) / Math.sqrt(v.reduce((s, n) => s + n * n, 0) * vector.reduce((s, n) => s + n * n, 0)),
-      interpretation: 'Uncalibrated text/image similarity candidate', presence: presence(readClip(r.clipId, repo), repo) })).sort((a, b) => b.similarity - a.similarity).slice(0, 40);
+    return rankEmbeddings(vector, candidates, modelId, config.adapters.embeddings.settings.vectorDimensions)
+      .map(r => ({ ...r, presence: presence(readClip(r.clipId, repo), repo) }));
   });
 }
 export function validatePilot(pilot, repo = REPO) {
   assert(pilot?.schemaVersion === 1 && pilot.reviewedBy === 'human' && Number.isFinite(Date.parse(pilot.reviewedAt))
     && Array.isArray(pilot.samples) && pilot.samples.length >= 24 && new Set(pilot.samples.map(s => s.clipId)).size === pilot.samples.length, 'Profile freeze requires a reviewed 24-clip pilot');
   const config = configFor(pilot.config);
+  assert(pilot.qualificationVersion === 2, 'Semantic qualification requires versioned speech and retrieval review evidence');
   assert([...BASELINE, 'ocr', 'transcript', 'observations', 'embeddings'].every(s => config.required.includes(s)), 'Cleanup profile must cover baseline, OCR, speech, visual meaning and retrieval');
   const labels = new Set(); let extractorSha256;
   for (const sample of pilot.samples) {
@@ -147,13 +173,38 @@ export function validatePilot(pilot, repo = REPO) {
     assert(sample.accepted === true && sample.timingReviewed === true && sample.semanticReviewed === true && sample.usefulnessReviewed === true
       && Array.isArray(sample.labels) && typeof sample.notes === 'string', 'Pilot sample has unresolved human review');
     assert(config.required.every(s => ['complete', 'needs-review', 'not-applicable'].includes(m.steps[s].state)), 'Pilot has an unrun required pass');
+    for (const step of ['ocr', 'observations', 'embeddings']) assert(m.steps[step].coverage?.sampledFrames > 0, 'Pilot visual pass has no sampled-frame evidence');
+    assert(m.steps.observations.coverage.observations > 0
+      && m.steps.embeddings.coverage.observations === m.steps.embeddings.coverage.sampledFrames,
+    'Pilot lacks descriptions or per-sample retrieval vectors');
+    if (m.steps.transcript.state !== 'not-applicable') assert(m.steps.transcript.coverage?.speechEvidenceVersion === 2,
+      'Pilot speech lacks qualified VAD and original-time evidence');
+    assert(sample.reviewSha256 && validHash(sample.reviewSha256), 'Pilot sample needs a separate immutable human review');
+    const review = readJson(reviewPath(sample.clipId, sample.reviewSha256, repo));
+    assert(sha(review) === sample.reviewSha256 && review.runId === sample.runId && review.manifestSha256 === sample.manifestSha256, 'Pilot review identity mismatch');
+    validateReview(review, repo);
+    assert(config.required.filter(s => m.steps[s].state === 'needs-review').every(s => review.steps[s]?.accepted === true), 'Pilot has an unaccepted model pass');
     sample.labels.forEach(x => labels.add(x));
   }
   for (const label of ['portrait', 'landscape', 'short', 'long', 'speech', 'music', 'silence', 'no-audio', 'visible-text', 'people', 'animation', 'static', 'moving', 'cuts', 'known-defects'])
     assert(labels.has(label), `Pilot lacks reviewed coverage: ${label}`);
-  assert(['rotation', 'HDR', 'VFR', 'corruption', 'silent-audio', 'no-audio'].every(k => pilot.fixtures?.some(f => f.case === k && f.passed === true && validHash(f.evidenceSha256))), 'Pilot needs verified edge-case fixtures');
+  assert(['rotation', 'HDR', 'VFR', 'corruption', 'silent-audio', 'no-audio', 'delayed-audio', 'silence-gaps', 'failed-asr', 'changed-pins', 'incompatible-vectors', 'interrupted-run'].every(k => pilot.fixtures?.some(f => {
+    if (f.case !== k || f.passed !== true) return false;
+    const evidence = evidenceFile(f.evidence, repo);
+    return evidence.passed === true && evidence.case === k;
+  })), 'Pilot needs verified edge-case fixtures');
   assert(pilot.retrieval?.reviewed === true && typeof pilot.retrieval.acceptanceCriteria === 'string' && pilot.retrieval.acceptanceCriteria.trim()
     && Array.isArray(pilot.retrieval.queries) && pilot.retrieval.queries.length > 0, 'Retrieval targets must come from a labeled, reviewed pilot');
+  for (const q of pilot.retrieval.queries) {
+    assert(typeof q.query === 'string' && q.query.trim() && q.accepted === true && Array.isArray(q.expectedMatches)
+      && (q.expectedMatches.length > 0 || q.expectedNoMatch === true)
+      && Array.isArray(q.falseMatches) && Array.isArray(q.missedEvents) && Array.isArray(q.timingErrors)
+      && typeof q.notes === 'string' && q.notes.trim(), 'Retrieval query needs labeled matches, misses, timing errors and a review decision');
+    const evidence = evidenceFile(q.evidence, repo);
+    assert(evidence.query === q.query && evidence.configSha256 === sha(config) && Array.isArray(evidence.results), 'Retrieval evidence does not match the reviewed query/profile');
+    for (const match of q.expectedMatches) assert(pilot.samples.some(s => s.clipId === match.clipId && s.runId === match.runId)
+      && Number.isFinite(match.startSeconds) && Number.isFinite(match.endSeconds) && match.endSeconds >= match.startSeconds, 'Retrieval label lacks a pilot source-time range');
+  }
   return { profileSha256: sha(pilot), configSha256: sha(config), extractorSha256 };
 }
 export function freezeProfile(pilot, repo = REPO) {

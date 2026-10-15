@@ -15,7 +15,7 @@ export function toolIdentity(config) {
   for (const name of ['ffmpeg', 'ffprobe']) {
     const binary = resolveBinary(name); tools[name] = { binary, sha256: hashFile(binary), version: toolVersion(binary) };
   }
-  for (const name of ['clip-analysis', 'clip-analysis-store', 'clip-analysis-process', 'clip-analysis-extract', 'clip-analysis-adapters'])
+  for (const name of ['clip-analysis', 'clip-analysis-store', 'clip-analysis-process', 'clip-analysis-extract', 'clip-analysis-adapters', 'clip-analysis-speech'])
     tools.implementation[`${name}.mjs`] = hashFile(path.join(REPO, `tools/production/${name}.mjs`));
   for (const [step, adapter] of Object.entries(config.adapters)) validateAdapter(step, adapter);
   return tools;

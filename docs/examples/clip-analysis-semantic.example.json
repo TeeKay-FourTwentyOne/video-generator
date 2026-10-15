@@ -1,0 +1,157 @@
+{
+  "adapters": {
+    "embeddings": {
+      "executable": "<LOCAL_INSTALL>/python/bin/python3.12",
+      "files": [
+        "<LOCAL_INSTALL>/python/lib/python3.12/site-packages",
+        "<LOCAL_INSTALL>/python/pyvenv.cfg",
+        "<REPOSITORY>/tools/production/clip-analysis-requirements.txt",
+        "<REPOSITORY>/tools/production/clip-analysis-model.py",
+        "<LOCAL_INSTALL>/models/clip"
+      ],
+      "identity": {
+        "license": "MIT",
+        "model": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K@1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "preprocessing": "224 RGB bicubic shortest-side resize and center crop; model-config mean/std; pinned SimpleTokenizer BPE, context 77; L2 normalized 512 dimensions",
+        "quantization": "FP32 CPU",
+        "runtimeRevision": "open-clip-torch 3.3.0 / torch 2.14.1; exact dependency lock and runtime files pinned"
+      },
+      "kind": "openclip",
+      "settings": {
+        "architecture": "ViT-B-32",
+        "modelConfig": "<LOCAL_INSTALL>/models/clip/open_clip_config.json",
+        "runtimeFiles": [
+          "<LOCAL_INSTALL>/python/lib/python3.12/site-packages/mlx_vlm/__init__.py",
+          "<LOCAL_INSTALL>/python/lib/python3.12/site-packages/open_clip/__init__.py"
+        ],
+        "runtimeRoots": [
+          "<LOCAL_INSTALL>/python/lib/python3.12/site-packages"
+        ],
+        "script": "<REPOSITORY>/tools/production/clip-analysis-model.py",
+        "tokenizerFile": "<LOCAL_INSTALL>/python/lib/python3.12/site-packages/open_clip/bpe_simple_vocab_16e6.txt.gz",
+        "vectorDimensions": 512,
+        "weights": "<LOCAL_INSTALL>/models/clip/open_clip_model.safetensors"
+      }
+    },
+    "observations": {
+      "executable": "<LOCAL_INSTALL>/python/bin/python3.12",
+      "files": [
+        "<LOCAL_INSTALL>/python/lib/python3.12/site-packages",
+        "<LOCAL_INSTALL>/python/pyvenv.cfg",
+        "<REPOSITORY>/tools/production/clip-analysis-requirements.txt",
+        "<REPOSITORY>/tools/production/clip-analysis-model.py",
+        "<LOCAL_INSTALL>/models/qwen"
+      ],
+      "identity": {
+        "license": "Apache-2.0",
+        "model": "mlx-community/Qwen3-VL-4B-Instruct-4bit@2fd8dacbdb8f1e54b8c005f081ec5bf79c56376b",
+        "preprocessing": "Ordered SDR RGB frames, 336x336 resize bound; four-frame windows, one-frame overlap; prompt blind; temperature 0; seed 0",
+        "quantization": "4 bit, group size 64",
+        "runtimeRevision": "mlx-vlm 0.7.8 / mlx 0.32.4 / transformers 5.19.0; exact dependency lock and runtime files pinned"
+      },
+      "kind": "mlx-vlm",
+      "settings": {
+        "imageSide": 336,
+        "maxTokens": 200,
+        "modelPath": "<LOCAL_INSTALL>/models/qwen",
+        "runtimeFiles": [
+          "<LOCAL_INSTALL>/python/lib/python3.12/site-packages/mlx_vlm/__init__.py",
+          "<LOCAL_INSTALL>/python/lib/python3.12/site-packages/open_clip/__init__.py"
+        ],
+        "runtimeRoots": [
+          "<LOCAL_INSTALL>/python/lib/python3.12/site-packages"
+        ],
+        "script": "<REPOSITORY>/tools/production/clip-analysis-model.py",
+        "seed": 0,
+        "windowFrames": 4
+      }
+    },
+    "ocr": {
+      "kind": "apple-vision",
+      "executable": "<OCR_EXECUTABLE>",
+      "files": [
+        "<OCR_SOURCE>"
+      ],
+      "identity": {
+        "license": "Apple platform framework",
+        "model": "Apple Vision text recognition revision 3",
+        "preprocessing": "oriented SDR keyframes; accurate OCR; language detection; no language correction",
+        "quantization": "OS managed; not exposed",
+        "runtimeRevision": "Darwin 25.6.0 / Apple Vision revision 3"
+      },
+      "settings": {}
+    },
+    "transcript": {
+      "executable": "<LOCAL_INSTALL>/bridge/clip-analysis-whisper",
+      "files": [
+        "<REPOSITORY>/tools/production/clip-analysis-whisper.cpp",
+        "<REPOSITORY>/tools/production/clip-analysis-whisper/CMakeLists.txt",
+        "<LOCAL_INSTALL>/whisper.cpp/include/whisper.h",
+        "<LOCAL_INSTALL>/whisper.cpp/src/whisper.cpp",
+        "<LOCAL_INSTALL>/whisper.cpp/LICENSE",
+        "<LOCAL_INSTALL>/models/whisper-model",
+        "<LOCAL_INSTALL>/models/vad-model"
+      ],
+      "identity": {
+        "license": "Whisper MIT; Silero MIT",
+        "model": "Whisper small multilingual / Silero VAD v6.2.0",
+        "preprocessing": "Timestamp-preserving mono float32 16 kHz; integrated VAD; original-audio segment/token getters; uncalibrated language auto-detection",
+        "quantization": "GGML F16 weights",
+        "runtimeRevision": "whisper.cpp v1.9.5 d1be6fde11ac6e0407606b4e42fe72d34add8037; static CPU build; original-time bridge v1"
+      },
+      "kind": "whisper.cpp",
+      "settings": {
+        "bridgeSource": "<REPOSITORY>/tools/production/clip-analysis-whisper.cpp",
+        "language": "auto",
+        "modelFile": "<LOCAL_INSTALL>/models/whisper-model/ggml-small.bin",
+        "timestampContract": "whisper.cpp-original-time-v1",
+        "vadMinSilenceMs": 100,
+        "vadMinSpeechMs": 250,
+        "vadModelFile": "<LOCAL_INSTALL>/models/vad-model/ggml-silero-v6.2.0.bin",
+        "vadOverlapSeconds": 0.1,
+        "vadPadMs": 30,
+        "vadThreshold": 0.5
+      }
+    }
+  },
+  "evidence": [],
+  "limits": {
+    "maxFrames": 2000000,
+    "maxOutputBytes": 1073741824,
+    "minFreeBytes": 8589934592,
+    "timeoutSeconds": 1800
+  },
+  "preview": {
+    "audioKbps": 64,
+    "crf": 30,
+    "gridSeconds": 1,
+    "maxKeyframes": 120,
+    "maxSide": 640,
+    "videoKbps": 600
+  },
+  "profile": "semantic-local-v1",
+  "required": [
+    "evidence",
+    "probe",
+    "decode",
+    "timing",
+    "signal",
+    "audio",
+    "preview",
+    "ocr",
+    "transcript",
+    "observations",
+    "embeddings"
+  ],
+  "schemaVersion": 1,
+  "signal": {
+    "blackDuration": 0.1,
+    "blackPixelThreshold": 0.1,
+    "freezeNoiseDb": -60,
+    "freezeSeconds": 1,
+    "sceneThreshold": 10,
+    "silenceDb": -50,
+    "silenceSeconds": 0.2
+  },
+  "threads": 2
+}

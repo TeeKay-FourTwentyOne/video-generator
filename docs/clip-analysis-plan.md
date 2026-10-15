@@ -3,7 +3,8 @@
 Status: baseline pipeline, resumable queue, local-adapter contracts, private search,
 reviewed public projection, complete analysis backup/recovery, and a fail-closed
 cleanup-readiness report are implemented. See [commands and current limits](clip-analysis.md).
-The semantic profile still requires provisioned models, a labeled/reviewed pilot,
+The semantic profile now has [explicitly provisioned local models](clip-analysis-setup.md)
+and structured timing/retrieval contracts. It still requires a labeled human-reviewed pilot
 and recovery/access/dependency evidence before any cleanup. The information table
 below remains the target capability set; implemented measurements must not be
 mistaken for completion of every proposed detector.

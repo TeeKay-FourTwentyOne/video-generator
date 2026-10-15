@@ -9,7 +9,7 @@ import { assert, filesUnder, checkSpace } from './clip-analysis-store.mjs';
 export function offlineEnv(threads = 2) {
   return { PATH: process.env.PATH, HOME: process.env.HOME, TMPDIR: process.env.TMPDIR ?? '/tmp',
     LANG: 'C.UTF-8', LC_ALL: 'C', HF_HUB_OFFLINE: '1', TRANSFORMERS_OFFLINE: '1', HF_DATASETS_OFFLINE: '1',
-    HF_HUB_DISABLE_TELEMETRY: '1', DO_NOT_TRACK: '1', TOKENIZERS_PARALLELISM: 'false',
+    HF_HUB_DISABLE_TELEMETRY: '1', DO_NOT_TRACK: '1', TOKENIZERS_PARALLELISM: 'false', PYTHONDONTWRITEBYTECODE: '1', PYTHONNOUSERSITE: '1',
     OMP_NUM_THREADS: String(threads), OPENBLAS_NUM_THREADS: String(threads), MKL_NUM_THREADS: String(threads) };
 }
 export function toolVersion(binary) {

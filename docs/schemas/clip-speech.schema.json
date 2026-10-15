@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Private normalized speech evidence v2",
+  "description": "A transcript artifact, not a public catalog object. Runs remain manifest v1; new extraction code and pins derive new immutable run IDs. Runtime validation checks source ranges and original-time contracts. Earlier transcript artifacts remain readable as legacy evidence.",
+  "type": "object",
+  "required": ["schemaVersion", "speechEvidenceVersion", "observations", "reports"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "speechEvidenceVersion": {"const": 2},
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sourceSha256", "streamIndex", "segmentIndex", "text", "startSeconds", "endSeconds", "sourceStart", "sourceEnd", "rawOffsets", "tokens", "words", "confidence"],
+        "properties": {
+          "sourceSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "streamIndex": {"type": "integer", "minimum": 0},
+          "segmentIndex": {"type": "integer", "minimum": 0},
+          "text": {"type": "string", "minLength": 1},
+          "startSeconds": {"type": "number"},
+          "endSeconds": {"type": "number"},
+          "sourceStart": {"$ref": "#/$defs/rational"},
+          "sourceEnd": {"$ref": "#/$defs/rational"},
+          "rawOffsets": {"$ref": "#/$defs/offsets"},
+          "tokens": {"type": "array", "description": "Original token IDs and UTF-8 bytes; raw VAD-processed offsets separate from mapped original-audio offsets. Missing timestamps stay unavailable."},
+          "words": {"type": "array", "description": "Whitespace token groups with tokenIndices, timingState, and original source times only when all component tokens have timing. Ambiguous VAD gaps and source boundaries remain flagged. Not forced alignment."},
+          "boundaryAdjustment": {"type": "object", "description": "When pinned final-window padding extends the raw estimate beyond decoded audio, the displayed source range is its intersection with available samples. Raw offsets remain unchanged.", "required": ["treatment", "startTrimmedMilliseconds", "endTrimmedMilliseconds", "reason"]},
+          "confidence": {"type": "object"}
+        }
+      }
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["streamIndex", "mapping", "vadSpans", "asrState", "vadState", "contentClassification", "rawOutput"],
+        "properties": {
+          "streamIndex": {"type": "integer", "minimum": 0},
+          "mapping": {"type": "object", "required": ["originPts", "sourceTimeBase", "sourceSampleRate", "sampleRate", "sampleCount", "gaps", "resampledAudio"]},
+          "vadSpans": {"type": "array"},
+          "asrState": {"enum": ["transcript-candidate", "empty-transcript"]},
+          "vadState": {"enum": ["speech-candidates", "no-speech-detected"]},
+          "contentClassification": {"type": "object"},
+          "rawOutput": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rational": {"type": "object", "required": ["numerator", "denominator"], "properties": {"numerator": {"type": "string", "pattern": "^-?[0-9]+$"}, "denominator": {"type": "string", "pattern": "^[1-9][0-9]*$"}}},
+    "offsets": {"type": "object", "required": ["from", "to", "unit", "timeline"], "properties": {"from": {"type": "integer", "minimum": 0}, "to": {"type": "integer", "minimum": 0}, "unit": {"const": "milliseconds"}, "timeline": {"const": "original-resampled-audio"}}}
+  }
+}
