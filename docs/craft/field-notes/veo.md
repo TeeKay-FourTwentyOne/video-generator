@@ -194,12 +194,42 @@ spectrogram (the agent did not listen in real time).
 the camera, and plan local clicks and cloth for the wide.
 Source: claude-code · Washing Day · 2026-10-03
 
+### "Quiet, natural, continuous conversation" comes back as legible, scene-apt lines
+Six Quality takes with audio, each prompting background pairs to talk "quietly and naturally"
+with no topic given, returned clear English dialogue in five of five rooms (café, tram, park,
+laundromat, bar): weather, errands, the size of a sheet, the light. Whisper transcribed all of
+it at no_speech_prob 0.00-0.03. The lines fitted their rooms and even rhymed across takes
+(rain in the morning, "after all that rain" at noon). A foreground character told not to speak
+did not speak in any take. The one line asked to be "too soft to make out" (the lead at a night
+bus stop) was not audible at all: Whisper hallucinated a stock phrase (no_speech_prob 0.43,
+avg_logprob -1.80) and the spectrogram showed traffic only.
+**Apply:** when the background's words are wanted, ask for audible natural conversation and
+let the model pick the topic; when a line must be inaudible, expect silence, not a murmur, and
+filter Whisper by no_speech_prob and avg_logprob before trusting a caption.
+Source: claude-code · Walla · 2026-10-08
+
+### "She does not speak" is ignored: Veo lip-syncs the foreground face, with or without audio
+Six audio takes of a listening woman with talkers behind her: in five of six she visibly
+mouthed one of the background's lines. Dense face strips every second frame against Whisper's
+word stamps help locate the motion, but a brief window in profile still needs playback review.
+Three silent retakes
+(no audio generation, the talkers named as the only speakers, "her lips stay closed and still,
+she never speaks, mouths words, laughs or hums") did not fix it: one take mouthed words for 80
+frames with no sound at all, one grinned open-mouthed for two seconds, one held for 66 frames
+and then talked. Removing the dialogue track does not remove the mouth animation.
+**Apply:** for a character who must stay silent among talkers, plan the cut before buying: use
+the head of the take (her lips held in every take for the first 2 to 3 s), keep her in profile
+or looking down when the lines land, or give her mouth business (a cup, a glass). Read her lips
+on a 2-frame strip against the word stamps before accepting any range, and stop each room's
+audio before her first line so the tail does not leak a syllable.
+Source: claude-code · Walla · 2026-10-08
+
 ## Cost behavior
 
 ### Every submission bills
 Filter rejections, hangs and duration round-ups all count. Plan about 30% over
-clip arithmetic. Dated rates live in `veo-spec.ts`; a 2K Nano image is about
-$0.14. The maintained ledger keeps a failed attempt reserved until evidence says otherwise.
+clip arithmetic. Use the maintained provider specifications for current estimates.
+The ledger keeps a failed attempt reserved until evidence says otherwise.
 Source: claude-code · 2026-05 to 2026-10
 
 ### Stills plus programmatic motion for stillness beats, Veo for narrative

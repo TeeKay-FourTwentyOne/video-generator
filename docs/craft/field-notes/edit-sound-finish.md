@@ -79,6 +79,17 @@ Lanczos beats Real-ESRGAN below 2x on paintings; verify by a 100% crop, not a
 thumbnail. Photoreal miniature footage at exact 2x (1080p to 4K vertical) upscales well.
 Source: claude-code · 2026-06; Borrowed Light · 2026-10-03
 
+### The fast x2 model waxes photoreal faces; blend it with Lanczos and judge at 100%
+On 16:9 1080p Veo footage of people (not a miniature), realesr-animevideov3-x2 at exact 2x turned
+hair into drawn strokes, smoothed skin to plastic, grew a woven texture on a grey overcoat and
+cut bokeh into discs, all visible in 100% crops and invisible in a thumbnail. A plain Lanczos 2x
+kept the photograph but was soft; a 50/50 `blend` of the two 4K streams kept the texture and
+most of the definition and was delivered. Burned subtitles survived all three.
+**Apply:** for photoreal people, render the model pass and a Lanczos pass, cut 100% crops of a
+face, a textured garment and an out-of-focus area side by side, and deliver the blend (or the
+Lanczos) unless the crops say otherwise; a synthetic card is re-rendered natively, never upscaled.
+Source: claude-code · Walla · 2026-10-08
+
 ### Check disk before upscaling, and chunk
 The upscaler dumps every frame as PNG to the temp volume: roughly 20 GB for a
 35-second 1080p vertical. Near-full disks fail silently, and the percentage shown
@@ -88,22 +99,35 @@ muxing the approved audio from the native master, when free space is under about
 25 GB.
 Source: claude-code · 2026-07; Borrowed Light · 2026-10-03
 
-### The 2026 masters used the small x2 model, not x4plus
-Until 2026-09-12 `tools/upscale.py` passed its public model ID straight to the ncnn
-wrapper, where ID 0 is `realesr-animevideov3-x2`; so the August, September and
-Can-Can 4K masters labelled "x4plus 2x" came from the fast x2 model (about 1.6 s
-per 1080p frame). The mapping fix made "model 0" the true x4plus, which renders 4x
-then resizes: about 30x slower (28-52 s per frame, six hours for 33 s) and a
-heavier etch. The default is the fast model again, and the director ruled on
-2026-10-03 that this MacBook must never spend that time: the tool refuses x4plus on
-macOS (override only on another machine). Check power: on battery the GPU is
-throttled and the run can outlive the charge.
+### Resolve the wrapper's model ID before upscaling
+Numeric model IDs can differ between `tools/upscale.py` and the ncnn wrapper;
+resolve the actual upstream model name before selecting a pass. The fast
+`realesr-animevideov3-x2` model enlarges directly to 2x, while x4plus renders 4x
+before resizing and can be much slower with a heavier etch. The fast model is
+the default, and the tool refuses x4plus on macOS. Compare representative 100%
+crops before approving a model. Check power: battery operation throttles the
+GPU and can greatly extend the render.
 Source: claude-code · Borrowed Light · 2026-10-03
 
 ### The local FFmpeg has no text filters
 No `drawtext` or subtitles filter: burn text through PIL sprites and `overlay`
 (`tools/add-timestamp.py`, `tools/caption-box.cjs`, the title recipes).
 Source: claude-code · 2026-05
+
+### Subtitles: burn PIL sprites into per-take copies and cut from the copies
+With no drawtext filter, film-style subtitles were PIL sprites (soft Gaussian shadow under
+off-white text) composited with `overlay=enable='between(t,a,b)'` into a re-encoded copy of
+each take (CRF 16, audio stream-copied, frame count verified unchanged). The copies were
+registered as local shots in the plan and became the edit's sources, so the native takes and
+their hashes stayed untouched and the cue files are the only thing a caption fix changes.
+Source: claude-code · Walla · 2026-10-08
+
+### Six native tracks can be the whole soundtrack
+Rooms measured -22.7 to -28.8 LUFS in; per-track gains to about -23 LUFS, a 60 Hz high-pass,
+eight-frame crossfades across the picture cuts and the last track ringing on under the black
+mastered to -16.1 LUFS at -1.9 dBTP with 4.5 LU range and no score. The audio crossfade is
+just a track whose `frames` run eight past its picture segment with a fade-out.
+Source: claude-code · Walla · 2026-10-08
 
 ### Synthetic flat-field video
 Full-range sRGB with bitstream tags, static dither to de-band, native 4K rather

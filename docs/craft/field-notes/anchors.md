@@ -100,6 +100,16 @@ hard cut back to the balcony (anchor-drift across-cut PASS).
 fresh from plate plus character for the later pose instead of chaining.
 Source: claude-code · Washing Day · 2026-10-03
 
+### Nano gives the character eye contact, and Veo opens the take on it
+Six scene-embedded anchors of one woman "facing three-quarters toward the camera, her face
+clearly visible" all came back with her looking into the lens, and every Veo take therefore
+opened with a look at the camera (0.5 to 1.8 s) before she turned to her task. Across one film
+the repeat read as a motif; it was not asked for.
+**Apply:** when the character must not see the camera, write where her eyes are ("looking down
+at the page", "looking at the two men") in the image prompt and again in the first line of the
+Veo prompt; otherwise plan the head of each take as hers.
+Source: claude-code · Walla · 2026-10-08
+
 ### Say what hangs on the line, item by item
 "White sheets" plus a red shirt produced an extra small white vest in one attempt;
 naming the exact items ("only the one red shirt and the two white sheets, nothing

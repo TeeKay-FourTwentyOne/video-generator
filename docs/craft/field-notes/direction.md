@@ -39,8 +39,8 @@ Source: claude-code · 2026-09
 ### Budget expectations
 Every attempt bills; plan about 30% over clip arithmetic; QA, images and storage
 share the same pot and are reconciled from saved usage. Two independent drafts
-of a 33-second Quality silent vertical with Nano anchors and local sound came in
-at about $11 to $12 all-in, roughly 68% of generated seconds used.
+of a 33-second Quality silent vertical with Nano anchors and local sound used
+roughly 68% of their generated seconds. Retain detailed accounting in the workspace.
 Source: claude-code · Borrowed Light · 2026-10-03
 
 ### Record decisions where the next session will find them
@@ -56,10 +56,21 @@ Source: claude-code · Hellzapoppin · 2026-05
 
 ### Budget expectations, second data point
 A 38.6-second vertical with seven Quality takes (two with native audio), one retake,
-nine Nano anchors (two rejected), 20 Claude QA calls and a $0.30 reserve committed
-$16.41 of $20 (list-price and saved-usage estimates): Veo $14.40, images $1.25,
-QA $0.46. About 64% of generated seconds reached the cut.
+nine Nano anchors (two rejected) and 20 Claude QA calls required allowances for
+more than generated footage alone. About 64% of generated seconds reached the cut;
+retain itemized accounting and contingency allowances in the workspace.
 Source: claude-code · Washing Day · 2026-10-03
+
+### Let the model write the part you cannot hear
+A film whose subtitles were only what Veo's background extras said, transcribed by Whisper and
+selected and ordered by the agent, assembled itself: no line was written, every take was used
+once, and the one authored caption (the lead's, "[indistinct]") landed because the model
+produced silence where it was asked for a murmur. The rule that made it work was fixed before
+buying: if a take gives nothing, the scene plays uncaptioned; the plan does not depend on luck
+in any single take.
+**Apply:** when a device relies on what the model volunteers, decide the fallback per shot
+before generating, and keep the authored moments to the ones the device cannot supply.
+Source: claude-code · Walla · 2026-10-08
 
 ### Taste and conviction are expected, not tolerated
 The director's note after October: the working rules read as harsh for an artistic
