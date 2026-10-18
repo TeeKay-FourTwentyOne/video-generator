@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d852089d6cc85c21e41be6741b9787edbd838f4f632ae891c3fbddeee1d5cab7",
+  "sha256": "d852089d6cc85c21e41be6741b9787edbd838f4f632ae891c3fbddeee1d5cab7",
+  "bytes": 20810193,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous locked-off live-action medium closeup. The adult male clown in the starting frame waits with a hopeful closed-mouth smile under blazing Vegas stage lights. At about two seconds a single white-gloved hand and forearm enters quickly from screen LEFT carrying a shallow round aluminum pie tin piled with soft white whipped cream. The tin is held VERTICALLY with cream facing him. In one clean classic slapstick motion the hand plants the cream pie squarely against the FRONT of his face, covering his nose and cheeks with cream. Visible physical contact and a soft comic splat, cream splashes briefly outward. His head jolts back just slightly. The hand immediately pulls the now mostly empty tin away and exits screen left by four seconds. Thick white cream stays stuck on his face, red nose partly visible, small dollops on bow tie. He remains standing, stunned, blinking slowly through cream; at the very end his eyes start to recover their warmth. Exactly one clown; only the other performer's hand enters, no second face or body. Wholesome vaudeville stage gag, no pain or injury. Keep face geometry and camera stable, golden bulb arch and white stage lighting unchanged. Audio: brief quiet anticipation, one wet cream-pie SPLAT exactly on contact, small aluminum tin rattle, a distant single surprised laugh then a hush. No dialogue, no music, no cuts, no slow motion.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e653d818f52c5cc9535299cf5f0fd5dc2a9fa91e939358c60bc2c634cf9f8683",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42104,
+      "createdAt": "2026-10-17T18:33:00.413Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "974919b1d8681e1f0be7a17cb9ba120d2f7306cbb33a8b743aae058722bd5841",
+          "bytes": 2571021,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "87a4e1aa99b6f6e9649483ca6678f6fb1ffb1627f314011d4cd12e001e1b3031"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

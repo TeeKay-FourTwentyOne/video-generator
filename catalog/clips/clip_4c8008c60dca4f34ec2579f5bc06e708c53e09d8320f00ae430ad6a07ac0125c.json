@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4c8008c60dca4f34ec2579f5bc06e708c53e09d8320f00ae430ad6a07ac0125c",
+  "sha256": "4c8008c60dca4f34ec2579f5bc06e708c53e09d8320f00ae430ad6a07ac0125c",
+  "bytes": 19635305,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Single locked camera, one continuous live-action vaudeville comedy shot. The single white-gloved hand holds the UPRIGHT cream pie shown at screen left. Immediately the hand moves the upright pie decisively straight RIGHT into the FRONT of the adult clown's face. The cream side of the pie strikes and presses flat against his nose, mouth and cheeks; the upright silver tin covers his whole face for a short beat. His head rocks back slightly at contact. Then the hand pulls the tin LEFT away from his face, carrying the SAME tin out of the left edge. White whipped cream remains visibly smeared all over his face and on his bow tie, dripping down. He opens his eyes, pauses, then turns his cream-covered face slightly toward the camera and gives one small resigned smile. One clean pie-in-face gag, gentle and harmless, no injury. Exactly one adult clown, one white-gloved hand and one pie tin. Keep the pie vertical throughout contact; the visible tin actually touches and covers the face. No cream jet or explosion; cream splats naturally only at physical contact. Stable face identity, same rusty hair and paint-splattered cream suit, brilliant golden Vegas bulbs remain steady. Audio: a sharp soft wet SPLAT synchronized to contact, brief tin rustle, quiet offscreen chuckle, room tone. No words, no music, no cuts.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f6047043fb56de6c2100d0c4390b7bdd3e58dec35c66b07998f014243868a47e",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42114,
+      "createdAt": "2026-10-17T18:40:46.034Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "1bb3188378411a993eb03be615b0a078f98632fd6620bfdfbbbf23a4cb2c193d",
+          "bytes": 2595298,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "963ab93dc8050ce5d2095b6261b68baa855f34a297aee10adff519c80f76d413"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

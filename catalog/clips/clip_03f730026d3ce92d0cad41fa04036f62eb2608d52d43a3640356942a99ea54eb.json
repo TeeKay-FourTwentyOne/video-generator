@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_03f730026d3ce92d0cad41fa04036f62eb2608d52d43a3640356942a99ea54eb",
+  "sha256": "03f730026d3ce92d0cad41fa04036f62eb2608d52d43a3640356942a99ea54eb",
+  "bytes": 15000984,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Single continuous cinematic shot, live action, vertical. Exactly the one adult male clown in this starting image, preserve his distinctive multicolored makeup, rusty hair, red foam nose and shabby paint-splattered cream suit. In this dim green backstage corridor he gently straightens his oversized bow tie with both hands, lets his hands fall, takes one small steadying breath and raises his eyes with quiet resolve. The gesture is economical and tender, never exaggerated. Camera makes a very slow, subtle push toward his face. He stays in place. Warm practical bulb and cool green shadows remain steady. His lips stay closed. Audio: close cloth rustle, a little breath, distant muffled casino room tone through the door. No speech, no music, no other people, no reflection, no text. No cuts.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_39aabcffd4af8f060f3215e2fcb9849a8bae1cbd5d25ea995c857ebe03984ce6",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42101,
+      "createdAt": "2026-10-17T18:32:52.558Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "fe931e904992e4636dc75bc2b69073e3ba16d3d1ac3f09234cbbe9289daacba2",
+          "bytes": 2453721,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "0b3f924e7251388906ee5149d7387e2e3e04d01dbc3a3aecf229759a5b684bd4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

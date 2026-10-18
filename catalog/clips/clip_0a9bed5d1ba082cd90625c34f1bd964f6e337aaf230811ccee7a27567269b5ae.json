@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0a9bed5d1ba082cd90625c34f1bd964f6e337aaf230811ccee7a27567269b5ae",
+  "sha256": "0a9bed5d1ba082cd90625c34f1bd964f6e337aaf230811ccee7a27567269b5ae",
+  "bytes": 13071266,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous 4-second vertical 9:16 cinema-verite shot, precisely continuing the supplied first frame. Exactly one compact short-statured adult clown walks slowly away from the low handheld camera down this dark service alley at night. Preserve his distinctly short legs, broad torso, relatively large head, paint-splattered rumpled beige suit, worn brown shoes, bald crown and ginger side hair. He continues the raised-foot step and takes two or three small natural steps, his weight settles plausibly with each footfall. A gentle low handheld follow from about 35cm above the ground keeps his full body and feet visible. Strictly rear perspective throughout; head points forward, never turn or show face, no reflections. Remain in this alley, no entrance or cut. Mostly deep nighttime darkness, modest warm spill from the building lamp reads on the back and shoulder of his suit. No additional lights switch on, no luminous outlines, no glamour. Real dry pavement and gritty subdued documentary exposure. No duplication, no extra limbs, no other people, no props or text. AUDIO: only soft synchronized leather shoe footfalls, faint distant traffic and quiet alley air. No music or melody whatsoever, no speech, no audience, no theatre sounds.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8693e2f21f939a34958725b7bfafc62095174010acff21ddf23a016a425563bc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42120,
+      "createdAt": "2026-10-18T11:24:59.412Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "fc289a066554c64eda56136835a589717fee7f76b11889269d90fa46e6743920",
+          "bytes": 2213390,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c2b4a2fd9a1242723f934ea75ae18edc03484dc1800c86afacfc350ab23c712a"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

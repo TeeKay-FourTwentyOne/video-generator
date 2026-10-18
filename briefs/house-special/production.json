@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "projectId": "house-special",
+  "title": "House Special",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published YouTube Short confirmed by the director, with the final edited description and corrected credits preserved. The delivered 4K master is associated with the release; the intact local archive and master hashes are verified.",
+  "briefPath": "briefs/house-special/brief.md",
+  "descriptionPath": "briefs/house-special/description.md",
+  "descriptionSha256": "cfee87050a52d18957667f285ee46fcbf8a6eb34304ae58036fe9c5d2a70dde4",
+  "decisionsPath": "briefs/house-special/decisions.md",
+  "handoffPath": "briefs/house-special/handoff.md",
+  "workspace": {
+    "path": "data/workspace-archive/house-special-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "5d29392eb367dd2055e0b3e586a497d378abad7e966e0a1ba01e1e7bc180f785",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 738,
+      "durationSeconds": 30.75,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "a9f9ff41e8a4459415ab43f49bdd6d03ecf4ea249325b7bb2de011f12aa9189d",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 654,
+      "durationSeconds": 27.25,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "45a113a07245785c634b7ad815e99bc21908e6ebad46f330e12d34d908da988c",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 576,
+      "durationSeconds": 24,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 618,
+      "durationSeconds": 25.75,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v5",
+      "path": "final/v5/film.mp4",
+      "sha256": "678fe0fe5c620d473e8569cfd04966b21ec87adae496451d9f767e91987b5e00",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 618,
+      "durationSeconds": 25.75,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v5/description.txt",
+      "deliveryRecordPath": "final/v5/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v5-4k",
+      "path": "final/v5-4k/film.mp4",
+      "sha256": "27534b208a50490a358407b05a6457ce194ac46f3806787522ae521c391f3e31",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 618,
+      "durationSeconds": 25.75,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v5-4k/description.txt",
+      "deliveryRecordPath": "final/v5-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google (initial reference, credited by director)",
+        "model": "Nano Banana Pro"
+      },
+      {
+        "purpose": "images",
+        "provider": "Built-in image generation; model not exposed"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google Vertex AI",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local deterministic synthesis"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Local Whisper and Silero VAD",
+        "model": "Whisper small multilingual; Silero VAD v6.2.0"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Runway API",
+        "model": "eleven_text_to_sound_v2"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-opus-4-7"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Direction, scene anchors, editing, original score and sound mix",
+        "model": "OpenAI GPT-6 Astra",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/7mD6CVh1uuw",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-18",
+    "artifactVersion": "v5-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "5d29392eb367dd2055e0b3e586a497d378abad7e966e0a1ba01e1e7bc180f785",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "Full decode, native portrait dimensions, exact frame count and source hashes verified. Final AAC loudness and true peak checked. Browser playback reached the end and shot seeking worked. Two independent Vegas shots each hold for 5.5 seconds.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "5d29392eb367dd2055e0b3e586a497d378abad7e966e0a1ba01e1e7bc180f785",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "Source contact sheets, dense pie-contact frames, general anomaly review and duplication scans inspected. The first pie attempt is preserved and excluded; later hairline drift in the replacement is trimmed out.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1",
+      "artifactSha256": "5d29392eb367dd2055e0b3e586a497d378abad7e966e0a1ba01e1e7bc180f785",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "Numerical sound checks and local speech-candidate analysis completed. First four seconds of the bow take sound excluded for stray vocal candidates. Full human listening is not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "5d29392eb367dd2055e0b3e586a497d378abad7e966e0a1ba01e1e7bc180f785",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "The director requested a new rear-view exterior, retained backstage beat, removed red-carpet walk and a revised stage sound mix. Overall artistic approval was not expressed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "a9f9ff41e8a4459415ab43f49bdd6d03ecf4ea249325b7bb2de011f12aa9189d",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "Full decode, native portrait dimensions, exact 654-frame count and source hashes verified. Exported AAC loudness and true peak checked. Browser playback reached the end and shot seeking worked. The two-second exterior has no added score.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "a9f9ff41e8a4459415ab43f49bdd6d03ecf4ea249325b7bb2de011f12aa9189d",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "New rear-view source inspected with contact sheets, a contextual anomaly check and dense duplication review. Compact character proportions retained. Existing backstage, pie and bow picture ranges remain unchanged; independent bright stage shots still exceed two seconds.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2",
+      "artifactSha256": "a9f9ff41e8a4459415ab43f49bdd6d03ecf4ea249325b7bb2de011f12aa9189d",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "Backstage breath gain and lamp hum reductions measured. Separate crowd, boo and clown prop stems are retained with generation evidence; no final speech candidates were detected. Full human listening is not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "a9f9ff41e8a4459415ab43f49bdd6d03ecf4ea249325b7bb2de011f12aa9189d",
+      "recordedDate": "2026-10-17",
+      "eventDate": "2026-10-17",
+      "evidence": "Revised native film ready for user viewing and listening review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "45a113a07245785c634b7ad815e99bc21908e6ebad46f330e12d34d908da988c",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Full decode, native portrait dimensions, exact frame count and source hashes verified. Exported AAC loudness and peak checked.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3",
+      "artifactSha256": "45a113a07245785c634b7ad815e99bc21908e6ebad46f330e12d34d908da988c",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "New alley and extreme close-up inspected with general anomaly checks and dense duplication scans. Dense lip crops show a closed mouth; exact pie-contact frame sets crowd cue.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v3",
+      "artifactSha256": "45a113a07245785c634b7ad815e99bc21908e6ebad46f330e12d34d908da988c",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "The director watched the full review and requested a gentler backstage music entrance and restoration of a late vocal moment; automated no-speech results did not resolve that audible detail.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3",
+      "artifactSha256": "45a113a07245785c634b7ad815e99bc21908e6ebad46f330e12d34d908da988c",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "The director praised the editing and requested two further adjustments; overall completion approval was not asserted.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Full decode, native portrait dimensions, exact frame count and source hashes verified. Exported AAC loudness and peak checked.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v4",
+      "artifactSha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Dense restored bow-tail frames inspected. Original late post-bow picture and sound retain identical source timing. Backstage score gain rises smoothly to unity at the shot end.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v4",
+      "artifactSha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Numerical level, gain-envelope and source synchronization checks completed. Full human listening of this revision is not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4",
+      "artifactSha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Revised native film ready for director viewing and listening.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4",
+      "artifactSha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "The director praised the existing cut and authorized finishing with its picture and timing unchanged, adding only one repeat of the late native vocal over the end title.",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v4",
+      "artifactSha256": "3fa59457bcdcb19ad7546c045d07ad78c4c6f64e9be43621ba40f8d177b351d5",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "The director explicitly requested a 4K upscale and waived another review, conditional on retaining the existing cut and placing the additional original vocal over the title.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5",
+      "artifactSha256": "678fe0fe5c620d473e8569cfd04966b21ec87adae496451d9f767e91987b5e00",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "The H.264 picture stream is identical to the approved fourth review. The new native export retains 618 frames at 24 fps. Decoded AAC before the title is identical; the repeated source cue is confined to the title.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "27534b208a50490a358407b05a6457ce194ac46f3806787522ae521c391f3e31",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Full decode, 2160 by 3840 portrait dimensions, 618 frames, every frame timestamp and the complete AAC packet hashes and timings verified against the final native export. The title vocal cue remains present and the duration is unchanged.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "27534b208a50490a358407b05a6457ce194ac46f3806787522ae521c391f3e31",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "Representative face, costume and background crops compared at full resolution. A faithful local Lanczos enlargement preserves the approved texture. The title is rendered directly at final resolution with matching appearance and the same frame-addressed fade.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "27534b208a50490a358407b05a6457ce194ac46f3806787522ae521c391f3e31",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "The added cue copies the original late native sound identified by the director. Numerical correlation, loudness and exact final audio packet checks passed; a new real-time listening review is not asserted.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "27534b208a50490a358407b05a6457ce194ac46f3806787522ae521c391f3e31",
+      "recordedDate": "2026-10-18",
+      "eventDate": "2026-10-18",
+      "evidence": "This master implements the director-authorized original vocal repeat and 4K upscale. The director explicitly waived an additional review of those changes.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "27534b208a50490a358407b05a6457ce194ac46f3806787522ae521c391f3e31",
+      "recordedDate": "2026-10-18",
+      "evidence": "The director supplied the published YouTube Short URL and edited description during the requested post-publication closeout. The delivered v5-4k master was named in the clarification; only a description change was supplied. No independent platform-page verification or platform publication date is asserted.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/house-special-v1/workspace-archive-manifest.json",
+    "inventorySha256": "45f936977f94e52d7b0f8cca48edfe27513929cc4159478f3d91158e224b4fd7",
+    "verifiedDate": "2026-10-18"
+  },
+  "legacyPaths": []
+}

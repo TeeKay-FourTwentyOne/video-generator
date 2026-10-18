@@ -31,7 +31,10 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
    evidence: status, URL, exact released version, description hash and archive
    state. Generate the current README and index using
    [production records](production-records.md); retain original intent in the
-   brief. Keep the active locator with `archive-planned` until the move succeeds.
+   brief. Keep the workspace state `active` while synchronizing description
+   copies in the next step; the synchronization helper requires that state.
+   Once synchronization and local metadata are complete, use `archive-planned`
+   with the active locator until the move succeeds.
    Prices and monetary figures stay in ignored local accounting. Do not copy raw
    runtime JSON into Git; [source privacy](source-privacy.md) defines the boundary.
 2. Preserve old local description/delivery records in a dated release folder,

@@ -252,3 +252,8 @@ Source: claude-code · October · 2026-10-08
 Two of seventeen polls ended with `fetch failed` after the operation had completed; re-polling the same operation
 downloaded the take. Nothing was resubmitted.
 Source: claude-code · October · 2026-10-08
+
+### Stage the contact geometry before a pie-in-face gag
+In House Special, a prompt-only upright pie instruction produced a horizontal tin below the face and an upward cream burst. A new starting frame placed the tin vertically at nose height with a visible approach gap; the replacement carried it into the face and withdrew it while leaving cream behind. The angle and prompt also changed, so this is an observed production correction, not an isolated model comparison.
+**Apply:** inspect the actual contact geometry densely. Preserve the failed take, make the approach explicit in the starting frame, and trim later identity drift independently of whether the gag works.
+Source: Codex · House Special · 2026-10-17

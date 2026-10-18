@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0c024560209c7b0ba769d9dc8708bddaf9839a4dcf235392a005c3c119fbe714",
+  "sha256": "0c024560209c7b0ba769d9dc8708bddaf9839a4dcf235392a005c3c119fbe714",
+  "bytes": 19198370,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous, unhurried live-action cinematic shot of this one cream-covered adult male clown on the blazing golden Las Vegas showroom stage. Preserve his exact face, red nose, red hair, cream-covered forehead, cheeks and nose, and small cream patches on bow tie, chest and suit. He has chosen to enjoy the joke. First he spreads his arms slowly, palms open, a tiny delighted smile. Then he places his right hand over his heart and makes ONE gracious deliberate bow from the waist, head down for a beat. He straightens again with a broad warm smile, looking toward the unseen audience, arms relaxed. The cream stays on him throughout; a small dollop may fall naturally. Camera slowly pulls back a little to give him the entire golden fan arch and stage, a dignified final composition. Dazzling white-gold bulbs and hot white spotlights shine steadily. Exactly one person, no clone, no sudden new props, no additional pie or hands. Audio: an offscreen audience begins with a few claps, growing into warm applause and a little appreciative laughter as he bows. No speech or words, no music. Full-body natural anatomy, measured movement, no cuts, no camera spin.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_44e2919309ff9c7d35e35ab11a93a0e4be686e9978bcaaf0d10f7d0609c635a3",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42105,
+      "createdAt": "2026-10-17T18:45:28.251Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "cd05a6865aeecd6c1070a62a7e87e6298f15a9f070e556c2e349a7509bdc7bab",
+          "bytes": 2624513,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "95dca5a0557129f968567620f8051b91e914ce8e1cefede521c8848b39f47cf5"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

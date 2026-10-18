@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ba82451fe9192794edc0af30487bcdbcc52c59d6461b1b6577b1f9972ba57f11",
+  "sha256": "ba82451fe9192794edc0af30487bcdbcc52c59d6461b1b6577b1f9972ba57f11",
+  "bytes": 24807792,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Single continuous cinematic low-angle full-body shot in this extremely bright Las Vegas casino marquee. Exactly one adult male clown, the man in the reference, same cream paint-splattered suit, brown shoes, giant bow tie, distinctive red hair and colorful makeup. He removes his hands from his pockets and walks slowly toward the camera with dignified, measured small steps, shoulders squaring, head lifting a little as he enters this dazzling world. Camera smoothly tracks backward to keep his full body and face visible. Hundreds of golden-white marquee lamps and enormous chandeliers stay incandescently bright above and around him, red carpet beneath him, golden columns, glowing white-gold highlights. Realistic human walking, unhurried. He never speaks. Audio: soft leather footfalls, grand interior room tone, a distant muted casino chime, no music, no speech. No extra people or reflections, no cuts, no changing lights or new props.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b1eed50cc1a702e55cfab9822d8f5d2293b79a19bf221f12ce24c433c8895344",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42102,
+      "createdAt": "2026-10-17T18:32:55.430Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "589a2619fc3885fdd9bd76843148db81d7101c93acbb5c873fd49e0c07835f67",
+          "bytes": 2849317,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "65416e8bff8c085a750b0b49f3390e5c70ca81f2501623e5bdfbc9b410b832d6"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

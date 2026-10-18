@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_52857f54c87847efb04fb1be7c55643909dafc684113717ab5218fa18987157f",
+  "sha256": "52857f54c87847efb04fb1be7c55643909dafc684113717ab5218fa18987157f",
+  "bytes": 12920618,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A single continuous live-action shot of exactly this one adult male clown on the extraordinarily brightly illuminated gold Las Vegas showroom stage. Preserve the man, paint-splattered cream suit and waistcoat, giant bow tie, colored makeup and red hair. He looks toward the unseen audience just above camera, slowly opens his empty hands at hip height in a small hopeful welcome, then holds the pose and waits. A modest nervous smile. Camera slowly pushes in from the full figure toward a medium shot. Dazzling gold fan-shaped bulb arch and high white spotlights stay brilliant throughout. Nobody else appears. Lips remain closed, no dialogue. Audio: a hushed indoor audience far offscreen and faint stage room tone, one tiny shoe shuffle, then silence as he waits. No music, no applause yet, no pie yet, no microphone, no text, no cuts.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_122790cdd9eb49b7faa2a6000dc774557618c20908fe94a48eaaceb297d8e9c7",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 42103,
+      "createdAt": "2026-10-17T18:32:57.964Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "31c4b19b8d6212fc23d1eac658b15449667d88111ee68d4c0e0fa8ae07c8173a",
+          "bytes": 2686938,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "90787e8651919e66dcf4f975b1c7d6c6fd280e65d5d9d16cb2c1cff5a65803cc"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

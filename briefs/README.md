@@ -40,6 +40,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [HELLZAPOPPIN’ LIVE! at The Paradise Theater](hellzapoppin-paradise/README.md) | review | hellzapoppin | [Brief](hellzapoppin-paradise/brief.md) · [Description](hellzapoppin-paradise/description.md) · [Record](hellzapoppin-paradise/production.json) |
 | [HELLZAPOPPIN’ — Studio Visit](hellzapoppin-studio-visit/README.md) | unknown | hellzapoppin | [Brief](hellzapoppin-studio-visit/brief.md) · [Record](hellzapoppin-studio-visit/production.json) |
 | [HELLZAPOPPIN’ LIVE! From the Unemployment Line](hellzapoppin-unemployment-line/README.md) | planned | hellzapoppin | [Brief](hellzapoppin-unemployment-line/brief.md) · [Description](hellzapoppin-unemployment-line/description.md) · [Record](hellzapoppin-unemployment-line/production.json) |
+| [House Special](house-special/README.md) | published | — | [Brief](house-special/brief.md) · [Description](house-special/description.md) · [Decisions](house-special/decisions.md) · [Record](house-special/production.json) |
 | [INSTAR](instar/README.md) | delivered | — | [Brief](instar/brief.md) · [Decisions](instar/decisions.md) · [Record](instar/production.json) |
 | [JANUS / RUSSIAN ARK](janus-russian-ark/README.md) | published | — | [Brief](janus-russian-ark/brief.md) · [Record](janus-russian-ark/production.json) |
 | [JULY — Rose](july/README.md) | published | monthly-etymology | [Brief](july/brief.md) · [Record](july/production.json) |

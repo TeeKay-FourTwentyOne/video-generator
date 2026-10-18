@@ -181,3 +181,7 @@ flattening the fade to black; K-weighting hides sub-bass. Band-limiting the air 
 each way, slow ±1.5 dB breathing) made the ending step down with the picture (−24 → −28 → −29 dBFS) at the same LUFS.
 **Apply:** measure beds by band (high-pass 150 Hz) as well as LUFS; keep sustained synthetic beds out of the sub-bass.
 Source: claude-code · October · 2026-10-08
+
+### Keep late native vocal moments aligned with their source picture
+An empty speech-detector result does not establish that an applause bed contains no vocal sound. In House Special, the director identified a short late vocal moment after the bow that automated transcription missed. When the picture is trimmed, copying later native sound to the beginning of the shot can move that moment onto the title. For an intentionally retained utterance, preserve the source-frame offset in both picture and audio; use separate crowd beds where sound must be moved.
+Source: Codex · House Special · 2026-10-18

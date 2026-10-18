@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_2dc6c467895954463800c2a59d6fe561774b42dd1b35ba4ebdd42ca2c95be160",
+  "projectId": "house-special",
+  "editVersion": "edit/v1",
+  "segmentIndex": 5,
+  "shotId": "T01",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 48,
+    "fps": 24
+  },
+  "timelineStartFrame": 690,
+  "outputSha256": "5d29392eb367dd2055e0b3e586a497d378abad7e966e0a1ba01e1e7bc180f785",
+  "schemaVersion": 1,
+  "id": "use_fa6140efb022502176ae194dd4b6a58cc050f350ff76e7e4d2641760186d13bc"
+}

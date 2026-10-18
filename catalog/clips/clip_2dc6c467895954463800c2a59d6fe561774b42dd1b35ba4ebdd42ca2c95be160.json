@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2dc6c467895954463800c2a59d6fe561774b42dd1b35ba4ebdd42ca2c95be160",
+  "sha256": "2dc6c467895954463800c2a59d6fe561774b42dd1b35ba4ebdd42ca2c95be160",
+  "bytes": 21906,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "house-special"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
