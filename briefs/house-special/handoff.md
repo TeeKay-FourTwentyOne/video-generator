@@ -30,5 +30,5 @@ Acceptance checks:
   not submit generation jobs or infer a new finishing authorization.
 
 The film's private recipes and verification evidence provide the reference case;
-they remain in its intact archive. This is a shared production improvement, not
+they remain in its verified archive. This is a shared production improvement, not
 an implemented CLI feature.

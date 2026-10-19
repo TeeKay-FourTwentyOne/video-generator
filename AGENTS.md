@@ -6,7 +6,8 @@ only the relevant module and tests; detailed craft references are in `docs/craft
 Read `docs/source-privacy.md` before preparing any commit or push.
 For post-publication wrap-up, use the shared `post-publication` skill and
 `docs/post-publication.md`: update documentation, commit/push reviewed source,
-archive the named workspace intact, and suggest a process improvement.
+archive the named workspace with the final 4K edit and original sources, remove
+superseded edit renders after verification, and suggest a process improvement.
 
 ## This is an artistic project
 
@@ -69,6 +70,13 @@ ledger, not a clerk with a camera.
   approval and real-time listening. Do not infer permission to upscale or publish.
 - For long work, retain the current plan, decisions, request IDs and verification
   evidence under the ignored workspace so another agent can resume accurately.
+- Standard archive retention keeps the final 4K master, original shots and audio
+  stems, references, recipes, edit decisions, provenance and QA. Remove earlier
+  full edits, debug/segment renders, superseded finishing candidates and derived
+  soundtrack mixes after verifying the final master and dependencies. Preserve
+  historical delivery metadata and hashes. Follow `docs/post-publication.md` for
+  exact removal receipts and archive resealing; do not delete source takes or
+  clean other projects. A narrower user retention request takes precedence.
 
 ## Source publication is a separate checkpoint
 

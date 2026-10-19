@@ -1,6 +1,6 @@
 ---
 name: archive-workspace
-description: Archive one inactive project workspace intact, preserving sources, native exports, earlier versions, recipes and QA. For the full post-publication wrap-up, use the shared post-publication skill.
+description: Archive one inactive project workspace, keep the final 4K and original sources, and remove verified intermediate edits under the standard retention policy. For full release closeout, use the shared post-publication skill.
 ---
 
 # Archive one workspace
@@ -15,7 +15,10 @@ An archive-only request does not authorize a source commit/push or video upload.
 For the full four-step release wrap-up, use the canonical shared skill at
 `.agents/skills/post-publication/SKILL.md` (also linked from the Claude skill tree).
 
-Do not prune by default, move a flat workspace wholesale, or depend on personal
-harness memory. The adjacent historical `prune.py` is not part of this workflow;
-any cleanup needs a separate explicit scope and dependency review. Preserve the
-sealed archive; future edits use a verified copy in a new workspace.
+After the intact move, apply the standard retention policy in
+`docs/post-publication.md` using `tools/production/archive-retention.mjs`: keep the
+verified final 4K, original sources, stems, references, recipes and QA; remove
+reviewed superseded edit renders and mixes. Keep historical metadata and a receipt
+linking the old and new seals. If no final 4K exists, defer cleanup. Do not move a
+flat workspace wholesale, touch another project or use the adjacent historical
+`prune.py`; it is not part of this workflow. Future edits use a verified copy.

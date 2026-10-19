@@ -29,7 +29,8 @@ records substitutes for the others.
 `tools/production/records.mjs` validates small public summaries against
 `docs/schemas/production-record.schema.json`, then generates current project
 views. It imports no provider clients or compiled MCP modules and works without
-ignored media. Explicit local-evidence checks reuse the intact archive verifier.
+ignored media. Explicit local-evidence checks reuse the archive verifier and
+distinguish retained media from explicitly removed intermediate renders.
 `clip-library.mjs` owns immutable content-addressed media in `data/clips/` and
 schema-checked public records in `catalog/clips/` and `catalog/uses/`. `clips.mjs`
 provides offline search, ingestion, range extraction and analytics; `clip-import.mjs`
@@ -139,4 +140,7 @@ or make unbudgeted non-Veo calls. The new editor uses argument arrays and immuta
 versions; it does not certify those old services as hardened. Future work should
 migrate one exercised service at a time, with an offline failure test and a film
 that demonstrates the benefit. No new provider client is justified by research
-alone. Storage cleanup requires a dependency/hash audit and separate authorization.
+alone. Standard archive retention removes reviewed intermediate edits after a
+dependency/hash audit and final 4K verification; `archive-retention.mjs` records
+the removal and updated seal. Source-media or broader storage cleanup still
+requires separate authorization.

@@ -127,6 +127,7 @@
         "frames": { "$ref": "#/$defs/positiveInteger" },
         "durationSeconds": { "type": "number", "exclusiveMinimum": 0 },
         "publishedMaster": { "type": "boolean" },
+        "retention": { "enum": ["retained", "removed-intermediate"] },
         "descriptionCopyPath": { "$ref": "#/$defs/path" },
         "deliveryRecordPath": { "$ref": "#/$defs/path" }
       }

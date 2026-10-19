@@ -50,6 +50,12 @@ is `archive-planned`; change to `archived-verified` only after the existing arch
 helper succeeds. Every video artifact has integer frames, rational fps and a
 duration derived from them, plus a role such as `native-review`, `phone-review`
 or `finishing-master`. `publishedMaster` is explicit, never chosen by recency.
+An artifact may declare `retention: "removed-intermediate"` after standard archive
+cleanup. Keep its original path, hash, dimensions and review events; the path is
+historical and must now be absent. This state requires a verified archive and is
+forbidden on the published master. Omitted retention or `"retained"` keeps the
+usual requirement that local media exist and pass checks. Cleanup receipts stay
+private; update the public archive inventory hash after the checked transaction.
 Use `archived` for a known legacy archive locator without claiming a fresh
 inventory verification. It remains read-only and carries no `archive` verification
 object; `archived-verified` still requires the existing helper's complete evidence.
@@ -90,8 +96,10 @@ When media is available, opt into the heavier, read-only check:
 npm run records -- validate verify --local-evidence
 ```
 
-It checks each declared video hash, decoded frame count, dimensions and rational
-fps using ffprobe, then description copies/delivery hashes and the complete
+It checks each retained video hash, decoded frame count, dimensions and rational
+fps using ffprobe; explicitly removed intermediates are checked for absence and
+reported separately, without claiming a new decode. It then checks description
+copies/delivery hashes and the complete
 archive inventory through `archive.mjs`. It does not rewrite a seal or QA record,
 perform listening, replace artistic review or make provider calls.
 

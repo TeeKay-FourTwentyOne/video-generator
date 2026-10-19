@@ -37,13 +37,20 @@ before sealing; use check mode afterward. Public status, publication evidence,
 technical checks and artistic approval remain separate facts.
 
 Archive exactly one inactive project with `tools/production/archive.mjs`:
-inspect `plan`, run `apply`, then `verify`. Preserve sources, rejected takes,
-native exports, earlier versions, recipes, ledgers and QA. Stop only that
-project's writers/servers first. Check external dependencies and current review
-links. Do not prune, move other workspaces, overwrite a destination, or rerun paid
-generation to reconstruct missing records. Cleanup is a separate, explicitly
-scoped request. Treat a completed archive as sealed; keep later release receipts
-outside it.
+inspect `plan`, run `apply`, then `verify`. Standard retention keeps the final 4K
+master and removes superseded edits, debug/segment renders, earlier finishing
+candidates and derived soundtrack mixes. Use `archive-retention.mjs` with an exact
+reviewed list and the dependency checks in `docs/post-publication.md`. The user's
+standing archive policy authorizes this cleanup for the named project; do not
+ask again unless scope or the final master is genuinely ambiguous. Preserve
+original shots, rejected source takes, audio stems, references, recipes, edit
+decisions, historical delivery metadata, ledgers and QA. Stop only that project's
+writers/servers first. Verify the master, retain the original seal and removal
+receipt outside the archive, verify the retained inventory before purging, then
+update the public archive hash and mark removed renders explicitly. Do not clean
+other workspaces, overwrite a destination, or rerun paid generation. If no final
+4K exists, preserve the media and record that retention cleanup is deferred.
+Future edits use a restored copy; unrelated archive writes remain prohibited.
 
 Manually review exact source changes, run relevant checks and the repository
 privacy gates, commit as TK-421 with the current agent's allowed attribution, and

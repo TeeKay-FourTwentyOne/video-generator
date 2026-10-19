@@ -21,12 +21,29 @@ initial-image and creative credits. The canonical description preserves that
 supplied text and credit order. No additional credit cards were added to the
 released film; the earlier card sequence was a text suggestion.
 
-The archived workspace preserves every review, alternate, source sound,
-reference image, recipe and QA record. Reusable shot masters and their exact
+The archived workspace retains the final 4K film, review metadata, original
+alternate takes, source sound, reference images, recipes and QA records.
+Reusable shot masters and their exact
 generation snapshots remain in the shared clip library. A rebuild also needs
 this repository, the local media tools and the Didot font. Restore a verified
 copy to a new active workspace before running recipes; do not run writers inside
 the sealed archive. Older command logs retain historical paths as evidence.
+
+After the initial intact closeout, the director requested removal of all
+intermediate edits and made this the standard archive policy. The verified
+cleanup removed five superseded full edits, four debug edits, twenty-eight
+assembly segments, one earlier 4K candidate and eleven derived soundtrack mixes.
+The final 4K master and every other retained file are unchanged. A private receipt
+preserves the original seal, exact removed paths and hashes, and the new seal.
+Historical preview pages and delivery records remain as evidence; their deleted
+renders are no longer playable. The current 4K review package remains usable.
+
+Rebuilding requires regenerating the deleted derivatives in a new working copy:
+prepare the fourth-revision mix and native edit from the retained stems and
+frame-addressed recipes, then the fifth-revision mix and native edit, then the
+4K finish. Historical recipes still refer to those intermediate inputs and their
+original hashes. The archive preserves the ingredients and evidence; a fresh
+standalone or byte-identical rebuild has not been qualified.
 
 The next proposed improvement is a maintained [audio-only revision path](handoff.md)
 that preserves an approved picture stream and verifies the permitted sound changes.

@@ -299,8 +299,11 @@ recipe accepts an existing font and never downloads one.
 For a published film's documentation, source commit/push, workspace archive and
 process improvement, follow [post-publication.md](post-publication.md) and the
 shared `post-publication` skill. `tools/production/archive.mjs` provides a local
-plan/apply/verify procedure that preserves the entire named workspace. Do not
-run archive cleanup as an implicit part of a release.
+plan/apply/verify procedure that first preserves the entire named workspace.
+Then use `archive-retention.mjs` for standard retention: keep the verified final
+4K and original sources, remove reviewed intermediate edits and mixes, preserve
+their metadata, and verify the updated seal. Follow the dependency and receipt
+procedure in the post-publication guide; active production preserves all versions.
 
 MCP: `production_doctor`, `production_init`, `production_plan`, `production_status`,
 `production_image`, `production_submit`, `production_poll`, `production_assemble`,

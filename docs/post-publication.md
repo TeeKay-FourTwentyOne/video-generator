@@ -2,8 +2,10 @@
 
 Entry point: [shared post-publication skill](../.agents/skills/post-publication/SKILL.md).
 The four required outcomes are updated documentation, reviewed source commit and
-push, a verified local archive, and a process improvement. This does not upload
-the film, edit a platform description, buy generations, or delete intermediates.
+push, a verified local archive, and a process improvement. Standard archive
+retention keeps the final 4K edit and original sources, and removes superseded
+edit renders and mixes after verification. This does not upload the film, edit a
+platform description or buy generations.
 
 ## Establish the release
 
@@ -40,7 +42,8 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
 2. Preserve old local description/delivery records in a dated release folder,
    then synchronize the current description copies and SHA-256 values. Record
    publication as a later event; do not turn earlier technical checks into
-   retrospective artistic approval. Keep version history and media unchanged.
+   retrospective artistic approval. Keep version history and media unchanged
+   until the separate checked retention step below.
    `npm run records -- sync-description PROJECT_ID --dry-run` previews exact
    copy/hash changes; apply without the flag while the workspace is active.
    The helper preserves prior copies. After sealing, use `--check` only.
@@ -62,7 +65,7 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
    for documentation snapshots and finish local metadata **before** hashing. A
    running generator, renderer or watcher can invalidate the snapshot.
 
-## Archive one project intact
+## Move and verify one project
 
 The helper requires Node 22+ on a POSIX filesystem and an existing
 `data/workspace/<slug>/`. It has no network or package dependencies. Run from the
@@ -85,7 +88,7 @@ not a signature, dependency resolver or remote backup.
 
 Existing destinations, symlinked paths and special files are refused. Resolve
 dependencies deliberately; do not delete links just to make the command pass.
-There is no cross-device copy/delete fallback. No pruning tool runs. An existing
+There is no cross-device copy/delete fallback. The move itself removes no files. An existing
 empty destination is also a collision, not permission to reuse it. For an already
 completed archive, run `verify`; do not create a numbered duplicate.
 
@@ -102,16 +105,95 @@ from the new location. Restart the loopback review server at the archive path if
 continued review is useful; it serves `description.txt` along with the known
 review artifacts. Inspect the generated links, not just the server's exit code.
 Mark the public record's archive locator verified only after these checks pass,
-and regenerate its current views. `npm run records -- validate PROJECT_ID
+then apply the standard retention step below and record its new inventory hash.
+Regenerate current views. `npm run records -- validate PROJECT_ID
 --local-evidence` checks declared artifact hashes, dimensions, decoded frame
-counts, description copies and the archive inventory. It records no new approval.
+counts, description copies and the archive inventory; explicitly removed
+intermediates must be absent and are not counted as newly decoded. It records no
+new approval.
 
 Keep any new Git/privacy logs or release receipts outside the sealed tree, for
 example under ignored `data/release-receipts/<slug>/`. Do not run a QA script that
 rewrites archived evidence. Future edits start from a verified copy in a new
-workspace. Preserve the archive as it was closed out. Optional disk cleanup
-requires a separate explicit scope and a dependency review; native masters and
-rejected takes are never implicitly disposable.
+workspace. Outside the checked retention transaction, preserve the archive as it
+was closed out. Original source takes, including rejected takes, are retained.
+
+## Standard retention: final 4K plus sources and records
+
+The director's standing policy is to delete intermediate edits at archival and
+keep the final 4K version. Apply this to the named project without asking again.
+Respect a narrower retention instruction. If the exact final 4K is missing or
+ambiguous, preserve the media and resolve that issue before deletion. Do not use
+a filename alone to decide which master to retain, and do not clean older or
+unrelated archives as part of another film's closeout.
+
+Keep the final 4K file byte-for-byte, its delivery/description/review package,
+original generated shots and rejected source takes, original music and effects
+stems, reference images, recipes, edit decisions, provenance, ledgers and QA.
+Remove superseded full edits (including native review exports), debug copies,
+assembly segments, unused finishing candidates and derived complete soundtrack
+mixes. Keep reusable title/shot assets and original or processed source stems.
+The cleanup command accepts video derivatives under `final/` and `finish/`, and
+`soundtrack*.wav|flac|mp3|m4a` under `edit/`; it never recursively deletes a version
+folder. Other locations require a deliberate reviewed extension, not a broad glob.
+
+Inspect transitive dependencies before selecting files. A deleted render may be
+an input to a later recipe: retain the source inputs and recipes, and document
+the order in which missing derivatives must be rebuilt in a new working copy.
+Do not promise a qualified or byte-identical rebuild without testing one. If a
+derivative is the only surviving source for the final edit, retain it and explain
+the dependency. Keep historical hashes, delivery records and review events even
+when their media is removed; past checks remain historical facts.
+
+Use the maintained helper with an explicit selection in ignored storage:
+
+```json
+{
+  "schemaVersion": 1,
+  "slug": "my-film-v1",
+  "master": { "path": "final/v5-4k/film.mp4", "sha256": "<verified SHA-256>" },
+  "dependencyReview": "Original inputs and recipes retained; regenerate native derivatives before finishing in a restored copy.",
+  "remove": [
+    { "path": "final/v4/film.mp4", "reason": "superseded edit" },
+    { "path": "final/v4/segment-01.mp4", "reason": "assembly render" },
+    { "path": "edit/soundtrack-v1.wav", "reason": "derived mix" }
+  ]
+}
+```
+
+```sh
+node tools/production/archive-retention.mjs plan data/release-receipts/my-film/selection.json > data/release-receipts/my-film/retention-plan.json
+node tools/production/archive-retention.mjs apply data/release-receipts/my-film/retention-plan.json data/release-receipts/my-film/retention
+node tools/production/archive-retention.mjs purge data/release-receipts/my-film/retention
+node tools/production/archive.mjs verify my-film-v1
+```
+
+Stop the project's writers/servers before planning. Inspect the exact paths and
+hashes in the plan. The helper requires a verified existing seal and a matching
+4K master. Apply fully decodes that master, rechecks the plan, moves only listed
+files to a private quarantine outside the archive, verifies every retained byte
+and permission, and writes a new seal. The original manifest and removal journal
+remain in the receipt. Purge rechecks the new archive and quarantined hashes,
+then deletes only the listed files; it is resumable. This transaction is an
+intentional archive revision, not permission to reseal an unexplained mismatch.
+
+An apply failure rolls back completed moves when possible. If interrupted,
+inspect `transaction.json`, both manifests and exact file locations. Never delete
+the receipt or blindly retry apply over it. Resolve a partial move by restoring
+the listed quarantined files without overwriting conflicts and verifying the old
+seal, or complete the verified transaction deliberately. Purge refuses an archive
+that has changed. Keep the lock until an interrupted writer is confirmed stopped.
+The old `.claude/skills/archive-workspace/prune.py` remains historical and must
+not be used; it does not enforce this preservation and receipt contract.
+
+After success, update `production.json` with the new archive inventory hash and
+`retention: "removed-intermediate"` on removed video artifacts. Omitted retention
+means retained, so a missing file can never silently pass local verification.
+Keep their version, path, hash, frame data and review events. Historical preview
+pages are evidence of the old versions; only retained deliveries remain playable.
+Check the final master and its current links, run record validation, and report
+the number of removed files and logical bytes reclaimed. Keep later receipts
+outside the newly sealed archive. Source-clip deletion is a separate workflow.
 
 ## Commit and push source
 

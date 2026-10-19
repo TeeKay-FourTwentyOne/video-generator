@@ -4,22 +4,22 @@
 
 Status: **published**.
 
-Published YouTube Short confirmed by the director, with the final edited description and corrected credits preserved. The delivered 4K master is associated with the release; the intact local archive and master hashes are verified.
+Published YouTube Short confirmed by the director, with the final edited description and corrected credits preserved. The verified archive retains the unchanged 4K master, original sources and production records; superseded edits and derived mixes were removed under the director's standard retention policy.
 
 [Creative brief](brief.md) · [Production record](production.json) · [Publication text](description.md) · [Decisions](decisions.md) · [Handoff](handoff.md)
 
 [YouTube publication](https://youtube.com/shorts/7mD6CVh1uuw) — user-confirmed; recorded 2026-10-18.
 Platform publication date is not recorded.
 
-| Version | Role | Format | Frames | fps | Duration | Published master |
-| --- | --- | --- | --- | --- | --- | --- |
-| v1 | native-review | 1080 × 1920 | 738 | 24 | 30.75 s | No |
-| v2 | native-review | 1080 × 1920 | 654 | 24 | 27.25 s | No |
-| v3 | native-review | 1080 × 1920 | 576 | 24 | 24 s | No |
-| v4 | native-review | 1080 × 1920 | 618 | 24 | 25.75 s | No |
-| v5 | native-review | 1080 × 1920 | 618 | 24 | 25.75 s | No |
-| v5-4k | finishing-master | 2160 × 3840 | 618 | 24 | 25.75 s | Yes |
+| Version | Role | Format | Frames | fps | Duration | Published master | Local media |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| v1 | native-review | 1080 × 1920 | 738 | 24 | 30.75 s | No | Removed intermediate |
+| v2 | native-review | 1080 × 1920 | 654 | 24 | 27.25 s | No | Removed intermediate |
+| v3 | native-review | 1080 × 1920 | 576 | 24 | 24 s | No | Removed intermediate |
+| v4 | native-review | 1080 × 1920 | 618 | 24 | 25.75 s | No | Removed intermediate |
+| v5 | native-review | 1080 × 1920 | 618 | 24 | 25.75 s | No | Removed intermediate |
+| v5-4k | finishing-master | 2160 × 3840 | 618 | 24 | 25.75 s | Yes | Retained |
 
-Local media: archived-verified. Artifacts remain in ignored storage; see the record for their relative locator.
+Local media: archived-verified. Retained media remain in ignored storage; removed renders keep their historical hashes and review events.
 
 Technical checks, listening, artistic approval and publication are separate events in the record.

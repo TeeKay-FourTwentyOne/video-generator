@@ -4,7 +4,7 @@
   "title": "House Special",
   "kind": "film",
   "status": "published",
-  "statusNote": "Published YouTube Short confirmed by the director, with the final edited description and corrected credits preserved. The delivered 4K master is associated with the release; the intact local archive and master hashes are verified.",
+  "statusNote": "Published YouTube Short confirmed by the director, with the final edited description and corrected credits preserved. The verified archive retains the unchanged 4K master, original sources and production records; superseded edits and derived mixes were removed under the director's standard retention policy.",
   "briefPath": "briefs/house-special/brief.md",
   "descriptionPath": "briefs/house-special/description.md",
   "descriptionSha256": "cfee87050a52d18957667f285ee46fcbf8a6eb34304ae58036fe9c5d2a70dde4",
@@ -28,7 +28,8 @@
       },
       "frames": 738,
       "durationSeconds": 30.75,
-      "publishedMaster": false
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
     },
     {
       "role": "native-review",
@@ -43,7 +44,8 @@
       },
       "frames": 654,
       "durationSeconds": 27.25,
-      "publishedMaster": false
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
     },
     {
       "role": "native-review",
@@ -58,7 +60,8 @@
       },
       "frames": 576,
       "durationSeconds": 24,
-      "publishedMaster": false
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
     },
     {
       "role": "native-review",
@@ -73,7 +76,8 @@
       },
       "frames": 618,
       "durationSeconds": 25.75,
-      "publishedMaster": false
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
     },
     {
       "role": "native-review",
@@ -89,6 +93,7 @@
       "frames": 618,
       "durationSeconds": 25.75,
       "publishedMaster": false,
+      "retention": "removed-intermediate",
       "descriptionCopyPath": "final/v5/description.txt",
       "deliveryRecordPath": "final/v5/delivery.json"
     },
@@ -106,6 +111,7 @@
       "frames": 618,
       "durationSeconds": 25.75,
       "publishedMaster": true,
+      "retention": "retained",
       "descriptionCopyPath": "final/v5-4k/description.txt",
       "deliveryRecordPath": "final/v5-4k/delivery.json"
     }
@@ -385,7 +391,7 @@
   ],
   "archive": {
     "manifestPath": "data/workspace-archive/house-special-v1/workspace-archive-manifest.json",
-    "inventorySha256": "45f936977f94e52d7b0f8cca48edfe27513929cc4159478f3d91158e224b4fd7",
+    "inventorySha256": "a326cdb01ae8d531cc76ad71a992cff5537327dd2b08835ae2ef7f625a54e473",
     "verifiedDate": "2026-10-18"
   },
   "legacyPaths": []

@@ -62,4 +62,6 @@ actions governed by the user's authorization and `AGENTS.md`.
 
 When the user requests the post-publication wrap-up, use the shared
 `post-publication` skill and `docs/post-publication.md` to update documentation,
-commit/push reviewed source, archive intact and record a process improvement.
+commit/push reviewed source, archive the final 4K and original sources, remove
+verified superseded edit renders under the standard retention policy, and record
+a process improvement. Preserve every version during active production.

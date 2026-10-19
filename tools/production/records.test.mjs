@@ -247,6 +247,44 @@ test('filters and command checks do not mutate publication state', async t => {
   assert.equal((await main(['validate'], repo)).mode, 'source-only');
 });
 
+test('removed intermediate history is explicit, absent on disk, and never a published master', async t => {
+  const { repo, r, write, description } = await fixture(t);
+  const old = r.artifacts[0];
+  old.retention = 'removed-intermediate';
+  await assert.rejects(validateRecord(repo, r), /verified archive/);
+  r.reviewEvents.push({ type: 'technical-check', artifactVersion: old.version, artifactSha256: old.sha256,
+    recordedDate: '2026-10-18', evidence: 'Historical decode before authorized cleanup.', outcome: 'passed' });
+  const retained = { ...old, version: 'v2', path: 'final/v2/film.mp4', retention: 'retained',
+    descriptionCopyPath: 'final/v2/description.txt', deliveryRecordPath: 'final/v2/delivery.json' };
+  r.artifacts.push(retained);
+  for (const a of r.artifacts) {
+    await write(`${r.workspace.path}/${a.descriptionCopyPath}`, description);
+    await write(`${r.workspace.path}/${a.deliveryRecordPath}`, json({ description: {
+      path: a.descriptionCopyPath, repositorySource: r.descriptionPath, sha256: r.descriptionSha256 } }));
+  }
+  const file = path.join(repo, r.workspace.path, retained.path);
+  const generated = spawnSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'color=black:s=16x16:r=2:d=2', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', file]);
+  assert.equal(generated.status, 0, generated.stderr?.toString());
+  retained.sha256 = sha256(await fs.readFile(file));
+  const archived = await archiveWorkspace(repo, 'example-v1');
+  r.workspace = { path: archived.destination, state: 'archived-verified' };
+  r.archive = { manifestPath: `${archived.destination}/workspace-archive-manifest.json`, inventorySha256: archived.inventorySha256, verifiedDate: '2026-10-18' };
+  const result = await validateLocalEvidence(repo, r);
+  assert.equal(result.retainedArtifacts, 1); assert.equal(result.removedIntermediates, 1);
+  assert.equal(result.listeningPerformed, false); assert.equal(result.artisticApprovalInferred, false);
+  await exportRecord(repo, r); await buildViews(repo);
+  assert.match(await fs.readFile(path.join(repo, 'briefs/example/README.md'), 'utf8'), /Removed intermediate/);
+  const present = `${r.workspace.path}/${old.path}`;
+  await write(present, 'unexpected restored render');
+  await assert.rejects(validateLocalEvidence(repo, r), /still present/);
+  await fs.unlink(path.join(repo, present));
+  delete old.retention;
+  await assert.rejects(validateLocalEvidence(repo, r), /ENOENT/);
+  old.retention = 'removed-intermediate';
+  publish(r);
+  await assert.rejects(validateRecord(repo, r), /Published master cannot/);
+});
+
 test('accounting retains uncertain and failed reservations, distinguishes allowances and preserves report history', async t => {
   const { repo, write } = await fixture(t);
   const config = { schemaVersion: 1, projectId: 'example', asOf: '2026-10-12', sources: [{ path: 'data/ledger.json', kind: 'budget-v1', basisByEntry: { one: 'reported-usage' } }, { path: 'data/legacy.json', kind: 'episode-allowances-v1' }] };
