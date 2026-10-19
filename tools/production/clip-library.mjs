@@ -131,6 +131,24 @@ export function mergeClip(record, metadata = {}) {
   if (metadata.kind && (record.kind === 'unknown' || metadata.kind === 'source')) record.kind = metadata.kind;
   validateClip(record); return record;
 }
+/** Durable offline intake. Importing never starts a model or waits for the analysis queue. */
+export function requestClipAnalysis(record, repo = REPO) {
+  validateClip(record);
+  const catalogSha256 = digest(JSON.stringify(canonical(record)));
+  const relative = `data/clips/analysis/intake/${record.id}/${catalogSha256}.json`;
+  const file = safePath(repo, relative);
+  const bytes = JSON.stringify({ schemaVersion: 1, kind: 'analysis-request', clipId: record.id,
+    sourceSha256: record.sha256, catalogSha256, collections: record.collections }, null, 2) + '\n';
+  const verify = () => { if (fs.readFileSync(file, 'utf8') !== bytes) throw new Error('Analysis intake conflicts with clip evidence'); };
+  if (fs.existsSync(file)) { verify(); return relative; }
+  fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 });
+  const tmp = `${file}.${randomUUID()}.tmp`;
+  try {
+    fs.writeFileSync(tmp, bytes, { flag: 'wx', mode: 0o600 });
+    try { fs.linkSync(tmp, file); } catch (e) { if (e.code !== 'EEXIST') throw e; verify(); }
+  } finally { fs.rmSync(tmp, { force: true }); }
+  return relative;
+}
 /** Independent copy (APFS reflink when available), verified before atomic no-clobber install. */
 export function importClip(file, metadata = {}, repo = REPO) {
   const sha256 = hashFile(file), id = `clip_${sha256}`;
@@ -157,6 +175,7 @@ export function importClip(file, metadata = {}, repo = REPO) {
     // Retain exact private evidence with the content-addressed master, independently of the workspace.
     if (snapshot) writeSnapshot(safePath(repo, `data/clips/${id}/generations/${snapshotHash(snapshot)}.json`), snapshot);
     atomicJson(recordPath, record);
+    requestClipAnalysis(record, repo);
     return { id, sha256, path: path.relative(repo, target).split(path.sep).join('/'), record };
   });
 }

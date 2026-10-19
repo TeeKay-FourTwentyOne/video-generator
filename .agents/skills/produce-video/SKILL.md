@@ -47,6 +47,14 @@ the same evidence at creation and import it with `clips import --snapshot=...`
 plan as the submitted request. Local renders have no model prompt unless one was
 actually used; preserve their recipe and source hashes instead.
 
+After each import/generation batch, run `npm run clips -- analysis process-project
+PROJECT_ID`, including unused takes and local renders in the project collection.
+Maintained assembly/review processes analysis automatically; custom editors must
+run the checkpoint explicitly. Before delivery, repeat with `--check` and resolve
+missing/failed required passes. Use the provisioned local default profile; see
+`docs/clip-analysis.md`. Extraction and model `needs-review` states do not establish
+human acceptance, silence or artistic approval.
+
 For acceptance, use `docs/craft/clip-acceptance-gate.md`: technical decode,
 contextual visual review, dense inspection of motion/transfer windows, then a
 keep/edit-around/reject decision tied to the source hash and clean frame range.

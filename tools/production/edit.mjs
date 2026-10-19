@@ -54,6 +54,17 @@ export function validateEdit(root, edit, plan, { catalogRoot = PROJECT_ROOT } = 
   }
   return { frames: total, seconds: total / plan.fps };
 }
+/** Register reused and local edit inputs before the maintained CLI analysis checkpoint. */
+export function registerEditClips(root, version, { catalogRoot = PROJECT_ROOT, delivered = false } = {}) {
+  validVersion(version);
+  const projectId = projectIdFor(root, catalogRoot);
+  if (!delivered && fs.existsSync(localPath(root, `final/${version}`))) throw new Error('EEXIST: edit version already exists');
+  const edit = delivered ? readJson(localPath(root, `final/${version}/delivery.json`)).edit
+    : readJson(localPath(root, `edit/${version}.json`));
+  validateEdit(root, edit, loadPlan(root), { catalogRoot });
+  return { projectId, clipIds: edit.segments.map(segment => importClip(segmentSource(root, segment, catalogRoot),
+    { collections: [projectId] }, catalogRoot).id) };
+}
 export function assemble(root, version, { catalogRoot = PROJECT_ROOT } = {}) {
   validVersion(version);
   const projectId = projectIdFor(root, catalogRoot);

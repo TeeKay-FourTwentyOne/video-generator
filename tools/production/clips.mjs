@@ -30,7 +30,14 @@ export function extract(id, inFrame, frames, output, repo = REPO) {
 export async function main(args, repo = REPO) {
   const [verb, ...rest] = args;
   if (verb === 'cloud') return (await import('./clip-cloud.mjs')).cloudMain(rest, repo);
-  if (verb === 'analysis') return (await import('./clip-analysis.mjs')).analysisMain(rest, repo);
+  if (verb === 'analysis') {
+    if (['configure-default', 'process-project'].includes(rest[0]))
+      return (await import('./clip-analysis-workflow.mjs')).workflowMain(rest, repo);
+    const result = await (await import('./clip-analysis.mjs')).analysisMain(rest, repo);
+    if (!rest[0] || rest[0] === 'help') result.commands.push('analysis configure-default PRIVATE_PROFILE.json',
+      'analysis process-project PROJECT_ID [--config=PRIVATE.json] [--check] [--retry] [--recover]');
+    return result;
+  }
   if (!verb || verb === 'help') return { commands: ['migrate', 'import FILE [PUBLIC_METADATA.json] [--snapshot=REQUEST.json]', 'search QUERY', 'show CLIP_ID',
     'resolve CLIP_ID', 'extract CLIP_ID IN_FRAME FRAMES data/workspace/PROJECT/edit/portion.mp4', 'record-use PUBLIC_USE.json',
     'analytics', 'index [--check]', 'validate [--media]', 'analysis help', 'cloud help'], storage: 'data/clips/<clip_id>/source.<ext>', metadata: 'catalog/clips and catalog/uses' };
@@ -81,7 +88,7 @@ export async function main(args, repo = REPO) {
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   main(process.argv.slice(2)).then(value => {
     console.log(JSON.stringify(value, null, 2));
-    if (process.argv[2] === 'analysis' && ['run', 'work'].includes(process.argv[3])
+    if (process.argv[2] === 'analysis' && ['run', 'work', 'process-project'].includes(process.argv[3])
       && (value.status === 'incomplete' || value.states?.failed > 0)) process.exitCode = 1;
   })
     .catch(error => { console.error(error.message); process.exitCode = 1; });

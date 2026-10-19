@@ -51,6 +51,12 @@ rebuilds private search and coverage, projects explicitly reviewed summaries and
 reports cleanup blockers. `clip-backup-set.mjs` joins complete backup membership,
 generation-pinned recovery and rehearsals. [Commands and current limits](clip-analysis.md).
 
+`clip-analysis-workflow.mjs` joins import intake to project delivery. Imports write
+private requests without executing models; project processing uses an explicitly
+provisioned default, verifies current runs, retains completion receipts and updates
+private search. Maintained assembly/review processes all project clips before
+delivery. Custom editors use the same `clips analysis process-project` checkpoint.
+
 `generation-snapshot.mjs` freezes private request evidence before maintained
 generation calls. Provider journals bind its hash to the operation; ingestion
 keeps a copy beside the master and projects only allowed fields into the catalog.

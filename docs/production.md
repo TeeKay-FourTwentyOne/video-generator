@@ -193,6 +193,28 @@ Provider polling returns a stable `clipId` and repository-relative master path i
 buying or copying a source. Use the [shared clip library](clip-library.md) for local
 imports, public metadata and usage analytics; full originals stay in that library.
 
+Every import writes a durable private analysis request. After each batch, run:
+
+```sh
+npm run clips -- analysis process-project my-film
+npm run clips -- analysis process-project my-film --check
+```
+
+This includes unused project takes and clips referenced by recorded uses. The
+maintained `film assemble` and `film review` commands register reused/local edit
+sources, process the project, and require verified extraction before creating a
+delivery/review package. Existing matching runs are reused. A missing default
+profile or failed required pass stops the command with retained diagnostics;
+recover analysis rather than generating another take. Custom editors must run
+the same checkpoint explicitly before delivery and closeout.
+
+Configure the machine's default once, after explicit local model provisioning,
+with `clips analysis configure-default PRIVATE_PROFILE.json`; see
+[project analysis](clip-analysis.md#automatic-project-checkpoint). Raw analysis
+stays private. `needs-review` output is extracted evidence, not human acceptance;
+optional unprovisioned passes remain visibly pending. Run any authorized private
+cloud sync after analysis so the new evidence is included in the backup set.
+
 For a generated continuation, extract the chosen moving frame by decoded index:
 
 ```sh

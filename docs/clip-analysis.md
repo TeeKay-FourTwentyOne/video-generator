@@ -16,6 +16,45 @@ structured speech timing and matching image/text retrieval. Its usefulness must 
 an adapter being implemented is not evidence that its model was installed or
 its output reviewed.
 
+## Automatic project checkpoint
+
+Imports, including maintained provider polling, write immutable private intake
+requests under `data/clips/analysis/intake/`. The requests bind the clip and catalog
+hashes; identical reimports reuse them. Importing remains offline and does not
+start models or wait for a worker. A completion receipt is written only after the
+matching run and all its declared artifacts verify.
+
+After explicitly provisioning a local profile, select the machine's default:
+
+```sh
+npm run clips -- analysis configure-default data/clips/analysis/profiles/semantic-pinned-v1.json
+npm run clips -- analysis process-project my-film
+npm run clips -- analysis process-project my-film --check
+```
+
+The default is retained by hash in ignored `data/clips/analysis/workflow.json` and
+the shared configuration inventory. Selection verifies local pins; it installs
+nothing and does not freeze or human-qualify the profile. There is no silent
+fallback to baseline extraction when the configured profile is missing or invalid.
+An explicit `--config=PRIVATE.json` selects a profile for one command.
+
+Project processing selects every clip in the project collection or use records,
+including unused takes. It runs one clip/model at a time, reuses verified runs
+matching the current source/catalog/configuration/tools, registers new completions
+in the existing queue, and refreshes private search/coverage when needed. Retained
+reports live at `data/clips/analysis/projects/<project-id>.json`. The command exits
+unsuccessfully for missing/failed required passes or invalid evidence. `--check`
+performs read-only verification; it never starts extraction. Explicit `--retry`
+and `--recover` retain the existing retry and stale-lock safeguards.
+
+Maintained `film assemble` and `film review` process the project before delivery.
+They register local and reused edit sources first; other project takes must have
+the correct collection at import. Custom editors and post-publication closeout
+must run this checkpoint explicitly. Extraction completion permits `needs-review`
+model output and explicit `not-applicable` passes; it is separate from human
+semantic qualification, film acceptance, real-time listening and publication.
+Optional unprovisioned passes remain `pending` in the report and dashboard.
+
 ## Inventory, pilot and queue
 
 ```sh

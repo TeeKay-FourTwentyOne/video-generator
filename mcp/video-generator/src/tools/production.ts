@@ -44,7 +44,7 @@ export const productionTools = {
     handler: async (a: { workspace: string; shotId: string }) => invoke(["submit", a.workspace, a.shotId]),
   },
   production_poll: {
-    name: "production_poll", description: "Poll once and retrieve an existing shot operation. Saves source hash and metadata. Never generates or resubmits.",
+    name: "production_poll", description: "Poll once and retrieve an existing shot operation. Saves source hash, metadata and a private analysis request. Never generates or resubmits.",
     inputSchema: { workspace, shotId: z.string() },
     handler: async (a: { workspace: string; shotId: string }) => invoke(["poll", a.workspace, a.shotId]),
   },
@@ -54,12 +54,12 @@ export const productionTools = {
     handler: async (a: { workspace: string; requestFile: string }) => invoke(["image", a.workspace, a.requestFile]),
   },
   production_assemble: {
-    name: "production_assemble", description: "Render a new local edit version from source hashes and accepted frame ranges. Refuses existing output versions.",
+    name: "production_assemble", description: "Complete local project clip analysis using the configured profile, then render a new edit from source hashes and accepted frame ranges. Refuses incomplete required analysis and existing output versions.",
     inputSchema: { workspace, version: z.string() },
     handler: async (a: { workspace: string; version: string }) => invoke(["assemble", a.workspace, a.version]),
   },
   production_review: {
-    name: "production_review", description: "Build a local native-resolution review player with shot navigation and delivery evidence.",
+    name: "production_review", description: "Complete and verify local project clip analysis, then build a native-resolution review player with shot navigation and delivery evidence. Model observations remain separate from human review.",
     inputSchema: { workspace, version: z.string() },
     handler: async (a: { workspace: string; version: string }) => invoke(["review", a.workspace, a.version]),
   },

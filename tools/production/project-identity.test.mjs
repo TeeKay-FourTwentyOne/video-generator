@@ -6,6 +6,7 @@ import { main as filmMain } from './film.mjs';
 import { projectIdFor, migrate, walk } from './clip-import.mjs';
 import { writeProjectIdentity } from './project-identity.mjs';
 import { atomicJson, readJson, importClip, readClip, listUses, run, hashFile } from './clip-library.mjs';
+import { configureDefault } from './clip-analysis-workflow.mjs';
 
 function fixture(t) {
   fs.mkdirSync('data/workspace', { recursive: true });
@@ -110,6 +111,8 @@ test('an interrupted init resumes the saved identity without replacing it', asyn
 
 test('two initialized workspace versions share identity before records exist and preserve polling evidence', async t => {
   const { repo, root, main } = fixture(t), other = path.join(repo, 'data/workspace/fixture-v2');
+  atomicJson(path.join(repo, 'data/profile.json'), { limits: { minFreeBytes: 1024 * 1024, timeoutSeconds: 60 } });
+  configureDefault('data/profile.json', repo);
   const sources = [media(repo, 'red'), media(repo, 'yellow')], fetch = network(t, sources);
   const original = importClip(media(repo, 'blue'), { collections: ['original-collection'] }, repo);
   const roots = [root, other];
@@ -125,7 +128,20 @@ test('two initialized workspace versions share identity before records exist and
       ...(index ? { source: 'clips/source.mp4', sha256: original.sha256 } : { clipId: original.id }),
       inFrame: 0, frames: 12, decisionFile: 'qa/keep.json' }] });
     assert.equal(fs.existsSync(path.join(repo, 'briefs')), false);
-    assert.equal((await main(['assemble', current, version])).frames, 12);
+    if (!index) {
+      const policyFile = path.join(repo, 'data/clips/analysis/workflow.json'), policy = fs.readFileSync(policyFile);
+      fs.unlinkSync(policyFile);
+      await assert.rejects(main(['assemble', current, version]), /No default analysis profile/);
+      assert.equal(fs.existsSync(path.join(current, 'final', version)), false, 'Missing analysis profile must block before rendering');
+      fs.writeFileSync(policyFile, policy);
+    }
+    const delivery = await main(['assemble', current, version]);
+    assert.equal(delivery.frames, 12); assert.equal(delivery.analysis.status, 'complete');
+    assert.equal(delivery.analysis.clips, index + 1, 'Analysis also covers previously generated unused project takes');
+    if (!index) {
+      const review = await main(['review', current, version]);
+      assert.equal(review.shots, 1); assert.equal(review.analysis.status, 'complete');
+    }
     await main(['submit', current, 'S01']);
     const snapshotFile = path.join(current, 'operations/S01-v1.request.json');
     const snapshot = fs.readFileSync(snapshotFile), snapshotStat = fs.statSync(snapshotFile);

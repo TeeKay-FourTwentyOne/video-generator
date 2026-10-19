@@ -48,6 +48,13 @@ ledger, not a clerk with a camera.
   maintained provider polling does this automatically. Reference clip IDs in edits
   and materialize only the needed ranges. Public metadata and use records live in
   `catalog/`; see `docs/clip-library.md`. Preserve historical paths and archives.
+- Process each project's imported clips, including unused takes and local title
+  renders, with `npm run clips -- analysis process-project PROJECT_ID` after each
+  batch and before native delivery or closeout. Imports retain private analysis
+  requests; maintained `film assemble` and `film review` process them automatically.
+  Use the explicitly provisioned local default profile and verify with `--check`.
+  Custom editors must run this checkpoint too. Preserve failed/pending passes and
+  `needs-review`; extraction does not establish human semantic or artistic approval.
 - When private cloud backup is configured and its storage authorization is active,
   run `npm run clips -- cloud sync` after a batch of imports. It checks the private
   bucket and local monthly budget before uploads. Keep cloud locations, credentials,

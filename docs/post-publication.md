@@ -61,6 +61,13 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
    folder is not automatically a qualified standalone rebuild. Prefer relative
    paths for new recipes. For historical hardcoded roots, document a restore-copy
    procedure rather than silently modifying the old evidence.
+   Run `npm run clips -- analysis process-project PROJECT_ID`, followed by
+   `npm run clips -- analysis process-project PROJECT_ID --check`, for all project
+   clips, including unused takes and local renders. This uses the explicitly
+   provisioned local profile and verifies immutable private library evidence;
+   film-specific QA alone does not satisfy it. Resolve missing/failed required
+   passes before marking closeout complete. Preserve model review states and
+   optional pending passes. Run authorized private cloud sync after this step.
 5. Stop only the named project's writers and preview servers. Choose final names
    for documentation snapshots and finish local metadata **before** hashing. A
    running generator, renderer or watcher can invalidate the snapshot.

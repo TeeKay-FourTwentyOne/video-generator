@@ -361,11 +361,16 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     return joinAnchor(root, args[0], Number(args[1]), args[2], { catalogRoot });
   }
   if (verb === 'assemble' || verb === 'review') {
-    const { assemble, review } = await import('./edit.mjs');
-    if (verb === 'assemble') return assemble(root, args[0], { catalogRoot });
+    const { assemble, review, registerEditClips } = await import('./edit.mjs');
     const flags = args.slice(1);
-    for (const f of flags) if (f !== '--overlay') throw new Error(`Unknown review option: ${f}`);
-    return review(root, args[0], { overlay: flags.includes('--overlay'), catalogRoot });
+    for (const f of flags) if (verb !== 'review' || f !== '--overlay') throw new Error(`Unknown ${verb} option: ${f}`);
+    const { projectId } = registerEditClips(root, args[0], { catalogRoot, delivered: verb === 'review' });
+    const { processProject } = await import('./clip-analysis-workflow.mjs');
+    const analysis = await processProject(projectId, catalogRoot, { progress: e => process.stderr.write(JSON.stringify(e) + '\n') });
+    if (analysis.status !== 'complete') throw new Error(`Project clip analysis is incomplete; inspect ${analysis.report} before delivery`);
+    const result = verb === 'assemble' ? assemble(root, args[0], { catalogRoot })
+      : review(root, args[0], { overlay: flags.includes('--overlay'), catalogRoot });
+    return { ...result, analysis: { status: analysis.status, clips: analysis.clips, report: analysis.report, humanReview: analysis.humanReview } };
   }
   throw new Error(`Unknown command: ${verb}`);
 }

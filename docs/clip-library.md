@@ -283,3 +283,10 @@ rerun; the master hash is checked before reuse. If a writer lock remains after a
 crash, confirm that writer has stopped before removing its directory under
 `data/clips/.locks/`. A master hash mismatch stops the operation; restore verified
 bytes from an original, never bless changed bytes under the old ID.
+
+Every successful import also retains a private, idempotent analysis request for
+that catalog snapshot. This starts no model or network operation. Process the
+project after each batch with `clips analysis process-project PROJECT_ID` and
+verify it with `--check`; include unused takes and local renders in the project
+collection. Maintained native assembly/review runs this checkpoint automatically.
+See [profile selection and completion semantics](clip-analysis.md#automatic-project-checkpoint).

@@ -30,6 +30,13 @@ records, logs, media and machine-specific paths in ignored storage. Reconcile
 project cost separately from provider account balance. Synchronize current local
 description copies and their hashes before sealing the archive.
 
+Before closeout, run `npm run clips -- analysis process-project PROJECT_ID`, then
+repeat with `--check`, covering unused takes and local renders too. Resolve
+missing/failed required passes; film-specific QA does not replace library analysis.
+Use the provisioned local default profile and preserve raw evidence privately.
+Extraction completion does not establish human semantic review; see
+`docs/clip-analysis.md` for completion states and recovery.
+
 Follow `docs/production-records.md`: update the allowlisted public record and
 generate its current summary/index. Keep prices, monetary amounts and detailed
 accounting in ignored `data/`. Use `sync-description` on the active workspace
