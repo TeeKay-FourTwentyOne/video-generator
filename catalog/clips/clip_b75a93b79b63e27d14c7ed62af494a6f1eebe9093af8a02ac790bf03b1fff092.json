@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b75a93b79b63e27d14c7ed62af494a6f1eebe9093af8a02ac790bf03b1fff092",
+  "sha256": "b75a93b79b63e27d14c7ed62af494a6f1eebe9093af8a02ac790bf03b1fff092",
+  "bytes": 6390422,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night on the stone balcony; the camera starts level with the two of them in a medium two-shot: the young man in the wine-red doublet on the left, the young woman in the pale gold gown on the right, facing each other, the two phones lying side by side on the stone balustrade in the foreground, their screens glowing; vertical frame. He says exactly one word: \"Hi.\" She says exactly one word: \"Hi.\" They smile at each other. Then the camera tilts slowly down toward the two phones on the balustrade and moves in closer, so the two phones grow large and sharp in the lower part of the frame while the two people, soft and out of focus beyond them, turn together and walk away toward the lit doorway. The phones stay exactly where they are on the stone; their screens keep the same steady glow with one heart symbol each and show nothing else. Nothing else is said. Exactly two people; nobody else appears. Sound: the two words clearly, crickets, a breeze in the curtain, soft footsteps on stone; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1b31ebc57466358202178c033bf70905131d2146ddf2b40ee9fda5b6027aaade",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 373636658,
+      "createdAt": "2026-10-19T20:27:19.782Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "1e514345bbfdfe6f4307032bc38f0d2d81668a3ad64ed43453aa457bd65675ea",
+          "bytes": 6005966,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "d5038b4ddeff86263936db81162825c880adde391258e70caf87377f322a6f2d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

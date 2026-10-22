@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e2385742a93bb47736ff8183a9023d712228632ad303787bb741721e166e3ee3",
+  "sha256": "e2385742a93bb47736ff8183a9023d712228632ad303787bb741721e166e3ee3",
+  "bytes": 8258426,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night on the stone balcony; the camera is locked off, level with the two of them in a medium two-shot: the young man in the wine-red doublet stands just inside the balustrade, a little out of breath, one hand still on the rail, facing the young woman in the pale gold gown, who faces him a step away with the white earbud still in her left ear; the arched doorway with the sheer curtain and candlelight behind them; vertical frame. She takes the earbud out of her ear and holds it. He says exactly one word: \"Hi.\" She says exactly one word: \"Hi.\" They both smile. Nothing else is said. Exactly two people; nobody else appears. The camera does not move. Sound: the two words clearly, crickets, a breeze in the curtain; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_923ee9d8941edcc81c1d8c48a3c91acd9f87cd6474a173203a2f6e828c4a0068",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": "2026-10-19T19:14:32.710Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "09e3144d35ad000c87e49fd9c7ed244800d0a50df66060bddd18a80fb4687362",
+          "bytes": 5984088,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "6683d84ff4332a2fcb3900263f0b8a1f9ed9267db7cc1740bbc32e0977b14147"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

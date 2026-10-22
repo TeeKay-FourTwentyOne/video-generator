@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_616aa783c1d2fa88c85505e0d941d1fe743bbb73aa1680ec745cde711383a265",
+  "sha256": "616aa783c1d2fa88c85505e0d941d1fe743bbb73aa1680ec745cde711383a265",
+  "bytes": 10837667,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; a close-up of the young man in the wine-red doublet, from the shoulders up, his face three-quarters to the camera, moonlight on his face, the stucco wall and jasmine soft behind him; vertical frame. His right hand is at his right ear; the phone in his other hand stays where it is, low in the frame. He pulls the small white earbud out of his ear, looks at it in his fingers for a moment, then lets his hand fall and looks up toward the balcony, and a small real smile comes to his face. He does not speak. He is the only person in the frame. The camera does not move. Sound: crickets, the fountain, a breeze; no music, no voices. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4059dc5ce63193a4c4d98f691426af39a85c5c1073a0bc82f4f81df8c405a741",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1029159914,
+      "createdAt": "2026-10-19T19:14:24.036Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "b92433cd081df213568fd8c370ea4e8e0eeaacea7a486c77c1509f7e5cb21125",
+          "bytes": 5905186,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "4fcf6b63593915d592226b9e094f9e3fce3ee9e790346cb97fa85ce9c3b02adb"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

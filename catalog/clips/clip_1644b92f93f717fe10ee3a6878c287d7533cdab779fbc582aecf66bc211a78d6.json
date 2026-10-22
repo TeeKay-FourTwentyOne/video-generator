@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1644b92f93f717fe10ee3a6878c287d7533cdab779fbc582aecf66bc211a78d6",
+  "sha256": "1644b92f93f717fe10ee3a6878c287d7533cdab779fbc582aecf66bc211a78d6",
+  "bytes": 5918942,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; the camera is locked off low at courtyard level beside the young man in the wine-red velvet doublet, who stands in the lower part of the frame in three-quarter profile, his face lifted toward the stone balcony high in the upper right of the frame, where the young woman in the pale gold gown stands at the balustrade looking down at him; a white earbud in his right ear, the glowing phone in his left hand at his chest, his right hand on his heart; vertical frame. He keeps his eyes on the balcony and speaks with great feeling, exactly these words: \"Were I the dew, I would consent to fall, if falling were toward you.\" Then he waits for her reply; his face goes blank and bored; he looks down at the phone and scrolls with his thumb. She says nothing and stays at the balustrade, listening. He never looks at the camera. Exactly two people; nobody else appears. The camera does not move. Sound: his voice clearly, crickets, the fountain; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ab2ab5b7045c52c44425fab22e37cf62e190e582a73dd34843204be961b3c29d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1996828859,
+      "createdAt": "2026-10-20T00:15:23.604Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "cf799b1a1f2f17b5463aea230c6541cf10f199386aab457cb352b308e482aaca",
+          "bytes": 5854719,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b9225cd8a4194ea8a9ebc81ab1272e08ce550de9e594adbf673fb1280bff67ea"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c14b14607df562edf923af6dd94cdfee4d9b5b6f03a6c0dd96728f65be61a67a",
+  "sha256": "c14b14607df562edf923af6dd94cdfee4d9b5b6f03a6c0dd96728f65be61a67a",
+  "bytes": 7227867,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; the camera is locked off low at courtyard level beside the young man in the wine-red velvet doublet, who stands in the lower part of the frame in three-quarter profile, his face lifted toward the stone balcony high in the upper right of the frame, where the young woman in the pale gold gown stands at the balustrade looking down at him; a white earbud in his right ear, the glowing phone in his left hand at his chest, his right hand on his heart; vertical frame. He keeps his eyes on the balcony and begins grandly, with great feeling, exactly these words: \"O lady of the lettuce...\" He stops, puzzled, his mouth still half open; he looks down at the glowing phone in his hand and reads it, frowning slightly; then he looks back up at the balcony, ready to begin again. He says nothing else. She says nothing and stays at the balustrade, listening. He never looks at the camera. Exactly two people; nobody else appears. The camera does not move. Sound: his voice clearly, crickets, the fountain; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_657f2903b7aef5d1313b15c7db1cdd4609200354533cec087e0688a389cd1027",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 4107148176,
+      "createdAt": "2026-10-20T00:14:51.766Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "cf799b1a1f2f17b5463aea230c6541cf10f199386aab457cb352b308e482aaca",
+          "bytes": 5854719,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b318500a46351d80751abbf6ca4dfe187c9a568ee0e89fb0d61b5ad6c2fcf16f"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

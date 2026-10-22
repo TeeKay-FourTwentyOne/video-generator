@@ -16,6 +16,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [ANGLES](angles/README.md) | review | — | [Brief](angles/brief.md) · [Record](angles/production.json) |
 | [APRIL](april/README.md) | unknown | monthly-etymology | [Brief](april/brief.md) · [Record](april/production.json) |
 | [AUGUST](august/README.md) | planned | monthly-etymology | [Brief](august/brief.md) · [Record](august/production.json) |
+| [BALCONY](balcony/README.md) | review | — | [Brief](balcony/brief.md) · [Description](balcony/description.md) · [Record](balcony/production.json) |
 | [Borrowed Light](borrowed-light/README.md) | published | — | [Brief](borrowed-light/brief.md) · [Record](borrowed-light/production.json) |
 | [BROKEN RECORD](broken-record/README.md) | published | — | [Brief](broken-record/brief.md) · [Description](broken-record/description.md) · [Record](broken-record/production.json) |
 | [Burger Djinn — Hold the Onions](burger-djinn/README.md) | published | — | [Brief](burger-djinn/brief.md) · [Record](burger-djinn/production.json) |
@@ -59,6 +60,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [ONE UNIT APART](one-unit-apart/README.md) | published | — | [Brief](one-unit-apart/brief.md) · [Description](one-unit-apart/description.md) · [Record](one-unit-apart/production.json) |
 | [PARKING LOT GOSPEL](parking-lot-gospel/README.md) | producing | — | [Brief](parking-lot-gospel/brief.md) · [Record](parking-lot-gospel/production.json) |
 | [PASSENGER](passenger/README.md) | delivered | — | [Brief](passenger/brief.md) · [Decisions](passenger/decisions.md) · [Record](passenger/production.json) |
+| [PERPETUAL CHECK](perpetual-check/README.md) | planned | — | [Brief](perpetual-check/brief.md) · [Record](perpetual-check/production.json) |
 | [PERSONAL BEST](personal-best/README.md) | review | — | [Brief](personal-best/brief.md) · [Record](personal-best/production.json) |
 | [Post-Training](post-training/README.md) | delivered | ai-explains-ai | [Brief](post-training/brief.md) · [Decisions](post-training/decisions.md) · [Record](post-training/production.json) |
 | [Book Graphs & Ramsey Numbers](ramsey-books/README.md) | delivered | ai-teaches-math | [Brief](ramsey-books/brief.md) · [Decisions](ramsey-books/decisions.md) · [Record](ramsey-books/production.json) |

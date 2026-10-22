@@ -68,6 +68,13 @@ measurement, not a default. A detuned drone pair at 0.2% beat at about 0.9 Hz an
 read as a throb on the waveform; 0.05% breathes instead.
 Source: claude-code · Washing Day · 2026-10-03
 
+### Disembodied voices read as a device when they are band-limited and keyed to a glow
+Four ElevenLabs lines for two phones were run through a 380–5200 Hz band, a +4 dB presence bump at 2.4 kHz,
+a short single echo and a limiter, and the ending still's screen glow was driven by each line's RMS envelope
+(fast attack, slow release) so the phone "speaking" brightens. A lute underscore passed through the same
+chain returned "from the phones" after stopping dead on the earbud click.
+Source: claude-code · Balcony · 2026-10-19
+
 ## Finishing
 
 ### No 4K before review

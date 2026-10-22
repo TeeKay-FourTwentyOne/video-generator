@@ -170,6 +170,18 @@ fused the two after about six seconds.
 for the wide and plan to use the first six.
 Source: claude-code · Washing Day · 2026-10-03
 
+### A small prop leaving the body fails in-shot even in close-up
+Two Quality takes asked for a wireless earbud to be taken out of an ear (a close-up with the hand
+already at the ear, and a two-shot). In the close-up the fingers fiddled for three seconds, the hand
+dropped with the earbud still in, and the earbud then vanished between two frames with no hand-off;
+in the two-shot the hand went to the ear and came away with the earbud still in place. The look-up and
+smile that followed were usable in both.
+**Apply:** the removal note holds at prop scale: film the hand at the ear and, separately, the state
+after; bridge them with a cutaway (the other person's reaction) and land a click on the cut. If the
+beat must be seen, anchor the first frame with the prop already out and in the fingers, and ask only
+for a look and a lowered hand.
+Source: claude-code · Balcony · 2026-10-19
+
 ## Native audio
 
 ### Native audio is the default for on-camera lines
@@ -224,6 +236,16 @@ on a 2-frame strip against the word stamps before accepting any range, and stop 
 audio before her first line so the tail does not leak a syllable.
 Source: claude-code · Walla · 2026-10-08
 
+### A long two-clause line loses its second clause
+A 19-word line with a colon in the middle ("And you, sweet voice below: the night keeps you the way a
+ring keeps a stone") came back with the first clause clear (2.3–5.2 s) and the rest as mouth motion with
+unintelligible sound to about 5.9 s; two Whisper models agreed, and the spectrogram showed weak,
+unstructured harmonics after the clause. Three other lines of 12–15 words in the same film were delivered
+verbatim, so the risk is the length and the pause, not the vocabulary.
+**Apply:** keep a spoken line to one clause of about a dozen words per take, put the payload words first,
+and split a longer verse across two takes or two speakers. Transcribe every dialogue take before cutting.
+Source: claude-code · Balcony · 2026-10-19
+
 ## Cost behavior
 
 ### Every submission bills
@@ -257,3 +279,39 @@ Source: claude-code · October · 2026-10-08
 In House Special, a prompt-only upright pie instruction produced a horizontal tin below the face and an upward cream burst. A new starting frame placed the tin vertically at nose height with a visible approach gap; the replacement carried it into the face and withdrew it while leaving cream behind. The angle and prompt also changed, so this is an observed production correction, not an isolated model comparison.
 **Apply:** inspect the actual contact geometry densely. Preserve the failed take, make the approach explicit in the starting frame, and trim later identity drift independently of whether the gag works.
 Source: Codex · House Special · 2026-10-17
+
+### Block the eyeline in the anchor's geometry, not in the prompt
+Three courtyard takes of a man "looking up toward the balcony" had him looking anywhere but at her, because the
+anchors put the balcony behind him: with his face to camera he could only face away from it. Re-blocked with the
+camera at his side, low, the balcony in the upper corner he faces and her at the rail, and again from her point of
+view looking down over the balustrade, every take held the gaze (and she was in his frame). The same wide also grew
+spectacle glints on his small face from about two seconds in (two eye highlights at that scale read as glasses).
+**Apply:** if a character must look at something, put it in the frame on the side they face; keep a wide's use short
+when the face is small.
+Source: claude-code · Balcony · 2026-10-19
+
+### "Beautifully" invites singing
+A line asked for "warmly and beautifully" came back sung (flat sustained harmonic bands on a spectrogram) and lost its
+second clause after a colon. The retake asked for "her ordinary speaking voice, warm and clear, not singing and not
+chanting, every word spoken plainly to the end of the sentence", with the line rewritten as one sentence, and came back
+spoken and complete (gliding harmonics; Whisper verbatim).
+Source: claude-code · Balcony · 2026-10-19
+
+### Veo puts a prop back where it belongs
+"He holds the earbud in his fingers, then lets his hand drop out of frame" became the hand rising to the ear and the
+earbud going back in, then the look-up and smile with it in place. The retake used an anchor with no earbud anywhere
+(chained off the first one: "change only this: the hand and the earbud are gone, the ear is bare") and nothing to do
+but look up and smile; the earbud-in-fingers moment came from a 44-frame palindrome loop of the first take's clean
+head. The close-up of her turning to find him also ended with her turning to the lens with a surprised face (the
+eye-contact habit); only the first 2.4 s, the look up and to the side, were usable.
+**Apply:** removals land on the cut; after the cut, give the model nothing to restore; expect the lens-look and keep
+the clean head.
+Source: claude-code · Balcony · 2026-10-19
+
+### A locked-off high angle became a push-in and grew a second balcony
+From her point of view over the balustrade, Veo pushed in slowly despite "the camera does not move", and as it did it
+invented a lit balustrade along the top edge (about 9% of the height by 7 s) and legs between the balusters at the
+bottom. The push itself was a gift (it ends on his face mid-line). A bottom-anchored `zoompan` 1.0 to 1.15 across the
+segment plus a soft shade over the bottom sixth hid the band. `crop` cannot do this: its w/h expressions are evaluated
+once, so a per-frame zoom written with `n` silently renders no zoom; `zoompan` with `in` is the per-frame tool.
+Source: claude-code · Balcony · 2026-10-19

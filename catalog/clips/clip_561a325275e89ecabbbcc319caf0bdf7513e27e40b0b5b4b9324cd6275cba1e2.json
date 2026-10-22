@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_561a325275e89ecabbbcc319caf0bdf7513e27e40b0b5b4b9324cd6275cba1e2",
+  "sha256": "561a325275e89ecabbbcc319caf0bdf7513e27e40b0b5b4b9324cd6275cba1e2",
+  "bytes": 12775911,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night; the camera is locked off on the stone balcony, looking down over the balustrade at the young man in the wine-red velvet doublet standing on the flagstones of the moonlit courtyard below, his face lifted up toward the camera, his right hand on his heart, the glowing phone in his left hand at his chest, a white earbud in his right ear; vertical frame. Looking up the whole time, he speaks slowly and with great feeling, exactly these words: \"O lady of the lattice, the moon is only practising to be your face.\" Then he holds the pose, his hand on his heart, waiting. He is the only person in the frame and the only one who speaks. The camera does not move. Sound: his voice clearly, crickets, the small fountain trickling; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c12a317bda96e09e26a927ee3ac79f733b5977596c748e3ae72705e1a0fb9520",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2324757282,
+      "createdAt": "2026-10-20T00:15:03.015Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "2a42486f8df01570e7db5239ccab47663f36886676d14539e0c71ece658e5bc2",
+          "bytes": 6333804,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "d60d788b1425604f9aca76a4af3058b219fd636805bc0e564ca93dcb4e14d25a"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

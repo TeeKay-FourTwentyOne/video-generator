@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_18c22d00b72fac7ead906de69ee681c6b2a3b83c146ccf0567d493aeac7058ed",
+  "sha256": "18c22d00b72fac7ead906de69ee681c6b2a3b83c146ccf0567d493aeac7058ed",
+  "bytes": 3715515,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night on the stone balcony; the camera is locked off low over the broad stone top of the balustrade, looking across it toward the arched doorway; vertical frame. In the foreground the two black phones lie face up side by side, sharp, their screens glowing steadily, the left cool blue with one white heart, the right warm pink with one white heart; the screens do not change and show nothing else. Beyond them, soft and out of focus, the young man in the wine-red doublet and the young woman in the pale gold gown walk away from the camera, side by side, through the sheer curtain into the warm candlelit room, and are gone; the curtain sways and settles. The phones do not move. Nobody speaks. The camera does not move. Sound: soft footsteps on stone fading, the curtain, crickets, a breeze; no music, no voices. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f4d49d4163acfdff16e084b93a7e5a9a89e1bc298e02bf9264ec45b3e4fecfeb",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 583696367,
+      "createdAt": "2026-10-19T20:19:25.335Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "ee00dec788bd59b2b910f53e18844241db4108d881c9edd0012008e9a0ecdb62",
+          "bytes": 5533156,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f394450059309983059ccf548ee4fe4363dfa6afcf94eed1a2a33ae54baf6017"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

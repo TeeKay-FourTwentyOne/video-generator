@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fa180163f60b40e8561dafe62ffe734410854be404dc4676fb08a56b29b017bf",
+  "sha256": "fa180163f60b40e8561dafe62ffe734410854be404dc4676fb08a56b29b017bf",
+  "bytes": 6083803,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; a close-up of the young man in the wine-red doublet, from the shoulders up, in three-quarter profile facing the right side of the frame, the stone balcony soft and out of focus above him in the upper right, moonlight on his face; vertical frame. He holds the small white earbud between the thumb and forefinger of his raised right hand, just in front of his ear, nothing in his ear, and looks at it for a moment, thinking; then he lets his hand drop out of the bottom of the frame, lifts his eyes to the balcony above, and a small real smile comes to his face. He does not speak. He never looks at the camera. He is the only person in the frame. The camera does not move. Sound: crickets, the fountain, a breeze; no music, no voices. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d2da89833750d17a0f8ddd0a62ad131a3e9730be1cf312faffa2172fc32553df",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 505836959,
+      "createdAt": "2026-10-20T00:15:33.539Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "3f29b382e7eae9f5ab8949393d4cfdaa63672ffb4520a9790ee8dc85a4b4ef0c",
+          "bytes": 5626785,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "e7982a6624175e6af14e4a8d4f912e815ad18c58127964bb77602e7e72f0772b"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

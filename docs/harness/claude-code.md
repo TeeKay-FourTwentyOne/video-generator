@@ -80,3 +80,24 @@ lessons are in `docs/craft/field-notes/`. Codex notes live in `codex.md`.
 - Every edit version is immutable (`final/vN` refuses to re-render); a cut change or
   a mastering change means a new version, which is cheap because nothing is bought.
 
+## Added during Balcony (2026-10-19)
+
+- `film image WORKSPACE a.json b.json` wants the request files workspace-relative, even when the
+  workspace itself is given as an absolute path; absolute request paths fail with "Artifact path must
+  be workspace-relative" before any request is sent (no charge). A background batch therefore looks like
+  `npm run film -- image /abs/workspace images/A1.json images/A4.json --reconcile`.
+- The default clip-analysis profile (whisper.cpp, OCR, CLIP, a vision pass) runs for several minutes
+  per 8 s clip; `film assemble` processes the project itself, so start `clips analysis process-project`
+  in the background right after each poll wave and let it finish before assembling, instead of running
+  two processors at once.
+- Whisper-small in the local profile and the Whisper API agreed on every verbatim line and on the one
+  truncated line; the API's word stamps (Walla's `recipes/transcribe.py`, copied per workspace) are the
+  faster way to place cuts on words, at well under a cent per take.
+- The background-redirect trap again (2026-10-19): a backgrounded command whose log path was relative lost its leading
+  `cd` to a parallel call and exited 1 without running. Log paths in background calls are absolute, always.
+- ffmpeg `crop` evaluates its w/h expressions once, so a zoom written as `crop=w='iw/(1+0.1*n/100)'` renders no zoom and
+  no error; animate zooms with `zoompan=z='…(in)…':d=1:s=WxH` and overlay a PIL gradient for shading.
+- On a machine that keeps masters only for recent clips, `cloud plan` and `cloud sync` fail on the first
+  catalog clip with no local file ("Missing unverified local master"); `--allow-absent` is the normal form
+  there, and it still verifies each absent master against the last complete backup set before uploading
+  anything new. The plan hashes the local library for a couple of minutes; run both in the background.

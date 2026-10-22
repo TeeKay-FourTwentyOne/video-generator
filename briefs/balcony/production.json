@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "projectId": "balcony",
+  "title": "BALCONY",
+  "kind": "film",
+  "status": "review",
+  "statusNote": "Five native review cuts assembled (v1 first draft; v2-v4 after the director's first notes; v5 after the second round, with all of his coverage re-blocked and her line retaken spoken), all technical checks passed. On 2026-10-21 the director judged that Veo was having tremendous issues with this film and redirected it to local generation on another machine; the project clips were synced to the private clip backup and the workspace was handed off (see handoff.md). No cut is approved; nothing is upscaled or published.",
+  "briefPath": "briefs/balcony/brief.md",
+  "workspace": {
+    "path": "data/workspace/balcony-v1",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "c44bd7c7121e5d33c0f1717a71788a428efe03db79330af84f5a40f7744eef1b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1076,
+      "durationSeconds": 44.833333333333336,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "0e7fec645507d0d4691606a87ce5d99ab7084f52138e088712444ccc48dcd508",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1294,
+      "durationSeconds": 53.916666666666664,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "316e83840df903b7be1990296c964c656a7166c2afdeda8a5512c37c1e104c78",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1276,
+      "durationSeconds": 53.166666666666664,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "cccff15e2d72eb0c9f6bcc3fbc074bd2310161985ffb18f25d1c807fdec56774",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1288,
+      "durationSeconds": 53.666666666666664,
+      "publishedMaster": false
+    },
+    {
+      "role": "native-review",
+      "version": "v5",
+      "path": "final/v5/film.mp4",
+      "sha256": "5d49dd33032299560571d89038f298dd7ca0041129caf933ae1fb5cc967bd99c",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1470,
+      "durationSeconds": 61.25,
+      "publishedMaster": false
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Gemini 3 Pro Image (Nano Banana Pro)"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1 (GA, Quality, native audio)"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "Multilingual v2"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs",
+        "model": "Sound Effects and Music v1"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "Claude Sonnet 5.5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, verse, edit and sound",
+        "model": "Claude Fable 5.1",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "c44bd7c7121e5d33c0f1717a71788a428efe03db79330af84f5a40f7744eef1b",
+      "recordedDate": "2026-10-19",
+      "eventDate": "2026-10-19",
+      "evidence": "film assemble v1: full decode, dimensions, frame count and source hashes verified; mix report -16.1 LUFS integrated, -1.4 dBTP; local clip analysis complete for eight project clips (model passes needs-review). No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "0e7fec645507d0d4691606a87ce5d99ab7084f52138e088712444ccc48dcd508",
+      "recordedDate": "2026-10-19",
+      "eventDate": "2026-10-19",
+      "evidence": "film assemble v2: full decode, dimensions, frame count and source hashes verified; mix -16.2 LUFS integrated, true peak under -1.3 dBTP; local clip analysis complete for thirteen project clips (model passes needs-review). director's notes applied; meeting as a hard cut. No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "316e83840df903b7be1990296c964c656a7166c2afdeda8a5512c37c1e104c78",
+      "recordedDate": "2026-10-19",
+      "eventDate": "2026-10-19",
+      "evidence": "film assemble v3: full decode, dimensions, frame count and source hashes verified; mix -16.2 LUFS integrated, true peak under -1.3 dBTP; local clip analysis complete for thirteen project clips (model passes needs-review). director's notes applied; meeting with the camera tilt to the phones (recommended). No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "cccff15e2d72eb0c9f6bcc3fbc074bd2310161985ffb18f25d1c807fdec56774",
+      "recordedDate": "2026-10-19",
+      "eventDate": "2026-10-19",
+      "evidence": "film assemble v4: full decode, dimensions, frame count and source hashes verified; mix -16.2 LUFS integrated, true peak under -1.3 dBTP; local clip analysis complete for thirteen project clips (model passes needs-review). as v3 plus an optional aside between the phones. No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5",
+      "artifactSha256": "5d49dd33032299560571d89038f298dd7ca0041129caf933ae1fb5cc967bd99c",
+      "recordedDate": "2026-10-19",
+      "eventDate": "2026-10-19",
+      "evidence": "film assemble v5: full decode, dimensions, frame count and source hashes verified; mix -16.3 LUFS integrated, true peak -1.5 dBTP; local clip analysis checkpoint complete for the project's clips (model passes needs-review). Re-blocked coverage after the director's second round of notes; one 6 s retake after an in-shot failure. No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v5",
+      "artifactSha256": "5d49dd33032299560571d89038f298dd7ca0041129caf933ae1fb5cc967bd99c",
+      "recordedDate": "2026-10-21",
+      "eventDate": "2026-10-21",
+      "evidence": "Director's response to the v5 delivery: Veo is having tremendous issues with this video; take a different approach. The project was redirected to local generation on another machine; clips synced to the private backup and the workspace handed off. No listening or artistic approval claimed.",
+      "outcome": "inspected"
+    }
+  ],
+  "legacyPaths": [],
+  "descriptionPath": "briefs/balcony/description.md",
+  "descriptionSha256": "6393f5f2ce2a28b924b00d16813ae1aaa9a5ef08c90b70497e97469f3f65c23c",
+  "handoffPath": "briefs/balcony/handoff.md",
+  "supportingDocuments": [
+    {
+      "label": "Shot book: references, prompts, takes, decisions, clip IDs and the v5 timeline",
+      "path": "briefs/balcony/shots.md"
+    },
+    {
+      "label": "v5 edit table (segments, native gains, cue placement)",
+      "path": "briefs/balcony/recipes/v5-table.json"
+    }
+  ]
+}

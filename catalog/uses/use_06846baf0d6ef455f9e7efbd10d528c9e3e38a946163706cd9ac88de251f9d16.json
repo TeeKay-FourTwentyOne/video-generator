@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_4d7127435fc4ebb1c4ba8b2de72612d9971a6aa9f85c77c5f2313bf5592cfab2",
+  "projectId": "balcony",
+  "editVersion": "edit/v4",
+  "segmentIndex": 6,
+  "shotId": "S04b",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 152,
+    "length": 30,
+    "fps": 24
+  },
+  "timelineStartFrame": 692,
+  "outputSha256": "cccff15e2d72eb0c9f6bcc3fbc074bd2310161985ffb18f25d1c807fdec56774",
+  "schemaVersion": 1,
+  "id": "use_06846baf0d6ef455f9e7efbd10d528c9e3e38a946163706cd9ac88de251f9d16"
+}

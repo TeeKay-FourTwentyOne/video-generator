@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ee04919c1176464018d18ce7d1e0075e8eb922724958beddc8b03163dbe4ea51",
+  "sha256": "ee04919c1176464018d18ce7d1e0075e8eb922724958beddc8b03163dbe4ea51",
+  "bytes": 9084824,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night on a stone balcony; the camera is locked off, level with the young woman in the pale gold brocade gown who stands at the balustrade, her face lit by moonlight, warm candlelight through the sheer curtain behind her; vertical frame. She listens to the small white earbud in her left ear, touching it with two fingers, her eyes drifting down to the phone glowing on the balustrade beside her hand; then she looks down toward the courtyard below and says, in her ordinary speaking voice, warm and clear, not singing and not chanting, every word spoken plainly to the end of the sentence, exactly these words: \"Sweet voice below, the night keeps you the way a ring keeps a stone.\" Then she listens again, her hand still at her ear. She is the only person in the frame and the only one who speaks. The camera does not move. Sound: her spoken voice clearly, crickets, a fountain far below; no music, no singing. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_882b09dfcb32a747f08c1f070cc5704ab579f1388f8c8c9ba841c13a5678117e",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2428766015,
+      "createdAt": "2026-10-20T00:15:14.497Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "27f6de125e6217af12bb90739e1c2afb1b7b64b482985b46e577d2c9bfea33ec",
+          "bytes": 5959138,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "eb1d0761f263b3f83655a738ff4343a5fecdf426a318336e9011092078548759"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

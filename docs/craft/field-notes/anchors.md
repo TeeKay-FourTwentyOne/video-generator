@@ -135,3 +135,24 @@ the pair passed drift and read as dusk.
 **Apply:** generate the fuller state first and chain the removal to get the first frame; crop or compose around
 literalisms; grade for the hour locally when the generator ignores it.
 Source: claude-code · October · 2026-10-07
+
+### A courtyard plate, two in-scene character mediums and three references hold a whole balcony scene
+One 9:16 plate (no people), then a medium of each character generated in the set with the plate as the
+only reference, then every later anchor from plate plus one or both character mediums (three references):
+the wide, a new bored pose, a close-up, a two-shot and the empty return frame all held wardrobe, hair,
+earbud side and set geometry, and Veo accepted all six as first frames at the first attempt. The one
+liberty: a balcony medium put a stone parapet in front of the real balustrade; a six-second shot did not
+expose it.
+**Apply:** plate first, character mediums second, everything else third; keep the plate as a JPEG under
+8 MiB for the reference slot and spend the two remaining slots on the people in the shot.
+Source: claude-code · Balcony · 2026-10-19
+
+### A balcony close-up wants the rail in front; eyes off-lens needs a named target
+"Standing at the balustrade, looking toward the right side of the frame, not at the camera" returned a man standing in
+front of the balustrade (nothing under him) looking into the lens. "The camera is outside the balcony, level with it;
+the broad stone top of the balustrade crosses the lower part of the frame in front of him, his hands resting on it;
+his head turned to look at someone standing just out of frame beside him; his eyes are on her, never at the lens" came
+back right at the first try. A chained edit on a close-up ("use the reference as the exact base; change only this:
+the hand and the earbud are gone, the ear is bare, his chin lifted a little toward the balcony") held the framing and
+made a clean first frame for a retake.
+Source: claude-code · Balcony · 2026-10-19

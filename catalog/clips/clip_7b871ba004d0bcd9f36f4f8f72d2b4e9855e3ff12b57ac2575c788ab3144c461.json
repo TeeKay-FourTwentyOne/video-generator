@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7b871ba004d0bcd9f36f4f8f72d2b4e9855e3ff12b57ac2575c788ab3144c461",
+  "sha256": "7b871ba004d0bcd9f36f4f8f72d2b4e9855e3ff12b57ac2575c788ab3144c461",
+  "bytes": 6097500,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night on the stone balcony; a close-up of the young man in the wine-red doublet from the shoulders up, standing at the balustrade, the camera locked off level with him, the tall arched doorway with the sheer curtain and warm candlelight soft behind him, nothing in his ears, one dark curl fallen over his forehead; vertical frame. He is a little out of breath. He looks toward the right side of the frame, at her, and a shy grin spreads slowly across his face; he pushes the curl back off his forehead with one hand. He does not speak. He never looks at the camera. He is the only person in the frame. The camera does not move. Sound: crickets, a breeze in the curtain, a fountain far below; no music, no voices. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0301f968d54a920e3cf1aaf1881b11bd4ef5c9a66204e968682e61955adae7f6",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3060633821,
+      "createdAt": "2026-10-20T00:17:12.986Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d531c09923dfd7baedd36879fc0a880f9f91357eb15e16008dd09fc5413d41d2",
+          "bytes": 5829016,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "1f9010b437b08cd375074ccf73da5ccc69e8fc8bdc51046db0f8a7364d565421"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

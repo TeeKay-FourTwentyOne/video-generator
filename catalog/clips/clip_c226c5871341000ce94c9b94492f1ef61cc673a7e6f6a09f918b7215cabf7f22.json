@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c226c5871341000ce94c9b94492f1ef61cc673a7e6f6a09f918b7215cabf7f22",
+  "sha256": "c226c5871341000ce94c9b94492f1ef61cc673a7e6f6a09f918b7215cabf7f22",
+  "bytes": 6912359,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; the camera is locked off on the young man in the wine-red velvet doublet, from the waist up, his face lit from below by the phone in his left hand, a white earbud in his right ear; vertical frame. He looks up toward the balcony and speaks with great feeling, exactly these words: \"Were I the dew, I would consent to fall, if falling were toward you.\" Then he waits for her reply; his face goes blank and bored; he looks down at the phone and scrolls with his thumb. He is the only person in the frame and the only one who speaks. The camera does not move. Sound: his voice clearly, crickets, the fountain; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_cf95f39fa44fad561562bb0cc97ecdbbd1a9e92879926aeeebf46e1cc8e84e34",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3072175904,
+      "createdAt": "2026-10-19T19:07:20.135Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "8c6fd2123c155a4ebc4ddd57fb3ff269fd434a813ab982016c9015d1e1e8f1e8",
+          "bytes": 5676050,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "1f0f2e362775877f5187a15f54a62677ca33a6f9bd0a1b53706df171f2bcecba"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

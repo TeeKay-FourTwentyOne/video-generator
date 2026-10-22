@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f26be4fb9121a1b775dc408dc688ff5a024676ebd9275495cf1da7309d1975fe",
+  "sha256": "f26be4fb9121a1b775dc408dc688ff5a024676ebd9275495cf1da7309d1975fe",
+  "bytes": 16666,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 2.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 60,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "projectId": "perpetual-check",
+  "title": "PERPETUAL CHECK",
+  "kind": "film",
+  "status": "planned",
+  "statusNote": "Concept recorded 2026-10-19 from a development conversation; no workspace, reference imagery, generation or build authorization exists.",
+  "briefPath": "briefs/perpetual-check/brief.md",
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": []
+  },
+  "reviewEvents": [],
+  "legacyPaths": []
+}

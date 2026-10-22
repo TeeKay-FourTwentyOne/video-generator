@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e83a05f87e1833d03ac0586f0135279e0f8e1d6deb3c9f58da39e1749f9218b5",
+  "sha256": "e83a05f87e1833d03ac0586f0135279e0f8e1d6deb3c9f58da39e1749f9218b5",
+  "bytes": 4782447,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; a close-up of the young man in the wine-red doublet, from the shoulders up, in three-quarter profile facing the right side of the frame, the stone balcony soft and out of focus above him in the upper right, moonlight on his face; nothing in his ears, his hands out of frame; vertical frame. He is looking up at the balcony. Slowly a real smile comes to his face, and he gives himself one small nod, as if he has just decided something. He does not speak. He never looks at the camera. Nothing else moves. He is the only person in the frame. The camera does not move. Sound: crickets, the fountain, a breeze; no music, no voices. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9e7069b2f47a247848ed4422e3011972fd500ffae6c1055914794fa6b11c0a4f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3099872282,
+      "createdAt": "2026-10-20T00:29:22.438Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "eb82b5e4c5abeab298ce8b56da22d80eff3483c4df5f6792e9552701503dd607",
+          "bytes": 5753498,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b288d1b2c4529053382ae3b55b8e16671e48ca6e77ad505d60b62e3c87b6c775"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

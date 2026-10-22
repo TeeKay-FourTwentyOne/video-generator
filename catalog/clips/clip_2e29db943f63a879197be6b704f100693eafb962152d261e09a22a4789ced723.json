@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2e29db943f63a879197be6b704f100693eafb962152d261e09a22a4789ced723",
+  "sha256": "2e29db943f63a879197be6b704f100693eafb962152d261e09a22a4789ced723",
+  "bytes": 7700795,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "balcony"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night in the moonlit courtyard; the camera is locked off on the young man in the wine-red velvet doublet, from the waist up, his face lit from below by the phone in his left hand, a white earbud in his right ear, his right hand on his heart; vertical frame. He looks up toward the balcony and begins grandly, with great feeling, exactly these words: \"O lady of the lettuce...\" He stops, puzzled, his mouth still half open; he looks down at the glowing phone in his hand and reads it, frowning slightly; then he looks back up toward the balcony, ready to begin again. He says nothing else. He is the only person in the frame and the only one who speaks. The camera does not move. Sound: his voice clearly, crickets, the fountain; no music. No on-screen text, no captions, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0044c7dfca7cb3f83bd7dd0887a1bee3f057716e776473f177e595396f774c27",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 976650705,
+      "createdAt": "2026-10-19T20:18:07.828Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "8c6fd2123c155a4ebc4ddd57fb3ff269fd434a813ab982016c9015d1e1e8f1e8",
+          "bytes": 5676050,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "d609d906015469aea2dba6136ecf93d39c2028ff27352ddf04a606e095da6387"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
