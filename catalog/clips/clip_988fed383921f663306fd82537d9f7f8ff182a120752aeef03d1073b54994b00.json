@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_988fed383921f663306fd82537d9f7f8ff182a120752aeef03d1073b54994b00",
+  "sha256": "988fed383921f663306fd82537d9f7f8ff182a120752aeef03d1073b54994b00",
+  "bytes": 9590366,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "L5_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Inside a cold grey stone chapter house of a medieval abbey, tall windows, brothers in white habits seated along the wall. A standing older brother in a white habit holds a heavy open book out toward a young man in a rough brown habit with dark hair and a short beard, who stares at the page blankly; the older brother patiently turns the book the right way up in front of him, then taps a line of the text firmly twice with his forefinger and looks at the young man; the young man looks at the page, then at the brother, lost, and his mouth stays shut; the seated brothers watch, one shaking his head. Camera static, medium shot. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eabc8078c28737234897e782ef3c37943abe93a486f2eb3f9e206d7d54553f6e",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 4119964013,
+      "createdAt": "2026-10-15T18:55:22.343Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e805f58f31fe6e960b9ade61a6713513efafc9b492c64daf6961521ff4d585db",
+          "bytes": 4347434,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "78263c9a04d00e4ae5fa4cd58be93adb10f5e5ad75b3bd8cf09dbcb0774425a8"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fadae6ca19442f32232111529177b51d078e0d2fe3c28bf3c4a885b3b9f6bc93",
+  "sha256": "fadae6ca19442f32232111529177b51d078e0d2fe3c28bf3c4a885b3b9f6bc93",
+  "bytes": 21313079,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "W3_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Close-up of a bearded medieval jongleur in a hooded green-and-yellow tunic with small bells, inside a smoky tavern at night, lit from below by the flames of the torches he is juggling: torch flames pass up and down through the edges of the frame, sparks drifting, the crowd a dark blur behind. His eyes follow the torches, then he glances sideways to the right, off-frame, and a sly half-grin spreads; he looks back up at the torches, catches one, glances right again and winks, grinning wider, sweat shining on his brow, firelight flickering on his face. Camera static, shallow focus on his eyes. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_25cdfc0048e9ea2575812f58175a100cbc4a33d58bfcbde6c4d05f7e64c41101",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3897409183,
+      "createdAt": "2026-10-16T17:25:07.324Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c6fb0cf270b9b8fdfab1aa4cf89b8cd0c46c69e84872f7f7faa8d01d87e59a1d",
+          "bytes": 5491716,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "9bb0b12cf6ec151a88f4603e3be287094ea73e4fc9553bff6032fa6c58e0b2ab"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

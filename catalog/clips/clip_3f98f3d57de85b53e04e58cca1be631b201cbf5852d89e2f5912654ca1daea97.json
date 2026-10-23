@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3f98f3d57de85b53e04e58cca1be631b201cbf5852d89e2f5912654ca1daea97",
+  "sha256": "3f98f3d57de85b53e04e58cca1be631b201cbf5852d89e2f5912654ca1daea97",
+  "bytes": 23859566,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "96/1",
+    "frameCount": 384,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G58_v1_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fd7ef07b62a5e07ac1387438dead9255b6861d97fa306c79f54a2ebe81c27c2a",
+  "sha256": "fd7ef07b62a5e07ac1387438dead9255b6861d97fa306c79f54a2ebe81c27c2a",
+  "bytes": 18986917,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "T2a_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Dusk outside a thatched riverside inn, golden hour, a small crowd of villagers holding cups. A medieval jongleur in a ragged red-and-white striped tunic and a battered feathered felt hat stands on a trestle table with his scruffy stray dog: he claps twice and the dog rises onto its hind legs and walks along the table beside him; he kicks up into a handstand and walks on his hands while the dog hops under his legs; he comes down, bows with a flourish of the hat, and the dog bows too, front legs stretched out; the villagers laugh and point without clapping. Camera level, nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3c14aa0daaa3812c8b31fa590d7c6e0bc5f6adea1c01a5009b1e14941e5a6184",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3136859773,
+      "createdAt": "2026-10-15T18:55:07.747Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d9a630d566fe27a3a661fbcf99827c9c6739f7f7bfdfada30368e4ae17d010a7",
+          "bytes": 6396136,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c9dd5dc9ba44b00f97ba677ea91a00f7ef8000722a22ef2062103cb0c9484b07"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

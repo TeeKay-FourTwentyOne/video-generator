@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a7d4647c65985d7b57a8f635eb04dbf85821c1e0937c4ddf4693c494970e9f0c",
+  "sha256": "a7d4647c65985d7b57a8f635eb04dbf85821c1e0937c4ddf4693c494970e9f0c",
+  "bytes": 1534902,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 5.0625,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "16/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "K9.mp4",
+    "K9_s11.mp4",
+    "K9_s11_00001_.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

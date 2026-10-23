@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c31292c109e155fd0272d6ea63a2c9824373923d84fb2e4aeaa16318b9c38f1f",
+  "sha256": "c31292c109e155fd0272d6ea63a2c9824373923d84fb2e4aeaa16318b9c38f1f",
+  "bytes": 22292595,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "H1_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Extreme close-up in a candlelit stone crypt: a sweating shirtless medieval tumbler with dark tousled wet hair and a short dark beard, his face filling the frame, dances in place staring straight into the lens; he whips his head so the wet hair flies and sweat sprays, bares his teeth in a fierce exultant grin as if shouting, eyes blazing, throws his head back laughing, then snaps his gaze back to the lens breathing hard, a drop of sweat running down his brow; hard warm candlelight from one side, flames guttering behind. Camera static, shallow focus on the eyes. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b79687fce0a86e63f039001eae6a269b697656456fb42a7e5bff359eb4d0ab6f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1089789851,
+      "createdAt": "2026-10-15T06:15:31.631Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e99c6e05e8b28fc905a8aa997f2a7c7e2aaf101c05dbdecc99fd11d6474174cb",
+          "bytes": 6209947,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "69ea49b002110983bf33d24e33f14dec1a17473f76cdd3f51424f7f04e6cf011"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

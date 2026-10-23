@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ec07769dc8c2a2e0fba3913efd2e19ad5c01d59a6a3334501c2d4ebf56c5de54",
+  "sha256": "ec07769dc8c2a2e0fba3913efd2e19ad5c01d59a6a3334501c2d4ebf56c5de54",
+  "bytes": 48223752,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 36,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 864,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "E4_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "The shirtless, barefoot medieval jongleur in loose linen breeches finishes his dance alone in the low candlelit stone crypt before the altar with the painted statue of the Virgin and Child. He takes two quick steps and launches the highest leap of the dance with his arms and legs spread wide and his hair flying, lands hard, staggers a step, and sinks to his knees before the altar with his arms open and his head thrown back, chest heaving, sweat dripping onto the flagstones. The candle flames tremble. The camera holds the same medium-wide framing. Photoreal, cinematic film look, 35mm, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5dc1ebcfe943b1294555620acf35b189e895d4f44078efd52a00fc1cf21bd9de",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 790375411,
+      "createdAt": "2026-10-13T23:26:50.244Z",
+      "parameters": {
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "extend",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "input_video",
+          "sha256": "542ef13fb8917b3ddd83e731b1d9da379c6db775ce114130e2f7f7433954bd38",
+          "bytes": 18081129,
+          "durationSeconds": 29,
+          "mimeType": "video/mp4"
+        }
+      ],
+      "snapshotSha256": "a56d8b29b989ee0ac90f37b8af217cfbf7d5d05d3fbc311117d6cc01e4a073bf"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

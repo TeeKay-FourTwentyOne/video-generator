@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2dbfdb660efe9624b6b4d3c864fda5f8264d5a861b596cd36072e98746c409fa",
+  "sha256": "2dbfdb660efe9624b6b4d3c864fda5f8264d5a861b596cd36072e98746c409fa",
+  "bytes": 929920,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 5.0625,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "16/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G22.mp4",
+    "G22_s11.mp4",
+    "G22_s11_00001_.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

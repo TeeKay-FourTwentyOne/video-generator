@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e334e33c6077c65adda95f273a1ad243da4fb1a50b8d2fa2967a474e8f5e483a",
+  "sha256": "e334e33c6077c65adda95f273a1ad243da4fb1a50b8d2fa2967a474e8f5e483a",
+  "bytes": 14370779,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G50_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Morning at a dusty crossroads by a wayside stone cross. A medieval jongleur in a ragged red-and-blue parti-coloured tunic and a battered felt hat with a feather juggles five leather balls high in the air beside the road, grinning, performing to no one; he catches them all one by one, bows deeply to the empty road with a flourish of the hat, then plants his hands on the ground and kicks up into a steady handstand with his legs straight, the hat tumbling off; behind him a goatherd with a staff and three goats walks past without turning his head and out of frame; the scruffy dog sits in the dust watching and yawns. Camera level, nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f01d726f142f546ea728de0e9e9ad4bee9b3f7fa392f638466618d668b790ee2",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2795445696,
+      "createdAt": "2026-10-15T02:15:07.868Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "2bf352be7fba311c177b1d0dccdfe0d1553cb37c92b5436d559dfb54ccbc9a66",
+          "bytes": 6852596,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "19469ae14594b6190ffbad4e30d191bc2a9b5396ab1499b8171d61c710450bb4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

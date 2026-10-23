@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f1123284157e581a8172d3081e1339ece05384cec45e90df0ad0f90e253bd4d2",
+  "sha256": "f1123284157e581a8172d3081e1339ece05384cec45e90df0ad0f90e253bd4d2",
+  "bytes": 24777642,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G50b_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Midday in a crowded village market square of timber-framed houses and canvas-roofed stalls. A bareheaded medieval jongleur in a ragged red-and-blue parti-coloured tunic completes a backflip over the cobbles between the stalls, lands on his feet, throws his arms wide for applause that never comes, then turns a fast cartwheel and springs into a second backflip; around him nobody looks: two merchants keep haggling over cloth with their backs to him, a woman picks through turnips, a man on a cart keeps eating, a mother pulls her child away; the scruffy dog watches him. Camera level, nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f5c591ed0421800c60083743b868c28176f628a0fa75ee9d5f54031fe1625671",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1467431547,
+      "createdAt": "2026-10-15T02:19:42.792Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "b00258405ec3093cc11c5059cd977594cb6ec4099362911f8915bc689f478b30",
+          "bytes": 6800790,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "cc77277e48e648e7c97559c8db1be37156c8ccafafedf2828f6b69e39caed910"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

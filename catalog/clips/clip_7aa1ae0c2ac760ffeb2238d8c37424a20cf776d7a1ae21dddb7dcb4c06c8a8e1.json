@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7aa1ae0c2ac760ffeb2238d8c37424a20cf776d7a1ae21dddb7dcb4c06c8a8e1",
+  "sha256": "7aa1ae0c2ac760ffeb2238d8c37424a20cf776d7a1ae21dddb7dcb4c06c8a8e1",
+  "bytes": 23333300,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 48,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 1152,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "takes_D1-D6_preview.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

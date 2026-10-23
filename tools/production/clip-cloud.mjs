@@ -53,6 +53,8 @@ export function hashes(file) {
   finally { fs.closeSync(fd); }
   return { bytes, sha256: sha.digest('hex'), md5Hash: md5.digest('base64') };
 }
+/** Repository-relative POSIX path (safePath rejects backslashes on Windows). */
+const rel = (repo, file) => path.relative(repo, file).split(path.sep).join('/');
 export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = false } = {}) {
   const clips = listClips(repo), objects = [];
   let previousSet;
@@ -69,7 +71,7 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
     if (fs.existsSync(file)) {
       const h = hashes(file);
       if (h.sha256 !== clip.sha256 || h.bytes !== clip.bytes) throw new Error(`Local master checksum mismatch: ${clip.id}`);
-      objects.push({ name, localPath: path.relative(repo, file), ...h, clipId: clip.id, kind: 'media' });
+      objects.push({ name, localPath: rel(repo, file), ...h, clipId: clip.id, kind: 'media' });
     } else {
       const prior = previousSet?.objects?.find(o => o.name === name && o.kind === 'media' && o.clipId === clip.id);
       if (!prior || prior.sha256 !== clip.sha256 || prior.bytes !== clip.bytes || !/^\d+$/.test(prior.generation ?? ''))
@@ -84,7 +86,7 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
       const canonicalHash = snapshotHash(readSnapshot(file));
       if (`${canonicalHash}.json` !== name) throw new Error('Private snapshot filename disagrees with canonical evidence');
       // Snapshot IDs describe canonical JSON; the backup preserves exact file bytes separately.
-      objects.push({ name: `generations/${clip.id}/${h.sha256}.json`, localPath: path.relative(repo, file), ...h, kind: 'generation-snapshot', clipId: clip.id, snapshotSha256: canonicalHash });
+      objects.push({ name: `generations/${clip.id}/${h.sha256}.json`, localPath: rel(repo, file), ...h, kind: 'generation-snapshot', clipId: clip.id, snapshotSha256: canonicalHash });
     }
     const runs = listRuns(clip.id, repo);
     for (const ref of clip.analysisRefs ?? []) if (!runs.includes(ref.runId)) throw new Error('Public analysis reference has no retained private run');
@@ -97,7 +99,7 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
       }
       for (const a of [{ path: 'manifest.json' }, ...m.artifacts]) {
         const file = safePath(dir, a.path), h = hashes(file);
-        objects.push({ name: `${prefix}/${a.path}`, localPath: path.relative(repo, file), ...h, clipId: clip.id, runId,
+        objects.push({ name: `${prefix}/${a.path}`, localPath: rel(repo, file), ...h, clipId: clip.id, runId,
           artifactPath: a.path, kind: a.path === 'manifest.json' ? 'analysis-manifest' : 'analysis-artifact' });
       }
     }
@@ -106,7 +108,7 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
       if (!/^[a-f0-9]{64}\.json$/.test(name)) throw new Error('Unexpected private analysis review');
       const file = safePath(reviews, name), review = readJson(file), h = hashes(file);
       if (recordDigest(review) !== name.slice(0, -5) || review.clipId !== clip.id || !runs.includes(review.runId)) throw new Error('Analysis review identity mismatch');
-      objects.push({ name: `reviews/${clip.id}/${h.sha256}.json`, localPath: path.relative(repo, file), ...h,
+      objects.push({ name: `reviews/${clip.id}/${h.sha256}.json`, localPath: rel(repo, file), ...h,
         kind: 'analysis-review', clipId: clip.id, runId: review.runId, reviewSha256: name.slice(0, -5) });
     }
     if (index % 100 === 0) progress({ phase: 'hash-local', verified: index + 1, clips: clips.length });
@@ -123,7 +125,7 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
       const name = `support/${h.sha256}${path.extname(entry.path)}`, prior = objects.find(o => o.name === name);
       if (prior) {
         if (!prior.restorePaths.includes(entry.path)) prior.restorePaths.push(entry.path);
-      } else objects.push({ name, localPath: path.relative(repo, file), ...h, kind: 'analysis-support', role: entry.role, restorePaths: [entry.path] });
+      } else objects.push({ name, localPath: rel(repo, file), ...h, kind: 'analysis-support', role: entry.role, restorePaths: [entry.path] });
     }
     for (const o of objects.filter(o => o.restorePaths)) o.restorePaths.sort();
     verifySupportClosure(objects, repo);

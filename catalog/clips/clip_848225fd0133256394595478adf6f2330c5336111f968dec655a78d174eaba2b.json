@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_848225fd0133256394595478adf6f2330c5336111f968dec655a78d174eaba2b",
+  "sha256": "848225fd0133256394595478adf6f2330c5336111f968dec655a78d174eaba2b",
+  "bytes": 7198950,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G71_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Extreme close-up of a sweating medieval tumbler's face tilted up in a dark crypt, wet hair stuck to his forehead, candle flames blurred below, a cold blue radiance from above growing brighter on his face. His breath slows, his lips part, his eyes lift and widen as the blue light intensifies and a drop of sweat runs down his cheek. Camera static, shallow focus on the eyes. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b1352e79de8e7413f9f3075ab009512f38422225321fb0622f9441cbf92eb083",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2895727974,
+      "createdAt": "2026-10-15T02:15:50.313Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "eb84d757bfe66be6d578909ba6ab5b3779821855b047f1335d5cd3557458964f",
+          "bytes": 6921936,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "a53069ae4d77f6fda233f1e4832e237b4a28f204253d88bdac34289496b44c39"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

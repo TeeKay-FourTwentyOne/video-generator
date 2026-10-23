@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0ce7579d78aaaa7d76462dfdaa4d1553a4263623439dbeecf5f01c583fbaae30",
+  "sha256": "0ce7579d78aaaa7d76462dfdaa4d1553a4263623439dbeecf5f01c583fbaae30",
+  "bytes": 52329858,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "96/1",
+    "frameCount": 768,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G53_v1_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_73aaedea8636464d46fe1948fe4c1140bbe915f8ce50d6b1b26a0bd271273de8",
+  "sha256": "73aaedea8636464d46fe1948fe4c1140bbe915f8ce50d6b1b26a0bd271273de8",
+  "bytes": 1620694,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 5.0625,
+    "width": 576,
+    "height": 1024,
+    "frameRate": "16/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "kids_00001_.mp4"
+  ],
+  "collections": [
+    "lora-test"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

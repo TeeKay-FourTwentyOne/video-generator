@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_66674d41041825dadbedcaab52698a14efa5e597d90091c19fd6e4af3682890a",
+  "sha256": "66674d41041825dadbedcaab52698a14efa5e597d90091c19fd6e4af3682890a",
+  "bytes": 2318990,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 1.281006,
+    "width": 1920,
+    "height": 1088,
+    "frameRate": "32/1",
+    "frameCount": 41,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "take_cw_s11_x2_00001_.mp4"
+  ],
+  "collections": [
+    "patch"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

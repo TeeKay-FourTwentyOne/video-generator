@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29f1d550debd6b2825f62ccfa57df4919576c4de3d6689d1f7bf71c0d4130009",
+  "sha256": "29f1d550debd6b2825f62ccfa57df4919576c4de3d6689d1f7bf71c0d4130009",
+  "bytes": 1575931,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5.03125,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "32/1",
+    "frameCount": 161,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "D5n_s14_x2.mp4",
+    "D5n_s14_x2_00001_.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

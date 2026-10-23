@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4ae3fb3e09e234e463ac64f8284b07df5eca18c62abca395292631c140ac0fa0",
+  "sha256": "4ae3fb3e09e234e463ac64f8284b07df5eca18c62abca395292631c140ac0fa0",
+  "bytes": 10798227,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "R2_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Inside a small candlelit upstairs room at night: a young woman in a white linen chemise and a bearded man in an open white linen shirt sit close together on the edge of a straw bed, a jester's tunic with bells thrown over its foot, a casement window open to the moonlight at the left, a heavy plank door at the right. He glances at the door, springs up from the bed, snatches his boots from the floor and crosses to the open window; he swings one leg over the sill, looks back at her with a grin, and drops out of sight into the night; she rises and hurries to the window after him and leans out. Camera static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7adb61da1371c5564891c6b510c7f61248481586d19e90947f24536435fc90fe",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2436781153,
+      "createdAt": "2026-10-17T19:05:20.648Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "03eda034403d33f799d287593683a16faec6039566c27fc4eb30c083ac6cf3b2",
+          "bytes": 6111393,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3051616526d3782de566dc8688b985174c1efcf960f373b1bd87229edc0fe15a"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

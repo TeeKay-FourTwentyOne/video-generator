@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_381ea963ad084c09e3a9bdc4beb11f55b4a37ffcbec98c2381f12074b06d3681",
+  "sha256": "381ea963ad084c09e3a9bdc4beb11f55b4a37ffcbec98c2381f12074b06d3681",
+  "bytes": 38902034,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "96/1",
+    "frameCount": 768,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G62_v1_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

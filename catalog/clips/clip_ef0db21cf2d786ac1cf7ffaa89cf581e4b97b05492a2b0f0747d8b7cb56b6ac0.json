@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ef0db21cf2d786ac1cf7ffaa89cf581e4b97b05492a2b0f0747d8b7cb56b6ac0",
+  "sha256": "ef0db21cf2d786ac1cf7ffaa89cf581e4b97b05492a2b0f0747d8b7cb56b6ac0",
+  "bytes": 17843785,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "T3b_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Inside a crowded, smoky medieval tavern at night, low black beams, a roaring hearth. A jongleur in a hooded green-and-yellow tunic with a belt of small bells stands on a trestle table juggling three burning torches in a high cascade, the flames streaking into arcs, the bells of his belt flying, the crowd below roaring and raising tankards; he catches all three and spins once on one foot with the torches held out wide so the flames draw rings in the smoke, then throws them up into the cascade again; a thrown clay tankard flies past his head and he ducks it without dropping a torch, grinning. Firelight and smoke. Medium-wide, the camera nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b968fad6c9802116dab02e025d11bc81285f1ec1ec865d11758610ef65e04efb",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3094929513,
+      "createdAt": "2026-10-15T18:58:41.932Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "423832820d73c7e38529d533c8994c7c2310f5d9f6f47c256a41e5e1f9ec3f3b",
+          "bytes": 6081308,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "7a0fdb14b1998b1a5dda482516746278d94f4898b1dcf4081bab69533fc701a7"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

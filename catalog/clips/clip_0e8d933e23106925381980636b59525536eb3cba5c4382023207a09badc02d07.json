@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0e8d933e23106925381980636b59525536eb3cba5c4382023207a09badc02d07",
+  "sha256": "0e8d933e23106925381980636b59525536eb3cba5c4382023207a09badc02d07",
+  "bytes": 10491122,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "J1_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "In a candlelit stone crypt before an altar with a painted wooden statue of the Virgin and Child, a sweating shirtless medieval tumbler with dark tousled hair and a short dark beard, in loose linen breeches, juggles three burning candles in a high steady cascade, the flames streaming and wax flying; he catches them one by one, bows deeply to the statue with the candles in one hand, then throws a quick cartwheel across the flagstones holding the candles, lands on his feet and tosses the three candles back up into the cascade, laughing up at them. Camera level, static, shallow focus on him, the candle flames guttering on the altar behind. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0764ce5a591949d2c8af27406de2b937667fd9a88c68393ed82cbbd75809f468",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1930792360,
+      "createdAt": "2026-10-15T17:05:03.257Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e6b0e22297a2fdeee2cd7df001aeb3e5cdcc61e61e41a8d5b5505fb3863bb86b",
+          "bytes": 5518076,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "2a7e11c4dd9094e18479cba3e056e41008fd8ab8a9180a1cc6e36d6b5a34c5aa"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

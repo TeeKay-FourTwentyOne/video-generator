@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ea56c10570cf1481c07a61a5fe87587dd84228d14cbc3bc3baa0c3e2bf2c04e7",
+  "sha256": "ea56c10570cf1481c07a61a5fe87587dd84228d14cbc3bc3baa0c3e2bf2c04e7",
+  "bytes": 5735993,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "H7_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Medium close-up on a dusty medieval road in warm low sun: a jongleur in a ragged red-and-blue parti-coloured tunic and a battered felt hat looks straight into the lens with a wolfish grin, flips a leather ball up and catches it without looking, winks, then snatches the hat off and bows to the camera, popping back up with his teeth bared in a grin; dust in the air. Camera static, shallow focus. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c85d994d29b30c6de679e971fa5ae4305ba96b5e5bc551287ecb1095de1acaf3",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2740740379,
+      "createdAt": "2026-10-15T06:17:57.887Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4dd7743463224d1bd48fdb92a848fce2f902d8b8c7fe7151da56f01dce4d2313",
+          "bytes": 6273436,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "4827e9f4dc3c1d787c5229669f2bbb6f88902dcec62020717c6302dc801ace13"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

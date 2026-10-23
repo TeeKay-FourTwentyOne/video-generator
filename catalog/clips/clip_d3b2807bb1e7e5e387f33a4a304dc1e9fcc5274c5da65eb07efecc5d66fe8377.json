@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d3b2807bb1e7e5e387f33a4a304dc1e9fcc5274c5da65eb07efecc5d66fe8377",
+  "sha256": "d3b2807bb1e7e5e387f33a4a304dc1e9fcc5274c5da65eb07efecc5d66fe8377",
+  "bytes": 234125,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 2.041667,
+    "width": 832,
+    "height": 480,
+    "frameRate": "24/1",
+    "frameCount": 49,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "wan2.2-5b-t2v_00001_.mp4"
+  ],
+  "collections": [
+    "local-generation-tests"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

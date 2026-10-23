@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_48bf0180b71f9af8d20331aa6b31916673fb359a93b1b93eab86759f694cd027",
+  "sha256": "48bf0180b71f9af8d20331aa6b31916673fb359a93b1b93eab86759f694cd027",
+  "bytes": 15868140,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "96/1",
+    "frameCount": 384,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G71_v1_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_471eb306037e15a7307692119353e46ed610b7539b3ce5ced11cc873a2dd448c",
+  "sha256": "471eb306037e15a7307692119353e46ed610b7539b3ce5ced11cc873a2dd448c",
+  "bytes": 12725750,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "F4b_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night outside a tavern, torchlight. Two laughing men have dunked a jongleur in a wet, torn blue-and-ochre parti-coloured tunic head-first into a stone horse trough; he comes up gasping with water streaming from his hair, and they haul him out and throw him sideways onto the wet cobbles, where he lands hard on his hands and knees, rolls onto his back and pushes himself up on one elbow, looking back at the men; his felt hat lands beside him and his scruffy stray dog barks at the men while drinkers cheer from the doorway. He is the same man throughout: the lean jongleur with dark tousled wet hair and a short dark beard seen in the last frame, his face unchanged. Water drips and splashes in the torchlight. The camera level and nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_01a0c94538304a73e0ed37bbd3aa83123cc4d923a6d3e9496c18ecb63b62589b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3426733403,
+      "createdAt": "2026-10-19T19:39:58.130Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e15ec2319ad606fac833d89ccf48eced0716a9ea6ce29c57cd484a5e2bf435d0",
+          "bytes": 6481040,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "9261ced094ac46e7676fe18f6bfb41d584dc387bde55f45ba07b5b5041a3d7b6",
+          "bytes": 5962414,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c3d294b48561771d586701a8ef72aaa2a5593b8968e79d684c31db3d7e044518"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

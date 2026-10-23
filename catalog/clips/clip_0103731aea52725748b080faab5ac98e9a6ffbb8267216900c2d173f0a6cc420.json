@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0103731aea52725748b080faab5ac98e9a6ffbb8267216900c2d173f0a6cc420",
+  "sha256": "0103731aea52725748b080faab5ac98e9a6ffbb8267216900c2d173f0a6cc420",
+  "bytes": 1992239,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 5.0625,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "16/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G51a.mp4",
+    "G51a_s11.mp4",
+    "G51a_s11_00001_.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

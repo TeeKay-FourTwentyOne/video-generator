@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9c185779264dcd8af851adc2d9e1959e42cd9c5063581330dd5d7f8266157afd",
+  "sha256": "9c185779264dcd8af851adc2d9e1959e42cd9c5063581330dd5d7f8266157afd",
+  "bytes": 1327002,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5.03125,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "32/1",
+    "frameCount": 161,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "I1_s11_x2.mp4",
+    "I1_s11_x2_00001_.mp4",
+    "I1_x2.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

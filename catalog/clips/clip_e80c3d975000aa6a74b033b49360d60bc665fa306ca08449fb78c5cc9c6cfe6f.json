@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e80c3d975000aa6a74b033b49360d60bc665fa306ca08449fb78c5cc9c6cfe6f",
+  "sha256": "e80c3d975000aa6a74b033b49360d60bc665fa306ca08449fb78c5cc9c6cfe6f",
+  "bytes": 17436945,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 15,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 360,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "E1_v2.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "The shirtless, barefoot medieval jongleur in loose linen breeches continues his dance alone in the low candlelit stone crypt before the altar with the painted statue of the Virgin and Child. He rises from the crouch into a slow turn with his arms open, then a fast double spin with the breeches flaring wide and his hair flying, drops to one knee and bows his head to the statue, breathing hard, sweat catching the candlelight. The candle flames flicker. The camera holds the same medium-wide framing. Photoreal, cinematic film look, 35mm, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_96a6fdbe1e19ad4d8836ccd2d1826b9dc36527685a236e7f8386cdbb37da6778",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3146117893,
+      "createdAt": "2026-10-13T23:17:50.028Z",
+      "parameters": {
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "extend",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "input_video",
+          "sha256": "a3a10002e4c3f8bd71a537f5be1a79e6d73e49bd963771661da349c30d4b64c5",
+          "bytes": 8474949,
+          "durationSeconds": 8,
+          "mimeType": "video/mp4"
+        }
+      ],
+      "snapshotSha256": "9b86e46e2e8eea33f5caa9f959bbc6fbf3cb699ed0b82840c57b37d9e701436c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

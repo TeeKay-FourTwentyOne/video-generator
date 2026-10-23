@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7e13c60c4871a6be65422147d534d6ba5d5843e4f41485184b442287a5f78631",
+  "sha256": "7e13c60c4871a6be65422147d534d6ba5d5843e4f41485184b442287a5f78631",
+  "bytes": 15921850,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "T4a_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night, cold rain in an empty town square under one guttering torch, wet cobbles shining, a shuttered house and a stone well. A soaked medieval jongleur in a torn blue-and-ochre parti-coloured tunic beats a small drum slung at his hip with one stick and blows a three-hole pipe, dancing a fast hopping jig in the rain with high kicks and a spin, performing to nobody; his scruffy dog sits hunched in the rain watching; he ends with a stamp and a bow to the empty square, rain streaming off his hair. Wide shot, camera static, cold blue-grey light with the orange torch. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_81c05558ec8a2b6d94b2f50cb5a3751b0a3e152a5f32247b7f7aae89112e07b8",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 354756040,
+      "createdAt": "2026-10-15T18:55:18.315Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4edcbf02fc2316662d80d5658e93d0120072f4f89ecf1fa3c2b3cb67e55469ec",
+          "bytes": 3490881,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "16ab3ab92c3598bd200009d7a933fb274647c9ea9a6cfe6c171af640063a710c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

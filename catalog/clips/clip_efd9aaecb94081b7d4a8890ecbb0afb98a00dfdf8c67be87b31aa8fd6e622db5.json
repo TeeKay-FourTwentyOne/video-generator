@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_efd9aaecb94081b7d4a8890ecbb0afb98a00dfdf8c67be87b31aa8fd6e622db5",
+  "sha256": "efd9aaecb94081b7d4a8890ecbb0afb98a00dfdf8c67be87b31aa8fd6e622db5",
+  "bytes": 27304520,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "D2_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A shirtless, barefoot medieval jongleur in loose linen breeches performs alone in a low candlelit stone crypt before an altar with a painted statue of the Virgin and Child. He walks forward on his hands across the wet flagstones toward the altar, legs straight up and toes pointed, then arches over backward into a bridge, kicks through and springs to his feet with his arms spread wide toward the statue, breathing hard, sweat dripping. Candle flames in the foreground flicker out of focus. Low, static camera. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_bccb1d12f722a1375382a51105e25626e4725907f653f9127bae55e301d4b444",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1459298504,
+      "createdAt": "2026-10-13T23:10:00.759Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "75de9d3b4504f687b985d64a5d66b7e2354032116070c4d6313833956173c76b",
+          "bytes": 7685926,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b56330f660a0b24a24dcbc34c42397169c7a636ed13a1b012929d65230e6d781"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

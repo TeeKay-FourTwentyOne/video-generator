@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9084b4a415eb915b4ac4e7a17e62d57ba09369627d06b80a3c4346fb16a91a43",
+  "sha256": "9084b4a415eb915b4ac4e7a17e62d57ba09369627d06b80a3c4346fb16a91a43",
+  "bytes": 11213096,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "H8_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Close-up of dark ditch water at a stone abbey gate in grey misty dawn: three wooden juggling clubs and five leather balls splash into the water one after another in bursts of spray, a small drum bobbing, ripples spreading, reeds trembling; at the top of the frame a muddy bare foot and a frayed hem walk away. Camera static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_169bff8a563d0d770498e386b605840721a634a9a7c6b9cf3817231f4edc11d1",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2046798204,
+      "createdAt": "2026-10-15T06:18:01.829Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c11d1be8aa93d335678e0b5230a6713be8df77de7910a671510cda2f18a4bf5f",
+          "bytes": 6602833,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "81f75da1bbc6857c5b44c5917fab66b34050e4231559ccb4129fcfb6649ec096"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

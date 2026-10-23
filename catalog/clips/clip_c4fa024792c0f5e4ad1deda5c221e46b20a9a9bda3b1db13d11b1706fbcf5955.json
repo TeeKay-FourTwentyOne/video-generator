@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c4fa024792c0f5e4ad1deda5c221e46b20a9a9bda3b1db13d11b1706fbcf5955",
+  "sha256": "c4fa024792c0f5e4ad1deda5c221e46b20a9a9bda3b1db13d11b1706fbcf5955",
+  "bytes": 896224,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 5.0625,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "16/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G61w.mp4",
+    "G61w_s12.mp4",
+    "G61w_s12_00001_.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

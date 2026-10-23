@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fccd1a6a1e2fe68224f43173e6239a916a0a2c4c59cb4f59436a4ce50c3845d2",
+  "sha256": "fccd1a6a1e2fe68224f43173e6239a916a0a2c4c59cb4f59436a4ce50c3845d2",
+  "bytes": 13775287,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "F1_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night, rain and torchlight in a muddy street outside a timber-framed medieval tavern. A jongleur in a ragged parti-coloured tunic and hose is shoved out of the lit doorway by a burly innkeeper; he stumbles two steps forward, falls hard onto his hands and knees in the mud, his juggling balls and a small drum scatter and roll away, then he rolls onto his back and pushes himself up on one elbow, looking back at the drunk faces jeering from the doorway. A wet stray dog trots to him and barks at the men. Rain drifts through the torchlight. Low angle, the camera level and nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c486ff9e848b5c1abd899e96f516816b2f67a2193d99ab1aa3377cea484810f4",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3661963319,
+      "createdAt": "2026-10-14T00:46:12.066Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e1223316759b42ef5b7648311706579c08de11969fc887ee25b8709a4e9a5631",
+          "bytes": 6610052,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c2ec005ef85a993e2ae9dc94cdaacbe174b4c37ce061412e24ffc93321740806"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

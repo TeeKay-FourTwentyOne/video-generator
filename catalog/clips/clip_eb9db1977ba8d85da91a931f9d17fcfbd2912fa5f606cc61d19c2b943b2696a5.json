@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_eb9db1977ba8d85da91a931f9d17fcfbd2912fa5f606cc61d19c2b943b2696a5",
+  "sha256": "eb9db1977ba8d85da91a931f9d17fcfbd2912fa5f606cc61d19c2b943b2696a5",
+  "bytes": 6876885,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "H6_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Close-up at a dusty medieval crossroads in warm morning light: a scruffy stray mutt looks straight into the lens, cocks its head, one ear up, then barks twice, teeth showing, then pants happily with its tongue out; dust drifts in the backlight, the stone cross soft behind. Camera static, shallow focus. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_70cbc70457f51579d33669ea3e030edfead5f4d78bcca3e1013e98c86cc6a24a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3171790127,
+      "createdAt": "2026-10-15T06:17:53.706Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "0a357f302c1d8d5d1a3d47248a2aa7d8c5283aeef2133282d4099bb25d8377f8",
+          "bytes": 6693871,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "0d2cee26bb89e8b34de56eb7a2e05342da0324c1446b15e758dd9cf5f405b648"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

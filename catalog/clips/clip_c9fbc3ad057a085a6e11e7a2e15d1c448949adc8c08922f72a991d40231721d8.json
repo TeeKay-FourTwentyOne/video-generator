@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c9fbc3ad057a085a6e11e7a2e15d1c448949adc8c08922f72a991d40231721d8",
+  "sha256": "c9fbc3ad057a085a6e11e7a2e15d1c448949adc8c08922f72a991d40231721d8",
+  "bytes": 16067583,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5.03125,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "128/1",
+    "frameCount": 644,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G27_x2_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

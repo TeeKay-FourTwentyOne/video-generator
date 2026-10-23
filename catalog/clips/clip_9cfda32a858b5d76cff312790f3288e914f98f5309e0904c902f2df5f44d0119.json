@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9cfda32a858b5d76cff312790f3288e914f98f5309e0904c902f2df5f44d0119",
+  "sha256": "9cfda32a858b5d76cff312790f3288e914f98f5309e0904c902f2df5f44d0119",
+  "bytes": 6091257,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "H3_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Directly overhead, looking straight down from the vault of a candlelit stone crypt: a shirtless barefoot medieval tumbler in loose linen breeches spins on one foot at the centre of a ring of candles, arms flung out, faster and faster, his shadow wheeling over the worn flagstones, then drops into a crouch and springs up again; the candle flames lean with the wind of him. Camera static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b1b9df2e58ec7f417aa261619cbef175b4abd68b1caf820025ee392bbd8de5ce",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 922790602,
+      "createdAt": "2026-10-15T06:15:39.248Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e62638ee074aa9c074046e7212710eb51d74eaf56e714ef514dcb7176b8bd22e",
+          "bytes": 6428104,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "22da3f6b96a53c95088472ff3c30615e5c08d965f9f9ab2d697f184a391cf1ec"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

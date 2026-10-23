@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f6370f0bbfb4d6a87e3592b55643c55436d54f888268a91ede2c9524025a5845",
+  "sha256": "f6370f0bbfb4d6a87e3592b55643c55436d54f888268a91ede2c9524025a5845",
+  "bytes": 2248447,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 1.3125,
+    "width": 1920,
+    "height": 1088,
+    "frameRate": "16/1",
+    "frameCount": 21,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "take_cw_s12_00001_.mp4"
+  ],
+  "collections": [
+    "patch"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

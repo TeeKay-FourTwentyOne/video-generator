@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2be0a280f235c5180b96addaa4853a2cd95a3922002ce9cfb5799ee7a0dd877b",
+  "sha256": "2be0a280f235c5180b96addaa4853a2cd95a3922002ce9cfb5799ee7a0dd877b",
+  "bytes": 180721193,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 36,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "96/1",
+    "frameCount": 3456,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "hero_take_v3_36s_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

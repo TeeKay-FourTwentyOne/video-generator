@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_2f1c6b1030709fbae6d79f75b1c34dffa27ab9661c5cf7a4458aad7b11c10806",
+  "sha256": "2f1c6b1030709fbae6d79f75b1c34dffa27ab9661c5cf7a4458aad7b11c10806",
+  "bytes": 22777776,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 36,
+    "width": 1280,
+    "height": 720,
+    "frameRate": "24/1",
+    "frameCount": 864,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "hero_take_v1_preview_with_song.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

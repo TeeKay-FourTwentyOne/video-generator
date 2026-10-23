@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7c6d6ddcfb03c2b3e4a63fb7ebebb3c1066129558cec3c477d6b392534d38b5d",
+  "sha256": "7c6d6ddcfb03c2b3e4a63fb7ebebb3c1066129558cec3c477d6b392534d38b5d",
+  "bytes": 16857668,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G62_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "In a low candlelit stone crypt, an older tonsured monk with a grey beard in a white habit and black scapular crouches hidden behind old wooden chests and barrels, peering over a barrel toward the candlelit altar with its painted statue of the Virgin and Child in the background. His astonished look fades to disappointment; he lowers his eyes, shakes his head slightly and begins to rise to leave, one hand on the barrel; then a cold blue light rises from the altar and floods the crypt, growing brighter until it bathes his face; he freezes, turns back and stares in awe, mouth open, eyes wide, the blue light shining in them. Camera static, close medium shot. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_03b7807e7e9df6e87f16e681dd28c4007d18a6d8bfe2f2e917426e39e5d14388",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 251323369,
+      "createdAt": "2026-10-15T02:15:39.601Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "40f914a283acb657c9393405dc1786324b86ba38dbb19246e830431964a5929c",
+          "bytes": 6370493,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "19ece24bbccd85ea0c7ef5e94d34d52d95ded1e273ab850cb8abc14bede20315"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

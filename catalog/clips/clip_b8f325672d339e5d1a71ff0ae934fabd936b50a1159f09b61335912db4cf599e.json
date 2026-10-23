@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b8f325672d339e5d1a71ff0ae934fabd936b50a1159f09b61335912db4cf599e",
+  "sha256": "b8f325672d339e5d1a71ff0ae934fabd936b50a1159f09b61335912db4cf599e",
+  "bytes": 37388099,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5.03125,
+    "width": 2304,
+    "height": 4096,
+    "frameRate": "32/1",
+    "frameCount": 161,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "S2_x2_up.mp4"
+  ],
+  "collections": [
+    "raccoon-diet"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation",
+    "upscaled"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

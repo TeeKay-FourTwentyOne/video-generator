@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_11d10d1e055258c7dd08ab4772404099f6684f2cc783a88a02bcfefaec3d0ea9",
+  "sha256": "11d10d1e055258c7dd08ab4772404099f6684f2cc783a88a02bcfefaec3d0ea9",
+  "bytes": 5477863,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 5.03125,
+    "width": 1024,
+    "height": 576,
+    "frameRate": "128/1",
+    "frameCount": 644,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G78_x2_x4.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "frame-interpolated",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

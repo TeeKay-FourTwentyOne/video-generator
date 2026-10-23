@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4fbf22334dacf71cf2aa595bf562694860f798da9f6dd69af1e87d5815c70bf7",
+  "sha256": "4fbf22334dacf71cf2aa595bf562694860f798da9f6dd69af1e87d5815c70bf7",
+  "bytes": 11650677,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "MK1_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Inside a candlelit stone crypt, an older monk in a white habit with a black scapular crouches behind cobwebbed barrels and chests, a plain wall of rough limestone in shadow behind him, warm candlelight on his face from the front. He peers over the barrels toward the camera, eyes wide, watching something astonishing; his hand rises slowly to his mouth in shock; then he crosses himself; then his eyes drop, his face falls, disappointed and troubled, and he begins to rise from behind the barrels to leave. Camera static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_24f72b7d58c4a239662894105132321ad40d21b1e4955dd0ab964586d9dff170",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1739326244,
+      "createdAt": "2026-10-18T01:04:19.055Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "ab4fbe3fe5c9d4f61dba18de4f3867c01ed59f922b63754f2b02b1fdd549fe23",
+          "bytes": 6940956,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f1867a228184cd6d80ab7fa5a980047a9a9c95b6792c7d8a5889b8240c9bf46c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4fac63b3fe3d56e8f18ce3e92264f69a21adda826ea5cdd53aab54be206735e3",
+  "sha256": "4fac63b3fe3d56e8f18ce3e92264f69a21adda826ea5cdd53aab54be206735e3",
+  "bytes": 10443961,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "G58_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Grey misty dawn beside the ditch at the gate of a stone abbey. A medieval jongleur in a wet, torn blue-and-ochre parti-coloured tunic looks down at the five leather balls, three wooden juggling clubs and the small drum held against his chest, then tosses them all into the ditch with one sweep of his arms, the clubs and balls scattering into the water and the drum rolling, and turns to walk away toward the gatehouse without looking back; his scruffy dog looks up at him, then sniffs toward the ditch. Camera level, static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3a6416fb492da3a1b28da37b415b510eba397cc5e8b22d9a6a8ea92ac88e190b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 44785071,
+      "createdAt": "2026-10-15T02:15:29.594Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d8e2976b4c3e41ac57803b4951e2917ae913becc806af646c6cbd27a5966581b",
+          "bytes": 6572387,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "fdc7e75355b8673a4edc34f35be297ec9c1b40b6eb8d0f5eb5ab3fecbd5ed8ef"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

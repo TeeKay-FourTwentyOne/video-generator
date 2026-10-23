@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_babaadee71bafccfd7e8d1426a30dbf08a12c8082c9fa9ecaf09ea67b516fa9c",
+  "sha256": "babaadee71bafccfd7e8d1426a30dbf08a12c8082c9fa9ecaf09ea67b516fa9c",
+  "bytes": 1186932,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 5.0625,
+    "width": 576,
+    "height": 1024,
+    "frameRate": "16/1",
+    "frameCount": 81,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "cartoon_00001_.mp4"
+  ],
+  "collections": [
+    "lora-test"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "comfyui-output",
+    "local-generation"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

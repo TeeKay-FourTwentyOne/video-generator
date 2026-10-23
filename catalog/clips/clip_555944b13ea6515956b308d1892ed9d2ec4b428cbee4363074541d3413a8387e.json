@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_555944b13ea6515956b308d1892ed9d2ec4b428cbee4363074541d3413a8387e",
+  "sha256": "555944b13ea6515956b308d1892ed9d2ec4b428cbee4363074541d3413a8387e",
+  "bytes": 15688850,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "F4_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Night outside a tavern, torchlight. Two laughing men have dunked a jongleur in a wet, torn blue-and-ochre parti-coloured tunic head-first into a stone horse trough; he comes up gasping with water streaming from his hair, and they haul him out and throw him sideways onto the wet cobbles, where he lands hard on his hands and knees, rolls onto his back and pushes himself up on one elbow, looking back at the men; his felt hat lands beside him and his scruffy stray dog barks at the men while drinkers cheer from the doorway. Water drips and splashes in the torchlight. The camera level and nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3dcefca7b06836cb2044fe04a93b1f4b5aa42977e3cabf03ad050da2053e8f0b",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 83121899,
+      "createdAt": "2026-10-14T00:46:46.329Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e15ec2319ad606fac833d89ccf48eced0716a9ea6ce29c57cd484a5e2bf435d0",
+          "bytes": 6481040,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "cbe777b48218ac232c083971f48ef65308d747ca9764ea78079ce61bb0cea1c9"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

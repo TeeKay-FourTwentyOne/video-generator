@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_052354832811b989b0f965de8f57c9a63dce5fd2541540990b5286c55226294b",
+  "sha256": "052354832811b989b0f965de8f57c9a63dce5fd2541540990b5286c55226294b",
+  "bytes": 7289413,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "H5_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Extreme close-up in a candlelit stone crypt: a medieval tumbler's hands slap down flat on worn flagstones as he throws himself into a handstand, fingers spread, knuckles taut, dust puffing from the stone, drops of sweat falling and splashing, his inverted face and flying wet hair blurred above; then the hands push off and leave the frame. Camera static, shallow focus on the hands. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ef1cbebf7bf1d1528793f62fabb193b30aa0595d55fe37e79bd5cf9c622823ec",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2564648673,
+      "createdAt": "2026-10-15T06:17:49.971Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "43665d9d0b039095649bedaed27c3d785ce3e56e37d8ffcf6fee80b2b65b5c50",
+          "bytes": 6396704,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "2b1daba2ef67b8e5af460a3f814db0e190399ea06066a4f2ae9927470fd2064d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

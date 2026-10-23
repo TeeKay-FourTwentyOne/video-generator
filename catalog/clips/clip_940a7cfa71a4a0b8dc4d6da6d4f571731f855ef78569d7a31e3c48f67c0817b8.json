@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_940a7cfa71a4a0b8dc4d6da6d4f571731f855ef78569d7a31e3c48f67c0817b8",
+  "sha256": "940a7cfa71a4a0b8dc4d6da6d4f571731f855ef78569d7a31e3c48f67c0817b8",
+  "bytes": 9053245,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "F5_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "In the stone choir of a Romanesque abbey church, cold grey window light. An older priest in a white habit, face twisted with anger, hurls a lay brother in a brown habit down onto the stone floor between the two rows of choir stalls; the young man lands hard on his hands and knees, the heavy psalter skids away across the flagstones with its pages fanning, then he rolls onto his back and pushes himself up on one elbow, looking up at the priest; the brothers in the stalls rise and stare, one hiding a smile. Long shadows, dust in the light. The camera level and nearly static. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_43f1499c08a330fb9bbd36325066cc149d5ba701e55e46f4366db043e4f06023",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1634364829,
+      "createdAt": "2026-10-14T00:46:56.583Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "ef351d6440d9dea2ada3c49622115099d3d15ad604e766e3c1e76c4abac49092",
+          "bytes": 6575753,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "0b957231c444a05bff388a10e02cbe2e0e827d69f46651c1627b598042769d9c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

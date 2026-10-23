@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_09bfb2d4517f676d620f24a25434a4e046c20b8857a4af7531aab2729dafbcf9",
+  "sha256": "09bfb2d4517f676d620f24a25434a4e046c20b8857a4af7531aab2729dafbcf9",
+  "bytes": 44520466,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 29,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 696,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "hero_take_part1-4_29s.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

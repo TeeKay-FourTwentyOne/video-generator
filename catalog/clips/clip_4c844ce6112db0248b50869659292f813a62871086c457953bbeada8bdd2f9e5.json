@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4c844ce6112db0248b50869659292f813a62871086c457953bbeada8bdd2f9e5",
+  "sha256": "4c844ce6112db0248b50869659292f813a62871086c457953bbeada8bdd2f9e5",
+  "bytes": 9094453,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "J2_v1.mp4"
+  ],
+  "collections": [
+    "some-mutts"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "High angle from behind the shoulder of a painted wooden Virgin statue, looking down over altar candles into a candlelit stone crypt. A sweating shirtless medieval tumbler with dark tousled hair and a short dark beard, in loose linen breeches, looks up toward the camera juggling three burning candles in a tall cascade, the flames streaming toward the lens; he throws all three high at once, drops into a forward roll across the flagstones, comes up on his knees and catches them one, two, three, then raises them up toward the statue, laughing, chest heaving. Camera static, shallow focus. Photoreal, cinematic film look, 35mm, shallow depth of field, film grain. No text, no captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5e794f08a0d994f9c13a70e050c5d8bd3578df84af13032c5dbf8c59cbf590f9",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2704638394,
+      "createdAt": "2026-10-15T18:55:37.208Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "0df883c7c314d0141c4a0d0bb45c1b5a44a44da16a18786c950705039fa0588e",
+          "bytes": 6056330,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "6ff70ec6e1e176acfca96bf4dd4b56549e7ffae2d80ea329d8f3d4557d8e5323"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-generation",
+    "veo"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
