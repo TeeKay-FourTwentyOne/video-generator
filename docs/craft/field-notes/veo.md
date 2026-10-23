@@ -315,3 +315,12 @@ bottom. The push itself was a gift (it ends on his face mid-line). A bottom-anch
 segment plus a soft shade over the bottom sixth hid the band. `crop` cannot do this: its w/h expressions are evaluated
 once, so a per-frame zoom written with `n` silently renders no zoom; `zoompan` with `in` is the per-frame tool.
 Source: claude-code · Balcony · 2026-10-19
+
+### Device dialogue can animate the visible speaker
+In Perpetual Check, an earbud whisper and a phone's single-word verdict both came
+with early mouth movement on the character in frame. Later ranges held the face
+quietly. The edit used those ranges and placed the extracted device voices over
+them, while keeping the final on-camera line synchronized to its native picture.
+**Apply:** inspect the mouth during device speech. When the take contains a clean
+quiet range, separate the sound cue from the picture before buying another take.
+Source: Codex · Perpetual Check · 2026-10-22

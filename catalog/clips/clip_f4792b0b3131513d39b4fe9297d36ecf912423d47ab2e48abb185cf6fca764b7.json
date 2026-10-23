@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f4792b0b3131513d39b4fe9297d36ecf912423d47ab2e48abb185cf6fca764b7",
+  "sha256": "f4792b0b3131513d39b4fe9297d36ecf912423d47ab2e48abb185cf6fca764b7",
+  "bytes": 8997581,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nThe knight listens, eyes down-right. A small private closed-mouth smile, then a glance toward the board. Keep the one white earbud fixed in his ear; hands remain outside frame. Only his head, shoulders and gentle mail/cloth movement. Sound: surf in the distance. A tiny dry electronic female device voice, from the earbud, quietly says exactly \"Knight to f3.\" The man does not speak, hum or move his lips; his lips remain closed throughout. No other words.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_5264bd6503ef8e784d2b60007a60e76923ff9e7b96db100214657bad90811076",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2000717644,
+      "createdAt": "2026-10-22T19:27:02.595Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c8eecf54b5e2be5177d51f9a64e56db88c66a381c4ec055dcf75ca66559c5010",
+          "bytes": 1388014,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ccfe8422d2af6b0677236ee5961c2f2a256c342806d98e24e789df1591e15fab"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

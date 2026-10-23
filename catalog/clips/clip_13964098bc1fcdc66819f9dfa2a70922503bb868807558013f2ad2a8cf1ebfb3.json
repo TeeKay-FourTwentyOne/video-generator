@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_13964098bc1fcdc66819f9dfa2a70922503bb868807558013f2ad2a8cf1ebfb3",
+  "sha256": "13964098bc1fcdc66819f9dfa2a70922503bb868807558013f2ad2a8cf1ebfb3",
+  "bytes": 8117309,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nLocked camera, two seated adults remain nearly still with closed mouths, changing surf and light robe movement only. No piece moves or hands crossing the chessboard. No new objects or extra people. This is real-time footage of one evening, not a timelapse.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e02473efe9bed744e2c60b57bfcd1dd903e0a50b8bb8c3540529b5bf4890b928",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": "2026-10-22T19:32:26.936Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d6a6f848038b4b6e86ced37c9bbdf3c9f3e3ec85f092a34e847654ba5d94c65f",
+          "bytes": 1389228,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "914aa92297babf8bf80cb3fba494df0d0754cfd3cfd53fe7f8649e13d68a0058"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

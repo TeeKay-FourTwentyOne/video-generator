@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_833c3730597aef278157552c928c046918634b168ac2b583a18a04e838d6fd8d",
+  "projectId": "perpetual-check",
+  "editVersion": "edit/v1",
+  "segmentIndex": 4,
+  "shotId": "S05",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 24,
+    "length": 48,
+    "fps": 24
+  },
+  "timelineStartFrame": 360,
+  "outputSha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+  "schemaVersion": 1,
+  "id": "use_30617ed26d2730c0cd5ca3c41d593442c81d1a36d47c2b8646f26c4dd644d23a"
+}

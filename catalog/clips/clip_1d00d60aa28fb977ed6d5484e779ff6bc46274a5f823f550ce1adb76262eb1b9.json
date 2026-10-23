@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1d00d60aa28fb977ed6d5484e779ff6bc46274a5f823f550ce1adb76262eb1b9",
+  "sha256": "1d00d60aa28fb977ed6d5484e779ff6bc46274a5f823f550ce1adb76262eb1b9",
+  "bytes": 7686728,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nHold the locked composition. The knight makes one small finishing hand withdrawal from the board in the first two seconds; the piece was already placed. Death barely moves. Gentle robe motion and natural breaking surf. Both mouths remain closed. Sound: broad restrained surf, light wind, one dry wooden chess-piece click at 1.5 seconds. No voices.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f86b029bf646a014b7ef283b7e1c6e130d0d22c7093aafcf6774bdae0ee3a874",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": "2026-10-22T19:24:39.840Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "0a1710f62df3676d81d8c1c15f7c28225989385c212f3a16a14fbc7ff2720b16",
+          "bytes": 1392807,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "af3a6ac73dbca1a1bf7412e95b23ad6ec8fe9afe45a1c2d316a80fe90e7fd2f2"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

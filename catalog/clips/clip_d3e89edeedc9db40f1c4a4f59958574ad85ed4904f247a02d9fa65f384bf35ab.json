@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d3e89edeedc9db40f1c4a4f59958574ad85ed4904f247a02d9fa65f384bf35ab",
+  "sha256": "d3e89edeedc9db40f1c4a4f59958574ad85ed4904f247a02d9fa65f384bf35ab",
+  "bytes": 5377009,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nDeath looks toward the old knight to screen-left, a tiny tired and companionable expression. Beginning around 1.5 seconds, he says exactly \"Shall we call it?\" in an ordinary quiet low male speaking voice: dry, gently collegial, never ominous or theatrical. Hold the listening pause afterward. The foreground old knight is silent. No other words, singing, music, subtitles or laughter. Natural low surf and wind. No reaching or standing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_551704e96d22bc1d1379e2b5412faa11b8617e61cb508c90ddd94473c57ee02f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2811586565,
+      "createdAt": "2026-10-22T19:41:08.750Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7fcbd243c5911b8f390985520cbcf2535179fe43a40a1d1cd6fd87358b19c5d2",
+          "bytes": 1246287,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "8493a3b26ccc0cd7ef463d906e1ae5d96ac588aab0b05aea6375ff64b76c4e90"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fa797b5b156b48b9f60722b2bf74389970dfe9505cfa56857177e06632be77f0",
+  "sha256": "fa797b5b156b48b9f60722b2bf74389970dfe9505cfa56857177e06632be77f0",
+  "bytes": 46274776,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Locked camera, preserve the empty grey shoreline and close framing in the starting image. The already curling moderate wave collapses naturally into churning white foam during the first two seconds; further ordinary waves roll through behind it. The foam rushes across wet dark sand and recedes. Real-time speed, believable gravity, crisp textured spray, natural water continuity. No camera motion, slow motion or timelapse. Only sea, foam and sand throughout: zero people, figures, faces, furniture, chess pieces, buildings, boats, animals or text. Sound: one natural broad close surf crash, then the foam's hiss and retreat. No voices, words or music. This is a brief breath of the coast between two human age states.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_38d958610131ed2baddc931ed0d577669fe856cac1af29edfd4e886f8a60922d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3784895499,
+      "createdAt": "2026-10-22T20:55:42.352Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "560950def831270843d45a2f8269f55b30a6bd02f9701d49c62d0db719e2b377",
+          "bytes": 1996610,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "9e6e645975613ebb8d3fea0c4f8df5c36c149b0cc522aed545bec542e7df7434"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

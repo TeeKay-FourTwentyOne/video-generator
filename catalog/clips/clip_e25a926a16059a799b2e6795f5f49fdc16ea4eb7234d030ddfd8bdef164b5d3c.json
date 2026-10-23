@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e25a926a16059a799b2e6795f5f49fdc16ea4eb7234d030ddfd8bdef164b5d3c",
+  "sha256": "e25a926a16059a799b2e6795f5f49fdc16ea4eb7234d030ddfd8bdef164b5d3c",
+  "bytes": 5600028,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nHold almost still. The old knight lets out a small silent breath and lowers his gaze; Death waits with calm patience. Both mouths remain closed. Gentle surf behind. No turning to camera, no piece movement, no facial morphing; the man is old from the first frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c6fcef88f45f893987cc6ef196ac3eb03872e365db35cb9505a725bc04fa6b4a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": "2026-10-22T19:32:29.410Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "a5da1be01b4652195827420c3fea9175aaec6e545e8a451e49bec6d6e5c6f173",
+          "bytes": 1440246,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "622af83ccde702b74e417310f522e3d552a4192137c0b76a14d232d19f0ec0d3"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

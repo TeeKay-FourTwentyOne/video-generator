@@ -81,6 +81,20 @@ Source: claude-code · Balcony · 2026-10-19
 Review at native resolution; upscale only after the director approves.
 Source: claude-code · 2026-05 to 2026-10
 
+### Verify encoded colour tags, including after a stream-copy remux
+The Perpetual Check 4K encode retained the BT.709 matrix and limited range but
+omitted primaries and transfer tags despite explicit encoder arguments. The
+picture and timing checks passed; a separate probe caught the missing tags.
+A metadata-only H.264 remux completed the tags without re-encoding. All decoded
+frame hashes and timestamps matched the inspected candidate, and audio packets
+and decoded audio matched the approved native cut.
+**Apply:** probe range, matrix, primaries and transfer on the final muxed file.
+When the intended colour interpretation is known, complete missing H.264 tags
+with `h264_metadata` and write the container colour information. Recheck the tags,
+decoded picture hashes, timestamps and audio identity before replacing the
+delivery pointer. Preserve a failed candidate's QA rather than overwriting it.
+Source: Codex · Perpetual Check · 2026-10-22
+
 ### Real-ESRGAN waxes brushwork; photoreal is fine at exact 2x
 Lanczos beats Real-ESRGAN below 2x on paintings; verify by a 100% crop, not a
 thumbnail. Photoreal miniature footage at exact 2x (1080p to 4K vertical) upscales well.

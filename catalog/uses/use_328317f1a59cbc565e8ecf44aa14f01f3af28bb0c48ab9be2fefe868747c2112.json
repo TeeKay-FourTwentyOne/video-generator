@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_fa797b5b156b48b9f60722b2bf74389970dfe9505cfa56857177e06632be77f0",
+  "projectId": "perpetual-check",
+  "editVersion": "finish/v5-4kb",
+  "segmentIndex": 1,
+  "shotId": "S00W",
+  "status": "rendered",
+  "evidence": "approved-native-4k-upscale",
+  "range": {
+    "unit": "frames",
+    "start": 132,
+    "length": 36,
+    "fps": 24
+  },
+  "timelineStartFrame": 12,
+  "outputSha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+  "schemaVersion": 1,
+  "id": "use_328317f1a59cbc565e8ecf44aa14f01f3af28bb0c48ab9be2fefe868747c2112"
+}

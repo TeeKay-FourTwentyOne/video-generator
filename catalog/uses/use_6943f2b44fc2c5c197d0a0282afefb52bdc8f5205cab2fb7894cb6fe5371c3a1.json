@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_43e119edce77d146ac650f97fbef35dee5132071524e5e41f765156a5d5d65ed",
+  "projectId": "perpetual-check",
+  "editVersion": "s08-title-v1",
+  "segmentIndex": 0,
+  "shotId": "S08",
+  "status": "rendered",
+  "evidence": "data/workspace/perpetual-check-v1/edit/S08-title-v1.recipe.json",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 192,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "aeb1720d9c75ad2dc115112f52a35a6f3d728a11975f922a0015833753c0f57c",
+  "schemaVersion": 1,
+  "id": "use_6943f2b44fc2c5c197d0a0282afefb52bdc8f5205cab2fb7894cb6fe5371c3a1"
+}

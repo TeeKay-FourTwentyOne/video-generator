@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_aeb1720d9c75ad2dc115112f52a35a6f3d728a11975f922a0015833753c0f57c",
+  "sha256": "aeb1720d9c75ad2dc115112f52a35a6f3d728a11975f922a0015833753c0f57c",
+  "bytes": 10237469,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Perpetual Check - native closing shot with local title"
+  ],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "black-and-white",
+    "local-title-composite",
+    "portrait"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

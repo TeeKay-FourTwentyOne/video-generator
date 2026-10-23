@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fa730dd42c6a5054c64fa99c021a1bab48f389706840c6f51cf4370e943c8885",
+  "sha256": "fa730dd42c6a5054c64fa99c021a1bab48f389706840c6f51cf4370e943c8885",
+  "bytes": 2076800,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Perpetual Check - S04 with tracked earbud continuity repair"
+  ],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "black-and-white",
+    "earbud-continuity",
+    "local-composite",
+    "portrait"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

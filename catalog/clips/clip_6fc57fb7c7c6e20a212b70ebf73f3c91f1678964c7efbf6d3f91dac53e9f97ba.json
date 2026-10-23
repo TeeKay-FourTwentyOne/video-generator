@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6fc57fb7c7c6e20a212b70ebf73f3c91f1678964c7efbf6d3f91dac53e9f97ba",
+  "sha256": "6fc57fb7c7c6e20a212b70ebf73f3c91f1678964c7efbf6d3f91dac53e9f97ba",
+  "bytes": 2921,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 0.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 12,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Perpetual Check - half-second opening black plate"
+  ],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "black",
+    "local-render",
+    "opening",
+    "portrait"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

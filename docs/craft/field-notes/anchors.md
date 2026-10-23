@@ -156,3 +156,12 @@ back right at the first try. A chained edit on a close-up ("use the reference as
 the hand and the earbud are gone, the ear is bare, his chin lifted a little toward the balcony") held the framing and
 made a clean first frame for a retake.
 Source: claude-code · Balcony · 2026-10-19
+
+### Multiple references can become a split composition
+One Perpetual Check reaction anchor supplied with two references returned two
+panels rather than one scene. A replacement used one character reference and
+explicitly described one over-the-shoulder composition; it produced a single
+usable frame. This is one production correction, not a controlled comparison.
+**Apply:** inspect the whole composition before motion. Simplify the reference
+set when the model treats the references as panels.
+Source: Codex · Perpetual Check · 2026-10-22

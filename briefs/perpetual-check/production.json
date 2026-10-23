@@ -3,14 +3,402 @@
   "projectId": "perpetual-check",
   "title": "PERPETUAL CHECK",
   "kind": "film",
-  "status": "planned",
-  "statusNote": "Concept recorded 2026-10-19 from a development conversation; no workspace, reference imagery, generation or build authorization exists.",
+  "status": "published",
+  "statusNote": "Published on YouTube, as confirmed by the director, using the delivered 33-second 4K master and the supplied description unchanged. The archive and final master are verified; superseded edits and complete mixes were removed under standard retention. Original sources, stems, recipes, provenance and QA are retained.",
   "briefPath": "briefs/perpetual-check/brief.md",
-  "artifacts": [],
-  "production": {
-    "providers": [],
-    "credits": []
+  "descriptionPath": "briefs/perpetual-check/description.md",
+  "descriptionSha256": "4211aaec1ccb3da3d9514b4015fb2be754dd9ae064575635666a95191538543e",
+  "decisionsPath": "briefs/perpetual-check/decisions.md",
+  "workspace": {
+    "path": "data/workspace-archive/perpetual-check-v1",
+    "state": "archived-verified"
   },
-  "reviewEvents": [],
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 768,
+      "durationSeconds": 32,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "f188f8bb7f645e1b346ddf1256286b0d0ca6496896fe211105a935b278437df9",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 780,
+      "durationSeconds": 32.5,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3b",
+      "path": "final/v3b/film.mp4",
+      "sha256": "c140e111d7f9fa569029bf513ccc218eedf935709f5694873debfb1c01e8434f",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 744,
+      "durationSeconds": 31,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v4b",
+      "path": "final/v4b/film.mp4",
+      "sha256": "0942cc53d7e447c396147f29952214617892474fed8c4a7927b43df8a6a3e46b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 792,
+      "durationSeconds": 33,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v5",
+      "path": "final/v5/film.mp4",
+      "sha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 792,
+      "durationSeconds": 33,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v5-4kb",
+      "path": "final/v5-4kb/film.mp4",
+      "sha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 792,
+      "durationSeconds": 33,
+      "publishedMaster": true,
+      "retention": "retained",
+      "descriptionCopyPath": "final/v5-4kb/description.txt",
+      "deliveryRecordPath": "final/v5-4kb/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Shot planning, anchor direction, editing and sound assembly",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/MCzhXvf9oRg",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-22",
+    "artifactVersion": "v5-4kb"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Full decode, exact frame count and dimensions, bound source and audio hashes, and final encoded audio measurement completed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Final frame sheets, edit boundaries and title inspected alongside contextual source reviews and dense motion windows; continuous playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1",
+      "artifactSha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Computational audio measurements and local speech recognition completed. Real-time listening remains for review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Native cut prepared for the director to review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "4206e62cbf3590c3e1b22cf4492991d401c96d41e772ddd9568f069008e0036b",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director described the first cut as generally very good and requested an additional intermediate-age shot plus a one-second breaking-wave cutaway. Final approval was not inferred from this revision request.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "f188f8bb7f645e1b346ddf1256286b0d0ca6496896fe211105a935b278437df9",
+      "recordedDate": "2026-10-22",
+      "evidence": "Full decode, exact 780-frame count and dimensions, bound source/audio hashes, final encoded audio measurement, and required project clip analysis completed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "f188f8bb7f645e1b346ddf1256286b0d0ca6496896fe211105a935b278437df9",
+      "recordedDate": "2026-10-22",
+      "evidence": "Final frame sheets, new age and wave inserts, revised boundaries and title inspected alongside contextual source reviews and dense motion windows. Continuous playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2",
+      "artifactSha256": "f188f8bb7f645e1b346ddf1256286b0d0ca6496896fe211105a935b278437df9",
+      "recordedDate": "2026-10-22",
+      "evidence": "Computational audio measurement completed; four unchanged device-voice cues verified against the edit and speech activity. Real-time listening remains for review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "f188f8bb7f645e1b346ddf1256286b0d0ca6496896fe211105a935b278437df9",
+      "recordedDate": "2026-10-22",
+      "evidence": "Revision prepared in response to the director's request; v2 awaits review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "f188f8bb7f645e1b346ddf1256286b0d0ca6496896fe211105a935b278437df9",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director requested the close-up and spoken move before the wide action, and accepted the imperfect knight-piece silhouette at mobile size. This is a targeted revision request, not final approval.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3b",
+      "artifactSha256": "c140e111d7f9fa569029bf513ccc218eedf935709f5694873debfb1c01e8434f",
+      "recordedDate": "2026-10-22",
+      "evidence": "Full decode, exact 744-frame count and dimensions, bound source/audio hashes, encoded audio measurement, and required project analysis completed. The video payload exactly matches the inspected picture candidate.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3b",
+      "artifactSha256": "c140e111d7f9fa569029bf513ccc218eedf935709f5694873debfb1c01e8434f",
+      "recordedDate": "2026-10-22",
+      "evidence": "Opening, overview, cut boundaries and ending frame sheets inspected alongside dense original hand and lip windows. The close-up precedes the complete existing move action. Continuous playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v3b",
+      "artifactSha256": "c140e111d7f9fa569029bf513ccc218eedf935709f5694873debfb1c01e8434f",
+      "recordedDate": "2026-10-22",
+      "evidence": "Computational audio measurement and local opening speech recognition completed. The unchanged instruction finishes before the outward cut, and native move audio remains aligned. Real-time listening remains for review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3b",
+      "artifactSha256": "c140e111d7f9fa569029bf513ccc218eedf935709f5694873debfb1c01e8434f",
+      "recordedDate": "2026-10-22",
+      "evidence": "Opening revision prepared in response to the director; the delivered cut awaits review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3b",
+      "artifactSha256": "c140e111d7f9fa569029bf513ccc218eedf935709f5694873debfb1c01e8434f",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director noticed the missing earbud in the early wide and requested a repair, then proposed a short impact over black and waves before the close-up. Final artistic approval was not inferred.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4b",
+      "artifactSha256": "0942cc53d7e447c396147f29952214617892474fed8c4a7927b43df8a6a3e46b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Full decode, exact 792-frame count and dimensions, bound source/audio hashes, neutral chroma across every decoded frame, bit-identical AAC payload verification against the measured source export, encoded audio measurement and required project analysis completed. The intentional opening black and final black frames were checked.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v4b",
+      "artifactSha256": "0942cc53d7e447c396147f29952214617892474fed8c4a7927b43df8a6a3e46b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Final opening, overview, cut boundaries, title and phone-size earbud comparison inspected alongside dense source tracking windows. Both early wides retain the earbud; the opening wave uses a different range from the later insert. Continuous playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v4b",
+      "artifactSha256": "0942cc53d7e447c396147f29952214617892474fed8c4a7927b43df8a6a3e46b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Computational audio checks and local opening speech recognition completed. The new locally made impact decays before the unchanged engine instruction. Real-time listening remains for review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4b",
+      "artifactSha256": "0942cc53d7e447c396147f29952214617892474fed8c4a7927b43df8a6a3e46b",
+      "recordedDate": "2026-10-22",
+      "evidence": "Earbud repair and new opening prepared for the director to review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v4b",
+      "artifactSha256": "0942cc53d7e447c396147f29952214617892474fed8c4a7927b43df8a6a3e46b",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director identified an upward head-position jump during the age change and requested better-matched source moments or a transition treatment. Final approval was not inferred.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5",
+      "artifactSha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "recordedDate": "2026-10-22",
+      "evidence": "Full decode, exact 792-frame count, dimensions, accepted source ranges, neutral chroma and source hashes verified. Encoded AAC payload is identical to the previous measured native export. Required project analysis check passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v5",
+      "artifactSha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "recordedDate": "2026-10-22",
+      "evidence": "Consecutive final frames across the age change, surrounding source motion, full-film overview, cut boundaries and ending inspected. The new source moments closely match head angle and position; no dissolve or face morph was applied. Continuous playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v5",
+      "artifactSha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "recordedDate": "2026-10-22",
+      "evidence": "Previous native AAC payload copied and hash-matched exactly, retaining its technical measurement evidence and timing. Real-time listening remains separate.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v5",
+      "artifactSha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "recordedDate": "2026-10-22",
+      "evidence": "Matched age-transition revision prepared for director review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v5",
+      "artifactSha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director approved the matched age transition and requested the 4K finish.",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v5",
+      "artifactSha256": "f8b9230c6124b9f9622ffc4f610b0a716e80cf9ce5c3613a6b9d64e2e062ef19",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director explicitly requested a 4K upscale of the approved native cut.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5-4kb",
+      "artifactSha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+      "recordedDate": "2026-10-22",
+      "evidence": "Full decode, 2160 by 3840 dimensions, 792 frames at 24 fps, 33-second duration, neutral chroma, black boundaries and colour tags passed. Every video timestamp and encoded audio packet matches the approved native edit; decoded audio also matches. Required source analysis check passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v5-4kb",
+      "artifactSha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+      "recordedDate": "2026-10-22",
+      "evidence": "Local upscale and blend alternatives were compared in native-pixel crops. Lanczos preserves the approved texture. Final age-transition frames, overview, ending, eye, beard, mail, earbud, sea and title crops inspected; all decoded frame hashes match the inspected picture after colour-tag completion.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v5-4kb",
+      "artifactSha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+      "recordedDate": "2026-10-22",
+      "evidence": "Exact encoded audio payloads and timestamps and decoded audio hash match the approved native export. No new real-time listening event is claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v5-4kb",
+      "artifactSha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+      "recordedDate": "2026-10-22",
+      "evidence": "The native source was approved and 4K finishing authorized. A separate director review of the 4K master has not yet been recorded.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v5-4kb",
+      "artifactSha256": "31cac8e3810f403aced0ad467b221004c7d2539ba2e5858a4b58cba171bfed3e",
+      "recordedDate": "2026-10-22",
+      "evidence": "The director supplied the YouTube Shorts publication URL after receiving the 4K master and confirmed using the supplied description as written. The local master hash does not identify the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/perpetual-check-v1/workspace-archive-manifest.json",
+    "inventorySha256": "b1bb2bff92d140500fbc62e95efc9a2de88b7eb91e7bbf29c27791cfe12e5a25",
+    "verifiedDate": "2026-10-22"
+  },
   "legacyPaths": []
 }

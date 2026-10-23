@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3870d25d17a1e25cf12cdb88855712f30519066a6cab8b64838c42f5bcfff850",
+  "sha256": "3870d25d17a1e25cf12cdb88855712f30519066a6cab8b64838c42f5bcfff850",
+  "bytes": 15170955,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Preserve the exact intermediate-old knight in the starting frame, his silver-grey hair with remaining dark strands, mixed silver beard, face, chainmail and ONE white earbud. He is already seventy-five from the first frame. Do not age or morph him during the take. Locked head-and-shoulders shot, facing screen-right with eyes down-right toward the unseen board. He remains quietly weary, lips closed, only a minute lowering of his gaze and wind in a few loose hairs. No smile, talking, eye contact with camera, turning, hands entering or new objects. No other people or visible board. Natural gentle out-of-focus sea movement. No audio generation. No text, logos or captions.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_60f383f6995a882508813818345f394ea265516264c1cde2ac95443ca9c91776",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1610614882,
+      "createdAt": "2026-10-22T20:54:39.301Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "0bc4684072208506f64d404f53d307b5ba4f3f107297071f7511f7a062938072",
+          "bytes": 1767211,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "0ca93e7630f68933c5c7912f8761b042aab76e2bca317415f6949aa6bd36e2ab"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

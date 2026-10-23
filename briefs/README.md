@@ -60,7 +60,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [ONE UNIT APART](one-unit-apart/README.md) | published | — | [Brief](one-unit-apart/brief.md) · [Description](one-unit-apart/description.md) · [Record](one-unit-apart/production.json) |
 | [PARKING LOT GOSPEL](parking-lot-gospel/README.md) | producing | — | [Brief](parking-lot-gospel/brief.md) · [Record](parking-lot-gospel/production.json) |
 | [PASSENGER](passenger/README.md) | delivered | — | [Brief](passenger/brief.md) · [Decisions](passenger/decisions.md) · [Record](passenger/production.json) |
-| [PERPETUAL CHECK](perpetual-check/README.md) | planned | — | [Brief](perpetual-check/brief.md) · [Record](perpetual-check/production.json) |
+| [PERPETUAL CHECK](perpetual-check/README.md) | published | — | [Brief](perpetual-check/brief.md) · [Description](perpetual-check/description.md) · [Decisions](perpetual-check/decisions.md) · [Record](perpetual-check/production.json) |
 | [PERSONAL BEST](personal-best/README.md) | review | — | [Brief](personal-best/brief.md) · [Record](personal-best/production.json) |
 | [Post-Training](post-training/README.md) | delivered | ai-explains-ai | [Brief](post-training/brief.md) · [Decisions](post-training/decisions.md) · [Record](post-training/production.json) |
 | [Book Graphs & Ramsey Numbers](ramsey-books/README.md) | delivered | ai-teaches-math | [Brief](ramsey-books/brief.md) · [Decisions](ramsey-books/decisions.md) · [Record](ramsey-books/production.json) |

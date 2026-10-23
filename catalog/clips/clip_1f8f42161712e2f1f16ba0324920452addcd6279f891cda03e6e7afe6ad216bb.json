@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1f8f42161712e2f1f16ba0324920452addcd6279f891cda03e6e7afe6ad216bb",
+  "sha256": "1f8f42161712e2f1f16ba0324920452addcd6279f891cda03e6e7afe6ad216bb",
+  "bytes": 4426840,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nDeath first looks toward the knight offscreen left, then lowers his eyes to the single phone already in his right hand. The screen light gently brightens beneath the black cowl, unmistakably mundane. No conjuring or prop transfer, no extra phone, no raising the device to his ear. His closed mouth remains still; the humour is his serious composure. Sound: surf; a dry neutral device voice from the phone at about 3 seconds says exactly \"Draw.\" No other dialogue. Hold the small embarrassment.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_851f339e2d236a55ede297b7a4f13ce59eb1a751df833189563f2a3c71e92512",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3072175904,
+      "createdAt": "2026-10-22T19:31:05.436Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "07b3dac66378b91470a21f8cdbb55d3eb596752a75ea73803ff11c6afdce64d8",
+          "bytes": 567839,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f3776a3a42e2cd2be3c3639355e53c933a920a59eb878457573234db4869d586"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

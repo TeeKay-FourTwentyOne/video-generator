@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_1d00d60aa28fb977ed6d5484e779ff6bc46274a5f823f550ce1adb76262eb1b9",
+  "projectId": "perpetual-check",
+  "editVersion": "local/S01-earbud-v4",
+  "segmentIndex": 0,
+  "shotId": "S01",
+  "status": "rendered",
+  "evidence": "local-tracked-composite",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 96,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "643cdba1398f1dc8d4cbb42730d88cc80f2e708e0ddc2e01891f64014e82a147",
+  "schemaVersion": 1,
+  "id": "use_459a0e4972c678a6ca13d420dc8bdb220f8a3c1bc111f199db45ba3b9f58a71d"
+}

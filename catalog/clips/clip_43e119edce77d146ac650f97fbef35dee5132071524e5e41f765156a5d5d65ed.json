@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_43e119edce77d146ac650f97fbef35dee5132071524e5e41f765156a5d5d65ed",
+  "sha256": "43e119edce77d146ac650f97fbef35dee5132071524e5e41f765156a5d5d65ed",
+  "bytes": 9577563,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "perpetual-check"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white photoreal cinema, vertical 9:16. Severe overcast coastal light, detailed skin, salt wind, wet sand, real fabric, restrained contrast and fine texture. Original adult actors; no resemblance to any named performer. No text, lettering, logos, watermarks, borders or captions. No music. Preserve the identity, costume, number of characters, camera geometry and props in the starting frame.\nEight continuous seconds, locked camera. Exactly the two men already walking slowly away side by side continue their easy companionable walk along the waterline. They never merge, turn around, embrace or vanish. No newly entering people or animals. In the near foreground a small natural wash of water reaches the feet of the low table, then its lower board edge near the end; the pieces stay small, no spectacular collapse or floating pieces. The two empty stools remain. Sound: surf, very light footfalls receding, wind. No speech or music. Leave a still-composed final two seconds for a title added later.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_06cd7fc53af8961df3bca4f98f82b7e8203d7e9ce4142cee9d91c87538513acb",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 175843335,
+      "createdAt": "2026-10-22T19:41:14.313Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "23a21cd979b71f5b521add6caae4c6fc090d06426cc93b8f4629930d519ff3b0",
+          "bytes": 1300536,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "878c81709f93ea13e9bb78938490245b3eea2752b9ec0b8181233b46e227cd6b"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

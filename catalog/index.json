@@ -3336,6 +3336,23 @@
       }
     },
     {
+      "id": "clip_13964098bc1fcdc66819f9dfa2a70922503bb868807558013f2ad2a8cf1ebfb3",
+      "metadata": "clips/clip_13964098bc1fcdc66819f9dfa2a70922503bb868807558013f2ad2a8cf1ebfb3.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
       "id": "clip_13a80b657e412b7bac7dc40d0194897bb512b145e90260a032c146abf3767818",
       "metadata": "clips/clip_13a80b657e412b7bac7dc40d0194897bb512b145e90260a032c146abf3767818.json",
       "labels": [
@@ -4971,6 +4988,23 @@
       }
     },
     {
+      "id": "clip_1d00d60aa28fb977ed6d5484e779ff6bc46274a5f823f550ce1adb76262eb1b9",
+      "metadata": "clips/clip_1d00d60aa28fb977ed6d5484e779ff6bc46274a5f823f550ce1adb76262eb1b9.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
       "id": "clip_1d0129f412d5a2b87b81760149f89b4dcedcb5ec8bb67593abf62d761028b84c",
       "metadata": "clips/clip_1d0129f412d5a2b87b81760149f89b4dcedcb5ec8bb67593abf62d761028b84c.json",
       "labels": [
@@ -5541,6 +5575,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_1f8f42161712e2f1f16ba0324920452addcd6279f891cda03e6e7afe6ad216bb",
+      "metadata": "clips/clip_1f8f42161712e2f1f16ba0324920452addcd6279f891cda03e6e7afe6ad216bb.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
       }
     },
     {
@@ -10028,6 +10079,23 @@
       }
     },
     {
+      "id": "clip_3870d25d17a1e25cf12cdb88855712f30519066a6cab8b64838c42f5bcfff850",
+      "metadata": "clips/clip_3870d25d17a1e25cf12cdb88855712f30519066a6cab8b64838c42f5bcfff850.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 7
+      }
+    },
+    {
       "id": "clip_38778be547dc37586bab0ad883f5fa9cb2fe26c266be77a85f323cafd04c7b55",
       "metadata": "clips/clip_38778be547dc37586bab0ad883f5fa9cb2fe26c266be77a85f323cafd04c7b55.json",
       "labels": [
@@ -12120,6 +12188,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_43e119edce77d146ac650f97fbef35dee5132071524e5e41f765156a5d5d65ed",
+      "metadata": "clips/clip_43e119edce77d146ac650f97fbef35dee5132071524e5e41f765156a5d5d65ed.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -18868,6 +18953,25 @@
       }
     },
     {
+      "id": "clip_643cdba1398f1dc8d4cbb42730d88cc80f2e708e0ddc2e01891f64014e82a147",
+      "metadata": "clips/clip_643cdba1398f1dc8d4cbb42730d88cc80f2e708e0ddc2e01891f64014e82a147.json",
+      "labels": [
+        "Perpetual Check - S01 with tracked earbud continuity repair"
+      ],
+      "kind": "derived",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 4
+      }
+    },
+    {
       "id": "clip_64417107935909d4f8b11f3217f71785f593d15c6de66aee9f525a7c6c4e7654",
       "metadata": "clips/clip_64417107935909d4f8b11f3217f71785f593d15c6de66aee9f525a7c6c4e7654.json",
       "labels": [
@@ -21060,6 +21164,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_6fc57fb7c7c6e20a212b70ebf73f3c91f1678964c7efbf6d3f91dac53e9f97ba",
+      "metadata": "clips/clip_6fc57fb7c7c6e20a212b70ebf73f3c91f1678964c7efbf6d3f91dac53e9f97ba.json",
+      "labels": [
+        "Perpetual Check - half-second opening black plate"
+      ],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 0.5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 4
       }
     },
     {
@@ -24930,6 +25053,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_833c3730597aef278157552c928c046918634b168ac2b583a18a04e838d6fd8d",
+      "metadata": "clips/clip_833c3730597aef278157552c928c046918634b168ac2b583a18a04e838d6fd8d.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
       }
     },
     {
@@ -32534,6 +32674,25 @@
       }
     },
     {
+      "id": "clip_aeb1720d9c75ad2dc115112f52a35a6f3d728a11975f922a0015833753c0f57c",
+      "metadata": "clips/clip_aeb1720d9c75ad2dc115112f52a35a6f3d728a11975f922a0015833753c0f57c.json",
+      "labels": [
+        "Perpetual Check - native closing shot with local title"
+      ],
+      "kind": "derived",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
+      }
+    },
+    {
       "id": "clip_aedb446d87602bf23bbc29923f5c0d86717793aa2425158f3e1e4bf926baef9c",
       "metadata": "clips/clip_aedb446d87602bf23bbc29923f5c0d86717793aa2425158f3e1e4bf926baef9c.json",
       "labels": [
@@ -39301,6 +39460,23 @@
       }
     },
     {
+      "id": "clip_d3e89edeedc9db40f1c4a4f59958574ad85ed4904f247a02d9fa65f384bf35ab",
+      "metadata": "clips/clip_d3e89edeedc9db40f1c4a4f59958574ad85ed4904f247a02d9fa65f384bf35ab.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
+      }
+    },
+    {
       "id": "clip_d43846c9d199eaa4a3dd9ef1103cd2fa4bcde9f07c330da225b5ada4c4832699",
       "metadata": "clips/clip_d43846c9d199eaa4a3dd9ef1103cd2fa4bcde9f07c330da225b5ada4c4832699.json",
       "labels": [
@@ -41755,6 +41931,23 @@
       "uses": {
         "planned": 0,
         "rendered": 1
+      }
+    },
+    {
+      "id": "clip_e25a926a16059a799b2e6795f5f49fdc16ea4eb7234d030ddfd8bdef164b5d3c",
+      "metadata": "clips/clip_e25a926a16059a799b2e6795f5f49fdc16ea4eb7234d030ddfd8bdef164b5d3c.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
       }
     },
     {
@@ -45224,6 +45417,23 @@
       }
     },
     {
+      "id": "clip_f4792b0b3131513d39b4fe9297d36ecf912423d47ab2e48abb185cf6fca764b7",
+      "metadata": "clips/clip_f4792b0b3131513d39b4fe9297d36ecf912423d47ab2e48abb185cf6fca764b7.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 10
+      }
+    },
+    {
       "id": "clip_f47b5b72e109c7b54984ee2188406bc13adeb580aca74cb45257355eaab91fb7",
       "metadata": "clips/clip_f47b5b72e109c7b54984ee2188406bc13adeb580aca74cb45257355eaab91fb7.json",
       "labels": [
@@ -46192,6 +46402,42 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_fa730dd42c6a5054c64fa99c021a1bab48f389706840c6f51cf4370e943c8885",
+      "metadata": "clips/clip_fa730dd42c6a5054c64fa99c021a1bab48f389706840c6f51cf4370e943c8885.json",
+      "labels": [
+        "Perpetual Check - S04 with tracked earbud continuity repair"
+      ],
+      "kind": "derived",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 2,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 4
+      }
+    },
+    {
+      "id": "clip_fa797b5b156b48b9f60722b2bf74389970dfe9505cfa56857177e06632be77f0",
+      "metadata": "clips/clip_fa797b5b156b48b9f60722b2bf74389970dfe9505cfa56857177e06632be77f0.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "perpetual-check"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 11
       }
     },
     {
