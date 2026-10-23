@@ -4,7 +4,7 @@
 
 Status: **published**.
 
-Published on YouTube, as confirmed by the director, using the delivered 33-second 4K master and the supplied description unchanged. The archive and final master are verified; superseded edits and complete mixes were removed under standard retention. Original sources, stems, recipes, provenance and QA are retained.
+Published on YouTube, as confirmed by the director, using the delivered 33-second 4K master and the supplied description unchanged. The archive and final master are verified. Superseded edits were removed under standard retention; the 14 clip masters were offloaded after verified GCP recovery, as requested. Stems, metadata, previews, analysis, recipes, provenance and QA remain local.
 
 [Creative brief](brief.md) · [Production record](production.json) · [Publication text](description.md) · [Decisions](decisions.md)
 

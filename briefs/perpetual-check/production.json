@@ -4,7 +4,7 @@
   "title": "PERPETUAL CHECK",
   "kind": "film",
   "status": "published",
-  "statusNote": "Published on YouTube, as confirmed by the director, using the delivered 33-second 4K master and the supplied description unchanged. The archive and final master are verified; superseded edits and complete mixes were removed under standard retention. Original sources, stems, recipes, provenance and QA are retained.",
+  "statusNote": "Published on YouTube, as confirmed by the director, using the delivered 33-second 4K master and the supplied description unchanged. The archive and final master are verified. Superseded edits were removed under standard retention; the 14 clip masters were offloaded after verified GCP recovery, as requested. Stems, metadata, previews, analysis, recipes, provenance and QA remain local.",
   "briefPath": "briefs/perpetual-check/brief.md",
   "descriptionPath": "briefs/perpetual-check/description.md",
   "descriptionSha256": "4211aaec1ccb3da3d9514b4015fb2be754dd9ae064575635666a95191538543e",
@@ -397,8 +397,8 @@
   ],
   "archive": {
     "manifestPath": "data/workspace-archive/perpetual-check-v1/workspace-archive-manifest.json",
-    "inventorySha256": "b1bb2bff92d140500fbc62e95efc9a2de88b7eb91e7bbf29c27791cfe12e5a25",
-    "verifiedDate": "2026-10-22"
+    "inventorySha256": "aa60ef0c241c7a1caf6205e65e90965100d4a7f8f0c6f5f55b8348d3eee1793f",
+    "verifiedDate": "2026-10-23"
   },
   "legacyPaths": []
 }
