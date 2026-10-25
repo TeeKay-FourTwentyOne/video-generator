@@ -213,7 +213,10 @@ with `clips analysis configure-default PRIVATE_PROFILE.json`; see
 [project analysis](clip-analysis.md#automatic-project-checkpoint). Raw analysis
 stays private. `needs-review` output is extracted evidence, not human acceptance;
 optional unprovisioned passes remain visibly pending. Run any authorized private
-cloud sync after analysis so the new evidence is included in the backup set.
+cloud sync after analysis with `npm run clips -- cloud sync --project PROJECT_ID`
+so the new evidence is included in the project's backup set. Project scope
+includes unused takes and clips referenced by use records, with separate
+completion receipts; whole-library sync remains available without that option.
 
 For a generated continuation, extract the chosen moving frame by decoded index:
 

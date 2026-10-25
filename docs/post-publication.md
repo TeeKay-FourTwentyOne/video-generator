@@ -67,7 +67,12 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
    provisioned local profile and verifies immutable private library evidence;
    film-specific QA alone does not satisfy it. Resolve missing/failed required
    passes before marking closeout complete. Preserve model review states and
-   optional pending passes. Run authorized private cloud sync after this step.
+   optional pending passes. Run authorized private cloud sync after this step
+   with `npm run clips -- cloud sync --project PROJECT_ID`, so unrelated missing
+   media cannot block the named film. Confirm its own scoped receipt with
+   `npm run clips -- cloud status --project PROJECT_ID`. This mirrors the clip
+   library inputs and analysis; the sealed workspace archive is a separate local
+   artifact, including the finished film and standalone audio.
 5. Stop only the named project's writers and preview servers. Choose final names
    for documentation snapshots and finish local metadata **before** hashing. A
    running generator, renderer or watcher can invalidate the snapshot.

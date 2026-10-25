@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { importClip, run, readJson, hashFile, readClip, recordUse, listClips, listUses } from './clip-library.mjs';
+import { importClip, run, readJson, hashFile, readClip, recordUse, listClips, listUses, updateClip } from './clip-library.mjs';
 import { analyzeClip } from './clip-analysis.mjs';
 import { configFor, privateJson, verifyRun, runPath, sha } from './clip-analysis-store.mjs';
 import { buildSearch, project, recordReview, readiness, freezeProfile, searchPrivate } from './clip-analysis-views.mjs';
@@ -48,6 +48,30 @@ test('complete sets restore analysis, previews, source and search into an empty 
   assert.equal(hashFile(path.join(root, f.clip.path)), f.clip.sha256); assert.ok(readJson(path.join(root, 'data/clips/analysis/search.json')).sources.length > 0);
   await assert.rejects(recoverSet(first.backupSet.sha256, 'data/workspace/recovery', [f.clip.id], empty, { client: f.client }), /new directory/);
   const receipt = await verifySet(first.backupSet.sha256, f.repo, { client: f.client }); assert.equal(receipt.members, set.objects.length);
+});
+test('a project set restores its complete source and analysis without the unrelated library or global support', async t => {
+  const f = await fixture(t); updateClip(f.clip.id, { collections: ['film-a'] }, f.repo);
+  // The selected run is immutable even if public collection metadata was added afterward.
+  privateJson(path.join(f.repo, 'data/clips/analysis/support.json'), { schemaVersion: 1, files: [
+    { path: 'data/workspace/unrelated/absent.json', sha256: 'a'.repeat(64), bytes: 1, role: 'dependency-audit' },
+  ] });
+  const evidencePath = 'data/workspace/film-a/evidence.json'; privateJson(path.join(f.repo, evidencePath), { case: 'project fixture' });
+  privateJson(path.join(f.repo, 'data/clips/analysis/projects/film-a.support.json'), { schemaVersion: 1,
+    files: [{ path: evidencePath, ...hashes(path.join(f.repo, evidencePath)), role: 'dependency-audit' }] });
+  const synced = await sync(f.repo, { client: f.client, projectId: 'film-a' });
+  assert.equal(fs.existsSync(path.join(f.repo, 'data/clips/cloud/last-backup-set.json')), false);
+  const set = validateBackupSet(readJson(path.join(f.repo, `data/clips/cloud/backup-sets/${synced.backupSet.sha256}.json`)));
+  assert.deepEqual(set.scope, { kind: 'project', projectId: 'film-a' });
+  assert.ok(set.objects.some(o => o.kind === 'analysis-inventory'));
+  assert.throws(() => validateBackupSet({ ...set, scope: { kind: 'project', projectId: '../escape' } }), /Invalid project ID/);
+  assert.throws(() => validateBackupSet({ ...set, scope: { kind: 'library', projectId: 'film-a' } }), /Invalid backup scope/);
+  const empty = path.join(f.repo, 'project-recovery-machine'); fs.mkdirSync(empty);
+  privateJson(path.join(empty, 'data/clips/cloud/config.json'), f.c);
+  const recovered = await recoverSet(synced.backupSet.sha256, 'data/workspace/recovered', [f.clip.id], empty, { client: f.client, rehearse: true });
+  assert.deepEqual(recovered.scope, set.scope); assert.equal(recovered.fullDecode, true);
+  assert.equal(hashFile(path.join(empty, recovered.output, evidencePath)), hashFile(path.join(f.repo, evidencePath)));
+  verifyRun(f.clip.id, f.result.runId, path.join(empty, recovered.output));
+  assert.equal((await verifySet(synced.backupSet.sha256, f.repo, { client: f.client })).scope.projectId, 'film-a');
 });
 test('support recovery restores original mappings and rejects missing transitive evidence or conflicting targets', async t => {
   const f = await fixture(t), childPath = 'data/workspace/qualification/fixture.json', parentPath = 'data/workspace/qualification/pilot.json';

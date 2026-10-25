@@ -9,6 +9,7 @@ import { REPO, safePath, readJson, readClip, mediaPath, canonical, generationMet
   verifyClipSnapshots, validateClip, validateUse } from './clip-library.mjs';
 import { readSnapshot, snapshotHash } from './generation-snapshot.mjs';
 import { loadConfig, Gcs, locked, privateJson, reserve, hashes, verifyObject } from './clip-cloud.mjs';
+import { validateBackupScope } from './clip-backup-scope.mjs';
 
 const base = 'data/clips/cloud';
 const maxCatalogBytes = 64 * 1024 * 1024;
@@ -153,6 +154,7 @@ export async function recoverCatalog(sha256, output, repo = REPO, { client } = {
       catch { throw new Error('Catalog backup could not be decoded; details withheld'); }
       if (catalog.schemaVersion !== 1 || !Array.isArray(catalog.clips) || !Array.isArray(catalog.uses))
         throw new Error('Invalid catalog backup');
+      const scope = validateBackupScope(catalog.scope);
       const ids = new Map(), useIds = new Set();
       for (const clip of catalog.clips) {
         validateClip(clip); if (ids.has(clip.id)) throw new Error('Duplicate clip in catalog backup'); ids.set(clip.id, clip);
@@ -165,7 +167,7 @@ export async function recoverCatalog(sha256, output, repo = REPO, { client } = {
       for (const use of catalog.uses) privateJson(path.join(stage, `catalog/uses/${use.id}.json`), use);
       fs.mkdirSync(path.join(stage, 'catalog/uses'), { recursive: true, mode: 0o700 });
       fs.mkdirSync(path.join(stage, 'catalog/clips'), { recursive: true, mode: 0o700 });
-      const receipt = { schemaVersion: 1, restoredAt: new Date().toISOString(), sha256, bytes: Number(remote.size),
+      const receipt = { schemaVersion: 1, scope, restoredAt: new Date().toISOString(), sha256, bytes: Number(remote.size),
         md5Hash: remote.md5Hash, generation: remote.generation, clips: ids.size, uses: useIds.size, output,
         verification: 'SHA-256, server MD5, byte length, pinned generation, catalog schemas and use references' };
       privateJson(path.join(stage, 'recovery.json'), receipt);

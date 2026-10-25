@@ -9,6 +9,7 @@ import { loadConfig, Gcs, locked, hashes, verifyObject, reserve } from './clip-c
 import { download } from './clip-cloud-restore.mjs';
 import { execute, resolveBinary } from './clip-analysis-process.mjs';
 import { SUPPORT_ROLES, SUPPORT_EXTENSION, supportPath, installSupport } from './clip-backup-support.mjs';
+import { validateBackupScope, backupStatePath } from './clip-backup-scope.mjs';
 
 const base = 'data/clips/cloud';
 const local = (repo, name) => safePath(repo, `${base}/${name}`);
@@ -52,6 +53,7 @@ export function objectTarget(o) {
 export function validateBackupSet(set) {
   assert(set?.schemaVersion === 1 && typeof set.bucket === 'string' && Array.isArray(set.objects) && Array.isArray(set.clips)
     && set.objects.length > 0, 'Invalid complete backup set');
+  validateBackupScope(set.scope);
   const names = new Set(), targets = new Set(), clips = new Set();
   for (const c of set.clips) {
     assert(c.clipId === `clip_${c.sha256}` && validHash(c.sha256) && validHash(c.catalogSha256) && !clips.has(c.clipId)
@@ -79,7 +81,7 @@ export function validateBackupSet(set) {
   return set;
 }
 export async function sealBackupSet(plan, remote, repo, config, client) {
-  const set = validateBackupSet({ schemaVersion: 1, bucket: config.bucket, clips: plan.clipRecords,
+  const set = validateBackupSet({ schemaVersion: 1, scope: validateBackupScope(plan.scope), bucket: config.bucket, clips: plan.clipRecords,
     objects: plan.objects.map(o => ({ ...fields(o), generation: verifyObject(o, remote.get(o.name)).generation })).sort((a, b) => a.name.localeCompare(b.name)) });
   const bytes = Buffer.from(JSON.stringify(set, null, 2) + '\n'), hash = (await import('node:crypto')).createHash('sha256').update(bytes).digest('hex');
   const relative = `${base}/backup-sets/${hash}.json`, file = safePath(repo, relative); privateJson(file, set, true);
@@ -87,9 +89,9 @@ export async function sealBackupSet(plan, remote, repo, config, client) {
   reserve(repo, config, { storedBytes: [...remote.values()].reduce((s, o) => s + Number(o.size), 0) + object.bytes,
     classA: 3, classB: 3, action: 'seal-complete-backup-set' });
   const present = await client.get(object.name), actual = verifyObject(object, present ?? await client.upload(object));
-  const receipt = { schemaVersion: 1, sha256: hash, object: object.name, generation: actual.generation, verifiedAt: now(), bucket: config.bucket,
+  const receipt = { schemaVersion: 1, scope: set.scope, sha256: hash, object: object.name, generation: actual.generation, verifiedAt: now(), bucket: config.bucket,
     objects: set.objects.length, clips: set.clips.length };
-  privateJson(local(repo, 'last-backup-set.json'), receipt); return receipt;
+  privateJson(safePath(repo, backupStatePath('last-backup-set.json', set.scope)), receipt); return receipt;
 }
 async function loadRemoteSet(hash, repo, config, client) {
   assert(validHash(hash), 'Specify a valid backup-set SHA-256');
@@ -120,7 +122,7 @@ export async function verifySet(hash, repo = REPO, { client } = {}) {
   return locked(repo, async () => {
     const config = loadConfig(repo); client ??= new Gcs(config, repo);
     const { set, remote } = await loadRemoteSet(hash, repo, config, client); await verifyMembers(set, repo, config, client);
-    const receipt = { schemaVersion: 1, backupSetSha256: hash, backupSetGeneration: remote.generation, bucket: config.bucket,
+    const receipt = { schemaVersion: 1, scope: validateBackupScope(set.scope), backupSetSha256: hash, backupSetGeneration: remote.generation, bucket: config.bucket,
       verifiedAt: now(), members: set.objects.length, verification: 'Current remote generation, SHA-256 metadata, MD5 and byte length for every member' };
     privateJson(local(repo, `verification/${hash}.json`), receipt); return receipt;
   });
@@ -130,6 +132,7 @@ function installCatalog(file, root, set) {
   try { catalog = JSON.parse(gunzipSync(fs.readFileSync(file), { maxOutputLength: 256 * 1024 * 1024 })); }
   catch { throw new Error('Backup catalog failed bounded decoding'); }
   assert(catalog.schemaVersion === 1 && Array.isArray(catalog.clips) && Array.isArray(catalog.uses), 'Invalid backup catalog');
+  assert(sha(validateBackupScope(catalog.scope)) === sha(validateBackupScope(set.scope)), 'Catalog scope differs from backup set');
   const ids = new Map(), uses = new Set();
   for (const c of catalog.clips) {
     validateClip(c); assert(!ids.has(c.id), 'Duplicate catalog clip'); ids.set(c.id, c);
@@ -219,7 +222,7 @@ export async function recoverSet(hash, output, ids, repo = REPO, { client, rehea
         }
       }
       const search = await (await import('./clip-analysis-views.mjs')).buildSearch(stage);
-      const receipt = { schemaVersion: 1, backupSetSha256: hash, backupSetGeneration: remote.generation, restoredAt: now(), clips: ids,
+      const receipt = { schemaVersion: 1, scope: validateBackupScope(set.scope), backupSetSha256: hash, backupSetGeneration: remote.generation, restoredAt: now(), clips: ids,
         objects: selected.length, bytes: selected.reduce((s, o) => s + o.bytes, 0), hashesVerified: true, emptyRootRecovery: true,
         fullDecode: rehearse, searchRebuilt: true, searchRows: search.rows, formats: rehearsed, support,
         downloadedBytes: downloadBytes - reusedBytes, reusedCloudDownloadBytes: reusedBytes, reusedCloudDownloadObjects: cached.size,

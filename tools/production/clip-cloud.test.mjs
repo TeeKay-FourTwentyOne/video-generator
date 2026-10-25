@@ -6,7 +6,9 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { EventEmitter } from 'node:events';
 import { PassThrough } from 'node:stream';
-import { buildPlan, privateJson, assertPrivateBucket, verifyObject, reserve, hashes, Gcs, sync, restore, curlPut } from './clip-cloud.mjs';
+import { gunzipSync } from 'node:zlib';
+import { buildPlan, privateJson, assertPrivateBucket, verifyObject, reserve, hashes, Gcs, sync, restore, curlPut, cloudMain } from './clip-cloud.mjs';
+import { recordUse } from './clip-library.mjs';
 
 const sha = b => createHash('sha256').update(b).digest('hex');
 function fixture(t) {
@@ -31,6 +33,89 @@ function fakeClient() {
   return { objects, uploads, checkPrivate: async () => {}, list: async () => [...objects.values()],
     get: async name => objects.get(name), upload: async o => { uploads.push(o.name); const r = remote(o); objects.set(o.name, r); return r; } };
 }
+
+function projectFixture(t) {
+  const f = fixture(t);
+  f.record.collections = ['film-a']; privateJson(path.join(f.repo, `catalog/clips/${f.id}.json`), f.record);
+  function add(label, collections, present = true) {
+    const bytes = Buffer.from(label), id = `clip_${sha(bytes)}`;
+    const clip = { ...f.record, id, sha256: sha(bytes), bytes: bytes.length, collections };
+    privateJson(path.join(f.repo, `catalog/clips/${id}.json`), clip);
+    if (present) { const file = path.join(f.repo, `data/clips/${id}/source.mp4`); fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, bytes); }
+    return clip;
+  }
+  const unused = add('unused selected take', ['film-a']), shared = add('shared clip selected by use', ['film-b']);
+  recordUse({ clipId: shared.id, projectId: 'film-a', editVersion: 'v1', segmentIndex: 0, shotId: 'S01',
+    status: 'rendered', evidence: 'saved-frame-edit', range: { unit: 'frames', start: 0, length: 24, fps: 24 },
+    timelineStartFrame: 0, outputSha256: 'a'.repeat(64) }, f.repo);
+  const unrelated = add('missing unrelated clip', ['film-b'], false);
+  return { ...f, unused, shared, unrelated };
+}
+
+test('project sync includes unused takes and shared clips used by the project, ignoring unrelated missing media and support', async t => {
+  const f = projectFixture(t), client = fakeClient();
+  const globalFiles = ['plan.json', 'last-sync.json', 'last-backup-set.json'];
+  for (const name of globalFiles) privateJson(path.join(f.repo, 'data/clips/cloud', name), { preserved: name });
+  const globalBefore = globalFiles.map(name => fs.readFileSync(path.join(f.repo, 'data/clips/cloud', name)));
+  privateJson(path.join(f.repo, 'data/clips/analysis/support.json'), { schemaVersion: 1, files: [
+    { path: 'data/workspace/another-film/missing.json', sha256: 'a'.repeat(64), bytes: 1, role: 'dependency-audit' },
+  ] });
+  assert.throws(() => buildPlan(f.repo), /Missing unverified local master/);
+  const plan = buildPlan(f.repo, () => {}, { projectId: 'film-a' });
+  assert.deepEqual(plan.scope, { kind: 'project', projectId: 'film-a' });
+  assert.deepEqual(new Set(plan.clipRecords.map(c => c.clipId)), new Set([f.id, f.unused.id, f.shared.id]));
+  const catalog = plan.objects.find(o => o.kind === 'catalog');
+  const decoded = JSON.parse(gunzipSync(fs.readFileSync(path.join(f.repo, catalog.localPath))));
+  assert.deepEqual(decoded.scope, plan.scope); assert.equal(decoded.clips.length, 3); assert.equal(decoded.uses.length, 1);
+  const first = await sync(f.repo, { client, projectId: 'film-a' });
+  assert.equal(first.clips, 3); assert.equal(first.uploaded, 4);
+  assert.ok(client.uploads.every(name => !name.includes(f.unrelated.id)));
+  assert.equal((await sync(f.repo, { client, projectId: 'film-a' })).uploaded, 0);
+  assert.deepEqual(globalFiles.map(name => fs.readFileSync(path.join(f.repo, 'data/clips/cloud', name))), globalBefore);
+  const status = await cloudMain(['status', '--project', 'film-a'], f.repo);
+  assert.equal(status.lastSync.backupSet.sha256, first.backupSet.sha256); assert.equal(status.initialBackup, null);
+  assert.deepEqual(status.scope, plan.scope);
+  client.objects.get(`clips/${f.id}/source.mp4`).md5Hash = 'wrong';
+  await assert.rejects(sync(f.repo, { client, projectId: 'film-a' }), /checksum or identity/);
+});
+
+test('project planning rejects empty or invalid selections, selected corruption, and explicit missing support', async t => {
+  const f = projectFixture(t);
+  assert.throws(() => buildPlan(f.repo, () => {}, { projectId: 'unknown' }), /No catalog clips/);
+  assert.throws(() => buildPlan(f.repo, () => {}, { projectId: '../outside' }), /Invalid project ID/);
+  for (const args of [['plan', '--project'], ['plan', '--project='], ['plan', '--project', '--allow-absent'],
+    ['sync', '--project', 'film-a', '--project=film-b'], ['status', '--allow-absent'], ['plan', '--unknown']])
+    await assert.rejects(cloudMain(args, f.repo), /project ID|cloud option/);
+  const report = await cloudMain(['plan', '--project=film-a'], f.repo);
+  assert.equal(report.plan, 'data/clips/cloud/projects/film-a/plan.json'); assert.equal(report.network, false);
+  const allPlan = { scope: { kind: 'library' } };
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', plan: allPlan, client: fakeClient() }), /does not match/);
+  fs.appendFileSync(f.file, 'corrupt');
+  assert.throws(() => buildPlan(f.repo, () => {}, { projectId: 'film-a' }), /checksum mismatch/);
+  fs.writeFileSync(f.file, f.bytes);
+  privateJson(path.join(f.repo, 'data/clips/analysis/projects/film-a.support.json'), { schemaVersion: 1, files: [
+    { path: 'data/workspace/film-a/missing.json', sha256: 'a'.repeat(64), bytes: 1, role: 'dependency-audit' },
+  ] });
+  assert.throws(() => buildPlan(f.repo, () => {}, { projectId: 'film-a' }), /ENOENT/);
+});
+
+test('project absence uses its own verified set or a whole-library set without hiding missing selected originals', async t => {
+  const f = projectFixture(t), client = fakeClient();
+  await sync(f.repo, { client, projectId: 'film-a' }); fs.rmSync(f.file);
+  assert.throws(() => buildPlan(f.repo, () => {}, { projectId: 'film-a' }), /Missing unverified local master/);
+  const repeat = await sync(f.repo, { client, projectId: 'film-a', allowAbsent: true }); assert.equal(repeat.uploaded, 0);
+  const remote = client.objects.get(`clips/${f.id}/source.mp4`); remote.generation = 'changed';
+  await assert.rejects(sync(f.repo, { client, projectId: 'film-a', allowAbsent: true }), /checksum or identity/);
+  const second = fixture(t), globalClient = fakeClient(); second.record.collections = ['film-c'];
+  privateJson(path.join(second.repo, `catalog/clips/${second.id}.json`), second.record);
+  await sync(second.repo, { client: globalClient }); fs.rmSync(second.file);
+  const globalPointer = fs.readFileSync(path.join(second.repo, 'data/clips/cloud/last-backup-set.json'));
+  const project = await sync(second.repo, { client: globalClient, projectId: 'film-c', allowAbsent: true });
+  assert.deepEqual(project.scope, { kind: 'project', projectId: 'film-c' });
+  assert.deepEqual(fs.readFileSync(path.join(second.repo, 'data/clips/cloud/last-backup-set.json')), globalPointer);
+  globalClient.objects.delete(`clips/${second.id}/source.mp4`);
+  await assert.rejects(sync(second.repo, { client: globalClient, projectId: 'film-c', allowAbsent: true }), /missing from the verified remote backup/);
+});
 
 test('inventory includes only immutable masters, snapshots and compressed catalog; detects corruption', t => {
   const { repo, file } = fixture(t);

@@ -198,6 +198,9 @@ the same upload sessions, create-only preconditions and checksum checks.
 
 ```sh
 npm run clips -- cloud help
+npm run clips -- cloud plan --project my-film
+npm run clips -- cloud sync --project my-film
+npm run clips -- cloud status --project my-film
 npm run clips -- cloud plan
 npm run clips -- cloud sync
 npm run clips -- cloud status
@@ -207,13 +210,36 @@ npm run clips -- cloud catalogs
 npm run clips -- cloud recover-catalog "$CATALOG_SHA256" data/workspace/example/recovered-catalog
 ```
 
-Run `cloud sync` after a batch of imports when this private destination is
-configured and the ongoing storage authorization remains active. Import and
+Run `cloud sync --project PROJECT_ID` after a project's batch of imports when this
+private destination is configured and the ongoing storage authorization remains active. Import and
 provider polling stay offline with respect to the backup; sync is a separate,
-explicit network action. `plan` hashes the current library and writes an offline
+explicit network action. `plan` hashes the selected clips and writes an offline
 inventory. `status` reads local receipts and initial-backup job progress, not the
 live bucket. A running first mirror holds the cloud lock; let it finish before
 starting another sync. Its ignored `runner.json` records completion or failure.
+
+`--project PROJECT_ID` selects the union of the project's collection and clips
+named by its use records, including unused takes and shared sources. A missing
+or corrupt selected master still stops the backup. Unrelated media and analysis
+are not inspected. An unknown or empty project fails rather than falling back to
+the whole library. Omit `--project` only when a whole-library inventory is intended.
+
+Project backups include those clips' generation snapshots, immutable analysis,
+shared analysis inventories and human review records, plus a catalog containing
+only the selected clips and their use history. Optional support evidence is
+selected through `data/clips/analysis/projects/PROJECT_ID.support.json`, using
+the same `{ "schemaVersion": 1, "files": [...] }` allowlist and dependency checks
+as the whole-library `data/clips/analysis/support.json`. Global support files are
+not implicitly included: their cross-project audits and qualification fixtures
+can require other clips. Explicit project support must close over its declared
+dependencies or planning fails.
+
+Each plan, sync receipt and complete backup set records its library or project
+scope. Project state lives under `data/clips/cloud/projects/PROJECT_ID/`; it never
+replaces the whole-library `plan.json`, `last-sync.json` or `last-backup-set.json`.
+`cloud status --project PROJECT_ID` reads that project's receipt. The lock,
+bucket privacy checks and monthly ledger remain shared; storage reservations
+still account for the entire bucket. No backup deletes or replaces remote objects.
 
 Sync copies one immutable master per clip ID, retained generation snapshots and
 an immutable compressed snapshot of the clip/use catalog. It uploads only this
@@ -265,6 +291,11 @@ deliberately absent masters only through a previously complete backup set, with
 fresh remote-generation verification during sync. Removing a last local copy requires
 a qualified extraction profile, reviewed pilot, recovery rehearsal and dependency
 audit; see [analysis recovery and cleanup readiness](clip-analysis.md).
+Use `--allow-absent` together with `--project PROJECT_ID` when needed. For a missing selected
+master, the project can reuse evidence from its own prior complete set or from
+the last complete whole-library set. Missing evidence never becomes permission
+to skip a selected clip. Older manifests without a scope field remain readable
+as whole-library sets.
 The separate [duplicate reclamation workflow](clip-cleanup.md) can remove an
 explicitly approved canonical duplicate while retaining verified historical
 originals. Normal clip resolution verifies and uses those local mappings.

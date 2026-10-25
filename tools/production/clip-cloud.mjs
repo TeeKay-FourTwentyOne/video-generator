@@ -10,6 +10,7 @@ import { REPO, safePath, readJson, listClips, listUses, mediaPath, readClip, can
 import { listRuns, verifyRun, runPath, configReference, sha as recordDigest } from './clip-analysis-store.mjs';
 import { SUPPORT_ROLES, supportPath, verifySupportClosure } from './clip-backup-support.mjs';
 import { readSnapshot, snapshotHash } from './generation-snapshot.mjs';
+import { backupScope, validateBackupScope, backupStatePath } from './clip-backup-scope.mjs';
 
 const require = createRequire(import.meta.url);
 const { getAccessToken } = require('../gcp/auth.cjs');
@@ -55,16 +56,32 @@ export function hashes(file) {
 }
 /** Repository-relative POSIX path (safePath rejects backslashes on Windows). */
 const rel = (repo, file) => path.relative(repo, file).split(path.sep).join('/');
-export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = false } = {}) {
-  const clips = listClips(repo), objects = [];
-  let previousSet;
-  if (allowAbsent) {
-    const pointer = readJson(local(repo, 'last-backup-set.json'));
+function selectCatalog(repo, projectId) {
+  const allClips = listClips(repo), allUses = listUses(repo);
+  const used = new Set(allUses.filter(u => u.projectId === projectId).map(u => u.clipId));
+  const clips = projectId === undefined ? allClips : allClips.filter(c => c.collections.includes(projectId) || used.has(c.id));
+  if (projectId !== undefined && !clips.length) throw new Error('No catalog clips associated with this project');
+  const ids = new Set(clips.map(c => c.id));
+  // Retain the use history of selected shared clips, but no unresolved uses from other clips.
+  const uses = projectId === undefined ? allUses : allUses.filter(u => ids.has(u.clipId) || u.projectId === projectId);
+  if (uses.some(u => !ids.has(u.clipId))) throw new Error('Catalog changed during backup inventory; retry the plan');
+  return { clips, uses };
+}
+export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = false, projectId } = {}) {
+  const scope = backupScope(projectId), selected = selectCatalog(repo, projectId), { clips, uses } = selected, objects = [];
+  const previousSets = new Map();
+  function previousSet(priorScope) {
+    const pointerFile = safePath(repo, backupStatePath('last-backup-set.json', priorScope));
+    if (previousSets.has(pointerFile)) return previousSets.get(pointerFile);
+    if (!fs.existsSync(pointerFile)) { previousSets.set(pointerFile, null); return null; }
+    const pointer = readJson(pointerFile);
     if (!/^[a-f0-9]{64}$/.test(pointer.sha256 ?? '')) throw new Error('Missing verified complete backup-set identity');
     const file = local(repo, `backup-sets/${pointer.sha256}.json`);
     if (hashes(file).sha256 !== pointer.sha256) throw new Error('Backup-set hash mismatch');
-    previousSet = readJson(file);
-    if (previousSet.bucket !== loadConfig(repo).bucket || previousSet.schemaVersion !== 1) throw new Error('Backup-set destination mismatch');
+    const set = readJson(file), savedScope = validateBackupScope(set.scope);
+    if (set.bucket !== loadConfig(repo).bucket || set.schemaVersion !== 1) throw new Error('Backup-set destination mismatch');
+    if (savedScope.kind !== priorScope.kind || savedScope.projectId !== priorScope.projectId) throw new Error('Backup-set scope mismatch');
+    previousSets.set(pointerFile, set); return set;
   }
   for (const [index, clip] of clips.entries()) {
     const file = mediaPath(clip, repo), name = `clips/${clip.id}/source${clip.extension}`;
@@ -73,8 +90,13 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
       if (h.sha256 !== clip.sha256 || h.bytes !== clip.bytes) throw new Error(`Local master checksum mismatch: ${clip.id}`);
       objects.push({ name, localPath: rel(repo, file), ...h, clipId: clip.id, kind: 'media' });
     } else {
-      const prior = previousSet?.objects?.find(o => o.name === name && o.kind === 'media' && o.clipId === clip.id);
-      if (!prior || prior.sha256 !== clip.sha256 || prior.bytes !== clip.bytes || !/^\d+$/.test(prior.generation ?? ''))
+      let prior;
+      // A project's prior set takes precedence; a verified whole-library set can bootstrap it.
+      for (const priorScope of allowAbsent ? [scope, ...(projectId === undefined ? [] : [backupScope()])] : []) {
+        const candidate = previousSet(priorScope)?.objects?.find(o => o.name === name && o.kind === 'media' && o.clipId === clip.id);
+        if (candidate?.sha256 === clip.sha256 && candidate.bytes === clip.bytes && /^\d+$/.test(candidate.generation ?? '')) { prior = candidate; break; }
+      }
+      if (!prior)
         throw new Error(`Missing unverified local master: ${clip.id}; deliberate absence requires --allow-absent and a complete backup set`);
       objects.push({ ...prior, localPath: null, absentLocal: true });
     }
@@ -113,7 +135,8 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
     }
     if (index % 100 === 0) progress({ phase: 'hash-local', verified: index + 1, clips: clips.length });
   }
-  const supportFile = safePath(repo, 'data/clips/analysis/support.json');
+  const supportFile = safePath(repo, projectId === undefined ? 'data/clips/analysis/support.json'
+    : `data/clips/analysis/projects/${projectId}.support.json`);
   if (fs.existsSync(supportFile)) {
     const support = readJson(supportFile);
     if (support.schemaVersion !== 1 || !Array.isArray(support.files)) throw new Error('Invalid explicit analysis support allowlist');
@@ -130,19 +153,18 @@ export function buildPlan(repo = REPO, progress = () => {}, { allowAbsent = fals
     for (const o of objects.filter(o => o.restorePaths)) o.restorePaths.sort();
     verifySupportClosure(objects, repo);
   }
-  const uses = listUses(repo), ids = new Set(clips.map(c => c.id));
-  if (uses.some(u => !ids.has(u.clipId))) throw new Error('Catalog changed during backup inventory; retry the plan');
-  const bytes = gzipSync(Buffer.from(JSON.stringify(canonical({ schemaVersion: 1, clips, uses }))), { level: 9 });
+  if (recordDigest(selected) !== recordDigest(selectCatalog(repo, projectId))) throw new Error('Catalog changed during backup inventory; retry the plan');
+  const bytes = gzipSync(Buffer.from(JSON.stringify(canonical({ schemaVersion: 1, scope, clips, uses }))), { level: 9 });
   const sha = digest(bytes), relative = `${BASE}/catalog/${sha}.json.gz`, file = safePath(repo, relative);
   fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 });
   if (!fs.existsSync(file)) fs.writeFileSync(file, bytes, { flag: 'wx', mode: 0o600 });
   const h = hashes(file);
   if (h.sha256 !== sha) throw new Error('Local catalog backup checksum mismatch');
   objects.push({ name: `catalog/${sha}.json.gz`, localPath: relative, ...h, kind: 'catalog' });
-  const plan = { schemaVersion: 1, createdAt: stamp(), clips: clips.length, uses: uses.length, objects,
+  const plan = { schemaVersion: 1, scope, createdAt: stamp(), clips: clips.length, uses: uses.length, objects,
     clipRecords: clips.map(c => ({ clipId: c.id, sha256: c.sha256, bytes: c.bytes, extension: c.extension, catalogSha256: recordDigest(c) })),
     bytes: objects.reduce((sum, o) => sum + o.bytes, 0) };
-  privateJson(local(repo, 'plan.json'), plan);
+  privateJson(safePath(repo, backupStatePath('plan.json', scope)), plan);
   return plan;
 }
 
@@ -362,9 +384,13 @@ export async function locked(repo, action) {
   try { privateJson(path.join(dir, 'owner.json'), { pid: process.pid, startedAt: stamp() }); return await action(); }
   finally { fs.rmSync(dir, { recursive: true }); }
 }
-export async function sync(repo = REPO, { progress = () => {}, client, plan, allowAbsent = false } = {}) {
+export async function sync(repo = REPO, { progress = () => {}, client, plan, allowAbsent = false, projectId } = {}) {
+  const requestedScope = backupScope(projectId);
+  if (plan && projectId !== undefined && (validateBackupScope(plan.scope).kind !== 'project' || plan.scope.projectId !== projectId))
+    throw new Error('Supplied backup plan does not match the requested project');
   return locked(repo, async () => {
-    const c = loadConfig(repo); plan ??= buildPlan(repo, progress, { allowAbsent }); client ??= new Gcs(c, repo);
+    const c = loadConfig(repo); plan ??= buildPlan(repo, progress, { allowAbsent, projectId }); client ??= new Gcs(c, repo);
+    const scope = validateBackupScope(plan.scope ?? requestedScope);
     reserve(repo, c, { storedBytes: plan.bytes, classA: 20, classB: 20, action: 'sync-preflight' });
     await client.checkPrivate();
     const remote = new Map((await client.list()).map(o => [o.name, o]));
@@ -399,10 +425,10 @@ export async function sync(repo = REPO, { progress = () => {}, client, plan, all
     const final = new Map((await client.list()).map(o => [o.name, o]));
     for (const o of plan.objects) verifyObject(o, final.get(o.name));
     const backupSet = await (await import('./clip-backup-set.mjs')).sealBackupSet(plan, final, repo, c, client);
-    const receipt = { schemaVersion: 1, completedAt: stamp(), bucket: c.bucket, clips: plan.clips, objects: plan.objects.length,
+    const receipt = { schemaVersion: 1, scope, completedAt: stamp(), bucket: c.bucket, clips: plan.clips, objects: plan.objects.length,
       bytes: plan.bytes, uploaded, skipped: plan.objects.length - uploaded, privateAccessVerified: true,
       verification: 'Local SHA-256 or explicitly absent verified backup member; server MD5, byte length, SHA-256 metadata and generation; final remote inventory', budget, backupSet };
-    privateJson(local(repo, 'last-sync.json'), receipt); return receipt;
+    privateJson(safePath(repo, backupStatePath('last-sync.json', scope)), receipt); return receipt;
   });
 }
 export async function restore(id, output, repo = REPO, { client } = {}) {
@@ -429,34 +455,52 @@ export async function restore(id, output, repo = REPO, { client } = {}) {
     } finally { fs.rmSync(tmp, { force: true }); }
   });
 }
+function syncOptions(args, { status = false } = {}) {
+  const options = {}, seen = new Set();
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i], key = arg.split('=')[0];
+    if (seen.has(key)) throw new Error('Duplicate cloud option');
+    seen.add(key);
+    if (arg === '--allow-absent' && !status) options.allowAbsent = true;
+    else if (key === '--project') {
+      options.projectId = arg === '--project' ? args[++i] : arg.slice('--project='.length);
+      if (options.projectId === undefined) throw new Error('Specify a project ID after --project');
+      backupScope(options.projectId);
+    } else throw new Error('Unknown cloud option; use --project PROJECT_ID and optionally --allow-absent for plan/sync');
+  }
+  return options;
+}
+
 export async function cloudMain(args, repo = REPO) {
   const [verb, ...rest] = args, progress = e => process.stderr.write(JSON.stringify(e) + '\n');
   if (!verb || verb === 'help') return { commands: ['cloud plan', 'cloud sync', 'cloud status', 'cloud restore CLIP_ID data/workspace/PROJECT/restore/source.mp4',
     'cloud fetch CLIP_ID', 'cloud catalogs', 'cloud recover-catalog SHA256 data/workspace/PROJECT/recovered-catalog',
-    'cloud plan [--allow-absent]', 'cloud sync [--allow-absent]', 'cloud backup-sets', 'cloud verify-set SHA256',
+    'cloud plan [--project PROJECT_ID] [--allow-absent]', 'cloud sync [--project PROJECT_ID] [--allow-absent]',
+    'cloud status [--project PROJECT_ID]', 'cloud backup-sets', 'cloud verify-set SHA256',
     'cloud recover-set SHA256 data/workspace/PROJECT/recovery CLIP_ID... [--rehearse]', 'cloud readiness PRIVATE_POLICY.json',
     'cloud cleanup-plan PRIVATE_POLICY.json PRIVATE_MANIFEST.json', 'cloud cleanup-apply PRIVATE_MANIFEST.json PRIVATE_APPROVAL.json'],
     configuration: `${BASE}/config.json`, network: 'sync, restore, fetch, catalogs, recover-catalog, backup-sets, verify-set, recover-set, readiness and cleanup commands only', privacy: 'Private IAM access; no public or signed URLs' };
-  if (verb === 'plan' && (rest.length === 0 || rest.length === 1 && rest[0] === '--allow-absent')) {
-    const c = loadConfig(repo), plan = buildPlan(repo, progress, { allowAbsent: rest.includes('--allow-absent') });
-    return { clips: plan.clips, objects: plan.objects.length, bytes: plan.bytes, storageUsdPerMonth: plan.bytes / GiB * c.rates.storageUsdPerGiBMonth,
-      monthlyBudgetUsd: c.monthlyBudgetUsd, plan: `${BASE}/plan.json`, network: false };
+  if (verb === 'plan') {
+    const options = syncOptions(rest), c = loadConfig(repo), plan = buildPlan(repo, progress, options);
+    return { scope: plan.scope, clips: plan.clips, objects: plan.objects.length, bytes: plan.bytes, storageUsdPerMonth: plan.bytes / GiB * c.rates.storageUsdPerGiBMonth,
+      monthlyBudgetUsd: c.monthlyBudgetUsd, plan: backupStatePath('plan.json', plan.scope), network: false };
   }
-  if (verb === 'sync' && (rest.length === 0 || rest.length === 1 && rest[0] === '--allow-absent')) return sync(repo, { progress, allowAbsent: rest.includes('--allow-absent') });
+  if (verb === 'sync') return sync(repo, { progress, ...syncOptions(rest) });
   if (['backup-sets', 'verify-set', 'recover-set', 'readiness'].includes(verb)) return (await import('./clip-backup-set.mjs')).backupMain(verb, rest, repo);
   if (['cleanup-plan', 'cleanup-apply'].includes(verb)) return (await import('./clip-cleanup.mjs')).cleanupMain(verb, rest, repo);
   if (verb === 'restore' && rest.length === 2) return restore(rest[0], rest[1], repo);
   if (verb === 'fetch' && rest.length === 1) return (await import('./clip-cloud-restore.mjs')).fetchClip(rest[0], repo);
   if (verb === 'catalogs' && !rest.length) return (await import('./clip-cloud-restore.mjs')).catalogs(repo);
   if (verb === 'recover-catalog' && rest.length === 2) return (await import('./clip-cloud-restore.mjs')).recoverCatalog(rest[0], rest[1], repo);
-  if (verb === 'status' && !rest.length) {
-    const c = loadConfig(repo), file = local(repo, 'last-sync.json'), jobFile = local(repo, 'runner.json');
-    const job = fs.existsSync(jobFile) ? readJson(jobFile) : null;
+  if (verb === 'status') {
+    const scope = backupScope(syncOptions(rest, { status: true }).projectId);
+    const c = loadConfig(repo), file = safePath(repo, backupStatePath('last-sync.json', scope)), jobFile = local(repo, 'runner.json');
+    const job = scope.kind === 'library' && fs.existsSync(jobFile) ? readJson(jobFile) : null;
     let running = false;
     if (job && !['complete', 'failed'].includes(job.phase)) {
       try { process.kill(job.pid, 0); running = true; } catch (e) { if (e.code === 'EPERM') running = true; }
     }
-    return { configured: true, monthlyBudgetUsd: c.monthlyBudgetUsd, lastSync: fs.existsSync(file) ? readJson(file) : null,
+    return { configured: true, scope, monthlyBudgetUsd: c.monthlyBudgetUsd, lastSync: fs.existsSync(file) ? readJson(file) : null,
       initialBackup: job ? { phase: job.phase, running, startedAt: job.startedAt, updatedAt: job.updatedAt,
         uploadedObjects: job.verifiedUploadReceipts, totalObjects: job.totalObjects, uploadedBytes: job.verifiedUploadedBytes,
         totalBytes: job.totalBytes, error: job.error, restoreVerified: job.restoreVerified } : null,

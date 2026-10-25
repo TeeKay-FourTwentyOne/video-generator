@@ -77,6 +77,12 @@ with validated `clips/` and `uses/` records. Recovery does not overwrite the liv
 catalog or require any local media. Choose the snapshot deliberately: its creation
 time is the upload time, not the time every annotation was written.
 
+Check `recovery.json.scope` before installing a recovered catalog. A backup made
+with `cloud sync --project PROJECT_ID` contains only that project's selected clips
+and their use history. Merge these records with an existing catalog; do not
+replace the whole catalog with a project subset. Older backups without a scope
+field are reported as library backups.
+
 On a fresh checkout with no local catalog work, retain the checked-out catalog
 before installing the recovered one:
 
@@ -127,6 +133,13 @@ that also includes immutable analysis, declared previews, adjacent evidence and
 reviews, use `cloud backup-sets`, `cloud verify-set`, and
 `cloud recover-set SET_SHA data/workspace/recovery CLIP_ID --rehearse`.
 See [private analysis recovery and cleanup readiness](clip-analysis.md).
+
+For a project backup, `cloud status --project PROJECT_ID` reports the exact
+complete-set digest. Use it with the same `verify-set` and `recover-set` commands;
+the verified set and recovery receipt retain the project scope. Whole-library
+completion pointers remain separate. A project clip backup still excludes the
+finished film, standalone audio, references and other workspace/archive files
+unless they are separately covered by an explicit backup workflow.
 
 New backup sets retain original recovery paths for explicitly selected support
 files and include shared analysis configuration inventories. Recovery installs

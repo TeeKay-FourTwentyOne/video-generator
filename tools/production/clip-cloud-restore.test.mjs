@@ -119,6 +119,7 @@ test('catalog recovery works without any local catalog and stages validated clip
 test('catalog recovery refuses malformed schemas, duplicate IDs and unresolved uses', async t => {
   const f = fixture(t);
   for (const catalog of [
+    { schemaVersion: 1, scope: { kind: 'project', projectId: '../escape' }, clips: [f.clip], uses: [] },
     { schemaVersion: 1, clips: [{ ...f.clip, id: '../escape' }], uses: [] },
     { schemaVersion: 1, clips: [f.clip, f.clip], uses: [] },
     { schemaVersion: 1, clips: [], uses: [{ clipId: f.id, id: 'unknown' }] },
@@ -127,4 +128,11 @@ test('catalog recovery refuses malformed schemas, duplicate IDs and unresolved u
     await assert.rejects(recoverCatalog(sha(bytes), 'data/workspace/invalid', f.repo, { client: f.client }));
     assert.equal(fs.existsSync(path.join(f.repo, 'data/workspace/invalid')), false);
   }
+});
+test('catalog recovery identifies a project subset in its receipt', async t => {
+  const f = fixture(t), scope = { kind: 'project', projectId: 'film-a' };
+  const bytes = gzipSync(JSON.stringify({ schemaVersion: 1, scope, clips: [f.clip], uses: [] }));
+  f.add(`catalog/${sha(bytes)}.json.gz`, bytes);
+  const result = await recoverCatalog(sha(bytes), 'data/workspace/project-catalog', f.repo, { client: f.client });
+  assert.deepEqual(result.scope, scope);
 });

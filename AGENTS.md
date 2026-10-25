@@ -56,9 +56,11 @@ ledger, not a clerk with a camera.
   Custom editors must run this checkpoint too. Preserve failed/pending passes and
   `needs-review`; extraction does not establish human semantic or artistic approval.
 - When private cloud backup is configured and its storage authorization is active,
-  run `npm run clips -- cloud sync` after a batch of imports. It checks the private
-  bucket and local monthly budget before uploads. Keep cloud locations, credentials,
-  accounting and receipts in ignored `data/clips/cloud/`; imports remain offline.
+  run `npm run clips -- cloud sync --project PROJECT_ID` after a project's batch
+  of imports. This includes unused takes and clips referenced by its use records.
+  It checks the private bucket and shared monthly budget before uploads. Use
+  unscoped `cloud sync` for an explicit whole-library backup. Keep cloud locations,
+  credentials, accounting and receipts in ignored `data/clips/cloud/`; imports remain offline.
 - Snapshot generation metadata before submitting: exact prompt, resolved model,
   effective controls and seeds, reference hashes, provider/API and creation time.
   Maintained clients do this automatically. Keep the private snapshot with the
