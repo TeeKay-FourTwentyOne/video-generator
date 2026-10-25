@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5a4720c505fd3da5d66531674e909bdf021b40f8c3bf54951873098beb9dd97f",
+  "sha256": "5a4720c505fd3da5d66531674e909bdf021b40f8c3bf54951873098beb9dd97f",
+  "bytes": 418025,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Unused opening hold for superseded local composite"
+  ],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-render",
+    "portrait-horror",
+    "red-tears"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1b4ea83cceb764400896d400278ffbf90ea9d6ed7167b285ed16c99633e9c016",
+  "sha256": "1b4ea83cceb764400896d400278ffbf90ea9d6ed7167b285ed16c99633e9c016",
+  "bytes": 605510,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Controlled upward tear and near-eye performance; corrected bead matte"
+  ],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-render",
+    "portrait-horror",
+    "red-tears"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

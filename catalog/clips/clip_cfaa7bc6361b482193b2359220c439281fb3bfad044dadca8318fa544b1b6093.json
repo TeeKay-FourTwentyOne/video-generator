@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cfaa7bc6361b482193b2359220c439281fb3bfad044dadca8318fa544b1b6093",
+  "sha256": "cfaa7bc6361b482193b2359220c439281fb3bfad044dadca8318fa544b1b6093",
+  "bytes": 5972,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Black ending"
+  ],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-render",
+    "portrait-horror",
+    "red-tears"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

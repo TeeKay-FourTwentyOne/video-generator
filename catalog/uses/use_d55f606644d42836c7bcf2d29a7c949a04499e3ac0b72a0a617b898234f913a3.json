@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a",
+  "projectId": "jester-mask",
+  "editVersion": "composite-v3",
+  "segmentIndex": 2,
+  "shotId": "S02",
+  "status": "rendered",
+  "evidence": "local-blood-composite-eye-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 146,
+    "length": 46,
+    "fps": 24
+  },
+  "timelineStartFrame": 120,
+  "outputSha256": "52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987",
+  "schemaVersion": 1,
+  "id": "use_d55f606644d42836c7bcf2d29a7c949a04499e3ac0b72a0a617b898234f913a3"
+}

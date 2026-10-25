@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987",
+  "sha256": "52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987",
+  "bytes": 614849,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Locally composited upward blood rivulet with wet trailing stain and single-eye reveal"
+  ],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "blood-flow",
+    "local-render",
+    "portrait-horror",
+    "red-tears"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

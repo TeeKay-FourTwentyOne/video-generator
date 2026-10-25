@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a",
+  "sha256": "8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a",
+  "bytes": 2564659,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One locked-camera supernatural close-up, eight seconds. Match the supplied first and last frames exactly. The porcelain mask, illumination, background, mouth and all black paint remain motionless.\n\nA single tiny ruby on the inner cheek below the near eye is the only moving object: the isolated red jewel below the stationary row of three. It becomes a wet red bead of the same small size. The bead creeps upward on the porcelain, diagonally up and slightly screen-left, passes beside the row of three stationary jewels and enters the empty eye opening above it. Show a continuous upward path from cheek to eye, a reversed tear held against the surface by tension. The bead is never larger than the original jewel. Nothing enters from outside the frame.\n\nWhen the small bead vanishes inside the near eye opening, one natural human eye suddenly opens there, exactly as shown in the last frame. Hold that one eye staring into the camera for the last two seconds. The far eye hole remains empty black throughout. The last frame is the final state: just one live eye, the one lower jewel gone, everything else unchanged.\n\nRestrained close sound: a tiny glass tick, a delicate wet friction, and one quiet intake of breath at the end. No dialogue or music. No falling or downward droplet, dangling liquid, second eye, extra drops, camera move, human body, hands, masks multiplying, changing mouth, new props or text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c9cca24ab5edcf4ba1c79f8deb9e38982e7504f08de5fe7c0d423d95f6321b99",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 189347322,
+      "createdAt": "2026-10-24T05:18:23.614Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "838489c6b40814a1d06f39555b6b5da7610e931c15dea665f10a4ce1b2d6a319",
+          "bytes": 1458946,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "e31893fc870639a74c543e25a0bbf61521ea2d6ddfda3aba02e79b771379ae49",
+          "bytes": 1489727,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f8f64a84e37c709ce4cfa4050b56917a11a42b842000d30d5399b67cfb164ab8"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "projectId": "jester-mask",
+  "title": "RED TEARS",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published on YouTube with the director-approved refined fifth voice audition. The verified local archive retains the final v5 4K master, original takes, reusable shot assets, every voice audition and stem, recipes and QA. Superseded complete edits, render candidates and derived full mixes were removed through verified retention.",
+  "briefPath": "briefs/jester-mask/brief.md",
+  "descriptionPath": "briefs/jester-mask/description.md",
+  "descriptionSha256": "592d832d88eb5a467a90553d049b24f4ac2cb81f238ea2f8d15671ec7c5b5b22",
+  "decisionsPath": "briefs/jester-mask/decisions.md",
+  "handoffPath": "briefs/jester-mask/handoff.md",
+  "supportingDocuments": [
+    {
+      "label": "Initial concept workshop (historical proposals)",
+      "path": "briefs/jester-mask/workshop-v1.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/jester-mask-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "7b6bb4589ea8819cf132e3aeb765bdec7978f001591dbe42d3ebafcb15ff6869",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 288,
+      "durationSeconds": 12,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v1/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 288,
+      "durationSeconds": 12,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v2/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v2-4k",
+      "path": "final/v2-4k/film.mp4",
+      "sha256": "785d8827e1f2ad8035e1f905de9c1f726476d9e1900f7fcd0ce9709c3cbc5e30",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 288,
+      "durationSeconds": 12,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v2-4k/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v3-final",
+      "path": "final/v3-final/film.mp4",
+      "sha256": "f3b4d0b2f57059841d01336055537c78bc67a48150b25ade78b8cd2abd8ee37b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 302,
+      "durationSeconds": 12.583333333333334,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v3-final/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v3-4k",
+      "path": "final/v3-4k/film.mp4",
+      "sha256": "106512703e112232e6c768cd95a14d202beff7e52dfc347b74e170c869389b32",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 302,
+      "durationSeconds": 12.583333333333334,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v3-4k/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "fdff9ad8fc58eb27a4f9dbe77adb37d53a36cfbb3e1b51ca188c2cf8ad1bbce1",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 302,
+      "durationSeconds": 12.583333333333334,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v4/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v4-4k",
+      "path": "final/v4-4k/film.mp4",
+      "sha256": "efec2a52fc0dfe67ea48360fb37ef098aa4168a79c7f91ed24843043dc99e140",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 302,
+      "durationSeconds": 12.583333333333334,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v4-4k/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v5",
+      "path": "final/v5/film.mp4",
+      "sha256": "8d7448048f6783f26a72cab90cc12b124b39ab1012a66b3ea78775d0009ad2f9",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 302,
+      "durationSeconds": 12.583333333333334,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "descriptionCopyPath": "final/v5/description.txt",
+      "deliveryRecordPath": "final/v5/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v5-4k",
+      "path": "final/v5-4k/film.mp4",
+      "sha256": "1176676416173ace1186a40a2b31a4c36cafd7cfbc0e74653854ddeb1915b008",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 302,
+      "durationSeconds": 12.583333333333334,
+      "publishedMaster": true,
+      "retention": "retained",
+      "descriptionCopyPath": "final/v5-4k/description.txt",
+      "deliveryRecordPath": "final/v5-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Built-in image_gen; model not exposed"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google Vertex AI and local compositing",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local original synthesis and mixing"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Google Vertex AI with local filtering and mixing",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-4-6"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/2sQ_MACZU_k",
+    "evidence": "public-page-verified",
+    "recordedDate": "2026-10-24",
+    "verifiedDate": "2026-10-24",
+    "platformPublicationDate": "2026-10-24",
+    "artifactVersion": "v5-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "7b6bb4589ea8819cf132e3aeb765bdec7978f001591dbe42d3ebafcb15ff6869",
+      "recordedDate": "2026-10-23",
+      "evidence": "Full decode, dimensions, 288 frames at 24 fps, source hashes, intentional black timing and encoded audio peak checks passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "7b6bb4589ea8819cf132e3aeb765bdec7978f001591dbe42d3ebafcb15ff6869",
+      "recordedDate": "2026-10-23",
+      "evidence": "Agent inspected native contact frames, joins, dense tear travel and eye-opening frames. The corrected bead matte and single near-eye reveal were retained; no real-time playback approval is implied.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1",
+      "artifactSha256": "7b6bb4589ea8819cf132e3aeb765bdec7978f001591dbe42d3ebafcb15ff6869",
+      "recordedDate": "2026-10-23",
+      "evidence": "Computational stereo and mono-fold checks only. Real-time listening and phone-speaker review remain pending.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "7b6bb4589ea8819cf132e3aeb765bdec7978f001591dbe42d3ebafcb15ff6869",
+      "recordedDate": "2026-10-23",
+      "evidence": "Native first cut is available for director review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "recordedDate": "2026-10-23",
+      "evidence": "Full decode, 288 frames at 24 fps, native portrait raster, source hashes, black timing, encoded audio peaks and maintained project extraction checks passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "recordedDate": "2026-10-23",
+      "evidence": "Agent inspected native contact frames and dense encoded flow samples. Gem softening, connected upward rivulet, moving highlights and retained red stain replace the first cut’s circular translation.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2",
+      "artifactSha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "recordedDate": "2026-10-23",
+      "evidence": "Encoded loudness, peak and mono-fold measurements only; real-time listening remains for director review.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "recordedDate": "2026-10-23",
+      "evidence": "Revised blood-flow cut is available for director review; original v1 retained.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "recordedDate": "2026-10-23",
+      "evidence": "The director said they loved version 2 and requested its 4K upscale.",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v2",
+      "artifactSha256": "fcbda10f48b5abfd311b6f288b881515cface1ddff951060de8efce04edb0cbf",
+      "recordedDate": "2026-10-23",
+      "evidence": "The director explicitly requested a 4K upscale of approved native v2.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "785d8827e1f2ad8035e1f905de9c1f726476d9e1900f7fcd0ce9709c3cbc5e30",
+      "recordedDate": "2026-10-23",
+      "evidence": "Full decode, dimensions, frame count, all video timestamps, exact AAC packets and decoded audio, BT.709 tags, faststart and all-frame proxy comparison passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "785d8827e1f2ad8035e1f905de9c1f726476d9e1900f7fcd0ce9709c3cbc5e30",
+      "recordedDate": "2026-10-23",
+      "evidence": "Agent inspected blood, open-eye and lacquer crops at output-pixel scale against the approved source. The metadata-only correction preserved every decoded picture frame.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3-final",
+      "artifactSha256": "f3b4d0b2f57059841d01336055537c78bc67a48150b25ade78b8cd2abd8ee37b",
+      "recordedDate": "2026-10-24",
+      "evidence": "Full decode, 302 frames at 24 fps, exact black and coda boundaries, original 282-frame prefix pixel identity, unchanged pre-coda soundtrack and audio peak checks passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3-final",
+      "artifactSha256": "f3b4d0b2f57059841d01336055537c78bc67a48150b25ade78b8cd2abd8ee37b",
+      "recordedDate": "2026-10-24",
+      "evidence": "Agent inspected all eighteen selected coda frames and native/4K eye and blood-residue crops. Both eyes widen; the mask stays rigid and the left red residue remains visible. Earlier sequence and black cut are preserved.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v3-final",
+      "artifactSha256": "f3b4d0b2f57059841d01336055537c78bc67a48150b25ade78b8cd2abd8ee37b",
+      "recordedDate": "2026-10-24",
+      "evidence": "Signal, loudness, peak and original-audio preservation checks only. Real-time listening is not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3-final",
+      "artifactSha256": "f3b4d0b2f57059841d01336055537c78bc67a48150b25ade78b8cd2abd8ee37b",
+      "recordedDate": "2026-10-24",
+      "evidence": "The director requested this coda revision; the delivered result awaits their review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "106512703e112232e6c768cd95a14d202beff7e52dfc347b74e170c869389b32",
+      "recordedDate": "2026-10-24",
+      "evidence": "Full decode, 2160 by 3840 raster, 302 matching frame timestamps, all 591 matching AAC packets, decoded audio identity, BT.709 limited tags and all-frame picture comparison passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "106512703e112232e6c768cd95a14d202beff7e52dfc347b74e170c869389b32",
+      "recordedDate": "2026-10-24",
+      "evidence": "Agent inspected all eighteen selected coda frames and native/4K eye and blood-residue crops. Both eyes widen; the mask stays rigid and the left red residue remains visible. Earlier sequence and black cut are preserved.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "fdff9ad8fc58eb27a4f9dbe77adb37d53a36cfbb3e1b51ca188c2cf8ad1bbce1",
+      "recordedDate": "2026-10-24",
+      "evidence": "Full decode, identical picture packets and decoded frames, matching presentation timestamps, 302 frames at 24 fps, correct colour tags, unchanged pre-coda PCM, mono-safe voice and no clipping. Native and 4K share identical AAC.",
+      "outcome": "passed"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v4",
+      "artifactSha256": "fdff9ad8fc58eb27a4f9dbe77adb37d53a36cfbb3e1b51ca188c2cf8ad1bbce1",
+      "recordedDate": "2026-10-24",
+      "evidence": "The ElevenLabs replacement is fitted to the eighteen-frame flash, with stronger vocal presence. Signal, level and timing checks passed; real-time listening and artistic approval are not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "efec2a52fc0dfe67ea48360fb37ef098aa4168a79c7f91ed24843043dc99e140",
+      "recordedDate": "2026-10-24",
+      "evidence": "Full decode, identical picture packets and decoded frames, matching presentation timestamps, 302 frames at 24 fps, correct colour tags, unchanged pre-coda PCM, mono-safe voice and no clipping. Native and 4K share identical AAC.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5",
+      "artifactSha256": "8d7448048f6783f26a72cab90cc12b124b39ab1012a66b3ea78775d0009ad2f9",
+      "recordedDate": "2026-10-24",
+      "evidence": "Full decode, identical picture packets and decoded frames, 302 matching frame timestamps, exact selected-voice PCM placement, unchanged earlier PCM and AAC prefix, no clipping, and matching native/4K AAC passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v5",
+      "artifactSha256": "8d7448048f6783f26a72cab90cc12b124b39ab1012a66b3ea78775d0009ad2f9",
+      "recordedDate": "2026-10-24",
+      "evidence": "The director explicitly selected the isolated refined fifth audition and requested insertion. That exact sample is present. Technical mix checks passed; real-time listening to the assembled film by the agent is not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "1176676416173ace1186a40a2b31a4c36cafd7cfbc0e74653854ddeb1915b008",
+      "recordedDate": "2026-10-24",
+      "evidence": "Full decode, identical picture packets and decoded frames, 302 matching frame timestamps, exact selected-voice PCM placement, unchanged earlier PCM and AAC prefix, no clipping, and matching native/4K AAC passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "1176676416173ace1186a40a2b31a4c36cafd7cfbc0e74653854ddeb1915b008",
+      "recordedDate": "2026-10-24",
+      "evidence": "The director explicitly selected the isolated refined fifth audition and requested insertion. That exact sample is present. Technical mix checks passed; real-time listening to the assembled film by the agent is not claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "1176676416173ace1186a40a2b31a4c36cafd7cfbc0e74653854ddeb1915b008",
+      "recordedDate": "2026-10-24",
+      "evidence": "The director accepted the delivered final film with “Perfect” after selecting the refined fifth audition and requesting its insertion.",
+      "outcome": "approved"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v5-4k",
+      "artifactSha256": "1176676416173ace1186a40a2b31a4c36cafd7cfbc0e74653854ddeb1915b008",
+      "recordedDate": "2026-10-24",
+      "evidence": "The director supplied the published URL. Unauthenticated YouTube player metadata confirmed the public title, exact description and platform publication date. The selected local master is v5-4k; no checksum equivalence with the platform transcode is claimed.",
+      "outcome": "public-page-verified"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/jester-mask-v1/workspace-archive-manifest.json",
+    "inventorySha256": "a5e046207607ab98afab0eee7b3e061ebf59fdf269a664f6105b31bcfe6761cd",
+    "verifiedDate": "2026-10-24"
+  },
+  "legacyPaths": []
+}

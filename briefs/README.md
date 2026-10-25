@@ -44,6 +44,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [House Special](house-special/README.md) | published | — | [Brief](house-special/brief.md) · [Description](house-special/description.md) · [Decisions](house-special/decisions.md) · [Record](house-special/production.json) |
 | [INSTAR](instar/README.md) | delivered | — | [Brief](instar/brief.md) · [Decisions](instar/decisions.md) · [Record](instar/production.json) |
 | [JANUS / RUSSIAN ARK](janus-russian-ark/README.md) | published | — | [Brief](janus-russian-ark/brief.md) · [Record](janus-russian-ark/production.json) |
+| [RED TEARS](jester-mask/README.md) | published | — | [Brief](jester-mask/brief.md) · [Description](jester-mask/description.md) · [Decisions](jester-mask/decisions.md) · [Record](jester-mask/production.json) |
 | [JULY — Rose](july/README.md) | published | monthly-etymology | [Brief](july/brief.md) · [Record](july/production.json) |
 | [JUNE — The Contested Month](june/README.md) | unknown | monthly-etymology | [Brief](june/brief.md) · [Record](june/production.json) |
 | [May 2026](may-2026/README.md) | delivered | monthly-etymology | [Brief](may-2026/brief.md) · [Decisions](may-2026/decisions.md) · [Record](may-2026/production.json) |

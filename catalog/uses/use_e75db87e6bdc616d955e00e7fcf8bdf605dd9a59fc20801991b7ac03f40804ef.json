@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a",
+  "projectId": "jester-mask",
+  "editVersion": "composite-v3",
+  "segmentIndex": 0,
+  "shotId": "S02",
+  "status": "rendered",
+  "evidence": "local-blood-composite-ruby-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 1,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987",
+  "schemaVersion": 1,
+  "id": "use_e75db87e6bdc616d955e00e7fcf8bdf605dd9a59fc20801991b7ac03f40804ef"
+}

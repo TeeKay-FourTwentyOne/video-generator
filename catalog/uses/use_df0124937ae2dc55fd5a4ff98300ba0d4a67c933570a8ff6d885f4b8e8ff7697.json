@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_29265d11409ab714b95fa012a398397bd45eb603500393c4adc9498a22f966b3",
+  "projectId": "jester-mask",
+  "editVersion": "edit/v3",
+  "segmentIndex": 0,
+  "shotId": "S01",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 48,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "bc8811e18c299d203062010b541394d6f927a8e6e93e0aa6c01633e8ec775279",
+  "schemaVersion": 1,
+  "id": "use_df0124937ae2dc55fd5a4ff98300ba0d4a67c933570a8ff6d885f4b8e8ff7697"
+}

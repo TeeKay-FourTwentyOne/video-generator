@@ -4702,6 +4702,25 @@
       }
     },
     {
+      "id": "clip_1b4ea83cceb764400896d400278ffbf90ea9d6ed7167b285ed16c99633e9c016",
+      "metadata": "clips/clip_1b4ea83cceb764400896d400278ffbf90ea9d6ed7167b285ed16c99633e9c016.json",
+      "labels": [
+        "Controlled upward tear and near-eye performance; corrected bead matte"
+      ],
+      "kind": "derived",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_1b83e8261a96b1181788cfc3d698d7358b02a78072163fd697e59bf14f6e2301",
       "metadata": "clips/clip_1b83e8261a96b1181788cfc3d698d7358b02a78072163fd697e59bf14f6e2301.json",
       "labels": [
@@ -7301,6 +7320,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_29265d11409ab714b95fa012a398397bd45eb603500393c4adc9498a22f966b3",
+      "metadata": "clips/clip_29265d11409ab714b95fa012a398397bd45eb603500393c4adc9498a22f966b3.json",
+      "labels": [
+        "Opening hold matching corrected controlled motion"
+      ],
+      "kind": "derived",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 2,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 6
       }
     },
     {
@@ -11924,6 +11962,25 @@
       }
     },
     {
+      "id": "clip_41eabb5917a807bfebc2abcfb1faaa56aeaff2a52d3c1810023a9bb261c0ab80",
+      "metadata": "clips/clip_41eabb5917a807bfebc2abcfb1faaa56aeaff2a52d3c1810023a9bb261c0ab80.json",
+      "labels": [
+        "Unused first local composite; superseded after bead-edge inspection"
+      ],
+      "kind": "derived",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_41f1402c19513f98488c9b12e5f568594b086553e34ebb96a7a0d44f2626fa05",
       "metadata": "clips/clip_41f1402c19513f98488c9b12e5f568594b086553e34ebb96a7a0d44f2626fa05.json",
       "labels": [
@@ -15393,6 +15450,25 @@
       }
     },
     {
+      "id": "clip_52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987",
+      "metadata": "clips/clip_52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987.json",
+      "labels": [
+        "Locally composited upward blood rivulet with wet trailing stain and single-eye reveal"
+      ],
+      "kind": "derived",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
       "id": "clip_52defe59b3efe1467e8fe65d59c9f2e56063cd44047e292f62787399d7dea24c",
       "metadata": "clips/clip_52defe59b3efe1467e8fe65d59c9f2e56063cd44047e292f62787399d7dea24c.json",
       "labels": [
@@ -16828,6 +16904,25 @@
       "durationSeconds": 3,
       "width": 720,
       "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_5a4720c505fd3da5d66531674e909bdf021b40f8c3bf54951873098beb9dd97f",
+      "metadata": "clips/clip_5a4720c505fd3da5d66531674e909bdf021b40f8c3bf54951873098beb9dd97f.json",
+      "labels": [
+        "Unused opening hold for superseded local composite"
+      ],
+      "kind": "derived",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 2,
+      "width": 1080,
+      "height": 1920,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -26228,6 +26323,23 @@
       }
     },
     {
+      "id": "clip_8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a",
+      "metadata": "clips/clip_8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 7
+      }
+    },
+    {
       "id": "clip_898fb638b1e296181e7b254151892d618c57ab86425e072749ce5cdbbf6ac7ee",
       "metadata": "clips/clip_898fb638b1e296181e7b254151892d618c57ab86425e072749ce5cdbbf6ac7ee.json",
       "labels": [
@@ -30207,6 +30319,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_a0c20cd1b33fd3d1ba735b1b4907fd3905f0463214abf85990fa9ea743fd0190",
+      "metadata": "clips/clip_a0c20cd1b33fd3d1ba735b1b4907fd3905f0463214abf85990fa9ea743fd0190.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 4
       }
     },
     {
@@ -38689,6 +38818,25 @@
       }
     },
     {
+      "id": "clip_cfaa7bc6361b482193b2359220c439281fb3bfad044dadca8318fa544b1b6093",
+      "metadata": "clips/clip_cfaa7bc6361b482193b2359220c439281fb3bfad044dadca8318fa544b1b6093.json",
+      "labels": [
+        "Black ending"
+      ],
+      "kind": "derived",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 2,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 10
+      }
+    },
+    {
       "id": "clip_cfc608f734099462c5f465bb4d4bc45825ec8b7ff975aa9d142fab2dffcb9aa3",
       "metadata": "clips/clip_cfc608f734099462c5f465bb4d4bc45825ec8b7ff975aa9d142fab2dffcb9aa3.json",
       "labels": [
@@ -44330,6 +44478,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_ef655edc56ba38be52456777ae6c8c3ef72087a77ed05b6774d1fce1e4897c36",
+      "metadata": "clips/clip_ef655edc56ba38be52456777ae6c8c3ef72087a77ed05b6774d1fce1e4897c36.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "jester-mask"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0

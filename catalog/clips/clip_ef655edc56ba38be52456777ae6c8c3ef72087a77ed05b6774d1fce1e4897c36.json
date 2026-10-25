@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ef655edc56ba38be52456777ae6c8c3ef72087a77ed05b6774d1fce1e4897c36",
+  "sha256": "ef655edc56ba38be52456777ae6c8c3ef72087a77ed05b6774d1fce1e4897c36",
+  "bytes": 3960231,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A single continuous eight-second supernatural horror shot, beginning with the supplied portrait image. Locked-off camera and stable cold hard side lighting. Preserve the exact mask, composition, red lips, black painted tear shapes and pure black background. The mask is a rigid inanimate porcelain shell with two empty dark eye openings.\n\nOne small red jewel changes: the isolated jewel immediately below the inner row of three red jewels under the near, viewer-left eye opening, beside the nose. All other jewels stay perfectly still.\n\nDuring the first two seconds, that one jewel softens subtly into a rounded glossy red liquid bead on the white cheek. During seconds two through four and a half, the single bead crawls a short distance upward and slightly screen-left against gravity, staying in contact with the cheek, passing beside the stationary row of three jewels rather than through them, and slipping over the lower rim into the near dark eye opening. The movement has tangible surface tension and a clear continuous path. The remaining cheek is clean once the bead has passed. A very brief still beat.\n\nAround second five, one realistic human eye snaps open inside that same near socket, with wet natural lids, a dark iris and a dilated pupil, looking directly at the camera with frightening intensity. The eye stays fully open through the end, with only tiny natural eye motion. Only a small amount of surrounding skin is visible in the recess; no face or person appears behind the mask. The farther eye opening remains completely empty and black. The white shell, lips, black paint and other jewels remain unchanged throughout. The mask never moves.\n\nSound: intimate restrained material sounds, one tiny glass tick, a small wet glide as the bead moves, and a close involuntary intake of breath after the eye opens. Quiet surrounding air. No speech, music, laughter or crowd.\n\nNo additional droplets, liquid sprays, wounds, whole-face transformations, moving painted tears, second eye, glowing pupils, hands, body, smoke, room, head turn, camera movement, zoom, cuts, title, subtitles or other text. The small reversed tear and one suddenly living eye are the complete action.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d5704452c47d66cfdc163a4bd563258c7ddeb434dd4fb00e089ab4ccae1d4e1a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 958505084,
+      "createdAt": "2026-10-24T05:08:41.951Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "838489c6b40814a1d06f39555b6b5da7610e931c15dea665f10a4ce1b2d6a319",
+          "bytes": 1458946,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "5be412266b148965b33ba201ffedc194bba00fc68904c998d20a2d48710f79eb"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

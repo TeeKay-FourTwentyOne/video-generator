@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_29265d11409ab714b95fa012a398397bd45eb603500393c4adc9498a22f966b3",
+  "sha256": "29265d11409ab714b95fa012a398397bd45eb603500393c4adc9498a22f966b3",
+  "bytes": 421571,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 48,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Opening hold matching corrected controlled motion"
+  ],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-render",
+    "portrait-horror",
+    "red-tears"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

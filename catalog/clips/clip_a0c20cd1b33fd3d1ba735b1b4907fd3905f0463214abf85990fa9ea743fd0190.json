@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a0c20cd1b33fd3d1ba735b1b4907fd3905f0463214abf85990fa9ea743fd0190",
+  "sha256": "a0c20cd1b33fd3d1ba735b1b4907fd3905f0463214abf85990fa9ea743fd0190",
+  "bytes": 14015181,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "jester-mask"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous locked-off extreme-close frontal shot of exactly the reference jester mask in a pure black void. The reference is the exact first frame. Both eyes of ONE terrified adult are already visible through the eye holes from the first frame. Keep this frontal composition absolutely fixed; no reveal, no camera move or zoom. The eyes are frightened, trapped, held wide, wet and alive. IMMEDIATELY in the first second the two eyes make a tiny panicked saccade and the lower lids tremble, as the concealed person tries to cry out through the hard mask. Tiny nervous eye movement continues naturally. The mask itself is rigid glazed porcelain: its sculpted red mouth, painted brows, red nose and all jewels remain completely immobile. The thin red blood residue on the VIEWER LEFT cheek stays exactly where it is. No fresh blood or dripping. No changes to the mask geometry, count of jewels or paint. Exactly two human eyes only. No hands, no body, no additional faces. No cuts or transitions.\nSound: at 0.1 seconds a close short involuntary muffled human whimper, less than half a second, from behind the mask, a constricted breathy closed-mouth 'mmh' without intelligible words. Very dry, dull and enclosed, consonants swallowed by hard ceramic. Low frightened breathing afterward. No soundtrack, no music, no cinematic hit, no reverb, no loud scream, no spoken dialogue. The mask mouth never moves. Visceral photoreal horror cinematography; preserve original hard cool glints, deep blacks and wet eye texture.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f0245ee616550376fdbd909748a425ea4ceb56d61dd8ecb08edcd494711dde02",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3703742257,
+      "createdAt": "2026-10-24T08:04:55.990Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e40662b94f454f6167e6e0be196defef54e1422d3d575f86881e7cb5b1675fbe",
+          "bytes": 2063063,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "61c111ec0f6ec08d70d77f784cf3b5723840a48a1852f5696f77499a8595ff7f"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

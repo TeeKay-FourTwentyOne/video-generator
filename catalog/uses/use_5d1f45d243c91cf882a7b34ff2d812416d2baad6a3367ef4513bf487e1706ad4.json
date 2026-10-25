@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_8934d9e21bde982da81ce0caa7624c57edd25102a72059b24fe506bb87e3346a",
+  "projectId": "jester-mask",
+  "editVersion": "composite-v3",
+  "segmentIndex": 1,
+  "shotId": "S02",
+  "status": "rendered",
+  "evidence": "local-blood-composite-clean-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 128,
+    "length": 1,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "52cf803d345b4bd2dbaea35f662bfb63e192ea9074971d9458ecdc4d76547987",
+  "schemaVersion": 1,
+  "id": "use_5d1f45d243c91cf882a7b34ff2d812416d2baad6a3367ef4513bf487e1706ad4"
+}
