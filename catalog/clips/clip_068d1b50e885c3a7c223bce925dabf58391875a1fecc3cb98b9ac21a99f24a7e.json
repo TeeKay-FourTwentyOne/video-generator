@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_068d1b50e885c3a7c223bce925dabf58391875a1fecc3cb98b9ac21a99f24a7e",
+  "sha256": "068d1b50e885c3a7c223bce925dabf58391875a1fecc3cb98b9ac21a99f24a7e",
+  "bytes": 18927476,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black-and-white 1943 footage, high contrast, fine grain, a tall vertical frame, the camera locked off at street level looking along a wide city boulevard; it does not move. A long column of soldiers marches in step toward and past the camera on the left, arms swinging, while the crowds on the pavements wave hats and small flags; a formation of bombers crosses the overcast sky just above the rooftops from right to left, slow and steady, staying low over the roofs. The flags on the lamp posts stir. All the action stays in the middle half of the frame. No on-screen text, no titles, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9aa774d494c7309174d1190bb216b5e1e5ed2880a833ec25b3e4931bc6ff3c05",
+      "provider": "veo",
+      "model": "veo-3.1-fast-generate-001",
+      "seed": 2398322965,
+      "createdAt": "2026-10-26T14:56:26.995Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-fast-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "f6704476fe0ff6f503c760cb2f3e7e2b9a223ca7239745a10920b2fcc66d6fa1",
+          "bytes": 2079895,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f9ee877cc749c64ba54b2834daa63867fc832ffd44ebb7fe47d64986422c106c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

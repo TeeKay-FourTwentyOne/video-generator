@@ -206,3 +206,13 @@ Source: claude-code · October · 2026-10-08
 ### Keep late native vocal moments aligned with their source picture
 An empty speech-detector result does not establish that an applause bed contains no vocal sound. In House Special, the director identified a short late vocal moment after the bow that automated transcription missed. When the picture is trimmed, copying later native sound to the beginning of the shot can move that moment onto the title. For an intentionally retained utterance, preserve the source-frame offset in both picture and audio; use separate crowd beds where sound must be moved.
 Source: Codex · House Special · 2026-10-18
+
+### Period narration plays through the house, so treat it as the house's playback
+Five ElevenLabs lines in five announcer registers only read as "the trailer's voice" once each was passed
+through its era's playback (1943 mono, 300–3400 Hz, soft compression; 1973 warm 80–8 kHz with a low shelf;
+1999 clean 100–10 kHz; 2026 full) plus one short hall shared by narration and era music, with the coda cue left
+clean. Band limits alone were not enough; the hall is what puts the voice on the screen instead of in the mix.
+Veo's own native dialogue needed nothing: it already sat in the room.
+**Apply:** render treated copies with a deterministic recipe (hashes in an index) and place them in the mix
+manifest; keep the era music under the same chain and let the coda break it.
+Source: claude-code · Coming Attractions · 2026-10-26

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3543d11436d3cd31532842dd7be09465c7be3c8c597920cc43eb04374ae68b18",
+  "sha256": "3543d11436d3cd31532842dd7be09465c7be3c8c597920cc43eb04374ae68b18",
+  "bytes": 9136088,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, inside a modern cinema with black leather recliners, 35 mm, the camera locked off at the front of the house looking up at the third row; it does not move. The woman with loose shoulder-length hair in the oversized blazer looks down at the glowing phone in her lap and half-smiles as the bearded man in the green hoodie leans over to look at it with her and says something; she laughs quietly. Then the cold white flicker from the screen above the lens brightens and changes; she turns the phone face-down in her lap and looks up at the screen, the man sits back, and both go quiet and still, her face falling serious; the older woman with the silver bob beside her and the people behind go still too, no one moving, no one speaking. Sound: a murmuring house, a quiet laugh, then a hush; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere; the phone screen is a plain blur.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b39ead85b0cad65bbe86a8de5bd06c4f4cf835730a88fe7666ae57d5925a4627",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1029159914,
+      "createdAt": "2026-10-26T15:00:49.795Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7591d66daf572569eeb0c084a61d3ae584a83d1b11bb99b83b94a1b4af51c49b",
+          "bytes": 1481929,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "83b84c9e404e85e5700222dbc06f6d31711a576f159462ab88c8063c9017fb52"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

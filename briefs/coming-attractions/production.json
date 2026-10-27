@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "projectId": "coming-attractions",
+  "title": "Coming Attractions",
+  "kind": "film",
+  "status": "producing",
+  "statusNote": "First draft (v1) cut on 2026-10-26 from fifteen motion takes, five narration lines, effects, music and local cards; assembled as a native review film with a timecode overlay. Awaiting the director's review; open decisions on length, one retake and the coda camera are on the status page.",
+  "briefPath": "briefs/coming-attractions/brief.md",
+  "supportingDocuments": [
+    {
+      "label": "Status page guide",
+      "path": "briefs/coming-attractions/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace/coming-attractions-v1",
+    "state": "active"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "291ec34bb816296d9b720d4559d3d2daf0e21e529f4d50fc9371b0427308134b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1502,
+      "durationSeconds": 62.583333333333336,
+      "publishedMaster": false
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Gemini 3 Pro Image"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept and direction"
+      },
+      {
+        "role": "Shot planning, anchor direction, period cards, editing and sound",
+        "model": "Claude Fable 5.1",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "291ec34bb816296d9b720d4559d3d2daf0e21e529f4d50fc9371b0427308134b",
+      "recordedDate": "2026-10-26",
+      "eventDate": "2026-10-26",
+      "evidence": "film assemble v1: full decode, dimensions, frame count and source hashes verified; mix report -16.1 LUFS integrated, -1.7 dBTP; delivered file measured -16.1 LUFS, -1.8 dBFS peak; project clip analysis complete for 27 clips (model passes needs-review, human review not asserted); review package with timecode overlay. No listening or artistic approval claimed.",
+      "outcome": "passed"
+    }
+  ],
+  "legacyPaths": []
+}

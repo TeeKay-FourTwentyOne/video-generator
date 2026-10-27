@@ -14,6 +14,9 @@ a Markdown or JSON source inside the project folder. These documents receive
 the same privacy and link checks and appear in the generated project summary.
 Series canon and character assets keep their existing
 locations; link them with `seriesId` and `seriesPath` rather than copying them.
+`status.json` beside the record is the source of the project's collaboration
+status page (see the `production-status` skill); it carries scene-level state and
+no prices, and `status.md` describes how it is built.
 
 ## Public facts and private evidence
 

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f0da51be641227e7c302421cf390b405afdce88ab7e241900f5c7e91227301ea",
+  "sha256": "f0da51be641227e7c302421cf390b405afdce88ab7e241900f5c7e91227301ea",
+  "bytes": 9122915,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Faded 1973 colour footage, warm and slightly magenta, soft contrast, fine grain, a tall vertical frame, the camera locked off at road level looking down a long queue of big American sedans and station wagons waiting bumper to bumper for a gas station; it does not move. The cars creep forward one length and stop, brake lights glowing in the morning haze; drivers lean on their open doors and fold their arms; a man walks back along the line toward the camera carrying a red fuel can, shaking his head. All the action stays in the middle third of the frame. No on-screen text, no signs, no numbers, no lettering anywhere; the gas station signs are blank.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b07cb625327d9a1db80b605a2a620da441362e16dc25a6d97348376fdde963d8",
+      "provider": "veo",
+      "model": "veo-3.1-fast-generate-001",
+      "seed": 1909987225,
+      "createdAt": "2026-10-26T14:56:32.244Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-fast-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d4d5818da9ac82ac830f94a6d9899e6928f1cc0463da314865788e129c8231b3",
+          "bytes": 1427150,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "5f6b287d9e240e200297974c75612a2cd1a667df79d676497bb3e8fd811409d1"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

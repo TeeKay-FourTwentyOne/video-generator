@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0d86c36643c2f32d8b6b52d88cfc45b9e9be98df9cc139ef63ebe66db380658f",
+  "sha256": "0d86c36643c2f32d8b6b52d88cfc45b9e9be98df9cc139ef63ebe66db380658f",
+  "bytes": 12016399,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Late-1999 footage, muted contrast, slight bloom on the screens, a tall vertical frame, the camera locked off at shoulder height behind three technicians in shirtsleeves who stand staring at a wall of glowing CRT monitors in a dim control room; it does not move. The screens flicker with unreadable blurred glyphs and blinking blocks; one technician pushes a hand through his hair; then, row by row from the top of the wall down, the monitors go dark one after another until only the red warning lamp among them is left pulsing on their shoulders. No readable text, no numbers, no lettering anywhere; every screen is an unreadable blur.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b9766feaa04b433689d18e8a9948d2265ceffe356d31e094de9b11eb24600729",
+      "provider": "veo",
+      "model": "veo-3.1-fast-generate-001",
+      "seed": 2254136155,
+      "createdAt": "2026-10-26T14:56:34.625Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-fast-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "9382e293b67522e706569e44bd079ca6c993b558422ed89028609241a3d697ae",
+          "bytes": 1668767,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "bd1b219443a1e22f519f194d970618e161cba2b359b0d68e8789ec4eeeb5b880"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

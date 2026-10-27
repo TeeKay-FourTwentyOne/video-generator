@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_59564be0cb7578f88fbcac4b1818789fb04884027949077c255ca067ccab3b64",
+  "sha256": "59564be0cb7578f88fbcac4b1818789fb04884027949077c255ca067ccab3b64",
+  "bytes": 53427310,
+  "extension": ".mov",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 64,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 1536,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "Humanity returns — local scene draft v1"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "carved-relief",
+    "humanity-returns",
+    "local-animation",
+    "scene-07"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_85a6fa9167eea4731814e7f1a2e2b21dd8db06884beefca9bdacd46afa3c617a",
+  "sha256": "85a6fa9167eea4731814e7f1a2e2b21dd8db06884beefca9bdacd46afa3c617a",
+  "bytes": 8337974,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, 1943, inside a movie palace, 35 mm, the camera locked off at the front of the house looking up at the third row; it does not move. The young woman in the tilted hat and the young sailor beside her sit watching the screen above the lens, lit only by the cool silver flicker of the projected picture. For the first moments she leans to the sailor and whispers something, smiling, and he nods; then the flicker on their faces brightens and steadies and both fall completely silent and still, her smile fading, her eyes fixed on the screen, his jaw tightening; the older man beside her and the people behind go still too, no one moving, no one speaking. Sound: a hushed house, the faint clatter of a projector far behind, a single cough, then near-silence; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_76b667475a1cd0c159fa815941fdbd5eedfcba4f9c033c9fd37bdb54e273c097",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2000717644,
+      "createdAt": "2026-10-26T14:56:24.339Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "5b55f71ec9ca6f527c3ff31db93242165ac246b9fc418dac8857176fd73df8f7",
+          "bytes": 1544475,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "2f675068a47af5fa485ffbc18c39427940a3e619ee8286eddac944acf89fc796"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

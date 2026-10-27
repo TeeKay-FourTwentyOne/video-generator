@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_59048f121a819e29dcc917014a109a322fa7a7852111f9bda2c1326e39e80307",
+  "sha256": "59048f121a819e29dcc917014a109a322fa7a7852111f9bda2c1326e39e80307",
+  "bytes": 4177729,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, inside a dark modern cinema, 35 mm, the camera locked off in a seat at the eye level of a seated person, turned sideways to look along the row at the woman of about sixty-five with the silver bob and thin-rimmed glasses in the next seat, seen in profile, head and shoulders, the black armrest and the edge of the seat back soft in the foreground; it does not move. She is watching the screen, which is out of frame to the left of the camera, her nose pointing left, her hand pressed to her mouth, her eyes glistening in the cold white flicker that lights her face from the left; then she senses the look, turns her head to glance briefly at the camera with a small worried shake of her head, and turns back to the screen. Her lips stay closed; she does not speak. Sound: a near-silent house, a seat creaking, a breath; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_eba8a67ab172fbc96bdf59456be038f52f943338445caab4cff192d2e8d4ae1a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2811586565,
+      "createdAt": "2026-10-26T14:59:33.042Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "07f2a8506d8058e0ebd2913e4fb18022a42dd33d596058f52e93b83effccbe32",
+          "bytes": 1300697,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b421f1303b75269aa3d9420d7ef8377ce1ef722f551fef0fa1bb9316d93dd1fb"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9f9230c031d91105bc177a1878b01172230144c551b8a1aef4e185a760214259",
+  "sha256": "9f9230c031d91105bc177a1878b01172230144c551b8a1aef4e185a760214259",
+  "bytes": 8921184,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, 1973, inside a movie theater, 35 mm, the camera locked off at the front of the house looking up at the third row; it does not move. The young woman with long centre-parted hair in the suede jacket is laughing with the moustached man beside her, the popcorn bucket in her lap; he says something close to her ear and she laughs again and takes a handful of popcorn, both of their faces lit by a warm amber flicker from the screen above the lens. Then the flicker changes and brightens and both go quiet and still, looking up at the screen, her hand stopping halfway to her mouth, his grin gone; the older woman beside her and the people behind go still too, no one moving, no one speaking. Sound: a chattering house, a laugh, popcorn rustling, then a hush; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f62470201b4660ec98fb23c9a5016d1a8bcfbf07f2616d9ee5da491bea5528a6",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3072175904,
+      "createdAt": "2026-10-26T15:00:43.188Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "459fbbb65bfffb1c9e791d62bed15034b804f4ef1a05954465dca5893d5e19cb",
+          "bytes": 1559927,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "4fabe7434b479bc8619bcba347a87df38853602e318c2486d2644d112c4155f2"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

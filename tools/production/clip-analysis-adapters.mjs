@@ -107,8 +107,11 @@ export function validateObservations(payload, { sourceSha256, step, streams, sam
       assert(Math.abs(o.startSeconds - evidence[0].seconds) < 0.001 && Math.abs(o.endSeconds - evidence.at(-1).seconds) < 0.001, 'Visual observation does not match sampled timestamps');
     }
     if (step === 'ocr') {
+      // Apple Vision reports normalized box edges a few 1e-9 outside [0, 1] (float noise on a frame-edge box); tolerate
+      // that much and no more, so a genuinely out-of-frame box still fails.
+      const edgeNoise = 1e-6;
       assert(typeof o.originalText === 'string' && o.originalText === o.text && Array.isArray(o.boxNormalized) && o.boxNormalized.length === 4
-        && o.boxNormalized.every(v => Number.isFinite(v) && v >= 0 && v <= 1), 'Invalid OCR text or bounding box');
+        && o.boxNormalized.every(v => Number.isFinite(v) && v >= -edgeNoise && v <= 1 + edgeNoise), 'Invalid OCR text or bounding box');
     }
     if (step === 'embeddings') validateVector(o.vector, vectorDimensions);
     else if (o.vector !== undefined) validateVector(o.vector);

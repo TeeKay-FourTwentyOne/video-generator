@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5f4856db66fa54ba7b5fb2db9bbffde9745a8fbf4774aa76321e8f56e3bf035f",
+  "sha256": "5f4856db66fa54ba7b5fb2db9bbffde9745a8fbf4774aa76321e8f56e3bf035f",
+  "bytes": 4823193,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, a kitchen at night, tall vertical frame, 35 mm, the camera locked off across the small table slightly below eye level; it does not move. The man of about forty-five sits alone, his face and hands lit only by the pale glow of the open laptop in front of him, his reading glasses pushed up on his head; he reads for a moment, then takes the glasses off, rubs his eyes slowly with finger and thumb, lets out a long breath, and looks away from the laptop toward the dark window, lips closed; he does not speak. A faint warm street light through the window; the crayon drawing on the fridge behind him. No on-screen text, no lettering anywhere; the laptop screen is out of frame.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8c44937bb0ce6f36918e5ce566edf6b0e2d647b0fa90d658140be99704760a32",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3957861511,
+      "createdAt": "2026-10-26T14:56:39.582Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "5abc640651ac19c2e6e98d0009e5b94a1ba4d837a53bc59758054e16013768d8",
+          "bytes": 1435250,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c0285338ec950a97649cb85b222c38b1d4febcaed9c1bc234566902c9d2fbf36"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

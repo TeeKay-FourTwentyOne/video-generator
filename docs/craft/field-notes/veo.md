@@ -324,3 +324,26 @@ them, while keeping the final on-camera line synchronized to its native picture.
 **Apply:** inspect the mouth during device speech. When the take contains a clean
 quiet range, separate the sound cue from the picture before buying another take.
 Source: Codex · Perpetual Check · 2026-10-22
+
+### Veo writes the chatter you asked it to murmur, and sometimes the line is the cut
+Every "chattering house" audience take came back with one fully legible line in the native track (1943 "I'm so glad
+we decided to come tonight", 1973 "Bet I can eat more popcorn than you before the previews end", 1999 "Look who just
+messaged me", 2026 "You have to read this thread, it's hilarious"). Transcribed with word timestamps, each line was
+period-apt and the 1973 one gave the cut its best joke (the card lands on "end"). Lines that fell in the still beats
+were excluded by the frame range rather than regenerated.
+**Apply:** transcribe every native audience track before cutting; choose the head range to finish the line and the
+tail range to exclude the next one; treat a good line as a gift, not a defect.
+Source: claude-code · Coming Attractions · 2026-10-26
+
+### A benign crowd walking out of a cinema can still be output-filtered; a plain marquee grows letters
+The coda's "audience walks out under the marquee into the sun" tripped the output filter on the first attempt
+(eight faces, two of them near-portrait from a chest-height anchor, "nudges him with her shoulder"). The retake from
+a wider anchor with the interaction words removed passed. That take then grew red lettering on the "plain white"
+marquee board from about frame 64 and drifted the locked camera into a slow tilt. The letters were painted out
+deterministically (saturated-red mask in the top band, dilated, row-wise fill); the drift was kept as a breath.
+In the same film the "cold white flicker lighting his face from the right" became a hard white bar across the
+man's eyes for a whole 6 s profile take, absent from the anchor.
+**Apply:** for a crowd-and-faces coda, anchor wide and keep interaction verbs out of the prose; expect blank
+signage to fill in during the last half of a take and plan a programmatic patch or an early out-point; describe
+screen light on a face as a soft glow, never as a directional beam.
+Source: claude-code · Coming Attractions · 2026-10-26

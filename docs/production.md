@@ -84,6 +84,15 @@ record and generate its README/index; keep original treatments labelled as
 intent. Prices and monetary figures stay in the ignored workspace and
 `data/accounting/<project-id>/`. Use workspace-relative paths for new recipes.
 
+Before the first paid request, create the project's collaboration status page with
+the shared `production-status` skill: write `briefs/<project-id>/status.json` (the
+film in a paragraph, every scene with its beats as bullets, authored statuses, the
+decisions waiting on the director, a dated log), build it with
+`python3 tools/production/status-page.py <project-id>` and publish the generated
+page where the director can comment. Update and republish it after each batch
+and after each round of comments; statuses are authored, never inferred from files,
+and no prices appear on it.
+
 ## Spend and recovery
 
 ```sh

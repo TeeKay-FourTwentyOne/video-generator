@@ -31,6 +31,11 @@ an allowlisted public record and generated current views. Keep prices, budget
 amounts and itemized charges in ignored local accounting. Preserve unknowns;
 delivery checks do not establish listening, artistic approval or publication.
 
+Create the project's status page at planning time with the shared
+`production-status` skill (`briefs/<project-id>/status.json`, built by
+`tools/production/status-page.py`, published for the director's comments) and
+keep it current after every batch and every round of comments.
+
 Check `docs/craft/field-notes/` for known behavior of the models you are about to
 pay for. Inspect anchors before generating. Submit one planned attempt per shot, preserve
 the request ID, and poll the existing operation. An uncertain submission retains

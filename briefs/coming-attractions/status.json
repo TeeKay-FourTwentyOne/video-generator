@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "projectId": "coming-attractions",
+  "title": "Coming Attractions",
+  "updated": "2026-10-26",
+  "format": "Vertical 9:16, about 55 seconds, 1080 by 1920 at 24 fps",
+  "phase": "first draft cut",
+  "logline": "One movie seat, four decades, and the previews that played before the feature every time. The crowd goes quiet for its own fear in 1943, 1973, 1999 and 2026, then walks out of the matinee into a bright weekday afternoon.",
+  "overall": "The director gave the go on 2026-10-26 and the whole first draft was built the same morning: fifteen motion takes (one output-filtered and retaken from a wider anchor), five narration lines, six effects and five music cues, the local cards and screen treatments, a measured mix and an assembled review film with a frame-and-timecode overlay. Every take was inspected on contact sheets and dense frame strips; the native chatter was transcribed and the period-apt lines Veo wrote were kept. Two defects were rescued locally (the marquee lettering, the white fades) and one is flagged for the director (the bar of light across the man's eyes in her look left). The cut runs about 62 seconds against a brief of about 55; the trims to get there are listed as a decision rather than taken blind.",
+  "next": "Director: watch v1 on this page (the 720 copy, times to the millisecond and a frame step) or the native review film with the debug overlay, then decide the open items: the length, the look-left retake, and whether the coda\u2019s camera breath stays. Agent then cuts v2, and only after approval the 4K and the upload.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "1943",
+      "number": "1943",
+      "title": "The house fills",
+      "status": "planned",
+      "summary": "A movie palace during the war. Hats and coats in the dark, a sailor stands to let a young woman edge along the row to her seat. The lights go down, the swirl card reads Coming Attractions, and a newsreel silences the room.",
+      "image": "refs/C-1943.png",
+      "segments": [
+        {
+          "id": "arrive",
+          "title": "S01 She edges past the sailor to her seat; both sit; the lights dim",
+          "status": "review",
+          "detail": "Take in and cut: 0-4.5 s, she edges past the sailor ('Excuse me'), both sit and settle. The house lights never dim on camera; the cut to the screen-lit medium carries it.",
+          "image": "clips/S01-v1.mp4"
+        },
+        {
+          "id": "title",
+          "title": "T00 Coming Attractions swirl card",
+          "status": "review",
+          "detail": "The swirl card plays 2 s under the projector clatter, the optical hiss and the first bars of the brass march.",
+          "image": "cards/T00.mp4"
+        },
+        {
+          "id": "newsreel",
+          "title": "N1 Newsreel: the column on the boulevard, bombers over the rooftops",
+          "status": "review",
+          "detail": "One take, two bands: the march low in the frame for 2 s, then the bombers over the rooftops for 2 s, both treated to 1.37 black and white with grain and weave. The 1943 line runs over it and ends on the silent faces.",
+          "image": "edit/screens/N1b.mp4"
+        },
+        {
+          "id": "silenced",
+          "title": "S02 She and the sailor, silenced by the screen",
+          "status": "review",
+          "detail": "Her whisper before the card ('I'm so glad we decided to come tonight', Veo's own line, kept quiet) and the silenced beat after the newsreel are the head and tail of one take. Eight faces hold without drift.",
+          "image": "clips/S02-v1.mp4"
+        }
+      ],
+      "next": "Check the seat anchor's face, the sailor's cap and the hat veil; make sure she looks just above the lens, not into it."
+    },
+    {
+      "id": "1973",
+      "number": "1973",
+      "title": "The gas line",
+      "status": "planned",
+      "summary": "Same seat, same woman, thirty years on: long centre-parted hair, a suede jacket, orange vinyl seats, a popcorn bucket, laughing with a man with a moustache. The screen shows a gas line a mile long. The row goes still.",
+      "image": "refs/C-1973.png",
+      "segments": [
+        {
+          "id": "laugh",
+          "title": "S03 Laughing with the moustache man, popcorn; the light changes; still",
+          "status": "review",
+          "detail": "Veo wrote her a line and it is the best cut in the film: 'Bet I can eat more popcorn than you before the previews end', and the cut lands on 'end'. The still tail is the same take after the flicker brightens.",
+          "image": "clips/S03-v1.mp4"
+        },
+        {
+          "id": "card",
+          "title": "C2 The date card: 1980",
+          "status": "review",
+          "detail": "Year card, then the preview; the era's music starts on the card.",
+          "image": "cards/C2.mp4"
+        },
+        {
+          "id": "trailer",
+          "title": "N2 The gas line; the pumps run dry by 1980",
+          "status": "review",
+          "detail": "Treated to the era's band (1.85 faded colour for 1973, 2.39 video texture for 1999). The gas line runs 4.5 s so the 1973 line finishes over the still faces; the monitor wall goes dark row by row with the red lamp left.",
+          "image": "refs/N2.png"
+        }
+      ]
+    },
+    {
+      "id": "1999",
+      "number": "1999",
+      "title": "Midnight",
+      "status": "planned",
+      "summary": "A highlighted bob, a track jacket, blue cloth seats, a giant soda, a friend with a flip phone. The screen shows a control room of monitors going dark one row at a time. At midnight the computers that run our world may simply stop.",
+      "image": "refs/C-1999.png",
+      "segments": [
+        {
+          "id": "soda",
+          "title": "S04 The track jacket and the giant soda; the light changes; still",
+          "status": "review",
+          "detail": "'Look who just messaged me' on the flip phone, the soda sip, then both still from 3 s; a second legible line in the tail is excluded by the range.",
+          "image": "clips/S04-v1.mp4"
+        },
+        {
+          "id": "card",
+          "title": "C3 The date card: 2000",
+          "status": "review",
+          "detail": "Year card, then the preview; the era's music starts on the card.",
+          "image": "cards/C3.mp4"
+        },
+        {
+          "id": "trailer",
+          "title": "N3 The control room; the monitors go dark",
+          "status": "review",
+          "detail": "Treated to the era's band (1.85 faded colour for 1973, 2.39 video texture for 1999). The gas line runs 4.5 s so the 1973 line finishes over the still faces; the monitor wall goes dark row by row with the red lamp left.",
+          "image": "refs/N3.png"
+        }
+      ]
+    },
+    {
+      "id": "2026",
+      "number": "2026",
+      "title": "The preview arrives full frame",
+      "status": "planned",
+      "summary": "Her phone glows in her lap, a bearded man leans in to show her something. The screen's light changes and the preview comes in her own format, full frame and vertical: an empty office at night, a man at a kitchen table lit by a laptop. Then we are in her seat, looking left at the bearded man and right at the older woman, as the wide shot placed them.",
+      "image": "refs/C-2026.png",
+      "segments": [
+        {
+          "id": "phone",
+          "title": "S05 Phone glow; the bearded man leans in; the light changes; she lowers the phone",
+          "status": "review",
+          "detail": "'You have to read this thread, it's hilarious', he leans in and points; she laughs. Veo turned the flicker into a projector flare from 2.5 s, so the head ends before it and her reaction is carried by the two looks.",
+          "image": "clips/S05-v1.mp4"
+        },
+        {
+          "id": "card",
+          "title": "C4a The date card: 2030",
+          "status": "review",
+          "detail": "Year card, then the preview; the era's music starts on the card.",
+          "image": "cards/C4a.mp4"
+        },
+        {
+          "id": "office",
+          "title": "N4a An empty office at night",
+          "status": "review",
+          "detail": "Full frame, the chair turns on its own in the glowing office; the braam lands on the 2030 card and the drone starts under it.",
+          "image": "edit/screens/N4a.mp4"
+        },
+        {
+          "id": "kitchen",
+          "title": "N4b A man at a kitchen table lit by a laptop",
+          "status": "review",
+          "detail": "Full frame; he takes the glasses off, rubs his eyes, looks to the window. The 2026 line ends over this shot.",
+          "image": "edit/screens/N4b.mp4"
+        },
+        {
+          "id": "look-left",
+          "title": "S06 Her point of view, left: the bearded man, jaw set",
+          "status": "review",
+          "detail": "DEFECT, flagged: Veo rendered the screen light as a hard white bar across his eyes and brow for the whole take (not in the anchor). Used short (2.5 s) in v1. A retake with the light cue reworded is the proposed fix if it bothers you.",
+          "image": "clips/S06-v1.mp4"
+        },
+        {
+          "id": "look-right",
+          "title": "S07 Her point of view, right: the older woman, hand at her mouth",
+          "status": "review",
+          "detail": "Clean: profile, hand pressed to her mouth, a brief turn to the camera and back. Her voice is not heard; the house is near silent.",
+          "image": "clips/S07-v1.mp4"
+        },
+        {
+          "id": "question",
+          "title": "C4b What will you do, when there's nothing left to do? Then white",
+          "status": "review",
+          "detail": "'What will you do' / 'when there's nothing left to do?' with the riser cut dead by the white; the warm cue and the street arrive with the white, before the doors.",
+          "image": "cards/C4b.mp4"
+        }
+      ],
+      "next": "Decide whether the two point-of-view profiles need the seat-back in frame to read as her seat."
+    },
+    {
+      "id": "coda",
+      "number": "Soon",
+      "title": "The matinee lets out",
+      "status": "planned",
+      "summary": "The theater doors open and the audience walks out into a bright weekday afternoon a few years from now. She shades her eyes and smiles. Nobody is in a hurry; everyone has the afternoon off. Trees along the boulevard, people on benches, a slow tram, a clear sky. The film fades up to white.",
+      "image": "refs/A-S08.png",
+      "segments": [
+        {
+          "id": "doors",
+          "title": "S08 The doors open; the audience walks out into the afternoon; she shades her eyes",
+          "status": "review",
+          "detail": "The first attempt came back filtered; the retake from a wider anchor is in. Two things rescued: a slow camera breath (tilt up / pull back) kept as is, and red lettering Veo grew on the marquee board from 2.7 s, painted out frame by frame. Fades in from the white. Native chatter ('Wow, look at that sky') kept at room level.",
+          "image": "edit/S08-clean.mp4"
+        },
+        {
+          "id": "boulevard",
+          "title": "S09 The boulevard at two in the afternoon",
+          "status": "review",
+          "detail": "The tram glides in, benches in dappled shade, ice-cream talk on the native track; a couple with a dog walks toward the lens, so the shot ends before they arrive and fades to white over the last 1.25 s.",
+          "image": "clips/S09-v1.mp4"
+        },
+        {
+          "id": "white",
+          "title": "Fade up to white",
+          "status": "review",
+          "detail": "The film ends on white, as planned."
+        }
+      ]
+    },
+    {
+      "id": "sound",
+      "number": "Sound",
+      "title": "Sound and finish",
+      "status": "planned",
+      "summary": "Native Veo sound on every audience shot: the murmur, the hush, the seats. Four short narration lines, one per era, each cast in that era's announcer register and band-limited to its playback. Era music cues and effects from ElevenLabs; a warm, simple cue carries the coda.",
+      "segments": [
+        {
+          "id": "narration",
+          "title": "Four narration lines, one announcer per era",
+          "status": "review",
+          "detail": "Five ElevenLabs lines, one voice per era, each treated as that era's house playback (1943 mono optical band, 1973 warm, 1999 clean, 2026 full) with one short hall."
+        },
+        {
+          "id": "music",
+          "title": "Five music cues: 1943 brass, 1973 trailer strings, 1999 synth pulse, 2026 drone, coda",
+          "status": "review",
+          "detail": "Five cues: brass march, 1973 wah-wah trailer, 1999 synth news theme, 2026 drone with piano, warm coda. Each era's cue starts on its card and fades under the still faces; the coda cue begins with the white."
+        },
+        {
+          "id": "mix",
+          "title": "Mix, assemble and native review export",
+          "status": "review",
+          "detail": "Native rooms set from measurement, chatter lines at talk level, still beats near silent, narration on top; mastered to -16 LUFS integrated, -1.7 dBTP."
+        },
+        {
+          "id": "finish",
+          "title": "4K finish",
+          "status": "hold",
+          "detail": "Only after the director approves the native review."
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-10-26",
+      "title": "First draft cut",
+      "film": "final/v1/film.mp4",
+      "poster": "final/v1/film.mp4",
+      "posterFrame": 320,
+      "fps": 24,
+      "frames": 1502,
+      "width": 1080,
+      "height": 1920,
+      "note": "The native 1080 by 1920 review film passed its technical checks (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames and timing. Real-time listening and artistic approval are the director\u2019s; nothing here is approved until the director says so.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 108,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 108,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 156,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 204,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 252,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 300,
+          "frames": 54,
+          "sourceFrame": 100
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 354,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 432,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 452,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 560,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "S04a",
+          "shot": "S04",
+          "frame": 612,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 660,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 680,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 764,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 812,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 870,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 890,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 950,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "N4b",
+          "shot": "N4b",
+          "frame": 1010,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4b.mp4"
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 1094,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 1154,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "S08",
+          "shot": "S08",
+          "frame": 1238,
+          "frames": 132,
+          "sourceFrame": 0,
+          "source": "edit/S08-white.mp4"
+        },
+        {
+          "label": "S09",
+          "shot": "S09",
+          "frame": 1370,
+          "frames": 132,
+          "sourceFrame": 0,
+          "source": "edit/S09-white.mp4"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "images",
+      "title": "Image anchors",
+      "status": "decided",
+      "detail": "Director 2026-10-25: proceed with the image requests."
+    },
+    {
+      "id": "motion-go",
+      "title": "Authorize the motion takes, narration and music",
+      "status": "decided",
+      "detail": "The figure is in the workspace plan. The first take bought is the 1943 seat shot, which probes the crowd filter cheaply.",
+      "resolution": "Director 2026-10-26: \"Proceed with making a full first draft please.\" Motion, narration and music are authorized within the agreed pot."
+    },
+    {
+      "id": "one-woman",
+      "title": "One recurring woman in the same seat, not four strangers",
+      "status": "open",
+      "detail": "Recommended. The audience is always us, and the era change lands on each cut back from the screen."
+    },
+    {
+      "id": "era-three",
+      "title": "Era three is the millennium bug",
+      "status": "open",
+      "detail": "The fear that came with a date and did not happen. Alternatives: the 1962 missiles, 1985 nuclear winter."
+    },
+    {
+      "id": "coda-read",
+      "title": "Post-scarcity read as everyone having the afternoon off",
+      "status": "open",
+      "detail": "A quiet tram and planted facades, no flying cars. The last question gets answered literally."
+    },
+    {
+      "id": "form",
+      "title": "The letterbox widens per decade, the 2026 preview breaks the band, the film ends on white",
+      "status": "open",
+      "detail": "1.37, 1.85, 2.39, then full frame. White, not black."
+    },
+    {
+      "id": "length",
+      "title": "Length: 62 seconds against a brief of about 55",
+      "status": "open",
+      "detail": "Trims already taken in v1 (the arrival, the card, the newsreel, the silenced beat, the office, the doors). To reach 55, candidates in order of what I would give up first: the bomber band (2 s), the 1943 whisper beat (2 s), half a second from the kitchen, a second from each coda shot. Or keep 62: the eras each need their line to finish on the silent faces."
+    },
+    {
+      "id": "look-left-retake",
+      "title": "Retake her look left (the bar of light across his eyes)?",
+      "status": "open",
+      "detail": "One Quality 6 s take with the light cue reworded (no 'flicker lighting his face from the right'; a soft glow instead). Within the pot."
+    },
+    {
+      "id": "coda-breath",
+      "title": "Keep the camera breath in the doors shot?",
+      "status": "open",
+      "detail": "Veo drifted the locked camera into a slow tilt up over the take. It reads as a breath as they come into the light; the alternative is a retake."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-10-25",
+      "text": "Planned: brief, nineteen-shot plan, fourteen motion prompts, fifteen image requests, the era screen treatments and five local cards."
+    },
+    {
+      "date": "2026-10-25",
+      "text": "The three archival screens were recomposed as vertical takes with the action in the centre band, because the maintained planner refuses mixed aspect ratios in one film. They are cropped to their bands locally."
+    },
+    {
+      "date": "2026-10-25",
+      "text": "Director authorized the image anchors. Ledger opened; anchors generating in spaced batches with reference copies under the size limit."
+    },
+    {
+      "date": "2026-10-25",
+      "text": "Seat anchors inspected: one face carried across 1943, 1973, 1999 and 2026, the neighbours and upholstery change on cue. The left point-of-view anchor came back lit from the wrong side and was mirrored locally (the original is kept). The near-future exterior was rate limited once and re-requested."
+    },
+    {
+      "date": "2026-10-25",
+      "text": "All fifteen anchors in. The empty office, the kitchen table (brand mark on the laptop lid painted out locally, pixel-diff proof kept), the newsreel column, the gas line, the control room, the theater exterior and the boulevard inspected and accepted. The newsreel's bombers sit above the centre band; the band can be taken higher when the take is cut."
+    },
+    {
+      "date": "2026-10-25",
+      "text": "Director: the two point-of-view shots must be seen from her seat, looking sideways at the neighbours' profiles, not from in front of them. Both anchors regenerated as strict side views along the row and accepted; the frontal versions are superseded."
+    },
+    {
+      "date": "2026-10-25",
+      "text": "Director: the two looks must keep the wide shot's left and right, and both side views had come back facing the same way. The man is frame-left in the 2026 wide, so he is the look-left, facing the screen on frame-right (his anchor as generated); the woman is frame-right, so she is the look-right, facing frame-left (her anchor mirrored)."
+    },
+    {
+      "date": "2026-10-26",
+      "text": "Director: the two looks will work; the visible seat backs can read as her own seat edge. Go for a full first draft. Wave one submitted: S02 (crowd probe), N1, N2, N3, N4a, N4b; narration, effects and music started."
+    },
+    {
+      "date": "2026-10-26",
+      "text": "All motion in by 08:05 (the doors shot filtered once and retaken from a wider anchor); narration, effects and music in; screens treated; native lines transcribed and kept; marquee lettering painted out; mix mastered; v1 assembled with the review overlay. Three decisions added: length, look-left retake, coda breath."
+    },
+    {
+      "date": "2026-10-26",
+      "text": "Director asked for the draft on this page with millisecond timestamps: v1 embedded as a 720 by 1280 copy with a frame-accurate readout (edit time, frame, src frame), one-frame stepping, a copy-timestamp button and a clickable shot timeline; every beat now links to its time in the cut."
+    }
+  ]
+}

@@ -7,6 +7,12 @@ at `.claude/skills/produce-video/SKILL.md` and `.agents/skills/produce-video/SKI
 `docs/production.md` describes the maintained CLI/MCP workflow; load detailed craft
 notes only when the shot or edit needs them.
 
+Every production keeps a collaboration status page: use the shared
+`production-status` skill (`.claude/skills/production-status/SKILL.md`, linked to
+`.agents/skills/production-status/SKILL.md`) at planning time and after each batch.
+Publish the generated page with the Artifact tool and read the director's comments
+with ArtifactComments.
+
 For post-publication wrap-up, use `.claude/skills/post-publication/SKILL.md`, a
 relative link to the shared `.agents/skills/post-publication/SKILL.md`.
 `docs/post-publication.md` covers documentation, source publication, intact

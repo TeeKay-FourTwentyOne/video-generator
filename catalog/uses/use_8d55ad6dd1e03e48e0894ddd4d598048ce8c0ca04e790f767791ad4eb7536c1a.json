@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_fae8e38d7a11f257143bc7a23543f3cb3098405633cfe0d7fc60c0afc2aacd02",
+  "projectId": "hall-of-memories",
+  "editVersion": "core-through-humanity-returns-v1",
+  "segmentIndex": 0,
+  "shotId": "PRESERVED-CORE",
+  "status": "rendered",
+  "evidence": "humanity-returns-v1:verified-frame-and-pcm-concatenation",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 7344,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "46e545bad9c124e86f0bcb06845210d1e1976326bdacf68592e5351aa7d1a1a1",
+  "schemaVersion": 1,
+  "id": "use_8d55ad6dd1e03e48e0894ddd4d598048ce8c0ca04e790f767791ad4eb7536c1a"
+}

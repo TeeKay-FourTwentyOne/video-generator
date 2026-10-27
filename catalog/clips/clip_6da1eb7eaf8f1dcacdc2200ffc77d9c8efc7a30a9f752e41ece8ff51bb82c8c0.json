@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6da1eb7eaf8f1dcacdc2200ffc77d9c8efc7a30a9f752e41ece8ff51bb82c8c0",
+  "sha256": "6da1eb7eaf8f1dcacdc2200ffc77d9c8efc7a30a9f752e41ece8ff51bb82c8c0",
+  "bytes": 16630194,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, a bright clear afternoon outside an old cinema, 35 mm, the camera locked off across the quiet street at chest height, the whole lit marquee and the open glass doors in view; it does not move. The matinee audience of about eight people, small in the frame, has just come out onto the wide sunlit pavement; they drift a few slow steps apart, unhurried, blinking in the light, and settle, looking up and around. In the middle the woman in the pale sage linen shirt keeps her hand up to shade her eyes, looks up at the sky, lowers the hand, breathes out and smiles; the bearded man in the light grey knit beside her looks up too and then over at her; the older woman with the silver bob behind them turns her face to the sun. Warm sun from the upper left, long soft shadows, leaves moving slightly. Sound: a quiet street, birdsong, light footsteps on pavement, a little easy chatter, a far-off tram bell; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering, no posters anywhere; the marquee's letter board stays plain white.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_38d6ff198c152a849a3957fffb9912b37a7c9283789660cfe8437323da4cce5d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3158351329,
+      "createdAt": "2026-10-26T15:09:33.542Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "fcee753aa28035d9f78148937b1b7a46807d3a62f657add1d868166aad3e76f2",
+          "bytes": 1682549,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "2ab15c4d9feb3f51b0e99a1e2b7524c5c34466fec785c4004b26e54a99702072"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

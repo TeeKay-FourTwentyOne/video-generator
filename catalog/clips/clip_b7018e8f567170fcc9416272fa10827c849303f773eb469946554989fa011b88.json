@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b7018e8f567170fcc9416272fa10827c849303f773eb469946554989fa011b88",
+  "sha256": "b7018e8f567170fcc9416272fa10827c849303f773eb469946554989fa011b88",
+  "bytes": 12557250,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, 1943, inside a grand movie palace before the show, 35 mm, the camera locked off at the front of the house looking up the raked rows; it does not move. The house lights are low and warm. The young woman in the tilted hat and charcoal coat edges along the third row from the right toward the centre, murmuring excuse-me as the seated people draw in their knees, while the young sailor stands at the centre seat, cap in hand, waiting for her; she reaches him, they exchange a quick smile, and both sit down together and settle in, she tugging off her gloves. The people in the rows behind are seated, chatting to each other, excited. In the last moments the warm house lights begin to dim toward darkness. Sound: the lively murmur of a full house, seats creaking, footsteps, a laugh somewhere; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8230e72ed7fc5aeb91985b342ddaaaa1837a8d6a1abeb42680ae176cb5530109",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": "2026-10-26T15:00:39.449Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "89b6d53ea4880c66d801e30b0b1dbc3e654f3f69fd94ba5ed47bb857a080658b",
+          "bytes": 1629362,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f806105101601297c5352845656d07c1a3e4099bfbf586b2d914bfe16c8abd5e"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -165,3 +165,7 @@ usable frame. This is one production correction, not a controlled comparison.
 **Apply:** inspect the whole composition before motion. Simplify the reference
 set when the model treats the references as panels.
 Source: Codex · Perpetual Check · 2026-10-22
+
+### Twelve seconds inside a batch is not always enough
+A four-request batch at 12 s spacing completed, but the third request of the next three-request batch (launched 12 s after a reference copy was made) got HTTP 429 with no charge; re-requested under a new ID at 20 s spacing it went through. Mirroring an anchor locally (PIL `ImageOps.mirror`) is a free fix when a point-of-view face comes back lit from the wrong side; keep the original with its asset record and point the shot at the mirrored copy.
+Source: claude-code · Coming Attractions · 2026-10-25

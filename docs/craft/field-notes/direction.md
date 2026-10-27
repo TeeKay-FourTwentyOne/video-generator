@@ -81,3 +81,7 @@ the structural check-ins (what the piece is, spend, publication).
 **Apply:** when two choices are both acceptable, take the one you would defend and
 say why in the delivery; an unasked-for coda that costs nothing is a gift, not a liberty.
 Source: director · October · 2026-10-08
+
+### A seat-row point of view keeps the wide shot's left and right
+A wide of an audience is shot from the screen, so the person on frame-left sits on the character's right. A point of view from her seat that is physically correct (turn left, see the person who is frame-right in the wide) crosses the line, and the director read the pair as "both turning left". Keep the wide's geography: the frame-left neighbour is the look-left, in profile facing the screen on frame-right; the frame-right neighbour is the look-right, facing frame-left. Nano gave true side views when told "strict side view, only one eye visible, armrest and seat back in the foreground, no faces behind", but both profiles faced the same way regardless of "nose pointing to the left edge"; check the nose direction at full size, then mirror one anchor (PIL) to make the pair, which is free.
+Source: claude-code · Coming Attractions · 2026-10-25

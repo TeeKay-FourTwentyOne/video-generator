@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f03502d87f72e34848d9d6d09c84ace3163d81106773e80eaa4d5ae24d74ba10",
+  "sha256": "f03502d87f72e34848d9d6d09c84ace3163d81106773e80eaa4d5ae24d74ba10",
+  "bytes": 9335906,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, 1999, inside a multiplex auditorium, 35 mm, the camera locked off at the front of the house looking up at the third row; it does not move. The young woman with the highlighted bob in the shiny track jacket grins as her friend with the frosted hair whispers to her and shows her the small closed flip phone; she sips from the huge soda cup through the straw, both faces lit by a cool bluish-white flicker from the screen above the lens. Then the flicker changes and brightens and both go quiet and still, looking up at the screen, the straw forgotten, the friend's smile gone; the young man beside her and the people behind go still too, no one moving, no one speaking. Sound: a chattering house, a giggle, ice rattling in a cup, then a hush; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ca47df4bc14ab181e47e97b9fc86728336b884f347f078f687f530ec1e4442ed",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": "2026-10-26T15:00:46.643Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7dfb4fdd1898ed99f14be8b9115f772a15deb0a7f4fce1f0bb9563f3e7b5eadb",
+          "bytes": 1564761,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "6dfbc531141fade4f64a902ab7d61dc4e5aa0699334bd24749ca677b710a3e28"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

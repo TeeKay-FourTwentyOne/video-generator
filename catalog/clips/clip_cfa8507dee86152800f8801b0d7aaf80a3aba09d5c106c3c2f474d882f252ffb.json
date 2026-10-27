@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cfa8507dee86152800f8801b0d7aaf80a3aba09d5c106c3c2f474d882f252ffb",
+  "sha256": "cfa8507dee86152800f8801b0d7aaf80a3aba09d5c106c3c2f474d882f252ffb",
+  "bytes": 31639287,
+  "extension": ".mov",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 56,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 1344,
+    "videoCodec": "h264",
+    "audioCodec": "pcm_s16le"
+  },
+  "labels": [
+    "Humanity returns — individual coverage and transformation v2"
+  ],
+  "collections": [
+    "hall-of-memories"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "carved-relief",
+    "continuous-transformation",
+    "humanity-returns",
+    "local-animation",
+    "scene-07"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

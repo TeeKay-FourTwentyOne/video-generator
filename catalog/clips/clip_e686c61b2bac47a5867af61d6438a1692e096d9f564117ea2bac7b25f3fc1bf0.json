@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e686c61b2bac47a5867af61d6438a1692e096d9f564117ea2bac7b25f3fc1bf0",
+  "sha256": "e686c61b2bac47a5867af61d6438a1692e096d9f564117ea2bac7b25f3fc1bf0",
+  "bytes": 4374743,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, inside a dark modern cinema, 35 mm, the camera locked off in a seat at the eye level of a seated person, turned sideways to look along the row at the man of about thirty-five with the short dark beard and dark green hoodie in the next seat, seen in profile, head and shoulders, the edge of the seat back soft in the foreground; it does not move. He is watching the screen, which is out of frame to the right of the camera, his nose pointing right, his jaw set and his brow furrowed, the cold white flicker lighting his face from the right; he swallows, then senses the look, turns his head to meet the camera for a moment with a small helpless lift of the eyebrows, and turns back to the screen. His lips stay closed; he does not speak. Sound: a near-silent house, a seat creaking, a breath; no music. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2014b7f352e44fdbc897913751634a7044acfbe55aecc8c16fc1a225d8cfa594",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 446226178,
+      "createdAt": "2026-10-26T14:59:31.038Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "ee2690061f14115f3380a59daf8ee54419f66d6946a8faf162c5cad2a75c7f72",
+          "bytes": 1248593,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "6e7461193b56dd618e59bdab28b1f5a2916379abbca73c4db88ffef68913fdaa"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

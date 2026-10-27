@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_dd57e860822be38fc480b011ef6917efb586fbc5496da9ea770fec769cbbe357",
+  "sha256": "dd57e860822be38fc480b011ef6917efb586fbc5496da9ea770fec769cbbe357",
+  "bytes": 5059298,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, a present-day open-plan office at night, tall vertical frame, anamorphic, the camera locked off low at the end of a long aisle between rows of empty desks; it does not move. Every chair is pushed in and every monitor glows a soft blank blue-white; nobody is there. One office chair halfway down the aisle turns very slowly on its own and stops; the single desk lamp far down the aisle flickers once; rain runs down the dark floor-to-ceiling windows at the end, the city lights beyond blurred. Cold, clean, still. No people. No on-screen text, no logos, no lettering anywhere; the monitors stay blank blue-white.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_55eed94624462203600ac4f1d70e6441a9d75202da165347c940f13ced66335c",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 4041003875,
+      "createdAt": "2026-10-26T14:56:37.288Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "a03723bcbfbca10734a25e006b10326989572445555121e22af037f54f58f105",
+          "bytes": 1449597,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "29fe34495365a4f013a511367828fa97c6f824daab735a713a11a6ded166563f"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

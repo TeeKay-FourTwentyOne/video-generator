@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_505f47a136fbd325bf25ae95a6eff131f4320df334f89b6e4f4f79ddce5be3d0",
+  "sha256": "505f47a136fbd325bf25ae95a6eff131f4320df334f89b6e4f4f79ddce5be3d0",
+  "bytes": 26402643,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, a bright clear weekday afternoon on a wide tree-lined city boulevard a few years in the future, 35 mm, the camera locked off on the pavement at chest height looking down its length toward the pale blue sky; it does not move. People of all ages sit on the benches in the dappled shade reading and talking and eating ice cream, a couple walks a dog slowly away from the camera, two people drift past on bicycles, a child skips along beside an older man, and a slow quiet rounded pale tram glides along the grassed track in the middle distance; leaves stir in a light breeze; nobody hurries. Warm sun from the upper left. Sound: birdsong, leaves, distant easy conversation, the soft hum and gentle bell of the tram, a dog's single bark far away; no music. No cars. About ten people, none close to the camera. No on-screen text, no signs, no lettering, no banners anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_17257312cf6729086affca7f3ffb9bbe3b416d466fc2cb58d8dca19dc7041e87",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3890903119,
+      "createdAt": "2026-10-26T14:59:38.469Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "83f5c3fd76fb85d40c2f2116e9b349e1985725ab838783fcda8472366bb51cb3",
+          "bytes": 2237512,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "85f6374b13106605bedf9fa679380b3ca6dd8d26a8bc2992abac05fa2840f299"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
