@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3b798004428e4ae3f1241c92821b14399b1dbb1851b775381140d13e077c40a6",
+  "sha256": "3b798004428e4ae3f1241c92821b14399b1dbb1851b775381140d13e077c40a6",
+  "bytes": 3690746,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, the sidewalk in front of a movie theater in flat overcast daylight; the camera stands still at eye height on the sidewalk, a few steps back from the entrance, looking along the front of the building, and does not move. The young woman in the oatmeal blazer has just come out through the brass door at the left. She walks straight across the sidewalk away from the entrance toward the kerb at the right at a normal unhurried pace, in profile to the camera, never looking at it, steps down off the kerb, walks straight across the street and leaves the frame at the right edge. Behind her the brass door leaf swings slowly shut on its own. After she is gone the sidewalk and the doorway are empty and stay empty: nobody comes out, nobody new enters, the parked car stays parked, only distant traffic moves far down the street. Deep focus, true colour, no grain, no haze, no slow motion; plain ordinary footage. Sound: a quiet street, her flat shoes on the pavement, the brass door settling shut, distant traffic; no music, no dialogue, no voices. No on-screen text, no signs, no lettering anywhere; the marquee board stays blank.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_82198d9ac0a1b3fde06ecb1b08d8f7f8aa01153c2012338dc52a0a88e63398ad",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2805639794,
+      "createdAt": "2026-10-30T06:01:27.084Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7adee755575b7fe6da66c8653dcaf813d43c3726b45c716642c0e5eb18014f8f",
+          "bytes": 1528099,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "7439664ecfd80e96a3988bc499a2ed2cc2a0091dd108c774a764bbfaf886163d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

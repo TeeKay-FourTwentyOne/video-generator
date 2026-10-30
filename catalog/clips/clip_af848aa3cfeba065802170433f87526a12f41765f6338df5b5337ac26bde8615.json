@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_af848aa3cfeba065802170433f87526a12f41765f6338df5b5337ac26bde8615",
+  "sha256": "af848aa3cfeba065802170433f87526a12f41765f6338df5b5337ac26bde8615",
+  "bytes": 7750651,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, point of view of a woman pushing her way out of a dim old movie theater into flat overcast daylight; the camera is her eyes. Her two bare hands push the two brass bars and the pair of glass doors swing open outward together; the daylight floods in, too bright for a moment, and settles as the camera walks forward one slow step into the doorway. Her hands stay on the bars until the doors are open and then let go. Nobody is outside in the shot; nobody new enters; the parked car stays parked. Deep focus on the hands and the bars, true colour, no grain, no haze, no slow motion; plain ordinary footage. Sound: the clunk of the push bars, the hinges, a quiet street rising as the doors open; no music, no dialogue, no voices. No on-screen text, no signs, no lettering anywhere.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_950de66b4f5d5763592e7e65d28a0fb4a031e26b99bc13d13ac641ce40fadf26",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2447886627,
+      "createdAt": "2026-10-30T02:21:32.124Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "a13eacff72b54e411d4893f0d13cfe88ed5a46fff75a37a7052f13bd1bcf169b",
+          "bytes": 1490476,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ff92dd4b0cea60912c7dc3c03c06f4b7142fb561d7bf62082d51cd52a619b5a0"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

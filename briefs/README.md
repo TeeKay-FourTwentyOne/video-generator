@@ -24,7 +24,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [CHARRO! Context Window Homage](charro-context-window/README.md) | unknown | — | [Brief](charro-context-window/brief.md) · [Record](charro-context-window/production.json) |
 | [Cherries Thawing](cherries-thawing/README.md) | unknown | — | [Brief](cherries-thawing/brief.md) · [Record](cherries-thawing/production.json) |
 | [THE CHURCH GRIM](church-grim/README.md) | published | — | [Brief](church-grim/brief.md) · [Record](church-grim/production.json) |
-| [Coming Attractions](coming-attractions/README.md) | producing | — | [Brief](coming-attractions/brief.md) · [Record](coming-attractions/production.json) |
+| [Coming Attractions](coming-attractions/README.md) | published | — | [Brief](coming-attractions/brief.md) · [Description](coming-attractions/description.md) · [Record](coming-attractions/production.json) |
 | [Da Derga’s Hostel](da-derga/README.md) | planned | — | [Brief](da-derga/brief.md) · [Record](da-derga/production.json) |
 | [THE DIGNITY OF WORK](dignity-of-work/README.md) | unknown | — | [Brief](dignity-of-work/brief.md) · [Record](dignity-of-work/production.json) |
 | [FLOORS](floors/README.md) | delivered | — | [Brief](floors/brief.md) · [Decisions](floors/decisions.md) · [Record](floors/production.json) |

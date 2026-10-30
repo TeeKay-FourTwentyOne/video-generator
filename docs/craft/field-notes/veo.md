@@ -347,3 +347,8 @@ man's eyes for a whole 6 s profile take, absent from the anchor.
 signage to fill in during the last half of a take and plan a programmatic patch or an early out-point; describe
 screen light on a face as a soft glow, never as a directional beam.
 Source: claude-code · Coming Attractions · 2026-10-26
+
+### An empty first frame plus "walks into the frame from behind the camera" gives a clean walk-in; a walker frozen mid-frame in the anchor stays frozen
+Coming Attractions, the ending (Quality, 6 s, 9:16, first-frame only). The robot's shot was anchored on the previous take's empty last frame and the prompt said it "enters at the bottom edge of the frame, close to the lens and large at first, its back to the camera, and walks away ... toward the brass doors". It did exactly that: eight empty frames, the shoulder and head entering bottom right close to the lens at about half a second, then the walk up the sidewalk to the doors and a hand on the door. Two earlier takes of the same beat, anchored with the robot already mid-frame in mid-stride among a crowd, left it stuck mid-stride for the whole take (the director's note: "it isn't walking in at all"). Veo animates an entrance it is told to make; it does not reliably resolve a pose the anchor froze.
+**Apply:** for "X walks in", anchor on the empty scene (the previous take's last frame is a free, matching one) and script the entrance edge, the first size and the destination; do not anchor with the walker already mid-frame. Leave the "exactly the people already in frame" suppressor off that shot.
+Source: claude-code · Coming Attractions · 2026-10-29

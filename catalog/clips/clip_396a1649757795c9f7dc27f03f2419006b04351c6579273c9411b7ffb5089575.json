@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_396a1649757795c9f7dc27f03f2419006b04351c6579273c9411b7ffb5089575",
+  "sha256": "396a1649757795c9f7dc27f03f2419006b04351c6579273c9411b7ffb5089575",
+  "bytes": 9015081,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, the empty sidewalk in front of a movie theater in flat overcast daylight; the camera stands still at eye height on the sidewalk, a few steps back from the entrance, looking along the front of the building toward the brass doors at the left, and does not move. For the first moment nothing happens. Then a humanoid robot walks into the frame from behind the camera: it enters at the bottom edge of the frame, close to the lens and large at first, its back to the camera, and walks away from the camera along the sidewalk toward the brass doors ahead of it on the left, unhurried, small steady steps, its head lifted toward the marquee above it and then lowering toward the doors as it angles toward them; by the end its hand is reaching for the brass door handle. It never turns to face the camera, never stops. The robot: human height and slim, matte off-white body panels over dark grey joints, a smooth rounded head with a single dark glass visor and no face, no logos or markings, a small paper ticket in its hand. Nobody else anywhere; no other robots; the parked car stays parked; the marquee bulbs stay off in the daylight. Deep focus, true colour, no grain, no haze, no slow motion; plain ordinary footage. Sound: a quiet street, its flat footsteps on the pavement and a faint soft servo whir, distant traffic; no music, no dialogue, no voices. No on-screen text, no signs, no lettering anywhere; the marquee board stays blank.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c6e4b259c08fb2b5112217ffe23a2180d290db513a7738db2bbd1a871985ab56",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2189650819,
+      "createdAt": "2026-10-30T06:04:21.122Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "6f7a8bbfd68db1cc4dbe3c89ebe16178921006cac84c2055670246822cefba3f",
+          "bytes": 2732560,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "332912455d1ed24c784fc0dac2868737aeab9dc5e3d901c8dd782cd3f59300fe"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_34362e1a3c87b78fb34f9d8298bbb8c838a3adb2dd2aa4bc0f7cee32bbaac47a",
+  "projectId": "coming-attractions",
+  "editVersion": "edit/v9",
+  "segmentIndex": 21,
+  "shotId": "E1",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 14,
+    "fps": 24
+  },
+  "timelineStartFrame": 986,
+  "outputSha256": "ecdeb1d50f67429c3e8a31d263e3d3447c3c5345642feb34787d398e9c05f5ea",
+  "schemaVersion": 1,
+  "id": "use_68993466b37d2c6b29d64940f88f0d3365b98631d4c1811474a0f3636e2e4cbb"
+}

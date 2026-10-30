@@ -55,6 +55,21 @@ model output and explicit `not-applicable` passes; it is separate from human
 semantic qualification, film acceptance, real-time listening and publication.
 Optional unprovisioned passes remain `pending` in the report and dashboard.
 
+Known issue (observed 2026-10-29/30 on Coming Attractions, seven times): the first
+`film assemble` after a new local render enters the cut analyses that clip inline
+(every step reaches `complete`, `not-applicable` or `needs-review`) and then still
+refuses with "Project clip analysis is incomplete"; a standalone
+`npm run clips -- analysis process-project PROJECT_ID` reports the project complete
+without further extraction, and the second `film assemble` passes. Recovery is that
+two-step; do not regenerate anything. Handoff for the fix: in
+`tools/production/clip-analysis-workflow.mjs`, `processProject` overrides the
+report status when any attempt is `incomplete` (the `attempts.some(...)` line) and
+`report()` re-inspects the fresh run through `runIdentity`/`verifyRun` right after
+`adoptRun`; reproduce by importing a fresh local render into a test project and
+calling `processProject` once, assert `status === "complete"`, and add that case
+to `clip-analysis-workflow.test.mjs`. Until then, `film assemble` should at least
+print the two recovery commands with the refusal.
+
 ## Inventory, pilot and queue
 
 ```sh

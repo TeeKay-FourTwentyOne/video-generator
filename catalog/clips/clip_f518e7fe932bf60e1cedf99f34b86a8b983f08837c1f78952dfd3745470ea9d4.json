@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f518e7fe932bf60e1cedf99f34b86a8b983f08837c1f78952dfd3745470ea9d4",
+  "sha256": "f518e7fe932bf60e1cedf99f34b86a8b983f08837c1f78952dfd3745470ea9d4",
+  "bytes": 9873633,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, 1943, the sidewalk outside a movie theater in flat overcast daylight; the camera stands still at eye height under the edge of the marquee and does not move. The young woman in the tilted hat and charcoal coat walks slowly toward the camera along the front of the theater, unhurried, small steady steps, her eyes lifted to the marquee above her and then ahead toward the brass doors on the left; she never looks at the camera, never stops, never speaks. The man in the hat far down the sidewalk behind her keeps walking at the same distance; the parked car stays parked. Deep focus, true colour, no grain, no haze, no slow motion; plain ordinary footage. Sound: a quiet street, her heels on the pavement, one car passing, a distant voice; no music, no dialogue. Exactly the people already in the frame; nobody new enters. No on-screen text, no signs, no lettering anywhere; the marquee board stays blank.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b0c97ae888934baac4dc5634c964ea6eb5a4fbbc6d9bb964e7d977d20ac1e222",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2974496057,
+      "createdAt": "2026-10-29T20:10:44.804Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "ba78392f38d9eb89e5d80385d2363b3b9bf69d8c7aa3b3fe470ad580c9ce22f5",
+          "bytes": 1657555,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f865fc10fe528480b9eb5ba5cb71dcd9026cde8a0e1defb500f186e6d6c90d50"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

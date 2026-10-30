@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "projectId": "coming-attractions",
   "title": "Coming Attractions",
-  "updated": "2026-10-26",
+  "updated": "2026-10-30",
   "format": "Vertical 9:16, about 55 seconds, 1080 by 1920 at 24 fps",
-  "phase": "first draft cut",
+  "phase": "published",
   "logline": "One movie seat, four decades, and the previews that played before the feature every time. The crowd goes quiet for its own fear in 1943, 1973, 1999 and 2026, then walks out of the matinee into a bright weekday afternoon.",
-  "overall": "The director gave the go on 2026-10-26 and the whole first draft was built the same morning: fifteen motion takes (one output-filtered and retaken from a wider anchor), five narration lines, six effects and five music cues, the local cards and screen treatments, a measured mix and an assembled review film with a frame-and-timecode overlay. Every take was inspected on contact sheets and dense frame strips; the native chatter was transcribed and the period-apt lines Veo wrote were kept. Two defects were rescued locally (the marquee lettering, the white fades) and one is flagged for the director (the bar of light across the man's eyes in her look left). The cut runs about 62 seconds against a brief of about 55; the trims to get there are listed as a decision rather than taken blind.",
-  "next": "Director: watch v1 on this page (the 720 copy, times to the millisecond and a frame step) or the native review film with the debug overlay, then decide the open items: the length, the look-left retake, and whether the coda\u2019s camera breath stays. Agent then cuts v2, and only after approval the 4K and the upload.",
+  "overall": "Published 2026-10-30. v9 (52.5 s), approved by the director (\"It's perfect.\"), is the film; its 4K master is the published master. The workspace is archived.",
+  "next": "Nothing open. Future edits start from a restored copy of the archive.",
   "statuses": {
     "planned": {
       "label": "Planned",
@@ -60,225 +60,263 @@
       "id": "1943",
       "number": "1943",
       "title": "The house fills",
-      "status": "planned",
-      "summary": "A movie palace during the war. Hats and coats in the dark, a sailor stands to let a young woman edge along the row to her seat. The lights go down, the swirl card reads Coming Attractions, and a newsreel silences the room.",
+      "status": "approved",
+      "summary": "A movie palace during the war. She walks up to the theater doors in plain daylight, the Coming Attractions card is projected on the screen, a newsreel plays, and her face takes it in.",
       "image": "refs/C-1943.png",
       "segments": [
         {
+          "id": "exterior",
+          "title": "S00 Outside: from behind her, she walks up to the brass doors under the blank marquee",
+          "status": "approved",
+          "detail": "Director 2026-10-29: \"generate a new clip for a 2-2.5s intro. Same woman, she's approaching a 1940s movie theater from outside. Very photorealistic. Not cinematic, not old-time.\" The first take (v3) put the camera further along the sidewalk, so she walked past the doors toward the lens; director: \"She's walking away from the theater entrance in the new intro clip. She should be walking towards or into the theater.\" Reshot the same evening from behind her: a new anchor and one 4 s take, the doors ahead of her at frame left under the blank marquee, the 1940s sedan at the kerb, flat overcast daylight. v4 uses its first two seconds: her back to us, her face in profile lifted to the marquee, her head turning to the doors as she angles toward them; the camera follows her a step. After the used range the take goes on to a strong image of her at the open door, hand on it, turning in, but the door swings open by itself just before she reaches it, so that part is not used. An \"into the theater\" version would take one more take anchored on an already-open door. Director 2026-10-29, on v4: \"Much better, all good on the first segment I think.\" Director 2026-10-29, on v5: \"add an iris closing effect on the woman as she's entering the theater, then a brief hold on black before the Coming Attractions spinner.\" v6: a local iris-out copy of the take (the circle closes on her head and shoulders over the last two thirds of a second and snaps shut), a quarter-second black hold, then the swirl card; the walk is kept whole, so the card and everything after it start a third of a second later than in v5. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
+          "image": "refs/A-S00-v2.png"
+        },
+        {
+          "id": "black",
+          "title": "Black: two frames between the iris and the banner",
+          "status": "approved",
+          "detail": "v8: the shut iris (frame 49) and one frame of local black, then the banner opens from a pinhole at 2.125 s (v9 the projected card, v8 the swirl card). Director 2026-10-29, on v7: \"Use an opening iris to match the closing iris from the beginning when leading into the Coming Attractions banner, starting around 2.125s.\" Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9."
+        },
+        {
           "id": "arrive",
           "title": "S01 She edges past the sailor to her seat; both sit; the lights dim",
-          "status": "review",
-          "detail": "Take in and cut: 0-4.5 s, she edges past the sailor ('Excuse me'), both sit and settle. The house lights never dim on camera; the cut to the screen-lit medium carries it.",
+          "status": "dropped",
+          "detail": "Take in and cut: 0-4.5 s, she edges past the sailor ('Excuse me'), both sit and settle. The house lights never dim on camera; the cut to the screen-lit medium carries it. Director 2026-10-29: cut. \"The motion is strange of her getting into the seat and the woman ends up in the front row in that shot but we see her at least one row back in the next one. Other visual errors.\" v2 opens on the swirl card.",
           "image": "clips/S01-v1.mp4"
         },
         {
           "id": "title",
-          "title": "T00 Coming Attractions swirl card",
-          "status": "review",
-          "detail": "The swirl card plays 2 s under the projector clatter, the optical hiss and the first bars of the brass march.",
-          "image": "cards/T00.mp4"
+          "title": "T00 Coming Attractions banner, projected on a 1940s screen",
+          "status": "approved",
+          "detail": "The swirl card plays 2 s under the projector clatter, the optical hiss and the first bars of the brass march. v8: an opening iris on the card to match the closing one on her (a pinhole at 2.125 s, clear of the band 16 frames later, the same easing mirrored), on the card past its own fade-in. Director 2026-10-30, on v8: \"Let's try a couple more generations of the Coming Attractions thing. Instead of being a very tidy, floating in space version, let's try one that's being projected on a 1940s movie screen. We only see the screen and text but it's tactile, physical, historically accurate. And if that doesn't work let's try one version of it just floating but in that style. Please keep it the same length and slot it into the same spot as the existing banner in T00i.\" v9: a generated still of the card as projected on a masked 1940s theater screen (the fabric, the projector's hot spot and falloff, the halation of the lettering; the side curtains fall outside the 1.37 crop), rendered locally with the same 1943 treatment as the newsreel (print range, lamp flicker, grain, gate weave, scratches, dust) and the same opening iris, 48 frames in the same slot. The lettering is the still's own: Coming in brush script over ATTRACTIONS in block capitals, a soft starburst behind. The fallback, the hand-painted card art alone in that style (three stills to frame it for the band), is rendered the same way as a one-line swap and is in the comparison clip, not in the cut. The swirl card (v1-v8) is kept on disk. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
+          "image": "refs/T00-screen.png"
         },
         {
           "id": "newsreel",
           "title": "N1 Newsreel: the column on the boulevard, bombers over the rooftops",
-          "status": "review",
-          "detail": "One take, two bands: the march low in the frame for 2 s, then the bombers over the rooftops for 2 s, both treated to 1.37 black and white with grain and weave. The 1943 line runs over it and ends on the silent faces.",
+          "status": "approved",
+          "detail": "One take, two bands: the march low in the frame for 2 s, then the bombers over the rooftops for 2 s, both treated to 1.37 black and white with grain and weave. The 1943 line runs over it and ends on the silent faces. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "edit/screens/N1b.mp4"
         },
         {
           "id": "silenced",
           "title": "S02 She and the sailor, silenced by the screen",
-          "status": "review",
-          "detail": "Her whisper before the card ('I'm so glad we decided to come tonight', Veo's own line, kept quiet) and the silenced beat after the newsreel are the head and tail of one take. Eight faces hold without drift.",
+          "status": "approved",
+          "detail": "Her whisper before the card ('I'm so glad we decided to come tonight', Veo's own line) and the silenced beat after the newsreel are the head and tail of one take. Eight faces hold without drift. Director 2026-10-29: cut with S01 (both beats); then, the same afternoon: \"There's a little bit from S02 I want to keep after we show the WWII newsreel. It's focused on the woman's face while she's sitting and looking at the theater.\" v3 keeps two seconds of it after the bombers (take frames 112-160: lips closed, eyes on the screen) and the announcer ends on her face again. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "clips/S02-v1.mp4"
         }
       ],
-      "next": "Check the seat anchor's face, the sailor's cap and the hat veil; make sure she looks just above the lens, not into it."
+      "next": ""
     },
     {
       "id": "1973",
       "number": "1973",
       "title": "The gas line",
-      "status": "planned",
+      "status": "approved",
       "summary": "Same seat, same woman, thirty years on: long centre-parted hair, a suede jacket, orange vinyl seats, a popcorn bucket, laughing with a man with a moustache. The screen shows a gas line a mile long. The row goes still.",
       "image": "refs/C-1973.png",
       "segments": [
         {
           "id": "laugh",
           "title": "S03 Laughing with the moustache man, popcorn; the light changes; still",
-          "status": "review",
-          "detail": "Veo wrote her a line and it is the best cut in the film: 'Bet I can eat more popcorn than you before the previews end', and the cut lands on 'end'. The still tail is the same take after the flicker brightens.",
+          "status": "approved",
+          "detail": "Veo wrote her a line and it is the best cut in the film: 'Bet I can eat more popcorn than you before the previews end', and the cut lands on 'end'. The still tail is the same take after the flicker brightens. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "clips/S03-v1.mp4"
         },
         {
           "id": "card",
           "title": "C2 The date card: 1980",
-          "status": "review",
-          "detail": "Year card, then the preview; the era's music starts on the card.",
+          "status": "approved",
+          "detail": "Year card, then the preview; the era's music starts on the card. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "cards/C2.mp4"
         },
         {
           "id": "trailer",
           "title": "N2 The gas line; the pumps run dry by 1980",
-          "status": "review",
-          "detail": "Treated to the era's band (1.85 faded colour for 1973, 2.39 video texture for 1999). The gas line runs 4.5 s so the 1973 line finishes over the still faces; the monitor wall goes dark row by row with the red lamp left.",
+          "status": "approved",
+          "detail": "Treated to the era's band (1.85 faded colour for 1973, 2.39 video texture for 1999). The gas line runs 4.5 s so the 1973 line finishes over the still faces; the monitor wall goes dark row by row with the red lamp left. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "refs/N2.png"
         }
-      ]
+      ],
+      "next": ""
     },
     {
       "id": "1999",
       "number": "1999",
       "title": "Midnight",
-      "status": "planned",
+      "status": "approved",
       "summary": "A highlighted bob, a track jacket, blue cloth seats, a giant soda, a friend with a flip phone. The screen shows a control room of monitors going dark one row at a time. At midnight the computers that run our world may simply stop.",
       "image": "refs/C-1999.png",
       "segments": [
         {
           "id": "soda",
           "title": "S04 The track jacket and the giant soda; the light changes; still",
-          "status": "review",
-          "detail": "'Look who just messaged me' on the flip phone, the soda sip, then both still from 3 s; a second legible line in the tail is excluded by the range.",
+          "status": "approved",
+          "detail": "'Look who just messaged me' on the flip phone, the soda sip, then both still from 3 s; a second legible line in the tail is excluded by the range. v2: the first half (S04a, the track jacket and the giant soda, \"Look who just messaged me\") is cut by the director; only the still faces after the trailer remain (S04b), so 1999 opens on its year card. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "clips/S04-v1.mp4"
         },
         {
           "id": "card",
           "title": "C3 The date card: 2000",
-          "status": "review",
-          "detail": "Year card, then the preview; the era's music starts on the card.",
+          "status": "approved",
+          "detail": "Year card, then the preview; the era's music starts on the card. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "cards/C3.mp4"
         },
         {
           "id": "trailer",
           "title": "N3 The control room; the monitors go dark",
-          "status": "review",
-          "detail": "Treated to the era's band (1.85 faded colour for 1973, 2.39 video texture for 1999). The gas line runs 4.5 s so the 1973 line finishes over the still faces; the monitor wall goes dark row by row with the red lamp left.",
+          "status": "approved",
+          "detail": "Treated to the era's band (1.85 faded colour for 1973, 2.39 video texture for 1999). The gas line runs 4.5 s so the 1973 line finishes over the still faces; the monitor wall goes dark row by row with the red lamp left. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "refs/N3.png"
         }
-      ]
+      ],
+      "next": ""
     },
     {
       "id": "2026",
       "number": "2026",
       "title": "The preview arrives full frame",
-      "status": "planned",
+      "status": "approved",
       "summary": "Her phone glows in her lap, a bearded man leans in to show her something. The screen's light changes and the preview comes in her own format, full frame and vertical: an empty office at night, a man at a kitchen table lit by a laptop. Then we are in her seat, looking left at the bearded man and right at the older woman, as the wide shot placed them.",
       "image": "refs/C-2026.png",
       "segments": [
         {
           "id": "phone",
           "title": "S05 Phone glow; the bearded man leans in; the light changes; she lowers the phone",
-          "status": "review",
-          "detail": "'You have to read this thread, it's hilarious', he leans in and points; she laughs. Veo turned the flicker into a projector flare from 2.5 s, so the head ends before it and her reaction is carried by the two looks.",
+          "status": "approved",
+          "detail": "'You have to read this thread, it's hilarious', he leans in and points; she laughs. Veo turned the flicker into a projector flare from 2.5 s, so the head ends before it and her reaction is carried by the two looks. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "clips/S05-v1.mp4"
         },
         {
           "id": "card",
-          "title": "C4a The date card: 2030",
-          "status": "review",
-          "detail": "Year card, then the preview; the era's music starts on the card.",
+          "title": "C4a The date card: 2027",
+          "status": "approved",
+          "detail": "Year card, then the preview; the era's music starts on the card. Director 2026-10-29: \"change the year from 2030 to 2027.\" The card is re-rendered and the 2026 narration line is regenerated with the same voice and settings so it says \"By 2027\" (it now ends over her look to the right, before the question card). v8: moved to between the 1999 reaction (S04b) and the phones (S05), so the card makes the transition into the last era. Director 2026-10-29, on v7: \"Put the 2027 title card between S04b and S05 to make a transition.\" The braam and the 2026 drone start on it as before; the narration now starts with the preview picture. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "cards/C4a.mp4"
         },
         {
           "id": "office",
           "title": "N4a An empty office at night",
-          "status": "review",
-          "detail": "Full frame, the chair turns on its own in the glowing office; the braam lands on the 2030 card and the drone starts under it.",
+          "status": "approved",
+          "detail": "Full frame, the chair turns on its own in the glowing office; the braam lands on the year card (2027; 2030 until v4) and the drone starts under it. v8: holds 4 s instead of 3 (24 more frames of the take's steady office, same first frame) to keep room under the 8 s narration after the S06 trim. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "edit/screens/N4a.mp4"
         },
         {
           "id": "kitchen",
           "title": "N4b A man at a kitchen table lit by a laptop",
-          "status": "review",
-          "detail": "Full frame; he takes the glasses off, rubs his eyes, looks to the window. The 2026 line ends over this shot.",
+          "status": "dropped",
+          "detail": "Full frame; he takes the glasses off, rubs his eyes, looks to the window. The 2026 line ends over this shot. Director 2026-10-29: cut the picture, keep the narration; the 2026 line (now \"By 2027\") now runs unbroken over the two looks.",
           "image": "edit/screens/N4b.mp4"
         },
         {
           "id": "look-left",
           "title": "S06 Her point of view, left: the bearded man, jaw set",
-          "status": "review",
-          "detail": "DEFECT, flagged: Veo rendered the screen light as a hard white bar across his eyes and brow for the whole take (not in the anchor). Used short (2.5 s) in v1. A retake with the light cue reworded is the proposed fix if it bothers you.",
+          "status": "approved",
+          "detail": "v8: take frames 26-41 only (0.67 s), his hand arriving at his mouth. Director 2026-10-29, on v7: \"Trim S06 to only use src timestamps 1.083s (frame 26) to 1.708s (frame 41)\" DEFECT, flagged: Veo rendered the screen light as a hard white bar across his eyes and brow for the whole take (not in the anchor). Used short (2.5 s) in v1. A retake with the light cue reworded is the proposed fix if it bothers you. v2: stays in the cut; the retake decision is still open. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "clips/S06-v1.mp4"
         },
         {
           "id": "look-right",
           "title": "S07 Her point of view, right: the older woman, hand at her mouth",
-          "status": "review",
-          "detail": "Clean: profile, hand pressed to her mouth, a brief turn to the camera and back. Her voice is not heard; the house is near silent.",
+          "status": "approved",
+          "detail": "Clean: profile, hand pressed to her mouth, a brief turn to the camera and back. Her voice is not heard; the house is near silent. v8: holds 3.25 s instead of 2.5 (her hand comes down, she settles) so the narration ends before the question. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "clips/S07-v1.mp4"
         },
         {
           "id": "question",
           "title": "C4b What will you do, when there's nothing left to do? Then white",
-          "status": "review",
-          "detail": "'What will you do' / 'when there's nothing left to do?' with the riser cut dead by the white; the warm cue and the street arrive with the white, before the doors.",
+          "status": "approved",
+          "detail": "'What will you do' / 'when there's nothing left to do?' with the riser cut dead by the white; the warm cue and the street arrive with the white, before the doors. v2: interrupted at the old 49.958 (card frame 45, thirteen frames into line two), then the card's own ramp to white and a quarter-second hold on pure white; the film ends there. \"Like the crowd just decided to leave before the movie in the middle of the frightening advertisement.\" The 2030 line ends about a third of a second before the question begins; \"What will you do\" lands on line one and \"when there is nothing...\" begins as the white comes up and fades with it. v5: director 2026-10-29, \"bring the fade into white at the last part over the VO to 39.417\": the card's ramp to white now starts at 39.417 (seven frames earlier), over the question, which is cut off at \"when there's...\"; the quarter-second white hold follows. v8: with the card moved and S06 trimmed, the ramp to white now starts at 39.958 s; the question is heard where it was relative to the card. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
           "image": "cards/C4b.mp4"
         }
       ],
-      "next": "Decide whether the two point-of-view profiles need the seat-back in frame to read as her seat."
+      "next": ""
     },
     {
       "id": "coda",
-      "number": "Soon",
-      "title": "The matinee lets out",
-      "status": "planned",
-      "summary": "The theater doors open and the audience walks out into a bright weekday afternoon a few years from now. She shades her eyes and smiles. Nobody is in a hurry; everyone has the afternoon off. Trees along the boulevard, people on benches, a slow tram, a clear sky. The film fades up to white.",
+      "number": "2027",
+      "title": "The matinee lets out, 2027",
+      "status": "approved",
+      "summary": "Out of the white: her hands push the brass bars, then she walks out alone onto the sidewalk the film opened on and straight across the street, out of frame; the doorway stands empty for a moment; then a humanoid robot walks in from behind the camera and up to the doors the way she did in 1943, and the iris closes on it in the open doorway. Director 2026-10-29, on v7: \"The ending works really well. However, the robot is stuck mid-stride. It isn't walking in at all. Maybe try a different generation and different angles, a smaller crowd behind the woman leaving - in fact, please change it so that it is only her to mirror the beginning - maybe a generation where she walks out of frame then a separate generation starting from the end frame of that one with no one in it then having the robot enter from the same angle as the woman in the beginning. Try to mirror her entrance with the robot. Her exit can be straight across the street.\" Shot that night: one anchor (two tries, the open door kept), one take of her exit, one take of the robot from the exit take's empty last frame.",
       "image": "refs/A-S08.png",
       "segments": [
         {
           "id": "doors",
           "title": "S08 The doors open; the audience walks out into the afternoon; she shades her eyes",
-          "status": "review",
-          "detail": "The first attempt came back filtered; the retake from a wider anchor is in. Two things rescued: a slow camera breath (tilt up / pull back) kept as is, and red lettering Veo grew on the marquee board from 2.7 s, painted out frame by frame. Fades in from the white. Native chatter ('Wow, look at that sky') kept at room level.",
+          "status": "dropped",
+          "detail": "The first attempt came back filtered; the retake from a wider anchor is in. Two things rescued: a slow camera breath (tilt up / pull back) kept as is, and red lettering Veo grew on the marquee board from 2.7 s, painted out frame by frame. Fades in from the white. Native chatter ('Wow, look at that sky') kept at room level. Director 2026-10-29: cut everything after the interrupted card. A new ending will be reshot.",
           "image": "edit/S08-clean.mp4"
         },
         {
           "id": "boulevard",
           "title": "S09 The boulevard at two in the afternoon",
-          "status": "review",
-          "detail": "The tram glides in, benches in dappled shade, ice-cream talk on the native track; a couple with a dog walks toward the lens, so the shot ends before they arrive and fades to white over the last 1.25 s.",
+          "status": "dropped",
+          "detail": "The tram glides in, benches in dappled shade, ice-cream talk on the native track; a couple with a dog walks toward the lens, so the shot ends before they arrive and fades to white over the last 1.25 s. Director 2026-10-29: cut everything after the interrupted card. A new ending will be reshot.",
           "image": "clips/S09-v1.mp4"
         },
         {
           "id": "white",
           "title": "Fade up to white",
-          "status": "review",
-          "detail": "The film ends on white, as planned."
+          "status": "dropped",
+          "detail": "The film ends on white, as planned. Director 2026-10-29: cut everything after the interrupted card. A new ending will be reshot."
+        },
+        {
+          "id": "e1",
+          "title": "E1 Her hands on the brass bars; the doors begin to open into daylight",
+          "status": "approved",
+          "detail": "Out of the white hold (a short fade from white): her two hands on the two push bars, the push beginning, the street through the glass. Half a second (take frames 14-28). One 4 s take; later in it the doors swing wide and the camera walks out into the overexposed street, not used. The right bar sits a little lower than the left, from the anchor. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
+          "image": "refs/A-E1.png"
+        },
+        {
+          "id": "e2",
+          "title": "E2 She walks out alone and straight across the street; the doorway empties",
+          "status": "approved",
+          "detail": "v8 (E2c): the 1943 sidewalk camera. She comes out through the open brass door in profile, the same woman as S05, crosses the sidewalk at a steady pace, steps off the kerb and leaves the frame at the right edge at about 4 s; the door leaf stays open; the empty doorway is held eight frames before the cut. One 6 s take. The v7 crowd takes (variations a and b, the robot crossing mid-frame) are set aside, not deleted. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
+          "image": "refs/A-E2c-2.png"
+        },
+        {
+          "id": "e3",
+          "title": "E3 The robot walks in from behind the camera and up to the doors; iris",
+          "status": "approved",
+          "detail": "v8: the first frame is the exit take's empty last frame. Nothing for half a second, then the robot enters at the bottom right close to the lens, back to the camera, and walks up the sidewalk to the brass doors as she did in S00, pulls a leaf open and stands in the doorway; the iris closes on it over the last 16 frames (the mirror of the opening), then half a second of black. Veo gave it a glowing cyan ring on the back of the head rather than the dark visor asked for, and lit the marquee bulbs as it approached; both kept. One 6 s take, all of it used. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9.",
+          "image": "refs/A-E3.png"
         }
-      ]
+      ],
+      "next": ""
     },
     {
       "id": "sound",
       "number": "Sound",
       "title": "Sound and finish",
-      "status": "planned",
+      "status": "approved",
       "summary": "Native Veo sound on every audience shot: the murmur, the hush, the seats. Four short narration lines, one per era, each cast in that era's announcer register and band-limited to its playback. Era music cues and effects from ElevenLabs; a warm, simple cue carries the coda.",
       "segments": [
         {
           "id": "narration",
           "title": "Four narration lines, one announcer per era",
-          "status": "review",
-          "detail": "Five ElevenLabs lines, one voice per era, each treated as that era's house playback (1943 mono optical band, 1973 warm, 1999 clean, 2026 full) with one short hall."
+          "status": "approved",
+          "detail": "Five ElevenLabs lines, one voice per era, each treated as that era's house playback (1943 mono optical band, 1973 warm, 1999 clean, 2026 full) with one short hall. v2: the 1943 announcer opens on the swirl card (the beat he finished over is gone) and ends ten frames before 1973; the 2030 line starts two frames after the braam and runs over both looks; the question is cut by the white. v5: the 2026 line regenerated with \"By 2027\" (one take, same voice, same settings, 8.1 s against 9.0 s before); the other four lines are unchanged. v8: the 2026 line starts with the preview picture (the card now precedes S05's spoken line), and both 2026 lines keep their first consonant (their lead-in trims were taking the attack of \"This\" and \"What\"). Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9."
         },
         {
           "id": "music",
           "title": "Five music cues: 1943 brass, 1973 trailer strings, 1999 synth pulse, 2026 drone, coda",
-          "status": "review",
-          "detail": "Five cues: brass march, 1973 wah-wah trailer, 1999 synth news theme, 2026 drone with piano, warm coda. Each era's cue starts on its card and fades under the still faces; the coda cue begins with the white."
+          "status": "approved",
+          "detail": "Five cues: brass march, 1973 wah-wah trailer, 1999 synth news theme, 2026 drone with piano, warm coda. Each era's cue starts on its card and fades under the still faces; the coda cue begins with the white. v2: no coda cue; the 2026 drone and the question fade across the ramp and the white hold, the riser peaks at the first white frame. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9."
         },
         {
           "id": "mix",
           "title": "Mix, assemble and native review export",
-          "status": "review",
-          "detail": "Native rooms set from measurement, chatter lines at talk level, still beats near silent, narration on top; mastered to -16 LUFS integrated, -1.7 dBTP."
+          "status": "approved",
+          "detail": "Native rooms set from measurement, chatter lines at talk level, still beats near silent, narration on top; mastered to -16 LUFS integrated, -1.7 dBTP. v2 mix rendered to the same targets (measured -16.1 LUFS, -1.8 dBTP); listening is the director's. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Approved in v9."
         },
         {
           "id": "finish",
           "title": "4K finish",
-          "status": "hold",
-          "detail": "Only after the director approves the native review."
+          "status": "approved",
+          "detail": "Only after the director approves the native review. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" 4K master in progress: the repository upscale tool (Real-ESRGAN, the 2x model behind the 2026 masters, crf 18) on the approved v9, audio stream-copied; no upload. Built and verified 2026-10-30 (2160x3840, 1260 frames); the director has not watched the 4K, so this is the technical state, not approval of the master. Published by the director 2026-10-30 from this master."
         }
-      ]
+      ],
+      "next": ""
     }
   ],
   "drafts": [
@@ -470,6 +508,1441 @@
           "source": "edit/S09-white.mp4"
         }
       ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-10-29",
+      "title": "Feel-cut from the director's notes",
+      "film": "final/v2/film.mp4",
+      "posterFrame": 170,
+      "fps": 24,
+      "frames": 884,
+      "width": 1080,
+      "height": 1920,
+      "note": "The director's five edits on v1, no new generation: opens on the swirl card, no 1943 seat beats, no S04a, no kitchen (narration kept), the question card interrupted at its 45th frame, ramp to white, a quarter-second hold on pure white.",
+      "segments": [
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 0,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 48,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 96,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 144,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 222,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 242,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 350,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 402,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 422,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 506,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 554,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 612,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 632,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 692,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 752,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 812,
+          "frames": 45,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 857,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 878,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-10-29",
+      "title": "v3: the exterior intro and her face restored",
+      "film": "final/v3/film.mp4",
+      "posterFrame": 24,
+      "fps": 24,
+      "frames": 984,
+      "width": 1080,
+      "height": 1920,
+      "note": "v2 plus the director's two afternoon additions: a new photoreal exterior intro of her walking up to the theater in daylight (one generated take), and two seconds of her face on the screen after the newsreel, from the 1943 take. The announcer returns to the newsreel and ends on her face.",
+      "segments": [
+        {
+          "label": "S00",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 52,
+          "sourceFrame": 4
+        },
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 52,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 100,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 148,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 196,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 244,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 322,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 342,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 450,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 502,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 522,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 606,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 654,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 712,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 732,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 792,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 852,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 912,
+          "frames": 45,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 957,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 978,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v4",
+      "date": "2026-10-29",
+      "title": "v4: the intro turned around",
+      "film": "final/v4/film.mp4",
+      "posterFrame": 24,
+      "fps": 24,
+      "frames": 980,
+      "width": 1080,
+      "height": 1920,
+      "note": "v3 with the exterior intro reshot from behind her so she walks toward the doors (director's note on v3). Two seconds of the new take; the rest of the cut and the mix are v3 shifted by four frames. Native review film in final/v4; review copy for this player.",
+      "segments": [
+        {
+          "label": "S00",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 48,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 96,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 144,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 192,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 240,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 318,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 338,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 446,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 498,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 518,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 602,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 650,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 708,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 728,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 788,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 848,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 908,
+          "frames": 45,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 953,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 974,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v5",
+      "date": "2026-10-29",
+      "title": "v5: 2027, and the white at 39.417",
+      "film": "final/v5/film.mp4",
+      "posterFrame": 24,
+      "fps": 24,
+      "frames": 973,
+      "width": 1080,
+      "height": 1920,
+      "note": "v4 with the director's notes on it: the last segment's year is 2027 on the card and in the narration (one regenerated line), and the ramp to white starts at 39.417 over the question. Native review film in final/v5; review copy for this player.",
+      "segments": [
+        {
+          "label": "S00",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 48,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 96,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 144,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 192,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 240,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 318,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 338,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 446,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 498,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 518,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 602,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 650,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 708,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 728,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 788,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 848,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 908,
+          "frames": 38,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 946,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 967,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v6",
+      "date": "2026-10-29",
+      "title": "v6: the iris, and the ending staged",
+      "film": "final/v6/film.mp4",
+      "posterFrame": 24,
+      "fps": 24,
+      "frames": 981,
+      "width": 1080,
+      "height": 1920,
+      "note": "v5 with the director's iris-out on her as she walks to the doors and a quarter-second hold on black before the swirl card; everything after is a third of a second later. The ending (three shots) is staged, not generated. Native review film in final/v6; review copy for this player.",
+      "segments": [
+        {
+          "label": "S00i",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 50,
+          "sourceFrame": 0,
+          "source": "edit/S00-iris.mp4"
+        },
+        {
+          "label": "BLACK",
+          "shot": "BLACK",
+          "frame": 50,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        },
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 56,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 104,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 152,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 200,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 248,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 326,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 346,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 454,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 506,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 526,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 610,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 658,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 716,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 736,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 796,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 856,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 916,
+          "frames": 38,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 954,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 975,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v7",
+      "date": "2026-10-29",
+      "title": "v7: the ending",
+      "film": "final/v7/film.mp4",
+      "posterFrame": 1040,
+      "fps": 24,
+      "frames": 1139,
+      "width": 1080,
+      "height": 1920,
+      "note": "v6 plus the ending the director asked for: out of the white, half a second of her hands on the brass bars, then the crowd walking out with her first and the robot walking in from the side (variation a; variation b held), a fade to black. Native review film in final/v7; review copy for this player.",
+      "segments": [
+        {
+          "label": "S00i",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 50,
+          "sourceFrame": 0,
+          "source": "edit/S00-iris.mp4"
+        },
+        {
+          "label": "BLACK",
+          "shot": "BLACK",
+          "frame": 50,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        },
+        {
+          "label": "T00",
+          "shot": "T00",
+          "frame": 56,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "cards/T00.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 104,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 152,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 200,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 248,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 326,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 346,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 454,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 506,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 526,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 610,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 658,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 716,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 736,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 796,
+          "frames": 60,
+          "sourceFrame": 18
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 856,
+          "frames": 60,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 916,
+          "frames": 38,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 954,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 975,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        },
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 981,
+          "frames": 14,
+          "sourceFrame": 0,
+          "source": "edit/E1-white.mp4"
+        },
+        {
+          "label": "E2",
+          "shot": "E2a",
+          "frame": 995,
+          "frames": 132,
+          "sourceFrame": 0
+        },
+        {
+          "label": "BLACK2",
+          "shot": "BLACK",
+          "frame": 1127,
+          "frames": 12,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v8",
+      "date": "2026-10-29",
+      "title": "v8: the opening iris, the card moved, the robot walks in",
+      "film": "final/v8/film.mp4",
+      "posterFrame": 1180,
+      "fps": 24,
+      "frames": 1260,
+      "width": 1080,
+      "height": 1920,
+      "note": "The director's four notes on v7: an opening iris on the swirl card at 2.125 s to mirror the closing one; the 2027 card moved before the phones as the transition into the last era; S06 cut to its 16-frame look; and the ending as her alone: her hands, her walk out and straight across the street, the empty doorway, then the robot walking in from behind the camera and up to the doors as she did, the iris closing on it. The office preview and the look-right hold a little longer to keep the 8 s narration whole.",
+      "segments": [
+        {
+          "label": "S00i",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 50,
+          "sourceFrame": 0,
+          "source": "edit/S00-iris.mp4"
+        },
+        {
+          "label": "BLACK",
+          "shot": "BLACK",
+          "frame": 50,
+          "frames": 1,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        },
+        {
+          "label": "T00i",
+          "shot": "T00",
+          "frame": 51,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/T00-iris.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 99,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 147,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 195,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 243,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 321,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 341,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 449,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 501,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 521,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 605,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 653,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 673,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 731,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a-96.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 827,
+          "frames": 16,
+          "sourceFrame": 26
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 843,
+          "frames": 78,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 921,
+          "frames": 38,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 959,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 980,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        },
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 986,
+          "frames": 14,
+          "sourceFrame": 0,
+          "source": "edit/E1-white.mp4"
+        },
+        {
+          "label": "E2c",
+          "shot": "E2c",
+          "frame": 1000,
+          "frames": 104,
+          "sourceFrame": 0
+        },
+        {
+          "label": "E3i",
+          "shot": "E3",
+          "frame": 1104,
+          "frames": 144,
+          "sourceFrame": 0,
+          "source": "edit/E3-iris.mp4"
+        },
+        {
+          "label": "BLACK2",
+          "shot": "BLACK",
+          "frame": 1248,
+          "frames": 12,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v9",
+      "date": "2026-10-30",
+      "title": "v9: the banner projected on a 1940s screen",
+      "film": "final/v9/film.mp4",
+      "posterFrame": 80,
+      "fps": 24,
+      "frames": 1260,
+      "width": 1080,
+      "height": 1920,
+      "note": "v8 with the Coming Attractions banner remade as the director asked: the card projected on a masked 1940s screen, a generated still under the same 1943 treatment and the same opening iris, in the same two-second slot. The card alone in that style is rendered as the swap and shown in the comparison clip. Everything else, picture and sound, is v8.",
+      "segments": [
+        {
+          "label": "S00i",
+          "shot": "S00",
+          "frame": 0,
+          "frames": 50,
+          "sourceFrame": 0,
+          "source": "edit/S00-iris.mp4"
+        },
+        {
+          "label": "BLACK",
+          "shot": "BLACK",
+          "frame": 50,
+          "frames": 1,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        },
+        {
+          "label": "T00s",
+          "shot": "T00",
+          "frame": 51,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/T00s-iris.mp4"
+        },
+        {
+          "label": "N1a",
+          "shot": "N1",
+          "frame": 99,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1a.mp4"
+        },
+        {
+          "label": "N1b",
+          "shot": "N1",
+          "frame": 147,
+          "frames": 48,
+          "sourceFrame": 0,
+          "source": "edit/screens/N1b.mp4"
+        },
+        {
+          "label": "S02c",
+          "shot": "S02",
+          "frame": 195,
+          "frames": 48,
+          "sourceFrame": 112
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 243,
+          "frames": 78,
+          "sourceFrame": 0
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 321,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C2.mp4"
+        },
+        {
+          "label": "N2",
+          "shot": "N2",
+          "frame": 341,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/screens/N2.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 449,
+          "frames": 52,
+          "sourceFrame": 90
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 501,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C3.mp4"
+        },
+        {
+          "label": "N3",
+          "shot": "N3",
+          "frame": 521,
+          "frames": 84,
+          "sourceFrame": 0,
+          "source": "edit/screens/N3.mp4"
+        },
+        {
+          "label": "S04b",
+          "shot": "S04",
+          "frame": 605,
+          "frames": 48,
+          "sourceFrame": 66
+        },
+        {
+          "label": "C4a",
+          "shot": "C4a",
+          "frame": 653,
+          "frames": 20,
+          "sourceFrame": 0,
+          "source": "cards/C4a.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 673,
+          "frames": 58,
+          "sourceFrame": 0
+        },
+        {
+          "label": "N4a",
+          "shot": "N4a",
+          "frame": 731,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/screens/N4a-96.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 827,
+          "frames": 16,
+          "sourceFrame": 26
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 843,
+          "frames": 78,
+          "sourceFrame": 30
+        },
+        {
+          "label": "C4b",
+          "shot": "C4b",
+          "frame": 921,
+          "frames": 38,
+          "sourceFrame": 0,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "C4bw",
+          "shot": "C4b",
+          "frame": 959,
+          "frames": 21,
+          "sourceFrame": 62,
+          "source": "cards/C4b.mp4"
+        },
+        {
+          "label": "WHITE",
+          "shot": "WHITE",
+          "frame": 980,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "cards/WHITE.mp4"
+        },
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 986,
+          "frames": 14,
+          "sourceFrame": 0,
+          "source": "edit/E1-white.mp4"
+        },
+        {
+          "label": "E2c",
+          "shot": "E2c",
+          "frame": 1000,
+          "frames": 104,
+          "sourceFrame": 0
+        },
+        {
+          "label": "E3i",
+          "shot": "E3",
+          "frame": 1104,
+          "frames": 144,
+          "sourceFrame": 0,
+          "source": "edit/E3-iris.mp4"
+        },
+        {
+          "label": "BLACK2",
+          "shot": "BLACK",
+          "frame": 1248,
+          "frames": 12,
+          "sourceFrame": 0,
+          "source": "cards/BLACK.mp4"
+        }
+      ]
     }
   ],
   "decisions": [
@@ -489,44 +1962,64 @@
     {
       "id": "one-woman",
       "title": "One recurring woman in the same seat, not four strangers",
-      "status": "open",
-      "detail": "Recommended. The audience is always us, and the era change lands on each cut back from the screen."
+      "status": "decided",
+      "detail": "Recommended. The audience is always us, and the era change lands on each cut back from the screen. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Closed by the approval of v9."
     },
     {
       "id": "era-three",
       "title": "Era three is the millennium bug",
-      "status": "open",
-      "detail": "The fear that came with a date and did not happen. Alternatives: the 1962 missiles, 1985 nuclear winter."
+      "status": "decided",
+      "detail": "The fear that came with a date and did not happen. Alternatives: the 1962 missiles, 1985 nuclear winter. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Closed by the approval of v9."
     },
     {
       "id": "coda-read",
       "title": "Post-scarcity read as everyone having the afternoon off",
-      "status": "open",
-      "detail": "A quiet tram and planted facades, no flying cars. The last question gets answered literally."
+      "status": "decided",
+      "detail": "A quiet tram and planted facades, no flying cars. The last question gets answered literally. The coda as shot is out of v2 and the director plans a new ending, so the read stays open until the reshoot brief. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Closed by the approval of v9."
     },
     {
       "id": "form",
       "title": "The letterbox widens per decade, the 2026 preview breaks the band, the film ends on white",
-      "status": "open",
-      "detail": "1.37, 1.85, 2.39, then full frame. White, not black."
+      "status": "decided",
+      "detail": "1.37, 1.85, 2.39, then full frame. White, not black. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" Closed by the approval of v9."
     },
     {
       "id": "length",
       "title": "Length: 62 seconds against a brief of about 55",
-      "status": "open",
-      "detail": "Trims already taken in v1 (the arrival, the card, the newsreel, the silenced beat, the office, the doors). To reach 55, candidates in order of what I would give up first: the bomber band (2 s), the 1943 whisper beat (2 s), half a second from the kitchen, a second from each coda shot. Or keep 62: the eras each need their line to finish on the silent faces."
+      "status": "decided",
+      "detail": "Trims already taken in v1 (the arrival, the card, the newsreel, the silenced beat, the office, the doors). To reach 55, candidates in order of what I would give up first: the bomber band (2 s), the 1943 whisper beat (2 s), half a second from the kitchen, a second from each coda shot. Or keep 62: the eras each need their line to finish on the silent faces.",
+      "resolution": "Director 2026-10-29: five edits. \"1. Cut S01 and S02s, start with T00 at 6.500s. 2. Cut S04a. 3. Cut N4b but keep the VO going. 4. Cut off C4b at 49.958s. Like the crowd just decided to leave before the movie in the middle of the frightening advertisement. 5. Cut everything after that. Keep a transition to white and hold on pure white for .25s.\" Applied as v2: 884 frames, 36.8 seconds. \"This version is to get a feel of what we can keep.\""
     },
     {
       "id": "look-left-retake",
       "title": "Retake her look left (the bar of light across his eyes)?",
-      "status": "open",
-      "detail": "One Quality 6 s take with the light cue reworded (no 'flicker lighting his face from the right'; a soft glow instead). Within the pot."
+      "status": "decided",
+      "detail": "One Quality 6 s take with the light cue reworded (no 'flicker lighting his face from the right'; a soft glow instead). Within the pot. S06 stays in v2. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" No retake; the 16-frame look in v9 stands."
     },
     {
       "id": "coda-breath",
       "title": "Keep the camera breath in the doors shot?",
-      "status": "open",
-      "detail": "Veo drifted the locked camera into a slow tilt up over the take. It reads as a breath as they come into the light; the alternative is a retake."
+      "status": "decided",
+      "detail": "Veo drifted the locked camera into a slow tilt up over the take. It reads as a breath as they come into the light; the alternative is a retake.",
+      "resolution": "Moot: the doors shot left the cut with the rest of the coda on 2026-10-29; a new ending will be reshot."
+    },
+    {
+      "id": "reshoots",
+      "title": "Reshoots: a new ending and different connective tissue",
+      "status": "decided",
+      "detail": "Director 2026-10-29: \"We're going to add some reshoots after this edit with a new ending and different connective tissue.\" Once the director has watched v2 and marked what stays, the agent proposes the reshoot list (what carries 1943 and 1999 between card and screen, what the ending is) with its cost in the workspace plan; nothing is generated before that is agreed. First piece shot 2026-10-29 at the director's request: the photoreal exterior intro (S00), in v3. The new ending and the rest of the connective tissue are still to brief. The intro was turned around on 2026-10-29 after the director's note on v3 (she walked away from the entrance): reshot from behind her, in v4. 2026-10-29, on v4: the intro is all good; the last segment's year becomes 2027; the fade to white moves to 39.417; the director proposes a POV shot of someone pushing open a theater door as the start of the new ending (see the ending decision). 2026-10-29, on v5: the ending is option A from three vantage points (staged, awaiting the go); the iris-out and the black hold are in v6. 2026-10-29 night: the ending shot (E1 + E2, two E2 variations) and cut into v7; the connective tissue remains to brief. v8 (2026-10-29 night): the ending reshot as her alone and the robot alone (two takes); the connective tissue remains to brief. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" No further connective tissue; v9 is the film."
+    },
+    {
+      "id": "ending-outside",
+      "title": "The new ending: the POV door, and what is outside",
+      "status": "decided",
+      "detail": "Director 2026-10-29: \"Then what comes after? I think a POV shot of someone pushing open a door at the theater. Outside is... what? Not just generic pop urbanism. Something specific. I want to include humanoid robots. Thoughts?\" Agent's proposal: come out of the white hold into the POV, the white becoming the daylight in the opening door, and outside is the same sidewalk the film opened on, in 2027, almost unchanged. Option A (recommended), the next audience: one humanoid robot is walking up to the doors exactly as she did in 1943, unhurried, head lifted to the marquee, then to us as the door opens; it stops a step short and waits for us to come out. One robot, one gesture; the opening shot rhymed. Option B, the matinee queue: a short patient line of three or four robots at the brass ticket booth, each holding a ticket; the nearest steps aside for us. Broader, more bodies, more risk. Option C, the changeover: a robot on a stepladder under the marquee taking the letters down with a pole, the board half cleared, the audience filing out beneath it; the most literal \"job\", but marquee lettering is a known generation hazard. In every case the robot is plain and unbranded (matte off-white panels, grey joints, a smooth dark visor, no logos), photoreal daylight, no neon, no holograms. One POV take of about six seconds, optionally a reverse from the sidewalk if the POV alone feels short. Waiting for the director's pick before any generation. Director 2026-10-29: \"A sounds fantastic. But also a little tricky to fully pull off. Think about changing camera angles and cutting a few clips from different vantage points together.\" Decided: A, as three shots from three vantage points (her point of view through the door; the theater front from across the street; behind the robot at the doors, the opening shot's framing), with one robot design carried through all three by a shared reference image. The ending scene lists them; generation waits for the go. Director 2026-10-29, the go: \"A little of both E1 and E2. Her hands on the doors for maybe half a second. Then cut to E2 showing the crowd walking out - making sure she's at the front and matches the young woman we see in S05. They walk out, robot walks in from the side. Feel free to try a couple variations.\" Shot 2026-10-29: E1 (one take) and E2 in two variations; v7 uses variation a, b is held for the swap. E3 is on hold. Director 2026-10-29, on v7: \"The ending works really well. However, the robot is stuck mid-stride. It isn't walking in at all. Maybe try a different generation and different angles, a smaller crowd behind the woman leaving - in fact, please change it so that it is only her to mirror the beginning - maybe a generation where she walks out of frame then a separate generation starting from the end frame of that one with no one in it then having the robot enter from the same angle as the woman in the beginning. Try to mirror her entrance with the robot. Her exit can be straight across the street.\" v8: her exit alone (E2c) from the 1943 camera and the robot's entrance (E3) from the exit take's empty last frame, iris-out on the robot; the crowd takes set aside."
+    },
+    {
+      "id": "banner",
+      "title": "The Coming Attractions banner: projected on a 1940s screen, or the card alone",
+      "status": "decided",
+      "detail": "Director 2026-10-30, on v8: \"Let's try a couple more generations of the Coming Attractions thing. Instead of being a very tidy, floating in space version, let's try one that's being projected on a 1940s movie screen. We only see the screen and text but it's tactile, physical, historically accurate. And if that doesn't work let's try one version of it just floating but in that style. Please keep it the same length and slot it into the same spot as the existing banner in T00i.\" v9 puts the projected-screen version in the slot; the card-alone version is rendered as the swap. Both are generated stills under the local 1943 treatment and the iris, not Veo takes; a Veo take of the projected screen remains possible if the lamp flicker and the weave should be the real thing rather than the treatment. Director 2026-10-30, on v9: \"It's perfect. Please 4k upscale.\" The projected-screen banner stands; the card alone stays as a rendered alternative."
     }
   ],
   "log": [
@@ -569,6 +2062,54 @@
     {
       "date": "2026-10-26",
       "text": "Director asked for the draft on this page with millisecond timestamps: v1 embedded as a 720 by 1280 copy with a frame-accurate readout (edit time, frame, src frame), one-frame stepping, a copy-timestamp button and a clickable shot timeline; every beat now links to its time in the cut."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director opened the final-edit pass. No comments had been left on the v1 page; the page was rebuilt and republished at the same address with the phase set to edit. The cut is unchanged from v1. Queue for the director: length, look-left retake, coda breath, and the four concept confirmations (one woman, era three, coda read, form)."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director's five edit notes on v1 applied as v2 (884 frames, 36.8 s, no new generation): open on the swirl card, no S01/S02, no S04a, no N4b with the narration kept, the question card interrupted at its 45th frame, the card's own ramp to white, a six-frame hold on pure white, nothing after. A local pure-white card was added for the hold. Sound reflowed: the 1943 announcer opens on the card, the 2030 line runs over both looks, the riser peaks at the first white frame, the drone and the question fade across the white. v2 replaces v1 in the page's player; v1 stays listed."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director, after v2: keep a little of S02 after the newsreel (her face, looking at the screen) and generate a 2 to 2.5 second photoreal intro of her approaching the theater from outside, not cinematic, not old-time. One anchor and one 4 s Quality take (S00) generated and accepted by eye; v3 cut (984 frames, 41.0 s) = intro, card, newsreel, two seconds of her face, then v2 from the 1973 laugh. The announcer returns to the newsreel and ends on her face. v3 replaces v2 in the player; v1 and v2 stay listed."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director, on v3: the woman walks away from the theater entrance in the new intro; she should walk toward or into it. Intro reshot from behind her (new anchor, one 4 s Quality take): she walks toward the brass doors under the blank marquee, face up in profile, head turning to the doors. v4 (980 frames, 40.8 s) uses its first two seconds in place of the v3 intro; everything else is v3. The take's tail, where she reaches the open door, is held back because the door opens by itself first. v4 replaces v3 in the player; v1, v2 and v3 stay listed."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director, on v4: intro all good; the last segment's year becomes 2027; the fade into white at 39.417; the new ending should start with a POV shot pushing open a theater door, with humanoid robots outside, something specific. v5 (973 frames, 40.5 s): the 2027 card re-rendered, the 2026 narration regenerated with \"By 2027\", the ramp to white at 39.417; everything else v4. The ending proposal (three options, A recommended) is in the decisions; no generation yet. v5 replaces v4 in the player; earlier drafts stay listed."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director, on v5: option A for the ending, \"fantastic\", but build it from a few clips from different vantage points; and add an iris closing on her as she enters the theater, then a brief hold on black before the swirl card. v6 (981 frames, 40.9 s): the iris-out copy of the accepted take and six frames of black, the rest of v5 eight frames later. The ending is staged as three shots (her point of view through the door, across the street, behind the robot at the doors) with prompts, anchor plans and quotes; nothing generated until the go. v6 replaces v5 in the player; earlier drafts stay listed."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director, on v6: go for the ending as E1 (her hands on the doors, half a second) then E2 (the crowd walking out, her at the front matching S05, the robot walking in from the side), with a couple of variations. Three anchors and three takes made (E1, E2a, E2b); v7 (1139 frames, 47.5 s) = v6 + E1 (white fade-in) + E2a (5.5 s, fade to black) + black. E2b held as the alternate. v7 replaces v6 in the player; earlier drafts stay listed."
+    },
+    {
+      "date": "2026-10-29",
+      "text": "Director, on v7: an opening iris into the swirl card at 2.125 s; the 2027 card between S04b and S05; S06 trimmed to frames 26-41; the ending as her alone (she walks out of frame, then the robot enters from the empty frame on her 1943 angle). v8 (1260 frames, 52.5 s): the card's iris-in copy, the card moved, the trim (the office and look-right hold longer to keep the narration whole), one new anchor and two takes (E2c her exit, E3 the robot from the exit take's last frame) with an iris-out on the robot. v8 replaces v7 in the player; earlier drafts stay listed."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director, on v8: the Coming Attractions banner as projected on a 1940s movie screen, tactile and physical, same length and slot; if that fails, the card alone in that style. Four stills (one of the screen, three to frame the card alone), two local renders with the 1943 treatment and the iris-in. v9 (1260 frames, 52.5 s) = v8 with the projected-screen banner in the T00i slot; the card alone is the swap. v9 replaces v8 in the player; earlier drafts stay listed."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director, on v9: \"It's perfect. Please 4k upscale.\" v9 approved as the film. 4K upscale started with the repository tool (2x Real-ESRGAN, the model behind the 2026 masters); no upload."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "4K master built from the approved v9 with the repository upscale tool (2x, 2160x3840, 1260 frames, audio stream-copied) and verified; recorded as the finishing master. Upload is the director's."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Published by the director as a YouTube Short; the link is in the brief and the production record (user-confirmed). The 4K master is the published master; the workspace is archived under the standard retention."
     }
   ]
 }

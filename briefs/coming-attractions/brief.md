@@ -1,6 +1,8 @@
 # Coming Attractions
 
-[Current production record](README.md).
+[Current production record](README.md) · [Publication text](description.md).
+
+**Published:** https://youtube.com/shorts/HBFneWFHCAc (2026-10-30, YouTube Short, v9 approved by the director; the 4K finishing master v9-4k is the published master)
 
 A vertical short, 9:16, about fifty-five seconds. One movie theater, one seat, four
 decades, and the previews that played before the feature every time.

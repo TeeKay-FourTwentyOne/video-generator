@@ -101,3 +101,9 @@ lessons are in `docs/craft/field-notes/`. Codex notes live in `codex.md`.
   catalog clip with no local file ("Missing unverified local master"); `--allow-absent` is the normal form
   there, and it still verifies each absent master against the last complete backup set before uploading
   anything new. The plan hashes the local library for a couple of minutes; run both in the background.
+- Exit codes through pipes (2026-10-30): `npm run film -- assemble … | tail -30 || fallback` never ran the fallback,
+  because the pipeline's status is `tail`'s; the assembler's refusal was only visible in the log. Start a chained
+  background command with `set -o pipefail`, or test the first command's status before piping.
+- Parallel Bash calls and the working directory (2026-10-30): a `cd` inside one call changed the directory seen by
+  calls issued in the same response, and relative paths in their Python heredocs failed even after a leading
+  `cd ROOT &&`. In parallel calls use absolute paths for every file, inside heredocs too.

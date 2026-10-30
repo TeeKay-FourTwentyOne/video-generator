@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6a98d081872f6f042e7bbc2173509b611763aa6847c70a98a089c6940938509a",
+  "sha256": "6a98d081872f6f042e7bbc2173509b611763aa6847c70a98a089c6940938509a",
+  "bytes": 8330180,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, the sidewalk in front of a movie theater in flat overcast daylight; the camera stands still at eye height a few steps from the brass doors, looking along the front of the building, and does not move. The matinee is letting out: the young woman in the oatmeal blazer walks out first, toward the camera at a normal pace, glancing to her left along the street and then ahead, and the small group behind her follows her out through the open brass doors and along the sidewalk, nobody looking at the camera and nobody speaking to it. From the right edge of the frame, close to the camera, a humanoid robot walks into view and goes up the sidewalk toward the open doors with its back to the camera: human height and slim, matte off-white body panels over dark grey joints, a smooth rounded head with a single dark glass visor and no face, no logos, a paper ticket in its hand; it walks unhurried, visor lifted to the marquee, against the people coming out, who pass it without a glance. No other robots; no cars drive through; the parked car stays parked; nobody new enters except the robot. Deep focus, true colour, no grain, no haze, no slow motion; plain ordinary footage. Sound: a quiet street, footsteps on the pavement, a few indistinct far-off voices, a faint soft servo whir; no music, no dialogue. No on-screen text, no signs, no lettering anywhere; the marquee board stays blank.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7f8a54e2db3b0da20e1986e8301bc284ee3f4a3d76e90c1da4d9d4db4941fb3f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 439846344,
+      "createdAt": "2026-10-30T02:21:37.775Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4b87a2d7b69354ba6ee97162256f3f6868229d42605f72e9496d7fd397753617",
+          "bytes": 1561045,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b6f51a872a2a6f7748dc96f22389e7ba933edff2b62366fac816f3b338171841"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

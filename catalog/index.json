@@ -605,6 +605,23 @@
       }
     },
     {
+      "id": "clip_035b585803ca34ca38d5871656a46bdf34399ee4ba39edf7065a39412e08fb9a",
+      "metadata": "clips/clip_035b585803ca34ca38d5871656a46bdf34399ee4ba39edf7065a39412e08fb9a.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 1,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
+      }
+    },
+    {
       "id": "clip_036fa2129bc3f27313f5d83324a3126a9b2fac6893a2c5970b7494312864408b",
       "metadata": "clips/clip_036fa2129bc3f27313f5d83324a3126a9b2fac6893a2c5970b7494312864408b.json",
       "labels": [
@@ -2815,7 +2832,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -9335,6 +9352,23 @@
       }
     },
     {
+      "id": "clip_34362e1a3c87b78fb34f9d8298bbb8c838a3adb2dd2aa4bc0f7cee32bbaac47a",
+      "metadata": "clips/clip_34362e1a3c87b78fb34f9d8298bbb8c838a3adb2dd2aa4bc0f7cee32bbaac47a.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 0.583333,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_344f0f3cff4e4e11588e97cec7ec31a72452b93f6994f97801f35684f30da385",
       "metadata": "clips/clip_344f0f3cff4e4e11588e97cec7ec31a72452b93f6994f97801f35684f30da385.json",
       "labels": [
@@ -9449,6 +9483,23 @@
       }
     },
     {
+      "id": "clip_3490cc1223774e3c617c2d341a1e2408d6fa4dff0e46d0ba5a812a82bcb76ca6",
+      "metadata": "clips/clip_3490cc1223774e3c617c2d341a1e2408d6fa4dff0e46d0ba5a812a82bcb76ca6.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 2.083333,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 4
+      }
+    },
+    {
       "id": "clip_3495a51059cc4c65edde852dc9516de1d0091ff85b549b0a7ebd6eedc44b0a64",
       "metadata": "clips/clip_3495a51059cc4c65edde852dc9516de1d0091ff85b549b0a7ebd6eedc44b0a64.json",
       "labels": [
@@ -9558,7 +9609,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -10449,6 +10500,23 @@
       }
     },
     {
+      "id": "clip_396a1649757795c9f7dc27f03f2419006b04351c6579273c9411b7ffb5089575",
+      "metadata": "clips/clip_396a1649757795c9f7dc27f03f2419006b04351c6579273c9411b7ffb5089575.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_3984a84dd9c270625a991d030ddaf72cabd3208d1facad382463912b2a7e8db0",
       "metadata": "clips/clip_3984a84dd9c270625a991d030ddaf72cabd3208d1facad382463912b2a7e8db0.json",
       "labels": [
@@ -10657,6 +10725,23 @@
       "uses": {
         "planned": 1,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_3b798004428e4ae3f1241c92821b14399b1dbb1851b775381140d13e077c40a6",
+      "metadata": "clips/clip_3b798004428e4ae3f1241c92821b14399b1dbb1851b775381140d13e077c40a6.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
       }
     },
     {
@@ -11779,7 +11864,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -12151,6 +12236,23 @@
         "coming-attractions"
       ],
       "durationSeconds": 4.5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 9
+      }
+    },
+    {
+      "id": "clip_4266d35cf7522c0dec787fb1cfdcf3bb4207cd08b0356b33626086d052984f67",
+      "metadata": "clips/clip_4266d35cf7522c0dec787fb1cfdcf3bb4207cd08b0356b33626086d052984f67.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 2,
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
@@ -14259,6 +14361,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_4d5e7ae3773bc0625093a932bc827cf86ffcc82fe88264fc1c6803536be20489",
+      "metadata": "clips/clip_4d5e7ae3773bc0625093a932bc827cf86ffcc82fe88264fc1c6803536be20489.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
       }
     },
     {
@@ -16680,7 +16799,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -17676,6 +17795,23 @@
       }
     },
     {
+      "id": "clip_5c7712f7c798a45bd96d1de375588a66c16d8d0c6ee1d4efed634c81d181c18a",
+      "metadata": "clips/clip_5c7712f7c798a45bd96d1de375588a66c16d8d0c6ee1d4efed634c81d181c18a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_5c840fdd17c3672fa9c60e6c27db280077d11729d572372d44d55ee0a0edeaa4",
       "metadata": "clips/clip_5c840fdd17c3672fa9c60e6c27db280077d11729d572372d44d55ee0a0edeaa4.json",
       "labels": [
@@ -17765,7 +17901,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 7
       }
     },
     {
@@ -18794,7 +18930,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 4
       }
     },
     {
@@ -19783,7 +19919,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -20469,6 +20605,23 @@
       "width": 1024,
       "height": 576,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_6a98d081872f6f042e7bbc2173509b611763aa6847c70a98a089c6940938509a",
+      "metadata": "clips/clip_6a98d081872f6f042e7bbc2173509b611763aa6847c70a98a089c6940938509a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -24387,7 +24540,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -25790,7 +25943,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -25973,7 +26126,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 2
+        "rendered": 9
       }
     },
     {
@@ -30548,7 +30701,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 2
+        "rendered": 18
       }
     },
     {
@@ -30984,7 +31137,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 17
       }
     },
     {
@@ -33238,6 +33391,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_af848aa3cfeba065802170433f87526a12f41765f6338df5b5337ac26bde8615",
+      "metadata": "clips/clip_af848aa3cfeba065802170433f87526a12f41765f6338df5b5337ac26bde8615.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -38026,6 +38196,23 @@
       }
     },
     {
+      "id": "clip_c7bd5ec629974fdc6166ca957a3c4add9bc4f30a8a20cf1df19dcde54afc279e",
+      "metadata": "clips/clip_c7bd5ec629974fdc6166ca957a3c4add9bc4f30a8a20cf1df19dcde54afc279e.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_c7cd580f33534cd0e94a55d3a5392b6e31365ff63a498be659701488580c6870",
       "metadata": "clips/clip_c7cd580f33534cd0e94a55d3a5392b6e31365ff63a498be659701488580c6870.json",
       "labels": [
@@ -41278,6 +41465,23 @@
       }
     },
     {
+      "id": "clip_da6291d3ebcc57256d857547f01d6a6c2c1f002d94a0b83b68198a2625722b50",
+      "metadata": "clips/clip_da6291d3ebcc57256d857547f01d6a6c2c1f002d94a0b83b68198a2625722b50.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 2,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_da740dfa6843c71608b3342b6cdb3ae46a577a957a875d3b537c4bf00bfac789",
       "metadata": "clips/clip_da740dfa6843c71608b3342b6cdb3ae46a577a957a875d3b537c4bf00bfac789.json",
       "labels": [
@@ -42984,6 +43188,40 @@
       }
     },
     {
+      "id": "clip_e4eaac670d13eb149fb5feabfc16fd0412afb324686f1f3d4028f4059f4b2efb",
+      "metadata": "clips/clip_e4eaac670d13eb149fb5feabfc16fd0412afb324686f1f3d4028f4059f4b2efb.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 0.833333,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
+      "id": "clip_e506a63f4750ec0f6322b21724ad5fced0ca63b108581bad7c3bdb7ae85a48ed",
+      "metadata": "clips/clip_e506a63f4750ec0f6322b21724ad5fced0ca63b108581bad7c3bdb7ae85a48ed.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 1,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 7
+      }
+    },
+    {
       "id": "clip_e5ac2ef4fbfc2535408746a9011822866639102a316e2631b2a083a683f16112",
       "metadata": "clips/clip_e5ac2ef4fbfc2535408746a9011822866639102a316e2631b2a083a683f16112.json",
       "labels": [
@@ -43147,7 +43385,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 9
       }
     },
     {
@@ -44029,7 +44267,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 0,
-        "rendered": 1
+        "rendered": 7
       }
     },
     {
@@ -44947,6 +45185,23 @@
       }
     },
     {
+      "id": "clip_ef89dbadad79327fe724cf174317a0043dfee0b5ef6e204e0634d19610928954",
+      "metadata": "clips/clip_ef89dbadad79327fe724cf174317a0043dfee0b5ef6e204e0634d19610928954.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_ef93ed91b9a102303002677f08e16a9f94991f861b3b58e1628ad9229af92246",
       "metadata": "clips/clip_ef93ed91b9a102303002677f08e16a9f94991f861b3b58e1628ad9229af92246.json",
       "labels": [
@@ -45112,7 +45367,7 @@
       "hasPrompt": true,
       "uses": {
         "planned": 0,
-        "rendered": 2
+        "rendered": 10
       }
     },
     {
@@ -46167,6 +46422,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_f518e7fe932bf60e1cedf99f34b86a8b983f08837c1f78952dfd3745470ea9d4",
+      "metadata": "clips/clip_f518e7fe932bf60e1cedf99f34b86a8b983f08837c1f78952dfd3745470ea9d4.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "coming-attractions"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {

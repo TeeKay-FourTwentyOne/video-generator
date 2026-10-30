@@ -3,8 +3,8 @@
   "projectId": "coming-attractions",
   "title": "Coming Attractions",
   "kind": "film",
-  "status": "producing",
-  "statusNote": "First draft (v1) cut on 2026-10-26 from fifteen motion takes, five narration lines, effects, music and local cards; assembled as a native review film with a timecode overlay. Awaiting the director's review; open decisions on length, one retake and the coda camera are on the status page.",
+  "status": "published",
+  "statusNote": "First draft 2026-10-26, then nine review cuts to 2026-10-30 on the director's notes: a feel-cut, a photoreal exterior intro reshot from behind her, the year 2027, an iris out and in, the ending remade as her alone walking out and a humanoid robot walking in, a short S06, and the Coming Attractions banner remade as a card projected on a 1940s screen. v9 was approved by the director on 2026-10-30 (\"It's perfect.\") and published the same day as a YouTube Short (URL user-confirmed). The 4K finishing master v9-4k is the published master; the native v9 is its source. The revision history is on the status page; the workspace is archived under the standard retention.",
   "briefPath": "briefs/coming-attractions/brief.md",
   "supportingDocuments": [
     {
@@ -13,8 +13,8 @@
     }
   ],
   "workspace": {
-    "path": "data/workspace/coming-attractions-v1",
-    "state": "active"
+    "path": "data/workspace-archive/coming-attractions-v1",
+    "state": "archived-verified"
   },
   "artifacts": [
     {
@@ -30,7 +30,156 @@
       },
       "frames": 1502,
       "durationSeconds": 62.583333333333336,
-      "publishedMaster": false
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "f46ef4b3dcd16ca3bd5dc3d2c3ad829c48714637cdfeb9722d43f54ad665bad1",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 884,
+      "durationSeconds": 36.833333333333336,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "875409fac78d3d56902db1f8590ce9f414ed86a03967fdf2565d243137384417",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 984,
+      "durationSeconds": 41.0,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "dcc6220189afa3ab3c54dbf7e7de74a0375c017e2fa14a609ad3feab9d863d0f",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 980,
+      "durationSeconds": 40.833333333333336,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v5",
+      "path": "final/v5/film.mp4",
+      "sha256": "ae2664c6c04d9bf26620c9c83c6988005830ba401c2b1ea945d214478211e22a",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 973,
+      "durationSeconds": 40.541666666666664,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v6",
+      "path": "final/v6/film.mp4",
+      "sha256": "ae4b58d5c302b3418d4a7c541f62984e73729f345e5f60da6d5189d058b1ae38",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 981,
+      "durationSeconds": 40.875,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v7",
+      "path": "final/v7/film.mp4",
+      "sha256": "6aeb482984157077c9c311d9be496074579df3b4b1b6246fcd8c0a3326b282af",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1139,
+      "durationSeconds": 47.458333333333336,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v8",
+      "path": "final/v8/film.mp4",
+      "sha256": "4961d4a66f6f3ac1b10c6157772705c10d90fa86841f12e20e083b0220f8ba46",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1260,
+      "durationSeconds": 52.5,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v9",
+      "path": "final/v9/film.mp4",
+      "sha256": "ecdeb1d50f67429c3e8a31d263e3d3447c3c5345642feb34787d398e9c05f5ea",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1260,
+      "durationSeconds": 52.5,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v9/description.txt",
+      "deliveryRecordPath": "final/v9/delivery.json",
+      "retention": "retained"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v9-4k",
+      "path": "final/v9-4k/film.mp4",
+      "sha256": "f0c659baf268ed26a22d0e3cd70bc9f081e8366607f8d3a0a13f5b0b1639c2be",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1260,
+      "durationSeconds": 52.5,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v9-4k/description.txt",
+      "deliveryRecordPath": "final/v9-4k/delivery.json",
+      "retention": "retained"
     }
   ],
   "production": {
@@ -39,6 +188,19 @@
         "purpose": "images",
         "provider": "Google",
         "model": "Gemini 3 Pro Image"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "Veo 3.1"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
       }
     ],
     "credits": [
@@ -61,7 +223,129 @@
       "eventDate": "2026-10-26",
       "evidence": "film assemble v1: full decode, dimensions, frame count and source hashes verified; mix report -16.1 LUFS integrated, -1.7 dBTP; delivered file measured -16.1 LUFS, -1.8 dBFS peak; project clip analysis complete for 27 clips (model passes needs-review, human review not asserted); review package with timecode overlay. No listening or artistic approval claimed.",
       "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "f46ef4b3dcd16ca3bd5dc3d2c3ad829c48714637cdfeb9722d43f54ad665bad1",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v2: full decode, dimensions, frame count (884) and source hashes verified; mix report -16.1 LUFS integrated, -1.8 dBTP; delivered file measured -16.2 LUFS, -1.9 dBTP; project clip analysis complete for 28 clips (model passes needs-review, human review not asserted); review package with timecode overlay. The cut applies the director's five edit notes on v1; no listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "875409fac78d3d56902db1f8590ce9f414ed86a03967fdf2565d243137384417",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v3: full decode, dimensions, frame count (984) and source hashes verified; mix report -16.1 LUFS integrated, -1.8 dBTP; delivered file measured -16.1 LUFS, -1.7 dBTP; project clip analysis complete for 29 clips (model passes needs-review, human review not asserted; the new exterior take's local VAD/ASR found no speech and OCR found no text); review package with timecode overlay. The cut adds the director's requested exterior intro (one new take) and restores two seconds of the 1943 face after the newsreel; no listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "dcc6220189afa3ab3c54dbf7e7de74a0375c017e2fa14a609ad3feab9d863d0f",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v4: full decode, dimensions, frame count (980) and source hashes verified; mix report -16.1 LUFS integrated, -1.8 dBTP; delivered file measured -16.1 LUFS, -1.8 dBTP; project clip analysis complete for 30 clips (model passes needs-review, human review not asserted; the reshot exterior take's local VAD/ASR found no speech and OCR found no text); review package with timecode overlay. The cut replaces the exterior intro with a retake made after the director's note on v3 (she walked away from the entrance; now the camera is behind her and she walks toward the doors), using the first two seconds of the take and holding back its tail, where a door opens by itself; no listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v5",
+      "artifactSha256": "ae2664c6c04d9bf26620c9c83c6988005830ba401c2b1ea945d214478211e22a",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v5: full decode, dimensions, frame count (973) and source hashes verified; mix report -16.2 LUFS integrated, -1.6 dBTP; delivered file measured -16.2 LUFS, -1.5 dBTP; project clip analysis complete for 31 clips (model passes needs-review, human review not asserted); review package with timecode overlay. The cut applies the director's notes on v4: the last segment's year card re-rendered as 2027 and the 2026 narration line regenerated to say 'By 2027' (local transcription of the new line confirms the year), and the ramp to white moved to start at 39.417; no listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v6",
+      "artifactSha256": "ae4b58d5c302b3418d4a7c541f62984e73729f345e5f60da6d5189d058b1ae38",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v6: full decode, dimensions, frame count (981) and source hashes verified; mix report -16.1 LUFS integrated, -1.6 dBTP; delivered file measured -16.2 LUFS, -1.6 dBTP; project clip analysis complete for 33 clips (model passes needs-review, human review not asserted); review package with timecode overlay. The cut adds the director's iris-out on the exterior intro (a local, deterministic copy of the accepted take) and a quarter-second black hold before the swirl card; the remaining cut is v5 eight frames later. No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v7",
+      "artifactSha256": "6aeb482984157077c9c311d9be496074579df3b4b1b6246fcd8c0a3326b282af",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v7: full decode, dimensions, frame count (1139) and source hashes verified; mix report -16.2 LUFS integrated, -1.6 dBTP; delivered file measured -16.2 LUFS, -1.4 dBTP; project clip analysis complete for 37 clips (model passes needs-review, human review not asserted; the three new ending takes' local VAD/ASR found no speech and OCR found no text); review package with timecode overlay. The cut adds the ending the director asked for (her hands on the doors, then the crowd walking out with her first and a humanoid robot walking in; one of two generated variations of the crowd shot, the other held). No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v8",
+      "artifactSha256": "4961d4a66f6f3ac1b10c6157772705c10d90fa86841f12e20e083b0220f8ba46",
+      "recordedDate": "2026-10-29",
+      "eventDate": "2026-10-29",
+      "evidence": "film assemble v8: full decode, dimensions, frame count (1260) and source hashes verified; mix report -16.2 LUFS integrated, -1.8 dBTP; delivered file measured -16.2 LUFS, -1.7 dBTP; project clip analysis complete for 42 clips (model passes needs-review, human review not asserted; the two new ending takes' local VAD/ASR found no speech and OCR found no text); review package with timecode overlay. The cut applies the director's four notes on v7 (an opening iris into the swirl card at 2.125 s, the 2027 card moved before S05, S06 trimmed to frames 26-41, the ending reshot as her alone leaving and the robot entering on her 1943 angle with an iris-out). Checked on frame sheets at the four changed places. No listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v9",
+      "artifactSha256": "ecdeb1d50f67429c3e8a31d263e3d3447c3c5345642feb34787d398e9c05f5ea",
+      "recordedDate": "2026-10-30",
+      "eventDate": "2026-10-30",
+      "evidence": "film assemble v9: full decode, dimensions, frame count (1260) and source hashes verified; the soundtrack is the v8 mix unchanged (mix report -16.2 LUFS integrated, -1.8 dBTP); delivered file measured -16.2 LUFS; project clip analysis complete for 43 clips (model passes needs-review, human review not asserted); review package with timecode overlay. The cut is v8 with the Coming Attractions banner remade from a generated still under the local 1943 treatment and the opening iris; no listening or artistic approval claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v9-4k",
+      "artifactSha256": "f0c659baf268ed26a22d0e3cd70bc9f081e8366607f8d3a0a13f5b0b1639c2be",
+      "recordedDate": "2026-10-30",
+      "eventDate": "2026-10-30",
+      "evidence": "tools/upscale.py --scale 2 (model 1, realesr-animevideov3-x2, crf 18, slow) on the approved v9, 26.7 min on an M3 Pro: 2160x3840, 1260 frames at 24 fps verified by ffprobe and a full decode; the AAC stream is byte-identical to v9's (stream hash compared); 117.9 MB. The director has not watched the 4K; no listening claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v9",
+      "artifactSha256": "ecdeb1d50f67429c3e8a31d263e3d3447c3c5345642feb34787d398e9c05f5ea",
+      "recordedDate": "2026-10-30",
+      "eventDate": "2026-10-30",
+      "evidence": "Director, on watching v9: \"It's perfect. Please 4k upscale.\"",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v9-4k",
+      "artifactSha256": "f0c659baf268ed26a22d0e3cd70bc9f081e8366607f8d3a0a13f5b0b1639c2be",
+      "recordedDate": "2026-10-30",
+      "eventDate": "2026-10-30",
+      "evidence": "The same message authorized the 4K upscale; made locally with tools/upscale.py from the approved v9.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v9-4k",
+      "artifactSha256": "f0c659baf268ed26a22d0e3cd70bc9f081e8366607f8d3a0a13f5b0b1639c2be",
+      "recordedDate": "2026-10-30",
+      "eventDate": "2026-10-30",
+      "evidence": "URL supplied by the director in the session after uploading the 4K master; a page fetch returned only the site frame and the page title, so the page content is not independently verified. The local hash does not identify the platform transcode.",
+      "outcome": "user-confirmed"
     }
   ],
-  "legacyPaths": []
+  "legacyPaths": [],
+  "descriptionPath": "briefs/coming-attractions/description.md",
+  "descriptionSha256": "421ae3915b7beedf6f6cc4037bd702c0f27ef89fce520cd3cab0156ba31c97c7",
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/HBFneWFHCAc",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-30",
+    "artifactVersion": "v9-4k"
+  },
+  "archive": {
+    "manifestPath": "data/workspace-archive/coming-attractions-v1/workspace-archive-manifest.json",
+    "inventorySha256": "35fa9b19c2aef13eea4bc36c1ee1d42af78dffad2bf014e7c866faeb1e235550",
+    "verifiedDate": "2026-10-30"
+  }
 }

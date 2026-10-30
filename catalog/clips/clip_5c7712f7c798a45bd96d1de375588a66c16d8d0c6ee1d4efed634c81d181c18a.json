@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5c7712f7c798a45bd96d1de375588a66c16d8d0c6ee1d4efed634c81d181c18a",
+  "sha256": "5c7712f7c798a45bd96d1de375588a66c16d8d0c6ee1d4efed634c81d181c18a",
+  "bytes": 7449467,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "coming-attractions"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photoreal, present day, the sidewalk in front of a movie theater in flat overcast daylight; the camera stands still at eye height a few steps from the brass doors, looking along the front of the building, and does not move. The matinee is letting out: the young woman in the oatmeal blazer walks out first, along the sidewalk toward the camera at a normal pace, her eyes lifted to the daylight and then ahead, and the loose line of people behind her follows her out through the open brass doors and along the sidewalk, some looking at their phones, nobody looking at the camera and nobody speaking to it. The humanoid robot with the dark visor at the right walks the other way, toward the open doors, unhurried, its visor lifted to the marquee; the people pass it without a glance and it keeps going until it reaches the doorway. No other robots; no cars drive through; the parked cars stay parked; exactly the people already in the frame, nobody new enters. Deep focus, true colour, no grain, no haze, no slow motion; plain ordinary footage. Sound: a quiet street, many footsteps on the pavement, a few indistinct far-off voices, a faint soft servo whir; no music, no dialogue. No on-screen text, no signs, no lettering anywhere; the marquee board stays blank.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_253a62f3c4947bf85ab6015319e7b81d72fc08fc180d9ed9c2d3fbed61017ad5",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2892530120,
+      "createdAt": "2026-10-30T02:21:35.055Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "f76e7efe666e41cda08b4a8fd359b1c32551a1a9c702cbb82f127b38076f89b7",
+          "bytes": 1597501,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "35643539248807df9ad02ed62f91b28fc75b6882f815ec36c238ff3715afb9a1"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
