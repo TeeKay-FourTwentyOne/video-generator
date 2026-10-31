@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_e51600b510361487dfa7a142dd137ffbce4d49eaac4babc2b9093bb9e5637884",
+  "sha256": "e51600b510361487dfa7a142dd137ffbce4d49eaac4babc2b9093bb9e5637884",
+  "bytes": 9716794,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black and white infrared night footage from a fixed trail camera strapped to a tree at waist height, angled slightly downward. Monochrome, no green tint. Grainy and high contrast; the leaf litter and the nearest tree trunk are brightly lit by the camera's infrared illuminator and the woods fall off to black behind. A game trail crosses the frame from left to right through bare and half-bare deciduous trees, with leaf litter on the ground, a fallen log on the right, and a large tree trunk very close at the left edge. Exactly the EIGHT adults in the first image stand absolutely still in FOUR separate closed ballroom holds at their existing different depths. This is a stationary tableau. All eight heads are ALREADY facing directly into the lens from the first frame. All sixteen eyes reflect the infrared light as tiny bright white points. Keep every face, suit, gown, arm position, pair, tree and log in exactly its starting location. No one turns, steps, sways, approaches, reaches, smiles or opens their mouth. Only the smallest breathing-scale movement in the shoulders and one or two brief natural blinks across the entire group over eight seconds. Hold the empty-eyed direct gaze. The image is an indifferent fixed camera recording ordinary unsmiling people. No sounds from any person. Only faint wind and constant camera noise. Same exact composition throughout; no push-in, no reframing, no exposure change. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no timestamp, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ba387827049328e122c67708a39db9c4aefe40207f9c9df76963b6119cf1c8c7",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 202610304,
+      "createdAt": "2026-10-30T23:25:43.526Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "9642c0420deb383306a72fd217abba4a19b241af86fedf3c8068926a5939d4fa",
+          "bytes": 1985710,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "9642c0420deb383306a72fd217abba4a19b241af86fedf3c8068926a5939d4fa",
+          "bytes": 1985710,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3d386b3afa05a485b5f563ee6d758877faf36629b4bf8f93ec69f8eba5581c0c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

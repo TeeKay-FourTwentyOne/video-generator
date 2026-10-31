@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_85be6aa875d32d7fea96128b4acc6d215bf733e508f67719e0608947a7e43098",
+  "sha256": "85be6aa875d32d7fea96128b4acc6d215bf733e508f67719e0608947a7e43098",
+  "bytes": 37154338,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black and white infrared night footage from a fixed trail camera strapped to a tree at waist height, angled slightly downward. Monochrome, no green tint. Grainy and high contrast; the leaf litter and the nearest tree trunk are brightly lit by the camera's infrared illuminator and the woods fall off to black behind. A game trail crosses the frame from left to right through bare and half-bare deciduous trees, with leaf litter on the ground, a fallen log on the right, and a large tree trunk very close at the left edge. Animate the single adult couple in the reference. They immediately travel toward SCREEN RIGHT and keep travelling right at a constant depth along the horizontal trail for the whole crossing. From the start their screen positions move steadily rightward; they never move left or toward the lens. While travelling right, they rotate TOGETHER in their ballroom hold through a full slow turn: at two seconds the man has his back to the lens and the woman briefly faces the lens; at four seconds she has her back to the lens and he briefly faces the lens; at six seconds they are passing out of the right edge. Each face looks at its partner, so the passing camera-facing gaze is incidental to the rotation. Eyes reflect the infrared illuminator as two small bright white points during each brief near-frontal view. Their six small waltz steps create a gentle rising and falling rhythm, no walking straight ahead in a frozen hold. Both ordinary faces remain unsmiling, mouths closed. Same dark suit and bow tie, same pale satin gown, long gloves, pinned hair. Exactly one couple, two people, separate correct arms and legs. All trees, the white trunk and the right-hand log remain fixed. The final second shows the empty trail. Quiet wind and camera noise only. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no timestamp, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_22250dcea1e9e75e8b395a13a729d30965f846f52f65b3745e5b643b4e178969",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 202610402,
+      "createdAt": "2026-10-30T23:31:36.439Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "f6ed7118485b608505cd561d50c45dd9a0cc529460516aeb5b62f083c300f627",
+          "bytes": 2029244,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "cf4925afdd4a266f7e9153686e9317d9de4a635844f0f3047313219bc0d1cb9f",
+          "bytes": 2086234,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "816e1e9f66311e7a81204f77bc85c8244f552ae498797a195f6d841963c46962"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

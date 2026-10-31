@@ -54,6 +54,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Meridian House — Documentary Walkthrough](meridian-house-documentary-tour/README.md) | review | — | [Brief](meridian-house-documentary-tour/brief.md) · [Record](meridian-house-documentary-tour/production.json) |
 | [Meridian House — Photorealistic Reference Study](meridian-house-photoreal/README.md) | review | — | [Brief](meridian-house-photoreal/brief.md) · [Record](meridian-house-photoreal/production.json) |
 | [Model Weights](model-weights/README.md) | delivered | ai-explains-ai | [Brief](model-weights/brief.md) · [Decisions](model-weights/decisions.md) · [Record](model-weights/production.json) |
+| [Motion](motion/README.md) | published | — | [Brief](motion/brief.md) · [Description](motion/description.md) · [Decisions](motion/decisions.md) · [Record](motion/production.json) |
 | [Named Tensors](named-tensors/README.md) | delivered | ai-explains-ai | [Brief](named-tensors/brief.md) · [Decisions](named-tensors/decisions.md) · [Record](named-tensors/production.json) |
 | [Neptune in Aries](neptune-aries/README.md) | unknown | — | [Brief](neptune-aries/brief.md) · [Record](neptune-aries/production.json) |
 | [No Enemy](no-enemy/README.md) | unknown | — | [Brief](no-enemy/brief.md) · [Record](no-enemy/production.json) |

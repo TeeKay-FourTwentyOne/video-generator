@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b92326e5be284d7272ee7d40c5896d1bf2bc398c0252f886ad969146a27350e2",
+  "sha256": "b92326e5be284d7272ee7d40c5896d1bf2bc398c0252f886ad969146a27350e2",
+  "bytes": 18325241,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black and white infrared night footage from a fixed trail camera strapped to a tree at waist height, angled slightly downward. Monochrome, no green tint. Grainy and high contrast; the leaf litter and the nearest tree trunk are brightly lit by the camera's infrared illuminator and the woods fall off to black behind. A game trail crosses the frame from left to right through bare and half-bare deciduous trees, with leaf litter on the ground, a fallen log on the right, and a large tree trunk very close at the left edge. Four DIFFERENT adult couples, exactly eight people over the shot, move steadily from SCREEN-LEFT TO SCREEN-RIGHT in closed ballroom holds, turning slowly as they travel. At the start three pairs are visible as in the first image: A in middle distance is already halfway across (dark suit and bow tie, pale satin gown and gloves); B follows behind closer to the left trunk (tuxedo, short-dark-haired woman in dark gown); C is the small dim older grey-haired pair deeper among the trees (dark suit, pale gown and fur stole). Keep C small and far away. These three pairs each maintain their own depth and travel rightward, never toward the camera. After about two seconds a fourth pair D enters very near the camera from screen-left, in front of the others: tall man in a dark double-breasted suit and tall woman in a pale bare-shouldered gown. D is much larger, partly cropped by the top and bottom edges during its close left-to-right crossing, never stops, exits right near the end. D's pale gown briefly overexposes and the camera gain lowers then recovers. Eight distinct adults only; each enters from an edge, never appears from nothing. The couples remain separate, bodies face their own partner, mouths closed and unsmiling, ordinary faces, no makeup. Eyes briefly reflect the infrared light as small bright white points near the lens axis. No one intentionally looks at the camera. Background trees and log never shift. No audible steps, fabric or breaths. Only wind and camera noise. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no timestamp, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_14ff62a9a59c1de19f15c07ddb7c6b179e7df00d83c2b0510f6f750486a92573",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 202610303,
+      "createdAt": "2026-10-30T23:25:40.416Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4c652e8d9e6c55117cbfcad436a3b6d4a963e1bb5d1946016e09ebcb814ea33b",
+          "bytes": 2004799,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3d80540ebb98bd7e987136adbd1fea7a8cc28f4e467cb4a430b19ebaff840cac"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

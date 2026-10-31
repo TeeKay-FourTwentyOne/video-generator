@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_7da3bf60cd103566f355e7b6048c7f26c4ca5f7f1450e70b31c3d08c8fa97f83",
+  "projectId": "motion",
+  "editVersion": "edit/draft-v1",
+  "segmentIndex": 8,
+  "shotId": "TAIL",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 15,
+    "fps": 30
+  },
+  "timelineStartFrame": 885,
+  "outputSha256": "efa46560b78fa9ef025e82adfe0d631dea2e4e6ece5af8c1df6406ff52be65b1",
+  "schemaVersion": 1,
+  "id": "use_517f318b3d7ee9c53e9d81bfa76644a0a1cf991d57eb692fb435cb28e3847ed8"
+}

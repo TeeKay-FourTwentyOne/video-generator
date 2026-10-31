@@ -216,3 +216,12 @@ Veo's own native dialogue needed nothing: it already sat in the room.
 **Apply:** render treated copies with a deterministic recipe (hashes in an index) and place them in the mix
 manifest; keep the era music under the same chain and let the coda break it.
 Source: claude-code · Coming Attractions · 2026-10-26
+
+### Preserve dual mono through AAC noise coding
+A source with identical PCM channels can decode with different left/right noise
+when AAC perceptual-noise synthesis is enabled. On the trail-camera finish, forcing
+mid/side alone increased the difference; `-aac_ms 1 -aac_is 0 -aac_pns 0` retained
+identical decoded channels at the intended rate. For deliberately mono noise beds
+in stereo containers, check decoded channel difference as well as source PCM.
+Copy that accepted AAC stream into the upscale and verify packet timing and hashes.
+Source: Codex · Untitled trail-camera film · 2026-10-30

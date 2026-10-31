@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_57ba213bf2820f6bd5a45a41640c57eb778fbe0afaebcd1d82c69fe51bcb55f2",
+  "sha256": "57ba213bf2820f6bd5a45a41640c57eb778fbe0afaebcd1d82c69fe51bcb55f2",
+  "bytes": 3988849,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 7.6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 228,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Untitled trail-camera film C4 local camera render"
+  ],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

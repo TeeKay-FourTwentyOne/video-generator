@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_50e05168a68e8b8232820707851924d4d96de27501a59d4e92bb6b0146d15864",
+  "projectId": "motion",
+  "editVersion": "edit/draft-v2",
+  "segmentIndex": 5,
+  "shotId": "C3",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 210,
+    "fps": 30
+  },
+  "timelineStartFrame": 441,
+  "outputSha256": "fbb750128a1c4f30634d85366bad80f100396d2bb59fc1d698131c33a0e33637",
+  "schemaVersion": 1,
+  "id": "use_b95c64e15680fb36568f7d1dc0a18c35530090764306f7669fa017e8e62761d3"
+}

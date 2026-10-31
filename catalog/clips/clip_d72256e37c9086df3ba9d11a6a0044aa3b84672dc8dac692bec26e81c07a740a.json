@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+  "sha256": "d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+  "bytes": 14655475,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 25.866667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 776,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Director-trimmed native film"
+  ],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

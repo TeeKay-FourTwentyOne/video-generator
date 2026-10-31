@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_e51600b510361487dfa7a142dd137ffbce4d49eaac4babc2b9093bb9e5637884",
+  "projectId": "motion",
+  "editVersion": "render/v2/C4",
+  "segmentIndex": 0,
+  "shotId": "C4",
+  "status": "rendered",
+  "evidence": "saved-camera-transform",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 183,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "2faef625ab333284102078debc1d3be5dbf75e6c37bb58f2dc96dd7002c3859f",
+  "schemaVersion": 1,
+  "id": "use_ebb47720b30d38fdfb4f706ce6191750668c311ae1122ce7ce723e0b016116b6"
+}

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_7da3bf60cd103566f355e7b6048c7f26c4ca5f7f1450e70b31c3d08c8fa97f83",
+  "projectId": "motion",
+  "editVersion": "edit/draft-v4",
+  "segmentIndex": 4,
+  "shotId": "GAP2",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 6,
+    "fps": 30
+  },
+  "timelineStartFrame": 435,
+  "outputSha256": "d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+  "schemaVersion": 1,
+  "id": "use_80871c0306b58a9696c0eae6d576b067253d935eb130ce4d178f44ceefed5b1a"
+}

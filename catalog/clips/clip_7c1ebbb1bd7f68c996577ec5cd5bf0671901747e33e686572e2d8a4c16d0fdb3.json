@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_7c1ebbb1bd7f68c996577ec5cd5bf0671901747e33e686572e2d8a4c16d0fdb3",
+  "sha256": "7c1ebbb1bd7f68c996577ec5cd5bf0671901747e33e686572e2d8a4c16d0fdb3",
+  "bytes": 14641096,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 25.866667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 776,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "Unused finishing candidate: AAC channel residue"
+  ],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

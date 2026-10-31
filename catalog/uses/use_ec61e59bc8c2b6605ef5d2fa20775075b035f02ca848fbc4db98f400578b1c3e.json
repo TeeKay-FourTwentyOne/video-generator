@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+  "projectId": "motion",
+  "editVersion": "edit/4k-v1",
+  "segmentIndex": 0,
+  "shotId": "FILM",
+  "status": "rendered",
+  "evidence": "saved-upscale-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 776,
+    "fps": 30
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64",
+  "schemaVersion": 1,
+  "id": "use_ec61e59bc8c2b6605ef5d2fa20775075b035f02ca848fbc4db98f400578b1c3e"
+}

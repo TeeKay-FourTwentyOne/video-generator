@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "projectId": "motion",
+  "images": [
+    {
+      "id": "P1",
+      "title": "Empty trail",
+      "source": "refs/P1-a3.png",
+      "temperatureF": 41,
+      "clock": "10/30/2026  11:48:07 PM",
+      "note": "Candidate scene root: horizontal crossing, near white trunk, right fallen log. The foreground trunk sits a little farther inside the left edge than the brief sketches."
+    },
+    {
+      "id": "P2",
+      "title": "Couple A",
+      "source": "refs/P2-a1.png",
+      "temperatureF": 37,
+      "clock": "10/31/2026  02:51:33 AM",
+      "note": "The first ordinary acceptable pair. Pale satin, gloves, pinned hair, dark suit and bow tie. Partner-facing profiles, no lens look."
+    },
+    {
+      "id": "P3",
+      "title": "Couples B, C and D",
+      "source": "refs/P3-a1.png",
+      "temperatureF": 36,
+      "clock": "10/31/2026  03:14:02 AM",
+      "note": "Supporting cast reference only: three additional pairs, six people. Couple A joins them in the film."
+    },
+    {
+      "id": "F2",
+      "title": "One couple enters",
+      "source": "refs/F2-a1.png",
+      "temperatureF": 37,
+      "clock": "10/31/2026  02:51:33 AM",
+      "note": "Entry study: the pair is barely breaking the left crop boundary and will pass behind the near trunk. This is deliberately flagged for staging review before motion; the cast and clothes hold."
+    },
+    {
+      "id": "F3",
+      "title": "The layered crossing begins",
+      "source": "refs/F3-a2.png",
+      "temperatureF": 36,
+      "clock": "10/31/2026  03:14:02 AM",
+      "note": "Corrected layered start: A in the middle distance, B emerging beside the near trunk, C small and dim farther back. All six survive the crop. D enters later in the take."
+    },
+    {
+      "id": "F4",
+      "title": "All eight are already looking",
+      "source": "refs/F4-a2.png",
+      "temperatureF": 35,
+      "clock": "10/31/2026  03:40:51 AM",
+      "note": "Eight visible faces and sixteen reflected eye-points, with better separation into depth. Candidate ending look: the older pair still needs to sit farther back before the final motion anchor."
+    }
+  ]
+}

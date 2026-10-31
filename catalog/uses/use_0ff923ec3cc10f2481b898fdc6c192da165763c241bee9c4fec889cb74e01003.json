@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_7da3bf60cd103566f355e7b6048c7f26c4ca5f7f1450e70b31c3d08c8fa97f83",
+  "projectId": "motion",
+  "editVersion": "edit/draft-v4",
+  "segmentIndex": 0,
+  "shotId": "HEAD",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 9,
+    "fps": 30
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+  "schemaVersion": 1,
+  "id": "use_0ff923ec3cc10f2481b898fdc6c192da165763c241bee9c4fec889cb74e01003"
+}

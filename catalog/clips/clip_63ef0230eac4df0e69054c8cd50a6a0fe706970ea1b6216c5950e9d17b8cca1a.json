@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_63ef0230eac4df0e69054c8cd50a6a0fe706970ea1b6216c5950e9d17b8cca1a",
+  "sha256": "63ef0230eac4df0e69054c8cd50a6a0fe706970ea1b6216c5950e9d17b8cca1a",
+  "bytes": 3915921,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 7,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 210,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Untitled trail-camera film C3 local camera render"
+  ],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

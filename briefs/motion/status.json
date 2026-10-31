@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "projectId": "motion",
+  "title": "Motion",
+  "updated": "2026-10-30",
+  "format": "25.867 seconds · 2160 × 3840 · 30 fps · 4:3 footage at 15 fps",
+  "phase": "published",
+  "logline": "Four files from one fixed infrared trail camera: a deer, one dancing couple, four dancing couples, then all eight already looking into the lens. The camera records and stops.",
+  "overall": "Motion is published. The director confirmed the release of the final 4K cut.",
+  "next": "Watch Motion on YouTube. Release and archive details are recorded in the project summary.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written; material has not yet been generated."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "deer",
+      "number": "C1",
+      "title": "The ordinary file",
+      "status": "approved",
+      "summary": "11:48 PM. The deer enters from the right, looks into the lens, and exits left. Seven seconds.",
+      "segments": [
+        {
+          "id": "trail",
+          "title": "P1 — the fixed trail and infrared look",
+          "status": "approved",
+          "detail": "Approved fixed trail and infrared look retained. The near trunk provides the deer’s exit occlusion.",
+          "image": "status/audition-assets/P1-window.png"
+        },
+        {
+          "id": "c1",
+          "title": "C1 — two reflected eye-points",
+          "status": "approved",
+          "detail": "Animal sound and ordinary camera behavior teach the viewer how to read the later files.",
+          "image": "render/v3/C1-camera15.mp4"
+        }
+      ]
+    },
+    {
+      "id": "one-couple",
+      "number": "C2",
+      "title": "The first pair",
+      "status": "approved",
+      "summary": "02:51 AM. One ordinary couple in evening clothes crosses the same trail in a slow waltz. No footsteps.",
+      "segments": [
+        {
+          "id": "couple-a",
+          "title": "P2 — couple A, ordinary faces",
+          "status": "approved",
+          "detail": "Dark suit and bow tie; pale satin gown, gloves, pinned hair. In profile, looking at the partner.",
+          "image": "status/audition-assets/P2-window.png"
+        },
+        {
+          "id": "entry",
+          "title": "F2 — entering at the crop edge",
+          "status": "approved",
+          "detail": "The motion anchor brings both people into view just beyond the trunk. Their entry is already under way when the recording starts.",
+          "image": "refs/F2-a2.png"
+        },
+        {
+          "id": "c2",
+          "title": "C2 — cross, turn, disappear",
+          "status": "approved",
+          "detail": "One partnered turn and a rightward exit; a natural waltz arc briefly comes closer. No sounds from the people.",
+          "image": "render/v3/C2-camera15.mp4"
+        }
+      ]
+    },
+    {
+      "id": "four-couples",
+      "number": "C3",
+      "title": "The trail fills",
+      "status": "approved",
+      "summary": "03:14 AM. Four couples waltz at different depths. The director’s trim starts at source frame 30 and retains six seconds.",
+      "segments": [
+        {
+          "id": "cast-bcd",
+          "title": "P3 — couples B, C and D",
+          "status": "approved",
+          "detail": "Tuxedo and dark gown; older pair with stole; tall pair with double-breasted suit and bare-shouldered gown.",
+          "image": "status/audition-assets/P3-window.png"
+        },
+        {
+          "id": "layers",
+          "title": "F3 — four depths, one camera",
+          "status": "approved",
+          "detail": "Corrected: A and B in distinct positions, C small and dim farther back, all inside the crop. D enters later. B begins beside the near trunk.",
+          "image": "status/audition-assets/F3-window.png"
+        },
+        {
+          "id": "c3",
+          "title": "C3 — the near pair lowers the gain",
+          "status": "approved",
+          "detail": "Director’s source-in at frame 30 applied. The original camera clock and sound advance with the trim; the near pair still causes the local gain dip.",
+          "image": "render/v3/C3-camera15.mp4"
+        }
+      ]
+    },
+    {
+      "id": "standing",
+      "number": "C4",
+      "title": "Already looking",
+      "status": "approved",
+      "summary": "03:40 AM. All eight are already looking into the lens. The director’s source-out is frame 134, at 4.467 seconds.",
+      "segments": [
+        {
+          "id": "tableau",
+          "title": "F4 — eight people, sixteen eye-points",
+          "status": "approved",
+          "detail": "Approved tableau retained in motion: eight visible faces and sixteen eye-points. All four holds remain distinct.",
+          "image": "status/audition-assets/F4-window.png"
+        },
+        {
+          "id": "c4",
+          "title": "C4 — the recording ends",
+          "status": "approved",
+          "detail": "Director’s source-out boundary 134 applied. The final gaze now lasts 134 frames, followed by the original half-second of black.",
+          "image": "render/v3/C4-camera15.mp4"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "image-audition",
+      "title": "Approve the ordinary infrared look and cast",
+      "status": "decided",
+      "detail": "Director: “All looks good. Proceed with video generation. Add audio as appropriate as well. Use your own discretion and complete an entire finished draft.” The look and cast are approved."
+    },
+    {
+      "id": "staging-refinements",
+      "title": "Near-trunk entry and the farthest couple",
+      "status": "decided",
+      "detail": "Director delegated production decisions. Preserve the approved cast and look while refining the entrance framing and depth as needed."
+    },
+    {
+      "id": "cricket",
+      "title": "Cricket at 41°F",
+      "status": "decided",
+      "detail": "Director: “Omit the cricket (recommended).” No cricket in any clip; keep the specified temperatures."
+    },
+    {
+      "id": "title",
+      "title": "Release title after production",
+      "status": "decided",
+      "detail": "Director: “I think I’m just going to call it \"Motion\".” Release title: Motion."
+    },
+    {
+      "id": "finished-draft-review",
+      "title": "Finished draft review",
+      "status": "decided",
+      "detail": "Director: “Excellent work.” Requested C3 to start at source frame 30 and C4 to end at source frame 134, then authorized 4K upscale."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-10-30",
+      "text": "Imported the supplied spine and preserved its original privately. Established the four-scene plan and the requested image-review stop before motion."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director chose to omit the cricket for naturalism; the night bed remains wind, leaf ticks and camera self-noise."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "The first completed empty plate needed the trail turned sideways and the near trunk kept in the crop. Its corrected plate and the first ordinary couple are now candidate reference roots."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "All four ordinary couples established. First entry and crowd studies inspected; crop loss and flat depth staging prompted two targeted image revisions."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Six candidate stills delivered for look review, including corrected crop and depth studies. The camera/phone/source gallery and standard status page are current. Stopped before motion at the director’s requested audition checkpoint."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director approved the image audition and authorized motion, appropriate audio and a complete finished draft. The release title remains deferred; the cricket remains omitted."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Four motion sources submitted. The revised first-pair anchor keeps both people visible beyond the near trunk. The empty plate and approved crowd/tableau remain the scene roots."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Selected the deer and tableau first takes and the second takes for the moving couples. The crowd retains a counter-crossing background pair and a diagonal near pass as agent-selected staging variations. Local eye-reflection, camera and sound finishing are under way."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Completed the thirty-second native draft with authored sound, tracked eye returns, the camera data strip, compression and fifteen-frame camera cadence. Corrected a one-pixel color-format placement shift; decoded outer black and recording gaps now pass."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director reviewed the finished draft and requested two trims: C3 starts at source frame 30; C4 ends at source boundary 134. 4K finishing is authorized."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Applied both source-frame trims with identical PCM audio cuts. Delivered the 776-frame native revision and a texture-preserving 4K upscale. Verified color tags, camera cadence, exact black and unchanged audio through the upscale."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "All retained project clips, including unused takes and local renders, have completed the required library passes. Project-scoped private preservation is verified for the original sources, finished masters, references, audio stems and recovery records."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director selected the title Motion and reported uploading. Drafted a concise description with the Carnival of Souls inspiration, actual production credits and generated-footage disclosure."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director confirmed publication and supplied the YouTube Shorts URL. The approved description is preserved. Publication evidence is user-confirmed."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Release evidence, original-source copies, dependency notes and the native-verification safeguard are prepared for the verified archive and source handoff."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "draft-v3",
+      "date": "2026-10-30",
+      "title": "Finished draft",
+      "film": "final/draft-v3/film.mp4",
+      "posterFrame": 670,
+      "fps": 30,
+      "frames": 900,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native portrait draft with the four camera files, local sound, exact recording gaps and the held final gaze. No cricket, music, speech or release title.",
+      "segments": [
+        {
+          "label": "HEAD",
+          "shot": "HEAD",
+          "frame": 0,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C1",
+          "shot": "C1",
+          "frame": 9,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C1.mp4"
+        },
+        {
+          "label": "GAP1",
+          "shot": "GAP1",
+          "frame": 219,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 225,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C2.mp4"
+        },
+        {
+          "label": "GAP2",
+          "shot": "GAP2",
+          "frame": 435,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 441,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C3.mp4"
+        },
+        {
+          "label": "GAP3",
+          "shot": "GAP3",
+          "frame": 651,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C4",
+          "shot": "C4",
+          "frame": 657,
+          "frames": 228,
+          "sourceFrame": 0,
+          "source": "render/v3/C4.mp4"
+        },
+        {
+          "label": "TAIL",
+          "shot": "TAIL",
+          "frame": 885,
+          "frames": 15,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        }
+      ]
+    },
+    {
+      "version": "draft-v4",
+      "date": "2026-10-30",
+      "title": "Director-trimmed native cut",
+      "film": "final/draft-v4/film.mp4",
+      "posterFrame": 640,
+      "fps": 30,
+      "frames": 776,
+      "width": 1080,
+      "height": 1920,
+      "note": "C3 begins at source frame 30. C4 ends at source boundary 134. Original gaps, camera clock and corresponding source audio retained. Title deferred.",
+      "segments": [
+        {
+          "label": "HEAD",
+          "shot": "HEAD",
+          "frame": 0,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C1",
+          "shot": "C1",
+          "frame": 9,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C1.mp4"
+        },
+        {
+          "label": "GAP1",
+          "shot": "GAP1",
+          "frame": 219,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 225,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C2.mp4"
+        },
+        {
+          "label": "GAP2",
+          "shot": "GAP2",
+          "frame": 435,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 441,
+          "frames": 180,
+          "sourceFrame": 30,
+          "source": "render/v3/C3.mp4"
+        },
+        {
+          "label": "GAP3",
+          "shot": "GAP3",
+          "frame": 621,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C4",
+          "shot": "C4",
+          "frame": 627,
+          "frames": 134,
+          "sourceFrame": 0,
+          "source": "render/v3/C4.mp4"
+        },
+        {
+          "label": "TAIL",
+          "shot": "TAIL",
+          "frame": 761,
+          "frames": 15,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        }
+      ]
+    },
+    {
+      "version": "4k-v1",
+      "date": "2026-10-30",
+      "title": "4K finished cut",
+      "film": "final/4k-v1/film.mp4",
+      "posterFrame": 640,
+      "fps": 30,
+      "frames": 776,
+      "width": 2160,
+      "height": 3840,
+      "note": "C3 begins at source frame 30. C4 ends at source boundary 134. Original gaps, camera clock and corresponding source audio retained. Title deferred.",
+      "segments": [
+        {
+          "label": "HEAD",
+          "shot": "HEAD",
+          "frame": 0,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C1",
+          "shot": "C1",
+          "frame": 9,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C1.mp4"
+        },
+        {
+          "label": "GAP1",
+          "shot": "GAP1",
+          "frame": 219,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 225,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "render/v3/C2.mp4"
+        },
+        {
+          "label": "GAP2",
+          "shot": "GAP2",
+          "frame": 435,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C3",
+          "shot": "C3",
+          "frame": 441,
+          "frames": 180,
+          "sourceFrame": 30,
+          "source": "render/v3/C3.mp4"
+        },
+        {
+          "label": "GAP3",
+          "shot": "GAP3",
+          "frame": 621,
+          "frames": 6,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        },
+        {
+          "label": "C4",
+          "shot": "C4",
+          "frame": 627,
+          "frames": 134,
+          "sourceFrame": 0,
+          "source": "render/v3/C4.mp4"
+        },
+        {
+          "label": "TAIL",
+          "shot": "TAIL",
+          "frame": 761,
+          "frames": 15,
+          "sourceFrame": 0,
+          "source": "render/v3/BLACK.mp4"
+        }
+      ]
+    }
+  ]
+}

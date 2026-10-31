@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_d7fceb5f29b288bec367a4c851ca4ff517b969cce47acf99db317fb47cdbc891",
+  "projectId": "motion",
+  "editVersion": "render/v2/C3",
+  "segmentIndex": 0,
+  "shotId": "C3",
+  "status": "rendered",
+  "evidence": "saved-camera-transform",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 168,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "50e05168a68e8b8232820707851924d4d96de27501a59d4e92bb6b0146d15864",
+  "schemaVersion": 1,
+  "id": "use_6e2acf2a21fd046d86775bf0da29976b98083d44fa0adbbe5894a820f4367cd4"
+}

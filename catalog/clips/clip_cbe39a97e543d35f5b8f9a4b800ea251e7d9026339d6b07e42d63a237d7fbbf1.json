@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cbe39a97e543d35f5b8f9a4b800ea251e7d9026339d6b07e42d63a237d7fbbf1",
+  "sha256": "cbe39a97e543d35f5b8f9a4b800ea251e7d9026339d6b07e42d63a237d7fbbf1",
+  "bytes": 11948279,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black and white infrared night footage from a fixed trail camera strapped to a tree at waist height, angled slightly downward. Monochrome, no green tint. Grainy and high contrast; the leaf litter and the nearest tree trunk are brightly lit by the camera's infrared illuminator and the woods fall off to black behind. A game trail crosses the frame from left to right through bare and half-bare deciduous trees, with leaf litter on the ground, a fallen log on the right, and a large tree trunk very close at the left edge. An ordinary adult white-tailed doe walks steadily from SCREEN-RIGHT TO SCREEN-LEFT across the horizontal trail. Only one deer. At the very start its head and front legs are already entering from the right side. By two seconds it reaches the center of the trail. It pauses briefly, turns just its head toward the lens for one second: both eyes reflect the infrared light as two bright white points. Then it turns its head left and continues walking out to screen-left, disappearing behind the white near trunk and out of frame by seven seconds. Its hooves crinkle dry leaves with each step, one small exhale at the pause. Keep the camera and forest completely fixed. Natural quadruped anatomy, one head, four legs, one short tail. No humans, no other animals. The final image is the empty unchanged trail. Keep all action in the central three-quarters of the wide frame. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no timestamp, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_37cabff090cd8ae18f92bd7b47968a81ab67fdc8ecf4efa5cde3d9c86b8252d3",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 202610301,
+      "createdAt": "2026-10-30T23:25:22.677Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "cf4925afdd4a266f7e9153686e9317d9de4a635844f0f3047313219bc0d1cb9f",
+          "bytes": 2086234,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "cf4925afdd4a266f7e9153686e9317d9de4a635844f0f3047313219bc0d1cb9f",
+          "bytes": 2086234,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "53ef04de81c27476845129b3f5ab646281121dc1095d57c320c3cd3647ba4851"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

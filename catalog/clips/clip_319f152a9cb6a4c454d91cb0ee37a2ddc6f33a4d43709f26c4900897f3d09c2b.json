@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_319f152a9cb6a4c454d91cb0ee37a2ddc6f33a4d43709f26c4900897f3d09c2b",
+  "sha256": "319f152a9cb6a4c454d91cb0ee37a2ddc6f33a4d43709f26c4900897f3d09c2b",
+  "bytes": 41951543,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black and white infrared night footage from a fixed trail camera strapped to a tree at waist height, angled slightly downward. Monochrome, no green tint. Grainy and high contrast; the leaf litter and the nearest tree trunk are brightly lit by the camera's infrared illuminator and the woods fall off to black behind. A game trail crosses the frame from left to right through bare and half-bare deciduous trees, with leaf litter on the ground, a fallen log on the right, and a large tree trunk very close at the left edge. Exactly ONE adult couple, the two people in the starting image, waltzes slowly but steadily from SCREEN-LEFT TO SCREEN-RIGHT along the sideways trail. They begin already visible to the right of the near trunk. Their closed ballroom hold is maintained throughout: the man in dark suit, white shirt and bow tie holds the woman in pale satin gown, long gloves and pinned hair. They travel sideways while turning together gently through one complete turn. A clear human-paced lateral crossing, enough travel to leave screen-right completely by seven seconds. Their feet actually step, never skate. Plain unsmiling closed mouths, ordinary faces. They look at each other, never intentionally at the camera. Eyes reflect the infrared light as brief small bright white points only when a face naturally rotates near the lens axis. The background is unchanged and perfectly still. Exactly two people, no additions or transformations. No audible steps, no fabric rustle, no breaths: only faint wind and camera self-noise. The trail is empty at the end. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no timestamp, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9e1775fc61461aad2d97ed9e9ca64f8125f2d9542ef4e41de0ac0d95cf7257ec",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 202610302,
+      "createdAt": "2026-10-30T23:25:34.238Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "f6ed7118485b608505cd561d50c45dd9a0cc529460516aeb5b62f083c300f627",
+          "bytes": 2029244,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "cf4925afdd4a266f7e9153686e9317d9de4a635844f0f3047313219bc0d1cb9f",
+          "bytes": 2086234,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "9c1064794ad81ac871e1c303cdcd2852147ed418a907b588aa012356537f272e"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

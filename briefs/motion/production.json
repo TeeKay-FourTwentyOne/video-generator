@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "projectId": "motion",
+  "title": "Motion",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Director confirmed publication of the final 4K cut. Archive verified; superseded full edits removed under standard retention, with original sources and historical records preserved.",
+  "briefPath": "briefs/motion/brief.md",
+  "decisionsPath": "briefs/motion/decisions.md",
+  "handoffPath": "briefs/motion/handoff.md",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status source",
+      "path": "briefs/motion/status.json"
+    },
+    {
+      "label": "Status page workflow",
+      "path": "briefs/motion/status.md"
+    },
+    {
+      "label": "Image audition manifest",
+      "path": "briefs/motion/look-audition.json"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/motion-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "draft-v3",
+      "path": "final/draft-v3/film.mp4",
+      "sha256": "e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 900,
+      "durationSeconds": 30,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/draft-v3/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "draft-v4",
+      "path": "final/draft-v4/film.mp4",
+      "sha256": "d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 776,
+      "durationSeconds": 25.866666666666667,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/draft-v4/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "4k-v1",
+      "path": "final/4k-v1/film.mp4",
+      "sha256": "b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 776,
+      "durationSeconds": 25.866666666666667,
+      "publishedMaster": true,
+      "retention": "retained",
+      "deliveryRecordPath": "final/4k-v1/delivery.json",
+      "descriptionCopyPath": "final/4k-v1/description.txt"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local procedural audio"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Planning, image and motion production, local camera finishing and sound design",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9",
+      "recordedDate": "2026-10-30",
+      "evidence": "Full decode, dimensions, nine-hundred-frame timeline, camera cadence, exact outer black and silent PCM gaps verified; AAC transition ringing measured separately.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9",
+      "recordedDate": "2026-10-30",
+      "evidence": "Agent inspected source overviews, dense motion windows, full-resolution faces and the finished camera treatment. Selected staging variations are recorded in decisions.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9",
+      "recordedDate": "2026-10-30",
+      "evidence": "Levels, channel equality, timing and silent gaps checked computationally. Real-time listening is not established by those checks.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9",
+      "recordedDate": "2026-10-30",
+      "evidence": "Director: “Excellent work.” Approved the draft subject to C3 source-in frame 30 and C4 source-out boundary 134; explicitly requested 4K upscale.",
+      "outcome": "approved"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "draft-v4",
+      "artifactSha256": "d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+      "recordedDate": "2026-10-30",
+      "evidence": "Verified 776-frame cut, full decode, exact black gaps and outer frame, fifteen-frame camera cadence, BT.709 color tags and mono audio. The 4K audio packets and decoded samples match the revised native cut.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "4k-v1",
+      "artifactSha256": "b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64",
+      "recordedDate": "2026-10-30",
+      "evidence": "Verified 776-frame cut, full decode, exact black gaps and outer frame, fifteen-frame camera cadence, BT.709 color tags and mono audio. The 4K audio packets and decoded samples match the revised native cut.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "4k-v1",
+      "artifactSha256": "b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64",
+      "recordedDate": "2026-10-30",
+      "evidence": "Inspected the new C3/C4 boundary frames against the previous draft, and 100-percent 4K crops of faces, clothing and the camera readout. The original camera texture remains intact.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "4k-v1",
+      "artifactSha256": "b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64",
+      "recordedDate": "2026-10-30",
+      "evidence": "Director: “Published. Here’s the URL: https://youtube.com/shorts/xw4HQtnVbqc”. The local master is associated by the upload handoff; its hash does not identify the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "descriptionPath": "briefs/motion/description.md",
+  "descriptionSha256": "6a807aa11b1ce8ad8bd8a16be0ba925c5d5b82c719742bf2bfb4da96106837de",
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/xw4HQtnVbqc",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-30",
+    "artifactVersion": "4k-v1"
+  },
+  "archive": {
+    "manifestPath": "data/workspace-archive/motion-v1/workspace-archive-manifest.json",
+    "inventorySha256": "fe399a62ed9954fa2f0f392a5b5991a71f3bdd0abe0c4d8f60df24db037d8dd2",
+    "verifiedDate": "2026-10-30"
+  }
+}

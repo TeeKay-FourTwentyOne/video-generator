@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d7fceb5f29b288bec367a4c851ca4ff517b969cce47acf99db317fb47cdbc891",
+  "sha256": "d7fceb5f29b288bec367a4c851ca4ff517b969cce47acf99db317fb47cdbc891",
+  "bytes": 18000609,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "motion"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Black and white infrared night footage from a fixed trail camera strapped to a tree at waist height, angled slightly downward. Monochrome, no green tint. Grainy and high contrast; the leaf litter and the nearest tree trunk are brightly lit by the camera's infrared illuminator and the woods fall off to black behind. A game trail crosses the frame from left to right through bare and half-bare deciduous trees, with leaf litter on the ground, a fallen log on the right, and a large tree trunk very close at the left edge. Exactly four separate adult couples in closed ballroom holds cross toward SCREEN RIGHT. EVERY pair translates steadily rightward at its own fixed depth; none travels left or toward the lens. All three pairs visible at the beginning immediately move right, keeping their current scale: the large pair A on the right (dark suit, pale satin gown and gloves); pair B beside the white trunk (tuxedo, dark gown); the tiny dim older pair C far behind at center (dark suit, pale gown and stole). Their heads and torsos rotate with their partners through a slow turn while their position travels right. The tiny older pair also travels right, parallel to the others, remaining very small. At two seconds the fourth pair D enters from the LEFT edge very close to the camera: a tall man in a dark double-breasted suit and a tall woman in a pale bare-shouldered gown. D waltzes rightward across the near foreground, so close that the tops of their heads are above the image and their bodies are bright in the infrared light. D never approaches the lens; its size stays the same as it crosses. The back three pairs leave the right edge first, D follows and is almost out by seven seconds. Exactly eight adults over the take, distinct normal bodies, one man and one woman per pair, each person always with the same partner. People enter or leave only through the frame edges. Plain ordinary unsmiling faces, closed mouths. Brief white eye-reflections as heads rotate through a frontal angle. The forest and camera remain perfectly still. Only quiet wind and camera noise, no sounds from the people. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no timestamp, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a9fe073ad2591dffc0ea82ba09a74509615a901f997ba989517f312d91448824",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 202610403,
+      "createdAt": "2026-10-30T23:31:57.809Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4c652e8d9e6c55117cbfcad436a3b6d4a963e1bb5d1946016e09ebcb814ea33b",
+          "bytes": 2004799,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ca19bed880c1d9d18f79e570e2574bc070c85056764b1263e29a2b5a284156b4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
