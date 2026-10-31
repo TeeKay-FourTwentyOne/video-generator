@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_b05079ebb77731ba41941847e40c989c2a28463fcb01e60edb1ef5062c90b81a",
+  "projectId": "generation",
+  "editVersion": "v1",
+  "segmentIndex": 10,
+  "shotId": "snow-5",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 51,
+    "length": 9,
+    "fps": 30
+  },
+  "timelineStartFrame": 1101,
+  "outputSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+  "schemaVersion": 1,
+  "id": "use_70ee488cff390d7f45a5f30655d82898577bbf276be6e0627145f8321d9d80e7"
+}

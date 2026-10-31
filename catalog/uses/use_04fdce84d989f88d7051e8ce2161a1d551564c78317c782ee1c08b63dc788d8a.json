@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_29b9c6e741e31ad05d67f3faf99bcdc73284714019dd8e2c6179c85cb5344eca",
+  "projectId": "generation",
+  "editVersion": "v1",
+  "segmentIndex": 11,
+  "shotId": "G6",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 150,
+    "fps": 30
+  },
+  "timelineStartFrame": 1110,
+  "outputSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+  "schemaVersion": 1,
+  "id": "use_04fdce84d989f88d7051e8ce2161a1d551564c78317c782ee1c08b63dc788d8a"
+}

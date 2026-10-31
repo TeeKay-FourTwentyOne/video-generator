@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_b05079ebb77731ba41941847e40c989c2a28463fcb01e60edb1ef5062c90b81a",
+  "projectId": "generation",
+  "editVersion": "v1",
+  "segmentIndex": 13,
+  "shotId": "blue-tail",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 69,
+    "length": 21,
+    "fps": 30
+  },
+  "timelineStartFrame": 1269,
+  "outputSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+  "schemaVersion": 1,
+  "id": "use_d03175e8c66c7ac8de6408ecf38a4d9d06a7af03672d775ae775aa50947d7ddc"
+}

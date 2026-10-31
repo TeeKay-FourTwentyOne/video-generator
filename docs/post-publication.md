@@ -147,7 +147,13 @@ assembly segments, unused finishing candidates and derived complete soundtrack
 mixes. Keep reusable title/shot assets and original or processed source stems.
 The cleanup command accepts video derivatives under `final/` and `finish/`, and
 `soundtrack*.wav|flac|mp3|m4a` under `edit/`; it never recursively deletes a version
-folder. Other locations require a deliberate reviewed extension, not a broad glob.
+folder. Custom editor derivatives require an exact reviewed path, its SHA-256,
+and a `derivativeClass` on that removal item. Supported classes are `render-cache`
+for videos under `renders/`, `qa-render` for videos under `qa/`, and `complete-mix`
+for `master*`, `soundtrack*` or `mono-test-*` audio files directly under `audio/`.
+Original/source paths, per-shot stems, metadata and other locations remain
+protected. These classes are review assertions, not permission to select every
+file in a directory: retain reusable shot/title assets and inspect dependencies.
 
 Inspect transitive dependencies before selecting files. A deleted render may be
 an input to a later recipe: retain the source inputs and recipes, and document
@@ -156,6 +162,11 @@ Do not promise a qualified or byte-identical rebuild without testing one. If a
 derivative is the only surviving source for the final edit, retain it and explain
 the dependency. Keep historical hashes, delivery records and review events even
 when their media is removed; past checks remain historical facts.
+
+For an extended location, a removal item takes this form:
+`{ "path": "renders/cache/pass.mp4", "sha256": "<reviewed SHA-256>", "derivativeClass": "render-cache", "reason": "Regenerable intermediate; source and recipe retained" }`.
+The helper carries the class and verified hash through planning, quarantine,
+resealing and purge. A missing or mismatched reviewed hash stops the operation.
 
 Use the maintained helper with an explicit selection in ignored storage:
 

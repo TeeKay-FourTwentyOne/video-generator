@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9aeeec032b5c87b77dfd485d94c41cf054e5d996115cefaec4f3162590c12a77",
+  "sha256": "9aeeec032b5c87b77dfd485d94c41cf054e5d996115cefaec4f3162590c12a77",
+  "bytes": 16725186,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Home video from an early 1980s consumer camcorder on a tripod at chest height, slightly wide lens, fixed. Soft image, slightly warm, bright highlights bloom, colors a little oversaturated, mild vignetting. Hard midday July sun, short shadows. A suburban backyard: patchy lawn, a chain-link fence along the back with a dozen balloons tied to it, the edge of a one-story house on the left, a concrete patio with a sliding glass door on the right, a long folding table with a paper tablecloth, paper plates, cups and a sheet cake with candles in the middle of the frame, aluminum lawn chairs around the table, a plain blue inflatable kiddie pool in the right foreground, a charcoal grill with smoke at the back left. Eight people already occupy the positions shown in the reference. Exactly those people remain; nobody enters from any edge, window or door. Nobody eats. Each person looks quietly in a different direction across the yard. The navy-polo man at the back turns his BACK to the lens and looks toward the rear fence; he stays at the back. The men by the grill look toward the house and the yard. The woman in her thirties in a yellow sundress with dark hair in a ponytail, seated at the near RIGHT of the table, stands at two seconds and turns her BACK to the camera to look toward the house. She remains beside her chair. The man in the striped sleeveless top who is ALREADY standing on the LEFT side of the grill walks LEFT, away from the table and out through the LEFT frame edge. He is leaving from inside the image; no new man enters. All remaining people stay spread out and at their original distance. Nobody walks closer to the camera. Nobody looks into the lens. Nobody runs or gathers together. The table, plates, every other chair, pool, houses and fence stay fixed. Audio: a few distant uncertain, wordless murmurs, a light breeze and a remote lawnmower. The camera is bolted to a tripod: the rooflines, fence posts, table corners and pool occupy the same pixel positions in every frame. No zoom, tracking, dolly, pan, tilt or camera rotation. No new props, no added people, no changes in anyone’s clothes. All plastic pool surfaces are plain unmarked blue. Camera is fixed on a tripod, no camera movement. No music, no distinct speech. No on-screen text, no writing on the cake, balloons or clothing, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_68f17d9264bda41768bdf152e2509d774ecdf5a816cf905f70d719157d9c1890",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2755454946,
+      "createdAt": "2026-10-31T03:21:06.931Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "cb6524f1ee2455ee99d2b2e7b40d7c80d838d642dec5678ecbf18c432d2971e4",
+          "bytes": 1972058,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "5d907d8c4ea44dac69d1ddcb00720d2e93561a73278e4d00a9cdfe3cf05633a9"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -225,3 +225,22 @@ identical decoded channels at the intended rate. For deliberately mono noise bed
 in stereo containers, check decoded channel difference as well as source PCM.
 Copy that accepted AAC stream into the upscale and verify packet timing and hashes.
 Source: Codex · Untitled trail-camera film · 2026-10-30
+
+### Put fine playback noise after low-rate dub encodes
+For GENERATION, increasing pre-encode grain through the literal 1200 kbps dub
+chain produced large digital blocks before the fifth copy became sufficiently
+obscured. Keeping the original per-pass grain growth, then adding increasing
+fine noise and a small contrast reduction at playback, preserved the intended
+tape decay. Burn the deck's PLAY display after that noise so it stays clean.
+**Apply:** compare the entire progression at delivery scale; do not calibrate
+only a clean source or a single grainy frame.
+Source: Codex · GENERATION · 2026-10-30
+
+### Test black surrounds after the final lossy encode
+A portrait film with a 4:3 window starting on an odd luma row shares a chroma cell
+with its black surround. Neutralizing that shared cell and supplying black
+footroom solved blue-edge leakage, but noise frames still produced isolated
+values above zero after quantization. Protecting the two boundary macroblock
+rows with FFmpeg ROI metadata eliminated those residual pixels in the native
+master. The check decoded every frame rather than sampling only blue cards.
+Source: Codex · GENERATION · 2026-10-30

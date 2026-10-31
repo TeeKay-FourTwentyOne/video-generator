@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_426b67e2805e91dff34621b71113dfc88ba05e3269011230d8a092ddaf548cce",
+  "sha256": "426b67e2805e91dff34621b71113dfc88ba05e3269011230d8a092ddaf548cce",
+  "bytes": 18960606,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 7,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 210,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "GENERATION V2 local source render"
+  ],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

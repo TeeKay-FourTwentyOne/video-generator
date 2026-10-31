@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_b05079ebb77731ba41941847e40c989c2a28463fcb01e60edb1ef5062c90b81a",
+  "projectId": "generation",
+  "editVersion": "v1",
+  "segmentIndex": 0,
+  "shotId": "blue-head",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 15,
+    "fps": 30
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+  "schemaVersion": 1,
+  "id": "use_5e0681827ba96871543a8ef3e4e6d2cc59eabcb726d669e5ddf186ef4066f6d4"
+}

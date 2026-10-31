@@ -30,6 +30,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [FLOORS](floors/README.md) | delivered | — | [Brief](floors/brief.md) · [Decisions](floors/decisions.md) · [Record](floors/production.json) |
 | [FLOSS](floss/README.md) | published | — | [Brief](floss/brief.md) · [Record](floss/production.json) |
 | [FULL DISCLOSURE](full-disclosure/README.md) | published | — | [Brief](full-disclosure/brief.md) · [Record](full-disclosure/production.json) |
+| [GENERATION](generation/README.md) | published | — | [Brief](generation/brief.md) · [Description](generation/description.md) · [Decisions](generation/decisions.md) · [Record](generation/production.json) |
 | [GOODNIGHT](goodnight/README.md) | unknown | — | [Brief](goodnight/brief.md) · [Record](goodnight/production.json) |
 | [GUESS YOUR \_\_\_\_\_](guess-booth/README.md) | delivered | — | [Brief](guess-booth/brief.md) · [Decisions](guess-booth/decisions.md) · [Record](guess-booth/production.json) |
 | [Hall of Memories](hall-of-memories/README.md) | producing | — | [Brief](hall-of-memories/brief.md) · [Record](hall-of-memories/production.json) |

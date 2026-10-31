@@ -95,6 +95,25 @@
       }
     },
     {
+      "id": "clip_007458626c2e7f7aef8fc058c254d0fff16f1e425f3caa89b17a42bfd22deb21",
+      "metadata": "clips/clip_007458626c2e7f7aef8fc058c254d0fff16f1e425f3caa89b17a42bfd22deb21.json",
+      "labels": [
+        "Unused finishing candidate: incomplete colour metadata"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 25.866667,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_0079ecc9d869b2c325909a3b82f302cfa6a636c2ed7f4c05a5a8013d5c6f6d27",
       "metadata": "clips/clip_0079ecc9d869b2c325909a3b82f302cfa6a636c2ed7f4c05a5a8013d5c6f6d27.json",
       "labels": [
@@ -2079,6 +2098,23 @@
       }
     },
     {
+      "id": "clip_0aa3ec16c4f060c264ed9c5d248bf84639f692a6a5a162f8364037a364db7b11",
+      "metadata": "clips/clip_0aa3ec16c4f060c264ed9c5d248bf84639f692a6a5a162f8364037a364db7b11.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_0ade274984551415a0bbd4f1bf3b2a8d32da0a962ded35e9cb4d2fe492e14c23",
       "metadata": "clips/clip_0ade274984551415a0bbd4f1bf3b2a8d32da0a962ded35e9cb4d2fe492e14c23.json",
       "labels": [
@@ -3710,6 +3746,25 @@
       }
     },
     {
+      "id": "clip_1517d79f5532dcb736d9b33e524c227d7894763e5ef05cc1eaefaa7b223b358d",
+      "metadata": "clips/clip_1517d79f5532dcb736d9b33e524c227d7894763e5ef05cc1eaefaa7b223b358d.json",
+      "labels": [
+        "GENERATION V3 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_151ec5723f7975642540994d159ca56d46c3bcd0acb1b8637c176117dbaccfdd",
       "metadata": "clips/clip_151ec5723f7975642540994d159ca56d46c3bcd0acb1b8637c176117dbaccfdd.json",
       "labels": [
@@ -4141,6 +4196,25 @@
       }
     },
     {
+      "id": "clip_1805a394eace377bb8c108571a1e8aaac24457669cb3c643fa56fb383cd85757",
+      "metadata": "clips/clip_1805a394eace377bb8c108571a1e8aaac24457669cb3c643fa56fb383cd85757.json",
+      "labels": [
+        "GENERATION V2 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_182d97f439aee6d3e9cabfbb3374a2445bc4b4a53a550cf99cfab08cc06d068b",
       "metadata": "clips/clip_182d97f439aee6d3e9cabfbb3374a2445bc4b4a53a550cf99cfab08cc06d068b.json",
       "labels": [
@@ -4442,6 +4516,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_19df89ef1534a7b64a3b96e683f7321b6ba956bdabd44fbf1bc88751f93e80e1",
+      "metadata": "clips/clip_19df89ef1534a7b64a3b96e683f7321b6ba956bdabd44fbf1bc88751f93e80e1.json",
+      "labels": [
+        "Untitled trail-camera film C3 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -6710,6 +6803,25 @@
       }
     },
     {
+      "id": "clip_24f60a51a73cb15a55234f9f1f2837e68a1dd2597bffebfc777b06012b7fbcd7",
+      "metadata": "clips/clip_24f60a51a73cb15a55234f9f1f2837e68a1dd2597bffebfc777b06012b7fbcd7.json",
+      "labels": [
+        "Unused finishing candidate: AAC channel residue"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 25.866667,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_2507762e6f8d2d71f1c9b19cf35a2ff7c5ab5e135af832345498e6a794979cd3",
       "metadata": "clips/clip_2507762e6f8d2d71f1c9b19cf35a2ff7c5ab5e135af832345498e6a794979cd3.json",
       "labels": [
@@ -7557,6 +7669,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_29b9c6e741e31ad05d67f3faf99bcdc73284714019dd8e2c6179c85cb5344eca",
+      "metadata": "clips/clip_29b9c6e741e31ad05d67f3faf99bcdc73284714019dd8e2c6179c85cb5344eca.json",
+      "labels": [
+        "GENERATION V6 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -8514,6 +8645,25 @@
       }
     },
     {
+      "id": "clip_2faef625ab333284102078debc1d3be5dbf75e6c37bb58f2dc96dd7002c3859f",
+      "metadata": "clips/clip_2faef625ab333284102078debc1d3be5dbf75e6c37bb58f2dc96dd7002c3859f.json",
+      "labels": [
+        "Untitled trail-camera film C4 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7.6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_2ff584711e9e018077904b8f861c91073f86b84c681c3c5c0b651ec8f235ae6e",
       "metadata": "clips/clip_2ff584711e9e018077904b8f861c91073f86b84c681c3c5c0b651ec8f235ae6e.json",
       "labels": [
@@ -8773,6 +8923,23 @@
       "width": 2160,
       "height": 3840,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_319f152a9cb6a4c454d91cb0ee37a2ddc6f33a4d43709f26c4900897f3d09c2b",
+      "metadata": "clips/clip_319f152a9cb6a4c454d91cb0ee37a2ddc6f33a4d43709f26c4900897f3d09c2b.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -9892,6 +10059,25 @@
       }
     },
     {
+      "id": "clip_368edc0642db3d14640e5331e8d5849b7b4eaa263f45b35913f5de03bebd4d03",
+      "metadata": "clips/clip_368edc0642db3d14640e5331e8d5849b7b4eaa263f45b35913f5de03bebd4d03.json",
+      "labels": [
+        "Untitled trail-camera film C1 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_3696b7142eb3ace10f306fc20524b0e8e792b1425ba74fd27b6362be902e9846",
       "metadata": "clips/clip_3696b7142eb3ace10f306fc20524b0e8e792b1425ba74fd27b6362be902e9846.json",
       "labels": [
@@ -10379,6 +10565,25 @@
       "durationSeconds": 5.03125,
       "width": 1024,
       "height": 576,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_38ae68d3ebc0f75daab09ce3267c56f7f3996b50610303cbad9be605147de190",
+      "metadata": "clips/clip_38ae68d3ebc0f75daab09ce3267c56f7f3996b50610303cbad9be605147de190.json",
+      "labels": [
+        "GENERATION V1 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -12253,6 +12458,25 @@
         "coming-attractions"
       ],
       "durationSeconds": 2,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
+      "id": "clip_426b67e2805e91dff34621b71113dfc88ba05e3269011230d8a092ddaf548cce",
+      "metadata": "clips/clip_426b67e2805e91dff34621b71113dfc88ba05e3269011230d8a092ddaf548cce.json",
+      "labels": [
+        "GENERATION V2 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
@@ -14724,6 +14948,25 @@
       }
     },
     {
+      "id": "clip_4f6b64356227665e3499863376e040e2961d846c7cab94f7b38de9dd417565f2",
+      "metadata": "clips/clip_4f6b64356227665e3499863376e040e2961d846c7cab94f7b38de9dd417565f2.json",
+      "labels": [
+        "Untitled trail-camera film C2 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_4f72a221bda79e131f1c0de83c290be44c57cdde16546e9de1c618c5c5a60aaf",
       "metadata": "clips/clip_4f72a221bda79e131f1c0de83c290be44c57cdde16546e9de1c618c5c5a60aaf.json",
       "labels": [
@@ -15127,6 +15370,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_50e05168a68e8b8232820707851924d4d96de27501a59d4e92bb6b0146d15864",
+      "metadata": "clips/clip_50e05168a68e8b8232820707851924d4d96de27501a59d4e92bb6b0146d15864.json",
+      "labels": [
+        "Untitled trail-camera film C3 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -15762,6 +16024,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_530cd684ea0e2463cb1b454a8c02e44a98d935116d36c83b51217c3aa497aa55",
+      "metadata": "clips/clip_530cd684ea0e2463cb1b454a8c02e44a98d935116d36c83b51217c3aa497aa55.json",
+      "labels": [
+        "GENERATION V3 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -16537,6 +16818,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_57ba213bf2820f6bd5a45a41640c57eb778fbe0afaebcd1d82c69fe51bcb55f2",
+      "metadata": "clips/clip_57ba213bf2820f6bd5a45a41640c57eb778fbe0afaebcd1d82c69fe51bcb55f2.json",
+      "labels": [
+        "Untitled trail-camera film C4 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7.6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -19316,6 +19616,25 @@
       }
     },
     {
+      "id": "clip_63ef0230eac4df0e69054c8cd50a6a0fe706970ea1b6216c5950e9d17b8cca1a",
+      "metadata": "clips/clip_63ef0230eac4df0e69054c8cd50a6a0fe706970ea1b6216c5950e9d17b8cca1a.json",
+      "labels": [
+        "Untitled trail-camera film C3 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_63f78d463fce3795258f307a183f457ebe49268571d8b9486fc9d596ca79a150",
       "metadata": "clips/clip_63f78d463fce3795258f307a183f457ebe49268571d8b9486fc9d596ca79a150.json",
       "labels": [
@@ -20546,6 +20865,23 @@
       "width": 1280,
       "height": 720,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_6a15738e7d9dcc8d759e0e84e9f9f0dcb02dd186eecf840a3ef5da74b759079f",
+      "metadata": "clips/clip_6a15738e7d9dcc8d759e0e84e9f9f0dcb02dd186eecf840a3ef5da74b759079f.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -23222,6 +23558,25 @@
       }
     },
     {
+      "id": "clip_767ac8aa3dbeb92279aaae918dc855ff44a3f33aec4ca3b192e8d801005212b8",
+      "metadata": "clips/clip_767ac8aa3dbeb92279aaae918dc855ff44a3f33aec4ca3b192e8d801005212b8.json",
+      "labels": [
+        "Untitled trail-camera film C4 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7.6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_7698d5e089a27dddc538820b427ed5845b7652475882636ee20c9070c07c3ab4",
       "metadata": "clips/clip_7698d5e089a27dddc538820b427ed5845b7652475882636ee20c9070c07c3ab4.json",
       "labels": [
@@ -24285,6 +24640,25 @@
       }
     },
     {
+      "id": "clip_7c1ebbb1bd7f68c996577ec5cd5bf0671901747e33e686572e2d8a4c16d0fdb3",
+      "metadata": "clips/clip_7c1ebbb1bd7f68c996577ec5cd5bf0671901747e33e686572e2d8a4c16d0fdb3.json",
+      "labels": [
+        "Unused finishing candidate: AAC channel residue"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 25.866667,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_7c351ba7a5154987a56d17de355a87720cc029c24dc98e829fbf00312555433a",
       "metadata": "clips/clip_7c351ba7a5154987a56d17de355a87720cc029c24dc98e829fbf00312555433a.json",
       "labels": [
@@ -24637,6 +25011,25 @@
       }
     },
     {
+      "id": "clip_7da3bf60cd103566f355e7b6048c7f26c4ca5f7f1450e70b31c3d08c8fa97f83",
+      "metadata": "clips/clip_7da3bf60cd103566f355e7b6048c7f26c4ca5f7f1450e70b31c3d08c8fa97f83.json",
+      "labels": [
+        "Untitled trail-camera film BLACK local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 1,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 20
+      }
+    },
+    {
       "id": "clip_7dc982008d40d92254ce4ef530dcfcdaddb01a7e6eb16d17ed9db5b45e3c9170",
       "metadata": "clips/clip_7dc982008d40d92254ce4ef530dcfcdaddb01a7e6eb16d17ed9db5b45e3c9170.json",
       "labels": [
@@ -24979,6 +25372,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_7f8e1808e63fa36af10c485bf4170a69f66fa08bdc7b64f999a42b50a5d11acd",
+      "metadata": "clips/clip_7f8e1808e63fa36af10c485bf4170a69f66fa08bdc7b64f999a42b50a5d11acd.json",
+      "labels": [
+        "Untitled trail-camera film C2 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -26168,6 +26580,23 @@
       }
     },
     {
+      "id": "clip_85be6aa875d32d7fea96128b4acc6d215bf733e508f67719e0608947a7e43098",
+      "metadata": "clips/clip_85be6aa875d32d7fea96128b4acc6d215bf733e508f67719e0608947a7e43098.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_85c1c924cd0c5f78851a29653bc2d8a51c2fb205baa9575bd96c48cad4a5ef79",
       "metadata": "clips/clip_85c1c924cd0c5f78851a29653bc2d8a51c2fb205baa9575bd96c48cad4a5ef79.json",
       "labels": [
@@ -26354,6 +26783,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_8775582b930c0009a237b47f72888a53023a4de956f4632c4c18ae3bd1841c49",
+      "metadata": "clips/clip_8775582b930c0009a237b47f72888a53023a4de956f4632c4c18ae3bd1841c49.json",
+      "labels": [
+        "Untitled trail-camera film C1 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -27084,6 +27532,25 @@
       }
     },
     {
+      "id": "clip_8b7e48eb2aa9a5ad6fbdd1b22ff3e9d465c7fee4c1e33c492768d58d6ac0b4cf",
+      "metadata": "clips/clip_8b7e48eb2aa9a5ad6fbdd1b22ff3e9d465c7fee4c1e33c492768d58d6ac0b4cf.json",
+      "labels": [
+        "GENERATION V5 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_8b85254f6d84eb35740773ff474d33bba49764f8c8517983cbdc28a531c512f3",
       "metadata": "clips/clip_8b85254f6d84eb35740773ff474d33bba49764f8c8517983cbdc28a531c512f3.json",
       "labels": [
@@ -27468,6 +27935,25 @@
       }
     },
     {
+      "id": "clip_8d44d5ddf12ef3fb755f41b7c49d407166701602679ebbacc320670a634419f1",
+      "metadata": "clips/clip_8d44d5ddf12ef3fb755f41b7c49d407166701602679ebbacc320670a634419f1.json",
+      "labels": [
+        "GENERATION V4 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_8d4e5234c14d244949d8bc599027ccc3eed126d00babead45088756bd1a7207a",
       "metadata": "clips/clip_8d4e5234c14d244949d8bc599027ccc3eed126d00babead45088756bd1a7207a.json",
       "labels": [
@@ -27609,6 +28095,23 @@
       "width": 720,
       "height": 1280,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_8de9071afaf221ff8254005c0b16c53c5aa56cff5d44de6ee0cf40d0d1281791",
+      "metadata": "clips/clip_8de9071afaf221ff8254005c0b16c53c5aa56cff5d44de6ee0cf40d0d1281791.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -27863,6 +28366,25 @@
       }
     },
     {
+      "id": "clip_902e31f8c809ac43ce2ff20d1491c7e24f64e21def562913c8d0a2708cbde21e",
+      "metadata": "clips/clip_902e31f8c809ac43ce2ff20d1491c7e24f64e21def562913c8d0a2708cbde21e.json",
+      "labels": [
+        "Untitled trail-camera film C1 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_90445d422ba9052f429c3590c9d27840cccbbfff81e495de296e69a47ffd9c71",
       "metadata": "clips/clip_90445d422ba9052f429c3590c9d27840cccbbfff81e495de296e69a47ffd9c71.json",
       "labels": [
@@ -27916,6 +28438,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_906c1ab5d511b806e41328e551b854c0aabdcedaf9221dbdc301c52eede10c47",
+      "metadata": "clips/clip_906c1ab5d511b806e41328e551b854c0aabdcedaf9221dbdc301c52eede10c47.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -28163,6 +28702,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_919730d2f2069818dce19ffdf02166105e59de40ec4df3c10fae6b699a251b45",
+      "metadata": "clips/clip_919730d2f2069818dce19ffdf02166105e59de40ec4df3c10fae6b699a251b45.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -28510,6 +29066,23 @@
       "width": 720,
       "height": 1280,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_9406adf4e30c6016e73f9646883addf21772563f0b1f705dab36d1f47b5ef139",
+      "metadata": "clips/clip_9406adf4e30c6016e73f9646883addf21772563f0b1f705dab36d1f47b5ef139.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -28900,6 +29473,25 @@
       }
     },
     {
+      "id": "clip_96edf8c30a4f95d7dce98ed5ffa6fdec0959ffdb168ac181457b99e32da367b8",
+      "metadata": "clips/clip_96edf8c30a4f95d7dce98ed5ffa6fdec0959ffdb168ac181457b99e32da367b8.json",
+      "labels": [
+        "GENERATION V4 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_96ef540889dd722355d91485d2ce5ef9515cbc2b5bbcbf64b753c1dc2b5256f5",
       "metadata": "clips/clip_96ef540889dd722355d91485d2ce5ef9515cbc2b5bbcbf64b753c1dc2b5256f5.json",
       "labels": [
@@ -28948,6 +29540,23 @@
       "durationSeconds": 6,
       "width": 1280,
       "height": 720,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_97123a978da07f496cf4ab6a7260c641f9595ac5459c6b4d8726ee50f913c528",
+      "metadata": "clips/clip_97123a978da07f496cf4ab6a7260c641f9595ac5459c6b4d8726ee50f913c528.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
       "hasPrompt": true,
       "uses": {
         "planned": 0,
@@ -29763,6 +30372,23 @@
       }
     },
     {
+      "id": "clip_9aeeec032b5c87b77dfd485d94c41cf054e5d996115cefaec4f3162590c12a77",
+      "metadata": "clips/clip_9aeeec032b5c87b77dfd485d94c41cf054e5d996115cefaec4f3162590c12a77.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_9af931ba077710949f1a34cdee8742300d7d4e1011d4918a309482c38092a832",
       "metadata": "clips/clip_9af931ba077710949f1a34cdee8742300d7d4e1011d4918a309482c38092a832.json",
       "labels": [
@@ -29873,6 +30499,25 @@
       "uses": {
         "planned": 1,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_9be398cda18d256d278e03bc0a74bb4f8a369ebc643be3e0774d2e6014531ea4",
+      "metadata": "clips/clip_9be398cda18d256d278e03bc0a74bb4f8a369ebc643be3e0774d2e6014531ea4.json",
+      "labels": [
+        "GENERATION V1 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -30758,6 +31403,23 @@
       "width": 1280,
       "height": 720,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_a09c10164baa13dc4499a0128af6df7427d9005acb2d36b1e8ac20806fc799df",
+      "metadata": "clips/clip_a09c10164baa13dc4499a0128af6df7427d9005acb2d36b1e8ac20806fc799df.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -33507,6 +34169,25 @@
       }
     },
     {
+      "id": "clip_b05079ebb77731ba41941847e40c989c2a28463fcb01e60edb1ef5062c90b81a",
+      "metadata": "clips/clip_b05079ebb77731ba41941847e40c989c2a28463fcb01e60edb1ef5062c90b81a.json",
+      "labels": [
+        "GENERATION graphics local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 3,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 8
+      }
+    },
+    {
       "id": "clip_b05cf5f36805798361232b9bb306e0b04de836284b6a9bf00bb2d448beb37c5d",
       "metadata": "clips/clip_b05cf5f36805798361232b9bb306e0b04de836284b6a9bf00bb2d448beb37c5d.json",
       "labels": [
@@ -34045,6 +34726,25 @@
       "durationSeconds": 3.875,
       "width": 1080,
       "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64",
+      "metadata": "clips/clip_b3edcb67d9b3875f7d33f8479b3d28246378319a6dc013d2d95b54d1f652bd64.json",
+      "labels": [
+        "Director-authorized 4K film"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 25.866667,
+      "width": 2160,
+      "height": 3840,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -34946,6 +35646,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_b92326e5be284d7272ee7d40c5896d1bf2bc398c0252f886ad969146a27350e2",
+      "metadata": "clips/clip_b92326e5be284d7272ee7d40c5896d1bf2bc398c0252f886ad969146a27350e2.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -37582,6 +38299,23 @@
       }
     },
     {
+      "id": "clip_c522a395ba073b679a875686c805067699f3c4827503d72850a900cbcf768db2",
+      "metadata": "clips/clip_c522a395ba073b679a875686c805067699f3c4827503d72850a900cbcf768db2.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_c553f113b88725d01ef40b3d74d1f68adbd569fb606a8efc724b212f0c21080f",
       "metadata": "clips/clip_c553f113b88725d01ef40b3d74d1f68adbd569fb606a8efc724b212f0c21080f.json",
       "labels": [
@@ -38923,6 +39657,23 @@
       }
     },
     {
+      "id": "clip_cbe39a97e543d35f5b8f9a4b800ea251e7d9026339d6b07e42d63a237d7fbbf1",
+      "metadata": "clips/clip_cbe39a97e543d35f5b8f9a4b800ea251e7d9026339d6b07e42d63a237d7fbbf1.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_cc0c0efdc961c93c86ff0fdce1d7116adf8746efbec59b07b71812c1d71bb9ff",
       "metadata": "clips/clip_cc0c0efdc961c93c86ff0fdce1d7116adf8746efbec59b07b71812c1d71bb9ff.json",
       "labels": [
@@ -39457,6 +40208,25 @@
       }
     },
     {
+      "id": "clip_cffb1daea198fe2716e3ee9aebe7177ebabc3faf0ff257ac1a609c8d48b30eee",
+      "metadata": "clips/clip_cffb1daea198fe2716e3ee9aebe7177ebabc3faf0ff257ac1a609c8d48b30eee.json",
+      "labels": [
+        "Untitled trail-camera film C2 local camera render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_d015e693cc2496573a0486815e356e07052b649c6e1d45e283befc6aa0d651b6",
       "metadata": "clips/clip_d015e693cc2496573a0486815e356e07052b649c6e1d45e283befc6aa0d651b6.json",
       "labels": [
@@ -39936,6 +40706,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_d28d73fdf9190c0a39c79fc94f40abfabf9d10a4d2b16d135159addc6d7c2bc9",
+      "metadata": "clips/clip_d28d73fdf9190c0a39c79fc94f40abfabf9d10a4d2b16d135159addc6d7c2bc9.json",
+      "labels": [
+        "GENERATION V5 local source render"
+      ],
+      "kind": "derived",
+      "collections": [
+        "generation"
+      ],
+      "durationSeconds": 7,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -40834,6 +41623,25 @@
       }
     },
     {
+      "id": "clip_d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a",
+      "metadata": "clips/clip_d72256e37c9086df3ba9d11a6a0044aa3b84672dc8dac692bec26e81c07a740a.json",
+      "labels": [
+        "Director-trimmed native film"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 25.866667,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_d7295d0995961829192de76207f119b4e7c2c6e8192fbfaea62840e1810c0c11",
       "metadata": "clips/clip_d7295d0995961829192de76207f119b4e7c2c6e8192fbfaea62840e1810c0c11.json",
       "labels": [
@@ -40965,6 +41773,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_d7fceb5f29b288bec367a4c851ca4ff517b969cce47acf99db317fb47cdbc891",
+      "metadata": "clips/clip_d7fceb5f29b288bec367a4c851ca4ff517b969cce47acf99db317fb47cdbc891.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -42622,6 +43447,25 @@
       }
     },
     {
+      "id": "clip_e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9",
+      "metadata": "clips/clip_e1cae86b273a784efdda5f4d1e43300a219e03d6d4aeaccb64a1aa946a510ce9.json",
+      "labels": [
+        "Untitled trail-camera film native finished draft"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 30,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_e1e5d9ee1ff975778faffb827ac102a4608038f862e77cb82a60d459a5aae3f8",
       "metadata": "clips/clip_e1e5d9ee1ff975778faffb827ac102a4608038f862e77cb82a60d459a5aae3f8.json",
       "labels": [
@@ -43219,6 +44063,23 @@
       "uses": {
         "planned": 0,
         "rendered": 7
+      }
+    },
+    {
+      "id": "clip_e51600b510361487dfa7a142dd137ffbce4d49eaac4babc2b9093bb9e5637884",
+      "metadata": "clips/clip_e51600b510361487dfa7a142dd137ffbce4d49eaac4babc2b9093bb9e5637884.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 8,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -45239,6 +46100,25 @@
       "uses": {
         "planned": 0,
         "rendered": 1
+      }
+    },
+    {
+      "id": "clip_efa46560b78fa9ef025e82adfe0d631dea2e4e6ece5af8c1df6406ff52be65b1",
+      "metadata": "clips/clip_efa46560b78fa9ef025e82adfe0d631dea2e4e6ece5af8c1df6406ff52be65b1.json",
+      "labels": [
+        "Untitled trail-camera film native finished draft"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 30,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
       }
     },
     {
@@ -47564,6 +48444,25 @@
       "durationSeconds": 1.3125,
       "width": 1920,
       "height": 1088,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_fbb750128a1c4f30634d85366bad80f100396d2bb59fc1d698131c33a0e33637",
+      "metadata": "clips/clip_fbb750128a1c4f30634d85366bad80f100396d2bb59fc1d698131c33a0e33637.json",
+      "labels": [
+        "Untitled trail-camera film native finished draft"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "motion"
+      ],
+      "durationSeconds": 30,
+      "width": 1080,
+      "height": 1920,
       "hasPrompt": false,
       "uses": {
         "planned": 0,

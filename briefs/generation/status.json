@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "projectId": "generation",
+  "title": "GENERATION",
+  "updated": "2026-10-30",
+  "format": "43 seconds • 2160 × 3840 • 30 fps • 4:3 camcorder window",
+  "phase": "published",
+  "logline": "A backyard birthday tape repeats six times. Each copy loses people and image quality, until the empty yard returns clean.",
+  "overall": "Published on YouTube Shorts, confirmed by the director. The final 4K and original sources are retained in a verified local archive.",
+  "next": "No creative decisions remain. Future revisions start from a restored copy of the archive.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "g1",
+      "number": "G1",
+      "title": "The party",
+      "status": "approved",
+      "summary": "24 people; dub generation 1",
+      "segments": [
+        {
+          "id": "g1-beat-1",
+          "title": "V1: A crowded backyard birthday plays normally.",
+          "status": "approved"
+        },
+        {
+          "id": "g1-beat-2",
+          "title": "The birthday child is at the cake; W remains near the table.",
+          "status": "approved"
+        }
+      ],
+      "image": "renders/V1/portrait.mp4"
+    },
+    {
+      "id": "g2",
+      "number": "G2",
+      "title": "Four fewer",
+      "status": "approved",
+      "summary": "20 people; dub generation 2",
+      "segments": [
+        {
+          "id": "g2-beat-1",
+          "title": "V2: The smaller party continues its ordinary activity.",
+          "status": "approved"
+        },
+        {
+          "id": "g2-beat-2",
+          "title": "The birthday child is absent; nobody surveys the yard.",
+          "status": "approved"
+        }
+      ],
+      "image": "renders/V2/portrait.mp4"
+    },
+    {
+      "id": "g3",
+      "number": "G3",
+      "title": "The chair",
+      "status": "approved",
+      "summary": "Approximately fourteen people; dub generation 3",
+      "segments": [
+        {
+          "id": "g3-beat-1",
+          "title": "V3: W pauses, leans up briefly and returns to her seat.",
+          "status": "approved"
+        },
+        {
+          "id": "g3-beat-2",
+          "title": "A smaller crowd remains; this is the first visible hesitation.",
+          "status": "approved"
+        }
+      ],
+      "image": "renders/V3/portrait.mp4"
+    },
+    {
+      "id": "g4",
+      "number": "G4",
+      "title": "The turn",
+      "status": "approved",
+      "summary": "8 people; dub generation 4",
+      "segments": [
+        {
+          "id": "g4-beat-1",
+          "title": "V4: The scattered group grows still and looks around.",
+          "status": "approved"
+        },
+        {
+          "id": "g4-beat-2",
+          "title": "W rises and steps beside the table. The planned left exit is omitted.",
+          "status": "approved"
+        }
+      ],
+      "image": "renders/V4/portrait.mp4"
+    },
+    {
+      "id": "g5",
+      "number": "G5",
+      "title": "W alone",
+      "status": "approved",
+      "summary": "One woman; dub generation 5; chair action remains a draft limitation",
+      "segments": [
+        {
+          "id": "g5-beat-1",
+          "title": "V5: W rises quickly; the chair slides upright rather than falling.",
+          "status": "approved"
+        },
+        {
+          "id": "g5-beat-2",
+          "title": "She exits right, returns and calls outward through heavy playback noise.",
+          "status": "approved"
+        }
+      ],
+      "image": "renders/V5/portrait.mp4"
+    },
+    {
+      "id": "g6",
+      "number": "G6",
+      "title": "The yard",
+      "status": "approved",
+      "summary": "0 people; clean reset",
+      "segments": [
+        {
+          "id": "g6-beat-1",
+          "title": "V6: Nobody remains; the yard returns clean.",
+          "status": "approved"
+        },
+        {
+          "id": "g6-beat-2",
+          "title": "Water, balloons and smoke move; the tape ends in snow and blue.",
+          "status": "approved"
+        }
+      ],
+      "image": "renders/V6/portrait.mp4"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "literal-replay",
+      "title": "Literal repeat matching versus a convincing six-pass film",
+      "status": "decided",
+      "detail": "The director chose: “Convincing six-pass film; small variations allowed.” Poses, small set details and guest counts may vary while the crowd diminishes and the ending returns clean."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-10-30",
+      "text": "Received generation-spine-v1, preserved the original, recorded Claude Fable 5.1 as writer, and began the authorized native draft."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Corrected the initial headcount and crop, removed the pool markings, and locked the 24-person base plate. The complete subtraction series is in progress."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "The director allowed small continuity variations. Continue toward a convincing six-pass film, preserving the crowd reduction, W’s escalation and clean empty-yard ending."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Selected the six plate states. The third state has a smaller crowd than the original numerical target; the approved continuity tolerance applies."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Rejected duplicated people and unwanted entrants in early motion. Selected the final restrained fourth pass and the second solo take."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Built the exact 43-second cut, calibrated fine playback noise, stabilized camera drift and completed the per-copy mono mix."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Delivered native draft v1 for review. Every decoded frame passed the black-margin and PLAY timing checks; writer credit is retained in the canonical description."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director: “Nailed it in one shot. Fabulous, fabulous. 4k upscale please.” Native v1 approved; local 4K finishing authorized."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Delivered the 4K master. Full-frame checks passed, all color tags are BT.709, and audio packet hashes and timing match native v1."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Director supplied the published YouTube Shorts URL: https://youtube.com/shorts/w7GsYaHtP6I. Recording this as user-confirmed publication of the delivered 4K master."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Verified the archive and final 4K hash, retained all original takes and stems, and removed 83 reviewed derivatives. All 22 library clips have complete required analysis and verified project-scoped private backups."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-10-30",
+      "title": "GENERATION native draft",
+      "film": "final/v1/film.mp4",
+      "posterFrame": 90,
+      "fps": 30,
+      "frames": 1290,
+      "width": 1080,
+      "height": 1920,
+      "note": "Director-approved native cut; its review media was removed under standard archival retention. Historical timing and delivery metadata remain. The final 4K is retained.",
+      "segments": [
+        {
+          "label": "blue-head",
+          "shot": "blue-head",
+          "frame": 0,
+          "frames": 15,
+          "sourceFrame": 0,
+          "source": "renders/blue-head.mp4"
+        },
+        {
+          "label": "G1",
+          "shot": "V1",
+          "frame": 15,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V1/portrait.mp4"
+        },
+        {
+          "label": "snow-1",
+          "shot": "snow-1",
+          "frame": 225,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-1.mp4"
+        },
+        {
+          "label": "G2",
+          "shot": "V2",
+          "frame": 234,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V2/portrait.mp4"
+        },
+        {
+          "label": "snow-2",
+          "shot": "snow-2",
+          "frame": 444,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-2.mp4"
+        },
+        {
+          "label": "G3",
+          "shot": "V3",
+          "frame": 453,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V3/portrait.mp4"
+        },
+        {
+          "label": "snow-3",
+          "shot": "snow-3",
+          "frame": 663,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-3.mp4"
+        },
+        {
+          "label": "G4",
+          "shot": "V4",
+          "frame": 672,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V4/portrait.mp4"
+        },
+        {
+          "label": "snow-4",
+          "shot": "snow-4",
+          "frame": 882,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-4.mp4"
+        },
+        {
+          "label": "G5",
+          "shot": "V5",
+          "frame": 891,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V5/portrait.mp4"
+        },
+        {
+          "label": "snow-5",
+          "shot": "snow-5",
+          "frame": 1101,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-5.mp4"
+        },
+        {
+          "label": "G6",
+          "shot": "V6",
+          "frame": 1110,
+          "frames": 150,
+          "sourceFrame": 0,
+          "source": "renders/V6/portrait.mp4"
+        },
+        {
+          "label": "snow-6",
+          "shot": "snow-6",
+          "frame": 1260,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-6.mp4"
+        },
+        {
+          "label": "blue-tail",
+          "shot": "blue-tail",
+          "frame": 1269,
+          "frames": 21,
+          "sourceFrame": 0,
+          "source": "renders/blue-tail.mp4"
+        }
+      ]
+    },
+    {
+      "version": "4k-v1",
+      "date": "2026-10-30",
+      "title": "GENERATION 4K master",
+      "film": "final/4k-v1/film.mp4",
+      "posterFrame": 90,
+      "fps": 30,
+      "frames": 1290,
+      "width": 2160,
+      "height": 3840,
+      "note": "Local 2x finish of the director-approved native cut. Timing and AAC packets are unchanged.",
+      "segments": [
+        {
+          "label": "blue-head",
+          "shot": "blue-head",
+          "frame": 0,
+          "frames": 15,
+          "sourceFrame": 0,
+          "source": "renders/blue-head.mp4"
+        },
+        {
+          "label": "G1",
+          "shot": "V1",
+          "frame": 15,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V1/portrait.mp4"
+        },
+        {
+          "label": "snow-1",
+          "shot": "snow-1",
+          "frame": 225,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-1.mp4"
+        },
+        {
+          "label": "G2",
+          "shot": "V2",
+          "frame": 234,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V2/portrait.mp4"
+        },
+        {
+          "label": "snow-2",
+          "shot": "snow-2",
+          "frame": 444,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-2.mp4"
+        },
+        {
+          "label": "G3",
+          "shot": "V3",
+          "frame": 453,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V3/portrait.mp4"
+        },
+        {
+          "label": "snow-3",
+          "shot": "snow-3",
+          "frame": 663,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-3.mp4"
+        },
+        {
+          "label": "G4",
+          "shot": "V4",
+          "frame": 672,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V4/portrait.mp4"
+        },
+        {
+          "label": "snow-4",
+          "shot": "snow-4",
+          "frame": 882,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-4.mp4"
+        },
+        {
+          "label": "G5",
+          "shot": "V5",
+          "frame": 891,
+          "frames": 210,
+          "sourceFrame": 0,
+          "source": "renders/V5/portrait.mp4"
+        },
+        {
+          "label": "snow-5",
+          "shot": "snow-5",
+          "frame": 1101,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-5.mp4"
+        },
+        {
+          "label": "G6",
+          "shot": "V6",
+          "frame": 1110,
+          "frames": 150,
+          "sourceFrame": 0,
+          "source": "renders/V6/portrait.mp4"
+        },
+        {
+          "label": "snow-6",
+          "shot": "snow-6",
+          "frame": 1260,
+          "frames": 9,
+          "sourceFrame": 0,
+          "source": "renders/snow-6.mp4"
+        },
+        {
+          "label": "blue-tail",
+          "shot": "blue-tail",
+          "frame": 1269,
+          "frames": 21,
+          "sourceFrame": 0,
+          "source": "renders/blue-tail.mp4"
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ async function fixture(t) {
   t.after(() => fs.rm(repo, { recursive: true, force: true }));
   const source = path.join(repo, 'data/workspace/example-v1');
   const root = path.join(repo, 'data/workspace-archive/example-v1');
-  for (const dir of ['final/v1', 'final/v2-4k', 'sources', 'edit', 'refs']) await fs.mkdir(path.join(source, dir), { recursive: true });
+  for (const dir of ['final/v1', 'final/v2-4k', 'sources', 'edit', 'refs', 'renders/cache', 'qa', 'audio']) await fs.mkdir(path.join(source, dir), { recursive: true });
   const master = path.join(source, 'final/v2-4k/film.mp4');
   const r = spawnSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'color=black:s=2160x3840:r=24',
     '-frames:v', '1', '-c:v', 'libx264', '-preset', 'ultrafast', '-pix_fmt', 'yuv420p', master]);
@@ -24,6 +24,8 @@ async function fixture(t) {
   await fs.writeFile(path.join(source, 'edit/score.wav'), 'original music');
   await fs.writeFile(path.join(source, 'sources/take.mp4'), 'original take');
   await fs.writeFile(path.join(source, 'refs/portrait.png'), 'original reference');
+  for (const file of ['renders/cache/pass.mp4', 'qa/edge-test.mp4', 'audio/master.wav',
+    'audio/V1-stem.wav', 'renders/source.mp4']) await fs.writeFile(path.join(source, file), `fixture ${file}`);
   const sha256 = createHash('sha256').update(await fs.readFile(master)).digest('hex');
   await archiveWorkspace(repo, 'example-v1');
   const selection = { schemaVersion: 1, slug: 'example-v1', master: { path: 'final/v2-4k/film.mp4', sha256 },
@@ -62,6 +64,37 @@ test('selection refuses source media, metadata, traversal, duplicates, wrong mas
   await assert.rejects(planRetention(repo, { ...selection, remove: [...selection.remove, selection.remove[0]] }), /duplicate/);
   await assert.rejects(planRetention(repo, { ...selection, master: { ...selection.master, sha256: 'a'.repeat(64) } }), /hash mismatch/);
   await assert.rejects(planRetention(repo, { ...selection, dependencyReview: '' }), /Dependency review/);
+});
+
+test('explicit hashed custom derivatives use the same verified quarantine and purge transaction', async t => {
+  const { repo, root, selection, receipt } = await fixture(t);
+  const extra = [];
+  for (const [file, derivativeClass] of [['renders/cache/pass.mp4', 'render-cache'],
+    ['qa/edge-test.mp4', 'qa-render'], ['audio/master.wav', 'complete-mix']]) {
+    const sha256 = createHash('sha256').update(await fs.readFile(path.join(root, file))).digest('hex');
+    extra.push({ path: file, sha256, derivativeClass, reason: 'Reviewed regenerable derivative; inputs retained' });
+  }
+  const plan = await planRetention(repo, { ...selection, remove: [...selection.remove, ...extra] });
+  assert.equal(plan.files, 5);
+  await applyRetention(repo, plan, receipt);
+  assert.equal((await purgeRetention(repo, receipt)).removedFiles, 5);
+  for (const item of extra) await assert.rejects(fs.stat(path.join(root, item.path)), { code: 'ENOENT' });
+  for (const file of ['audio/V1-stem.wav', 'renders/source.mp4', 'sources/take.mp4'])
+    assert.ok((await fs.stat(path.join(root, file))).isFile());
+  assert.equal((await verifyArchive(repo, selection.slug)).verified, true);
+});
+
+test('custom derivative review cannot omit hashes or authorize source, stem or metadata paths', async t => {
+  const { repo, root, selection } = await fixture(t);
+  const file = 'renders/cache/pass.mp4';
+  const sha256 = createHash('sha256').update(await fs.readFile(path.join(root, file))).digest('hex');
+  const item = { path: file, sha256, derivativeClass: 'render-cache', reason: 'Reviewed cache' };
+  for (const bad of [{ ...item, sha256: undefined }, { ...item, sha256: 'a'.repeat(64) },
+    { ...item, derivativeClass: undefined }, { ...item, derivativeClass: 'anything' },
+    { ...item, path: 'sources/take.mp4' }, { ...item, path: 'renders/source.mp4' },
+    { ...item, path: 'refs/portrait.png' }, { ...item, path: 'final/v1/delivery.json' },
+    { ...item, path: 'audio/V1-stem.wav', derivativeClass: 'complete-mix' }])
+    await assert.rejects(planRetention(repo, { ...selection, remove: [bad] }));
 });
 
 test('stale or changed plans, unsafe receipt paths and archive locks fail before removal', async t => {

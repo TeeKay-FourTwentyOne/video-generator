@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "projectId": "generation",
+  "title": "GENERATION",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published URL supplied by the director after uploading the delivered 4K master. Publication is user-confirmed; the platform transcode and publication date were not independently verified.",
+  "briefPath": "briefs/generation/brief.md",
+  "descriptionPath": "briefs/generation/description.md",
+  "descriptionSha256": "24f44a437b67e99c9206d016121b9065faa3607aea9cf1fa970d7942156f01b7",
+  "decisionsPath": "briefs/generation/decisions.md",
+  "handoffPath": "briefs/generation/handoff.md",
+  "workspace": {
+    "path": "data/workspace-archive/generation-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 1290,
+      "durationSeconds": 43,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v1/description.txt",
+      "deliveryRecordPath": "final/v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "4k-v1",
+      "path": "final/4k-v1/film.mp4",
+      "sha256": "b7b06eb22e386892f773729d818aad90a0a01c4ffd68d4141ddbeabd60ae77be",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 1290,
+      "durationSeconds": 43,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/4k-v1/description.txt",
+      "deliveryRecordPath": "final/4k-v1/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Google",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-4-6"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Writer",
+        "model": "Claude Fable 5.1"
+      },
+      {
+        "role": "Production and editing",
+        "model": "GPT-6",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/w7GsYaHtP6I",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-10-30",
+    "artifactVersion": "4k-v1"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+      "recordedDate": "2026-10-30",
+      "evidence": "Full decode, exact 1290-frame duration, black margins on every decoded frame, PLAY timing, dual mono and true-peak checks saved with the workspace.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+      "recordedDate": "2026-10-30",
+      "evidence": "Agent inspected source contact sheets and processed frames. Selected bounded variations and retained the solo chair limitation. This is not director approval.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1",
+      "artifactSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+      "recordedDate": "2026-10-30",
+      "evidence": "Signal measurements and ASR are separate from real-time listening. Phone listening remains pending.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+      "recordedDate": "2026-10-30",
+      "evidence": "Director: “Nailed it in one shot. Fabulous, fabulous. 4k upscale please.”",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v1",
+      "artifactSha256": "9e2081e8a9ce00d1c99286db3a06c057717ca263c30a33d0364a2e8f804b0fd6",
+      "recordedDate": "2026-10-30",
+      "evidence": "Director: “Nailed it in one shot. Fabulous, fabulous. 4k upscale please.”",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "4k-v1",
+      "artifactSha256": "b7b06eb22e386892f773729d818aad90a0a01c4ffd68d4141ddbeabd60ae77be",
+      "recordedDate": "2026-10-30",
+      "evidence": "Every decoded frame, black margins, PLAY timing, BT.709 tags, frame count and exact AAC packet identity verified against approved native v1.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "4k-v1",
+      "artifactSha256": "b7b06eb22e386892f773729d818aad90a0a01c4ffd68d4141ddbeabd60ae77be",
+      "recordedDate": "2026-10-30",
+      "evidence": "Agent inspected full-resolution crops of the PLAY display, heavy playback grain and the clean yard. Bilinear enlargement retains the authored tape texture.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "4k-v1",
+      "artifactSha256": "b7b06eb22e386892f773729d818aad90a0a01c4ffd68d4141ddbeabd60ae77be",
+      "recordedDate": "2026-10-30",
+      "evidence": "Director supplied the YouTube Shorts URL after reporting the 4K upload: https://youtube.com/shorts/w7GsYaHtP6I",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/generation-v1/workspace-archive-manifest.json",
+    "inventorySha256": "0d2203609ff6c0f38122882c99ce6329e73ef34a29c1e04d5b4e70eb87cedd85",
+    "verifiedDate": "2026-10-30"
+  }
+}

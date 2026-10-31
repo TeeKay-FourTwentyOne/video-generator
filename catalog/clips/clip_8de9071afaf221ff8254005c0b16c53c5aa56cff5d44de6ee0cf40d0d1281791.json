@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8de9071afaf221ff8254005c0b16c53c5aa56cff5d44de6ee0cf40d0d1281791",
+  "sha256": "8de9071afaf221ff8254005c0b16c53c5aa56cff5d44de6ee0cf40d0d1281791",
+  "bytes": 14415596,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Home video from an early 1980s consumer camcorder on a tripod at chest height, slightly wide lens, fixed. Soft image, slightly warm, bright highlights bloom, colors a little oversaturated, mild vignetting. Hard midday July sun, short shadows. A suburban backyard: patchy lawn, a chain-link fence along the back with a dozen balloons tied to it, the edge of a one-story house on the left, a concrete patio with a sliding glass door on the right, a long folding table with a paper tablecloth, paper plates, cups and a sheet cake with candles in the middle of the frame, aluminum lawn chairs around the table, a plain blue inflatable kiddie pool in the right foreground, a charcoal grill with smoke at the back left. Nobody in frame. The balloons move on the fence in a light breeze. The water in the kiddie pool moves slightly. Smoke rises from the grill. The paper tablecloth lifts at one corner. The partly cut cake and its unlit candles remain unchanged. Audio: birds, a light breeze, the lawnmower far away, a distant radio with only faint nonmusical static.  The composition and the yard remain exactly as in the input image. The table, cake, chairs, fence, balloons, house, grill and pool keep their positions and sizes. Only the people already in the input image are present. All the action stays inside the middle three quarters of the image width. No zoom, no pan, no tilt, no reframe. All human sounds are distant, nonlexical vocalizations, with no intelligible word in any language. Camera is fixed on a tripod, no camera movement. No music, no distinct speech. No on-screen text, no writing on the cake, balloons or clothing, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0aae8f68fb80657ad955bca54d139b94d335a90ddd717e15008b36c78d8e8bfc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1678356961,
+      "createdAt": "2026-10-31T03:11:29.639Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7498dfc8cd8378b6d9bc43fb79e57269f40ace4c9f9481691cb3bbc2d31c55c6",
+          "bytes": 2003621,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "4054d295060fabfaeeaf4a54af0de6c6c9b1e1c52ec7eb178d0e48c2ff434663"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

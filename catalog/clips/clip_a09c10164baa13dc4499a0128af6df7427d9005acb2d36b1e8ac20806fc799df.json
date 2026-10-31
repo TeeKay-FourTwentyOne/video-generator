@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a09c10164baa13dc4499a0128af6df7427d9005acb2d36b1e8ac20806fc799df",
+  "sha256": "a09c10164baa13dc4499a0128af6df7427d9005acb2d36b1e8ac20806fc799df",
+  "bytes": 24084521,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Home video from an early 1980s consumer camcorder on a tripod at chest height, slightly wide lens, fixed. Soft image, slightly warm, bright highlights bloom, colors a little oversaturated, mild vignetting. Hard midday July sun, short shadows. A suburban backyard: patchy lawn, a chain-link fence along the back with a dozen balloons tied to it, the edge of a one-story house on the left, a concrete patio with a sliding glass door on the right, a long folding table with a paper tablecloth, paper plates, cups and a sheet cake with candles in the middle of the frame, aluminum lawn chairs around the table, a plain blue inflatable kiddie pool in the right foreground, a charcoal grill with smoke at the back left. Twenty-four people, adults and children, at a birthday party: some seated at the table eating cake, some standing talking in small groups, children playing at the edge of the kiddie pool, a child of about seven in a paper crown at the cake. A woman in her thirties in a yellow sundress with dark hair in a ponytail sits at the near end of the table. Ordinary party movement: eating, talking, laughing, a man raising a cup. Nobody looks at the camera. Audio: overlapping party chatter, children, a distant radio with only faint nonmusical static, a lawnmower far away.  The composition and the yard remain exactly as in the input image. The table, cake, chairs, fence, balloons, house, grill and pool keep their positions and sizes. Only the people already in the input image are present. All the action stays inside the middle three quarters of the image width. No zoom, no pan, no tilt, no reframe. The cake is already cut and the candles are unlit. All human sounds are distant, nonlexical vocalizations, with no intelligible word in any language. Camera is fixed on a tripod, no camera movement. No music, no distinct speech. No on-screen text, no writing on the cake, balloons or clothing, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ad621846c4720860166ea538500493e6627a5d5cdacf007968623fdeb4e4ac35",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1194059914,
+      "createdAt": "2026-10-31T03:10:57.328Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "33db37af0225489d322f482eb946a962996c3a48a6c96242277141387b4360c2",
+          "bytes": 2025688,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "1bd50cef7f3b1d7493c1c2a2a12b36e31bc373c1f4f14dcd524f4cb2ab78ae23"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_919730d2f2069818dce19ffdf02166105e59de40ec4df3c10fae6b699a251b45",
+  "sha256": "919730d2f2069818dce19ffdf02166105e59de40ec4df3c10fae6b699a251b45",
+  "bytes": 16297678,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Home video from an early 1980s consumer camcorder on a tripod at chest height, slightly wide lens, fixed. Soft image, slightly warm, bright highlights bloom, colors a little oversaturated, mild vignetting. Hard midday July sun, short shadows. A suburban backyard: patchy lawn, a chain-link fence along the back with a dozen balloons tied to it, the edge of a one-story house on the left, a concrete patio with a sliding glass door on the right, a long folding table with a paper tablecloth, paper plates, cups and a sheet cake with candles in the middle of the frame, aluminum lawn chairs around the table, a plain blue inflatable kiddie pool in the right foreground, a charcoal grill with smoke at the back left. One person: a woman in her thirties in a yellow sundress with dark hair in a ponytail, alone at a long table set for a party. She stands up fast, knocking her lawn chair over, turns in a full circle looking at the yard, walks quickly out of the frame at the right edge toward the patio, comes back into the frame, stops in the middle of the lawn and calls out with a loud, wordless two-syllable vocalization toward the house, then toward the fence. Nobody answers. She does not look at the camera. Audio: her footsteps on the lawn, the chair falling, her wordless calling voice, a distant radio with only faint nonmusical static, the lawnmower far away.  The composition and the yard remain exactly as in the input image. The table, cake, chairs, fence, balloons, house, grill and pool keep their positions and sizes. Only the people already in the input image are present. All the action stays inside the middle three quarters of the image width. No zoom, no pan, no tilt, no reframe. The cake is already cut and the candles are unlit. All human sounds are distant, nonlexical vocalizations, with no intelligible word in any language. Timing: during the first second she rises and tips her chair onto the lawn; in seconds one to two she turns to look across the yard; in seconds two to four she hurries to the patio and exits the RIGHT edge; in seconds four to six she returns into the same mid-distance lawn; in seconds six to eight she stops and calls toward the house. Keep her physically small and far from the camera at every moment. Camera is fixed on a tripod, no camera movement. No music, no distinct speech. No on-screen text, no writing on the cake, balloons or clothing, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e52f3477988c1822ffedde4ba9df503456408df359cc96d035dbea8cdd77fe75",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 777277579,
+      "createdAt": "2026-10-31T03:10:40.180Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "bb4add862c5ab741c193ee612885c73093f6599ea0db37df9279689c1a4ff24b",
+          "bytes": 1999090,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "573acf431256c2689f14e5386ea26bf031e1bbc835c571438ba0000cc2d6b195"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

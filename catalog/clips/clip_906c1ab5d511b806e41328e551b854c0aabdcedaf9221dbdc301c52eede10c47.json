@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_906c1ab5d511b806e41328e551b854c0aabdcedaf9221dbdc301c52eede10c47",
+  "sha256": "906c1ab5d511b806e41328e551b854c0aabdcedaf9221dbdc301c52eede10c47",
+  "bytes": 20298439,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Home video from an early 1980s consumer camcorder on a tripod at chest height, slightly wide lens, fixed. Soft image, slightly warm, bright highlights bloom, colors a little oversaturated, mild vignetting. Hard midday July sun, short shadows. A suburban backyard: patchy lawn, a chain-link fence along the back with a dozen balloons tied to it, the edge of a one-story house on the left, a concrete patio with a sliding glass door on the right, a long folding table with a paper tablecloth, paper plates, cups and a sheet cake with candles in the middle of the frame, aluminum lawn chairs around the table, a plain blue inflatable kiddie pool in the right foreground, a charcoal grill with smoke at the back left. Exactly ONE person, the same woman from the reference, throughout the whole eight-second shot: a woman in her thirties in a yellow sundress with dark hair in a ponytail. She sits on the near RIGHT side of the table. In the first second she stands abruptly, pushing HER OWN chair directly behind her backward so that it tips onto its side on the RIGHT of the table. It lands and stays on its side. Every chair on the LEFT side of the table stays completely still. No chair slides across the yard. From second one to three she quickly turns away from the table and hurries RIGHT across the patio and out of the RIGHT edge of the frame. From second four to five she reenters from the RIGHT. From second five to eight she stops on the patio, turns sideways toward the house, and cups her hands around her mouth to call with a loud wordless two-syllable sound, then turns toward the back fence and calls once more. Her body stays at mid-distance, never close to the lens. Her eyes always look at the house or fence, never at the lens. There is no second person or double. The table and yard do not move. Audio: feet, one chair falling at the first second, her nonverbal calling through the open yard, a remote lawnmower and a light breeze; no intelligible word. The camera is bolted to a tripod: the rooflines, fence posts, table corners and pool occupy the same pixel positions in every frame. No zoom, tracking, dolly, pan, tilt or camera rotation. No new props, no added people, no changes in anyone’s clothes. All plastic pool surfaces are plain unmarked blue. Camera is fixed on a tripod, no camera movement. No music, no distinct speech. No on-screen text, no writing on the cake, balloons or clothing, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_7453521328dbba886c06c66fee2c2173d6688576824c3bb2e43c47872c64a2f7",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1352094316,
+      "createdAt": "2026-10-31T03:21:42.932Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "bb4add862c5ab741c193ee612885c73093f6599ea0db37df9279689c1a4ff24b",
+          "bytes": 1999090,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "baaf1395314bb51b24c33457d12dceac0c44a4739b4fdb53acf5d9c217e864e3"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

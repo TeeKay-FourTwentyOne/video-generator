@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c522a395ba073b679a875686c805067699f3c4827503d72850a900cbcf768db2",
+  "sha256": "c522a395ba073b679a875686c805067699f3c4827503d72850a900cbcf768db2",
+  "bytes": 15702441,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Locked wide tripod shot of this exact backyard birthday party in ordinary late summer 1983. Keep the framing and the cast from the starting image throughout. The guests pause in their eating. One seated man slowly looks toward the back fence. The seated woman in the plain pale-yellow dress, at the near right end of the table, gently pushes her own chair back and rises to stand right beside it. She looks across the empty chairs, her back mostly to camera. Everyone stays in their own small area. Restrained, hesitant natural movement. Wind moves the balloons and grill smoke. Ordinary recorded home movie, flat late-afternoon exposure, no cinematic camera move, no cuts. Audio: quiet outdoor ambience, soft clothing and chair movement, indistinct distant party murmuring without understandable words. No music.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fd8b7ec6738e6e295a773e1e8952e2b21d46e96a39ab277c2f7fdf399cad9a20",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1732270161,
+      "createdAt": "2026-10-31T03:43:20.290Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "cb6524f1ee2455ee99d2b2e7b40d7c80d838d642dec5678ecbf18c432d2971e4",
+          "bytes": 1972058,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "a6d7457ad9798541210eb25200941ab3087a471264392c349874ba520809cbe4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

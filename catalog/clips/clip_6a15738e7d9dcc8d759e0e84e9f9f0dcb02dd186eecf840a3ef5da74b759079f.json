@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6a15738e7d9dcc8d759e0e84e9f9f0dcb02dd186eecf840a3ef5da74b759079f",
+  "sha256": "6a15738e7d9dcc8d759e0e84e9f9f0dcb02dd186eecf840a3ef5da74b759079f",
+  "bytes": 16025932,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "generation"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Home video from an early 1980s consumer camcorder on a tripod at chest height, slightly wide lens, fixed. Soft image, slightly warm, bright highlights bloom, colors a little oversaturated, mild vignetting. Hard midday July sun, short shadows. A suburban backyard: patchy lawn, a chain-link fence along the back with a dozen balloons tied to it, the edge of a one-story house on the left, a concrete patio with a sliding glass door on the right, a long folding table with a paper tablecloth, paper plates, cups and a sheet cake with candles in the middle of the frame, aluminum lawn chairs around the table, a plain blue inflatable kiddie pool in the right foreground, a charcoal grill with smoke at the back left. The people already in the reference continue a quiet party. Each person retains the exact same body, face, hairstyle and clothing for the whole shot. The man at the near LEFT end of the table wears a pale striped polo and blue shorts throughout; he stays seated eating. The ONLY woman wearing yellow is seated at the near RIGHT end of the table: a woman in her thirties in a yellow sundress with dark hair in a ponytail. At two seconds she briefly turns her head to look at the EMPTY chair immediately behind her on the RIGHT side of the table, then looks back down at her plate. That is a small head turn, nothing else. One man by the grill briefly looks behind himself and back. All other guests carry on eating, drinking and talking; nobody else reacts. Nobody stands up. Nobody enters the yard or exits it. Nobody turns toward the lens. The crowd and outfits stay unchanged. Audio is distant overlapping nonverbal party murmurs, birds and a remote lawnmower, with no intelligible words. The camera is bolted to a tripod: the rooflines, fence posts, table corners and pool occupy the same pixel positions in every frame. No zoom, tracking, dolly, pan, tilt or camera rotation. No new props, no added people, no changes in anyone’s clothes. All plastic pool surfaces are plain unmarked blue. Camera is fixed on a tripod, no camera movement. No music, no distinct speech. No on-screen text, no writing on the cake, balloons or clothing, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aab56a666f1c6ed48609da0409b679d235aca552f0db9f4fa4ab08628e8ee6b6",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1548026826,
+      "createdAt": "2026-10-31T03:21:03.366Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "16:9",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "efd64b9b6461b34c2b5e16747c636fde8c7e34dc0a5d73117c7264f222c85a8e",
+          "bytes": 2001544,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "4b66628b533a7538662423c8a2c77ba55fcaee3fe9593e40f732c38d14264279"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

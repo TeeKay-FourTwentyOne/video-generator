@@ -16,8 +16,19 @@ const exists = file => fs.lstat(file).then(() => true, e => { if (e.code === 'EN
 const read = async (repo, file) => JSON.parse(await fs.readFile(await safePath(repo, file), 'utf8'));
 const video = /\.(mp4|mov|mkv|webm)$/;
 
-function removable(file) {
-  return portablePath(file) && (
+function removable(file, derivativeClass) {
+  if (!portablePath(file)) return false;
+  if (derivativeClass !== undefined) {
+    // Custom editors may keep disposable derivatives outside final/finish.
+    // A class is an explicit review assertion, never an automatic classifier.
+    // Original/source locations and per-shot audio stems remain protected.
+    if (/(^|\/)(?:sources?|originals?)(?:\/|\.)/.test(file)) return false;
+    if (derivativeClass === 'render-cache') return /^renders\/.+/.test(file) && video.test(file);
+    if (derivativeClass === 'qa-render') return /^qa\/.+/.test(file) && video.test(file);
+    if (derivativeClass === 'complete-mix') return /^audio\/(?:master(?:-[^/]+)?|soundtrack(?:-[^/]+)?|mono-test-[^/]+)\.(wav|flac|mp3|m4a)$/.test(file);
+    return false;
+  }
+  return (
     /^(final|finish)\/.+/.test(file) && video.test(file) ||
     /^edit\/(?:[^/]+\/)*soundtrack[^/]*\.(wav|flac|mp3|m4a)$/.test(file));
 }
@@ -63,12 +74,15 @@ export async function planRetention(repo, selection) {
   requireValue(Array.isArray(selection.remove) && selection.remove.length, 'An exact nonempty removal list is required');
   const seen = new Set();
   const remove = selection.remove.map(item => {
-    requireValue(item && removable(item.path) && item.path !== master.path && !seen.has(item.path), 'Unsafe, duplicate or protected removal path');
+    requireValue(item && removable(item.path, item.derivativeClass) && item.path !== master.path && !seen.has(item.path), 'Unsafe, duplicate or protected removal path');
     requireValue(typeof item.reason === 'string' && item.reason.trim(), 'Each removal needs a reason');
     seen.add(item.path);
     const entry = entries.get(item.path);
     requireValue(entry, `Removal file is absent from verified inventory: ${item.path}`);
-    return { ...entry, reason: item.reason };
+    if (item.derivativeClass !== undefined) requireValue(/^[a-f0-9]{64}$/.test(item.sha256 ?? '') &&
+      item.sha256 === entry.sha256, 'Extended derivative requires its exact reviewed SHA-256');
+    return { ...entry, reason: item.reason,
+      ...(item.derivativeClass === undefined ? {} : { derivativeClass: item.derivativeClass }) };
   }).sort((a, b) => a.path.localeCompare(b.path, 'en'));
   return { schemaVersion: 1, slug: selection.slug, archive, beforeInventorySha256: verified.inventorySha256,
     master, dependencyReview: selection.dependencyReview, remove,
@@ -165,7 +179,7 @@ export async function purgeRetention(repo, receipt) {
     requireValue(verified.destination === plan.archive && verified.inventorySha256 === state.afterInventorySha256, 'Archive changed before purge');
     await checkFile(await safePath(repo, `${plan.archive}/${plan.master.path}`), plan.master);
     for (const entry of plan.remove) {
-      requireValue(removable(entry.path) && entry.path !== plan.master.path, 'Unsafe removal receipt');
+      requireValue(removable(entry.path, entry.derivativeClass) && entry.path !== plan.master.path, 'Unsafe removal receipt');
       requireValue(!(await exists(await safePath(repo, `${plan.archive}/${entry.path}`))), 'Removed file reappeared in archive');
       const file = await safePath(repo, `${receipt}/quarantine/${entry.path}`);
       if (await exists(file)) await checkFile(file, entry);
