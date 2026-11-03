@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_13c6a5e11e9bcd9ca99b82e6a3f39d37435bc21031e07fdf84a2d1d519bf5371",
+  "sha256": "13c6a5e11e9bcd9ca99b82e6a3f39d37435bc21031e07fdf84a2d1d519bf5371",
+  "bytes": 15008025,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Looking down a timber slipway to the water's edge on a shingle beach. Five men in belted undyed wool tunics, their backs to the camera, lean their whole weight back on two thick ropes that run down to the bow of a wooden ship with a dark tarred hull resting on log rollers at the waterline. They pull together and the hull slides slowly up the rollers toward them, out of the shallow water, grinding on the wood. Nobody speaks. Audio: wet wood grinding on log rollers, ropes straining, men's effort breaths without words, small waves on shingle. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aee2a8a731ce9d6aaad8204acd4621b2b1ac67a1c10888bf979f09a8f8758f22",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3398237328,
+      "createdAt": "2026-11-02T21:25:04.109Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "605bcdf77626d545d2a3f1d3aab4992211ec49b6d78fc839e4b8994ee2f8a7c9",
+          "bytes": 1915045,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "44213a19914f370fcfe092b6186680e2a5a35522cffd30901a8b074d3d64b237"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

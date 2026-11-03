@@ -107,3 +107,20 @@ lessons are in `docs/craft/field-notes/`. Codex notes live in `codex.md`.
 - Parallel Bash calls and the working directory (2026-10-30): a `cd` inside one call changed the directory seen by
   calls issued in the same response, and relative paths in their Python heredocs failed even after a leading
   `cd ROOT &&`. In parallel calls use absolute paths for every file, inside heredocs too.
+
+## Added during November (2026-11-02)
+
+- An edit whose source is a new local render (here a reversed copy of a take) needs two `film assemble` passes: the first
+  registers the clip and refuses on incomplete analysis, `clips analysis process-project` then analyzes it, the second
+  assembles. Chain the three in one background script and read the log; do not treat the first refusal as a bad edit.
+- Parallel paid QA calls keep tripping the working-directory trap: `python3 tools/frame-qa.py` resolved against the
+  workspace after another call's `cd`. Absolute script paths and absolute workspace paths in every parallel call, always.
+- The ElevenLabs effects client returns a path relative to `data/`; a workspace script that copies `r.path` from the
+  repository root fails after the (charged) generation. Copy from `data/audio/sfx/<filename>` instead, then convert to
+  48 kHz stereo WAV for the mix tool.
+- The artifact asset store keeps every draft's review copy; when a cut changes, upload the new copy, add its entry to
+  `status/assets.json`, and leave the earlier ones so the director can flip between drafts.
+- Closeout logs must not live in the workspace being archived (2026-11-02): a background cloud-sync job was logging into
+  `scratch/` of the project; `archive.mjs apply` moved the folder while the redirect kept writing to the same inode, and the
+  seal failed with "Archive inventory mismatch". Log closeout jobs under `data/release-receipts/<slug>/`, wait for every
+  background job that touches the project to exit, then seal.

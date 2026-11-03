@@ -285,7 +285,14 @@ npm run film -- review data/workspace/my-film-v1 v1 --overlay
 
 Assembly checks input hashes and accepted frame ranges, refuses an existing
 version, preserves source media, encodes local segments, and verifies full decode,
-dimensions and actual decoded frame count. It records each segment's clip ID,
+dimensions and actual decoded frame count. When an edit introduces a source the
+library has not seen (a local render, a reversed or graded copy of a take), the
+first `assemble` registers it in the project collection and then refuses with
+"Project clip analysis is incomplete" because the new clip has no analysis yet;
+run `npm run clips -- analysis process-project PROJECT_ID` and assemble again.
+Two passes are expected in that case (observed on November, 2026-11-02); the
+assembler could run the checkpoint for sources it has just registered before
+checking completeness, which is the proposed repair. It records each segment's clip ID,
 source frame range and delivered output hash in `catalog/uses/`. Legacy workspace
 `source` plus `sha256` edits are still supported and are imported during assembly.
 `final/v1/film.mp4`, `delivery.json`,

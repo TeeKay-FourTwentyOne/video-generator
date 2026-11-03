@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "projectId": "november",
+  "title": "NOVEMBER",
+  "kind": "film",
+  "seriesId": "monthly-etymology",
+  "status": "published",
+  "statusNote": "Planned and built 2026-11-02 from the production spine and the director's notes: the series card first, the ship's winter preparation in close details, the homecoming, then a wordless winter in which he drinks and she works around him. No music. Sixteen Veo takes, all kept at the first attempt. v1 (45.08 s) was delivered the same day; v2 (42.2 s) applies the director's three notes to v1 (the ship shot ends as the sail comes down, the haul plays reversed, the step over his legs starts mid-step); v3 applies the director's continuity note on v2 (the plug before the stones) and was approved for 4K finishing the same day. The 4K finishing master (the fast native-2x model per segment, blended 50/50 with a Lanczos pass, BT.709 tagged, the approved soundtrack muxed unchanged) was delivered on 2026-11-02 for the director to upload. Published as a YouTube Short on 2026-11-02 (URL user-confirmed). Archived 2026-11-02 under the standard retention: the 4K master and the approved v3 native cut are retained with every take, stem, reference, recipe and record; the v1 and v2 edits, debug copies, assembly segments and 4K finishing candidates were removed (78 files) after the master was re-verified.",
+  "briefPath": "briefs/november/brief.md",
+  "descriptionPath": "briefs/november/description.md",
+  "descriptionSha256": "1125df80186e00f4dd892a8b3bc2084e7a96f3094cc5ecf6c23e146a9206ef03",
+  "supportingDocuments": [
+    {
+      "label": "Status page guide",
+      "path": "briefs/november/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/november",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "75488510f86a1fc76b99d95c7649f75379df81c345ddbbc8457f9a486d62bf38",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1082,
+      "durationSeconds": 45.083333333333336,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "2382c6954155d5c066a8407a564eb1bff8243e04b3340330618b8da3edfc40e8",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1013,
+      "durationSeconds": 42.208333333333336,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "9256ad95692504f963547fb57d480f3cced419d5c49b696435e3dc7ec12bbab0",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1013,
+      "durationSeconds": 42.208333333333336,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v3/description.txt",
+      "deliveryRecordPath": "final/v3/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v3-4k",
+      "path": "final/november_2026_v3_4k.mp4",
+      "sha256": "a23207bc9149fa3705255b7d1a42a196eee5b8b19d94db5c7ab24241b20e2ce2",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1013,
+      "durationSeconds": 42.208333333333336,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/description.txt"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Direction, shot planning, image and motion generation, editing, sound and finishing",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/1X6r40Ld7Hw",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-02",
+    "artifactVersion": "v3-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "75488510f86a1fc76b99d95c7649f75379df81c345ddbbc8457f9a486d62bf38",
+      "recordedDate": "2026-11-02",
+      "eventDate": "2026-11-02",
+      "evidence": "Assembler verified full decode, 1080x1920, 1082 frames at 24 fps and the source hashes; the mix report measured -21.9 LUFS integrated with true peak under -1 dBTP. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "2382c6954155d5c066a8407a564eb1bff8243e04b3340330618b8da3edfc40e8",
+      "recordedDate": "2026-11-02",
+      "eventDate": "2026-11-02",
+      "evidence": "Assembler verified full decode, 1080x1920, 1013 frames at 24 fps and the source hashes; the mix report measured -22.0 LUFS integrated with true peak under -1 dBTP. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "9256ad95692504f963547fb57d480f3cced419d5c49b696435e3dc7ec12bbab0",
+      "recordedDate": "2026-11-02",
+      "eventDate": "2026-11-02",
+      "evidence": "Assembler verified full decode, 1080x1920, 1013 frames at 24 fps and the source hashes; the mix report measured -21.8 LUFS integrated with true peak under -1 dBTP. Listening is not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3",
+      "artifactSha256": "9256ad95692504f963547fb57d480f3cced419d5c49b696435e3dc7ec12bbab0",
+      "recordedDate": "2026-11-02",
+      "eventDate": "2026-11-02",
+      "evidence": "Director's notes on v1 and v2 applied; the director wrote \"Excellent work\" and asked for the 4K upscale of this cut.",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v3",
+      "artifactSha256": "9256ad95692504f963547fb57d480f3cced419d5c49b696435e3dc7ec12bbab0",
+      "recordedDate": "2026-11-02",
+      "eventDate": "2026-11-02",
+      "evidence": "Director 2026-11-02: \"Once that's done proceed with the 4k upscale.\"",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "a23207bc9149fa3705255b7d1a42a196eee5b8b19d94db5c7ab24241b20e2ce2",
+      "recordedDate": "2026-11-02",
+      "eventDate": "2026-11-02",
+      "evidence": "ffprobe: 2160x3840, 1013 frames at 24 fps, BT.709 primaries/transfer/matrix, limited range; the audio stream's packet MD5 equals the approved v3 native master; decoded frame hashes of the tagged file equal the untagged blend render. Listening is not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "a23207bc9149fa3705255b7d1a42a196eee5b8b19d94db5c7ab24241b20e2ce2",
+      "recordedDate": "2026-11-02",
+      "evidence": "The director supplied the YouTube Shorts URL on 2026-11-02 after uploading the delivered 4K master. The platform transcode is not the local hash.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/november/workspace-archive-manifest.json",
+    "inventorySha256": "9fd0080db63916711eb329c48e6fc59042e2a937b6fc7f8f3924be30d0e5f664",
+    "verifiedDate": "2026-11-02"
+  },
+  "legacyPaths": []
+}

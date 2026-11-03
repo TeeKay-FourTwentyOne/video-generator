@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9c18583ca886c7607548c33a4ce2dbaaf7682040b0294630e81750ad84d232be",
+  "sha256": "9c18583ca886c7607548c33a4ce2dbaaf7682040b0294630e81750ad84d232be",
+  "bytes": 5974242,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Inside a small stone house at night, lit by a small clay oil lamp and the low glow of the hearth. A man in his mid-forties with a short dark beard going grey and a belted undyed wool tunic sits slumped on a stool against the wall beside the small dark window, asleep, his head back against the wall, eyes closed, mouth closed, a clay cup tipped over in his lap, a clay jug on the floor by his foot. He does not move except for slow breathing. A woman in her late thirties with dark hair pinned up under a plain cloth works at an upright loom in the lamplight, passing the thread and beating it down with the weaving sword in a slow steady rhythm. She does not look at him. Audio: rain on roof tiles, the soft regular thud of the loom, the fire settling. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f38e1b6a18960338fe256889d203a1a6c05a8c0028e36c8b394d40196b225552",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2574540915,
+      "createdAt": "2026-11-02T21:41:05.451Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e843f2373b8b519fc9f83b7a4c30f324c12d22c6f0a767adbbf4da4f6ce51292",
+          "bytes": 1466850,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "f5f5e14c8cbbb0ec7279e543dbfc08c59fc096b3709d39b22a8ec5e691629de6"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

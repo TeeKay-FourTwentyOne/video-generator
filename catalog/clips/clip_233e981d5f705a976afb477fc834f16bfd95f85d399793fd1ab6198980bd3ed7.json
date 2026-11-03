@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_233e981d5f705a976afb477fc834f16bfd95f85d399793fd1ab6198980bd3ed7",
+  "sha256": "233e981d5f705a976afb477fc834f16bfd95f85d399793fd1ab6198980bd3ed7",
+  "bytes": 9016621,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Inside a small stone house late on a rainy day, dim light. A man in his mid-forties with a short dark beard going grey and a belted undyed wool tunic sits on a stool by a small window with his legs stretched straight out across the packed-earth floor, a plain clay cup in his hand, looking out of the window. A woman in her late thirties with dark hair pinned up under a plain cloth, in a long undyed wool dress and a pale linen shawl, carries a heavy clay water jar against her hip across the room, steps carefully over his outstretched legs without touching them, and sets the jar down on the floor by the far wall. He does not move his legs and does not look at her. She does not look at him. Neither speaks. Audio: rain on roof tiles, her footsteps on earth, the heavy jar set down, the fire. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f485520caae523870bffc37bb7d006f4deab044781d5b533093332d2318efd66",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3783086383,
+      "createdAt": "2026-11-02T21:43:10.658Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "f6870494a63c40029842900bfa9c1cdbb5be747a88e55e509aeaa266e268fa54",
+          "bytes": 1595096,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "0a6aa358723a4adf98ef9b984058821c9c21ca2adc8c6e9651ad1ecccb1f526b"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_b9db7d45227a6c9f9c23f93983760267c2774c3770a6f6e3798c9a287b2caf3f",
+  "projectId": "november",
+  "editVersion": "edit/v3",
+  "segmentIndex": 7,
+  "shotId": "V07",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 20,
+    "length": 78,
+    "fps": 24
+  },
+  "timelineStartFrame": 382,
+  "outputSha256": "9256ad95692504f963547fb57d480f3cced419d5c49b696435e3dc7ec12bbab0",
+  "schemaVersion": 1,
+  "id": "use_e6b1aa5b4b6e93f99c361f53ee78b53cd96c345c9a4dd1b17f7069fbd19d2a15"
+}

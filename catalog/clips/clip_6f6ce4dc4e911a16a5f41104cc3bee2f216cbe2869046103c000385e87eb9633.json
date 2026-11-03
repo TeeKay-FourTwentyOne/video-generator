@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6f6ce4dc4e911a16a5f41104cc3bee2f216cbe2869046103c000385e87eb9633",
+  "sha256": "6f6ce4dc4e911a16a5f41104cc3bee2f216cbe2869046103c000385e87eb9633",
+  "bytes": 9488752,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. On wet grey shingle beside a dark tarred hull, two men in belted undyed wool tunics kneel and fold a large wet square sail of coarse undyed linen, lifting one side and laying it over the other and pressing it flat with their hands. Nobody speaks. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b220ddc617af3c1449987c39c3d0c643abd3b592396c4aeb198dff00d592babb",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2658814507,
+      "createdAt": "2026-11-02T21:25:32.321Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "bcbf6f4b4dd42550c822cc2721a35c3bb53380a19f61176169d89b215ab642a3",
+          "bytes": 2069109,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "de3e942027e9ce8697acc20cc9fecc0877d88f0a09889ba513a1a74da73952ce"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

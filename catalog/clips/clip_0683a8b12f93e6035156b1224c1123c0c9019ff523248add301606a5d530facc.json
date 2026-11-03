@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0683a8b12f93e6035156b1224c1123c0c9019ff523248add301606a5d530facc",
+  "sha256": "0683a8b12f93e6035156b1224c1123c0c9019ff523248add301606a5d530facc",
+  "bytes": 6448855,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. A shingle beach in a small harbor in late afternoon under a grey sky. A row of wooden ships with dark tarred hulls rests on the beach, pulled up out of the water, stones packed round each hull. The water of the harbor is empty and grey, with small waves only; no boat is on the water. Nobody is in frame. Only the waves and the clouds move. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_82f7f5dd3f293a44d844114af8b46f8cbc95db4cd325f77ffef0a56a6f81199f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2874549009,
+      "createdAt": "2026-11-02T21:25:41.607Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "8561baecda3706ed270f22a2079eb803df211cabb46353062065a3a7036f7185",
+          "bytes": 1807754,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "dd580a5daef255fad9192e57ebe84523514c48191b82909d31ee5a5e71c3dcb2"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -352,3 +352,33 @@ Source: claude-code · Coming Attractions · 2026-10-26
 Coming Attractions, the ending (Quality, 6 s, 9:16, first-frame only). The robot's shot was anchored on the previous take's empty last frame and the prompt said it "enters at the bottom edge of the frame, close to the lens and large at first, its back to the camera, and walks away ... toward the brass doors". It did exactly that: eight empty frames, the shoulder and head entering bottom right close to the lens at about half a second, then the walk up the sidewalk to the doors and a hand on the door. Two earlier takes of the same beat, anchored with the robot already mid-frame in mid-stride among a crowd, left it stuck mid-stride for the whole take (the director's note: "it isn't walking in at all"). Veo animates an entrance it is told to make; it does not reliably resolve a pose the anchor froze.
 **Apply:** for "X walks in", anchor on the empty scene (the previous take's last frame is a free, matching one) and script the entrance edge, the first size and the destination; do not anchor with the walker already mid-frame. Leave the "exactly the people already in frame" suppressor off that shot.
 Source: claude-code · Coming Attractions · 2026-10-29
+
+### The door shut itself and the sound cut came with it
+A dusk doorway take ("they hold each other; behind him the wind swings the door shut with a solid wooden thud; audio:
+wind through the open door, then the door closing hard, then only the fire") did all of it natively: the right leaf swung
+shut on picture over about a second, the native track carried a low wind band under the open door and landed a single
+thud at frame 128 of 192 (peak −5 dBFS), after which only the fire remained. Their faces touched for eight frames at the
+meeting (not a staged kiss) and the hold stayed still for the rest of the take.
+**Apply:** a sound cut that is physically caused by something in frame can be asked for in the prompt and measured in
+the native track (per-frame RMS finds the frame); place the local beds to end on that frame.
+Source: claude-code · November · 2026-11-02
+
+### An object materialises as the character leaves the frame
+In a six-second hearth take the man set the oar on the pegs, let go, and as he turned to walk out of frame a wooden
+stump appeared beside the hearth at about frame 68 of 144 and stayed. clip-qa returned use_as_is. The first 64 frames were
+clean and were the only ones needed.
+**Apply:** when a take ends with a character leaving, expect the vacated space to fill in; plan the cut before the exit.
+Source: claude-code · November · 2026-11-02
+
+### A weaving sword renders as a sword
+"Works at an upright loom with clay weights, passing the thread and beating it down with the weaving sword" gave the woman
+a long flat grey blade that reads as metal in both takes that used the phrase. At the loom in a short shot it passes;
+in a hold it would not.
+**Apply:** say "a flat wooden batten" and never "sword" for the loom tool.
+Source: claude-code · November · 2026-11-02
+
+### The goose joined him instead of crossing
+"A white domestic goose waddles across the lane in front of him; he pauses, steps around it" became a goose that appeared
+at the wall beside his leg and climbed the steps with him. The entrance from behind the camera (back to the lens, the
+oar blade sweeping in first) was exact.
+Source: claude-code · November · 2026-11-02

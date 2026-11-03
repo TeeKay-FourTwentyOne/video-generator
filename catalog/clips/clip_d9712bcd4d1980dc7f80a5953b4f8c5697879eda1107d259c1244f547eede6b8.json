@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d9712bcd4d1980dc7f80a5953b4f8c5697879eda1107d259c1244f547eede6b8",
+  "sha256": "d9712bcd4d1980dc7f80a5953b4f8c5697879eda1107d259c1244f547eede6b8",
+  "bytes": 3698380,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Close on a small arched niche in a rough plastered stone wall, lit by a small clay oil lamp. In the niche stands a bronze statuette about fifteen centimeters tall of a standing woman in a draped robe knotted at the chest, a small disk between two horns on her head, a horn of plenty in her left arm and a long ship's steering oar held upright in her right hand. The statuette and the lamp stay exactly as they are. A woman's hand enters the frame from below holding a small bronze hand rattle, a narrow loop-shaped frame on a short handle with three loose metal rods through it, shakes it once in front of the statuette, and withdraws out of the frame. The lamp flame flickers. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f0834f393e8e04018a7a8a633d31542120d558b024344344854113697cf5d37f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3275919516,
+      "createdAt": "2026-11-02T21:25:59.199Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "1f8cde28b3be24387cd94fa5432a1b2bffae513bcd0a2ab3d1cd3c5fc1ca868a",
+          "bytes": 1938981,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "671af03c4646cb5e124186c01c5fb69cd5332d0353889cf5c2e570d5b81965e8"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_729facaacc135687ed8b4b90e03e575605cb57220dc78e8f633d42d58e227e2d",
+  "sha256": "729facaacc135687ed8b4b90e03e575605cb57220dc78e8f633d42d58e227e2d",
+  "bytes": 8390162,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Inside a small stone house at dusk, firelight from the hearth on the plastered walls, the wooden door standing open onto the grey dusk. A woman in her late thirties with dark hair pinned up under a plain cloth, in a long undyed wool dress and a pale linen shawl, stands just inside the open door looking at a man in the doorway. He is in his mid-forties, with a weathered face, a short dark beard going grey and a belted undyed wool tunic; a long wooden steering oar leans against the wall beside the door and stays where it is. He steps in over the threshold and they hold each other closely for a long moment, her hand at the back of his neck, his face against her hair, neither of them speaking, their mouths closed. Behind him the wind swings the door shut with a solid wooden thud. They stay holding each other. Audio: wind outside through the open door, then the door closing hard, then only the fire crackling. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e19fb683b9f87458707d5c8361c27765b295adb884a562b66c46078d85803345",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 130020940,
+      "createdAt": "2026-11-02T21:40:23.483Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "51877f7a64eb321b0f8285820e90bf8381b20f8f0c977c97638d394df1c98f87",
+          "bytes": 1573043,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "23a17162993cb6dc4891ccd9809d164240c78126a1e6144d2f400f2b9b325aaa"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

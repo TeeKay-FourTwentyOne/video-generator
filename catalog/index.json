@@ -1476,6 +1476,23 @@
       }
     },
     {
+      "id": "clip_0683a8b12f93e6035156b1224c1123c0c9019ff523248add301606a5d530facc",
+      "metadata": "clips/clip_0683a8b12f93e6035156b1224c1123c0c9019ff523248add301606a5d530facc.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_068d1b50e885c3a7c223bce925dabf58391875a1fecc3cb98b9ac21a99f24a7e",
       "metadata": "clips/clip_068d1b50e885c3a7c223bce925dabf58391875a1fecc3cb98b9ac21a99f24a7e.json",
       "labels": [],
@@ -3511,6 +3528,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_13c6a5e11e9bcd9ca99b82e6a3f39d37435bc21031e07fdf84a2d1d519bf5371",
+      "metadata": "clips/clip_13c6a5e11e9bcd9ca99b82e6a3f39d37435bc21031e07fdf84a2d1d519bf5371.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -6553,6 +6587,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_233e981d5f705a976afb477fc834f16bfd95f85d399793fd1ab6198980bd3ed7",
+      "metadata": "clips/clip_233e981d5f705a976afb477fc834f16bfd95f85d399793fd1ab6198980bd3ed7.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -10496,6 +10547,23 @@
       }
     },
     {
+      "id": "clip_388c79308d3f9d04f38d1c639577449f0efec6341fd21c5512aee86dd990adf9",
+      "metadata": "clips/clip_388c79308d3f9d04f38d1c639577449f0efec6341fd21c5512aee86dd990adf9.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_388f242dce1ab2d4414da55c69b124229433a56c636588c787e5727694aedc6f",
       "metadata": "clips/clip_388f242dce1ab2d4414da55c69b124229433a56c636588c787e5727694aedc6f.json",
       "labels": [
@@ -13583,6 +13651,23 @@
       }
     },
     {
+      "id": "clip_484c1c8f42bccda4f2ce0ae032c9218c27d3591bf492057a7ed04881deecfb66",
+      "metadata": "clips/clip_484c1c8f42bccda4f2ce0ae032c9218c27d3591bf492057a7ed04881deecfb66.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_485fd16d4fc8db5d064e16ecbd2ee8f2b48da15e9c6b7daed508037b431a2376",
       "metadata": "clips/clip_485fd16d4fc8db5d064e16ecbd2ee8f2b48da15e9c6b7daed508037b431a2376.json",
       "labels": [
@@ -13981,6 +14066,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_49ee99f1014d614b53d5d5d55508503aa0224b90c25196f65be842326bffac44",
+      "metadata": "clips/clip_49ee99f1014d614b53d5d5d55508503aa0224b90c25196f65be842326bffac44.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -17161,7 +17263,7 @@
       "id": "clip_59564be0cb7578f88fbcac4b1818789fb04884027949077c255ca067ccab3b64",
       "metadata": "clips/clip_59564be0cb7578f88fbcac4b1818789fb04884027949077c255ca067ccab3b64.json",
       "labels": [
-        "Humanity returns — local scene draft v1"
+        "Humanity returns \u2014 local scene draft v1"
       ],
       "kind": "source",
       "collections": [
@@ -20091,6 +20193,23 @@
       }
     },
     {
+      "id": "clip_6661c5181ef00cb1fb15314cf72cc43329e218b392a5451c475696b37b055d4a",
+      "metadata": "clips/clip_6661c5181ef00cb1fb15314cf72cc43329e218b392a5451c475696b37b055d4a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_66674d41041825dadbedcaab52698a14efa5e597d90091c19fd6e4af3682890a",
       "metadata": "clips/clip_66674d41041825dadbedcaab52698a14efa5e597d90091c19fd6e4af3682890a.json",
       "labels": [
@@ -21898,6 +22017,23 @@
       }
     },
     {
+      "id": "clip_6f6ce4dc4e911a16a5f41104cc3bee2f216cbe2869046103c000385e87eb9633",
+      "metadata": "clips/clip_6f6ce4dc4e911a16a5f41104cc3bee2f216cbe2869046103c000385e87eb9633.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_6f729457ae91c435635cab163f7848d1e0f86b27bacc92760f2d92815c0b7ae1",
       "metadata": "clips/clip_6f729457ae91c435635cab163f7848d1e0f86b27bacc92760f2d92815c0b7ae1.json",
       "labels": [
@@ -22468,6 +22604,23 @@
       }
     },
     {
+      "id": "clip_71a91d276ad586b68cdb057ece6e13001620381917704939d5c47facd0c4344f",
+      "metadata": "clips/clip_71a91d276ad586b68cdb057ece6e13001620381917704939d5c47facd0c4344f.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_71b4c16e6bb639d31ad4764c7a6cd76335d26f226a92973f768b7e89bd91fa41",
       "metadata": "clips/clip_71b4c16e6bb639d31ad4764c7a6cd76335d26f226a92973f768b7e89bd91fa41.json",
       "labels": [
@@ -22676,6 +22829,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_729facaacc135687ed8b4b90e03e575605cb57220dc78e8f633d42d58e227e2d",
+      "metadata": "clips/clip_729facaacc135687ed8b4b90e03e575605cb57220dc78e8f633d42d58e227e2d.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -29165,6 +29335,23 @@
       }
     },
     {
+      "id": "clip_94934ce8141b2003bf8f0002e0d957172819a5ba8150375291c615cc48c41507",
+      "metadata": "clips/clip_94934ce8141b2003bf8f0002e0d957172819a5ba8150375291c615cc48c41507.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_94b7b6662adc4a0983042da0d22631c7f14d7bd3a472eaf95df1beca0608f512",
       "metadata": "clips/clip_94b7b6662adc4a0983042da0d22631c7f14d7bd3a472eaf95df1beca0608f512.json",
       "labels": [
@@ -30561,6 +30748,40 @@
       }
     },
     {
+      "id": "clip_9c18583ca886c7607548c33a4ce2dbaaf7682040b0294630e81750ad84d232be",
+      "metadata": "clips/clip_9c18583ca886c7607548c33a4ce2dbaaf7682040b0294630e81750ad84d232be.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
+      "id": "clip_9c505b569f15208ec3f70d68c1f137c91d886f19b096873f18c1fd047f573c89",
+      "metadata": "clips/clip_9c505b569f15208ec3f70d68c1f137c91d886f19b096873f18c1fd047f573c89.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_9c6260a24ebeaae968cf1a9dc599f0b3457ae4dcd701523e0f51f292e8b4103d",
       "metadata": "clips/clip_9c6260a24ebeaae968cf1a9dc599f0b3457ae4dcd701523e0f51f292e8b4103d.json",
       "labels": [
@@ -31838,6 +32059,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_a3533c3d274484d7960b2d59f860615af0cc4cd71ec2b3143aedb5150e7b4da7",
+      "metadata": "clips/clip_a3533c3d274484d7960b2d59f860615af0cc4cd71ec2b3143aedb5150e7b4da7.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -35846,6 +36084,23 @@
       }
     },
     {
+      "id": "clip_b9db7d45227a6c9f9c23f93983760267c2774c3770a6f6e3798c9a287b2caf3f",
+      "metadata": "clips/clip_b9db7d45227a6c9f9c23f93983760267c2774c3770a6f6e3798c9a287b2caf3f.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_ba0b4661ca3727e3b597209957107dfd3d37a9b6a3c152cb7dd02631e6752d90",
       "metadata": "clips/clip_ba0b4661ca3727e3b597209957107dfd3d37a9b6a3c152cb7dd02631e6752d90.json",
       "labels": [
@@ -38431,6 +38686,23 @@
       }
     },
     {
+      "id": "clip_c64342fbe47ad8ec2e653092ff9f7c00877a3753bbc4b7396e8263449688f6e3",
+      "metadata": "clips/clip_c64342fbe47ad8ec2e653092ff9f7c00877a3753bbc4b7396e8263449688f6e3.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_c6491aab6cb8b582335cd13693a370eaa5cc04e692dc73b44d66210659d07403",
       "metadata": "clips/clip_c6491aab6cb8b582335cd13693a370eaa5cc04e692dc73b44d66210659d07403.json",
       "labels": [
@@ -40135,7 +40407,7 @@
       "id": "clip_cfa8507dee86152800f8801b0d7aaf80a3aba09d5c106c3c2f474d882f252ffb",
       "metadata": "clips/clip_cfa8507dee86152800f8801b0d7aaf80a3aba09d5c106c3c2f474d882f252ffb.json",
       "labels": [
-        "Humanity returns — individual coverage and transformation v2"
+        "Humanity returns \u2014 individual coverage and transformation v2"
       ],
       "kind": "source",
       "collections": [
@@ -42094,6 +42366,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_d9712bcd4d1980dc7f80a5953b4f8c5697879eda1107d259c1244f547eede6b8",
+      "metadata": "clips/clip_d9712bcd4d1980dc7f80a5953b4f8c5697879eda1107d259c1244f547eede6b8.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {
@@ -48731,6 +49020,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_fd17ac116a300f8e189213ff8ce543e015973834b73af57881651ef725615ef4",
+      "metadata": "clips/clip_fd17ac116a300f8e189213ff8ce543e015973834b73af57881651ef725615ef4.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "november"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
       }
     },
     {

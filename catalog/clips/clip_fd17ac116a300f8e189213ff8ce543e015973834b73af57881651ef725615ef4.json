@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fd17ac116a300f8e189213ff8ce543e015973834b73af57881651ef725615ef4",
+  "sha256": "fd17ac116a300f8e189213ff8ce543e015973834b73af57881651ef725615ef4",
+  "bytes": 18745601,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Low and close at the underside of a dark tarred wooden hull propped on stones on a shingle beach. A man in his mid-forties with a weathered sunburned face, a short dark beard going grey and a belted undyed wool tunic crouches under the hull with both hands gripping a round wooden plug set in the bottom planks. He twists the plug, works it back and forth until it comes loose, and pulls it out. Water runs out of the open hole in a steady stream onto the wet shingle below. He holds the plug in his hand and watches the water run. His mouth stays closed. Audio: wood squeaking as the plug turns, then water running out onto stones, wind. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1502d7c06149c960ae913f8b6b9ce5417ecd12d28540447e22eb934619cd939d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2861649662,
+      "createdAt": "2026-11-02T21:25:23.735Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "0df52dde0a2113fffd9c9df97360949f0f4427ccff8ecaa592b1db2a5f080475",
+          "bytes": 2045605,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "b090c57fef0bc6192fb24395fe7cf2fb02f9482a1242c71e0f3d83b600a0a228"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

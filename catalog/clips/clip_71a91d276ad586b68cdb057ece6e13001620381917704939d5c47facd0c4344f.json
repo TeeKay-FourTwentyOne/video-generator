@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_71a91d276ad586b68cdb057ece6e13001620381917704939d5c47facd0c4344f",
+  "sha256": "71a91d276ad586b68cdb057ece6e13001620381917704939d5c47facd0c4344f",
+  "bytes": 16110333,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. A small harbor seen from the hillside on a grey morning. On the grey water near the harbor mouth a wooden merchant ship about fifteen meters long with a dark tarred hull and a single mast comes slowly into the harbor under oars, and two small figures on its deck lower its square sail. Three other ships with dark tarred hulls lie pulled up on the shingle beach below. Small waves on the water. Small stone houses with terracotta roofs on the slope. Nothing else moves. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_463fd68368d9885b9a18e6b45db11a00b77f4fe462e7eb2963dbfb46e8ce5ebd",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 460703372,
+      "createdAt": "2026-11-02T21:24:54.784Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "46676d227586049b93bf4c207b56ca4e45326df646d2d89881ac2493ec66ac6a",
+          "bytes": 1973128,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "55e709d10de537e5c421551260cc9ecccf84d7911e0227864b0ee5483c464d96"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

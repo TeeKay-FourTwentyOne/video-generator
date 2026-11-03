@@ -60,6 +60,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Neptune in Aries](neptune-aries/README.md) | unknown | — | [Brief](neptune-aries/brief.md) · [Record](neptune-aries/production.json) |
 | [No Enemy](no-enemy/README.md) | unknown | — | [Brief](no-enemy/brief.md) · [Record](no-enemy/production.json) |
 | [NOT STUFF THAT ABIDES](not-stuff-that-abides/README.md) | unknown | — | [Brief](not-stuff-that-abides/brief.md) · [Record](not-stuff-that-abides/production.json) |
+| [NOVEMBER](november/README.md) | published | monthly-etymology | [Brief](november/brief.md) · [Description](november/description.md) · [Record](november/production.json) |
 | [OCTOBER](october/README.md) | published | monthly-etymology | [Brief](october/brief.md) · [Record](october/production.json) |
 | [ONE UNIT APART](one-unit-apart/README.md) | published | — | [Brief](one-unit-apart/brief.md) · [Description](one-unit-apart/description.md) · [Record](one-unit-apart/production.json) |
 | [PARKING LOT GOSPEL](parking-lot-gospel/README.md) | producing | — | [Brief](parking-lot-gospel/brief.md) · [Record](parking-lot-gospel/production.json) |

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_49ee99f1014d614b53d5d5d55508503aa0224b90c25196f65be842326bffac44",
+  "sha256": "49ee99f1014d614b53d5d5d55508503aa0224b90c25196f65be842326bffac44",
+  "bytes": 8013856,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Inside a small stone house on a grey rainy day. A man in his mid-forties with a weathered face, a short dark beard going grey and a belted undyed wool tunic sits on a wooden stool at a small square window, seen from behind, a plain clay cup in his hand, looking down through the window at the wet roofs and the grey harbor below. He lifts the cup, drinks slowly, lowers it, and keeps looking out. Behind him a woman in her late thirties with dark hair pinned up under a plain cloth works at an upright loom with clay weights, passing the thread across and beating it down with the weaving sword in a slow steady rhythm. Neither speaks, neither looks at the other. Audio: steady rain on roof tiles, the soft regular thud of the loom, the fire. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6b8a43f6a617529dbdda26ceb52db179a84a0fd6e72abf1ab3970ea572bf4e77",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2019107957,
+      "createdAt": "2026-11-02T21:40:39.944Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "66c85a7ac7266cf3bc8afb184ba0deeafce59ed25f7c041810a0d26c42426030",
+          "bytes": 1588030,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "cace18630de2b28b3802748df66b759d0ae347b4b4c59bd4bf178a9257f96695"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

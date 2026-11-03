@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_94934ce8141b2003bf8f0002e0d957172819a5ba8150375291c615cc48c41507",
+  "sha256": "94934ce8141b2003bf8f0002e0d957172819a5ba8150375291c615cc48c41507",
+  "bytes": 7131256,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Inside a small stone house, close on an open hearth with a low stone curb, a fire burning and smoke rising toward a hole in the roof; two wooden pegs are set in the plastered wall above the hearth, and a long wooden steering oar with a broad flat blade lies across the two pegs. A man in his mid-forties with a short dark beard going grey and a belted undyed wool tunic stands beside the hearth with both hands up on the steering oar, settling it until it rests level on the pegs. He lets go, lowers his arms, looks at it for a moment, and steps out of the frame. The steering oar stays resting on the pegs over the hearth with the smoke rising past its blade. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4882472724808481caff9d6bc34c151997079fd95c121ce638bd300d6542af42",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3790413276,
+      "createdAt": "2026-11-02T21:40:32.753Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "346109dd3f97858a57fcdb589e69913dbc06758baa0a897d903a27203f8f44bd",
+          "bytes": 1653045,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "7a48c6e5565e31cf7174c91342e114a4a7b8564516f7514dd1e06fa30cf9ba7d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6661c5181ef00cb1fb15314cf72cc43329e218b392a5451c475696b37b055d4a",
+  "sha256": "6661c5181ef00cb1fb15314cf72cc43329e218b392a5451c475696b37b055d4a",
+  "bytes": 10011116,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. A shingle beach in steady grey rain. A row of wooden ships with dark tarred hulls rests pulled up on the beach with stones packed round them. A man in his mid-forties with cropped hair, a short dark beard going grey and a wet belted undyed wool tunic stands beside the nearest hull, seen from behind and to the side, one hand flat on the wet tarred planking, looking out at the empty grey water of the harbor. Rain falls on the water and the shingle. He stands still, then takes his hand off the hull and keeps looking at the water. No boat is on the water. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b2279a125869960151bcbddaedc851fffd371253545ee14284645a1b37de2664",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1888099556,
+      "createdAt": "2026-11-02T21:40:57.108Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "36ef03c052a802e3c26f8e55399e52a5337fd4bf547deb7a054c4a071fec17b7",
+          "bytes": 1680910,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c410769f3f3627753bd1914e3069579876308d24674fd9bca8f5510aba6beebc"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

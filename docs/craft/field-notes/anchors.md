@@ -169,3 +169,29 @@ Source: Codex · Perpetual Check · 2026-10-22
 ### Twelve seconds inside a batch is not always enough
 A four-request batch at 12 s spacing completed, but the third request of the next three-request batch (launched 12 s after a reference copy was made) got HTTP 429 with no charge; re-requested under a new ID at 20 s spacing it went through. Mirroring an anchor locally (PIL `ImageOps.mirror`) is a free fix when a point-of-view face comes back lit from the wrong side; keep the original with its asset record and point the shot at the mirrored copy.
 Source: claude-code · Coming Attractions · 2026-10-25
+
+### "Add" a long prop to a plate by naming its geometry, not its place
+A chained "change only this: a steering oar now rests across the two pegs above the hearth" returned the oar leaning
+diagonally against the wall beside the hearth (the add restaged, as the note above predicts). The same request with the
+geometry spelled out ("laid horizontally across the two pegs, lying on top of them like a shelf, parallel to the floor,
+the blade toward the window, the handle toward the niche, nothing supports it but the pegs, it does not touch the floor")
+came back pixel-identical elsewhere with the oar level on the pegs. A night close-up chained from an anchor that still
+held the oar diagonally kept the diagonal; reframing from the corrected wide ("a much closer view, as if the camera had
+walked up to the hearth, so that the frame holds only the hearth wall") gave the close with the oar level.
+**Apply:** when a chain must add a placed object, describe its support and orientation in words a carpenter would use,
+and chain later edits from the frame that has the object right.
+Source: claude-code · November · 2026-11-02
+
+### A batch launched five seconds after the previous one is refused
+Four requests sent five seconds after a nine-request batch finished got HTTP 429 on the first (no charge); the same four
+under new IDs after a twenty-second pause all went through at fourteen-second spacing.
+Source: claude-code · November · 2026-11-02
+
+### Nano puts the gaze on the other person; Veo keeps it there
+A two-figure room anchor asked for the seated man "looking out of the window, not at her" gave him looking at her; the
+regeneration with "his head turned away to the left toward the window, so the camera sees the back of his head and his
+ear, not his face" gave the window gaze, and the Veo take from it turned his head back to her within the first second
+anyway as she crossed the room.
+**Apply:** if a character must not watch the other one, stage the other one outside his field of view or give him
+something to look at that is in frame; a prompt alone does not hold an averted gaze through an approach.
+Source: claude-code · November · 2026-11-02

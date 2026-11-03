@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b9db7d45227a6c9f9c23f93983760267c2774c3770a6f6e3798c9a287b2caf3f",
+  "sha256": "b9db7d45227a6c9f9c23f93983760267c2774c3770a6f6e3798c9a287b2caf3f",
+  "bytes": 15579574,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "november"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage of an ancient Mediterranean harbor town in late autumn. Overcast winter light, muted colors, soft contrast, real textures, nothing staged. Dusk on a steep narrow lane of worn stone steps between plastered stone houses on a hillside. The lane is empty at first. A man in his mid-forties with cropped hair, a short dark beard going grey and a belted undyed wool tunic walks into the frame from the bottom edge, close to the lens and large at first, his back to the camera, carrying on his right shoulder a long wooden steering oar about three meters long with a broad flat blade and a short crosswise handle at the top, the blade pointing up behind him. He climbs the lane slowly away from the camera. A white domestic goose waddles across the lane in front of him from one side to the other; he pauses, steps around it, and walks on up the hill. He never turns toward the camera. Camera is fixed, no camera movement. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_cb21a6d6dfbf7aec7a81bdccedfec453b378f874fc091d2c6b702ab7a59ae2e4",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 966384031,
+      "createdAt": "2026-11-02T21:25:50.051Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e0fd4cb1c000bd833e3b80ec5fe2ee4e7e430fdaf96e4947a5dfbc666ee939b5",
+          "bytes": 1969515,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ec23ec36f98522b0c4474349adea3e0b074a3afd8053b0692d8f1c871f2af3bf"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

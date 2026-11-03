@@ -244,3 +244,22 @@ values above zero after quantization. Protecting the two boundary macroblock
 rows with FFmpeg ROI metadata eliminated those residual pixels in the native
 master. The check decoded every frame rather than sampling only blue cards.
 Source: Codex · GENERATION · 2026-10-30
+
+### Measure a trial mix per segment before setting the master
+A first full soundtrack (native takes plus ElevenLabs beds, gains set from each source's integrated loudness) measured
+−19 to −20 LUFS across the exterior section with every segment peaking at the limiter, and −22 to −26 inside; the
+exterior bed and the three loudest native takes came down 3 to 4 dB and the one-shot rattle 8 dB, and the second render
+sat within 5 LU across sections with the door thud as the only peak. A per-segment table from the edit timeline
+(ffmpeg ebur128 over each segment's window) is the fastest way to see this.
+Source: claude-code · November · 2026-11-02
+
+### The fast x2 model etches wet wood and wool as well as faces; blend it
+On a 1080p vertical of photoreal people and tarred hulls, realesr-animevideov3-x2 at exact 2x turned the wet planking into
+hard contour lines and a wool tunic into a drawn weave, visible in 100% crops of a 4K frame and invisible at fit-to-screen;
+plain Lanczos kept the photograph but was soft; the 50/50 blend kept the definition without the etching and was delivered.
+The per-segment upscale (17 assembled segments, about 25 minutes for 1013 frames) plus one ffmpeg pass that scales the
+native film with Lanczos and averages it against the model concat (about ten minutes) is the whole recipe; the model
+concat's colour tags come back "unknown" and are completed with the h264_metadata filter, decoded frames unchanged.
+**Apply:** on photoreal footage cut the crops first (a face, a textured garment, a wet surface) and plan the blend pass into
+the finishing time; keep the untagged model concat beside the delivered blend for provenance.
+Source: claude-code · November · 2026-11-02
