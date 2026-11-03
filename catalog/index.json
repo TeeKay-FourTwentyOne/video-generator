@@ -10773,6 +10773,23 @@
       }
     },
     {
+      "id": "clip_39622a208b97a8b945df16b3a096b7b241c2dd8a9db6b78e633d636f5d529c56",
+      "metadata": "clips/clip_39622a208b97a8b945df16b3a096b7b241c2dd8a9db6b78e633d636f5d529c56.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_396a1649757795c9f7dc27f03f2419006b04351c6579273c9411b7ffb5089575",
       "metadata": "clips/clip_396a1649757795c9f7dc27f03f2419006b04351c6579273c9411b7ffb5089575.json",
       "labels": [],
@@ -16340,6 +16357,23 @@
       }
     },
     {
+      "id": "clip_545a4c4b78e1bd9081e021614a141c5d150e244a904ca42efcac54aaf95f9206",
+      "metadata": "clips/clip_545a4c4b78e1bd9081e021614a141c5d150e244a904ca42efcac54aaf95f9206.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_547195c469a8d7a9151691103e05fca29d4a0e2a9af46bfd7dff1fca388eed02",
       "metadata": "clips/clip_547195c469a8d7a9151691103e05fca29d4a0e2a9af46bfd7dff1fca388eed02.json",
       "labels": [
@@ -17263,7 +17297,7 @@
       "id": "clip_59564be0cb7578f88fbcac4b1818789fb04884027949077c255ca067ccab3b64",
       "metadata": "clips/clip_59564be0cb7578f88fbcac4b1818789fb04884027949077c255ca067ccab3b64.json",
       "labels": [
-        "Humanity returns \u2014 local scene draft v1"
+        "Humanity returns — local scene draft v1"
       ],
       "kind": "source",
       "collections": [
@@ -21522,6 +21556,23 @@
       }
     },
     {
+      "id": "clip_6c6cc748dbbf79196b9a1d7710077e06eccf5ed203bbd2fe847536a974007313",
+      "metadata": "clips/clip_6c6cc748dbbf79196b9a1d7710077e06eccf5ed203bbd2fe847536a974007313.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 4.833333,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_6c73413342a59a12041e1a822f6080af3654789abc4040a1d1c1680467705620",
       "metadata": "clips/clip_6c73413342a59a12041e1a822f6080af3654789abc4040a1d1c1680467705620.json",
       "labels": [
@@ -22408,6 +22459,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_70cb635769dc32a3e2910c7cc91df42e6c58fa20b1a2c318ed4262ada631b53f",
+      "metadata": "clips/clip_70cb635769dc32a3e2910c7cc91df42e6c58fa20b1a2c318ed4262ada631b53f.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -25953,6 +26021,23 @@
       }
     },
     {
+      "id": "clip_822db5699304c295670a6ada8d862f654feb5a38db50a450ef1885f31d593e95",
+      "metadata": "clips/clip_822db5699304c295670a6ada8d862f654feb5a38db50a450ef1885f31d593e95.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 2.5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_824ad7bf84bdc5f1b84040022ff124e6e1a9d2cfcd6ac6a4bac0925cb5a6ccc3",
       "metadata": "clips/clip_824ad7bf84bdc5f1b84040022ff124e6e1a9d2cfcd6ac6a4bac0925cb5a6ccc3.json",
       "labels": [
@@ -26191,6 +26276,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_83a2355ff0db897595794be52b3ff77eec63ca870564354c7e675634140a72c7",
+      "metadata": "clips/clip_83a2355ff0db897595794be52b3ff77eec63ca870564354c7e675634140a72c7.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 5.166667,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -28067,6 +28169,23 @@
       }
     },
     {
+      "id": "clip_8d32049363e69dde4f845732ef1a7389c38366af5e851be360e188d0f560775a",
+      "metadata": "clips/clip_8d32049363e69dde4f845732ef1a7389c38366af5e851be360e188d0f560775a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_8d44b4e0d897cc74129c5cb4e20b40c6a6b043752549e3d114ed8370fde27305",
       "metadata": "clips/clip_8d44b4e0d897cc74129c5cb4e20b40c6a6b043752549e3d114ed8370fde27305.json",
       "labels": [
@@ -29525,6 +29644,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_95c87c4bb9e294e59f92e29bcd0cb09580bab53fde452e5a73bee62559210251",
+      "metadata": "clips/clip_95c87c4bb9e294e59f92e29bcd0cb09580bab53fde452e5a73bee62559210251.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 9,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
       }
     },
     {
@@ -40407,7 +40543,7 @@
       "id": "clip_cfa8507dee86152800f8801b0d7aaf80a3aba09d5c106c3c2f474d882f252ffb",
       "metadata": "clips/clip_cfa8507dee86152800f8801b0d7aaf80a3aba09d5c106c3c2f474d882f252ffb.json",
       "labels": [
-        "Humanity returns \u2014 individual coverage and transformation v2"
+        "Humanity returns — individual coverage and transformation v2"
       ],
       "kind": "source",
       "collections": [
@@ -40525,7 +40661,8 @@
       ],
       "kind": "unknown",
       "collections": [
-        "october"
+        "october",
+        "retake"
       ],
       "durationSeconds": 0.5,
       "width": 1080,
@@ -41726,6 +41863,23 @@
       }
     },
     {
+      "id": "clip_d65dcfb1c811d9e61431ba9d29f2b5d2fc9d6475e54095b024e769c717d4c622",
+      "metadata": "clips/clip_d65dcfb1c811d9e61431ba9d29f2b5d2fc9d6475e54095b024e769c717d4c622.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 4.833333,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_d65e231e75d196baf3d3021a4b113b7cb7466804151728ce3be2fdc04336d01c",
       "metadata": "clips/clip_d65e231e75d196baf3d3021a4b113b7cb7466804151728ce3be2fdc04336d01c.json",
       "labels": [
@@ -42383,6 +42537,23 @@
       "uses": {
         "planned": 0,
         "rendered": 3
+      }
+    },
+    {
+      "id": "clip_d98533b2b42e0ab2d7d14090f45e8f631497228e25308fe261d6b44719d44712",
+      "metadata": "clips/clip_d98533b2b42e0ab2d7d14090f45e8f631497228e25308fe261d6b44719d44712.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "retake"
+      ],
+      "durationSeconds": 5.166667,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {

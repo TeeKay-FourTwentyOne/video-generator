@@ -195,3 +195,14 @@ anyway as she crossed the room.
 **Apply:** if a character must not watch the other one, stage the other one outside his field of view or give him
 something to look at that is in frame; a prompt alone does not hold an averted gaze through an approach.
 Source: claude-code · November · 2026-11-02
+
+### "Selfie preview" renders the phone, not the view
+Asked for "a phone's front-facing camera held at arm's length, as a selfie preview", Nano
+Banana Pro rendered a hand holding a phone whose screen showed the camera app, with its
+own interface, around the intended picture. Cropping the screen content and regenerating
+with that crop as the reference and the prose "the picture itself is what the camera
+sees; no phone, no hand, no screen, no interface" gave the direct view with the same
+person and room on the first try.
+**Apply:** describe the camera's view as the image, never the device or the preview; if a
+device appears anyway, crop its screen and use that as the identity and set reference.
+Source: claude-code · Retake · 2026-11-03

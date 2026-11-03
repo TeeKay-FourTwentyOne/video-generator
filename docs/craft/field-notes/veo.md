@@ -382,3 +382,51 @@ Source: claude-code · November · 2026-11-02
 at the wall beside his leg and climbed the steps with him. The entrance from behind the camera (back to the lens, the
 oar blade sweeping in first) was exact.
 Source: claude-code · November · 2026-11-02
+
+### A selfie-framed face anchor passed with the room in frame
+A head-and-shoulders front-camera anchor (arm's length, hallway wall, door and coat hook
+behind, shoulders at the bottom edge) was accepted on the first Quality submission and on
+the two that followed. The earlier near-portrait rejections had no scene around the face.
+**Apply:** when the shot is a face to camera, keep the room in the anchor (a door frame,
+a hook, the shoulders) rather than cropping to the head; probe with the first take.
+Source: claude-code · Retake · 2026-11-03
+
+### A held face to camera speaks in its first second, whatever the prose says
+"Looks into the lens, neutral, mouth closed, never speaks" returned speech-shaped mouth
+movement with sound for frames 3-19, and again at 126-138, in an otherwise obedient take;
+the quiet-room prose and "No speech" did not stop it. A second take with turns described
+first stayed closed; a third with a smile ladder stayed closed until the grin.
+**Apply:** expect the mouth to open at the head of a held face take; plan the opening beat
+from a held first frame or from a later clean range, and mute that native audio.
+Source: claude-code · Retake · 2026-11-03
+
+### Three expressions in one 8 s take, in order, with usable holds
+"A small polite closed-lip smile, held two seconds; then a big open smile showing teeth,
+held two seconds; then the smile fades and the face falls into a tired frown, held to the
+end" came back in that order: neutral 0-12, closed-lip smile 18-54, open grin 60-112, the
+collapse 114-120, the frown forming 122-136 (eyes dropping at 134-136), eye contact back
+from 140 and the frown held to 191. The native track carried a loud burst under the grin.
+**Apply:** a sequenced expression change is a good buy on one take when each step is given
+a duration and the order is explicit; cut the beats on the app's or scene's own events and
+budget the transitions at about six frames each.
+Source: claude-code · Retake · 2026-11-03
+
+### "About forty-five degrees" is a full profile
+Both "turns the head quickly to the left, about forty-five degrees" and the slow version
+went to a ninety-degree profile and held there; the quick one took four frames, the slow one
+twelve. The angle prose did not land; the speed prose did, relatively.
+**Apply:** write turns as what the camera should see ("until only the ear and cheek are
+visible", "a quarter turn, the far eye still visible") rather than in degrees, and plan on
+profiles when the angle is not load-bearing.
+Source: claude-code · Retake · 2026-11-03
+
+### Left and right are not reliable; the second turn repeats the first
+"Turn slowly to their left ... then to their right" returned two turns to the same side (the
+left) in one take. A retake that described the right turn in screen terms (toward the window
+side of the frame, nose toward the left edge, the back of the head toward the door) turned left
+first anyway, then swung through center into the correct right profile and held it; the usable
+right turn was built from its return to center played backward.
+**Apply:** do not trust handedness in prose. For a specific direction, anchor it to a landmark
+in the frame, plan for the model to try the habitual side first, and keep the return-to-center
+of a profile hold as a reversible slow turn-in.
+Source: claude-code · Retake · 2026-11-03

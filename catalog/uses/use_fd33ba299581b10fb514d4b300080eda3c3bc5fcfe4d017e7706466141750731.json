@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_95c87c4bb9e294e59f92e29bcd0cb09580bab53fde452e5a73bee62559210251",
+  "projectId": "retake",
+  "editVersion": "edit/v1",
+  "segmentIndex": 2,
+  "shotId": "RT-C3",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 216,
+    "fps": 24
+  },
+  "timelineStartFrame": 240,
+  "outputSha256": "df845a3ad4e9170dae00e7785e53cb633ad2a66608578752019d78b7110d4100",
+  "schemaVersion": 1,
+  "id": "use_fd33ba299581b10fb514d4b300080eda3c3bc5fcfe4d017e7706466141750731"
+}

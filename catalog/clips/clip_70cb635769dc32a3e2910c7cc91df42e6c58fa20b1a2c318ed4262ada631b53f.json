@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_70cb635769dc32a3e2910c7cc91df42e6c58fa20b1a2c318ed4262ada631b53f",
+  "sha256": "70cb635769dc32a3e2910c7cc91df42e6c58fa20b1a2c318ed4262ada631b53f",
+  "bytes": 8050342,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "retake"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Footage from a phone's front-facing camera held at arm's length, vertical, in a plain apartment hallway with flat daylight from one side. The person in the frame looks straight into the lens with a neutral expression, mouth closed. Then they give a small polite smile with closed lips and hold it for two seconds. Then the smile grows into a big, wide, open smile showing their teeth, and they hold that for two seconds. Then the smile fades completely and their face falls into a tired, unhappy frown, the corners of the mouth turned down, the eyes dull, and they hold the frown, looking into the lens, to the end of the shot. Their head stays centered and facing the lens throughout; they never speak, laugh or mouth words. The phone is handheld and nearly still, with only the slightest natural sway; no zoom, no change of framing, the background stays in place. Audio: the quiet of an apartment hallway, a faint breath. No music, no speech, no laughter. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8f85f26c9743954ef8c170461c461437e19cad6ca675f36e0fd0ac9542c424ab",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1581261570,
+      "createdAt": "2026-11-03T19:13:57.358Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "5982dd91591bba00f2c976efc49958450ecce9160cec0ddfaeacc87c7a05013b",
+          "bytes": 1373341,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c0ff0520443313217c8bdbe6cf21f76175428ec16afd6689d62e97237486b98f"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -124,3 +124,19 @@ lessons are in `docs/craft/field-notes/`. Codex notes live in `codex.md`.
   `scratch/` of the project; `archive.mjs apply` moved the folder while the redirect kept writing to the same inode, and the
   seal failed with "Archive inventory mismatch". Log closeout jobs under `data/release-receipts/<slug>/`, wait for every
   background job that touches the project to exit, then seal.
+
+## Parallel Bash calls and the working directory (2026-11-03, RETAKE)
+
+Two Bash tool calls issued in the same turn can race on the session's working
+directory: a `cd` at the start of one call was overridden by the other, a
+relative path then resolved against the wrong directory, and a status-page
+rebuild failed while the following publish went ahead with the stale file. Use
+absolute paths for every file and script in calls that run alongside others,
+and keep a rebuild and its publish in the same sequential chain.
+
+Related (same day): a closeout job started with `run_in_background` was logging
+into the workspace's `scratch/` when `archive.mjs apply` renamed the workspace;
+the open descriptor followed the directory and the archived log kept growing,
+so the first post-seal verify reported an inventory mismatch. Log closeout jobs
+(analysis, cloud sync) under `data/release-receipts/<slug>/`, never inside the
+workspace, and confirm no background job is writing there before sealing.

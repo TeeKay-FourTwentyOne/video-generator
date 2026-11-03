@@ -67,6 +67,10 @@ Existing paid QA scripts need a prior allowance and usage reconciliation. Tool
 confidence cannot replace inspecting its flagged frames.
 
 Build an integer-frame edit with explicit source/audio hashes into a new version.
+When the director authorizes a finishing master (the 4K), deliver the publication
+text with it, before publication: `briefs/<project-id>/description.md` in the
+project's convention, linked from the record and synced to the master's copy
+(`npm run records -- sync-description`). See `docs/production.md`.
 Deliver the native review film, local review player, remaining defects, budget
 estimate/reserves, and verification evidence. Distinguish frame inspection and
 computational audio checks from full playback/listening. Preserve sources and

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_d02192b2b6e8d4c0084c1598e512013feb83a74352b40a8cbac0f9fc1463b5e8",
+  "projectId": "retake",
+  "editVersion": "edit/v2",
+  "segmentIndex": 5,
+  "shotId": "BLACK",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 12,
+    "fps": 24
+  },
+  "timelineStartFrame": 486,
+  "outputSha256": "4734e5f339a3459dbf42f0f7e489977dd5e7462a1cd7f9540880dacb0c290a65",
+  "schemaVersion": 1,
+  "id": "use_dc32ddcfdf488839ddefd323f0a67867836551766464161cd96f70452d6a4b08"
+}

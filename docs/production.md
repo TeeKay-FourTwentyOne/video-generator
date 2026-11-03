@@ -318,6 +318,19 @@ production. This keeps the core edit contract small and makes each transform
 reviewable. Final audio needs loudness/peak checks and listening; the CLI does not
 claim artistic approval or automatically upscale/publish.
 
+When the director authorizes the finishing master (the 4K), deliver the
+publication text with it, before publication. Write
+`briefs/<project-id>/description.md` in the project's convention: a hook in
+the film's own voice, one line on what it is and how to watch it, the
+fictional-interface or AI-generation disclosure where it applies, the credit
+block naming each model and tool actually used, related links, tags, and the
+repository URL last. Set `descriptionPath` and each delivered artifact's
+`descriptionCopyPath` in the record, run
+`npm run records -- sync-description PROJECT_ID`, and include the text in the
+delivery notes. The director edits it; the post-publication wrap-up records the
+final wording. The description is part of the 4K delivery, not of the wrap-up
+(standard since 2026-11-03, RETAKE).
+
 Record delivered artifact hashes, rational fps and frame-derived durations in
 the public production record. Add dated technical/review events without inferring
 listening or artistic approval. Run `npm run records:check` and, when local media

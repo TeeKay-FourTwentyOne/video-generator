@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "projectId": "retake",
+  "title": "RETAKE",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Built 2026-11-03 from the VERIFY lineage: a liveness app, one ordinary person, a smile ladder that passes on a frown, and a robot verified instantly. Four Veo Quality takes (one retake for the direction of the second turn), interface, sounds and composites local. The director approved v2 (20.75 s) and authorized the 4K finish, which redraws the interface natively at 2160x3840, scales the feed locally and carries the approved AAC stream unchanged. Published as a YouTube Short on 2026-11-03 (URL user-confirmed) with the director's edited description. Technical checks, artistic approval and publication are recorded as separate events; real-time listening is not claimed. Archived 2026-11-03 under the standard retention: the 4K master, every take and still, the composites at both resolutions, the audio stems, manifests, decisions, recipes, ledgers and QA are retained; the v1 and v2 native edits, their debug copies, assembly segments and the derived mixes were removed (19 files) after the master was re-verified.",
+  "briefPath": "briefs/retake/brief.md",
+  "descriptionPath": "briefs/retake/description.md",
+  "descriptionSha256": "c08ea863f4afc9e63dead878dc4b0e9f88276f8c92d0e46953b9c62182a2af1c",
+  "handoffPath": "briefs/retake/handoff.md",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/retake/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/retake/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/retake-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "df845a3ad4e9170dae00e7785e53cb633ad2a66608578752019d78b7110d4100",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 528,
+      "durationSeconds": 22,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v1/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "4734e5f339a3459dbf42f0f7e489977dd5e7462a1cd7f9540880dacb0c290a65",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 498,
+      "durationSeconds": 20.75,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "descriptionCopyPath": "final/v2/description.txt",
+      "deliveryRecordPath": "final/v2/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v2-4k",
+      "path": "final/v2-4k/film.mp4",
+      "sha256": "f3d241ef2eefb5fced10804636abb8a680f56b7b62dbee42a3b1d067421d404e",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 498,
+      "durationSeconds": 20.75,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v2-4k/description.txt",
+      "deliveryRecordPath": "final/v2-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, shot planning, image and motion generation, interface, editing, sound and finishing",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/jzoZruiR4GE",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-03",
+    "artifactVersion": "v2-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "df845a3ad4e9170dae00e7785e53cb633ad2a66608578752019d78b7110d4100",
+      "recordedDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "evidence": "Assembler verified full decode, 1080x1920, 528 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -25.6 LUFS integrated, loudness range 18.2 LU, true peak -12.7 dBTP, mastered at its natural level with no static gain; the delivered AAC measured -25.6 LUFS integrated with a sample peak of -12.6 dBFS. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "4734e5f339a3459dbf42f0f7e489977dd5e7462a1cd7f9540880dacb0c290a65",
+      "recordedDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "evidence": "Assembler verified full decode, 1080x1920, 498 frames at 24/1 fps and the source hashes. The mix report measured the v2 soundtrack at -25.6 LUFS integrated, loudness range 18.0 LU, true peak -12.8 dBTP, mastered at its natural level with no static gain; the delivered AAC measured -25.6 LUFS integrated with a sample peak of -12.8 dBFS. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "f3d241ef2eefb5fced10804636abb8a680f56b7b62dbee42a3b1d067421d404e",
+      "recordedDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "evidence": "Frame-exact 4K finish of the approved v2 edit: 498 frames at 2160x3840, 24/1 fps, full decode counted; the AAC stream was copied from v2 and its packets and decoded PCM hash identically. Interface redrawn at native resolution; feed scaled locally. Listening is not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "4734e5f339a3459dbf42f0f7e489977dd5e7462a1cd7f9540880dacb0c290a65",
+      "recordedDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "evidence": "The director watched v2 on the status page and approved it ('Beautiful. 4k upscale please.').",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v2",
+      "artifactSha256": "4734e5f339a3459dbf42f0f7e489977dd5e7462a1cd7f9540880dacb0c290a65",
+      "recordedDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "evidence": "The director authorized the 4K finish of the approved edit in the same message; publication and source commits remain separate decisions.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "f3d241ef2eefb5fced10804636abb8a680f56b7b62dbee42a3b1d067421d404e",
+      "recordedDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "evidence": "The director supplied the published YouTube Shorts URL and the edited description on 2026-11-03. Recorded as user-confirmed; the public page was not independently fetched and the platform publication date is not asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/retake-v1/workspace-archive-manifest.json",
+    "inventorySha256": "0f332b7b4a7affa8eb483657c0163586712fe7841604f2d0a47195d6279f2e96",
+    "verifiedDate": "2026-11-03"
+  },
+  "legacyPaths": []
+}

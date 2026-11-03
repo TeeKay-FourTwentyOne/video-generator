@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "projectId": "retake",
+  "title": "RETAKE",
+  "updated": "2026-11-03",
+  "format": "Vertical 9:16, about 22.5 seconds, 1080 by 1920 at 24 fps, no music, no voice but the app's",
+  "phase": "published",
+  "logline": "An identity app puts one ordinary person's face in a ring of tick marks and tells them what to do. Turn slower. Smile. Try again. Smile. Try again. The smile collapses into a frown and the ring goes green: Verified. Then a robot's head in the same hallway is told to smile, and is verified instantly.",
+  "overall": "Published as a YouTube Short on 2026-11-03 from the 4K finishing master of the approved v2, with the director’s edited description. Four Veo Quality takes, one retake, interface and sounds local; about half the ceiling unspent. Closed out the same day: records updated, source committed, workspace archived under the standard retention.",
+  "next": "Nothing open. Future edits start from a restored copy of the archive.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "position",
+      "number": "1",
+      "title": "Position your face in the frame",
+      "status": "approved",
+      "summary": "Black page. A circular viewfinder shows a phone's front camera at arm's length: an ordinary person in their hallway, looking into the lens. The face settles into the circle and a ring of grey tick marks appears around it.",
+      "segments": [
+        {
+          "id": "b0",
+          "title": "C1 The face settles; the ring appears",
+          "status": "approved",
+          "detail": "Built: the take’s first frame held with light sensor grain, the ring already present; trimmed at the director’s note so the card is on screen for half a second before the first instruction. The take’s own first 19 frames carry an unasked speech movement and are skipped.",
+          "image": "refs/A2.png"
+        }
+      ],
+      "image": "refs/A2.png"
+    },
+    {
+      "id": "turn",
+      "number": "2",
+      "title": "Turn your head",
+      "status": "approved",
+      "summary": "The app asks for a slow turn. The first attempt is too quick and the ring drains: Move your head more slowly. The second is slow, left then right, and the ticks fill green around the ring.",
+      "segments": [
+        {
+          "id": "b1",
+          "title": "C1 A quick turn and back: Move your head more slowly",
+          "status": "approved",
+          "detail": "Kept (C1, source 20-95). The turn is a whip into a full profile in four frames rather than 45 degrees, which plays better as the over-eager fail; the ticks on the side the nose points to part-fill, flash red at frame 7 and drain; he returns to center and holds under the fail text. Scans clean; no doubling."
+        },
+        {
+          "id": "b2",
+          "title": "C2 Slow left, slow right: the ring fills",
+          "status": "approved",
+          "detail": "Rebuilt (v2). The slow turn to his left is C2 (14-69); C2 then turned the same way again for Now to the right, so a retake (C2R) was bought: it also turned left first, then swung into a proper right profile and held it. The right turn is C2R’s return to center played backward (a slow turn-in) and its hold as a palindrome, then the real return, with no jump cut. Ticks fill on the side the nose points to. Scans clean; no doubling."
+        }
+      ]
+    },
+    {
+      "id": "smile",
+      "number": "3",
+      "title": "Smile",
+      "status": "approved",
+      "summary": "Smile. A polite smile; a thin white arc sweeps the ring and stops: Try again. Smile. Bigger, teeth: Try again. The smile collapses into a frown, and the ring goes green: Verified. The feed freezes on the frown as the captured photo.",
+      "segments": [
+        {
+          "id": "b3",
+          "title": "C3 A polite closed-lip smile: Try again",
+          "status": "approved",
+          "detail": "Kept (C3, 0-59). Neutral, then the closed-lip smile from frame 18; the arc sweeps and stops at 44: Try again."
+        },
+        {
+          "id": "b4",
+          "title": "C3 A bigger smile, teeth: Try again",
+          "status": "approved",
+          "detail": "Kept (C3, 60-119). The big toothy grin; fail at 100 while he is still grinning; the grin dies over 112-120."
+        },
+        {
+          "id": "b5",
+          "title": "C3 The frown: Verified; the photo is taken",
+          "status": "approved",
+          "detail": "Kept (C3, 120-169 live, 169 frozen). The brows go up, the frown forms by 136, eye contact returns at 140 and holds; Verified at 168 with the capture flash and shutter, then the frozen frown for 2 s. The instruction still reads Smile. A quarter second of black follows (director’s note)."
+        }
+      ]
+    },
+    {
+      "id": "stinger",
+      "number": "4",
+      "title": "The robot",
+      "status": "approved",
+      "summary": "Cut to a humanoid robot's head in the same hallway, same framing, same light. Smile. The ring completes in a single frame. Verified. Black, and the loop lands back on Position your face in the frame.",
+      "segments": [
+        {
+          "id": "b6",
+          "title": "R The robot: Smile. Verified.",
+          "status": "approved",
+          "detail": "Built from the robot still with moving sensor grain; Smile for ten frames, then the full green ring and Verified with the same bell. The hallway bed drops out with the person.",
+          "image": "refs/R.png"
+        },
+        {
+          "id": "b7",
+          "title": "Black; loop",
+          "status": "approved",
+          "detail": "Built: 12 frames of black."
+        }
+      ],
+      "image": "refs/R.png"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "robot-motion",
+      "title": "The robot: a still with grain (planned) or a short Veo take",
+      "status": "decided",
+      "detail": "Director approved v2 as built (“Beautiful. 4k upscale please.”), so the built choice stands. Agent: a still is in character and avoids the third-party filter that robot heads have tripped. A 4 s take with a lens iris adjusting or a tiny servo tilt is the alternative if the still reads as a freeze."
+    },
+    {
+      "id": "fail-colour",
+      "title": "Fail feedback: dim red ticks for twelve frames (planned) or grey only",
+      "status": "decided",
+      "detail": "Director approved v2 as built (“Beautiful. 4k upscale please.”), so the built choice stands. Agent: the red keeps the fail legible on mute; grey-only is quieter and closer to the real enrollment screens. Both cost nothing to swap."
+    },
+    {
+      "id": "capture",
+      "title": "The capture: flash and shutter on Verified (planned) or no capture",
+      "status": "decided",
+      "detail": "Director approved v2 as built (“Beautiful. 4k upscale please.”), so the built choice stands. Agent: the shutter makes the frown a photo, which is the point; without it the freeze reads as the app pausing."
+    },
+    {
+      "id": "caption",
+      "title": "Top caption: Identity check (planned)",
+      "status": "decided",
+      "detail": "Director approved v2 as built (“Beautiful. 4k upscale please.”), so the built choice stands. Agent: one grey line, no step counter, no logo. Alternatives: Verify your identity, Face scan, or nothing."
+    },
+    {
+      "id": "retakes",
+      "title": "Retakes, if any",
+      "status": "decided",
+      "detail": "Director approved v2 as built (“Beautiful. 4k upscale please.”), so the built choice stands. Agent: one planned attempt per shot; a fourth take (C4, the frown alone) only if C3 does not carry all three expressions."
+    },
+    {
+      "id": "native-sound",
+      "title": "Sound: local hallway bed and app cues only (built); the takes’ own sound is muted",
+      "status": "decided",
+      "detail": "Director approved v2 as built (“Beautiful. 4k upscale please.”), so the built choice stands. Agent: Veo gave him speech in the first take and a loud burst under the big grin; the second take was near-silent. A synthesized hallway tone keeps the feed continuous across the cuts. His breath from the takes can be brought back per span if wanted."
+    },
+    {
+      "id": "direction",
+      "title": "Now to the right: he turned left again (v1); fixed in v2",
+      "status": "decided",
+      "detail": "Director: “For RT-C2 where it prompts him to move his head to the right he moves his head to the left again and is verified. Was that intentional? If not, please have him move it to the right.” Not intentional: the take turned the same way twice and I misread the sheet. One retake bought; v2 turns to his right."
+    },
+    {
+      "id": "v2-trims",
+      "title": "v2 trims: open on the card half a second before the first instruction; a quarter second of black before the robot",
+      "status": "decided",
+      "detail": "Director: “cut the start of RT-C1 so it begins at src 1.500s (frame 36)” and “add .25s of black after RT-C3 and before RT-R.” Applied in v2."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-03",
+      "text": "Concept chosen from the VERIFY lineage and approved by the director with three notes: the head-turn app pattern, the smile ladder, the robot stinger. Brief, prompts and plan written; ledger opened; status page created before the first paid request."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Anchor A came back as a phone in a hand showing the camera app; the screen content was cropped and regenerated as the direct camera view (A2), which Veo accepted on the first probe. Robot still R generated from A2. Three Quality takes submitted and back within six minutes, all kept: a whip-turn, two slow turns, and the whole smile ladder in one take. Gate: contact sheets, dense strips on every turn and on the ladder, clip scans on all three, clone checks on the two turn takes (clean). Chrome, ring, app sounds and the hallway bed built locally; four composites rendered; v1 cut at 528 frames (22.0 s)."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "v1 assembled and verified (528 frames, 22.0 s, full decode, source hashes; soundtrack -25.6 LUFS integrated, -12.7 dBTP, mastered at its natural level). Loop seam checked on a doubled copy. The draft is on this page with the frame-accurate player. Open decisions are listed for the director."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Director watched v1: trim the opening to the card already on screen, add a quarter second of black before the robot, and the second turn went left again. C2 had turned the same way twice (my sheet read was wrong). Retake C2R bought: it turned left first too, then swung into a proper right profile; its return to center is played backward as the slow turn-in with the hold as a palindrome, no jump cut. Ticks now fill on the side the nose points to. v2 assembled and verified (498 frames, 20.75 s, same loudness); the v2 draft replaces v1 on this page."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Director approved v2 and asked for the 4K. Finish built frame-exact from the v2 edit: the chrome drawn again at 2160 by 3840 (ring and type crisp), the feed crops scaled with Lanczos after a 100% comparison showed the neural x2 drawing ink lines into the skin, the robot still through the x2 model where it only cleaned edges; v2’s AAC copied unchanged (packets and PCM identical). 498 frames verified."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Publication text written (briefs/retake/description.md) and synced to the v2 and 4K delivery copies; by the director’s new rule the description is now part of every 4K delivery."
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Published: https://youtube.com/shorts/jzoZruiR4GE (director-supplied, user-confirmed). The director trimmed the description; the final wording is synced into the record and the delivered copies. Closeout: analysis checkpoint complete over all eleven clips, private cloud sync run for the project set, workspace archived and verified, standard retention applied, source committed."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-03",
+      "title": "Draft v1",
+      "film": "final/v1/film.mp4",
+      "poster": "final/v1/film.mp4",
+      "posterFrame": 420,
+      "fps": 24,
+      "frames": 528,
+      "width": 1080,
+      "height": 1920,
+      "note": "v1: the first cut. Three Quality takes, all first attempts, all kept; the interface, ring, sounds and robot beat are local. Technical checks only (full decode, 528 frames, source hashes, loudness); listening and approval are the director's. The player carries a 720 by 1280 copy with the same frames.",
+      "segments": [
+        {
+          "label": "RT-C1",
+          "shot": "RT-C1",
+          "frame": 0,
+          "frames": 124,
+          "sourceFrame": 0
+        },
+        {
+          "label": "RT-C2",
+          "shot": "RT-C2",
+          "frame": 124,
+          "frames": 116,
+          "sourceFrame": 0
+        },
+        {
+          "label": "RT-C3",
+          "shot": "RT-C3",
+          "frame": 240,
+          "frames": 216,
+          "sourceFrame": 0
+        },
+        {
+          "label": "RT-R",
+          "shot": "RT-R",
+          "frame": 456,
+          "frames": 60,
+          "sourceFrame": 0
+        },
+        {
+          "label": "BLACK",
+          "shot": "BLACK",
+          "frame": 516,
+          "frames": 12,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-03",
+      "title": "Draft v2",
+      "film": "final/v2/film.mp4",
+      "poster": "final/v2/film.mp4",
+      "posterFrame": 420,
+      "fps": 24,
+      "frames": 498,
+      "width": 1080,
+      "height": 1920,
+      "note": "v2: the director’s notes applied. Opens on the card half a second before the first instruction; the second turn now goes to his right (one retake, C2R, its return played backward as the turn-in); a quarter second of black before the robot. Technical checks only (full decode, 498 frames, source hashes, loudness); listening and approval are the director’s. The player carries a 720 by 1280 copy with the same frames.",
+      "segments": [
+        {
+          "label": "RT-C1",
+          "shot": "RT-C1",
+          "frame": 0,
+          "frames": 88,
+          "sourceFrame": 36
+        },
+        {
+          "label": "RT-C2",
+          "shot": "RT-C2",
+          "frame": 88,
+          "frames": 116,
+          "sourceFrame": 0
+        },
+        {
+          "label": "RT-C3",
+          "shot": "RT-C3",
+          "frame": 204,
+          "frames": 216,
+          "sourceFrame": 0
+        },
+        {
+          "label": "BLACK6",
+          "shot": "BLACK6",
+          "frame": 420,
+          "frames": 6,
+          "sourceFrame": 0
+        },
+        {
+          "label": "RT-R",
+          "shot": "RT-R",
+          "frame": 426,
+          "frames": 60,
+          "sourceFrame": 0
+        },
+        {
+          "label": "BLACK",
+          "shot": "BLACK",
+          "frame": 486,
+          "frames": 12,
+          "sourceFrame": 0
+        }
+      ]
+    }
+  ]
+}

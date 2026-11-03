@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_545a4c4b78e1bd9081e021614a141c5d150e244a904ca42efcac54aaf95f9206",
+  "sha256": "545a4c4b78e1bd9081e021614a141c5d150e244a904ca42efcac54aaf95f9206",
+  "bytes": 10848357,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "retake"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Footage from a phone's front-facing camera held at arm's length, vertical, in a plain apartment hallway: flat daylight from a window on the left side of the frame, a closed white door with a black jacket hanging beside it on the right side of the frame. The person in the frame looks straight into the lens with a neutral expression, mouth closed, for about one second. Then they turn their head slowly toward the window side of the frame, their own right, taking about two seconds, until the camera sees only the right side of their face in profile, with the nose pointing toward the left edge of the picture and the back of the head toward the door and the jacket. They hold that profile for a moment, then turn slowly back to center, look into the lens, neutral, mouth closed, and hold still to the end of the shot. The head never turns toward the door side. Their eyes stay open and their expression does not change. The phone is handheld and nearly still, with only the slightest natural sway; no zoom, no change of framing, the background stays in place. Their mouth stays closed the whole time; they never speak, mouth words, laugh or smile. Audio: the quiet of an apartment hallway, a faint breath. No music, no speech. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6ac6490f2d87f9fdc9f70112e0853d08037b6ab5609570318c6c3630a2fcf36d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 978920129,
+      "createdAt": "2026-11-03T20:32:02.857Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "5982dd91591bba00f2c976efc49958450ecce9160cec0ddfaeacc87c7a05013b",
+          "bytes": 1373341,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "8ce1acfe645a031d51441359c960d5a850a6245522f6c793eae22efe41d02552"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

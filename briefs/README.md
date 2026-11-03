@@ -86,6 +86,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [The Lodger](the-lodger/README.md) | delivered | — | [Brief](the-lodger/brief.md) · [Decisions](the-lodger/decisions.md) · [Record](the-lodger/production.json) |
 | [THE OTHER WINDOW](the-other-window/README.md) | producing | — | [Brief](the-other-window/brief.md) · [Record](the-other-window/production.json) |
 | [Outlaw Vampire Sommeliers — Vascari’s Death Scene](vascari-death-scene/README.md) | unknown | — | [Brief](vascari-death-scene/brief.md) · [Record](vascari-death-scene/production.json) |
+| [RETAKE](retake/README.md) | published | — | [Brief](retake/brief.md) · [Description](retake/description.md) · [Record](retake/production.json) |
 | [VERIFY](verify/README.md) | published | — | [Brief](verify/brief.md) · [Description](verify/description.md) · [Decisions](verify/decisions.md) · [Record](verify/production.json) |
 | [Walla](walla/README.md) | published | — | [Brief](walla/brief.md) · [Description](walla/description.md) · [Record](walla/production.json) |
 | [Washing Day](washing-day/README.md) | review | — | [Brief](washing-day/brief.md) · [Record](washing-day/production.json) |

@@ -66,3 +66,4 @@ This package bundles the ncnn-vulkan binary and model weights (~51MB). Works on 
    If missing: `pip install realesrgan-ncnn-py`.
 3. **Run upscale** — Execute the tool. For long videos, run in background.
 4. **Verify output** — Check output file exists, confirm resolution with ffprobe, report file size.
+5. **Publication text** — The 4K finish is the last step before publication, so deliver the YouTube description with it: write `briefs/<project-id>/description.md` in the project's convention (hook, what it is and how to watch it, AI/fictional-interface disclosure, credits naming each model and tool actually used, related links, tags, the repository URL last), set `descriptionPath` and the master's `descriptionCopyPath` in the production record, run `npm run records -- sync-description PROJECT_ID`, and put the text in the delivery notes for the director to edit. Standard since 2026-11-03 (RETAKE); see `docs/production.md`.
