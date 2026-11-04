@@ -15,8 +15,8 @@ test('default MCP exposes only the maintained production surface', async t => {
   try {
     await client.connect(transport);
     const { tools } = await client.listTools();
-    assert.equal(tools.length, 11);
-    for (const name of ['production_init', 'production_doctor', 'production_image', 'production_assemble', 'production_clips'])
+    assert.equal(tools.length, 12);
+    for (const name of ['production_init', 'production_doctor', 'production_image', 'production_assemble', 'production_finish', 'production_clips'])
       assert.ok(tools.some(t => t.name === name), name);
     assert.ok(!tools.some(t => ['save_config', 'execute_project', 'create_job'].includes(t.name)));
     const initSchema = tools.find(t => t.name === 'production_init').inputSchema;

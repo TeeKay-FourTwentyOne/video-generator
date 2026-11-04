@@ -318,8 +318,43 @@ production. This keeps the core edit contract small and makes each transform
 reviewable. Final audio needs loudness/peak checks and listening; the CLI does not
 claim artistic approval or automatically upscale/publish.
 
-When the director authorizes the finishing master (the 4K), deliver the
-publication text with it, before publication. Write
+When the director authorizes the finishing master (the 4K), prepare each base
+source's higher-resolution counterpart yourself (a native re-render at the target
+size, or an upscaled copy you have reviewed), map the counterparts by base clip
+ID, and let the maintained editor cut the approved edit again:
+
+```json
+{ "schemaVersion": 1, "counterparts": {
+  "clip_BASE_SOURCE_SHA256": "clips/S01-4k.mp4",
+  "clip_OTHER_BASE_SHA256": "clip_COUNTERPART_SHA256" } }
+```
+
+```sh
+npm run film -- finish data/workspace/my-film-v1 v2 v2-4k --sources=edit/finish-v2.json
+```
+
+`finish` reads the verified `final/v2/delivery.json` and refuses a changed base
+hash, an existing output version, a missing counterpart, or a counterpart whose
+frame count, frame rate or aspect ratio differs from its base source; all
+counterparts share one frame size, never smaller than the base. It registers the
+counterparts in the project collection (kind `derived`), runs the analysis
+checkpoint, cuts the same integer frame ranges and fades from the counterparts,
+and copies the base delivery's audio stream unchanged, never re-encoded or
+trimmed. It verifies full decode, dimensions, the counted frame total and audio
+identity (the coded packet digest and the decoded PCM digest must equal the
+base's), writes the normal `delivery.json` beside the video with the base
+version and hash, the per-segment counterparts and hashes and a `finishing`
+block, carries the base's `description.txt` copy so `sync-description` finds the
+new master through the record's artifact entry, records each counterpart use
+(`finish/<version>`) and imports the master as a `delivery` clip. It performs no
+upscaling and no provider calls: a counterpart is whatever the agent prepared and
+reviewed, and `review` builds a package for the finished version like any other.
+Add the `finishing-master` artifact to the public record with
+`deliveryRecordPath` and `descriptionCopyPath` beside the video
+(maintained since 2026-11-03, after RETAKE's private recipe; House Special's
+audio-only revision would use the same route with same-size counterparts).
+
+Deliver the publication text with the finishing master, before publication. Write
 `briefs/<project-id>/description.md` in the project's convention: a hook in
 the film's own voice, one line on what it is and how to watch it, the
 fictional-interface or AI-generation disclosure where it applies, the credit
@@ -361,7 +396,7 @@ procedure in the post-publication guide; active production preserves all version
 
 MCP: `production_doctor`, `production_init`, `production_plan`, `production_status`,
 `production_image`, `production_submit`, `production_poll`, `production_assemble`,
-`production_review` call the same CLI implementation. Author film/cue/edit JSON
+`production_review`, `production_finish` call the same CLI implementation. Author film/cue/edit JSON
 through the host's local file tools; use the CLI for allowance reconciliation.
 In the legacy profile, `resume_job` resumes a known operation without generating
 a new one. The existing creative primitives remain available there. Their schemas

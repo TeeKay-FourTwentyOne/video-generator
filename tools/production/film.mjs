@@ -154,8 +154,9 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     'reserve WORKSPACE ID USD CATEGORY PURPOSE', 'reconcile WORKSPACE ID USD EVIDENCE',
     'image WORKSPACE REQUEST_JSON [MORE_JSON...] [--reconcile] [--spacing=SECONDS]', 'reconcile-image WORKSPACE IMAGE_ID',
     'join-anchor WORKSPACE SOURCE FRAME OUTPUT.png',
-    'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION [--overlay]', 'clips search|show|resolve|analytics [QUERY_OR_ID]'
-  ], note: 'Only submit/image perform generation. Poll retrieves an existing operation; it never submits. Several image requests run in order, spaced apart; --reconcile (or reconcile-image) reduces an image reservation to its saved-usage list-price estimate.' };
+    'assemble WORKSPACE VERSION', 'review WORKSPACE VERSION [--overlay]',
+    'finish WORKSPACE BASE_VERSION NEW_VERSION --sources=MAP.json', 'clips search|show|resolve|analytics [QUERY_OR_ID]'
+  ], note: 'Only submit/image perform generation. Finish cuts a verified delivery again from prepared higher-resolution counterparts and copies its soundtrack unchanged; it performs no upscaling. Poll retrieves an existing operation; it never submits. Several image requests run in order, spaced apart; --reconcile (or reconcile-image) reduces an image reservation to its saved-usage list-price estimate.' };
   if (verb === 'clips') {
     if (!['search', 'show', 'resolve', 'analytics'].includes(location)) throw new Error('Use npm run clips for catalog mutations');
     return (await import('./clips.mjs')).main([location, ...args], catalogRoot);
@@ -370,6 +371,22 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     if (analysis.status !== 'complete') throw new Error(`Project clip analysis is incomplete; inspect ${analysis.report} before delivery`);
     const result = verb === 'assemble' ? assemble(root, args[0], { catalogRoot })
       : review(root, args[0], { overlay: flags.includes('--overlay'), catalogRoot });
+    return { ...result, analysis: { status: analysis.status, clips: analysis.clips, report: analysis.report, humanReview: analysis.humanReview } };
+  }
+  if (verb === 'finish') {
+    const { finish, registerFinishClips } = await import('./edit.mjs');
+    const [baseVersion, newVersion, ...flags] = args;
+    let sources;
+    for (const f of flags) {
+      if (/^--sources=.+/.test(f) && sources === undefined) sources = f.slice('--sources='.length);
+      else throw new Error(`Unknown finish option: ${f}`);
+    }
+    if (!sources) throw new Error('finish needs BASE_VERSION NEW_VERSION --sources=MAP.json (workspace-relative counterpart map)');
+    const { projectId } = registerFinishClips(root, baseVersion, newVersion, sources, { catalogRoot });
+    const { processProject } = await import('./clip-analysis-workflow.mjs');
+    const analysis = await processProject(projectId, catalogRoot, { progress: e => process.stderr.write(JSON.stringify(e) + '\n') });
+    if (analysis.status !== 'complete') throw new Error(`Project clip analysis is incomplete; inspect ${analysis.report} before finishing`);
+    const result = await finish(root, baseVersion, newVersion, sources, { catalogRoot });
     return { ...result, analysis: { status: analysis.status, clips: analysis.clips, report: analysis.report, humanReview: analysis.humanReview } };
   }
   throw new Error(`Unknown command: ${verb}`);

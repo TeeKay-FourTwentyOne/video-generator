@@ -67,7 +67,10 @@ Existing paid QA scripts need a prior allowance and usage reconciliation. Tool
 confidence cannot replace inspecting its flagged frames.
 
 Build an integer-frame edit with explicit source/audio hashes into a new version.
-When the director authorizes a finishing master (the 4K), deliver the publication
+When the director authorizes a finishing master (the 4K), prepare and review the
+higher-resolution counterparts, then cut the master with
+`npm run film -- finish WORKSPACE BASE NEW --sources=MAP.json` (same frame
+ranges, base soundtrack copied unchanged, uses recorded). Deliver the publication
 text with it, before publication: `briefs/<project-id>/description.md` in the
 project's convention, linked from the record and synced to the master's copy
 (`npm run records -- sync-description`). See `docs/production.md`.

@@ -63,4 +63,11 @@ export const productionTools = {
     inputSchema: { workspace, version: z.string() },
     handler: async (a: { workspace: string; version: string }) => invoke(["review", a.workspace, a.version]),
   },
+  production_finish: {
+    name: "production_finish", description: "Finish a verified delivery into a higher-resolution master: register and analyze the prepared counterparts, cut the same integer frame ranges from them, copy the base soundtrack unchanged, verify frames and audio identity, and record uses. No upscaling, no provider calls.",
+    inputSchema: { workspace, baseVersion: z.string(), version: z.string(),
+      sourcesFile: z.string().describe("Workspace-relative JSON map {schemaVersion:1, counterparts:{<base clip ID>: <counterpart path or clip ID>}}") },
+    handler: async (a: { workspace: string; baseVersion: string; version: string; sourcesFile: string }) =>
+      invoke(["finish", a.workspace, a.baseVersion, a.version, `--sources=${a.sourcesFile}`]),
+  },
 };

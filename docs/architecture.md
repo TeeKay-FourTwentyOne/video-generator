@@ -90,9 +90,12 @@ changes spending authority nor publishes financial details. See
 - `tools/production/edit.mjs`: hard-cut, frame-addressed local edits and a prepared
   soundtrack. Refuses changed sources, missing acceptance, out-of-range trims and
   existing output versions. Full decode and actual frame counts are checked.
+  `finish` cuts a verified delivery again from prepared higher-resolution
+  counterparts and copies its soundtrack packets unchanged (packet and PCM digests
+  must match the base); it never upscales.
 - `src/tools/production.ts`: MCP wrappers invoke the same CLI; no duplicate
   state machine or separate interpretation of the budget.
-- Default MCP profile: ten production tools (including clip discovery) and read-only configuration presence.
+- Default MCP profile: eleven production tools (including clip discovery and finishing) and read-only configuration presence.
   `VIDEO_MCP_PROFILE=legacy` restores the full specialist catalog on restart.
   This reduces tool selection ambiguity and keeps unqualified paths out of new films.
 

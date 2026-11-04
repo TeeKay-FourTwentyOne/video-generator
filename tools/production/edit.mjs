@@ -1,10 +1,12 @@
 /** Frame-addressed local edit + inspectable delivery. Inputs are never overwritten. */
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
+import { spawn } from 'node:child_process';
 import { command, probe, hashFile, readJson, localPath, loadPlan } from './film.mjs';
 import { PROJECT_ROOT } from '../../mcp/video-generator/dist/utils/paths.js';
 import { atomicJson, readLedger, budgetSummary } from '../../mcp/video-generator/dist/production/ledger.js';
-import { importClip, resolveClip, recordUse } from './clip-library.mjs';
+import { importClip, resolveClip, readClip, recordUse } from './clip-library.mjs';
 import { projectIdFor } from './clip-import.mjs';
 
 export function segmentSource(root, segment, catalogRoot = PROJECT_ROOT) {
@@ -157,4 +159,155 @@ export function review(root, version, options = {}) {
     result.overlay = path.relative(root, debug);
   }
   return result;
+}
+/** Digest of one audio stream two ways: the coded packets (stream copy) and the decoded PCM. Streams, never buffers. */
+async function audioDigests(file) {
+  const digestOf = args => new Promise((resolve, reject) => {
+    const hash = createHash('sha256');
+    const p = spawn('ffmpeg', ['-v', 'error', '-nostdin', '-i', file, '-map', '0:a:0', ...args, '-'], { stdio: ['ignore', 'pipe', 'pipe'] });
+    let stderr = '';
+    p.stdout.on('data', chunk => hash.update(chunk));
+    p.stderr.on('data', chunk => { stderr += chunk; });
+    p.on('error', reject);
+    p.on('close', code => code === 0 ? resolve(hash.digest('hex')) : reject(new Error(`ffmpeg failed: ${stderr.slice(-1800)}`)));
+  });
+  return { packets: await digestOf(['-c:a', 'copy', '-f', 'data']), pcm: await digestOf(['-f', 's16le', '-ac', '2', '-ar', '48000']) };
+}
+function frameCount(file) {
+  const video = probe(file).streams.find(s => s.codec_type === 'video');
+  if (!video) throw new Error('Counterpart has no video stream');
+  const frames = Number(video.nb_frames);
+  if (Number.isSafeInteger(frames) && frames > 0) return { video, frames };
+  const counted = JSON.parse(command('ffprobe', ['-v', 'error', '-count_frames', '-select_streams', 'v:0', '-show_entries', 'stream=nb_read_frames', '-of', 'json', file]));
+  return { video, frames: Number(counted.streams[0].nb_read_frames) };
+}
+/** Read a verified base delivery and the counterpart map for a finish; no rendering, no writes. */
+export function validateFinish(root, baseVersion, newVersion, sourcesFile, { catalogRoot = PROJECT_ROOT } = {}) {
+  validVersion(baseVersion); validVersion(newVersion);
+  if (baseVersion === newVersion) throw new Error('The finishing version must differ from its base');
+  const plan = loadPlan(root);
+  const baseFolder = localPath(root, `final/${baseVersion}`);
+  const base = readJson(path.join(baseFolder, 'delivery.json'));
+  if (base.schemaVersion !== 1 || !Array.isArray(base.edit?.segments) || !base.edit.segments.length) throw new Error('Invalid base delivery');
+  if (!Object.values(base.checks ?? {}).every(Boolean)) throw new Error('Base delivery did not pass its own checks');
+  const baseMovie = localPath(root, base.output);
+  if (hashFile(baseMovie) !== base.sha256) throw new Error('Base delivery hash changed');
+  if (fs.existsSync(localPath(root, `final/${newVersion}`))) throw new Error('EEXIST: edit version already exists');
+  const map = readJson(localPath(root, sourcesFile));
+  if (map.schemaVersion !== 1 || !map.counterparts || typeof map.counterparts !== 'object' || Array.isArray(map.counterparts))
+    throw new Error('Sources map needs schemaVersion 1 and a counterparts object keyed by base clip ID');
+  const counterparts = new Map();
+  let size = null, total = 0;
+  for (const segment of base.edit.segments) {
+    const clipId = segment.clipId ?? (segment.sha256 ? `clip_${segment.sha256}` : null);
+    if (!clipId) throw new Error('Base segments must identify their source by clip ID');
+    const target = map.counterparts[clipId];
+    if (typeof target !== 'string' || !target) throw new Error(`Missing counterpart for ${segment.shotId} (${clipId})`);
+    if (!counterparts.has(clipId)) {
+      const file = target.startsWith('clip_') ? resolveClip(target, catalogRoot) : localPath(root, target);
+      const { video, frames } = frameCount(file);
+      const baseFrames = resolveCounterpartBaseFrames(root, segment, clipId, catalogRoot);
+      if (frames !== baseFrames) throw new Error(`Counterpart frame count differs for ${segment.shotId}: ${frames} vs ${baseFrames}`);
+      const [num, den] = video.avg_frame_rate.split('/').map(Number);
+      if (Math.abs(num / den - plan.fps) > .001) throw new Error(`Counterpart frame rate differs for ${segment.shotId}`);
+      if (video.width * plan.height !== video.height * plan.width) throw new Error(`Counterpart aspect ratio differs for ${segment.shotId}`);
+      if (video.width < plan.width || video.height < plan.height) throw new Error(`Counterpart is smaller than the base for ${segment.shotId}`);
+      if (size && (size.width !== video.width || size.height !== video.height)) throw new Error('Counterparts must share one frame size');
+      size ??= { width: video.width, height: video.height };
+      counterparts.set(clipId, { file, sha256: hashFile(file), frames, reference: target });
+    }
+    if (segment.inFrame + segment.frames > counterparts.get(clipId).frames) throw new Error('Trim exceeds counterpart frames');
+    total += segment.frames;
+  }
+  if (Number(base.expected?.frames) !== total) throw new Error('Base delivery frame total disagrees with its segments');
+  return { plan, base, baseFolder, baseMovie, counterparts, size, expected: { frames: total, seconds: total / plan.fps } };
+}
+function resolveCounterpartBaseFrames(root, segment, clipId, catalogRoot) {
+  // The catalog record is enough; the base source bytes need not be local for a finish.
+  const recorded = readClip(clipId, catalogRoot).technical?.frameCount;
+  if (Number.isSafeInteger(recorded) && recorded > 0) return recorded;
+  return frameCount(segmentSource(root, { ...segment, clipId, source: undefined }, catalogRoot)).frames;
+}
+/** Import the counterparts into the project collection before the analysis checkpoint, like registerEditClips. */
+export function registerFinishClips(root, baseVersion, newVersion, sourcesFile, { catalogRoot = PROJECT_ROOT } = {}) {
+  const projectId = projectIdFor(root, catalogRoot);
+  const { counterparts } = validateFinish(root, baseVersion, newVersion, sourcesFile, { catalogRoot });
+  return { projectId, clipIds: [...counterparts.values()].map(c => importClip(c.file, { kind: 'derived', collections: [projectId] }, catalogRoot).id) };
+}
+/** Finish an approved edit: the same integer frame ranges cut from higher-resolution counterparts, the base soundtrack copied unchanged. */
+export async function finish(root, baseVersion, newVersion, sourcesFile, { catalogRoot = PROJECT_ROOT } = {}) {
+  const projectId = projectIdFor(root, catalogRoot);
+  const { plan, base, baseFolder, baseMovie, counterparts, size, expected } = validateFinish(root, baseVersion, newVersion, sourcesFile, { catalogRoot });
+  const folder = localPath(root, `final/${newVersion}`);
+  fs.mkdirSync(folder);
+  const files = [];
+  for (const [i, segment] of base.edit.segments.entries()) {
+    const counterpart = counterparts.get(segment.clipId ?? `clip_${segment.sha256}`);
+    const filename = `segment-${String(i + 1).padStart(2, '0')}.mp4`;
+    const filters = [`trim=start_frame=${segment.inFrame}:end_frame=${segment.inFrame + segment.frames}`, 'setpts=PTS-STARTPTS',
+      `scale=${size.width}:${size.height}:flags=lanczos`, 'setsar=1'];
+    if (segment.fadeInFrames) filters.push(`fade=t=in:s=0:n=${segment.fadeInFrames}`);
+    if (segment.fadeOutFrames) filters.push(`fade=t=out:s=${segment.frames - segment.fadeOutFrames - 1}:n=${segment.fadeOutFrames}`);
+    command('ffmpeg', ['-v', 'error', '-n', '-i', counterpart.file, '-an', '-vf', filters.join(','), '-frames:v', String(segment.frames),
+      '-r', String(plan.fps), '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p',
+      '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', path.join(folder, filename)]);
+    files.push(filename);
+  }
+  const list = path.join(folder, 'concat.txt');
+  fs.writeFileSync(list, files.map(f => `file '${f}'`).join('\n') + '\n', { flag: 'wx' });
+  const output = path.join(folder, 'film.mp4');
+  const hasAudio = probe(baseMovie).streams.some(s => s.codec_type === 'audio');
+  const args = ['-v', 'error', '-n', '-f', 'concat', '-safe', '1', '-i', list];
+  // The soundtrack is the approved one: packets are copied, never re-encoded or trimmed.
+  if (hasAudio) args.push('-i', baseMovie, '-map', '0:v:0', '-map', '1:a:0', '-c:a', 'copy');
+  else args.push('-map', '0:v:0', '-an');
+  args.push('-c:v', 'copy', '-movflags', '+faststart', output);
+  command('ffmpeg', args);
+  command('ffmpeg', ['-v', 'error', '-i', output, '-f', 'null', '-']);
+  const details = JSON.parse(command('ffprobe', ['-v', 'error', '-count_frames', '-show_streams', '-show_format', '-of', 'json', output]));
+  const video = details.streams.find(s => s.codec_type === 'video');
+  if (Number(video.nb_read_frames) !== expected.frames || video.width !== size.width || video.height !== size.height)
+    throw new Error('Rendered finish does not match the base edit contract');
+  const audio = hasAudio ? { base: await audioDigests(baseMovie), output: await audioDigests(output) } : null;
+  if (audio && (audio.base.packets !== audio.output.packets || audio.base.pcm !== audio.output.pcm)) throw new Error('Finished soundtrack differs from the base delivery');
+  if (!hasAudio && details.streams.some(s => s.codec_type === 'audio')) throw new Error('Finish gained an audio stream the base does not have');
+  for (const c of counterparts.values()) if (hashFile(c.file) !== c.sha256) throw new Error('Counterpart mutated during rendering');
+  if (hashFile(baseMovie) !== base.sha256) throw new Error('Base delivery mutated during rendering');
+  const registered = new Map([...counterparts].map(([clipId, c]) => [clipId, importClip(c.file, { kind: 'derived', collections: [projectId] }, catalogRoot)]));
+  const segments = base.edit.segments.map((segment, index) => {
+    const baseClipId = segment.clipId ?? `clip_${segment.sha256}`, clip = registered.get(baseClipId);
+    return { index, shotId: segment.shotId, baseClipId, clipId: clip.id, sha256: clip.sha256, counterpart: counterparts.get(baseClipId).reference,
+      inFrame: segment.inFrame, frames: segment.frames };
+  });
+  let description = null;
+  if (base.description?.path) {
+    // The publication text travels with every master; sync-description then finds this copy by the record's artifact entry.
+    const copy = fs.readFileSync(localPath(root, base.description.path));
+    if (hashFile(localPath(root, base.description.path)) !== base.description.sha256) throw new Error('Base description copy hash changed; run sync-description first');
+    fs.writeFileSync(path.join(folder, 'description.txt'), copy, { flag: 'wx' });
+    description = { ...base.description, path: `final/${newVersion}/description.txt` };
+  }
+  const report = { schemaVersion: 1, version: newVersion, title: plan.title, output: path.relative(root, output), sha256: hashFile(output),
+    expected, probe: details,
+    checks: { fullDecode: true, dimensions: true, frameCount: true, baseHash: true, counterpartHashes: true,
+      audioPackets: hasAudio ? true : null, audioPcm: hasAudio ? true : null },
+    audioReview: 'Technical verification only; listening review is separate.', budget: budgetSummary(readLedger(path.join(root, 'budget.json'))),
+    edit: base.edit,
+    finishing: { role: 'finishing-master', baseVersion, baseOutput: base.output, baseSha256: base.sha256, width: size.width, height: size.height,
+      segments, audio: hasAudio ? { streamCopied: true, packetsSha256: { base: audio.base.packets, output: audio.output.packets },
+        pcmSha256: { base: audio.base.pcm, output: audio.output.pcm } } : null,
+      method: 'Integer frame ranges cut from prepared counterparts by the maintained editor; no neural upscaling inside the command.' },
+    artisticApproval: false, publication: null, ...(description ? { description } : {}) };
+  atomicJson(path.join(folder, 'delivery.json'), report);
+  let atFrame = 0;
+  for (const segment of segments) {
+    recordUse({ clipId: segment.clipId, projectId, editVersion: `finish/${newVersion}`, segmentIndex: segment.index,
+      shotId: segment.shotId, status: 'rendered', evidence: 'saved-finishing-master',
+      range: { unit: 'frames', start: segment.inFrame, length: segment.frames, fps: plan.fps },
+      timelineStartFrame: atFrame, outputSha256: report.sha256 }, catalogRoot);
+    atFrame += segment.frames;
+  }
+  importClip(output, { kind: 'delivery', collections: [projectId] }, catalogRoot);
+  return { output: report.output, sha256: report.sha256, ...expected, width: size.width, height: size.height, checks: report.checks,
+    base: { version: baseVersion, sha256: base.sha256 }, counterparts: [...registered.values()].map(c => c.id), description: description?.path ?? null };
 }

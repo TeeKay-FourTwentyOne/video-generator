@@ -37,3 +37,12 @@ Dated harness observation (Claude Code, 2026-11-03): two Bash calls issued in
 the same turn can share a working directory, so a `cd` in one was overridden by
 the other and a relative-path step failed silently. Use absolute paths in every
 parallel call; noted in `docs/harness/claude-code.md`.
+
+Implemented 2026-11-03: `film finish WORKSPACE BASE_VERSION NEW_VERSION
+--sources=MAP.json` in `tools/production/edit.mjs` (`validateFinish`,
+`registerFinishClips`, `finish`), wired into the CLI and the `production_finish`
+MCP tool, with the two-segment 2x offline fixture and every refusal above in
+`tools/production/edit.test.mjs`. The counterpart map is keyed by base clip ID;
+the delivery record carries a `finishing` block with the audio packet and PCM
+digests; counterpart uses are recorded under `finish/<version>` and the master is
+imported as a `delivery` clip. Usage is documented in `docs/production.md`.
