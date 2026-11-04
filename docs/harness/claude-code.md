@@ -140,3 +140,14 @@ the open descriptor followed the directory and the archived log kept growing,
 so the first post-seal verify reported an inventory mismatch. Log closeout jobs
 (analysis, cloud sync) under `data/release-receipts/<slug>/`, never inside the
 workspace, and confirm no background job is writing there before sealing.
+
+## 2026-11-04 (Claude Code): a finished render that never returns
+
+A compositing recipe streamed frames from several `ffmpeg -f rawvideo` readers through
+pipes, wrote the result to an encoder, then called `wait()` on every reader. With per-layer
+time offsets, two readers' tails were never consumed; they blocked on a full stdout pipe and
+the script sat at 0% CPU for three hours after the encoder had finished and the output was
+complete. The `[i/N]` progress stops being a liveness signal once the loop ends.
+**Apply:** close a reader's stdout and `terminate()` it, never `wait()` on a reader whose
+output may not have been drained; print a final "wrote" line and wait on that line, not on a
+process. Checking `ps` for 0% CPU plus `sample` showing `__wait4` identifies this state at once.

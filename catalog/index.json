@@ -1797,6 +1797,23 @@
       }
     },
     {
+      "id": "clip_0800d6044164c5a9339d53baced6109e03b10d9cdc8236df03b5cc937b9921fb",
+      "metadata": "clips/clip_0800d6044164c5a9339d53baced6109e03b10d9cdc8236df03b5cc937b9921fb.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_08020ae8f0cda83afd105993311674b323c7f628f7bb14ba7025c37fe5bcf092",
       "metadata": "clips/clip_08020ae8f0cda83afd105993311674b323c7f628f7bb14ba7025c37fe5bcf092.json",
       "labels": [
@@ -3129,6 +3146,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_10f1400712110c6c28b9b5e233d936d1ad37274892a1ac694355548e28404def",
+      "metadata": "clips/clip_10f1400712110c6c28b9b5e233d936d1ad37274892a1ac694355548e28404def.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -7547,6 +7581,23 @@
       "durationSeconds": 8,
       "width": 720,
       "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_2921e68eb8f35277f5f33bace153749ac2e4cd59523f4c10a6b98ef77a72f208",
+      "metadata": "clips/clip_2921e68eb8f35277f5f33bace153749ac2e4cd59523f4c10a6b98ef77a72f208.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 25.333333,
+      "width": 2160,
+      "height": 3840,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -14103,6 +14154,23 @@
       }
     },
     {
+      "id": "clip_49f9832df819aff1200f69b10a0dc65c9594e0b6bcfc6b989dd7d1eaba644812",
+      "metadata": "clips/clip_49f9832df819aff1200f69b10a0dc65c9594e0b6bcfc6b989dd7d1eaba644812.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_4a47e63216d176ad7d128c3d5db2cecea264e004ae9a79e72d2187f95e448ecf",
       "metadata": "clips/clip_4a47e63216d176ad7d128c3d5db2cecea264e004ae9a79e72d2187f95e448ecf.json",
       "labels": [
@@ -14416,6 +14484,23 @@
       "width": 1280,
       "height": 720,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_4c18179ec87734e2e4103a47ba748e56936e1b71248752e421c349f049d28250",
+      "metadata": "clips/clip_4c18179ec87734e2e4103a47ba748e56936e1b71248752e421c349f049d28250.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -18914,6 +18999,23 @@
       }
     },
     {
+      "id": "clip_60091b989522c47517d45937dd11bac133a88845b00e8a723756f0af212b8c68",
+      "metadata": "clips/clip_60091b989522c47517d45937dd11bac133a88845b00e8a723756f0af212b8c68.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_600ea2a5b2f9430e65f7c296eb9f0289b0efe3628496eea4853a9ca9b241f525",
       "metadata": "clips/clip_600ea2a5b2f9430e65f7c296eb9f0289b0efe3628496eea4853a9ca9b241f525.json",
       "labels": [
@@ -21890,6 +21992,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_6e5c9f3a0c441102954eb4e877cb9991695c2fff7552ff53bad145542e733f51",
+      "metadata": "clips/clip_6e5c9f3a0c441102954eb4e877cb9991695c2fff7552ff53bad145542e733f51.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -25279,6 +25398,23 @@
       "width": 720,
       "height": 1280,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_7dd93c08174125035f7eefd718d3961ffbd22df5d68acaeb02df12fbfb69879c",
+      "metadata": "clips/clip_7dd93c08174125035f7eefd718d3961ffbd22df5d68acaeb02df12fbfb69879c.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -32160,6 +32296,40 @@
       }
     },
     {
+      "id": "clip_a23adc34baa93ecb67dbae1cb2fe9f6ce3e2d3eb5c0e6d2fe104958430bef66b",
+      "metadata": "clips/clip_a23adc34baa93ecb67dbae1cb2fe9f6ce3e2d3eb5c0e6d2fe104958430bef66b.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_a25f6d0d95f4e122029de537ae9f7f44d692321773d704cf2060bcd1f99c5675",
+      "metadata": "clips/clip_a25f6d0d95f4e122029de537ae9f7f44d692321773d704cf2060bcd1f99c5675.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 10,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_a26e02b45e981e1e933b1ca3ebbd4bc1661a01d91c9133f0c8f84733dd8c6298",
       "metadata": "clips/clip_a26e02b45e981e1e933b1ca3ebbd4bc1661a01d91c9133f0c8f84733dd8c6298.json",
       "labels": [
@@ -35612,6 +35782,23 @@
       }
     },
     {
+      "id": "clip_b75c864597057387dd5cad1b9a663968444199f9759ee86610fe4781d2f6b221",
+      "metadata": "clips/clip_b75c864597057387dd5cad1b9a663968444199f9759ee86610fe4781d2f6b221.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_b75e6255840e6b3bfd3bf05dba794bdb8251ee4ff37d61b802f688079ea4a712",
       "metadata": "clips/clip_b75e6255840e6b3bfd3bf05dba794bdb8251ee4ff37d61b802f688079ea4a712.json",
       "labels": [
@@ -37962,6 +38149,23 @@
       }
     },
     {
+      "id": "clip_c1af8db775a3e76a52ddaf48d9222eabddb7ffda1caa7e649a328d158b570edf",
+      "metadata": "clips/clip_c1af8db775a3e76a52ddaf48d9222eabddb7ffda1caa7e649a328d158b570edf.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 25.666667,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 3
+      }
+    },
+    {
       "id": "clip_c1c134704ae3a1d0d938916268423db6ea87d298494decb66f9f66105a375454",
       "metadata": "clips/clip_c1c134704ae3a1d0d938916268423db6ea87d298494decb66f9f66105a375454.json",
       "labels": [
@@ -39256,6 +39460,23 @@
       "width": 1280,
       "height": 704,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_c789301c3451beef9116459349defa792f5a2c003487b830a997ef525c66f346",
+      "metadata": "clips/clip_c789301c3451beef9116459349defa792f5a2c003487b830a997ef525c66f346.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -48278,6 +48499,23 @@
       }
     },
     {
+      "id": "clip_f879476c5753ef1ae0bd377a1bd699f94571bb4c34139512fa9cfcda5040a522",
+      "metadata": "clips/clip_f879476c5753ef1ae0bd377a1bd699f94571bb4c34139512fa9cfcda5040a522.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 25.666667,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_f895e635f3780e4c6e01e685a75f85f1ee4402ba3fcd30529367349d117fb41c",
       "metadata": "clips/clip_f895e635f3780e4c6e01e685a75f85f1ee4402ba3fcd30529367349d117fb41c.json",
       "labels": [
@@ -48466,6 +48704,23 @@
       "width": 1024,
       "height": 576,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_f9ca783380cb60e2111d41f997999ae3ac5767e76dcf9a9ea02a214bf0a82e6a",
+      "metadata": "clips/clip_f9ca783380cb60e2111d41f997999ae3ac5767e76dcf9a9ea02a214bf0a82e6a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -49436,6 +49691,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_fde30e9760baa0003d23ef31db7ef961d96b2ef6db51ce489678440a3467ec0d",
+      "metadata": "clips/clip_fde30e9760baa0003d23ef31db7ef961d96b2ef6db51ce489678440a3467ec0d.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "every-way-home"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0

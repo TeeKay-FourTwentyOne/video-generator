@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a25f6d0d95f4e122029de537ae9f7f44d692321773d704cf2060bcd1f99c5675",
+  "sha256": "a25f6d0d95f4e122029de537ae9f7f44d692321773d704cf2060bcd1f99c5675",
+  "bytes": 5093964,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 10,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 240,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "every-way-home"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

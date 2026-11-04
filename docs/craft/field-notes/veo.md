@@ -430,3 +430,26 @@ right turn was built from its return to center played backward.
 in the frame, plan for the model to try the habitual side first, and keep the return-to-center
 of a profile hold as a reversible slow turn-in.
 Source: claude-code · Retake · 2026-11-03
+
+### Five book-ended takes of one walk arrive at the same time; stagger them locally
+Five Quality takes of a rise-and-cross between one first frame and one last frame, with five
+different route sentences (slow, fast, a pause at the table, left wall, right wall), all rose
+within frames 11-34 and were all at the far wall by about frame 150 of 192, then held. The
+prose about tempo moved the start by under a second; the last frame pulled every walk into the
+first half of the take. Stacked simultaneously they read as a blur of two or three bodies.
+**Apply:** when takes from the same book-ends must read as distinct, author the difference in
+time locally (offsets of a second or so per take, output extended with the held tail) rather
+than asking the prompt for it; the first frames are static enough that a delayed take's frozen
+head is invisible under the others.
+Source: claude-code · Every Way Home · 2026-11-04
+
+### The first frame of a take is anchor-exact; the last frame only approximately
+Cutting from a 4 s book-ended turn (first frame B, last frame B2) straight into takes that
+began on B2 showed a slight restage at the join. Measured frame by frame against the next
+take's frame 0: the turn's frame 88 of 96 was closest (0.42 mean difference in the figure),
+frame 95 was 0.95 and frame 75 was 1.48. Veo returns to the last-frame anchor around 88/96
+and drifts after it, while a take's frame 0 matches its first-frame anchor to a few levels.
+**Apply:** put the anchor-exact side of a cut on a take's first frame; when the outgoing
+take ends on the same anchor, scan its tail for the closest frame rather than using the last
+one, and cut there. The director judged the measured cut seamless.
+Source: claude-code · Every Way Home · 2026-11-04

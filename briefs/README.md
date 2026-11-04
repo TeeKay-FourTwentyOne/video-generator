@@ -78,6 +78,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Scary Woods — Episode 05: Wrong Turns](scary-woods-episode-05/README.md) | review | scary-woods | [Brief](scary-woods-episode-05/brief.md) · [Record](scary-woods-episode-05/production.json) |
 | [SECONDS](seconds/README.md) | published | — | [Brief](seconds/brief.md) · [Record](seconds/production.json) |
 | [A Signal Passing Through](signal-passing-through/README.md) | delivered | — | [Brief](signal-passing-through/brief.md) · [Description](signal-passing-through/description.md) · [Decisions](signal-passing-through/decisions.md) · [Record](signal-passing-through/production.json) |
+| [EVERY WAY HOME](every-way-home/README.md) | published | — | [Brief](every-way-home/brief.md) · [Description](every-way-home/description.md) · [Record](every-way-home/production.json) |
 | [SPIDER ARREST](spider-arrest/README.md) | review | — | [Brief](spider-arrest/brief.md) · [Description](spider-arrest/description.md) · [Record](spider-arrest/production.json) |
 | [STEAMBOAT WILHELM](steamboat-wilhelm/README.md) | unknown | — | [Brief](steamboat-wilhelm/brief.md) · [Record](steamboat-wilhelm/production.json) |
 | [Steamboat Wilhelm III](steamboat-wilhelm-iii/README.md) | published | — | [Brief](steamboat-wilhelm-iii/brief.md) · [Decisions](steamboat-wilhelm-iii/decisions.md) · [Record](steamboat-wilhelm-iii/production.json) |
@@ -87,6 +88,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [THE OTHER WINDOW](the-other-window/README.md) | producing | — | [Brief](the-other-window/brief.md) · [Record](the-other-window/production.json) |
 | [Outlaw Vampire Sommeliers — Vascari’s Death Scene](vascari-death-scene/README.md) | unknown | — | [Brief](vascari-death-scene/brief.md) · [Record](vascari-death-scene/production.json) |
 | [RETAKE](retake/README.md) | published | — | [Brief](retake/brief.md) · [Description](retake/description.md) · [Record](retake/production.json) |
+| [TANGO](tango/README.md) | planned | — | [Brief](tango/brief.md) · [Record](tango/production.json) |
 | [VERIFY](verify/README.md) | published | — | [Brief](verify/brief.md) · [Description](verify/description.md) · [Decisions](verify/decisions.md) · [Record](verify/production.json) |
 | [Walla](walla/README.md) | published | — | [Brief](walla/brief.md) · [Description](walla/description.md) · [Record](walla/production.json) |
 | [Washing Day](washing-day/README.md) | review | — | [Brief](washing-day/brief.md) · [Record](washing-day/production.json) |

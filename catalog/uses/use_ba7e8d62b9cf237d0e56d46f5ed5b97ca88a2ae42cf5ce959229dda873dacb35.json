@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_c1af8db775a3e76a52ddaf48d9222eabddb7ffda1caa7e649a328d158b570edf",
+  "projectId": "every-way-home",
+  "editVersion": "edit/v3",
+  "segmentIndex": 0,
+  "shotId": "M2a",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 328,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "56afe031a496b14d4abe54fffa61eb41efa249d4bdda1b64a7fa97eea294f247",
+  "schemaVersion": 1,
+  "id": "use_ba7e8d62b9cf237d0e56d46f5ed5b97ca88a2ae42cf5ce959229dda873dacb35"
+}

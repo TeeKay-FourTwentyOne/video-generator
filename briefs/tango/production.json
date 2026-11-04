@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "projectId": "tango",
+  "title": "TANGO",
+  "kind": "film",
+  "status": "planned",
+  "statusNote": "Brief written 2026-11-04 after EVERY WAY HOME shipped: a Rybczyński Tango homage, 16:9, about 60 s, around twenty characters each generated alone on one plate, difference-matted and collision-scheduled by code. Nothing generated; to be built in a fresh session after authorization.",
+  "briefPath": "briefs/tango/brief.md",
+  "supportingDocuments": [],
+  "workspace": {
+    "path": "data/workspace/tango-v1",
+    "state": "active"
+  },
+  "artifacts": [],
+  "production": {
+    "providers": [],
+    "credits": [
+      {
+        "role": "Concept and brief",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "reviewEvents": [],
+  "legacyPaths": []
+}

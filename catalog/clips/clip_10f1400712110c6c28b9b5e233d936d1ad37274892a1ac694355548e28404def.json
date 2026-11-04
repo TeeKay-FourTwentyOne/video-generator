@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_10f1400712110c6c28b9b5e233d936d1ad37274892a1ac694355548e28404def",
+  "sha256": "10f1400712110c6c28b9b5e233d936d1ad37274892a1ac694355548e28404def",
+  "bytes": 8246609,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "every-way-home"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage inside a long, almost empty room in an old house: pale lime-washed walls with nothing on them, a dark wide-plank wooden floor, a tall sash window with white muslin at the far end, soft grey morning daylight lying in a long pale rectangle across the floor; a plain dark wooden chair near the camera at the bottom left with its back to the camera, a small plain wooden table with a white cup and a low stool near the window. The camera is fixed high in the near corner of the room and does not move at all for the whole take: no pan, no tilt, no zoom, no drift. A woman in her thirties in a plain dark bottle-green long-sleeved dress to mid-calf and flat black shoes, dark hair in a low bun, sits in the chair with her back to the camera, upright and still, hands in her lap. She stays seated for a long moment, then rises slowly and walks down the room along the left wall, passing the table on its left side, and reaches the window only at the very end. She ends the take standing at the far window with her back to the camera, upright and still, her right hand resting on the window sill and her left arm hanging at her side, looking out through the muslin. She never turns toward the camera. Muted colors, soft contrast, real textures, quiet. Audio: her footsteps on the wooden boards, the soft rustle of her dress, the hush of an empty room, faint birds outside the window. No music, no speech, no humming, no voice. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_aa3b8ef098ca1ea8479e23a633a66938ecbb621dcc0c291c45142c48df59e87f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1119198208,
+      "createdAt": "2026-11-04T17:16:46.343Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "fa92041f0ca5e6655dd82d78774ead66363c9e313b2f97b2816d5daa7ca6d65f",
+          "bytes": 2534477,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "e43263708c7b440060b36711b4f69b5ab5e2227ca516d12f4db6aecb9d078e8e",
+          "bytes": 2563593,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "398af0033e29d1f1eb3ea937186e8ec68b48da5cedd76c54df6a2fb3b4bed135"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

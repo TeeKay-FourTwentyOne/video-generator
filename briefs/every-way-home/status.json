@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "projectId": "every-way-home",
+  "title": "EVERY WAY HOME",
+  "updated": "2026-11-04",
+  "format": "Vertical 9:16, 1080 by 1920 at 24 fps; movement one about 8 s, with the return about 16-18 s; wordless, no music",
+  "phase": "published",
+  "logline": "A woman stands up from a chair and crosses a bare room to the window, filmed five times from the same first frame to the same last frame. The five takes are stacked as translucent selves: one woman in the chair thins into five who take their own ways down the room and gather back into one at the sill.",
+  "overall": "Published 2026-11-04 as a YouTube Short (user-confirmed link in the record and brief). Workspace archived under the standard retention; the 4K master, every take and the composites are retained.",
+  "next": "Nothing; the project is closed. TANGO is next, in its own project.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "m1",
+      "number": "1",
+      "title": "Movement one: chair to window",
+      "status": "approved",
+      "summary": "From the fixed high camera: she sits with her back to us at the bottom left; she rises and walks to the far window; she ends with her right hand on the sill. Five takes, five routes, one first frame and one last frame.",
+      "image": "refs/A.png",
+      "segments": [
+        {
+          "id": "s1a",
+          "title": "S1a Straight down the middle, even pace",
+          "status": "approved",
+          "detail": "Kept. Rises at frame 15, straight down the middle, at the sill by 77. Offset 32 frames in the composite."
+        },
+        {
+          "id": "s1b",
+          "title": "S1b A long moment seated, then slow along the left wall",
+          "status": "approved",
+          "detail": "Kept. Rises at 23 (the long seated moment came back short), keeps left, busy until 108. Offset 48."
+        },
+        {
+          "id": "s1c",
+          "title": "S1c Down the right side, past the stool",
+          "status": "approved",
+          "detail": "Kept. Rises at 34, the slowest start, walks the right side, busy until 145. Offset 85: the last self to leave."
+        },
+        {
+          "id": "s1d",
+          "title": "S1d Stops at the table to touch the cup",
+          "status": "approved",
+          "detail": "Kept. Rises at 31, pauses by the table, busy until 152. Offset 64."
+        },
+        {
+          "id": "s1e",
+          "title": "S1e Fast and early, then waiting at the window",
+          "status": "approved",
+          "detail": "Kept. Rises at 11, the fastest, at the sill by 82 and waits. Offset 12: the first self to leave."
+        },
+        {
+          "id": "m1c",
+          "title": "M1 The composite: one, then five, then one",
+          "status": "approved",
+          "detail": "In the cut. Plate from the temporal median of the takes, difference mattes, alpha 0.5, five time offsets, 240 frames with a 16-frame fade to black. Known finish note: a faint light rim around each self at 100%, invisible at phone size; a tighter matte is a free refinement.",
+          "image": "clips/M1-v1.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "number": "2",
+      "title": "Movement two: the return, and the one that stays",
+      "status": "approved",
+      "summary": "At the window she turns to face the room. Five selves leave the window one at a time, each by its own route, reach the chair, turn and sit, and she becomes solid in the chair again. The last self never leaves the window.",
+      "segments": [
+        {
+          "id": "t",
+          "title": "T At the window she turns to face the room",
+          "status": "approved",
+          "detail": "Kept. She lets her hand fall and turns to face the room. Solid, film 10.0-14.0 s, 12-frame cross from the outbound stack."
+        },
+        {
+          "id": "s2a",
+          "title": "S2a Straight down the middle, sits",
+          "status": "approved",
+          "detail": "Kept. Leaves at 52, straight down the middle, turns and sits by 135. Sit-down inspected at 4-frame density: clean. Fourth to leave."
+        },
+        {
+          "id": "s2b",
+          "title": "S2b A long moment at the window, then slow along the left wall",
+          "status": "approved",
+          "detail": "Kept. Leaves at 36, left side, sits by 135. Clean. Second to leave."
+        },
+        {
+          "id": "s2c",
+          "title": "S2c Down the right side, past the stool",
+          "status": "approved",
+          "detail": "Kept. Leaves at 68, the longest wait, right side past the stool, sits by 135. Clean. Last to leave; its still head also loops as the self that stays."
+        },
+        {
+          "id": "s2d",
+          "title": "S2d Stops at the table to touch the cup",
+          "status": "approved",
+          "detail": "Kept. Leaves at 39, pauses at the table, sits by 135. Clean. Third to leave."
+        },
+        {
+          "id": "s2e",
+          "title": "S2e Fast and early, then seated and still",
+          "status": "approved",
+          "detail": "Kept. Leaves at 31, the fastest, seated by 127. Clean. First to leave."
+        },
+        {
+          "id": "h",
+          "title": "H The one that stays: facing the room, breathing, not leaving",
+          "status": "dropped",
+          "detail": "Rejected: book-ended on one frame, Veo invented a second woman walking in from the camera and merging into the one at the window. Replaced at no cost by a ping-pong loop of S2c's still head (she only breathes)."
+        },
+        {
+          "id": "m2c",
+          "title": "M2 The composite: the turn, five leave, one stays",
+          "status": "approved",
+          "detail": "In the cut: one layered render of the whole film, 616 frames, 16-frame fade to black. The self that stays is S2c's still head looped. Checked at full resolution at the crossover into the turn and at the ending."
+        }
+      ],
+      "image": "refs/B2.png"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "return",
+      "title": "Build the return movement?",
+      "status": "decided",
+      "detail": "Movement one alone runs about 8 s. The return (window to chair, five routes, converging on the opening pose) makes the piece about 16-18 s and gives the title its meaning. Same cost again. Director 2026-11-04: 'Yes please on the return. And can we think of some other thing to add at the end so it's more of a complete, publishable video as opposed to just a study of the technique?' Building movement two plus a coda."
+    },
+    {
+      "id": "opacity",
+      "title": "Ghost opacity",
+      "status": "decided",
+      "detail": "Each self at about half opacity so five together are nearly solid, or a harder multiple-exposure look where every self is solid. The draft uses the translucent version; a solid variant can be rendered from the same takes at no cost. Director 2026-11-04: 'Whichever was used in her walking to the window.' Translucent, alpha 0.5, stays."
+    },
+    {
+      "id": "title",
+      "title": "Title on screen?",
+      "status": "decided",
+      "detail": "No title in the draft. Options: none; a small end card on black after the last frame. Director 2026-11-04: 'None for now.'"
+    },
+    {
+      "id": "offsets",
+      "title": "The stagger",
+      "status": "decided",
+      "detail": "The five takes are offset by 12/32/48/64/85 frames so the selves leave one at a time (my call; Veo had them all rise within a second of each other). The simultaneous version exists as a reference render if the director prefers the selves to split at the first step. Stands, with the director's approval of v3."
+    },
+    {
+      "id": "coda",
+      "title": "The ending (proposed, being built)",
+      "status": "decided",
+      "detail": "At the window she turns to face the room (one solid take). The selves leave the window one at a time and sit, and she solidifies in the chair; the last self never leaves. The film ends with her home, back to us, and one translucent self still at the window, facing her. Then black. If the director would rather every self come home, the held layer is removed and a fifth return self is already generated. Director approved v3 as a whole 2026-11-04, the ending with it."
+    },
+    {
+      "id": "seam",
+      "title": "The seam into the return",
+      "status": "decided",
+      "detail": "v3 cuts the turn at its frame 328 (the closest to the returns' first frame) instead of 335. The residual is a position change of about three normal frame steps in the figure. If it still shows, the next step is a 6-frame dissolve across the cut rendered into the composite, or holding the returns' first frame and dissolving the turn's tail into it. Director 2026-11-04: 'that was absolutely perfect. Seamless.'"
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-04",
+      "text": "Idea chosen from a five-idea workshop. Workspace opened; plate and two book-end anchors generated and pinned to the plate; five route prompts written; five 8 s Quality takes submitted."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Five takes back, all kept. First composite (simultaneous) read as a blur of two or three; the staggered composite is the film. v1 assembled with the five-track native mix; draft published here."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Director: return approved, ghost opacity as used, no title; asked for an ending. Turned-around anchor B2 made and pinned; seven Quality takes submitted; layered compositor written and checked against the v1 render."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Seven takes back: the turn and all five returns kept (sit-downs inspected at 4-frame density, clean); the held take rejected for an invented second woman and replaced by a loop of a return take's still head. Full-film layered render started; mix v2 built."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Full film rendered and assembled as v2 (616 frames, 25.7 s) with the twelve-track native mix; draft v2 published here."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Director: 'a very slight jump in her position between frames 335 and 336... Frame 315 might be slightly closer to 336. Can you try trimming 316-335?' Measured every frame of the turn against 336: 328 is closest, 315 is worse than 335. v3 cuts 328-335 (eight frames) and remixes to match."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Director approved v3 ('absolutely perfect. Seamless. Great work.') and authorized the 4K. Upscale started; description written."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "4K finishing master cut from the approved v3 (2x Real-ESRGAN counterpart, soundtrack copied unchanged, audio identity verified). Description delivered with it."
+    },
+    {
+      "date": "2026-11-04",
+      "text": "Director supplied the published link. Record and brief updated, catalog analysis and cloud sync complete, workspace archived and resealed after the standard retention (20 intermediates removed), source committed."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-04",
+      "title": "Draft v1",
+      "film": "final/v1/film.mp4",
+      "poster": "final/v1/film.mp4",
+      "posterFrame": 120,
+      "fps": 24,
+      "frames": 240,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native 1080 by 1920 review film of movement one; technical checks only (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames. Real-time listening and artistic approval are the director's.",
+      "segments": [
+        {
+          "label": "M1",
+          "shot": "M1",
+          "frame": 0,
+          "frames": 240,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-04",
+      "title": "Draft v2",
+      "film": "final/v2/film.mp4",
+      "poster": "final/v2/film.mp4",
+      "posterFrame": 600,
+      "fps": 24,
+      "frames": 616,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native 1080 by 1920 review film of the whole piece: out, the turn, back, and the one that stays. Technical checks only (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames. Real-time listening and artistic approval are the director's.",
+      "segments": [
+        {
+          "label": "M2",
+          "shot": "M2",
+          "frame": 0,
+          "frames": 616,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-11-04",
+      "title": "Draft v3",
+      "film": "final/v3/film.mp4",
+      "poster": "final/v3/film.mp4",
+      "posterFrame": 592,
+      "fps": 24,
+      "frames": 608,
+      "width": 1080,
+      "height": 1920,
+      "note": "v3: the cut from the turn into the return moved from frame 335/336 to 327/336 (eight frames of the turn's drifting tail removed) after the director's note; measured as the closest frame. Technical checks only; listening and artistic approval are the director's.",
+      "segments": [
+        {
+          "label": "M2a",
+          "shot": "M2",
+          "frame": 0,
+          "frames": 328,
+          "sourceFrame": 0
+        },
+        {
+          "label": "M2b",
+          "shot": "M2",
+          "frame": 328,
+          "frames": 280,
+          "sourceFrame": 336
+        }
+      ]
+    }
+  ]
+}

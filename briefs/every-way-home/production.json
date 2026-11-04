@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "projectId": "every-way-home",
+  "title": "EVERY WAY HOME",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published as a YouTube Short on 2026-11-04 (URL user-confirmed) with the delivered description. Twelve Quality takes from two book-ended positions, eleven kept, composited locally as translucent selves with staggered starts; v3 (25.33 s) approved by the director; the 4K finishing master cut from a 2x Real-ESRGAN counterpart with the v3 soundtrack copied unchanged. Technical checks, artistic approval and publication are recorded as separate events; real-time listening is not claimed. Archived 2026-11-04 under the standard retention: the 4K master, all twelve takes (including the rejected one), the plate and anchors, both composites with the median plate, the layer/mix/edit specs, decisions, recipes, ledgers and QA are retained; the v1, v2 and v3 native edits, their debug copies, assembly segments and the derived mixes were removed (20 files) after the master was re-verified.",
+  "briefPath": "briefs/every-way-home/brief.md",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/every-way-home/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/every-way-home/status.md"
+    },
+    {
+      "label": "Dependency inventory (archived)",
+      "path": "briefs/every-way-home/dependencies.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/every-way-home-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "0902fd4b574597e7496ee962c0d55fbf54b5cd1ae3c9e8386471497861e3fb2c",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 240,
+      "durationSeconds": 10,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "a3057b4fc8bfa6adf8425068451522219edf94de90ad9ee4fd8663c349a8eca4",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 616,
+      "durationSeconds": 25.666666666666668,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v2/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "56afe031a496b14d4abe54fffa61eb41efa249d4bdda1b64a7fa97eea294f247",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 608,
+      "durationSeconds": 25.333333333333332,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v3/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v3-4k",
+      "path": "final/v3-4k/film.mp4",
+      "sha256": "2921e68eb8f35277f5f33bace153749ac2e4cd59523f4c10a6b98ef77a72f208",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 608,
+      "durationSeconds": 25.333333333333332,
+      "publishedMaster": true,
+      "deliveryRecordPath": "final/v3-4k/delivery.json",
+      "descriptionCopyPath": "final/v3-4k/description.txt"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, anchors, motion generation, compositing, editing, sound",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "0902fd4b574597e7496ee962c0d55fbf54b5cd1ae3c9e8386471497861e3fb2c",
+      "recordedDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "evidence": "Assembler verified full decode, 1080x1920, 240 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -21 LUFS integrated, loudness range 5.5 LU, true peak -4.2 dBTP. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "a3057b4fc8bfa6adf8425068451522219edf94de90ad9ee4fd8663c349a8eca4",
+      "recordedDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "evidence": "Assembler verified full decode, 1080x1920, 616 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -21 LUFS integrated, loudness range 11.4 LU, true peak -3.2 dBTP. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "56afe031a496b14d4abe54fffa61eb41efa249d4bdda1b64a7fa97eea294f247",
+      "recordedDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "evidence": "Assembler verified full decode, 1080x1920, 608 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -21 LUFS integrated, loudness range 11.4 LU, true peak -3.2 dBTP. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "2921e68eb8f35277f5f33bace153749ac2e4cd59523f4c10a6b98ef77a72f208",
+      "recordedDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "evidence": "Finish command cut the approved v3 frame ranges from a 2x Real-ESRGAN (realesr-animevideov3-x2) counterpart of the composite and copied the v3 soundtrack unchanged; it verified full decode, 2160x3840, 608 frames at 24/1 fps, the base hash and audio identity (coded packet and decoded PCM digests equal to v3). Full-resolution crops compared against a lanczos 2x of the approved cut at the ending and mid-walk. Listening is not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3",
+      "artifactSha256": "56afe031a496b14d4abe54fffa61eb41efa249d4bdda1b64a7fa97eea294f247",
+      "recordedDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "evidence": "Director watched v3 on the status page and wrote: 'that was absolutely perfect. Seamless. Great work. 4k upscale please.'",
+      "outcome": "approved"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "2921e68eb8f35277f5f33bace153749ac2e4cd59523f4c10a6b98ef77a72f208",
+      "recordedDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "evidence": "The director supplied the published YouTube Shorts URL on 2026-11-04 with no edits to the delivered description. Recorded as user-confirmed; the public page was not independently fetched and the platform publication date is not asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "descriptionPath": "briefs/every-way-home/description.md",
+  "descriptionSha256": "f94ea2f37a686270bd94ad6e62662b8021ae90ccd3e63180aa82426f169dfa2e",
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/MR1BPNIdsDM",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-04",
+    "artifactVersion": "v3-4k"
+  },
+  "archive": {
+    "manifestPath": "data/workspace-archive/every-way-home-v1/workspace-archive-manifest.json",
+    "inventorySha256": "b4af29b578f9a9696c15d0ba9c118bbfaeadc5f4932eae142b773d8a66946742",
+    "verifiedDate": "2026-11-04"
+  }
+}
