@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+  "sha256": "26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+  "bytes": 6067624,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 38,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "60/1",
+    "frameCount": 2280,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "FALSE COLOR — TOGETHER: 4K finishing master"
+  ],
+  "collections": [
+    "false-color-together"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "4k",
+    "60fps",
+    "finishing-master",
+    "programmatic"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "projectId": "false-color-together",
+  "title": "FALSE COLOR — TOGETHER",
+  "updated": "2026-11-05",
+  "format": "9:16 · 38 seconds · 2160 × 3840 · 60 fps",
+  "phase": "published",
+  "logline": "Two equal circles seem unequal. Eight straight paths become a wheel. A small film about what company changes.",
+  "overall": "Published as False Color - Together. The 38-second 4K release retains the original cut and soundtrack; the published description matches the canonical text.",
+  "next": "Future revisions begin from a restored working copy. The canonical production record carries archive and retention evidence.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "size",
+      "number": "01",
+      "title": "Size is company",
+      "status": "accepted",
+      "summary": "Two blue targets keep the same diameter while their surroundings exchange sizes.",
+      "segments": [
+        {
+          "id": "question",
+          "title": "S01 Which blue is bigger?",
+          "status": "accepted"
+        },
+        {
+          "id": "swap",
+          "title": "S02 The company changes",
+          "status": "accepted"
+        },
+        {
+          "id": "proof",
+          "title": "S03 Same size; merge the targets",
+          "status": "accepted"
+        }
+      ],
+      "image": "refs/frame-0060.png"
+    },
+    {
+      "id": "motion",
+      "number": "02",
+      "title": "Straight lines, one wheel",
+      "status": "accepted",
+      "summary": "Eight straight-line oscillators are seen as a rolling wheel. Guides reveal every actual path.",
+      "segments": [
+        {
+          "id": "wheel",
+          "title": "S04 Establish the wheel",
+          "status": "accepted"
+        },
+        {
+          "id": "paths",
+          "title": "S05 Follow one dot; reveal all straight paths",
+          "status": "accepted"
+        },
+        {
+          "id": "together",
+          "title": "S06 Remove the guides; see the whole again",
+          "status": "accepted"
+        }
+      ],
+      "image": "refs/frame-1488.png"
+    },
+    {
+      "id": "title",
+      "number": "03",
+      "title": "Together",
+      "status": "accepted",
+      "summary": "The collective shape recedes behind the title.",
+      "segments": [
+        {
+          "id": "tag",
+          "title": "S07 TOGETHER",
+          "status": "accepted"
+        }
+      ],
+      "image": "refs/frame-2190.png"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "perception",
+      "title": "Do both effects read clearly on your screen?",
+      "status": "decided",
+      "detail": "The director released the completed film and wrote “Fantastic work on this one.” No separate display-by-display perceptual assessment is recorded."
+    },
+    {
+      "id": "title",
+      "title": "Published title: Together",
+      "status": "decided",
+      "detail": "Published page title: False Color - Together. Publication URL supplied by the director on 2026-11-05."
+    },
+    {
+      "id": "4k-finish",
+      "title": "4K finishing",
+      "status": "decided",
+      "detail": "Director 2026-11-05: “Wow. 4k upscale please.” Native 2160 by 3840 rerender of the current 60 fps cut authorized."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-05",
+      "text": "Planned a 38-second local companion to Green using Ebbinghaus size context and Tusi motion."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Rendered the exact local 60 fps picture. Source frame inspection and geometric checks passed; synthesized score prepared."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Assembled native review v1. Full decode, colour tags, frame count, source hashes and encoded audio measurements passed. Retained all source media and recipes."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Director requested 4K finishing. Native rerender retains the scene geometry and 2280-frame clock; the final soundtrack will be copied unchanged."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Completed native 4K finishing of the existing 2280-frame edit. Geometry, encoded targets, full decode, colour tags and both soundtrack identity checks passed; publication text prepared and original sources retained."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Director supplied the publication URL and requested post-publication closeout. Public page metadata matches the 38-second title and canonical description. Publication is recorded separately from technical checks and listening."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-05",
+      "title": "Together — native review",
+      "film": "final/v1/film.mp4",
+      "poster": "refs/frame-0060.png",
+      "fps": 60,
+      "frames": 2280,
+      "width": 1080,
+      "height": 1920,
+      "note": "Original programmatic imagery and sound. Working title. Technical checks passed; director review and listening remain open.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 240,
+          "sourceFrame": 0,
+          "source": "render/picture-v1.mp4"
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 240,
+          "frames": 300,
+          "sourceFrame": 240,
+          "source": "render/picture-v1.mp4"
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 540,
+          "frames": 300,
+          "sourceFrame": 540,
+          "source": "render/picture-v1.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 840,
+          "frames": 360,
+          "sourceFrame": 840,
+          "source": "render/picture-v1.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 1200,
+          "frames": 420,
+          "sourceFrame": 1200,
+          "source": "render/picture-v1.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 1620,
+          "frames": 480,
+          "sourceFrame": 1620,
+          "source": "render/picture-v1.mp4"
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 2100,
+          "frames": 180,
+          "sourceFrame": 2100,
+          "source": "render/picture-v1.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v1-4k",
+      "date": "2026-11-05",
+      "title": "Together — 4K master",
+      "film": "final/v1-4k/film.mp4",
+      "poster": "refs/frame-0060.png",
+      "fps": 60,
+      "frames": 2280,
+      "width": 2160,
+      "height": 3840,
+      "note": "Native 4K rasterization of the existing cut; original soundtrack copied unchanged and verified. Publication text prepared.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 240,
+          "sourceFrame": 0,
+          "source": "render/picture-4k-v1.mp4"
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 240,
+          "frames": 300,
+          "sourceFrame": 240,
+          "source": "render/picture-4k-v1.mp4"
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 540,
+          "frames": 300,
+          "sourceFrame": 540,
+          "source": "render/picture-4k-v1.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 840,
+          "frames": 360,
+          "sourceFrame": 840,
+          "source": "render/picture-4k-v1.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 1200,
+          "frames": 420,
+          "sourceFrame": 1200,
+          "source": "render/picture-4k-v1.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 1620,
+          "frames": 480,
+          "sourceFrame": 1620,
+          "source": "render/picture-4k-v1.mp4"
+        },
+        {
+          "label": "S07",
+          "shot": "S07",
+          "frame": 2100,
+          "frames": 180,
+          "sourceFrame": 2100,
+          "source": "render/picture-4k-v1.mp4"
+        }
+      ]
+    }
+  ]
+}

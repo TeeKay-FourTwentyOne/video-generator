@@ -25,6 +25,7 @@ async function fixture(t) {
   await fs.writeFile(path.join(source, 'sources/take.mp4'), 'original take');
   await fs.writeFile(path.join(source, 'refs/portrait.png'), 'original reference');
   for (const file of ['renders/cache/pass.mp4', 'qa/edge-test.mp4', 'audio/master.wav',
+    'audio/mix-master-v1.wav', 'audio/mix-master-v1.premaster.wav', 'audio/mix-stem.wav',
     'audio/V1-stem.wav', 'renders/source.mp4']) await fs.writeFile(path.join(source, file), `fixture ${file}`);
   const sha256 = createHash('sha256').update(await fs.readFile(master)).digest('hex');
   await archiveWorkspace(repo, 'example-v1');
@@ -70,16 +71,17 @@ test('explicit hashed custom derivatives use the same verified quarantine and pu
   const { repo, root, selection, receipt } = await fixture(t);
   const extra = [];
   for (const [file, derivativeClass] of [['renders/cache/pass.mp4', 'render-cache'],
-    ['qa/edge-test.mp4', 'qa-render'], ['audio/master.wav', 'complete-mix']]) {
+    ['qa/edge-test.mp4', 'qa-render'], ['audio/master.wav', 'complete-mix'],
+    ['audio/mix-master-v1.wav', 'complete-mix'], ['audio/mix-master-v1.premaster.wav', 'complete-mix']]) {
     const sha256 = createHash('sha256').update(await fs.readFile(path.join(root, file))).digest('hex');
     extra.push({ path: file, sha256, derivativeClass, reason: 'Reviewed regenerable derivative; inputs retained' });
   }
   const plan = await planRetention(repo, { ...selection, remove: [...selection.remove, ...extra] });
-  assert.equal(plan.files, 5);
+  assert.equal(plan.files, 7);
   await applyRetention(repo, plan, receipt);
-  assert.equal((await purgeRetention(repo, receipt)).removedFiles, 5);
+  assert.equal((await purgeRetention(repo, receipt)).removedFiles, 7);
   for (const item of extra) await assert.rejects(fs.stat(path.join(root, item.path)), { code: 'ENOENT' });
-  for (const file of ['audio/V1-stem.wav', 'renders/source.mp4', 'sources/take.mp4'])
+  for (const file of ['audio/V1-stem.wav', 'audio/mix-stem.wav', 'renders/source.mp4', 'sources/take.mp4'])
     assert.ok((await fs.stat(path.join(root, file))).isFile());
   assert.equal((await verifyArchive(repo, selection.slug)).verified, true);
 });
@@ -93,7 +95,10 @@ test('custom derivative review cannot omit hashes or authorize source, stem or m
     { ...item, derivativeClass: undefined }, { ...item, derivativeClass: 'anything' },
     { ...item, path: 'sources/take.mp4' }, { ...item, path: 'renders/source.mp4' },
     { ...item, path: 'refs/portrait.png' }, { ...item, path: 'final/v1/delivery.json' },
-    { ...item, path: 'audio/V1-stem.wav', derivativeClass: 'complete-mix' }])
+    { ...item, path: 'audio/V1-stem.wav', derivativeClass: 'complete-mix' },
+    { ...item, path: 'audio/mix-stem.wav', derivativeClass: 'complete-mix' },
+    { ...item, path: 'audio/mix-master-v1.wav', derivativeClass: 'complete-mix', sha256: undefined },
+    { ...item, path: 'audio/mix-master-v1.wav', derivativeClass: 'complete-mix', sha256: 'a'.repeat(64) }])
     await assert.rejects(planRetention(repo, { ...selection, remove: [bad] }));
 });
 

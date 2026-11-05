@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "projectId": "false-color-together",
+  "title": "FALSE COLOR — TOGETHER",
+  "kind": "film",
+  "seriesId": "false-color",
+  "status": "published",
+  "statusNote": "Published 4K master preserved in the verified archive. Standard retention removed the superseded native review and two derived soundtrack mixes; original picture sources, score, recipes and evidence remain intact.",
+  "briefPath": "briefs/false-color-together/brief.md",
+  "descriptionPath": "briefs/false-color-together/description.md",
+  "descriptionSha256": "da317d1c17e273ab8861ca1059c2ba1456d8933b561374a98a0c47149d1dc176",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/false-color-together/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/false-color-together/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/false-color-together-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 60,
+        "denominator": 1
+      },
+      "frames": 2280,
+      "durationSeconds": 38,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v1/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v1-4k",
+      "path": "final/v1-4k/film.mp4",
+      "sha256": "26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 60,
+        "denominator": 1
+      },
+      "frames": 2280,
+      "durationSeconds": 38,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v1-4k/description.txt",
+      "deliveryRecordPath": "final/v1-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [],
+    "credits": [
+      {
+        "role": "Perceptual design, programmatic animation, original synthesized score and editing; Python, Pillow and FFmpeg",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/en1onQtWT7k",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-05",
+    "artifactVersion": "v1-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+      "recordedDate": "2026-11-05",
+      "eventDate": "2026-11-05",
+      "evidence": "Full decode, 2280 frames at 60/1 fps, 1080 by 1920, explicit BT.709 colour tags and unchanged decoded picture hash after muxing. Encoded audio measures -19 LUFS integrated and -8.6 dBTP. Target-mask equality and straight-line trajectories pass source and encoded checks.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+      "recordedDate": "2026-11-05",
+      "eventDate": "2026-11-05",
+      "evidence": "Codex inspected source stills and encoded transition sheets. Text placement, merging targets, continuous motion, straight-path reveal and ending retained. Director perception and artistic approval are not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v1",
+      "artifactSha256": "27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+      "recordedDate": "2026-11-05",
+      "eventDate": "2026-11-05",
+      "evidence": "Director: “Wow. 4k upscale please.” Finish the existing cut at 2160 by 3840 with the same timing and audio.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+      "recordedDate": "2026-11-05",
+      "eventDate": "2026-11-05",
+      "evidence": "Full decode; 2160 by 3840; 2280 frames at 60/1 fps; 38 seconds; explicit BT.709 tags. AAC packet and decoded PCM hashes match native v1. Decoded picture hashes match the native 4K counterpart. Equal targets and straight-line paths pass 4K source and encoded checks.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+      "recordedDate": "2026-11-05",
+      "eventDate": "2026-11-05",
+      "evidence": "Codex inspected the 4K contact sheet and encoded straight-path reveal frame. Composition, typography, target equality and paths match the native cut. Source comparisons across eleven frames remain within the declared rasterization tolerance. Human listening and artistic approval are separate.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+      "recordedDate": "2026-11-05",
+      "evidence": "The director supplied the publication URL and requested post-publication closeout after delivery of v1-4k. Page metadata confirms the title, duration and unchanged description. No platform-transcode hash comparison or separate listening event is asserted.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "archive": {
+    "manifestPath": "data/workspace-archive/false-color-together-v1/workspace-archive-manifest.json",
+    "inventorySha256": "036ac69710d4c76a528bdcecc2cd7b57d5a1761ee3f12124f93c7840da49f9b6",
+    "verifiedDate": "2026-11-05"
+  },
+  "legacyPaths": []
+}

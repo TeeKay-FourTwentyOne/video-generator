@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fded829d9f17d3b72699477c85b0d760e11bb6538d6c1e2f2d7e95309a50ea8b",
+  "sha256": "fded829d9f17d3b72699477c85b0d760e11bb6538d6c1e2f2d7e95309a50ea8b",
+  "bytes": 2190123,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 38,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "60/1",
+    "frameCount": 2280,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "FALSE COLOR — TOGETHER: exact local picture"
+  ],
+  "collections": [
+    "false-color-together"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "ebbinghaus",
+    "optical-illusion",
+    "portrait",
+    "programmatic",
+    "tusi-motion"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

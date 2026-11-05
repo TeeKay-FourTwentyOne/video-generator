@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_268ecf0ab9bb030201779d6563abcf9d1d439c1c591a8e9bdeebf83c0b9cd44f",
+  "sha256": "268ecf0ab9bb030201779d6563abcf9d1d439c1c591a8e9bdeebf83c0b9cd44f",
+  "bytes": 5130610,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 38,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "60/1",
+    "frameCount": 2280,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "FALSE COLOR — TOGETHER: native 4K programmatic counterpart"
+  ],
+  "collections": [
+    "false-color-together"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "4k",
+    "60fps",
+    "counterpart",
+    "optical-illusion",
+    "programmatic"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

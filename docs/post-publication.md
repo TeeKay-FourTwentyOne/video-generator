@@ -150,7 +150,9 @@ The cleanup command accepts video derivatives under `final/` and `finish/`, and
 folder. Custom editor derivatives require an exact reviewed path, its SHA-256,
 and a `derivativeClass` on that removal item. Supported classes are `render-cache`
 for videos under `renders/`, `qa-render` for videos under `qa/`, and `complete-mix`
-for `master*`, `soundtrack*` or `mono-test-*` audio files directly under `audio/`.
+for `master*`, `mix-master*`, `soundtrack*` or `mono-test-*` audio files directly
+under `audio/`. This includes the mixer's `mix-master-v1.premaster.wav`; it still
+requires an explicit derivative class and the reviewed file hash.
 Original/source paths, per-shot stems, metadata and other locations remain
 protected. These classes are review assertions, not permission to select every
 file in a directory: retain reusable shot/title assets and inspect dependencies.

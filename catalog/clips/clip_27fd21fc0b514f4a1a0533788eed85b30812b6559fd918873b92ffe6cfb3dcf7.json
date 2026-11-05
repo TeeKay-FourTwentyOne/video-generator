@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+  "sha256": "27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+  "bytes": 3127150,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 38,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "60/1",
+    "frameCount": 2280,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "FALSE COLOR — TOGETHER: native review v1"
+  ],
+  "collections": [
+    "false-color-together"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "ebbinghaus",
+    "native-review",
+    "optical-illusion",
+    "portrait",
+    "programmatic",
+    "tusi-motion"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

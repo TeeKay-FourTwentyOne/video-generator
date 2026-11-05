@@ -27,6 +27,8 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Coming Attractions](coming-attractions/README.md) | published | — | [Brief](coming-attractions/brief.md) · [Description](coming-attractions/description.md) · [Record](coming-attractions/production.json) |
 | [Da Derga’s Hostel](da-derga/README.md) | planned | — | [Brief](da-derga/brief.md) · [Record](da-derga/production.json) |
 | [THE DIGNITY OF WORK](dignity-of-work/README.md) | unknown | — | [Brief](dignity-of-work/brief.md) · [Record](dignity-of-work/production.json) |
+| [EVERY WAY HOME](every-way-home/README.md) | published | — | [Brief](every-way-home/brief.md) · [Description](every-way-home/description.md) · [Record](every-way-home/production.json) |
+| [FALSE COLOR — TOGETHER](false-color-together/README.md) | published | false-color | [Brief](false-color-together/brief.md) · [Description](false-color-together/description.md) · [Record](false-color-together/production.json) |
 | [FLOORS](floors/README.md) | delivered | — | [Brief](floors/brief.md) · [Decisions](floors/decisions.md) · [Record](floors/production.json) |
 | [FLOSS](floss/README.md) | published | — | [Brief](floss/brief.md) · [Record](floss/production.json) |
 | [FULL DISCLOSURE](full-disclosure/README.md) | published | — | [Brief](full-disclosure/brief.md) · [Record](full-disclosure/production.json) |
@@ -70,6 +72,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Post-Training](post-training/README.md) | delivered | ai-explains-ai | [Brief](post-training/brief.md) · [Decisions](post-training/decisions.md) · [Record](post-training/production.json) |
 | [Book Graphs & Ramsey Numbers](ramsey-books/README.md) | delivered | ai-teaches-math | [Brief](ramsey-books/brief.md) · [Decisions](ramsey-books/decisions.md) · [Record](ramsey-books/production.json) |
 | [The Reassurance Box](reassurance-box/README.md) | unknown | — | [Brief](reassurance-box/brief.md) · [Record](reassurance-box/production.json) |
+| [RETAKE](retake/README.md) | published | — | [Brief](retake/brief.md) · [Description](retake/description.md) · [Record](retake/production.json) |
 | [The Last Gala](russian-ark-ending/README.md) | published | — | [Brief](russian-ark-ending/brief.md) · [Description](russian-ark-ending/description.md) · [Record](russian-ark-ending/production.json) |
 | [Scary Woods — Episode 01](scary-woods-episode-01/README.md) | published | scary-woods | [Brief](scary-woods-episode-01/brief.md) · [Record](scary-woods-episode-01/production.json) |
 | [Scary Woods — Episode 02: Shorten Sail](scary-woods-episode-02/README.md) | published | scary-woods | [Brief](scary-woods-episode-02/brief.md) · [Record](scary-woods-episode-02/production.json) |
@@ -78,17 +81,15 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Scary Woods — Episode 05: Wrong Turns](scary-woods-episode-05/README.md) | review | scary-woods | [Brief](scary-woods-episode-05/brief.md) · [Record](scary-woods-episode-05/production.json) |
 | [SECONDS](seconds/README.md) | published | — | [Brief](seconds/brief.md) · [Record](seconds/production.json) |
 | [A Signal Passing Through](signal-passing-through/README.md) | delivered | — | [Brief](signal-passing-through/brief.md) · [Description](signal-passing-through/description.md) · [Decisions](signal-passing-through/decisions.md) · [Record](signal-passing-through/production.json) |
-| [EVERY WAY HOME](every-way-home/README.md) | published | — | [Brief](every-way-home/brief.md) · [Description](every-way-home/description.md) · [Record](every-way-home/production.json) |
 | [SPIDER ARREST](spider-arrest/README.md) | review | — | [Brief](spider-arrest/brief.md) · [Description](spider-arrest/description.md) · [Record](spider-arrest/production.json) |
 | [STEAMBOAT WILHELM](steamboat-wilhelm/README.md) | unknown | — | [Brief](steamboat-wilhelm/brief.md) · [Record](steamboat-wilhelm/production.json) |
 | [Steamboat Wilhelm III](steamboat-wilhelm-iii/README.md) | published | — | [Brief](steamboat-wilhelm-iii/brief.md) · [Decisions](steamboat-wilhelm-iii/decisions.md) · [Record](steamboat-wilhelm-iii/production.json) |
 | [STILL JUGGLING](still-juggling/README.md) | published | — | [Brief](still-juggling/brief.md) · [Record](still-juggling/production.json) |
+| [TANGO](tango/README.md) | planned | — | [Brief](tango/brief.md) · [Record](tango/production.json) |
 | [The Last Screening](the-last-screening/README.md) | delivered | — | [Brief](the-last-screening/brief.md) · [Description](the-last-screening/description.md) · [Decisions](the-last-screening/decisions.md) · [Record](the-last-screening/production.json) |
 | [The Lodger](the-lodger/README.md) | delivered | — | [Brief](the-lodger/brief.md) · [Decisions](the-lodger/decisions.md) · [Record](the-lodger/production.json) |
 | [THE OTHER WINDOW](the-other-window/README.md) | producing | — | [Brief](the-other-window/brief.md) · [Record](the-other-window/production.json) |
 | [Outlaw Vampire Sommeliers — Vascari’s Death Scene](vascari-death-scene/README.md) | unknown | — | [Brief](vascari-death-scene/brief.md) · [Record](vascari-death-scene/production.json) |
-| [RETAKE](retake/README.md) | published | — | [Brief](retake/brief.md) · [Description](retake/description.md) · [Record](retake/production.json) |
-| [TANGO](tango/README.md) | planned | — | [Brief](tango/brief.md) · [Record](tango/production.json) |
 | [VERIFY](verify/README.md) | published | — | [Brief](verify/brief.md) · [Description](verify/description.md) · [Decisions](verify/decisions.md) · [Record](verify/production.json) |
 | [Walla](walla/README.md) | published | — | [Brief](walla/brief.md) · [Description](walla/description.md) · [Record](walla/production.json) |
 | [Washing Day](washing-day/README.md) | review | — | [Brief](washing-day/brief.md) · [Record](washing-day/production.json) |

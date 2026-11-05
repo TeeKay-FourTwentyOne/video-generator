@@ -7135,6 +7135,25 @@
       }
     },
     {
+      "id": "clip_268ecf0ab9bb030201779d6563abcf9d1d439c1c591a8e9bdeebf83c0b9cd44f",
+      "metadata": "clips/clip_268ecf0ab9bb030201779d6563abcf9d1d439c1c591a8e9bdeebf83c0b9cd44f.json",
+      "labels": [
+        "FALSE COLOR — TOGETHER: native 4K programmatic counterpart"
+      ],
+      "kind": "derived",
+      "collections": [
+        "false-color-together"
+      ],
+      "durationSeconds": 38,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 7
+      }
+    },
+    {
       "id": "clip_269ddda418d19c522661b0f640bdbed1c38254ff9a5619b249909f79e1a78176",
       "metadata": "clips/clip_269ddda418d19c522661b0f640bdbed1c38254ff9a5619b249909f79e1a78176.json",
       "labels": [
@@ -7186,6 +7205,25 @@
       "width": 720,
       "height": 1280,
       "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7",
+      "metadata": "clips/clip_26d8e493fbf64deb821adb295a41c2ad410cc8f89c8a453d07a24338b67f06f7.json",
+      "labels": [
+        "FALSE COLOR — TOGETHER: 4K finishing master"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "false-color-together"
+      ],
+      "durationSeconds": 38,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -7412,6 +7450,25 @@
       "durationSeconds": 8,
       "width": 2160,
       "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7",
+      "metadata": "clips/clip_27fd21fc0b514f4a1a0533788eed85b30812b6559fd918873b92ffe6cfb3dcf7.json",
+      "labels": [
+        "FALSE COLOR — TOGETHER: native review v1"
+      ],
+      "kind": "delivery",
+      "collections": [
+        "false-color-together"
+      ],
+      "durationSeconds": 38,
+      "width": 1080,
+      "height": 1920,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -40891,7 +40948,7 @@
       "hasPrompt": false,
       "uses": {
         "planned": 19,
-        "rendered": 2
+        "rendered": 5
       }
     },
     {
@@ -49711,6 +49768,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_fded829d9f17d3b72699477c85b0d760e11bb6538d6c1e2f2d7e95309a50ea8b",
+      "metadata": "clips/clip_fded829d9f17d3b72699477c85b0d760e11bb6538d6c1e2f2d7e95309a50ea8b.json",
+      "labels": [
+        "FALSE COLOR — TOGETHER: exact local picture"
+      ],
+      "kind": "source",
+      "collections": [
+        "false-color-together"
+      ],
+      "durationSeconds": 38,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 7
       }
     },
     {
