@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "projectId": "futility",
+  "title": "Futility",
+  "updated": "2026-11-06",
+  "format": "9:16 \u00b7 17 seconds \u00b7 complete poem in voice-over \u00b7 photorealistic",
+  "phase": "published",
+  "logline": "A woman waits for love in a quiet room while the neighborhood lives outside. She hears it, gets up, and joins it.",
+  "overall": "The director confirmed publication of the seventeen-second 4K film. The final description and credits are preserved, along with the finished master, original sources, selected performance and production records.",
+  "next": "The published film and retained 4K master are the current versions. Future revisions begin from a restored working copy.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Authored beat; no new material generated."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "A concrete proposal or material awaits a creative decision."
+    },
+    "dropped": {
+      "label": "Not selected",
+      "tone": "muted",
+      "description": "Auditioned material does not serve this proposed film."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    },
+    "anchored": {
+      "label": "Anchor selected",
+      "tone": "active",
+      "description": "Agent inspected the photographic reference and selected it for motion; not director artistic approval."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A saved provider operation is in progress."
+    },
+    "accepted": {
+      "label": "Selected for draft",
+      "tone": "good",
+      "description": "Agent selected this take after documented checks. Director artistic approval remains open."
+    },
+    "revision": {
+      "label": "Revising",
+      "tone": "active",
+      "description": "Director feedback is being addressed in a new retained version."
+    }
+  },
+  "scenes": [
+    {
+      "id": "room",
+      "number": "01",
+      "title": "The room",
+      "status": "approved",
+      "summary": "0\u20137 seconds. Waiting, a glance toward the window, the first hint of a smile.",
+      "segments": [
+        {
+          "id": "s01",
+          "title": "S01 \u2014 Waiting becomes a choice",
+          "status": "approved",
+          "detail": "Medium-wide near an open sash window. Her hands rest together; an unused second chair gives the waiting a physical shape. A laugh from outside catches her attention. VO: It is silly \u2014 / This waiting for love / In a parlor."
+        }
+      ],
+      "image": "refs/s01-anchor-v1.png"
+    },
+    {
+      "id": "alley",
+      "number": "02",
+      "title": "Life outside",
+      "status": "approved",
+      "summary": "7\u201312 seconds. Three neighbors share an ordinary, lively moment.",
+      "segments": [
+        {
+          "id": "s02",
+          "title": "S02 \u2014 The alley answers",
+          "status": "approved",
+          "detail": "A few adults share laughter and movement in an ordinary pedestrian alley. Keep the action incidental and the light natural. VO: When love is singing up and down the alley."
+        }
+      ],
+      "image": "refs/s02-anchor-v1.png"
+    },
+    {
+      "id": "choice",
+      "number": "03",
+      "title": "Without a collar",
+      "status": "approved",
+      "summary": "12\u201317 seconds. She steps outside, the image fades to black at frame 363, and a little laughter continues over black.",
+      "segments": [
+        {
+          "id": "s03",
+          "title": "S03 \u2014 Through the open doorway",
+          "status": "approved",
+          "detail": "Same woman and doorway. The final poem line leads into her step outside. The picture fade runs from frame 345 to full black at frame 363, using the director\u2019s frame marker as the exact endpoint."
+        },
+        {
+          "id": "black-tail",
+          "title": "B01 \u2014 Laughter over black",
+          "status": "approved",
+          "detail": "Solid black from frame 363 through the end, a 1.875-second hold. Retain the first subdued laughter burst; fade audio from 16.5 to 16.875 seconds and end at 17 seconds."
+        }
+      ],
+      "image": "refs/s03-anchor-v1.png"
+    },
+    {
+      "id": "voice",
+      "number": "Voice",
+      "title": "The poem performance",
+      "status": "approved",
+      "summary": "Director-selected audition A is in the cut with its generated pauses and pace intact.",
+      "segments": [
+        {
+          "id": "voice-performance",
+          "title": "VO \u2014 audition voice and delivery",
+          "status": "approved",
+          "detail": "Director: A please. Selected Alicia performance inserted as one continuous take; no phrase rearrangement or speed change."
+        }
+      ]
+    },
+    {
+      "id": "registry",
+      "number": "Audition",
+      "title": "What the registry offered",
+      "status": "dropped",
+      "summary": "These are existing source frames, not proposed new shots. Their limitations informed the fresh-footage recommendation.",
+      "segments": [
+        {
+          "id": "registry-street",
+          "title": "Street candidate \u2014 too polished",
+          "status": "dropped",
+          "detail": "Photoreal elements, but the wet cobbles, posed smile and saturated lighting feel like advertising. The clip also begins with a style transition.",
+          "image": "refs/registry-street.jpg"
+        },
+        {
+          "id": "registry-room",
+          "title": "Room candidate \u2014 strong but recognizable",
+          "status": "dropped",
+          "detail": "The natural room texture is convincing. Its staging and solitary figure belong strongly to an earlier production and pull this poem toward a different mood.",
+          "image": "refs/registry-room.jpg"
+        },
+        {
+          "id": "registry-curtain",
+          "title": "Curtain candidate \u2014 possible insert",
+          "status": "dropped",
+          "detail": "A neutral, usable image, but adding it would not improve the three-shot dramatic shape. It remains a possible fallback.",
+          "image": "refs/registry-curtain.jpg"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "poem",
+      "title": "Use Futility by Helene Johnson",
+      "status": "decided",
+      "detail": "Director: I like Futility. Preserve the complete short poem in a new voice performance."
+    },
+    {
+      "id": "look",
+      "title": "Photorealistic and coherent",
+      "status": "decided",
+      "detail": "Director requested more photorealistic material and made the quality of the film the priority over reuse."
+    },
+    {
+      "id": "setting",
+      "title": "Present day or 1920s Harlem",
+      "status": "decided",
+      "detail": "Proceeding with the proposed present-day treatment after the director authorized the fresh version. The setting is an agent creative choice within that proposal."
+    },
+    {
+      "id": "fresh-route",
+      "title": "Three fresh shots",
+      "status": "decided",
+      "detail": "Director: Proceed. Subsequent instruction: Please continue with producing the video based on Futility. Three fresh shots are authorized."
+    },
+    {
+      "id": "draft-review",
+      "title": "Review the first complete cut",
+      "status": "decided",
+      "detail": "Director requested a replacement voice for the first draft. Audition A was selected, the ending was revised, and the resulting native cut was approved: Perfect. 4k upscale please."
+    },
+    {
+      "id": "voice-auditions",
+      "title": "Choose the new poem performance",
+      "status": "decided",
+      "detail": "Director: A please. Alicia, measured reading, selected from the retained auditions."
+    },
+    {
+      "id": "revised-sound-review",
+      "title": "Review draft 2 sound",
+      "status": "decided",
+      "detail": "Director selected audition A and described the quieter mix as much better. The final seventeen-second native cut was subsequently approved: Perfect. 4k upscale please."
+    },
+    {
+      "id": "short-black-ending",
+      "title": "Shorten S03 and let laughter continue over black",
+      "status": "decided",
+      "detail": "Director: trim the end of S03 to 15.119s (frame 363), adding a fade to black that ends there with just a little bit of the laughter coming in over the black. Frame 363 is the exact picture endpoint; at the native 24 fps its timestamp is 15.125 seconds."
+    },
+    {
+      "id": "short-ending-review",
+      "title": "Review the fade and sound over black",
+      "status": "decided",
+      "detail": "Frame 363 is fully black and the first brief laughter burst continues over black. Director approved the resulting ending: Perfect. 4k upscale please."
+    },
+    {
+      "id": "4k-finish",
+      "title": "Finish the approved cut in 4K",
+      "status": "decided",
+      "detail": "Director: Perfect. 4k upscale please. Authorizes 2160 by 3840 finishing of draft 3; publication remains a separate action."
+    },
+    {
+      "id": "publication",
+      "title": "Published film",
+      "status": "decided",
+      "detail": "Director: It is published. https://youtube.com/shorts/zX46HdILRx4. Post-publication closeout requested."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-06",
+      "text": "Director selected Futility and prioritized a good, photorealistic film. Started the versioned workspace and private ledger."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Searched the registry across eight subjects and visually auditioned twelve candidates using retained analysis frames. Recommended three fresh shots; prepared a 22-second treatment and current-rate estimate for discussion."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Director authorized the fresh version and asked production to continue. Beginning photographic anchors, followed by the three video takes."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Created and inspected three photographic anchors. The doorway frame uses the room character and alley image as continuity references. Beginning native motion."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Submitted one native video take per shot, preserving the exact requests and reference hashes. Preparing a new spoken performance of the complete poem."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "All three takes passed the general and dense duplication checks and were selected after frame inspection. Cut shortened to twenty seconds. Native room and footsteps retained; the alley chatter is replaced with a clean sound bed under the poem."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Rendered the native twenty-second draft and verified full decode, 480 frames, dimensions and source hashes. Independent local audio transcription matches all twenty-two poem words. The source batch is privately backed up. Ready for director playback."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Director rejected the current voice quality and reading. Retaining the first draft and preparing new continuous performances of the full poem."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Completed four voice auditions using explicit delivery tags and three alternative voices. Preserved continuous timing and pitch, matched audition levels using fixed gain, and checked the complete poem with independent local transcription. No spoken tags detected; director performance review remains open."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Director selected audition A and requested more subdued laughter toward the end of S03. Preparing a new local mix and native review."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Inserted selected audition A intact and lowered the late S03 sound with a smooth transition. The encoded ending measures about six decibels lower than draft 1. Native export, exact picture-stream continuity, poem words and final audio levels verified; revised-film review remains open."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Director described the revised voice and mix as much better, then requested a fade completed at frame 363 followed by just enough solid black to hear some laughter. Preparing the shorter ending."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Rendered the seventeen-second cut. The three-quarter-second fade reaches full black exactly at frame 363, followed by 1.875 seconds of solid black. The first laughter burst continues; sound fades to silence by 16.875 seconds. All black frames and the preceding picture frame were checked."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Director approved draft 3 and authorized its 4K upscale. Preserve 408 frames, the frame-363 black endpoint and exact soundtrack."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Compared Lanczos, neural x2 and blended crops from all three shots. Selected Lanczos to preserve skin, hair and cloth texture. Four 4K source copies are rendered, including native solid black; encoded crops were inspected."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Completed the portrait 4K master and full project analysis checkpoint. The final color-tag correction changed no decoded pixels. Verified all 408 frame timestamps, exact audio packets and PCM, and all 45 fully black frames. The native cut and every source remain preserved; description and credits accompany the master."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Director supplied the YouTube Shorts URL, confirmed publication and requested the post-publication workflow. Recording user-confirmed publication without inferring a platform date or transcode hash."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Prepared the final preservation package with the original generated shots, final 4K master, voice auditions, stems, references, recipes and QA. The exact retention selection covers superseded workspace renders and complete mixes; historical delivery metadata remains."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1-review",
+      "date": "2026-11-06",
+      "title": "Draft v1",
+      "film": "final/v1-review/film.mp4",
+      "poster": "final/v1-review/film.mp4",
+      "posterFrame": 110,
+      "fps": 24,
+      "frames": 480,
+      "width": 1080,
+      "height": 1920,
+      "note": "Original draft retained for comparison. Director requested a replacement VO: nasal tone and uncertain reading. Picture and overall artistic approval remain open.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 120,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 288,
+          "frames": 192,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v2-review",
+      "date": "2026-11-06",
+      "title": "Draft 2 \u2014 selected voice and quieter ending",
+      "film": "final/v2-review/film.mp4",
+      "poster": "final/v2-review/film.mp4",
+      "posterFrame": 110,
+      "fps": 24,
+      "frames": 480,
+      "width": 1080,
+      "height": 1920,
+      "note": "Director-selected audition A; continuous delivery, quieter late S03 laughter. Technical checks passed. Full revised-mix listening and film approval remain open.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 120,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 288,
+          "frames": 192,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v3-review",
+      "date": "2026-11-06",
+      "title": "Draft 3 \u2014 laughter over black",
+      "film": "final/v3-review/film.mp4",
+      "poster": "final/v3-review/film.mp4",
+      "posterFrame": 110,
+      "fps": 24,
+      "frames": 408,
+      "width": 1080,
+      "height": 1920,
+      "note": "Director-approved native cut. Full black begins at frame 363 (15.125 seconds at 24 fps), with a brief laughter tail; ends at 17 seconds. Retained unchanged as the approved finishing base.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 120,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 288,
+          "frames": 76,
+          "sourceFrame": 0
+        },
+        {
+          "label": "B01",
+          "shot": "B01",
+          "frame": 364,
+          "frames": 44,
+          "sourceFrame": 0,
+          "source": "local/black-tail-v3.mp4"
+        }
+      ]
+    },
+    {
+      "version": "4k-v2",
+      "date": "2026-11-06",
+      "title": "4K master",
+      "film": "final/4k-v2/film.mp4",
+      "poster": "final/4k-v2/film.mp4",
+      "posterFrame": 110,
+      "fps": 24,
+      "frames": 408,
+      "width": 2160,
+      "height": 3840,
+      "note": "4K finish of the director-approved native cut. All frame timing and the soundtrack are preserved. The fade reaches full black at frame 363, followed by the same brief laughter tail.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 120,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 288,
+          "frames": 76,
+          "sourceFrame": 0
+        },
+        {
+          "label": "B01",
+          "shot": "B01",
+          "frame": 364,
+          "frames": 44,
+          "sourceFrame": 0,
+          "source": "upscale/4k-v1/B01-4k.mp4"
+        }
+      ]
+    }
+  ]
+}

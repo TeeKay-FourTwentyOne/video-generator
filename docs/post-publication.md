@@ -153,6 +153,10 @@ for videos under `renders/`, `qa-render` for videos under `qa/`, and `complete-m
 for `master*`, `mix-master*`, `soundtrack*` or `mono-test-*` audio files directly
 under `audio/`. This includes the mixer's `mix-master-v1.premaster.wav`; it still
 requires an explicit derivative class and the reviewed file hash.
+The same `complete-mix` class accepts versioned `edit/mix-vN` and
+`edit/mix-master-vN` files, including suffixes such as `-fixed`, with those audio
+extensions and an exact reviewed hash. Names containing a `stem` component remain
+protected. Inspect the mixer recipe before classifying a file as a complete mix.
 Original/source paths, per-shot stems, metadata and other locations remain
 protected. These classes are review assertions, not permission to select every
 file in a directory: retain reusable shot/title assets and inspect dependencies.

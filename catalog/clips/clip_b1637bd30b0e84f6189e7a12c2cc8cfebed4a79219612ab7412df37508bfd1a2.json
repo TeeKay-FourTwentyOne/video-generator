@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b1637bd30b0e84f6189e7a12c2cc8cfebed4a79219612ab7412df37508bfd1a2",
+  "sha256": "b1637bd30b0e84f6189e7a12c2cc8cfebed4a79219612ab7412df37508bfd1a2",
+  "bytes": 32852060,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "futility"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic contemporary live-action film, portrait 9:16, matching the supplied frame. The same Black woman, early thirties, short natural hair, rust cotton blouse and dark trousers, stands just inside an already open brownstone doorway facing the pedestrian alley. Three-quarter rear medium shot with her profile visible. Her hands already rest loosely at her sides. She takes a quiet breath, then walks naturally through the open doorway and toward the three neighbors. They notice her approach with small welcoming smiles. Camera holds its position, letting her move away. Continuous physical space and unhurried motion. Natural afternoon light, real fabric and skin texture. Ambient laughter and footsteps open up as she steps out; no music or intelligible speech. End with her still moving into life.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_b615ab7cf1d8e760ee7196760e18c37f3362fcc1c7567d17ac0743079e7b5f11",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 624800483,
+      "createdAt": "2026-11-06T20:07:28.400Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "2de01652808a00fa73c2146b99bc386a5d83774eb7f4b438e67424e541cd8c83",
+          "bytes": 2623242,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3e6084af29e90795a8e46ef517c902564e1f045970b4572d382de2fc012dcb3a"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

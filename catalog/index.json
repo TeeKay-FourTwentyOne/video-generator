@@ -3491,6 +3491,25 @@
       }
     },
     {
+      "id": "clip_136d03e1fe563f3c5c2c8bf08cfc531d73a95bb85d86fc49d0c2331be30b7f16",
+      "metadata": "clips/clip_136d03e1fe563f3c5c2c8bf08cfc531d73a95bb85d86fc49d0c2331be30b7f16.json",
+      "labels": [
+        "Futility B01 solid black tail"
+      ],
+      "kind": "source",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 1.833333,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_13964098bc1fcdc66819f9dfa2a70922503bb868807558013f2ad2a8cf1ebfb3",
       "metadata": "clips/clip_13964098bc1fcdc66819f9dfa2a70922503bb868807558013f2ad2a8cf1ebfb3.json",
       "labels": [],
@@ -8728,6 +8747,23 @@
       }
     },
     {
+      "id": "clip_2edd479c3b1d2faa4dfe2f99d9a67250622f8c9bef6d4de0452b3d54b52a83ff",
+      "metadata": "clips/clip_2edd479c3b1d2faa4dfe2f99d9a67250622f8c9bef6d4de0452b3d54b52a83ff.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 8,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_2edf0a6b3da25b3308c977e71967f4667ceba96ee22af612369f528db632f1f7",
       "metadata": "clips/clip_2edf0a6b3da25b3308c977e71967f4667ceba96ee22af612369f528db632f1f7.json",
       "labels": [
@@ -13058,6 +13094,23 @@
       }
     },
     {
+      "id": "clip_45838fa02530a70f41b877d00e40b55a4d63bab7d9ac88f77fce2db9e7a9051a",
+      "metadata": "clips/clip_45838fa02530a70f41b877d00e40b55a4d63bab7d9ac88f77fce2db9e7a9051a.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 17,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_459ae4bf149ca956ade439b34eeac2db8d359d9b777fd2ba1521f199ea867ef2",
       "metadata": "clips/clip_459ae4bf149ca956ade439b34eeac2db8d359d9b777fd2ba1521f199ea867ef2.json",
       "labels": [
@@ -13250,6 +13303,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_4643a956d9d8436a73d3284db220b28adc0fe6c0d1bfd49816ab48293b492796",
+      "metadata": "clips/clip_4643a956d9d8436a73d3284db220b28adc0fe6c0d1bfd49816ab48293b492796.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 8,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
       }
     },
     {
@@ -20632,6 +20702,23 @@
       }
     },
     {
+      "id": "clip_67909eb12f59c36c66489490a42836b227a63f4d83e784145dd1dca485321155",
+      "metadata": "clips/clip_67909eb12f59c36c66489490a42836b227a63f4d83e784145dd1dca485321155.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
       "id": "clip_67954b99cf85d797fb1051a2fd70ff17931f6af6fa4c6dfa76d55262792f04bb",
       "metadata": "clips/clip_67954b99cf85d797fb1051a2fd70ff17931f6af6fa4c6dfa76d55262792f04bb.json",
       "labels": [
@@ -27849,6 +27936,23 @@
       }
     },
     {
+      "id": "clip_8a59f6da9bc0875ee93c1b64457645b0e83010ff109a866454156a9c1c5de55e",
+      "metadata": "clips/clip_8a59f6da9bc0875ee93c1b64457645b0e83010ff109a866454156a9c1c5de55e.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
       "id": "clip_8a5d579b267fac937221054e7eb726272c7b226319af1347699b27ab219e345d",
       "metadata": "clips/clip_8a5d579b267fac937221054e7eb726272c7b226319af1347699b27ab219e345d.json",
       "labels": [
@@ -29724,6 +29828,23 @@
       }
     },
     {
+      "id": "clip_950823e67462ff6a500491a00d80dc5e91ece0ec4e562558f705daaf2c3e8cb5",
+      "metadata": "clips/clip_950823e67462ff6a500491a00d80dc5e91ece0ec4e562558f705daaf2c3e8cb5.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 1.833333,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
+      }
+    },
+    {
       "id": "clip_951d216564aea1d1bec34ab1194b2aa558c35a297942eb655d722f6f8ecbb1e0",
       "metadata": "clips/clip_951d216564aea1d1bec34ab1194b2aa558c35a297942eb655d722f6f8ecbb1e0.json",
       "labels": [
@@ -29906,6 +30027,23 @@
       "durationSeconds": 170.166667,
       "width": 1920,
       "height": 1080,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580",
+      "metadata": "clips/clip_9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 17,
+      "width": 2160,
+      "height": 3840,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -34879,6 +35017,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_b1637bd30b0e84f6189e7a12c2cc8cfebed4a79219612ab7412df37508bfd1a2",
+      "metadata": "clips/clip_b1637bd30b0e84f6189e7a12c2cc8cfebed4a79219612ab7412df37508bfd1a2.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
       }
     },
     {
@@ -47683,6 +47838,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_f3213c99ffdcba83f2e3ef5210cc7f3a48844de182e41a0595e30d3bf57cf593",
+      "metadata": "clips/clip_f3213c99ffdcba83f2e3ef5210cc7f3a48844de182e41a0595e30d3bf57cf593.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "futility"
+      ],
+      "durationSeconds": 8,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 2
       }
     },
     {

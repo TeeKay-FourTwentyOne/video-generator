@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_67909eb12f59c36c66489490a42836b227a63f4d83e784145dd1dca485321155",
+  "sha256": "67909eb12f59c36c66489490a42836b227a63f4d83e784145dd1dca485321155",
+  "bytes": 21218726,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "futility"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic contemporary live-action film, portrait 9:16, matching the supplied frame. A small pedestrian alley behind modest brownstones, dry pavement in soft afternoon daylight. Three adult neighbors linger beside an open doorway; one laughs and another moves lightly to a rhythm, an incidental unposed moment of companionship. Observational eye-level camera, restrained movement, real clothing and skin, worn brick. Keep the doorway clear and recognizable for the next shot. One uninterrupted shot. Intimate ambient laughter, shoes, distant traffic; no composed music or intelligible speech. Avoid glossy advertising light or synchronized dancing.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_2520f0b2d593d64d3583887cb21e414f12b5a370bb4b9aa4d7390285351bef76",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2165979138,
+      "createdAt": "2026-11-06T20:07:24.851Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c0341aca497a0c33dccdba9d598023a86206d08ff42cad24fff37a1067d66b9a",
+          "bytes": 3038721,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "847fea768a911d109671a64becbcbbea93a8e8ccff3e30681ab220799cd18a19"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

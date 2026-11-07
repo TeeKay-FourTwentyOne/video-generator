@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_136d03e1fe563f3c5c2c8bf08cfc531d73a95bb85d86fc49d0c2331be30b7f16",
+  "sha256": "136d03e1fe563f3c5c2c8bf08cfc531d73a95bb85d86fc49d0c2331be30b7f16",
+  "bytes": 5571,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 1.833333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 44,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Futility B01 solid black tail"
+  ],
+  "collections": [
+    "futility"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "local-render",
+    "solid-black",
+    "sound-over-black"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

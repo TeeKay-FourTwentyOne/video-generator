@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "projectId": "futility",
+  "title": "Futility",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Director-confirmed publication of the delivered 4K master. Exact final description and credits preserved. The verified archive retains the final master, original shots, audio sources and stems, references, recipes and evidence; superseded workspace edits and complete mixes were removed by the reviewed retention transaction. Unauthenticated metadata retrieval reported the video private.",
+  "briefPath": "briefs/futility/brief.md",
+  "descriptionPath": "briefs/futility/description.md",
+  "descriptionSha256": "93f76014e0fcc4d824706b968ddca814c28e28240fe7606b2930bd5ac4ba7b07",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/futility/status.json"
+    },
+    {
+      "label": "Status workflow",
+      "path": "briefs/futility/status.md"
+    },
+    {
+      "label": "Production lessons and follow-up",
+      "path": "briefs/futility/production-notes.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/futility-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1-review",
+      "path": "final/v1-review/film.mp4",
+      "sha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 480,
+      "durationSeconds": 20,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v1-review/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v2-review",
+      "path": "final/v2-review/film.mp4",
+      "sha256": "73f1f8eeace23e8c3a8725e609af77d88a003a68d26357111767a6a5659a4e27",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 480,
+      "durationSeconds": 20,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "deliveryRecordPath": "final/v2-review/delivery.json"
+    },
+    {
+      "role": "native-review",
+      "version": "v3-review",
+      "path": "final/v3-review/film.mp4",
+      "sha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 408,
+      "durationSeconds": 17,
+      "publishedMaster": false,
+      "retention": "removed-intermediate",
+      "descriptionCopyPath": "final/v3-review/description.txt",
+      "deliveryRecordPath": "final/v3-review/delivery.json"
+    },
+    {
+      "role": "finishing-master",
+      "version": "4k-v2",
+      "path": "final/4k-v2/film.mp4",
+      "sha256": "9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 408,
+      "durationSeconds": 17,
+      "publishedMaster": true,
+      "retention": "retained",
+      "descriptionCopyPath": "final/4k-v2/description.txt",
+      "deliveryRecordPath": "final/4k-v2/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "OpenAI image_gen built-in tool"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google Vertex AI Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "eleven_multilingual_v2"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs",
+        "model": "eleven_text_to_sound_v2"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs",
+        "model": "eleven_v4"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Creative planning, editing and production",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/zX46HdILRx4",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-06",
+    "artifactVersion": "4k-v2"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1-review",
+      "artifactSha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "recordedDate": "2026-11-06",
+      "evidence": "Maintained editor verified full decode, dimensions, 480 frames and source hashes. Mastered audio independently transcribed to the complete poem.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1-review",
+      "artifactSha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "recordedDate": "2026-11-06",
+      "evidence": "Agent inspected source contact sheets and dense walking grids. General and subject-duplication model checks passed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1-review",
+      "artifactSha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "recordedDate": "2026-11-06",
+      "evidence": "Full playback listening has not been performed; browser access host unavailable.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1-review",
+      "artifactSha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "recordedDate": "2026-11-06",
+      "evidence": "Awaiting director review of the native draft.",
+      "outcome": "pending"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1-review",
+      "artifactSha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director reports: The voice is too nasal and does not sound like they are reading a poem. More confused in places. This records feedback on the VO, not completion of a full film listening pass.",
+      "outcome": "failed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1-review",
+      "artifactSha256": "5b025c35649071c990f75a8cfe8fc45da1f6d1a012751ea5faa64213691ebb90",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director requested replacement of the current voice and exploration of multiple takes or revised prompting. No replacement voice is approved.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2-review",
+      "artifactSha256": "73f1f8eeace23e8c3a8725e609af77d88a003a68d26357111767a6a5659a4e27",
+      "recordedDate": "2026-11-06",
+      "evidence": "Maintained editor verified full decode, 480 frames and source hashes. Video packets exactly match draft 1. All poem words match local transcription. Encoded audio measures -18.47 LUFS and -1.96 dBTP; late S03 sound is about six decibels lower than draft 1.",
+      "outcome": "passed"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2-review",
+      "artifactSha256": "73f1f8eeace23e8c3a8725e609af77d88a003a68d26357111767a6a5659a4e27",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director selected the dry voice audition A and requested more subdued laughter. That selection and adjustment are applied; a full listening pass of this revised film remains open.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2-review",
+      "artifactSha256": "73f1f8eeace23e8c3a8725e609af77d88a003a68d26357111767a6a5659a4e27",
+      "recordedDate": "2026-11-06",
+      "evidence": "The director approved voice audition A only. Overall approval of this revised film has not been inferred.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3-review",
+      "artifactSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "recordedDate": "2026-11-06",
+      "evidence": "Maintained editor verified full decode, dimensions, 408 frames and source hashes. Native-frame inspection confirms frame 362 retains picture and frames 363 through 407 are entirely black. Prepared audio is unchanged through 16.5 seconds, fades to silence by 16.875 seconds, and carries sound over black. Encoded audio measures -18.20 LUFS and -1.96 dBTP.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3-review",
+      "artifactSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "recordedDate": "2026-11-06",
+      "evidence": "Agent inspected the eight-frame fade contact sheet. The image darkens into full black at the requested frame; the hold remains solid black.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v3-review",
+      "artifactSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director described the prior voice and mix as much better. This cut preserves that sound until its new tail fade; full listening of the shortened ending remains open.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3-review",
+      "artifactSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "recordedDate": "2026-11-06",
+      "evidence": "The director requested this exact picture endpoint and a brief laughter tail. Overall approval of the resulting new ending remains open.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3-review",
+      "artifactSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director: Perfect. 4k upscale please. Approves this native cut and authorizes its 4K upscale.",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v3-review",
+      "artifactSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director: Perfect. 4k upscale please. Approves this native cut and authorizes its 4K upscale.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580",
+      "recordedDate": "2026-11-06",
+      "evidence": "Full decode, 2160 by 3840 dimensions, all 408 frame timestamps and complete BT.709 tags verified. AAC packets and decoded PCM exactly match the approved native cut. Frames 363 through 407 are entirely black; frame 362 retains picture. Completing omitted color tags changed no decoded video pixels.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580",
+      "recordedDate": "2026-11-06",
+      "evidence": "Agent compared full-resolution face, hair and fabric crops from all three shots and chose Lanczos to preserve the photographic texture. The final six-frame contact sheet confirms the three shots and fade to black. This records frame inspection, not new full playback listening.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580",
+      "recordedDate": "2026-11-06",
+      "evidence": "Director: It is published. Supplied the YouTube Shorts URL and requested post-publication closeout after delivery of 4k-v2. Unauthenticated page retrieval did not independently verify public availability. The local master hash identifies the retained file, not a platform transcode. No new listening claim is inferred.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/futility-v1/workspace-archive-manifest.json",
+    "inventorySha256": "ad4f210cd02a5abe5b7e2f5e6231f8741c1fd88df780213039c34d2e352bb3b8",
+    "verifiedDate": "2026-11-06"
+  }
+}

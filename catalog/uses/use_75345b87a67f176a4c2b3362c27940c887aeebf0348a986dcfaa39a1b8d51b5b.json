@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_67909eb12f59c36c66489490a42836b227a63f4d83e784145dd1dca485321155",
+  "projectId": "futility",
+  "editVersion": "edit/v3-review",
+  "segmentIndex": 1,
+  "shotId": "S02",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 120,
+    "fps": 24
+  },
+  "timelineStartFrame": 168,
+  "outputSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+  "schemaVersion": 1,
+  "id": "use_75345b87a67f176a4c2b3362c27940c887aeebf0348a986dcfaa39a1b8d51b5b"
+}

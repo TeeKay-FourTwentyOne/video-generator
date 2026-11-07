@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_950823e67462ff6a500491a00d80dc5e91ece0ec4e562558f705daaf2c3e8cb5",
+  "projectId": "futility",
+  "editVersion": "finish/4k-v2",
+  "segmentIndex": 3,
+  "shotId": "B01",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 44,
+    "fps": 24
+  },
+  "timelineStartFrame": 364,
+  "outputSha256": "9674abd7892d84450e4e11fc90121fc4defdb9dfd4732497c541c4da53f97580",
+  "schemaVersion": 1,
+  "id": "use_9e6fb29bde6c346dd15d16b7937e200199e0bc79a6d1f64fb74f020d3cb2b496"
+}

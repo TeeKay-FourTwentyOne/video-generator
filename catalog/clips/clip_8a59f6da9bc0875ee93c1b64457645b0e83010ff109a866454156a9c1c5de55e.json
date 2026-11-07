@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8a59f6da9bc0875ee93c1b64457645b0e83010ff109a866454156a9c1c5de55e",
+  "sha256": "8a59f6da9bc0875ee93c1b64457645b0e83010ff109a866454156a9c1c5de55e",
+  "bytes": 12177625,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "futility"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic contemporary live-action film, portrait 9:16. A Black woman in her early thirties, short natural hair, rust-colored cotton blouse and dark trousers, sits in a modest ground-floor brownstone parlor beside an open sash window. Daylight, worn wood, warm neutral walls, an empty second chair. Medium-wide 40mm lens feeling. Quietly observant locked camera. Her hands rest together; halfway through a distant burst of adult laughter outside makes her lift her eyes toward the window. Restrained adult performance, real skin texture, ordinary lived-in space. One uninterrupted shot. Soft room tone, distant voices and street ambience; no music or intelligible dialogue. The supplied frame establishes the exact person, clothes, room and light.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_9ed4b141e0a0b4bc61bbfc4284cc504e491eec514f4e94d493fa21a2b48d4d38",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3062085356,
+      "createdAt": "2026-11-06T20:07:21.954Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "dfd14243b76bbb4f50ff7daa6ee9a5edd88156adda5da72fab58365e7fa5d1b7",
+          "bytes": 2287035,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "cddb59a8398b3cb9687e5cbfa78990d146ccd42a95ec363fe50ba838fd56c7d7"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

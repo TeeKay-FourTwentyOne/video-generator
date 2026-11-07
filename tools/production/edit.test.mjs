@@ -131,10 +131,12 @@ test('finish cuts a verified delivery again from 2x counterparts, copies its sou
     assert.equal(registered.clipIds.length, 2);
     const result = await finishEdit(root, 'v1', 'v1-2x', good, { catalogRoot: root });
     assert.equal(result.frames, 22); assert.equal(result.width, 180); assert.equal(result.height, 320);
-    assert.deepEqual(result.checks, { fullDecode: true, dimensions: true, frameCount: true, baseHash: true, counterpartHashes: true, audioPackets: true, audioPcm: true });
+    assert.deepEqual(result.checks, { fullDecode: true, dimensions: true, frameCount: true, colorTags: true, baseHash: true, counterpartHashes: true, audioPackets: true, audioPcm: true });
     assert.equal(result.base.sha256, base.sha256);
     assert.equal(fs.readFileSync(path.join(root, 'final/v1-2x/description.txt'), 'utf8'), text);
     const delivery = JSON.parse(fs.readFileSync(path.join(root, 'final/v1-2x/delivery.json'), 'utf8'));
+    const video = delivery.probe.streams.find(s => s.codec_type === 'video');
+    assert.deepEqual([video.color_range, video.color_space, video.color_primaries, video.color_transfer], ['tv', 'bt709', 'bt709', 'bt709']);
     assert.equal(delivery.finishing.baseVersion, 'v1'); assert.equal(delivery.finishing.baseSha256, base.sha256);
     assert.equal(delivery.finishing.audio.packetsSha256.base, delivery.finishing.audio.packetsSha256.output);
     assert.equal(delivery.finishing.audio.pcmSha256.base, delivery.finishing.audio.pcmSha256.output);

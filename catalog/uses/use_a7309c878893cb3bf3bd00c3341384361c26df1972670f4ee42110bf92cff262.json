@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_136d03e1fe563f3c5c2c8bf08cfc531d73a95bb85d86fc49d0c2331be30b7f16",
+  "projectId": "futility",
+  "editVersion": "edit/v3-review",
+  "segmentIndex": 3,
+  "shotId": "B01",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 44,
+    "fps": 24
+  },
+  "timelineStartFrame": 364,
+  "outputSha256": "99b81e47be08e79a91e50d10d12c1560e8b00897cb18d5a3b670754d7d400df4",
+  "schemaVersion": 1,
+  "id": "use_a7309c878893cb3bf3bd00c3341384361c26df1972670f4ee42110bf92cff262"
+}

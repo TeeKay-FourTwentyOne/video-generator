@@ -25,7 +25,11 @@ function removable(file, derivativeClass) {
     if (/(^|\/)(?:sources?|originals?)(?:\/|\.)/.test(file)) return false;
     if (derivativeClass === 'render-cache') return /^renders\/.+/.test(file) && video.test(file);
     if (derivativeClass === 'qa-render') return /^qa\/.+/.test(file) && video.test(file);
-    if (derivativeClass === 'complete-mix') return /^audio\/(?:(?:mix-)?master(?:-[^/]+)?|soundtrack(?:-[^/]+)?|mono-test-[^/]+)\.(wav|flac|mp3|m4a)$/.test(file);
+    if (derivativeClass === 'complete-mix') {
+      if (/(?:^|[-_.])stems?(?:[-_.]|$)/.test(path.posix.basename(file))) return false;
+      return /^audio\/(?:(?:mix-)?master(?:-[^/]+)?|soundtrack(?:-[^/]+)?|mono-test-[^/]+)\.(wav|flac|mp3|m4a)$/.test(file) ||
+        /^edit\/mix-(?:master-)?v\d+(?:[.-][a-z0-9]+)*\.(wav|flac|mp3|m4a)$/.test(file);
+    }
     return false;
   }
   return (

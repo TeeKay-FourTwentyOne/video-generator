@@ -253,6 +253,15 @@ sat within 5 LU across sections with the door thud as the only peak. A per-segme
 (ffmpeg ebur128 over each segment's window) is the fastest way to see this.
 Source: claude-code · November · 2026-11-02
 
+### Check the final finishing mux for all four colour tags
+Futility's segments carried explicit BT.709 settings, but the concatenated master
+omitted primaries and transfer tags. A metadata-only H.264 remux restored them;
+decoded video, frame timing, audio packets and decoded audio were unchanged.
+The maintained finish command now writes the H.264 and container tags during its
+stream-copy mux and checks range, matrix, primaries and transfer on the final file.
+Its real-media regression also verifies the unchanged soundtrack.
+Source: Codex · Futility · 2026-11-06
+
 ### The fast x2 model etches wet wood and wool as well as faces; blend it
 On a 1080p vertical of photoreal people and tarred hulls, realesr-animevideov3-x2 at exact 2x turned the wet planking into
 hard contour lines and a wool tunic into a drawn weave, visible in 100% crops of a 4K frame and invisible at fit-to-screen;

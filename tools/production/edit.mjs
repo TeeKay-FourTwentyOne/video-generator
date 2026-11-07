@@ -261,13 +261,18 @@ export async function finish(root, baseVersion, newVersion, sourcesFile, { catal
   // The soundtrack is the approved one: packets are copied, never re-encoded or trimmed.
   if (hasAudio) args.push('-i', baseMovie, '-map', '0:v:0', '-map', '1:a:0', '-c:a', 'copy');
   else args.push('-map', '0:v:0', '-an');
-  args.push('-c:v', 'copy', '-movflags', '+faststart', output);
+  // Concat can omit primaries/transfer tags even when every encoded segment has them.
+  // Complete both H.264 VUI and container tags without re-encoding picture or sound.
+  args.push('-c:v', 'copy', '-bsf:v', 'h264_metadata=video_full_range_flag=0:colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1',
+    '-color_range', 'tv', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', output);
   command('ffmpeg', args);
   command('ffmpeg', ['-v', 'error', '-i', output, '-f', 'null', '-']);
   const details = JSON.parse(command('ffprobe', ['-v', 'error', '-count_frames', '-show_streams', '-show_format', '-of', 'json', output]));
   const video = details.streams.find(s => s.codec_type === 'video');
   if (Number(video.nb_read_frames) !== expected.frames || video.width !== size.width || video.height !== size.height)
     throw new Error('Rendered finish does not match the base edit contract');
+  if (video.color_range !== 'tv' || video.color_space !== 'bt709' || video.color_primaries !== 'bt709' || video.color_transfer !== 'bt709')
+    throw new Error('Rendered finish is missing its BT.709 color tags');
   const audio = hasAudio ? { base: await audioDigests(baseMovie), output: await audioDigests(output) } : null;
   if (audio && (audio.base.packets !== audio.output.packets || audio.base.pcm !== audio.output.pcm)) throw new Error('Finished soundtrack differs from the base delivery');
   if (!hasAudio && details.streams.some(s => s.codec_type === 'audio')) throw new Error('Finish gained an audio stream the base does not have');
@@ -289,7 +294,7 @@ export async function finish(root, baseVersion, newVersion, sourcesFile, { catal
   }
   const report = { schemaVersion: 1, version: newVersion, title: plan.title, output: path.relative(root, output), sha256: hashFile(output),
     expected, probe: details,
-    checks: { fullDecode: true, dimensions: true, frameCount: true, baseHash: true, counterpartHashes: true,
+    checks: { fullDecode: true, dimensions: true, frameCount: true, colorTags: true, baseHash: true, counterpartHashes: true,
       audioPackets: hasAudio ? true : null, audioPcm: hasAudio ? true : null },
     audioReview: 'Technical verification only; listening review is separate.', budget: budgetSummary(readLedger(path.join(root, 'budget.json'))),
     edit: base.edit,
