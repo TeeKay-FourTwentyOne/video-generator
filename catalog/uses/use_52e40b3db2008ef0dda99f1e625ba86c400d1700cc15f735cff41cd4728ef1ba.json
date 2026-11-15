@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_79484996b910a24dea43a67966cf015163bcb1fe84f7e8a309ea76d813c65c64",
+  "projectId": "polish",
+  "editVersion": "finish/v2-4k",
+  "segmentIndex": 4,
+  "shotId": "S05",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 792,
+    "length": 120,
+    "fps": 24
+  },
+  "timelineStartFrame": 792,
+  "outputSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+  "schemaVersion": 1,
+  "id": "use_52e40b3db2008ef0dda99f1e625ba86c400d1700cc15f735cff41cd4728ef1ba"
+}

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_6ca2173014dc9a78e9b334d00663092cbc52c29f4a76c4300e57f9e3397964cc",
+  "projectId": "polish",
+  "editVersion": "edit/v2",
+  "segmentIndex": 0,
+  "shotId": "S01",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 168,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "5dfa9fe36fee98a807fb57580f957e6a96ade6c0b71d82611b7c6319b633fc98",
+  "schemaVersion": 1,
+  "id": "use_44a974c5c7799502ffe55802ebb443561e5d2c7885def6e303d33336b7fe351c"
+}

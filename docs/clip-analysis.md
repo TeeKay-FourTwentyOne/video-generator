@@ -165,6 +165,11 @@ start `needs-review`. A failed pass cannot be sealed as an empty successful
 result. A verified absence of audio yields an explicit `not-applicable` result
 for audio-only passes. Quiet audio and failed ASR are different states.
 
+Apple Vision can extend a partially cropped word's rectangle outside the image.
+The native OCR adapter retains that geometry in `rawBoxNormalized` and intersects
+`boxNormalized` with the visible image bounds. Text observations are retained;
+invalid or wholly off-image rectangles still fail rather than disappearing.
+
 PTS and rational time bases are authoritative; float seconds are conveniences.
 Preview frame counts and timestamp mappings are checked against the original
 timing table. Audio measurements explicitly use a microsecond output time base.

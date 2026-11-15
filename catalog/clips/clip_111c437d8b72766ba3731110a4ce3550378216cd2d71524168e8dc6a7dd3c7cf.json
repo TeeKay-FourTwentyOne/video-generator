@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_111c437d8b72766ba3731110a4ce3550378216cd2d71524168e8dc6a7dd3c7cf",
+  "sha256": "111c437d8b72766ba3731110a4ce3550378216cd2d71524168e8dc6a7dd3c7cf",
+  "bytes": 3977963,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "polish"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A quiet, naturalistic live-action close-up of the same unbranded dark smartphone resting on the desk, seen in the first frame. Camera absolutely locked; the blank dark display stays empty. Nothing enters the image. The important action is offscreen sound: one adult woman in her late thirties is sitting immediately beside the phone, quietly frustrated with a message she is trying to type. Her voice is natural, medium-low in pitch, softly spoken, intimate and dry, contemporary American English, tired but not depressed, no theatrical delivery. At about one second she says one restrained word, \"No.\" Pause. At about three seconds she mutters, \"Oh, come on.\" Pause. At about six seconds she lets out one gentle, tired human sigh, a single exhale. Exactly these two spoken lines and this one sigh. No narrator, no other voices, no words beyond the quoted lines. Her mouth and face remain entirely offscreen. Quiet ordinary indoor room tone, no music, no typing, no notification sounds. All speech is close and clear at a normal conversational pace.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_84e1182239ec701f48c5eaaba822dd22385c4e24606fd75954f946c486cbb14f",
+      "provider": "veo",
+      "model": "veo-3.1-fast-generate-001",
+      "seed": 421,
+      "createdAt": "2026-11-15T05:49:50.936Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-fast-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "b9c4223b5f64a530a3eecfb069e58eaf05a768ed08106ffaa515068ee14d913a",
+          "bytes": 1463525,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "00c48b46b11c149bc36193bf4a795ef58f7e94a35b16921ff67c23c09e90428f"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

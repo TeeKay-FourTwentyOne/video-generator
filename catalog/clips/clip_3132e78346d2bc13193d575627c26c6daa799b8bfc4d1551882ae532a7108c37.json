@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3132e78346d2bc13193d575627c26c6daa799b8bfc4d1551882ae532a7108c37",
+  "sha256": "3132e78346d2bc13193d575627c26c6daa799b8bfc4d1551882ae532a7108c37",
+  "bytes": 1401474,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6.041667,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "24/1",
+    "frameCount": 145,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "polish"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Locked camera macro shot. The adult woman’s single right index finger hovers just above this dark phone screen, hesitates for two seconds, then gently lowers to touch the glass once, holds contact briefly, and lifts only a few millimeters. A small natural movement, normal speed. The phone and camera are completely still. Keep the finger, short natural unpainted nail, skin texture, black phone, charcoal desk and warm dim lighting identical to the first frame. The blank dark screen stays completely blank: no text, no icons, no interface, no changes in brightness. The soft finger reflection and contact shadow move realistically on the glass. Exactly one fingertip; no second finger enters. No cuts, no zoom, no camera move, no added objects. Quiet restrained live-action realism.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_724236d512b650173d949c77968ff956690e6716bbaa5959c79ba069a0de4936",
+      "provider": "runway",
+      "model": "gen4.5",
+      "seed": 421,
+      "createdAt": "2026-11-15T05:53:01.975Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "720p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "ratio": "720:1280",
+        "outputFormat": "mp4"
+      },
+      "requestedModel": "gen4.5",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "f44abe27b5d8fd5611d09347e07e57cd8ff0522ca10fab1539103c29b80b221d",
+          "bytes": 1267772,
+          "width": 720,
+          "height": 1280
+        }
+      ],
+      "snapshotSha256": "309b624c5bf854fc46d1b46236ad35e4f779faa9dc74a6de99bb15ce941aec5a"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

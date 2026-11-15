@@ -3207,6 +3207,23 @@
       }
     },
     {
+      "id": "clip_111c437d8b72766ba3731110a4ce3550378216cd2d71524168e8dc6a7dd3c7cf",
+      "metadata": "clips/clip_111c437d8b72766ba3731110a4ce3550378216cd2d71524168e8dc6a7dd3c7cf.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_116704e045f2af9cf52364337ac4aa6ca3eb87908a3d35a82236bd9fcece30d5",
       "metadata": "clips/clip_116704e045f2af9cf52364337ac4aa6ca3eb87908a3d35a82236bd9fcece30d5.json",
       "labels": [
@@ -9118,6 +9135,23 @@
       "width": 1920,
       "height": 1080,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_3132e78346d2bc13193d575627c26c6daa799b8bfc4d1551882ae532a7108c37",
+      "metadata": "clips/clip_3132e78346d2bc13193d575627c26c6daa799b8bfc4d1551882ae532a7108c37.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 6.041667,
+      "width": 720,
+      "height": 1280,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0
@@ -15317,6 +15351,23 @@
       }
     },
     {
+      "id": "clip_4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "metadata": "clips/clip_4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 38,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_4f5766b033fbc8de93ad621116716129cdb2b804ff1e73e023dc8491d8d3ced0",
       "metadata": "clips/clip_4f5766b033fbc8de93ad621116716129cdb2b804ff1e73e023dc8491d8d3ced0.json",
       "labels": [
@@ -19865,6 +19916,23 @@
       }
     },
     {
+      "id": "clip_62ff722f9fe26bf14320d9642613e55059ea0f1f2906c057f84196c0ef9ec70d",
+      "metadata": "clips/clip_62ff722f9fe26bf14320d9642613e55059ea0f1f2906c057f84196c0ef9ec70d.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 1.5,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_6303875c4b934bf18209b0226caa066a94bdd4d6e6d7ef14ba65fb74a619fc08",
       "metadata": "clips/clip_6303875c4b934bf18209b0226caa066a94bdd4d6e6d7ef14ba65fb74a619fc08.json",
       "labels": [
@@ -21911,6 +21979,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_6ca2173014dc9a78e9b334d00663092cbc52c29f4a76c4300e57f9e3397964cc",
+      "metadata": "clips/clip_6ca2173014dc9a78e9b334d00663092cbc52c29f4a76c4300e57f9e3397964cc.json",
+      "labels": [
+        "POLISH local interface composite"
+      ],
+      "kind": "unknown",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 38,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
       }
     },
     {
@@ -24764,6 +24851,25 @@
       }
     },
     {
+      "id": "clip_79484996b910a24dea43a67966cf015163bcb1fe84f7e8a309ea76d813c65c64",
+      "metadata": "clips/clip_79484996b910a24dea43a67966cf015163bcb1fe84f7e8a309ea76d813c65c64.json",
+      "labels": [
+        "POLISH local interface composite"
+      ],
+      "kind": "derived",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 38,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 5
+      }
+    },
+    {
       "id": "clip_79770ec8c040f475897bb09ec050a43315aab908e2e7ed8201c82075cf3e4785",
       "metadata": "clips/clip_79770ec8c040f475897bb09ec050a43315aab908e2e7ed8201c82075cf3e4785.json",
       "labels": [
@@ -26558,6 +26664,23 @@
       "durationSeconds": 8,
       "width": 720,
       "height": 1280,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "metadata": "clips/clip_831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 38,
+      "width": 2160,
+      "height": 3840,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -30313,6 +30436,25 @@
       }
     },
     {
+      "id": "clip_973f08fd9d67bf7e5c5ad08761c595ad329ef0fbc1f397fd31391271862657e7",
+      "metadata": "clips/clip_973f08fd9d67bf7e5c5ad08761c595ad329ef0fbc1f397fd31391271862657e7.json",
+      "labels": [
+        "POLISH local interface composite"
+      ],
+      "kind": "unknown",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 38,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 6
+      }
+    },
+    {
       "id": "clip_974314661e81243af74c71aaf5b5f3b862f40aca17e2dfc59c9605e07d318bcc",
       "metadata": "clips/clip_974314661e81243af74c71aaf5b5f3b862f40aca17e2dfc59c9605e07d318bcc.json",
       "labels": [
@@ -31629,6 +31771,25 @@
       }
     },
     {
+      "id": "clip_9d854bf3e5e8a630c74841791fa87111794421baf0bc04a4a2c067074e125c26",
+      "metadata": "clips/clip_9d854bf3e5e8a630c74841791fa87111794421baf0bc04a4a2c067074e125c26.json",
+      "labels": [
+        "POLISH local interface composite"
+      ],
+      "kind": "unknown",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_9d8aa3ea1f8836a51b9a99235d0330b41c610ce5cabdc1e18afd60e866935e2d",
       "metadata": "clips/clip_9d8aa3ea1f8836a51b9a99235d0330b41c610ce5cabdc1e18afd60e866935e2d.json",
       "labels": [
@@ -32709,6 +32870,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_a3de416baa83bfa56d82ea22602b521ff8aa7863ab56ee0c96f9a76f05688ba8",
+      "metadata": "clips/clip_a3de416baa83bfa56d82ea22602b521ff8aa7863ab56ee0c96f9a76f05688ba8.json",
+      "labels": [
+        "POLISH local interface composite"
+      ],
+      "kind": "unknown",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 1.5,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -40586,6 +40766,23 @@
       "uses": {
         "planned": 0,
         "rendered": 3
+      }
+    },
+    {
+      "id": "clip_cbf974bcc3e169a8d33ddf1026a9e53da231c22a5efbff03a10ec7e3235b17cd",
+      "metadata": "clips/clip_cbf974bcc3e169a8d33ddf1026a9e53da231c22a5efbff03a10ec7e3235b17cd.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 38,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 6
       }
     },
     {
@@ -48660,6 +48857,23 @@
       "width": 1080,
       "height": 1920,
       "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_f6fd0122442338371ba101a0fa273f70ebfc8c86ee43aeec86c8a07cd16b0b7a",
+      "metadata": "clips/clip_f6fd0122442338371ba101a0fa273f70ebfc8c86ee43aeec86c8a07cd16b0b7a.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "polish"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
       "uses": {
         "planned": 0,
         "rendered": 0

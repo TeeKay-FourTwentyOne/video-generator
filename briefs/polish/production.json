@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "projectId": "polish",
+  "title": "POLISH",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Director confirmed publication of held-phone v2-4k. The archive and project backup are verified; standard retention removed 37 superseded renders and complete mixes while preserving the published master, original sources, stems and historical records.",
+  "briefPath": "briefs/polish/brief.md",
+  "descriptionPath": "briefs/polish/description.md",
+  "descriptionSha256": "a82edd2eb66a106285b184fe69615719dbfdccb651ef5b4bb9cce8f230033990",
+  "supportingDocuments": [
+    {
+      "label": "Original pitch",
+      "path": "briefs/polish/pitch-v1.md"
+    },
+    {
+      "label": "Production status",
+      "path": "briefs/polish/status.md"
+    },
+    {
+      "label": "Production status source",
+      "path": "briefs/polish/status.json"
+    },
+    {
+      "label": "Publication, recovery and process improvement",
+      "path": "briefs/polish/closeout.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/polish-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "28049d7ea6769fbc4d19eeb974f4355de717c463dd4dd18347123f4b45ad9b8a",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 912,
+      "durationSeconds": 38,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v1/description.txt",
+      "deliveryRecordPath": "final/v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v1-4k",
+      "path": "final/v1-4k/film.mp4",
+      "sha256": "4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 912,
+      "durationSeconds": 38,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v1-4k/description.txt",
+      "deliveryRecordPath": "final/v1-4k/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "5dfa9fe36fee98a807fb57580f957e6a96ade6c0b71d82611b7c6319b633fc98",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 912,
+      "durationSeconds": 38,
+      "publishedMaster": false,
+      "descriptionCopyPath": "final/v2/description.txt",
+      "deliveryRecordPath": "final/v2/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v2-4k",
+      "path": "final/v2-4k/film.mp4",
+      "sha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 912,
+      "durationSeconds": 38,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v2-4k/description.txt",
+      "deliveryRecordPath": "final/v2-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "Nano Banana Pro (gemini-3-pro-image)"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Runway",
+        "model": "Gen-4.5"
+      },
+      {
+        "purpose": "speech",
+        "provider": "Google",
+        "model": "Veo 3.1 Fast"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local Python and FFmpeg"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "Claude Sonnet 5.5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, treatment, interface, editing, production and 4K finishing, with the director’s revisions",
+        "model": "OpenAI GPT-6",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "28049d7ea6769fbc4d19eeb974f4355de717c463dd4dd18347123f4b45ad9b8a",
+      "recordedDate": "2026-11-14",
+      "evidence": "Saved delivery checks verify full decode, dimensions, integer frame count and source hashes. All six project sources passed the required analysis checkpoint. Encoded audio correlates with the prepared mix and remains below clipping; these are computational checks.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "28049d7ea6769fbc4d19eeb974f4355de717c463dd4dd18347123f4b45ad9b8a",
+      "recordedDate": "2026-11-14",
+      "evidence": "Agent inspected timed native frames, including the opening history, autocomplete, blocked Send, macro, hand contact, cut boundaries and ending.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1",
+      "artifactSha256": "28049d7ea6769fbc4d19eeb974f4355de717c463dd4dd18347123f4b45ad9b8a",
+      "recordedDate": "2026-11-14",
+      "evidence": "Full real-time listening has not been established. The two source lines have transcription evidence; the native breath candidate awaits listening.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "28049d7ea6769fbc4d19eeb974f4355de717c463dd4dd18347123f4b45ad9b8a",
+      "recordedDate": "2026-11-14",
+      "evidence": "The director approved the main-screen and pixel macro still looks and requested older chat history. Approval of this rendered film has not been given.",
+      "outcome": "pending"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "recordedDate": "2026-11-14",
+      "evidence": "The director requested: “4k upscale please.” The finish uses native v1 as its fixed edit and audio reference.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "recordedDate": "2026-11-14",
+      "evidence": "Verified 2160 × 3840, 912 frames at 24 fps, full decode, BT.709 tags and unchanged source hashes. Every video presentation timestamp and all 1,783 audio packets, including timestamps, match native v1. The decoded soundtrack hashes also match.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "recordedDate": "2026-11-14",
+      "evidence": "Agent inspected enlarged phone text, autocomplete, pixel macro and fingertip crops, then timed frames from the actual master. A full 912-frame comparison at native dimensions supports continuity with v1.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "recordedDate": "2026-11-14",
+      "evidence": "The native soundtrack is copied unchanged and verified computationally. No new real-time listening is claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "4efee95bf7fce6f7d955313ce2c193a0680682cfb09bec7ec4e66336d248fd7e",
+      "recordedDate": "2026-11-14",
+      "evidence": "The director authorized 4K finishing. Approval of the finished master is a separate decision.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "5dfa9fe36fee98a807fb57580f957e6a96ade6c0b71d82611b7c6319b633fc98",
+      "recordedDate": "2026-11-15",
+      "evidence": "Verified full decode, 1080 × 1920, 912 frames at 24 fps and source hashes. Every video presentation time and all 1,783 audio packets and timestamps match v1. All source keyboard polygons stay outside the image, including the macro.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "5dfa9fe36fee98a807fb57580f957e6a96ade6c0b71d82611b7c6319b633fc98",
+      "recordedDate": "2026-11-15",
+      "evidence": "Agent inspected decoded opening, typing, suggestion, blocked Send, macro, acceptance and ending frames. Browser playback was unavailable.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2",
+      "artifactSha256": "5dfa9fe36fee98a807fb57580f957e6a96ade6c0b71d82611b7c6319b633fc98",
+      "recordedDate": "2026-11-15",
+      "evidence": "The soundtrack matches v1 packet for packet. Full real-time listening is not established.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "5dfa9fe36fee98a807fb57580f957e6a96ade6c0b71d82611b7c6319b633fc98",
+      "recordedDate": "2026-11-15",
+      "evidence": "The director requested the held-phone framing revision; approval of this rendered revision remains pending.",
+      "outcome": "pending"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "recordedDate": "2026-11-15",
+      "evidence": "The director’s current request revises POLISH after the earlier “4k upscale please.” The local revision continues that 4K presentation; no paid generation or publication is part of this finish.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "recordedDate": "2026-11-15",
+      "evidence": "Verified 2160 × 3840, 912 frames at 24 fps, full decode, BT.709 tags and source hashes. All presentation timestamps and all 1,783 audio packets and timestamps match native v2; native v2 in turn matches v1 timing and audio.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "recordedDate": "2026-11-15",
+      "evidence": "Agent inspected timed frames from the actual 4K master, including the macro, former hand-insert boundaries, acceptance and final reply. The full counterpart comparison covers all 912 frames.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "recordedDate": "2026-11-15",
+      "evidence": "The soundtrack is packet-identical to v1 and native v2. No new real-time listening is claimed.",
+      "outcome": "not-claimed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "recordedDate": "2026-11-15",
+      "evidence": "The requested framing revision is rendered for director review. Finished-film approval remains pending.",
+      "outcome": "pending"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v2-4k",
+      "artifactSha256": "831a59f2ba2823110e699490f345074ef99e32fe4a27c942255123a92192c8a9",
+      "recordedDate": "2026-11-15",
+      "evidence": "Director confirmed “I’ve already uploaded the 4k version” and supplied the publication URL after receiving the v2-4k review link. The local master association does not assert equality with the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "relatedProjectIds": [
+    "retake",
+    "verify"
+  ],
+  "legacyPaths": [],
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/arM1eQzBi7k",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-15",
+    "artifactVersion": "v2-4k"
+  },
+  "archive": {
+    "manifestPath": "data/workspace-archive/polish-v1/workspace-archive-manifest.json",
+    "inventorySha256": "b84af3221b417439e5bd32edbb8a87bdae179d96916080e0dda3e05e77450572",
+    "verifiedDate": "2026-11-15"
+  }
+}

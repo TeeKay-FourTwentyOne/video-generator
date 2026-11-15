@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a3de416baa83bfa56d82ea22602b521ff8aa7863ab56ee0c96f9a76f05688ba8",
+  "sha256": "a3de416baa83bfa56d82ea22602b521ff8aa7863ab56ee0c96f9a76f05688ba8",
+  "bytes": 777192,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 1.5,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 36,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "POLISH local interface composite"
+  ],
+  "collections": [
+    "polish"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

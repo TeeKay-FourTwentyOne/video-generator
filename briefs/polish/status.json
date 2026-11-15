@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "projectId": "polish",
+  "title": "POLISH",
+  "updated": "2026-11-15",
+  "format": "Vertical 9:16, 38 seconds; held-phone v2 with native and 2160 × 3840 review",
+  "phase": "published",
+  "logline": "A woman types past a stubborn word completion, then voluntarily accepts a friendlier phrasing suggestion. When she tries to say she needs help, her phone will send only the positive replacement.",
+  "overall": "Published: the director confirmed the held-phone 4K revision. All 12 imported clips passed required analysis and verification; project-scoped private backup is verified. The final 4K and original sources are retained under the standard archive policy.",
+  "next": "For future revisions, restore a verified working copy. The published master and historical records remain the reference.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Planned for the authorized production; material is not yet in the cut."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "conversation",
+      "number": "01",
+      "title": "Choice becomes compulsory",
+      "status": "review",
+      "summary": "Five beats in one phone conversation. Two normal outgoing messages establish her choice before sending becomes conditional on accepting a suggestion.",
+      "segments": [
+        {
+          "id": "s01-optional",
+          "title": "S01 — Type past the prediction",
+          "status": "accepted",
+          "detail": "0–7 s. Yesterday’s ordinary exchange is already visible: “Did you get home?” / “Yep. Thanks for tonight.” / “Anytime.” Today’s “How was today?” arrives. She types through the terrific prediction to send “Pretty terrible.”",
+          "image": "qa/held-v2/autofill.png"
+        },
+        {
+          "id": "s02-helpful",
+          "title": "S02 — Accept and send",
+          "status": "accepted",
+          "detail": "7–14 s. Incoming: “Want to talk?” She accepts “In a little while?” in place of “Maybe later.” and sends it voluntarily."
+        },
+        {
+          "id": "s03-required",
+          "title": "S03 — Send stops working",
+          "status": "accepted",
+          "detail": "14–24 s. Incoming: “You okay though?” Her “Not really. I need you.” is offered “I’m fine.” Send is blocked; the helper reads “Apply suggestion to send.” Brief angled macro of the suggested words and visible display pixels. A quiet “No.” offscreen.",
+          "image": "qa/held-v2/blocked.png"
+        },
+        {
+          "id": "s04-surrender",
+          "title": "S04 — Accept to escape",
+          "status": "accepted",
+          "detail": "24–33 s. She clears the draft and types “Please stop.” Suggested: 👍. The held-phone view continues through her hesitation, “Oh, come on,” tired exhale, acceptance and newly enabled Send. Her fingers and the keyboard remain below frame.",
+          "image": "qa/held-v2/thumb.png"
+        },
+        {
+          "id": "s05-reassured",
+          "title": "S05 — The other person is reassured",
+          "status": "accepted",
+          "detail": "33–38 s. Notification: “Good. I was worried about you.” Hold about four seconds with the input open and no further typing or commentary; the keyboard remains outside the shot."
+        }
+      ],
+      "next": "Published version is the reference for any future revision.",
+      "image": "qa/held-v2/autofill.png"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "escalation",
+      "title": "Optional, voluntary, then compulsory",
+      "status": "decided",
+      "detail": "Director: “Maybe a suggestion that’s ignored, then one that’s taken, then it really starts ramping up. Eventually the message won’t send until she takes the positive suggestion.” The treatment follows this sequence; exact text and timing remain proposed."
+    },
+    {
+      "id": "opening-autofill",
+      "title": "Start with a persistent word completion",
+      "status": "decided",
+      "detail": "Director: “She types \"Pretty ter...\" for terrible and it keeps suggesting terrific as she finishes the word.” S01 now starts with a standard inline completion and persistent keyboard candidate; she types through it and sends “Pretty terrible.” The exact visual transition between the inline suffix and keyboard candidate is proposed."
+    },
+    {
+      "id": "physical-screen",
+      "title": "Generic messaging on a physical screen",
+      "status": "decided",
+      "detail": "Director requests “Standard messaging style look and feel, no specific messenger or app copied directly” and an extreme close-up with visible screen pixels. The treatment uses precise local text artwork, a mostly readable main view and two short physical inserts."
+    },
+    {
+      "id": "sound",
+      "title": "Offscreen woman, typing and notifications",
+      "status": "decided",
+      "detail": "Director: “We can maybe have some VO of the person offscreen - sighing, commenting a bit on the suggestions, etc.” The treatment proposes two brief comments and an exhale, with typing taps and consistent incoming notification sounds."
+    },
+    {
+      "id": "exchange",
+      "title": "Proposed wording and 38-second rhythm",
+      "status": "decided",
+      "detail": "The director confirmed “I’ve already uploaded the 4k version.” The released version uses this exchange and 38-second rhythm; no wording revision remains requested."
+    },
+    {
+      "id": "screen-audition",
+      "title": "Main view and pixel close-up",
+      "status": "decided",
+      "detail": "Director, on the main-screen and pixel close-up stills: “I like them both.” These looks are approved for production; this is not approval of a rendered film."
+    },
+    {
+      "id": "existing-history",
+      "title": "Open with older messages visible",
+      "status": "decided",
+      "detail": "Director: “We should have messages from previous conversations visible in the app before the \"How was today?\".” The opening now retains a short exchange from yesterday above the new incoming message."
+    },
+    {
+      "id": "4k-finish",
+      "title": "4K upscale authorized",
+      "status": "decided",
+      "detail": "Director: “4k upscale please.” This authorizes finishing the existing cut at 2160 × 3840; publication remains separate."
+    },
+    {
+      "id": "held-phone-framing",
+      "title": "Phone held and typed on just offscreen",
+      "status": "decided",
+      "detail": "Director: “zoom in and angle the phone so it looks like someone is holding it and typing but we can’t see the keyboard portion.” The revision keeps input and recommendations readable and removes the visible light-up keys."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-14",
+      "text": "Original pitch saved with four related concepts; director selected POLISH as the next focus."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Director added early back and forth, optional then accepted then mandatory suggestions, a generic realistic phone interface, occasional physical screen close-ups and sparse offscreen reactions. Original pitch preserved; treatment revised to a proposed 38-second exchange. Planning page created."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Director revised S01 to a persistent autofill: “Pretty ter…” aims for “terrible” while the phone keeps predicting “terrific.” The first message still sends in her own words. Brief and planning page updated; the remaining beats retain their proposed timing."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Director authorized production, with Veo Fast or Runway where sufficient. Began exact local interface animation and physical-screen look audition; original pitch and prior treatment preserved."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "First composed main-screen and pixel macro stills prepared for director look review. They show the exact locally rendered interface on the physical phone plate and the same text in the macro view."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Director approved both screen looks and requested older messages above the opening message. Added a brief exchange from yesterday and natural history scrolling."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Built the 38-second interface animation, pixel macro and hand insert with typing, notifications and offscreen reactions. Older messages remain visible before the opening question. Agent selected the source ranges; director film review and listening remain pending."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Completed the native 38-second draft. Verified decode, dimensions, frame count, source hashes and encoded audio; inspected the opening history, both inserts and the ending. Director film review and listening remain open."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Director requested the 4K upscale. Began local Lanczos counterparts, preserving the native version and its exact edit."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Completed the requested 2160 × 3840 upscale. The native version is retained; all frame times and audio packets match. Inspected the text and close-ups and verified the master’s decode and colour tags."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Director requested a substantial framing revision: close angled phone, an offscreen holder and keyboard outside the image. Began a new local version; prior native and 4K cuts remain preserved."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Rendered the close oblique handset with independent grip movement and contact response. Replaced the tabletop hand insert with continuous held-phone coverage. Checked every frame’s keyboard bounds and inspected decoded conversation and macro frames. Exact timing and prepared soundtrack are retained."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Completed native v2 and the matching 4K revision. Verified all 912 frame times and all original audio packets, inspected actual master frames and retained prior versions. Publication credits now describe the sources present in v2; previous wording is preserved with the synchronization history."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Director confirmed the revised 4K upload and supplied its YouTube Shorts URL. Publication is recorded as user-confirmed; no platform date, transcode equivalence or retrospective listening claim is inferred."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "All 12 project clips, including unused takes and the current master, passed required local analysis and the read-only verification checkpoint. Model observations retain their review states. Began verified backup and publication closeout."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Verified project backup for all 12 clips and prepared the final archive package. Original provider takes and creation records are copied and hash-verified; exact standard-retention removals are documented outside the archive. Build, production regressions and privacy regressions passed."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-14",
+      "title": "Native review",
+      "film": "final/v1/film.mp4",
+      "poster": "qa/looks/opening-history-v1.png",
+      "posterFrame": 0,
+      "fps": 24,
+      "frames": 912,
+      "width": 1080,
+      "height": 1920,
+      "note": "Both approved looks, previous chat history, typing and notifications, two offscreen comments and a breath. Full listening and director approval remain pending.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0,
+          "source": "renders/interface-v1.mp4"
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 168,
+          "sourceFrame": 168,
+          "source": "renders/interface-v1.mp4"
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 336,
+          "frames": 240,
+          "sourceFrame": 336,
+          "source": "renders/interface-v1.mp4"
+        },
+        {
+          "label": "S04-a",
+          "shot": "S04",
+          "frame": 576,
+          "frames": 144,
+          "sourceFrame": 576,
+          "source": "renders/interface-v1.mp4"
+        },
+        {
+          "label": "H01",
+          "shot": "H01",
+          "frame": 720,
+          "frames": 36,
+          "sourceFrame": 0,
+          "source": "renders/hand-composite-v2.mp4"
+        },
+        {
+          "label": "S04-b",
+          "shot": "S04",
+          "frame": 756,
+          "frames": 36,
+          "sourceFrame": 756,
+          "source": "renders/interface-v1.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 792,
+          "frames": 120,
+          "sourceFrame": 792,
+          "source": "renders/interface-v1.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v1-4k",
+      "date": "2026-11-14",
+      "title": "4K master",
+      "film": "final/v1-4k/film.mp4",
+      "poster": "qa/looks/opening-history-v1.png",
+      "posterFrame": 0,
+      "fps": 24,
+      "frames": 912,
+      "width": 2160,
+      "height": 3840,
+      "note": "Local Lanczos upscale of native v1. Exact edit timing and original audio preserved.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0,
+          "source": "renders/4k-v1/interface.mp4"
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 168,
+          "sourceFrame": 168,
+          "source": "renders/4k-v1/interface.mp4"
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 336,
+          "frames": 240,
+          "sourceFrame": 336,
+          "source": "renders/4k-v1/interface.mp4"
+        },
+        {
+          "label": "S04-a",
+          "shot": "S04",
+          "frame": 576,
+          "frames": 144,
+          "sourceFrame": 576,
+          "source": "renders/4k-v1/interface.mp4"
+        },
+        {
+          "label": "H01",
+          "shot": "H01",
+          "frame": 720,
+          "frames": 36,
+          "sourceFrame": 0,
+          "source": "renders/4k-v1/hand.mp4"
+        },
+        {
+          "label": "S04-b",
+          "shot": "S04",
+          "frame": 756,
+          "frames": 36,
+          "sourceFrame": 756,
+          "source": "renders/4k-v1/interface.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 792,
+          "frames": 120,
+          "sourceFrame": 792,
+          "source": "renders/4k-v1/interface.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-15",
+      "title": "Held-phone revision — native review",
+      "film": "final/v2/film.mp4",
+      "poster": "qa/held-v2/autofill.png",
+      "posterFrame": 65,
+      "fps": 24,
+      "frames": 912,
+      "width": 1080,
+      "height": 1920,
+      "note": "Closer oblique framing, offscreen holder, keyboard outside every frame and continuous coverage through the final acceptance. Original 38-second timing and soundtrack verified unchanged.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0,
+          "source": "renders/held-v2.mp4"
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 168,
+          "sourceFrame": 168,
+          "source": "renders/held-v2.mp4"
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 336,
+          "frames": 240,
+          "sourceFrame": 336,
+          "source": "renders/held-v2.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 576,
+          "frames": 216,
+          "sourceFrame": 576,
+          "source": "renders/held-v2.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 792,
+          "frames": 120,
+          "sourceFrame": 792,
+          "source": "renders/held-v2.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v2-4k",
+      "date": "2026-11-15",
+      "title": "Held-phone revision — 4K",
+      "film": "final/v2-4k/film.mp4",
+      "poster": "qa/held-v2/autofill.png",
+      "posterFrame": 65,
+      "fps": 24,
+      "frames": 912,
+      "width": 2160,
+      "height": 3840,
+      "note": "Closer oblique handset, offscreen holder and typing, input and suggestions visible, keyboard outside every frame. The earlier 38-second rhythm and soundtrack are preserved exactly.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 168,
+          "sourceFrame": 0,
+          "source": "renders/4k-v2/held.mp4"
+        },
+        {
+          "label": "S02",
+          "shot": "S02",
+          "frame": 168,
+          "frames": 168,
+          "sourceFrame": 168,
+          "source": "renders/4k-v2/held.mp4"
+        },
+        {
+          "label": "S03",
+          "shot": "S03",
+          "frame": 336,
+          "frames": 240,
+          "sourceFrame": 336,
+          "source": "renders/4k-v2/held.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 576,
+          "frames": 216,
+          "sourceFrame": 576,
+          "source": "renders/4k-v2/held.mp4"
+        },
+        {
+          "label": "S05",
+          "shot": "S05",
+          "frame": 792,
+          "frames": 120,
+          "sourceFrame": 792,
+          "source": "renders/4k-v2/held.mp4"
+        }
+      ]
+    }
+  ]
+}
