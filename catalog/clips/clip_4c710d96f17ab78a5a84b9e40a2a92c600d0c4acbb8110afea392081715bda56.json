@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4c710d96f17ab78a5a84b9e40a2a92c600d0c4acbb8110afea392081715bda56",
+  "sha256": "4c710d96f17ab78a5a84b9e40a2a92c600d0c4acbb8110afea392081715bda56",
+  "bytes": 20290081,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Computed coherent wave fields and detector ending"
+  ],
+  "collections": [
+    "wavefield"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "computed-wave-fields",
+    "interference",
+    "local-render"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

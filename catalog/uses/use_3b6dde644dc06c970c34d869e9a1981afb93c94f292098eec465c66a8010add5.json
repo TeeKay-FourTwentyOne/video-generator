@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_296fb9cb13d779d814d3f34dcf760d8393134502dd1ef51d0551298b98cec2f0",
+  "projectId": "wavefield",
+  "editVersion": "edit/v4",
+  "segmentIndex": 3,
+  "shotId": "M04",
+  "status": "rendered",
+  "evidence": "continuous-frame-verified-stream-copy",
+  "range": {
+    "unit": "frames",
+    "start": 360,
+    "length": 120,
+    "fps": 30
+  },
+  "timelineStartFrame": 360,
+  "outputSha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+  "schemaVersion": 1,
+  "id": "use_3b6dde644dc06c970c34d869e9a1981afb93c94f292098eec465c66a8010add5"
+}

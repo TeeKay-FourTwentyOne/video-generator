@@ -79,7 +79,7 @@ export function checkProject(projectId, repo = REPO, { config } = {}) {
   return result;
 }
 
-export async function processProject(projectId, repo = REPO, { config, retry = false, recover = false, progress = () => {} } = {}) {
+export async function processProject(projectId, repo = REPO, { config, retry = false, recover = false, deferSearchRefresh = false, progress = () => {} } = {}) {
   validateProjectId(projectId);
   return withLock(repo, `project-${projectId}`, async () => {
     const clips = projectClips(projectId, repo), ctx = context(repo, config), attempts = [];
@@ -102,9 +102,15 @@ export async function processProject(projectId, repo = REPO, { config, retry = f
     const result = { ...report(projectId, current, ctx, repo), attempts };
     if (attempts.some(a => a.status === 'failed' || a.status === 'incomplete')) result.status = 'incomplete';
     if (result.status === 'complete') {
-      const coveragePath = safePath(repo, 'data/clips/analysis/coverage.json');
-      const indexed = new Set(fs.existsSync(coveragePath) ? readJson(coveragePath).runs.map(r => r.runId) : []);
-      if (result.rows.some(r => !indexed.has(r.runId))) result.index = await buildSearch(repo);
+      if (deferSearchRefresh) {
+        // Discovery is derived from analysis. Deferring its global rebuild does
+        // not defer source/manifest verification or imply current search coverage.
+        result.index = { status: 'deferred', reason: 'Explicit project processing option; search coverage is not asserted' };
+      } else {
+        const coveragePath = safePath(repo, 'data/clips/analysis/coverage.json');
+        const indexed = new Set(fs.existsSync(coveragePath) ? readJson(coveragePath).runs.map(r => r.runId) : []);
+        if (result.rows.some(r => !indexed.has(r.runId))) result.index = await buildSearch(repo);
+      }
       for (const row of result.rows) {
         const receipt = safePath(repo, `data/clips/analysis/intake/${row.clipId}/${row.catalogSha256}.${row.runId}.complete.json`);
         privateJson(receipt, { schemaVersion: 1, clipId: row.clipId, catalogSha256: row.catalogSha256,
@@ -124,12 +130,14 @@ export async function workflowMain(args, repo = REPO) {
   }
   const positional = rest.filter(a => !a.startsWith('--')), flags = rest.filter(a => a.startsWith('--'));
   assert(verb === 'process-project' && positional.length === 1
-    && flags.every(f => ['--check', '--retry', '--recover'].includes(f) || f.startsWith('--config=') && f.length > 9)
-    && new Set(flags.map(f => f.split('=')[0])).size === flags.length, 'Use analysis process-project PROJECT_ID [--config=PRIVATE.json] [--check] [--retry] [--recover]');
+    && flags.every(f => ['--check', '--retry', '--recover', '--defer-search-refresh'].includes(f) || f.startsWith('--config=') && f.length > 9)
+    && new Set(flags.map(f => f.split('=')[0])).size === flags.length, 'Use analysis process-project PROJECT_ID [--config=PRIVATE.json] [--check] [--retry] [--recover] [--defer-search-refresh]');
   assert(!flags.includes('--check') || !flags.some(f => ['--retry', '--recover'].includes(f)), 'Check mode cannot retry or recover work');
+  assert(!flags.includes('--check') || !flags.includes('--defer-search-refresh'), 'Check mode does not refresh search');
   const configFile = flags.find(f => f.startsWith('--config='))?.slice(9);
   assert(!configFile || configFile.startsWith('data/'), 'Analysis configuration must remain under data/');
   const options = { config: configFile ? readJson(safePath(repo, configFile)) : undefined,
-    retry: flags.includes('--retry'), recover: flags.includes('--recover'), progress: e => process.stderr.write(JSON.stringify(e) + '\n') };
+    retry: flags.includes('--retry'), recover: flags.includes('--recover'), deferSearchRefresh: flags.includes('--defer-search-refresh'),
+    progress: e => process.stderr.write(JSON.stringify(e) + '\n') };
   return flags.includes('--check') ? checkProject(positional[0], repo, options) : processProject(positional[0], repo, options);
 }

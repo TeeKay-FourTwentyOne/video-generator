@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_296fb9cb13d779d814d3f34dcf760d8393134502dd1ef51d0551298b98cec2f0",
+  "sha256": "296fb9cb13d779d814d3f34dcf760d8393134502dd1ef51d0551298b98cec2f0",
+  "bytes": 18805276,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Gentler opening camera with the v2 convergence retained"
+  ],
+  "collections": [
+    "wavefield"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "computed-wave-fields",
+    "interference",
+    "local-render",
+    "revision-v3"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

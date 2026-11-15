@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "projectId": "wavefield",
+  "title": "Wavefield",
+  "updated": "2026-11-14",
+  "format": "Portrait 9:16, 24 seconds, 4K 2160 by 3840 at 30 fps",
+  "phase": "published",
+  "logline": "An overlapping luminous structure approaches an abstract detector. Six regular clicks grow from distant ripples to a sharp final tick, disappearance, a single point, and white.",
+  "overall": "Published at the director-supplied URL. The release is the 24-second v4-4k finish, with the gentler opening, colored convergence and sharp detector ticks. Publication is user-confirmed; the local master hash does not identify the platform transcode.",
+  "next": "Published. Preserve the final 4K master, original sources, calculation snapshots and revision history in the verified archive.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "m01",
+      "number": "1",
+      "title": "Early approach",
+      "status": "review",
+      "summary": "The full luminous object stays in view longer during a gentler initial approach.",
+      "segments": [
+        {
+          "id": "m01-field",
+          "title": "M01 Early approach",
+          "status": "review",
+          "image": "refs/M01-A.png",
+          "detail": "The full luminous object stays in view longer during a gentler initial approach. Inspected 4K finish delivered; director master review remains separate."
+        }
+      ],
+      "image": "previews/native-v3-M01.jpg"
+    },
+    {
+      "id": "m02",
+      "number": "2",
+      "title": "Track the junction",
+      "status": "review",
+      "summary": "Camera follows the bright junction above the central opening.",
+      "segments": [
+        {
+          "id": "m02-field",
+          "title": "M02 Track the junction",
+          "status": "review",
+          "image": "refs/M02-A.png",
+          "detail": "Camera follows the bright junction above the central opening. Inspected 4K finish delivered; director master review remains separate."
+        }
+      ],
+      "image": "previews/native-v3-M02.jpg"
+    },
+    {
+      "id": "m03",
+      "number": "3",
+      "title": "Inside the folds",
+      "status": "review",
+      "summary": "Computed strand detail resolves inside the crossing.",
+      "segments": [
+        {
+          "id": "m03-field",
+          "title": "M03 Inside the folds",
+          "status": "review",
+          "image": "refs/M03-B.png",
+          "detail": "Computed strand detail resolves inside the crossing. Inspected 4K finish delivered; director master review remains separate."
+        }
+      ],
+      "image": "previews/native-v3-M03.jpg"
+    },
+    {
+      "id": "m04",
+      "number": "4",
+      "title": "Converging strands",
+      "status": "review",
+      "summary": "Secondary strands gather and vanish while colored pulses pass through.",
+      "segments": [
+        {
+          "id": "m04-field",
+          "title": "M04 Converging strands",
+          "status": "review",
+          "image": "refs/M04-B.png",
+          "detail": "Secondary strands gather and vanish while colored pulses pass through. Inspected 4K finish delivered; director master review remains separate."
+        }
+      ],
+      "image": "previews/native-v3-M04.jpg"
+    },
+    {
+      "id": "m05",
+      "number": "5",
+      "title": "Single intersection",
+      "status": "review",
+      "summary": "Inward-moving light packets are absorbed at the centered intersection.",
+      "segments": [
+        {
+          "id": "m05-field",
+          "title": "M05 Single intersection",
+          "status": "review",
+          "image": "refs/M05-A.png",
+          "detail": "Inward-moving light packets are absorbed at the centered intersection. Inspected 4K finish delivered; director master review remains separate."
+        }
+      ],
+      "image": "previews/native-v3-M05.jpg"
+    },
+    {
+      "id": "m06",
+      "number": "6",
+      "title": "Detection and white",
+      "status": "review",
+      "summary": "Extreme close-up, final click, disappearance, isolated point and white.",
+      "segments": [
+        {
+          "id": "m06-field",
+          "title": "M06 Detection and white",
+          "status": "review",
+          "image": "refs/M06-A.png",
+          "detail": "Extreme close-up, final click, disappearance, isolated point and white. Inspected 4K finish delivered; director master review remains separate."
+        }
+      ],
+      "image": "previews/native-v3-M06.jpg"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "direction",
+      "title": "Pure abstraction and agent-selected pairs",
+      "status": "decided",
+      "detail": "Director: All approved. Proceed at your own discretion through all six milestones. Definitely compute the overlapping wave fields."
+    },
+    {
+      "id": "revision-v2",
+      "title": "Earlier approach and a single intersection",
+      "status": "decided",
+      "detail": "Director: I like it. Spend less time at the beginning, get closer earlier, be super zoomed in to a single intersection before the final click, show more collapsing into it and vanishing, and add more visuals and colors to the ripples."
+    },
+    {
+      "id": "revision-v3",
+      "title": "A gentler opening push-in",
+      "status": "decided",
+      "detail": "Director: Maybe a little slower push-in at the beginning. By about a third."
+    },
+    {
+      "id": "revision-v4",
+      "title": "Sharper detector ticks",
+      "status": "decided",
+      "detail": "Director: Looking good. One last request: make the detector noise less booming and much sharper, like a click. Closer to a clock tick than a drum."
+    },
+    {
+      "id": "finish-v4-4k",
+      "title": "4K finishing authorization",
+      "status": "decided",
+      "detail": "Director: 4k upscale please. Beautiful."
+    },
+    {
+      "id": "publication",
+      "title": "Publication and closeout",
+      "status": "decided",
+      "detail": "Director supplied the YouTube publication URL and requested the post-publication process."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-14",
+      "text": "Production begins from the approved concept. Native draft planned; title provisional."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "M01: selected A. The elongated shell has the clearest hollow diagonal seam and three large folds to track through the approach."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "M02: selected A. The left petal opens while the original seam stays recognizable; dark seams provide a useful counterpart to the luminous ribs."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "M03: selected B. The central passage widens without losing the lower folded petal; stronger depth provides the route for the approach."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "M04: selected B. The broad lower fold opens further and the central void becomes a passage, with cleaner continuity than the small fragmented folds in A."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "M05: selected A. The opening left fold broadens the structure and the high central rib carries the increasing tension while preserving the selected anatomy."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "M06: selected A. The extended foreground petal and clean continuous ribs carry maximum tension with the strongest continuity into the final approach."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Native draft completed and inspected. Numerical verification, source lineage, encoded picture and audio checks passed. Calculation notebook retained alongside the status page."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Revision v2 begins from the director's notes. Earlier camera approach, tracked junction, converging wave packets and stronger chromatic ripples; existing source images and click timing retained."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Native v2 completed and frame-inspected. Camera reaches scale 3.3 by four seconds and 42 before the final click; secondary strands and inward packets vanish into the same junction. Soundtrack packet and decoded-sample hashes match v1. Numerical, export and project-analysis checks passed."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Revision v3 begins: camera growth runs at two thirds of v2 through the opening, then eases back to v2 at frame 250. The later picture and soundtrack will be retained."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Native v3 completed and frame-inspected. Opening camera growth is two thirds of v2 through three seconds and eases back to the prior move at frame 250. All later frames and the entire soundtrack match v2 exactly; native and project-analysis checks passed."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Sound-only revision v4 begins: reduce the detector to dry, clock-like ticks while retaining the six onsets and all v3 picture frames."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Native v4 completed: sharp mechanical detector ticks replace the bass resonator and long echoes. The final tick is fully dry. All picture frames and timestamps match v3; six onset samples and the existing quiet field-air stem are preserved. Native signal and project-analysis checks passed."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Authorized 4K finishing begins from v4. A local Lanczos upscale preserves the existing picture content; the maintained finisher will retain the exact edit and detector soundtrack."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Authorized 4K master completed from a verified lossless Lanczos counterpart using the maintained finisher. The same 720-frame edit and complete v4 soundtrack are retained. Native decode, full-frame comparisons, timestamp and sound identity checks passed. Draft publication text is included."
+    },
+    {
+      "date": "2026-11-14",
+      "text": "Director confirmed publication of the delivered 4K finish. Exact user-edited wording and credits are preserved; publication does not replace historical listening or semantic-review states."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-14",
+      "title": "Native draft",
+      "film": "final/v1/film.mp4",
+      "poster": "previews/native-M02.jpg",
+      "fps": 30,
+      "frames": 720,
+      "width": 1080,
+      "height": 1920,
+      "note": "Computed interference, six regular detector pulses, disappearance, single light and white. Human listening and artistic approval pending.",
+      "segments": [
+        {
+          "label": "M01",
+          "shot": "M01",
+          "frame": 0,
+          "frames": 120,
+          "sourceFrame": 0,
+          "source": "edit/picture-v1-tagged.mp4"
+        },
+        {
+          "label": "M02",
+          "shot": "M02",
+          "frame": 120,
+          "frames": 120,
+          "sourceFrame": 120,
+          "source": "edit/picture-v1-tagged.mp4"
+        },
+        {
+          "label": "M03",
+          "shot": "M03",
+          "frame": 240,
+          "frames": 120,
+          "sourceFrame": 240,
+          "source": "edit/picture-v1-tagged.mp4"
+        },
+        {
+          "label": "M04",
+          "shot": "M04",
+          "frame": 360,
+          "frames": 120,
+          "sourceFrame": 360,
+          "source": "edit/picture-v1-tagged.mp4"
+        },
+        {
+          "label": "M05",
+          "shot": "M05",
+          "frame": 480,
+          "frames": 120,
+          "sourceFrame": 480,
+          "source": "edit/picture-v1-tagged.mp4"
+        },
+        {
+          "label": "M06",
+          "shot": "M06",
+          "frame": 600,
+          "frames": 120,
+          "sourceFrame": 600,
+          "source": "edit/picture-v1-tagged.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-14",
+      "title": "Closer approach and convergence",
+      "film": "final/v2/film.mp4",
+      "poster": "previews/native-v2-M05.jpg",
+      "fps": 30,
+      "frames": 720,
+      "width": 1080,
+      "height": 1920,
+      "note": "Earlier approach, one intersection in extreme close-up, converging and vanishing strands, colored ripples. Original soundtrack preserved.",
+      "segments": [
+        {
+          "label": "M01",
+          "shot": "M01",
+          "frame": 0,
+          "frames": 120,
+          "sourceFrame": 0,
+          "source": "edit/picture-v2.mp4"
+        },
+        {
+          "label": "M02",
+          "shot": "M02",
+          "frame": 120,
+          "frames": 120,
+          "sourceFrame": 120,
+          "source": "edit/picture-v2.mp4"
+        },
+        {
+          "label": "M03",
+          "shot": "M03",
+          "frame": 240,
+          "frames": 120,
+          "sourceFrame": 240,
+          "source": "edit/picture-v2.mp4"
+        },
+        {
+          "label": "M04",
+          "shot": "M04",
+          "frame": 360,
+          "frames": 120,
+          "sourceFrame": 360,
+          "source": "edit/picture-v2.mp4"
+        },
+        {
+          "label": "M05",
+          "shot": "M05",
+          "frame": 480,
+          "frames": 120,
+          "sourceFrame": 480,
+          "source": "edit/picture-v2.mp4"
+        },
+        {
+          "label": "M06",
+          "shot": "M06",
+          "frame": 600,
+          "frames": 120,
+          "sourceFrame": 600,
+          "source": "edit/picture-v2.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-11-14",
+      "title": "Gentler opening",
+      "film": "final/v3/film.mp4",
+      "poster": "previews/native-v3-M02.jpg",
+      "fps": 30,
+      "frames": 720,
+      "width": 1080,
+      "height": 1920,
+      "note": "Opening push-in about one third slower, easing into the existing approach. Later picture and full soundtrack preserved.",
+      "segments": [
+        {
+          "label": "M01",
+          "shot": "M01",
+          "frame": 0,
+          "frames": 120,
+          "sourceFrame": 0,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M02",
+          "shot": "M02",
+          "frame": 120,
+          "frames": 120,
+          "sourceFrame": 120,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M03",
+          "shot": "M03",
+          "frame": 240,
+          "frames": 120,
+          "sourceFrame": 240,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M04",
+          "shot": "M04",
+          "frame": 360,
+          "frames": 120,
+          "sourceFrame": 360,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M05",
+          "shot": "M05",
+          "frame": 480,
+          "frames": 120,
+          "sourceFrame": 480,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M06",
+          "shot": "M06",
+          "frame": 600,
+          "frames": 120,
+          "sourceFrame": 600,
+          "source": "edit/picture-v3.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v4",
+      "date": "2026-11-14",
+      "title": "Sharper detector ticks",
+      "film": "final/v4/film.mp4",
+      "poster": "previews/native-v3-M02.jpg",
+      "fps": 30,
+      "frames": 720,
+      "width": 1080,
+      "height": 1920,
+      "note": "Short, sharp clock-like ticks with the bass boom removed. V3 picture, click timing and quiet field air retained.",
+      "segments": [
+        {
+          "label": "M01",
+          "shot": "M01",
+          "frame": 0,
+          "frames": 120,
+          "sourceFrame": 0,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M02",
+          "shot": "M02",
+          "frame": 120,
+          "frames": 120,
+          "sourceFrame": 120,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M03",
+          "shot": "M03",
+          "frame": 240,
+          "frames": 120,
+          "sourceFrame": 240,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M04",
+          "shot": "M04",
+          "frame": 360,
+          "frames": 120,
+          "sourceFrame": 360,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M05",
+          "shot": "M05",
+          "frame": 480,
+          "frames": 120,
+          "sourceFrame": 480,
+          "source": "edit/picture-v3.mp4"
+        },
+        {
+          "label": "M06",
+          "shot": "M06",
+          "frame": 600,
+          "frames": 120,
+          "sourceFrame": 600,
+          "source": "edit/picture-v3.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v4-4k",
+      "date": "2026-11-14",
+      "title": "4K finishing master",
+      "film": "final/v4-4k/film.mp4",
+      "poster": "previews/native-v3-M02.jpg",
+      "fps": 30,
+      "frames": 720,
+      "width": 2160,
+      "height": 3840,
+      "note": "4K upscale of v4. Exact picture timing and detector soundtrack preserved.",
+      "segments": [
+        {
+          "label": "M01",
+          "shot": "M01",
+          "frame": 0,
+          "frames": 120,
+          "sourceFrame": 0,
+          "source": "edit/picture-v4-4k.mp4"
+        },
+        {
+          "label": "M02",
+          "shot": "M02",
+          "frame": 120,
+          "frames": 120,
+          "sourceFrame": 120,
+          "source": "edit/picture-v4-4k.mp4"
+        },
+        {
+          "label": "M03",
+          "shot": "M03",
+          "frame": 240,
+          "frames": 120,
+          "sourceFrame": 240,
+          "source": "edit/picture-v4-4k.mp4"
+        },
+        {
+          "label": "M04",
+          "shot": "M04",
+          "frame": 360,
+          "frames": 120,
+          "sourceFrame": 360,
+          "source": "edit/picture-v4-4k.mp4"
+        },
+        {
+          "label": "M05",
+          "shot": "M05",
+          "frame": 480,
+          "frames": 120,
+          "sourceFrame": 480,
+          "source": "edit/picture-v4-4k.mp4"
+        },
+        {
+          "label": "M06",
+          "shot": "M06",
+          "frame": 600,
+          "frames": 120,
+          "sourceFrame": 600,
+          "source": "edit/picture-v4-4k.mp4"
+        }
+      ]
+    }
+  ]
+}

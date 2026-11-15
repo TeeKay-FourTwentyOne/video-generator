@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_f2e71c1ff9d96a434eaeb491aad3bbf08a94fae06a6adc6e50d7b8fef89c26d2",
+  "projectId": "wavefield",
+  "editVersion": "finish/v4-4k",
+  "segmentIndex": 0,
+  "shotId": "M01",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 120,
+    "fps": 30
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+  "schemaVersion": 1,
+  "id": "use_0e9d94ebeec9c76554643d2678f89e0eac05f74c4c26f692c8e077720d6e8e4c"
+}

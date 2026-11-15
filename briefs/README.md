@@ -94,5 +94,6 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [VERIFY](verify/README.md) | published | — | [Brief](verify/brief.md) · [Description](verify/description.md) · [Decisions](verify/decisions.md) · [Record](verify/production.json) |
 | [Walla](walla/README.md) | published | — | [Brief](walla/brief.md) · [Description](walla/description.md) · [Record](walla/production.json) |
 | [Washing Day](washing-day/README.md) | review | — | [Brief](washing-day/brief.md) · [Record](washing-day/production.json) |
+| [Wavefield](wavefield/README.md) | published | — | [Brief](wavefield/brief.md) · [Description](wavefield/description.md) · [Record](wavefield/production.json) |
 | [WEATHER SERVICE](weather-service/README.md) | published | — | [Brief](weather-service/brief.md) · [Description](weather-service/description.md) · [Record](weather-service/production.json) |
 | [WHALEFALL](whalefall/README.md) | published | — | [Brief](whalefall/brief.md) · [Record](whalefall/production.json) |

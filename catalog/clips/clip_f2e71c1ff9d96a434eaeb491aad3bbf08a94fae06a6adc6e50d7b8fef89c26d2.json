@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f2e71c1ff9d96a434eaeb491aad3bbf08a94fae06a6adc6e50d7b8fef89c26d2",
+  "sha256": "f2e71c1ff9d96a434eaeb491aad3bbf08a94fae06a6adc6e50d7b8fef89c26d2",
+  "bytes": 823109128,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 2160,
+    "height": 3840,
+    "frameRate": "30/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Wavefield 4K Lanczos counterpart"
+  ],
+  "collections": [
+    "wavefield"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "4k",
+    "local-upscale",
+    "lossless-counterpart",
+    "wavefield"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

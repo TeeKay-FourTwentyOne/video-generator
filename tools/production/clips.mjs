@@ -35,7 +35,7 @@ export async function main(args, repo = REPO) {
       return (await import('./clip-analysis-workflow.mjs')).workflowMain(rest, repo);
     const result = await (await import('./clip-analysis.mjs')).analysisMain(rest, repo);
     if (!rest[0] || rest[0] === 'help') result.commands.push('analysis configure-default PRIVATE_PROFILE.json',
-      'analysis process-project PROJECT_ID [--config=PRIVATE.json] [--check] [--retry] [--recover]');
+      'analysis process-project PROJECT_ID [--config=PRIVATE.json] [--check] [--retry] [--recover] [--defer-search-refresh]');
     return result;
   }
   if (!verb || verb === 'help') return { commands: ['migrate', 'import FILE [PUBLIC_METADATA.json] [--snapshot=REQUEST.json]', 'search QUERY', 'show CLIP_ID',

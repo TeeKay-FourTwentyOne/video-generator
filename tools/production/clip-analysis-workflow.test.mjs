@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { importClip, run, readJson, readClip, hashFile, recordUse } from './clip-library.mjs';
+import { importClip, run, readJson, readClip, hashFile, recordUse, mediaPath } from './clip-library.mjs';
 import { configFor, privateJson, runPath, verifyRun } from './clip-analysis-store.mjs';
 import { configureDefault, processProject, checkProject, workflowMain } from './clip-analysis-workflow.mjs';
 
@@ -90,4 +90,36 @@ test('read-only checks detect changed config and catalog evidence without reinte
   const policy = readJson(path.join(f.repo, 'data/clips/analysis/workflow.json'));
   fs.appendFileSync(path.join(f.repo, policy.configRef.path), 'changed');
   assert.throws(() => checkProject('fixture', f.repo), /hash or size mismatch/);
+});
+
+test('explicit search deferral still processes and verifies project sources without touching discovery', async t => {
+  const f = fixture(t), clip = f.add('red'); f.setDefault();
+  // A broken derived index must not block verified project processing when
+  // discovery was explicitly deferred. A later normal call repairs it.
+  const coverage = path.join(f.repo, 'data/clips/analysis/coverage.json');
+  fs.writeFileSync(coverage, 'stale discovery');
+  const result = await workflowMain(['process-project', 'fixture', '--defer-search-refresh'], f.repo);
+  assert.equal(result.status, 'complete'); assert.equal(result.clips, 1);
+  assert.equal(result.index.status, 'deferred'); assert.equal(result.humanReview, 'not-asserted');
+  assert.equal(fs.readFileSync(coverage, 'utf8'), 'stale discovery');
+  const intake = path.join(f.repo, `data/clips/analysis/intake/${clip.id}`);
+  assert.equal(fs.readdirSync(intake).filter(n => n.endsWith('.complete.json')).length, 1);
+  assert.equal(checkProject('fixture', f.repo).status, 'complete');
+  const again = await processProject('fixture', f.repo, { deferSearchRefresh: true });
+  assert(again.attempts.every(a => a.reused)); assert.equal(again.index.status, 'deferred');
+  fs.unlinkSync(coverage);
+  assert.equal((await processProject('fixture', f.repo)).status, 'complete');
+  assert.equal(readJson(coverage).analyzedClips, 1);
+  const source = mediaPath(readClip(clip.id, f.repo), f.repo);
+  fs.chmodSync(source, 0o600); fs.appendFileSync(source, 'changed');
+  assert.equal((await processProject('fixture', f.repo, { deferSearchRefresh: true })).status, 'incomplete');
+  await assert.rejects(workflowMain(['process-project', 'fixture', '--check', '--defer-search-refresh'], f.repo), /does not refresh/);
+});
+
+test('search deferral cannot complete unprovisioned required analysis', async t => {
+  const f = fixture(t); f.add('red');
+  const config = { ...f.config, required: [...f.config.required, 'observations'] };
+  const result = await processProject('fixture', f.repo, { config, deferSearchRefresh: true });
+  assert.equal(result.status, 'incomplete'); assert.equal(result.rows[0].steps.observations, 'pending');
+  assert.equal(result.index, undefined);
 });

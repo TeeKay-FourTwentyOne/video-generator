@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d5c7257f2aa9fab4dc33d1a2e04a841a718ff4713e652db30d5baefac4e44e3f",
+  "sha256": "d5c7257f2aa9fab4dc33d1a2e04a841a718ff4713e652db30d5baefac4e44e3f",
+  "bytes": 18915233,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 24,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frameCount": 720,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "Revised tracked approach into a single wave-field junction"
+  ],
+  "collections": [
+    "wavefield"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "abstract",
+    "computed-wave-fields",
+    "interference",
+    "local-render",
+    "revision-v2"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

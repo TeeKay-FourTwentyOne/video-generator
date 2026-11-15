@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "projectId": "wavefield",
+  "title": "Wavefield",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published at the director-supplied URL. The release is the 24-second v4-4k finish, with the gentler opening, colored convergence and sharp detector ticks. Publication is user-confirmed; the local master hash does not identify the platform transcode.",
+  "briefPath": "briefs/wavefield/brief.md",
+  "descriptionPath": "briefs/wavefield/description.md",
+  "descriptionSha256": "981b115b6ad331e394a0938a29127333589533b8eadca1c7897ef81c2f749d81",
+  "supportingDocuments": [
+    {
+      "label": "Calculation and reproduction method",
+      "path": "briefs/wavefield/method.md"
+    },
+    {
+      "label": "Release and restoration",
+      "path": "briefs/wavefield/closeout.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/wavefield-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "b4270df1ec8381de9c93aa7071856dbe07c14fd06980461633216bb7b0f76fb0",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 720,
+      "durationSeconds": 24,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "d571a18f0eb763c450f2eaae42c04774648c9676ae965e6da11dbae5f2ca67e7",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 720,
+      "durationSeconds": 24,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v2/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "6869d8790dc9e3d512483ff6764a85dbfa297c20c69f58115ff97ba5f538750d",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 720,
+      "durationSeconds": 24,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v3/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 720,
+      "durationSeconds": 24,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v4/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v4-4k",
+      "path": "final/v4-4k/film.mp4",
+      "sha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "frames": 720,
+      "durationSeconds": 24,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v4-4k/description.txt",
+      "deliveryRecordPath": "final/v4-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "OpenAI built-in image_gen; resolved model not exposed"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Local Python complex-wave propagation and procedural compositing"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Local Python synthesis"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Direction, numerical simulation, rendering, sound and editing",
+        "harness": "Codex"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/ew_MaUnZ9tI",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-14",
+    "artifactVersion": "v4-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "b4270df1ec8381de9c93aa7071856dbe07c14fd06980461633216bb7b0f76fb0",
+      "recordedDate": "2026-11-14",
+      "evidence": "Full decode, 720 frames, native dimensions, BT.709 metadata, audio correlation and peak/silence measurements passed. Independent analytic wave-propagation checks passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "b4270df1ec8381de9c93aa7071856dbe07c14fd06980461633216bb7b0f76fb0",
+      "recordedDate": "2026-11-14",
+      "evidence": "Agent inspected all twelve image candidates, native timeline, dense pulse windows and the disappearance/point/white sequence. Browser playback unavailable.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v1",
+      "artifactSha256": "b4270df1ec8381de9c93aa7071856dbe07c14fd06980461633216bb7b0f76fb0",
+      "recordedDate": "2026-11-14",
+      "evidence": "Sound synthesis and encoded signal checked; full real-time human listening remains pending.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "b4270df1ec8381de9c93aa7071856dbe07c14fd06980461633216bb7b0f76fb0",
+      "recordedDate": "2026-11-14",
+      "evidence": "Director approved production approach and autonomous milestone selection; the completed draft awaits review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v1",
+      "artifactSha256": "b4270df1ec8381de9c93aa7071856dbe07c14fd06980461633216bb7b0f76fb0",
+      "recordedDate": "2026-11-14",
+      "evidence": "Director said I like it and requested a faster approach, one intersection in extreme close-up, more strands collapsing into it and vanishing, and stronger colored ripples.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "d571a18f0eb763c450f2eaae42c04774648c9676ae965e6da11dbae5f2ca67e7",
+      "recordedDate": "2026-11-14",
+      "evidence": "Full native decode, 720 frames, BT.709 tags, per-frame propagation and cross-term identities passed. Encoded audio packets and decoded PCM match v1 exactly. Current project analysis check is complete.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "d571a18f0eb763c450f2eaae42c04774648c9676ae965e6da11dbae5f2ca67e7",
+      "recordedDate": "2026-11-14",
+      "evidence": "Agent inspected the native timeline, six colored pulse windows, dense inward-packet convergence, the centered final junction, collapse, point and white. Full real-time playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v2",
+      "artifactSha256": "d571a18f0eb763c450f2eaae42c04774648c9676ae965e6da11dbae5f2ca67e7",
+      "recordedDate": "2026-11-14",
+      "evidence": "The existing soundtrack was copied unchanged and its signal identity verified. New full real-time listening is not claimed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "d571a18f0eb763c450f2eaae42c04774648c9676ae965e6da11dbae5f2ca67e7",
+      "recordedDate": "2026-11-14",
+      "evidence": "The revised native draft awaits director review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v2",
+      "artifactSha256": "d571a18f0eb763c450f2eaae42c04774648c9676ae965e6da11dbae5f2ca67e7",
+      "recordedDate": "2026-11-14",
+      "evidence": "Director requested a slower opening push-in, by about one third.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "6869d8790dc9e3d512483ff6764a85dbfa297c20c69f58115ff97ba5f538750d",
+      "recordedDate": "2026-11-14",
+      "evidence": "Full native decode, 720 frames, BT.709 tags, current project analysis check and camera checks passed. All 470 frames from frame 250 onward match v2 pixel for pixel. Encoded audio packets and decoded PCM match v2 exactly.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3",
+      "artifactSha256": "6869d8790dc9e3d512483ff6764a85dbfa297c20c69f58115ff97ba5f538750d",
+      "recordedDate": "2026-11-14",
+      "evidence": "Agent inspected the gentler opening and dense frame windows across its join. Later frames are verified identical to v2. Full real-time playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v3",
+      "artifactSha256": "6869d8790dc9e3d512483ff6764a85dbfa297c20c69f58115ff97ba5f538750d",
+      "recordedDate": "2026-11-14",
+      "evidence": "Existing soundtrack copied unchanged and signal identity verified. New full real-time listening is not claimed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v3",
+      "artifactSha256": "6869d8790dc9e3d512483ff6764a85dbfa297c20c69f58115ff97ba5f538750d",
+      "recordedDate": "2026-11-14",
+      "evidence": "The gentler opening draft awaits director review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v3",
+      "artifactSha256": "6869d8790dc9e3d512483ff6764a85dbfa297c20c69f58115ff97ba5f538750d",
+      "recordedDate": "2026-11-14",
+      "evidence": "Director said Looking good and requested less booming, much sharper detector noise, closer to a clock tick than a drum.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+      "recordedDate": "2026-11-14",
+      "evidence": "Full native decode, 720 frames, BT.709 tags and current project analysis check passed. Every picture frame and timestamp matches v3. The revised sound retains all six onset samples and the original field-air stem. New mix correlation, peak headroom and ending silence passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v4",
+      "artifactSha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+      "recordedDate": "2026-11-14",
+      "evidence": "The previously inspected v3 picture is reused; full decoded-frame and timestamp comparisons verify no visual change.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v4",
+      "artifactSha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+      "recordedDate": "2026-11-14",
+      "evidence": "Deterministic mechanical-tick synthesis and spectral, duration and encoded-signal measurements passed. Full real-time human listening is not claimed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4",
+      "artifactSha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+      "recordedDate": "2026-11-14",
+      "evidence": "The revised detector sound awaits director review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v4",
+      "artifactSha256": "422e85a3dd23852b4555da41f1b08dba2d98a8a77e8306fac568665f61948e21",
+      "recordedDate": "2026-11-14",
+      "evidence": "Director: 4k upscale please. Beautiful.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "recordedDate": "2026-11-14",
+      "evidence": "The 4K master fully decodes at 2160 by 3840, 30 fps and 720 frames with BT.709 tags. All video timestamps and all 1126 AAC packet hashes and timestamps match v4; decoded sound also matches. Full-frame compression comparisons and current six-clip project analysis checks passed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "recordedDate": "2026-11-14",
+      "evidence": "Agent inspected the upscale timeline, full-pixel junction detail and exported master timeline and ending. Luminous folds, colored strands, disappearance, tiny light and white expansion remain consistent. Full real-time playback is not claimed.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "recordedDate": "2026-11-14",
+      "evidence": "The exact v4 soundtrack is retained and verified. New full real-time listening is not claimed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "recordedDate": "2026-11-14",
+      "evidence": "The director authorized finishing from v4. The completed 4K export is delivered for final review.",
+      "outcome": "pending"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "recordedDate": "2026-11-14",
+      "evidence": "Director supplied the publication URL and requested post-publication closeout following delivery of the authorized 4K finish. No platform publication date or transcode byte identity is asserted.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/wavefield-v1/workspace-archive-manifest.json",
+    "inventorySha256": "27c3a4323ebc94690c2961a242b1efb30e66789c8ce503f14ebd51fb626fdd19",
+    "verifiedDate": "2026-11-14"
+  }
+}

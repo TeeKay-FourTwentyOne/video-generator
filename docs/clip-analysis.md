@@ -47,6 +47,15 @@ unsuccessfully for missing/failed required passes or invalid evidence. `--check`
 performs read-only verification; it never starts extraction. Explicit `--retry`
 and `--recover` retain the existing retry and stale-lock safeguards.
 
+For a large library, `--defer-search-refresh` explicitly postpones the global
+private search rebuild while still processing and verifying every project clip,
+required pass and declared artifact. Completion receipts retain those checks;
+the project report marks search as deferred and does not claim current search
+coverage. The default behavior is unchanged. Refresh discovery separately with
+`npm run clips -- analysis index`. This option cannot be combined with `--check`,
+which never rebuilds search. It does not bypass missing or invalid analysis,
+queue ownership checks or human review.
+
 Maintained `film assemble` and `film review` process the project before delivery.
 They register local and reused edit sources first; other project takes must have
 the correct collection at import. Custom editors and post-publication closeout

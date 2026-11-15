@@ -5862,6 +5862,25 @@
       }
     },
     {
+      "id": "clip_1f90a43b7ed37a00af608fefaa1c8fc10833675334ce69bab4a2c3b9fea26a80",
+      "metadata": "clips/clip_1f90a43b7ed37a00af608fefaa1c8fc10833675334ce69bab4a2c3b9fea26a80.json",
+      "labels": [
+        "Computed coherent wave fields and detector ending"
+      ],
+      "kind": "source",
+      "collections": [
+        "wavefield"
+      ],
+      "durationSeconds": 24,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 6
+      }
+    },
+    {
       "id": "clip_1f97f7dfb303c5b346eba9f51bf94eddfce7f17145408eb2f2541f7493bb65d6",
       "metadata": "clips/clip_1f97f7dfb303c5b346eba9f51bf94eddfce7f17145408eb2f2541f7493bb65d6.json",
       "labels": [
@@ -7790,6 +7809,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_296fb9cb13d779d814d3f34dcf760d8393134502dd1ef51d0551298b98cec2f0",
+      "metadata": "clips/clip_296fb9cb13d779d814d3f34dcf760d8393134502dd1ef51d0551298b98cec2f0.json",
+      "labels": [
+        "Gentler opening camera with the v2 convergence retained"
+      ],
+      "kind": "derived",
+      "collections": [
+        "wavefield"
+      ],
+      "durationSeconds": 24,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 12
       }
     },
     {
@@ -14666,6 +14704,25 @@
       "durationSeconds": 167.291667,
       "width": 1280,
       "height": 720,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
+      "id": "clip_4c710d96f17ab78a5a84b9e40a2a92c600d0c4acbb8110afea392081715bda56",
+      "metadata": "clips/clip_4c710d96f17ab78a5a84b9e40a2a92c600d0c4acbb8110afea392081715bda56.json",
+      "labels": [
+        "Computed coherent wave fields and detector ending"
+      ],
+      "kind": "source",
+      "collections": [
+        "wavefield"
+      ],
+      "durationSeconds": 24,
+      "width": 1080,
+      "height": 1920,
       "hasPrompt": false,
       "uses": {
         "planned": 0,
@@ -38664,6 +38721,23 @@
       }
     },
     {
+      "id": "clip_c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e",
+      "metadata": "clips/clip_c3030c78a61295b58ef68bc8d77202f91d2b7ba147b0d6a0ab2fafc5cd6f0d0e.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "wavefield"
+      ],
+      "durationSeconds": 24,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_c31292c109e155fd0272d6ea63a2c9824373923d84fb2e4aeaa16318b9c38f1f",
       "metadata": "clips/clip_c31292c109e155fd0272d6ea63a2c9824373923d84fb2e4aeaa16318b9c38f1f.json",
       "labels": [
@@ -42217,6 +42291,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_d5c7257f2aa9fab4dc33d1a2e04a841a718ff4713e652db30d5baefac4e44e3f",
+      "metadata": "clips/clip_d5c7257f2aa9fab4dc33d1a2e04a841a718ff4713e652db30d5baefac4e44e3f.json",
+      "labels": [
+        "Revised tracked approach into a single wave-field junction"
+      ],
+      "kind": "source",
+      "collections": [
+        "wavefield"
+      ],
+      "durationSeconds": 24,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 6
       }
     },
     {
@@ -47819,6 +47912,25 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_f2e71c1ff9d96a434eaeb491aad3bbf08a94fae06a6adc6e50d7b8fef89c26d2",
+      "metadata": "clips/clip_f2e71c1ff9d96a434eaeb491aad3bbf08a94fae06a6adc6e50d7b8fef89c26d2.json",
+      "labels": [
+        "Wavefield 4K Lanczos counterpart"
+      ],
+      "kind": "derived",
+      "collections": [
+        "wavefield"
+      ],
+      "durationSeconds": 24,
+      "width": 2160,
+      "height": 3840,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 6
       }
     },
     {

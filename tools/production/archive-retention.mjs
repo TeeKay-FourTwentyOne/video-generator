@@ -28,7 +28,7 @@ function removable(file, derivativeClass) {
     if (derivativeClass === 'complete-mix') {
       if (/(?:^|[-_.])stems?(?:[-_.]|$)/.test(path.posix.basename(file))) return false;
       return /^audio\/(?:(?:mix-)?master(?:-[^/]+)?|soundtrack(?:-[^/]+)?|mono-test-[^/]+)\.(wav|flac|mp3|m4a)$/.test(file) ||
-        /^edit\/mix-(?:master-)?v\d+(?:[.-][a-z0-9]+)*\.(wav|flac|mp3|m4a)$/.test(file);
+        /^(?:edit|audio)\/mix-(?:master-)?v\d+(?:[.-][a-z0-9]+)*\.(wav|flac|mp3|m4a)$/.test(file);
     }
     return false;
   }
