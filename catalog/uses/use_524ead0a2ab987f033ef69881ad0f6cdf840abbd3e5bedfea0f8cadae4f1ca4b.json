@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_3fbe9bd3ad30ec26c38ac14828672a0c734183034a7ef2abf28b076d00812858",
+  "projectId": "repeat",
+  "editVersion": "upscale/4k-v1",
+  "segmentIndex": 1,
+  "shotId": "STINGER",
+  "status": "rendered",
+  "evidence": "local-lanczos-upscale",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 59,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "ca99ec3fbaadc897a30c6cde7e6ce94358650f054ff1a552c93738a03db4179d",
+  "schemaVersion": 1,
+  "id": "use_524ead0a2ab987f033ef69881ad0f6cdf840abbd3e5bedfea0f8cadae4f1ca4b"
+}

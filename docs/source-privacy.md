@@ -123,6 +123,10 @@ people or private entities to omit. Keep project-specific exclusion lists and
 identifying review notes in ignored local storage. An instruction to withhold
 information must not itself publish that information.
 
+Symbolic links are scanned as their stored target text in every mode, including
+directory and dangling links. The working-tree scan inspects the bytes Git would
+publish for the link; other candidate source files receive their own checks.
+
 The scan is scoped to candidate/index files and new outgoing commit snapshots.
 It does not certify old public history as clean. If a previously published secret
 is found, report it and arrange rotation and history remediation separately; do

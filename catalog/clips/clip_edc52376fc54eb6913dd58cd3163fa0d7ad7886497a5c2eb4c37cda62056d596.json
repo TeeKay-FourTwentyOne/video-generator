@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_edc52376fc54eb6913dd58cd3163fa0d7ad7886497a5c2eb4c37cda62056d596",
+  "sha256": "edc52376fc54eb6913dd58cd3163fa0d7ad7886497a5c2eb4c37cda62056d596",
+  "bytes": 10072078,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Silent photorealistic eight-second portrait performance from the reference, one adult woman in the same grey shirt and sterile white room. Camera absolutely fixed, straight on at eye level, same framing and identity. Begin with her head turned very slightly left and her gaze lowered toward a display below the lens. She slowly returns her eyes to the lens, makes one slow blink, gently presses her lips together, swallows, then furrows her brow and tilts her head a fraction in puzzled concentration. Her lips remain touching from start to finish. Only the eyes, brow, breathing and a very small head tilt change. The emotion is uncertainty while listening. This is an attentive silent reaction shot. No speech or mouthing; no open mouth, no smile, no dialogue, no singing. No sound. No hands in frame, no camera motion, no cuts, no graphics, no added objects, no text or waveform. Single normal-speed continuous performance with a clear human face throughout.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_1d3e84b4dc7ef74518d75ad8b7c3c97384c9b6980416b7ed8932b12e970617bc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1039480398,
+      "createdAt": "2026-11-15T19:41:35.046Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4ba443a448a02ba080f10f913761d232ce5e7406c6011df7df62ed5391526e01",
+          "bytes": 1571147,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "6584ddf12f4fea1d5f618f57adbed56be1e02736fd16bac86301a304cd44e402"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

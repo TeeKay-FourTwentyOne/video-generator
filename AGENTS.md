@@ -75,6 +75,9 @@ ledger, not a clerk with a camera.
   reason to generate again: recover the existing operation first.
 - Prefer local work for exact timing, sound mixing, typography and compositing.
   Model choice serves the shot; do not impose a paid draft pass or a global style.
+- Review the assembled joins in every film before native delivery with the shared
+  `review-video-joins` skill. Inspect exact frames and motion context, preserve
+  intentional cuts, and recheck affected joins after revisions and finishing.
 - Deliver native review artifacts and distinguish technical checks from artistic
   approval and real-time listening. Do not infer permission to upscale or publish.
 - For long work, retain the current plan, decisions, request IDs and verification

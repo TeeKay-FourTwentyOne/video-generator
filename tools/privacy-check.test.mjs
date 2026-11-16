@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync, mkdirSync, writeFileSync, copyFileSync, chmodSync, rmSync} from 'node:fs';
+import {mkdtempSync, mkdirSync, writeFileSync, copyFileSync, chmodSync, rmSync, symlinkSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join, resolve} from 'node:path';
 import {execFileSync, spawnSync} from 'node:child_process';
@@ -85,6 +85,26 @@ test('scans the actual staged snapshot, not a subsequently cleaned worktree', t 
   assert.ok(audit({cwd,mode:'--staged'}).findings.some(f=>f.rule==='provider-token'));
   git('add','source.txt');
   assert.deepEqual(audit({cwd,mode:'--staged'}).findings,[]);
+});
+
+test('worktree scans directory, file and dangling symlink targets like the index', t => {
+  const {cwd,git} = repository(t);
+  mkdirSync(join(cwd,'skills'));
+  writeFileSync(join(cwd,'skills','SKILL.md'),'Shared skill instructions\n');
+  symlinkSync('skills',join(cwd,'skill-link'),'dir');
+  symlinkSync('source.txt',join(cwd,'file-link'));
+  symlinkSync('missing-safe-target',join(cwd,'dangling-link'));
+  const privateTarget = ['','Users','private-person','reference'].join('/');
+  symlinkSync(privateTarget,join(cwd,'private-link'));
+  const worktree = audit({cwd,mode:'--worktree'});
+  assert.equal(worktree.fileCount,5);
+  assert.deepEqual(worktree.findings.map(({path,rule,line})=>({path,rule,line})),
+    [{path:'private-link',rule:'personal-home-path',line:1}]);
+  assert.ok(!JSON.stringify(worktree).includes(privateTarget));
+  git('add','skills/SKILL.md','skill-link','file-link','dangling-link','private-link');
+  const staged = audit({cwd,mode:'--staged'});
+  assert.deepEqual(staged.findings.map(({scope,...row})=>row),
+    worktree.findings.map(({scope,...row})=>row));
 });
 
 test('detects personal commit email before committing', t => {

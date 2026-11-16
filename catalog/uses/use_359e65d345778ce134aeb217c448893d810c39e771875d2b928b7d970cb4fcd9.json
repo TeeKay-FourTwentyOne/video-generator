@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_c0dbcc34503de3a9cd891158f5f5eaecb4a3aa7e472925a539fd4b994e4c2e96",
+  "projectId": "repeat",
+  "editVersion": "upscale/4k-v1",
+  "segmentIndex": 0,
+  "shotId": "COMPOSITE",
+  "status": "rendered",
+  "evidence": "local-lanczos-upscale",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 611,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "d15e01ee544edf33e27dcc85a90493f0810136d3d2f5009b8c69006309171da9",
+  "schemaVersion": 1,
+  "id": "use_359e65d345778ce134aeb217c448893d810c39e771875d2b928b7d970cb4fcd9"
+}

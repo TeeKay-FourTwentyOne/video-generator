@@ -59,6 +59,16 @@ For a batch, loop the clips; any clip that returns exit 3 goes to the decision l
 - **`skip-clip-qa-for-user-review`** is refined, not removed: `clip-qa`'s *general* scan can still be skipped on calm, static, user-reviewed clips — but **`clone-check` runs on every motion-bearing shot regardless**, because the duplication class is exactly what the human watch misses (it was caught here only by luck). Treat clone-check as the non-negotiable post-gen check for motion.
 - **`accept-and-adapt`** governs the keep decision: a `low`/cosmetic flag that doesn't break the gag is a keep.
 
+## After assembly: review the joins
+
+Accepted source clips can still make a visibly broken cut. Before native
+delivery of every film, apply the shared
+[review-video-joins skill](../../.agents/skills/review-video-joins/SKILL.md).
+Inspect actual adjacent frames and surrounding motion for every edit boundary,
+including internal composite cuts. Keep intentional cuts; refine unintended
+jumps and preserve dialogue. Recheck affected joins after revisions/finishing.
+The saved per-join decisions supplement source-clip acceptance, not replace it.
+
 ## Cross-links
 - `clone-check` · `clip-qa` · `anchor-drift` · `frame-qa` · `normalize-clip` · `book-end` skills.
 - Lessons: `no-auto-reroll`, `skip-fast-draft`, `accept-and-adapt`, `autonomous-build-doctrine`, `clipqa-motionblur-falsepos`, `clipqa-overflags-face-morph`.

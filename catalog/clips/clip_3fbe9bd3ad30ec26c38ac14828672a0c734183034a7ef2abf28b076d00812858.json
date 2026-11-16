@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_3fbe9bd3ad30ec26c38ac14828672a0c734183034a7ef2abf28b076d00812858",
+  "sha256": "3fbe9bd3ad30ec26c38ac14828672a0c734183034a7ef2abf28b076d00812858",
+  "bytes": 4065501,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 2.458333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 59,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "REPEAT stinger picture and final black"
+  ],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "9:16",
+    "local-crop",
+    "native-speed",
+    "stinger"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

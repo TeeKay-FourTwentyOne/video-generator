@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review video joins"
+  short_description: "Inspect and refine cuts with exact source frames"
+  default_prompt: "Use $review-video-joins to inspect this edit, refine unintended jumps, and verify preserved dialogue and audio."

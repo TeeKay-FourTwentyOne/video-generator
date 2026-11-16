@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_453f50998d9a05b6e7de6e95402e88421d3a8fd89fb43e198f085d09ef5cb3d2",
+  "projectId": "repeat",
+  "editVersion": "draft-v1-picture",
+  "segmentIndex": 7,
+  "shotId": "S03",
+  "status": "rendered",
+  "evidence": "custom-compositor-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 192,
+    "fps": 24
+  },
+  "timelineStartFrame": 401,
+  "outputSha256": "bb723f659fb972159acb26bba0a961cbc754d20fd02fb212db6813220002ab0d",
+  "schemaVersion": 1,
+  "id": "use_872dd54d999a6fd0c8337c273fb9d1c4687d663165669ee3855e64e85f7c1a1d"
+}

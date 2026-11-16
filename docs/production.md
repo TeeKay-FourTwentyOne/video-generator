@@ -290,6 +290,8 @@ library has not seen (a local render, a reversed or graded copy of a take), the
 first `assemble` registers it in the project collection and then refuses with
 "Project clip analysis is incomplete" because the new clip has no analysis yet;
 run `npm run clips -- analysis process-project PROJECT_ID` and assemble again.
+Concatenation durations come from cumulative frame boundaries, not rounded MP4
+duration metadata, so fractional-millisecond segment lengths retain exact timing.
 Two passes are expected in that case (observed on November, 2026-11-02); the
 assembler could run the checkpoint for sources it has just registered before
 checking completeness, which is the proposed repair. It records each segment's clip ID,
@@ -308,6 +310,24 @@ node tools/production/review-server.mjs data/workspace/my-film-v1/final/v1
 The server prints its loopback URL and serves only the review package's known
 filenames. Stop it with Ctrl+C. A generic server without HTTP byte ranges may play
 the opening but leave shot buttons and the scrubber unable to seek.
+
+### Review the joins before delivery
+
+Every film gets an assembled-edit join pass before its first native delivery.
+Use the shared [review-video-joins skill](../.agents/skills/review-video-joins/SKILL.md):
+enumerate actual frame boundaries (including inside composites), inspect the
+adjacent source frames and dense motion context, and review at normal speed.
+Intentional hard cuts and cuts to black remain intentional; refine unintended
+pose, expression, movement or exposure jumps. Try closer source trims or remove
+an unnecessary cut before considering a short local motion blend. Protect speech,
+lip-sync, essential action and any locked material. Frame-match scores rank
+candidates; they do not establish a natural performance or artistic approval.
+
+Keep per-join decisions, before/after windows for material repairs, exact frame
+recipes and preservation checks under `qa/joins-VERSION/`. Recheck affected
+boundaries after revisions and at the finishing resolution. Record unavailable
+playback/listening honestly. This is part of the production workflow, not a new
+automatic continuity claim by `assemble` or `review`.
 
 The present editor supports hard cuts, optional per-segment black fades
 (`fadeInFrames` / `fadeOutFrames`, frame counts inside the segment, length

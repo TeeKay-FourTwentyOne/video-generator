@@ -74,6 +74,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Post-Training](post-training/README.md) | delivered | ai-explains-ai | [Brief](post-training/brief.md) · [Decisions](post-training/decisions.md) · [Record](post-training/production.json) |
 | [Book Graphs & Ramsey Numbers](ramsey-books/README.md) | delivered | ai-teaches-math | [Brief](ramsey-books/brief.md) · [Decisions](ramsey-books/decisions.md) · [Record](ramsey-books/production.json) |
 | [The Reassurance Box](reassurance-box/README.md) | unknown | — | [Brief](reassurance-box/brief.md) · [Record](reassurance-box/production.json) |
+| [REPEAT](repeat/README.md) | published | — | [Brief](repeat/brief.md) · [Description](repeat/description.md) · [Record](repeat/production.json) |
 | [RETAKE](retake/README.md) | published | — | [Brief](retake/brief.md) · [Description](retake/description.md) · [Record](retake/production.json) |
 | [The Last Gala](russian-ark-ending/README.md) | published | — | [Brief](russian-ark-ending/brief.md) · [Description](russian-ark-ending/description.md) · [Record](russian-ark-ending/production.json) |
 | [Scary Woods — Episode 01](scary-woods-episode-01/README.md) | published | scary-woods | [Brief](scary-woods-episode-01/brief.md) · [Record](scary-woods-episode-01/production.json) |

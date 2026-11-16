@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_edc52376fc54eb6913dd58cd3163fa0d7ad7886497a5c2eb4c37cda62056d596",
+  "projectId": "repeat",
+  "editVersion": "draft-v3-bridge-endpoints",
+  "segmentIndex": 1,
+  "shotId": "J01",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 1,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "6d5c3b8c5818ae0a979d14e8c7e587ea8592de75b933ec3518a9a107e0ef703b",
+  "schemaVersion": 1,
+  "id": "use_d5ca26187575891edac2b51982b16f604d894cd2703e88ea1bb78dd8e1a731ed"
+}

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_00d0d9dc4b75e295f1f1260fac5813358f02ca0d3324f155c2b992d03debe1a9",
+  "projectId": "repeat",
+  "editVersion": "draft-v1-sound",
+  "segmentIndex": 6,
+  "shotId": "takeover-first",
+  "status": "rendered",
+  "evidence": "frame-addressed-native-audio-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 155,
+    "length": 36,
+    "fps": 24
+  },
+  "timelineStartFrame": 389,
+  "outputSha256": "90f285637b6487d2841407420955b2d9ef333cd344e1183ce63368a69eafce69",
+  "schemaVersion": 1,
+  "id": "use_9ac2d8f83a8656644f7405d51b085b1c11dff8c236b3f0f121479da051fad79b"
+}

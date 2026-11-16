@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_8deb13b0bda864b66cc0a9e3fe87aceb05cfb49064d446eab7d4f5781995ab2c",
+  "sha256": "8deb13b0bda864b66cc0a9e3fe87aceb05cfb49064d446eab7d4f5781995ab2c",
+  "bytes": 7239842,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "The terrified woman knocks urgently on the closed glass in front of the camera with the SIDE OF HER CLENCHED FIST. Three short hard hammering knocks. Her fist stays upright, thumb on top, just as in the reference. She rocks her forearm back toward herself then brings the side of her fist sharply against the glass, recoils, knocks again, recoils, knocks again. Her elbow stays BENT directly below the fist, upper arm close to her body. Small compact door-knocking motion, striking the same spot beside her left cheek. The glass stops the fist abruptly each time. She is desperate for somebody outside the window to let her out. Fixed frontal camera. Same frightened face, white room, clothing and window; eyes pleading at viewer. One hand only, the other stays down. Natural fast urgent motion.\n\nAudio: three sharp muffled knocks against glass synchronized to the three contacts, no words or music. No speaking. Her mouth stays open in a silent frightened breath.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_cdc8ca0de998459c0719d0c4e75cae479f4a66c336daac8490360ad8d8b72987",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1918654789,
+      "createdAt": "2026-11-15T20:45:13.494Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "450c5d47e82af0f121bc0e7f8a467699f1c7eca0f90af5f861ab06ed64adc036",
+          "bytes": 2215502,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "dfaaae92e517d23e467c9e5cfed715b71ee8acc598dc995242ddbc1d56280cfa"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

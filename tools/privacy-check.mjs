@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Local-only publication guard. Findings never print the matched value.
 import {execFileSync} from 'node:child_process';
-import {readFileSync, readdirSync, existsSync} from 'node:fs';
+import {readFileSync, readlinkSync, lstatSync, readdirSync, existsSync} from 'node:fs';
 import {resolve, join} from 'node:path';
 import {pathToFileURL} from 'node:url';
 
@@ -160,7 +160,14 @@ export function audit({cwd = process.cwd(), mode = '--staged', base, input = '',
     }
   } else if (mode === '--worktree') {
     const files = new Set([...paths(git(['diff','HEAD','--name-only','--diff-filter=ACMRT','-z'],root)), ...paths(git(['ls-files','--others','--exclude-standard','-z'],root))]);
-    for (const path of files) { fileCount++; add('worktree',path,scanFile(path,readFileSync(join(root,path)),fileOptions(path))); }
+    for (const path of files) {
+      const filename = join(root,path);
+      // Git stores a symlink's target text, including directory or dangling links.
+      // Inspect those same bytes without following the link outside this snapshot.
+      const bytes = lstatSync(filename).isSymbolicLink()
+        ? readlinkSync(filename,{encoding:'buffer'}) : readFileSync(filename);
+      fileCount++; add('worktree',path,scanFile(path,bytes,fileOptions(path)));
+    }
   } else if (mode === '--outgoing') {
     const resolvedBase = git(['rev-parse','--verify',base || '@{upstream}'],root).toString().trim();
     commits(lines(git(['rev-list',`${resolvedBase}..HEAD`],root)));

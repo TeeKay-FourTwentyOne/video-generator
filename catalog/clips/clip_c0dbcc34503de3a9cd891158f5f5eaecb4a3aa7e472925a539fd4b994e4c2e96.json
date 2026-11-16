@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_c0dbcc34503de3a9cd891158f5f5eaecb4a3aa7e472925a539fd4b994e4c2e96",
+  "sha256": "c0dbcc34503de3a9cd891158f5f5eaecb4a3aa7e472925a539fd4b994e4c2e96",
+  "bytes": 28353371,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 25.458333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 611,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "REPEAT main cut with refined recording and playback joins"
+  ],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "9:16",
+    "local-composite",
+    "refined-joins",
+    "waveform"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

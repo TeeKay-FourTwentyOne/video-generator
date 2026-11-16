@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_95c97b58763ed62fe5db0c6f5f7d6b953b09f7762586d84ac17c5dac8d1af480",
+  "sha256": "95c97b58763ed62fe5db0c6f5f7d6b953b09f7762586d84ac17c5dac8d1af480",
+  "bytes": 8633502,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Photorealistic live-action six-second single shot, natural normal-speed movement. The same fictional adult woman, grey crew-neck shirt and sterile matte white room as the supplied reference. Her face stays frightened, eyes wide and brows pulled upward, urgently looking directly at the viewer. Camera fixed, squarely frontal at eye level, immediately outside an invisible solid vertical barrier.\n\nUse the ONE already-raised closed fist visible on the left side of the reference. She makes TWO fast desperate knocks at our picture plane in the first two seconds: the fist drives straight toward us, abruptly stops against the same invisible flat surface, compresses for a tiny moment, then recoils several inches toward her face. The second knock hits that EXACT SAME plane, recoils, and leaves her fist hovering near it. The rigid stops must read as physically hitting our screen. The fist never travels through the camera and never swings sideways. Her face remains visible just to the right of the fist, frightened and pleading; the fist does not cover her eyes. After the second strike she stays close, looking at us with trapped panic for the remainder of the shot.\n\nOne person, one raised forearm, one coherent closed fist; the other hand remains out of view. Anatomically stable hand and fingers throughout. No visible glass, barrier edge, reflections, smudges, cracks, shards or screen graphics. Fixed camera, no camera shake, zoom or cuts. Her mouth is parted in a caught silent breath, without words or lip-synced speech. No text, waveform or interface. No speech or voices. The sound is supplied separately in the edit.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f7d4a53e6f7728f243dc66a4e8584b65cb9b63b34ccf19e0eda203c6d410742a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2479940437,
+      "createdAt": "2026-11-15T20:15:16.016Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "443859eb680254f6eb24776931c0728fb8c9c71598f5339c4a3a2b46d230c95c",
+          "bytes": 2292175,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "0a9b2ae0d3f342a2269ae7ddd0368198a348cb7134f9ec1d5086cc187010f3c8"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

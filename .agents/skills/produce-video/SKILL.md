@@ -67,6 +67,13 @@ Existing paid QA scripts need a prior allowance and usage reconciliation. Tool
 confidence cannot replace inspecting its flagged frames.
 
 Build an integer-frame edit with explicit source/audio hashes into a new version.
+Before every film's first native delivery, apply the shared
+[`review-video-joins`](../review-video-joins/SKILL.md) skill to the assembled edit,
+including boundaries inside composites. Inspect exact adjacent frames and motion
+context, refine unintended jumps with trims first, and preserve deliberate cuts.
+Recheck affected joins after editorial changes and at the finishing resolution.
+Keep the per-join decisions and preservation evidence in the private workspace;
+individual clip acceptance does not establish continuity of the assembled edit.
 When the director authorizes a finishing master (the 4K), prepare and review the
 higher-resolution counterparts, then cut the master with
 `npm run film -- finish WORKSPACE BASE NEW --sources=MAP.json` (same frame

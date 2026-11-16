@@ -21,6 +21,18 @@ const segmentHash = segment => segment.sha256 ?? segment.clipId?.slice(5);
 const validVersion = version => {
   if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,39}$/.test(version ?? '')) throw new Error('Specify a new safe edit version, e.g. v1');
 };
+function concatList(files, segments, fps) {
+  let frames = 0, previousUs = 0;
+  return files.map((file, i) => {
+    frames += segments[i].frames;
+    // MP4 duration metadata is rounded to milliseconds. Specify frame-derived
+    // durations instead, rounding cumulative boundaries so many short cuts do
+    // not accumulate even the microsecond rounding of concat's duration syntax.
+    const endUs = Math.round(frames * 1000000 / fps), durationUs = endUs - previousUs;
+    previousUs = endUs;
+    return `file '${file}'\nduration ${(durationUs / 1000000).toFixed(6)}`;
+  }).join('\n') + '\n';
+}
 export function validateEdit(root, edit, plan, { catalogRoot = PROJECT_ROOT } = {}) {
   if (edit.schemaVersion !== 1 || !Array.isArray(edit.segments) || !edit.segments.length) throw new Error('Invalid edit');
   if (budgetSummary(readLedger(path.join(root, 'budget.json'))).remainingUsd < 0) throw new Error('Budget overrun must be resolved before delivery');
@@ -98,7 +110,7 @@ export function assemble(root, version, { catalogRoot = PROJECT_ROOT } = {}) {
     files.push(filename);
   }
   const list = path.join(folder, 'concat.txt');
-  fs.writeFileSync(list, files.map(f => `file '${f}'`).join('\n') + '\n', { flag: 'wx' });
+  fs.writeFileSync(list, concatList(files, edit.segments, plan.fps), { flag: 'wx' });
   const output = path.join(folder, 'film.mp4');
   const args = ['-v', 'error', '-n', '-f', 'concat', '-safe', '1', '-i', list];
   if (edit.audio) args.push('-i', localPath(root, edit.audio.path), '-map', '0:v:0', '-map', '1:a:0', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000');
@@ -138,6 +150,7 @@ export function review(root, version, options = {}) {
   const htmlPath = path.join(folder, 'review.html');
   if (fs.existsSync(htmlPath)) throw new Error('Review exists; use a new edit version');
   const plan = loadPlan(root);
+  const width = report.finishing?.width ?? plan.width, height = report.finishing?.height ?? plan.height;
   let frame = 0;
   const cards = report.edit.segments.map((s, i) => {
     const image = `shot-${i + 1}.jpg`;
@@ -149,7 +162,7 @@ export function review(root, version, options = {}) {
   });
   const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(plan.title)} — review ${escape(version)}</title>
 <style>*{box-sizing:border-box}body{margin:0;background:#101d22;color:#ece6d6;font:16px/1.55 system-ui}main{max-width:1200px;margin:0 auto;padding:30px}header{border-bottom:1px solid #405054;margin-bottom:24px}h1{font:44px Georgia;margin:0}p{color:#bac7c9}#tc{font:14px ui-monospace,monospace;color:#e8c184;margin:8px 0 0}section{display:grid;grid-template-columns:minmax(280px,440px) 1fr;gap:28px}video{width:100%;max-height:82vh;background:#000;border:1px solid #405054}aside{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-content:start}button{text-align:left;padding:0;background:#1b2b31;color:inherit;border:1px solid #405054;border-radius:5px;overflow:hidden;cursor:pointer}button img{width:100%;display:block}strong,span,small{display:block;margin:8px}small{font-size:11px;color:#afbec0}a{color:#e8c184}footer{margin-top:24px;font-size:13px;color:#afbec0}@media(max-width:760px){section{display:block}aside{margin-top:20px}main{padding:16px}h1{font-size:32px}}</style>
-<main><header><h1>${escape(plan.title)}</h1><p>${report.expected.seconds.toFixed(2)}s · ${plan.width} × ${plan.height} · ${plan.fps} fps · Native review ${escape(version)}</p></header><section><div><video id="film" controls playsinline preload="metadata" src="${escape(path.basename(movie))}"></video><p id="tc">0.000 s · frame 0</p><p><a href="${escape(path.basename(movie))}">Open film</a> · <a href="delivery.json">Delivery evidence</a></p></div><aside>${cards.join('')}</aside></section><footer>Committed budget including reserves: $${report.budget.committedUsd.toFixed(2)} / $${report.budget.limitUsd.toFixed(2)}. Technical checks passed; artistic approval and real-time listening remain separate. All images and motion are fictional generated material.</footer></main><script>const fps=${plan.fps};const v=document.getElementById('film');const tc=document.getElementById('tc');const show=()=>{tc.textContent=v.currentTime.toFixed(3)+' s · frame '+Math.round(v.currentTime*fps)};v.addEventListener('timeupdate',show);v.addEventListener('seeked',show);document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{v.currentTime=Number(b.dataset.time);v.pause();show()}));</script></html>`;
+<main><header><h1>${escape(plan.title)}</h1><p>${report.expected.seconds.toFixed(2)}s · ${width} × ${height} · ${plan.fps} fps · ${report.finishing ? 'Finishing master' : 'Native review'} ${escape(version)}</p></header><section><div><video id="film" controls playsinline preload="metadata" src="${escape(path.basename(movie))}"></video><p id="tc">0.000 s · frame 0</p><p><a href="${escape(path.basename(movie))}">Open film</a> · <a href="delivery.json">Delivery evidence</a></p></div><aside>${cards.join('')}</aside></section><footer>Committed budget including reserves: $${report.budget.committedUsd.toFixed(2)} / $${report.budget.limitUsd.toFixed(2)}. Technical checks passed; artistic approval and real-time listening remain separate. All images and motion are fictional generated material.</footer></main><script>const fps=${plan.fps};const v=document.getElementById('film');const tc=document.getElementById('tc');const show=()=>{tc.textContent=v.currentTime.toFixed(3)+' s · frame '+Math.round(v.currentTime*fps)};v.addEventListener('timeupdate',show);v.addEventListener('seeked',show);document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{v.currentTime=Number(b.dataset.time);v.pause();show()}));</script></html>`;
   fs.writeFileSync(htmlPath, html, { flag: 'wx' });
   const result = { review: path.relative(root, htmlPath), shots: cards.length };
   if (options.overlay) {
@@ -254,7 +267,7 @@ export async function finish(root, baseVersion, newVersion, sourcesFile, { catal
     files.push(filename);
   }
   const list = path.join(folder, 'concat.txt');
-  fs.writeFileSync(list, files.map(f => `file '${f}'`).join('\n') + '\n', { flag: 'wx' });
+  fs.writeFileSync(list, concatList(files, base.edit.segments, plan.fps), { flag: 'wx' });
   const output = path.join(folder, 'film.mp4');
   const hasAudio = probe(baseMovie).streams.some(s => s.codec_type === 'audio');
   const args = ['-v', 'error', '-n', '-f', 'concat', '-safe', '1', '-i', list];

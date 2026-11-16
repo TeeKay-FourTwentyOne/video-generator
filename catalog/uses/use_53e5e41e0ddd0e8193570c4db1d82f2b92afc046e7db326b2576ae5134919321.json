@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_d15e01ee544edf33e27dcc85a90493f0810136d3d2f5009b8c69006309171da9",
+  "projectId": "repeat",
+  "editVersion": "finish/4k-v1",
+  "segmentIndex": 0,
+  "shotId": "COMPOSITE",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 611,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "a8370e0dfd507cf356348509118fb282627c97d1e37faf6189204d3824fb5ba6",
+  "schemaVersion": 1,
+  "id": "use_53e5e41e0ddd0e8193570c4db1d82f2b92afc046e7db326b2576ae5134919321"
+}

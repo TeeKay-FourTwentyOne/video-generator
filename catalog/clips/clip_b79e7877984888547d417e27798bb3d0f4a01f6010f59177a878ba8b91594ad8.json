@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_b79e7877984888547d417e27798bb3d0f4a01f6010f59177a878ba8b91594ad8",
+  "sha256": "b79e7877984888547d417e27798bb3d0f4a01f6010f59177a878ba8b91594ad8",
+  "bytes": 11121829,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous photorealistic live-action head-and-shoulders shot using the supplied first frame. Exactly this fictional adult woman, same short dark hair, grey cotton crew-neck shirt, same small sterile white room and soft flat white lighting. Completely fixed camera at eye level, squarely frontal. Keep her identity, framing, white walls and clothes stable throughout. No camera motion, no cuts, no zoom, no added objects, no graphics, text or subtitles. Natural real-time performance, normal speaking speed. She looks toward the lens as if completing a simple voice setup. VOICE CONTRACT: a single adult woman with a natural medium-low speaking register, soft slightly dry texture, clear neutral American English, unhurried conversational delivery, lightly breathy onset but fully voiced words. Ordinary, unperformed and intimate; no announcer cadence, no sing-song inflection, no robot effect, no accent changes. Use that exact voice for all spoken lines. Clean close microphone, very quiet white-room air, no music, no other people or voices, no computer speech, no echo playback. Only the specified line is spoken. Her lips visibly sync with her own speech. After the specified line her lips settle completely closed; she listens with small eye and breath movements. No extra words, humming or vocalizations. At about 0.5 seconds she says, simply and clearly: \"The room is quiet.\" She finishes within the first 2.5 seconds. For the rest of the eight seconds she listens, a small crease appearing between her eyebrows as though the playback sounded strange. Her mouth remains closed.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d3387c150b86b8d753aa0f4ddba2624924720a66e3ebe37d72112f4373d64582",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1317322022,
+      "createdAt": "2026-11-15T19:36:10.353Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4ba443a448a02ba080f10f913761d232ce5e7406c6011df7df62ed5391526e01",
+          "bytes": 1571147,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3ba9d0be6d6205ed9992142dabb642b14cc73e0cae1df99421ccd59a9a644c0d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

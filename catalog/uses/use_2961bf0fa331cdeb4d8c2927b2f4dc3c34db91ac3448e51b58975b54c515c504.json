@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_8deb13b0bda864b66cc0a9e3fe87aceb05cfb49064d446eab7d4f5781995ab2c",
+  "projectId": "repeat",
+  "editVersion": "stinger-v1-picture",
+  "segmentIndex": 0,
+  "shotId": "S04",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 55,
+    "length": 41,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "3fbe9bd3ad30ec26c38ac14828672a0c734183034a7ef2abf28b076d00812858",
+  "schemaVersion": 1,
+  "id": "use_2961bf0fa331cdeb4d8c2927b2f4dc3c34db91ac3448e51b58975b54c515c504"
+}

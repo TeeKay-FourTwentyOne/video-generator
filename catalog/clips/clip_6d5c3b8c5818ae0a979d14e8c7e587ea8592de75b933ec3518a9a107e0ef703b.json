@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6d5c3b8c5818ae0a979d14e8c7e587ea8592de75b933ec3518a9a107e0ef703b",
+  "sha256": "6d5c3b8c5818ae0a979d14e8c7e587ea8592de75b933ec3518a9a107e0ef703b",
+  "bytes": 20621510,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 1.291667,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 31,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "REPEAT short optical-flow join bridges"
+  ],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "9:16",
+    "frame-matching",
+    "local-optical-flow",
+    "silent-joins"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

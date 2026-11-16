@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "projectId": "repeat",
+  "title": "REPEAT",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published on YouTube Shorts; URL supplied by the director. The verified archive retains the final 4K master, original sources and preparation inputs. Superseded edit exports are explicitly marked removed; earlier review events remain historical.",
+  "briefPath": "briefs/repeat/brief.md",
+  "descriptionPath": "briefs/repeat/description.md",
+  "descriptionSha256": "9fbc3249912112510883dffc846b8153bee2ce0f65ce08f08f4147d4dede020d",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/repeat/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/repeat/status.md"
+    },
+    {
+      "label": "Voice continuity",
+      "path": "briefs/repeat/voice-direction.md"
+    },
+    {
+      "label": "Release and restoration",
+      "path": "briefs/repeat/decisions.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/repeat-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "draft-v1",
+      "path": "final/draft-v1/film.mp4",
+      "sha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 611,
+      "durationSeconds": 25.458333333333332,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/draft-v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "draft-v2",
+      "path": "final/draft-v2/film.mp4",
+      "sha256": "f13fb2ac9a055670c3904142aca0b6de9454f645f94ea92801c05556fa9c8f4a",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 670,
+      "durationSeconds": 27.916666666666668,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/draft-v2/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "draft-v3",
+      "path": "final/draft-v3/film.mp4",
+      "sha256": "a53fdcc81f7888b895ef11a236747e623ee8d185a9604b8387c5e8a78d2e35ee",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 670,
+      "durationSeconds": 27.916666666666668,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/draft-v3/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "4k-v2",
+      "path": "final/4k-v2/film.mp4",
+      "sha256": "8e3a727e2b67d4e5d257fd93ad329825267f64f294fd3950b51643d96fb24517",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 670,
+      "durationSeconds": 27.916666666666668,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/4k-v2/description.txt",
+      "deliveryRecordPath": "final/4k-v2/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "images",
+        "provider": "OpenAI built-in image generation"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "speech",
+        "provider": "Google",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "qa",
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5"
+      }
+    ],
+    "credits": []
+  },
+  "publication": {
+    "platform": "YouTube Shorts",
+    "url": "https://youtube.com/shorts/M7O0Jh9JFLc",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-16",
+    "artifactVersion": "4k-v2"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "draft-v1",
+      "artifactSha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+      "recordedDate": "2026-11-15",
+      "evidence": "Maintained native assembly verified full decode, dimensions, frame count and source hashes. Project clip analysis is complete; original sample PCM identity verified for every repeat.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "draft-v1",
+      "artifactSha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+      "recordedDate": "2026-11-15",
+      "evidence": "Agent inspected source contact frames and composite UI frames; no director approval inferred.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "draft-v1",
+      "artifactSha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+      "recordedDate": "2026-11-15",
+      "evidence": "Computational word-boundary, PCM reuse and loudness checks only. Full listening and live-voice timbre continuity remain pending.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "draft-v1",
+      "artifactSha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+      "recordedDate": "2026-11-15",
+      "evidence": "Main first draft awaits the director review; look approval does not imply approval of the motion or edit.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "draft-v1",
+      "artifactSha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+      "recordedDate": "2026-11-15",
+      "evidence": "Director: Nice. Some definite jumps in the edits that we will smooth out in a subsequent pass. Please go ahead and create the stinger. Main sequence retained for that later smoothing pass; this is review feedback, not final artistic approval.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "draft-v2",
+      "artifactSha256": "f13fb2ac9a055670c3904142aca0b6de9454f645f94ea92801c05556fa9c8f4a",
+      "recordedDate": "2026-11-15",
+      "evidence": "Full decode, dimensions, frame count and source hashes passed. All 611 decoded main frames and 1222000 prepared main audio samples match the previous draft. The stinger voice matches the original prepared third sample. Required project clip analysis is complete.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "draft-v2",
+      "artifactSha256": "f13fb2ac9a055670c3904142aca0b6de9454f645f94ea92801c05556fa9c8f4a",
+      "recordedDate": "2026-11-15",
+      "evidence": "Agent inspected dense contact windows and the cropped tail. Broad alternating arm motion and fist proximity to frame edges remain explicit first-draft caveats; no final artistic approval inferred.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "draft-v2",
+      "artifactSha256": "f13fb2ac9a055670c3904142aca0b6de9454f645f94ea92801c05556fa9c8f4a",
+      "recordedDate": "2026-11-15",
+      "evidence": "PCM source identity, silent final black, levels and loudness checked computationally. Real-time listening has not been performed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "draft-v2",
+      "artifactSha256": "f13fb2ac9a055670c3904142aca0b6de9454f645f94ea92801c05556fa9c8f4a",
+      "recordedDate": "2026-11-15",
+      "evidence": "Full draft and stinger await director review. The existing main edit jumps are reserved for a later smoothing pass.",
+      "outcome": "pending"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "draft-v2",
+      "artifactSha256": "f13fb2ac9a055670c3904142aca0b6de9454f645f94ea92801c05556fa9c8f4a",
+      "recordedDate": "2026-11-15",
+      "evidence": "Director liked the stinger and requested detailed refinement of the recording and listening joins. This approves the stinger direction and requests a new main edit; final artistic approval remains separate.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "a53fdcc81f7888b895ef11a236747e623ee8d185a9604b8387c5e8a78d2e35ee",
+      "recordedDate": "2026-11-15",
+      "evidence": "Full decode, dimensions, 670-frame count and source hashes passed. All 59 tail frames and the complete compressed and decoded soundtrack match draft-v2. Native source-frame selection during the three spoken lines is unchanged. All seventeen project clips have required local analysis complete.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "a53fdcc81f7888b895ef11a236747e623ee8d185a9604b8387c5e8a78d2e35ee",
+      "recordedDate": "2026-11-15",
+      "evidence": "Agent inspected all six bridges frame by frame, selected closer source poses, shortened the third blink transition and removed the redundant second-listening cut. Thirty-one intermediate frames are locally interpolated across six silent gaps. A twelve-second side-by-side comparison is retained for review.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "a53fdcc81f7888b895ef11a236747e623ee8d185a9604b8387c5e8a78d2e35ee",
+      "recordedDate": "2026-11-15",
+      "evidence": "The full soundtrack is copied unchanged and verified by compressed-packet and decoded-PCM hashes. No new real-time listening is claimed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "draft-v3",
+      "artifactSha256": "a53fdcc81f7888b895ef11a236747e623ee8d185a9604b8387c5e8a78d2e35ee",
+      "recordedDate": "2026-11-15",
+      "evidence": "The refined joins await director review at normal playback speed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "8e3a727e2b67d4e5d257fd93ad329825267f64f294fd3950b51643d96fb24517",
+      "recordedDate": "2026-11-15",
+      "evidence": "Full decode, 2160 by 3840 dimensions, 670 frames, BT.709 tags, source hashes and all video timestamps verified. Compressed audio packets and decoded PCM match draft-v3. All twenty-one project clips have required local analysis complete.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "8e3a727e2b67d4e5d257fd93ad329825267f64f294fd3950b51643d96fb24517",
+      "recordedDate": "2026-11-15",
+      "evidence": "Agent inspected every repaired join frame and its native neighbors in the 4K counterparts, plus 100 percent face, blink, waveform and stinger crops. Final encoding inspected; encoded segments match the inspected candidate after the timing-only concat correction.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "audio-listening",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "8e3a727e2b67d4e5d257fd93ad329825267f64f294fd3950b51643d96fb24517",
+      "recordedDate": "2026-11-15",
+      "evidence": "Soundtrack packet and decoded PCM identity verified against draft-v3. No new real-time listening claimed.",
+      "outcome": "pending"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "8e3a727e2b67d4e5d257fd93ad329825267f64f294fd3950b51643d96fb24517",
+      "recordedDate": "2026-11-15",
+      "evidence": "Director authorized the 4K finish. The completed master is available for review; finishing authorization is not recorded as a new listening or publication approval.",
+      "outcome": "pending"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "4k-v2",
+      "artifactSha256": "8e3a727e2b67d4e5d257fd93ad329825267f64f294fd3950b51643d96fb24517",
+      "recordedDate": "2026-11-16",
+      "evidence": "The director supplied the publication URL after delivery of the requested 4K finish and requested post-publication closeout. Public description recovered separately and preserved verbatim. The local master association does not assert equality with the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/repeat-v1/workspace-archive-manifest.json",
+    "inventorySha256": "ffa0368eec6151172cd86ab3e0ba97ac1a4896ccf1e746bb55a016303d85a22f",
+    "verifiedDate": "2026-11-16"
+  }
+}

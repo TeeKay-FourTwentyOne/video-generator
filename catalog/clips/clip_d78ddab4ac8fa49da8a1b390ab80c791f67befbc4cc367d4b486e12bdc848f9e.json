@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+  "sha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+  "bytes": 21364275,
+  "extension": ".mp4",
+  "kind": "delivery",
+  "technical": {
+    "durationSeconds": 25.458333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 611,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [
+    "REPEAT draft-v1 main cut preserved for stinger append"
+  ],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "9:16",
+    "first-cut-to-black",
+    "native-review"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

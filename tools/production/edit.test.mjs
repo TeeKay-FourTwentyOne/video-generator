@@ -102,15 +102,22 @@ test('finish cuts a verified delivery again from 2x counterparts, copies its sou
     render('a-long.mp4', '180x320', 24, 2); render('a-30.mp4', '180x320', 30, .8); render('a-wide.mp4', '180x300'); render('a-small.mp4', '90x160');
     command('ffmpeg', ['-v', 'error', '-n', '-f', 'lavfi', '-i', 'sine=frequency=440:duration=1', '-ac', '2', '-ar', '48000', path.join(root, 'edit', 'score.wav')]);
     const plan = { schemaVersion: 1, title: 'Finish fixture', width: 90, height: 160, fps: 24,
-      shots: [{ id: 'S01', beat: 'Moving pattern', frames: 12 }, { id: 'S02', beat: 'Second pattern with a fade', frames: 10 }] };
+      shots: [{ id: 'S01', beat: 'Moving pattern', frames: 11 }, { id: 'S02', beat: 'Second pattern with a fade', frames: 10 }] };
     write('film.json', plan);
     write('qa/S01.json', { sha256: hashFile(a), decision: 'keep', startFrame: 0, endFrameExclusive: 24, notes: 'Reviewed fixture frames' });
     write('qa/S02.json', { sha256: hashFile(b), decision: 'keep', startFrame: 0, endFrameExclusive: 24, notes: 'Reviewed fixture frames' });
     write('edit/v1.json', { schemaVersion: 1, segments: [
-      { shotId: 'S01', source: 'clips/a.mp4', sha256: hashFile(a), inFrame: 4, frames: 12, decisionFile: 'qa/S01.json' },
+      { shotId: 'S01', source: 'clips/a.mp4', sha256: hashFile(a), inFrame: 4, frames: 11, decisionFile: 'qa/S01.json' },
       { shotId: 'S02', source: 'clips/b.mp4', sha256: hashFile(b), inFrame: 2, frames: 10, decisionFile: 'qa/S02.json', fadeOutFrames: 3 }],
       audio: { path: 'edit/score.wav', sha256: hashFile(path.join(root, 'edit', 'score.wav')) } });
-    assert.equal(assemble(root, 'v1').frames, 22);
+    assert.equal(assemble(root, 'v1').frames, 21);
+    const timestamps = file => JSON.parse(command('ffprobe', ['-v', 'error', '-select_streams', 'v:0',
+      '-show_entries', 'frame=best_effort_timestamp_time', '-of', 'json', file])).frames.map(f => Number(f.best_effort_timestamp_time));
+    const baseTimes = timestamps(path.join(root, 'final/v1/film.mp4'));
+    assert.equal(baseTimes.length, 21);
+    // Eleven frames at 24 fps is not an integer number of milliseconds. Letting
+    // concat infer MP4 durations shifts every timestamp in the following shot.
+    baseTimes.forEach((time, i) => assert.ok(Math.abs(time - i / 24) < .000001, `exact base frame ${i}`));
     // A synced publication-text copy beside the base, as sync-description leaves it.
     const text = 'Fixture description\nhttps://example.invalid/repo\n';
     fs.writeFileSync(path.join(root, 'final/v1/description.txt'), text);
@@ -130,7 +137,8 @@ test('finish cuts a verified delivery again from 2x counterparts, copies its sou
     const registered = registerFinishClips(root, 'v1', 'v1-2x', good, { catalogRoot: root });
     assert.equal(registered.clipIds.length, 2);
     const result = await finishEdit(root, 'v1', 'v1-2x', good, { catalogRoot: root });
-    assert.equal(result.frames, 22); assert.equal(result.width, 180); assert.equal(result.height, 320);
+    assert.equal(result.frames, 21); assert.equal(result.width, 180); assert.equal(result.height, 320);
+    assert.deepEqual(timestamps(path.join(root, 'final/v1-2x/film.mp4')), baseTimes);
     assert.deepEqual(result.checks, { fullDecode: true, dimensions: true, frameCount: true, colorTags: true, baseHash: true, counterpartHashes: true, audioPackets: true, audioPcm: true });
     assert.equal(result.base.sha256, base.sha256);
     assert.equal(fs.readFileSync(path.join(root, 'final/v1-2x/description.txt'), 'utf8'), text);
@@ -141,7 +149,7 @@ test('finish cuts a verified delivery again from 2x counterparts, copies its sou
     assert.equal(delivery.finishing.audio.packetsSha256.base, delivery.finishing.audio.packetsSha256.output);
     assert.equal(delivery.finishing.audio.pcmSha256.base, delivery.finishing.audio.pcmSha256.output);
     assert.deepEqual(delivery.finishing.segments.map(s => [s.baseClipId, s.counterpart, s.inFrame, s.frames]),
-      [[idA, 'clips/a-2x.mp4', 4, 12], [idB, 'clips/b-2x.mp4', 2, 10]]);
+      [[idA, 'clips/a-2x.mp4', 4, 11], [idB, 'clips/b-2x.mp4', 2, 10]]);
     assert.deepEqual(delivery.description, { ...base.description, path: 'final/v1-2x/description.txt' });
     assert.equal(delivery.edit.segments.length, 2); assert.equal(delivery.artisticApproval, false);
     const uses = fs.readdirSync(path.join(root, 'catalog/uses')).map(f => JSON.parse(fs.readFileSync(path.join(root, 'catalog/uses', f), 'utf8')));
@@ -152,6 +160,7 @@ test('finish cuts a verified delivery again from 2x counterparts, copies its sou
     assert.equal(master.kind, 'delivery'); assert.equal(master.technical.width, 180);
     // A finished version is a delivery like any other: its review package builds from the same record shape.
     assert.equal(review(root, 'v1-2x').shots, 2);
+    assert.match(fs.readFileSync(path.join(root, 'final/v1-2x/review.html'), 'utf8'), /180 × 320/);
     assert.throws(() => validate(good), /EEXIST/);
     fs.appendFileSync(path.join(root, 'final/v1/film.mp4'), 'changed');
     assert.throws(() => validate(good, 'v1-again'), /Base delivery hash changed/);

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_bb723f659fb972159acb26bba0a961cbc754d20fd02fb212db6813220002ab0d",
+  "sha256": "bb723f659fb972159acb26bba0a961cbc754d20fd02fb212db6813220002ab0d",
+  "bytes": 27646031,
+  "extension": ".mp4",
+  "kind": "derived",
+  "technical": {
+    "durationSeconds": 25.458333,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 611,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [
+    "REPEAT main draft picture and waveform"
+  ],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [
+    "9:16",
+    "horror",
+    "local-composite",
+    "voice-setup"
+  ],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

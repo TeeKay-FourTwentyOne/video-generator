@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 1,
+  "projectId": "repeat",
+  "title": "REPEAT",
+  "updated": "2026-11-16",
+  "format": "Vertical 9:16, 2160 by 3840, 670 frames at 24 fps, 27.917 seconds",
+  "phase": "published",
+  "logline": "A voice setup learns to speak as its user, then silences them. After black, their frightened face and pounding fist return while the stolen voice offers a pleasant greeting.",
+  "overall": "Published on YouTube Shorts. The final 4K release preserves the refined joins and the complete draft-v3 soundtrack.",
+  "next": "The film is published. Future editorial work starts from a verified working copy.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written creative intent; no generated material or rendered edit yet."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "A generated or rendered candidate exists and needs a creative decision."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The image has been inspected for composition and continuity."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A recorded provider request is in progress."
+    },
+    "approved": {
+      "label": "Approved direction",
+      "tone": "good",
+      "description": "The director approved this look or direction; completed motion and finished-film approval remain separate."
+    },
+    "revision": {
+      "label": "Later revision",
+      "tone": "attention",
+      "description": "The director identified a change for a subsequent pass."
+    },
+    "published": {
+      "label": "Published",
+      "tone": "good",
+      "description": "Included in the released film; publication is recorded separately from earlier technical checks and listening."
+    }
+  },
+  "scenes": [
+    {
+      "id": "voice-setup",
+      "number": "01",
+      "title": "The voice learns",
+      "status": "published",
+      "summary": "A face above a waveform; three short sentences teach the system to imitate the person.",
+      "segments": [
+        {
+          "id": "samples",
+          "title": "S01 Three samples, increasingly accurate playback",
+          "status": "published",
+          "detail": "Three short samples: “The room is quiet.” / “I can hear you.” / “It’s good to be here.” Each is repeated from its own recording: heavily distorted, slightly artificial, then exact. One fictional adult, close-up, plain grey shirt, sterile white room; waveform below. The new edit uses short, locally interpolated transitions only in silent gaps and preserves every native frame selected for the spoken lines.",
+          "image": "refs/A01-interface-preview-v1.png"
+        }
+      ],
+      "image": "refs/A01-interface-preview-v1.png"
+    },
+    {
+      "id": "voice-takeover",
+      "number": "02",
+      "title": "The person understands",
+      "status": "published",
+      "summary": "The playback speaks before the person can; their microphone switches off. Listening turns into fear and agitation.",
+      "segments": [
+        {
+          "id": "takeover",
+          "title": "S02 This is my voice; Ready to use",
+          "status": "published",
+          "detail": "The final prompt is spoken by the playback first. The person attempts to speak; the mic disables while their voice continues calmly."
+        },
+        {
+          "id": "frightened-listening",
+          "title": "S03 The listener becomes frightened and agitated",
+          "status": "published",
+          "detail": "Her eyes widen, she looks for an escape and tries to speak after MIC OFF, then leans toward us and listens in fear. The main draft keeps the native-speed performance and cuts to silent black."
+        }
+      ]
+    },
+    {
+      "id": "barrier-stinger",
+      "number": "03",
+      "title": "The screen holds them",
+      "status": "published",
+      "summary": "After silent black, the frightened person makes two quick fist strikes while the original warm voice says, “It’s good to be here.”",
+      "segments": [
+        {
+          "id": "black-pause",
+          "title": "B01 Hard black and silence",
+          "status": "published",
+          "detail": "The main sequence ends with 18 frames of silent black, followed by the unchanged stinger."
+        },
+        {
+          "id": "fist-contact",
+          "title": "S04 Two fist impacts against our screen",
+          "status": "published",
+          "detail": "The director liked the current 41-frame stinger. Both strikes and the final black are preserved frame for frame in draft-v3.",
+          "image": "render/stinger-v1-picture.mp4"
+        },
+        {
+          "id": "pleasant-voice",
+          "title": "S04 The stolen voice: It’s good to be here",
+          "status": "published",
+          "detail": "The exact prepared third sample remains unchanged over two locally timed muffled impacts. The complete exported soundtrack is verified identical to draft-v2."
+        },
+        {
+          "id": "final-black",
+          "title": "B02 Final cut to black",
+          "status": "published",
+          "detail": "An 18-frame silent final black follows the 41-frame stinger."
+        }
+      ],
+      "image": "render/stinger-v1-picture.mp4",
+      "next": "Retained in the published 4K release."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "ending-revision",
+      "title": "Frightened listening and a frontal barrier stinger",
+      "status": "decided",
+      "detail": "Director 2026-11-15: “after the escalation while the person is listening they should get frightened or agitated. Then a quick stinger after the cut to black where the voice is saying something pleasant while the person pounds their fist on an invisible barrier, making it look like they're pounding on the screen from our straight on POV.” Incorporated into the concept; performance and finished-film approval remain unclaimed."
+    },
+    {
+      "id": "stinger-execution",
+      "title": "Working dialogue and impact treatment",
+      "status": "decided",
+      "detail": "Agent's proposed execution, provisional for the edit: “It’s good to be here,” two muffled fist impacts, a fixed frontal view, about two seconds after a short silent black. The exact line and sound treatment were not supplied by the director."
+    },
+    {
+      "id": "simple-white-room",
+      "title": "One close-up, a white room, three short exchanges",
+      "status": "decided",
+      "detail": "Director 2026-11-15: “Mostly close up on a person in a non-descript, sterile kind of white room. Waveform below them. They say the first line - voice repeats heavily distorted, then the progression from there.” Also: “Keep the three lines and the escalation short.” The format is 9:16 and the total must stay within 30–40 seconds."
+    },
+    {
+      "id": "look-audition",
+      "title": "Portrait, sterile room and barrier pose",
+      "status": "decided",
+      "detail": "Director 2026-11-15: “the general look is great” and “This all looks good.” Heighten anxiety and fear in the scene-03 anchor. Director subsequently authorized the first draft through the cut to black without additional review of that edit."
+    },
+    {
+      "id": "voice-continuity",
+      "title": "One voice direction; repeat the actual recordings",
+      "status": "decided",
+      "detail": "Director 2026-11-15 requested consistent voice notes across every Veo dialogue generation and actual generated audio distorted locally for playback, never separately generated repeats. The clean third sample also supplies the eventual stinger."
+    },
+    {
+      "id": "first-draft-scope",
+      "title": "Proceed through the first cut to black",
+      "status": "decided",
+      "detail": "Director 2026-11-15: “You can proceed to the full first draft up to the cut to black without my additional review on the fear edit for 03.” Produce the main sequence and retain the stronger stinger anchor for the later pass."
+    },
+    {
+      "id": "stinger-authorized",
+      "title": "Proceed with the stinger; smooth the main edits later",
+      "status": "decided",
+      "detail": "Director 2026-11-15: “Nice. Some definite jumps in the edits that we’ll smooth out in a subsequent pass. Please go ahead and create the stinger.” Preserve the current main sequence and append the stinger in a new draft."
+    },
+    {
+      "id": "joins-refinement",
+      "title": "Refine the recording and listening joins",
+      "status": "decided",
+      "detail": "Director: “Looks great. Now, please examine the cuts for the clips where she’s recording her voice and then listening to the playback. Most or all of them have noticeable jumps between the two clips. Really focus on the joins and try to get them as frame perfect as possible. Trim if necessary on either side.” Local trims and source-frame matching authorized; stinger retained."
+    },
+    {
+      "id": "4k-authorized",
+      "title": "Upscale draft-v3 to 4K",
+      "status": "decided",
+      "detail": "Director: “4k upscale please.” The director then requested the join-refinement method in the standard production workflow before finishing; that workflow and reusable skill are now saved."
+    },
+    {
+      "id": "publication-closeout",
+      "title": "Publication and post-publication closeout",
+      "status": "decided",
+      "detail": "Director 2026-11-16 supplied https://youtube.com/shorts/M7O0Jh9JFLc and requested the post-publication process. The final public description was recovered from the page; original sources and the final 4K master are retained."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-15",
+      "text": "Preserved the original concept in the private planning workspace. Revised the brief with frightened listening, a silent black pause and the requested frontal invisible-barrier stinger. Created the collaboration status page; all media beats remain planned."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Director set the simple white-room close-up, waveform below, three brief samples and escalating playback, 9:16 and a 30–40-second limit. Agent selected three short lines, with the third recording reused in the stinger; starting the image audition."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Generated the neutral portrait and barrier-pose candidates with creation snapshots and usage evidence retained. Built and inspected the local waveform-layout preview. The stills are ready for a look audition; no motion or rendered review cut exists yet."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "General look approved. Director requested more fear in the scene-03 anchor, consistent native voice direction and locally processed repeats of the actual speech. First draft through the initial cut to black authorized without another still-image review."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Revised scene-03 anchor with a targeted built-in image edit: stronger anxiety and panic, preserving the established person, room and raised-fist pose. Inspected and retained for the stinger. The first dialogue take is submitted."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Inspected six source takes, retained all originals and selected clean speech ranges. Retook the second sample after extra words in the first take. Assembled the main cut at native speed with a waveform measured from the soundtrack; all echoes derive from their original recordings. Local visual and technical checks are in progress; listening and director approval remain separate."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Delivered draft-v1 through the first cut to black: 611 frames at 24 fps, native 1080 by 1920. Decode, frame count, source hashes, soundtrack sample identity and project analysis checks passed. Source backup verified. Stronger scene-03 anchor retained for the later stinger. Full listening and director approval remain pending."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Director reviewed the main first draft, noted edit jumps for later smoothing and authorized the barrier stinger. Preparing silent native motion from the stronger fear anchor; the exact clean third sample and locally timed contact sounds will supply its audio."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "The first stinger take produced one sweeping air punch and was rejected for the central action. Preserved it, strengthened the starting contact pose and prepared a short door-knocking retake. The established frightened face and room remain intact."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Rejected the second take for sideways air punches. An explicit window reference now supplies the contact plane for a new take; the window border will be cropped out locally. Native contact audio is only a generation guide; the pleasant line remains the original recording."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Window-guided motion improved the frontal alignment but lacked a clear strike and recoil. Retained that unused take and began a longer, more urgent repeated-knocking take to select a concise stinger."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "The extended attempt produced alternating boxing motions. Changed the anchor to an upright side-fist and bent elbow for compact knocking, preserving the frightened identity. Final planned stinger retake is in progress."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Selected a brief range from the upright-fist take, retaining broader motion as an explicit review caveat. Added the original third voice sample and local contact sounds. Draft-v2 is 670 frames at 24 fps. Every decoded main frame and prepared main audio sample matches draft-v1; both original and new drafts remain available. Full listening and artistic approval remain pending."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Verified the full native export and byte-range review playback. All fourteen project clips, including unused takes and local composites, have required local analysis complete. The project-scoped private source backup is verified. Draft-v1 remains intact; stinger motion and full listening remain review items."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Director liked the stinger and requested detailed frame matching at the recording-to-playback joins. Auditing every main-sequence boundary, preserving previous drafts and the stinger."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Delivered draft-v3 with six short motion blends after inspecting every join frame, closer source trims and one redundant cut removed. Native spoken-frame selection, the complete soundtrack and all stinger frames are preserved. The film remains 670 frames at 24 fps. A twelve-second silent before-and-after reel is available for focused comparison; director review of the new joins remains open."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Standard join-review skill and reusable frame-search helper added at the director’s request. Resumed the authorized local 4K finish of draft-v3; source takes and earlier drafts remain intact."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Delivered the local 4K finish with all 670 video timestamps and complete audio matching draft-v3. Inspected the repaired joins and 100 percent detail crops. Exact timing checks also exposed and corrected rounded concat durations in the shared editor; all 165 offline tests passed. The original timing candidate and all earlier drafts remain preserved."
+    },
+    {
+      "date": "2026-11-16",
+      "text": "Publication URL supplied by the director. Recovered the public description, preserving its wording and credits. Post-publication closeout retains the final 4K master and original inputs; earlier review events remain historical."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "draft-v1",
+      "date": "2026-11-15",
+      "title": "Through the first cut to black",
+      "film": "final/draft-v1/film.mp4",
+      "posterFrame": 0,
+      "fps": 24,
+      "frames": 611,
+      "width": 1080,
+      "height": 1920,
+      "note": "The main sequence is ready for review. Every playback uses the matching native recording; the waveform follows the actual mix. Technical checks passed. Listening, voice continuity across the live takes and artistic approval remain pending. The barrier stinger is outside this draft.",
+      "segments": [
+        {
+          "label": "sample-1",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 52,
+          "sourceFrame": 0
+        },
+        {
+          "label": "listen-1",
+          "shot": "L01",
+          "frame": 52,
+          "frames": 90,
+          "sourceFrame": 0
+        },
+        {
+          "label": "sample-2",
+          "shot": "S01B",
+          "frame": 142,
+          "frames": 43,
+          "sourceFrame": 0
+        },
+        {
+          "label": "listen-2a",
+          "shot": "S01B",
+          "frame": 185,
+          "frames": 30,
+          "sourceFrame": 66
+        },
+        {
+          "label": "listen-2b",
+          "shot": "L01",
+          "frame": 215,
+          "frames": 70,
+          "sourceFrame": 90
+        },
+        {
+          "label": "sample-3",
+          "shot": "S01C",
+          "frame": 285,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "listen-3",
+          "shot": "L01",
+          "frame": 369,
+          "frames": 32,
+          "sourceFrame": 160
+        },
+        {
+          "label": "takeover",
+          "shot": "S03",
+          "frame": 401,
+          "frames": 192,
+          "sourceFrame": 0
+        },
+        {
+          "label": "first-black",
+          "shot": "B01",
+          "frame": 593,
+          "frames": 18,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "draft-v2",
+      "date": "2026-11-15",
+      "title": "Full first draft with stinger",
+      "film": "final/draft-v2/film.mp4",
+      "posterFrame": 621,
+      "fps": 24,
+      "frames": 670,
+      "width": 1080,
+      "height": 1920,
+      "note": "27.9 seconds including the stinger and final black. Main picture and prepared mix are unchanged. The pleasant line is the exact original third recording. Stinger arm motion is broader than intended and alternates hands; review that contact impression. Main edit jumps await the later smoothing pass. Full listening remains pending.",
+      "segments": [
+        {
+          "label": "sample-1",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 52,
+          "sourceFrame": 0
+        },
+        {
+          "label": "listen-1",
+          "shot": "L01",
+          "frame": 52,
+          "frames": 90,
+          "sourceFrame": 0
+        },
+        {
+          "label": "sample-2",
+          "shot": "S01B",
+          "frame": 142,
+          "frames": 43,
+          "sourceFrame": 0
+        },
+        {
+          "label": "listen-2a",
+          "shot": "S01B",
+          "frame": 185,
+          "frames": 30,
+          "sourceFrame": 66
+        },
+        {
+          "label": "listen-2b",
+          "shot": "L01",
+          "frame": 215,
+          "frames": 70,
+          "sourceFrame": 90
+        },
+        {
+          "label": "sample-3",
+          "shot": "S01C",
+          "frame": 285,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "listen-3",
+          "shot": "L01",
+          "frame": 369,
+          "frames": 32,
+          "sourceFrame": 160
+        },
+        {
+          "label": "takeover",
+          "shot": "S03",
+          "frame": 401,
+          "frames": 192,
+          "sourceFrame": 0
+        },
+        {
+          "label": "first-black",
+          "shot": "B01",
+          "frame": 593,
+          "frames": 18,
+          "sourceFrame": 0
+        },
+        {
+          "label": "barrier-stinger",
+          "shot": "S04",
+          "frame": 611,
+          "frames": 41,
+          "sourceFrame": 55
+        },
+        {
+          "label": "final-black",
+          "shot": "B02",
+          "frame": 652,
+          "frames": 18,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "draft-v3",
+      "date": "2026-11-15",
+      "title": "Refined recording and listening joins",
+      "film": "final/draft-v3/film.mp4",
+      "posterFrame": 0,
+      "fps": 24,
+      "frames": 670,
+      "width": 1080,
+      "height": 1920,
+      "note": "Closer source poses, six 3–6-frame motion blends in silent gaps and one redundant cut removed. All spoken source frames and their timing are retained. The complete soundtrack and stinger are verified unchanged from draft-v2. Review the new joins at normal speed; technical checks do not establish artistic approval.",
+      "segments": [
+        {
+          "label": "sample-1",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 44,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j01",
+          "shot": "S01",
+          "frame": 44,
+          "frames": 4,
+          "sourceFrame": 0,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "listen-1",
+          "shot": "L01",
+          "frame": 48,
+          "frames": 88,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j02",
+          "shot": "S01B",
+          "frame": 136,
+          "frames": 6,
+          "sourceFrame": 4,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "sample-2",
+          "shot": "S01B",
+          "frame": 142,
+          "frames": 43,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j03",
+          "shot": "S01B",
+          "frame": 185,
+          "frames": 6,
+          "sourceFrame": 10,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "listen-2",
+          "shot": "L01",
+          "frame": 191,
+          "frames": 88,
+          "sourceFrame": 45
+        },
+        {
+          "label": "j04",
+          "shot": "S01C",
+          "frame": 279,
+          "frames": 6,
+          "sourceFrame": 16,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "sample-3",
+          "shot": "S01C",
+          "frame": 285,
+          "frames": 45,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j05",
+          "shot": "S01C",
+          "frame": 330,
+          "frames": 3,
+          "sourceFrame": 22,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "listen-3",
+          "shot": "L01",
+          "frame": 333,
+          "frames": 62,
+          "sourceFrame": 56
+        },
+        {
+          "label": "j06",
+          "shot": "S03",
+          "frame": 395,
+          "frames": 6,
+          "sourceFrame": 25,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "takeover",
+          "shot": "S03",
+          "frame": 401,
+          "frames": 192,
+          "sourceFrame": 0
+        },
+        {
+          "label": "first-black",
+          "shot": "B01",
+          "frame": 593,
+          "frames": 18,
+          "sourceFrame": 0
+        },
+        {
+          "label": "barrier-stinger",
+          "shot": "S04",
+          "frame": 611,
+          "frames": 41,
+          "sourceFrame": 55
+        },
+        {
+          "label": "final-black",
+          "shot": "B02",
+          "frame": 652,
+          "frames": 18,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "4k-v2",
+      "date": "2026-11-15",
+      "title": "4K master with refined joins",
+      "film": "final/4k-v2/film.mp4",
+      "posterFrame": 0,
+      "fps": 24,
+      "frames": 670,
+      "width": 2160,
+      "height": 3840,
+      "note": "Published 4K release. Local 2x Lanczos upscale of draft-v3 with all frame timestamps and the complete soundtrack verified identical. The timeline lists the underlying native source frames. Publication is user-confirmed; earlier listening and visual review records are unchanged.",
+      "segments": [
+        {
+          "label": "sample-1",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 44,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j01",
+          "shot": "S01",
+          "frame": 44,
+          "frames": 4,
+          "sourceFrame": 0,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "listen-1",
+          "shot": "L01",
+          "frame": 48,
+          "frames": 88,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j02",
+          "shot": "S01B",
+          "frame": 136,
+          "frames": 6,
+          "sourceFrame": 4,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "sample-2",
+          "shot": "S01B",
+          "frame": 142,
+          "frames": 43,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j03",
+          "shot": "S01B",
+          "frame": 185,
+          "frames": 6,
+          "sourceFrame": 10,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "listen-2",
+          "shot": "L01",
+          "frame": 191,
+          "frames": 88,
+          "sourceFrame": 45
+        },
+        {
+          "label": "j04",
+          "shot": "S01C",
+          "frame": 279,
+          "frames": 6,
+          "sourceFrame": 16,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "sample-3",
+          "shot": "S01C",
+          "frame": 285,
+          "frames": 45,
+          "sourceFrame": 0
+        },
+        {
+          "label": "j05",
+          "shot": "S01C",
+          "frame": 330,
+          "frames": 3,
+          "sourceFrame": 22,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "listen-3",
+          "shot": "L01",
+          "frame": 333,
+          "frames": 62,
+          "sourceFrame": 56
+        },
+        {
+          "label": "j06",
+          "shot": "S03",
+          "frame": 395,
+          "frames": 6,
+          "sourceFrame": 25,
+          "source": "render/joins-v3b.mp4"
+        },
+        {
+          "label": "takeover",
+          "shot": "S03",
+          "frame": 401,
+          "frames": 192,
+          "sourceFrame": 0
+        },
+        {
+          "label": "first-black",
+          "shot": "B01",
+          "frame": 593,
+          "frames": 18,
+          "sourceFrame": 0
+        },
+        {
+          "label": "barrier-stinger",
+          "shot": "S04",
+          "frame": 611,
+          "frames": 41,
+          "sourceFrame": 55
+        },
+        {
+          "label": "final-black",
+          "shot": "B02",
+          "frame": 652,
+          "frames": 18,
+          "sourceFrame": 0
+        }
+      ]
+    }
+  ]
+}

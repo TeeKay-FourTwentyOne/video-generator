@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_89365e16a61479f4d8b4db2a9393270ff2032e0fba5a3e04aab30708effd39e1",
+  "sha256": "89365e16a61479f4d8b4db2a9393270ff2032e0fba5a3e04aab30708effd39e1",
+  "bytes": 7138105,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Four-second photoreal live-action shot. Preserve the supplied first-frame composition, the same frightened woman and room, with the large closed fist at picture left and her unobstructed panicked face at center right. The camera is fixed directly against the outside of a perfectly transparent window that extends beyond every edge of the frame; we are looking straight through it at her. The glass is optically invisible, with no edges, reflections, glare, marks, cracks or texture.\n\nShe is urgently KNOCKING ON THE WINDOW with the already raised fist, as someone knocks on a door. Small, sharp movements from the wrist and bent elbow. Starting with the curled knuckles touching the pane, pull that same fist straight back only five centimeters, then sharply knock it forward five centimeters against the original contact point. Recoil and knock the SAME SPOT a second time. Two distinct sharp knocks, then stop. Each knock visibly arrests against the rigid flat pane and rebounds; the curled knuckles stay at picture LEFT throughout, fully inside the picture. The fist never sweeps across her face or to the right edge. No boxing punch, no long arm extension, no swing. The elbow stays low and the forearm remains upright. Her fingers stay tightly closed throughout.\n\nHer eyes remain frightened and fixed on the viewer, brows raised in panic, mouth held open in a silent caught breath with no speech movements. One person, one coherent raised fist and arm, the other hand out of view. Camera completely stationary. No cuts, slow motion, text or interface. Silent picture; all sound is supplied in the edit.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4e02c821c382e5c7bf5666ca2e37af49666dcc84ca6efd9488b179f754d1a5fc",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3513754266,
+      "createdAt": "2026-11-15T20:22:20.186Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "40fcb96f6ece659b10982745c9bf27bc7a123a385d3e8b6be9e056fc21d13431",
+          "bytes": 2342248,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "78122140ea6a3fd999c6e68fb740024a932ddf04a1b3c560b8a8fcc6b699853e"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

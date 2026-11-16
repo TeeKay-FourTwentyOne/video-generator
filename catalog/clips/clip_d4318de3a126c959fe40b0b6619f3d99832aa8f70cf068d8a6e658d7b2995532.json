@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d4318de3a126c959fe40b0b6619f3d99832aa8f70cf068d8a6e658d7b2995532",
+  "sha256": "d4318de3a126c959fe40b0b6619f3d99832aa8f70cf068d8a6e658d7b2995532",
+  "bytes": 6180236,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Four-second live-action shot, fixed frontal camera looking straight THROUGH the closed glass observation window in the reference. The same terrified woman urgently POUNDS ON THIS GLASS TWICE with her raised closed fist. Two sharp, forceful knocks on the glass directly in front of the lens, at the left side of her face. Her knuckles hit the glass, visibly STOP, then rebound a short distance; she immediately knocks the SAME spot again. The window physically stops the fist. Keep her entire fist within the window opening and her frightened face clearly visible beside it. The window frame remains completely stationary, and the glass stays intact. Her eyes plead directly at the viewer. Her mouth is held open in a silent caught breath. Natural full-speed movement.\n\nAudio: two short muffled thunks exactly when the knuckles hit the pane, slight breath. No words, dialogue or music. The pleasant voice will be added from an existing recording. Preserve the reference person, clothing, room, light and camera position.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_fd5ae73067d8d76528a4ac2812e1b6cc82c2d035d22760d5e365d1085e3db852",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2788189533,
+      "createdAt": "2026-11-15T20:35:26.357Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "530450163bd8c260c70ddc90636817e2acfd5d151d7f15dc02f60f7b5de8d3ca",
+          "bytes": 2181969,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "112fc4110c97a5c7f1c2df9e6838c67269df0c3f4e31b8a1a9d0c7b59408ae8c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

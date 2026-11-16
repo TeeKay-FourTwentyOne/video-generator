@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_46d013404a2b615cf33f534aa78ea390f6f1cdb41ffd90d4334ff7eec1bc5699",
+  "sha256": "46d013404a2b615cf33f534aa78ea390f6f1cdb41ffd90d4334ff7eec1bc5699",
+  "bytes": 11014350,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous photorealistic live-action head-and-shoulders shot using the supplied first frame. Exactly this fictional adult woman, same short dark hair, grey cotton crew-neck shirt, same small sterile white room and soft flat white lighting. Completely fixed camera at eye level, squarely frontal. Keep her identity, framing, white walls and clothes stable throughout. No camera motion, no cuts, no zoom, no added objects, no graphics, text or subtitles. Natural real-time performance, normal speaking speed. She looks toward the lens as if completing a simple voice setup. VOICE CONTRACT: a single adult woman with a natural medium-low speaking register, soft slightly dry texture, clear neutral American English, unhurried conversational delivery, lightly breathy onset but fully voiced words. Ordinary, unperformed and intimate; no announcer cadence, no sing-song inflection, no robot effect, no accent changes. Use that exact voice for all spoken lines. Clean close microphone, very quiet white-room air, no music, no other people or voices, no computer speech, no echo playback. Only the specified line is spoken. Her lips visibly sync with her own speech. After the specified line her lips settle completely closed; she listens with small eye and breath movements. No extra words, humming or vocalizations. At about 0.5 seconds she says, simply and clearly: \"I can hear you.\" She finishes within the first 2.5 seconds. For the rest of the eight seconds she listens attentively and with a touch of unease, staying nearly still, mouth closed.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_15a43dca8cb3d7c12126abd5e974ffdcb9ff59344b9b1af168970ae31396bfa0",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2324757282,
+      "createdAt": "2026-11-15T19:41:28.437Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4ba443a448a02ba080f10f913761d232ce5e7406c6011df7df62ed5391526e01",
+          "bytes": 1571147,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "04566bb35959e1c26e2bd8719d5356d7f2392b764730e0d644acaadbdf950812"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

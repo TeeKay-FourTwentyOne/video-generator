@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_453f50998d9a05b6e7de6e95402e88421d3a8fd89fb43e198f085d09ef5cb3d2",
+  "sha256": "453f50998d9a05b6e7de6e95402e88421d3a8fd89fb43e198f085d09ef5cb3d2",
+  "bytes": 10809268,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "repeat"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "One continuous photorealistic eight-second head-and-shoulders live-action shot from the supplied neutral first frame. Exactly the same fictional adult woman with short dark hair, grey shirt, the same sterile matte white room. Squarely frontal fixed eye-level camera; no angle, zoom, cuts, movement or changes to the walls. This is a silent physical acting performance. FIRST TWO SECONDS: she looks a little downward, brows pinching together, lips pressed closed, trying to make sense of something she is hearing. NEXT TWO SECONDS: her eyes widen with sudden alarm, chin pulls back, she holds her breath and gives one small disbelieving shake of her head. LAST FOUR SECONDS: she tries once to speak, a small startled opening of the mouth, then shuts it, swallows and leans a few centimeters toward us, visibly frightened and agitated, eyes moving urgently between the lens and the space below it. Keep the emotion believable and gathering, not theatrical or monstrous. A single person throughout, face and hands anatomically stable. No gestures into frame yet. Audio: one caught breath and faint natural room air only. There are absolutely no intelligible words, no offscreen dialogue, no voiceover, no music and no scream. Her mouth must not make continuous speech shapes. Same ordinary white lighting. No graphics, captions, interface or text. Natural speed.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_389810371c8180f4de958b2b458e11983d711dc8546a0a307639484233d39f86",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3072175904,
+      "createdAt": "2026-11-15T19:41:32.867Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4ba443a448a02ba080f10f913761d232ce5e7406c6011df7df62ed5391526e01",
+          "bytes": 1571147,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "44a98c1d1b39904cb2f8df976fafa30c98ccffeb93339beb531b3a45ac9389b6"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

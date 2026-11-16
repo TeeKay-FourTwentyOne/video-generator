@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_bb723f659fb972159acb26bba0a961cbc754d20fd02fb212db6813220002ab0d",
+  "projectId": "repeat",
+  "editVersion": "edit/draft-v1",
+  "segmentIndex": 0,
+  "shotId": "COMPOSITE",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 611,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "d78ddab4ac8fa49da8a1b390ab80c791f67befbc4cc367d4b486e12bdc848f9e",
+  "schemaVersion": 1,
+  "id": "use_0c7e9470be43b9e6302becd2fdf646c68a64fdca2d680dc155342b3cd48ad75a"
+}
