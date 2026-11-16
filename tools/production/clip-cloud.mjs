@@ -384,8 +384,13 @@ export async function locked(repo, action) {
   try { privateJson(path.join(dir, 'owner.json'), { pid: process.pid, startedAt: stamp() }); return await action(); }
   finally { fs.rmSync(dir, { recursive: true }); }
 }
-export async function sync(repo = REPO, { progress = () => {}, client, plan, allowAbsent = false, projectId } = {}) {
+export async function sync(repo = REPO, { progress = () => {}, client, plan, allowAbsent = false, projectId, postPublication = false } = {}) {
   const requestedScope = backupScope(projectId);
+  if (postPublication) {
+    if (plan) throw new Error('Post-publication sync builds its own complete project plan');
+    (await import('./clip-post-publication.mjs')).publishedProject(repo, projectId);
+    allowAbsent = true; // A repeat closeout must verify deliberately offloaded backup members.
+  }
   if (plan && projectId !== undefined && (validateBackupScope(plan.scope).kind !== 'project' || plan.scope.projectId !== projectId))
     throw new Error('Supplied backup plan does not match the requested project');
   return locked(repo, async () => {
@@ -428,7 +433,16 @@ export async function sync(repo = REPO, { progress = () => {}, client, plan, all
     const receipt = { schemaVersion: 1, scope, completedAt: stamp(), bucket: c.bucket, clips: plan.clips, objects: plan.objects.length,
       bytes: plan.bytes, uploaded, skipped: plan.objects.length - uploaded, privateAccessVerified: true,
       verification: 'Local SHA-256 or explicitly absent verified backup member; server MD5, byte length, SHA-256 metadata and generation; final remote inventory', budget, backupSet };
-    privateJson(safePath(repo, backupStatePath('last-sync.json', scope)), receipt); return receipt;
+    if (postPublication) receipt.offload = { status: 'pending' };
+    privateJson(safePath(repo, backupStatePath('last-sync.json', scope)), receipt);
+    if (postPublication) {
+      const current = selectCatalog(repo, projectId).clips.map(c => ({ clipId: c.id, sha256: c.sha256,
+        bytes: c.bytes, extension: c.extension, catalogSha256: recordDigest(c) }));
+      if (recordDigest(current) !== recordDigest(plan.clipRecords)) throw new Error('Project catalog changed during closeout sync');
+      receipt.offload = await (await import('./clip-post-publication.mjs')).offloadPublishedProject(repo, projectId, plan, backupSet, final);
+      privateJson(safePath(repo, backupStatePath('last-sync.json', scope)), receipt);
+    }
+    return receipt;
   });
 }
 export async function restore(id, output, repo = REPO, { client } = {}) {
@@ -455,19 +469,21 @@ export async function restore(id, output, repo = REPO, { client } = {}) {
     } finally { fs.rmSync(tmp, { force: true }); }
   });
 }
-function syncOptions(args, { status = false } = {}) {
+function syncOptions(args, { status = false, sync = false } = {}) {
   const options = {}, seen = new Set();
   for (let i = 0; i < args.length; i++) {
     const arg = args[i], key = arg.split('=')[0];
     if (seen.has(key)) throw new Error('Duplicate cloud option');
     seen.add(key);
     if (arg === '--allow-absent' && !status) options.allowAbsent = true;
+    else if (arg === '--post-publication' && sync) options.postPublication = true;
     else if (key === '--project') {
       options.projectId = arg === '--project' ? args[++i] : arg.slice('--project='.length);
       if (options.projectId === undefined) throw new Error('Specify a project ID after --project');
       backupScope(options.projectId);
-    } else throw new Error('Unknown cloud option; use --project PROJECT_ID and optionally --allow-absent for plan/sync');
+    } else throw new Error('Unknown cloud option; use --project PROJECT_ID, --allow-absent for plan/sync, or --post-publication for project sync');
   }
+  if (options.postPublication && options.projectId === undefined) throw new Error('Post-publication sync requires --project PROJECT_ID');
   return options;
 }
 
@@ -476,6 +492,7 @@ export async function cloudMain(args, repo = REPO) {
   if (!verb || verb === 'help') return { commands: ['cloud plan', 'cloud sync', 'cloud status', 'cloud restore CLIP_ID data/workspace/PROJECT/restore/source.mp4',
     'cloud fetch CLIP_ID', 'cloud catalogs', 'cloud recover-catalog SHA256 data/workspace/PROJECT/recovered-catalog',
     'cloud plan [--project PROJECT_ID] [--allow-absent]', 'cloud sync [--project PROJECT_ID] [--allow-absent]',
+    'cloud sync --project PROJECT_ID --post-publication',
     'cloud status [--project PROJECT_ID]', 'cloud backup-sets', 'cloud verify-set SHA256',
     'cloud recover-set SHA256 data/workspace/PROJECT/recovery CLIP_ID... [--rehearse]', 'cloud readiness PRIVATE_POLICY.json',
     'cloud cleanup-plan PRIVATE_POLICY.json PRIVATE_MANIFEST.json', 'cloud cleanup-apply PRIVATE_MANIFEST.json PRIVATE_APPROVAL.json'],
@@ -485,7 +502,7 @@ export async function cloudMain(args, repo = REPO) {
     return { scope: plan.scope, clips: plan.clips, objects: plan.objects.length, bytes: plan.bytes, storageUsdPerMonth: plan.bytes / GiB * c.rates.storageUsdPerGiBMonth,
       monthlyBudgetUsd: c.monthlyBudgetUsd, plan: backupStatePath('plan.json', plan.scope), network: false };
   }
-  if (verb === 'sync') return sync(repo, { progress, ...syncOptions(rest) });
+  if (verb === 'sync') return sync(repo, { progress, ...syncOptions(rest, { sync: true }) });
   if (['backup-sets', 'verify-set', 'recover-set', 'readiness'].includes(verb)) return (await import('./clip-backup-set.mjs')).backupMain(verb, rest, repo);
   if (['cleanup-plan', 'cleanup-apply'].includes(verb)) return (await import('./clip-cleanup.mjs')).cleanupMain(verb, rest, repo);
   if (verb === 'restore' && rest.length === 2) return restore(rest[0], rest[1], repo);

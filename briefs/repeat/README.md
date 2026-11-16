@@ -4,7 +4,7 @@
 
 Status: **published**.
 
-Published on YouTube Shorts; URL supplied by the director. The verified archive retains the final 4K master, original sources and preparation inputs. Superseded edit exports are explicitly marked removed; earlier review events remain historical.
+Published on YouTube Shorts; URL supplied by the director. The verified local archive retains the final 4K master, audio, references and production evidence. Original clips and imported composites remain in verified private backup; their local copies were offloaded. Superseded edit exports are explicitly marked removed; earlier review events remain historical.
 
 [Creative brief](brief.md) · [Production record](production.json) · [Publication text](description.md)
 

@@ -1,9 +1,16 @@
 # Reclaim verified canonical duplicates
 
+For the standard post-publication closeout, use
+`cloud sync --project PROJECT_ID --post-publication` as described in
+[post-publication](post-publication.md). That separate mode automatically offloads
+backed-up project clip copies without recovery rehearsals or dependency audits,
+under the director's standing instruction. The older, explicitly selected
+duplicate-only procedure below retains its narrower contract.
+
 This workflow removes only a canonical library master that also has a
 hash-verified historical original on the same machine. It keeps that original,
 all workspace/archive files, metadata, previews, reviews, creation evidence and
-remote objects. Removing a last local copy still requires the complete semantic
+remote objects. Outside the post-publication mode, removing a last local copy requires the complete semantic
 qualification and readiness procedure in the
 [backup handoff](clip-backup-readiness-handoff.md).
 

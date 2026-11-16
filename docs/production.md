@@ -329,6 +329,13 @@ boundaries after revisions and at the finishing resolution. Record unavailable
 playback/listening honestly. This is part of the production workflow, not a new
 automatic continuity claim by `assemble` or `review`.
 
+After publication, the [closeout workflow](post-publication.md) uses
+`clips cloud sync --project PROJECT_ID --post-publication` to verify the private
+backup and automatically offload local clip copies. Final deliveries and unbacked
+files remain local. Recovery rehearsals and dependency audits are waived for this
+closeout mode. Keep ordinary production-batch sync nondestructive, and complete
+source analysis before offload.
+
 The present editor supports hard cuts, optional per-segment black fades
 (`fadeInFrames` / `fadeOutFrames`, frame counts inside the segment, length
 preserving) and a single prepared soundtrack. Make composites, typography,

@@ -4,7 +4,7 @@
   "title": "REPEAT",
   "kind": "film",
   "status": "published",
-  "statusNote": "Published on YouTube Shorts; URL supplied by the director. The verified archive retains the final 4K master, original sources and preparation inputs. Superseded edit exports are explicitly marked removed; earlier review events remain historical.",
+  "statusNote": "Published on YouTube Shorts; URL supplied by the director. The verified local archive retains the final 4K master, audio, references and production evidence. Original clips and imported composites remain in verified private backup; their local copies were offloaded. Superseded edit exports are explicitly marked removed; earlier review events remain historical.",
   "briefPath": "briefs/repeat/brief.md",
   "descriptionPath": "briefs/repeat/description.md",
   "descriptionSha256": "9fbc3249912112510883dffc846b8153bee2ce0f65ce08f08f4147d4dede020d",
@@ -293,7 +293,7 @@
   "legacyPaths": [],
   "archive": {
     "manifestPath": "data/workspace-archive/repeat-v1/workspace-archive-manifest.json",
-    "inventorySha256": "ffa0368eec6151172cd86ab3e0ba97ac1a4896ccf1e746bb55a016303d85a22f",
+    "inventorySha256": "3a4104827bb4b3b051667337ced4c596eadbd772c10cda30d99e2d6ede1ebd62",
     "verifiedDate": "2026-11-16"
   }
 }

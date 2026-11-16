@@ -3,9 +3,10 @@
 Entry point: [shared post-publication skill](../.agents/skills/post-publication/SKILL.md).
 The four required outcomes are updated documentation, reviewed source commit and
 push, a verified local archive, and a process improvement. Standard archive
-retention keeps the final 4K edit and original sources, and removes superseded
-edit renders and mixes after verification. This does not upload the film, edit a
-platform description or buy generations.
+retention keeps the final 4K edit locally and original clips in verified private
+cloud storage. Closeout sync automatically offloads local clip copies; the separate
+retention transaction removes superseded edit renders and mixes. This does not
+upload the film, edit a platform description or buy generations.
 
 ## Establish the release
 
@@ -55,24 +56,27 @@ https://github.com/TeeKay-FourTwentyOne/video-generator
    `data/accounting/<project-id>/sources.json`, including earlier auditions.
    `npm run accounting -- data/accounting/PROJECT_ID/sources.json` produces a
    granular local report without changing the ledgers or making provider calls.
-4. Inventory dependencies before moving: source copies, edit/QA paths, scripts,
-   font files, external source references and imports. Note what is self-contained
-   and what requires the repository, tools or another local archive. A preserved
-   folder is not automatically a qualified standalone rebuild. Prefer relative
-   paths for new recipes. For historical hardcoded roots, document a restore-copy
-   procedure rather than silently modifying the old evidence.
+4. Record source clip IDs and restore instructions alongside the recipes. A
+   preserved folder is not automatically a standalone rebuild; source clips will
+   be in the private backup after offload. Prefer relative paths for new recipes.
+   For historical hardcoded roots, document restoring into a new working copy.
+   The director waived recovery rehearsals and dependency audits for this closeout
+   offload; do not make either a prerequisite or request additional approval.
    Run `npm run clips -- analysis process-project PROJECT_ID`, followed by
    `npm run clips -- analysis process-project PROJECT_ID --check`, for all project
    clips, including unused takes and local renders. This uses the explicitly
    provisioned local profile and verifies immutable private library evidence;
    film-specific QA alone does not satisfy it. Resolve missing/failed required
    passes before marking closeout complete. Preserve model review states and
-   optional pending passes. Run authorized private cloud sync after this step
-   with `npm run clips -- cloud sync --project PROJECT_ID`, so unrelated missing
-   media cannot block the named film. Confirm its own scoped receipt with
+   optional pending passes. Stop the project's writers, record publication with
+   its exact local master, then run
+   `npm run clips -- cloud sync --project PROJECT_ID --post-publication`.
+   This verifies the private backup and automatically deletes local clip masters
+   and matching copies in the named workspace. Confirm its scoped receipt with
    `npm run clips -- cloud status --project PROJECT_ID`. This mirrors the clip
    library inputs and analysis; the sealed workspace archive is a separate local
-   artifact, including the finished film and standalone audio.
+   artifact, including the finished film and standalone audio. Source analysis
+   happens before offload; a later edit must fetch its required clips first.
 5. Stop only the named project's writers and preview servers. Choose final names
    for documentation snapshots and finish local metadata **before** hashing. A
    running generator, renderer or watcher can invalidate the snapshot.
@@ -92,8 +96,9 @@ node tools/production/archive.mjs verify my-film-v1
 `plan` is read-only and summarizes the inventory. `apply` takes a local archive
 lock, writes `workspace-archive-manifest.json`, checks the source again, renames
 the whole project to `data/workspace-archive/<slug>/`, and verifies the destination.
-All hidden files, earlier exports, native masters, takes, sources, recipes,
-ledgers and QA remain. The manifest inventories content hashes, byte sizes,
+All remaining hidden files, exports, final masters, recipes, ledgers and QA move
+intact. Offloaded clip sources remain in the verified private backup. The manifest
+inventories content hashes, byte sizes,
 permissions and directories; it excludes only itself. It detects later additions,
 deletions, same-size edits and permission changes. It is an integrity record,
 not a signature, dependency resolver or remote backup.
@@ -127,8 +132,42 @@ new approval.
 Keep any new Git/privacy logs or release receipts outside the sealed tree, for
 example under ignored `data/release-receipts/<slug>/`. Do not run a QA script that
 rewrites archived evidence. Future edits start from a verified copy in a new
-workspace. Outside the checked retention transaction, preserve the archive as it
-was closed out. Original source takes, including rejected takes, are retained.
+workspace, restoring required clips from GCP. Outside the checked retention and
+post-publication offload transactions, preserve the archive as it was closed out.
+Original source takes, including rejected takes, remain in the private backup.
+
+## Automatic clip offload during closeout
+
+`cloud sync --project PROJECT_ID --post-publication` requires a published record,
+one identified published master and its matching local file. Ordinary sync keeps
+all local media. The closeout mode verifies the private bucket and every selected
+remote object's SHA-256 metadata, MD5, length and generation, seals the complete
+backup set, then removes the backed-up local clip bytes. It does not download a
+recovery sample or inspect edit dependencies.
+
+Deletion covers canonical masters in the project's collection/use set, including
+unused takes, and byte-identical video copies inside its recorded workspace.
+Final/finish delivery packages and declared artifacts stay local, as do unbacked
+files, standalone audio, references, analysis and production evidence. Copies in
+other workspaces are untouched. Shared canonical masters can be offloaded; later
+work restores them with `npm run clips -- cloud fetch CLIP_ID`. For a path-based
+recipe, use `cloud restore CLIP_ID data/workspace/NEW_COPY/ORIGINAL_RELATIVE_PATH`
+to restore the copy into a new workspace before rendering.
+
+The private transaction under `data/clips/cloud/projects/PROJECT_ID/offload/`
+records every removed path, hash, size, mode and remote generation. It retains
+before/after archive seals and the previous public record. If the workspace is
+already archived, the command verifies the current seal, removes only matching
+clip copies, verifies retained content and writes the revised seal and public
+inventory hash. Run `npm run records -- build` afterward. Never manually reseal
+an unexplained mismatch.
+
+An interrupted command leaves a pending receipt and any staged files. After the
+previous process has stopped, rerun the same closeout sync to reverify the remote
+backup and resume the recorded rename/purge transaction. Do not discard receipts
+or blindly clear a live writer's lock. A failed upload or mismatched backup never
+triggers deletion. Repeated completed closeout syncs handle already absent media
+through the verified backup set and report zero new removals.
 
 ## Standard retention: final 4K plus sources and records
 
@@ -139,9 +178,10 @@ ambiguous, preserve the media and resolve that issue before deletion. Do not use
 a filename alone to decide which master to retain, and do not clean older or
 unrelated archives as part of another film's closeout.
 
-Keep the final 4K file byte-for-byte, its delivery/description/review package,
-original generated shots and rejected source takes, original music and effects
-stems, reference images, recipes, edit decisions, provenance, ledgers and QA.
+Keep the final 4K file byte-for-byte and its delivery/description/review package
+locally. Keep original generated shots and rejected source takes in the verified
+private backup after offload. Retain original music and effects stems, reference
+images, recipes, edit decisions, provenance, ledgers and QA locally.
 Remove superseded full edits (including native review exports), debug copies,
 assembly segments, unused finishing candidates and derived complete soundtrack
 mixes. Keep reusable title/shot assets and original or processed source stems.
@@ -162,9 +202,10 @@ Original/source paths, per-shot stems, metadata and other locations remain
 protected. These classes are review assertions, not permission to select every
 file in a directory: retain reusable shot/title assets and inspect dependencies.
 
-Inspect transitive dependencies before selecting files. A deleted render may be
-an input to a later recipe: retain the source inputs and recipes, and document
-the order in which missing derivatives must be rebuilt in a new working copy.
+Use retained recipes and offload receipts to document restoration and rebuild
+order. A deleted render may be an input to a later recipe: retain the source
+inputs in the private backup and the recipes locally. A dependency audit is not
+a closeout offload gate under the director's standing instruction.
 Do not promise a qualified or byte-identical rebuild without testing one. If a
 derivative is the only surviving source for the final edit, retain it and explain
 the dependency. Keep historical hashes, delivery records and review events even
@@ -223,7 +264,8 @@ Keep their version, path, hash, frame data and review events. Historical preview
 pages are evidence of the old versions; only retained deliveries remain playable.
 Check the final master and its current links, run record validation, and report
 the number of removed files and logical bytes reclaimed. Keep later receipts
-outside the newly sealed archive. Source-clip deletion is a separate workflow.
+outside the newly sealed archive. Source-clip deletion uses the automatic
+post-publication sync mode above, with its own exact receipt.
 
 ## Commit and push source
 

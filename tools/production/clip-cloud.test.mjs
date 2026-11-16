@@ -9,6 +9,7 @@ import { PassThrough } from 'node:stream';
 import { gunzipSync } from 'node:zlib';
 import { buildPlan, privateJson, assertPrivateBucket, verifyObject, reserve, hashes, Gcs, sync, restore, curlPut, cloudMain } from './clip-cloud.mjs';
 import { recordUse } from './clip-library.mjs';
+import { archiveWorkspace, verifyArchive } from './archive.mjs';
 
 const sha = b => createHash('sha256').update(b).digest('hex');
 function fixture(t) {
@@ -51,6 +52,140 @@ function projectFixture(t) {
   const unrelated = add('missing unrelated clip', ['film-b'], false);
   return { ...f, unused, shared, unrelated };
 }
+
+async function publishedFixture(t, archived = false) {
+  const f = projectFixture(t), workspace = 'data/workspace/film-a-v1';
+  const put = (relative, bytes) => {
+    const file = path.join(f.repo, relative); fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, bytes); return file;
+  };
+  put(`${workspace}/clips/original.mp4`, f.bytes);
+  put(`${workspace}/render/unused.mp4`, Buffer.from('unused selected take'));
+  put(`${workspace}/final/native/film.mp4`, f.bytes);
+  put(`${workspace}/audio/voice.wav`, f.bytes);
+  put(`${workspace}/render/unbacked.mp4`, Buffer.from('not a backed-up clip'));
+  const otherCopy = put('data/workspace/film-b-v1/clips/shared.mp4', Buffer.from('shared clip selected by use'));
+  const masterBytes = Buffer.from('published final master');
+  put(`${workspace}/final/4k/film.mp4`, masterBytes);
+  const record = { schemaVersion: 1, projectId: 'film-a', title: 'Fixture film', kind: 'film', status: 'published',
+    briefPath: 'briefs/film-a/brief.md', workspace: { path: workspace, state: 'active' },
+    artifacts: [{ role: 'finishing-master', version: '4k', path: 'final/4k/film.mp4', sha256: sha(masterBytes),
+      width: 2160, height: 3840, fps: { numerator: 24, denominator: 1 }, frames: 24, durationSeconds: 1, publishedMaster: true }],
+    publication: { platform: 'YouTube', url: 'https://youtube.com/watch?v=fixture', evidence: 'user-confirmed',
+      recordedDate: '2026-11-16', artifactVersion: '4k' }, production: { providers: [], credits: [] }, reviewEvents: [], legacyPaths: [] };
+  if (archived) {
+    const seal = await archiveWorkspace(f.repo, 'film-a-v1');
+    record.workspace = { path: seal.destination, state: 'archived-verified' };
+    record.archive = { manifestPath: `${seal.destination}/workspace-archive-manifest.json`,
+      inventorySha256: seal.inventorySha256, verifiedDate: '2026-11-16' };
+  }
+  const recordFile = path.join(f.repo, 'briefs/film-a/production.json'); privateJson(recordFile, record);
+  return { ...f, recordFile, publicationRecord: record, root: path.join(f.repo, record.workspace.path), otherCopy, masterBytes };
+}
+
+test('post-publication sync offloads project masters and matching copies only after backup, without recovery or dependency audits', async t => {
+  const f = await publishedFixture(t), client = fakeClient();
+  client.download = async () => { throw new Error('Recovery downloads are not part of post-publication sync'); };
+  const normal = await sync(f.repo, { client, projectId: 'film-a' });
+  assert.equal(normal.offload, undefined); assert.ok(fs.existsSync(f.file), 'ordinary sync is nondestructive');
+  const done = await sync(f.repo, { client, projectId: 'film-a', postPublication: true });
+  assert.equal(done.offload.status, 'complete'); assert.equal(done.offload.clips, 3); assert.equal(done.offload.removedFiles, 5);
+  assert.equal(done.offload.recoveryVerification, 'skipped-by-standing-user-instruction');
+  assert.equal(done.offload.dependencyVerification, 'skipped-by-standing-user-instruction');
+  for (const id of [f.id, f.unused.id, f.shared.id]) assert.ok(!fs.existsSync(path.join(f.repo, `data/clips/${id}/source.mp4`)));
+  assert.ok(!fs.existsSync(path.join(f.root, 'clips/original.mp4')));
+  assert.ok(!fs.existsSync(path.join(f.root, 'render/unused.mp4')));
+  for (const name of ['final/native/film.mp4', 'audio/voice.wav', 'render/unbacked.mp4']) assert.ok(fs.existsSync(path.join(f.root, name)));
+  assert.deepEqual(fs.readFileSync(path.join(f.root, 'final/4k/film.mp4')), f.masterBytes);
+  assert.ok(fs.existsSync(f.otherCopy), 'copies in other project workspaces stay untouched');
+  const again = await sync(f.repo, { client, projectId: 'film-a', postPublication: true });
+  assert.equal(again.uploaded, 0); assert.equal(again.offload.removedFiles, 0);
+});
+
+test('archived offload preserves the original seal and updates the verified archive and public inventory hash', async t => {
+  const f = await publishedFixture(t, true), client = fakeClient();
+  const oldSeal = fs.readFileSync(path.join(f.root, 'workspace-archive-manifest.json'));
+  const done = await sync(f.repo, { client, projectId: 'film-a', postPublication: true });
+  const archived = await verifyArchive(f.repo, 'film-a-v1');
+  assert.notEqual(archived.inventorySha256, f.publicationRecord.archive.inventorySha256);
+  assert.equal(JSON.parse(fs.readFileSync(f.recordFile)).archive.inventorySha256, archived.inventorySha256);
+  assert.equal(done.offload.archiveInventorySha256, archived.inventorySha256);
+  assert.deepEqual(fs.readFileSync(path.join(f.repo, done.offload.receipt, 'before-archive.json')), oldSeal);
+  assert.deepEqual(fs.readFileSync(path.join(f.root, 'final/4k/film.mp4')), f.masterBytes);
+  const again = await sync(f.repo, { client, projectId: 'film-a', postPublication: true });
+  assert.equal(again.offload.removedFiles, 0);
+  assert.equal((await verifyArchive(f.repo, 'film-a-v1')).inventorySha256, archived.inventorySha256);
+});
+
+test('unpublished, unscoped and failed backup closeouts never delete local media', async t => {
+  const f = await publishedFixture(t), client = fakeClient();
+  await assert.rejects(cloudMain(['sync', '--post-publication'], f.repo), /requires --project/);
+  await assert.rejects(cloudMain(['plan', '--project', 'film-a', '--post-publication'], f.repo), /cloud option/);
+  await assert.rejects(cloudMain(['status', '--project', 'film-a', '--post-publication'], f.repo), /cloud option/);
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, plan: {}, client }), /own complete/);
+  privateJson(f.recordFile, { ...f.publicationRecord, status: 'review' });
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /published project/);
+  assert.equal(client.uploads.length, 0);
+  privateJson(f.recordFile, f.publicationRecord);
+  fs.appendFileSync(path.join(f.root, 'final/4k/film.mp4'), 'changed final');
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /Published master changed/);
+  assert.ok(fs.existsSync(f.file)); assert.equal(client.uploads.length, 0);
+  fs.writeFileSync(path.join(f.root, 'final/4k/film.mp4'), f.masterBytes);
+  fs.writeFileSync(path.join(f.root, 'workspace-archive-manifest.json'), 'pending archive seal');
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /existing archive transaction/);
+  assert.ok(fs.existsSync(f.file)); assert.equal(client.uploads.length, 0);
+  fs.unlinkSync(path.join(f.root, 'workspace-archive-manifest.json'));
+  client.upload = async () => { throw new Error('Synthetic failed upload'); };
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /failed upload/);
+  assert.ok(fs.existsSync(f.file)); assert.ok(fs.existsSync(path.join(f.root, 'clips/original.mp4')));
+});
+
+test('changed remote identity or local bytes prevents offload', async t => {
+  const f = await publishedFixture(t), client = fakeClient();
+  const first = await sync(f.repo, { projectId: 'film-a', client });
+  const object = client.objects.get(`clips/${f.id}/source.mp4`); object.md5Hash = 'bad';
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /checksum or identity/);
+  assert.ok(fs.existsSync(f.file)); object.md5Hash = hashes(f.file).md5Hash;
+  const get = client.get;
+  client.get = async name => {
+    if (name === first.backupSet.object) fs.appendFileSync(f.file, 'changed after upload verification');
+    return get(name);
+  };
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /verified backup bytes/);
+  assert.ok(fs.existsSync(f.file)); assert.ok(fs.existsSync(path.join(f.root, 'clips/original.mp4')));
+});
+
+test('post-publication sync resumes an interrupted rename without a restore download', async t => {
+  const f = await publishedFixture(t, true), client = fakeClient(), rename = fs.renameSync;
+  const fault = t.mock.method(fs, 'renameSync', (from, to) => {
+    rename(from, to);
+    if (from === f.file) throw new Error('Synthetic interruption after rename');
+  });
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /interrupted; rerun/);
+  fault.mock.restore();
+  const resumed = await sync(f.repo, { projectId: 'film-a', postPublication: true, client });
+  assert.equal(resumed.offload.removedFiles, 5); assert.equal(resumed.offload.status, 'complete');
+  await verifyArchive(f.repo, 'film-a-v1'); assert.ok(!fs.existsSync(f.file));
+});
+
+test('post-publication sync resumes partial purge and retains changed archive content for reconciliation', async t => {
+  const f = await publishedFixture(t, true), client = fakeClient(), unlink = fs.unlinkSync;
+  let failed = false;
+  const fault = t.mock.method(fs, 'unlinkSync', file => {
+    unlink(file);
+    if (!failed && file.includes('/offload/') && file.includes('/quarantine/')) {
+      failed = true; throw new Error('Synthetic interruption after deletion');
+    }
+  });
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /interrupted; rerun/);
+  fault.mock.restore();
+  await verifyArchive(f.repo, 'film-a-v1');
+  const extra = path.join(f.root, 'unexpected.txt'); fs.writeFileSync(extra, 'concurrent edit');
+  await assert.rejects(sync(f.repo, { projectId: 'film-a', postPublication: true, client }), /Retained archive changed/);
+  assert.equal(fs.readFileSync(extra, 'utf8'), 'concurrent edit'); fs.unlinkSync(extra);
+  assert.equal((await sync(f.repo, { projectId: 'film-a', postPublication: true, client })).offload.status, 'complete');
+  await verifyArchive(f.repo, 'film-a-v1');
+});
 
 test('project sync includes unused takes and shared clips used by the project, ignoring unrelated missing media and support', async t => {
   const f = projectFixture(t), client = fakeClient();

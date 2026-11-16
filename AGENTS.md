@@ -61,6 +61,12 @@ ledger, not a clerk with a camera.
   It checks the private bucket and shared monthly budget before uploads. Use
   unscoped `cloud sync` for an explicit whole-library backup. Keep cloud locations,
   credentials, accounting and receipts in ignored `data/clips/cloud/`; imports remain offline.
+- At post-publication closeout, use `cloud sync --project PROJECT_ID --post-publication`.
+  After verified backup, it automatically removes local clip masters and matching
+  copies in that project's workspace, preserving final deliveries and unbacked
+  files. The director waived recovery rehearsals and dependency audits for this
+  offload. Keep deletion receipts and any revised archive seal; ordinary sync
+  remains a backup without deletion. See `docs/post-publication.md`.
 - Snapshot generation metadata before submitting: exact prompt, resolved model,
   effective controls and seeds, reference hashes, provider/API and creation time.
   Maintained clients do this automatically. Keep the private snapshot with the
@@ -82,12 +88,13 @@ ledger, not a clerk with a camera.
   approval and real-time listening. Do not infer permission to upscale or publish.
 - For long work, retain the current plan, decisions, request IDs and verification
   evidence under the ignored workspace so another agent can resume accurately.
-- Standard archive retention keeps the final 4K master, original shots and audio
-  stems, references, recipes, edit decisions, provenance and QA. Remove earlier
+- Standard archive retention keeps the final 4K master, audio stems, references,
+  recipes, edit decisions, provenance and QA locally. Original shots and backed-up
+  clip assets are retained in private cloud storage after closeout offload. Remove earlier
   full edits, debug/segment renders, superseded finishing candidates and derived
-  soundtrack mixes after verifying the final master and dependencies. Preserve
+  soundtrack mixes after verifying the final master and backup. Preserve
   historical delivery metadata and hashes. Follow `docs/post-publication.md` for
-  exact removal receipts and archive resealing; do not delete source takes or
+  exact removal receipts and archive resealing; do not delete remote originals or
   clean other projects. A narrower user retention request takes precedence.
 
 ## Source publication is a separate checkpoint

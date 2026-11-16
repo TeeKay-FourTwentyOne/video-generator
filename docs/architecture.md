@@ -44,6 +44,13 @@ uploads and keeps destination configuration, budget reservations and receipts in
 ignored storage. Ordinary imports, provider polling and media resolution remain
 independent of the cloud mirror.
 
+`clip-post-publication.mjs` implements the explicit project closeout mode of
+`cloud sync`. It removes backed-up local clip masters and matching project copies
+after the complete remote verification, keeps delivery packages and unbacked
+files, journals interrupted work, and updates an affected archive seal. Ordinary
+sync retains local media. This closeout mode skips recovery rehearsals and
+dependency audits under the director's standing instruction.
+
 `clip-analysis.mjs` coordinates immutable private extraction runs and a resumable
 queue. The store, process, extractor and adapter modules isolate evidence validation,
 bounded local execution and optional provisioned models. `clip-analysis-views.mjs`

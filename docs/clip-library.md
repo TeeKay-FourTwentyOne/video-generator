@@ -210,6 +210,24 @@ npm run clips -- cloud catalogs
 npm run clips -- cloud recover-catalog "$CATALOG_SHA256" data/workspace/example/recovered-catalog
 ```
 
+At post-publication closeout, use
+`npm run clips -- cloud sync --project my-film --post-publication`.
+The mode requires a published record and its identified local master. After
+verifying the complete private backup, it automatically deletes canonical local
+clip masters and byte-identical video copies inside that project's recorded
+workspace. It preserves final/finish delivery packages, declared video artifacts,
+unbacked files, audio, metadata, analysis and other project workspaces. Shared
+canonical masters in the selected project set can be offloaded too; a later edit
+can restore them with `cloud fetch`. No dependency audit or recovery download is
+performed. Ordinary sync keeps local media.
+
+Closeout receipts under `data/clips/cloud/projects/PROJECT_ID/offload/` retain exact
+paths, hashes, object generations, file modes and any before/after archive seals.
+Rerun the same closeout command after an interrupted operation: it verifies the
+backup again and resumes the saved transaction. Do not discard pending receipts
+or locks from a running process. Deliberately absent media uses the prior verified
+backup set automatically in this mode. See [post-publication](post-publication.md).
+
 Run `cloud sync --project PROJECT_ID` after a project's batch of imports when this
 private destination is configured and the ongoing storage authorization remains active. Import and
 provider polling stay offline with respect to the backup; sync is a separate,

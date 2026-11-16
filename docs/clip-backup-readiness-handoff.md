@@ -1,5 +1,12 @@
 # Handoff: verify recovery before reclaiming clip storage
 
+The director's standard post-publication policy now uses
+`cloud sync --project PROJECT_ID --post-publication`: verified backup followed by
+automatic local clip offload, with recovery rehearsals and dependency audits
+waived. See [post-publication](post-publication.md#automatic-clip-offload-during-closeout).
+The broader qualification/recovery workflow below remains available for cleanup
+outside that closeout mode; it is not a gate on the standing closeout instruction.
+
 Implementation follow-through: shared immutable configuration inventories,
 explicit support recovery mappings, transitive evidence checks, backup-set-bound
 rehearsals and guarded duplicate reclamation are now implemented. The production
