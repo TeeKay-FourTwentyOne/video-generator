@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "projectId": "fixed-point",
+  "title": "Fixed Point",
+  "updated": "2026-11-17",
+  "format": "Horizontal 16:9, 4:30.5, 1920 by 1080 at 24 fps, instrumental",
+  "phase": "published",
+  "logline": "A jazz quintet plays a small theme, then plays it again a little better, and again, until the improving runs away with the tune. On a paper stage a vermilion triangle keeps stepping out of itself with one more corner until it is a perfect circle that cannot stop rolling.",
+  "overall": "Published on YouTube on 2026-11-17: the v3 native 4K master with the delivered description. The director watched and heard v2 and handed the agent the full revision pass that became v3. The agent checked frames and measurements only.",
+  "next": "Nothing outstanding. The workspace is archived with the 4K master, stems, images, recipes and records.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "song",
+      "number": "Song",
+      "title": "The tune",
+      "status": "accepted",
+      "summary": "One ElevenLabs Music take built from a nine-section plan: solo horn, cautious first take, three improving takes, runaway bebop, collapse, solo piano, full band together, tag.",
+      "segments": [
+        {
+          "id": "song-take",
+          "title": "Take A3 (4:30 after trim)",
+          "status": "accepted",
+          "detail": "Chosen from three takes on measured structure: horn alone 0:00 to 0:20, horn out 1:40 to 2:00, piano drops out in the runaway, collapse at 2:40, solo piano to 3:20, full band to the end. Needs the director's ears. About 5.5 s of dead silence after the collapse was trimmed by the agent."
+        },
+        {
+          "id": "song-stems",
+          "title": "Stems and features",
+          "status": "accepted",
+          "detail": "Bass, drums, piano and horn stems; onsets, envelopes and horn pitch drive the shapes."
+        }
+      ]
+    },
+    {
+      "id": "alone",
+      "number": "1",
+      "title": "Alone",
+      "status": "accepted",
+      "summary": "0:00 to 0:20. Cream sheet. The triangle practises three notes.",
+      "segments": [
+        {
+          "id": "alone-motif",
+          "title": "A1 Three notes",
+          "status": "accepted",
+          "detail": "Tumbles in on its corners, then lifts with each note; an ink line trails the melody."
+        }
+      ]
+    },
+    {
+      "id": "band",
+      "number": "2",
+      "title": "The band walks in",
+      "status": "accepted",
+      "summary": "0:20 to 0:55. Disc, rectangles and dots arrive; the triangle watches, then joins.",
+      "segments": [
+        {
+          "id": "band-enter",
+          "title": "B1 Rhythm section enters",
+          "status": "accepted",
+          "detail": "Bass disc hops in on its notes, piano rectangles step, brush dots drift. New in v3: the triangle taps along from the side instead of standing frozen."
+        },
+        {
+          "id": "band-first-take",
+          "title": "B2 First take",
+          "status": "accepted",
+          "detail": "The triangle joins, cautious, staying near the edge."
+        }
+      ]
+    },
+    {
+      "id": "better",
+      "number": "3",
+      "title": "Again, better",
+      "status": "accepted",
+      "summary": "0:55 to 1:40. Each chorus it steps out of itself with one more corner and leaves the old self behind.",
+      "segments": [
+        {
+          "id": "better-square",
+          "title": "C1 Square",
+          "status": "accepted",
+          "detail": "Afternoon ochre. It steps out of the triangle as a square; a tag game with the band begins."
+        },
+        {
+          "id": "better-pentagon",
+          "title": "C2 Pentagon, hexagon",
+          "status": "accepted",
+          "detail": "Hot ground, faster darts. Pentagon, then hexagon; the bass kicks the old selves along."
+        }
+      ]
+    },
+    {
+      "id": "workshop",
+      "number": "4",
+      "title": "The workshop",
+      "status": "accepted",
+      "summary": "1:40 to 2:00. Horn lays out. The rhythm section plays among the skins while the shape redraws itself off to one side.",
+      "segments": [
+        {
+          "id": "workshop-redraw",
+          "title": "D1 Redrawing",
+          "status": "accepted",
+          "detail": "Twenty-one more drafts in twenty seconds, a row of pale skins pushing the band left. v3: every redraw lands on a measured drum hit (the director's off-beat note), and the shape no longer twitches on stray sound while the horn rests."
+        }
+      ]
+    },
+    {
+      "id": "runaway",
+      "number": "5",
+      "title": "Runaway",
+      "status": "accepted",
+      "summary": "2:00 to 2:40. A perfect circle cannot stop rolling. Night palette.",
+      "segments": [
+        {
+          "id": "runaway-roll",
+          "title": "E1 It rolls",
+          "status": "accepted",
+          "detail": "The world scrolls. It bowls through a road of old drafts, scatters the piano twice and flattens the bass. v3: the night backdrop is three plates cross-faded, so the mirrored sky seams are gone."
+        },
+        {
+          "id": "runaway-climb",
+          "title": "E2 It climbs",
+          "status": "accepted",
+          "detail": "Rises with the horn's top register, faster and larger."
+        }
+      ]
+    },
+    {
+      "id": "collapse",
+      "number": "6",
+      "title": "Collapse",
+      "status": "accepted",
+      "summary": "2:40 to 2:45. It breaks. White.",
+      "segments": [
+        {
+          "id": "collapse-break",
+          "title": "F1 Break",
+          "status": "accepted",
+          "detail": "Shards on a blank sheet. New in v3: in the quiet, one last piece falls over and the dots flinch."
+        }
+      ]
+    },
+    {
+      "id": "aftermath",
+      "number": "7",
+      "title": "Aftermath",
+      "status": "accepted",
+      "summary": "2:40 to 3:14. Solo piano. The rectangles gather the pieces and the old skins.",
+      "segments": [
+        {
+          "id": "aftermath-gather",
+          "title": "G1 Gathering",
+          "status": "accepted",
+          "detail": "Four piano phrases, four rectangles, each pushing one old draft home while the notes nudge the shards together."
+        }
+      ]
+    },
+    {
+      "id": "together",
+      "number": "8",
+      "title": "Together",
+      "status": "accepted",
+      "summary": "3:14 to 4:15. The band builds it again out of every earlier draft, nested.",
+      "segments": [
+        {
+          "id": "together-build",
+          "title": "H1 Rebuilding",
+          "status": "accepted",
+          "detail": "Triangle inside square inside pentagon inside hexagon inside circle."
+        },
+        {
+          "id": "together-dance",
+          "title": "H2 The theme, together",
+          "status": "accepted",
+          "detail": "The triangle and then the square climb out to dance on top; later both stack as a totem; the bass jumps over. v3: the nest is a little smaller so the totem stays in frame (v2 cut the triangle off), and in the last chorus the drafts wind up and stop dead, aligned, on the final hit."
+        }
+      ]
+    },
+    {
+      "id": "tag",
+      "number": "9",
+      "title": "Tag",
+      "status": "accepted",
+      "summary": "4:15 to 4:30. It sits. Title.",
+      "segments": [
+        {
+          "id": "tag-sit",
+          "title": "I1 The fixed point",
+          "status": "accepted",
+          "detail": "Last bass note; the title, larger and a second earlier in v3."
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "song-listen",
+      "title": "Does take A3 sound right?",
+      "status": "decided",
+      "detail": "Decided 2026-11-16. Director, after watching and listening to v2: 'I loved it. Really enjoyed the climax. Wonderful work.' and 'The beats did mostly feel on.' Take A3 stays."
+    },
+    {
+      "id": "no-veo",
+      "title": "No generated video",
+      "status": "decided",
+      "detail": "Decided 2026-11-16 by delegation ('This is your piece now'). The agent kept it all programmatic: no generated video."
+    },
+    {
+      "id": "title",
+      "title": "Title: Fixed Point",
+      "status": "decided",
+      "detail": "Decided 2026-11-16 by delegation ('This is your piece now'). The title stays Fixed Point."
+    },
+    {
+      "id": "silence-trim",
+      "title": "Silence after the collapse shortened",
+      "status": "decided",
+      "detail": "Decided 2026-11-16 by delegation. The 5.5 s trim stays; v3 puts a small gag in the quiet that remains."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-15",
+      "text": "Brief written. Three song takes generated; A3 chosen on measured structure. Stems separated and analysed. Status page created."
+    },
+    {
+      "date": "2026-11-15",
+      "text": "Twelve textures and backdrops generated. Renderer written; draft v2 assembled (4:30.5) with the join pass recorded. Awaiting the director's watch and listen."
+    },
+    {
+      "date": "2026-11-16",
+      "text": "Director watched and heard v2: 'I loved it.' Noted off-beat hits at 1:42 to 1:55 and delegated a full pass with the 4K to follow."
+    },
+    {
+      "date": "2026-11-17",
+      "text": "v3 built: workshop on the drum hits, totem back in frame, last-chorus spin, late-falling shard, tapping triangle, seamless night sky, larger title. Native 4K master rendered and verified; description written. Not published."
+    },
+    {
+      "date": "2026-11-17",
+      "text": "Director published the 4K master on YouTube and supplied the link: https://youtu.be/_U2DWfBjJiQ. Post-publication closeout run."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v2",
+      "date": "2026-11-15",
+      "title": "First full draft",
+      "film": "final/v2/film.mp4",
+      "posterFrame": 5300,
+      "fps": 24,
+      "frames": 6492,
+      "width": 1920,
+      "height": 1080,
+      "note": "One continuous local render over take A3 with 5.5 s of silence after the collapse removed. Review copy on this page is 960 by 540.",
+      "segments": [
+        {
+          "label": "A1",
+          "shot": "A1",
+          "frame": 0,
+          "frames": 521,
+          "sourceFrame": 0,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "B1",
+          "shot": "B1",
+          "frame": 521,
+          "frames": 405,
+          "sourceFrame": 521,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "B2",
+          "shot": "B2",
+          "frame": 926,
+          "frames": 466,
+          "sourceFrame": 926,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "C1",
+          "shot": "C1",
+          "frame": 1392,
+          "frames": 535,
+          "sourceFrame": 1392,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 1927,
+          "frames": 463,
+          "sourceFrame": 1927,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "D1",
+          "shot": "D1",
+          "frame": 2390,
+          "frames": 545,
+          "sourceFrame": 2390,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 2935,
+          "frames": 545,
+          "sourceFrame": 2935,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "E2",
+          "shot": "E2",
+          "frame": 3480,
+          "frames": 301,
+          "sourceFrame": 3480,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "F1",
+          "shot": "F1",
+          "frame": 3781,
+          "frames": 285,
+          "sourceFrame": 3781,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "G1",
+          "shot": "G1",
+          "frame": 4066,
+          "frames": 604,
+          "sourceFrame": 4066,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "H1",
+          "shot": "H1",
+          "frame": 4670,
+          "frames": 320,
+          "sourceFrame": 4670,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "H2",
+          "shot": "H2",
+          "frame": 4990,
+          "frames": 1142,
+          "sourceFrame": 4990,
+          "source": "clips/FILM-v2.mp4"
+        },
+        {
+          "label": "I1",
+          "shot": "I1",
+          "frame": 6132,
+          "frames": 360,
+          "sourceFrame": 6132,
+          "source": "clips/FILM-v2.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-11-17",
+      "title": "The agent's full pass",
+      "film": "final/v3/film.mp4",
+      "posterFrame": 5300,
+      "fps": 24,
+      "frames": 6492,
+      "width": 1920,
+      "height": 1080,
+      "note": "Same soundtrack and length as v2. Review copy on this page is 960 by 540; the delivered master is the native 4K render final/v3-4k/film.mp4.",
+      "segments": [
+        {
+          "label": "A1",
+          "shot": "A1",
+          "frame": 0,
+          "frames": 521,
+          "sourceFrame": 0,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "B1",
+          "shot": "B1",
+          "frame": 521,
+          "frames": 405,
+          "sourceFrame": 521,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "B2",
+          "shot": "B2",
+          "frame": 926,
+          "frames": 466,
+          "sourceFrame": 926,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "C1",
+          "shot": "C1",
+          "frame": 1392,
+          "frames": 535,
+          "sourceFrame": 1392,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "C2",
+          "shot": "C2",
+          "frame": 1927,
+          "frames": 463,
+          "sourceFrame": 1927,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "D1",
+          "shot": "D1",
+          "frame": 2390,
+          "frames": 545,
+          "sourceFrame": 2390,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 2935,
+          "frames": 545,
+          "sourceFrame": 2935,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "E2",
+          "shot": "E2",
+          "frame": 3480,
+          "frames": 301,
+          "sourceFrame": 3480,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "F1",
+          "shot": "F1",
+          "frame": 3781,
+          "frames": 285,
+          "sourceFrame": 3781,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "G1",
+          "shot": "G1",
+          "frame": 4066,
+          "frames": 604,
+          "sourceFrame": 4066,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "H1",
+          "shot": "H1",
+          "frame": 4670,
+          "frames": 320,
+          "sourceFrame": 4670,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "H2",
+          "shot": "H2",
+          "frame": 4990,
+          "frames": 1142,
+          "sourceFrame": 4990,
+          "source": "clips/FILM-v3.mp4"
+        },
+        {
+          "label": "I1",
+          "shot": "I1",
+          "frame": 6132,
+          "frames": 360,
+          "sourceFrame": 6132,
+          "source": "clips/FILM-v3.mp4"
+        }
+      ]
+    }
+  ]
+}

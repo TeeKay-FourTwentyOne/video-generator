@@ -123,7 +123,9 @@ continued review is useful; it serves `description.txt` along with the known
 review artifacts. Inspect the generated links, not just the server's exit code.
 Mark the public record's archive locator verified only after these checks pass,
 then apply the standard retention step below and record its new inventory hash.
-Regenerate current views. `npm run records -- validate PROJECT_ID
+Regenerate current views. Rebuild and publish the status page before sealing; the
+status builder refuses to write its default output into a sealed archive (use
+`--out` outside the archive for a later page). `npm run records -- validate PROJECT_ID
 --local-evidence` checks declared artifact hashes, dimensions, decoded frame
 counts, description copies and the archive inventory; explicitly removed
 intermediates must be absent and are not counted as newly decoded. It records no

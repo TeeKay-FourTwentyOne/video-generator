@@ -230,6 +230,12 @@ The child environment omits provider credentials and enables offline flags.
 Porting model execution requires a qualified OS network sandbox; baseline FFmpeg
 analysis remains portable. FFmpeg input protocols are restricted to files/pipes.
 Changing a pinned file fails before execution and again at final verification.
+A file added to or missing from a pinned runtime directory fails the same way
+(`Runtime file inventory changed`). A stray desktop metadata file, for example one
+written by browsing the folder in Finder, is the usual cause: find it, remove it and
+rerun instead of pinning a new profile. The analysis implementation files are part
+of each run's tool identity, so do not edit them while a project is processing, and
+expect an edit to require reprocessing.
 
 Visual meaning receives ordered timestamped windows with overlap and no creation
 prompt. MLX uses deterministic sampling settings and retains sampled-frame references,

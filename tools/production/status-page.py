@@ -261,7 +261,9 @@ def draft_section(draft, earlier, asset, poster_uri):
     if asset:
         size = f' width="{asset["width"]}" height="{asset["height"]}"' if asset.get('width') and asset.get('height') else ''
         poster = f' poster="{poster_uri}"' if poster_uri else ''
-        parts.append('<div class="player">')
+        w, h = (asset.get('width') or draft.get('width') or 9), (asset.get('height') or draft.get('height') or 16)
+        wide = ' wide' if w > h else ''
+        parts.append(f'<div class="player{wide}" style="--video-aspect: {w} / {h}">')
         parts.append(f'<video id="draft-video" controls playsinline preload="metadata" src="{esc(asset["url"])}"{size}{poster}></video>')
         parts.append('<div class="readout">'
                      '<div class="tc"><span id="tc-time">0.000</span><span class="tc-unit">s</span><span class="tc-frame" id="tc-frame">frame 0</span></div>'
@@ -456,6 +458,8 @@ def main():
     if not workspace.is_absolute():
         workspace = REPO / workspace
     output = Path(args.out) if args.out else workspace / 'status' / 'index.html'
+    if not args.check and (workspace / 'workspace-archive-manifest.json').is_file() and workspace.resolve() in output.resolve().parents:
+        fail('workspace is a sealed archive; writing there breaks its inventory. Pass --out with a path outside the archive')
     if not output.is_absolute():
         output = REPO / output
     page, counts, images_used = render(data, workspace, not args.no_images)

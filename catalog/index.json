@@ -10305,6 +10305,23 @@
       }
     },
     {
+      "id": "clip_365fd3e55cc3959e11301881fb83daf6786913e835ed022b88ef249fe9f30c9b",
+      "metadata": "clips/clip_365fd3e55cc3959e11301881fb83daf6786913e835ed022b88ef249fe9f30c9b.json",
+      "labels": [],
+      "kind": "delivery",
+      "collections": [
+        "fixed-point"
+      ],
+      "durationSeconds": 270.5,
+      "width": 3840,
+      "height": 2160,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 0
+      }
+    },
+    {
       "id": "clip_367942686baf2826df8b4f77122425cb7db15ebb412fdf10b5481fb02512c7ee",
       "metadata": "clips/clip_367942686baf2826df8b4f77122425cb7db15ebb412fdf10b5481fb02512c7ee.json",
       "labels": [
@@ -10626,6 +10643,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_38371c017183ec53953c18d97f7c14f9a5fba8764771063555f705c42652456b",
+      "metadata": "clips/clip_38371c017183ec53953c18d97f7c14f9a5fba8764771063555f705c42652456b.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "fixed-point"
+      ],
+      "durationSeconds": 270.5,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -19127,6 +19161,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_5f84c5c63f32ccfcb4c8cf8293df9487f20544c904cf5a27dcc4f70b17f0ab04",
+      "metadata": "clips/clip_5f84c5c63f32ccfcb4c8cf8293df9487f20544c904cf5a27dcc4f70b17f0ab04.json",
+      "labels": [],
+      "kind": "derived",
+      "collections": [
+        "fixed-point"
+      ],
+      "durationSeconds": 270.5,
+      "width": 3840,
+      "height": 2160,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -38327,6 +38378,23 @@
       }
     },
     {
+      "id": "clip_bfa180ad028d6a48028f9d99f61217fd07cb39b22b648a6c2a428197f04715af",
+      "metadata": "clips/clip_bfa180ad028d6a48028f9d99f61217fd07cb39b22b648a6c2a428197f04715af.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "fixed-point"
+      ],
+      "durationSeconds": 270.5,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_bfa76a5794ccd69bec753b35369a5e004171cb4b0f469908862945d636f0744c",
       "metadata": "clips/clip_bfa76a5794ccd69bec753b35369a5e004171cb4b0f469908862945d636f0744c.json",
       "labels": [
@@ -44774,6 +44842,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_e093e4638130bae50ec4162cb38edd3e70b024aeb25318026d271ff29d4a647d",
+      "metadata": "clips/clip_e093e4638130bae50ec4162cb38edd3e70b024aeb25318026d271ff29d4a647d.json",
+      "labels": [],
+      "kind": "unknown",
+      "collections": [
+        "fixed-point"
+      ],
+      "durationSeconds": 270.5,
+      "width": 1920,
+      "height": 1080,
+      "hasPrompt": false,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {

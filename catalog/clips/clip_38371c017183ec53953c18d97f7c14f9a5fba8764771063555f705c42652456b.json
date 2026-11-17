@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_38371c017183ec53953c18d97f7c14f9a5fba8764771063555f705c42652456b",
+  "sha256": "38371c017183ec53953c18d97f7c14f9a5fba8764771063555f705c42652456b",
+  "bytes": 212885446,
+  "extension": ".mp4",
+  "kind": "unknown",
+  "technical": {
+    "durationSeconds": 270.5,
+    "width": 1920,
+    "height": 1080,
+    "frameRate": "24/1",
+    "frameCount": 6492,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "fixed-point"
+  ],
+  "legacyIds": [],
+  "generations": [],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

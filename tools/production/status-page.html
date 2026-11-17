@@ -77,7 +77,9 @@ code { font-family: var(--font-mono); font-size: 0.85em; }
 .draft h2 { font-size: clamp(24px, 4vw, 32px); line-height: 1.1; }
 .draft-meta { font-family: var(--font-mono); font-size: 13px; color: var(--fg-2); font-variant-numeric: tabular-nums; }
 .player { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 20px; align-items: start; }
-.player video { width: 100%; height: auto; aspect-ratio: 9 / 16; background: #000; border: 1px solid var(--line); display: block; }
+.player video { width: 100%; height: auto; aspect-ratio: var(--video-aspect, 9 / 16); background: #000; border: 1px solid var(--line); display: block; }
+.player.wide { grid-template-columns: 1fr; }
+.player.wide .readout { position: static; }
 .player-pending { color: var(--fg-2); font-size: 15px; }
 .readout { display: grid; gap: 12px; font-family: var(--font-mono); font-variant-numeric: tabular-nums; position: sticky; top: 12px; }
 .tc { font-size: clamp(30px, 6vw, 44px); line-height: 1; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
@@ -104,6 +106,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; }
 @media (max-width: 600px) {
   .player { grid-template-columns: 1fr; }
   .player video { width: min(100%, 300px); margin: 0 auto; }
+  .player.wide video { width: 100%; }
   .readout { position: static; }
 }
 .scene { padding-block: 36px 28px; border-bottom: 1px solid var(--line); display: grid; gap: 16px; }

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_bfa180ad028d6a48028f9d99f61217fd07cb39b22b648a6c2a428197f04715af",
+  "projectId": "fixed-point",
+  "editVersion": "edit/v1",
+  "segmentIndex": 0,
+  "shotId": "FILM",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 6492,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "24e2a106b46203da312e002c5410f754c30d0b84f69032eaaf1931aae2d61084",
+  "schemaVersion": 1,
+  "id": "use_758fd52e84c6b93f65d0aa72c630542692c0d5ec23b996c73e9d23fcf07f63ed"
+}

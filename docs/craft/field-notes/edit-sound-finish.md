@@ -253,6 +253,7 @@ sat within 5 LU across sections with the door thud as the only peak. A per-segme
 (ffmpeg ebur128 over each segment's window) is the fastest way to see this.
 Source: claude-code · November · 2026-11-02
 
+
 ### Check the final finishing mux for all four colour tags
 Futility's segments carried explicit BT.709 settings, but the concatenated master
 omitted primaries and transfer tags. A metadata-only H.264 remux restored them;
@@ -272,3 +273,25 @@ concat's colour tags come back "unknown" and are completed with the h264_metadat
 **Apply:** on photoreal footage cut the crops first (a face, a textured garment, a wet surface) and plan the blend pass into
 the finishing time; keep the untagged model concat beside the delivered blend for provenance.
 Source: claude-code · November · 2026-11-02
+
+### A music take can be cast, not only scored
+ElevenLabs Music `music_v2_5` with a chunked composition plan (one chunk per section, each with
+its own styles and duration) followed a nine-section jazz arrangement closely enough to script
+against: solo horn, staged entries, a lay-out, a collapse, solo piano, full-band return. Put the
+instrument that must lead first in the chunk's styles and name the absent ones as negatives; a
+return after a quiet section needed `context_adherence: low` plus "full band, full volume" or it
+stayed sparse. The six-stem separation endpoint then gave bass, drums, piano and horns ("other")
+cleanly enough for per-instrument onsets, envelopes and an autocorrelation pitch track, which is
+all a programmatic picture needs to make each shape move with one player. The agent still cannot
+hear: choose between takes on stem activity tables and spectrograms, and say so.
+**Apply:** plan the arrangement as the story, generate two or three seeds, read the per-stem
+activity table before writing choreography, and write the story to what the take actually does.
+Trim dead air by dropping simulated frames, with idle motion on a clock that skips the gap.
+Source: claude-code · Fixed Point · 2026-11-15
+
+### Programmatic films: check what the stems hear in the rests, and finish natively (2026-11-17, Claude, FIXED POINT)
+
+- A separated stem still carries bleed while its player rests. Pitch or onset tracking on the "horn" stem moved the horn's shape at random during two horn-free choruses; the director heard it as off-beat pops. Mask the driving features to silence wherever the measured structure says the instrument is out.
+- Scheduled story events (a shape change every few seconds) read as off the beat unless each one is snapped to a measured strong hit. Pick the hits from the combined drum onsets, then choose a subset by hand for the pacing.
+- For a film that is code over a few generated stills, render the 4K from the recipe at 2x and give `film finish` that render as the counterpart. For the stills, Lanczos plus grain synthesised at the target size held the gouache look; Real-ESRGAN (anime model) flattened it into cels on 100 percent crops.
+- `film finish`, like `assemble`, refuses on its first pass for a new local counterpart: run `clips analysis process-project` and finish again.

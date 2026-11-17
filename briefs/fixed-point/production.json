@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "projectId": "fixed-point",
+  "title": "FIXED POINT",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published on YouTube on 2026-11-17 (URL user-confirmed) with the director's edit of the delivered description. Abstract cut-paper jazz film: an instrumental tune about recursive self-improvement, separated into stems so each painted-paper shape moves with one player. The director watched and heard v2 on 2026-11-16, approved it and handed the agent a full revision pass with the 4K to follow. v3 (270.5 s) is that pass and v3-4k is its native 4K render, the published master. One continuous local render over generated textures and backdrops; no generated video. Technical checks, the director's approval of v2 and publication are recorded as separate events; the agent has not heard the tune or watched at speed. Archived 2026-11-17 under the standard retention: the 4K master, the music takes and stems, the generated images with their 4K counterparts, recipes, edit specs, delivery records, ledger and QA are retained; the registered picture renders are in the private backup; the v1, v2 and v3 native edits and the assembly segments were removed (7 files) after the master was re-verified.",
+  "briefPath": "briefs/fixed-point/brief.md",
+  "descriptionPath": "briefs/fixed-point/description.md",
+  "descriptionSha256": "91cb21189253de790304ff663fb17782a557598aa6c7f207696648345416f3a9",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/fixed-point/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/fixed-point/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/fixed-point-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/v2/film.mp4",
+      "sha256": "d7e418906ba9a2ac43937d7e3a10079bcf88930e375085e7076a7b85f429967d",
+      "width": 1920,
+      "height": 1080,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 6492,
+      "durationSeconds": 270.5,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v2/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/v3/film.mp4",
+      "sha256": "7eaec1e2e072e68518c75e7db4a758ea50afcd0841ec04c138b421212df5de13",
+      "width": 1920,
+      "height": 1080,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 6492,
+      "durationSeconds": 270.5,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v3/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v3-4k",
+      "path": "final/v3-4k/film.mp4",
+      "sha256": "365fd3e55cc3959e11301881fb83daf6786913e835ed022b88ef249fe9f30c9b",
+      "width": 3840,
+      "height": 2160,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 6492,
+      "durationSeconds": 270.5,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v3-4k/description.txt",
+      "deliveryRecordPath": "final/v3-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs",
+        "model": "music_v2_5"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, composition plan, choreography, renderer, editing and finishing",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtu.be/_U2DWfBjJiQ",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-17",
+    "artifactVersion": "v3-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v2",
+      "artifactSha256": "d7e418906ba9a2ac43937d7e3a10079bcf88930e375085e7076a7b85f429967d",
+      "recordedDate": "2026-11-15",
+      "eventDate": "2026-11-15",
+      "evidence": "Assembler verified full decode, 1920x1080, 6492 frames at 24/1 fps and the source hashes. The delivered AAC measured -15.1 LUFS integrated with a loudness range of 15.2 LU. The one internal cut (frame 4008) measures the same frame difference as its neighbours. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v2",
+      "artifactSha256": "d7e418906ba9a2ac43937d7e3a10079bcf88930e375085e7076a7b85f429967d",
+      "recordedDate": "2026-11-17",
+      "eventDate": "2026-11-16",
+      "evidence": "Director watched and listened to v2 and wrote: 'I loved it. Really enjoyed the climax. Wonderful work.' They noted a couple of the red shape's hits around 1:42 to 1:55 landing a little off the beat, then delegated a full revision pass: 'This is your piece now. ... Just make sure to 4k upscale when you're done.'",
+      "outcome": "approved"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3",
+      "artifactSha256": "7eaec1e2e072e68518c75e7db4a758ea50afcd0841ec04c138b421212df5de13",
+      "recordedDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "evidence": "Director-delegated revision of v2 with the same soundtrack. Assembler verified full decode, 1920x1080, 6492 frames at 24/1 fps and the source hashes. The workshop's shape changes now fall on measured drum hits; the one internal cut (frame 4008) measures the same frame difference as its neighbours. The agent inspected frame strips of the whole film and dense strips of each changed passage. Real-time viewing, listening and the director's review of v3 are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "365fd3e55cc3959e11301881fb83daf6786913e835ed022b88ef249fe9f30c9b",
+      "recordedDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "evidence": "Native 3840x2160 render from the same recipe with 4K counterparts of the textures and backdrops (resampled, no AI upscaling). The finishing step verified full decode, dimensions, 6492 frames, colour tags and that the audio packets and decoded PCM equal v3's. Sampled frames match v3 at 1080p apart from added paper grain. Real-time viewing and listening are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v3-4k",
+      "artifactSha256": "365fd3e55cc3959e11301881fb83daf6786913e835ed022b88ef249fe9f30c9b",
+      "recordedDate": "2026-11-17",
+      "eventDate": "2026-11-17",
+      "evidence": "The director supplied the published YouTube URL on 2026-11-17 after receiving the v3-4k master and its description. The director had edited the description file that morning (removed the AI-generated disclosure line and one tool name from the credits); that edited text is recorded as the final description. Recorded as user-confirmed; a fetch of the public page returned the title 'Fixed Point' but not the description or date, so the platform publication date and published text are not independently asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/fixed-point-v1/workspace-archive-manifest.json",
+    "inventorySha256": "9427f08dd56fc9c66c1e46e623dd2936331dc07a4ab5feb0c323896c99c567bd",
+    "verifiedDate": "2026-11-17"
+  }
+}

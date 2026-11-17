@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_5f84c5c63f32ccfcb4c8cf8293df9487f20544c904cf5a27dcc4f70b17f0ab04",
+  "projectId": "fixed-point",
+  "editVersion": "finish/v3-4k",
+  "segmentIndex": 0,
+  "shotId": "FILM",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 6492,
+    "fps": 24
+  },
+  "timelineStartFrame": 0,
+  "outputSha256": "365fd3e55cc3959e11301881fb83daf6786913e835ed022b88ef249fe9f30c9b",
+  "schemaVersion": 1,
+  "id": "use_5c3a78f4fca30be54a5d9211f3930c8cfbdd3d14bd7642cc29c240c88f2fc108"
+}
