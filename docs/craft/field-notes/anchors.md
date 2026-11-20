@@ -206,3 +206,13 @@ person and room on the first try.
 **Apply:** describe the camera's view as the image, never the device or the preview; if a
 device appears anyway, crop its screen and use that as the identity and set reference.
 Source: claude-code · Retake · 2026-11-03
+
+### "A faint cool lift from below" is painted on as a blue chin; "recorded in a pocket" is taken literally too
+FACE DOWN. Asking Nano for a faint cool bluish light under the chin (a screen's glow) returned a saturated blue patch on the
+jaw; a chained "change only this: the blue patch is gone" removed it cleanly. A from-below face with "upper arms angle down
+toward the bottom corners" came back with crossed arms in one of five; the chained removal fixed that as well. A night version
+of a morning anchor chained from the morning frame ("same woman, room and angle; now night, one lamp at the right edge") kept
+the steep angle that a fresh night prompt had flattened into a level selfie.
+**Apply:** leave screen glow to a local grade; to keep an unflattering angle across lighting setups, chain the relight from
+the anchor that has the angle right instead of describing the angle again.
+Source: claude-code · Face Down · 2026-11-18

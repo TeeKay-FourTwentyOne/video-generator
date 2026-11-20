@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_10ee6e8de00bcf02b82efa3d6c3d4383455ba218af5841e711fde8a7bffd86c2",
+  "sha256": "10ee6e8de00bcf02b82efa3d6c3d4383455ba218af5841e711fde8a7bffd86c2",
+  "bytes": 7467150,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "face-down"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic handheld footage looking steeply up from chest height at a woman in her late forties with short dark curly greying hair, a wide lens close to her face, the underside of her jaw and chin nearest the lens. The camera is held in her own two hands just below her chin; her hands and thumbs stay out of frame below the bottom edge for the whole shot, and the frame drifts and corrects a little, the way a hand does. Muted colors, soft contrast, real skin texture, nothing staged. She is in her kitchen in the evening, cooking, in a pale blue collared shirt with the sleeves pushed up, in warm tungsten light with a little steam drifting through the frame. Her head is turned to someone standing out of frame beside her and she is in the middle of a real laugh. Still smiling, she glances down into the lens for a moment, taps two or three times carelessly with one thumb, and before she has finished she is already looking back at the person beside her, laughing again, as she puts the camera down on the counter: the view swings quickly off her face and across the ceiling and the glowing pendant lamp. She laughs but says no words. Audio: something frying in a hot pan, an extractor fan, her laugh. No speech. No music. No on-screen text, no captions, no interface, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ad14df7410f6a82eddfb3617cbdf11434c87b76d3c12ee13618e74c2ea4963b7",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 740392703,
+      "createdAt": "2026-11-19T05:56:03.650Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "660ccf1860107670c323163fef792c5a282e6580087872ba59776f555b854380",
+          "bytes": 1549197,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3e0d01b48e4446f610e2680efd8e54f0779d2273ea353bd5729d2563d2965116"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

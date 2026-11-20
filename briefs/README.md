@@ -28,6 +28,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Da Derga’s Hostel](da-derga/README.md) | planned | — | [Brief](da-derga/brief.md) · [Record](da-derga/production.json) |
 | [THE DIGNITY OF WORK](dignity-of-work/README.md) | unknown | — | [Brief](dignity-of-work/brief.md) · [Record](dignity-of-work/production.json) |
 | [EVERY WAY HOME](every-way-home/README.md) | published | — | [Brief](every-way-home/brief.md) · [Description](every-way-home/description.md) · [Record](every-way-home/production.json) |
+| [FACE DOWN](face-down/README.md) | published | — | [Brief](face-down/brief.md) · [Description](face-down/description.md) · [Record](face-down/production.json) |
 | [FALSE COLOR — TOGETHER](false-color-together/README.md) | published | false-color | [Brief](false-color-together/brief.md) · [Description](false-color-together/description.md) · [Record](false-color-together/production.json) |
 | [FIXED POINT](fixed-point/README.md) | published | — | [Brief](fixed-point/brief.md) · [Description](fixed-point/description.md) · [Record](fixed-point/production.json) |
 | [FLOORS](floors/README.md) | delivered | — | [Brief](floors/brief.md) · [Decisions](floors/decisions.md) · [Record](floors/production.json) |

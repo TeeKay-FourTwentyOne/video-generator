@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "projectId": "face-down",
+  "title": "FACE DOWN",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published on YouTube on 2026-11-20 (URL user-confirmed) with the director’s edit of the delivered description. A day seen from inside a phone: five lit face shots and five true-black darks carried by sound. Brief written and v1 built 2026-11-18; the director’s notes on 2026-11-19 led to v4 (36.5 s): the last dark ends on “Yeah.”, the desk line reads “Not finishing by noon.”, and the long dark holds typing with no spoken word. The director authorized the 4K finish of v4 on 2026-11-20; v4-4k is the published master. Technical checks, the finishing authorization and publication are recorded as separate events; real-time listening is the director’s and is not claimed by the agent. Archived 2026-11-20 under the standard retention: the 4K master, sound sources, references, recipes, edit and mix specs, delivery records and QA are kept locally; the generated takes and registered renders are in the private backup; earlier edits, segments and derived mixes were removed.",
+  "briefPath": "briefs/face-down/brief.md",
+  "descriptionPath": "briefs/face-down/description.md",
+  "descriptionSha256": "fe6f91f0220d5eb310c74e7ed9974ca9b2fa8942b3992f430b3b257de96f086e",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/face-down/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/face-down/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/face-down-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "3f55cf4e5538e5b873e13ad95dda47c5da1e0d9e26d96958555a3c9a83df6043",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 958,
+      "durationSeconds": 39.916666666666664,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "90452a9dc3ec3608c53c9a14e1a086451e14e1138967f5f102eec5328164411e",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 876,
+      "durationSeconds": 36.5,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v4/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v4-4k",
+      "path": "final/v4-4k/film.mp4",
+      "sha256": "5d07768164b7153910aa14d12cc56d2652a4177860e187bd5d3fab924f546333",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 876,
+      "durationSeconds": 36.5,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v4-4k/description.txt",
+      "deliveryRecordPath": "final/v4-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, brief, direction, shot planning, image and motion generation, editing, sound and finishing",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "3f55cf4e5538e5b873e13ad95dda47c5da1e0d9e26d96958555a3c9a83df6043",
+      "recordedDate": "2026-11-18",
+      "eventDate": "2026-11-18",
+      "evidence": "Assembler verified full decode, 1080x1920, 958 frames at 24/1 fps and the source hashes. A full decode found every frame of the first four darks at exact video black with neutral chroma, and the last dark black outside the typed line. The mix report measured the soundtrack at -17.4 LUFS integrated, loudness range 15.8 LU, true peak -1.4 dBTP; the delivered AAC measured -17.5 LUFS. Every native track was transcribed locally. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "90452a9dc3ec3608c53c9a14e1a086451e14e1138967f5f102eec5328164411e",
+      "recordedDate": "2026-11-20",
+      "eventDate": "2026-11-19",
+      "evidence": "Assembler verified full decode, 1080x1920, 876 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -17.7 LUFS integrated, loudness range 14.8 LU, true peak -1.4 dBTP. A local transcription of the soundtrack found the last dark ending on “Yeah.” and no “yes” in the long dark. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v4",
+      "artifactSha256": "90452a9dc3ec3608c53c9a14e1a086451e14e1138967f5f102eec5328164411e",
+      "recordedDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "evidence": "After watching v4 on the status page the director wrote “4k upscale please.” Publication and source commits remain separate decisions.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "5d07768164b7153910aa14d12cc56d2652a4177860e187bd5d3fab924f546333",
+      "recordedDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "evidence": "The maintained finish command cut the v4 frame ranges from 2160x3840 counterparts and verified full decode, dimensions, 876 frames at 24/1 fps, colour tags, the base and counterpart hashes, and audio identity with v4 (coded packets and decoded PCM). Lit shots: Real-ESRGAN 2x of the textless takes blended half-and-half with a plain resize, with the typed lines drawn natively at the finishing size; darks drawn natively. A full decode found every frame of the first four darks at exact black and the film ending on black. Mean colour of sampled frames matches v4 within one level of 255. Listening and artistic approval are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "5d07768164b7153910aa14d12cc56d2652a4177860e187bd5d3fab924f546333",
+      "recordedDate": "2026-11-20",
+      "eventDate": "2026-11-20",
+      "evidence": "The director supplied the published YouTube URL on 2026-11-20 after receiving the v4-4k master and its description, and said the description had minor changes. The description file had been edited before publication (the viewing note, the AI-generated disclosure paragraph and one tool name in the credits removed); that edited text is recorded as the final description. Recorded as user-confirmed; a fetch of the public page returned the title 'Face Down' but not the description or date, so the platform publication date and published text are not independently asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/MutPGYEedWA",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-20",
+    "artifactVersion": "v4-4k"
+  },
+  "archive": {
+    "manifestPath": "data/workspace-archive/face-down-v1/workspace-archive-manifest.json",
+    "inventorySha256": "6585504d9f55ba8fb5d62f7ce5f044a1150b498ee3f717ce789b716504bd7290",
+    "verifiedDate": "2026-11-20"
+  }
+}

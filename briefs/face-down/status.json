@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 1,
+  "projectId": "face-down",
+  "title": "FACE DOWN",
+  "updated": "2026-11-20",
+  "format": "9:16 · about 37 s · phone-first · five lit shots and five darks",
+  "phase": "published",
+  "logline": "A day seen from inside a phone: we see only while the screen is lit, a face from below for the few seconds it takes to type one line. The lines get shorter, the dark between them gets longer and clearer, and the last dark is the phone laid face down, mid-sentence, because someone spoke to her.",
+  "overall": "Published on YouTube on 2026-11-20: the 4K finishing master of v4 (2160 by 3840, 36.5 s) with the director’s edit of the description. The player below carries the 720 review copy of v4, the same cut. The agent checked frames and measurements only. Four questions on this page were never ruled on and the film went out as built: the line position, the video-take sound in the last two darks, the locally built turn and no title card.",
+  "next": "Nothing outstanding. The workspace is archived with the 4K master, sound sources, references, recipes and records.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "morning",
+      "number": "1",
+      "title": "Morning",
+      "status": "accepted",
+      "summary": "She wakes and reports. The first dark is two seconds through a pocket: out of the door and running.",
+      "segments": [
+        {
+          "id": "s1",
+          "title": "S1 Her face in grey window light, eyes on us",
+          "status": "accepted",
+          "detail": "In the cut (take frames 60-166, 4.4 s). Eyes down on us, lips closed, thumb tips working at the bottom edge; the take ends with its own swing to the ceiling. The head of the take (a yawn, both hands to her face) is left out. The line types at about ten characters a second and lifts off before the swing.",
+          "image": "refs/A1.png"
+        },
+        {
+          "id": "d1",
+          "title": "D1 Black: pocket, the door, the first running steps",
+          "status": "accepted",
+          "detail": "In the cut (2.0 s). One generated take: a door thud and running steps, low-passed as through a pocket. The take put a zip earlier than the door; laces are not in it."
+        }
+      ],
+      "image": "refs/A1.png"
+    },
+    {
+      "id": "run",
+      "number": "2",
+      "title": "The run",
+      "status": "accepted",
+      "summary": "Outdoors, flushed and grinning at nothing. Then pocket and bag: the commute and the office.",
+      "segments": [
+        {
+          "id": "s2",
+          "title": "S2 Bright sky, breathless grin, one thumb",
+          "status": "accepted",
+          "detail": "In the cut (take frames 30-104, 3.1 s). Flushed, panting grin; she looks up and away before the cut. A slight top-anchored zoom removes the edge of a phone the take drew at the bottom.",
+          "image": "refs/A2.png"
+        },
+        {
+          "id": "d2",
+          "title": "D2 Black: transit, a lift, a room of low voices",
+          "status": "accepted",
+          "detail": "In the cut (3.5 s). Train carriage and brakes, then a lift chime, a door and a room murmur; two takes joined by a crossfade."
+        }
+      ],
+      "image": "refs/A2.png"
+    },
+    {
+      "id": "desk",
+      "number": "3",
+      "title": "The desk",
+      "status": "review",
+      "summary": "Jaw set, already looking back at the monitor. The long dark holds the typing, the drive home in rain and a hot pan.",
+      "segments": [
+        {
+          "id": "s3",
+          "title": "S3 Flat office light, monitor glow, eyes flick away",
+          "status": "review",
+          "detail": "In the cut (take frames 10-72, 2.6 s). Jaw set, lips closed; her eyes flick away and the phone goes down on its own swing. The line now reads “Not finishing by noon.” at the director’s request; it is typed faster (about sixteen characters a second) so that it is sent before the phone starts down. Needs the director’s eye on the typing speed.",
+          "image": "refs/A3b.png"
+        },
+        {
+          "id": "d3",
+          "title": "D3 Black: typing; rain on a car roof; a door; a hot pan",
+          "status": "review",
+          "detail": "In the cut (3.8 s). Desk typing, then straight into rain and wipers in the car; a door; a hot pan. There is no “yes”: the director found the first one too breathy and the replacement voice not right, and cut the word and the pause before it. The dog is still missing."
+        }
+      ],
+      "image": "refs/A3b.png"
+    },
+    {
+      "id": "kitchen",
+      "number": "4",
+      "title": "The kitchen",
+      "status": "accepted",
+      "summary": "Mid-laugh at someone beside her; a glance down and gone. Then dinner heard from the countertop.",
+      "segments": [
+        {
+          "id": "s4",
+          "title": "S4 Warm light, steam, a glance down",
+          "status": "accepted",
+          "detail": "In the cut (take frames 22-94, 3.0 s). Laughing at someone beside her, a glance down, away again. Cut two frames before the take puts a literal camera in her hand.",
+          "image": "refs/A4.png"
+        },
+        {
+          "id": "d4",
+          "title": "D4 Black: plates, two voices, a laugh that keeps going",
+          "status": "accepted",
+          "detail": "In the cut (3.5 s). Sound of a video take, picture discarded: a man says “I’m just saying, it’s a classic move.” and she laughs and keeps laughing. A generated-effects alternate is mixed separately for comparison. No tap or stairs."
+        }
+      ],
+      "image": "refs/A4.png"
+    },
+    {
+      "id": "night",
+      "number": "5",
+      "title": "Night",
+      "status": "review",
+      "summary": "Two words, a voice from across the room, and the phone goes face down still lit. Seven seconds of a room we can hear and cannot see.",
+      "segments": [
+        {
+          "id": "s5",
+          "title": "S5 Bedside lamp; she looks up, smiles and turns the phone over",
+          "status": "review",
+          "detail": "In the cut (take frames 14-164 plus eight local frames, 6.6 s). She types two words, stops; “Hey there.” from across the room; she looks up and smiles with closed lips; the phone turns. The take would not go face down (it showed the room and a phone instead), so the last third of a second is built locally: the take’s own swing continued under motion blur, a wood plate rushing up, black. Needs the director’s eye in motion.",
+          "image": "refs/A5b.png"
+        },
+        {
+          "id": "d5",
+          "title": "D5 Black by contact: the unfinished line stays on the glass",
+          "status": "review",
+          "detail": "In the cut (4.0 s). Sound of a video take, picture discarded, running on from “Hey there.”: in the dark he says “Long day, huh?”, she says “Yeah.”, and the sound ends there at 35.8 s; the take’s small laugh and “Come here.” are cut at the director’s request. The unsent line stays; the cursor stops blinking and holds from about 35.8 s; the line dims out from 36.8 s and the last half second is silent black."
+        }
+      ],
+      "image": "refs/A5b.png"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "line-position",
+      "title": "Where the typed line sits",
+      "status": "open",
+      "detail": "The brief puts the line in the lower third. The Shorts interface covers roughly the bottom quarter and the right edge, so the draft sets it just below the middle of the frame, left-aligned. Say if it should go lower."
+    },
+    {
+      "id": "spoken-lines",
+      "title": "The takes wrote ordinary dialogue",
+      "status": "decided",
+      "detail": "The brief allows an ordinary legible sentence, uncaptioned, and also says the only words are the five lines and one “yes”. The sound takes returned “You know it is.”, “I’m just saying, it’s a classic move.”, “Hey there.”, “Long day, huh?”, “Yeah.” and “Come here.” The question “Long day, huh?” lands just after the unsent “Today was” goes dark, and her answer is spoken in the dark, never on camera. The agent would keep them; the alternate soundtrack has wordless versions of both darks. Director, 2026-11-19: “Please cut the ‘Come here’ line in D5. End it on ‘Yeah.’” Done in v2; the other volunteered lines stay unless the director says otherwise."
+    },
+    {
+      "id": "dark-voices",
+      "title": "Video-take sound or generated effects for the last two darks",
+      "status": "open",
+      "detail": "The agent cannot listen, so it could not run the brief’s by-ear test. v1 uses the video-take sound. An alternate soundtrack with the generated-effects takes is rendered for an A/B by ear; on measurement the generated bedroom is very quiet and has no voices."
+    },
+    {
+      "id": "the-turn",
+      "title": "The face-down turn is a local construction",
+      "status": "open",
+      "detail": "A third of a second: the take’s own swing continued, a wood plate, black by contact, no cut. If it does not read in motion, the options are a retake of the bedside shot or a simpler blur straight to black."
+    },
+    {
+      "id": "line-dims",
+      "title": "The line dims out before the end",
+      "status": "decided",
+      "detail": "Agent’s addition: one second before the end the unsent line fades, as a screen finally sleeping, so the film ends on plain black. Remove it to hold the line to the last frame as the brief has it. Director, 2026-11-19: “You can keep the fade to black.” Kept in v2."
+    },
+    {
+      "id": "length",
+      "title": "Length",
+      "status": "open",
+      "detail": "v4 runs 36.5 s against the brief’s 38 (v1 was 39.9 s): the last dark is 4.0 s and the long dark 3.8 s."
+    },
+    {
+      "id": "the-lines",
+      "title": "The five lines",
+      "status": "decided",
+      "detail": "Built as written in the brief. The wording is replaceable at no generation cost. Director, 2026-11-19: “Update the ‘Not by noon’ text … to read ‘Not finishing by noon.’” Done in v3; the other four lines stand as written."
+    },
+    {
+      "id": "title-card",
+      "title": "A title card",
+      "status": "open",
+      "detail": "None in the draft; the film ends on the black, as the brief has it."
+    },
+    {
+      "id": "yes-voice",
+      "title": "The new “Yes.”",
+      "status": "decided",
+      "detail": "Director, 2026-11-19: “It reads too breathy right now. Make it a more neutral version using the same woman’s voice.” v3 has a plain spoken take from a stock voice, the nearest of six by pitch to her “Yeah.”, with a falling, statement contour. If it does not sound like her, the options are another of the six, or a short quiet-room voice session to build a proper voice for her (a paid step). Director on v3, 2026-11-19: “The voice isn’t quite right. Let’s just cut that. Keep the typing sounds after the fade to black in K3, then just trim that black section before the ‘Yes.’” Done in v4: no “yes” in the film."
+    },
+    {
+      "id": "finish-4k",
+      "title": "The 4K finish",
+      "status": "decided",
+      "detail": "Director, 2026-11-20: “4k upscale please.” Built from v4 as v4-4k. On these close faces the upscaling model alone etched the skin and hair, so the agent blended it half-and-half with a plain resize; say if the model alone is preferred."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-18",
+      "text": "Brief written at the director's open invitation."
+    },
+    {
+      "date": "2026-11-18",
+      "text": "Authorized for a complete draft. Workspace and ledger opened; character reference made (one chained correction); five shot anchors requested."
+    },
+    {
+      "date": "2026-11-18",
+      "text": "Seven takes generated at the first attempt, none filtered (five lit shots, two sound-only takes). Darks, typed lines, the turn and the mix built locally. Draft v1 assembled for review; an alternate soundtrack kept for the last two darks."
+    },
+    {
+      "date": "2026-11-19",
+      "text": "Director’s first notes on v1: end the last dark on “Yeah.”, cut “Come here.”, keep the fade to black. Draft v2 built locally (37.75 s), no generation."
+    },
+    {
+      "date": "2026-11-19",
+      "text": "Director’s notes on v2: a more neutral “yes” in the long dark and the desk line changed to “Not finishing by noon.” Draft v3 built: one new spoken word, the desk shot re-rendered locally."
+    },
+    {
+      "date": "2026-11-19",
+      "text": "Director’s note on v3: cut the “Yes.” and trim the long dark to the typing. Draft v4 built locally (36.5 s), no generation."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "The director asked for the 4K finish of v4. Finishing master v4-4k built and verified (same frames, same soundtrack); description drafted. Not published."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director published the 4K master on YouTube and supplied the link: https://youtube.com/shorts/MutPGYEedWA. Post-publication closeout run."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-18",
+      "title": "Draft v1",
+      "film": "final/v1/film.mp4",
+      "poster": "final/v1/film.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 958,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native 1080 by 1920 review film; technical checks only (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames. Real-time listening and artistic approval are the director’s.",
+      "segments": [
+        {
+          "label": "L1",
+          "shot": "S1",
+          "frame": 0,
+          "frames": 106,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K1",
+          "shot": "D1",
+          "frame": 106,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L2",
+          "shot": "S2",
+          "frame": 154,
+          "frames": 74,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K2",
+          "shot": "D2",
+          "frame": 228,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L3",
+          "shot": "S3",
+          "frame": 312,
+          "frames": 62,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K3",
+          "shot": "D3",
+          "frame": 374,
+          "frames": 122,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L4",
+          "shot": "S4",
+          "frame": 496,
+          "frames": 72,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K4",
+          "shot": "D4",
+          "frame": 568,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L5",
+          "shot": "S5",
+          "frame": 652,
+          "frames": 158,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K5",
+          "shot": "D5",
+          "frame": 810,
+          "frames": 148,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-19",
+      "title": "Draft v2",
+      "film": "final/v2/film.mp4",
+      "poster": "final/v2/film.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 906,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native 1080 by 1920 review film; technical checks only (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames. Real-time listening and artistic approval are the director’s.",
+      "segments": [
+        {
+          "label": "L1",
+          "shot": "S1",
+          "frame": 0,
+          "frames": 106,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K1",
+          "shot": "D1",
+          "frame": 106,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L2",
+          "shot": "S2",
+          "frame": 154,
+          "frames": 74,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K2",
+          "shot": "D2",
+          "frame": 228,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L3",
+          "shot": "S3",
+          "frame": 312,
+          "frames": 62,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K3",
+          "shot": "D3",
+          "frame": 374,
+          "frames": 122,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L4",
+          "shot": "S4",
+          "frame": 496,
+          "frames": 72,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K4",
+          "shot": "D4",
+          "frame": 568,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L5",
+          "shot": "S5",
+          "frame": 652,
+          "frames": 158,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K5",
+          "shot": "D5",
+          "frame": 810,
+          "frames": 96,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-11-19",
+      "title": "Draft v3",
+      "film": "final/v3/film.mp4",
+      "poster": "final/v3/film.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 906,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native 1080 by 1920 review film; technical checks only (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames. Real-time listening and artistic approval are the director’s.",
+      "segments": [
+        {
+          "label": "L1",
+          "shot": "S1",
+          "frame": 0,
+          "frames": 106,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K1",
+          "shot": "D1",
+          "frame": 106,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L2",
+          "shot": "S2",
+          "frame": 154,
+          "frames": 74,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K2",
+          "shot": "D2",
+          "frame": 228,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L3",
+          "shot": "S3",
+          "frame": 312,
+          "frames": 62,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K3",
+          "shot": "D3",
+          "frame": 374,
+          "frames": 122,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L4",
+          "shot": "S4",
+          "frame": 496,
+          "frames": 72,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K4",
+          "shot": "D4",
+          "frame": 568,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L5",
+          "shot": "S5",
+          "frame": 652,
+          "frames": 158,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K5",
+          "shot": "D5",
+          "frame": 810,
+          "frames": 96,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v4",
+      "date": "2026-11-19",
+      "title": "Draft v4",
+      "film": "final/v4/film.mp4",
+      "poster": "final/v4/film.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 876,
+      "width": 1080,
+      "height": 1920,
+      "note": "Native 1080 by 1920 review film; technical checks only (full decode, frame count, source hashes, loudness). The player carries a 720 by 1280 copy with the same frames. Real-time listening and artistic approval are the director’s.",
+      "segments": [
+        {
+          "label": "L1",
+          "shot": "S1",
+          "frame": 0,
+          "frames": 106,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K1",
+          "shot": "D1",
+          "frame": 106,
+          "frames": 48,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L2",
+          "shot": "S2",
+          "frame": 154,
+          "frames": 74,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K2",
+          "shot": "D2",
+          "frame": 228,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L3",
+          "shot": "S3",
+          "frame": 312,
+          "frames": 62,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K3",
+          "shot": "D3",
+          "frame": 374,
+          "frames": 92,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L4",
+          "shot": "S4",
+          "frame": 466,
+          "frames": 72,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K4",
+          "shot": "D4",
+          "frame": 538,
+          "frames": 84,
+          "sourceFrame": 0
+        },
+        {
+          "label": "L5",
+          "shot": "S5",
+          "frame": 622,
+          "frames": 158,
+          "sourceFrame": 0
+        },
+        {
+          "label": "K5",
+          "shot": "D5",
+          "frame": 780,
+          "frames": 96,
+          "sourceFrame": 0
+        }
+      ]
+    }
+  ]
+}

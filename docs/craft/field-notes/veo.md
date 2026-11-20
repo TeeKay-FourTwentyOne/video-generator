@@ -453,3 +453,27 @@ and drifts after it, while a take's frame 0 matches its first-frame anchor to a 
 take ends on the same anchor, scan its tail for the closest frame rather than using the last
 one, and cut there. The director judged the measured cut seamless.
 Source: claude-code · Every Way Home · 2026-11-04
+
+### A phone's-eye view of a face: the take draws the hands, the swing away, and sometimes the device
+FACE DOWN (five Quality 9:16 takes with native audio from low, steep, from-below face anchors with the room in frame; none
+filtered). "The camera is held in her own two hands below her chin; hands stay out of frame" still returned thumb tips or typing
+fingers at the bottom edge in four of five takes (usable: they read as the typing), and in one the dark top edge of a phone
+(removed with a 1.09 top-anchored zoom). "Only in the final second she lowers the camera and the view swings off her face
+across the ceiling" was delivered on time in all four takes that asked for it: a real motion-blurred swing to cut to black on.
+The words "puts the camera down" and "turns the camera over" made a literal camera body or phone appear in her hand a few
+frames into the swing; the usable swing was the first 6 to 10 frames. A waking face opened with a yawn and both hands rubbing
+the eyes for two seconds before settling into a closed-mouth typing hold; no take spoke or mouthed words.
+**Apply:** for a device point of view, ask for the lowering by name and cut inside the first frames of the swing; call the
+device "the lens" or "the view", never "the camera" or "the phone"; expect hands at the bottom edge and plan the overlay or a
+small zoom around them; plan a face-down landing as a local construction (sweep of the last real frame, a surface plate, black).
+Source: claude-code · Face Down · 2026-11-18
+
+### A sound-only take writes the scene's dialogue, and its pauses are places to cut
+Two text-to-video takes bought only for their audio (a dinner, a bedroom) returned ordinary legible lines at once ("I'm just
+saying, it's a classic move.", "Hey there." ... "Long day, huh?" "Yeah." "Come here."), with near-silent room between phrases.
+Splitting the bedroom take in the 0.8 s of room after "Hey there." let the greeting play under the lit shot and the rest in the
+dark after it, with no audible join on the measurements. Whisper's segment stamps put two phrases in one span; the per-frame
+RMS table and a spectrogram found the real phrase boundaries.
+**Apply:** when a dark or off-screen scene needs people being easy with each other, a sound-only take is worth its seconds;
+find phrase boundaries on the envelope, not the transcript stamps, and check where each line lands against the picture.
+Source: claude-code · Face Down · 2026-11-18

@@ -295,3 +295,24 @@ Source: claude-code · Fixed Point · 2026-11-15
 - Scheduled story events (a shape change every few seconds) read as off the beat unless each one is snapped to a measured strong hit. Pick the hits from the combined drum onsets, then choose a subset by hand for the pacing.
 - For a film that is code over a few generated stills, render the 4K from the recipe at 2x and give `film finish` that render as the counterpart. For the stills, Lanczos plus grain synthesised at the target size held the gouache look; Real-ESRGAN (anime model) flattened it into cels on 100 percent crops.
 - `film finish`, like `assemble`, refuses on its first pass for a new local counterpart: run `clips analysis process-project` and finish again.
+
+### Ask the effects model for the clean scene and muffle it yourself
+ElevenLabs effects described as "recorded by a phone inside a pocket" or "inside a bag" came back at -37 to -45 LUFS with
+peaks near -20 dBFS; the same scenes asked for as loud, close, clear recordings came back at -14 to -21 LUFS and took a local
+low-pass (750 Hz pocket, 1.1 to 1.9 kHz bag, open on a desk) without losing their events. A one-take scene also drops items:
+of "door, dog's nails, keys, pan" the take gave the door and the pan with silence between.
+**Apply:** describe the place and the action, not the microphone; build the perspective locally; read the envelope of every
+take before promising an event to the cut.
+Source: claude-code · Face Down · 2026-11-18
+
+### Upscaling close faces: blend the model with a plain resize, and check the colour matrix
+On five from-below face shots at 1080 by 1920, Real-ESRGAN (anime model, 2x) alone etched pores, lashes and flyaway hair
+into hard lines on 100 percent crops; a half-and-half blend with a plain resize of the same frames kept the added edge
+definition without the etching. Text and black were never sent through the model: the typed lines and the darks were drawn
+natively at the finishing size over textless upscaled plates. Separately, the upscaler had been encoding its frames with the
+BT.601 matrix and no colour tags, so an HD player showed reds and greens about five levels high against the native cut; the
+4K was built by decoding those files as BT.601, and `tools/upscale.py` now converts and tags BT.709 (and decodes untagged HD
+sources by the same convention).
+**Apply:** render lit plates without text, upscale, composite text at the target size; judge the blend on full-size crops of
+skin and hair; compare the mean colour of sampled finished frames with the native cut before delivery.
+Source: claude-code · Face Down · 2026-11-20

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4b094e1794957ea7ee4528fc97321a07a304b32bdcfa76ec698b9aceeaee82e2",
+  "sha256": "4b094e1794957ea7ee4528fc97321a07a304b32bdcfa76ec698b9aceeaee82e2",
+  "bytes": 5500426,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "face-down"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic handheld footage looking steeply up from chest height at a woman in her late forties with short dark curly greying hair, a wide lens close to her face, the underside of her jaw and chin nearest the lens. The camera is held in her own two hands just below her chin; her hands and thumbs stay out of frame below the bottom edge for the whole shot, and the frame drifts and corrects a little, the way a hand does. Muted colors, soft contrast, real skin texture, nothing staged. She sits up in bed at night in a faded navy sleep shirt, tired and soft, lit on one side by a small warm bedside lamp, the rest of the room dark. She looks down into the lens and types slowly with her thumbs, her lips closed, for three seconds. Then she stops typing and holds still. Then she lifts her head and looks up over the top of the camera at someone across the room, and a slow warm smile opens on her face; she does not speak. Still looking at them and smiling, never looking back at the lens, she turns the camera over and lays it face down on the nightstand: the view swings away from her face, sweeps past the glowing lamp, the wood of the nightstand rushes up to the lens and the picture goes completely black and stays black. Audio: a very quiet bedroom at night, a rustle of bedding, a soft knock as the camera is set down on wood. No speech. No music. No on-screen text, no captions, no interface, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_19a86edf876ae7eb4fd670e2d71da1ba257e0857fefd029f4f45096260fd81f3",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 4197222194,
+      "createdAt": "2026-11-19T05:56:41.770Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "eedf895a4dd78c8a4f4c5b2795bd2aaf933c5ed2fee74f7e3bea182302935e89",
+          "bytes": 1239548,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ad8049b6957b0f177eb492bf674bc9b2c3b8fdb2f524681f136cb85aeb98ea89"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

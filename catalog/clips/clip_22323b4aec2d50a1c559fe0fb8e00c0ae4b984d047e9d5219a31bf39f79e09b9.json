@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_22323b4aec2d50a1c559fe0fb8e00c0ae4b984d047e9d5219a31bf39f79e09b9",
+  "sha256": "22323b4aec2d50a1c559fe0fb8e00c0ae4b984d047e9d5219a31bf39f79e09b9",
+  "bytes": 3792730,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "face-down"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage in a quiet bedroom at night lit by one small warm bedside lamp, seen from a low fixed camera on the nightstand beside the bed. A woman in her late forties with short dark curly greying hair, in a faded navy sleep shirt, sits up in bed. From across the room a man of about fifty in a grey t-shirt, with a low, warm voice, says something to her kindly as he walks over; she answers him softly, and he gets into the other side of the bed, the sheets and duvet rustling. He murmurs something and she gives one short quiet laugh. She reaches over and switches off the lamp with a click and the room goes dark. In the dark there is only the rustle of the duvet and two people's slow breathing settling toward sleep. Audio: close and clear in a small quiet room: the low voices, the sheets, the short laugh, the lamp switch, the breathing. The camera is fixed and does not move. No music. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_c96fb4a08582b2bcdc0243b52182265692d424f6d040366e4d23b531a5de5ad5",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 212579210,
+      "createdAt": "2026-11-19T05:56:05.675Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "text-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [],
+      "snapshotSha256": "265df851974b1ce4bc77d4207691d03d4458e55c5144c06378f91b5bd57759ff"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

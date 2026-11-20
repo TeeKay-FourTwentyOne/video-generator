@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_66bb95f6aba0790217ffe156e1d64ad697e2b446f3045cd58f6ff44df036753e",
+  "projectId": "face-down",
+  "editVersion": "finish/v4-4k",
+  "segmentIndex": 4,
+  "shotId": "L3",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 62,
+    "fps": 24
+  },
+  "timelineStartFrame": 312,
+  "outputSha256": "5d07768164b7153910aa14d12cc56d2652a4177860e187bd5d3fab924f546333",
+  "schemaVersion": 1,
+  "id": "use_a5f3aa61b502994a678500451d258b5f3bc7a961cb24e61a14e7ef35f6cc4d07"
+}

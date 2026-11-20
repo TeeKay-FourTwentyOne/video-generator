@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_5d530a488e4b9348239d11d847ee5f5e5a510ec264b53f0f4e36423acda75a95",
+  "sha256": "5d530a488e4b9348239d11d847ee5f5e5a510ec264b53f0f4e36423acda75a95",
+  "bytes": 16372451,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "face-down"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic handheld footage looking steeply up from chest height at a woman in her late forties with short dark curly greying hair, a wide lens close to her face, the underside of her jaw and chin nearest the lens. The camera is held in her own two hands just below her chin; her hands and thumbs stay out of frame below the bottom edge for the whole shot, and the frame drifts and corrects a little, the way a hand does. Muted colors, soft contrast, real skin texture, nothing staged. She has just finished a run and stands outdoors under a bright open morning sky, in a coral-red running top, her face flushed and wet with sweat, her chest heaving. She is out of breath and grinning, a wide unguarded breathless grin that is not for the camera; she glances down into the lens, taps a few times quickly with one thumb, then lifts her eyes and looks away over the top of the camera at the street, still grinning and catching her breath. She only pants; she does not speak or mouth words. Only in the final second she lowers the camera away toward her side, and the view swings quickly off her face and across the bright sky. Audio: open air, her hard breathing, a bird nearby, a street far off. No speech, no voices. No music. No on-screen text, no captions, no interface, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_12576cfa31efc1a930bd64f18d1671efc57110f49fc73d271a13e68dd4781ba0",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3726895042,
+      "createdAt": "2026-11-19T05:56:00.798Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "983c11bb97e1f64d35566dac541eefce8b4c5a5c6b14dd87e382ea27102950f0",
+          "bytes": 1596757,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "3b09a653f0f51582a27dd495982c02395c6d9f620a109e73dae39dd1a99b61a3"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

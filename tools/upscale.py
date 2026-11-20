@@ -77,13 +77,31 @@ def get_video_info(video_path):
     return stream["width"], stream["height"], fps, float(stream.get("duration") or info["format"]["duration"])
 
 
+def source_matrix(video_path):
+    """Matrix to decode the source with: its tag, else the player convention
+    (BT.709 for HD sizes, BT.601 below), since swscale alone assumes BT.601."""
+    stream = next(s for s in probe(video_path)["streams"] if s["codec_type"] == "video")
+    tag = stream.get("color_space")
+    if tag == "bt709":
+        return "bt709"
+    if tag in ("smpte170m", "bt470bg"):
+        return "bt601"
+    return "bt709" if max(stream["width"], stream["height"]) >= 1280 else "bt601"
+
+
 def encode_command(frames_dir, input_path, output_path, fps_str, crf):
     return [
         "ffmpeg", "-nostdin", "-n", "-framerate", fps_str,
         "-i", str(frames_dir / "frame_%05d.png"), "-i", str(input_path),
         "-map", "0:v:0", "-map", "1:a?", "-map_metadata", "1",
         "-c:v", "libx264", "-crf", str(crf), "-preset", "slow",
-        "-pix_fmt", "yuv420p", "-vf", "setsar=1", "-fps_mode", "passthrough",
+        # Without an explicit matrix swscale encodes RGB frames as BT.601 and
+        # leaves the file untagged, so HD players (which assume BT.709) show
+        # shifted reds and greens. Encode and tag BT.709 limited range.
+        "-pix_fmt", "yuv420p",
+        "-vf", "scale=out_color_matrix=bt709:out_range=tv,setsar=1",
+        "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
+        "-color_range", "tv", "-fps_mode", "passthrough",
         "-c:a", "copy", "-movflags", "+faststart", str(output_path),
     ]
 
@@ -154,6 +172,7 @@ def main():
         run_checked([
             "ffmpeg", "-nostdin", "-n", "-i", str(input_path),
             "-map", "0:v:0", "-fps_mode", "passthrough",
+            "-vf", f"scale=in_color_matrix={source_matrix(input_path)}",
             str(frames_src / "frame_%05d.png"),
         ])
         frames = sorted(frames_src.glob("frame_*.png"))

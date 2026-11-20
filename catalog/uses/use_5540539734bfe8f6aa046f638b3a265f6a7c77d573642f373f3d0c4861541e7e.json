@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_d350788ce00a25d9258be26aa7367382f0b9c23a432f79a56f357b1f196e77a7",
+  "projectId": "face-down",
+  "editVersion": "edit/v2",
+  "segmentIndex": 8,
+  "shotId": "L5",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 158,
+    "fps": 24
+  },
+  "timelineStartFrame": 652,
+  "outputSha256": "77496c250f4b3b838e827aa0a84d2357e33c2e0001a5f67f04d8e97659760c53",
+  "schemaVersion": 1,
+  "id": "use_5540539734bfe8f6aa046f638b3a265f6a7c77d573642f373f3d0c4861541e7e"
+}

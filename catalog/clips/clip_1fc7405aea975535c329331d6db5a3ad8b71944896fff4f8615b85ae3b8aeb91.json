@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_1fc7405aea975535c329331d6db5a3ad8b71944896fff4f8615b85ae3b8aeb91",
+  "sha256": "1fc7405aea975535c329331d6db5a3ad8b71944896fff4f8615b85ae3b8aeb91",
+  "bytes": 4579919,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "face-down"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Naturalistic footage in a warm home kitchen in the evening, seen from a low fixed camera resting on the countertop a few steps from a small kitchen table. A woman in her late forties with short dark curly greying hair, in a pale blue shirt with the sleeves pushed up, and a man of about fifty with a low, warm voice sit at the table eating dinner. They talk easily and naturally with each other in ordinary conversational voices, the way people do who have known each other for years, both clearly audible, sometimes overlapping; he says something dry and she laughs, a real laugh that keeps going while he goes on talking. A dog lies on the floor near the table. Audio: forks and knives on plates, a glass set down, the two voices in easy conversation, her long laugh, the quiet hum of the kitchen. The camera is fixed and does not move. No music. No on-screen text, no captions, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4b8372eaac69f1d970f663ba4bb2a4a58b88832e2422d720a2d3dc627d5d6d00",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2057320727,
+      "createdAt": "2026-11-19T05:56:04.960Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "text-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [],
+      "snapshotSha256": "ddab7bbc2960c3f88f6e9706a847f5f27e1ee5d399a91867d366b3054e06252c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
