@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_958bf4db57c1f3cb2e8476ee10b754c71a83d1013a47b537bfebb8880953a112",
+  "sha256": "958bf4db57c1f3cb2e8476ee10b754c71a83d1013a47b537bfebb8880953a112",
+  "bytes": 6881384,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a quiet scene on the practical set of a warm, old-fashioned television space adventure: the Captain alone in his softly lit quarters, in dress uniform, having just finished working on a formal speech of respect with the ship's unseen computer.\n\nFor the first two seconds he stays as he is, eyes lowered, mouth closed, listening to a kind remark that he alone can hear. His eyes lift from the tablet and a small private smile reaches his face, touched and a little surprised. Then, very quietly, he says two words. The Captain says: \"Thank you.\" He closes his mouth. For the rest of the shot he says nothing more at all: lips together, he lowers his eyes again and stands still in the hush of the room, breathing slowly. The camera holds still.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nIn this scene he speaks privately and softly, the same voice at low volume.\n\nHe speaks exactly two words, once, and is then silent to the end. The computer's remark is not heard. Sound: those two words and the very quiet hum of the room, then only the hum. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a4c594c8f8499f75a171636820af7ee1b3cf2138eadc9b7796614edbf62f96af",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 871678433,
+      "createdAt": "2026-11-21T03:06:04.706Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7258166c54c73451b74b9ecb1ab6067a92bc036117a7f9c45f84e519d691365f",
+          "bytes": 1492624,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "7c111fe788ce14519e04d8141134ec368ded07722af3315516b0ce3a62f13c58"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

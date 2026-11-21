@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_960481f98664f00c082bfec6fedfb8dc5124cffe0f839a2f5566bf81dd70db89",
+  "sha256": "960481f98664f00c082bfec6fedfb8dc5124cffe0f839a2f5566bf81dd70db89",
+  "bytes": 2822982,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a scene on the practical bridge set of a warm, old-fashioned television space adventure, played with complete sincerity. The set is washed in soft red stage lighting that pulses slowly.\n\nThe officer standing at the prop console studies its glowing panel, fingers moving over the controls, and reads out what it shows in an even, matter-of-fact voice, without looking up. The Tactical Officer says: \"They're charging weapons.\" He keeps working the panel, calm and focused. The camera holds steady with a slight handheld breath.\n\nTACTICAL OFFICER VOICE: A younger adult man with a clean mid-range tenor, neutral American English and a light, dry, focused timbre. Short, precise phrases with clipped professional diction and a brisk but natural pace. He reports information evenly at conversational volume, attentive and composed even under red alert, with no panic, swagger, gravel or theatrical emphasis. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nOnly the Tactical Officer speaks, and only that one line. Sound: the spoken line exactly as written, the low hum of the set and soft console tones. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_70878150d65841554abf9691747ee46021e327fa33a8718ba3ae045d7d6d4c33",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1329556745,
+      "createdAt": "2026-11-21T03:10:46.410Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "986ef78c0cac3efc2a4a52018a154bf51c1fb5ef6ea99df4e3be0cbe9c583ac6",
+          "bytes": 1414567,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "8de91dcd5860b30472912948cbc824d7669881df3776890543274bb1024d9a32"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

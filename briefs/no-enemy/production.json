@@ -3,19 +3,319 @@
   "projectId": "no-enemy",
   "title": "No Enemy",
   "kind": "film",
-  "status": "unknown",
-  "statusNote": "The retained production brief includes a final script, but no delivered edit is established.",
+  "status": "published",
+  "statusNote": "Published on YouTube; the director supplied the URL on 2026-11-21 (user-confirmed). A starship's computer stages a battle for its crew while its probe does the real work. Restarted in 9:16 portrait on 2026-11-20 with native Veo dialogue for the bridge crew, designed voices for the Reptile, Ship and Probe, voice-driven lamps on both craft, a three-cue score and a closing scene the director asked for. The director approved draft 6 and authorized its 4K finish on 2026-11-20, then found a uniform and hair mismatch on one shot in the Captain's quarters while uploading. Draft 7 replaces that shot with a take generated between a matched first and last frame; length, cut points and soundtrack timing are unchanged. The director judged a small remaining colour shift good enough for publication; v7-4k is the published master. The description recorded here is the text delivered with the master; the published page's text was not retrievable and is not asserted. Technical checks, approval, finishing authorization and publication are separate events; real-time listening is the director's and is not claimed by the agent. Archived 2026-11-21 under the standard retention: the 4K master, voices, score, effects, references, recipes, timelines, delivery records and QA are kept locally; the generated takes are in the private backup; native drafts, the unpublished draft 6 master, segment renders and derived mixes were removed.",
   "briefPath": "briefs/no-enemy/brief.md",
-  "artifacts": [],
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/no-enemy-v1-draft.mp4",
+      "sha256": "882a23c9660781b09fe1daa9d3ec1eb9a9ca6f9c295366b6a33378f2882b41a5",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1951,
+      "durationSeconds": 81.29166666666667,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v2",
+      "path": "final/no-enemy-v2-draft.mp4",
+      "sha256": "c1d3b8ba02d780ab60d7f2b37d3397e12bb36ef2e6ddee1b6ede1a8908cfc6ac",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1964,
+      "durationSeconds": 81.83333333333333,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v3",
+      "path": "final/no-enemy-v3-draft.mp4",
+      "sha256": "6dad5018376f4c14973c7ff3a195230b87132c9aeb1c87dd207a12c8287ffd2b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2013,
+      "durationSeconds": 83.875,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/no-enemy-v4-draft.mp4",
+      "sha256": "9e3272370b99ba92217d21dbf1be17711b68f280b504484f2ac2e75caa434950",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2190,
+      "durationSeconds": 91.25,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v5",
+      "path": "final/no-enemy-v5-draft.mp4",
+      "sha256": "de3e581e272a1e1d8c96f9129c87b2a3b2e849274dd2af4fbcd9008c956fd6eb",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2222,
+      "durationSeconds": 92.58333333333333,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v6",
+      "path": "final/no-enemy-v6-draft.mp4",
+      "sha256": "f6c5f64fd9bd770b0c93c23c2a584ca58b954f5e5e11788c0c2973c273b761bb",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2213,
+      "durationSeconds": 92.20833333333333,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v6-4k",
+      "path": "final/no-enemy-v6-4k.mp4",
+      "sha256": "43326aa5fed9d0d08f0d4d3e70ec70bd9502f95bf025c7d1df81aeb54695ac0f",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2213,
+      "durationSeconds": 92.20833333333333,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v7",
+      "path": "final/no-enemy-v7-draft.mp4",
+      "sha256": "22b62e62307e0f92734c58b40bddeb55a0891aff0728cf9308034b2ca64b5271",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2213,
+      "durationSeconds": 92.20833333333333,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v7-4k",
+      "path": "final/no-enemy-v7-4k.mp4",
+      "sha256": "6aedac9c86106a3e6d3573448330f2501a3bd679bde5ea3faf395c50121fa2ae",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 2213,
+      "durationSeconds": 92.20833333333333,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/description.txt",
+      "deliveryRecordPath": "final/delivery.json"
+    }
+  ],
   "production": {
-    "providers": [],
-    "credits": []
+    "providers": [
+      {
+        "purpose": "images",
+        "provider": "OpenAI built-in image generation"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "speech",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "speech",
+        "provider": "ElevenLabs"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Cast, ship and set design, first reference frames",
+        "model": "GPT-6 Astra",
+        "harness": "Codex"
+      },
+      {
+        "role": "Shot coverage, further reference frames, direction of takes, editing, sound and finishing",
+        "model": "Claude Fable 5.2",
+        "harness": "Claude Code"
+      }
+    ]
   },
-  "reviewEvents": [],
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v6",
+      "artifactSha256": "f6c5f64fd9bd770b0c93c23c2a584ca58b954f5e5e11788c0c2973c273b761bb",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-20",
+      "evidence": "Decoded 1080x1920, 2213 frames. The join review inspected the decoded frames either side of every boundary, with context strips for continuous-action joins and slowed ranges; three joins were refined and re-inspected. A local transcript of the final mix returned every scripted line in order. No real-time playback or listening by the agent.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v6",
+      "artifactSha256": "f6c5f64fd9bd770b0c93c23c2a584ca58b954f5e5e11788c0c2973c273b761bb",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-20",
+      "evidence": "The director on draft 6: “Better than I could have ever imagined. Take a bow. Then 4k upscale please.”",
+      "outcome": "approved"
+    },
+    {
+      "type": "finishing-authorization",
+      "artifactVersion": "v6",
+      "artifactSha256": "f6c5f64fd9bd770b0c93c23c2a584ca58b954f5e5e11788c0c2973c273b761bb",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-20",
+      "evidence": "The same message from the director asked for the 4K upscale of draft 6. Publication and source commits remained separate decisions.",
+      "outcome": "authorized"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v6-4k",
+      "artifactSha256": "43326aa5fed9d0d08f0d4d3e70ec70bd9502f95bf025c7d1df81aeb54695ac0f",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-20",
+      "evidence": "Real-ESRGAN 2x of the approved picture in four frame-exact parts joined by stream copy. Decoded 2160x3840, 2213 frames at 24/1 fps; frames either side of the part seams compared with native; audio packets identical to draft 6. No real-time playback by the agent.",
+      "outcome": "passed"
+    },
+    {
+      "type": "visual-review",
+      "artifactVersion": "v6-4k",
+      "artifactSha256": "43326aa5fed9d0d08f0d4d3e70ec70bd9502f95bf025c7d1df81aeb54695ac0f",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-21",
+      "evidence": "While uploading, the director found that the Captain's uniform showed more grey and his hair differed across one shot in the quarters (edit frames 1660 to 1880 against the frames either side) and asked for that shot to be regenerated. This master was not published.",
+      "outcome": "inspected"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v7",
+      "artifactSha256": "22b62e62307e0f92734c58b40bddeb55a0891aff0728cf9308034b2ca64b5271",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-21",
+      "evidence": "Draft 6 with the one shot replaced. Decoded 1080x1920, 2213 frames. Decoded picture hashes match draft 6 outside frames 1593 to 2020; within that range the frames outside the replaced shot differ only by re-encoding. The final mix is identical to draft 6 outside 69 to 79 seconds. The four affected joins were re-inspected. Fine-texture energy and mean colour of the uniform were measured against the preceding shot. No real-time playback or listening by the agent.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v7-4k",
+      "artifactSha256": "6aedac9c86106a3e6d3573448330f2501a3bd679bde5ea3faf395c50121fa2ae",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-21",
+      "evidence": "Frames 0 to 1107 reused from the draft 6 master, whose source frames are identical; frames 1108 to 2212 upscaled again with the same recipe; joined by stream copy. Decoded 2160x3840, 2213 frames at 24/1 fps; audio packets identical to draft 7; frames at the part seams and at both ends of the replaced shot compared with native. No real-time playback by the agent.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v7-4k",
+      "artifactSha256": "6aedac9c86106a3e6d3573448330f2501a3bd679bde5ea3faf395c50121fa2ae",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-21",
+      "evidence": "The director after watching: “There was still a little bit of a color shift, Veo just can't help it. Good enough for publication”.",
+      "outcome": "approved"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v7-4k",
+      "artifactSha256": "6aedac9c86106a3e6d3573448330f2501a3bd679bde5ea3faf395c50121fa2ae",
+      "recordedDate": "2026-11-21",
+      "eventDate": "2026-11-21",
+      "evidence": "The director supplied the published YouTube URL on 2026-11-21 after receiving the v7-4k master. Recorded as user-confirmed. A fetch of the public page returned the title “No Enemy” but not the description, date or duration, so the published text and platform date are not independently asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
   "legacyPaths": [
     {
       "path": "briefs/no_enemy_production_brief.md",
       "target": "briefs/no-enemy/brief.md"
     }
-  ]
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/no-enemy-v2",
+    "state": "archived-verified"
+  },
+  "decisionsPath": "briefs/no-enemy/decisions.md",
+  "supportingDocuments": [
+    {
+      "label": "Production status",
+      "path": "briefs/no-enemy/status.json"
+    },
+    {
+      "label": "Voice continuity",
+      "path": "briefs/no-enemy/voices.json"
+    },
+    {
+      "label": "Status page workflow",
+      "path": "briefs/no-enemy/status.md"
+    }
+  ],
+  "descriptionPath": "briefs/no-enemy/description.md",
+  "descriptionSha256": "b78ccf13f76d906e5a0e377454eaef9600187408df018ca07c36a1d9dfd350ce",
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/8ALQAQZkZBY",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-21",
+    "artifactVersion": "v7-4k"
+  },
+  "archive": {
+    "manifestPath": "data/workspace-archive/no-enemy-v2/workspace-archive-manifest.json",
+    "inventorySha256": "1c9bae9788b147fc7d787eee88edbc55083d7407317726c0196669229ed889b0",
+    "verifiedDate": "2026-11-21"
+  }
 }

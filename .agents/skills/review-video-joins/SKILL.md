@@ -26,6 +26,13 @@ not establish that two takes join well.
   half a second each side to start). Check pose, eye line, mouth/blink phase,
   shoulders, hands, props, camera movement, lighting and background edges.
   Inspect full resolution when proxies hide defects.
+- For a cut inside one scene that keeps the same person on both sides, measure
+  as well as look: `python tools/join-appearance.py FILM N --crop L,T,R,B`
+  compares mean luma, chroma and fine-texture energy of the same region (a
+  jacket, hair) in frames N−1 and N at full resolution. A regenerated or
+  restaged take can match in a 720p player and differ plainly at 4K. A flag is
+  a prompt to inspect the saved crops, not a verdict; a scene change will flag
+  and means nothing.
 - Review normal-speed context as well as stills. Matching poses can hide a
   pause, velocity reversal, repeated frame or restarted movement. If playback
   or listening is unavailable, retain a review clip and report that limitation.

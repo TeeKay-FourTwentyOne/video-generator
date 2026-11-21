@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6f14ca281547c7dae4b5dfbd047453b0b6f774c96eed4b7f21c71fde1d83dd36",
+  "sha256": "6f14ca281547c7dae4b5dfbd047453b0b6f774c96eed4b7f21c71fde1d83dd36",
+  "bytes": 4846558,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a scene on the practical bridge set of a warm, old-fashioned television space adventure, played with complete sincerity. The set is washed in soft red stage lighting that pulses slowly.\n\nThe officer stands alone at his prop console, one hand braced on its edge as if the deck has just shaken, the other moving quickly over the controls. He reads the panel, glances up toward the front of the bridge, past the camera, and gives a brisk routine report to his adult commanding officer, who is off screen. The Tactical Officer says: \"Hull breach, deck twelve.\" He looks back down and keeps working. He stays at the console the whole time. The camera holds with a slight handheld tremor.\n\nTACTICAL OFFICER VOICE: A younger adult man with a clean mid-range tenor, neutral American English and a light, dry, focused timbre. Short, precise phrases with clipped professional diction and a brisk but natural pace. He reports information evenly at conversational volume, attentive and composed even under red alert, with no panic, swagger, gravel or theatrical emphasis. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nOnly the Tactical Officer speaks, and only that one line. Sound: the spoken line exactly as written, the low hum of the set and soft console tones. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_10c795289d8024bef22580a913a84c83205d8ff2f317bda027f40caf4acaa8db",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3236072694,
+      "createdAt": "2026-11-21T03:06:57.594Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "986ef78c0cac3efc2a4a52018a154bf51c1fb5ef6ea99df4e3be0cbe9c583ac6",
+          "bytes": 1414567,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "93a3f3d92940408d313d344df50bd58848c7bdbfd8dddde112439bcf5993c155"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

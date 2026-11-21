@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4e7443dfd142c2d80e40cdb229fcc307d995d46bc421eeedbedd6e4e898170c1",
+  "sha256": "4e7443dfd142c2d80e40cdb229fcc307d995d46bc421eeedbedd6e4e898170c1",
+  "bytes": 15141026,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a quiet scene on the practical set of a warm, old-fashioned television space adventure: the Captain alone in his softly lit quarters, in dress uniform, rehearsing a formal speech of respect from the tablet in his hand.\n\nHe reads aloud from the tablet, quietly and carefully, trying the words out, half to himself. The Captain says: \"Met us as adversaries. We commit them to the dark as...\" He stops mid-sentence, unsatisfied with a word, lowers the tablet a little and looks up in thought, mouth closed. He stays like that, thinking, until the end. The camera holds still. The room is hushed.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nIn this scene he speaks privately and softly, the same voice at low volume.\n\nOnly the Captain speaks, and only those words. Sound: the spoken words exactly as written and the very quiet hum of the room. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_e9caf758cdeeb834565022ff9473a217aff8772085f64172e1fad8eb738b5652",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3378384808,
+      "createdAt": "2026-11-21T02:37:10.867Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "60186ed96fb26308932d91507db433eb1d4f9fa0cba50d97b966621e7b6fd647",
+          "bytes": 2089404,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c4125c299746aed907d218f704340ca77f5378d41ebf720f2dba81e630501b8e"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

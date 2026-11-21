@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_70609227bc13f0f6712f5d4e388662aa0949b7a0d12f61ff124ea7cba42d1f46",
+  "sha256": "70609227bc13f0f6712f5d4e388662aa0949b7a0d12f61ff124ea7cba42d1f46",
+  "bytes": 32632741,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a quiet scene on the practical set of a warm, old-fashioned television space adventure: the Captain alone in his softly lit quarters, in dress uniform, working on a formal speech of respect, talking with the ship's unseen computer.\n\nHe stands quietly, mouth closed, listening for two full seconds to a kind remark he alone can hear, eyes lifting slightly. A small private smile reaches his face, touched and a little surprised. Then, very quietly, almost to himself. The Captain says: \"Thank you.\" He closes his mouth, lowers his eyes, and stands still in the hush of the room, breathing, until the end. The camera holds still.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nIn this scene he speaks privately and softly, the same voice at low volume.\n\nOnly the Captain speaks, and only those words; the computer's replies are not heard. Sound: the spoken words exactly as written and the very quiet hum of the room. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_d90108a5c3ecc0057b0fd582c850f563847c0f67a18d51c2bc6570aec7af3771",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1041713678,
+      "createdAt": "2026-11-21T02:42:24.477Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "5124529ae0b4051ccdd17c895615290a117b6dca5c1b53db31aa9049425888b0",
+          "bytes": 3289636,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "eb47abb69738dfab80ee50f0e9d0e2604c0f2122ff0f7dec0f8d348351ed9061"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

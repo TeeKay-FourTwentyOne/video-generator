@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_01bc18f1178e056b0513110de8efd48c08df7a66638691b3276274fe9a1e90d6",
+  "sha256": "01bc18f1178e056b0513110de8efd48c08df7a66638691b3276274fe9a1e90d6",
+  "bytes": 7642438,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A light comic scene from a warm, old-fashioned television space adventure: adult actors on a practical starship lounge set, just after the Captain's formal speech to his crew.\n\nClose on the Captain, surrounded by admirers, a hand resting on his shoulder. He soaks in the attention: his pleased smile widens into a broad, delighted grin as he glances to the officer on one side. Then he turns his eyes directly into the camera lens, holds the look for a moment, and gives one slow, deliberate wink with a single eye, the other eye staying open, still grinning. He holds the grin, looking into the lens, until the end. He does not speak. The camera holds still.\n\nSound: soft happy murmurs of the officers beside him and the quiet room. No music, no narration, no clear spoken lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_8401dccda3dd8ea23e6463c763e396abf2c4d53353e72b9d351a1a624a6ef226",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 8742844,
+      "createdAt": "2026-11-21T04:04:26.929Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "b8aaf362025f3b8edb71034b2790f3a286799fa67bfd41360a303832dc029de1",
+          "bytes": 1515011,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "db7cab81bf24bad9b59d7b3e25a8c93dc0550fdc0763098ff23ab4a6b345b8fc"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

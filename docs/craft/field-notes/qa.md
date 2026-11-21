@@ -72,3 +72,17 @@ the subject action are below the sampled frames' resolution for the general scan
 **Apply:** on crowd wides, cut a dense strip of the edges at full resolution before accepting, or expect the
 director's watch to be the gate for background figures.
 Source: claude-code · October · 2026-10-08
+
+### A same-scene cut can pass by eye at review size and fail at 4K; measure the cloth
+NO ENEMY: one take in a three-shot scene came from a restaged anchor and carried a coarser, greyer uniform and
+slightly different hair. The join review inspected the frames either side of both cuts and passed them, the director
+approved the 720p review copy, and the mismatch was found only while uploading the 4K master. Measured on the jacket,
+fine-texture energy (standard deviation of luma minus a 2-pixel blur) was 2.4 times the previous shot's at the cut in
+and 0.38 times at the cut out, with mean luma and chroma within a few levels: a texture fault, invisible in a mean-colour
+check and at review size. After the retake the same cuts measured 1.2 and 0.84 times, and the director still saw a small
+colour shift, so the tool's default flags are a floor for looking, not a pass mark.
+**Apply:** on every cut that keeps one person in one scene, run `tools/join-appearance.py` on a clothing crop and a
+hair crop before native delivery, and look at the saved full-resolution crops side by side. Do it again on the takes
+before cutting them in when a shot is regenerated.
+Source: claude-code · No Enemy · 2026-11-21
+

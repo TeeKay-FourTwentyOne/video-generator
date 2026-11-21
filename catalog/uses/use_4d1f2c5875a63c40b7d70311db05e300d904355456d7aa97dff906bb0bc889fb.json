@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_fd211ab057f628fc7f573247f714ebd8873fa0a4b822710bb2a4c7d945aab103",
+  "projectId": "no-enemy",
+  "editVersion": "edit/v7",
+  "segmentIndex": 29,
+  "shotId": "S10a",
+  "status": "rendered",
+  "evidence": "custom-edit-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 30,
+    "length": 42,
+    "fps": 24
+  },
+  "timelineStartFrame": 2018,
+  "outputSha256": "22b62e62307e0f92734c58b40bddeb55a0891aff0728cf9308034b2ca64b5271",
+  "schemaVersion": 1,
+  "id": "use_4d1f2c5875a63c40b7d70311db05e300d904355456d7aa97dff906bb0bc889fb"
+}

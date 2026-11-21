@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_465f54a235817ff36ddecee8ed47b3be3af898f34507034faf73e149500c80ae",
+  "sha256": "465f54a235817ff36ddecee8ed47b3be3af898f34507034faf73e149500c80ae",
+  "bytes": 17182178,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a quiet scene on the practical set of a warm, old-fashioned television space adventure: the Captain alone in his softly lit quarters, in dress uniform, working on a formal speech of respect, talking with the ship's unseen computer.\n\nStill looking up in thought, he addresses the room, calm and unhurried. The Captain says: \"Computer. A better word than adversaries.\" He then closes his mouth and listens in silence for a full two seconds, eyes up, head tilting slightly, perfectly still, as an answer he alone can hear arrives. His face softens with recognition and he gives a small nod. The Captain says: \"Strangers. Yes.\" He closes his mouth, calmly raises the tablet from his side into both hands in front of his waist and looks down at it, then stays still, reading. The camera holds still. His appearance, hair and uniform stay exactly as in the opening frame throughout: soft natural image, smooth fine wool, soft silver-grey hair.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nIn this scene he speaks privately and softly, the same voice at low volume.\n\nOnly the Captain speaks, and only those words; the computer's replies are not heard. Sound: the spoken words exactly as written and the very quiet hum of the room. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_bed4db1ffc41bd2958dc6ecfc73caff7eeefb0f8ed07cfed3dcc61bf5bbbe0f4",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3254580405,
+      "createdAt": "2026-11-21T18:24:06.785Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "501df8ea3099400dd294e35cc2204a517e91a1b79a090d20e3001a8da7323d6d",
+          "bytes": 1700691,
+          "mimeType": "image/png"
+        },
+        {
+          "role": "last_frame",
+          "sha256": "f1e59c373f99cd4e0dea828128139a7f710371814ae40e8961dcabffcbdb1ea9",
+          "bytes": 1648907,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "8d2c5ed472bc4ae7852f8996972a479b04b194a1204a112c8832ebb762c43f20"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

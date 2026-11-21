@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_15f4912f31abfeee73b036bb36e6874e4c4b8089c3a1baead52eadd3dd5bf208",
+  "sha256": "15f4912f31abfeee73b036bb36e6874e4c4b8089c3a1baead52eadd3dd5bf208",
+  "bytes": 5646576,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A scene from a warm, old-fashioned television space adventure: adult actors on a practical starship bridge set, played with complete sincerity.\n\nClose on the Captain in his command chair, looking up and past the camera at the unseen viewscreen whose cool light is on his face. He holds perfectly still for a beat, composed. His chin lifts a fraction. Then, without raising his voice, he answers the screen with quiet finality. The Captain says: \"We will do neither.\" He closes his mouth and holds the look, unblinking. The officer standing far behind him is out of focus, silent and still. The camera pushes in almost imperceptibly.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nOnly the Captain speaks, and only that one line. Sound: the spoken dialogue exactly as written, the low hum of the bridge and soft console tones. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_6093169075d1db4890b21712c5346ed49948a217dba853f1e9122a8762f68a1f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3707159712,
+      "createdAt": "2026-11-21T01:47:28.752Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "aa835de04c6361f790191fa71c27b325141d701dee64063394035b8cad0ce4a7",
+          "bytes": 1538601,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "cbe8fdbf46cdd5281455bde216669d0fa7f059bc372ca1f2e34409bd3fd2e818"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -63,7 +63,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [Motion](motion/README.md) | published | — | [Brief](motion/brief.md) · [Description](motion/description.md) · [Decisions](motion/decisions.md) · [Record](motion/production.json) |
 | [Named Tensors](named-tensors/README.md) | delivered | ai-explains-ai | [Brief](named-tensors/brief.md) · [Decisions](named-tensors/decisions.md) · [Record](named-tensors/production.json) |
 | [Neptune in Aries](neptune-aries/README.md) | unknown | — | [Brief](neptune-aries/brief.md) · [Record](neptune-aries/production.json) |
-| [No Enemy](no-enemy/README.md) | unknown | — | [Brief](no-enemy/brief.md) · [Record](no-enemy/production.json) |
+| [No Enemy](no-enemy/README.md) | published | — | [Brief](no-enemy/brief.md) · [Description](no-enemy/description.md) · [Decisions](no-enemy/decisions.md) · [Record](no-enemy/production.json) |
 | [NOT STUFF THAT ABIDES](not-stuff-that-abides/README.md) | unknown | — | [Brief](not-stuff-that-abides/brief.md) · [Record](not-stuff-that-abides/production.json) |
 | [NOVEMBER](november/README.md) | published | monthly-etymology | [Brief](november/brief.md) · [Description](november/description.md) · [Record](november/production.json) |
 | [OCTOBER](october/README.md) | published | monthly-etymology | [Brief](october/brief.md) · [Record](october/production.json) |

@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_465f54a235817ff36ddecee8ed47b3be3af898f34507034faf73e149500c80ae",
+  "projectId": "no-enemy",
+  "editVersion": "edit/v7",
+  "segmentIndex": 26,
+  "shotId": "S09b2",
+  "status": "rendered",
+  "evidence": "custom-edit-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 88,
+    "length": 7,
+    "fps": 24
+  },
+  "timelineStartFrame": 1748,
+  "outputSha256": "22b62e62307e0f92734c58b40bddeb55a0891aff0728cf9308034b2ca64b5271",
+  "schemaVersion": 1,
+  "id": "use_6de17d6659dd71fd10387763b9f9547f894fe0cc1ae25c2685839094c6685733"
+}

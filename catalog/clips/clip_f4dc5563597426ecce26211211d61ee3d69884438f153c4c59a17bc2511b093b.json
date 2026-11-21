@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f4dc5563597426ecce26211211d61ee3d69884438f153c4c59a17bc2511b093b",
+  "sha256": "f4dc5563597426ecce26211211d61ee3d69884438f153c4c59a17bc2511b093b",
+  "bytes": 30896208,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor performs a quiet scene on the practical set of a warm, old-fashioned television space adventure: the Captain alone in his softly lit quarters, in dress uniform, working on a formal speech of respect, talking with the ship's unseen computer.\n\nStill looking up in thought, he addresses the room, calm and unhurried. The Captain says: \"Computer. A better word than adversaries.\" He then closes his mouth and listens in silence for a full two seconds, eyes up, head tilting slightly, perfectly still, as an answer he alone can hear arrives. His face softens with recognition and he gives a small nod. The Captain says: \"Strangers. Yes.\" He closes his mouth and looks down toward the tablet in his hand. The camera holds still.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nIn this scene he speaks privately and softly, the same voice at low volume.\n\nOnly the Captain speaks, and only those words; the computer's replies are not heard. Sound: the spoken words exactly as written and the very quiet hum of the room. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_3bfe324b6e3d9a840eaca00d78ac608e5faceb0317eec8f9b4576b4174d49ee5",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 425409208,
+      "createdAt": "2026-11-21T02:39:36.314Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "550130bee05c1a9c26a7586b95daf7fbe66fd4558cc88d7ae922c25bfa49a5cd",
+          "bytes": 2714354,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "34873337c3b28ef3c5eae166541ab9c573ee45b4823685c6252aefae0d32188e"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

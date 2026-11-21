@@ -316,3 +316,7 @@ sources by the same convention).
 **Apply:** render lit plates without text, upscale, composite text at the target size; judge the blend on full-size crops of
 skin and hair; compare the mean colour of sampled finished frames with the native cut before delivery.
 Source: claude-code · Face Down · 2026-11-20
+
+### Do not loudnorm one-second voice cues (2026-11-20, Claude, NO ENEMY)
+- ffmpeg `loudnorm` in single-pass mode on voice cues of 0.6 to 2.8 s left them about 13 dB under dialogue that the same filter had normalised from 3 to 6 s clips; the director heard them as barely audible. Level short cues by measured active RMS (frames above a floor) against the dialogue's measured level, then limit.
+- Disembodied machine voices need a picture cue. Cutting to the speaker and compositing a lamp driven by that voice's own envelope (fast attack, soft decay) reads immediately and costs nothing.

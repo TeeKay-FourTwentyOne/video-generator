@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_a5167feb4cfcc3185430e4e53d819c71b6be6c0838b1d924fdc678e9e6faa937",
+  "sha256": "a5167feb4cfcc3185430e4e53d819c71b6be6c0838b1d924fdc678e9e6faa937",
+  "bytes": 6887626,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Deep space, silent and calm. A long folded ribbon of translucent silver-blue light with a faint violet edge hangs in the dark and shimmers slowly: soft light travels along its length in a slow, even, gentle pulse, and its folds drift like silk in still water. It never flashes or strobes. In the foreground a small grey survey probe floats beside it, rigid and unchanged, turning a few degrees to keep its lens on the ribbon; one small blue indicator on its hull glows steadily. Far above, the parent starship hangs motionless and tiny. The camera drifts very slowly. Nothing else appears: no other craft, no beams, no text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_978f5fea1d90e0a1430ff3097b4161cc7d6aeb3dc52a885435cca5f10acc37b5",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3435351070,
+      "createdAt": "2026-11-21T02:16:17.697Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "9ca1364b62d20c5f055b680c2e28c20d3f2907d19be5715af5517ebf10146eb5",
+          "bytes": 1581207,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "787f51c599a7af03dc43257c14f48ba8439f04aa8c99bd30fd8fe6de157f2aa2"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

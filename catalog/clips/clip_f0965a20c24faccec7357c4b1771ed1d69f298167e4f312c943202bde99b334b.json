@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_f0965a20c24faccec7357c4b1771ed1d69f298167e4f312c943202bde99b334b",
+  "sha256": "f0965a20c24faccec7357c4b1771ed1d69f298167e4f312c943202bde99b334b",
+  "bytes": 4507703,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Two adult actors perform a scene on the practical bridge set of a warm, old-fashioned television space adventure, played with complete sincerity. The set is in calm warm light.\n\nThe officer standing at the prop console reads its glowing panel and gives an even, routine report to the adult Captain seated in front of him, glancing up once toward the screen ahead as he finishes. The Tactical Officer says: \"Destroyed, sir. Debris field, bearing two-one-mark-four.\" The Captain in the foreground has his back to the camera and stays still and silent. The camera holds steady.\n\nTACTICAL OFFICER VOICE: A younger adult man with a clean mid-range tenor, neutral American English and a light, dry, focused timbre. Short, precise phrases with clipped professional diction and a brisk but natural pace. He reports information evenly at conversational volume, attentive and composed even under red alert, with no panic, swagger, gravel or theatrical emphasis. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nOnly the Tactical Officer speaks, and only that one line. Sound: the spoken line exactly as written, the low hum of the set and soft console tones. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_62d5202ec60e22b4a0233903f5d08fa4e545ce1ff8ca2b3d8f17a7859fa471a5",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3746365473,
+      "createdAt": "2026-11-21T02:21:52.518Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c002a9ab67399c0fb453ea2d7981b886d9e1d9c09e32a371f9f4e2e8bc41d9e3",
+          "bytes": 1418832,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "1efe5ad7b42202237949ba34df52f740334f239f2f3baebc1aadc7f05299449c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

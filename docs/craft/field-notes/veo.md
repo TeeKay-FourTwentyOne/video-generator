@@ -477,3 +477,42 @@ RMS table and a spectrogram found the real phrase boundaries.
 **Apply:** when a dark or off-screen scene needs people being easy with each other, a sound-only take is worth its seconds;
 find phrase boundaries on the envelope, not the transcript stamps, and check where each line lands against the picture.
 Source: claude-code · Face Down · 2026-11-18
+
+### Shot/reverse-shot pairs: keep the second person out of the single
+Three cuts in No Enemy jumped because an anchor showed both people at a spacing the reverse angle
+contradicted: a two-shot placed the officer beside the seated Captain while the Captain's own angle
+had him behind and far off, and an over-the-shoulder single made the Captain's chair read as turned
+around. A solo anchor of the officer at his console, with nobody else in frame, cut cleanly against
+the Captain's angle all three times.
+**Apply:** when a scene is covered as singles, give each speaker an anchor with no part of the other
+person in it unless both anchors were composed from one measured floor plan. Check the cut pair as
+two stills before buying motion.
+Source: claude-code · No Enemy · 2026-11-20
+
+### A third-generation chained anchor comes back crunchier
+A take started from the last frame of a take that itself started from a take's last frame returned
+with visibly harsher texture and greyer hair and cloth from its first frame, though the anchor PNG
+matched the source frame exactly. A fresh anchor at a new framing removed it.
+**Apply:** chain at most once on a held shot; for the next beat cut to a new framing from a clean anchor.
+Source: claude-code · No Enemy · 2026-11-20
+
+### Output filter 15236754 on bridge-drama dialogue: single speakers, own angle, retry is free
+Seven of seven two-speaker or Captain-in-two-shot takes with scripted lines such as "Return fire" and
+"Status of the enemy vessel?" were withheld; the same lines passed as single-speaker takes from the
+speaker's own angle, sometimes only on a second identical submission. The provider's operation record
+states blocked videos are not charged; the maintained adapter drops that reason, so re-read the
+operation and reconcile the reservation to zero with it as evidence.
+Source: claude-code · No Enemy · 2026-11-20
+
+### A clean anchor is not enough: book-end the take and match texture by measurement
+*2026-11-21, Claude Fable 5.2 in Claude Code, NO ENEMY (Strangers shot, after the 4K master).*
+A waist-up shot started from a clean anchor that matched its neighbours still came back with coarser
+cloth from its first frame, and the hair darkened and flattened once the head bowed. Colour means were
+unchanged; the difference was fine-texture energy (standard deviation of luma minus a 2 px blur on the
+jacket: 17.4 against 12.5 in the neighbouring shot).
+**Apply:** when a retake must sit between two existing shots, (1) make the last frame as an edit of the
+first so the room stays pixel-stable, and generate between both, which held hair and uniform to the end;
+(2) measure texture energy and colour on the same garment region in the neighbour and soften the take to
+match (`unsharp=5:5:-0.4` here) instead of rerolling for texture; (3) keep the replaced segments exactly
+frame-long in picture and sound so nothing downstream moves, and prove it with per-frame hashes and a
+per-second audio difference against the approved cut.

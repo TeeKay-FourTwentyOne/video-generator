@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_0975dc15d8458fcb870325c5b4dcffbc0ef4abe97fb6c4fda6b6178a8e1117e9",
+  "sha256": "0975dc15d8458fcb870325c5b4dcffbc0ef4abe97fb6c4fda6b6178a8e1117e9",
+  "bytes": 10044923,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": null
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Deep space, silent. A small grey survey probe floats in the centre of the frame, whole, for the first three seconds: it holds still, then gives a small resigned tilt of its body, like a shrug. Then it quickly and neatly takes itself apart. There is no explosion, no fire, no flash and no smoke: latches release and the probe simply comes apart at its seams, all at once. The fins fold away and detach, hull panels unclip and lift off, the antennae drift free, the barrel separates into rings and plates, the lens housing floats loose. Within two seconds the probe is gone and in its place is a loose, slowly spreading cloud of separate metal pieces, each tumbling gently on its own, catching the sunlight, drifting apart to fill the middle of the frame like wreckage. The pieces keep drifting and turning slowly to the end. Behind, the translucent silver-blue ribbon of light shimmers softly and the tiny distant starship stays motionless. The camera holds still.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_05487959179f7d7b4458e9f4d70ab6b7fb97a841c0900f88675a01103c5e8064",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2824003329,
+      "createdAt": "2026-11-21T02:22:04.715Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": false,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4cb3394348c49e129735031f8648ec1162ae1c08982a0dbb0542de4d49a65b0f",
+          "bytes": 1159375,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "8dc81e99ac1ceed68578f6b9f4b05a615100c8f87fd6b4d75afda9c2b2069971"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

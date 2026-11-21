@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ac78750f3f52f5d08770feeb323f15ba6d5e2d260d8c958a49d69daa26a1c006",
+  "sha256": "ac78750f3f52f5d08770feeb323f15ba6d5e2d260d8c958a49d69daa26a1c006",
+  "bytes": 6051319,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An adult actor perform a scene on the practical bridge set of a warm, old-fashioned television space adventure, played with complete sincerity. The set is in calm warm light.\n\nThe seated Captain looks up past the camera at the screen ahead, thoughtful and kind. He lets out a quiet breath and gives a gentle, generous instruction to the adult officer behind him. The Captain says: \"Recover what we can. They deserve that much.\" He lowers his eyes for a moment. The officer behind him is out of focus at his console, silent, mouth closed. The camera holds steady.\n\nCAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance.\n\nOnly the Captain speaks, and only that line. Sound: the spoken line exactly as written, the low hum of the set and soft console tones. No music, no narration, no other voices, no added lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_01a0cd81ad2ff163f413f972d382a891e058cbcc75cb80bc8b186fb5f113ec1f",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 629669984,
+      "createdAt": "2026-11-21T02:21:57.562Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d508a10535ff73789463ebecbbcf87cc7ec861711cdff31209a7783831acef87",
+          "bytes": 1479492,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "837c3f0f76617e86580f2bb2c604b6f0d67636eb17749c84101ac4393d37c2d4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

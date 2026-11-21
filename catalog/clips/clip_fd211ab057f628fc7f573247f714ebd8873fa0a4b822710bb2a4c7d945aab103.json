@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_fd211ab057f628fc7f573247f714ebd8873fa0a4b822710bb2a4c7d945aab103",
+  "sha256": "fd211ab057f628fc7f573247f714ebd8873fa0a4b822710bb2a4c7d945aab103",
+  "bytes": 3245521,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "no-enemy"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A light comic scene from a warm, old-fashioned television space adventure: adult actors on a practical starship lounge set, just after the Captain's formal speech to his crew.\n\nThe small audience of uniformed adult crew members applauds warmly, clapping steadily, smiling and nodding. After two seconds the applause begins to thin: people at the back lower their hands, turn to one another and start to drift away toward the door in twos and threes, chatting, while the two officers in the front row keep clapping the longest, delighted. The Captain's shoulder stays at the edge of the frame in the foreground. The camera holds steady.\n\nSound: warm applause from a small group in a carpeted room, thinning into friendly murmurs and footsteps. No music, no narration, no clear spoken lines. No subtitles, captions or on-screen text.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_257e7754b954b2ba26f30a4a897738f658795361f88ca642da17e6bd32a7952d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1588129406,
+      "createdAt": "2026-11-21T04:04:19.182Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "fb191d4115146f0ec3214216fdc3dfee20d074922fd721dadbaf98a8108df75b",
+          "bytes": 1430453,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "130a9e00d2ebbfdb62bcb18be017dd69ebab3c859f295eec34c4d64a678b1c2c"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "projectId": "no-enemy",
+  "updated": "2026-11-20",
+  "instruction": "Copy the complete canonical voice description verbatim into every Veo prompt where that character speaks. Add scene-specific emotional direction separately; do not paraphrase the voice identity. Native dialogue is an audition target, not a promise of identical voices between generations.",
+  "characters": {
+    "captain": {
+      "label": "Captain",
+      "route": "native-veo",
+      "voiceId": "captain-voice-v1",
+      "description": "CAPTAIN VOICE: An older adult man with a low, resonant baritone, a lightly weathered dry texture, and clear, lightly British English. Measured, unhurried phrasing, precise consonants, restrained breath and quiet authority. Warmth lives underneath his composure. He speaks at an ordinary conversational volume, never booms, shouts, growls or delivers an impersonation. Preserve this same pitch, accent, timbre and cadence in every appearance."
+    },
+    "tactical": {
+      "label": "Tactical Officer",
+      "route": "native-veo",
+      "voiceId": "tactical-voice-v1",
+      "description": "TACTICAL OFFICER VOICE: A younger adult man with a clean mid-range tenor, neutral American English and a light, dry, focused timbre. Short, precise phrases with clipped professional diction and a brisk but natural pace. He reports information evenly at conversational volume, attentive and composed even under red alert, with no panic, swagger, gravel or theatrical emphasis. Preserve this same pitch, accent, timbre and cadence in every appearance."
+    },
+    "reptile": {
+      "label": "Reptile Commander",
+      "route": "native-veo",
+      "voiceId": "reptile-voice-v1",
+      "description": "REPTILE COMMANDER VOICE: A controlled, androgynous low-mid voice with smooth legato phrasing, neutral international English and very precise diction, shaped into an imperious antagonist by a restrained gravelly throat resonance and a short metallic communications reverb. Menacing through calm certainty, never screaming or a deep monster roar. Beneath the rasp is the same warm, composed intelligence as the Ship. Preserve this pitch, accent, smooth underlying cadence and light processing throughout the line."
+    },
+    "ship": {
+      "label": "Ship / Computer",
+      "route": "separate-voice-workflow",
+      "voiceId": "ship-voice-v1",
+      "description": "SHIP / COMPUTER VOICE: An androgynous low-mid voice with a smooth, clear timbre, neutral international English, precise diction and an unhurried legato cadence. Calm, intimate and quietly warm, with understated parental care. An equal speaking thoughtfully, never a synthetic announcement, whisper, mystical oracle or patronizing joke. The voice remains identical between space conversations and the Captain's quarters."
+    },
+    "probe": {
+      "label": "Probe",
+      "route": "separate-voice-workflow",
+      "voiceId": "probe-voice-v1",
+      "description": "PROBE VOICE: The same androgynous low-mid timbre, neutral international English and precise diction as the Ship, in a slightly lighter, drier and more observational register. Shorter phrasing and a gently quicker response, affectionate and matter-of-fact. No sarcasm, resentment, weariness, robotic filtering or comic punchline delivery."
+    }
+  },
+  "guardrails": [
+    "Veo dialogue must match the script verbatim; review attribution, lip sync, cadence and timbre against the first accepted take.",
+    "Generate native dialogue with no music so the score can be cut independently and the space reveal can become silent instantly.",
+    "Keep only the named speaker's mouth active; plan separate coverage if multi-speaker attribution fails.",
+    "Use the Ship and Reptile voice relationship as an audition target. Do not claim an exact shared voice across providers.",
+    "Keep each native take within the maintained adapter's qualified duration. Split longer scenes into intentional coverage before motion; never speed up speech to meet the old shot estimates."
+  ]
+}

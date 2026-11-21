@@ -1,0 +1,2361 @@
+{
+  "schemaVersion": 1,
+  "projectId": "no-enemy",
+  "title": "No Enemy",
+  "updated": "2026-11-21",
+  "format": "9:16 portrait · 92 seconds · 4K master built · native onscreen dialogue with separately voiced Reptile, Ship and Probe",
+  "phase": "published",
+  "logline": "A starship's computer invents a battle to give its crew purpose, while its probe studies a shimmering energy ribbon in the quiet outside. The victory is staged; the care is real.",
+  "overall": "Published on 2026-11-21: https://youtube.com/shorts/8ALQAQZkZBY. The film is the 4K master of draft 7, which is draft 6 with the Strangers shot replaced. The director judged a small remaining colour shift on that shot good enough for publication.",
+  "next": "Complete. The workspace is archived with the 4K master, sound sources, references, recipes and records; the generated takes are in the private backup. A later edit starts from a restored copy.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Scripted and planned; fresh generation has not been reviewed."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "number": "01",
+      "title": "The ship",
+      "status": "approved",
+      "summary": "A dignified starship crosses the frame. The opening sells the television adventure.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S01 Establish ship, silhouette and confident orchestral world.",
+          "status": "approved",
+          "detail": "First motion take is in: the ship glides steadily, hull rigid and unchanged. Silent by design; score to come. A low engine pass sits under the fanfare."
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P01-ship.png"
+    },
+    {
+      "id": "s02",
+      "number": "02",
+      "title": "The manufactured enemy",
+      "status": "approved",
+      "summary": "The Reptile threatens surrender from the viewscreen. The Captain refuses.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S02 The Reptile threatens surrender from the viewscreen",
+          "status": "approved",
+          "detail": "The picture is the native take; the voice is a designed alien voice performed from the original take's timing, with a harsh treatment and the bridge hum restored. Director chose option C.",
+          "image": "refs/P03-reptile.png"
+        },
+        {
+          "id": "reply",
+          "title": "S02 The Captain replies: We will do neither",
+          "status": "approved",
+          "detail": "Director: \"a reverse shot from the view screen, closeup on the Captain's face. It should read as dramatic.\" New anchor: a low three-quarter close-up, the screen's cool glow in his eyes, the Tactical Officer soft behind him. A wider take of the same angle is kept as an alternate. Native Captain dialogue in his canonical voice. First motion take is in: the line is verbatim, in the tight close-up. Director on the first takes: \"Looks good.\"",
+          "image": "refs/P10-captain-reply-a2.png"
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P06-confrontation-a2.png"
+    },
+    {
+      "id": "s03",
+      "number": "03",
+      "title": "Red alert",
+      "status": "approved",
+      "summary": "The Tactical Officer sees charging weapons. The Captain orders shields and return fire.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S03 They’re charging weapons.",
+          "status": "approved",
+          "detail": "Regenerated after the director's note that the two-shot put the Tactical Officer beside the Captain while the Captain's angle has him behind and farther off. Now his own angle at the console, alone; line verbatim.",
+          "image": "refs/P15-tactical-alert.png"
+        },
+        {
+          "id": "orders",
+          "title": "S03 Shields. Return fire.",
+          "status": "approved",
+          "detail": "The Captain's half, from a new red-lit reverse angle. Line verbatim in native voice.",
+          "image": "refs/P11-captain-alert.png"
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P04-red-alert.png"
+    },
+    {
+      "id": "s04",
+      "number": "04",
+      "title": "Nothing outside",
+      "status": "approved",
+      "summary": "A motionless ship in empty space. The music stops hard. There is no enemy.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S04 Hold the silence and empty frame; keep the ribbon outside this camera angle.",
+          "status": "approved",
+          "detail": "In the draft as a slow push on the still, silent, with no motion generation. The ribbon stays outside this angle."
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P07-empty-space.png"
+    },
+    {
+      "id": "s05",
+      "number": "05",
+      "title": "The performance continues",
+      "status": "approved",
+      "summary": "Inside, the deck rocks and a console sparks. The crew reports a hull breach.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S05 The deck rocks. Damage report.",
+          "status": "approved",
+          "detail": "The combined take was withheld by the filter. Regenerated as the Captain's own angle: the jolt, a burst of sparks behind him, and the line verbatim. A heavy impact lands on the jolt.",
+          "image": "refs/P11-captain-alert.png"
+        },
+        {
+          "id": "breach",
+          "title": "S05 Hull breach, deck twelve.",
+          "status": "approved",
+          "detail": "Regenerated for the same reason, from the same solo angle; he braces on the console as he reports. Line verbatim.",
+          "image": "refs/P15-tactical-alert.png"
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P05-damage.png"
+    },
+    {
+      "id": "s06",
+      "number": "06",
+      "title": "The real work",
+      "status": "approved",
+      "summary": "The probe studies a visible silver-blue energy ribbon while the ship tends its crew’s invented adventure.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S06 The probe measures the ribbon’s steady pulse",
+          "status": "approved",
+          "detail": "Generated: the ribbon carries bright points of light travelling along its length while the probe turns to watch. Played at half speed in the draft to carry the conversation."
+        },
+        {
+          "id": "beautiful",
+          "title": "S06 Ship: Beautiful",
+          "status": "approved",
+          "detail": "Now cut to the wide view of the ribbon, with the distant ship's lamp pulsing on the word."
+        },
+        {
+          "id": "captain",
+          "title": "S06 The Ship explains the Captain’s manufactured victory",
+          "status": "approved",
+          "detail": "Director: \"It's not obvious from the video they're speaking.\" The scene now opens wide, then cuts between a new close-up of the ship and the probe with the ship in the distance. A warm lamp on the ship's dome and the probe's blue lens each pulse with their own voice. The close-ups are stills with a slow push; the lamps are composited locally. Voices raised about thirteen decibels to match the bridge dialogue.",
+          "image": "refs/P17-ship-close.png"
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P08-probe-ribbon.png"
+    },
+    {
+      "id": "s07",
+      "number": "07",
+      "title": "A gracious victory",
+      "status": "approved",
+      "summary": "The bridge returns to warm calm. The Captain orders the recovery of an enemy that never existed.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S07 Status of the enemy vessel?",
+          "status": "approved",
+          "detail": "Captain close-up; line verbatim. Two earlier stagings were withheld by the filter."
+        },
+        {
+          "id": "report",
+          "title": "S07 Destroyed, sir. Debris field, bearing two-one-mark-four.",
+          "status": "approved",
+          "detail": "Regenerated after the director's note that the Captain's chair appeared turned toward the officer. Now the Tactical Officer alone; line verbatim. A stray figure in a dark suit crosses the background during the line, and he steps away at the very end, which the draft cuts before.",
+          "image": "refs/P14-tactical-single.png"
+        },
+        {
+          "id": "sealed",
+          "title": "S07 Computer: Hull breach on deck twelve has been sealed.",
+          "status": "approved",
+          "detail": "Director's addition, at about 48 seconds. The Ship's own voice through a bridge speaker, placed after the debris report; the cut holds on the Captain listening before he replies. The exact wording is the agent's."
+        },
+        {
+          "id": "recover",
+          "title": "S07 Recover what we can. They deserve that much.",
+          "status": "approved",
+          "detail": "Captain, medium reverse angle; line verbatim. Two seconds of dead air trimmed from the end.",
+          "image": "refs/P10-captain-reply.png"
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P02-bridge-cast.png"
+    },
+    {
+      "id": "s08",
+      "number": "08",
+      "title": "Debris again",
+      "status": "approved",
+      "summary": "The same probe and ribbon. Ship asks the probe to become debris again; it agrees with affection.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S08 I’ll need you to be debris again. Fine.",
+          "status": "approved",
+          "detail": "Opens on the ship close-up for its request, lamp pulsing, then the probe answers with its lens."
+        },
+        {
+          "id": "debris",
+          "title": "S08 The probe takes itself apart. I’ll make it quick.",
+          "status": "approved",
+          "detail": "Director: \"Include a few seconds where the probe breaks itself up so that it looks like debris. Doesn't need to explode. Just rapidly disassembles into a 'debris' field.\" Generated in one take: fins and panels unlatch, then the body comes apart into a spreading field. The core barrel stays largely whole, and a flare late in the take is cut out of the draft. The distant ship's lamp pulses on its last line. Join review: the probe now runs at native speed straight into the disassembly, which removes a small jump in its fins; a flurry of latches and servos accompanies it."
+        }
+      ],
+      "next": "In the 4K master.",
+      "image": "refs/P13-probe-return.png"
+    },
+    {
+      "id": "s09",
+      "number": "09",
+      "title": "Strangers",
+      "status": "approved",
+      "summary": "In his quarters, the Captain rehearses a eulogy. The Computer offers a word, and quiet care becomes visible.",
+      "segments": [
+        {
+          "id": "main",
+          "title": "S09 The Captain rehearses his eulogy in dress uniform",
+          "status": "approved",
+          "detail": "Generated: he reads the eulogy line verbatim, stops on the word, lowers the tablet and looks up."
+        },
+        {
+          "id": "strangers",
+          "title": "S09 The Computer offers: Strangers, perhaps",
+          "status": "approved",
+          "detail": "Regenerated after the director's note on the finished film that the uniform and hair changed at both ends of this shot (frames 1659 to 1660 and 1880 to 1881). Cause: its starting image had come back darker and coarser than the frames around it. Now generated between a clean starting image and a clean ending image, which holds his hair and uniform to the last frame, and softened slightly to the measured texture of the shot before it. Both lines verbatim; the pause for the Computer's reply holds on open-eyed, closed-mouth frames. He now carries the tablet at his side and raises it to read. Director on draft 7: \"There was still a little bit of a color shift, Veo just can't help it. Good enough for publication\".",
+          "image": "refs/P21-quarters-listen.png"
+        },
+        {
+          "id": "thanks",
+          "title": "S09 A private Thank you, then the held silence",
+          "status": "approved",
+          "detail": "Regenerated after the director's note that hair and uniform turned greyer at the cut: the earlier take was started from a frame of the previous take and came back with a harsher texture. Now a cut to a close-up from a fresh anchor. He listens, smiles, says the line once and is silent to the end.",
+          "image": "refs/P16-quarters-close.png"
+        }
+      ],
+      "next": "Director checks the replaced shot in draft 7.",
+      "image": "refs/P09-quarters.png"
+    },
+    {
+      "id": "s10",
+      "number": "10",
+      "title": "The wink",
+      "status": "approved",
+      "summary": "After the fade, the Captain has just given his speech. The crew applaud, two officers gush over him, and he lets us know he is enjoying it.",
+      "image": "refs/P18-coda-congrats.png",
+      "next": "In the 4K master.",
+      "segments": [
+        {
+          "id": "applause",
+          "title": "S10 The crew applaud and begin to break up",
+          "status": "approved",
+          "detail": "Director's addition. A small audience in an observation lounge claps, then thins toward the door. The Captain's shoulder is at the edge of frame.",
+          "image": "refs/P19-coda-applause.png"
+        },
+        {
+          "id": "congrats",
+          "title": "S10 Two officers congratulate him",
+          "status": "approved",
+          "detail": "Both lines land as written: \"That was beautiful, Captain!\" and \"So moving, sir. Truly!\" One lays a hand on his shoulder. The lines are the agent's wording. The take changes framing after three seconds, so the draft cuts before that."
+        },
+        {
+          "id": "wink",
+          "title": "S10 He grins, looks into the camera and winks",
+          "status": "approved",
+          "detail": "Director: \"let's see if Veo can handle this.\" It did, in one take: a broad grin, eyes to the lens, one clear wink. His smile drops straight after, so the draft cuts to black on the wink.",
+          "image": "refs/P20-coda-closeup.png"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "restart",
+      "title": "Start fresh",
+      "status": "decided",
+      "detail": "Director: \"Archive it if so, we’re going to start fresh.\" The existing workspace has been archived with a verified full inventory."
+    },
+    {
+      "id": "native-dialogue",
+      "title": "Native onscreen dialogue",
+      "status": "decided",
+      "detail": "Director: \"let’s try to use native Veo audio for the onscreen dialogue from the Captain, Reptile, and Tactical Officer.\""
+    },
+    {
+      "id": "consistent-voices",
+      "title": "Repeat canonical voice descriptions",
+      "status": "decided",
+      "detail": "Director: \"Make sure to keep consistent descriptions of each character’s voice in the Veo generation calls.\" Canonical voice blocks are saved and will be copied verbatim into each relevant prompt."
+    },
+    {
+      "id": "space-phenomenon",
+      "title": "Visible phenomenon",
+      "status": "decided",
+      "detail": "Director: \"the space portion should have some visible phenomenon. Shimmering energy ribbon or similar, your call.\" Agent choice: a narrow, folded silver-blue ribbon with a violet edge, visible beside the probe in S06 and S08. The empty reveal uses a different camera angle."
+    },
+    {
+      "id": "format",
+      "title": "Frame format",
+      "status": "decided",
+      "detail": "Director: \"9:16 portrait\". Recompose the reference set for vertical framing while retaining the established faces, costumes and designs."
+    },
+    {
+      "id": "anchor-audition",
+      "title": "Fresh look and casting",
+      "status": "decided",
+      "detail": "Director on the portrait set: \"They look good, except the 02 shot has an officer standing at a console in front of the Captain.\" The later shots place the Tactical Officer and his console behind the Captain, so S02 was regenerated with the officer and forward console removed (agent choice between the two offered fixes). The revised S02 awaits review. Closed by the approved film: the portrait cast and designs carried through to publication."
+    },
+    {
+      "id": "captain-reply-angle",
+      "title": "Angle for the Captain's reply",
+      "status": "decided",
+      "detail": "Director: \"It should get its own anchor but not front facing. It should be a reverse shot from the view screen, closeup on the Captain's face. It should read as dramatic.\""
+    },
+    {
+      "id": "motion-go",
+      "title": "Begin motion",
+      "status": "decided",
+      "detail": "Director confirmed the project allocation covers motion with native audio and that submission may begin once coverage is planned."
+    },
+    {
+      "id": "s03-route",
+      "title": "Red-alert take",
+      "status": "decided",
+      "detail": "The combined take was withheld twice. Agent recommended splitting it into two single-speaker takes. Director: \"Agreed, please give that a try.\" Both halves generated."
+    },
+    {
+      "id": "reptile-voice",
+      "title": "Reptile voice",
+      "status": "decided",
+      "detail": "Director: \"the Reptile's voice is identical to the Captain's. It should be more alien, harsh.\" Three dubbed options were offered. Director: \"C\"."
+    },
+    {
+      "id": "probe-debris",
+      "title": "The probe becomes debris on screen",
+      "status": "decided",
+      "detail": "Director: \"Include a few seconds where the probe breaks itself up so that it looks like debris. Doesn't need to explode. Just rapidly disassembles into a 'debris' field.\""
+    },
+    {
+      "id": "ship-voice",
+      "title": "Ship and Probe voice",
+      "status": "decided",
+      "detail": "First candidate kept. Director: \"The Ship and Probe voice are excellent.\""
+    },
+    {
+      "id": "s09-thanks",
+      "title": "Final take: keep the edit or retake",
+      "status": "decided",
+      "detail": "Resolved by the regeneration the director asked for: the new take has the line once and a true held silence."
+    },
+    {
+      "id": "s07-extra",
+      "title": "Stray figure behind the Tactical Officer",
+      "status": "decided",
+      "detail": "Director: \"I'm okay with the person walking behind the Tactical Officer.\" Kept."
+    },
+    {
+      "id": "speaker-cue",
+      "title": "Showing who speaks in space",
+      "status": "decided",
+      "detail": "Director asked whether to cut between close-ups of the ship and the probe. Agent built it and added voice-driven lamps on both craft as the speaking cue (agent's addition)."
+    },
+    {
+      "id": "coda",
+      "title": "Closing scene after the ending",
+      "status": "decided",
+      "detail": "Director: \"Add a 5-6 second scene after the current ending. The Captain has just finished giving his speech to the crew. They applaud and the small crowd begins to break up. Cut to the Captain. Two young female crewmembers come up and exaggeratedly congratulate him on his speech. One puts her hand on his shoulder. Cut to a closeup on the Captain. He soaks in the attention, smiles broadly, and ... looks directly into the camera and winks.\""
+    },
+    {
+      "id": "ship-voice-ok",
+      "title": "Ship and Probe voice",
+      "status": "decided",
+      "detail": "Director: \"The Ship and Probe voice are excellent.\""
+    },
+    {
+      "id": "score",
+      "title": "Score",
+      "status": "decided",
+      "detail": "Director: \"Add the score.\" Three orchestral cues in a vintage television-adventure style. Agent's design: the music belongs to the staged battle, so it stops for every exterior and for the quarters, and returns once more for the closing scene."
+    },
+    {
+      "id": "sfx",
+      "title": "Sound effects",
+      "status": "decided",
+      "detail": "Director: \"Add the sound effects.\" Seven effects: engine pass, bridge tone, red-alert alarm, hull impact, intercom chime, the probe's disassembly and a computer chirp. Exteriors stay silent apart from the voices and the probe coming apart."
+    },
+    {
+      "id": "trims",
+      "title": "Trims",
+      "status": "decided",
+      "detail": "Director: \"No edits from me.\""
+    },
+    {
+      "id": "final",
+      "title": "Final approval and 4K",
+      "status": "decided",
+      "detail": "Director on draft 6: \"Better than I could have ever imagined. Take a bow. Then 4k upscale please.\""
+    },
+    {
+      "id": "description",
+      "title": "Publication description",
+      "status": "decided",
+      "detail": "The description delivered with the 4K master is recorded beside the brief. The director published without sending changes; the text on the published page was not retrievable and is not asserted here."
+    },
+    {
+      "id": "s09b-fix",
+      "title": "Replaced Strangers shot (draft 7)",
+      "status": "decided",
+      "detail": "Director after draft 6: \"We need to regenerate S09b1-S09b3 ... His uniform has significantly more grey again and his hair is slightly different.\" Draft 7 carries the replacement; awaiting the director's check. The tablet is visible at his side from the first frame of the new shot, where the previous shot ends with his hands empty. Director on draft 7: \"There was still a little bit of a color shift, Veo just can't help it. Good enough for publication\"."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-20",
+      "text": "Started a fresh anchor pass. Archived the previous 52-file workspace intact and verified its inventory; preserved the earlier draft, takes and references."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Recorded native onscreen dialogue, verbatim voice identity blocks, and a visible silver-blue energy ribbon for the quiet science scenes."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Completed nine fresh images using the built-in image tool and saved their exact prompts, reference hashes and output receipts. All nine scenes have visual references; S06 and S08 intentionally share one space design. The interrupted foundation batch remains documented."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director selected 9:16 portrait. Retaining the widescreen images as design references and generating portrait compositions for the fresh production."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Completed and visually inspected the full portrait reference pass. All nine scene anchors now point to the vertical set; the widescreen design references and every creation receipt are preserved."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director reviewed the portrait set: all good except S02, where an officer stood at a console ahead of the Captain, contradicting the later shots. Regenerated S02 with the Captain alone before the viewscreen; the first version is retained."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Made the Captain's reverse close-up for S02 in two framings; the tighter one is the working anchor. Director cleared motion to begin after coverage planning."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "First motion batch: S01, S02 Reptile and S02 Captain generated and transcribed, both lines verbatim. S03 withheld by the output filter on two attempts; held for a decision."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Put the first three takes on the page as a playable reel for the director's voice listen."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director approved the look of the first takes and asked for a harsher, more alien Reptile. Dubbed three designed voices over the existing take, each transcribing verbatim, for a pick."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director chose Reptile voice C and agreed to split the red-alert take. Both single-speaker halves passed the filter and transcribe verbatim; a red-lit Captain anchor was made for his half."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director approved the first five takes and asked for the probe to take itself apart on screen. Generated the remaining scenes. The filter withheld five more two-shot or Captain-in-two-shot takes, none charged; each line passed once restaged as a single-speaker take from its own angle."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Designed the Ship voice, rendered all Ship and Probe lines, and assembled the first full draft with every line of the script in order."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director's notes on draft 1: the Captain's chair read as turned in the debris report; the Tactical Officer jumped beside the Captain in two red-alert cuts; hair and uniform changed at the last cut. Made solo Tactical anchors in calm and alert light and a fresh close-up for the ending, regenerated the four takes, and rebuilt the draft."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director: Ship and Probe voices barely audible, and not obvious they are speaking. Found the voices about thirteen decibels low from a normalising fault on short clips; levelled them by measured loudness. Made a ship close-up, intercut both conversations, and added voice-driven lamps."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director: \"The pulses worked perfectly.\" Accepted the figure behind the Tactical Officer and asked for a closing scene. Made three lounge anchors and three takes, all passed first time, and cut a 6.6-second coda ending on the wink."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director approved the coda and the Ship and Probe voices, and asked for the score and a Computer announcement that the hull breach is sealed. Composed three cues, added the announcement after the debris report, and mixed the score to duck under every voice."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director: no edits; add the sound effects, then review the joins. Added seven effects. Join review inspected every boundary: fixed a skipped stretch before the probe comes apart, and moved two slowed listening holds off a mouth opening and a blink so speech and blink play natively."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Director approved draft 6 and asked for the 4K master. Upscaled the approved picture two times in four parts to fit the disk, joined them without re-encoding and carried the approved soundtrack over unchanged; verified frame count, frame rate, seams and audio identity. Drafted the publication description."
+    },
+    {
+      "date": "2026-11-21",
+      "text": "Director found a uniform and hair mismatch on the Strangers shot while uploading and asked for it to be regenerated. Made a clean starting image and a matching ending image, regenerated the shot between them (one earlier retake set aside, one attempt withheld by the provider), matched its texture to the neighbouring shot and built draft 7 at the same length and timing. Picture outside the scene and sound outside the shot verified unchanged."
+    },
+    {
+      "date": "2026-11-21",
+      "text": "Director on draft 7: \"There was still a little bit of a color shift, Veo just can't help it. Good enough for publication\". Published as https://youtube.com/shorts/8ALQAQZkZBY from the 4K master of draft 7. Closed out: records updated, takes backed up, workspace archived."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "batch1",
+      "date": "2026-11-20",
+      "title": "First takes: voice audition",
+      "film": "scratch/batch1-voice-audition.mp4",
+      "posterFrame": 200,
+      "fps": 24,
+      "frames": 252,
+      "width": 1080,
+      "height": 1920,
+      "note": "Three raw takes joined for listening, not an edit: no score, no mix, no grade. The ship take is silent by design.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 96,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 156,
+          "frames": 96,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "reptile-abc",
+      "date": "2026-11-20",
+      "title": "Reptile voice: three dubbed options",
+      "film": "scratch/reptile-voice-abc.mp4",
+      "posterFrame": 30,
+      "fps": 24,
+      "frames": 384,
+      "width": 1080,
+      "height": 1920,
+      "note": "The same Reptile take three times, each with a different designed voice dubbed over the original performance, then the Captain's reply for contrast. Options A, B and C in order.",
+      "segments": [
+        {
+          "label": "Voice A",
+          "shot": "S02",
+          "frame": 0,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "scratch/S02a-dub-1.mp4"
+        },
+        {
+          "label": "Voice B",
+          "shot": "S02",
+          "frame": 96,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "scratch/S02a-dub-2.mp4"
+        },
+        {
+          "label": "Voice C",
+          "shot": "S02",
+          "frame": 192,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "scratch/S02a-dub-3.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 288,
+          "frames": 96,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "takes-r2",
+      "date": "2026-11-20",
+      "title": "First five takes",
+      "film": "scratch/takes-r2.mp4",
+      "posterFrame": 400,
+      "fps": 24,
+      "frames": 444,
+      "width": 1080,
+      "height": 1920,
+      "note": "Raw takes joined in story order for review, not an edit: full take lengths, no score, mix or grade. The Reptile carries the chosen dubbed voice.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "scratch/S02a-dub-3.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 156,
+          "frames": 96,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 252,
+          "frames": 96,
+          "sourceFrame": 0
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 348,
+          "frames": 96,
+          "sourceFrame": 0
+        }
+      ]
+    },
+    {
+      "version": "v1",
+      "date": "2026-11-20",
+      "title": "First full draft",
+      "film": "final/no-enemy-v1-draft.mp4",
+      "posterFrame": 150,
+      "fps": 24,
+      "frames": 1951,
+      "width": 1080,
+      "height": 1920,
+      "note": "Every scripted scene in order with all dialogue. No score or sound design yet, loose trims, joins not yet reviewed frame by frame. Slowed or held ranges are marked as their own segments.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v1/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 276,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 354,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 450,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 522,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S05b.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 588,
+          "frames": 384,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S06.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 972,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1038,
+          "frames": 114,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1152,
+          "frames": 138,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1290,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1362,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v1/seg/S08b.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1458,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1614,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v1/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1710,
+          "frames": 48,
+          "sourceFrame": 96,
+          "source": "edit/v1/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1758,
+          "frames": 84,
+          "sourceFrame": 108,
+          "source": "edit/v1/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c1",
+          "shot": "S09",
+          "frame": 1842,
+          "frames": 54,
+          "sourceFrame": 6,
+          "source": "edit/v1/seg/S09c1.mp4"
+        },
+        {
+          "label": "S09c2",
+          "shot": "S09",
+          "frame": 1896,
+          "frames": 55,
+          "sourceFrame": 36,
+          "source": "edit/v1/seg/S09c2.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-20",
+      "title": "Draft 2: staging fixes",
+      "film": "final/no-enemy-v2-draft.mp4",
+      "posterFrame": 150,
+      "fps": 24,
+      "frames": 1964,
+      "width": 1080,
+      "height": 1920,
+      "note": "Draft 1 with the director's three fixes: the Tactical Officer now has his own angle without the Captain in all three of his lines, and the final take is regenerated from a clean close-up. Still no score or sound design; trims still loose.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v2/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v2/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 264,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 342,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 438,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 510,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S05b.mp4"
+        },
+        {
+          "label": "S06",
+          "shot": "S06",
+          "frame": 576,
+          "frames": 384,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S06.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 960,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1026,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1134,
+          "frames": 138,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1272,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1344,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v2/seg/S08b.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1440,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1596,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1692,
+          "frames": 48,
+          "sourceFrame": 96,
+          "source": "edit/v2/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1740,
+          "frames": 84,
+          "sourceFrame": 108,
+          "source": "edit/v2/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c",
+          "shot": "S09",
+          "frame": 1824,
+          "frames": 140,
+          "sourceFrame": 0,
+          "source": "edit/v2/seg/S09c.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-11-20",
+      "title": "Draft 3: the Ship and Probe speak",
+      "film": "final/no-enemy-v3-draft.mp4",
+      "posterFrame": 640,
+      "fps": 24,
+      "frames": 2013,
+      "width": 1080,
+      "height": 1920,
+      "note": "The Ship and Probe conversations are intercut between a ship close-up and the probe, each with a lamp that pulses with its own voice, and their voices are raised to the level of the bridge dialogue. Still no score or sound design; trims still loose.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v3/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v3/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 264,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 342,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 438,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 510,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S05b.mp4"
+        },
+        {
+          "label": "S06a",
+          "shot": "S06",
+          "frame": 576,
+          "frames": 29,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06a.mp4"
+        },
+        {
+          "label": "S06b",
+          "shot": "S06",
+          "frame": 605,
+          "frames": 37,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06b.mp4"
+        },
+        {
+          "label": "S06c",
+          "shot": "S06",
+          "frame": 642,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06c.mp4"
+        },
+        {
+          "label": "S06d",
+          "shot": "S06",
+          "frame": 716,
+          "frames": 34,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06d.mp4"
+        },
+        {
+          "label": "S06e",
+          "shot": "S06",
+          "frame": 750,
+          "frames": 42,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06e.mp4"
+        },
+        {
+          "label": "S06f",
+          "shot": "S06",
+          "frame": 792,
+          "frames": 56,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06f.mp4"
+        },
+        {
+          "label": "S06g",
+          "shot": "S06",
+          "frame": 848,
+          "frames": 32,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06g.mp4"
+        },
+        {
+          "label": "S06h",
+          "shot": "S06",
+          "frame": 880,
+          "frames": 71,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06h.mp4"
+        },
+        {
+          "label": "S06i",
+          "shot": "S06",
+          "frame": 951,
+          "frames": 40,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06i.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 991,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1057,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1165,
+          "frames": 138,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1303,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1363,
+          "frames": 30,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S08b.mp4"
+        },
+        {
+          "label": "S08z",
+          "shot": "S08",
+          "frame": 1393,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v3/seg/S08z.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1489,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1645,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1741,
+          "frames": 48,
+          "sourceFrame": 96,
+          "source": "edit/v3/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1789,
+          "frames": 84,
+          "sourceFrame": 108,
+          "source": "edit/v3/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c",
+          "shot": "S09",
+          "frame": 1873,
+          "frames": 140,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S09c.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v4",
+      "date": "2026-11-20",
+      "title": "Draft 4: with the coda",
+      "film": "final/no-enemy-v4-draft.mp4",
+      "posterFrame": 2150,
+      "fps": 24,
+      "frames": 2190,
+      "width": 1080,
+      "height": 1920,
+      "note": "Draft 3 with the new closing scene after the fade: applause, two officers congratulating the Captain, and his wink to camera. Still no score or sound design; trims still loose.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v3/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v3/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 264,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 342,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 438,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 510,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S05b.mp4"
+        },
+        {
+          "label": "S06a",
+          "shot": "S06",
+          "frame": 576,
+          "frames": 29,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06a.mp4"
+        },
+        {
+          "label": "S06b",
+          "shot": "S06",
+          "frame": 605,
+          "frames": 37,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06b.mp4"
+        },
+        {
+          "label": "S06c",
+          "shot": "S06",
+          "frame": 642,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06c.mp4"
+        },
+        {
+          "label": "S06d",
+          "shot": "S06",
+          "frame": 716,
+          "frames": 34,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06d.mp4"
+        },
+        {
+          "label": "S06e",
+          "shot": "S06",
+          "frame": 750,
+          "frames": 42,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06e.mp4"
+        },
+        {
+          "label": "S06f",
+          "shot": "S06",
+          "frame": 792,
+          "frames": 56,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06f.mp4"
+        },
+        {
+          "label": "S06g",
+          "shot": "S06",
+          "frame": 848,
+          "frames": 32,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06g.mp4"
+        },
+        {
+          "label": "S06h",
+          "shot": "S06",
+          "frame": 880,
+          "frames": 71,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06h.mp4"
+        },
+        {
+          "label": "S06i",
+          "shot": "S06",
+          "frame": 951,
+          "frames": 40,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S06i.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 991,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1057,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1165,
+          "frames": 138,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1303,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1363,
+          "frames": 30,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S08b.mp4"
+        },
+        {
+          "label": "S08z",
+          "shot": "S08",
+          "frame": 1393,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v3/seg/S08z.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1489,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1645,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1741,
+          "frames": 48,
+          "sourceFrame": 96,
+          "source": "edit/v3/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1789,
+          "frames": 84,
+          "sourceFrame": 108,
+          "source": "edit/v3/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c",
+          "shot": "S09",
+          "frame": 1873,
+          "frames": 140,
+          "sourceFrame": 0,
+          "source": "edit/v3/seg/S09c.mp4"
+        },
+        {
+          "label": "S10a",
+          "shot": "S10",
+          "frame": 2013,
+          "frames": 42,
+          "sourceFrame": 30,
+          "source": "edit/v4/coda-picture.mp4"
+        },
+        {
+          "label": "S10b",
+          "shot": "S10",
+          "frame": 2055,
+          "frames": 69,
+          "sourceFrame": 3,
+          "source": "edit/v4/coda-picture.mp4"
+        },
+        {
+          "label": "S10c",
+          "shot": "S10",
+          "frame": 2124,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v4/coda-picture.mp4"
+        },
+        {
+          "label": "END",
+          "shot": "S10",
+          "frame": 2172,
+          "frames": 18,
+          "sourceFrame": 0,
+          "source": "edit/v4/coda-picture.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v5",
+      "date": "2026-11-20",
+      "title": "Draft 5: scored",
+      "film": "final/no-enemy-v5-draft.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 2222,
+      "width": 1080,
+      "height": 1920,
+      "note": "Draft 4 with the score and the Computer's bridge announcement. The music exists only inside the crew's adventure: it cuts dead for every exterior, returns muffled for the damage scene, swells for the victory, and comes back as an end-title flourish on the wink. Trims still loose; no sound effects yet.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v5/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v5/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 264,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 342,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 438,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 510,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S05b.mp4"
+        },
+        {
+          "label": "S06a",
+          "shot": "S06",
+          "frame": 576,
+          "frames": 29,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06a.mp4"
+        },
+        {
+          "label": "S06b",
+          "shot": "S06",
+          "frame": 605,
+          "frames": 37,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06b.mp4"
+        },
+        {
+          "label": "S06c",
+          "shot": "S06",
+          "frame": 642,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06c.mp4"
+        },
+        {
+          "label": "S06d",
+          "shot": "S06",
+          "frame": 716,
+          "frames": 34,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06d.mp4"
+        },
+        {
+          "label": "S06e",
+          "shot": "S06",
+          "frame": 750,
+          "frames": 42,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06e.mp4"
+        },
+        {
+          "label": "S06f",
+          "shot": "S06",
+          "frame": 792,
+          "frames": 56,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06f.mp4"
+        },
+        {
+          "label": "S06g",
+          "shot": "S06",
+          "frame": 848,
+          "frames": 32,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06g.mp4"
+        },
+        {
+          "label": "S06h",
+          "shot": "S06",
+          "frame": 880,
+          "frames": 71,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06h.mp4"
+        },
+        {
+          "label": "S06i",
+          "shot": "S06",
+          "frame": 951,
+          "frames": 40,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S06i.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 991,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1057,
+          "frames": 110,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c0",
+          "shot": "S07",
+          "frame": 1167,
+          "frames": 58,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S07c0.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1225,
+          "frames": 94,
+          "sourceFrame": 14,
+          "source": "edit/v5/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1319,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1379,
+          "frames": 30,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S08b.mp4"
+        },
+        {
+          "label": "S08z",
+          "shot": "S08",
+          "frame": 1409,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v5/seg/S08z.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1505,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1661,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1757,
+          "frames": 48,
+          "sourceFrame": 96,
+          "source": "edit/v5/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1805,
+          "frames": 84,
+          "sourceFrame": 108,
+          "source": "edit/v5/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c",
+          "shot": "S09",
+          "frame": 1889,
+          "frames": 138,
+          "sourceFrame": 0,
+          "source": "edit/v5/seg/S09c.mp4"
+        },
+        {
+          "label": "S10a",
+          "shot": "S10",
+          "frame": 2027,
+          "frames": 42,
+          "sourceFrame": 30,
+          "source": "edit/v5/coda-picture.mp4"
+        },
+        {
+          "label": "S10b",
+          "shot": "S10",
+          "frame": 2069,
+          "frames": 69,
+          "sourceFrame": 3,
+          "source": "edit/v5/coda-picture.mp4"
+        },
+        {
+          "label": "S10c",
+          "shot": "S10",
+          "frame": 2138,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v5/coda-picture.mp4"
+        },
+        {
+          "label": "END",
+          "shot": "S10",
+          "frame": 2186,
+          "frames": 36,
+          "sourceFrame": 0,
+          "source": "edit/v5/coda-picture.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v6",
+      "date": "2026-11-20",
+      "title": "Draft 6: sound effects and join review",
+      "film": "final/no-enemy-v6-draft.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 2213,
+      "width": 1080,
+      "height": 1920,
+      "note": "Picture, dialogue, voices, score and sound effects, with three joins refined in the join review. Native 1080 by 1920. Not yet watched or heard in real time by the agent; awaiting the director.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v6/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v6/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 264,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 342,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 438,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 510,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S05b.mp4"
+        },
+        {
+          "label": "S06a",
+          "shot": "S06",
+          "frame": 576,
+          "frames": 29,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06a.mp4"
+        },
+        {
+          "label": "S06b",
+          "shot": "S06",
+          "frame": 605,
+          "frames": 37,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06b.mp4"
+        },
+        {
+          "label": "S06c",
+          "shot": "S06",
+          "frame": 642,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06c.mp4"
+        },
+        {
+          "label": "S06d",
+          "shot": "S06",
+          "frame": 716,
+          "frames": 34,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06d.mp4"
+        },
+        {
+          "label": "S06e",
+          "shot": "S06",
+          "frame": 750,
+          "frames": 42,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06e.mp4"
+        },
+        {
+          "label": "S06f",
+          "shot": "S06",
+          "frame": 792,
+          "frames": 56,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06f.mp4"
+        },
+        {
+          "label": "S06g",
+          "shot": "S06",
+          "frame": 848,
+          "frames": 32,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06g.mp4"
+        },
+        {
+          "label": "S06h",
+          "shot": "S06",
+          "frame": 880,
+          "frames": 71,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06h.mp4"
+        },
+        {
+          "label": "S06i",
+          "shot": "S06",
+          "frame": 951,
+          "frames": 40,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S06i.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 991,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1057,
+          "frames": 110,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c0",
+          "shot": "S07",
+          "frame": 1167,
+          "frames": 54,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S07c0.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1221,
+          "frames": 97,
+          "sourceFrame": 11,
+          "source": "edit/v6/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1318,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1378,
+          "frames": 30,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S08b.mp4"
+        },
+        {
+          "label": "S08z",
+          "shot": "S08",
+          "frame": 1408,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v6/seg/S08z.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1504,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1660,
+          "frames": 94,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1754,
+          "frames": 36,
+          "sourceFrame": 94,
+          "source": "edit/v6/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1790,
+          "frames": 91,
+          "sourceFrame": 101,
+          "source": "edit/v6/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c",
+          "shot": "S09",
+          "frame": 1881,
+          "frames": 137,
+          "sourceFrame": 0,
+          "source": "edit/v6/seg/S09c.mp4"
+        },
+        {
+          "label": "S10a",
+          "shot": "S10",
+          "frame": 2018,
+          "frames": 42,
+          "sourceFrame": 30,
+          "source": "edit/v6/coda-picture.mp4"
+        },
+        {
+          "label": "S10b",
+          "shot": "S10",
+          "frame": 2060,
+          "frames": 69,
+          "sourceFrame": 3,
+          "source": "edit/v6/coda-picture.mp4"
+        },
+        {
+          "label": "S10c",
+          "shot": "S10",
+          "frame": 2129,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v6/coda-picture.mp4"
+        },
+        {
+          "label": "END",
+          "shot": "S10",
+          "frame": 2177,
+          "frames": 36,
+          "sourceFrame": 0,
+          "source": "edit/v6/coda-picture.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v7",
+      "date": "2026-11-21",
+      "title": "Draft 7: the Strangers shot replaced",
+      "film": "final/no-enemy-v7-draft.mp4",
+      "posterFrame": 40,
+      "fps": 24,
+      "frames": 2213,
+      "width": 1080,
+      "height": 1920,
+      "note": "The published cut. Draft 6 with one shot replaced (frames 1660 to 1880): the Captain asking for a better word now matches the shots either side in hair and uniform, apart from a small colour shift the director accepted. Same length, cut points and soundtrack timing as draft 6. This is the 720p review copy; the published film is the 4K master of this draft.",
+      "segments": [
+        {
+          "label": "S01",
+          "shot": "S01",
+          "frame": 0,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S01.mp4"
+        },
+        {
+          "label": "S02a",
+          "shot": "S02",
+          "frame": 60,
+          "frames": 90,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S02a.mp4"
+        },
+        {
+          "label": "S02b",
+          "shot": "S02",
+          "frame": 150,
+          "frames": 66,
+          "sourceFrame": 6,
+          "source": "edit/v7/seg/S02b.mp4"
+        },
+        {
+          "label": "S03a",
+          "shot": "S03",
+          "frame": 216,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v7/seg/S03a.mp4"
+        },
+        {
+          "label": "S03b",
+          "shot": "S03",
+          "frame": 264,
+          "frames": 78,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S03b.mp4"
+        },
+        {
+          "label": "S04",
+          "shot": "S04",
+          "frame": 342,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S04.mp4"
+        },
+        {
+          "label": "S05a",
+          "shot": "S05",
+          "frame": 438,
+          "frames": 72,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S05a.mp4"
+        },
+        {
+          "label": "S05b",
+          "shot": "S05",
+          "frame": 510,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S05b.mp4"
+        },
+        {
+          "label": "S06a",
+          "shot": "S06",
+          "frame": 576,
+          "frames": 29,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06a.mp4"
+        },
+        {
+          "label": "S06b",
+          "shot": "S06",
+          "frame": 605,
+          "frames": 37,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06b.mp4"
+        },
+        {
+          "label": "S06c",
+          "shot": "S06",
+          "frame": 642,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06c.mp4"
+        },
+        {
+          "label": "S06d",
+          "shot": "S06",
+          "frame": 716,
+          "frames": 34,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06d.mp4"
+        },
+        {
+          "label": "S06e",
+          "shot": "S06",
+          "frame": 750,
+          "frames": 42,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06e.mp4"
+        },
+        {
+          "label": "S06f",
+          "shot": "S06",
+          "frame": 792,
+          "frames": 56,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06f.mp4"
+        },
+        {
+          "label": "S06g",
+          "shot": "S06",
+          "frame": 848,
+          "frames": 32,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06g.mp4"
+        },
+        {
+          "label": "S06h",
+          "shot": "S06",
+          "frame": 880,
+          "frames": 71,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06h.mp4"
+        },
+        {
+          "label": "S06i",
+          "shot": "S06",
+          "frame": 951,
+          "frames": 40,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S06i.mp4"
+        },
+        {
+          "label": "S07a",
+          "shot": "S07",
+          "frame": 991,
+          "frames": 66,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S07a.mp4"
+        },
+        {
+          "label": "S07b",
+          "shot": "S07",
+          "frame": 1057,
+          "frames": 110,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S07b.mp4"
+        },
+        {
+          "label": "S07c0",
+          "shot": "S07",
+          "frame": 1167,
+          "frames": 54,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S07c0.mp4"
+        },
+        {
+          "label": "S07c",
+          "shot": "S07",
+          "frame": 1221,
+          "frames": 97,
+          "sourceFrame": 11,
+          "source": "edit/v7/seg/S07c.mp4"
+        },
+        {
+          "label": "S08a",
+          "shot": "S08",
+          "frame": 1318,
+          "frames": 60,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S08a.mp4"
+        },
+        {
+          "label": "S08b",
+          "shot": "S08",
+          "frame": 1378,
+          "frames": 30,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S08b.mp4"
+        },
+        {
+          "label": "S08z",
+          "shot": "S08",
+          "frame": 1408,
+          "frames": 96,
+          "sourceFrame": 36,
+          "source": "edit/v7/seg/S08z.mp4"
+        },
+        {
+          "label": "S09a",
+          "shot": "S09",
+          "frame": 1504,
+          "frames": 156,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S09a.mp4"
+        },
+        {
+          "label": "S09b1",
+          "shot": "S09",
+          "frame": 1660,
+          "frames": 88,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S09b1.mp4"
+        },
+        {
+          "label": "S09b2",
+          "shot": "S09",
+          "frame": 1748,
+          "frames": 36,
+          "sourceFrame": 88,
+          "source": "edit/v7/seg/S09b2.mp4"
+        },
+        {
+          "label": "S09b3",
+          "shot": "S09",
+          "frame": 1784,
+          "frames": 97,
+          "sourceFrame": 95,
+          "source": "edit/v7/seg/S09b3.mp4"
+        },
+        {
+          "label": "S09c",
+          "shot": "S09",
+          "frame": 1881,
+          "frames": 137,
+          "sourceFrame": 0,
+          "source": "edit/v7/seg/S09c.mp4"
+        },
+        {
+          "label": "S10a",
+          "shot": "S10",
+          "frame": 2018,
+          "frames": 42,
+          "sourceFrame": 30,
+          "source": "edit/v7/coda-picture.mp4"
+        },
+        {
+          "label": "S10b",
+          "shot": "S10",
+          "frame": 2060,
+          "frames": 69,
+          "sourceFrame": 3,
+          "source": "edit/v7/coda-picture.mp4"
+        },
+        {
+          "label": "S10c",
+          "shot": "S10",
+          "frame": 2129,
+          "frames": 48,
+          "sourceFrame": 24,
+          "source": "edit/v7/coda-picture.mp4"
+        },
+        {
+          "label": "END",
+          "shot": "S10",
+          "frame": 2177,
+          "frames": 36,
+          "sourceFrame": 0,
+          "source": "edit/v7/coda-picture.mp4"
+        }
+      ]
+    }
+  ]
+}

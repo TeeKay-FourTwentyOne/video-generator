@@ -2,6 +2,14 @@
 
 [Current production record](README.md).
 
+**Published:** https://youtube.com/shorts/8ALQAQZkZBY (2026-11-21, 9:16 portrait, 92.2 s, 4K; [description](description.md))
+
+**Current direction — 2026-11-20:** Start fresh in **9:16 portrait** from new reference images. Try native
+Veo dialogue for the Captain, Reptile Commander and Tactical Officer, repeating the
+[canonical voice descriptions](voices.json) in every relevant call. The probe studies
+a visible shimmering energy ribbon. These directions supersede conflicting historical
+technical notes below; see [current decisions](decisions.md) and [production status](status.json).
+
 This document preserves the retained creative and production history. Dated plans and technical observations describe their original sessions; the current record states only supported production facts.
 
 *Working title. Star Trek-style spoof, single intelligence running both sides of a fabricated conflict for its crew. ~60 seconds total.*
@@ -72,10 +80,8 @@ Hold. Fade.
 
 ## Voice / audio plan
 
-**Veo audio not usable for dialogue.** Strip and rebuild for every shot. Use Veo's generated audio only as rough timing reference for lip sync.
-
-**ElevenLabs voices needed:**
-- **Captain** — older man, gravitas, measured. Patrick Stewart register. Unprocessed. Appears in shots 2, 3, 5, 7, 9.
+**Veo / ElevenLabs voices needed:**
+- **Captain** — older man, gravitas, measured. Unprocessed. Appears in shots 2, 3, 5, 7, 9.
 - **Tactical officer** — younger man, professional, clipped. Appears in shots 3, 5, 7.
 - **Reptile commander** — same voice as Ship (single intelligence performing both roles), but processed with subtle growl and reverb. The audience won't catch this on first viewing but it's textually correct: the computer is voicing its own antagonist. Appears in shot 2 only.
 - **Ship / Computer** — calm, warm, neither masculine nor feminine if possible — the parental register. Same voice for "Ship" in probe scenes and "Computer" in captain's quarters. Appears in shots 6, 8, 9. *Underlying voice also used for reptile commander with heavy processing.*
