@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_db27ed75e7393b062f84a6ac27a4b5065dd71f70be94b477a3a69e7c45afbb33",
+  "sha256": "db27ed75e7393b062f84a6ac27a4b5065dd71f70be94b477a3a69e7c45afbb33",
+  "bytes": 3649201,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A young woman of twenty sits cross-legged on a bedroom floor in soft daylight, a notebook in her lap and a small cloth-covered device with a glowing amber light on the floor in front of her. She reads a sentence aloud from the notebook in a language she is learning, carefully, with one small hesitation in the middle: \"Noréla tové... seli ené.\" (no-réh-la toh-véh, seh-lee eh-néh). She smiles at getting through it. She looks at the notebook and the device, never at the camera. Sound: her voice, a quiet room, faint birds outside. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_0281dcad426852efdf930b61ca0454407ae419dd85b1154cf7aa7caef6e23ab9",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1269453982,
+      "createdAt": "2026-11-23T00:10:27.747Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4792ebef775b89d7171cb2bb403403eca1c21dca9e9e0161f82071efda4014bc",
+          "bytes": 1497761,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ac4d577458ad9d406f48bf295df695ac6bb38ab67c5cb8a88aff4defb3705d63"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

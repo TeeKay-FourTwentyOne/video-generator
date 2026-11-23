@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_21aac96bbd4657c2a9bdda11a3fdf95d37f2f26b27f94ff01248e636ff732ac1",
+  "sha256": "21aac96bbd4657c2a9bdda11a3fdf95d37f2f26b27f94ff01248e636ff732ac1",
+  "bytes": 5679805,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An old woman in a mustard cardigan sits in a wooden armchair on a timber porch in the soft light of early evening, turned to look over her shoulder at someone out of frame to the right. She has just heard something she never expected to hear. She does not speak and makes no sound but a breath: her fingers stay pressed against her lips, her eyes fill, and slowly, behind her hand, an astonished smile spreads across her whole face. She keeps looking at the person out of frame, never at the camera. Tall grass moves behind her. Sound: wind in tall grass, one unsteady breath, evening insects. Nobody speaks. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_702a4b01ffb84b8c29a0889182fd1a438280a26b5603da2a62a26369fe322c69",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3930595227,
+      "createdAt": "2026-11-23T00:07:30.426Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "e0d8c6b5ada41d1cdd7c6d37a8006a6e86cfdda636b223714507d02042d0e7a9",
+          "bytes": 1723311,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "c62b0a50dfe1c49d556390c12972ff25e2c10df6fb13c636945ec8aac9601c14"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

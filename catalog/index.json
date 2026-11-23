@@ -6650,6 +6650,23 @@
       }
     },
     {
+      "id": "clip_21aac96bbd4657c2a9bdda11a3fdf95d37f2f26b27f94ff01248e636ff732ac1",
+      "metadata": "clips/clip_21aac96bbd4657c2a9bdda11a3fdf95d37f2f26b27f94ff01248e636ff732ac1.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_21c93f690a09622142d3de44bf36adcf54dc4f7eae0716fa56cdfbdf5629eca4",
       "metadata": "clips/clip_21c93f690a09622142d3de44bf36adcf54dc4f7eae0716fa56cdfbdf5629eca4.json",
       "labels": [],
@@ -9411,6 +9428,23 @@
       }
     },
     {
+      "id": "clip_31162355a06f98ef909149768bc27c864e59d5f0df950a0db478086ac0a55766",
+      "metadata": "clips/clip_31162355a06f98ef909149768bc27c864e59d5f0df950a0db478086ac0a55766.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_3127cae67693c81274065136a7ca9eb01229f105693023e37430073dcf1c9193",
       "metadata": "clips/clip_3127cae67693c81274065136a7ca9eb01229f105693023e37430073dcf1c9193.json",
       "labels": [
@@ -10541,6 +10575,23 @@
       }
     },
     {
+      "id": "clip_363491848c6f771b51d3d05a4e970142f879ff116dfc16bbe1da94855677289f",
+      "metadata": "clips/clip_363491848c6f771b51d3d05a4e970142f879ff116dfc16bbe1da94855677289f.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_363a84ac00a2c91a00cbbb12d4e4518f9587ba1430a8a72ae2b74540a935cdc6",
       "metadata": "clips/clip_363a84ac00a2c91a00cbbb12d4e4518f9587ba1430a8a72ae2b74540a935cdc6.json",
       "labels": [
@@ -11381,6 +11432,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_39eed212908db2d411f368bf3c693055d70bd86f7b5d58e73efd8d1e185f6e9f",
+      "metadata": "clips/clip_39eed212908db2d411f368bf3c693055d70bd86f7b5d58e73efd8d1e185f6e9f.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -15358,6 +15426,23 @@
       }
     },
     {
+      "id": "clip_4cc7147908a23da871426fc94e7a935bb86ce597405147ac5bf4b46ae8bf0aee",
+      "metadata": "clips/clip_4cc7147908a23da871426fc94e7a935bb86ce597405147ac5bf4b46ae8bf0aee.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_4ccb073f28617ca1952122238de9537a862833879980ec09a7bd3ee94bc8cf30",
       "metadata": "clips/clip_4ccb073f28617ca1952122238de9537a862833879980ec09a7bd3ee94bc8cf30.json",
       "labels": [
@@ -15900,6 +15985,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_4f7c988c4e0b18370d1b9a1fd387d38894d4e174519cc8d84548b600b0ace6ee",
+      "metadata": "clips/clip_4f7c988c4e0b18370d1b9a1fd387d38894d4e174519cc8d84548b600b0ace6ee.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -18146,6 +18248,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_59821bb3cbea3a259b36b2109a1df4cab35dc7992b08de704a11013c9e918a19",
+      "metadata": "clips/clip_59821bb3cbea3a259b36b2109a1df4cab35dc7992b08de704a11013c9e918a19.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -23237,6 +23356,23 @@
       }
     },
     {
+      "id": "clip_6fcaafd13f89dbf773385e39af8b29aac950c7727b6d7c9adbb63a6d5a8db4a5",
+      "metadata": "clips/clip_6fcaafd13f89dbf773385e39af8b29aac950c7727b6d7c9adbb63a6d5a8db4a5.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_6fe6f70ec405c52d00a67b0331c09543cce499fb695158a976bca07aeaa1564b",
       "metadata": "clips/clip_6fe6f70ec405c52d00a67b0331c09543cce499fb695158a976bca07aeaa1564b.json",
       "labels": [
@@ -28121,6 +28257,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_860774dc1cc3761c4ecaf072b7e64fec8824875b1c2adabfccde41770b318c3b",
+      "metadata": "clips/clip_860774dc1cc3761c4ecaf072b7e64fec8824875b1c2adabfccde41770b318c3b.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -35419,6 +35572,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_ab65fa88286961a92329277f4029a6ff97d7bd032195860345aa2ba186ad0706",
+      "metadata": "clips/clip_ab65fa88286961a92329277f4029a6ff97d7bd032195860345aa2ba186ad0706.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 6,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 4
       }
     },
     {
@@ -43334,6 +43504,23 @@
       }
     },
     {
+      "id": "clip_d4dd926cfb2b0ead96ee3bd86aea5c3a98f04186723fb8e60c79e0e013e2a1f7",
+      "metadata": "clips/clip_d4dd926cfb2b0ead96ee3bd86aea5c3a98f04186723fb8e60c79e0e013e2a1f7.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 8,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
+      }
+    },
+    {
       "id": "clip_d4e4a62629353af6b19052ac6c841e1ac1560c45813e37f2e568961f7cf987d6",
       "metadata": "clips/clip_d4e4a62629353af6b19052ac6c841e1ac1560c45813e37f2e568961f7cf987d6.json",
       "labels": [
@@ -44748,6 +44935,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_db27ed75e7393b062f84a6ac27a4b5065dd71f70be94b477a3a69e7c45afbb33",
+      "metadata": "clips/clip_db27ed75e7393b062f84a6ac27a4b5065dd71f70be94b477a3a69e7c45afbb33.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {
@@ -50445,6 +50649,23 @@
       "uses": {
         "planned": 0,
         "rendered": 0
+      }
+    },
+    {
+      "id": "clip_f8fa542b5e3bf7f984b1c487d089f4fb72ac0fcff6de7c24e145e2c51ac690ad",
+      "metadata": "clips/clip_f8fa542b5e3bf7f984b1c487d089f4fb72ac0fcff6de7c24e145e2c51ac690ad.json",
+      "labels": [],
+      "kind": "source",
+      "collections": [
+        "second-speaker"
+      ],
+      "durationSeconds": 4,
+      "width": 1080,
+      "height": 1920,
+      "hasPrompt": true,
+      "uses": {
+        "planned": 0,
+        "rendered": 1
       }
     },
     {

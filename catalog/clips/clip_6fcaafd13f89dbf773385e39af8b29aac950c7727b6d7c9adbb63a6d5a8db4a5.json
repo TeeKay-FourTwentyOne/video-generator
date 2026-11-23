@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_6fcaafd13f89dbf773385e39af8b29aac950c7727b6d7c9adbb63a6d5a8db4a5",
+  "sha256": "6fcaafd13f89dbf773385e39af8b29aac950c7727b6d7c9adbb63a6d5a8db4a5",
+  "bytes": 7154845,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An old woman in a mustard cardigan sits on a timber porch in warm late-afternoon sun beside a small cloth-covered device on a table. She lifts her eyes from the device to the sunlit field in front of her, and with a small gesture of one hand toward the light she says, simply, a statement about the evening. She speaks a soft, unfamiliar, vowel-rich language of her own, not English, with the stress late in each word. She says: \"Noréla tové seli ené.\" (no-réh-la toh-véh seh-lee eh-néh). Then she looks back down at the device and waits, lips closed. Sound: her voice, wind in dry grass, insects. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_948152de7f9acf688e696276c61444524741af8f983f07415a831b11c384f04d",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3320341052,
+      "createdAt": "2026-11-23T00:10:21.749Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "2ffe57ec2d45d89af516d4e82db63ae18c624e720ec7cadcc614ae2687673b22",
+          "bytes": 1730995,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "2c83ec9b7b57c628e79c3aaded9716f0be349226c3877b93d4d2add55a151a98"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

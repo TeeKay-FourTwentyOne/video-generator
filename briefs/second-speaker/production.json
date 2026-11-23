@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "projectId": "second-speaker",
+  "title": "SECOND SPEAKER",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published on YouTube; the director supplied the URL on 2026-11-23 (user-confirmed). An old woman teaches a small device the language only she speaks, and the subtitles arrive as it learns; then her granddaughter, who has been practising with it, says hello. Built 2026-11-22 from thirteen takes, all first attempts and all in the cut. Every voice is an ElevenLabs dub (speech-to-speech from each take's guide performance, the device from text) in a language invented for the film and checked against real ones. The director watched draft v1, approved it without notes and authorized the 4K finish; v1-4k is the published master. The description recorded here is the director's edit of the text delivered with the master. Technical checks, approval, finishing authorization and publication are separate events; real-time listening is the director's and is not claimed by the agent. Archived 2026-11-23 under the standard retention: the 4K master, voice stems, references, prompts, timelines, the assembler, delivery records and QA are kept locally; the generated takes are in the private backup; the native draft, the unused alternate-voice cut and derived mixes were removed.",
+  "briefPath": "briefs/second-speaker/brief.md",
+  "descriptionPath": "briefs/second-speaker/description.md",
+  "descriptionSha256": "558c4ee2e9e1a8d9fe62c83569961ed31dfa76f18c89968ddd7ed322a79e165b",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/second-speaker/status.json"
+    },
+    {
+      "label": "Status page guide",
+      "path": "briefs/second-speaker/status.md"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/second-speaker-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/second-speaker-v1-low.mp4",
+      "sha256": "84490cac4ed091b9b3c2a1586144f8701586fb4f740bf9e2bcf0bfb198368c5b",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1274,
+      "durationSeconds": 53.083333333333336,
+      "publishedMaster": false,
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v1-4k",
+      "path": "final/second-speaker-v1-4k.mp4",
+      "sha256": "9f5f8cdcbfc295bf5fab0c23bd90630289fc17efd15651c8852704937b79625a",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 1274,
+      "durationSeconds": 53.083333333333336,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/description.txt",
+      "deliveryRecordPath": "final/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, shot planning, image and motion generation, voice casting and dubbing, editing and sound",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/bIkdaWMxbH8",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-23",
+    "artifactVersion": "v1-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "84490cac4ed091b9b3c2a1586144f8701586fb4f740bf9e2bcf0bfb198368c5b",
+      "recordedDate": "2026-11-22",
+      "eventDate": "2026-11-22",
+      "evidence": "Assembler wrote 1274 frames at 24/1 fps, 1080x1920, bt709 limited range; the frame count was re-read from the encoded file. The delivered soundtrack measured -19.0 LUFS integrated with a sample peak of -1.5 dBFS, and a local transcription of the mix returned the scripted lines in order. Frame pairs at all fifteen boundaries were inspected. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v1",
+      "artifactSha256": "84490cac4ed091b9b3c2a1586144f8701586fb4f740bf9e2bcf0bfb198368c5b",
+      "recordedDate": "2026-11-22",
+      "eventDate": "2026-11-22",
+      "evidence": "The director after watching: “Perfect. Absolutely perfect. Zero notes or edits. 4k upscale please.”",
+      "outcome": "approved"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "9f5f8cdcbfc295bf5fab0c23bd90630289fc17efd15651c8852704937b79625a",
+      "recordedDate": "2026-11-22",
+      "eventDate": "2026-11-22",
+      "evidence": "Whole approved master upscaled twofold with the standard model. Decoded 2160x3840, 1274 frames at 24/1 fps, bt709 limited range; audio packets identical to v1; four frames compared with native and one subtitle crop inspected at full size. No real-time playback by the agent.",
+      "outcome": "passed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v1-4k",
+      "artifactSha256": "9f5f8cdcbfc295bf5fab0c23bd90630289fc17efd15651c8852704937b79625a",
+      "recordedDate": "2026-11-23",
+      "eventDate": "2026-11-23",
+      "evidence": "The director supplied the published YouTube URL on 2026-11-23 after receiving the v1-4k master. Recorded as user-confirmed; the page was not fetched, and the platform date and published text are not independently asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/second-speaker-v1/workspace-archive-manifest.json",
+    "inventorySha256": "8d283d0f2291493bd28632df4a23a5d3130683f57187019b34953569a3a91965",
+    "verifiedDate": "2026-11-23"
+  }
+}

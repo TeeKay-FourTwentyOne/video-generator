@@ -115,7 +115,7 @@ def main():
     parser.add_argument("--model", type=int, default=1, choices=[0, 1],
                         help="Model: 1=realesr-animevideov3-x2 (default, fast, native 2x; the 2026 master path), "
                              "0=realesrgan-x4plus (true 4x, about 30x slower)")
-    parser.add_argument("--crf", type=int, default=18, choices=range(0, 52), metavar="0..51")
+    parser.add_argument("--crf", type=int, default=16, choices=range(0, 52), metavar="0..51")
     parser.add_argument("--tile", type=int, default=0, help="ncnn tile size; 0=auto or at least 32")
     args = parser.parse_args()
 

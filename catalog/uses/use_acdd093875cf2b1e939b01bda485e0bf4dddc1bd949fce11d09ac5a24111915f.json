@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_f8fa542b5e3bf7f984b1c487d089f4fb72ac0fcff6de7c24e145e2c51ac690ad",
+  "projectId": "second-speaker",
+  "editVersion": "edit/v1",
+  "segmentIndex": 12,
+  "shotId": "S11",
+  "status": "rendered",
+  "evidence": "custom-edit-recipe",
+  "range": {
+    "unit": "frames",
+    "start": 8,
+    "length": 66,
+    "fps": 24
+  },
+  "timelineStartFrame": 838,
+  "outputSha256": "84490cac4ed091b9b3c2a1586144f8701586fb4f740bf9e2bcf0bfb198368c5b",
+  "schemaVersion": 1,
+  "id": "use_acdd093875cf2b1e939b01bda485e0bf4dddc1bd949fce11d09ac5a24111915f"
+}

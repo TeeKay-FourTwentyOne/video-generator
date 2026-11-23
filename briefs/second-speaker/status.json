@@ -1,0 +1,409 @@
+{
+ "schemaVersion": 1,
+ "projectId": "second-speaker",
+ "title": "SECOND SPEAKER",
+ "updated": "2026-11-23",
+ "format": "Vertical 9:16, 53 seconds, 1080 by 1920 at 24 fps, invented-language dialogue with subtitles",
+ "phase": "approved",
+ "logline": "An old woman teaches a small device the language only she speaks, and the subtitles arrive as it learns. Then her granddaughter, who has been practising with it, says hello.",
+ "overall": "Published 2026-11-23: https://youtube.com/shorts/bIkdaWMxbH8. The director approved v1 without notes; the 4K master of that cut is the published file.",
+ "next": "Complete. Workspace archived at closeout.",
+ "statuses": {
+  "planned": {
+   "label": "Planned",
+   "tone": "muted",
+   "description": "Written and budgeted; nothing generated yet."
+  },
+  "anchored": {
+   "label": "Anchor ready",
+   "tone": "active",
+   "description": "The first frame exists and passed its frame checks."
+  },
+  "generating": {
+   "label": "Generating",
+   "tone": "active",
+   "description": "A provider request is in flight or being polled."
+  },
+  "review": {
+   "label": "Needs review",
+   "tone": "attention",
+   "description": "Material exists and waits for a creative decision."
+  },
+  "revision": {
+   "label": "Revision needed",
+   "tone": "bad",
+   "description": "A specific change was asked for and is not made yet."
+  },
+  "accepted": {
+   "label": "In the cut",
+   "tone": "good",
+   "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+  },
+  "hold": {
+   "label": "On hold",
+   "tone": "bad",
+   "description": "A decision or authorization blocks the next step."
+  },
+  "dropped": {
+   "label": "Dropped",
+   "tone": "muted",
+   "description": "Cut from the film by decision."
+  },
+  "approved": {
+   "label": "Approved",
+   "tone": "good",
+   "description": "Explicitly approved by the director."
+  }
+ },
+ "scenes": [
+  {
+   "id": "porch",
+   "number": "1",
+   "title": "The porch",
+   "status": "approved",
+   "summary": "Late afternoon on a plain timber porch. She talks to the device beside her, easily. We understand none of it.",
+   "segments": [
+    {
+     "id": "b1-wide",
+     "title": "S01 She talks to the device",
+     "status": "approved",
+     "detail": "Wide, locked off. She says the film's one sentence; nothing is subtitled."
+    }
+   ]
+  },
+  {
+   "id": "learning",
+   "number": "2",
+   "title": "It learns",
+   "status": "approved",
+   "summary": "The device gets a word wrong, she corrects it, and it gets it right. The film's first subtitle arrives on that word.",
+   "segments": [
+    {
+     "id": "b2-correction",
+     "title": "S02a The correction",
+     "status": "approved",
+     "detail": "The device gets the word wrong; she says 'not like that' and gives it the word slowly."
+    },
+    {
+     "id": "b2-device",
+     "title": "S10 The device answers",
+     "status": "approved",
+     "detail": "Close on the device, its light driven by its voice. The first subtitle arrives here: evening light."
+    },
+    {
+     "id": "b2-again",
+     "title": "S02b Good. Say it again.",
+     "status": "approved",
+     "detail": "Both phrases subtitled."
+    },
+    {
+     "id": "b2-sentence",
+     "title": "S02c The whole sentence",
+     "status": "approved",
+     "detail": "Subtitled with gaps for the three words the device does not have yet."
+    },
+    {
+     "id": "b2-light",
+     "title": "S03 The light on the field",
+     "status": "approved",
+     "detail": "The device says the sentence back over the field and the subtitle completes word by word."
+    }
+   ]
+  },
+  {
+   "id": "granddaughter",
+   "number": "3",
+   "title": "The granddaughter",
+   "status": "approved",
+   "summary": "Her room, three short pieces of different days, practising with the same kind of device. It corrects her the way it was corrected.",
+   "segments": [
+    {
+     "id": "b3-desk",
+     "title": "S04 At the desk, night",
+     "status": "approved",
+     "detail": "She makes the device's old mistake; it answers with the right stress."
+    },
+    {
+     "id": "b3-floor",
+     "title": "S05 On the floor by the window",
+     "status": "approved",
+     "detail": "The sentence, with a hesitation in the middle."
+    },
+    {
+     "id": "b3-pacing",
+     "title": "S06 Pacing, eyes shut",
+     "status": "approved",
+     "detail": "The greeting, twice."
+    }
+   ]
+  },
+  {
+   "id": "second-speaker",
+   "number": "4",
+   "title": "Second speaker",
+   "status": "approved",
+   "summary": "The porch at dusk, the woman alone, the device dark. A voice behind her says hello in her language, badly. The scene ends on her face.",
+   "segments": [
+    {
+     "id": "b4-alone",
+     "title": "S11 Alone at dusk",
+     "status": "approved",
+     "detail": "Added shot: she sits by herself, the device dark."
+    },
+    {
+     "id": "b4-hello",
+     "title": "S07 Hello, Grandma",
+     "status": "approved",
+     "detail": "From behind her; the granddaughter walks up and says it. Subtitled."
+    },
+    {
+     "id": "b4-face",
+     "title": "S08 Her face",
+     "status": "approved",
+     "detail": "Hand to her mouth, then the smile. No reply. Cropped in slightly to lose a dark shape at the frame edge."
+    }
+   ]
+  },
+  {
+   "id": "coda",
+   "number": "5",
+   "title": "Evening light",
+   "status": "approved",
+   "summary": "A slow fade to the two of them on the porch, seen from the field, looking at the light and talking. We cannot make out the words.",
+   "segments": [
+    {
+     "id": "b5-porch",
+     "title": "S09 The two of them",
+     "status": "approved",
+     "detail": "Slow dissolve from her face. Two low voices, indistinct, not subtitled. Title, fade out."
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "id": "casting",
+   "title": "Who are they?",
+   "status": "decided",
+   "detail": "Director, 2026-11-22: \"Good call. Include one that is more obscure Balkan or Macedonian area kind of feel.\" Three candidate pairs will be generated as stills; the pick stays open until he has seen them. The rule on cultural signifiers is unchanged. Stills delivered 2026-11-22: A upland (the Balkan-feel pair), B farmhouse, C long grass. Director, 2026-11-22: \"Pair C.\""
+  },
+  {
+   "id": "granddaughter-age",
+   "title": "How old is the granddaughter?",
+   "status": "decided",
+   "detail": "Director, 2026-11-22: \"Yep, 20 works.\" He does not want to work around the motion model's limits on generating children."
+  },
+  {
+   "id": "lexicon",
+   "title": "The words",
+   "status": "decided",
+   "detail": "Director, 2026-11-22: \"The lexicon works for me.\" The collision check then replaced four words that matched a people's name or a real language (see the brief): the set is now noréla, lena doví, suvé, ilo, vea, voké ru. He may still change any by ear."
+  },
+  {
+   "id": "last-line",
+   "title": "Does she answer?",
+   "status": "decided",
+   "detail": "Director, 2026-11-22: \"End 4 on her face, then cut to a slow fade of the two sitting on the porch looking at the evening light and talking indistinctly.\" No reply line; the coda is scene 5."
+  },
+  {
+   "id": "voices",
+   "title": "All voices dubbed",
+   "status": "decided",
+   "detail": "Director, 2026-11-22: \"Use ElevenLabs for all the voices, dub them over the video.\" The device is voice-over; on-camera lines are converted from a guide performance so the timing holds, as on No Enemy."
+  },
+  {
+   "id": "voice-cast",
+   "title": "Which voices?",
+   "status": "decided",
+   "detail": "Director, 2026-11-22: granddaughter-3 and device-2. For the grandmother he named one from each register, grandmother-1-1 (low and dry) and grandmother-2-3 (bright and quick); both are kept and will be compared on her first real line before one is chosen. Settled by his approval of v1, which uses grandmother-1-1."
+  },
+  {
+   "id": "authorization",
+   "title": "Budget",
+   "status": "decided",
+   "detail": "Director set a whole-film ceiling on 2026-11-22. The amount and the ledger stay in the workspace."
+  },
+  {
+   "id": "gm-voice",
+   "title": "Grandmother: low or bright?",
+   "status": "decided",
+   "detail": "Director after watching v1, 2026-11-22: \"Perfect. Absolutely perfect. Zero notes or edits. 4k upscale please.\" The approved draft uses the low, dry voice (grandmother-1-1). The bright-voice cut is kept in the workspace, unused."
+  },
+  {
+   "id": "length",
+   "title": "53 seconds",
+   "status": "decided",
+   "detail": "Director after watching v1, 2026-11-22: \"Perfect. Absolutely perfect. Zero notes or edits. 4k upscale please.\" The film stays at 53 seconds."
+  },
+  {
+   "id": "score",
+   "title": "Music?",
+   "status": "decided",
+   "detail": "Director after watching v1, 2026-11-22: \"Perfect. Absolutely perfect. Zero notes or edits. 4k upscale please.\" No music: voices, field and room only."
+  }
+ ],
+ "log": [
+  {
+   "date": "2026-11-22",
+   "text": "Brainstormed three ideas with the director; SECOND SPEAKER chosen to build first. The director added the granddaughter's practice montage and set the depiction constraints. Brief v1 and this page written; nothing generated."
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Director answered the first decisions: granddaughter about twenty, ending on the grandmother's face plus a porch coda, all voices dubbed with ElevenLabs, one Balkan-feel casting option. Lexicon checked against real languages and four words replaced. Brief v2."
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Budget authorized. Six casting stills (three pairs) and twelve voice previews generated and published on the casting page for the director's pick."
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Director chose pair C, granddaughter-3, device-2 and two grandmother candidates. Eleven scene anchors generated; shooting script written around one sentence; first wave of five takes submitted."
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Thirteen takes generated, all kept. All lines dubbed by speech-to-speech from each take's guide performance; device lines from text. Draft v1 cut (53.1 s) with subtitles, the device light keyed to its voice, a dissolve into the coda and the title. Join review recorded."
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Director approved v1 with zero notes and authorized the 4K. Voice, length and music are settled as the draft stands. 4K master v1-4k built and verified; description written."
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Director published the film and supplied the link. Closeout: records, clip backup and offload, archive, source commit."
+  }
+ ],
+ "drafts": [
+  {
+   "version": "v1",
+   "date": "2026-11-22",
+   "title": "First draft, low grandmother voice",
+   "film": "final/second-speaker-v1-low.mp4",
+   "posterFrame": 300,
+   "fps": 24,
+   "frames": 1274,
+   "width": 1080,
+   "height": 1920,
+   "note": "Dubbed, subtitled, no music. The agent has not heard it.",
+   "segments": [
+    {
+     "label": "b1",
+     "shot": "S01",
+     "frame": 0,
+     "frames": 144,
+     "sourceFrame": 0
+    },
+    {
+     "label": "d1",
+     "shot": "S10",
+     "frame": 144,
+     "frames": 30,
+     "sourceFrame": 0
+    },
+    {
+     "label": "b2a",
+     "shot": "S02a",
+     "frame": 174,
+     "frames": 110,
+     "sourceFrame": 0
+    },
+    {
+     "label": "d2",
+     "shot": "S10",
+     "frame": 284,
+     "frames": 34,
+     "sourceFrame": 40
+    },
+    {
+     "label": "b2b",
+     "shot": "S02b",
+     "frame": 318,
+     "frames": 72,
+     "sourceFrame": 0
+    },
+    {
+     "label": "d3",
+     "shot": "S10",
+     "frame": 390,
+     "frames": 32,
+     "sourceFrame": 80
+    },
+    {
+     "label": "b2c",
+     "shot": "S02c",
+     "frame": 422,
+     "frames": 76,
+     "sourceFrame": 6
+    },
+    {
+     "label": "d4",
+     "shot": "S10",
+     "frame": 498,
+     "frames": 22,
+     "sourceFrame": 112
+    },
+    {
+     "label": "f1",
+     "shot": "S03",
+     "frame": 520,
+     "frames": 78,
+     "sourceFrame": 0
+    },
+    {
+     "label": "g1",
+     "shot": "S04",
+     "frame": 598,
+     "frames": 72,
+     "sourceFrame": 6
+    },
+    {
+     "label": "g2",
+     "shot": "S05",
+     "frame": 670,
+     "frames": 88,
+     "sourceFrame": 0
+    },
+    {
+     "label": "g3",
+     "shot": "S06",
+     "frame": 758,
+     "frames": 80,
+     "sourceFrame": 0
+    },
+    {
+     "label": "a1",
+     "shot": "S11",
+     "frame": 838,
+     "frames": 66,
+     "sourceFrame": 8
+    },
+    {
+     "label": "a2",
+     "shot": "S07",
+     "frame": 904,
+     "frames": 70,
+     "sourceFrame": 0
+    },
+    {
+     "label": "a3",
+     "shot": "S08",
+     "frame": 974,
+     "frames": 96,
+     "sourceFrame": 0
+    },
+    {
+     "label": "c1",
+     "shot": "S09",
+     "frame": 1070,
+     "frames": 192,
+     "sourceFrame": 0
+    },
+    {
+     "label": "black",
+     "shot": "black",
+     "frame": 1262,
+     "frames": 12
+    }
+   ]
+  }
+ ]
+}

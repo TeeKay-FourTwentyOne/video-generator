@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_39eed212908db2d411f368bf3c693055d70bd86f7b5d58e73efd8d1e185f6e9f",
+  "sha256": "39eed212908db2d411f368bf3c693055d70bd86f7b5d58e73efd8d1e185f6e9f",
+  "bytes": 2958931,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A young woman of twenty sits at a desk at night in the light of one lamp, leaning toward a small cloth-covered device with a glowing amber light, practising a word in a language she is learning. She says the word carefully and a little wrong, as a question: \"Nórela?\" (nóh-reh-la), with the weight on the first syllable. Then she listens to the device with her lips closed, frowning in concentration, and gives a small nod. She keeps her eyes on the device. Sound: her voice, a quiet room, the faint hum of the lamp. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f52e878feea11a87c61ad4dc1840119ae0e505449bda2833fd971e3fe68dcb2e",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1410044117,
+      "createdAt": "2026-11-23T00:10:24.953Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c3198948e9810ab22340ec1ec4555651eebf81ea781f0b5dd1503e5f40967650",
+          "bytes": 1439565,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "1961bd61460b493bf8c3ea4f52b0e468f74dc2a3f8a92f5402573ba6dafdb61b"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

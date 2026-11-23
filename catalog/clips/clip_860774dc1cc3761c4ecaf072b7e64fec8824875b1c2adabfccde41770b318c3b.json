@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_860774dc1cc3761c4ecaf072b7e64fec8824875b1c2adabfccde41770b318c3b",
+  "sha256": "860774dc1cc3761c4ecaf072b7e64fec8824875b1c2adabfccde41770b318c3b",
+  "bytes": 17217243,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A wide, still shot of an old woman sitting alone on the porch of a weathered timber house in warm late-afternoon sun, a small cloth-covered device on the table beside her. She looks down at the device and talks to it easily, the way you talk to an old friend. She speaks a soft, unfamiliar, vowel-rich language of her own, not English, with the stress late in each word. She says, unhurried: \"Noréla tové seli ené.\" (no-réh-la toh-véh seh-lee eh-néh). Then she gives a small dry laugh and looks out at the field. The device's small amber light glows steadily. Tall grass moves in a light wind. Sound: her voice, wind in dry grass, a few insects, a porch board creaking. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_ac14e9d9ea64448c0518734f3930209406c376d6e052645ccadf48818dcba5d3",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 994124429,
+      "createdAt": "2026-11-23T00:10:15.343Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "fc010b97ef7feb73ca4a4c8fd88d00a56bbd97ed71f8e839271b9e6c0a7c3495",
+          "bytes": 1978167,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ff10ccf0944eaa1032c0955b5dd7c638d7fb73a96df5fecc2f23566d12760503"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

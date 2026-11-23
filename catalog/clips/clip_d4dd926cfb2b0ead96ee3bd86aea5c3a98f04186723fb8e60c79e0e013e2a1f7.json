@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_d4dd926cfb2b0ead96ee3bd86aea5c3a98f04186723fb8e60c79e0e013e2a1f7",
+  "sha256": "d4dd926cfb2b0ead96ee3bd86aea5c3a98f04186723fb8e60c79e0e013e2a1f7",
+  "bytes": 8283026,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Early evening on a timber porch. In the foreground, seen from behind and out of focus, an old woman with silver hair sits in a wooden armchair. Beyond her, at the foot of the porch steps, stands her granddaughter of twenty with a bag on her shoulder, having just arrived unannounced. The young woman takes a breath and says, shyly and a little clumsily, in her grandmother's language: \"Suvé, ilo.\" (soo-véh, ee-lóh). The old woman goes completely still, her back to the camera; she does not speak. The young woman waits, smiling nervously, shifting her weight. Then the old woman slowly begins to turn her head toward her. Sound: the young woman's voice, wind in tall grass, evening insects. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_31272bcb301aa3a4bfde52d73fcf11a368420e7851d704bd44531640279f442a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3773429546,
+      "createdAt": "2026-11-23T00:10:30.475Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "b98cde872e4fe39b29179a1ab1c4b17b0c9e005821be4771fd9ae1f878f72c2e",
+          "bytes": 1662161,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "e81d6da0095bc55d909702b4ebe4056149087f0ba55ce383fa6947ca5d081cb4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

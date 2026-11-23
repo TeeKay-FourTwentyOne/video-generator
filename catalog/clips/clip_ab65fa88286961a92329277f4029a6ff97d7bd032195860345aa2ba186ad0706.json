@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_ab65fa88286961a92329277f4029a6ff97d7bd032195860345aa2ba186ad0706",
+  "sha256": "ab65fa88286961a92329277f4029a6ff97d7bd032195860345aa2ba186ad0706",
+  "bytes": 4057867,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A close, still shot of a small round device covered in oatmeal-coloured woven cloth, sitting on a linen cloth on a small wooden table on a porch in warm late-afternoon sun. Its single small amber light glows steadily and evenly, without flickering. Behind it, far out of focus, tall pale sunlit grass sways gently in a light wind, and at the left edge a mustard-yellow sleeve stays almost still. Nothing else moves. Nobody speaks and no voice is heard. Sound: wind in dry grass, a few insects. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_49f72386d92cbaabcf6507d9d13b1739780058b6cf601fc2f223e408d00b6c66",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1544480583,
+      "createdAt": "2026-11-23T00:11:48.407Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "dde8a41ea1a569dbb0a8e77b2b4fa75872066fd59d756bd221b4d0ae2b72d941",
+          "bytes": 1626170,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "dfce59cd9caa242f936ba4a43745aa89888a5ffa7b97d69b7d2d9146ddd7a1e4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

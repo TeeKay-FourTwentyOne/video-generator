@@ -40,7 +40,7 @@ python3 tools/upscale.py data/workspace/my_video.mp4 --model 1
 1. Extracts all frames from video using ffmpeg
 2. Upscales each frame 2x using Real-ESRGAN AI model on GPU (Metal)
 3. If target scale > 2x, applies lanczos interpolation for remaining upscale
-4. Reassembles frames into video with libx264 (crf 18, slow preset)
+4. Reassembles frames into video with libx264 (crf 16 by default, slow preset)
 5. Copies audio from original
 
 ## Performance

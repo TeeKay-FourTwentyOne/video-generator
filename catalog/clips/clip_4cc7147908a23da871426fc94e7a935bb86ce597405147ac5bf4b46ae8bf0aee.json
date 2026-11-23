@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_4cc7147908a23da871426fc94e7a935bb86ce597405147ac5bf4b46ae8bf0aee",
+  "sha256": "4cc7147908a23da871426fc94e7a935bb86ce597405147ac5bf4b46ae8bf0aee",
+  "bytes": 9083812,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 8,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "second-speaker"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A very wide, still shot across a field of tall pale grass at dusk toward a small weathered timber house. On its porch two women, small in the frame, sit side by side talking quietly; the older one gestures now and then toward the last light in the sky. The grass moves in slow waves in the wind. The light fades very gradually. Nothing else happens. Sound: wind in grass, crickets beginning, a faint, distant, wordless murmur of two voices too far away to make out. The camera is locked off and does not move. No music. No subtitles, captions or on-screen text of any kind.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f35b784b7d8461a8165e7e067d9c9b9218d0b8cb448d8da4620dedc49f4b784a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1850002091,
+      "createdAt": "2026-11-23T00:07:33.331Z",
+      "parameters": {
+        "durationSeconds": 8,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "9cdc044471b4215648747bde2bc28b1f72b0c970924e211f8ee69415e79b6145",
+          "bytes": 1446771,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "1ab13330e0ecc512cd57ebae41b1009ba6a9281cd2fa7e42df8279ea5d7db783"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
