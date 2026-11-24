@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_31f8cca5cd5bf6d773fed550a761bc307f72af058756c2735c43d4c8666b17b2",
+  "sha256": "31f8cca5cd5bf6d773fed550a761bc307f72af058756c2735c43d4c8666b17b2",
+  "bytes": 6808093,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "out-of-office"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A woman lies on her back in a meadow pointing up at a single cloud. She holds the point with complete conviction, then tilts her head, reconsiders, lowers her arm a little, and points again, firmly, happy with her answer. The small white cloud drifts very slowly across the sky. The grass stirs in a light breeze. Audio: a skylark singing high overhead, a light breeze in the grass, distant summer countryside quiet. The camera is locked off on a tripod: completely fixed, no camera movement, no pan, no tilt, no zoom, no cut. Bright flat natural daylight, naturalistic and unstaged. No music. No speech, nobody talks. No on-screen text, no captions, no subtitles, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_15d936f165d462bc8c0c307badd2491befa44890b5290e4b4d8e39ed894e540a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 3726895042,
+      "createdAt": "2026-11-23T19:37:50.172Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "7ceb5829bcde9d83e00156521ec578391a0249c4a2bfdc365deed3c2c306c9d6",
+          "bytes": 1531642,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "42964f86a9e23496fe45528c207ee0d46e3f11b4632ca9575ba7fcf02207a19d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

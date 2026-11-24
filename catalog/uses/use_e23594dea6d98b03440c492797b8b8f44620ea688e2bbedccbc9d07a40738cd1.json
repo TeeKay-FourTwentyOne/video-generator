@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_a870604579db89c479dfb2ce851f436d48446d4938c70e488988d8a58d4b0c40",
+  "projectId": "out-of-office",
+  "editVersion": "finish/v4-4k",
+  "segmentIndex": 4,
+  "shotId": "E2",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 105,
+    "fps": 24
+  },
+  "timelineStartFrame": 322,
+  "outputSha256": "fda786a0a5fa8fb0461fc3681bdf8ec6658f342c16708ca6d09b1ca6433b2053",
+  "schemaVersion": 1,
+  "id": "use_e23594dea6d98b03440c492797b8b8f44620ea688e2bbedccbc9d07a40738cd1"
+}

@@ -68,6 +68,7 @@ Shared canon: [scary-woods](forest_spirit_series_brief.md).
 | [NOVEMBER](november/README.md) | published | monthly-etymology | [Brief](november/brief.md) · [Description](november/description.md) · [Record](november/production.json) |
 | [OCTOBER](october/README.md) | published | monthly-etymology | [Brief](october/brief.md) · [Record](october/production.json) |
 | [ONE UNIT APART](one-unit-apart/README.md) | published | — | [Brief](one-unit-apart/brief.md) · [Description](one-unit-apart/description.md) · [Record](one-unit-apart/production.json) |
+| [OUT OF OFFICE](out-of-office/README.md) | published | — | [Brief](out-of-office/brief.md) · [Description](out-of-office/description.md) · [Record](out-of-office/production.json) |
 | [PARKING LOT GOSPEL](parking-lot-gospel/README.md) | producing | — | [Brief](parking-lot-gospel/brief.md) · [Record](parking-lot-gospel/production.json) |
 | [PASSENGER](passenger/README.md) | delivered | — | [Brief](passenger/brief.md) · [Decisions](passenger/decisions.md) · [Record](passenger/production.json) |
 | [PERPETUAL CHECK](perpetual-check/README.md) | published | — | [Brief](perpetual-check/brief.md) · [Description](perpetual-check/description.md) · [Decisions](perpetual-check/decisions.md) · [Record](perpetual-check/production.json) |

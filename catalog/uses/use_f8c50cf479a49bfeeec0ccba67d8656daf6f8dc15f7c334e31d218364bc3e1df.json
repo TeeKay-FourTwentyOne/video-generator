@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_dd95bb96f62787e757ab55a0144a978216decc26aeb3f8900c7fa83582dd1907",
+  "projectId": "out-of-office",
+  "editVersion": "edit/v1",
+  "segmentIndex": 5,
+  "shotId": "S6",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 93,
+    "fps": 24
+  },
+  "timelineStartFrame": 550,
+  "outputSha256": "221fc95239375ccd18b976a80b9437fa9624cd63f7b60b0f207dfe4ae37e2e1a",
+  "schemaVersion": 1,
+  "id": "use_f8c50cf479a49bfeeec0ccba67d8656daf6f8dc15f7c334e31d218364bc3e1df"
+}

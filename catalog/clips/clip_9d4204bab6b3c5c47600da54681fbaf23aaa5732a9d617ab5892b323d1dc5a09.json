@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9d4204bab6b3c5c47600da54681fbaf23aaa5732a9d617ab5892b323d1dc5a09",
+  "sha256": "9d4204bab6b3c5c47600da54681fbaf23aaa5732a9d617ab5892b323d1dc5a09",
+  "bytes": 9987281,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "out-of-office"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Seen from above, two hands work a bread dough that is far too wet and is never going to work. The hands lift, and the slack dough stretches up in long gluey strands and sags back onto the worktop in a puddle. One hand tries to scrape the dough off the other and only gets more stuck. The hands pause, then cheerfully plunge back in and carry on kneading anyway. Flour dust drifts. Audio: wet, sticky squelching and slapping of dough on a wooden worktop, a soft thud, quiet kitchen room tone. The camera is locked off on a tripod: completely fixed, no camera movement, no pan, no tilt, no zoom, no cut. Bright flat natural daylight, naturalistic and unstaged. No music. No speech, nobody talks. No on-screen text, no captions, no subtitles, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a1af708f2e167596a315578d5685f9808c203ae0aa7f4dc1c9039940e9aab331",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 4197222194,
+      "createdAt": "2026-11-23T19:37:57.856Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "10d52cbb6f0aaee2ca870d1974fed243a92c87fb62c7fdb9a54b6e9c05e3a500",
+          "bytes": 1779955,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "045e9621516ea29f226d875954c5dc85613a68c7ca65098363c5106dc1573868"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

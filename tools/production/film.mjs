@@ -366,8 +366,7 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     const flags = args.slice(1);
     for (const f of flags) if (verb !== 'review' || f !== '--overlay') throw new Error(`Unknown ${verb} option: ${f}`);
     const { projectId } = registerEditClips(root, args[0], { catalogRoot, delivered: verb === 'review' });
-    const { processProject } = await import('./clip-analysis-workflow.mjs');
-    const analysis = await processProject(projectId, catalogRoot, { progress: e => process.stderr.write(JSON.stringify(e) + '\n') });
+    const analysis = await projectCheckpoint(projectId, catalogRoot);
     if (analysis.status !== 'complete') throw new Error(`Project clip analysis is incomplete; inspect ${analysis.report} before delivery`);
     const result = verb === 'assemble' ? assemble(root, args[0], { catalogRoot })
       : review(root, args[0], { overlay: flags.includes('--overlay'), catalogRoot });
@@ -383,13 +382,21 @@ export async function main(argv, { catalogRoot = PROJECT_ROOT } = {}) {
     }
     if (!sources) throw new Error('finish needs BASE_VERSION NEW_VERSION --sources=MAP.json (workspace-relative counterpart map)');
     const { projectId } = registerFinishClips(root, baseVersion, newVersion, sources, { catalogRoot });
-    const { processProject } = await import('./clip-analysis-workflow.mjs');
-    const analysis = await processProject(projectId, catalogRoot, { progress: e => process.stderr.write(JSON.stringify(e) + '\n') });
+    const analysis = await projectCheckpoint(projectId, catalogRoot);
     if (analysis.status !== 'complete') throw new Error(`Project clip analysis is incomplete; inspect ${analysis.report} before finishing`);
     const result = await finish(root, baseVersion, newVersion, sources, { catalogRoot });
     return { ...result, analysis: { status: analysis.status, clips: analysis.clips, report: analysis.report, humanReview: analysis.humanReview } };
   }
   throw new Error(`Unknown command: ${verb}`);
+}
+// A source registered by this very command (a local render, a finishing counterpart) is analysed for the
+// first time here, and its first pass reports the batch incomplete even when every required step ran.
+// One more pass reuses the finished runs and adopts them; a real failure is still incomplete after it.
+export async function projectCheckpoint(projectId, catalogRoot, { process: run } = {}) {
+  run ??= (await import('./clip-analysis-workflow.mjs')).processProject;
+  const progress = e => process.stderr.write(JSON.stringify(e) + '\n');
+  const first = await run(projectId, catalogRoot, { progress });
+  return first.status === 'complete' ? first : run(projectId, catalogRoot, { progress });
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   main(process.argv.slice(2)).then(result => process.stdout.write(JSON.stringify(result, null, 2) + '\n')).catch(e => {

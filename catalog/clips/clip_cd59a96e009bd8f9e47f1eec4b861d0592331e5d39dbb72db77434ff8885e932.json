@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_cd59a96e009bd8f9e47f1eec4b861d0592331e5d39dbb72db77434ff8885e932",
+  "sha256": "cd59a96e009bd8f9e47f1eec4b861d0592331e5d39dbb72db77434ff8885e932",
+  "bytes": 7737179,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "out-of-office"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "Two people are failing to bring a small sailing dinghy alongside a pontoon, very slowly and very calmly. The boat drifts gently sideways, further away from the pontoon. The woman at the bow stretches out with the boat hook, reaching for the dock, and misses by a wide margin; she tries again and misses again. The man at the tiller pushes it the wrong way and the boat slowly turns its stern towards the dock. The half-lowered sail flaps loosely. Nobody is upset; they are enjoying themselves. Audio: calm water lapping against the hull, the loose sail flapping, a rope creaking, the boat hook knocking wood once, distant gulls. The camera is locked off on a tripod: completely fixed, no camera movement, no pan, no tilt, no zoom, no cut. Bright flat natural daylight, naturalistic and unstaged. No music. No speech, nobody talks. No on-screen text, no captions, no subtitles, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_a00b25a9ceb8f83d7cd0e817a65e052d86965f5faa3d9f9035d3002daaf859e6",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 740392703,
+      "createdAt": "2026-11-23T19:37:55.500Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "a4856c5b6e2878fce95b6d1e5e87e6df613e600ea08f93d6e269ae129a294ee6",
+          "bytes": 1401450,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "17fc194d84b109fd6d244282b4d4fcd7cefea4b7889c162fae4cccc8e93027d2"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

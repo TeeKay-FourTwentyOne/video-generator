@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "projectId": "out-of-office",
+  "title": "OUT OF OFFICE",
+  "kind": "film",
+  "status": "published",
+  "statusNote": "Published 2026-11-24 from the v4-4k finishing master (9:16, 35.1 s). The reply is typed in an invented mail client between six shots; type stays over the cloud, the cello and the plant; the cello plays under its own shot only. The director approved v4 the same day.",
+  "briefPath": "briefs/out-of-office/brief.md",
+  "descriptionPath": "briefs/out-of-office/description.md",
+  "descriptionSha256": "b0e72bf7882b3bf6e9e052ceb00ab2a7b01d98da9beafbe0ff1285af334ef7fd",
+  "supportingDocuments": [
+    {
+      "label": "Collaboration status",
+      "path": "briefs/out-of-office/status.json"
+    }
+  ],
+  "workspace": {
+    "path": "data/workspace-archive/out-of-office-v1",
+    "state": "archived-verified"
+  },
+  "artifacts": [
+    {
+      "role": "native-review",
+      "version": "v1",
+      "path": "final/v1/film.mp4",
+      "sha256": "221fc95239375ccd18b976a80b9437fa9624cd63f7b60b0f207dfe4ae37e2e1a",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 723,
+      "durationSeconds": 30.125,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v1/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "native-review",
+      "version": "v4",
+      "path": "final/v4/film.mp4",
+      "sha256": "efcdde38259518c8acf28a5f64a1184c3c346fc7c1067b18d16438b709dffc68",
+      "width": 1080,
+      "height": 1920,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 843,
+      "durationSeconds": 35.125,
+      "publishedMaster": false,
+      "deliveryRecordPath": "final/v4/delivery.json",
+      "retention": "removed-intermediate"
+    },
+    {
+      "role": "finishing-master",
+      "version": "v4-4k",
+      "path": "final/v4-4k/film.mp4",
+      "sha256": "fda786a0a5fa8fb0461fc3681bdf8ec6658f342c16708ca6d09b1ca6433b2053",
+      "width": 2160,
+      "height": 3840,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "frames": 843,
+      "durationSeconds": 35.125,
+      "publishedMaster": true,
+      "descriptionCopyPath": "final/v4-4k/description.txt",
+      "deliveryRecordPath": "final/v4-4k/delivery.json"
+    }
+  ],
+  "production": {
+    "providers": [
+      {
+        "purpose": "motion",
+        "provider": "Google Veo",
+        "model": "veo-3.1-generate-001"
+      },
+      {
+        "purpose": "images",
+        "provider": "Google",
+        "model": "gemini-3-pro-image"
+      },
+      {
+        "purpose": "sound",
+        "provider": "ElevenLabs"
+      }
+    ],
+    "credits": [
+      {
+        "role": "Concept, direction, shot planning, image and motion generation, typography, mail-client animation, editing and sound",
+        "harness": "Claude Code"
+      }
+    ]
+  },
+  "publication": {
+    "platform": "YouTube",
+    "url": "https://youtube.com/shorts/fgVr4_lQToM",
+    "evidence": "user-confirmed",
+    "recordedDate": "2026-11-24",
+    "artifactVersion": "v4-4k"
+  },
+  "reviewEvents": [
+    {
+      "type": "technical-check",
+      "artifactVersion": "v1",
+      "artifactSha256": "221fc95239375ccd18b976a80b9437fa9624cd63f7b60b0f207dfe4ae37e2e1a",
+      "recordedDate": "2026-11-23",
+      "eventDate": "2026-11-23",
+      "evidence": "Assembler verified full decode, 1080x1920, 723 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -18.0 LUFS integrated, loudness range 2.9 LU, true peak -1.7 dBTP; the delivered AAC measured -18.0 LUFS with a sample peak of -1.9 dBFS. The six hard cuts were inspected on exact adjacent frames. Listening and artistic review are not claimed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4",
+      "artifactSha256": "efcdde38259518c8acf28a5f64a1184c3c346fc7c1067b18d16438b709dffc68",
+      "recordedDate": "2026-11-24",
+      "eventDate": "2026-11-24",
+      "evidence": "Assembler verified full decode, 1080x1920, 843 frames at 24/1 fps and the source hashes. The mix report measured the soundtrack at -18.2 LUFS integrated, true peak -2 dBTP. Every cut is an intentional hard cut between unrelated pictures; the cut frames and the typed text were inspected on a contact sheet.",
+      "outcome": "passed"
+    },
+    {
+      "type": "artistic-approval",
+      "artifactVersion": "v4",
+      "artifactSha256": "efcdde38259518c8acf28a5f64a1184c3c346fc7c1067b18d16438b709dffc68",
+      "recordedDate": "2026-11-24",
+      "eventDate": "2026-11-24",
+      "evidence": "Director, after watching v4 on the status page: \"It's the one. 4k upscale please.\"",
+      "outcome": "approved"
+    },
+    {
+      "type": "technical-check",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "fda786a0a5fa8fb0461fc3681bdf8ec6658f342c16708ca6d09b1ca6433b2053",
+      "recordedDate": "2026-11-24",
+      "eventDate": "2026-11-24",
+      "evidence": "The maintained finish cut the approved v4 frame ranges from 2160x3840 counterparts (takes through Real-ESRGAN animevideov3 x2; mail client and type drawn natively at that size) and verified full decode, dimensions, 843 frames, BT.709 tags and an audio stream identical to v4 by packet and PCM digest. Ten frames and three full-size crops were inspected. Not watched at speed.",
+      "outcome": "passed"
+    },
+    {
+      "type": "publication",
+      "artifactVersion": "v4-4k",
+      "artifactSha256": "fda786a0a5fa8fb0461fc3681bdf8ec6658f342c16708ca6d09b1ca6433b2053",
+      "recordedDate": "2026-11-24",
+      "eventDate": "2026-11-24",
+      "evidence": "The director supplied the published YouTube URL on 2026-11-24 after receiving the v4-4k master. Recorded as user-confirmed; the page was not fetched, and the platform date and published text are not independently asserted. The local master hash identifies the delivered file, not the platform transcode.",
+      "outcome": "user-confirmed"
+    }
+  ],
+  "legacyPaths": [],
+  "archive": {
+    "manifestPath": "data/workspace-archive/out-of-office-v1/workspace-archive-manifest.json",
+    "inventorySha256": "8e9cb833b431e021aad8c7ae53aeeeb7acbfbdcacedff9b03907b9a17f3815f3",
+    "verifiedDate": "2026-11-24"
+  }
+}

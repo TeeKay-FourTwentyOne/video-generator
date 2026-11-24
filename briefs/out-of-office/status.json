@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "projectId": "out-of-office",
+  "title": "OUT OF OFFICE",
+  "updated": "2026-11-24",
+  "format": "9:16, 1080 by 1920, 24 fps, about 35 seconds; six locked-off shots cut between four passes of the reply being typed in a mail client",
+  "phase": "published",
+  "logline": "Somebody sets their automatic reply and keeps editing it, between glimpses of people doing gloriously unproductive things badly and happily. The machine has the spreadsheet; the humans are out.",
+  "overall": "Published 2026-11-24 from the 4K master of cut v4 (35.1 s), which the director approved the same day: \"It's the one.\"",
+  "next": "Nothing outstanding on the film. The private backup of the source clips is to be completed later; local clips are kept until then at the director's instruction.",
+  "statuses": {
+    "planned": {
+      "label": "Planned",
+      "tone": "muted",
+      "description": "Written and budgeted; nothing generated yet."
+    },
+    "anchored": {
+      "label": "Anchor ready",
+      "tone": "active",
+      "description": "The first frame exists and passed its frame checks."
+    },
+    "generating": {
+      "label": "Generating",
+      "tone": "active",
+      "description": "A provider request is in flight or being polled."
+    },
+    "review": {
+      "label": "Needs review",
+      "tone": "attention",
+      "description": "Material exists and waits for a creative decision."
+    },
+    "revision": {
+      "label": "Revision needed",
+      "tone": "bad",
+      "description": "A specific change was asked for and is not made yet."
+    },
+    "accepted": {
+      "label": "In the cut",
+      "tone": "good",
+      "description": "Accepted by the agent and placed in the edit; not yet approved by the director."
+    },
+    "hold": {
+      "label": "On hold",
+      "tone": "bad",
+      "description": "A decision or authorization blocks the next step."
+    },
+    "dropped": {
+      "label": "Dropped",
+      "tone": "muted",
+      "description": "Cut from the film by decision."
+    },
+    "approved": {
+      "label": "Approved",
+      "tone": "good",
+      "description": "Explicitly approved by the director."
+    }
+  },
+  "scenes": [
+    {
+      "id": "reply",
+      "number": "0",
+      "title": "The reply",
+      "status": "approved",
+      "summary": "A plain mail client's automatic-replies panel. Only the message is shown being edited; nobody is seen typing. Every character has a keystroke.",
+      "image": "clips/E4b.mp4",
+      "segments": [
+        {
+          "id": "reply-e1",
+          "title": "E1 The switch goes on; typed: \"I am away from my desk.\"",
+          "status": "approved",
+          "image": "clips/E1.mp4",
+          "detail": "Opens the film, before the chair. The switch turning on is the agent's addition."
+        },
+        {
+          "id": "reply-e2",
+          "title": "E2 Typed: \"For urgent matters, please consider whether they truly are.\"",
+          "status": "approved",
+          "image": "clips/E2b.mp4",
+          "detail": "After the cello. Director 2026-11-24: \"remove the 'I will have limited access to email' line from the typing in E2 and in the subsequent email client clips E3 and E4.\" The lines printed over the cloud and the cello are not in the message."
+        },
+        {
+          "id": "reply-e3",
+          "title": "E3 Typed: \"I will respond upon my return.\"",
+          "status": "approved",
+          "image": "clips/E3b.mp4",
+          "detail": "After the boat."
+        },
+        {
+          "id": "reply-e4",
+          "title": "E4 That line is deleted and replaced: \"I will not be returning.\"",
+          "status": "approved",
+          "image": "clips/E4b.mp4",
+          "detail": "After the long table. The delete key is held down, then the new line is typed."
+        }
+      ]
+    },
+    {
+      "id": "chair",
+      "number": "1",
+      "title": "Away from the desk",
+      "status": "approved",
+      "summary": "An empty office. The chair is still turning. The subject line is the title.",
+      "image": "clips/S1-v1.mp4",
+      "segments": [
+        {
+          "id": "chair-picture",
+          "title": "S1 The empty swivel chair, slowly turning, slowing down",
+          "status": "approved",
+          "image": "clips/S1-v1.mp4",
+          "detail": "v2: 2.3 seconds, the room's own sound."
+        },
+        {
+          "id": "chair-card",
+          "title": "Card: \"Automatic reply: Out of office\", then \"I am away from my desk.\"",
+          "status": "dropped",
+          "detail": "Director 2026-11-24: this text moves into the mail client; the shot plays without type."
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "number": "2",
+      "title": "The cloud",
+      "status": "approved",
+      "summary": "A woman on her back in a meadow, pointing at a cloud with complete conviction.",
+      "image": "clips/S2T.mp4",
+      "segments": [
+        {
+          "id": "cloud-picture",
+          "title": "S2 She points, reconsiders, points again; the cloud is no shape at all",
+          "status": "approved",
+          "image": "clips/S2T.mp4",
+          "detail": "v2: 4 seconds, the meadow's own sound."
+        },
+        {
+          "id": "cloud-card",
+          "title": "Card: \"The machine has the spreadsheet.\" then \"I have this cloud. I believe it is a horse.\"",
+          "status": "approved",
+          "detail": "Director 2026-11-24: \"Leave the printed text over S2 and S3.\" Set locally in one sans face at the top of the frame."
+        }
+      ]
+    },
+    {
+      "id": "cello",
+      "number": "3",
+      "title": "The cello",
+      "status": "approved",
+      "summary": "A man in his kitchen, bow arm rigid. His dog has heard enough.",
+      "image": "clips/S3T.mp4",
+      "segments": [
+        {
+          "id": "cello-picture",
+          "title": "S3 He saws at one string; the dog gets up and leaves the room",
+          "status": "approved",
+          "image": "clips/S3T.mp4",
+          "detail": "v2: 4 seconds. The damaged cello plays here and nowhere else, from its false start; \"Badly.\" lands in the pause after he breaks off. The take's own cello stays muted."
+        },
+        {
+          "id": "cello-card",
+          "title": "Card: \"I am learning the cello.\" then \"Badly.\"",
+          "status": "approved",
+          "detail": "Director 2026-11-24: \"Leave the printed text over S2 and S3.\" Set locally in one sans face at the top of the frame."
+        }
+      ]
+    },
+    {
+      "id": "boat",
+      "number": "4",
+      "title": "Urgent matters",
+      "status": "approved",
+      "summary": "Two people failing to dock a small sailboat, slowly and happily.",
+      "image": "clips/S4-v1.mp4",
+      "segments": [
+        {
+          "id": "boat-picture",
+          "title": "S4 The boat hook does not reach; the boat drifts the wrong way",
+          "status": "approved",
+          "image": "clips/S4-v1.mp4",
+          "detail": "v2: 2.5 seconds, the first miss with the hook, the take's own water and voices."
+        },
+        {
+          "id": "boat-card",
+          "title": "Card: \"For urgent matters, please consider whether they are.\"",
+          "status": "dropped",
+          "detail": "Director 2026-11-24: this text moves into the mail client; the shot plays without type."
+        }
+      ]
+    },
+    {
+      "id": "dough",
+      "number": "5",
+      "title": "Limited access",
+      "status": "dropped",
+      "summary": "Hands in a bread dough that is never going to work.",
+      "image": "clips/S5-v1.mp4",
+      "segments": [
+        {
+          "id": "dough-picture",
+          "title": "S5 The dough strings and sags; the hands carry on anyway",
+          "status": "dropped",
+          "image": "clips/S5-v1.mp4",
+          "detail": "Director 2026-11-24: \"Remove S5. Cut straight from S4 to E3.\" Not in v3."
+        },
+        {
+          "id": "dough-card",
+          "title": "Card: \"I have limited access to email and unlimited access to this.\"",
+          "status": "dropped",
+          "detail": "Director 2026-11-24: this text moves into the mail client; the shot plays without type."
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "number": "6",
+      "title": "The return",
+      "status": "approved",
+      "summary": "A long lunch outdoors. The cello man is there. The dog is asleep under the table.",
+      "image": "clips/S6-v1.mp4",
+      "segments": [
+        {
+          "id": "table-picture",
+          "title": "S6 A dozen people, nobody holding a screen; the dog sleeps",
+          "status": "approved",
+          "image": "clips/S6-v1.mp4",
+          "detail": "v3: 4.5 seconds, from the first frame of the take until the laugh has died down, with the table's own sound. Director 2026-11-24: \"Let S6 play a bit longer, the laughter is currently cut off at the end ... bring back 1.5-2s from the beginning.\" The take had 1.4 seconds before the v2 in-point, all restored; the out-point also moves 0.6 seconds later so the laugh is not clipped."
+        },
+        {
+          "id": "table-card",
+          "title": "Card: \"I will respond upon my return.\" then \"I will not be returning.\"",
+          "status": "dropped",
+          "detail": "Director 2026-11-24: this text moves into the mail client; the shot plays without type."
+        }
+      ]
+    },
+    {
+      "id": "plant",
+      "number": "7",
+      "title": "Regards",
+      "status": "approved",
+      "summary": "The office again. The chair has stopped. Somebody has put a plant on it.",
+      "image": "clips/S7T.mp4",
+      "segments": [
+        {
+          "id": "plant-picture",
+          "title": "S7 The chair, still; a leaf trembles",
+          "status": "approved",
+          "image": "clips/S7T.mp4",
+          "detail": "v2: 3 seconds, the room's own sound."
+        },
+        {
+          "id": "plant-card",
+          "title": "Card: \"Warm regards.\"",
+          "status": "approved",
+          "detail": "Director 2026-11-24: \"just read 'Warm regards.' without the comma.\""
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "cards",
+      "title": "Card text",
+      "status": "decided",
+      "detail": "Recommended wording is on each scene. Alternates. Cloud: the original \"The machine has the spreadsheet.\" alone, or \"I am away from my desk. I am reviewing a cloud.\" Boat: the original \"For urgent matters, please reconsider whether they are urgent.\" Table: the original \"I will respond never.\", or \"I will respond upon my return. Do not wait.\" Plant: the original \"With warm regards.\" Card text is a local re-render, so the first cut uses the recommended set and any card can change afterwards. Director 2026-11-24: the intro and the lines for the boat, the dough and the table are typed in a mail client instead (\"For urgent matters, please consider whether they truly are. I will have limited access to email.\" / \"I will respond upon my return.\" replaced by \"I will not be returning.\"); printed text stays over S2 and S3; the last card reads \"Warm regards.\" Later the same day: the \"limited access\" line is removed from the typed message."
+    },
+    {
+      "id": "opening",
+      "title": "Open on the subject line",
+      "status": "decided",
+      "detail": "Agent's idea: \"Automatic reply: Out of office\" is the title, over the turning chair. Director 2026-11-23: \"Agreed\"."
+    },
+    {
+      "id": "dog",
+      "title": "The dog comes back",
+      "status": "decided",
+      "detail": "Agent's idea: the dog that leaves the kitchen is asleep under the long table. Director 2026-11-23: \"Agreed\"."
+    },
+    {
+      "id": "cello",
+      "title": "How the bad cello is made",
+      "status": "decided",
+      "detail": "Agent's plan: a simple generated solo-cello study, damaged locally (sour intonation, hesitations, one restart) and eased toward the end, so \"a little better and no more than a little\" is under our control. The kitchen take's own cello sound is used under its shot if it comes back usable. Built for v1: a false start, sour notes and hesitations that thin out, and a last note he finds; the cuts sit on its phrase starts. The kitchen take's own cello is muted. The agent cannot hear it; this needs the director's ear. Director 2026-11-24: \"The cello music will not be consistent through the entire video, just over the learning the cello clip.\""
+    },
+    {
+      "id": "dough",
+      "title": "The dough shot",
+      "status": "decided",
+      "detail": "The take is good but the arms came in from the left, across the type. v1 mirrors the picture, which also mirrors the small lettering on the flour bag at the bottom. Keep the mirror, or spend one new take with the arms entering from the bottom. 2026-11-24: settled by the director's notes; the shot carries no type in v2, so it runs unmirrored and no new take is needed."
+    },
+    {
+      "id": "pace",
+      "title": "How the vignettes are sped up",
+      "status": "decided",
+      "detail": "Director 2026-11-24: \"speed up the other vignettes\", for a lighter, fun feel. v2 does it by shorter cuts at normal speed (2.3 to 4 seconds each, down from 3.3 to 5.5), so the takes' own sound stays natural. The alternative is faster playback, which would also change the sound. Director 2026-11-24, after watching v2: \"The pacing is good, it's okay that the video's length expanded.\""
+    },
+    {
+      "id": "dough-sound",
+      "title": "Dough sounds against the motion",
+      "status": "decided",
+      "detail": "Director 2026-11-24: check that the noises on S5 match the motion. Measured: the take is silent through its first three seconds of stretching, then has distinct sounds at source frames 92, 104, 115, 121 and 130, which fall on the dough dropping and the hands pressing. v2 uses source frames 76 to 135 so every sound has its motion. The agent cannot hear it; exact timestamps from the director will be applied if anything is still off. Director 2026-11-24: the shot is removed, so the question is closed."
+    },
+    {
+      "id": "typing",
+      "title": "Typing pace and keyboard sound",
+      "status": "decided",
+      "detail": "Keystrokes are cut from a generated keyboard recording and placed on the exact frame each character appears. The four passes run 3.1, 6.4, 2.7 and 4.6 seconds. Needs the director's eye for pace and ear for the sound. Director 2026-11-24, after watching v2: \"Very nice. The pacing is good.\""
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-23",
+      "text": "Director approved the build. Workspace opened; seven anchors generated and inspected; seven motion prompts and the shot plan written; card rewrite pass done."
+    },
+    {
+      "date": "2026-11-23",
+      "text": "Seven takes generated, one attempt each, all kept after frame inspection; no speech in any take. Cards rendered, cello built, v1 assembled (723 frames, 30.1 s) with its review package; six hard cuts inspected."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Director's notes for a lighter cut: the reply typed in a mail client (four passes, keystroke sound), type kept over S2 and S3 only, \"Warm regards.\" on the plant, cello under its own shot only, shorter vignettes on their own sound. v2 assembled (904 frames, 37.7 s)."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Director watched v2: pacing good, longer length accepted. Two edits made in v3 (892 frames, 37.2 s): the dough shot removed, the boat cuts straight to the reply; the table shot plays from its first frame until the laugh dies down."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Director watched v3: \"Looks really good.\" v4 (843 frames, 35.1 s) removes the \"limited access\" line from the typed message in E2, E3 and E4."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Director approved v4: \"It's the one. 4k upscale please.\" 4K finishing master v4-4k built and verified (audio identical to v4); description written. Awaiting upload."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Published: https://youtube.com/shorts/fgVr4_lQToM (link supplied by the director). Wrap-up done without the clip offload, which the director deferred."
+    }
+  ],
+  "drafts": [
+    {
+      "version": "v1",
+      "date": "2026-11-23",
+      "title": "First cut",
+      "film": "final/v1/film.mp4",
+      "posterFrame": 60,
+      "fps": 24,
+      "frames": 723,
+      "width": 1080,
+      "height": 1920,
+      "note": "Seven takes, cards and the damaged cello. Not yet watched at speed or listened to.",
+      "segments": [
+        {
+          "label": "S1",
+          "shot": "S1",
+          "frame": 0,
+          "frames": 95,
+          "sourceFrame": 0,
+          "source": "clips/S1C.mp4"
+        },
+        {
+          "label": "S2",
+          "shot": "S2",
+          "frame": 95,
+          "frames": 133,
+          "sourceFrame": 0,
+          "source": "clips/S2C.mp4"
+        },
+        {
+          "label": "S3",
+          "shot": "S3",
+          "frame": 228,
+          "frames": 127,
+          "sourceFrame": 0,
+          "source": "clips/S3C.mp4"
+        },
+        {
+          "label": "S4",
+          "shot": "S4",
+          "frame": 355,
+          "frames": 94,
+          "sourceFrame": 0,
+          "source": "clips/S4C.mp4"
+        },
+        {
+          "label": "S5",
+          "shot": "S5",
+          "frame": 449,
+          "frames": 101,
+          "sourceFrame": 24,
+          "source": "clips/S5C.mp4"
+        },
+        {
+          "label": "S6",
+          "shot": "S6",
+          "frame": 550,
+          "frames": 93,
+          "sourceFrame": 0,
+          "source": "clips/S6C.mp4"
+        },
+        {
+          "label": "S7",
+          "shot": "S7",
+          "frame": 643,
+          "frames": 80,
+          "sourceFrame": 8,
+          "source": "clips/S7C.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "date": "2026-11-24",
+      "title": "Second cut: the typed reply",
+      "film": "final/v2/film.mp4",
+      "posterFrame": 60,
+      "fps": 24,
+      "frames": 904,
+      "width": 1080,
+      "height": 1920,
+      "note": "The reply typed in a mail client between shorter vignettes; cello under its own shot only. Not yet watched at speed or listened to.",
+      "segments": [
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 0,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "clips/E1.mp4"
+        },
+        {
+          "label": "S1",
+          "shot": "S1",
+          "frame": 74,
+          "frames": 56,
+          "sourceFrame": 8,
+          "source": "clips/S1-v1.mp4"
+        },
+        {
+          "label": "S2",
+          "shot": "S2",
+          "frame": 130,
+          "frames": 96,
+          "sourceFrame": 8,
+          "source": "clips/S2T.mp4"
+        },
+        {
+          "label": "S3",
+          "shot": "S3",
+          "frame": 226,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "clips/S3T.mp4"
+        },
+        {
+          "label": "E2",
+          "shot": "E2",
+          "frame": 322,
+          "frames": 154,
+          "sourceFrame": 0,
+          "source": "clips/E2.mp4"
+        },
+        {
+          "label": "S4",
+          "shot": "S4",
+          "frame": 476,
+          "frames": 60,
+          "sourceFrame": 34,
+          "source": "clips/S4-v1.mp4"
+        },
+        {
+          "label": "S5",
+          "shot": "S5",
+          "frame": 536,
+          "frames": 60,
+          "sourceFrame": 76,
+          "source": "clips/S5-v1.mp4"
+        },
+        {
+          "label": "E3",
+          "shot": "E3",
+          "frame": 596,
+          "frames": 65,
+          "sourceFrame": 0,
+          "source": "clips/E3.mp4"
+        },
+        {
+          "label": "S6",
+          "shot": "S6",
+          "frame": 661,
+          "frames": 60,
+          "sourceFrame": 33,
+          "source": "clips/S6-v1.mp4"
+        },
+        {
+          "label": "E4",
+          "shot": "E4",
+          "frame": 721,
+          "frames": 111,
+          "sourceFrame": 0,
+          "source": "clips/E4.mp4"
+        },
+        {
+          "label": "S7",
+          "shot": "S7",
+          "frame": 832,
+          "frames": 72,
+          "sourceFrame": 8,
+          "source": "clips/S7T.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v3",
+      "date": "2026-11-24",
+      "title": "Third cut: no dough, a longer lunch",
+      "film": "final/v3/film.mp4",
+      "posterFrame": 60,
+      "fps": 24,
+      "frames": 892,
+      "width": 1080,
+      "height": 1920,
+      "note": "v2 with the dough shot removed and the table shot extended at both ends. Not yet watched by the director.",
+      "segments": [
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 0,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "clips/E1.mp4"
+        },
+        {
+          "label": "S1",
+          "shot": "S1",
+          "frame": 74,
+          "frames": 56,
+          "sourceFrame": 8,
+          "source": "clips/S1-v1.mp4"
+        },
+        {
+          "label": "S2",
+          "shot": "S2",
+          "frame": 130,
+          "frames": 96,
+          "sourceFrame": 8,
+          "source": "clips/S2T.mp4"
+        },
+        {
+          "label": "S3",
+          "shot": "S3",
+          "frame": 226,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "clips/S3T.mp4"
+        },
+        {
+          "label": "E2",
+          "shot": "E2",
+          "frame": 322,
+          "frames": 154,
+          "sourceFrame": 0,
+          "source": "clips/E2.mp4"
+        },
+        {
+          "label": "S4",
+          "shot": "S4",
+          "frame": 476,
+          "frames": 60,
+          "sourceFrame": 34,
+          "source": "clips/S4-v1.mp4"
+        },
+        {
+          "label": "E3",
+          "shot": "E3",
+          "frame": 536,
+          "frames": 65,
+          "sourceFrame": 0,
+          "source": "clips/E3.mp4"
+        },
+        {
+          "label": "S6",
+          "shot": "S6",
+          "frame": 601,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "clips/S6-v1.mp4"
+        },
+        {
+          "label": "E4",
+          "shot": "E4",
+          "frame": 709,
+          "frames": 111,
+          "sourceFrame": 0,
+          "source": "clips/E4.mp4"
+        },
+        {
+          "label": "S7",
+          "shot": "S7",
+          "frame": 820,
+          "frames": 72,
+          "sourceFrame": 8,
+          "source": "clips/S7T.mp4"
+        }
+      ]
+    },
+    {
+      "version": "v4",
+      "date": "2026-11-24",
+      "title": "Fourth cut: a shorter message",
+      "film": "final/v4/film.mp4",
+      "posterFrame": 60,
+      "fps": 24,
+      "frames": 843,
+      "width": 1080,
+      "height": 1920,
+      "note": "Approved by the director 2026-11-24: \"It's the one.\" The 4K master is cut from this edit.",
+      "segments": [
+        {
+          "label": "E1",
+          "shot": "E1",
+          "frame": 0,
+          "frames": 74,
+          "sourceFrame": 0,
+          "source": "clips/E1.mp4"
+        },
+        {
+          "label": "S1",
+          "shot": "S1",
+          "frame": 74,
+          "frames": 56,
+          "sourceFrame": 8,
+          "source": "clips/S1-v1.mp4"
+        },
+        {
+          "label": "S2",
+          "shot": "S2",
+          "frame": 130,
+          "frames": 96,
+          "sourceFrame": 8,
+          "source": "clips/S2T.mp4"
+        },
+        {
+          "label": "S3",
+          "shot": "S3",
+          "frame": 226,
+          "frames": 96,
+          "sourceFrame": 0,
+          "source": "clips/S3T.mp4"
+        },
+        {
+          "label": "E2",
+          "shot": "E2",
+          "frame": 322,
+          "frames": 105,
+          "sourceFrame": 0,
+          "source": "clips/E2b.mp4"
+        },
+        {
+          "label": "S4",
+          "shot": "S4",
+          "frame": 427,
+          "frames": 60,
+          "sourceFrame": 34,
+          "source": "clips/S4-v1.mp4"
+        },
+        {
+          "label": "E3",
+          "shot": "E3",
+          "frame": 487,
+          "frames": 65,
+          "sourceFrame": 0,
+          "source": "clips/E3b.mp4"
+        },
+        {
+          "label": "S6",
+          "shot": "S6",
+          "frame": 552,
+          "frames": 108,
+          "sourceFrame": 0,
+          "source": "clips/S6-v1.mp4"
+        },
+        {
+          "label": "E4",
+          "shot": "E4",
+          "frame": 660,
+          "frames": 111,
+          "sourceFrame": 0,
+          "source": "clips/E4b.mp4"
+        },
+        {
+          "label": "S7",
+          "shot": "S7",
+          "frame": 771,
+          "frames": 72,
+          "sourceFrame": 8,
+          "source": "clips/S7T.mp4"
+        }
+      ]
+    }
+  ]
+}

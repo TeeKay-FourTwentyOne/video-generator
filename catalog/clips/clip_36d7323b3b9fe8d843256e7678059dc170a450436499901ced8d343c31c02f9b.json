@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_36d7323b3b9fe8d843256e7678059dc170a450436499901ced8d343c31c02f9b",
+  "sha256": "36d7323b3b9fe8d843256e7678059dc170a450436499901ced8d343c31c02f9b",
+  "bytes": 3738993,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 4,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 96,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "out-of-office"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "An empty office, nobody in it. The grey swivel office chair is slowly rotating on its own, as if somebody stood up and walked out a moment ago: it turns smoothly on its base, getting gradually slower and slower through the whole shot. Nothing else in the room moves. Audio: quiet office room tone, a faint air-conditioning hum, the soft tick and creak of the chair's bearing as it turns. The camera is locked off on a tripod: completely fixed, no camera movement, no pan, no tilt, no zoom, no cut. Bright flat natural daylight, naturalistic and unstaged. No music. No speech, nobody talks. No on-screen text, no captions, no subtitles, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_413e7f601dcb323324e834fd199db5afdabce91ac1eb569b4b4e6e282ca11e2a",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1873351878,
+      "createdAt": "2026-11-23T19:37:47.693Z",
+      "parameters": {
+        "durationSeconds": 4,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "4f2e7fa9325aba6f433ca5b2bceb18fa394586ef7bf709472be579cc8d2437ac",
+          "bytes": 1397276,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "96a5bda58a2275a2ec29e0d13958b835ef6129e1c15d316d7522f34022d9b896"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

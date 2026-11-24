@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9ad919ce5bf6fb8478f085cfec819fcfd42ebae0d57a69efa4a88c314fe738a6",
+  "sha256": "9ad919ce5bf6fb8478f085cfec819fcfd42ebae0d57a69efa4a88c314fe738a6",
+  "bytes": 4454719,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "out-of-office"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A man sits in his kitchen practising the cello, a complete beginner. With total concentration and a rigid, locked bow arm he saws the bow slowly back and forth across one string, staring at the music stand. The scruffy terrier sitting beside his chair looks up at him, then stands, turns, and walks calmly out through the open doorway on the left, leaving the room without looking back. The man does not notice and keeps playing. Audio: a beginner's cello played badly: one slow, scratchy, squeaking, wavering, slightly out-of-tune note after another, with a bow squeak; the dog's claws clicking away across the lino floor. The camera is locked off on a tripod: completely fixed, no camera movement, no pan, no tilt, no zoom, no cut. Bright flat natural daylight, naturalistic and unstaged. No music. No speech, nobody talks. No on-screen text, no captions, no subtitles, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_f693ec011948efbdbfba4b45063f12ae1379282f9f4c27dbb0d8b4026173aaa6",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 2235355754,
+      "createdAt": "2026-11-23T19:37:52.691Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "c379bee4fddfe87683c92beaa409b8d155fcf70d7233047951f329fb7f2353d1",
+          "bytes": 1439503,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "e870d3fd1e52adbd37c49406fb2909ba753b1cfb3544efa81f58a6347690cd4d"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}

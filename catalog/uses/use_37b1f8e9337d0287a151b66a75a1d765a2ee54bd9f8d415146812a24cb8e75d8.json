@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_efedb95d9a14bcac26b75011268b9650c9a355973572dd274bd1feec792ec38d",
+  "projectId": "out-of-office",
+  "editVersion": "edit/v1",
+  "segmentIndex": 3,
+  "shotId": "S4",
+  "status": "rendered",
+  "evidence": "saved-frame-edit",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 94,
+    "fps": 24
+  },
+  "timelineStartFrame": 355,
+  "outputSha256": "221fc95239375ccd18b976a80b9437fa9624cd63f7b60b0f207dfe4ae37e2e1a",
+  "schemaVersion": 1,
+  "id": "use_37b1f8e9337d0287a151b66a75a1d765a2ee54bd9f8d415146812a24cb8e75d8"
+}

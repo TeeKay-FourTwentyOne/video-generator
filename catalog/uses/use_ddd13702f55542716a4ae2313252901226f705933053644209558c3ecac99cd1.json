@@ -1,0 +1,19 @@
+{
+  "clipId": "clip_70fa8a391aafc171f2711735ee46d4dd1a497a67b48971df799f9c42d60d26d0",
+  "projectId": "out-of-office",
+  "editVersion": "finish/v4-4k",
+  "segmentIndex": 7,
+  "shotId": "S6",
+  "status": "rendered",
+  "evidence": "saved-finishing-master",
+  "range": {
+    "unit": "frames",
+    "start": 0,
+    "length": 108,
+    "fps": 24
+  },
+  "timelineStartFrame": 552,
+  "outputSha256": "fda786a0a5fa8fb0461fc3681bdf8ec6658f342c16708ca6d09b1ca6433b2053",
+  "schemaVersion": 1,
+  "id": "use_ddd13702f55542716a4ae2313252901226f705933053644209558c3ecac99cd1"
+}

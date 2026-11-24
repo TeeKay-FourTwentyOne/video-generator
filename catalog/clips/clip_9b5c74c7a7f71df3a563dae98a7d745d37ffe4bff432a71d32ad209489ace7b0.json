@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clip_9b5c74c7a7f71df3a563dae98a7d745d37ffe4bff432a71d32ad209489ace7b0",
+  "sha256": "9b5c74c7a7f71df3a563dae98a7d745d37ffe4bff432a71d32ad209489ace7b0",
+  "bytes": 10570347,
+  "extension": ".mp4",
+  "kind": "source",
+  "technical": {
+    "durationSeconds": 6,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "24/1",
+    "frameCount": 144,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "labels": [],
+  "collections": [
+    "out-of-office"
+  ],
+  "legacyIds": [],
+  "generations": [
+    {
+      "source": "creation-snapshot",
+      "prompt": "A long lunch outdoors at a trestle table in a garden. The people keep doing what they are doing: passing bowls along the table, pouring water from a jug, tearing bread, eating, turning to each other and laughing easily. Under the table the scruffy terrier stays fast asleep on the grass, its side rising and falling, one ear twitching once. Nobody holds anything except food, drink and cutlery. Audio: warm overlapping laughter and a wordless murmur of a happy group with no distinct words, cutlery and plates clinking, water pouring, garden birdsong. The camera is locked off on a tripod: completely fixed, no camera movement, no pan, no tilt, no zoom, no cut. Bright flat natural daylight, naturalistic and unstaged. No music. No speech, nobody talks. No on-screen text, no captions, no subtitles, no watermark.",
+      "promptStatus": "recorded",
+      "promptId": "prompt_4817e3cc8464c78f45311995814bac6504fcccfd52258c5bcb67be0d81720dcd",
+      "provider": "veo",
+      "model": "veo-3.1-generate-001",
+      "seed": 1027441459,
+      "createdAt": "2026-11-23T19:38:00.830Z",
+      "parameters": {
+        "durationSeconds": 6,
+        "aspectRatio": "9:16",
+        "resolution": "1080p",
+        "generateAudio": true,
+        "mode": "image-to-video",
+        "sampleCount": 1
+      },
+      "requestedModel": "veo-3.1-prod",
+      "sources": [
+        {
+          "role": "first_frame",
+          "sha256": "d8117fe7f67040b5e2d94aacb402bbc0e3495a20be4d94fc446c1d2692a6e97b",
+          "bytes": 1682618,
+          "mimeType": "image/png"
+        }
+      ],
+      "snapshotSha256": "ff0de1e1c155bac0373773988dd6e1a677ddeed681eb5b66a135dc97399a86c4"
+    }
+  ],
+  "analysis": [],
+  "characters": [],
+  "tags": [],
+  "availability": {
+    "status": "local-only",
+    "urls": [],
+    "license": null
+  }
+}
